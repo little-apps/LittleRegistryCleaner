@@ -53,31 +53,34 @@ namespace Little_Registry_Cleaner
             if (!EventLog.SourceExists(Application.ProductName))
                 EventLog.CreateEventSource(Application.ProductName, "Application");
 
-            // Check if backup settings exists...
+            // Check if backup settings and directory exists...
             if (string.IsNullOrEmpty(Properties.Settings.Default.strProgramSettingsDir))
+            {
                 Properties.Settings.Default.strProgramSettingsDir = string.Format("{0}\\{1}", Environment.GetFolderPath(Environment.SpecialFolder.CommonProgramFiles), Application.ProductName);
+                if (!Directory.Exists(Properties.Settings.Default.strProgramSettingsDir))
+                    Directory.CreateDirectory(Properties.Settings.Default.strProgramSettingsDir);
+            }
 
             if (string.IsNullOrEmpty(Properties.Settings.Default.strOptionsBackupDir))
+            {
                 Properties.Settings.Default.strOptionsBackupDir = string.Format("{0}\\Backups", Properties.Settings.Default.strProgramSettingsDir);
+                if (!Directory.Exists(Properties.Settings.Default.strOptionsBackupDir))
+                    Directory.CreateDirectory(Properties.Settings.Default.strOptionsBackupDir);
+            }
 
             if (string.IsNullOrEmpty(Properties.Settings.Default.strOptionsLogDir))
+            {
                 Properties.Settings.Default.strOptionsLogDir = string.Format("{0}\\Logs", Properties.Settings.Default.strProgramSettingsDir);
+                if (!Directory.Exists(Properties.Settings.Default.strOptionsLogDir))
+                    Directory.CreateDirectory(Properties.Settings.Default.strOptionsLogDir);
+            }
 
             if (string.IsNullOrEmpty(Properties.Settings.Default.strErrorDir))
+            {
                 Properties.Settings.Default.strErrorDir = string.Format("{0}\\Errors", Properties.Settings.Default.strProgramSettingsDir);
-
-            // Check if backup directorys exists...
-            if (!Directory.Exists(Properties.Settings.Default.strProgramSettingsDir))
-                Directory.CreateDirectory(Properties.Settings.Default.strProgramSettingsDir);
-
-            if (!Directory.Exists(Properties.Settings.Default.strOptionsBackupDir))
-                Directory.CreateDirectory(Properties.Settings.Default.strOptionsBackupDir);
-
-            if (!Directory.Exists(Properties.Settings.Default.strOptionsLogDir))
-                Directory.CreateDirectory(Properties.Settings.Default.strOptionsLogDir);
-
-            if (!Directory.Exists(Properties.Settings.Default.strErrorDir))
-                Directory.CreateDirectory(Properties.Settings.Default.strErrorDir);
+                if (!Directory.Exists(Properties.Settings.Default.strErrorDir))
+                    Directory.CreateDirectory(Properties.Settings.Default.strErrorDir);
+            }   
 
             // Add event handler for thread exceptions
             AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);

@@ -309,7 +309,7 @@ namespace Little_Registry_Cleaner
             if (this.bExitOnClose)
             {
                 Application.Exit();
-                Application.ExitThread();
+                Process.GetCurrentProcess().Kill();
             }
         }
     }

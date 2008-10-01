@@ -37,19 +37,28 @@ namespace Little_Registry_Cleaner.Scanners
             // Allow ScanDlg to be accessed globally
             this.frmScanDlg = frm;
 
-            ScanCLSIDSubKey();
+            // Scan all CLSID sub keys
+            ScanCLSIDSubKey(Registry.ClassesRoot.OpenSubKey("CLSID"));
+            ScanCLSIDSubKey(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Classes\\CLSID"));
+            ScanCLSIDSubKey(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Classes\\CLSID"));
+
+            ScanFileExts(Registry.ClassesRoot);
+            ScanFileExts(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Classes"));
+            ScanFileExts(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Classes"));
+
+            ScanAppIds(Registry.ClassesRoot.OpenSubKey("AppID"));
+            ScanAppIds(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Classes\\AppID"));
+            ScanAppIds(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Classes\\AppID"));
+
             ScanBHOReferences();
-            ScanAppIds();
-            ScanFileExts();
         }
 
         /// <summary>
         /// Scans for the CLSID subkey
+        /// <param name="regKey">Location of CLSID sub key</param>
         /// </summary>
-        private void ScanCLSIDSubKey()
+        private void ScanCLSIDSubKey(RegistryKey regKey)
         {
-            RegistryKey regKey = Registry.LocalMachine.OpenSubKey("Software\\Classes\\CLSID");
-
             if (regKey == null)
                 return;
 
@@ -67,11 +76,9 @@ namespace Little_Registry_Cleaner.Scanners
                     // Check for valid AppID
                     string strAppID = (string)regKey2.GetValue("AppID");
 
-                    if (!string.IsNullOrEmpty(strAppID))
-                    {
-                        if (Registry.LocalMachine.OpenSubKey("SOFTWARE\\Classes\\AppID\\" + strAppID) == null)
+                    if (!String.IsNullOrEmpty(strAppID))
+                        if (!AppIdExists(strAppID))
                             frmScanDlg.StoreInvalidKey("Missing AppID reference", regKey2.ToString(), "AppID");
-                    }
 
                     // See if DefaultIcon exists
                     RegistryKey regKeyIcon = regKey2.OpenSubKey("DefaultIcon");
@@ -80,7 +87,7 @@ namespace Little_Registry_Cleaner.Scanners
                     {
                         string strDefaultIcon = (string)regKeyIcon.GetValue("");
 
-                        if (!string.IsNullOrEmpty(strDefaultIcon))
+                        if (!String.IsNullOrEmpty(strDefaultIcon))
                             if (!IconExists(strDefaultIcon))
                                 frmScanDlg.StoreInvalidSubKey("Unable to find icon", regKeyIcon.ToString());
                     }
@@ -93,10 +100,8 @@ namespace Little_Registry_Cleaner.Scanners
                         string strInprocServer = (string)regKeyInprocSrvr.GetValue("");
 
                         if (!string.IsNullOrEmpty(strInprocServer))
-                        {
                             if (!InprocServerExists(strInprocServer))
                                 frmScanDlg.StoreInvalidSubKey("Unable to find InprocServer", regKeyInprocSrvr.ToString());
-                        }
                     }
 
                     RegistryKey regKeyInprocSrvr32 = regKey2.OpenSubKey("InprocServer32");
@@ -106,10 +111,8 @@ namespace Little_Registry_Cleaner.Scanners
                         string strInprocServer32 = (string)regKeyInprocSrvr32.GetValue("");
 
                         if (!string.IsNullOrEmpty(strInprocServer32))
-                        {
                             if (!InprocServerExists(strInprocServer32))
                                 frmScanDlg.StoreInvalidSubKey("Unable to find InprocServer32", regKeyInprocSrvr32.ToString());
-                        }
                     }
 
                 }
@@ -121,15 +124,14 @@ namespace Little_Registry_Cleaner.Scanners
             }
 
             regKey.Close();
+            return;
         }
 
         /// <summary>
         /// Finds invalid ProgIDs referenced
         /// </summary>
-        private void ScanFileExts()
+        private void ScanFileExts(RegistryKey regKey)
         {
-            RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Classes");
-
             if (regKey == null)
                 return;
 
@@ -153,10 +155,8 @@ namespace Little_Registry_Cleaner.Scanners
                     string strProgID = (string)regKey2.GetValue("");
 
                     if (!string.IsNullOrEmpty(strProgID))
-                    {
                         if (!CheckProgIDReferences(strProgID))
                             frmScanDlg.StoreInvalidSubKey("Missing ProgID reference", regKey2.ToString());
-                    }
                 }
                 catch (System.Security.SecurityException ex)
                 {
@@ -170,10 +170,8 @@ namespace Little_Registry_Cleaner.Scanners
         /// <summary>
         /// Looks for invalid references to AppIDs
         /// </summary>
-        private void ScanAppIds()
+        private void ScanAppIds(RegistryKey regKey)
         {
-            RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Classes\\AppID");
-
             if (regKey == null)
                 return;
 
@@ -193,11 +191,9 @@ namespace Little_Registry_Cleaner.Scanners
                     string strCLSID = (string)regKey2.GetValue("AppID");
 
                     if (!string.IsNullOrEmpty(strCLSID))
-                    {
                         // Check for reference to AppID
                         if (regKey.OpenSubKey(strCLSID) == null)
                             frmScanDlg.StoreInvalidSubKey("Missing AppID reference", regKey2.ToString());
-                    }
                 }
                 catch (System.Security.SecurityException ex)
                 {
@@ -288,6 +284,9 @@ namespace Little_Registry_Cleaner.Scanners
 
                 if (Registry.LocalMachine.OpenSubKey("Software\\Classes\\CLSID\\" + strGuid) != null)
                     return true;
+
+                if (Registry.CurrentUser.OpenSubKey("Software\\Classes\\CLSID\\" + strGuid) != null)
+                    return true;
             }
             catch (System.Security.SecurityException ex)
             {
@@ -306,6 +305,30 @@ namespace Little_Registry_Cleaner.Scanners
 
                 if (Registry.LocalMachine.OpenSubKey("Software\\Classes\\" + strProgID) != null)
                     return true;
+
+                if (Registry.CurrentUser.OpenSubKey("Software\\Classes\\" + strProgID) != null)
+                    return true;
+            }
+            catch (System.Security.SecurityException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
+
+            return false;
+        }
+
+        private static bool AppIdExists(string strAppId)
+        {
+            try
+            {
+                if (Registry.ClassesRoot.OpenSubKey("AppID\\" + strAppId) != null)
+                    return true;
+
+                if (Registry.LocalMachine.OpenSubKey("SOFTWARE\\Classes\\AppID\\" + strAppId) != null)
+                    return true;
+
+                if (Registry.CurrentUser.OpenSubKey("SOFTWARE\\Classes\\AppID\\" + strAppId) != null)
+                    return true;
             }
             catch (System.Security.SecurityException ex)
             {
@@ -318,6 +341,7 @@ namespace Little_Registry_Cleaner.Scanners
         private static bool IconExists(string strDefaultIcon)
         {
             string strIconPath = "";
+
             // Remove quotes
             if (strDefaultIcon[0] == '"')
             {

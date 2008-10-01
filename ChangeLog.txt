@@ -137,3 +137,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Checks if registry key exists before scanning key in ScanBHOReferences() 
 - Sees if System Restore service is running before creating restore point
 - Added finally to try-catch block in StartScanning()
+- Scans HKEY_CLASSES_ROOT + HKEY_CURRENT_USER in COMObjects.cs
