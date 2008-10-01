@@ -1,0 +1,139 @@
+﻿Little Registry Cleaner
+Copyright (C) 2008 Nick H.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+- TODO: Add more sections
+- TODO: Change look of results
+- TODO: Add update function when program starts
+- TODO: Check more keys for ActiveX/COM from http://msdn.microsoft.com/en-us/library/ms690440(VS.85).aspx
+
+- Dialogs are opened with main dialog as owner
+- Added Drivers Section
+- Opens seperate dialog for scanning
+- Prompts user to exit
+- Scan dialog should completely load before scanning
+- Now scans for missing ActiveX files
+- Now uses SHGetSpecialFolderPath() API to get path to fonts folder
+- No longer uses AddInvalidSubKey()
+- Fixed the way registry data is stored
+- Added toolbar with scan, fix and settings options
+- Removed data column from listview
+- Uses listview to store invalid registry keys and backs up checked keys with XML Registry
+- Scans again once fix is clicked
+- Added restore dialog and xml parser for treeview
+- Error dialog to catch exceptions thrown by threads
+- Most errors now are shown in error dialog
+- Fixes all registry keys when there is an error
+- Display error dialog only in debug mode
+- Added notify icon to system tray
+- Shows balloon tip when scanning is finished
+- Added logger class to log actions to files
+- Restore dialog now has listview that shows when file was created, also added option to delete file
+- Main dialog can now be resized
+- Changed layout of Options and Main dialog
+- Program can now be started minimized
+- Integrated new options into program
+- The fix toolstrip menu item is now disabled after it is clicked
+- Now uses the treeview to get the number of sections to scan
+- Added restore icon to toolstrip menu
+- Replaced Delete button with Open Directory in Restore dialog
+- Restore dialog can now be resized
+- Restore dialog now shows the size of the files
+- Added ability to scan help files and windows sounds
+- Changed about dialog layout
+- Creates restore point (XP only)
+- Created seperate section for application paths, now scans display icons in add/remove programs
+- Added problem attribute to xml files
+- Main dialog now resizes properly
+- Removed option to autostart LRC when windows starts up
+
++ Version 0.1 Released
+
+- Now checks for null registry keys and sub keys in sound section and also fixed the store function value name
+- Fixed bug in ExtractRunPath() that caused "Index was outside the bounds of the array."
+- No longer removes whole subkey if InprocServer32 is invalid, created function to parse InprocServer32 files
+- Rewrote functions in COM.cs to use RegistryKey class
+- Added author link to about dialog, added event to process links in text box
+- Created context menu for result listview, added ability to add keys to exclude list
+- The result listview now resizes the columns to fit the data
+- Fixed error in appinfo.cs, also recoded VerifyUninstallList()
+- Added shortcut keys to menustrip + added website and changelog buttons to help menustrip
+- Added build time to error dialog + about dialog + log files
+- Changed the backup and log directory to the common program files directory
+- User can now change the log directory
+
++ Version 0.2 Released
+
+- Recoded CheckAutoRun() in StartUp.cs
+- Now scans HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run + other startup keys
+- Now displays the number of items scanned
+- Removed the "stop" button and added the control box to the scan dialog, also added title
+- Scanners now use threads instead of calling them directly
+- Check for update function
+- Application settings function (scans for registry keys with no data)
+- Added event when form closes to ask to continue instead of when action is taken
+- Added context menu to notify icon
+- deleteAsXml() function now deletes sub keys and values
+- No longer deletes whole subkey when an invalid CLSID is found
+- Update function now checks a file to see if it is the latest version
+- Cleaned up ExtractRunPath() and added check for empty strings
+- Added icons to menu strip and text to toolstrip
+- Scanning starts after scan dialog is shown
+
++ Version 0.3 Released
+
+- Added retry button to check for update function when its unable to connect
+- Scanner now uses Invoke when calls are made from other threads 
+- The scanner can now be aborted
+- Uses HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit\LastKey to view a registry key in regedit
+- Now uses a new exception handler dialog that uses the WebClient to send bug reports
+- Update function uses a dialog and downloads xml file to get the changelog and download url
+- Displays messagebox before removing subkey from ignore list
+- Doesn't scan "SOFTWARE\Classes" subkey in app settings
+- Clears old results before starting a new scan
+- Checks for minor version of OS when creating restore point
+- Scans SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Drivers32 instead of SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Drivers
+- Scans DefaultIcon, AppID, InprocServer, File Extensions, and Browser Helper Objects
+
++ Version 0.4 Released
+
+- Added better handling for inner exceptions, also shows target site function name
+- Checks if DefaultIcon is null before checking the path in Active/COM scanner
+- Exceptions can now be handled on calling threads 
+- Uses Toolstrip container in main dialog
+- Updated website URLs so they go to new one
+- Displays current version in about dialog
+
++ Version 0.5 Released
+
+- Removed Grip Style from toolstrip
+- Checks if registry key exists before adding new exclude entry
+- Removed Eventargs classes
+- No longer uses the WebClient to get the update.xml
+- Removed ADDED and FIXED from Change Log
+- Treeview is registered to Node Mouse Click event
+- Tries to catch SecurityException when opening registry keys
+- Fixed bug when listing exceptions in ErrorDlg.cs
+- Lists Dictionary Entries from Exception Data in ErrorDlg.cs
+- Fixed regular expressions in Startup.cs
+
++ Version 0.6 Released
+
+- Recoded Logger class
+- Writes exception message to debug listeners when SecurityException is caught
+- Fixed up StartUp.cs
+- Checks if registry key exists before scanning key in ScanBHOReferences() 
+- Sees if System Restore service is running before creating restore point
+- Added finally to try-catch block in StartScanning()
