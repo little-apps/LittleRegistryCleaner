@@ -76,7 +76,7 @@ namespace Little_Registry_Cleaner.Scanners
                     // Check for valid AppID
                     string strAppID = (string)regKey2.GetValue("AppID");
 
-                    if (!String.IsNullOrEmpty(strAppID))
+                    if (!string.IsNullOrEmpty(strAppID))
                         if (!AppIdExists(strAppID))
                             frmScanDlg.StoreInvalidKey("Missing AppID reference", regKey2.ToString(), "AppID");
 
@@ -87,7 +87,7 @@ namespace Little_Registry_Cleaner.Scanners
                     {
                         string strDefaultIcon = (string)regKeyIcon.GetValue("");
 
-                        if (!String.IsNullOrEmpty(strDefaultIcon))
+                        if (!string.IsNullOrEmpty(strDefaultIcon))
                             if (!IconExists(strDefaultIcon))
                                 frmScanDlg.StoreInvalidSubKey("Unable to find icon", regKeyIcon.ToString());
                     }

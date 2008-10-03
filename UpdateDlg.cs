@@ -42,16 +42,27 @@ namespace Little_Registry_Cleaner
         {
             this.labelCurrentVer.Text = Application.ProductVersion;
 
-            FindUpdate();
+            string strVersion = "", strChangeLogURL = "", strDownloadURL = "";
+
+            if (FindUpdate(ref strVersion, ref strChangeLogURL, ref strDownloadURL))
+            {
+                this.strDownloadURL = strDownloadURL;
+                this.strChangeLogURL = strChangeLogURL;
+
+                this.buttonDownload.Enabled = true;
+                this.buttonChangelog.Enabled = true;
+            }
+            else
+            {
+                MessageBox.Show(this, "You have the current version", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information); 
+            }
         }
 
-        private void FindUpdate()
+        public static bool FindUpdate(ref string strVersion, ref string strChangeLogURL, ref string strDownloadURL)
         {
             try
             {
                 XmlReader xmlReader = XmlTextReader.Create("http://littlecleaner.sourceforge.net/update.xml");
-
-                string strVersion = "", strChangeLog = "", strDownloadURL = "";
 
                 while (xmlReader.Read())
                 {
@@ -62,7 +73,7 @@ namespace Little_Registry_Cleaner
                         if (xmlReader.Name.CompareTo("version") == 0)
                             strVersion = xmlReader.ReadString();
                         else if (xmlReader.Name.CompareTo("changelog") == 0)
-                            strChangeLog = xmlReader.ReadString();
+                            strChangeLogURL = xmlReader.ReadString();
                         else if (xmlReader.Name.CompareTo("download") == 0)
                             strDownloadURL = xmlReader.ReadString();
                     }
@@ -70,27 +81,22 @@ namespace Little_Registry_Cleaner
 
                 Version verApp = new Version(Application.ProductVersion);
                 Version verLatest = new Version(strVersion);
-                this.labelLatestVer.Text = verLatest.ToString();
 
                 if (verApp.Major < verLatest.Major || verApp.Minor < verLatest.Minor)
-                {
                     // Update found
-                    this.buttonDownload.Enabled = true;
-                    this.buttonChangelog.Enabled = true;
+                    return true;
 
-                    this.strDownloadURL = strDownloadURL;
-                    this.strChangeLogURL = strChangeLog;
-                }
-                else
-                    // We have the latest version
-                    MessageBox.Show(this, "You have the current version", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                // We have the latest version
+                return false;
 
             }
             catch (System.Net.WebException ex)
             {
-                if (MessageBox.Show(this, ex.Message, Application.ProductName, MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) == DialogResult.Retry)
-                    FindUpdate();
+                if (MessageBox.Show(ex.Message, Application.ProductName, MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) == DialogResult.Retry)
+                    return FindUpdate(ref strVersion, ref strChangeLogURL, ref strDownloadURL);
             }
+
+            return false;
         }
 
         private void buttonDownload_Click(object sender, EventArgs e)

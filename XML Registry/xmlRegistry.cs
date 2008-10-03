@@ -1329,14 +1329,43 @@ namespace Little_Registry_Cleaner.Xml
                 DeleteAsXml_DeleteValue(getRegistryHandle(regKey), strLimitValue);
             else
             {
-                string strMainSubKey = strSubKey.Substring(0, strSubKey.LastIndexOf('\\'));
-                string strDelSubKey = strSubKey.Substring(strSubKey.LastIndexOf('\\') + 1);
+                RegistryKey reg = null;
 
-                RegistryKey regKey2 = openKey(strBaseKey, strMainSubKey, true);
-                if (regKey2 != null)
+                try
                 {
-                    regKey2.DeleteSubKeyTree(strDelSubKey);
-                    regKey2.Close();
+                    if (strBaseKey.ToUpper().CompareTo("HKEY_CLASSES_ROOT") == 0)
+                    {
+                        reg = Registry.ClassesRoot;
+                    }
+                    else if (strBaseKey.ToUpper().CompareTo("HKEY_CURRENT_USER") == 0)
+                    {
+                        reg = Registry.CurrentUser;
+                    }
+                    else if (strBaseKey.ToUpper().CompareTo("HKEY_LOCAL_MACHINE") == 0)
+                    {
+                        reg = Registry.LocalMachine;
+                    }
+                    else if (strBaseKey.ToUpper().CompareTo("HKEY_USERS") == 0)
+                    {
+                        reg = Registry.Users;
+                    }
+                    else if (strBaseKey.ToUpper().CompareTo("HKEY_CURRENT_CONFIG") == 0)
+                    {
+                        reg = Registry.CurrentConfig;
+                    }
+                    else
+                        return false; // break here
+
+                    if (reg != null)
+                    {
+                        reg.DeleteSubKeyTree(strSubKey);
+                        reg.Close();
+                    }
+                }
+                catch (Exception e)
+                {
+                    ShowErrorMessage(e, "Error opening registry key");
+                    return false;
                 }
             }
 
