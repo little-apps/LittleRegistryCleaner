@@ -239,20 +239,25 @@ namespace Little_Registry_Cleaner
         /// </summary>
         private void CreateRestorePoint()
         {
-            // See if System Restore is enabled
-            ServiceController sc = new ServiceController("srservice");
-            if (sc != null)
-            {
-                if (sc.Status != ServiceControllerStatus.Running)
-                {
-                    this.loggerScan.WriteLine("System Restore Service isnt running, unable to create restore point.");
-                    sc.Close();
-                    return;
-                }
+            bool bServiceFound = false;
 
-                sc.Close();
+            // See if System Restore is enabled
+
+            foreach (ServiceController sc in ServiceController.GetServices())
+            {
+                if (sc.ServiceName.CompareTo("srservice") == 0)
+                {
+                    if (sc.Status != ServiceControllerStatus.Running)
+                    {
+                        this.loggerScan.WriteLine("System Restore Service isnt running, unable to create restore point.");
+                        return;
+                    }
+
+                    bServiceFound = true;
+                }
             }
-            else
+
+            if (!bServiceFound)
             {
                 this.loggerScan.WriteLine("System Restore Service wasnt found, unable to create restore point.");
                 return;

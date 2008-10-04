@@ -35,16 +35,6 @@ namespace Little_Registry_Cleaner
 {
     public partial class Main : Form
     {
-        [DllImport("user32.dll", SetLastError = true)]
-        public static extern IntPtr FindWindowEx(IntPtr parentHandle, IntPtr childAfter, string className, IntPtr windowTitle);
-
-        [DllImport("user32.dll")]
-        public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
-
-        [DllImport("user32.dll")]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        public static extern bool SetForegroundWindow(IntPtr hWnd);
-
         public Main()
         {
             InitializeComponent();
@@ -412,6 +402,11 @@ namespace Little_Registry_Cleaner
             }
 
             Process.Start("regedit.exe");
+        }
+
+        private void helpToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://answers.launchpad.net/lilregcleaner");
         }
     }
 }
