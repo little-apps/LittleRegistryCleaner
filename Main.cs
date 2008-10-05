@@ -242,6 +242,7 @@ namespace Little_Registry_Cleaner
                 Properties.Settings.Default.bScanAppPaths = e.Node.Checked;
                 Properties.Settings.Default.bScanAppSettings = e.Node.Checked;
                 Properties.Settings.Default.bScanSharedDLL = e.Node.Checked;
+                Properties.Settings.Default.bScanHistoryList = e.Node.Checked;
             }
             else
             {
@@ -276,6 +277,8 @@ namespace Little_Registry_Cleaner
                 Properties.Settings.Default.bScanAppSettings = e.Node.Checked;
             else if (e.Node.Name.CompareTo("NodeSharedDlls") == 0)
                 Properties.Settings.Default.bScanSharedDLL = e.Node.Checked;
+            else if (e.Node.Name.CompareTo("NodeHistoryList") == 0)
+                Properties.Settings.Default.bScanHistoryList = e.Node.Checked;
         }
 
         private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)

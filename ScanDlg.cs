@@ -215,6 +215,19 @@ namespace Little_Registry_Cleaner
                     this.progressBar1.PerformStep();
                 }
 
+
+                if (Little_Registry_Cleaner.Properties.Settings.Default.bScanHistoryList)
+                {
+                    this.loggerScan.WriteLine("Checking for missing recent documents links");
+                    this.UpdateSection("History List");
+
+                    Thread threadHistoryList = new Thread(new ThreadStart(delegate { new HistoryList(this); }));
+                    threadHistoryList.Start();
+                    threadHistoryList.Join();
+                }
+
+                this.progressBar1.PerformStep();
+
                 this.DialogResult = DialogResult.OK;
             }
             catch (ThreadAbortException)

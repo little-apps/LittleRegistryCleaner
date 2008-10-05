@@ -271,5 +271,17 @@ namespace Little_Registry_Cleaner.Properties {
                 return ((string)(this["strBugReportAddr"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool bScanHistoryList {
+            get {
+                return ((bool)(this["bScanHistoryList"]));
+            }
+            set {
+                this["bScanHistoryList"] = value;
+            }
+        }
     }
 }

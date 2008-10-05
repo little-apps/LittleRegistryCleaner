@@ -79,6 +79,8 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="Scanners\HistoryList.cs">
+    </Compile>
     <Compile Include="UpdateDlg.cs">
       <SubType>Form</SubType>
     </Compile>
