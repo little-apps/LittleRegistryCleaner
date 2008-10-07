@@ -32,13 +32,20 @@ namespace Little_Registry_Cleaner.Scanners
         /// <summary>
         /// Scans for invalid windows help files
         /// </summary>
-        public HelpFiles(ScanDlg frm)
+        public HelpFiles(ScanDlg frmScanDlg)
         {
             // Allow ScanDlg to be accessed globally
-            this.frmScanDlg = frm;
+            this.frmScanDlg = frmScanDlg;
 
-            CheckHelpFiles(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\HTML Help"));
-            CheckHelpFiles(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\Help"));
+            try
+            {
+                CheckHelpFiles(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\HTML Help"));
+                CheckHelpFiles(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\Help"));
+            }
+            catch (System.Security.SecurityException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
         }
 
         private void CheckHelpFiles(RegistryKey regKey)
@@ -55,10 +62,7 @@ namespace Little_Registry_Cleaner.Scanners
                 if (string.IsNullOrEmpty(strHelpPath))
                     continue;
 
-                if (File.Exists(strHelpPath))
-                    continue;
-
-                else if (File.Exists(string.Format("{0}\\{1}", strHelpPath, strHelpFile)))
+                if (HelpFileExists(strHelpFile, strHelpPath))
                     continue;
 
                 else
@@ -66,6 +70,29 @@ namespace Little_Registry_Cleaner.Scanners
             }
 
             return;
+        }
+
+        /// <summary>
+        /// Sees if the help file exists
+        /// </summary>
+        /// <param name="strValueName">Should contain the filename</param>
+        /// <param name="strValue">Should be the path to file</param>
+        /// <returns>True if it exists</returns>
+        private bool HelpFileExists(string strValueName, string strValue)
+        {
+            if (File.Exists(strValue))
+                return true;
+
+            if (File.Exists(strValueName))
+                return true;
+
+            if (File.Exists(Path.Combine(strValue, strValueName)))
+                return true;
+
+            if (StartUp.SearchFilePath(strValueName) || StartUp.SearchFilePath(strValue))
+                return true;
+
+            return false;
         }
     }
 }

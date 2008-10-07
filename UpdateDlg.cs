@@ -58,6 +58,13 @@ namespace Little_Registry_Cleaner
             }
         }
 
+        /// <summary>
+        /// Connects to update server and sees if update is available
+        /// </summary>
+        /// <param name="strVersion">Current version</param>
+        /// <param name="strChangeLogURL">Changelog URL</param>
+        /// <param name="strDownloadURL">Download URL</param>
+        /// <returns>True if a update is available</returns>
         public static bool FindUpdate(ref string strVersion, ref string strChangeLogURL, ref string strDownloadURL)
         {
             try

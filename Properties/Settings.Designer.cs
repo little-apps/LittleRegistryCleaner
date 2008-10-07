@@ -283,5 +283,17 @@ namespace Little_Registry_Cleaner.Properties {
                 this["bScanHistoryList"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool bOptionsAutoUpdate {
+            get {
+                return ((bool)(this["bOptionsAutoUpdate"]));
+            }
+            set {
+                this["bOptionsAutoUpdate"] = value;
+            }
+        }
     }
 }

@@ -33,22 +33,29 @@ namespace Little_Registry_Cleaner.Scanners
         /// </summary>
         public DLLs(ScanDlg frm)
         {
-            RegistryKey regKey = Registry.LocalMachine.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\SharedDLLs");
-
-            if (regKey == null)
-                return;
-
-            frm.UpdateScanSubKey(regKey.ToString());
-
-            // Validate Each DLL from the value names
-            foreach (string strFilePath in regKey.GetValueNames())
+            try
             {
-                if (!string.IsNullOrEmpty(strFilePath))
-                    if (!File.Exists(strFilePath))
-                        frm.StoreInvalidKey("Invalid file or folder", regKey.Name, strFilePath);
-            }
+                RegistryKey regKey = Registry.LocalMachine.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\SharedDLLs");
 
-            regKey.Close();
+                if (regKey == null)
+                    return;
+
+                frm.UpdateScanSubKey(regKey.ToString());
+
+                // Validate Each DLL from the value names
+                foreach (string strFilePath in regKey.GetValueNames())
+                {
+                    if (!string.IsNullOrEmpty(strFilePath))
+                        if (!File.Exists(strFilePath))
+                            frm.StoreInvalidKey("Invalid file or folder", regKey.Name, strFilePath);
+                }
+
+                regKey.Close();
+            }
+            catch (System.Security.SecurityException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
         }
     }
 }

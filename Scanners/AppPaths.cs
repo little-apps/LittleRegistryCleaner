@@ -32,15 +32,16 @@ namespace Little_Registry_Cleaner.Scanners
         /// </summary>
         public AppPaths(ScanDlg frm)
         {
-            RegistryKey regKey = Registry.LocalMachine.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\App Paths");
-
-            if (regKey == null)
-                return;
-
-            foreach (string strSubKey in regKey.GetSubKeyNames())
+            try
             {
-                try
+                RegistryKey regKey = Registry.LocalMachine.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\App Paths");
+
+                if (regKey == null)
+                    return;
+
+                foreach (string strSubKey in regKey.GetSubKeyNames())
                 {
+
                     RegistryKey regKey2 = regKey.OpenSubKey(strSubKey);
 
                     if (regKey2 == null)
@@ -74,13 +75,14 @@ namespace Little_Registry_Cleaner.Scanners
                     if (!File.Exists(strAppPath))
                         frm.StoreInvalidKey("Invalid file or folder", regKey2.Name, "(default)");
                 }
-                catch (System.Security.SecurityException ex)
-                { 
-                    System.Diagnostics.Debug.WriteLine(ex.Message); 
-                }
-            }
 
-            regKey.Close();
+                regKey.Close();
+
+            }
+            catch (System.Security.SecurityException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
         }
     }
 }

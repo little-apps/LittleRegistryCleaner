@@ -32,33 +32,40 @@ namespace Little_Registry_Cleaner.Scanners
         /// </summary>
         public Drivers(ScanDlg frm)
         {
-            RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Drivers32");
-
-            if (regKey == null)
-                return;
-
-            frm.UpdateScanSubKey(regKey.ToString());
-
-            foreach (string strDriverName in regKey.GetValueNames())
+            try
             {
-                string strValue = (string)regKey.GetValue(strDriverName);
+                RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Drivers32");
 
-                // Check if value is empty
-                if (string.IsNullOrEmpty(strValue))
-                    continue;
+                if (regKey == null)
+                    return;
 
-                // check path by itself
-                if (File.Exists(strValue))
-                    continue;
+                frm.UpdateScanSubKey(regKey.ToString());
 
-                // append path to %windir%\system32
-                string strDriverPath = string.Format("{0}\\{1}", Environment.SystemDirectory, strValue);
+                foreach (string strDriverName in regKey.GetValueNames())
+                {
+                    string strValue = (string)regKey.GetValue(strDriverName);
 
-                if (!File.Exists(strDriverPath))
-                    frm.StoreInvalidKey("Invalid file or folder", regKey.Name, strDriverName);
+                    // Check if value is empty
+                    if (string.IsNullOrEmpty(strValue))
+                        continue;
+
+                    // check path by itself
+                    if (File.Exists(strValue))
+                        continue;
+
+                    // append path to %windir%\system32
+                    string strDriverPath = string.Format("{0}\\{1}", Environment.SystemDirectory, strValue);
+
+                    if (!File.Exists(strDriverPath))
+                        frm.StoreInvalidKey("Invalid file or folder", regKey.Name, strDriverName);
+                }
+
+                regKey.Close();
             }
-
-            regKey.Close();
+            catch (System.Security.SecurityException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
         }
     }
 }

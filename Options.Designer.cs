@@ -53,6 +53,7 @@
             this.addEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.checkBoxAutoUpdate = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -64,13 +65,14 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.checkBoxAutoUpdate);
             this.groupBox1.Controls.Add(this.checkBoxRestore);
             this.groupBox1.Controls.Add(this.checkBoxDeleteBackup);
             this.groupBox1.Controls.Add(this.checkBoxRescan);
             this.groupBox1.Controls.Add(this.checkBoxLog);
             this.groupBox1.Location = new System.Drawing.Point(6, 112);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(447, 113);
+            this.groupBox1.Size = new System.Drawing.Size(447, 91);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Options";
@@ -78,7 +80,7 @@
             // checkBoxRestore
             // 
             this.checkBoxRestore.AutoSize = true;
-            this.checkBoxRestore.Location = new System.Drawing.Point(10, 64);
+            this.checkBoxRestore.Location = new System.Drawing.Point(197, 19);
             this.checkBoxRestore.Name = "checkBoxRestore";
             this.checkBoxRestore.Size = new System.Drawing.Size(244, 17);
             this.checkBoxRestore.TabIndex = 9;
@@ -88,7 +90,7 @@
             // checkBoxDeleteBackup
             // 
             this.checkBoxDeleteBackup.AutoSize = true;
-            this.checkBoxDeleteBackup.Location = new System.Drawing.Point(10, 87);
+            this.checkBoxDeleteBackup.Location = new System.Drawing.Point(197, 42);
             this.checkBoxDeleteBackup.Name = "checkBoxDeleteBackup";
             this.checkBoxDeleteBackup.Size = new System.Drawing.Size(236, 17);
             this.checkBoxDeleteBackup.TabIndex = 8;
@@ -117,7 +119,7 @@
             // 
             // buttonOK
             // 
-            this.buttonOK.Location = new System.Drawing.Point(369, 275);
+            this.buttonOK.Location = new System.Drawing.Point(369, 254);
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.Size = new System.Drawing.Size(45, 23);
             this.buttonOK.TabIndex = 1;
@@ -128,7 +130,7 @@
             // buttonCancel
             // 
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Location = new System.Drawing.Point(420, 275);
+            this.buttonCancel.Location = new System.Drawing.Point(420, 254);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(59, 23);
             this.buttonCancel.TabIndex = 2;
@@ -172,7 +174,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(467, 257);
+            this.tabControl1.Size = new System.Drawing.Size(467, 236);
             this.tabControl1.TabIndex = 6;
             // 
             // tabPage1
@@ -183,7 +185,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(459, 231);
+            this.tabPage1.Size = new System.Drawing.Size(459, 210);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "General";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -225,7 +227,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(459, 231);
+            this.tabPage2.Size = new System.Drawing.Size(459, 210);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Ignore List";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -247,7 +249,7 @@
             this.listView1.ContextMenuStrip = this.contextMenuStrip1;
             this.listView1.Location = new System.Drawing.Point(6, 22);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(447, 206);
+            this.listView1.Size = new System.Drawing.Size(447, 182);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -284,13 +286,23 @@
             this.removeEntryToolStripMenuItem.Text = "Remove Entry";
             this.removeEntryToolStripMenuItem.Click += new System.EventHandler(this.removeEntryToolStripMenuItem_Click);
             // 
+            // checkBoxAutoUpdate
+            // 
+            this.checkBoxAutoUpdate.AutoSize = true;
+            this.checkBoxAutoUpdate.Location = new System.Drawing.Point(10, 65);
+            this.checkBoxAutoUpdate.Name = "checkBoxAutoUpdate";
+            this.checkBoxAutoUpdate.Size = new System.Drawing.Size(177, 17);
+            this.checkBoxAutoUpdate.TabIndex = 10;
+            this.checkBoxAutoUpdate.Text = "Check for updates automatically";
+            this.checkBoxAutoUpdate.UseVisualStyleBackColor = true;
+            // 
             // Options
             // 
             this.AcceptButton = this.buttonOK;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(488, 310);
+            this.ClientSize = new System.Drawing.Size(488, 286);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.buttonOK);
             this.Controls.Add(this.buttonCancel);
@@ -344,5 +356,6 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox textBoxLogFolder;
         private System.Windows.Forms.Button buttonBrowse2;
+        private System.Windows.Forms.CheckBox checkBoxAutoUpdate;
     }
 }

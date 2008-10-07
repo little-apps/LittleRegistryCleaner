@@ -42,6 +42,7 @@ namespace Little_Registry_Cleaner
             this.checkBoxRescan.Checked = Properties.Settings.Default.bOptionsRescan;
             this.checkBoxLog.Checked = Properties.Settings.Default.bOptionsLog;
             this.checkBoxRestore.Checked = Properties.Settings.Default.bOptionsRestore;
+            this.checkBoxAutoUpdate.Checked = Properties.Settings.Default.bOptionsAutoUpdate;
 
             // Load backup directorys
             this.textBoxBackupFolder.Text = Properties.Settings.Default.strOptionsBackupDir;
@@ -72,6 +73,7 @@ namespace Little_Registry_Cleaner
             Properties.Settings.Default.bOptionsDelBackup = this.checkBoxDeleteBackup.Checked;
             Properties.Settings.Default.bOptionsLog = this.checkBoxLog.Checked;
             Properties.Settings.Default.bOptionsRestore = this.checkBoxRestore.Checked;
+            Properties.Settings.Default.bOptionsAutoUpdate = this.checkBoxAutoUpdate.Checked;
 
             if (!string.IsNullOrEmpty(this.textBoxBackupFolder.Text))
                 Properties.Settings.Default.strOptionsBackupDir = this.textBoxBackupFolder.Text;

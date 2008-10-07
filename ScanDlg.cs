@@ -38,16 +38,18 @@ namespace Little_Registry_Cleaner
         public delegate void UpdateListViewHandler(string strProblem, string strData, string strValue);
         public event UpdateListViewHandler UpdateListView;
 
-        private delegate void StoreInvalidKeyDelegate(string strProblem, string strPath, string strValueName);
-        private delegate void StoreInvalidSubKeyDelegate(string strProblem, string strPath);
-        private delegate void UpdateScanSubKeyDelgate(string strSubKey);
-        private delegate void UpdateSectionDelegate(string strSection);
+        public delegate void StoreInvalidKeyDelegate(string strProblem, string strPath, string strValueName);
+        public delegate void StoreInvalidSubKeyDelegate(string strProblem, string strPath);
+
+        public delegate void UpdateScanSubKeyDelgate(string strSubKey);
+        public delegate void UpdateSectionDelegate(string strSection);
 
         [DllImport("shell32.dll", EntryPoint = "FindExecutable")]
         public static extern long FindExecutableA(string lpFile, string lpDirectory, StringBuilder lpResult);
 
         private Logger loggerScan;
         private Thread threadMain;
+        private Thread threadCurrent;
 
         private int SectionCount = 0;
         private int ItemsScanned = 0;
@@ -100,9 +102,9 @@ namespace Little_Registry_Cleaner
                     this.loggerScan.WriteLine("Checking for invalid startup entries");
                     this.UpdateSection("Startup entries");
 
-                    Thread threadStartUp = new Thread(new ThreadStart(delegate { new StartUp(this); }));
-                    threadStartUp.Start();
-                    threadStartUp.Join();
+                    this.threadCurrent = new Thread(new ThreadStart(delegate { new StartUp(this); }));
+                    this.threadCurrent.Start();
+                    this.threadCurrent.Join();
 
                     this.progressBar1.PerformStep();
                 }
@@ -112,9 +114,9 @@ namespace Little_Registry_Cleaner
                     this.loggerScan.WriteLine("Checking for invalid DLL entries");
                     this.UpdateSection("Shared DLLs");
 
-                    Thread threadDlls = new Thread(new ThreadStart(delegate { new DLLs(this); }));
-                    threadDlls.Start();
-                    threadDlls.Join();
+                    this.threadCurrent = new Thread(new ThreadStart(delegate { new DLLs(this); }));
+                    this.threadCurrent.Start();
+                    this.threadCurrent.Join();
 
                     this.progressBar1.PerformStep();
                 }
@@ -124,9 +126,9 @@ namespace Little_Registry_Cleaner
                     this.loggerScan.WriteLine("Checking for invalid font references");
                     this.UpdateSection("Windows Fonts");
 
-                    Thread threadFonts = new Thread(new ThreadStart(delegate { new Fonts(this); }));
-                    threadFonts.Start();
-                    threadFonts.Join();
+                    this.threadCurrent = new Thread(new ThreadStart(delegate { new Fonts(this); }));
+                    this.threadCurrent.Start();
+                    this.threadCurrent.Join();
 
                     this.progressBar1.PerformStep();
                 }
@@ -136,9 +138,9 @@ namespace Little_Registry_Cleaner
                     this.loggerScan.WriteLine("Checking for invalid application info");
                     this.UpdateSection("Application info");
 
-                    Thread threadAppInfo = new Thread(new ThreadStart(delegate { new AppInfo(this); }));
-                    threadAppInfo.Start();
-                    threadAppInfo.Join();
+                    this.threadCurrent = new Thread(new ThreadStart(delegate { new AppInfo(this); }));
+                    this.threadCurrent.Start();
+                    this.threadCurrent.Join();
 
                     this.progressBar1.PerformStep();
                 }
@@ -148,9 +150,9 @@ namespace Little_Registry_Cleaner
                     this.loggerScan.WriteLine("Checking for invalid application paths");
                     this.UpdateSection("Program Locations");
 
-                    Thread threadAppPaths = new Thread(new ThreadStart(delegate { new AppPaths(this); }));
-                    threadAppPaths.Start();
-                    threadAppPaths.Join();
+                    this.threadCurrent = new Thread(new ThreadStart(delegate { new AppPaths(this); }));
+                    this.threadCurrent.Start();
+                    this.threadCurrent.Join();
 
                     this.progressBar1.PerformStep();
                 }
@@ -160,9 +162,9 @@ namespace Little_Registry_Cleaner
                     this.loggerScan.WriteLine("Checking for invalid ActiveX/COM objects");
                     this.UpdateSection("ActiveX/COM objects");
 
-                    Thread threadCOM = new Thread(new ThreadStart(delegate { new COMObjects(this); }));
-                    threadCOM.Start();
-                    threadCOM.Join();
+                    this.threadCurrent = new Thread(new ThreadStart(delegate { new COMObjects(this); }));
+                    this.threadCurrent.Start();
+                    this.threadCurrent.Join();
 
                     this.progressBar1.PerformStep();
                 }
@@ -172,9 +174,9 @@ namespace Little_Registry_Cleaner
                     this.loggerScan.WriteLine("Checking for invalid driver entries");
                     this.UpdateSection("Drivers");
 
-                    Thread threadDrivers = new Thread(new ThreadStart(delegate { new Drivers(this); }));
-                    threadDrivers.Start();
-                    threadDrivers.Join();
+                    this.threadCurrent = new Thread(new ThreadStart(delegate { new Drivers(this); }));
+                    this.threadCurrent.Start();
+                    this.threadCurrent.Join();
 
                     this.progressBar1.PerformStep();
                 }
@@ -184,9 +186,9 @@ namespace Little_Registry_Cleaner
                     this.loggerScan.WriteLine("Checking for invalid help files");
                     this.UpdateSection("Help files");
 
-                    Thread threadHelpFiles = new Thread(new ThreadStart(delegate { new HelpFiles(this); }));
-                    threadHelpFiles.Start();
-                    threadHelpFiles.Join();
+                    this.threadCurrent = new Thread(new ThreadStart(delegate { new HelpFiles(this); }));
+                    this.threadCurrent.Start();
+                    this.threadCurrent.Join();
 
                     this.progressBar1.PerformStep();
                 }
@@ -208,9 +210,9 @@ namespace Little_Registry_Cleaner
                     this.loggerScan.WriteLine("Checking for missing software settings");
                     this.UpdateSection("Software settings");
 
-                    Thread threadAppSettings = new Thread(new ThreadStart(delegate { new AppSettings(this); }));
-                    threadAppSettings.Start();
-                    threadAppSettings.Join();
+                    this.threadCurrent = new Thread(new ThreadStart(delegate { new AppSettings(this); }));
+                    this.threadCurrent.Start();
+                    this.threadCurrent.Join();
 
                     this.progressBar1.PerformStep();
                 }
@@ -221,9 +223,9 @@ namespace Little_Registry_Cleaner
                     this.loggerScan.WriteLine("Checking for missing recent documents links");
                     this.UpdateSection("History List");
 
-                    Thread threadHistoryList = new Thread(new ThreadStart(delegate { new HistoryList(this); }));
-                    threadHistoryList.Start();
-                    threadHistoryList.Join();
+                    this.threadCurrent = new Thread(new ThreadStart(delegate { new HistoryList(this); }));
+                    this.threadCurrent.Start();
+                    this.threadCurrent.Join();
                 }
 
                 this.progressBar1.PerformStep();
@@ -234,6 +236,8 @@ namespace Little_Registry_Cleaner
             {
                 // Scanning was aborted
                 this.loggerScan.WriteLine("User aborted scan... Exiting.");
+                if (this.threadCurrent.IsAlive)
+                    threadCurrent.Abort();
                 this.DialogResult = DialogResult.Abort;
             }
             finally
@@ -245,6 +249,11 @@ namespace Little_Registry_Cleaner
             }
 
             return;
+        }
+
+        private void StartScanner(Delegate obj) 
+        {
+            
         }
 
         /// <summary>
@@ -320,8 +329,16 @@ namespace Little_Registry_Cleaner
         {
             if (this.InvokeRequired)
             {
-                this.Invoke(new StoreInvalidKeyDelegate(StoreInvalidKey), new string[] { strProblem, strPath, strValueName });
-                return;
+                try
+                {
+                    this.Invoke(new StoreInvalidKeyDelegate(StoreInvalidKey), new string[] { strProblem, strPath, strValueName });
+                    return;
+                }
+                catch (ObjectDisposedException ex)
+                {
+                    System.Diagnostics.Debug.WriteLine(ex.Message);
+                    return;
+                }
             }
 
             // Check if it exists and isnt on ignore list
@@ -347,7 +364,15 @@ namespace Little_Registry_Cleaner
         {
             if (this.InvokeRequired)
             {
-                this.Invoke(new StoreInvalidSubKeyDelegate(StoreInvalidSubKey), new string[] { strProblem, strPath });
+                try
+                {
+                    this.Invoke(new StoreInvalidSubKeyDelegate(StoreInvalidSubKey), new string[] { strProblem, strPath });
+                }
+                catch (ObjectDisposedException ex)
+                {
+                    System.Diagnostics.Debug.WriteLine(ex.Message);
+                }
+
                 return;
             }
 

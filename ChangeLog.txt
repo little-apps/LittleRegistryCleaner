@@ -16,10 +16,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 - TODO: Add more sections
 - TODO: Change look of results
-- TODO: Add update function when program starts
 - TODO: Check more keys for ActiveX/COM from http://msdn.microsoft.com/en-us/library/ms690440(VS.85).aspx
 - TODO: Rebuild MRU List after keys are removed
-
+- TODO: Store bad registry keys in array list
 
 - Dialogs are opened with main dialog as owner
 - Added Drivers Section
@@ -143,3 +142,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Deletes subkey tree from base key instead of deleting it from the parent subkey
 - Added help menu items that redirect to launchpad project
 - Added History List scanner to scan "Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RecentDocs"
+- Tries to catch ObjectDisposedException when storing registry keys
+- Stops current thread immediatley when scanning is stopped
+- Checks for update when program starts
+
++ Version 0.7 Released

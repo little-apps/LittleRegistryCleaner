@@ -217,6 +217,15 @@ namespace Little_Registry_Cleaner
         {
             // Expand all sections
             this.treeView1.Nodes[0].ExpandAll();
+
+            // See if we have the current version
+            if (Properties.Settings.Default.bOptionsAutoUpdate)
+            {
+                string strVersion = "", strChangeLogURL = "", strDownloadURL = "";
+                if (UpdateDlg.FindUpdate(ref strVersion, ref strChangeLogURL, ref strDownloadURL))
+                    if (MessageBox.Show(this, "A newer version is available. Would you like to download it?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                        Process.Start(strDownloadURL);
+            }
         }
 
         private void toolStripButtonRestore_Click(object sender, EventArgs e)

@@ -36,15 +36,16 @@ namespace Little_Registry_Cleaner.Scanners
         /// </summary>
         public AppInfo(ScanDlg frmScanDlg)
         {
-            RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall");
-
-            if (regKey == null)
-                return;
-
-            foreach (string strProgName in regKey.GetSubKeyNames())
+            try
             {
-                try
+                RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall");
+
+                if (regKey == null)
+                    return;
+
+                foreach (string strProgName in regKey.GetSubKeyNames())
                 {
+
                     RegistryKey regKey2 = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\" + strProgName);
 
                     frmScanDlg.UpdateScanSubKey(regKey2.ToString());
@@ -101,15 +102,15 @@ namespace Little_Registry_Cleaner.Scanners
                             continue;
                         }
                     }
-                }
-                catch (System.Security.SecurityException ex)
-                { 
-                    System.Diagnostics.Debug.WriteLine(ex.Message);
-                }
-            }
 
-            regKey.Close();
-            return;
+                }
+
+                regKey.Close();
+            }
+            catch (System.Security.SecurityException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
         }
     }
 }
