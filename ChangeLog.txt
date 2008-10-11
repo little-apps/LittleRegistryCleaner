@@ -19,6 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - TODO: Check more keys for ActiveX/COM from http://msdn.microsoft.com/en-us/library/ms690440(VS.85).aspx
 - TODO: Rebuild MRU List after keys are removed
 - TODO: Store bad registry keys in array list
+- TODO: Fix saveAsXml() to only store needed subkeys
 
 - Dialogs are opened with main dialog as owner
 - Added Drivers Section
@@ -147,3 +148,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Checks for update when program starts
 
 + Version 0.7 Released
+
+- Fixed FILETIME compile warnings
+- Corrected bad registry paths in AppInfo.cs
+- Uses array to pass bad registry keys instead of just using the ListView

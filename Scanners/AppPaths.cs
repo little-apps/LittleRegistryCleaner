@@ -41,7 +41,6 @@ namespace Little_Registry_Cleaner.Scanners
 
                 foreach (string strSubKey in regKey.GetSubKeyNames())
                 {
-
                     RegistryKey regKey2 = regKey.OpenSubKey(strSubKey);
 
                     if (regKey2 == null)
@@ -73,7 +72,7 @@ namespace Little_Registry_Cleaner.Scanners
 
                     // Check if file exists
                     if (!File.Exists(strAppPath))
-                        frm.StoreInvalidKey("Invalid file or folder", regKey2.Name, "(default)");
+                        ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "(default)");
                 }
 
                 regKey.Close();

@@ -97,6 +97,7 @@ namespace Little_Registry_Cleaner
 
             // Clear old results
             this.listResults.Items.Clear();
+            ScanDlg.arrBadRegistryKeys.Clear();
 
             // Get number of sections to scan
             for (int i = 0; i < this.treeView1.Nodes[0].Nodes.Count; i++)
@@ -111,41 +112,36 @@ namespace Little_Registry_Cleaner
 
             // Open Scan dialog
             ScanDlg frmScanBox = new ScanDlg(nSectionCount);
-            frmScanBox.UpdateListView += new ScanDlg.UpdateListViewHandler(frmScanBox_UpdateListView);
-            if (frmScanBox.ShowDialog(this) == DialogResult.OK)
+            frmScanBox.ShowDialog(this);
+
+            // See if there are any bad registry keys
+            if (ScanDlg.arrBadRegistryKeys.Count > 0)
             {
+                foreach (ScanDlg.BadRegistryKey p in ScanDlg.arrBadRegistryKeys)
+                {
+                    ListViewItem listViewItem = new ListViewItem();
+
+                    listViewItem.Checked = true;
+
+                    listViewItem.Text = p.strProblem;
+                    listViewItem.SubItems.Add(p.strMainKey + "\\" + p.strSubKey);
+                    listViewItem.SubItems.Add(p.strValueName);
+
+                    this.listResults.Items.Add(listViewItem);
+                }
+
+                this.listResults.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+
                 // Notify user using notify icon
                 this.notifyIcon1.BalloonTipTitle = Application.ProductName;
                 this.notifyIcon1.BalloonTipText = string.Format("Found {0} Problems", this.listResults.Items.Count);
                 this.notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
                 this.notifyIcon1.ShowBalloonTip(5000);
-            }
 
-            // Enable menu items
-            if (this.listResults.Items.Count > 0)
-            {
+                // Enable menu items
                 this.fixToolStripMenuItem.Enabled = true;
                 this.toolStripButtonFix.Enabled = true;
             }
-        }
-
-        void frmScanBox_UpdateListView(string strProblem, string strData, string strValue)
-        {
-            // Add data to listview
-            ListViewItem listViewItem = new ListViewItem();
-
-            listViewItem.Text = strProblem;
-            listViewItem.SubItems.Add(strData);
-
-            if (!string.IsNullOrEmpty(strValue))
-                listViewItem.SubItems.Add(strValue);
-
-            listViewItem.Checked = true;
-
-            this.listResults.Items.Add(listViewItem);
-
-            // Resize columns to fit data
-            this.listResults.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }
         
         /// <summary>
@@ -162,8 +158,23 @@ namespace Little_Registry_Cleaner
                     // Generate filename to backup registry
                     string strBackupFile = string.Format("{0}\\{1:yyyy}_{1:MM}_{1:dd}_{1:HH}{1:mm}{1:ss}.xml", Properties.Settings.Default.strOptionsBackupDir, DateTime.Now);
 
+                    ArrayList arrBadRegKeys = new ArrayList();
+
+                    foreach (ListViewItem listViewItem in this.listResults.Items)
+                    {
+                        if (listViewItem.Checked)
+                        {
+                            ScanDlg.BadRegistryKey obj = new ScanDlg.BadRegistryKey();
+
+                            obj.strProblem = listViewItem.SubItems[0].Text;
+                            obj.strRegPath = listViewItem.SubItems[1].Text;
+                            obj.strValueName = listViewItem.SubItems[2].Text;
+                            arrBadRegKeys.Add(obj);
+                        }
+                    }
+
                     // Generate a restore file and delete keys & values
-                    xmlReg.deleteAsXml(this.listResults, strBackupFile);
+                    xmlReg.deleteAsXml(arrBadRegKeys, strBackupFile);
 
                     // Disable menu items
                     this.fixToolStripMenuItem.Enabled = false;
@@ -173,6 +184,7 @@ namespace Little_Registry_Cleaner
 
                     // Clear old results
                     this.listResults.Items.Clear();
+                    ScanDlg.arrBadRegistryKeys.Clear();
 
                     // Scan again
                     if (Properties.Settings.Default.bOptionsRescan)

@@ -57,7 +57,7 @@ namespace Little_Registry_Cleaner.Scanners
                     string strDriverPath = string.Format("{0}\\{1}", Environment.SystemDirectory, strValue);
 
                     if (!File.Exists(strDriverPath))
-                        frm.StoreInvalidKey("Invalid file or folder", regKey.Name, strDriverName);
+                        ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strDriverName);
                 }
 
                 regKey.Close();

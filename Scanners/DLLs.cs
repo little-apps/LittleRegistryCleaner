@@ -47,7 +47,7 @@ namespace Little_Registry_Cleaner.Scanners
                 {
                     if (!string.IsNullOrEmpty(strFilePath))
                         if (!File.Exists(strFilePath))
-                            frm.StoreInvalidKey("Invalid file or folder", regKey.Name, strFilePath);
+                            ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strFilePath);
                 }
 
                 regKey.Close();

@@ -66,7 +66,7 @@ namespace Little_Registry_Cleaner.Scanners
                     continue;
 
                 else
-                    frmScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strHelpFile);
+                    ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.ToString(), strHelpFile);
             }
 
             return;

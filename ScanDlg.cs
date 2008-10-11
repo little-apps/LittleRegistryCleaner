@@ -17,6 +17,7 @@
 */
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,12 +36,6 @@ namespace Little_Registry_Cleaner
 {
     public partial class ScanDlg : Form
     {
-        public delegate void UpdateListViewHandler(string strProblem, string strData, string strValue);
-        public event UpdateListViewHandler UpdateListView;
-
-        public delegate void StoreInvalidKeyDelegate(string strProblem, string strPath, string strValueName);
-        public delegate void StoreInvalidSubKeyDelegate(string strProblem, string strPath);
-
         public delegate void UpdateScanSubKeyDelgate(string strSubKey);
         public delegate void UpdateSectionDelegate(string strSection);
 
@@ -48,11 +43,64 @@ namespace Little_Registry_Cleaner
         public static extern long FindExecutableA(string lpFile, string lpDirectory, StringBuilder lpResult);
 
         private Logger loggerScan;
+
         private Thread threadMain;
         private Thread threadCurrent;
 
         private int SectionCount = 0;
         private int ItemsScanned = 0;
+
+        public struct BadRegistryKey
+        {
+            public string strProblem;
+
+            /// <summary>
+            /// <see cref="Use strRegPath instead"/>
+            /// </summary>
+            public string strMainKey;
+            /// <summary>
+            /// <see cref="Use strRegPath instead"/>
+            /// </summary>
+            public string strSubKey;
+            public string strValueName;
+
+            /// <summary>
+            /// Gets/Sets the registry path
+            /// </summary>
+            public string strRegPath
+            {
+                get
+                {
+                    if (!string.IsNullOrEmpty(strMainKey) && !string.IsNullOrEmpty(strSubKey))
+                        return string.Format("{0}\\{1}", strMainKey, strSubKey);
+                    else if (!string.IsNullOrEmpty(strMainKey))
+                        return strMainKey;
+                    else
+                        return string.Empty;
+                }
+                set
+                {
+                    string strPath = value;
+
+                    if (strPath.Length == 0)
+                        return;
+
+                    int nSlash = strPath.IndexOf("\\");
+                    if (nSlash > -1)
+                    {
+                        strMainKey = strPath.Substring(0, nSlash);
+                        strSubKey = strPath.Substring(nSlash + 1);
+                    }
+                    else
+                    {
+                        strMainKey = strPath;
+                        strSubKey = "";
+                    }
+                }
+            }
+        }
+
+        public static ArrayList arrBadRegistryKeys = new ArrayList();
 
         public ScanDlg(int nSectionCount)
         {
@@ -79,7 +127,12 @@ namespace Little_Registry_Cleaner
         private void StartScanning()
         {
             // Create log file
-            this.loggerScan = new Logger();
+            string strLogFile = string.Format("{0}\\{1:yyyy}_{1:MM}_{1:dd}_{1:HH}{1:mm}{1:ss}.txt", Little_Registry_Cleaner.Properties.Settings.Default.strOptionsLogDir, DateTime.Now);
+
+            if (!Directory.Exists(Little_Registry_Cleaner.Properties.Settings.Default.strOptionsLogDir))
+                Directory.CreateDirectory(Little_Registry_Cleaner.Properties.Settings.Default.strOptionsLogDir);
+
+            this.loggerScan = new Logger(strLogFile);
 
             this.progressBar1.Step = 1;
             this.progressBar1.Maximum = this.SectionCount;
@@ -237,7 +290,7 @@ namespace Little_Registry_Cleaner
                 // Scanning was aborted
                 this.loggerScan.WriteLine("User aborted scan... Exiting.");
                 if (this.threadCurrent.IsAlive)
-                    threadCurrent.Abort();
+                    this.threadCurrent.Abort();
                 this.DialogResult = DialogResult.Abort;
             }
             finally
@@ -251,11 +304,6 @@ namespace Little_Registry_Cleaner
             return;
         }
 
-        private void StartScanner(Delegate obj) 
-        {
-            
-        }
-
         /// <summary>
         /// Creates a restore point on the computer
         /// </summary>
@@ -264,7 +312,6 @@ namespace Little_Registry_Cleaner
             bool bServiceFound = false;
 
             // See if System Restore is enabled
-
             foreach (ServiceController sc in ServiceController.GetServices())
             {
                 if (sc.ServiceName.CompareTo("srservice") == 0)
@@ -319,74 +366,43 @@ namespace Little_Registry_Cleaner
         }
 
         /// <summary>
-        /// Store an invalid registry key with information
+        /// Stores an invalid registry key to array list
         /// </summary>
-        /// <param name="strProblem">The reason its invalid</param>
-        /// <param name="strPath">The registry sub key</param>
-        /// <param name="strValueName">The registry value name (cannot be blank)</param>
-        /// <returns>True on success</returns>
-        public void StoreInvalidKey(string strProblem, string strPath, string strValueName)
+        /// <param name="strProblem">Reason its invalid</param>
+        /// <param name="strPath">The path to registry key (including registry hive)</param>
+        /// <returns>True if it was added</returns>
+        public static bool StoreInvalidKey(string strProblem, string strPath)
         {
-            if (this.InvokeRequired)
-            {
-                try
-                {
-                    this.Invoke(new StoreInvalidKeyDelegate(StoreInvalidKey), new string[] { strProblem, strPath, strValueName });
-                    return;
-                }
-                catch (ObjectDisposedException ex)
-                {
-                    System.Diagnostics.Debug.WriteLine(ex.Message);
-                    return;
-                }
-            }
-
-            // Check if it exists and isnt on ignore list
-            if (xmlRegistry.keyExists(strPath) && !IsOnIgnoreList(strPath))
-            {
-                // Write to listview
-                UpdateListView(strProblem, strPath, strValueName);
-
-                // Write to log
-                this.loggerScan.WriteLine("Found invalid registry key. Key Name: \"" + strValueName + "\" Path: \"" + strPath + "\" Reason: \"" + strProblem + "\"");
-            }
-
-            return;
+            return StoreInvalidKey(strProblem, strPath, "");
         }
 
         /// <summary>
-        /// Store an invalid registry sub key with information
+        /// Stores an invalid registry key to array list
         /// </summary>
-        /// <param name="strProblem">The reason its invalid</param>
-        /// <param name="strPath">The registry sub key</param>
-        /// <returns>True on success</returns>
-        public void StoreInvalidSubKey(string strProblem, string strPath)
+        /// <param name="strProblem">Reason its invalid</param>
+        /// <param name="strPath">The path to registry key (including registry hive)</param>
+        /// <param name="strValueName">Value name (leave blank if theres none)</param>
+        /// <returns>True if it was added</returns>
+        public static bool StoreInvalidKey(string strProblem, string strPath, string strValueName)
         {
-            if (this.InvokeRequired)
-            {
-                try
-                {
-                    this.Invoke(new StoreInvalidSubKeyDelegate(StoreInvalidSubKey), new string[] { strProblem, strPath });
-                }
-                catch (ObjectDisposedException ex)
-                {
-                    System.Diagnostics.Debug.WriteLine(ex.Message);
-                }
+            BadRegistryKey p = new BadRegistryKey();
 
-                return;
+            // See if key exists
+            if (!xmlRegistry.keyExists(strPath))
+                return false;  
+
+            p.strProblem = strProblem;
+            p.strRegPath = strPath;
+            if (!string.IsNullOrEmpty(strValueName))
+                p.strValueName = strValueName;
+
+            if (arrBadRegistryKeys.Add((BadRegistryKey)p) > 0)
+            {
+                Logger.WriteToFile(Logger.strLogFilePath, "Found invalid registry key. Key Name: \"" + strValueName + "\" Path: \"" + strPath + "\" Reason: \"" + strProblem + "\"");
+                return true;
             }
 
-            // Check if it exists and isnt on ignore list
-            if (xmlRegistry.keyExists(strPath) && !IsOnIgnoreList(strPath))
-            {
-                // Write to listview
-                UpdateListView(strProblem, strPath, "");
-
-                // Write to log
-                this.loggerScan.WriteLine("Found invalid registry sub key: \"" + strPath + "\" Reason: \"" + strProblem + "\"");
-            }
-
-            return;
+            return false;
         }
 
         /// <summary>
@@ -425,6 +441,7 @@ namespace Little_Registry_Cleaner
                 }
 
                 this.textBoxSubKey.Text = strSubKey;
+                this.ItemsScanned++;
             }
             catch
             {

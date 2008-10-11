@@ -64,7 +64,7 @@ namespace Little_Registry_Cleaner.Scanners
 
                             if (!string.IsNullOrEmpty(strSoundPath))
                                 if (!File.Exists(strSoundPath))
-                                    this.frmScanDlg.StoreInvalidKey("Invalid file or folder", rk2.Name, "(default)");
+                                    ScanDlg.StoreInvalidKey("Invalid file or folder", rk2.Name, "(default)");
                         }
 
                     }

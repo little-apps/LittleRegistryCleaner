@@ -28,28 +28,25 @@ namespace Little_Registry_Cleaner
 {
     public class Logger
     {
-        private string strLogFilePath = "";
+        /// <summary>
+        /// Contains the path to the current log file
+        /// </summary>
+        public static string strLogFilePath = "";
+
         private bool bEnabled = false;
 
-        public Logger()
+        public Logger(string strLogPath)
         {
-            string strLogPath = Little_Registry_Cleaner.Properties.Settings.Default.strOptionsLogDir;
-            string strTextFile = string.Format("{0}\\{1:yyyy}_{1:MM}_{1:dd}_{1:HH}{1:mm}{1:ss}.txt", strLogPath, DateTime.Now);
+            Logger.strLogFilePath = strLogPath;
 
             this.bEnabled = Properties.Settings.Default.bOptionsLog;
 
             if (this.bEnabled)
             {
-                this.strLogFilePath = strTextFile;
-
-                // Create directory if it doesnt exist
-                if (!Directory.Exists(strLogPath))
-                    Directory.CreateDirectory(strLogPath);
-
                 // Create log file
                 try
                 {
-                    using (StreamWriter stream = File.CreateText(this.strLogFilePath))
+                    using (StreamWriter stream = File.CreateText(Logger.strLogFilePath))
                     {
                         if (stream != null)
                         {
@@ -69,6 +66,8 @@ namespace Little_Registry_Cleaner
             }
         }
 
+        
+
         /// <summary>
         /// Writes scanning info to log file with the date + time
         /// </summary>
@@ -79,8 +78,9 @@ namespace Little_Registry_Cleaner
             {
                 try
                 {
-                    using (StreamWriter stream = File.AppendText(this.strLogFilePath))
-                        stream.WriteLine("{0}: {1}", DateTime.Now.ToLongTimeString(), strLine);
+                    using (StreamWriter stream = File.AppendText(Logger.strLogFilePath))
+                        if (stream != null)
+                            stream.WriteLine("{0}: {1}", DateTime.Now.ToLongTimeString(), strLine);
                 }
                 catch (Exception ex)
                 {
@@ -101,7 +101,8 @@ namespace Little_Registry_Cleaner
                 try
                 {
                     using (StreamWriter stream = File.AppendText(strLogFilePath))
-                        stream.WriteLine("{0}: {1}", DateTime.Now.ToLongTimeString(), strLine);
+                        if (stream != null)
+                            stream.WriteLine("{0}: {1}", DateTime.Now.ToLongTimeString(), strLine);
                 }
                 catch (Exception ex)
                 {

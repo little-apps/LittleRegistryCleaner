@@ -295,5 +295,14 @@ namespace Little_Registry_Cleaner.Properties {
                 this["bOptionsAutoUpdate"] = value;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://littlecleaner.sourceforge.net/update.xml")]
+        public string strUpdateURL {
+            get {
+                return ((string)(this["strUpdateURL"]));
+            }
+        }
     }
 }

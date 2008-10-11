@@ -54,7 +54,7 @@ namespace Little_Registry_Cleaner.Scanners
                 try
                 {
                     if (ParseAppSubKeys(baseRegKey.OpenSubKey(strSubKey)) == 0)
-                        frmScanDlg.StoreInvalidSubKey("The registry key doesn't contain any data", baseRegKey.Name + "\\" + strSubKey);
+                        ScanDlg.StoreInvalidKey("The registry key doesn't contain any data", baseRegKey.Name + "\\" + strSubKey);
                 }
                 catch (System.Security.SecurityException ex)
                 { 

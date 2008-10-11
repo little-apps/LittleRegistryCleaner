@@ -86,11 +86,11 @@ namespace Little_Registry_Cleaner.Xml
         [DllImport("advapi32.dll")]
         public static extern int RegCloseKey(int hKey);
         [DllImport("advapi32.dll", EntryPoint = "RegQueryInfoKey")]
-        public static extern int RegQueryInfoKeyA(int hKey, string lpClass, ref int lpcbClass, int lpReserved, ref int lpcSubKeys, ref int lpcbMaxSubKeyLen, ref int lpcbMaxClassLen, ref int lpcValues, ref int lpcbMaxValueNameLen, ref int lpcbMaxValueLen, ref int lpcbSecurityDescriptor, ref FILETIME lpftLastWriteTime);
+        public static extern int RegQueryInfoKeyA(int hKey, string lpClass, ref int lpcbClass, int lpReserved, ref int lpcSubKeys, ref int lpcbMaxSubKeyLen, ref int lpcbMaxClassLen, ref int lpcValues, ref int lpcbMaxValueNameLen, ref int lpcbMaxValueLen, ref int lpcbSecurityDescriptor, ref System.Runtime.InteropServices.ComTypes.FILETIME lpftLastWriteTime);
         [DllImport("advapi32.dll", EntryPoint = "RegEnumValue")]
         public static extern int RegEnumValueA(int hKey, int dwIndex, ref byte lpValueName, ref int lpcbValueName, int lpReserved, ref int lpType, ref byte lpData, ref int lpcbData);
         [DllImport("advapi32.dll", EntryPoint = "RegEnumKeyEx")]
-        public static extern int RegEnumKeyExA(int hKey, int dwIndex, ref byte lpName, ref int lpcbName, int lpReserved, string lpClass, ref int lpcbClass, ref FILETIME lpftLastWriteTime);
+        public static extern int RegEnumKeyExA(int hKey, int dwIndex, ref byte lpName, ref int lpcbName, int lpReserved, string lpClass, ref int lpcbClass, ref System.Runtime.InteropServices.ComTypes.FILETIME lpftLastWriteTime);
         [DllImport("advapi32.dll", EntryPoint = "RegSetValueEx")]
         public static extern int RegSetValueExA(int hKey, string lpSubKey, int reserved, int dwType, ref byte lpData, int cbData);
         [DllImport("advapi32.dll", EntryPoint = "RegDeleteValue")]
@@ -201,7 +201,7 @@ namespace Little_Registry_Cleaner.Xml
             int cchMaxValue = 0;          // longest value name 
             int cbMaxValueData = 0;       // longest value data 
             int cbSecurityDescriptor = 0; // size of security descriptor 
-            FILETIME ftLastWriteTime = new FILETIME();      // last write time 
+            System.Runtime.InteropServices.ComTypes.FILETIME ftLastWriteTime = new System.Runtime.InteropServices.ComTypes.FILETIME();      // last write time 
 
             int j;
             int retValue;
@@ -844,7 +844,7 @@ namespace Little_Registry_Cleaner.Xml
             int cchMaxValue = 0;          // longest value name 
             int cbMaxValueData = 0;       // longest value data 
             int cbSecurityDescriptor = 0; // size of security descriptor 
-            FILETIME ftLastWriteTime = new FILETIME();      // last write time 
+            System.Runtime.InteropServices.ComTypes.FILETIME ftLastWriteTime = new System.Runtime.InteropServices.ComTypes.FILETIME();  // last write time 
 
             int i;
             int retCode;
@@ -1263,57 +1263,34 @@ namespace Little_Registry_Cleaner.Xml
         }
 
         /// <summary>
-        /// Parses XML File and deletes keys and values
+        /// Creates XML File and deletes keys and values
         /// </summary>
-        /// <param name="r">XML Reader Class</param>
-        /// <param name="listView">Results list view</param>
-        /// <returns></returns>
-        public bool deleteAsXml(ListView listView, string strBackupFile)
+        /// <param name="arrBadRegistryKeys">Array containg bad registry keys</param>
+        /// <param name="strBackupFile">Path to XML backup file</param>
+        /// <returns>True if file was created</returns>
+        public bool deleteAsXml(ArrayList arrBadRegistryKeys, string strBackupFile)
         {
-            int i;
             xmlWriter w = new xmlWriter();
 
             // Write opening tags to Backup File
             if (!w.open(strBackupFile))
                 return false;
+
             xmlElement wroot = new xmlElement(xmlRegistry.XML_ROOT);
             wroot.write(w, 1, false, true);
 
-            for (i = 0; i < listView.Items.Count; i++)
+            foreach (ScanDlg.BadRegistryKey p in arrBadRegistryKeys)
             {
-                if (listView.Items[i].Checked)
-                {
-                    string strValueName = string.Empty;
+                if (keyExists(p.strRegPath))
+                    this.saveAsXml(w, false, p.strRegPath, p.strValueName, p.strProblem);
 
-                    string strProblem = listView.Items[i].SubItems[0].Text;
-                    string strKey = listView.Items[i].SubItems[1].Text;
-                    if (listView.Items[i].SubItems.Count > 2)
-                        strValueName = listView.Items[i].SubItems[2].Text;
-
-                    if (xmlRegistry.keyExists(strKey))
-                        this.saveAsXml(w, false, strKey, strValueName, strProblem);
-                } 
+                // Remove problem from registry
+                deleteRegistryKey(p.strMainKey, p.strSubKey, p.strValueName);
             }
 
             // Write Closing Tag to Backup File
             wroot.writeClosingTag(w, -1, false, true);
             w.close();
-
-            // Remove problems from registry
-            for (i = 0; i < listView.Items.Count; i++)
-            {
-                if (listView.Items[i].Checked)
-                {
-                    string strValueName = string.Empty;
-
-                    string strProblem = listView.Items[i].SubItems[0].Text;
-                    string strKey = listView.Items[i].SubItems[1].Text;
-                    if (listView.Items[i].SubItems.Count > 2)
-                        strValueName = listView.Items[i].SubItems[2].Text;
-
-                    deleteRegistryKey(strKey.Substring(0, strKey.IndexOf('\\')), strKey.Substring(strKey.IndexOf('\\') + 1), strValueName);
-                }
-            }
 
             return true;
         }

@@ -69,7 +69,7 @@ namespace Little_Registry_Cleaner
         {
             try
             {
-                XmlReader xmlReader = XmlTextReader.Create("http://littlecleaner.sourceforge.net/update.xml");
+                XmlReader xmlReader = XmlTextReader.Create(Properties.Settings.Default.strUpdateURL);
 
                 while (xmlReader.Read())
                 {

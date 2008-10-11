@@ -85,10 +85,10 @@ namespace Little_Registry_Cleaner.Scanners
                                 string strIconPath = strDisplayIcon.Substring(0, strDisplayIcon.LastIndexOf(','));
 
                                 if (!File.Exists(strIconPath))
-                                    frmScanDlg.StoreInvalidKey("Invalid file or folder", "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\" + strProgName, "DisplayIcon");
+                                    ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "DisplayIcon");
                             }
                             else if (!File.Exists(strDisplayIcon))
-                                frmScanDlg.StoreInvalidKey("Invalid file or folder", "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\" + strProgName, "DisplayIcon");
+                                ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "DisplayIcon");
                         }
                     }
 
@@ -98,7 +98,7 @@ namespace Little_Registry_Cleaner.Scanners
                     {
                         if (!Directory.Exists(strInstallLocation) && !File.Exists(strInstallLocation))
                         {
-                            frmScanDlg.StoreInvalidSubKey("Invalid file or folder", "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\" + strProgName);
+                            ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString());
                             continue;
                         }
                     }

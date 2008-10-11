@@ -66,7 +66,7 @@ namespace Little_Registry_Cleaner.Scanners
                 string strFontPath = String.Format("{0}\\{1}", strPath.ToString(), strValue);
 
                 if (!File.Exists(strFontPath))
-                    frm.StoreInvalidKey("Invalid file or folder", regKey.ToString(), strFontName);
+                    ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.ToString(), strFontName);
             }
         }
     }
