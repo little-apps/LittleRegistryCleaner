@@ -29,23 +29,12 @@ namespace Little_Registry_Cleaner.Scanners
 {
     public class StartUp
     {
-        [DllImport("kernel32.dll")]
-        public static extern int SearchPath(string strPath, string strFileName, string strExtension, uint nBufferLength, StringBuilder strBuffer, string strFilePart);
-
         private string mFlags;
         private string mCmd;
         private string mPath;
 
-        private ScanDlg frmScanDlg;
-
-        /// <summary>
-        /// Checks programs that run when windows starts up
-        /// </summary>
-        public StartUp(ScanDlg frm)
+        public StartUp()
         {
-            // Allow ScanDlg to be accessed globally
-            this.frmScanDlg = frm;
-
             try
             {
                 // all user keys
@@ -83,7 +72,7 @@ namespace Little_Registry_Cleaner.Scanners
             if (regKey == null)
                 return;
 
-            frmScanDlg.UpdateScanSubKey(regKey.ToString());
+            ScanDlg.UpdateScanSubKey(regKey.ToString());
 
             foreach (string strProgName in regKey.GetValueNames())
             {
@@ -96,21 +85,15 @@ namespace Little_Registry_Cleaner.Scanners
                 }
 
                 // See if file exists
-                if (FileExists(strRunPath))
+                if (Misc.FileExists(strRunPath))
                     continue;
 
                 // Extract path from file and remove parameters
-                if (ExtractRunPath(strRunPath))
-                {
-                    if (FileExists(this.mPath))
+                ExtractRunPath(strRunPath);
+
+                if (!string.IsNullOrEmpty(this.mPath))
+                    if (Misc.FileExists(this.mPath))
                         continue;
-                }
-                else
-                {
-                    if (!String.IsNullOrEmpty(this.mPath))
-                        if (FileExists(this.mPath))
-                            continue;
-                }
 
                 ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strProgName);
             }
@@ -199,39 +182,6 @@ namespace Little_Registry_Cleaner.Scanners
 
             return true;
         }
-
-        public static bool FileExists(string path)
-        {
-            string strPath = path.Trim();
-
-            try
-            {
-                if (File.Exists(strPath))
-                    return true;
-            }
-            catch (NotSupportedException)
-            {
-                // Path has invalid characters
-                return false;
-            }
-
-            if (SearchFilePath(strPath))
-                return true;
-
-            return false;
-        }
-
-        public static bool SearchFilePath(string strFilePath)
-        {
-            // Search for file in %path% variable
-            StringBuilder strBuffer = new StringBuilder(260);
-
-            if (SearchPath(null, strFilePath, null, 260, strBuffer, null) != 0)
-                return true;
-
-            return false;
-        }
-
         
     }
 }

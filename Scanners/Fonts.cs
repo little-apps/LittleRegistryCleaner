@@ -36,7 +36,7 @@ namespace Little_Registry_Cleaner.Scanners
         /// <summary>
         /// Finds invalid font references
         /// </summary>
-        public Fonts(ScanDlg frm)
+        public Fonts()
         {
             StringBuilder strPath = new StringBuilder(260);
 
@@ -48,7 +48,7 @@ namespace Little_Registry_Cleaner.Scanners
             if (!SHGetSpecialFolderPath(IntPtr.Zero, strPath, CSIDL_FONTS, false))
                 return;
 
-            frm.UpdateScanSubKey(regKey.ToString());
+            ScanDlg.UpdateScanSubKey(regKey.ToString());
 
             foreach (string strFontName in regKey.GetValueNames())
             {
@@ -59,7 +59,7 @@ namespace Little_Registry_Cleaner.Scanners
                     continue;
 
                 // Check value by itself
-                if (File.Exists(strValue))
+                if (Misc.FileExists(strValue))
                     continue;
 
                 // Check for font in fonts folder
@@ -68,6 +68,8 @@ namespace Little_Registry_Cleaner.Scanners
                 if (!File.Exists(strFontPath))
                     ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.ToString(), strFontName);
             }
+
+            regKey.Close();
         }
     }
 }

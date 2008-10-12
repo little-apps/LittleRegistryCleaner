@@ -23,7 +23,6 @@ using System.Text;
 using System.IO;
 using Microsoft.Win32;
 
-/* HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\SharedDLLs */
 namespace Little_Registry_Cleaner.Scanners
 {
     public class DLLs
@@ -31,7 +30,7 @@ namespace Little_Registry_Cleaner.Scanners
         /// <summary>
         /// Scan for missing links to DLLS
         /// </summary>
-        public DLLs(ScanDlg frm)
+        public DLLs()
         {
             try
             {
@@ -40,13 +39,13 @@ namespace Little_Registry_Cleaner.Scanners
                 if (regKey == null)
                     return;
 
-                frm.UpdateScanSubKey(regKey.ToString());
+                ScanDlg.UpdateScanSubKey(regKey.ToString());
 
                 // Validate Each DLL from the value names
                 foreach (string strFilePath in regKey.GetValueNames())
                 {
                     if (!string.IsNullOrEmpty(strFilePath))
-                        if (!File.Exists(strFilePath))
+                        if (!Misc.FileExists(strFilePath))
                             ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strFilePath);
                 }
 

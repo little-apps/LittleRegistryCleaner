@@ -27,16 +27,12 @@ namespace Little_Registry_Cleaner.Scanners
 {
     public class COMObjects
     {
-        private ScanDlg frmScanDlg;
-
+        
         /// <summary>
         /// Scans ActiveX/COM Objects
         /// </summary>
-        public COMObjects(ScanDlg frm)
+        public COMObjects()
         {
-            // Allow ScanDlg to be accessed globally
-            this.frmScanDlg = frm;
-
             // Scan all CLSID sub keys
             ScanCLSIDSubKey(Registry.ClassesRoot.OpenSubKey("CLSID"));
             ScanCLSIDSubKey(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Classes\\CLSID"));
@@ -71,48 +67,58 @@ namespace Little_Registry_Cleaner.Scanners
                     if (regKey2 == null)
                         continue;
 
-                    frmScanDlg.UpdateScanSubKey(regKey2.ToString());
+                    ScanDlg.UpdateScanSubKey(regKey2.ToString());
 
                     // Check for valid AppID
                     string strAppID = (string)regKey2.GetValue("AppID");
-
-                    if (!string.IsNullOrEmpty(strAppID))
-                        if (!AppIdExists(strAppID))
-                            ScanDlg.StoreInvalidKey("Missing AppID reference", regKey2.ToString(), "AppID");
+                    {
+                        if (!string.IsNullOrEmpty(strAppID))
+                            if (!AppIdExists(strAppID))
+                                ScanDlg.StoreInvalidKey("Missing AppID reference", regKey2.ToString(), "AppID");
+                    }
 
                     // See if DefaultIcon exists
-                    RegistryKey regKeyIcon = regKey2.OpenSubKey("DefaultIcon");
-
-                    if (regKeyIcon != null)
+                    using (RegistryKey regKeyIcon = regKey2.OpenSubKey("DefaultIcon"))
                     {
-                        string strDefaultIcon = (string)regKeyIcon.GetValue("");
+                        if (regKeyIcon != null)
+                        {
+                            string strDefaultIcon = (string)regKeyIcon.GetValue("");
 
-                        if (!string.IsNullOrEmpty(strDefaultIcon))
-                            if (!IconExists(strDefaultIcon))
-                                ScanDlg.StoreInvalidKey("Unable to find icon", regKeyIcon.ToString());
+                            if (!string.IsNullOrEmpty(strDefaultIcon))
+                                if (!Misc.IconExists(strDefaultIcon))
+                                    ScanDlg.StoreInvalidKey("Unable to find icon", regKeyIcon.ToString());
+
+                            regKeyIcon.Close();
+                        }
                     }
 
                     // Look for InprocServer files
-                    RegistryKey regKeyInprocSrvr = regKey2.OpenSubKey("InprocServer");
-
-                    if (regKeyInprocSrvr != null)
+                    using (RegistryKey regKeyInprocSrvr = regKey2.OpenSubKey("InprocServer"))
                     {
-                        string strInprocServer = (string)regKeyInprocSrvr.GetValue("");
+                        if (regKeyInprocSrvr != null)
+                        {
+                            string strInprocServer = (string)regKeyInprocSrvr.GetValue("");
 
-                        if (!string.IsNullOrEmpty(strInprocServer))
-                            if (!InprocServerExists(strInprocServer))
-                                ScanDlg.StoreInvalidKey("Unable to find InprocServer", regKeyInprocSrvr.ToString());
+                            if (!string.IsNullOrEmpty(strInprocServer))
+                                if (!Misc.FileExists(strInprocServer))
+                                    ScanDlg.StoreInvalidKey("Unable to find InprocServer", regKeyInprocSrvr.ToString());
+
+                            regKeyInprocSrvr.Close();
+                        }
                     }
 
-                    RegistryKey regKeyInprocSrvr32 = regKey2.OpenSubKey("InprocServer32");
-
-                    if (regKeyInprocSrvr32 != null)
+                    using (RegistryKey regKeyInprocSrvr32 = regKey2.OpenSubKey("InprocServer32"))
                     {
-                        string strInprocServer32 = (string)regKeyInprocSrvr32.GetValue("");
+                        if (regKeyInprocSrvr32 != null)
+                        {
+                            string strInprocServer32 = (string)regKeyInprocSrvr32.GetValue("");
 
-                        if (!string.IsNullOrEmpty(strInprocServer32))
-                            if (!InprocServerExists(strInprocServer32))
-                                ScanDlg.StoreInvalidKey("Unable to find InprocServer32", regKeyInprocSrvr32.ToString());
+                            if (!string.IsNullOrEmpty(strInprocServer32))
+                                if (!Misc.FileExists(strInprocServer32))
+                                    ScanDlg.StoreInvalidKey("Unable to find InprocServer32", regKeyInprocSrvr32.ToString());
+
+                            regKeyInprocSrvr32.Close();
+                        }
                     }
 
                 }
@@ -149,7 +155,7 @@ namespace Little_Registry_Cleaner.Scanners
                         continue;
 
                     // Update scan dialog
-                    frmScanDlg.UpdateScanSubKey(regKey2.ToString());
+                    ScanDlg.UpdateScanSubKey(regKey2.ToString());
 
                     // Find reference to ProgID
                     string strProgID = (string)regKey2.GetValue("");
@@ -185,7 +191,7 @@ namespace Little_Registry_Cleaner.Scanners
                         continue;
 
                     // Update scan dialog
-                    frmScanDlg.UpdateScanSubKey(regKey2.ToString());
+                    ScanDlg.UpdateScanSubKey(regKey2.ToString());
 
                     // Check for AppId CLSID
                     string strCLSID = (string)regKey2.GetValue("AppID");
@@ -221,7 +227,7 @@ namespace Little_Registry_Cleaner.Scanners
                     string strSubKey = regKey.ToString() + strBHOClsId;
 
                     // Update scan dialog
-                    frmScanDlg.UpdateScanSubKey(strSubKey);
+                    ScanDlg.UpdateScanSubKey(strSubKey);
 
                     // See if reference exists, Otherwise, remove it...
                     if (!CheckCLSIDReferences(strBHOClsId))
@@ -237,44 +243,10 @@ namespace Little_Registry_Cleaner.Scanners
         }
 
         /// <summary>
-        /// Parses the InprocServer32 path and see if it exists
+        /// Sees if the specified CLSID exists
         /// </summary>
-        /// <param name="strPath">The path of the file</param>
-        /// <returns>True if the file exists</returns>
-        private static bool InprocServerExists(string strPath)
-        {
-            string strBuffer = strPath.ToLower();
-
-            // Removes qoutes
-            if (strBuffer[0] == '"')
-            {
-                int iQouteLoc = 0, iQoutes = 1;
-                for (int i = 0; (i < strBuffer.Length) && (iQoutes <= 2); i++)
-                {
-                    if (strBuffer[i] == '"')
-                    {
-                        strBuffer = strBuffer.Remove(i, 1);
-                        iQouteLoc = i;
-                        iQoutes++;
-                    }
-                }
-
-                strBuffer = strBuffer.Substring(0, iQouteLoc);
-            }
-
-            // Expands environment variables
-            strBuffer = Environment.ExpandEnvironmentVariables(strBuffer);
-
-            // Check for file
-            if (File.Exists(strBuffer))
-                return true;
-
-            if (StartUp.SearchFilePath(strBuffer))
-                return true;
-
-            return false;
-        }
-
+        /// <param name="strGuid">The CLSID GUID</param>
+        /// <returns>True if it exists</returns>
         private static bool CheckCLSIDReferences(string strGuid)
         {
             try
@@ -296,6 +268,11 @@ namespace Little_Registry_Cleaner.Scanners
             return false;
         }
 
+        /// <summary>
+        /// Checks if the ProgID exists
+        /// </summary>
+        /// <param name="strProgID">The ProgID</param>
+        /// <returns>True if it exists</returns>
         private static bool CheckProgIDReferences(string strProgID)
         {
             try
@@ -317,6 +294,11 @@ namespace Little_Registry_Cleaner.Scanners
             return false;
         }
 
+        /// <summary>
+        /// Checks if the AppID exists
+        /// </summary>
+        /// <param name="strAppId">The AppID</param>
+        /// <returns>True if it exists</returns>
         private static bool AppIdExists(string strAppId)
         {
             try
@@ -334,45 +316,6 @@ namespace Little_Registry_Cleaner.Scanners
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
             }
-
-            return false;
-        }
-
-        private static bool IconExists(string strDefaultIcon)
-        {
-            string strIconPath = "";
-
-            // Remove quotes
-            if (strDefaultIcon[0] == '"')
-            {
-                int iQouteLoc = 0, iQoutes = 1;
-                for (int i = 0; (i < strDefaultIcon.Length) && (iQoutes <= 2); i++)
-                {
-                    if (strDefaultIcon[i] == '"')
-                    {
-                        strDefaultIcon = strDefaultIcon.Remove(i, 1);
-                        iQouteLoc = i;
-                        iQoutes++;
-                    }
-                }
-
-                strDefaultIcon = strDefaultIcon.Substring(0, iQouteLoc);
-            }
-
-            // Get icon path
-            if (strDefaultIcon.IndexOf(',') > 0)
-                strIconPath = strDefaultIcon.Substring(0, strDefaultIcon.IndexOf(','));
-            else
-                strIconPath = strDefaultIcon;
-
-            // Expand variables
-            strIconPath = Environment.ExpandEnvironmentVariables(strIconPath);
-
-            if (StartUp.SearchFilePath(strIconPath))
-                return true;
-
-            if (File.Exists(strIconPath))
-                return true;
 
             return false;
         }

@@ -35,7 +35,7 @@ namespace Little_Registry_Cleaner
         [STAThread]
         static void Main()
         {
-            bool bMutexCreated;
+            bool bMutexCreated = false;
             Mutex mutexMain = new Mutex(true, "Little Registry Cleaner", out bMutexCreated);
 
             // If mutex isnt available, show message and exit...

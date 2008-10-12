@@ -30,7 +30,7 @@ namespace Little_Registry_Cleaner.Scanners
         /// <summary>
         /// Scans for invalid references to fonts
         /// </summary>
-        public Drivers(ScanDlg frm)
+        public Drivers()
         {
             try
             {
@@ -39,24 +39,13 @@ namespace Little_Registry_Cleaner.Scanners
                 if (regKey == null)
                     return;
 
-                frm.UpdateScanSubKey(regKey.ToString());
+                ScanDlg.UpdateScanSubKey(regKey.ToString());
 
                 foreach (string strDriverName in regKey.GetValueNames())
                 {
                     string strValue = (string)regKey.GetValue(strDriverName);
 
-                    // Check if value is empty
-                    if (string.IsNullOrEmpty(strValue))
-                        continue;
-
-                    // check path by itself
-                    if (File.Exists(strValue))
-                        continue;
-
-                    // append path to %windir%\system32
-                    string strDriverPath = string.Format("{0}\\{1}", Environment.SystemDirectory, strValue);
-
-                    if (!File.Exists(strDriverPath))
+                    if (!Misc.FileExists(strValue))
                         ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strDriverName);
                 }
 

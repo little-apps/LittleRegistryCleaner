@@ -35,6 +35,19 @@ namespace Little_Registry_Cleaner
 {
     public partial class Main : Form
     {
+        // Sections to scan, these must be set to true
+        public static bool bScanActivex = true;
+        public static bool bScanStartup = true;
+        public static bool bScanFonts = true;
+        public static bool bScanAppInfo = true;
+        public static bool bScanDrivers = true;
+        public static bool bScanHelpFiles = true;
+        public static bool bScanSounds = true;
+        public static bool bScanAppPaths = true;
+        public static bool bScanAppSettings = true;
+        public static bool bScanSharedDLL = true;
+        public static bool bScanHistoryList = true;
+
         public Main()
         {
             InitializeComponent();
@@ -133,10 +146,7 @@ namespace Little_Registry_Cleaner
                 this.listResults.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
 
                 // Notify user using notify icon
-                this.notifyIcon1.BalloonTipTitle = Application.ProductName;
-                this.notifyIcon1.BalloonTipText = string.Format("Found {0} Problems", this.listResults.Items.Count);
-                this.notifyIcon1.BalloonTipIcon = ToolTipIcon.Info;
-                this.notifyIcon1.ShowBalloonTip(5000);
+                this.notifyIcon1.ShowBalloonTip(5000, Application.ProductName, string.Format("Found {0} Problems", this.listResults.Items.Count), ToolTipIcon.Info);
 
                 // Enable menu items
                 this.fixToolStripMenuItem.Enabled = true;
@@ -165,7 +175,6 @@ namespace Little_Registry_Cleaner
                         if (listViewItem.Checked)
                         {
                             ScanDlg.BadRegistryKey obj = new ScanDlg.BadRegistryKey();
-
                             obj.strProblem = listViewItem.SubItems[0].Text;
                             obj.strRegPath = listViewItem.SubItems[1].Text;
                             obj.strValueName = listViewItem.SubItems[2].Text;
@@ -253,17 +262,17 @@ namespace Little_Registry_Cleaner
                 for (int i = 0; i < e.Node.Nodes.Count; i++)
                     e.Node.Nodes[i].Checked = e.Node.Checked;
 
-                Properties.Settings.Default.bScanActivex = e.Node.Checked;
-                Properties.Settings.Default.bScanStartup = e.Node.Checked;
-                Properties.Settings.Default.bScanFonts = e.Node.Checked;
-                Properties.Settings.Default.bScanAppInfo = e.Node.Checked;
-                Properties.Settings.Default.bScanDrivers = e.Node.Checked;
-                Properties.Settings.Default.bScanHelpFiles = e.Node.Checked;
-                Properties.Settings.Default.bScanSounds = e.Node.Checked;
-                Properties.Settings.Default.bScanAppPaths = e.Node.Checked;
-                Properties.Settings.Default.bScanAppSettings = e.Node.Checked;
-                Properties.Settings.Default.bScanSharedDLL = e.Node.Checked;
-                Properties.Settings.Default.bScanHistoryList = e.Node.Checked;
+                Main.bScanActivex = e.Node.Checked;
+                Main.bScanStartup = e.Node.Checked;
+                Main.bScanFonts = e.Node.Checked;
+                Main.bScanAppInfo = e.Node.Checked;
+                Main.bScanDrivers = e.Node.Checked;
+                Main.bScanHelpFiles = e.Node.Checked;
+                Main.bScanSounds = e.Node.Checked;
+                Main.bScanAppPaths = e.Node.Checked;
+                Main.bScanAppSettings = e.Node.Checked;
+                Main.bScanSharedDLL = e.Node.Checked;
+                Main.bScanHistoryList = e.Node.Checked;
             }
             else
             {
@@ -279,27 +288,27 @@ namespace Little_Registry_Cleaner
             }
 
             if (e.Node.Name.CompareTo("NodeActiveX") == 0)
-                Properties.Settings.Default.bScanActivex = e.Node.Checked;
+                Main.bScanActivex = e.Node.Checked;
             else if (e.Node.Name.CompareTo("NodeStartup") == 0)
-                Properties.Settings.Default.bScanStartup = e.Node.Checked;
+                Main.bScanStartup = e.Node.Checked;
             else if (e.Node.Name.CompareTo("NodeFonts") == 0)
-                Properties.Settings.Default.bScanFonts = e.Node.Checked;
+                Main.bScanFonts = e.Node.Checked;
             else if (e.Node.Name.CompareTo("NodeAppInfo") == 0)
-                Properties.Settings.Default.bScanAppInfo = e.Node.Checked;
+                Main.bScanAppInfo = e.Node.Checked;
             else if (e.Node.Name.CompareTo("NodeDrivers") == 0)
-                Properties.Settings.Default.bScanDrivers = e.Node.Checked;
+                Main.bScanDrivers = e.Node.Checked;
             else if (e.Node.Name.CompareTo("NodeHelp") == 0)
-                Properties.Settings.Default.bScanHelpFiles = e.Node.Checked;
+                Main.bScanHelpFiles = e.Node.Checked;
             else if (e.Node.Name.CompareTo("NodeSounds") == 0)
-                Properties.Settings.Default.bScanSounds = e.Node.Checked;
+                Main.bScanSounds = e.Node.Checked;
             else if (e.Node.Name.CompareTo("NodeAppPaths") == 0)
-                Properties.Settings.Default.bScanAppPaths = e.Node.Checked;
+                Main.bScanAppPaths = e.Node.Checked;
             else if (e.Node.Name.CompareTo("NodeAppSettings") == 0)
-                Properties.Settings.Default.bScanAppSettings = e.Node.Checked;
+                Main.bScanAppSettings = e.Node.Checked;
             else if (e.Node.Name.CompareTo("NodeSharedDlls") == 0)
-                Properties.Settings.Default.bScanSharedDLL = e.Node.Checked;
+                Main.bScanSharedDLL = e.Node.Checked;
             else if (e.Node.Name.CompareTo("NodeHistoryList") == 0)
-                Properties.Settings.Default.bScanHistoryList = e.Node.Checked;
+                Main.bScanHistoryList = e.Node.Checked;
         }
 
         private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)

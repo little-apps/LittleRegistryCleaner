@@ -23,10 +23,6 @@ using System.Text;
 using System.IO;
 using Microsoft.Win32;
 
-/* HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\App Paths
- * HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall
- * HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts */
-
 namespace Little_Registry_Cleaner.Scanners
 {
     public class AppInfo
@@ -34,7 +30,7 @@ namespace Little_Registry_Cleaner.Scanners
         /// <summary>
         /// Verifies installed programs in add/remove list
         /// </summary>
-        public AppInfo(ScanDlg frmScanDlg)
+        public AppInfo()
         {
             try
             {
@@ -48,7 +44,7 @@ namespace Little_Registry_Cleaner.Scanners
 
                     RegistryKey regKey2 = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\" + strProgName);
 
-                    frmScanDlg.UpdateScanSubKey(regKey2.ToString());
+                    ScanDlg.UpdateScanSubKey(regKey2.ToString());
 
                     // Skip if installed by msi installer
                     int? nWinInstaller = (int?)regKey2.GetValue("WindowsInstaller");
@@ -56,51 +52,20 @@ namespace Little_Registry_Cleaner.Scanners
                         if (nWinInstaller.Value == 1)
                             continue;
 
-                    string strDisplayIcon = (string)regKey2.GetValue("DisplayIcon");
-
                     // Check display icon
-                    if (!string.IsNullOrEmpty(strDisplayIcon))
+                    string strDisplayIcon = (string)regKey2.GetValue("DisplayIcon");
                     {
-                        // See if file already exists
-                        if (!File.Exists(strDisplayIcon))
-                        {
-                            // Remove quotes
-                            if (strDisplayIcon[0] == '"')
-                            {
-                                int i, iQouteLoc = 0, iQoutes = 1;
-                                for (i = 0; (i < strDisplayIcon.Length) && (iQoutes <= 2); i++)
-                                {
-                                    if (strDisplayIcon[i] == '"')
-                                    {
-                                        strDisplayIcon = strDisplayIcon.Remove(i, 1);
-                                        iQouteLoc = i;
-                                        iQoutes++;
-                                    }
-                                }
-                            }
-
-                            // Parse display icon path
-                            if (strDisplayIcon.LastIndexOf(',') > 0)
-                            {
-                                string strIconPath = strDisplayIcon.Substring(0, strDisplayIcon.LastIndexOf(','));
-
-                                if (!File.Exists(strIconPath))
-                                    ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "DisplayIcon");
-                            }
-                            else if (!File.Exists(strDisplayIcon))
+                        if (!string.IsNullOrEmpty(strDisplayIcon))
+                            if (!Misc.IconExists(strDisplayIcon))
                                 ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "DisplayIcon");
-                        }
                     }
 
+                    // Check install location
                     string strInstallLocation = (string)regKey2.GetValue("InstallLocation");
-
-                    if (!string.IsNullOrEmpty(strInstallLocation))
                     {
-                        if (!Directory.Exists(strInstallLocation) && !File.Exists(strInstallLocation))
-                        {
-                            ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString());
-                            continue;
-                        }
+                        if (!string.IsNullOrEmpty(strInstallLocation))
+                            if ((!Misc.DirExists(strInstallLocation)) && (!Misc.FileExists(strInstallLocation)))
+                                ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString());
                     }
 
                 }

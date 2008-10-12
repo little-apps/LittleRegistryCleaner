@@ -30,7 +30,7 @@ namespace Little_Registry_Cleaner.Scanners
         /// <summary>
         /// Verifies programs in App Paths
         /// </summary>
-        public AppPaths(ScanDlg frm)
+        public AppPaths()
         {
             try
             {
@@ -46,7 +46,7 @@ namespace Little_Registry_Cleaner.Scanners
                     if (regKey2 == null)
                         continue;
 
-                    frm.UpdateScanSubKey(regKey2.ToString());
+                    ScanDlg.UpdateScanSubKey(regKey2.ToString());
 
                     string strAppPath = (string)regKey2.GetValue("");
 
@@ -71,7 +71,7 @@ namespace Little_Registry_Cleaner.Scanners
                     }
 
                     // Check if file exists
-                    if (!File.Exists(strAppPath))
+                    if (!Misc.FileExists(strAppPath))
                         ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "(default)");
                 }
 

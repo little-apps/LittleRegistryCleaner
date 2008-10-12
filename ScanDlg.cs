@@ -50,6 +50,8 @@ namespace Little_Registry_Cleaner
         private int SectionCount = 0;
         private int ItemsScanned = 0;
 
+        public static ScanDlg frmScanDlg;
+
         public struct BadRegistryKey
         {
             public string strProblem;
@@ -102,9 +104,14 @@ namespace Little_Registry_Cleaner
 
         public static ArrayList arrBadRegistryKeys = new ArrayList();
 
+        public static string strCurrentSubKey = "";
+
         public ScanDlg(int nSectionCount)
         {
             InitializeComponent();
+
+            // Set pointer to scandlg variable
+            ScanDlg.frmScanDlg = this;
 
             // Set the section count so it can be accessed later
             this.SectionCount = nSectionCount;
@@ -116,16 +123,17 @@ namespace Little_Registry_Cleaner
             CheckForIllegalCrossThreadCalls = false;
 
             // Starts scanning registry on seperate thread
-            this.threadMain = new Thread(new ThreadStart(StartScanning));
-            this.threadMain.Name = "Scan Thread Pool";
-            this.threadMain.Start();
+            ThreadPool.QueueUserWorkItem(new WaitCallback(StartScanning));
         }
 
         /// <summary>
         /// Begins scanning for errors in the registry
         /// </summary>
-        private void StartScanning()
+        private void StartScanning(object stateInfo)
         {
+            // Sets threadMain to current thread
+            this.threadMain = Thread.CurrentThread;
+
             // Create log file
             string strLogFile = string.Format("{0}\\{1:yyyy}_{1:MM}_{1:dd}_{1:HH}{1:mm}{1:ss}.txt", Little_Registry_Cleaner.Properties.Settings.Default.strOptionsLogDir, DateTime.Now);
 
@@ -150,120 +158,120 @@ namespace Little_Registry_Cleaner
             // Begin scanning
             try
             {
-                if (Little_Registry_Cleaner.Properties.Settings.Default.bScanStartup)
+                if (Main.bScanStartup)
                 {
                     this.loggerScan.WriteLine("Checking for invalid startup entries");
                     this.UpdateSection("Startup entries");
 
-                    this.threadCurrent = new Thread(new ThreadStart(delegate { new StartUp(this); }));
+                    this.threadCurrent = new Thread(new ThreadStart(delegate { new StartUp(); }));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
                     this.progressBar1.PerformStep();
                 }
 
-                if (Little_Registry_Cleaner.Properties.Settings.Default.bScanSharedDLL)
+                if (Main.bScanSharedDLL)
                 {
                     this.loggerScan.WriteLine("Checking for invalid DLL entries");
                     this.UpdateSection("Shared DLLs");
 
-                    this.threadCurrent = new Thread(new ThreadStart(delegate { new DLLs(this); }));
+                    this.threadCurrent = new Thread(new ThreadStart(delegate { new DLLs(); }));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
                     this.progressBar1.PerformStep();
                 }
 
-                if (Little_Registry_Cleaner.Properties.Settings.Default.bScanFonts)
+                if (Main.bScanFonts)
                 {
                     this.loggerScan.WriteLine("Checking for invalid font references");
                     this.UpdateSection("Windows Fonts");
 
-                    this.threadCurrent = new Thread(new ThreadStart(delegate { new Fonts(this); }));
+                    this.threadCurrent = new Thread(new ThreadStart(delegate { new Fonts(); }));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
                     this.progressBar1.PerformStep();
                 }
 
-                if (Little_Registry_Cleaner.Properties.Settings.Default.bScanAppInfo)
+                if (Main.bScanAppInfo)
                 {
                     this.loggerScan.WriteLine("Checking for invalid application info");
                     this.UpdateSection("Application info");
 
-                    this.threadCurrent = new Thread(new ThreadStart(delegate { new AppInfo(this); }));
+                    this.threadCurrent = new Thread(new ThreadStart(delegate { new AppInfo(); }));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
                     this.progressBar1.PerformStep();
                 }
 
-                if (Little_Registry_Cleaner.Properties.Settings.Default.bScanAppPaths)
+                if (Main.bScanAppPaths)
                 {
                     this.loggerScan.WriteLine("Checking for invalid application paths");
                     this.UpdateSection("Program Locations");
 
-                    this.threadCurrent = new Thread(new ThreadStart(delegate { new AppPaths(this); }));
+                    this.threadCurrent = new Thread(new ThreadStart(delegate { new AppPaths(); }));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
                     this.progressBar1.PerformStep();
                 }
 
-                if (Little_Registry_Cleaner.Properties.Settings.Default.bScanActivex)
+                if (Main.bScanActivex)
                 {
                     this.loggerScan.WriteLine("Checking for invalid ActiveX/COM objects");
                     this.UpdateSection("ActiveX/COM objects");
 
-                    this.threadCurrent = new Thread(new ThreadStart(delegate { new COMObjects(this); }));
+                    this.threadCurrent = new Thread(new ThreadStart(delegate { new COMObjects(); }));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
                     this.progressBar1.PerformStep();
                 }
 
-                if (Little_Registry_Cleaner.Properties.Settings.Default.bScanDrivers)
+                if (Main.bScanDrivers)
                 {
                     this.loggerScan.WriteLine("Checking for invalid driver entries");
                     this.UpdateSection("Drivers");
 
-                    this.threadCurrent = new Thread(new ThreadStart(delegate { new Drivers(this); }));
+                    this.threadCurrent = new Thread(new ThreadStart(delegate { new Drivers(); }));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
                     this.progressBar1.PerformStep();
                 }
 
-                if (Little_Registry_Cleaner.Properties.Settings.Default.bScanHelpFiles)
+                if (Main.bScanHelpFiles)
                 {
                     this.loggerScan.WriteLine("Checking for invalid help files");
                     this.UpdateSection("Help files");
 
-                    this.threadCurrent = new Thread(new ThreadStart(delegate { new HelpFiles(this); }));
+                    this.threadCurrent = new Thread(new ThreadStart(delegate { new HelpFiles(); }));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
                     this.progressBar1.PerformStep();
                 }
 
-                if (Little_Registry_Cleaner.Properties.Settings.Default.bScanSounds)
+                if (Main.bScanSounds)
                 {
                     this.loggerScan.WriteLine("Checking for missing windows sounds");
                     this.UpdateSection("Sound events");
 
-                    Thread threadSounds = new Thread(new ThreadStart(delegate { new Sounds(this); }));
-                    threadSounds.Start();
-                    threadSounds.Join();
+                    this.threadCurrent = new Thread(new ThreadStart(delegate { new Sounds(); }));
+                    this.threadCurrent.Start();
+                    this.threadCurrent.Join();
 
                     this.progressBar1.PerformStep();
                 }
 
-                if (Little_Registry_Cleaner.Properties.Settings.Default.bScanAppSettings)
+                if (Main.bScanAppSettings)
                 {
                     this.loggerScan.WriteLine("Checking for missing software settings");
                     this.UpdateSection("Software settings");
 
-                    this.threadCurrent = new Thread(new ThreadStart(delegate { new AppSettings(this); }));
+                    this.threadCurrent = new Thread(new ThreadStart(delegate { new AppSettings(); }));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
@@ -271,12 +279,12 @@ namespace Little_Registry_Cleaner
                 }
 
 
-                if (Little_Registry_Cleaner.Properties.Settings.Default.bScanHistoryList)
+                if (Main.bScanHistoryList)
                 {
                     this.loggerScan.WriteLine("Checking for missing recent documents links");
                     this.UpdateSection("History List");
 
-                    this.threadCurrent = new Thread(new ThreadStart(delegate { new HistoryList(this); }));
+                    this.threadCurrent = new Thread(new ThreadStart(delegate { new HistoryList(); }));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
                 }
@@ -430,18 +438,18 @@ namespace Little_Registry_Cleaner
         /// <summary>
         /// Updates the textbox with the current subkey being scanned
         /// </summary>
-        public void UpdateScanSubKey(string strSubKey)
+        public static void UpdateScanSubKey(string strSubKey)
         {
             try
             {
-                if (this.InvokeRequired)
+                if (ScanDlg.frmScanDlg.InvokeRequired)
                 {
-                    this.Invoke(new UpdateScanSubKeyDelgate(UpdateScanSubKey), strSubKey);
+                    ScanDlg.frmScanDlg.Invoke(new UpdateScanSubKeyDelgate(UpdateScanSubKey), strSubKey);
                     return;
                 }
 
-                this.textBoxSubKey.Text = strSubKey;
-                this.ItemsScanned++;
+                ScanDlg.frmScanDlg.textBoxSubKey.Text = strSubKey;
+                ScanDlg.frmScanDlg.ItemsScanned++;
             }
             catch
             {

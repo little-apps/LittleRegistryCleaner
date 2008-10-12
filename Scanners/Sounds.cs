@@ -27,15 +27,8 @@ namespace Little_Registry_Cleaner.Scanners
 {
     public class Sounds
     {
-        private ScanDlg frmScanDlg;
-
-        /// <summary>
-        /// Scans for invalid windows sound events
-        /// </summary>
-        public Sounds(ScanDlg frm)
+        public Sounds()
         {
-            this.frmScanDlg = frm;
-
             RegistryKey regKey = Registry.CurrentUser.OpenSubKey("AppEvents\\Schemes\\Apps");
             ParseSoundKeys(regKey);
         }
@@ -58,12 +51,12 @@ namespace Little_Registry_Cleaner.Scanners
 
                         if (rk2 != null)
                         {
-                            frmScanDlg.UpdateScanSubKey(rk2.ToString());
+                            ScanDlg.UpdateScanSubKey(rk2.ToString());
 
                             string strSoundPath = (string)rk2.GetValue("");
 
                             if (!string.IsNullOrEmpty(strSoundPath))
-                                if (!File.Exists(strSoundPath))
+                                if (!Misc.FileExists(strSoundPath))
                                     ScanDlg.StoreInvalidKey("Invalid file or folder", rk2.Name, "(default)");
                         }
 
@@ -73,7 +66,7 @@ namespace Little_Registry_Cleaner.Scanners
                         RegistryKey rk2 = rk.OpenSubKey(strSubKey);
                         if (rk2 != null)
                         {
-                            frmScanDlg.UpdateScanSubKey(rk2.ToString());
+                            ScanDlg.UpdateScanSubKey(rk2.ToString());
                             ParseSoundKeys(rk2);
                         }
                     }

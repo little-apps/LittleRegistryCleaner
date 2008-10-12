@@ -37,66 +37,6 @@ namespace Little_Registry_Cleaner.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool bScanStartup {
-            get {
-                return ((bool)(this["bScanStartup"]));
-            }
-            set {
-                this["bScanStartup"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool bScanSharedDLL {
-            get {
-                return ((bool)(this["bScanSharedDLL"]));
-            }
-            set {
-                this["bScanSharedDLL"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool bScanFonts {
-            get {
-                return ((bool)(this["bScanFonts"]));
-            }
-            set {
-                this["bScanFonts"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool bScanAppInfo {
-            get {
-                return ((bool)(this["bScanAppInfo"]));
-            }
-            set {
-                this["bScanAppInfo"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool bScanActivex {
-            get {
-                return ((bool)(this["bScanActivex"]));
-            }
-            set {
-                this["bScanActivex"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string strBackupFile {
             get {
@@ -104,18 +44,6 @@ namespace Little_Registry_Cleaner.Properties {
             }
             set {
                 this["strBackupFile"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool bScanDrivers {
-            get {
-                return ((bool)(this["bScanDrivers"]));
-            }
-            set {
-                this["bScanDrivers"] = value;
             }
         }
         
@@ -158,48 +86,12 @@ namespace Little_Registry_Cleaner.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool bScanHelpFiles {
-            get {
-                return ((bool)(this["bScanHelpFiles"]));
-            }
-            set {
-                this["bScanHelpFiles"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool bScanSounds {
-            get {
-                return ((bool)(this["bScanSounds"]));
-            }
-            set {
-                this["bScanSounds"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool bOptionsRestore {
             get {
                 return ((bool)(this["bOptionsRestore"]));
             }
             set {
                 this["bOptionsRestore"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool bScanAppPaths {
-            get {
-                return ((bool)(this["bScanAppPaths"]));
-            }
-            set {
-                this["bScanAppPaths"] = value;
             }
         }
         
@@ -241,18 +133,6 @@ namespace Little_Registry_Cleaner.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool bScanAppSettings {
-            get {
-                return ((bool)(this["bScanAppSettings"]));
-            }
-            set {
-                this["bScanAppSettings"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string strErrorDir {
             get {
@@ -269,18 +149,6 @@ namespace Little_Registry_Cleaner.Properties {
         public string strBugReportAddr {
             get {
                 return ((string)(this["strBugReportAddr"]));
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool bScanHistoryList {
-            get {
-                return ((bool)(this["bScanHistoryList"]));
-            }
-            set {
-                this["bScanHistoryList"] = value;
             }
         }
         

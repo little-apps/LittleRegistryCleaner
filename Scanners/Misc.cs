@@ -23,9 +23,156 @@ using System.Text;
 using System.IO;
 using System.Windows.Forms;
 using System.Runtime.Serialization;
+using System.Runtime.InteropServices;
 
 namespace Little_Registry_Cleaner
 {
+    public class Misc
+    {
+        [DllImport("kernel32.dll")]
+        public static extern int SearchPath(string strPath, string strFileName, string strExtension, uint nBufferLength, StringBuilder strBuffer, string strFilePart);
+
+        /// <summary>
+        /// Checks for the file in %PATH% variable
+        /// </summary>
+        /// <param name="strFilePath">The file path</param>
+        /// <returns>True if it exists</returns>
+        public static bool SearchFilePath(string strFilePath)
+        {
+            // Search for file in %path% variable
+            StringBuilder strBuffer = new StringBuilder(260);
+
+            if (SearchPath(null, strFilePath, null, 260, strBuffer, null) != 0)
+                return true;
+
+            return false;
+        }
+
+        /// <summary>
+        /// Gets the icon path and sees if it exists
+        /// </summary>
+        /// <param name="strDefaultIcon">The icon path</param>
+        /// <returns>True if it exists</returns>
+        public static bool IconExists(string strIconPath)
+        {
+            string strBuffer = strIconPath.Trim().ToLower();
+
+            // Remove quotes
+            if (strBuffer[0] == '"')
+            {
+                int i, iQouteLoc = 0, iQoutes = 1;
+                for (i = 0; (i < strBuffer.Length) && (iQoutes <= 2); i++)
+                {
+                    if (strBuffer[i] == '"')
+                    {
+                        strBuffer = strBuffer.Remove(i, 1);
+                        iQouteLoc = i;
+                        iQoutes++;
+                    }
+                }
+            }
+
+            // Get icon path
+            int nSlash = strBuffer.IndexOf(',');
+            if (nSlash > -1)
+                strBuffer = strBuffer.Substring(0, nSlash);
+
+            if (Misc.FileExists(strBuffer))
+                return true;
+
+            return false;
+        }
+
+        /// <summary>
+        /// Sees if the file exists
+        /// </summary>
+        /// <param name="strPath">The filename</param>
+        /// <returns>True if it exists</returns>
+        public static bool FileExists(string strPath)
+        {
+            string strBuffer = strPath.Trim().ToLower();
+
+            if (string.IsNullOrEmpty(strPath))
+                return false;
+
+            // Remove quotes
+            if (strBuffer[0] == '"')
+            {
+                int i, iQouteLoc = 0, iQoutes = 1;
+                for (i = 0; (i < strBuffer.Length) && (iQoutes <= 2); i++)
+                {
+                    if (strBuffer[i] == '"')
+                    {
+                        strBuffer = strBuffer.Remove(i, 1);
+                        iQouteLoc = i;
+                        iQoutes++;
+                    }
+                }
+            }
+
+            strBuffer = Environment.ExpandEnvironmentVariables(strBuffer);
+
+            try
+            {
+                if (File.Exists(strBuffer))
+                    return true;
+            }
+            catch (NotSupportedException)
+            {
+                // Path has invalid characters
+                return false;
+            }
+
+            if (Misc.SearchFilePath(strBuffer))
+                return true;
+
+            return false;
+        }
+
+        /// <summary>
+        /// Sees if the directory exists
+        /// </summary>
+        /// <param name="strPath">The directory</param>
+        /// <returns>True if it exists</returns>
+        public static bool DirExists(string strPath)
+        {
+            string strBuffer = strPath.Trim().ToLower();
+
+            // Remove quotes
+            if (strBuffer[0] == '"')
+            {
+                int i, iQouteLoc = 0, iQoutes = 1;
+                for (i = 0; (i < strBuffer.Length) && (iQoutes <= 2); i++)
+                {
+                    if (strBuffer[i] == '"')
+                    {
+                        strBuffer = strBuffer.Remove(i, 1);
+                        iQouteLoc = i;
+                        iQoutes++;
+                    }
+                }
+            }
+
+            try
+            {
+                // Remove filename.ext from path
+                if (Path.HasExtension(strBuffer))
+                    strBuffer = Path.GetDirectoryName(strBuffer);
+
+                strBuffer = Environment.ExpandEnvironmentVariables(strBuffer);
+
+                if (Directory.Exists(strBuffer))
+                    return true;
+            }
+            catch (ArgumentException)
+            {
+                return false;
+            }
+
+            return false;
+        }
+    }
+
     public class Logger
     {
         /// <summary>

@@ -27,12 +27,8 @@ namespace Little_Registry_Cleaner.Scanners
 {
     public class AppSettings
     {
-        private ScanDlg frmScanDlg;
-
-        public AppSettings(ScanDlg frm)
+        public AppSettings()
         {
-            this.frmScanDlg = frm;
-
             ScanRegistryKey(Registry.LocalMachine.OpenSubKey("SOFTWARE"));
             ScanRegistryKey(Registry.CurrentUser.OpenSubKey("SOFTWARE"));
         }
@@ -76,7 +72,7 @@ namespace Little_Registry_Cleaner.Scanners
             if (regKey == null)
                 return 0;
 
-            frmScanDlg.UpdateScanSubKey(regKey.ToString());
+            ScanDlg.UpdateScanSubKey(regKey.ToString());
 
             int nValueCount = regKey.ValueCount;
 

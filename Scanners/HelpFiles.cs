@@ -27,16 +27,8 @@ namespace Little_Registry_Cleaner.Scanners
 {
     public class HelpFiles
     {
-        private ScanDlg frmScanDlg;
-
-        /// <summary>
-        /// Scans for invalid windows help files
-        /// </summary>
-        public HelpFiles(ScanDlg frmScanDlg)
+        public HelpFiles()
         {
-            // Allow ScanDlg to be accessed globally
-            this.frmScanDlg = frmScanDlg;
-
             try
             {
                 CheckHelpFiles(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\HTML Help"));
@@ -48,12 +40,15 @@ namespace Little_Registry_Cleaner.Scanners
             }
         }
 
+        /// <summary>
+        /// Scans for invalid windows help files
+        /// </summary>
         private void CheckHelpFiles(RegistryKey regKey)
         {
             if (regKey == null)
                 return;
 
-            frmScanDlg.UpdateScanSubKey(regKey.ToString());
+            ScanDlg.UpdateScanSubKey(regKey.ToString());
 
             foreach (string strHelpFile in regKey.GetValueNames())
             {
@@ -78,18 +73,15 @@ namespace Little_Registry_Cleaner.Scanners
         /// <param name="strValueName">Should contain the filename</param>
         /// <param name="strValue">Should be the path to file</param>
         /// <returns>True if it exists</returns>
-        private bool HelpFileExists(string strValueName, string strValue)
+        private static bool HelpFileExists(string strValueName, string strValue)
         {
-            if (File.Exists(strValue))
+            if (Misc.FileExists(strValue))
                 return true;
 
-            if (File.Exists(strValueName))
+            if (Misc.FileExists(strValueName))
                 return true;
 
-            if (File.Exists(Path.Combine(strValue, strValueName)))
-                return true;
-
-            if (StartUp.SearchFilePath(strValueName) || StartUp.SearchFilePath(strValue))
+            if (Misc.FileExists(Path.Combine(strValue, strValueName)))
                 return true;
 
             return false;
