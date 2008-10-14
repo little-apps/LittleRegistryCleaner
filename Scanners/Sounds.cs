@@ -53,7 +53,7 @@ namespace Little_Registry_Cleaner.Scanners
                         {
                             ScanDlg.UpdateScanSubKey(rk2.ToString());
 
-                            string strSoundPath = (string)rk2.GetValue("");
+                            string strSoundPath = rk2.GetValue("") as string;
 
                             if (!string.IsNullOrEmpty(strSoundPath))
                                 if (!Misc.FileExists(strSoundPath))

@@ -52,7 +52,7 @@ namespace Little_Registry_Cleaner.Scanners
 
             foreach (string strHelpFile in regKey.GetValueNames())
             {
-                string strHelpPath = (string)regKey.GetValue(strHelpFile);
+                string strHelpPath = regKey.GetValue(strHelpFile) as string;
 
                 if (string.IsNullOrEmpty(strHelpPath))
                     continue;

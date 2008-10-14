@@ -77,7 +77,7 @@ namespace Little_Registry_Cleaner.Scanners
             int nValueCount = regKey.ValueCount;
 
             if (regKey.ValueCount == 0)
-                if (!string.IsNullOrEmpty((string)regKey.GetValue("")))
+                if (regKey.GetValue("") != null)
                     nValueCount = 1;
             try
             {

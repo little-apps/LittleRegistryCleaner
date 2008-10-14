@@ -47,13 +47,13 @@ namespace Little_Registry_Cleaner.Scanners
                     ScanDlg.UpdateScanSubKey(regKey2.ToString());
 
                     // Skip if installed by msi installer
-                    int? nWinInstaller = (int?)regKey2.GetValue("WindowsInstaller");
+                    int? nWinInstaller = regKey2.GetValue("WindowsInstaller") as int?;
                     if (nWinInstaller.HasValue)
                         if (nWinInstaller.Value == 1)
                             continue;
 
                     // Check display icon
-                    string strDisplayIcon = (string)regKey2.GetValue("DisplayIcon");
+                    string strDisplayIcon = regKey2.GetValue("DisplayIcon") as string;
                     {
                         if (!string.IsNullOrEmpty(strDisplayIcon))
                             if (!Misc.IconExists(strDisplayIcon))
@@ -61,7 +61,7 @@ namespace Little_Registry_Cleaner.Scanners
                     }
 
                     // Check install location
-                    string strInstallLocation = (string)regKey2.GetValue("InstallLocation");
+                    string strInstallLocation = regKey2.GetValue("InstallLocation") as string;
                     {
                         if (!string.IsNullOrEmpty(strInstallLocation))
                             if ((!Misc.DirExists(strInstallLocation)) && (!Misc.FileExists(strInstallLocation)))

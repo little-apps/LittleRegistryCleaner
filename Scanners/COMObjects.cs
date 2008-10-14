@@ -70,7 +70,7 @@ namespace Little_Registry_Cleaner.Scanners
                     ScanDlg.UpdateScanSubKey(regKey2.ToString());
 
                     // Check for valid AppID
-                    string strAppID = (string)regKey2.GetValue("AppID");
+                    string strAppID = regKey2.GetValue("AppID") as string;
                     {
                         if (!string.IsNullOrEmpty(strAppID))
                             if (!AppIdExists(strAppID))
@@ -82,7 +82,7 @@ namespace Little_Registry_Cleaner.Scanners
                     {
                         if (regKeyIcon != null)
                         {
-                            string strDefaultIcon = (string)regKeyIcon.GetValue("");
+                            string strDefaultIcon = regKeyIcon.GetValue("") as string;
 
                             if (!string.IsNullOrEmpty(strDefaultIcon))
                                 if (!Misc.IconExists(strDefaultIcon))
@@ -97,7 +97,7 @@ namespace Little_Registry_Cleaner.Scanners
                     {
                         if (regKeyInprocSrvr != null)
                         {
-                            string strInprocServer = (string)regKeyInprocSrvr.GetValue("");
+                            string strInprocServer = regKeyInprocSrvr.GetValue("") as string;
 
                             if (!string.IsNullOrEmpty(strInprocServer))
                                 if (!Misc.FileExists(strInprocServer))
@@ -111,7 +111,7 @@ namespace Little_Registry_Cleaner.Scanners
                     {
                         if (regKeyInprocSrvr32 != null)
                         {
-                            string strInprocServer32 = (string)regKeyInprocSrvr32.GetValue("");
+                            string strInprocServer32 = regKeyInprocSrvr32.GetValue("") as string;
 
                             if (!string.IsNullOrEmpty(strInprocServer32))
                                 if (!Misc.FileExists(strInprocServer32))
@@ -158,7 +158,7 @@ namespace Little_Registry_Cleaner.Scanners
                     ScanDlg.UpdateScanSubKey(regKey2.ToString());
 
                     // Find reference to ProgID
-                    string strProgID = (string)regKey2.GetValue("");
+                    string strProgID = regKey2.GetValue("") as string;
 
                     if (!string.IsNullOrEmpty(strProgID))
                         if (!CheckProgIDReferences(strProgID))
@@ -194,7 +194,7 @@ namespace Little_Registry_Cleaner.Scanners
                     ScanDlg.UpdateScanSubKey(regKey2.ToString());
 
                     // Check for AppId CLSID
-                    string strCLSID = (string)regKey2.GetValue("AppID");
+                    string strCLSID = regKey2.GetValue("AppID") as string;
 
                     if (!string.IsNullOrEmpty(strCLSID))
                         // Check for reference to AppID

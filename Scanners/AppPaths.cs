@@ -48,7 +48,7 @@ namespace Little_Registry_Cleaner.Scanners
 
                     ScanDlg.UpdateScanSubKey(regKey2.ToString());
 
-                    string strAppPath = (string)regKey2.GetValue("");
+                    string strAppPath = regKey2.GetValue("") as string;
 
                     if (string.IsNullOrEmpty(strAppPath))
                         continue;

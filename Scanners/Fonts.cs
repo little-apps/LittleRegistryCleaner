@@ -52,7 +52,7 @@ namespace Little_Registry_Cleaner.Scanners
 
             foreach (string strFontName in regKey.GetValueNames())
             {
-                string strValue = (string)regKey.GetValue(strFontName);
+                string strValue = regKey.GetValue(strFontName) as string;
 
                 // Skip if value is empty
                 if (string.IsNullOrEmpty(strValue))

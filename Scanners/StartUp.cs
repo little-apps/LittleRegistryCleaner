@@ -76,7 +76,7 @@ namespace Little_Registry_Cleaner.Scanners
 
             foreach (string strProgName in regKey.GetValueNames())
             {
-                string strRunPath = (string)regKey.GetValue(strProgName);
+                string strRunPath = regKey.GetValue(strProgName) as string;
 
                 if (string.IsNullOrEmpty(strRunPath))
                 {
