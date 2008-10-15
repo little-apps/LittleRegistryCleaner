@@ -160,3 +160,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - ScanDlg is now longer passed to Scanners as a parameter, it is a static variable
 - UpdateScanSubKey() is a static function
 - Registry objects are casted properly
+- Created LaunchURI function to check for default web browser
