@@ -245,7 +245,7 @@ namespace Little_Registry_Cleaner
                 string strVersion = "", strChangeLogURL = "", strDownloadURL = "";
                 if (UpdateDlg.FindUpdate(ref strVersion, ref strChangeLogURL, ref strDownloadURL))
                     if (MessageBox.Show(this, "A newer version is available. Would you like to download it?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
-                        LaunchURI(new Uri(strDownloadURL));
+                        LaunchURI(strDownloadURL);
             }
         }
 
@@ -346,7 +346,7 @@ namespace Little_Registry_Cleaner
 
         private void visitWebsiteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            LaunchURI(new Uri("http://sourceforge.net/projects/littlecleaner/"));
+            LaunchURI("http://sourceforge.net/projects/littlecleaner/");
         }
 
         private void viewChangeLogToolStripMenuItem_Click(object sender, EventArgs e)
@@ -439,7 +439,7 @@ namespace Little_Registry_Cleaner
 
         private void helpToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            LaunchURI(new Uri("http://answers.launchpad.net/lilregcleaner"));
+            LaunchURI("http://answers.launchpad.net/lilregcleaner");
         }
 
         /// <summary>
@@ -447,18 +447,23 @@ namespace Little_Registry_Cleaner
         /// </summary>
         /// <param name="uri">The URI to launch</param>
         /// <returns>False if the scheme is not set</returns>
-        public static bool LaunchURI(Uri uri)
+        public static bool LaunchURI(string strUri)
         {
-            if (Uri.CheckSchemeName(uri.Scheme))
+            if (!string.IsNullOrEmpty(strUri))
             {
-                try
+                Uri uri = new Uri(strUri);
+
+                if (Uri.CheckSchemeName(uri.Scheme))
                 {
-                    if (Process.Start(uri.ToString()) != null)
-                        return true;
-                }
-                catch (Exception)
-                {
-                    return false;
+                    try
+                    {
+                        if (Process.Start(uri.ToString()) != null)
+                            return true;
+                    }
+                    catch (Exception)
+                    {
+                        return false;
+                    }
                 }
             }
 

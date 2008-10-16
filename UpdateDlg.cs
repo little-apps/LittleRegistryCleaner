@@ -109,13 +109,13 @@ namespace Little_Registry_Cleaner
         private void buttonDownload_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(this.strDownloadURL))
-                Main.LaunchURI(new Uri(this.strDownloadURL));
+                Main.LaunchURI(this.strDownloadURL);
         }
 
         private void buttonChangelog_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(this.strChangeLogURL))
-                Main.LaunchURI(new Uri(this.strChangeLogURL));
+                Main.LaunchURI(this.strChangeLogURL);
         }
     }
 }

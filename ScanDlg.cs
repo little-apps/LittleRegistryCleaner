@@ -322,35 +322,31 @@ namespace Little_Registry_Cleaner
             // See if System Restore is enabled
             foreach (ServiceController sc in ServiceController.GetServices())
             {
-                if (sc.ServiceName.CompareTo("srservice") == 0)
-                {
-                    if (sc.Status != ServiceControllerStatus.Running)
-                    {
-                        this.loggerScan.WriteLine("System Restore Service isnt running, unable to create restore point.");
-                        return;
-                    }
-
-                    bServiceFound = true;
-                }
+                if (sc.ServiceName == "srservice")
+                    if (sc.Status == ServiceControllerStatus.Running)
+                        bServiceFound = true;
             }
 
-            if (!bServiceFound)
+            if (bServiceFound)
             {
-                this.loggerScan.WriteLine("System Restore Service wasnt found, unable to create restore point.");
-                return;
+                ManagementScope oScope = new ManagementScope("\\\\localhost\\root\\default");
+                ManagementPath oPath = new ManagementPath("SystemRestore");
+                ObjectGetOptions oGetOp = new ObjectGetOptions();
+                ManagementClass oProcess = new ManagementClass(oScope, oPath, oGetOp);
+
+                ManagementBaseObject oInParams = oProcess.GetMethodParameters("CreateRestorePoint");
+                oInParams["Description"] = "Little Registry Cleaner";
+                oInParams["RestorePointType"] = 0;
+                oInParams["EventType"] = 100;
+
+                ManagementBaseObject oOutParams = oProcess.InvokeMethod("CreateRestorePoint", oInParams, null);
             }
-            
-            ManagementScope oScope = new ManagementScope("\\\\localhost\\root\\default");
-            ManagementPath oPath = new ManagementPath("SystemRestore");
-            ObjectGetOptions oGetOp = new ObjectGetOptions();
-            ManagementClass oProcess = new ManagementClass(oScope, oPath, oGetOp);
+            else
+            {
+                this.loggerScan.WriteLine("System Restore Service wasnt found or it isnt running, unable to create restore point.");
+            }
 
-            ManagementBaseObject oInParams = oProcess.GetMethodParameters("CreateRestorePoint");
-            oInParams["Description"] = "Little Registry Cleaner";
-            oInParams["RestorePointType"] = 0;
-            oInParams["EventType"] = 100;
-
-            ManagementBaseObject oOutParams = oProcess.InvokeMethod("CreateRestorePoint", oInParams, null);
+            return;
         }
 
 
