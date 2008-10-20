@@ -46,12 +46,12 @@ namespace Little_Registry_Cleaner.Scanners
             ScanAppIds(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Classes\\AppID"));
             ScanAppIds(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Classes\\AppID"));
 
-            ScanBHOReferences();
+            ScanExplorer();
         }
 
         /// <summary>
         /// Scans for the CLSID subkey
-        /// <param name="regKey">Location of CLSID sub key</param>
+        /// <param name="regKey">Location of CLSID Sub Key</param>
         /// </summary>
         private void ScanCLSIDSubKey(RegistryKey regKey)
         {
@@ -70,12 +70,10 @@ namespace Little_Registry_Cleaner.Scanners
                     ScanDlg.UpdateScanSubKey(regKey2.ToString());
 
                     // Check for valid AppID
-                    string strAppID = regKey2.GetValue("AppID") as string;
-                    {
-                        if (!string.IsNullOrEmpty(strAppID))
-                            if (!AppIdExists(strAppID))
-                                ScanDlg.StoreInvalidKey("Missing AppID reference", regKey2.ToString(), "AppID");
-                    }
+                    string strAppID = regKey.GetValue("AppID") as string;
+                    if (!string.IsNullOrEmpty(strAppID))
+                        if (!AppIDExists(strAppID))
+                            ScanDlg.StoreInvalidKey("Missing AppID reference", regKey2.ToString(), "AppID");
 
                     // See if DefaultIcon exists
                     using (RegistryKey regKeyIcon = regKey2.OpenSubKey("DefaultIcon"))
@@ -121,6 +119,7 @@ namespace Little_Registry_Cleaner.Scanners
                         }
                     }
 
+                    regKey2.Close();
                 }
                 catch (System.Security.SecurityException ex)
                 {
@@ -161,7 +160,7 @@ namespace Little_Registry_Cleaner.Scanners
                     string strProgID = regKey2.GetValue("") as string;
 
                     if (!string.IsNullOrEmpty(strProgID))
-                        if (!CheckProgIDReferences(strProgID))
+                        if (!ProgIDExists(strProgID))
                             ScanDlg.StoreInvalidKey("Missing ProgID reference", regKey2.ToString());
                 }
                 catch (System.Security.SecurityException ex)
@@ -193,12 +192,11 @@ namespace Little_Registry_Cleaner.Scanners
                     // Update scan dialog
                     ScanDlg.UpdateScanSubKey(regKey2.ToString());
 
-                    // Check for AppId CLSID
+                    // Check for reference to AppID
                     string strCLSID = regKey2.GetValue("AppID") as string;
 
                     if (!string.IsNullOrEmpty(strCLSID))
-                        // Check for reference to AppID
-                        if (regKey.OpenSubKey(strCLSID) == null)
+                        if (!AppIDExists(strCLSID))
                             ScanDlg.StoreInvalidKey("Missing AppID reference", regKey2.ToString());
                 }
                 catch (System.Security.SecurityException ex)
@@ -211,30 +209,140 @@ namespace Little_Registry_Cleaner.Scanners
         }
 
         /// <summary>
-        /// Finds invalid browser help objects
+        /// Finds invalid windows explorer entries
         /// </summary>
-        private void ScanBHOReferences()
+        private void ScanExplorer()
         {
             try
             {
-                RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\explorer\\Browser Helper Objects");
+                using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\explorer\\Browser Helper Objects"))
+                {
+                    if (regKey == null)
+                        return;
 
+                    foreach (string strGuid in regKey.GetSubKeyNames())
+                    {
+                        RegistryKey regKey2 = regKey.OpenSubKey(strGuid);
+
+                        if (regKey2 == null)
+                            continue;
+
+                        // Update scan dialog
+                        ScanDlg.UpdateScanSubKey(regKey2.ToString());
+
+                        if (!CLSIDExists(strGuid))
+                        {
+                            ScanDlg.StoreInvalidKey("Missing CLSID reference", regKey2.ToString());
+                            continue;
+                        }
+                    }
+                }
+
+                using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Internet Explorer\\Toolbar"))
+                {
+                    if (regKey == null)
+                        return;
+
+                    // Update scan dialog
+                    ScanDlg.UpdateScanSubKey(regKey.ToString());
+
+                    foreach (string strGuid in regKey.GetValueNames())
+                    {
+                        if (!CLSIDExists(strGuid))
+                        {
+                            ScanDlg.StoreInvalidKey("Missing CLSID reference", regKey.ToString(), strGuid);
+                            continue;
+                        }
+                    }
+                }
+
+                using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Internet Explorer\\Extensions"))
+                {
+                    if (regKey == null)
+                        return;
+
+                    foreach (string strGuid in regKey.GetSubKeyNames())
+                    {
+                        RegistryKey regKey2 = regKey.OpenSubKey(strGuid);
+
+                        if (regKey2 == null)
+                            continue;
+
+                        // Update scan dialog
+                        ScanDlg.UpdateScanSubKey(regKey2.ToString());
+
+                        ValidateExplorerExt(regKey2);
+                    }
+
+                }
+            }
+            catch (System.Security.SecurityException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
+
+            return;
+        }
+
+        private static void ValidateExplorerExt(RegistryKey regKey)
+        {
+            try
+            {
                 if (regKey == null)
                     return;
 
-                foreach (string strBHOClsId in regKey.GetSubKeyNames())
+                // Sees if icon file exists
+                string strHotIcon = regKey.GetValue("HotIcon") as string;
+                if (!string.IsNullOrEmpty(strHotIcon))
                 {
-                    string strSubKey = regKey.ToString() + strBHOClsId;
-
-                    // Update scan dialog
-                    ScanDlg.UpdateScanSubKey(strSubKey);
-
-                    // See if reference exists, Otherwise, remove it...
-                    if (!CheckCLSIDReferences(strBHOClsId))
-                        ScanDlg.StoreInvalidKey("Missing CLSID reference", strSubKey);
+                    if (!Misc.IconExists(strHotIcon))
+                    {
+                        ScanDlg.StoreInvalidKey("Missing hot icon file", regKey.ToString());
+                        return;
+                    }
                 }
 
-                regKey.Close();
+                string strIcon = regKey.GetValue("Icon") as string;
+                if (!string.IsNullOrEmpty(strIcon))
+                {
+                    if (!Misc.IconExists(strIcon))
+                    {
+                        ScanDlg.StoreInvalidKey("Missing icon file", regKey.ToString());
+                        return;
+                    }
+                }
+
+                // Lookup CLSID extension
+                string strClsidExt = regKey.GetValue("ClsidExtension") as string;
+                if (!string.IsNullOrEmpty(strClsidExt))
+                {
+                    if (!CLSIDExists(strClsidExt))
+                    {
+                        ScanDlg.StoreInvalidKey("Missing CLSID Extension", regKey.ToString());
+                        return;
+                    }
+                }
+
+                // See if files exist
+                string strExec = regKey.GetValue("Exec") as string;
+                if (!string.IsNullOrEmpty(strExec))
+                {
+                    if (!Misc.FileExists(strExec))
+                    {
+                        ScanDlg.StoreInvalidKey("Missing executable", regKey.ToString());
+                        return;
+                    }
+                }
+
+                string strScript = regKey.GetValue("Script") as string;
+                if (!string.IsNullOrEmpty(strScript))
+                {
+                    if (!Misc.FileExists(strScript))
+                    {
+                        ScanDlg.StoreInvalidKey("Missing script file", regKey.ToString());
+                        return;
+                    }
+                }
             }
             catch (System.Security.SecurityException ex)
             {
@@ -247,7 +355,7 @@ namespace Little_Registry_Cleaner.Scanners
         /// </summary>
         /// <param name="strGuid">The CLSID GUID</param>
         /// <returns>True if it exists</returns>
-        private static bool CheckCLSIDReferences(string strGuid)
+        private static bool CLSIDExists(string strGuid)
         {
             try
             {
@@ -273,7 +381,7 @@ namespace Little_Registry_Cleaner.Scanners
         /// </summary>
         /// <param name="strProgID">The ProgID</param>
         /// <returns>True if it exists</returns>
-        private static bool CheckProgIDReferences(string strProgID)
+        private static bool ProgIDExists(string strProgID)
         {
             try
             {
@@ -297,9 +405,9 @@ namespace Little_Registry_Cleaner.Scanners
         /// <summary>
         /// Checks if the AppID exists
         /// </summary>
-        /// <param name="strAppId">The AppID</param>
+        /// <param name="strAppId">The AppID or GUID</param>
         /// <returns>True if it exists</returns>
-        private static bool AppIdExists(string strAppId)
+        private static bool AppIDExists(string strAppId)
         {
             try
             {

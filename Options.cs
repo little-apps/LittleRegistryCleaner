@@ -101,15 +101,7 @@ namespace Little_Registry_Cleaner
             this.Close();
         }
 
-        private void buttonBrowse_Click(object sender, EventArgs e)
-        {
-            this.folderBrowserDialog1.Description = "Select the folder where the backup files will be placed";
-            this.folderBrowserDialog1.SelectedPath = this.textBoxBackupFolder.Text;
-            this.folderBrowserDialog1.ShowNewFolderButton = true;
-
-            if (this.folderBrowserDialog1.ShowDialog(this) == DialogResult.OK)
-                this.textBoxBackupFolder.Text = this.folderBrowserDialog1.SelectedPath;
-        }
+        
 
         private void addEntryToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -133,14 +125,30 @@ namespace Little_Registry_Cleaner
             }
         }
 
+        private void buttonBrowse_Click(object sender, EventArgs e)
+        {
+            using (FolderBrowserDialog folderBrowserDlg = new FolderBrowserDialog())
+            {
+                folderBrowserDlg.Description = "Select the folder where the backup files will be placed";
+                folderBrowserDlg.SelectedPath = this.textBoxBackupFolder.Text;
+                folderBrowserDlg.ShowNewFolderButton = true;
+
+                if (folderBrowserDlg.ShowDialog(this) == DialogResult.OK)
+                    this.textBoxBackupFolder.Text = folderBrowserDlg.SelectedPath;
+            }
+        }
+
         private void buttonBrowse2_Click(object sender, EventArgs e)
         {
-            this.folderBrowserDialog1.Description = "Select the folder where the log files will be placed";
-            this.folderBrowserDialog1.SelectedPath = this.textBoxLogFolder.Text;
-            this.folderBrowserDialog1.ShowNewFolderButton = true;
+            using (FolderBrowserDialog folderBrowserDlg = new FolderBrowserDialog())
+            {
+                folderBrowserDlg.Description = "Select the folder where the log files will be placed";
+                folderBrowserDlg.SelectedPath = this.textBoxLogFolder.Text;
+                folderBrowserDlg.ShowNewFolderButton = true;
 
-            if (this.folderBrowserDialog1.ShowDialog(this) == DialogResult.OK)
-                this.textBoxLogFolder.Text = this.folderBrowserDialog1.SelectedPath;
+                if (folderBrowserDlg.ShowDialog(this) == DialogResult.OK)
+                    this.textBoxLogFolder.Text = folderBrowserDlg.SelectedPath;
+            }
         }
     }
 }

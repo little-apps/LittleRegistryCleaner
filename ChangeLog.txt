@@ -162,3 +162,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Registry objects are casted properly
 - Created LaunchURI function to check for default web browser (fixed: checks for null strings)
 - Made a minor fix to CreateRestorePoint()
+- Added more checks to ScanBHOReferences(), renamed it to ScanExplorer()
+
++ Version 0.8 Released

@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBoxAutoUpdate = new System.Windows.Forms.CheckBox();
             this.checkBoxRestore = new System.Windows.Forms.CheckBox();
             this.checkBoxDeleteBackup = new System.Windows.Forms.CheckBox();
             this.checkBoxRescan = new System.Windows.Forms.CheckBox();
@@ -53,7 +54,6 @@
             this.addEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.checkBoxAutoUpdate = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -76,6 +76,16 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Options";
+            // 
+            // checkBoxAutoUpdate
+            // 
+            this.checkBoxAutoUpdate.AutoSize = true;
+            this.checkBoxAutoUpdate.Location = new System.Drawing.Point(10, 65);
+            this.checkBoxAutoUpdate.Name = "checkBoxAutoUpdate";
+            this.checkBoxAutoUpdate.Size = new System.Drawing.Size(177, 17);
+            this.checkBoxAutoUpdate.TabIndex = 10;
+            this.checkBoxAutoUpdate.Text = "Check for updates automatically";
+            this.checkBoxAutoUpdate.UseVisualStyleBackColor = true;
             // 
             // checkBoxRestore
             // 
@@ -285,16 +295,6 @@
             this.removeEntryToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.removeEntryToolStripMenuItem.Text = "Remove Entry";
             this.removeEntryToolStripMenuItem.Click += new System.EventHandler(this.removeEntryToolStripMenuItem_Click);
-            // 
-            // checkBoxAutoUpdate
-            // 
-            this.checkBoxAutoUpdate.AutoSize = true;
-            this.checkBoxAutoUpdate.Location = new System.Drawing.Point(10, 65);
-            this.checkBoxAutoUpdate.Name = "checkBoxAutoUpdate";
-            this.checkBoxAutoUpdate.Size = new System.Drawing.Size(177, 17);
-            this.checkBoxAutoUpdate.TabIndex = 10;
-            this.checkBoxAutoUpdate.Text = "Check for updates automatically";
-            this.checkBoxAutoUpdate.UseVisualStyleBackColor = true;
             // 
             // Options
             // 
