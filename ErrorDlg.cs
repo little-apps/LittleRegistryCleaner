@@ -26,7 +26,6 @@ using System.Text;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.Net;
-using System.Management; 
 using Microsoft.Win32;
 using System.Runtime.InteropServices;
 using System.IO;

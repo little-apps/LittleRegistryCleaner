@@ -165,3 +165,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Added more checks to ScanBHOReferences(), renamed it to ScanExplorer()
 
 + Version 0.8 Released
+
+- Restore points can be created on Windows ME, XP, and Vista
+- Creates restore points before fixing registry problems instead of before scanning and also creates restore point before restoring

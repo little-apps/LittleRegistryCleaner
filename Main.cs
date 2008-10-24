@@ -160,11 +160,15 @@ namespace Little_Registry_Cleaner
         private void FixProblems()
         {
             xmlRegistry xmlReg = new xmlRegistry();
+            long lSeqNum = 0;
 
             if (this.listResults.Items.Count > 0)
             {
                 if (MessageBox.Show(this, "Would you like to fix all selected problems?", "Little Registry Cleaner", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
+                    // Create Restore Point
+                    SysRestore.StartRestore("Before Little Registry Cleaner Registry Fix", out lSeqNum);
+
                     // Generate filename to backup registry
                     string strBackupFile = string.Format("{0}\\{1:yyyy}_{1:MM}_{1:dd}_{1:HH}{1:mm}{1:ss}.xml", Properties.Settings.Default.strOptionsBackupDir, DateTime.Now);
 
@@ -188,6 +192,8 @@ namespace Little_Registry_Cleaner
                     // Disable menu items
                     this.fixToolStripMenuItem.Enabled = false;
                     this.toolStripButtonFix.Enabled = false;
+
+                    SysRestore.EndRestore(lSeqNum);
 
                     MessageBox.Show(this, "Removed problems from registry", "Little Registry Cleaner", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

@@ -68,12 +68,16 @@ namespace Little_Registry_Cleaner
 
         private void buttonRestore_Click(object sender, EventArgs e)
         {
+            long lSeqNum = 0;
+
             if (this.listViewFiles.SelectedIndices.Count > 0 && this.listViewFiles.Items.Count > 0)
             {
                 if (MessageBox.Show(this, "Are you sure?", "Little Registry Cleaner", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     string strFile = this.listViewFiles.SelectedItems[0].Text;
                     string strFilePath = string.Format("{0}\\{1}", Properties.Settings.Default.strOptionsBackupDir, strFile);
+
+                    SysRestore.StartRestore("Before Little Registry Cleaner Restore", out lSeqNum);
 
                     if (xmlReg.loadAsXml(xmlReader, strFilePath))
                     {
@@ -86,6 +90,8 @@ namespace Little_Registry_Cleaner
                     }
                     else
                         MessageBox.Show(this, "Error restoring registry", "Little Registry Cleaner", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    SysRestore.EndRestore(lSeqNum);
                 }
             }
         }

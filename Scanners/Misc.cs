@@ -32,6 +32,9 @@ namespace Little_Registry_Cleaner
         [DllImport("kernel32.dll")]
         public static extern int SearchPath(string strPath, string strFileName, string strExtension, uint nBufferLength, StringBuilder strBuffer, string strFilePart);
 
+        [DllImport("shell32.dll", EntryPoint = "FindExecutable")]
+        public static extern long FindExecutableA(string lpFile, string lpDirectory, StringBuilder lpResult);
+
         /// <summary>
         /// Checks for the file in %PATH% variable
         /// </summary>
@@ -171,6 +174,25 @@ namespace Little_Registry_Cleaner
 
             return false;
         }
+
+        /// <summary>
+        /// Uses the FindExecutable API to search for the file that opens the specified document
+        /// </summary>
+        /// <param name="strFilename">The document to search for</param>
+        /// <returns>The file that opens the document</returns>
+        public static string FindExecutable(string strFilename)
+        {
+            StringBuilder strResultBuffer = new StringBuilder(1024);
+
+            long nResult = FindExecutableA(strFilename, string.Empty, strResultBuffer);
+
+            if (nResult >= 32)
+            {
+                return strResultBuffer.ToString();
+            }
+
+            return string.Format("Error: ({0})", nResult);
+        }
     }
 
     public class Logger
@@ -258,4 +280,6 @@ namespace Little_Registry_Cleaner
             }
         }
     }
+
+
 }

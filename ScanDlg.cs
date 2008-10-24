@@ -26,7 +26,6 @@ using System.Runtime.InteropServices;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Threading;
-using System.Management;
 using Little_Registry_Cleaner.Scanners;
 using Microsoft.Win32;
 using Little_Registry_Cleaner.Xml;
@@ -38,9 +37,6 @@ namespace Little_Registry_Cleaner
     {
         public delegate void UpdateScanSubKeyDelgate(string strSubKey);
         public delegate void UpdateSectionDelegate(string strSection);
-
-        [DllImport("shell32.dll", EntryPoint = "FindExecutable")]
-        public static extern long FindExecutableA(string lpFile, string lpDirectory, StringBuilder lpResult);
 
         private Logger loggerScan;
 
@@ -104,8 +100,6 @@ namespace Little_Registry_Cleaner
 
         public static ArrayList arrBadRegistryKeys = new ArrayList();
 
-        public static string strCurrentSubKey = "";
-
         public ScanDlg(int nSectionCount)
         {
             InitializeComponent();
@@ -144,16 +138,6 @@ namespace Little_Registry_Cleaner
 
             this.progressBar1.Step = 1;
             this.progressBar1.Maximum = this.SectionCount;
-
-            // Create restore point (XP Only)
-            if (Environment.OSVersion.Version.Major == 5 && Environment.OSVersion.Version.Minor == 1)
-            {
-                if (Properties.Settings.Default.bOptionsRestore)
-                {
-                    this.loggerScan.WriteLine("Creating restore point...");
-                    CreateRestorePoint();
-                }
-            }
 
             // Begin scanning
             try
@@ -310,63 +294,6 @@ namespace Little_Registry_Cleaner
             }
 
             return;
-        }
-
-        /// <summary>
-        /// Creates a restore point on the computer
-        /// </summary>
-        private void CreateRestorePoint()
-        {
-            bool bServiceFound = false;
-
-            // See if System Restore is enabled
-            foreach (ServiceController sc in ServiceController.GetServices())
-            {
-                if (sc.ServiceName == "srservice")
-                    if (sc.Status == ServiceControllerStatus.Running)
-                        bServiceFound = true;
-            }
-
-            if (bServiceFound)
-            {
-                ManagementScope oScope = new ManagementScope("\\\\localhost\\root\\default");
-                ManagementPath oPath = new ManagementPath("SystemRestore");
-                ObjectGetOptions oGetOp = new ObjectGetOptions();
-                ManagementClass oProcess = new ManagementClass(oScope, oPath, oGetOp);
-
-                ManagementBaseObject oInParams = oProcess.GetMethodParameters("CreateRestorePoint");
-                oInParams["Description"] = "Little Registry Cleaner";
-                oInParams["RestorePointType"] = 0;
-                oInParams["EventType"] = 100;
-
-                ManagementBaseObject oOutParams = oProcess.InvokeMethod("CreateRestorePoint", oInParams, null);
-            }
-            else
-            {
-                this.loggerScan.WriteLine("System Restore Service wasnt found or it isnt running, unable to create restore point.");
-            }
-
-            return;
-        }
-
-
-        /// <summary>
-        /// Uses the FindExecutable API to search for the file that opens the specified document
-        /// </summary>
-        /// <param name="strFilename">The document to search for</param>
-        /// <returns>The file that opens the document</returns>
-        public static string FindExecutable(string strFilename)
-        {
-            StringBuilder strResultBuffer = new StringBuilder(1024);
-
-            long nResult = FindExecutableA(strFilename, string.Empty, strResultBuffer);
-
-            if (nResult >= 32)
-            {
-                return strResultBuffer.ToString();
-            }
-
-            return string.Format("Error: ({0})", nResult);
         }
 
         /// <summary>
