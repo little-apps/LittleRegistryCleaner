@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBoxRemDrives = new System.Windows.Forms.CheckBox();
             this.checkBoxAutoUpdate = new System.Windows.Forms.CheckBox();
             this.checkBoxRestore = new System.Windows.Forms.CheckBox();
             this.checkBoxDeleteBackup = new System.Windows.Forms.CheckBox();
@@ -53,7 +54,6 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.addEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -65,6 +65,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.checkBoxRemDrives);
             this.groupBox1.Controls.Add(this.checkBoxAutoUpdate);
             this.groupBox1.Controls.Add(this.checkBoxRestore);
             this.groupBox1.Controls.Add(this.checkBoxDeleteBackup);
@@ -76,6 +77,16 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Options";
+            // 
+            // checkBoxRemDrives
+            // 
+            this.checkBoxRemDrives.AutoSize = true;
+            this.checkBoxRemDrives.Location = new System.Drawing.Point(197, 65);
+            this.checkBoxRemDrives.Name = "checkBoxRemDrives";
+            this.checkBoxRemDrives.Size = new System.Drawing.Size(212, 17);
+            this.checkBoxRemDrives.TabIndex = 11;
+            this.checkBoxRemDrives.Text = "Ignore missing files on removable drives";
+            this.checkBoxRemDrives.UseVisualStyleBackColor = true;
             // 
             // checkBoxAutoUpdate
             // 
@@ -92,9 +103,9 @@
             this.checkBoxRestore.AutoSize = true;
             this.checkBoxRestore.Location = new System.Drawing.Point(197, 19);
             this.checkBoxRestore.Name = "checkBoxRestore";
-            this.checkBoxRestore.Size = new System.Drawing.Size(244, 17);
+            this.checkBoxRestore.Size = new System.Drawing.Size(222, 17);
             this.checkBoxRestore.TabIndex = 9;
-            this.checkBoxRestore.Text = "Create restore point before scanning (XP Only)";
+            this.checkBoxRestore.Text = "Create system restore points automatically";
             this.checkBoxRestore.UseVisualStyleBackColor = true;
             // 
             // checkBoxDeleteBackup
@@ -280,19 +291,19 @@
             this.addEntryToolStripMenuItem,
             this.removeEntryToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(148, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 70);
             // 
             // addEntryToolStripMenuItem
             // 
             this.addEntryToolStripMenuItem.Name = "addEntryToolStripMenuItem";
-            this.addEntryToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.addEntryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.addEntryToolStripMenuItem.Text = "Add Entry";
             this.addEntryToolStripMenuItem.Click += new System.EventHandler(this.addEntryToolStripMenuItem_Click);
             // 
             // removeEntryToolStripMenuItem
             // 
             this.removeEntryToolStripMenuItem.Name = "removeEntryToolStripMenuItem";
-            this.removeEntryToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.removeEntryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.removeEntryToolStripMenuItem.Text = "Remove Entry";
             this.removeEntryToolStripMenuItem.Click += new System.EventHandler(this.removeEntryToolStripMenuItem_Click);
             // 
@@ -347,7 +358,6 @@
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem addEntryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem removeEntryToolStripMenuItem;
@@ -357,5 +367,6 @@
         private System.Windows.Forms.TextBox textBoxLogFolder;
         private System.Windows.Forms.Button buttonBrowse2;
         private System.Windows.Forms.CheckBox checkBoxAutoUpdate;
+        private System.Windows.Forms.CheckBox checkBoxRemDrives;
     }
 }

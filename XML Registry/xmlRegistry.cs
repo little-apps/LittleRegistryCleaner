@@ -81,24 +81,15 @@ namespace Little_Registry_Cleaner.Xml
 
         int _nSaveCounter = 0;
 
-        [DllImport("advapi32.dll", EntryPoint = "RegOpenKey")]
-        public static extern int RegOpenKeyA(int hKey, string lpSubKey, ref int phkResult);
-        [DllImport("advapi32.dll")]
-        public static extern int RegCloseKey(int hKey);
-        [DllImport("advapi32.dll", EntryPoint = "RegQueryInfoKey")]
-        public static extern int RegQueryInfoKeyA(int hKey, string lpClass, ref int lpcbClass, int lpReserved, ref int lpcSubKeys, ref int lpcbMaxSubKeyLen, ref int lpcbMaxClassLen, ref int lpcValues, ref int lpcbMaxValueNameLen, ref int lpcbMaxValueLen, ref int lpcbSecurityDescriptor, ref System.Runtime.InteropServices.ComTypes.FILETIME lpftLastWriteTime);
-        [DllImport("advapi32.dll", EntryPoint = "RegEnumValue")]
-        public static extern int RegEnumValueA(int hKey, int dwIndex, ref byte lpValueName, ref int lpcbValueName, int lpReserved, ref int lpType, ref byte lpData, ref int lpcbData);
-        [DllImport("advapi32.dll", EntryPoint = "RegEnumKeyEx")]
-        public static extern int RegEnumKeyExA(int hKey, int dwIndex, ref byte lpName, ref int lpcbName, int lpReserved, string lpClass, ref int lpcbClass, ref System.Runtime.InteropServices.ComTypes.FILETIME lpftLastWriteTime);
-        [DllImport("advapi32.dll", EntryPoint = "RegSetValueEx")]
-        public static extern int RegSetValueExA(int hKey, string lpSubKey, int reserved, int dwType, ref byte lpData, int cbData);
-        [DllImport("advapi32.dll", EntryPoint = "RegDeleteValue")]
-        public static extern int RegDeleteValueA(int hKey, string lpValueName);
-        [DllImport("advapi32.dll", EntryPoint = "RegDeleteKey")]
-        public static extern int RegDeleteKeyA(int hKey, string lpSubKey);
-        [DllImport("advapi32.dll", EntryPoint = "RegDeleteTree")]
-        public static extern int RegDeleteTreeA(int hKey, string lpSubKey);
+        [DllImport("advapi32.dll", EntryPoint = "RegOpenKey")] public static extern int RegOpenKeyA(int hKey, string lpSubKey, ref int phkResult);
+        [DllImport("advapi32.dll")] public static extern int RegCloseKey(int hKey);
+        [DllImport("advapi32.dll", EntryPoint = "RegQueryInfoKey")] public static extern int RegQueryInfoKeyA(int hKey, string lpClass, ref int lpcbClass, int lpReserved, ref int lpcSubKeys, ref int lpcbMaxSubKeyLen, ref int lpcbMaxClassLen, ref int lpcValues, ref int lpcbMaxValueNameLen, ref int lpcbMaxValueLen, ref int lpcbSecurityDescriptor, ref System.Runtime.InteropServices.ComTypes.FILETIME lpftLastWriteTime);
+        [DllImport("advapi32.dll", EntryPoint = "RegEnumValue")] public static extern int RegEnumValueA(int hKey, int dwIndex, ref byte lpValueName, ref int lpcbValueName, int lpReserved, ref int lpType, ref byte lpData, ref int lpcbData);
+        [DllImport("advapi32.dll", EntryPoint = "RegEnumKeyEx")] public static extern int RegEnumKeyExA(int hKey, int dwIndex, ref byte lpName, ref int lpcbName, int lpReserved, string lpClass, ref int lpcbClass, ref System.Runtime.InteropServices.ComTypes.FILETIME lpftLastWriteTime);
+        [DllImport("advapi32.dll", EntryPoint = "RegSetValueEx")] public static extern int RegSetValueExA(int hKey, string lpSubKey, int reserved, int dwType, ref byte lpData, int cbData);
+        [DllImport("advapi32.dll", EntryPoint = "RegDeleteValue")] public static extern int RegDeleteValueA(int hKey, string lpValueName);
+        [DllImport("advapi32.dll", EntryPoint = "RegDeleteKey")] public static extern int RegDeleteKeyA(int hKey, string lpSubKey);
+        [DllImport("advapi32.dll", EntryPoint = "RegDeleteTree")] public static extern int RegDeleteTreeA(int hKey, string lpSubKey);
 
         public xmlRegistry()
         {

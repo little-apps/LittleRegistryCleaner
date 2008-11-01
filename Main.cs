@@ -137,7 +137,7 @@ namespace Little_Registry_Cleaner
                     listViewItem.Checked = true;
 
                     listViewItem.Text = p.strProblem;
-                    listViewItem.SubItems.Add(p.strMainKey + "\\" + p.strSubKey);
+                    listViewItem.SubItems.Add(p.strRegPath);
                     listViewItem.SubItems.Add(p.strValueName);
 
                     this.listResults.Items.Add(listViewItem);
@@ -146,7 +146,7 @@ namespace Little_Registry_Cleaner
                 this.listResults.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
 
                 // Notify user using notify icon
-                this.notifyIcon1.ShowBalloonTip(5000, Application.ProductName, string.Format("Found {0} Problems", this.listResults.Items.Count), ToolTipIcon.Info);
+                this.notifyIcon1.ShowBalloonTip(5000, Application.ProductName, string.Format("Found {0} Problems", ScanDlg.arrBadRegistryKeys.Count), ToolTipIcon.Info);
 
                 // Enable menu items
                 this.fixToolStripMenuItem.Enabled = true;
@@ -174,16 +174,13 @@ namespace Little_Registry_Cleaner
 
                     ArrayList arrBadRegKeys = new ArrayList();
 
-                    foreach (ListViewItem listViewItem in this.listResults.Items)
+                    foreach (ListViewItem listViewItem in this.listResults.CheckedItems)
                     {
-                        if (listViewItem.Checked)
-                        {
-                            ScanDlg.BadRegistryKey obj = new ScanDlg.BadRegistryKey();
-                            obj.strProblem = listViewItem.SubItems[0].Text;
-                            obj.strRegPath = listViewItem.SubItems[1].Text;
-                            obj.strValueName = listViewItem.SubItems[2].Text;
-                            arrBadRegKeys.Add(obj);
-                        }
+                        ScanDlg.BadRegistryKey obj = new ScanDlg.BadRegistryKey();
+                        obj.strProblem = listViewItem.SubItems[0].Text;
+                        obj.strRegPath = listViewItem.SubItems[1].Text;
+                        obj.strValueName = listViewItem.SubItems[2].Text;
+                        arrBadRegKeys.Add(obj);
                     }
 
                     // Generate a restore file and delete keys & values
@@ -474,6 +471,12 @@ namespace Little_Registry_Cleaner
             }
 
             return false;
+        }
+
+        private void optimizeRegistryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Optimizer.Optimizer dlgOptimizer = new Little_Registry_Cleaner.Optimizer.Optimizer();
+            dlgOptimizer.ShowDialog();
         }
     }
 }

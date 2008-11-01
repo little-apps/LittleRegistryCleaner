@@ -168,3 +168,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 - Restore points can be created on Windows ME, XP, and Vista
 - Creates restore points before fixing registry problems instead of before scanning and also creates restore point before restoring
+- Uses function instead of try-catch to find invalid path characters
+- Added Icons to TreeView Sections

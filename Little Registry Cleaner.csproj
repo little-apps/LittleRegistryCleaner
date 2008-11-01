@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{D93FA78E-C044-4D81-ABEC-B64EE75F684C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -55,9 +55,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
     <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -78,6 +81,14 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="Optimizer\HiveManager.cs" />
+    <Compile Include="Optimizer\Optimizer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Optimizer\Optimizer.Designer.cs">
+      <DependentUpon>Optimizer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Permissions.cs" />
     <Compile Include="SysRestore.cs" />
     <Compile Include="Scanners\HistoryList.cs">
     </Compile>
@@ -117,6 +128,9 @@
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Optimizer\Optimizer.resx">
+      <DependentUpon>Optimizer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateDlg.resx">
       <DependentUpon>UpdateDlg.cs</DependentUpon>

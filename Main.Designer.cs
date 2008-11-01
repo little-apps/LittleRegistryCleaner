@@ -31,16 +31,16 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("ActiveX/COM");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Startup");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Windows Fonts");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Application Info");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("System Drivers");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Help Files");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Sound Events");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Program Locations");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Software Settings");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Shared DLLs");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("History List");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Application Info");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Program Locations");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Software Settings");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Startup");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("System Drivers");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Shared DLLs");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Help Files");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Sound Events");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("History List");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Windows Fonts");
             System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("My Computer", new System.Windows.Forms.TreeNode[] {
             treeNode1,
             treeNode2,
@@ -69,6 +69,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.treeView1 = new System.Windows.Forms.TreeView();
+            this.imageListTreeView = new System.Windows.Forms.ImageList(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.listResults = new System.Windows.Forms.ListView();
             this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
@@ -79,6 +80,7 @@
             this.scanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fixToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.restoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.optimizeRegistryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -217,7 +219,6 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.AutoSize = true;
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 636F));
@@ -254,62 +255,106 @@
             // 
             this.treeView1.CheckBoxes = true;
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.treeView1.ImageIndex = 0;
+            this.treeView1.ImageList = this.imageListTreeView;
             this.treeView1.Location = new System.Drawing.Point(0, 13);
             this.treeView1.Margin = new System.Windows.Forms.Padding(0);
             this.treeView1.Name = "treeView1";
             treeNode1.Checked = true;
+            treeNode1.ImageKey = "activexcom.ico";
             treeNode1.Name = "NodeActiveX";
+            treeNode1.SelectedImageKey = "activexcom.ico";
             treeNode1.Text = "ActiveX/COM";
             treeNode1.ToolTipText = "Locations to ActiveX and COM objects that no longer exist";
             treeNode2.Checked = true;
-            treeNode2.Name = "NodeStartup";
-            treeNode2.Text = "Startup";
-            treeNode2.ToolTipText = "Programs that run when windows starts up";
+            treeNode2.ImageKey = "appinfo.ico";
+            treeNode2.Name = "NodeAppInfo";
+            treeNode2.SelectedImageKey = "appinfo.ico";
+            treeNode2.Text = "Application Info";
+            treeNode2.ToolTipText = "Currently installed applications";
             treeNode3.Checked = true;
-            treeNode3.Name = "NodeFonts";
-            treeNode3.Text = "Windows Fonts";
-            treeNode3.ToolTipText = "Finds invalid font references";
+            treeNode3.ImageIndex = 11;
+            treeNode3.Name = "NodeAppPaths";
+            treeNode3.SelectedImageKey = "programlocations.ico";
+            treeNode3.Text = "Program Locations";
+            treeNode3.ToolTipText = "Removes invalid application paths";
             treeNode4.Checked = true;
-            treeNode4.Name = "NodeAppInfo";
-            treeNode4.Text = "Application Info";
-            treeNode4.ToolTipText = "Currently installed applications";
+            treeNode4.ImageKey = "appinfo.ico";
+            treeNode4.Name = "NodeAppSettings";
+            treeNode4.SelectedImageKey = "appinfo.ico";
+            treeNode4.Text = "Software Settings";
+            treeNode4.ToolTipText = "Scans for software registry keys with no data";
             treeNode5.Checked = true;
-            treeNode5.Name = "NodeDrivers";
-            treeNode5.Text = "System Drivers";
-            treeNode5.ToolTipText = "Finds invalid references to drivers";
+            treeNode5.ImageKey = "startup.ico";
+            treeNode5.Name = "NodeStartup";
+            treeNode5.SelectedImageKey = "startup.ico";
+            treeNode5.Text = "Startup";
+            treeNode5.ToolTipText = "Programs that run when windows starts up";
             treeNode6.Checked = true;
-            treeNode6.Name = "NodeHelp";
-            treeNode6.Text = "Help Files";
-            treeNode6.ToolTipText = "Scans for help files that no longer exist";
+            treeNode6.ImageKey = "drivers.ico";
+            treeNode6.Name = "NodeDrivers";
+            treeNode6.SelectedImageKey = "drivers.ico";
+            treeNode6.Text = "System Drivers";
+            treeNode6.ToolTipText = "Finds invalid references to drivers";
             treeNode7.Checked = true;
-            treeNode7.Name = "NodeSounds";
-            treeNode7.Text = "Sound Events";
-            treeNode7.ToolTipText = "Scans for missing windows sounds";
+            treeNode7.ImageKey = "shareddlls.ico";
+            treeNode7.Name = "NodeSharedDlls";
+            treeNode7.SelectedImageKey = "shareddlls.ico";
+            treeNode7.Text = "Shared DLLs";
+            treeNode7.ToolTipText = "Scans for invalid DLL references";
             treeNode8.Checked = true;
-            treeNode8.Name = "NodeAppPaths";
-            treeNode8.Text = "Program Locations";
-            treeNode8.ToolTipText = "Removes invalid application paths";
+            treeNode8.ImageKey = "helpfiles.ico";
+            treeNode8.Name = "NodeHelp";
+            treeNode8.SelectedImageKey = "helpfiles.ico";
+            treeNode8.Text = "Help Files";
+            treeNode8.ToolTipText = "Scans for help files that no longer exist";
             treeNode9.Checked = true;
-            treeNode9.Name = "NodeAppSettings";
-            treeNode9.Text = "Software Settings";
-            treeNode9.ToolTipText = "Scans for software registry keys with no data";
+            treeNode9.ImageKey = "soundevents.ico";
+            treeNode9.Name = "NodeSounds";
+            treeNode9.SelectedImageKey = "soundevents.ico";
+            treeNode9.Text = "Sound Events";
+            treeNode9.ToolTipText = "Scans for missing windows sounds";
             treeNode10.Checked = true;
-            treeNode10.Name = "NodeSharedDlls";
-            treeNode10.Text = "Shared DLLs";
-            treeNode10.ToolTipText = "Scans for invalid DLL references";
+            treeNode10.ImageKey = "historylist.ico";
+            treeNode10.Name = "NodeHistoryList";
+            treeNode10.SelectedImageKey = "historylist.ico";
+            treeNode10.Text = "History List";
+            treeNode10.ToolTipText = "Scans for missing recent documents links";
             treeNode11.Checked = true;
-            treeNode11.Name = "NodeHistoryList";
-            treeNode11.Text = "History List";
-            treeNode11.ToolTipText = "Scans for missing recent documents links";
+            treeNode11.ImageKey = "fonts.ico";
+            treeNode11.Name = "NodeFonts";
+            treeNode11.SelectedImageKey = "fonts.ico";
+            treeNode11.Text = "Windows Fonts";
+            treeNode11.ToolTipText = "Finds invalid font references";
             treeNode12.Checked = true;
+            treeNode12.ImageKey = "mycomputer.ico";
             treeNode12.Name = "Node0";
+            treeNode12.SelectedImageKey = "mycomputer.ico";
             treeNode12.Text = "My Computer";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode12});
+            this.treeView1.SelectedImageIndex = 0;
             this.treeView1.ShowNodeToolTips = true;
             this.treeView1.Size = new System.Drawing.Size(173, 361);
             this.treeView1.TabIndex = 10;
             this.treeView1.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
+            // 
+            // imageListTreeView
+            // 
+            this.imageListTreeView.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListTreeView.ImageStream")));
+            this.imageListTreeView.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageListTreeView.Images.SetKeyName(0, "activexcom.ico");
+            this.imageListTreeView.Images.SetKeyName(1, "drivers.ico");
+            this.imageListTreeView.Images.SetKeyName(2, "fonts.ico");
+            this.imageListTreeView.Images.SetKeyName(3, "helpfiles.ico");
+            this.imageListTreeView.Images.SetKeyName(4, "historylist.ico");
+            this.imageListTreeView.Images.SetKeyName(5, "mycomputer.ico");
+            this.imageListTreeView.Images.SetKeyName(6, "shareddlls.ico");
+            this.imageListTreeView.Images.SetKeyName(7, "softwaresettings.ico");
+            this.imageListTreeView.Images.SetKeyName(8, "soundevents.ico");
+            this.imageListTreeView.Images.SetKeyName(9, "startup.ico");
+            this.imageListTreeView.Images.SetKeyName(10, "appinfo.ico");
+            this.imageListTreeView.Images.SetKeyName(11, "programlocations.ico");
             // 
             // label1
             // 
@@ -374,6 +419,7 @@
             this.scanToolStripMenuItem,
             this.fixToolStripMenuItem,
             this.restoreToolStripMenuItem,
+            this.optimizeRegistryToolStripMenuItem,
             this.toolStripSeparator3,
             this.optionsToolStripMenuItem,
             this.exitToolStripMenuItem});
@@ -385,7 +431,7 @@
             // 
             this.scanToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("scanToolStripMenuItem.Image")));
             this.scanToolStripMenuItem.Name = "scanToolStripMenuItem";
-            this.scanToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.scanToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.scanToolStripMenuItem.Text = "Scan registry";
             this.scanToolStripMenuItem.Click += new System.EventHandler(this.scanToolStripMenuItem_Click);
             // 
@@ -394,7 +440,7 @@
             this.fixToolStripMenuItem.Enabled = false;
             this.fixToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("fixToolStripMenuItem.Image")));
             this.fixToolStripMenuItem.Name = "fixToolStripMenuItem";
-            this.fixToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.fixToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.fixToolStripMenuItem.Text = "Fix problems";
             this.fixToolStripMenuItem.Click += new System.EventHandler(this.fixToolStripMenuItem_Click);
             // 
@@ -402,20 +448,27 @@
             // 
             this.restoreToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("restoreToolStripMenuItem.Image")));
             this.restoreToolStripMenuItem.Name = "restoreToolStripMenuItem";
-            this.restoreToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.restoreToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.restoreToolStripMenuItem.Text = "Restore registry";
             this.restoreToolStripMenuItem.Click += new System.EventHandler(this.restoreToolStripMenuItem_Click);
+            // 
+            // optimizeRegistryToolStripMenuItem
+            // 
+            this.optimizeRegistryToolStripMenuItem.Name = "optimizeRegistryToolStripMenuItem";
+            this.optimizeRegistryToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.optimizeRegistryToolStripMenuItem.Text = "Optimize registry";
+            this.optimizeRegistryToolStripMenuItem.Click += new System.EventHandler(this.optimizeRegistryToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(152, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(161, 6);
             // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("optionsToolStripMenuItem.Image")));
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.optionsToolStripMenuItem.Text = "Options";
             this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
             // 
@@ -423,7 +476,7 @@
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -575,7 +628,6 @@
             this.contextMenuStrip2.ResumeLayout(false);
             this.contextMenuStrip1.ResumeLayout(false);
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);
-            this.toolStripContainer1.ContentPanel.PerformLayout();
             this.toolStripContainer1.TopToolStripPanel.ResumeLayout(false);
             this.toolStripContainer1.TopToolStripPanel.PerformLayout();
             this.toolStripContainer1.ResumeLayout(false);
@@ -610,10 +662,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TreeView treeView1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListView listResults;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem scanToolStripMenuItem;
@@ -636,6 +684,12 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem1;
         private System.Windows.Forms.ToolStripButton toolStripButtonHelp;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ListView listResults;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ImageList imageListTreeView;
+        private System.Windows.Forms.ToolStripMenuItem optimizeRegistryToolStripMenuItem;
     }
 }
 

@@ -86,6 +86,9 @@ namespace Little_Registry_Cleaner
             AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);
             Application.ThreadException += new ThreadExceptionEventHandler(Application_ThreadException);
 
+            // Get SeBackupPrivilege and SeRestorePrivilege
+            Permissions.SetPrivileges();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Main());

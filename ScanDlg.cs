@@ -29,7 +29,6 @@ using System.Threading;
 using Little_Registry_Cleaner.Scanners;
 using Microsoft.Win32;
 using Little_Registry_Cleaner.Xml;
-using System.ServiceProcess;
 
 namespace Little_Registry_Cleaner
 {

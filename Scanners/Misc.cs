@@ -89,44 +89,49 @@ namespace Little_Registry_Cleaner
         /// <summary>
         /// Sees if the file exists
         /// </summary>
-        /// <param name="strPath">The filename</param>
-        /// <returns>True if it exists</returns>
+        /// <param name="strFileName">The filename</param>
+        /// <returns>True if it exists, false if it contains illegal characters</returns>
         public static bool FileExists(string strPath)
         {
-            string strBuffer = strPath.Trim().ToLower();
+            string strFileName = strPath.Trim().ToLower();
 
             if (string.IsNullOrEmpty(strPath))
                 return false;
 
             // Remove quotes
-            if (strBuffer[0] == '"')
+            if (strFileName[0] == '"')
             {
                 int i, iQouteLoc = 0, iQoutes = 1;
-                for (i = 0; (i < strBuffer.Length) && (iQoutes <= 2); i++)
+                for (i = 0; (i < strFileName.Length) && (iQoutes <= 2); i++)
                 {
-                    if (strBuffer[i] == '"')
+                    if (strFileName[i] == '"')
                     {
-                        strBuffer = strBuffer.Remove(i, 1);
+                        strFileName = strFileName.Remove(i, 1);
                         iQouteLoc = i;
                         iQoutes++;
                     }
                 }
             }
 
-            strBuffer = Environment.ExpandEnvironmentVariables(strBuffer);
+            strFileName = Environment.ExpandEnvironmentVariables(strFileName);
 
-            try
-            {
-                if (File.Exists(strBuffer))
-                    return true;
-            }
-            catch (NotSupportedException)
-            {
-                // Path has invalid characters
+            if (FindAnyIllegalChars(strFileName))
                 return false;
+
+            if (Path.IsPathRooted(strFileName))
+            {
+                DriveInfo driveInfo = new DriveInfo(Path.GetPathRoot(strFileName));
+
+                if (Properties.Settings.Default.bOptionsRemDrives)
+                    // Just return true if its on a removable drive
+                    if (driveInfo.DriveType == DriveType.Removable)
+                        return true;
             }
 
-            if (Misc.SearchFilePath(strBuffer))
+            if (File.Exists(strFileName))
+                return true;
+
+            if (Misc.SearchFilePath(strFileName))
                 return true;
 
             return false;
@@ -139,41 +144,76 @@ namespace Little_Registry_Cleaner
         /// <returns>True if it exists</returns>
         public static bool DirExists(string strPath)
         {
-            string strBuffer = strPath.Trim().ToLower();
+            string strDirectory = strPath.Trim().ToLower();
+            int pos;
 
             // Remove quotes
-            if (strBuffer[0] == '"')
+            if (strDirectory[0] == '"')
             {
                 int i, iQouteLoc = 0, iQoutes = 1;
-                for (i = 0; (i < strBuffer.Length) && (iQoutes <= 2); i++)
+                for (i = 0; (i < strDirectory.Length) && (iQoutes <= 2); i++)
                 {
-                    if (strBuffer[i] == '"')
+                    if (strDirectory[i] == '"')
                     {
-                        strBuffer = strBuffer.Remove(i, 1);
+                        strDirectory = strDirectory.Remove(i, 1);
                         iQouteLoc = i;
                         iQoutes++;
                     }
                 }
             }
 
-            try
+            strDirectory = Environment.ExpandEnvironmentVariables(strDirectory);
+
+            if (FindAnyIllegalChars(strDirectory))
+                return false;
+
+            // Remove filename.ext from strDirectory
+            if ((pos = strDirectory.LastIndexOf(Path.DirectorySeparatorChar)) >= 0)
             {
-                // Remove filename.ext from path
-                if (Path.HasExtension(strBuffer))
-                    strBuffer = Path.GetDirectoryName(strBuffer);
+                string strDirName = strDirectory.Substring(0, pos);
 
-                strBuffer = Environment.ExpandEnvironmentVariables(strBuffer);
-
-                if (Directory.Exists(strBuffer))
+                if (Directory.Exists(strDirName))
                     return true;
             }
-            catch (ArgumentException)
-            {
-                return false;
-            }
+
+            if (Directory.Exists(strDirectory))
+                return true;
 
             return false;
         }
+
+        /// <summary>
+        /// Parses the path and checks for any illegal characters
+        /// </summary>
+        /// <param name="path">The path</param>
+        /// <returns>Returns true if it contains illegal characters</returns>
+        private static bool FindAnyIllegalChars(string path)
+        {
+            // Get directory portion of the path.
+            string dirName = path;
+            string fullFileName = "";
+            int pos = 0;
+            if ((pos = path.LastIndexOf(Path.DirectorySeparatorChar)) >= 0)
+            {
+                dirName = path.Substring(0, pos);
+
+                // Get filename portion of the path.
+                if (pos >= 0 && (pos + 1) < path.Length)
+                    fullFileName = path.Substring(pos + 1);
+            }
+
+            // Find any characters in the directory that are illegal.
+            if (dirName.IndexOfAny(Path.GetInvalidPathChars()) != -1) // Found invalid character in directory
+                return true;
+
+            // Find any characters in the filename that are illegal.
+            if (!string.IsNullOrEmpty(fullFileName))
+                if (fullFileName.IndexOfAny(Path.GetInvalidFileNameChars()) != -1) // Found invalid character in filename
+                    return true;
+
+            return false;
+        }
+
 
         /// <summary>
         /// Uses the FindExecutable API to search for the file that opens the specified document

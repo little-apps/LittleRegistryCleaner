@@ -43,6 +43,7 @@ namespace Little_Registry_Cleaner
             this.checkBoxLog.Checked = Properties.Settings.Default.bOptionsLog;
             this.checkBoxRestore.Checked = Properties.Settings.Default.bOptionsRestore;
             this.checkBoxAutoUpdate.Checked = Properties.Settings.Default.bOptionsAutoUpdate;
+            this.checkBoxRemDrives.Checked = Properties.Settings.Default.bOptionsRemDrives;
 
             // Load backup directorys
             this.textBoxBackupFolder.Text = Properties.Settings.Default.strOptionsBackupDir;
@@ -74,6 +75,7 @@ namespace Little_Registry_Cleaner
             Properties.Settings.Default.bOptionsLog = this.checkBoxLog.Checked;
             Properties.Settings.Default.bOptionsRestore = this.checkBoxRestore.Checked;
             Properties.Settings.Default.bOptionsAutoUpdate = this.checkBoxAutoUpdate.Checked;
+            Properties.Settings.Default.bOptionsRemDrives = this.checkBoxRemDrives.Checked;
 
             if (!string.IsNullOrEmpty(this.textBoxBackupFolder.Text))
                 Properties.Settings.Default.strOptionsBackupDir = this.textBoxBackupFolder.Text;
@@ -100,8 +102,6 @@ namespace Little_Registry_Cleaner
 
             this.Close();
         }
-
-        
 
         private void addEntryToolStripMenuItem_Click(object sender, EventArgs e)
         {
