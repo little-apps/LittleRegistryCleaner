@@ -328,6 +328,7 @@ namespace Little_Registry_Cleaner
 
             if (arrBadRegistryKeys.Add((BadRegistryKey)p) > 0)
             {
+                frmScanDlg.labelProblems.Text = arrBadRegistryKeys.Count.ToString();
                 Logger.WriteToFile(Logger.strLogFilePath, "Found invalid registry key. Key Name: \"" + strValueName + "\" Path: \"" + strPath + "\" Reason: \"" + strProblem + "\"");
                 return true;
             }
@@ -340,7 +341,7 @@ namespace Little_Registry_Cleaner
         /// </summary>
         /// <param name="strPath">Registry subkey</param>
         /// <returns>true if it is on the ignore list, otherwise false</returns>
-        private bool IsOnIgnoreList(string strPath)
+        private static bool IsOnIgnoreList(string strPath)
         {
             if (Properties.Settings.Default.arrayOptionsExcludeList != null)
             {

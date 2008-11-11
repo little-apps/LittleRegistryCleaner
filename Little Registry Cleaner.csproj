@@ -54,6 +54,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core">
@@ -88,7 +89,28 @@
     <Compile Include="Optimizer\Optimizer.Designer.cs">
       <DependentUpon>Optimizer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Optimizer\SecureDesktop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Optimizer\SecureDesktop.Designer.cs">
+      <DependentUpon>SecureDesktop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Optimizer\XpProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Permissions.cs" />
+    <Compile Include="StartupManager\NewRunValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartupManager\NewRunValue.Designer.cs">
+      <DependentUpon>NewRunValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartupManager\StartupManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartupManager\StartupManager.Designer.cs">
+      <DependentUpon>StartupManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="SysRestore.cs" />
     <Compile Include="Scanners\HistoryList.cs">
     </Compile>
@@ -104,7 +126,7 @@
     <Compile Include="ErrorDlg.Designer.cs">
       <DependentUpon>ErrorDlg.cs</DependentUpon>
     </Compile>
-    <Compile Include="Scanners\Misc.cs" />
+    <Compile Include="Utils.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +153,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Optimizer\Optimizer.resx">
       <DependentUpon>Optimizer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Optimizer\SecureDesktop.resx">
+      <DependentUpon>SecureDesktop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartupManager\NewRunValue.resx">
+      <DependentUpon>NewRunValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartupManager\StartupManager.resx">
+      <DependentUpon>StartupManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateDlg.resx">
       <DependentUpon>UpdateDlg.cs</DependentUpon>

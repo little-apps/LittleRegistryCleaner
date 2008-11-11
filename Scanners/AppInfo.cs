@@ -56,7 +56,7 @@ namespace Little_Registry_Cleaner.Scanners
                     string strDisplayIcon = regKey2.GetValue("DisplayIcon") as string;
                     {
                         if (!string.IsNullOrEmpty(strDisplayIcon))
-                            if (!Misc.IconExists(strDisplayIcon))
+                            if (!Utils.IconExists(strDisplayIcon))
                                 ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "DisplayIcon");
                     }
 
@@ -64,7 +64,7 @@ namespace Little_Registry_Cleaner.Scanners
                     string strInstallLocation = regKey2.GetValue("InstallLocation") as string;
                     {
                         if (!string.IsNullOrEmpty(strInstallLocation))
-                            if ((!Misc.DirExists(strInstallLocation)) && (!Misc.FileExists(strInstallLocation)))
+                            if ((!Utils.DirExists(strInstallLocation)) && (!Utils.FileExists(strInstallLocation)))
                                 ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString());
                     }
 

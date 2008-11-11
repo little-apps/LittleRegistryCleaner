@@ -30,9 +30,11 @@
         {
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBoxSubKey = new System.Windows.Forms.TextBox();
-            this.buttonStop = new System.Windows.Forms.Button();
+            this.labelProblems = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.labelSection = new System.Windows.Forms.Label();
+            this.buttonStop = new System.Windows.Forms.Button();
+            this.textBoxSubKey = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,6 +48,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.labelProblems);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.labelSection);
             this.groupBox1.Controls.Add(this.buttonStop);
             this.groupBox1.Controls.Add(this.textBoxSubKey);
@@ -56,15 +60,33 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
-            // textBoxSubKey
+            // labelProblems
             // 
-            this.textBoxSubKey.Location = new System.Drawing.Point(6, 62);
-            this.textBoxSubKey.Multiline = true;
-            this.textBoxSubKey.Name = "textBoxSubKey";
-            this.textBoxSubKey.ReadOnly = true;
-            this.textBoxSubKey.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBoxSubKey.Size = new System.Drawing.Size(367, 40);
-            this.textBoxSubKey.TabIndex = 2;
+            this.labelProblems.Location = new System.Drawing.Point(338, 16);
+            this.labelProblems.Name = "labelProblems";
+            this.labelProblems.Size = new System.Drawing.Size(35, 13);
+            this.labelProblems.TabIndex = 6;
+            this.labelProblems.Text = "0";
+            this.labelProblems.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(257, 16);
+            this.label1.Name = "label1";
+            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label1.Size = new System.Drawing.Size(89, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Problems Found: ";
+            // 
+            // labelSection
+            // 
+            this.labelSection.AutoSize = true;
+            this.labelSection.Location = new System.Drawing.Point(6, 16);
+            this.labelSection.Name = "labelSection";
+            this.labelSection.Size = new System.Drawing.Size(89, 13);
+            this.labelSection.TabIndex = 4;
+            this.labelSection.Text = "Scanning section";
             // 
             // buttonStop
             // 
@@ -76,14 +98,15 @@
             this.buttonStop.UseVisualStyleBackColor = true;
             this.buttonStop.Click += new System.EventHandler(this.buttonStop_Click);
             // 
-            // labelSection
+            // textBoxSubKey
             // 
-            this.labelSection.AutoSize = true;
-            this.labelSection.Location = new System.Drawing.Point(6, 16);
-            this.labelSection.Name = "labelSection";
-            this.labelSection.Size = new System.Drawing.Size(89, 13);
-            this.labelSection.TabIndex = 4;
-            this.labelSection.Text = "Scanning section";
+            this.textBoxSubKey.Location = new System.Drawing.Point(6, 62);
+            this.textBoxSubKey.Multiline = true;
+            this.textBoxSubKey.Name = "textBoxSubKey";
+            this.textBoxSubKey.ReadOnly = true;
+            this.textBoxSubKey.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBoxSubKey.Size = new System.Drawing.Size(367, 40);
+            this.textBoxSubKey.TabIndex = 2;
             // 
             // ScanDlg
             // 
@@ -114,5 +137,7 @@
         private System.Windows.Forms.TextBox textBoxSubKey;
         private System.Windows.Forms.Button buttonStop;
         private System.Windows.Forms.Label labelSection;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelProblems;
     }
 }

@@ -75,7 +75,7 @@ namespace Little_Registry_Cleaner.Scanners
                 string strFileName = ExtractUnicodeStringFromBinary(obj);
 
                 // See if file exists in Recent Docs folder
-                if (!Misc.FileExists(string.Format("{0}\\{1}.lnk", strRecentDocs, strFileName)))
+                if (!Utils.FileExists(string.Format("{0}\\{1}.lnk", strRecentDocs, strFileName)))
                     ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.ToString(), strValueName);
             }
 

@@ -29,10 +29,6 @@ namespace Little_Registry_Cleaner.Scanners
 {
     public class StartUp
     {
-        private string mFlags;
-        private string mCmd;
-        private string mPath;
-
         public StartUp()
         {
             try
@@ -77,110 +73,22 @@ namespace Little_Registry_Cleaner.Scanners
             foreach (string strProgName in regKey.GetValueNames())
             {
                 string strRunPath = regKey.GetValue(strProgName) as string;
+                string strFilePath, strArgs;
 
+                // Check if value is not empty
                 if (string.IsNullOrEmpty(strRunPath))
-                {
                     ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strProgName);
-                    continue;
-                }
-
                 // See if file exists
-                if (Misc.FileExists(strRunPath))
-                    continue;
-
-                // Extract path from file and remove parameters
-                ExtractRunPath(strRunPath);
-
-                if (!string.IsNullOrEmpty(this.mPath))
-                    if (Misc.FileExists(this.mPath))
-                        continue;
-
-                ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strProgName);
+                else if (Utils.ExtractArguments(strRunPath, out strFilePath, out strArgs))
+                {
+                    if (!string.IsNullOrEmpty(strFilePath))
+                        if (!Utils.FileExists(strFilePath))
+                            ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strProgName);
+                }
             }
 
             regKey.Close();
             return;
-        }
-
-        /// <summary>
-        /// Extracts parameters,quotes,etc from value
-        /// </summary>
-        /// <param name="strValue">Value to get file from</param>
-        /// <returns>True if file can be extracted</returns>
-        private bool ExtractRunPath(string strValue)
-        {
-            string strBuffer = strValue.ToLower().Trim();
-
-            int nPos = -1;
-
-            // Reset global variables
-            this.mPath = "";
-            this.mFlags = "";
-            this.mCmd = "";
-
-            if (strBuffer.Contains("rundll32"))
-            {
-                this.mFlags = strBuffer.Substring(strBuffer.IndexOf(" "));
-                this.mPath = this.mFlags.Substring(0, this.mFlags.IndexOf(',')).Trim();
-
-                return true;
-            }
-
-            if (strBuffer.Contains("regsvr32"))
-            {
-                this.mFlags = strBuffer.Substring(strBuffer.IndexOf(" "));
-                this.mPath = this.mFlags.Substring(0, this.mFlags.IndexOf(',')).Trim();
-
-                return true;
-            }
-
-            if (strBuffer[0] == '"')
-            {
-                int i, iQouteLoc = 0, iQoutes = 1;
-                for (i = 0; (i < strBuffer.Length) && (iQoutes <= 2); i++)
-                {
-                    if (strBuffer[i] == '"')
-                    {
-                        strBuffer = strBuffer.Remove(i, 1);
-                        iQouteLoc = i;
-                        iQoutes++;
-                    }
-                }
-
-                this.mPath = strBuffer.Substring(0, iQouteLoc);
-                this.mFlags = strBuffer.Substring(iQouteLoc, strBuffer.Length - this.mPath.Length).Trim();
-
-                return true;
-            }
-
-            this.mCmd = strBuffer;
-            
-            if ((nPos = strBuffer.LastIndexOf('.')) > -1)
-                strBuffer = strBuffer.Substring(nPos);
-            else
-            {
-                // no extension found
-                this.mPath = strBuffer;
-                this.mFlags = "";
-                return false;
-            }
-
-            Match matchRegEx = Regex.Match(strBuffer, @"[ \\/-](\w+)", RegexOptions.RightToLeft);
-            if (matchRegEx.Success)
-                strBuffer = strBuffer.Substring(matchRegEx.Index);
-            else
-            {
-                if ((nPos = strBuffer.IndexOf(' ')) > -1)
-                    strBuffer.Substring(nPos);
-                else
-                    strBuffer = "";
-            }
-
-            this.mFlags = strBuffer.Trim();
-            strBuffer = this.mCmd;
-            this.mPath = strBuffer.Remove(strBuffer.IndexOf(this.mFlags), this.mFlags.Length).Trim();
-
-            return true;
         }
         
     }

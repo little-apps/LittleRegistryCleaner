@@ -30,29 +30,29 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("ActiveX/COM");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Application Info");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Program Locations");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Software Settings");
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Startup");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("System Drivers");
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Shared DLLs");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Help Files");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Sound Events");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("History List");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Windows Fonts");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("My Computer", new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3,
-            treeNode4,
-            treeNode5,
-            treeNode6,
-            treeNode7,
-            treeNode8,
-            treeNode9,
-            treeNode10,
-            treeNode11});
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("ActiveX/COM");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Application Info");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Program Locations");
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Software Settings");
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Startup");
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("System Drivers");
+            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Shared DLLs");
+            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Help Files");
+            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Sound Events");
+            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("History List");
+            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Windows Fonts");
+            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("My Computer", new System.Windows.Forms.TreeNode[] {
+            treeNode13,
+            treeNode14,
+            treeNode15,
+            treeNode16,
+            treeNode17,
+            treeNode18,
+            treeNode19,
+            treeNode20,
+            treeNode21,
+            treeNode22,
+            treeNode23});
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.hideShowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -82,8 +82,15 @@
             this.restoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optimizeRegistryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.selectAllToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.selectNoneToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.excludeSelectedToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewInRegeditToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemOptions = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
@@ -96,8 +103,12 @@
             this.toolStripButtonScan = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonFix = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonRestore = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonOptimizer = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButtonSettings = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonHelp = new System.Windows.Forms.ToolStripButton();
+            this.startupManagerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.contextMenuStrip2.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
@@ -170,14 +181,14 @@
             this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
             this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.selectAllToolStripMenuItem.Text = "Select All";
-            this.selectAllToolStripMenuItem.Click += new System.EventHandler(this.selectAllToolStripMenuItem_Click);
+            this.selectAllToolStripMenuItem.Click += new System.EventHandler(this.SelectAllListResults);
             // 
             // selectNoneToolStripMenuItem
             // 
             this.selectNoneToolStripMenuItem.Name = "selectNoneToolStripMenuItem";
             this.selectNoneToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.selectNoneToolStripMenuItem.Text = "Select None";
-            this.selectNoneToolStripMenuItem.Click += new System.EventHandler(this.selectNoneToolStripMenuItem_Click);
+            this.selectNoneToolStripMenuItem.Click += new System.EventHandler(this.SelectNoneListResults);
             // 
             // toolStripSeparator1
             // 
@@ -189,14 +200,14 @@
             this.excludeSelectedToolStripMenuItem.Name = "excludeSelectedToolStripMenuItem";
             this.excludeSelectedToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.excludeSelectedToolStripMenuItem.Text = "Exclude Selected";
-            this.excludeSelectedToolStripMenuItem.Click += new System.EventHandler(this.excludeSelectedToolStripMenuItem_Click);
+            this.excludeSelectedToolStripMenuItem.Click += new System.EventHandler(this.ExcludeSelectedListResults);
             // 
             // viewInRegeditToolStripMenuItem
             // 
             this.viewInRegeditToolStripMenuItem.Name = "viewInRegeditToolStripMenuItem";
             this.viewInRegeditToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.viewInRegeditToolStripMenuItem.Text = "View in regedit";
-            this.viewInRegeditToolStripMenuItem.Click += new System.EventHandler(this.viewInRegeditToolStripMenuItem_Click);
+            this.viewInRegeditToolStripMenuItem.Click += new System.EventHandler(this.ViewInRegEdit);
             // 
             // toolStripContainer1
             // 
@@ -260,79 +271,79 @@
             this.treeView1.Location = new System.Drawing.Point(0, 13);
             this.treeView1.Margin = new System.Windows.Forms.Padding(0);
             this.treeView1.Name = "treeView1";
-            treeNode1.Checked = true;
-            treeNode1.ImageKey = "activexcom.ico";
-            treeNode1.Name = "NodeActiveX";
-            treeNode1.SelectedImageKey = "activexcom.ico";
-            treeNode1.Text = "ActiveX/COM";
-            treeNode1.ToolTipText = "Locations to ActiveX and COM objects that no longer exist";
-            treeNode2.Checked = true;
-            treeNode2.ImageKey = "appinfo.ico";
-            treeNode2.Name = "NodeAppInfo";
-            treeNode2.SelectedImageKey = "appinfo.ico";
-            treeNode2.Text = "Application Info";
-            treeNode2.ToolTipText = "Currently installed applications";
-            treeNode3.Checked = true;
-            treeNode3.ImageIndex = 11;
-            treeNode3.Name = "NodeAppPaths";
-            treeNode3.SelectedImageKey = "programlocations.ico";
-            treeNode3.Text = "Program Locations";
-            treeNode3.ToolTipText = "Removes invalid application paths";
-            treeNode4.Checked = true;
-            treeNode4.ImageKey = "appinfo.ico";
-            treeNode4.Name = "NodeAppSettings";
-            treeNode4.SelectedImageKey = "appinfo.ico";
-            treeNode4.Text = "Software Settings";
-            treeNode4.ToolTipText = "Scans for software registry keys with no data";
-            treeNode5.Checked = true;
-            treeNode5.ImageKey = "startup.ico";
-            treeNode5.Name = "NodeStartup";
-            treeNode5.SelectedImageKey = "startup.ico";
-            treeNode5.Text = "Startup";
-            treeNode5.ToolTipText = "Programs that run when windows starts up";
-            treeNode6.Checked = true;
-            treeNode6.ImageKey = "drivers.ico";
-            treeNode6.Name = "NodeDrivers";
-            treeNode6.SelectedImageKey = "drivers.ico";
-            treeNode6.Text = "System Drivers";
-            treeNode6.ToolTipText = "Finds invalid references to drivers";
-            treeNode7.Checked = true;
-            treeNode7.ImageKey = "shareddlls.ico";
-            treeNode7.Name = "NodeSharedDlls";
-            treeNode7.SelectedImageKey = "shareddlls.ico";
-            treeNode7.Text = "Shared DLLs";
-            treeNode7.ToolTipText = "Scans for invalid DLL references";
-            treeNode8.Checked = true;
-            treeNode8.ImageKey = "helpfiles.ico";
-            treeNode8.Name = "NodeHelp";
-            treeNode8.SelectedImageKey = "helpfiles.ico";
-            treeNode8.Text = "Help Files";
-            treeNode8.ToolTipText = "Scans for help files that no longer exist";
-            treeNode9.Checked = true;
-            treeNode9.ImageKey = "soundevents.ico";
-            treeNode9.Name = "NodeSounds";
-            treeNode9.SelectedImageKey = "soundevents.ico";
-            treeNode9.Text = "Sound Events";
-            treeNode9.ToolTipText = "Scans for missing windows sounds";
-            treeNode10.Checked = true;
-            treeNode10.ImageKey = "historylist.ico";
-            treeNode10.Name = "NodeHistoryList";
-            treeNode10.SelectedImageKey = "historylist.ico";
-            treeNode10.Text = "History List";
-            treeNode10.ToolTipText = "Scans for missing recent documents links";
-            treeNode11.Checked = true;
-            treeNode11.ImageKey = "fonts.ico";
-            treeNode11.Name = "NodeFonts";
-            treeNode11.SelectedImageKey = "fonts.ico";
-            treeNode11.Text = "Windows Fonts";
-            treeNode11.ToolTipText = "Finds invalid font references";
-            treeNode12.Checked = true;
-            treeNode12.ImageKey = "mycomputer.ico";
-            treeNode12.Name = "Node0";
-            treeNode12.SelectedImageKey = "mycomputer.ico";
-            treeNode12.Text = "My Computer";
+            treeNode13.Checked = true;
+            treeNode13.ImageKey = "activexcom.ico";
+            treeNode13.Name = "NodeActiveX";
+            treeNode13.SelectedImageKey = "activexcom.ico";
+            treeNode13.Text = "ActiveX/COM";
+            treeNode13.ToolTipText = "Locations to ActiveX and COM objects that no longer exist";
+            treeNode14.Checked = true;
+            treeNode14.ImageKey = "appinfo.ico";
+            treeNode14.Name = "NodeAppInfo";
+            treeNode14.SelectedImageKey = "appinfo.ico";
+            treeNode14.Text = "Application Info";
+            treeNode14.ToolTipText = "Currently installed applications";
+            treeNode15.Checked = true;
+            treeNode15.ImageIndex = 11;
+            treeNode15.Name = "NodeAppPaths";
+            treeNode15.SelectedImageKey = "programlocations.ico";
+            treeNode15.Text = "Program Locations";
+            treeNode15.ToolTipText = "Removes invalid application paths";
+            treeNode16.Checked = true;
+            treeNode16.ImageKey = "appinfo.ico";
+            treeNode16.Name = "NodeAppSettings";
+            treeNode16.SelectedImageKey = "appinfo.ico";
+            treeNode16.Text = "Software Settings";
+            treeNode16.ToolTipText = "Scans for software registry keys with no data";
+            treeNode17.Checked = true;
+            treeNode17.ImageKey = "startup.ico";
+            treeNode17.Name = "NodeStartup";
+            treeNode17.SelectedImageKey = "startup.ico";
+            treeNode17.Text = "Startup";
+            treeNode17.ToolTipText = "Programs that run when windows starts up";
+            treeNode18.Checked = true;
+            treeNode18.ImageKey = "drivers.ico";
+            treeNode18.Name = "NodeDrivers";
+            treeNode18.SelectedImageKey = "drivers.ico";
+            treeNode18.Text = "System Drivers";
+            treeNode18.ToolTipText = "Finds invalid references to drivers";
+            treeNode19.Checked = true;
+            treeNode19.ImageKey = "shareddlls.ico";
+            treeNode19.Name = "NodeSharedDlls";
+            treeNode19.SelectedImageKey = "shareddlls.ico";
+            treeNode19.Text = "Shared DLLs";
+            treeNode19.ToolTipText = "Scans for invalid DLL references";
+            treeNode20.Checked = true;
+            treeNode20.ImageKey = "helpfiles.ico";
+            treeNode20.Name = "NodeHelp";
+            treeNode20.SelectedImageKey = "helpfiles.ico";
+            treeNode20.Text = "Help Files";
+            treeNode20.ToolTipText = "Scans for help files that no longer exist";
+            treeNode21.Checked = true;
+            treeNode21.ImageKey = "soundevents.ico";
+            treeNode21.Name = "NodeSounds";
+            treeNode21.SelectedImageKey = "soundevents.ico";
+            treeNode21.Text = "Sound Events";
+            treeNode21.ToolTipText = "Scans for missing windows sounds";
+            treeNode22.Checked = true;
+            treeNode22.ImageKey = "historylist.ico";
+            treeNode22.Name = "NodeHistoryList";
+            treeNode22.SelectedImageKey = "historylist.ico";
+            treeNode22.Text = "History List";
+            treeNode22.ToolTipText = "Scans for missing recent documents links";
+            treeNode23.Checked = true;
+            treeNode23.ImageKey = "fonts.ico";
+            treeNode23.Name = "NodeFonts";
+            treeNode23.SelectedImageKey = "fonts.ico";
+            treeNode23.Text = "Windows Fonts";
+            treeNode23.ToolTipText = "Finds invalid font references";
+            treeNode24.Checked = true;
+            treeNode24.ImageKey = "mycomputer.ico";
+            treeNode24.Name = "Node0";
+            treeNode24.SelectedImageKey = "mycomputer.ico";
+            treeNode24.Text = "My Computer";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode12});
+            treeNode24});
             this.treeView1.SelectedImageIndex = 0;
             this.treeView1.ShowNodeToolTips = true;
             this.treeView1.Size = new System.Drawing.Size(173, 361);
@@ -406,6 +417,8 @@
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
+            this.editToolStripMenuItem,
+            this.toolsToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -421,7 +434,6 @@
             this.restoreToolStripMenuItem,
             this.optimizeRegistryToolStripMenuItem,
             this.toolStripSeparator3,
-            this.optionsToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
@@ -433,7 +445,7 @@
             this.scanToolStripMenuItem.Name = "scanToolStripMenuItem";
             this.scanToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.scanToolStripMenuItem.Text = "Scan registry";
-            this.scanToolStripMenuItem.Click += new System.EventHandler(this.scanToolStripMenuItem_Click);
+            this.scanToolStripMenuItem.Click += new System.EventHandler(this.ScanRegistry);
             // 
             // fixToolStripMenuItem
             // 
@@ -442,7 +454,7 @@
             this.fixToolStripMenuItem.Name = "fixToolStripMenuItem";
             this.fixToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.fixToolStripMenuItem.Text = "Fix problems";
-            this.fixToolStripMenuItem.Click += new System.EventHandler(this.fixToolStripMenuItem_Click);
+            this.fixToolStripMenuItem.Click += new System.EventHandler(this.FixRegistry);
             // 
             // restoreToolStripMenuItem
             // 
@@ -450,27 +462,20 @@
             this.restoreToolStripMenuItem.Name = "restoreToolStripMenuItem";
             this.restoreToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.restoreToolStripMenuItem.Text = "Restore registry";
-            this.restoreToolStripMenuItem.Click += new System.EventHandler(this.restoreToolStripMenuItem_Click);
+            this.restoreToolStripMenuItem.Click += new System.EventHandler(this.RestoreRegistry);
             // 
             // optimizeRegistryToolStripMenuItem
             // 
+            this.optimizeRegistryToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("optimizeRegistryToolStripMenuItem.Image")));
             this.optimizeRegistryToolStripMenuItem.Name = "optimizeRegistryToolStripMenuItem";
             this.optimizeRegistryToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.optimizeRegistryToolStripMenuItem.Text = "Optimize registry";
-            this.optimizeRegistryToolStripMenuItem.Click += new System.EventHandler(this.optimizeRegistryToolStripMenuItem_Click);
+            this.optimizeRegistryToolStripMenuItem.Click += new System.EventHandler(this.StartOptimizer);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(161, 6);
-            // 
-            // optionsToolStripMenuItem
-            // 
-            this.optionsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("optionsToolStripMenuItem.Image")));
-            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
-            this.optionsToolStripMenuItem.Text = "Options";
-            this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -479,6 +484,69 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.selectAllToolStripMenuItem1,
+            this.selectNoneToolStripMenuItem1,
+            this.toolStripSeparator7,
+            this.excludeSelectedToolStripMenuItem1,
+            this.viewInRegeditToolStripMenuItem1});
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Text = "Edit";
+            // 
+            // selectAllToolStripMenuItem1
+            // 
+            this.selectAllToolStripMenuItem1.Name = "selectAllToolStripMenuItem1";
+            this.selectAllToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
+            this.selectAllToolStripMenuItem1.Text = "Select All";
+            this.selectAllToolStripMenuItem1.Click += new System.EventHandler(this.SelectAllListResults);
+            // 
+            // selectNoneToolStripMenuItem1
+            // 
+            this.selectNoneToolStripMenuItem1.Name = "selectNoneToolStripMenuItem1";
+            this.selectNoneToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
+            this.selectNoneToolStripMenuItem1.Text = "Select None";
+            this.selectNoneToolStripMenuItem1.Click += new System.EventHandler(this.SelectNoneListResults);
+            // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(158, 6);
+            // 
+            // excludeSelectedToolStripMenuItem1
+            // 
+            this.excludeSelectedToolStripMenuItem1.Name = "excludeSelectedToolStripMenuItem1";
+            this.excludeSelectedToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
+            this.excludeSelectedToolStripMenuItem1.Text = "Exclude Selected";
+            this.excludeSelectedToolStripMenuItem1.Click += new System.EventHandler(this.ExcludeSelectedListResults);
+            // 
+            // viewInRegeditToolStripMenuItem1
+            // 
+            this.viewInRegeditToolStripMenuItem1.Name = "viewInRegeditToolStripMenuItem1";
+            this.viewInRegeditToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
+            this.viewInRegeditToolStripMenuItem1.Text = "View in regedit";
+            this.viewInRegeditToolStripMenuItem1.Click += new System.EventHandler(this.ViewInRegEdit);
+            // 
+            // toolsToolStripMenuItem
+            // 
+            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.startupManagerToolStripMenuItem,
+            this.toolStripSeparator8,
+            this.toolStripMenuItemOptions});
+            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.toolsToolStripMenuItem.Text = "Tools";
+            // 
+            // toolStripMenuItemOptions
+            // 
+            this.toolStripMenuItemOptions.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItemOptions.Image")));
+            this.toolStripMenuItemOptions.Name = "toolStripMenuItemOptions";
+            this.toolStripMenuItemOptions.Size = new System.Drawing.Size(162, 22);
+            this.toolStripMenuItemOptions.Text = "Options";
+            this.toolStripMenuItemOptions.Click += new System.EventHandler(this.OpenOptions);
             // 
             // helpToolStripMenuItem
             // 
@@ -501,7 +569,7 @@
             this.helpToolStripMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.F1;
             this.helpToolStripMenuItem1.Size = new System.Drawing.Size(170, 22);
             this.helpToolStripMenuItem1.Text = "Help";
-            this.helpToolStripMenuItem1.Click += new System.EventHandler(this.helpToolStripMenuItem1_Click);
+            this.helpToolStripMenuItem1.Click += new System.EventHandler(this.LaunchHelpSite);
             // 
             // toolStripSeparator6
             // 
@@ -551,6 +619,8 @@
             this.toolStripButtonScan,
             this.toolStripButtonFix,
             this.toolStripButtonRestore,
+            this.toolStripButtonOptimizer,
+            this.toolStripSeparator5,
             this.toolStripButtonSettings,
             this.toolStripButtonHelp});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
@@ -568,7 +638,7 @@
             this.toolStripButtonScan.Size = new System.Drawing.Size(78, 51);
             this.toolStripButtonScan.Text = "Scan registry";
             this.toolStripButtonScan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripButtonScan.Click += new System.EventHandler(this.toolStripButtonScan_Click);
+            this.toolStripButtonScan.Click += new System.EventHandler(this.ScanRegistry);
             // 
             // toolStripButtonFix
             // 
@@ -579,7 +649,7 @@
             this.toolStripButtonFix.Size = new System.Drawing.Size(78, 51);
             this.toolStripButtonFix.Text = "Fix problems";
             this.toolStripButtonFix.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripButtonFix.Click += new System.EventHandler(this.toolStripButtonFix_Click);
+            this.toolStripButtonFix.Click += new System.EventHandler(this.FixRegistry);
             // 
             // toolStripButtonRestore
             // 
@@ -589,7 +659,22 @@
             this.toolStripButtonRestore.Size = new System.Drawing.Size(92, 51);
             this.toolStripButtonRestore.Text = "Restore registry";
             this.toolStripButtonRestore.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripButtonRestore.Click += new System.EventHandler(this.toolStripButtonRestore_Click);
+            this.toolStripButtonRestore.Click += new System.EventHandler(this.RestoreRegistry);
+            // 
+            // toolStripButtonOptimizer
+            // 
+            this.toolStripButtonOptimizer.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonOptimizer.Image")));
+            this.toolStripButtonOptimizer.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonOptimizer.Name = "toolStripButtonOptimizer";
+            this.toolStripButtonOptimizer.Size = new System.Drawing.Size(63, 51);
+            this.toolStripButtonOptimizer.Text = "Optimizer";
+            this.toolStripButtonOptimizer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButtonOptimizer.Click += new System.EventHandler(this.StartOptimizer);
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 54);
             // 
             // toolStripButtonSettings
             // 
@@ -599,7 +684,7 @@
             this.toolStripButtonSettings.Size = new System.Drawing.Size(53, 51);
             this.toolStripButtonSettings.Text = "Options";
             this.toolStripButtonSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripButtonSettings.Click += new System.EventHandler(this.toolStripButtonSettings_Click);
+            this.toolStripButtonSettings.Click += new System.EventHandler(this.OpenOptions);
             // 
             // toolStripButtonHelp
             // 
@@ -609,7 +694,19 @@
             this.toolStripButtonHelp.Size = new System.Drawing.Size(36, 51);
             this.toolStripButtonHelp.Text = "Help";
             this.toolStripButtonHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripButtonHelp.Click += new System.EventHandler(this.helpToolStripMenuItem1_Click);
+            this.toolStripButtonHelp.Click += new System.EventHandler(this.LaunchHelpSite);
+            // 
+            // startupManagerToolStripMenuItem
+            // 
+            this.startupManagerToolStripMenuItem.Name = "startupManagerToolStripMenuItem";
+            this.startupManagerToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.startupManagerToolStripMenuItem.Text = "Startup Manager";
+            this.startupManagerToolStripMenuItem.Click += new System.EventHandler(this.startupManagerToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator8
+            // 
+            this.toolStripSeparator8.Name = "toolStripSeparator8";
+            this.toolStripSeparator8.Size = new System.Drawing.Size(159, 6);
             // 
             // Main
             // 
@@ -622,6 +719,7 @@
             this.MinimumSize = new System.Drawing.Size(825, 475);
             this.Name = "Main";
             this.Text = "Little Registry Cleaner";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Shown += new System.EventHandler(this.Main_Shown);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
             this.Resize += new System.EventHandler(this.Main_Resize);
@@ -668,7 +766,6 @@
         private System.Windows.Forms.ToolStripMenuItem fixToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem restoreToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem visitWebsiteToolStripMenuItem;
@@ -690,6 +787,18 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ImageList imageListTreeView;
         private System.Windows.Forms.ToolStripMenuItem optimizeRegistryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton toolStripButtonOptimizer;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemOptions;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem selectNoneToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
+        private System.Windows.Forms.ToolStripMenuItem excludeSelectedToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem viewInRegeditToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem startupManagerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
     }
 }
 

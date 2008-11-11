@@ -56,7 +56,7 @@ namespace Little_Registry_Cleaner.Scanners
                             string strSoundPath = rk2.GetValue("") as string;
 
                             if (!string.IsNullOrEmpty(strSoundPath))
-                                if (!Misc.FileExists(strSoundPath))
+                                if (!Utils.FileExists(strSoundPath))
                                     ScanDlg.StoreInvalidKey("Invalid file or folder", rk2.Name, "(default)");
                         }
 

@@ -45,7 +45,7 @@ namespace Little_Registry_Cleaner.Scanners
                 foreach (string strFilePath in regKey.GetValueNames())
                 {
                     if (!string.IsNullOrEmpty(strFilePath))
-                        if (!Misc.FileExists(strFilePath))
+                        if (!Utils.FileExists(strFilePath))
                             ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strFilePath);
                 }
 

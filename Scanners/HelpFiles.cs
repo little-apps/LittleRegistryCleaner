@@ -75,13 +75,13 @@ namespace Little_Registry_Cleaner.Scanners
         /// <returns>True if it exists</returns>
         private static bool HelpFileExists(string strValueName, string strValue)
         {
-            if (Misc.FileExists(strValue))
+            if (Utils.FileExists(strValue))
                 return true;
 
-            if (Misc.FileExists(strValueName))
+            if (Utils.FileExists(strValueName))
                 return true;
 
-            if (Misc.FileExists(Path.Combine(strValue, strValueName)))
+            if (Utils.FileExists(Path.Combine(strValue, strValueName)))
                 return true;
 
             return false;

@@ -83,7 +83,7 @@ namespace Little_Registry_Cleaner.Scanners
                             string strDefaultIcon = regKeyIcon.GetValue("") as string;
 
                             if (!string.IsNullOrEmpty(strDefaultIcon))
-                                if (!Misc.IconExists(strDefaultIcon))
+                                if (!Utils.IconExists(strDefaultIcon))
                                     ScanDlg.StoreInvalidKey("Unable to find icon", regKeyIcon.ToString());
 
                             regKeyIcon.Close();
@@ -98,7 +98,7 @@ namespace Little_Registry_Cleaner.Scanners
                             string strInprocServer = regKeyInprocSrvr.GetValue("") as string;
 
                             if (!string.IsNullOrEmpty(strInprocServer))
-                                if (!Misc.FileExists(strInprocServer))
+                                if (!Utils.FileExists(strInprocServer))
                                     ScanDlg.StoreInvalidKey("Unable to find InprocServer", regKeyInprocSrvr.ToString());
 
                             regKeyInprocSrvr.Close();
@@ -112,7 +112,7 @@ namespace Little_Registry_Cleaner.Scanners
                             string strInprocServer32 = regKeyInprocSrvr32.GetValue("") as string;
 
                             if (!string.IsNullOrEmpty(strInprocServer32))
-                                if (!Misc.FileExists(strInprocServer32))
+                                if (!Utils.FileExists(strInprocServer32))
                                     ScanDlg.StoreInvalidKey("Unable to find InprocServer32", regKeyInprocSrvr32.ToString());
 
                             regKeyInprocSrvr32.Close();
@@ -130,6 +130,75 @@ namespace Little_Registry_Cleaner.Scanners
 
             regKey.Close();
             return;
+        }
+
+        /// <summary>
+        /// Checks for inprocserver file
+        /// </summary>
+        /// <param name="regKey">The registry key contain Inprocserver subkey</param>
+        /// <returns>False if Inprocserver is null or doesnt exist</returns>
+        private bool InprocServerExists(RegistryKey regKey)
+        {
+            bool bRet = false;
+
+            try
+            {
+                if (regKey != null)
+                {
+                    using (RegistryKey regKeyInprocSrvr = regKey.OpenSubKey("InprocServer"))
+                    {
+                        if (regKeyInprocSrvr != null)
+                        {
+                            string strInprocServer = regKeyInprocSrvr.GetValue("") as string;
+
+                            if (!string.IsNullOrEmpty(strInprocServer))
+                                if (Utils.FileExists(strInprocServer))
+                                    bRet = true;
+
+                            regKeyInprocSrvr.Close();
+                        }
+                    }
+
+                    using (RegistryKey regKeyInprocSrvr32 = regKey.OpenSubKey("InprocServer32"))
+                    {
+                        if (regKeyInprocSrvr32 != null)
+                        {
+                            string strInprocServer32 = regKeyInprocSrvr32.GetValue("") as string;
+
+                            if (!string.IsNullOrEmpty(strInprocServer32))
+                                if (Utils.FileExists(strInprocServer32))
+                                    bRet = true;
+
+                            regKeyInprocSrvr32.Close();
+                        }
+                    }
+                }
+            }
+            catch (System.Security.SecurityException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
+
+            return bRet;
+        }
+
+        private bool IEToolbarIsValid(string strGuid)
+        {
+            bool bRet = false;
+
+            if (!CLSIDExists(strGuid))
+                bRet = false;
+
+            if (InprocServerExists(Registry.ClassesRoot.OpenSubKey("CLSID\\" + strGuid)))
+                bRet = true;
+
+            if (InprocServerExists(Registry.LocalMachine.OpenSubKey("Software\\Classes\\CLSID\\" + strGuid)))
+                bRet = true;
+
+            if (InprocServerExists(Registry.CurrentUser.OpenSubKey("Software\\Classes\\CLSID\\" + strGuid)))
+                bRet = true;
+
+            return bRet;
         }
 
         /// <summary>
@@ -215,6 +284,7 @@ namespace Little_Registry_Cleaner.Scanners
         {
             try
             {
+                // Check Browser Help Objects
                 using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\explorer\\Browser Helper Objects"))
                 {
                     if (regKey == null)
@@ -238,6 +308,7 @@ namespace Little_Registry_Cleaner.Scanners
                     }
                 }
 
+                // Check IE Toolbars
                 using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Internet Explorer\\Toolbar"))
                 {
                     if (regKey == null)
@@ -248,14 +319,12 @@ namespace Little_Registry_Cleaner.Scanners
 
                     foreach (string strGuid in regKey.GetValueNames())
                     {
-                        if (!CLSIDExists(strGuid))
-                        {
-                            ScanDlg.StoreInvalidKey("Missing CLSID reference", regKey.ToString(), strGuid);
-                            continue;
-                        }
+                        if (!IEToolbarIsValid(strGuid))
+                            ScanDlg.StoreInvalidKey("Toolbar is not valid", regKey.ToString(), strGuid);
                     }
                 }
 
+                // Check IE Extensions
                 using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Internet Explorer\\Extensions"))
                 {
                     if (regKey == null)
@@ -295,7 +364,7 @@ namespace Little_Registry_Cleaner.Scanners
                 string strHotIcon = regKey.GetValue("HotIcon") as string;
                 if (!string.IsNullOrEmpty(strHotIcon))
                 {
-                    if (!Misc.IconExists(strHotIcon))
+                    if (!Utils.IconExists(strHotIcon))
                     {
                         ScanDlg.StoreInvalidKey("Missing hot icon file", regKey.ToString());
                         return;
@@ -305,7 +374,7 @@ namespace Little_Registry_Cleaner.Scanners
                 string strIcon = regKey.GetValue("Icon") as string;
                 if (!string.IsNullOrEmpty(strIcon))
                 {
-                    if (!Misc.IconExists(strIcon))
+                    if (!Utils.IconExists(strIcon))
                     {
                         ScanDlg.StoreInvalidKey("Missing icon file", regKey.ToString());
                         return;
@@ -327,7 +396,7 @@ namespace Little_Registry_Cleaner.Scanners
                 string strExec = regKey.GetValue("Exec") as string;
                 if (!string.IsNullOrEmpty(strExec))
                 {
-                    if (!Misc.FileExists(strExec))
+                    if (!Utils.FileExists(strExec))
                     {
                         ScanDlg.StoreInvalidKey("Missing executable", regKey.ToString());
                         return;
@@ -337,7 +406,7 @@ namespace Little_Registry_Cleaner.Scanners
                 string strScript = regKey.GetValue("Script") as string;
                 if (!string.IsNullOrEmpty(strScript))
                 {
-                    if (!Misc.FileExists(strScript))
+                    if (!Utils.FileExists(strScript))
                     {
                         ScanDlg.StoreInvalidKey("Missing script file", regKey.ToString());
                         return;

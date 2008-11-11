@@ -71,7 +71,7 @@ namespace Little_Registry_Cleaner.Scanners
                     }
 
                     // Check if file exists
-                    if (!Misc.FileExists(strAppPath))
+                    if (!Utils.FileExists(strAppPath))
                         ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "(default)");
                 }
 

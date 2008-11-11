@@ -4,3 +4,5 @@ bin
 bin/*
 bin/*/*
 obj/*
+bin/*
+Optimizer(32)

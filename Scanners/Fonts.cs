@@ -59,7 +59,7 @@ namespace Little_Registry_Cleaner.Scanners
                     continue;
 
                 // Check value by itself
-                if (Misc.FileExists(strValue))
+                if (Utils.FileExists(strValue))
                     continue;
 
                 // Check for font in fonts folder

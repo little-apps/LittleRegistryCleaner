@@ -19,6 +19,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - TODO: Check more keys for ActiveX/COM from http://msdn.microsoft.com/en-us/library/ms690440(VS.85).aspx
 - TODO: Rebuild MRU List after keys are removed
 - TODO: Fix saveAsXml() to only store needed subkeys
+- TODO: List Alternate startup folders if they are different in startup manager
+- TODO: Check for missing DLLs that are ran by rundll32 and regsvr32
+- TODO: Create class thats uses CollectionBase as base class for storing bad registry keys
 
 - Dialogs are opened with main dialog as owner
 - Added Drivers Section
@@ -170,3 +173,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Creates restore points before fixing registry problems instead of before scanning and also creates restore point before restoring
 - Uses function instead of try-catch to find invalid path characters
 - Added Icons to TreeView Sections
+- Added registry optimizer
+- Asks user to exit program no matter what close reason is and shows dialog if it is minimized
+- Displays number of problems found in scan dialog
+- No longer uses ExtractRunPath() to get file arguments thanks to discovery of PathGetArgs() and PathRemoveArgs() :D

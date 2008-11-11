@@ -51,55 +51,7 @@ namespace Little_Registry_Cleaner
         public Main()
         {
             InitializeComponent();
-        }
-      
-        private void scanToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ScanRegistry();
-        }
-
-        private void optionsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Options frmOptions = new Options();
-            frmOptions.ShowDialog(this);
-        }
-
-        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            About frmAbout = new About();
-            frmAbout.ShowDialog(this);
-        }
-
-        private void fixToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FixProblems();
-        }
-
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void restoreToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            RestoreRegistry();
-        }
-
-        private void toolStripButtonScan_Click(object sender, EventArgs e)
-        {
-            ScanRegistry();
-        }
-
-        private void toolStripButtonFix_Click(object sender, EventArgs e)
-        {
-            FixProblems();
-        }
-
-        private void toolStripButtonSettings_Click(object sender, EventArgs e)
-        {
-            Options frmOptions = new Options();
-            frmOptions.ShowDialog(this);
-        }
+        } 
 
         /// <summary>
         /// Begins scanning the registry
@@ -205,15 +157,6 @@ namespace Little_Registry_Cleaner
             }
         }
 
-        /// <summary>
-        /// Opens restore dialog
-        /// </summary>
-        private void RestoreRegistry()
-        {
-            Restore RestoreDlg = new Restore();
-            RestoreDlg.ShowDialog(this);
-        }
-
         private void Main_Resize(object sender, EventArgs e)
         {
             if (this.WindowState == FormWindowState.Minimized)
@@ -250,11 +193,6 @@ namespace Little_Registry_Cleaner
                     if (MessageBox.Show(this, "A newer version is available. Would you like to download it?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                         LaunchURI(strDownloadURL);
             }
-        }
-
-        private void toolStripButtonRestore_Click(object sender, EventArgs e)
-        {
-            RestoreRegistry();
         }
 
         private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
@@ -314,105 +252,16 @@ namespace Little_Registry_Cleaner
                 Main.bScanHistoryList = e.Node.Checked;
         }
 
-        private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            for (int i = 0; i < this.listResults.Items.Count; i++)
-                this.listResults.Items[i].Checked = true;
-        }
-
-        private void selectNoneToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            for (int i = 0; i < this.listResults.Items.Count; i++)
-                this.listResults.Items[i].Checked = false;
-        }
-
-        private void excludeSelectedToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (this.listResults.SelectedIndices.Count > 0 && this.listResults.Items.Count > 0)
-            {
-                for (int i = 0; i < this.listResults.SelectedItems.Count; i++)
-                {
-                    string strPath = this.listResults.SelectedItems[i].SubItems[1].Text;
-
-                    string strBaseKey = strPath.Substring(0, strPath.IndexOf('\\'));
-                    string strSubKey = strPath.Substring(strPath.IndexOf('\\') + 1);
-
-                    if (Properties.Settings.Default.arrayOptionsExcludeList == null)
-                        Properties.Settings.Default.arrayOptionsExcludeList = new ArrayList();
-
-                    Properties.Settings.Default.arrayOptionsExcludeList.Add(new string[] { strBaseKey, strSubKey });
-                }
-
-                MessageBox.Show(this, "Added selected subkeys to the exclude list", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
-        private void visitWebsiteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            LaunchURI("http://sourceforge.net/projects/littlecleaner/");
-        }
-
-        private void viewChangeLogToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (File.Exists("ChangeLog.txt"))
-                Process.Start("ChangeLog.txt");
-        }
-
-        private void checkForUpdatesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            UpdateDlg frmCheckForUpdate = new UpdateDlg();
-            frmCheckForUpdate.ShowDialog(this);
-        }
-
-        private void hideShowToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (this.WindowState == FormWindowState.Minimized)
             {
                 this.Show();
                 this.WindowState = FormWindowState.Normal;
             }
-            else
-            {
-                this.Hide();
-                this.WindowState = FormWindowState.Minimized;
-            }
-        }
 
-        private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            if (this.WindowState != FormWindowState.Minimized)
-            {
-                About dlgAbout = new About();
-                dlgAbout.ShowDialog(this);
-            }
-        }
-
-        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void Main_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (e.CloseReason == CloseReason.UserClosing)
-            {
-                if (MessageBox.Show(this, "Are you sure?", "Little Registry Cleaner", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
-                    e.Cancel = true;
-            }
-        }
-
-        private void toolStripAbout_Click(object sender, EventArgs e)
-        {
-            About aboutDlg = new About();
-            aboutDlg.ShowDialog(this);
-        }
-
-        private void viewInRegeditToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (this.listResults.SelectedIndices.Count > 0 && this.listResults.Items.Count > 0)
-            {
-                RegEditGo(this.listResults.SelectedItems[0].SubItems[1].Text);
-            }
+            if (MessageBox.Show(this, "Are you sure you want to exit?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                e.Cancel = true;
         }
 
         /// <summary>
@@ -440,10 +289,7 @@ namespace Little_Registry_Cleaner
             Process.Start("regedit.exe");
         }
 
-        private void helpToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            LaunchURI("http://answers.launchpad.net/lilregcleaner");
-        }
+        
 
         /// <summary>
         /// Checks for default program then launches URI
@@ -473,10 +319,152 @@ namespace Little_Registry_Cleaner
             return false;
         }
 
-        private void optimizeRegistryToolStripMenuItem_Click(object sender, EventArgs e)
+        #region "Menu Events"
+        #region "Global Menu Events"
+        private void StartOptimizer(object sender, EventArgs e)
         {
             Optimizer.Optimizer dlgOptimizer = new Little_Registry_Cleaner.Optimizer.Optimizer();
             dlgOptimizer.ShowDialog();
         }
+
+        private void LaunchHelpSite(object sender, EventArgs e)
+        {
+            LaunchURI("http://answers.launchpad.net/lilregcleaner");
+        }
+
+        private void OpenOptions(object sender, EventArgs e)
+        {
+            Options dlgOptions = new Options();
+            dlgOptions.ShowDialog(this);
+        }
+
+        private void ScanRegistry(object sender, EventArgs e)
+        {
+            ScanRegistry();
+        }
+
+        private void FixRegistry(object sender, EventArgs e)
+        {
+            FixProblems();
+        }
+
+        private void RestoreRegistry(object sender, EventArgs e)
+        {
+            Restore RestoreDlg = new Restore();
+            RestoreDlg.ShowDialog(this);
+        }
+
+        private void ViewInRegEdit(object sender, EventArgs e)
+        {
+            if (this.listResults.SelectedIndices.Count > 0 && this.listResults.Items.Count > 0)
+            {
+                RegEditGo(this.listResults.SelectedItems[0].SubItems[1].Text);
+            }
+        }
+
+        private void SelectAllListResults(object sender, EventArgs e)
+        {
+            for (int i = 0; i < this.listResults.Items.Count; i++)
+                this.listResults.Items[i].Checked = true;
+        }
+
+        private void SelectNoneListResults(object sender, EventArgs e)
+        {
+            for (int i = 0; i < this.listResults.Items.Count; i++)
+                this.listResults.Items[i].Checked = false;
+        }
+
+        private void ExcludeSelectedListResults(object sender, EventArgs e)
+        {
+            if (this.listResults.SelectedIndices.Count > 0 && this.listResults.Items.Count > 0)
+            {
+                for (int i = 0; i < this.listResults.SelectedItems.Count; i++)
+                {
+                    string strPath = this.listResults.SelectedItems[i].SubItems[1].Text;
+
+                    string strBaseKey = strPath.Substring(0, strPath.IndexOf('\\'));
+                    string strSubKey = strPath.Substring(strPath.IndexOf('\\') + 1);
+
+                    if (Properties.Settings.Default.arrayOptionsExcludeList == null)
+                        Properties.Settings.Default.arrayOptionsExcludeList = new ArrayList();
+
+                    Properties.Settings.Default.arrayOptionsExcludeList.Add(new string[] { strBaseKey, strSubKey });
+                }
+
+                MessageBox.Show(this, "Added selected subkeys to the exclude list", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+        #endregion
+
+        #region "Main Menu Strip"
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void visitWebsiteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LaunchURI("http://sourceforge.net/projects/littlecleaner/");
+        }
+
+        private void viewChangeLogToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (File.Exists("ChangeLog.txt"))
+                Process.Start("ChangeLog.txt");
+        }
+
+        private void checkForUpdatesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UpdateDlg frmCheckForUpdate = new UpdateDlg();
+            frmCheckForUpdate.ShowDialog(this);
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            About frmAbout = new About();
+            frmAbout.ShowDialog(this);
+        }
+
+        #endregion
+
+        #region "Notify Icon Menu"
+        private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState != FormWindowState.Minimized)
+            {
+                About dlgAbout = new About();
+                dlgAbout.ShowDialog(this);
+            }
+        }
+
+        private void hideShowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Minimized)
+            {
+                this.Show();
+                this.WindowState = FormWindowState.Normal;
+            }
+            else
+            {
+                this.Hide();
+                this.WindowState = FormWindowState.Minimized;
+            }
+        }
+
+        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        #endregion
+
+        private void startupManagerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StartupManager.StartupManager dlgStartupManager = new StartupManager.StartupManager();
+            dlgStartupManager.ShowDialog(this);
+        }
+        #endregion
+
+
     }
 }

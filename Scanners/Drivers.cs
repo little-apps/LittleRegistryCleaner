@@ -45,7 +45,7 @@ namespace Little_Registry_Cleaner.Scanners
                 {
                     string strValue = regKey.GetValue(strDriverName) as string;
 
-                    if (!Misc.FileExists(strValue))
+                    if (!Utils.FileExists(strValue))
                         ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strDriverName);
                 }
 
