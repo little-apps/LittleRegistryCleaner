@@ -17,13 +17,17 @@
 */
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
+using System.Drawing;
 using System.Windows.Forms;
 using System.Runtime.Serialization;
 using System.Runtime.InteropServices;
+using System.Diagnostics;
+using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner
 {
@@ -31,24 +35,65 @@ namespace Little_Registry_Cleaner
     {
         #region Signatures imported from http://pinvoke.net
 
-        [DllImport("shell32.dll")]
-        public static extern bool SHGetSpecialFolderPath(IntPtr hwndOwner, [Out] StringBuilder lpszPath, int nFolder, bool fCreate);
+        [DllImport("kernel32.dll")] public static extern int SearchPath(string strPath, string strFileName, string strExtension, uint nBufferLength, StringBuilder strBuffer, string strFilePart);
 
-        [DllImport("kernel32.dll")]
-        public static extern int SearchPath(string strPath, string strFileName, string strExtension, uint nBufferLength, StringBuilder strBuffer, string strFilePart);
-
-        [DllImport("shell32.dll", EntryPoint = "FindExecutable")]
-        public static extern long FindExecutableA(string lpFile, string lpDirectory, StringBuilder lpResult);
-
-        [DllImport("Shlwapi.dll", SetLastError=true, CharSet=CharSet.Auto)]
-        public static extern string PathGetArgs(string path);
-
-        [DllImport("Shlwapi.dll", SetLastError = true, CharSet=CharSet.Auto)]
-        public static extern void PathRemoveArgs([In, Out] StringBuilder path);
-
+        // Used for SHGetSpecialFolderPath
         public const int CSIDL_STARTUP = 0x0007; // All Users\Startup
         public const int CSIDL_COMMON_STARTUP = 0x0018; // Common Users\Startup
 
+        [DllImport("shell32.dll")] public static extern bool SHGetSpecialFolderPath(IntPtr hwndOwner, [Out] StringBuilder lpszPath, int nFolder, bool fCreate);
+        [DllImport("shell32.dll", EntryPoint = "FindExecutable")] public static extern long FindExecutableA(string lpFile, string lpDirectory, StringBuilder lpResult);
+        [DllImport("shell32.dll")] public static extern IntPtr ExtractIcon(IntPtr hInst, string lpszExeFileName, int nIconIndex);
+        
+         
+        [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern string PathGetArgs(string path);
+        [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern void PathRemoveArgs([In, Out] StringBuilder path);
+        [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern int PathParseIconLocation([In, Out] StringBuilder path);
+        [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern bool PathFileExists(string path);
+
+        #endregion
+        #region "Interop (CreateProcess)"
+        struct PROCESS_INFORMATION
+        {
+            public IntPtr hProcess;
+            public IntPtr hThread;
+            public IntPtr dwProcessId;
+            public IntPtr dwThreadId;
+        }
+
+        struct STARTUPINFO
+        {
+            public int cb;
+            public string lpReserved;
+            public string lpDesktop;
+            public string lpTitle;
+            public int dwX;
+            public int dwY;
+            public int dwXSize;
+            public int dwYSize;
+            public int dwXCountChars;
+            public int dwYCountChars;
+            public int dwFillAttribute;
+            public int dwFlags;
+            public short wShowWindow;
+            public short cbReserved2;
+            public byte lpReserved2;
+            public int hStdInput;
+            public int hStdOutput;
+            public int hStdError;
+        }
+
+        [DllImport("kernel32.dll")]
+        static extern bool CreateProcess(string lpApplicationName,
+          string lpCommandLine, IntPtr lpProcessAttributes, IntPtr lpThreadAttributes,
+          bool bInheritHandles, uint dwCreationFlags, IntPtr lpEnvironment,
+          string lpCurrentDirectory, [In] ref STARTUPINFO lpStartupInfo,
+          out PROCESS_INFORMATION lpProcessInformation);
+
+        [DllImport("kernel32.dll", SetLastError = true)]
+        static extern bool CloseHandle(IntPtr hObject);
+        #endregion
+        #region "Interop (IShellLink and IPersistFile)"
         [Flags()]
         enum SLGP_FLAGS
         {
@@ -204,6 +249,23 @@ namespace Little_Registry_Cleaner
         #endregion
 
         /// <summary>
+        /// Starts the process using CreateProcess() API
+        /// </summary>
+        /// <param name="strExePath">The path to the executable</param>
+        /// <returns>Process ID</returns>
+        public static IntPtr CreateProcess(string strExePath)
+        {
+            PROCESS_INFORMATION pi;
+            STARTUPINFO si = new STARTUPINFO();
+            si.wShowWindow = 1;
+            if (CreateProcess(null, strExePath, IntPtr.Zero, IntPtr.Zero,
+                false, 0, IntPtr.Zero, null, ref si, out pi))
+                return pi.dwProcessId;
+            else
+                return IntPtr.Zero;
+        }
+
+        /// <summary>
         /// Uses PathGetArgs and PathRemoveArgs API to extract file arguments
         /// </summary>
         /// <param name="strPath">file path including arguments</param>
@@ -228,22 +290,52 @@ namespace Little_Registry_Cleaner
             return true;
         }
 
+        /// <summary>
+        /// Extracts icon from path and returns Icon
+        /// </summary>
+        /// <param name="path">The full path in form "filename,index"</param>
+        /// <returns>Returns Icon</returns>
+        public static Icon ParseIconPath(string path)
+        {
+            StringBuilder sb = new StringBuilder(path);
+
+            int nIndex = PathParseIconLocation(sb);
+
+            if (sb.Length > 0)
+            {
+                IntPtr hIcon = ExtractIcon(IntPtr.Zero, sb.ToString(), nIndex);
+
+                Icon ico = (Icon)Icon.FromHandle(hIcon).Clone();
+
+                return ico;
+            }
+            else
+                return null;
+        }
 
         /// <summary>
         /// Resolves path to .lnk shortcut
         /// </summary>
-        /// <param name="filename">Path of shortcut</param>
-        /// <returns>File path</returns>
-        public static string ResolveShortcut(string filename)
+        /// <param name="shortcut">The path to the shortcut</param>
+        /// <param name="filepath">Returns the file path</param>
+        /// <param name="arguments">Returns the shortcuts arguments</param>
+        public static void ResolveShortcut(string shortcut, out string filepath, out string arguments)
         {
             ShellLink link = new ShellLink();
-            ((IPersistFile)link).Load(filename, STGM_READ);
+            ((IPersistFile)link).Load(shortcut, STGM_READ);
             // TODO: if I can get hold of the hwnd call resolve first. This handles moved and renamed files.  
             // ((IShellLinkW)link).Resolve(hwnd, 0) 
-            StringBuilder sb = new StringBuilder(MAX_PATH);
+            StringBuilder path = new StringBuilder(MAX_PATH);
             WIN32_FIND_DATAW data = new WIN32_FIND_DATAW();
-            ((IShellLinkW)link).GetPath(sb, sb.Capacity, out data, 0);
-            return sb.ToString();
+            ((IShellLinkW)link).GetPath(path, path.Capacity, out data, 0);
+
+            StringBuilder args = new StringBuilder(MAX_PATH);
+            ((IShellLinkW)link).GetArguments(args, args.Capacity);
+
+            filepath = path.ToString();
+            arguments = args.ToString();
+
+            return;
         }
 
         /// <summary>
@@ -264,6 +356,155 @@ namespace Little_Registry_Cleaner
             return (File.Exists(filename));
         }
 
+        /// <summary>
+        /// Converts FILETIME structure to DateTime structure
+        /// </summary>
+        /// <param name="ft">FILETIME structure</param>
+        /// <returns>DateTime structure</returns>
+        public static DateTime FileTime2DateTime(FILETIME ft)
+        {
+            DateTime dt = DateTime.MaxValue;
+            long hFT2 = (((long)ft.dwHighDateTime) << 32) + ft.dwLowDateTime;
+
+            try
+            {
+                dt = DateTime.FromFileTimeUtc(hFT2);
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                dt = DateTime.MaxValue;
+            }
+
+            return dt;
+        }
+
+        /// <summary>
+        /// Goes to registry key in regedit
+        /// </summary>
+        /// <param name="strRegistryPath">Registry key</param>
+        public static void RegEditGo(string strRegistryPath)
+        {
+            // Set key to be displayed when regedit starts
+            RegistryKey regKey = Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Applets\\Regedit", true);
+            if (regKey != null)
+            {
+                regKey.SetValue("LastKey", "Computer\\" + strRegistryPath);
+                regKey.Close();
+            }
+
+            // See if regedit is running, restart it if it is
+            foreach (Process p in Process.GetProcessesByName("regedit"))
+            {
+                p.WaitForInputIdle();
+                p.Kill();
+                p.Close();
+            }
+
+            Process.Start("regedit.exe");
+        }
+
+        public static string ConvertSizeToString(uint Length)
+        {
+            if (Length < 0)
+                return "";
+
+            float nSize;
+            string strSizeFmt, strUnit = "";
+
+            if (Length < 1000)             // 1KB
+            {
+                nSize = Length;
+                strUnit = " B";
+            }
+            else if (Length < 1000000)     // 1MB
+            {
+                nSize = Length / (float)0x400;
+                strUnit = " KB";
+            }
+            else if (Length < 1000000000)   // 1GB
+            {
+                nSize = Length / (float)0x100000;
+                strUnit = " MB";
+            }
+            else
+            {
+                nSize = Length / (float)0x40000000;
+                strUnit = " GB";
+            }
+
+            if (nSize == (int)nSize)
+                strSizeFmt = nSize.ToString("0");
+            else if (nSize < 10)
+                strSizeFmt = nSize.ToString("0.00");
+            else if (nSize < 100)
+                strSizeFmt = nSize.ToString("0.0");
+            else
+                strSizeFmt = nSize.ToString("0");
+
+            return strSizeFmt + strUnit;
+        }
+
+        /// <summary>
+        /// Converts size in bytes to kilobytes
+        /// </summary>
+        /// <param name="Length">Size in Bytes</param>
+        /// <returns>Size in kilobytes</returns>
+        public static string GetSizeInKiloBytes(long Length)
+        {
+            double nKiloBytes = Length / 1024F;
+
+            return string.Format("{0} KB", nKiloBytes.ToString("0.00"));
+        }
+
+
+        /// <summary>
+        /// Converts size in bytes to megabytes
+        /// </summary>
+        /// <param name="Length">Size in Bytes</param>
+        /// <returns>Size in Megabytes</returns>
+        public static string GetSizeInMegaBytes(long Length)
+        {
+            double nMegaBytes = Length / 1024F / 1024F;
+
+            return string.Format("{0} MB", nMegaBytes.ToString("0.00"));
+        }
+
+        /// <summary>
+        /// Calculates size of directory
+        /// </summary>
+        /// <param name="directory">DirectoryInfo class</param>
+        /// <param name="includeSubdirectories">Includes sub directories if true</param>
+        /// <returns>Size of directory in bytes</returns>
+        public static long CalculateDirectorySize(DirectoryInfo directory, bool includeSubdirectories)
+        {
+            long totalSize = 0;
+
+            // Examine all contained files.
+            FileInfo[] files = directory.GetFiles();
+            foreach (FileInfo file in files)
+            {
+                totalSize += file.Length;
+            }
+
+            // Examine all contained directories.
+            if (includeSubdirectories)
+            {
+                DirectoryInfo[] dirs = directory.GetDirectories();
+                foreach (DirectoryInfo dir in dirs)
+                {
+                    totalSize += CalculateDirectorySize(dir, true);
+                }
+            }
+
+            return totalSize;
+        }
+
+
+        /// <summary>
+        /// Returns special folder path specified by CSIDL
+        /// </summary>
+        /// <param name="nCSIDL">CSIDL</param>
+        /// <returns>Special folder path</returns>
         public static string GetSpecialFolderPath(int nCSIDL)
         {
             StringBuilder path = new StringBuilder(260);
@@ -278,12 +519,22 @@ namespace Little_Registry_Cleaner
         /// </summary>
         /// <param name="strFilePath">The file path</param>
         /// <returns>True if it exists</returns>
-        public static bool SearchFilePath(string strFilePath)
+        public static bool SearchPath(string strFilePath)
         {
             // Search for file in %path% variable
             StringBuilder strBuffer = new StringBuilder(260);
 
             if (SearchPath(null, strFilePath, null, 260, strBuffer, null) != 0)
+                return true;
+
+            return false;
+        }
+
+        public static bool SearchPath(string strFile, string strPath)
+        {
+            StringBuilder strBuffer = new StringBuilder(260);
+
+            if (SearchPath(strPath, strFile, null, 260, strBuffer, null) != 0)
                 return true;
 
             return false;
@@ -369,7 +620,10 @@ namespace Little_Registry_Cleaner
             if (File.Exists(strFileName))
                 return true;
 
-            if (Utils.SearchFilePath(strFileName))
+            if (PathFileExists(strFileName))
+                return true;
+
+            if (Utils.SearchPath(strFileName))
                 return true;
 
             return false;
@@ -559,5 +813,30 @@ namespace Little_Registry_Cleaner
         }
     }
 
-
+    public class ListViewItemComparer : IComparer
+    {
+        private int col;
+        private SortOrder order;
+        public ListViewItemComparer()
+        {
+            col = 0;
+            order = SortOrder.Ascending;
+        }
+        public ListViewItemComparer(int column, SortOrder order)
+        {
+            col = column;
+            this.order = order;
+        }
+        public int Compare(object x, object y)
+        {
+            int returnVal = -1;
+            returnVal = String.Compare(((ListViewItem)x).SubItems[col].Text,
+                                    ((ListViewItem)y).SubItems[col].Text);
+            // Determine whether the sort order is descending.
+            if (order == SortOrder.Descending)
+                // Invert the value returned by String.Compare.
+                returnVal *= -1;
+            return returnVal;
+        }
+    }
 }

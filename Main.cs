@@ -264,30 +264,7 @@ namespace Little_Registry_Cleaner
                 e.Cancel = true;
         }
 
-        /// <summary>
-        /// Goes to registry key in regedit
-        /// </summary>
-        /// <param name="strRegistryPath">Registry key</param>
-        public static void RegEditGo(string strRegistryPath)
-        {
-            // Set key to be displayed when regedit starts
-            RegistryKey regKey = Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Applets\\Regedit", true);
-            if (regKey != null)
-            {
-                regKey.SetValue("LastKey", "Computer\\" + strRegistryPath);
-                regKey.Close();
-            }
-
-            // See if regedit is running, restart it if it is
-            foreach (Process p in Process.GetProcessesByName("regedit"))
-            {
-                p.WaitForInputIdle();
-                p.Kill();
-                p.Close();
-            }
-
-            Process.Start("regedit.exe");
-        }
+        
 
         
 
@@ -358,7 +335,7 @@ namespace Little_Registry_Cleaner
         {
             if (this.listResults.SelectedIndices.Count > 0 && this.listResults.Items.Count > 0)
             {
-                RegEditGo(this.listResults.SelectedItems[0].SubItems[1].Text);
+                Utils.RegEditGo(this.listResults.SelectedItems[0].SubItems[1].Text);
             }
         }
 
@@ -464,6 +441,12 @@ namespace Little_Registry_Cleaner
             dlgStartupManager.ShowDialog(this);
         }
         #endregion
+
+        private void uninstallManagerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UninstallManager.UninstallManager dlgUninstallManager = new Little_Registry_Cleaner.UninstallManager.UninstallManager();
+            dlgUninstallManager.ShowDialog(this);
+        }
 
 
     }

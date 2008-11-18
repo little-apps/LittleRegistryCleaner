@@ -47,7 +47,7 @@ namespace Little_Registry_Cleaner
             foreach (FileInfo fi in di.GetFiles()) {
                 if (fi.Extension.CompareTo(".xml") == 0)
                 {
-                    ListViewItem lvi = new ListViewItem(new string[] { fi.Name, fi.CreationTime.ToString(), GetSizeInKiloBytes(fi.Length)});
+                    ListViewItem lvi = new ListViewItem(new string[] { fi.Name, fi.CreationTime.ToString(), Utils.GetSizeInKiloBytes(fi.Length)});
                     this.listViewFiles.Items.Add(lvi);
                 }
             }
@@ -59,12 +59,7 @@ namespace Little_Registry_Cleaner
             }
         }
 
-        private string GetSizeInKiloBytes(long Length)
-        {
-            double nKiloBytes = Length / 1024F;
-
-            return string.Format("{0} KB", nKiloBytes.ToString("0.00"));
-        }
+        
 
         private void buttonRestore_Click(object sender, EventArgs e)
         {

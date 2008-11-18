@@ -1,4 +1,22 @@
-﻿using System;
+﻿/*
+    Little Registry Cleaner
+    Copyright (C) 2008 Nick H.
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,10 +41,7 @@ namespace Little_Registry_Cleaner.StartupManager
         {
             this.treeView1.Nodes[0].ExpandAll();
 
-            ImageList imageList = new ImageList();
-
             LoadStartupFiles();
-            
         }
 
         private void LoadRegistryAutoRun(RegistryKey regKey)
@@ -39,17 +54,22 @@ namespace Little_Registry_Cleaner.StartupManager
 
             foreach (string strItem in regKey.GetValueNames())
             {
-                string strFile = regKey.GetValue(strItem) as string;
+                string strFilePath = regKey.GetValue(strItem) as string;
 
-                if (!string.IsNullOrEmpty(strFile))
+                if (!string.IsNullOrEmpty(strFilePath))
                 {
+                    // Convert HKLM\Software\Microsoft\... to Registry\All Users
                     string strRegKey = regKey.Name;
                     string strMainKey = strRegKey.Substring(0, strRegKey.IndexOf("\\"));
                     string strPath = strRegKey.Substring(strRegKey.LastIndexOf("\\") + 1);
 
                     string strShortKey = ShortRegKey(strMainKey, strPath);
 
-                    ListViewItem listViewItem = new ListViewItem(new string[] { strItem, strShortKey, strFile });
+                    // Get file arguments
+                    string strFile, strArgs;
+                    Utils.ExtractArguments(strFilePath, out strFile, out strArgs);
+
+                    ListViewItem listViewItem = new ListViewItem(new string[] { strItem, strShortKey, strFile , strArgs});
                     listViewItem.Checked = true;
                     this.listView1.Items.Add(listViewItem);
                 }
@@ -68,16 +88,17 @@ namespace Little_Registry_Cleaner.StartupManager
 
                 foreach (string strShortcut in Directory.GetFiles(strFolder))
                 {
-                    FileInfo fileInfo = new FileInfo(strShortcut);
+                    string strShortcutName = Path.GetFileName(strShortcut);
+                    string strFilePath, strFileArgs;
 
-                    if (fileInfo.Name == "desktop.ini")
-                        continue;
+                    if (strShortcutName != "desktop.ini")
+                    {
+                        Utils.ResolveShortcut(strShortcut, out strFilePath, out strFileArgs);
 
-                    string strFilePath = Utils.ResolveShortcut(strShortcut);
-
-                    ListViewItem listViewItem = new ListViewItem(new string[] { fileInfo.Name, strShortFolder, strFilePath });
-                    listViewItem.Checked = true;
-                    this.listView1.Items.Add(listViewItem);
+                        ListViewItem listViewItem = new ListViewItem(new string[] { strShortcutName, strShortFolder, strFilePath, strFileArgs });
+                        listViewItem.Checked = true;
+                        this.listView1.Items.Add(listViewItem);
+                    }
                 }
             }
             catch (Exception ex)
@@ -153,52 +174,179 @@ namespace Little_Registry_Cleaner.StartupManager
             // Reload list
             LoadStartupFiles();
 
-            if (e.Node.Name == "NodeRegAll")
+
+            if (e.Node.Name == "NodeReg")
             {
-                foreach (ListViewItem lvi in this.listView1.Items)
-                {
-                    if (!lvi.SubItems[1].Text.StartsWith(@"Registry\All Users"))
-                        lvi.Remove();
-                }
+                RemoveItemsStartingWith(@"Registry\");
+            }
+            else if (e.Node.Name == "NodeStart")
+            {
+                RemoveItemsStartingWith(@"StartUp\");
+            }
+            else if (e.Node.Name == "NodeRegAll")
+            {
+                RemoveItemsStartingWith(@"Registry\All Users");
             }
             else if (e.Node.Name == "NodeRegCurrent")
             {
-                foreach (ListViewItem lvi in this.listView1.Items)
-                {
-                    if (!lvi.SubItems[1].Text.StartsWith(@"Registry\Current User"))
-                        lvi.Remove();
-                }
+                RemoveItemsStartingWith(@"Registry\Current User");
             }
             else if (e.Node.Name == "NodeStartAll")
             {
-                foreach (ListViewItem lvi in this.listView1.Items)
-                {
-                    if (!lvi.SubItems[1].Text.StartsWith(@"StartUp\All Users"))
-                        lvi.Remove();
-                }
+                RemoveItemsStartingWith(@"StartUp\All Users");
             }
             else if (e.Node.Name == "NodeStartCurrent")
             {
-                foreach (ListViewItem lvi in this.listView1.Items)
-                {
-                    if (!lvi.SubItems[1].Text.StartsWith(@"StartUp\Current User"))
-                        lvi.Remove();
-                }
+                RemoveItemsStartingWith(@"StartUp\Current User");
+            }
+        }
+
+        private void RemoveItemsStartingWith(string strText)
+        {
+            foreach (ListViewItem lvi in this.listView1.Items)
+            {
+                if (!lvi.SubItems[1].Text.StartsWith(strText))
+                    lvi.Remove();
             }
         }
 
         private void toolStripButtonAdd_Click(object sender, EventArgs e)
         {
-            NewRunValue nrv = new NewRunValue();
+            NewRunItem nrv = new NewRunItem();
             if (nrv.ShowDialog(this) == DialogResult.OK)
                 this.LoadStartupFiles();
         }
 
         private void toolStripButtonDelete_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show(this, "Are you sure you want to remove this startup program?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (this.listView1.SelectedItems.Count > 0)
             {
+                if (MessageBox.Show(this, "Are you sure you want to remove this startup program?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    foreach (ListViewItem lvi in this.listView1.SelectedItems)
+                    {
+                        string strItem = lvi.SubItems[0].Text;
+                        string strSection = lvi.SubItems[1].Text;
+                        string strFilepath = lvi.SubItems[2].Text;
 
+                        if (strSection.StartsWith(@"Registry\"))
+                        {
+                            RegistryKey regKey = null;
+                            string strRegPath = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\" + strSection.Substring(strSection.LastIndexOf("\\") + 1);
+
+                            if (strSection.StartsWith(@"Registry\All Users"))
+                            {
+                                regKey = Registry.LocalMachine.OpenSubKey(strRegPath, true);
+                            }
+                            else if (strSection.StartsWith(@"Registry\Current User"))
+                            {
+                                regKey = Registry.CurrentUser.OpenSubKey(strRegPath, true);
+                            }
+
+                            regKey.DeleteValue(strItem, false);
+                            regKey.Close();
+                        }
+                        else
+                        {
+                            string strStartupFolder = "";
+
+                            if (strSection == @"StartUp\All Users")
+                            {
+                                strStartupFolder = Utils.GetSpecialFolderPath(Utils.CSIDL_STARTUP);
+                            }
+                            else if (strSection == @"StartUp\Current User")
+                            {
+                                strStartupFolder = Utils.GetSpecialFolderPath(Utils.CSIDL_COMMON_STARTUP);
+                            }
+
+                            File.Delete(string.Format("{0}\\{1}", strStartupFolder, strItem));
+                        }
+                    }
+
+                    LoadStartupFiles();
+                }
+            }
+        }
+
+        private void toolStripButtonEdit_Click(object sender, EventArgs e)
+        {
+            if (this.listView1.SelectedItems.Count > 0)
+            {
+                string strItem = this.listView1.SelectedItems[0].SubItems[0].Text;
+                string strSection = this.listView1.SelectedItems[0].SubItems[1].Text;
+                string strFilepath = this.listView1.SelectedItems[0].SubItems[2].Text;
+                string strFileArgs = this.listView1.SelectedItems[0].SubItems[3].Text;
+
+                EditRunItem dlgEditRunValue = new EditRunItem(strItem, strSection, strFilepath, strFileArgs);
+                if (dlgEditRunValue.ShowDialog(this) == DialogResult.OK)
+                    LoadStartupFiles();
+            }
+        }
+
+        private void toolStripButtonView_Click(object sender, EventArgs e)
+        {
+            if (this.listView1.SelectedItems.Count > 0)
+            {
+                string strItem = this.listView1.SelectedItems[0].SubItems[0].Text;
+                string strSection = this.listView1.SelectedItems[0].SubItems[1].Text;
+
+                if (strSection.StartsWith(@"Registry\"))
+                {
+                    RegistryKey regKey = null;
+                    string strRegPath = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\" + strSection.Substring(strSection.LastIndexOf("\\") + 1);
+
+                    if (strSection.StartsWith(@"Registry\All Users"))
+                    {
+                        regKey = Registry.LocalMachine.OpenSubKey(strRegPath, true);
+                    }
+                    else if (strSection.StartsWith(@"Registry\Current User"))
+                    {
+                        regKey = Registry.CurrentUser.OpenSubKey(strRegPath, true);
+                    }
+
+                    if (regKey != null)
+                    {
+                        Utils.RegEditGo(regKey.ToString());
+                        regKey.Close();
+                    }
+                }
+                else
+                {
+                    string strStartupFolder = "";
+
+                    if (strSection == @"StartUp\All Users")
+                    {
+                        strStartupFolder = Utils.GetSpecialFolderPath(Utils.CSIDL_STARTUP);
+                    }
+                    else if (strSection == @"StartUp\Current User")
+                    {
+                        strStartupFolder = Utils.GetSpecialFolderPath(Utils.CSIDL_COMMON_STARTUP);
+                    }
+
+                    System.Diagnostics.Process.Start("explorer.exe", strStartupFolder);
+                }
+            }
+        }
+
+        private void StartupManager_Resize(object sender, EventArgs e)
+        {
+            if (this.listView1.Items.Count > 0)
+                this.listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+        }
+
+        private void toolStripButtonRun_Click(object sender, EventArgs e)
+        {
+            if (this.listView1.SelectedItems.Count > 0)
+            {
+                if (MessageBox.Show(this, "Running this program on vista will give it this programs priviledges\r\nAre you sure you want to continue?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    string strFilepath = this.listView1.SelectedItems[0].SubItems[2].Text;
+                    string strFileArgs = this.listView1.SelectedItems[0].SubItems[3].Text;
+
+                    System.Diagnostics.Process.Start(strFilepath, strFileArgs);
+
+                    MessageBox.Show(this, "Attempted to run: " + strFilepath, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
         }
     }

@@ -43,36 +43,26 @@ namespace Little_Registry_Cleaner.Scanners
                 {
                     RegistryKey regKey2 = regKey.OpenSubKey(strSubKey);
 
-                    if (regKey2 == null)
-                        continue;
-
-                    ScanDlg.UpdateScanSubKey(regKey2.ToString());
-
-                    string strAppPath = regKey2.GetValue("") as string;
-
-                    if (string.IsNullOrEmpty(strAppPath))
-                        continue;
-
-                    // Remove quotes
-                    if (strAppPath[0] == '"')
+                    if (regKey2 != null)
                     {
-                        int i, iQouteLoc = 0, iQoutes = 1;
-                        for (i = 0; (i < strAppPath.Length) && (iQoutes <= 2); i++)
+                        ScanDlg.UpdateScanSubKey(regKey2.ToString());
+
+                        if (Convert.ToInt32(regKey2.GetValue("BlockOnTSNonInstallMode")) == 1)
+                            continue;
+
+                        string strAppPath = regKey2.GetValue("") as string;
+                        string strAppDir = regKey2.GetValue("Path") as string;
+
+                        if (string.IsNullOrEmpty(strAppPath))
                         {
-                            if (strAppPath[i] == '"')
-                            {
-                                strAppPath = strAppPath.Remove(i, 1);
-                                iQouteLoc = i;
-                                iQoutes++;
-                            }
+                            ScanDlg.StoreInvalidKey("Invalid registry key", regKey2.ToString());
+                            continue;
                         }
 
-                        strAppPath = strAppPath.Substring(0, iQouteLoc);
+                        // Check if file exists
+                        if (!Utils.FileExists(strAppPath) && !Utils.SearchPath(strAppPath, strAppDir) && !Utils.SearchPath(strSubKey, strAppDir))
+                            ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString());
                     }
-
-                    // Check if file exists
-                    if (!Utils.FileExists(strAppPath))
-                        ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "(default)");
                 }
 
                 regKey.Close();

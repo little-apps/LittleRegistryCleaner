@@ -99,11 +99,17 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Permissions.cs" />
-    <Compile Include="StartupManager\NewRunValue.cs">
+    <Compile Include="StartupManager\EditRunItem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StartupManager\NewRunValue.Designer.cs">
-      <DependentUpon>NewRunValue.cs</DependentUpon>
+    <Compile Include="StartupManager\EditRunItem.Designer.cs">
+      <DependentUpon>EditRunItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartupManager\NewRunItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartupManager\NewRunItem.Designer.cs">
+      <DependentUpon>NewRunItem.cs</DependentUpon>
     </Compile>
     <Compile Include="StartupManager\StartupManager.cs">
       <SubType>Form</SubType>
@@ -113,6 +119,14 @@
     </Compile>
     <Compile Include="SysRestore.cs" />
     <Compile Include="Scanners\HistoryList.cs">
+    </Compile>
+    <Compile Include="UninstallManager\ProgramInfo.cs" />
+    <Compile Include="UninstallManager\ProgramList.cs" />
+    <Compile Include="UninstallManager\UninstallManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UninstallManager\UninstallManager.Designer.cs">
+      <DependentUpon>UninstallManager.cs</DependentUpon>
     </Compile>
     <Compile Include="UpdateDlg.cs">
       <SubType>Form</SubType>
@@ -157,11 +171,17 @@
     <EmbeddedResource Include="Optimizer\SecureDesktop.resx">
       <DependentUpon>SecureDesktop.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StartupManager\NewRunValue.resx">
-      <DependentUpon>NewRunValue.cs</DependentUpon>
+    <EmbeddedResource Include="StartupManager\EditRunItem.resx">
+      <DependentUpon>EditRunItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartupManager\NewRunItem.resx">
+      <DependentUpon>NewRunItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StartupManager\StartupManager.resx">
       <DependentUpon>StartupManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UninstallManager\UninstallManager.resx">
+      <DependentUpon>UninstallManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateDlg.resx">
       <DependentUpon>UpdateDlg.cs</DependentUpon>

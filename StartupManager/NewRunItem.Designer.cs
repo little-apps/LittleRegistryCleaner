@@ -1,6 +1,6 @@
 ﻿namespace Little_Registry_Cleaner.StartupManager
 {
-    partial class NewRunValue
+    partial class NewRunItem
     {
         /// <summary>
         /// Required designer variable.
@@ -168,7 +168,7 @@
             this.comboBoxSection.Size = new System.Drawing.Size(227, 21);
             this.comboBoxSection.TabIndex = 4;
             // 
-            // NewRunValue
+            // NewRunItem
             // 
             this.AcceptButton = this.buttonOk;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -183,10 +183,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "NewRunValue";
+            this.Name = "NewRunItem";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "New Run Value";
+            this.Text = "New Run Item";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

@@ -49,6 +49,7 @@
             this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -58,6 +59,7 @@
             this.toolStripButtonView = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonRun = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonRefresh = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
@@ -100,12 +102,13 @@
             // 
             // listView1
             // 
-            this.listView1.CheckBoxes = true;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
-            this.columnHeader3});
+            this.columnHeader3,
+            this.columnHeader4});
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.Location = new System.Drawing.Point(161, 3);
             this.listView1.Name = "listView1";
@@ -126,7 +129,12 @@
             // columnHeader3
             // 
             this.columnHeader3.Text = "Filepath";
-            this.columnHeader3.Width = 392;
+            this.columnHeader3.Width = 285;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Arguments";
+            this.columnHeader4.Width = 101;
             // 
             // treeView1
             // 
@@ -156,7 +164,7 @@
             treeNode5.SelectedImageIndex = 0;
             treeNode5.Text = "Current User";
             treeNode6.ImageIndex = 2;
-            treeNode6.Name = "NodeStartUp";
+            treeNode6.Name = "NodeStart";
             treeNode6.SelectedImageIndex = 2;
             treeNode6.Text = "StartUp";
             treeNode7.ImageIndex = 4;
@@ -187,14 +195,16 @@
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButtonAdd,
-            this.toolStripButtonDelete,
             this.toolStripButtonEdit,
+            this.toolStripButtonDelete,
             this.toolStripButtonView,
             this.toolStripButtonRun,
+            this.toolStripSeparator1,
             this.toolStripButtonRefresh});
-            this.toolStrip1.Location = new System.Drawing.Point(3, 0);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(299, 54);
+            this.toolStrip1.Size = new System.Drawing.Size(717, 54);
+            this.toolStrip1.Stretch = true;
             this.toolStrip1.TabIndex = 0;
             // 
             // toolStripButtonAdd
@@ -225,6 +235,7 @@
             this.toolStripButtonEdit.Size = new System.Drawing.Size(36, 51);
             this.toolStripButtonEdit.Text = "Edit";
             this.toolStripButtonEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButtonEdit.Click += new System.EventHandler(this.toolStripButtonEdit_Click);
             // 
             // toolStripButtonView
             // 
@@ -234,6 +245,7 @@
             this.toolStripButtonView.Size = new System.Drawing.Size(63, 51);
             this.toolStripButtonView.Text = "View Item";
             this.toolStripButtonView.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButtonView.Click += new System.EventHandler(this.toolStripButtonView_Click);
             // 
             // toolStripButtonRun
             // 
@@ -243,6 +255,7 @@
             this.toolStripButtonRun.Size = new System.Drawing.Size(36, 51);
             this.toolStripButtonRun.Text = "Run";
             this.toolStripButtonRun.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButtonRun.Click += new System.EventHandler(this.toolStripButtonRun_Click);
             // 
             // toolStripButtonRefresh
             // 
@@ -253,6 +266,11 @@
             this.toolStripButtonRefresh.Text = "Refresh";
             this.toolStripButtonRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripButtonRefresh.Click += new System.EventHandler(this.toolStripButtonRefresh_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 54);
             // 
             // StartupManager
             // 
@@ -266,6 +284,7 @@
             this.Text = "Little Registry Cleaner - Startup Manager";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.StartupManager_Load);
+            this.Resize += new System.EventHandler(this.StartupManager_Resize);
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);
             this.toolStripContainer1.TopToolStripPanel.ResumeLayout(false);
             this.toolStripContainer1.TopToolStripPanel.PerformLayout();
@@ -295,6 +314,8 @@
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.ToolStripButton toolStripButtonAdd;
         private System.Windows.Forms.ToolStripButton toolStripButtonEdit;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
 
     }
 }

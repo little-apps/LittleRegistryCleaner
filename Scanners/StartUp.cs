@@ -77,7 +77,7 @@ namespace Little_Registry_Cleaner.Scanners
 
                 // Check if value is not empty
                 if (string.IsNullOrEmpty(strRunPath))
-                    ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strProgName);
+                    ScanDlg.StoreInvalidKey("Invalid registry value", regKey.Name, strProgName);
                 // See if file exists
                 else if (Utils.ExtractArguments(strRunPath, out strFilePath, out strArgs))
                 {

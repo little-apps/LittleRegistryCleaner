@@ -68,13 +68,7 @@ namespace Little_Registry_Cleaner.Optimizer
             this.Controls.Add(this.progressBarDefrag);
         }
 
-        public static string GetSizeInMegaBytes(long Length)
-        {
-            double nMegaBytes = Length / 1024F / 1024F;
-
-            return string.Format("{0} MB", nMegaBytes.ToString("0.00"));
-        }
-
+        
         private void Optimizer_Shown(object sender, EventArgs e)
         {
             if (MessageBox.Show(this, "The program will now analyze your registry files. Continue?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -154,7 +148,7 @@ namespace Little_Registry_Cleaner.Optimizer
                 return;
             }
 
-            this.listView1.Items.Add(new ListViewItem(new string[] { oHive.fiHive.Name, GetSizeInMegaBytes(oHive.fiHive.Length), GetSizeInMegaBytes(oHive.fiHiveTemp.Length) }));
+            this.listView1.Items.Add(new ListViewItem(new string[] { oHive.fiHive.Name, Utils.GetSizeInMegaBytes(oHive.fiHive.Length), Utils.GetSizeInMegaBytes(oHive.fiHiveTemp.Length) }));
             this.progressBarAnalyzed.Position++;
             this.progressBarAnalyzed.Text = string.Format("{0}/{1}", this.progressBarAnalyzed.Position, arrHives.Count);
         }
