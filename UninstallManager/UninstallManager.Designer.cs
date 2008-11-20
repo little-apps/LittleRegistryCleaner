@@ -222,6 +222,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "Little Registry Cleaner - Uninstall Manager";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.UninstallManager_Load);
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);
             this.toolStripContainer1.ResumeLayout(false);

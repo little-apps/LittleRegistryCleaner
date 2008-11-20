@@ -9,19 +9,16 @@ namespace Little_Registry_Cleaner
     public class Permissions
     {
         [DllImport("advapi32.dll", ExactSpelling = true, SetLastError = true)]
-        internal static extern bool AdjustTokenPrivileges(IntPtr htok, bool disall,
-        ref TokPriv1Luid newst, int len, IntPtr prev, IntPtr relen);
+        internal static extern bool AdjustTokenPrivileges(IntPtr htok, bool disall, ref TokPriv1Luid newst, int len, IntPtr prev, IntPtr relen);
 
         [DllImport("kernel32.dll", ExactSpelling = true)]
         internal static extern IntPtr GetCurrentProcess();
 
         [DllImport("advapi32.dll", ExactSpelling = true, SetLastError = true)]
-        internal static extern bool OpenProcessToken(IntPtr h, int acc, ref IntPtr
-        phtok);
+        internal static extern bool OpenProcessToken(IntPtr h, int acc, ref IntPtr phtok);
 
         [DllImport("advapi32.dll", SetLastError = true)]
-        internal static extern bool LookupPrivilegeValue(string host, string name,
-        ref long pluid);
+        internal static extern bool LookupPrivilegeValue(string host, string name, ref long pluid);
 
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
         internal struct TokPriv1Luid
@@ -62,6 +59,7 @@ namespace Little_Registry_Cleaner
             SetPrivilege("SeShutdownPrivilege");
             SetPrivilege("SeBackupPrivilege");
             SetPrivilege("SeRestorePrivilege");
+            SetPrivilege("SeDebugPrivilege");
         }
     }
 }

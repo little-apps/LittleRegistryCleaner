@@ -105,29 +105,17 @@ namespace Little_Registry_Cleaner.UninstallManager
 
         public void Uninstall()
         {
-            try
+            if (!string.IsNullOrEmpty(UninstallString))
             {
-                if (!string.IsNullOrEmpty(UninstallString))
-                {
-                    IntPtr pid = Utils.CreateProcess(UninstallString);
-                    if (pid != IntPtr.Zero)
-                        Process.GetProcessById(pid.ToInt32()).WaitForExit();
-                }
-                else if (!string.IsNullOrEmpty(QuietUninstallString))
-                {
-                    IntPtr pid = Utils.CreateProcess(QuietUninstallString);
-                    if (pid != IntPtr.Zero)
-                        Process.GetProcessById(pid.ToInt32()).WaitForExit();
-                }
+                IntPtr pid = Utils.CreateProcess(UninstallString);
+                if (pid != IntPtr.Zero)
+                    Process.GetProcessById(pid.ToInt32()).WaitForExit();
             }
-            catch (FileNotFoundException ex)
+            else if (!string.IsNullOrEmpty(QuietUninstallString))
             {
-                System.Diagnostics.Debug.WriteLine(ex.Message);
-                MessageBox.Show("Unable to find uninstall path.", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            catch (Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine(ex.Message);
+                IntPtr pid = Utils.CreateProcess(QuietUninstallString);
+                if (pid != IntPtr.Zero)
+                    Process.GetProcessById(pid.ToInt32()).WaitForExit();
             }
         }
 

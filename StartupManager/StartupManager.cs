@@ -306,7 +306,7 @@ namespace Little_Registry_Cleaner.StartupManager
 
                     if (regKey != null)
                     {
-                        Utils.RegEditGo(regKey.ToString());
+                        RegEditGo.GoTo(regKey.ToString(), strItem);
                         regKey.Close();
                     }
                 }

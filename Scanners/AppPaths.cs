@@ -59,8 +59,26 @@ namespace Little_Registry_Cleaner.Scanners
                             continue;
                         }
 
+                        bool bAppExists = false;
+
+                        if (!string.IsNullOrEmpty(strAppDir))
+                        {
+                            if (Utils.SearchPath(strAppPath, strAppPath))
+                                bAppExists = true;
+                            else if (Utils.SearchPath(strSubKey, strAppPath))
+                                bAppExists = true;
+                        }
+
+                        if (bAppExists == false)
+                        {
+                            if (Utils.FileExists(strAppPath))
+                                bAppExists = true;
+                            else if (Utils.FileExists(strAppPath))
+                                bAppExists = true;
+                        }
+
                         // Check if file exists
-                        if (!Utils.FileExists(strAppPath) && !Utils.SearchPath(strAppPath, strAppDir) && !Utils.SearchPath(strSubKey, strAppDir))
+                        if (!bAppExists)
                             ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString());
                     }
                 }

@@ -99,6 +99,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Permissions.cs" />
+    <Compile Include="RegEditGo.cs" />
     <Compile Include="StartupManager\EditRunItem.cs">
       <SubType>Form</SubType>
     </Compile>

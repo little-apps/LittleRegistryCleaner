@@ -335,7 +335,9 @@ namespace Little_Registry_Cleaner
         {
             if (this.listResults.SelectedIndices.Count > 0 && this.listResults.Items.Count > 0)
             {
-                Utils.RegEditGo(this.listResults.SelectedItems[0].SubItems[1].Text);
+                string strSubKey = this.listResults.SelectedItems[0].SubItems[1].Text;
+                string strValueName = this.listResults.SelectedItems[0].SubItems[2].Text;
+                RegEditGo.GoTo(strSubKey, strValueName);
             }
         }
 

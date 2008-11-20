@@ -31,7 +31,7 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner
 {
-    public class Utils
+    static class Utils
     {
         #region Signatures imported from http://pinvoke.net
 
@@ -378,31 +378,6 @@ namespace Little_Registry_Cleaner
             return dt;
         }
 
-        /// <summary>
-        /// Goes to registry key in regedit
-        /// </summary>
-        /// <param name="strRegistryPath">Registry key</param>
-        public static void RegEditGo(string strRegistryPath)
-        {
-            // Set key to be displayed when regedit starts
-            RegistryKey regKey = Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Applets\\Regedit", true);
-            if (regKey != null)
-            {
-                regKey.SetValue("LastKey", "Computer\\" + strRegistryPath);
-                regKey.Close();
-            }
-
-            // See if regedit is running, restart it if it is
-            foreach (Process p in Process.GetProcessesByName("regedit"))
-            {
-                p.WaitForInputIdle();
-                p.Kill();
-                p.Close();
-            }
-
-            Process.Start("regedit.exe");
-        }
-
         public static string ConvertSizeToString(uint Length)
         {
             if (Length < 0)
@@ -727,6 +702,7 @@ namespace Little_Registry_Cleaner
         }
     }
 
+    #region Logger
     public class Logger
     {
         /// <summary>
@@ -812,6 +788,8 @@ namespace Little_Registry_Cleaner
             }
         }
     }
+    #endregion
+    #region ListViewItemComparer
 
     public class ListViewItemComparer : IComparer
     {
@@ -839,4 +817,5 @@ namespace Little_Registry_Cleaner
             return returnVal;
         }
     }
+    #endregion
 }

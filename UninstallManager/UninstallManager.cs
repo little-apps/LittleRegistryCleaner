@@ -112,7 +112,6 @@ namespace Little_Registry_Cleaner.UninstallManager
         {
             if (this.textBoxSearch.ForeColor == SystemColors.GrayText) return;
 
-            this.listViewProgs.Items.Clear();
             PopulateListView();
         }
 
@@ -134,6 +133,7 @@ namespace Little_Registry_Cleaner.UninstallManager
             }
 
             ProgramList tempProgList = new ProgramList();
+            this.listViewProgs.Items.Clear();
 
             foreach (DictionaryEntry de in arrProgList)
             {
@@ -216,6 +216,8 @@ namespace Little_Registry_Cleaner.UninstallManager
                         break;
                     }
                 }
+
+                PopulateListView();
             }
         }
 
@@ -235,10 +237,9 @@ namespace Little_Registry_Cleaner.UninstallManager
                         break;
                     }
                 }
-            }
 
-            this.listViewProgs.Clear();
-            PopulateListView();
+                PopulateListView();
+            }
         }
 
         private void buttonUninstall_Click(object sender, EventArgs e)

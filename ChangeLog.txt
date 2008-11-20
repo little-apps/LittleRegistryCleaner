@@ -180,3 +180,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Added startup manager that lists current programs that are launched at startup
 - Added uninstall managaer that lists installed programs
 - Searches App Paths "Path" value name for file and also deletes whole subkey instead of just default value
+- Uses Windows API's to go to exact value name in regedit instead of just setting LastKey
