@@ -22,6 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - TODO: List Alternate startup folders if they are different in startup manager
 - TODO: Check for missing DLLs that are ran by rundll32 and regsvr32
 - TODO: Create class thats uses CollectionBase as base class for storing bad registry keys
+- TODO: Create full registry backup when LRC is ran for the first time
 
 - Dialogs are opened with main dialog as owner
 - Added Drivers Section
@@ -181,3 +182,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Added uninstall managaer that lists installed programs
 - Searches App Paths "Path" value name for file and also deletes whole subkey instead of just default value
 - Uses Windows API's to go to exact value name in regedit instead of just setting LastKey
+- Scans Add Remove Programs Cache for old programs

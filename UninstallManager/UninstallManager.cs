@@ -31,17 +31,7 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.UninstallManager
 {
-    [StructLayout(LayoutKind.Sequential, CharSet=CharSet.Unicode)]
-    public struct SlowInfoCache
-    {
-        public uint cbSize;
-        public uint HasName;
-        public Int64 InstallSize;
-        public FILETIME LastUsed;
-        public uint Frequency;
-        [MarshalAs(UnmanagedType.ByValTStr, SizeConst=262)]
-        public string Name;
-    }
+    
 
     public partial class UninstallManager : Form
     {
@@ -85,7 +75,7 @@ namespace Little_Registry_Cleaner.UninstallManager
 
                                 GCHandle gcHandle = GCHandle.Alloc(b, GCHandleType.Pinned);
                                 IntPtr ptr = gcHandle.AddrOfPinnedObject();
-                                SlowInfoCache objSlowInfoCache = (SlowInfoCache)Marshal.PtrToStructure(ptr, typeof(SlowInfoCache));
+                                Utils.SlowInfoCache objSlowInfoCache = (Utils.SlowInfoCache)Marshal.PtrToStructure(ptr, typeof(Utils.SlowInfoCache));
 
                                 objProgInfo.InstallSize = objSlowInfoCache.InstallSize;
                                 objProgInfo.Frequency = objSlowInfoCache.Frequency;

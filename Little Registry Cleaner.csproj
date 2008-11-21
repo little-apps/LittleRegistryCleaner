@@ -98,8 +98,8 @@
     <Compile Include="Optimizer\XpProgressBar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Permissions.cs" />
-    <Compile Include="RegEditGo.cs" />
+    <Compile Include="Misc\Permissions.cs" />
+    <Compile Include="Misc\RegEditGo.cs" />
     <Compile Include="StartupManager\EditRunItem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,7 +118,7 @@
     <Compile Include="StartupManager\StartupManager.Designer.cs">
       <DependentUpon>StartupManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="SysRestore.cs" />
+    <Compile Include="Misc\SysRestore.cs" />
     <Compile Include="Scanners\HistoryList.cs">
     </Compile>
     <Compile Include="UninstallManager\ProgramInfo.cs" />
@@ -141,23 +141,23 @@
     <Compile Include="ErrorDlg.Designer.cs">
       <DependentUpon>ErrorDlg.cs</DependentUpon>
     </Compile>
-    <Compile Include="Utils.cs" />
+    <Compile Include="Misc\Utils.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewExcludeEntryDlg.cs">
+    <Compile Include="Options\NewExcludeEntryDlg.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewExcludeEntryDlg.Designer.cs">
+    <Compile Include="Options\NewExcludeEntryDlg.Designer.cs">
       <DependentUpon>NewExcludeEntryDlg.cs</DependentUpon>
     </Compile>
-    <Compile Include="Options.cs">
+    <Compile Include="Options\Options.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Options.Designer.cs">
+    <Compile Include="Options\Options.Designer.cs">
       <DependentUpon>Options.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -196,11 +196,11 @@
       <DependentUpon>Main.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewExcludeEntryDlg.resx">
+    <EmbeddedResource Include="Options\NewExcludeEntryDlg.resx">
       <DependentUpon>NewExcludeEntryDlg.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Options.resx">
+    <EmbeddedResource Include="Options\Options.resx">
       <DependentUpon>Options.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>

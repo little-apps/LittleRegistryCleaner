@@ -47,7 +47,7 @@ namespace Little_Registry_Cleaner
             foreach (FileInfo fi in di.GetFiles()) {
                 if (fi.Extension.CompareTo(".xml") == 0)
                 {
-                    ListViewItem lvi = new ListViewItem(new string[] { fi.Name, fi.CreationTime.ToString(), Utils.GetSizeInKiloBytes(fi.Length)});
+                    ListViewItem lvi = new ListViewItem(new string[] { fi.Name, fi.CreationTime.ToString(), Utils.ConvertSizeToString((uint)fi.Length)});
                     this.listViewFiles.Items.Add(lvi);
                 }
             }

@@ -21,6 +21,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
+using System.Runtime.InteropServices;
 using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.Scanners
@@ -34,43 +35,65 @@ namespace Little_Registry_Cleaner.Scanners
         {
             try
             {
-                RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall");
-
-                if (regKey == null)
-                    return;
-
-                foreach (string strProgName in regKey.GetSubKeyNames())
+                using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall"))
                 {
+                    if (regKey == null)
+                        return;
 
-                    RegistryKey regKey2 = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\" + strProgName);
+                    foreach (string strProgName in regKey.GetSubKeyNames())
+                    {
 
-                    ScanDlg.UpdateScanSubKey(regKey2.ToString());
+                        RegistryKey regKey2 = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\" + strProgName);
 
-                    // Skip if installed by msi installer
-                    int? nWinInstaller = regKey2.GetValue("WindowsInstaller") as int?;
-                    if (nWinInstaller.HasValue)
-                        if (nWinInstaller.Value == 1)
+                        ScanDlg.UpdateScanSubKey(regKey2.ToString());
+
+                        // Skip if installed by msi installer
+                        if (Convert.ToInt32(regKey2.GetValue("WindowsInstaller")) == 1)
                             continue;
 
-                    // Check display icon
-                    string strDisplayIcon = regKey2.GetValue("DisplayIcon") as string;
-                    {
-                        if (!string.IsNullOrEmpty(strDisplayIcon))
-                            if (!Utils.IconExists(strDisplayIcon))
-                                ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "DisplayIcon");
-                    }
+                        // Check display icon
+                        string strDisplayIcon = regKey2.GetValue("DisplayIcon") as string;
+                        {
+                            if (!string.IsNullOrEmpty(strDisplayIcon))
+                                if (!Utils.IconExists(strDisplayIcon))
+                                    ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "DisplayIcon");
+                        }
 
-                    // Check install location
-                    string strInstallLocation = regKey2.GetValue("InstallLocation") as string;
-                    {
+                        // Check install location
+                        string strInstallLocation = regKey2.GetValue("InstallLocation") as string;
                         if (!string.IsNullOrEmpty(strInstallLocation))
                             if ((!Utils.DirExists(strInstallLocation)) && (!Utils.FileExists(strInstallLocation)))
                                 ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString());
-                    }
 
+                    }
                 }
 
-                regKey.Close();
+                using (RegistryKey rk = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Management\\ARPCache"))
+                {
+                    if (rk == null)
+                        return;
+
+                    foreach (string strSubKey in rk.GetSubKeyNames())
+                    {
+                        using (RegistryKey rkARPCache = rk.OpenSubKey(strSubKey))
+                        {
+                            if (rkARPCache != null)
+                            {
+                                byte[] b = (byte[])rkARPCache.GetValue("SlowInfoCache");
+
+                                GCHandle gcHandle = GCHandle.Alloc(b, GCHandleType.Pinned);
+                                IntPtr ptr = gcHandle.AddrOfPinnedObject();
+                                Utils.SlowInfoCache objSlowInfoCache = (Utils.SlowInfoCache)Marshal.PtrToStructure(ptr, typeof(Utils.SlowInfoCache));
+
+                                if ((Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\" + strSubKey) == null) && (Utils.FileExists(objSlowInfoCache.Name) == false))
+                                    ScanDlg.StoreInvalidKey("Invalid registry key", rkARPCache.ToString());
+
+                                gcHandle.Free();
+                                rkARPCache.Close();
+                            }
+                        }
+                    }
+                }
             }
             catch (System.Security.SecurityException ex)
             {

@@ -148,7 +148,7 @@ namespace Little_Registry_Cleaner.Optimizer
                 return;
             }
 
-            this.listView1.Items.Add(new ListViewItem(new string[] { oHive.fiHive.Name, Utils.GetSizeInMegaBytes(oHive.fiHive.Length), Utils.GetSizeInMegaBytes(oHive.fiHiveTemp.Length) }));
+            this.listView1.Items.Add(new ListViewItem(new string[] { oHive.fiHive.Name, Utils.ConvertSizeToString(oHive.fiHive.Length), Utils.ConvertSizeToString(oHive.fiHiveTemp.Length) }));
             this.progressBarAnalyzed.Position++;
             this.progressBarAnalyzed.Text = string.Format("{0}/{1}", this.progressBarAnalyzed.Position, arrHives.Count);
         }

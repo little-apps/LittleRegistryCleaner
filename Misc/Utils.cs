@@ -51,6 +51,17 @@ namespace Little_Registry_Cleaner
         [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern int PathParseIconLocation([In, Out] StringBuilder path);
         [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern bool PathFileExists(string path);
 
+        [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
+        public struct SlowInfoCache
+        {
+            public uint cbSize;
+            public uint HasName;
+            public Int64 InstallSize;
+            public FILETIME LastUsed;
+            public uint Frequency;
+            [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 262)]
+            public string Name;
+        }
         #endregion
         #region "Interop (CreateProcess)"
         struct PROCESS_INFORMATION
@@ -378,7 +389,12 @@ namespace Little_Registry_Cleaner
             return dt;
         }
 
-        public static string ConvertSizeToString(uint Length)
+        /// <summary>
+        /// Converts the size in bytes to a formatted string
+        /// </summary>
+        /// <param name="Length">Size in bytes</param>
+        /// <returns>Formatted String</returns>
+        public static string ConvertSizeToString(long Length)
         {
             if (Length < 0)
                 return "";
@@ -417,31 +433,6 @@ namespace Little_Registry_Cleaner
                 strSizeFmt = nSize.ToString("0");
 
             return strSizeFmt + strUnit;
-        }
-
-        /// <summary>
-        /// Converts size in bytes to kilobytes
-        /// </summary>
-        /// <param name="Length">Size in Bytes</param>
-        /// <returns>Size in kilobytes</returns>
-        public static string GetSizeInKiloBytes(long Length)
-        {
-            double nKiloBytes = Length / 1024F;
-
-            return string.Format("{0} KB", nKiloBytes.ToString("0.00"));
-        }
-
-
-        /// <summary>
-        /// Converts size in bytes to megabytes
-        /// </summary>
-        /// <param name="Length">Size in Bytes</param>
-        /// <returns>Size in Megabytes</returns>
-        public static string GetSizeInMegaBytes(long Length)
-        {
-            double nMegaBytes = Length / 1024F / 1024F;
-
-            return string.Format("{0} MB", nMegaBytes.ToString("0.00"));
         }
 
         /// <summary>
