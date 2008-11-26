@@ -1,6 +1,6 @@
 /*
     Little Registry Cleaner
-    Copyright (C) 2008 Nick H.
+    Copyright (C) 2008 Little Apps (http://www.littleapps.co.cc/)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -83,11 +83,8 @@ namespace Little_Registry_Cleaner.Xml
 					_sw = File.CreateText(_strFilename);
 					_bFileOpen = true;
 				}
-				catch (Exception e) 
+				catch (Exception ) 
 				{
-                    Little_Registry_Cleaner.ErrorDlg ErrorDlg = new Little_Registry_Cleaner.ErrorDlg(e, "Unable to open " + _strFilename);
-                    ErrorDlg.ShowDialog();
-
 					_bFileOpen = false;
 				}
 			}

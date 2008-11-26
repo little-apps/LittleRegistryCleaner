@@ -49,4 +49,4 @@ Go to http://sourceforge.net/projects/littlecleaner/ to see if there any newly r
 How do I contact you to submit a bug report, suggestion or comment?
 
 Website: http://littlecleaner.sourceforge.net/
-Email: nick58@gmail.com
+Email: nick@littleapps.co.cc

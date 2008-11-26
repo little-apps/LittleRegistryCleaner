@@ -1,6 +1,6 @@
 /*
     Little Registry Cleaner
-    Copyright (C) 2008 Nick H.
+    Copyright (C) 2008 Little Apps (http://www.littleapps.co.cc/)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -1346,12 +1346,12 @@ namespace Little_Registry_Cleaner.Xml
         /// Shows error dialog
         /// </summary>
         /// <param name="e">Exception class</param>
-        /// <param name="strTitle">Title of dialog</param>
+        /// <param name="strTitle">Exception description</param>
         private static void ShowErrorMessage(Exception e, string strTitle)
         {
 #if (DEBUG)
             System.Diagnostics.Debug.WriteLine(e.Message);
-            ErrorDlg dlgError = new ErrorDlg(e, strTitle);
+            CrashReporter dlgError = new CrashReporter(e);
             dlgError.ShowDialog();
 #endif
             return;

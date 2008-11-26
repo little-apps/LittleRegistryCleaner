@@ -33,7 +33,7 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="strBugReportAddr" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">http://lilapps.xf-s.com/bugreport.php</Value>
+      <Value Profile="(Default)">http://lilapps.f-snet.com/bugreport.php</Value>
     </Setting>
     <Setting Name="bOptionsAutoUpdate" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>

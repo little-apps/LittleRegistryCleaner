@@ -1,6 +1,6 @@
 ﻿/*
     Little Registry Cleaner
-    Copyright (C) 2008 Nick H.
+    Copyright (C) 2008 Little Apps (http://www.littleapps.co.cc/)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -102,13 +102,13 @@ namespace Little_Registry_Cleaner
 
         static void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
         {
-            ErrorDlg ErrorDlg = new ErrorDlg((Exception)e.ExceptionObject, e.IsTerminating);
+            CrashReporter ErrorDlg = new CrashReporter((Exception)e.ExceptionObject);
             ErrorDlg.ShowDialog();
         }
 
         static void Application_ThreadException(object sender, ThreadExceptionEventArgs e)
         {
-            ErrorDlg ErrorDlg = new ErrorDlg(e.Exception);
+            CrashReporter ErrorDlg = new CrashReporter(e.Exception);
             ErrorDlg.ShowDialog();
         }
     }
