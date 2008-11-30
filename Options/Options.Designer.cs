@@ -73,7 +73,7 @@
             this.groupBox1.Controls.Add(this.checkBoxLog);
             this.groupBox1.Location = new System.Drawing.Point(6, 112);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(447, 91);
+            this.groupBox1.Size = new System.Drawing.Size(444, 91);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Options";
@@ -183,7 +183,7 @@
             this.groupBox2.Controls.Add(this.buttonBrowse1);
             this.groupBox2.Location = new System.Drawing.Point(6, 6);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(447, 47);
+            this.groupBox2.Size = new System.Drawing.Size(444, 47);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Select a folder to backup deleted registry entries ";
@@ -195,7 +195,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(467, 236);
+            this.tabControl1.Size = new System.Drawing.Size(464, 236);
             this.tabControl1.TabIndex = 6;
             // 
             // tabPage1
@@ -206,7 +206,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(459, 210);
+            this.tabPage1.Size = new System.Drawing.Size(456, 210);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "General";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -217,7 +217,7 @@
             this.groupBox3.Controls.Add(this.textBoxLogFolder);
             this.groupBox3.Location = new System.Drawing.Point(6, 59);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(447, 47);
+            this.groupBox3.Size = new System.Drawing.Size(444, 47);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Select a folder to save the log files to";
@@ -248,7 +248,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(459, 210);
+            this.tabPage2.Size = new System.Drawing.Size(456, 210);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Ignore List";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -270,7 +270,7 @@
             this.listView1.ContextMenuStrip = this.contextMenuStrip1;
             this.listView1.Location = new System.Drawing.Point(6, 22);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(447, 182);
+            this.listView1.Size = new System.Drawing.Size(444, 182);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -291,19 +291,19 @@
             this.addEntryToolStripMenuItem,
             this.removeEntryToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(148, 48);
             // 
             // addEntryToolStripMenuItem
             // 
             this.addEntryToolStripMenuItem.Name = "addEntryToolStripMenuItem";
-            this.addEntryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.addEntryToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.addEntryToolStripMenuItem.Text = "Add Entry";
             this.addEntryToolStripMenuItem.Click += new System.EventHandler(this.addEntryToolStripMenuItem_Click);
             // 
             // removeEntryToolStripMenuItem
             // 
             this.removeEntryToolStripMenuItem.Name = "removeEntryToolStripMenuItem";
-            this.removeEntryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.removeEntryToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.removeEntryToolStripMenuItem.Text = "Remove Entry";
             this.removeEntryToolStripMenuItem.Click += new System.EventHandler(this.removeEntryToolStripMenuItem_Click);
             // 

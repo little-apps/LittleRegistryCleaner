@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Little Registry Cleaner")]
 [assembly: AssemblyDescription("Open source registry cleaner")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Little Apps (http://www.littleapps.cn)")]
+[assembly: AssemblyCompany("Little Apps (http://www.littleapps.co.cc)")]
 [assembly: AssemblyProduct("Little Registry Cleaner")]
 [assembly: AssemblyCopyright("Copyright © Little Apps 2008")]
 [assembly: AssemblyTrademark("")]
@@ -33,4 +33,4 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyFileVersion("0.8")]
+[assembly: AssemblyFileVersion("1.0")]

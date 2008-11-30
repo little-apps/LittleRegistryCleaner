@@ -48,6 +48,8 @@ namespace Little_Registry_Cleaner.Optimizer
         private static Thread tAnalyzeHives = null;
         private bool bAllowFormClosed = true;
 
+        private static long lHiveSize = 0, lHiveTempSize = 0;
+
         XpProgressBar progressBarAnalyzed = new XpProgressBar();
         XpProgressBar progressBarDefrag = new XpProgressBar();
 
@@ -57,11 +59,11 @@ namespace Little_Registry_Cleaner.Optimizer
 
             // Add custom progress bars using default properties
             this.progressBarAnalyzed.Name = "progressBarAnalyzed";
-            this.progressBarAnalyzed.Location = new Point(13, 27);
+            this.progressBarAnalyzed.Location = new Point(12, 12);
             this.progressBarAnalyzed.Size = new Size(326, 30);
 
             this.progressBarDefrag.Name = "progressBarDefrag";
-            this.progressBarDefrag.Location = new Point(13, 63);
+            this.progressBarDefrag.Location = new Point(13, 48);
             this.progressBarDefrag.Size = new Size(326, 30);
 
             this.Controls.Add(this.progressBarAnalyzed);
@@ -73,13 +75,12 @@ namespace Little_Registry_Cleaner.Optimizer
         {
             if (MessageBox.Show(this, "The program will now analyze your registry files. Continue?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                SecureDesktop frm = new SecureDesktop();
-                this.Owner = frm;
                 this.FormBorderStyle = FormBorderStyle.None;
                 this.Left = (Screen.PrimaryScreen.Bounds.Width / 2 - this.Width / 2);
                 this.Top = (Screen.PrimaryScreen.Bounds.Height / 2 - this.Height / 2);
 
-                frm.Show();
+                this.Owner = new SecureDesktop();
+                this.Owner.Show();
 
                 RegistryKey rkHives = Registry.LocalMachine.OpenSubKey(@"SYSTEM\CurrentControlSet\Control\hivelist");
 
@@ -102,9 +103,8 @@ namespace Little_Registry_Cleaner.Optimizer
 
                 this.progressBarAnalyzed.PositionMin = 0;
                 this.progressBarAnalyzed.PositionMax = arrHives.Count;
-                this.progressBarAnalyzed.Text = string.Format("{0:P}", (double)(0 / arrHives.Count));
+                this.progressBarAnalyzed.Text = string.Format("Analyzed: 0/{0}", arrHives.Count);
 
-                SetButtonsEnabled(false);
 
                 Optimizer.tAnalyzeHives = new Thread(new ThreadStart(AnalyzeHives));
                 Optimizer.tAnalyzeHives.Start();
@@ -115,6 +115,8 @@ namespace Little_Registry_Cleaner.Optimizer
 
         private void AnalyzeHives()
         {
+            SetButtonsEnabled(false);
+
             if (arrHives.Count > 0)
             {
                 foreach (Hive oHive in arrHives)
@@ -149,8 +151,18 @@ namespace Little_Registry_Cleaner.Optimizer
             }
 
             this.listView1.Items.Add(new ListViewItem(new string[] { oHive.fiHive.Name, Utils.ConvertSizeToString(oHive.fiHive.Length), Utils.ConvertSizeToString(oHive.fiHiveTemp.Length) }));
-            this.progressBarAnalyzed.Position++;
-            this.progressBarAnalyzed.Text = string.Format("{0}/{1}", this.progressBarAnalyzed.Position, arrHives.Count);
+            this.progressBarAnalyzed.Position = this.listView1.Items.Count;
+            this.progressBarAnalyzed.Text = string.Format("Analyzed: {0}/{1}", this.progressBarAnalyzed.Position, arrHives.Count);
+
+            lHiveSize += oHive.fiHive.Length;
+            lHiveTempSize += oHive.fiHiveTemp.Length;
+
+            if (this.listView1.Items.Count == arrHives.Count)
+            {
+                ListViewItem lvi = new ListViewItem(new string[] { "TOTAL", Utils.ConvertSizeToString(lHiveSize), Utils.ConvertSizeToString(lHiveTempSize) });
+                lvi.Font = new Font(FontFamily.GenericSansSerif, 8.25F, FontStyle.Bold | FontStyle.Underline);
+                this.listView1.Items.Add(lvi);
+            }
         }
 
         private void Optimizer_FormClosing(object sender, FormClosingEventArgs e)
@@ -165,10 +177,11 @@ namespace Little_Registry_Cleaner.Optimizer
                 if (Optimizer.tAnalyzeHives.IsAlive)
                     Optimizer.tAnalyzeHives.Abort();
 
-            if (this.Owner != null)
+            if (this.Owner != null && !this.Owner.IsDisposed)
             {
-                this.Owner.Close();
+                Form f = this.Owner;
                 this.Owner = null;
+                f.Close();
             }
         }
 
@@ -182,12 +195,13 @@ namespace Little_Registry_Cleaner.Optimizer
 
             this.progressBarDefrag.PositionMin = 0;
             this.progressBarDefrag.PositionMax = arrHives.Count;
-            this.labelAction.Text = "Optimizing the registry, Please Wait...";
+            this.progressBarDefrag.Text = string.Format("Optimized: 0/{0}", arrHives.Count);
 
             foreach (Hive oHive in arrHives)
             {
                 oHive.CompactHive();
                 this.progressBarDefrag.Position++;
+                this.progressBarDefrag.Text = string.Format("Optimized: {0}/{1}", this.progressBarDefrag.Position, arrHives.Count);
             }
 
             SetButtonsEnabled(true);
@@ -196,6 +210,17 @@ namespace Little_Registry_Cleaner.Optimizer
 
             if (MessageBox.Show(this, "You must restart your computer before the new setting will take effect. Do you want to restart your computer now?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 ExitWindowsEx(0x02, MajorOperatingSystem | MinorReconfig | FlagPlanned);
+
+            this.Close();
+        }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            if (!this.bAllowFormClosed)
+            {
+                MessageBox.Show(this, "Please wait for the current operation to finish", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             this.Close();
         }

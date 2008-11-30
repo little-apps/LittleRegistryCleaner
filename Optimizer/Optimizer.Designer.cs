@@ -33,20 +33,18 @@
             this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
-            this.labelAction = new System.Windows.Forms.Label();
             this.buttonStart = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelWarning
             // 
-            this.labelWarning.AutoSize = true;
-            this.labelWarning.Location = new System.Drawing.Point(9, 340);
+            this.labelWarning.Location = new System.Drawing.Point(12, 325);
             this.labelWarning.Name = "labelWarning";
-            this.labelWarning.Size = new System.Drawing.Size(336, 26);
+            this.labelWarning.Size = new System.Drawing.Size(327, 26);
             this.labelWarning.TabIndex = 17;
-            this.labelWarning.Text = "WARNING: You must close all running programs before analyzing and\r\ndefragmenting " +
-                "the registry";
+            this.labelWarning.Text = "WARNING: You must close all running programs before analyzing and defragmenting t" +
+                "he registry";
             // 
             // listView1
             // 
@@ -54,7 +52,7 @@
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
-            this.listView1.Location = new System.Drawing.Point(13, 99);
+            this.listView1.Location = new System.Drawing.Point(13, 84);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(326, 238);
             this.listView1.TabIndex = 13;
@@ -76,50 +74,42 @@
             this.columnHeader3.Text = "Compacted Size";
             this.columnHeader3.Width = 95;
             // 
-            // labelAction
-            // 
-            this.labelAction.AutoSize = true;
-            this.labelAction.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAction.Location = new System.Drawing.Point(9, 8);
-            this.labelAction.Name = "labelAction";
-            this.labelAction.Size = new System.Drawing.Size(254, 16);
-            this.labelAction.TabIndex = 15;
-            this.labelAction.Text = "Analyzing the registry. Please Wait...";
-            // 
             // buttonStart
             // 
             this.buttonStart.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.buttonStart.Enabled = false;
-            this.buttonStart.Location = new System.Drawing.Point(181, 367);
+            this.buttonStart.Location = new System.Drawing.Point(181, 354);
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(109, 23);
             this.buttonStart.TabIndex = 12;
             this.buttonStart.Text = "Start Optimization >";
             this.buttonStart.UseVisualStyleBackColor = true;
+            this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
             // 
             // buttonClose
             // 
             this.buttonClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonClose.Enabled = false;
-            this.buttonClose.Location = new System.Drawing.Point(296, 367);
+            this.buttonClose.Location = new System.Drawing.Point(296, 354);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(43, 23);
             this.buttonClose.TabIndex = 18;
             this.buttonClose.Text = "Close";
             this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // Optimizer
             // 
+            this.AcceptButton = this.buttonClose;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.buttonClose;
-            this.ClientSize = new System.Drawing.Size(348, 402);
+            this.ClientSize = new System.Drawing.Size(348, 383);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.labelWarning);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.labelAction);
             this.Controls.Add(this.buttonStart);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "Optimizer";
             this.ShowIcon = false;
@@ -128,7 +118,6 @@
             this.Shown += new System.EventHandler(this.Optimizer_Shown);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Optimizer_FormClosing);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -139,7 +128,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.Label labelAction;
         private System.Windows.Forms.Button buttonStart;
         private System.Windows.Forms.Button buttonClose;
 

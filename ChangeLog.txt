@@ -185,3 +185,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Scans Add Remove Programs Cache for old programs
 - Changed contact email to nick@littleapps.co.cc
 - Updated Crash Reporter, no longer sends name and email, also can restart program
+- Fixed bug when optimizer closes
+- Shows total size difference between registry hives in optimizer, also fixed a minor bug
+
++ Version 1.0 Released
