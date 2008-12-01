@@ -304,9 +304,9 @@ namespace Little_Registry_Cleaner
             dlgOptimizer.ShowDialog();
         }
 
-        private void LaunchHelpSite(object sender, EventArgs e)
+        private void LaunchHelpFile(object sender, EventArgs e)
         {
-            LaunchURI("http://answers.launchpad.net/lilregcleaner");
+            Help.ShowHelp(this, "Little Registry Cleaner.chm");
         }
 
         private void OpenOptions(object sender, EventArgs e)

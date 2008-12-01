@@ -51,6 +51,7 @@
             buttonBrowse.TabIndex = 7;
             buttonBrowse.Text = "Open Directory...";
             buttonBrowse.UseVisualStyleBackColor = true;
+            buttonBrowse.Click += new System.EventHandler(this.buttonBrowse_Click);
             // 
             // label1
             // 
@@ -131,6 +132,7 @@
             this.buttonRestore.TabIndex = 8;
             this.buttonRestore.Text = "Restore";
             this.buttonRestore.UseVisualStyleBackColor = true;
+            this.buttonRestore.Click += new System.EventHandler(this.buttonRestore_Click);
             // 
             // Restore
             // 

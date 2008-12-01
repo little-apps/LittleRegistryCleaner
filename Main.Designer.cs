@@ -592,7 +592,7 @@
             this.helpToolStripMenuItem1.ShortcutKeys = System.Windows.Forms.Keys.F1;
             this.helpToolStripMenuItem1.Size = new System.Drawing.Size(170, 22);
             this.helpToolStripMenuItem1.Text = "Help";
-            this.helpToolStripMenuItem1.Click += new System.EventHandler(this.LaunchHelpSite);
+            this.helpToolStripMenuItem1.Click += new System.EventHandler(this.LaunchHelpFile);
             // 
             // toolStripSeparator6
             // 
@@ -717,7 +717,7 @@
             this.toolStripButtonHelp.Size = new System.Drawing.Size(36, 51);
             this.toolStripButtonHelp.Text = "Help";
             this.toolStripButtonHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripButtonHelp.Click += new System.EventHandler(this.LaunchHelpSite);
+            this.toolStripButtonHelp.Click += new System.EventHandler(this.LaunchHelpFile);
             // 
             // Main
             // 
