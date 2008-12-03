@@ -93,7 +93,7 @@ namespace Little_Registry_Cleaner
             int minorVersion = Environment.OSVersion.Version.Minor;
 
             // See if it is enabled
-            if (Properties.Settings.Default.bOptionsRestore)
+            if (!Properties.Settings.Default.bOptionsRestore)
                 return false;
 
             // Windows ME

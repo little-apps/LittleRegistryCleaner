@@ -187,5 +187,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Updated Crash Reporter, no longer sends name and email, also can restart program
 - Fixed bug when optimizer closes
 - Shows total size difference between registry hives in optimizer, also fixed a minor bug
+- Fixed bug causing restore points to not be created
 
 + Version 1.0 Released
