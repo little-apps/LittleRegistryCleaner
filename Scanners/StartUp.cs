@@ -65,6 +65,8 @@ namespace Little_Registry_Cleaner.Scanners
         /// <param name="regKey">The registry key to scan</param>
         private void CheckAutoRun(RegistryKey regKey)
         {
+            bool bRet = true;
+
             if (regKey == null)
                 return;
 
@@ -77,14 +79,23 @@ namespace Little_Registry_Cleaner.Scanners
 
                 // Check if value is not empty
                 if (string.IsNullOrEmpty(strRunPath))
-                    ScanDlg.StoreInvalidKey("Invalid registry value", regKey.Name, strProgName);
+                    bRet = false;
                 // See if file exists
                 else if (Utils.ExtractArguments(strRunPath, out strFilePath, out strArgs))
                 {
                     if (!string.IsNullOrEmpty(strFilePath))
+                    {
                         if (!Utils.FileExists(strFilePath))
-                            ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strProgName);
+                            bRet = false;
+                    }
+
+                    // See if run path exists without arguments extracted
+                    if (Utils.FileExists(strRunPath))
+                        bRet = true;
                 }
+
+                if (!bRet)
+                    ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strProgName);
             }
 
             regKey.Close();

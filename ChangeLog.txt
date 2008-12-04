@@ -190,3 +190,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Fixed bug causing restore points to not be created
 
 + Version 1.0 Released
+
+- Scans HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts for unused file extensions
+- Cleaned up COMObjects.cs
+- No longer collects Machine and username in crash reporter

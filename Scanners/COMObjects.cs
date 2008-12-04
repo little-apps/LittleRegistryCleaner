@@ -33,21 +33,33 @@ namespace Little_Registry_Cleaner.Scanners
         /// </summary>
         public COMObjects()
         {
-            // Scan all CLSID sub keys
-            ScanCLSIDSubKey(Registry.ClassesRoot.OpenSubKey("CLSID"));
-            ScanCLSIDSubKey(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Classes\\CLSID"));
-            ScanCLSIDSubKey(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Classes\\CLSID"));
+            try
+            {
+                // Scan all CLSID sub keys
+                ScanCLSIDSubKey(Registry.ClassesRoot.OpenSubKey("CLSID"));
+                ScanCLSIDSubKey(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Classes\\CLSID"));
+                ScanCLSIDSubKey(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Classes\\CLSID"));
 
-            ScanFileExts(Registry.ClassesRoot);
-            ScanFileExts(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Classes"));
-            ScanFileExts(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Classes"));
+                // Scan file extensions
+                ScanFileExts(Registry.ClassesRoot);
+                ScanFileExts(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Classes"));
+                ScanFileExts(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Classes"));
 
-            ScanAppIds(Registry.ClassesRoot.OpenSubKey("AppID"));
-            ScanAppIds(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Classes\\AppID"));
-            ScanAppIds(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Classes\\AppID"));
+                // Scan appids
+                ScanAppIds(Registry.ClassesRoot.OpenSubKey("AppID"));
+                ScanAppIds(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Classes\\AppID"));
+                ScanAppIds(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Classes\\AppID"));
 
-            ScanExplorer();
+                // Scan explorer subkey
+                ScanExplorer();
+            }
+            catch (System.Security.SecurityException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
         }
+
+        #region Scan functions
 
         /// <summary>
         /// Scans for the CLSID subkey
@@ -60,72 +72,64 @@ namespace Little_Registry_Cleaner.Scanners
 
             foreach (string strCLSID in regKey.GetSubKeyNames())
             {
-                try
+                RegistryKey rkCLSID = regKey.OpenSubKey(strCLSID);
+
+                if (rkCLSID == null)
+                    continue;
+
+                ScanDlg.UpdateScanSubKey(rkCLSID.ToString());
+
+                // Check for valid AppID
+                string strAppID = regKey.GetValue("AppID") as string;
+                if (!string.IsNullOrEmpty(strAppID))
+                    if (!AppIDExists(strAppID))
+                        ScanDlg.StoreInvalidKey("Missing AppID reference", rkCLSID.ToString(), "AppID");
+
+                // See if DefaultIcon exists
+                using (RegistryKey regKeyIcon = rkCLSID.OpenSubKey("DefaultIcon"))
                 {
-                    RegistryKey regKey2 = regKey.OpenSubKey(strCLSID);
-
-                    if (regKey2 == null)
-                        continue;
-
-                    ScanDlg.UpdateScanSubKey(regKey2.ToString());
-
-                    // Check for valid AppID
-                    string strAppID = regKey.GetValue("AppID") as string;
-                    if (!string.IsNullOrEmpty(strAppID))
-                        if (!AppIDExists(strAppID))
-                            ScanDlg.StoreInvalidKey("Missing AppID reference", regKey2.ToString(), "AppID");
-
-                    // See if DefaultIcon exists
-                    using (RegistryKey regKeyIcon = regKey2.OpenSubKey("DefaultIcon"))
+                    if (regKeyIcon != null)
                     {
-                        if (regKeyIcon != null)
-                        {
-                            string strDefaultIcon = regKeyIcon.GetValue("") as string;
+                        string strDefaultIcon = regKeyIcon.GetValue("") as string;
 
-                            if (!string.IsNullOrEmpty(strDefaultIcon))
-                                if (!Utils.IconExists(strDefaultIcon))
-                                    ScanDlg.StoreInvalidKey("Unable to find icon", regKeyIcon.ToString());
+                        if (!string.IsNullOrEmpty(strDefaultIcon))
+                            if (!Utils.IconExists(strDefaultIcon))
+                                ScanDlg.StoreInvalidKey("Unable to find icon", regKeyIcon.ToString());
 
-                            regKeyIcon.Close();
-                        }
+                        regKeyIcon.Close();
                     }
-
-                    // Look for InprocServer files
-                    using (RegistryKey regKeyInprocSrvr = regKey2.OpenSubKey("InprocServer"))
-                    {
-                        if (regKeyInprocSrvr != null)
-                        {
-                            string strInprocServer = regKeyInprocSrvr.GetValue("") as string;
-
-                            if (!string.IsNullOrEmpty(strInprocServer))
-                                if (!Utils.FileExists(strInprocServer))
-                                    ScanDlg.StoreInvalidKey("Unable to find InprocServer", regKeyInprocSrvr.ToString());
-
-                            regKeyInprocSrvr.Close();
-                        }
-                    }
-
-                    using (RegistryKey regKeyInprocSrvr32 = regKey2.OpenSubKey("InprocServer32"))
-                    {
-                        if (regKeyInprocSrvr32 != null)
-                        {
-                            string strInprocServer32 = regKeyInprocSrvr32.GetValue("") as string;
-
-                            if (!string.IsNullOrEmpty(strInprocServer32))
-                                if (!Utils.FileExists(strInprocServer32))
-                                    ScanDlg.StoreInvalidKey("Unable to find InprocServer32", regKeyInprocSrvr32.ToString());
-
-                            regKeyInprocSrvr32.Close();
-                        }
-                    }
-
-                    regKey2.Close();
-                }
-                catch (System.Security.SecurityException ex)
-                {
-                    System.Diagnostics.Debug.WriteLine(ex.Message);
                 }
 
+                // Look for InprocServer files
+                using (RegistryKey regKeyInprocSrvr = rkCLSID.OpenSubKey("InprocServer"))
+                {
+                    if (regKeyInprocSrvr != null)
+                    {
+                        string strInprocServer = regKeyInprocSrvr.GetValue("") as string;
+
+                        if (!string.IsNullOrEmpty(strInprocServer))
+                            if (!Utils.FileExists(strInprocServer))
+                                ScanDlg.StoreInvalidKey("Unable to find InprocServer", regKeyInprocSrvr.ToString());
+
+                        regKeyInprocSrvr.Close();
+                    }
+                }
+
+                using (RegistryKey regKeyInprocSrvr32 = rkCLSID.OpenSubKey("InprocServer32"))
+                {
+                    if (regKeyInprocSrvr32 != null)
+                    {
+                        string strInprocServer32 = regKeyInprocSrvr32.GetValue("") as string;
+
+                        if (!string.IsNullOrEmpty(strInprocServer32))
+                            if (!Utils.FileExists(strInprocServer32))
+                                ScanDlg.StoreInvalidKey("Unable to find InprocServer32", regKeyInprocSrvr32.ToString());
+
+                        regKeyInprocSrvr32.Close();
+                    }
+                }
+
+                rkCLSID.Close();
             }
 
             regKey.Close();
@@ -133,72 +137,32 @@ namespace Little_Registry_Cleaner.Scanners
         }
 
         /// <summary>
-        /// Checks for inprocserver file
+        /// Looks for invalid references to AppIDs
         /// </summary>
-        /// <param name="regKey">The registry key contain Inprocserver subkey</param>
-        /// <returns>False if Inprocserver is null or doesnt exist</returns>
-        private bool InprocServerExists(RegistryKey regKey)
+        private void ScanAppIds(RegistryKey regKey)
         {
-            bool bRet = false;
+            RegistryKey rkAppId = null;
 
-            try
+            if (regKey == null)
+                return;
+
+            foreach (string strAppId in regKey.GetSubKeyNames())
             {
-                if (regKey != null)
-                {
-                    using (RegistryKey regKeyInprocSrvr = regKey.OpenSubKey("InprocServer"))
-                    {
-                        if (regKeyInprocSrvr != null)
-                        {
-                            string strInprocServer = regKeyInprocSrvr.GetValue("") as string;
+                if ((rkAppId = regKey.OpenSubKey(strAppId)) == null)
+                    continue;
 
-                            if (!string.IsNullOrEmpty(strInprocServer))
-                                if (Utils.FileExists(strInprocServer))
-                                    bRet = true;
+                // Update scan dialog
+                ScanDlg.UpdateScanSubKey(rkAppId.ToString());
 
-                            regKeyInprocSrvr.Close();
-                        }
-                    }
+                // Check for reference to AppID
+                string strCLSID = rkAppId.GetValue("AppID") as string;
 
-                    using (RegistryKey regKeyInprocSrvr32 = regKey.OpenSubKey("InprocServer32"))
-                    {
-                        if (regKeyInprocSrvr32 != null)
-                        {
-                            string strInprocServer32 = regKeyInprocSrvr32.GetValue("") as string;
-
-                            if (!string.IsNullOrEmpty(strInprocServer32))
-                                if (Utils.FileExists(strInprocServer32))
-                                    bRet = true;
-
-                            regKeyInprocSrvr32.Close();
-                        }
-                    }
-                }
-            }
-            catch (System.Security.SecurityException ex)
-            {
-                System.Diagnostics.Debug.WriteLine(ex.Message);
+                if (!string.IsNullOrEmpty(strCLSID))
+                    if (!AppIDExists(strCLSID))
+                        ScanDlg.StoreInvalidKey("Missing AppID reference", rkAppId.ToString());
             }
 
-            return bRet;
-        }
-
-        private bool IEToolbarIsValid(string strGuid)
-        {
-            bool bRet = false;
-
-            if (!CLSIDExists(strGuid))
-                bRet = false;
-
-            if (InprocServerExists(Registry.ClassesRoot.OpenSubKey("CLSID\\" + strGuid)))
-                bRet = true;
-
-            if (InprocServerExists(Registry.LocalMachine.OpenSubKey("Software\\Classes\\CLSID\\" + strGuid)))
-                bRet = true;
-
-            if (InprocServerExists(Registry.CurrentUser.OpenSubKey("Software\\Classes\\CLSID\\" + strGuid)))
-                bRet = true;
-
-            return bRet;
+            regKey.Close();
         }
 
         /// <summary>
@@ -206,75 +170,31 @@ namespace Little_Registry_Cleaner.Scanners
         /// </summary>
         private void ScanFileExts(RegistryKey regKey)
         {
+            RegistryKey rkFileExt = null;
+
             if (regKey == null)
                 return;
 
             foreach (string strFileExt in regKey.GetSubKeyNames())
             {
-                try
-                {
-                    // Skip if its not a file extension
-                    if (strFileExt[0] != '.')
-                        continue;
+                // Skip if its not a file extension or subkey doesnt exist
+                if ((rkFileExt = regKey.OpenSubKey(strFileExt)) == null || strFileExt[0] != '.')
+                    continue;
 
-                    RegistryKey regKey2 = regKey.OpenSubKey(strFileExt);
+                // Update scan dialog
+                ScanDlg.UpdateScanSubKey(rkFileExt.ToString());
 
-                    if (regKey2 == null)
-                        continue;
+                // Find reference to ProgID
+                string strProgID = rkFileExt.GetValue("") as string;
 
-                    // Update scan dialog
-                    ScanDlg.UpdateScanSubKey(regKey2.ToString());
-
-                    // Find reference to ProgID
-                    string strProgID = regKey2.GetValue("") as string;
-
-                    if (!string.IsNullOrEmpty(strProgID))
-                        if (!ProgIDExists(strProgID))
-                            ScanDlg.StoreInvalidKey("Missing ProgID reference", regKey2.ToString());
-                }
-                catch (System.Security.SecurityException ex)
-                {
-                    System.Diagnostics.Debug.WriteLine(ex.Message);
-                }
+                if (!string.IsNullOrEmpty(strProgID))
+                    if (!ProgIDExists(strProgID))
+                        ScanDlg.StoreInvalidKey("Missing ProgID reference", rkFileExt.ToString());
             }
 
             regKey.Close();
-        }
 
-        /// <summary>
-        /// Looks for invalid references to AppIDs
-        /// </summary>
-        private void ScanAppIds(RegistryKey regKey)
-        {
-            if (regKey == null)
-                return;
-
-            foreach (string strAppId in regKey.GetSubKeyNames())
-            {
-                try
-                {
-                    RegistryKey regKey2 = regKey.OpenSubKey(strAppId);
-
-                    if (regKey2 == null)
-                        continue;
-
-                    // Update scan dialog
-                    ScanDlg.UpdateScanSubKey(regKey2.ToString());
-
-                    // Check for reference to AppID
-                    string strCLSID = regKey2.GetValue("AppID") as string;
-
-                    if (!string.IsNullOrEmpty(strCLSID))
-                        if (!AppIDExists(strCLSID))
-                            ScanDlg.StoreInvalidKey("Missing AppID reference", regKey2.ToString());
-                }
-                catch (System.Security.SecurityException ex)
-                {
-                    System.Diagnostics.Debug.WriteLine(ex.Message);
-                }
-            }
-
-            regKey.Close();
+            return;
         }
 
         /// <summary>
@@ -282,38 +202,32 @@ namespace Little_Registry_Cleaner.Scanners
         /// </summary>
         private void ScanExplorer()
         {
-            try
+            // Check Browser Help Objects
+            using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\explorer\\Browser Helper Objects"))
             {
-                // Check Browser Help Objects
-                using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\explorer\\Browser Helper Objects"))
-                {
-                    if (regKey == null)
-                        return;
+                RegistryKey rkBHO = null;
 
+                if (regKey != null)
+                {
                     foreach (string strGuid in regKey.GetSubKeyNames())
                     {
-                        RegistryKey regKey2 = regKey.OpenSubKey(strGuid);
-
-                        if (regKey2 == null)
-                            continue;
-
-                        // Update scan dialog
-                        ScanDlg.UpdateScanSubKey(regKey2.ToString());
-
-                        if (!CLSIDExists(strGuid))
+                        if ((rkBHO = regKey.OpenSubKey(strGuid)) != null)
                         {
-                            ScanDlg.StoreInvalidKey("Missing CLSID reference", regKey2.ToString());
-                            continue;
+                            // Update scan dialog
+                            ScanDlg.UpdateScanSubKey(rkBHO.ToString());
+
+                            if (!CLSIDExists(strGuid))
+                                ScanDlg.StoreInvalidKey("Missing CLSID reference", rkBHO.ToString());
                         }
                     }
                 }
+            }
 
-                // Check IE Toolbars
-                using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Internet Explorer\\Toolbar"))
+            // Check IE Toolbars
+            using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Internet Explorer\\Toolbar"))
+            {
+                if (regKey != null)
                 {
-                    if (regKey == null)
-                        return;
-
                     // Update scan dialog
                     ScanDlg.UpdateScanSubKey(regKey.ToString());
 
@@ -323,32 +237,97 @@ namespace Little_Registry_Cleaner.Scanners
                             ScanDlg.StoreInvalidKey("Toolbar is not valid", regKey.ToString(), strGuid);
                     }
                 }
+            }
 
-                // Check IE Extensions
-                using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Internet Explorer\\Extensions"))
+            // Check IE Extensions
+            using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Internet Explorer\\Extensions"))
+            {
+                RegistryKey rkExt = null;
+
+                if (regKey != null)
                 {
-                    if (regKey == null)
-                        return;
-
                     foreach (string strGuid in regKey.GetSubKeyNames())
                     {
-                        RegistryKey regKey2 = regKey.OpenSubKey(strGuid);
+                        if ((rkExt = regKey.OpenSubKey(strGuid)) != null)
+                        {
+                            // Update scan dialog
+                            ScanDlg.UpdateScanSubKey(rkExt.ToString());
 
-                        if (regKey2 == null)
+                            ValidateExplorerExt(rkExt);
+                        }
+                    }
+                }
+            }
+
+            // Check Explorer Exts
+            using (RegistryKey regKey = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts"))
+            {
+                RegistryKey rkFileExt = null;
+
+                if (regKey != null)
+                {
+                    foreach (string strFileExt in regKey.GetSubKeyNames())
+                    {
+                        if ((rkFileExt = regKey.OpenSubKey(strFileExt)) == null || strFileExt[0] != '.')
                             continue;
 
                         // Update scan dialog
-                        ScanDlg.UpdateScanSubKey(regKey2.ToString());
+                        ScanDlg.UpdateScanSubKey(rkFileExt.ToString());
 
-                        ValidateExplorerExt(regKey2);
+                        ValidateFileExt(rkFileExt);
                     }
-
                 }
             }
-            catch (System.Security.SecurityException ex)
+
+            return;
+        }
+
+        #endregion
+
+        #region Scan Sub-Functions
+
+        private void ValidateFileExt(RegistryKey regKey)
+        {
+            bool bProgidExists = false, bAppExists = false;
+
+            // Skip if UserChoice subkey exists
+            if (regKey.OpenSubKey("UserChoice") != null)
+                return;
+
+            // Parse and verify OpenWithProgId List
+            using (RegistryKey rkProgids = regKey.OpenSubKey("OpenWithProgids"))
             {
-                System.Diagnostics.Debug.WriteLine(ex.Message);
+                if (rkProgids != null) 
+                {
+                    foreach (string strProgid in rkProgids.GetValueNames())
+                    {
+                        if (ProgIDExists(strProgid))
+                            bProgidExists = true;
+                    }
+                }
             }
+
+            // Check if files in OpenWithList exist
+            using (RegistryKey rkOpenList = regKey.OpenSubKey("OpenWithList"))
+            {
+                if (rkOpenList != null)
+                {
+                    foreach (string strValueName in rkOpenList.GetValueNames())
+                    {
+                        if (strValueName == "MRUList")
+                            continue;
+
+                        string strApp = rkOpenList.GetValue(strValueName) as string;
+
+                        if (ApplicationExists(strApp))
+                            bAppExists = true;
+                    }
+                    
+                }
+            }
+
+            if (!bProgidExists && !bAppExists)
+                ScanDlg.StoreInvalidKey("Unused File Extension", regKey.ToString());
 
             return;
         }
@@ -357,9 +336,6 @@ namespace Little_Registry_Cleaner.Scanners
         {
             try
             {
-                if (regKey == null)
-                    return;
-
                 // Sees if icon file exists
                 string strHotIcon = regKey.GetValue("HotIcon") as string;
                 if (!string.IsNullOrEmpty(strHotIcon))
@@ -417,6 +393,105 @@ namespace Little_Registry_Cleaner.Scanners
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
             }
+        }
+
+        #region Classes reference check functions
+        /// <summary>
+        /// Checks for inprocserver file
+        /// </summary>
+        /// <param name="regKey">The registry key contain Inprocserver subkey</param>
+        /// <returns>False if Inprocserver is null or doesnt exist</returns>
+        private bool InprocServerExists(RegistryKey regKey)
+        {
+            bool bRet = false;
+
+            try
+            {
+                if (regKey != null)
+                {
+                    using (RegistryKey regKeyInprocSrvr = regKey.OpenSubKey("InprocServer"))
+                    {
+                        if (regKeyInprocSrvr != null)
+                        {
+                            string strInprocServer = regKeyInprocSrvr.GetValue("") as string;
+
+                            if (!string.IsNullOrEmpty(strInprocServer))
+                                if (Utils.FileExists(strInprocServer))
+                                    bRet = true;
+
+                            regKeyInprocSrvr.Close();
+                        }
+                    }
+
+                    using (RegistryKey regKeyInprocSrvr32 = regKey.OpenSubKey("InprocServer32"))
+                    {
+                        if (regKeyInprocSrvr32 != null)
+                        {
+                            string strInprocServer32 = regKeyInprocSrvr32.GetValue("") as string;
+
+                            if (!string.IsNullOrEmpty(strInprocServer32))
+                                if (Utils.FileExists(strInprocServer32))
+                                    bRet = true;
+
+                            regKeyInprocSrvr32.Close();
+                        }
+                    }
+                }
+            }
+            catch (System.Security.SecurityException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
+
+            return bRet;
+        }
+
+        /// <summary>
+        /// Checks if IE toolbar GUID is valid
+        /// </summary>
+        private bool IEToolbarIsValid(string strGuid)
+        {
+            bool bRet = false;
+
+            if (!CLSIDExists(strGuid))
+                bRet = false;
+
+            if (InprocServerExists(Registry.ClassesRoot.OpenSubKey("CLSID\\" + strGuid)))
+                bRet = true;
+
+            if (InprocServerExists(Registry.LocalMachine.OpenSubKey("Software\\Classes\\CLSID\\" + strGuid)))
+                bRet = true;
+
+            if (InprocServerExists(Registry.CurrentUser.OpenSubKey("Software\\Classes\\CLSID\\" + strGuid)))
+                bRet = true;
+
+            return bRet;
+        }
+
+        /// <summary>
+        /// Checks if application sub key exists
+        /// </summary>
+        /// <param name="strApp">Application name</param>
+        /// <returns>True if app exists</returns>
+        private static bool ApplicationExists(string strApp)
+        {
+            try
+            {
+                if (Registry.ClassesRoot.OpenSubKey("Applications\\" + strApp) != null)
+                    return true;
+
+                if (Registry.LocalMachine.OpenSubKey(@"Software\Classes\Applications\" + strApp) != null)
+                    return true;
+
+                if (Registry.CurrentUser.OpenSubKey(@"Software\Classes\Applications\" + strApp) != null)
+                    return true;
+            }
+            catch (System.Security.SecurityException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
+
+            return false;
         }
 
         /// <summary>
@@ -496,5 +571,9 @@ namespace Little_Registry_Cleaner.Scanners
 
             return false;
         }
+
+        #endregion
+
+        #endregion
     }
 }
