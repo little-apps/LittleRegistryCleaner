@@ -38,35 +38,42 @@ namespace Little_Registry_Cleaner
             InitializeComponent();
         }
 
-        private void CheckForUpdate_Shown(object sender, EventArgs e)
+        private void UpdateDlg_Load(object sender, EventArgs e)
         {
-            this.labelCurrentVer.Text = Application.ProductVersion;
 
-            string strVersion = "", strChangeLogURL = "", strDownloadURL = "";
+            string strVersion = "", strChangeLogURL = "", strDownloadURL = "", strReleaseDate = "";
 
-            if (FindUpdate(ref strVersion, ref strChangeLogURL, ref strDownloadURL))
+            if (FindUpdate(ref strVersion, ref strReleaseDate, ref strChangeLogURL, ref strDownloadURL))
             {
                 this.strDownloadURL = strDownloadURL;
                 this.strChangeLogURL = strChangeLogURL;
 
                 this.buttonDownload.Enabled = true;
                 this.buttonChangelog.Enabled = true;
+
+                this.labelInfo.Text = "Newer version available";
             }
             else
             {
-                MessageBox.Show(this, "You have the current version", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information); 
+                this.buttonDownload.Enabled = false;
+                this.buttonChangelog.Enabled = false;
+
+                this.labelInfo.Text = "You have the latest version";
             }
         }
 
         /// <summary>
         /// Connects to update server and sees if update is available
         /// </summary>
-        /// <param name="strVersion">Current version</param>
+        /// <param name="strVersion">Current version available</param>
+        /// <param name="strReleaseDate">Date version was released</param>
         /// <param name="strChangeLogURL">Changelog URL</param>
         /// <param name="strDownloadURL">Download URL</param>
         /// <returns>True if a update is available</returns>
-        public static bool FindUpdate(ref string strVersion, ref string strChangeLogURL, ref string strDownloadURL)
+        public static bool FindUpdate(ref string strVersion, ref string strReleaseDate, ref string strChangeLogURL, ref string strDownloadURL)
         {
+            bool bRet = false;
+
             try
             {
                 XmlReader xmlReader = XmlTextReader.Create(Properties.Settings.Default.strUpdateURL);
@@ -79,6 +86,8 @@ namespace Little_Registry_Cleaner
                     {
                         if (xmlReader.Name.CompareTo("version") == 0)
                             strVersion = xmlReader.ReadString();
+                        else if (xmlReader.Name.CompareTo("date") == 0)
+                            strReleaseDate = xmlReader.ReadString();
                         else if (xmlReader.Name.CompareTo("changelog") == 0)
                             strChangeLogURL = xmlReader.ReadString();
                         else if (xmlReader.Name.CompareTo("download") == 0)
@@ -89,21 +98,27 @@ namespace Little_Registry_Cleaner
                 Version verApp = new Version(Application.ProductVersion);
                 Version verLatest = new Version(strVersion);
 
+                // Compare major and minor version parts
                 if (verApp.Major < verLatest.Major || verApp.Minor < verLatest.Minor)
-                    // Update found
-                    return true;
+                    bRet = true;
 
-                // We have the latest version
-                return false;
+                DateTime dtReleaseDate, dtBuildDate = DateTime.Parse(Properties.Settings.Default.strBuildTime);
+
+                if (DateTime.TryParse(strReleaseDate, out dtReleaseDate))
+                {
+                    // See if date from xml is later than build date
+                    if (DateTime.Compare(dtReleaseDate, dtBuildDate) > 0)
+                        bRet = true;
+                }
 
             }
             catch (System.Net.WebException ex)
             {
                 if (MessageBox.Show(ex.Message, Application.ProductName, MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) == DialogResult.Retry)
-                    return FindUpdate(ref strVersion, ref strChangeLogURL, ref strDownloadURL);
+                    return FindUpdate(ref strVersion, ref strReleaseDate, ref strChangeLogURL, ref strDownloadURL);
             }
 
-            return false;
+            return bRet;
         }
 
         private void buttonDownload_Click(object sender, EventArgs e)

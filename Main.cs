@@ -188,8 +188,8 @@ namespace Little_Registry_Cleaner
             // See if we have the current version
             if (Properties.Settings.Default.bOptionsAutoUpdate)
             {
-                string strVersion = "", strChangeLogURL = "", strDownloadURL = "";
-                if (UpdateDlg.FindUpdate(ref strVersion, ref strChangeLogURL, ref strDownloadURL))
+                string strVersion = "", strChangeLogURL = "", strDownloadURL = "", strReleaseDate = "";
+                if (UpdateDlg.FindUpdate(ref strVersion, ref strReleaseDate,ref strChangeLogURL, ref strDownloadURL))
                     if (MessageBox.Show(this, "A newer version is available. Would you like to download it?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                         LaunchURI(strDownloadURL);
             }
