@@ -21,7 +21,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - TODO: Fix saveAsXml() to only store needed subkeys
 - TODO: List Alternate startup folders if they are different in startup manager
 - TODO: Check for missing DLLs that are ran by rundll32 and regsvr32
-- TODO: Create class thats uses CollectionBase as base class for storing bad registry keys
 - TODO: Create full registry backup when LRC is ran for the first time
 - TODO: Add quotes to file path if it has spaces
 
@@ -196,3 +195,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Cleaned up COMObjects.cs
 - No longer collects Machine and username in crash reporter
 - Changed the look of update dialog, also added date to xml file
+- Uses CollectionBase class to store bad registry keys in array

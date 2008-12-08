@@ -19,6 +19,9 @@
     <SignManifests>true</SignManifests>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <ApplicationIcon>little register cleaner.ico</ApplicationIcon>
+    <TargetFrameworkSubset>Full</TargetFrameworkSubset>
+    <SignAssembly>true</SignAssembly>
     <PublishUrl>C:\Users\Welcome\Documents\Little Registry Cleaner\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -34,8 +37,7 @@
     <ApplicationVersion>0.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <ApplicationIcon>little register cleaner.ico</ApplicationIcon>
-    <TargetFrameworkSubset>Full</TargetFrameworkSubset>
+    <AssemblyOriginatorKeyFile>Little Registry Cleaner.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -83,6 +85,7 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="BadRegKeyArray.cs" />
     <Compile Include="Optimizer\HiveManager.cs" />
     <Compile Include="Optimizer\Optimizer.cs">
       <SubType>Form</SubType>
@@ -224,7 +227,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
-    <None Include="Little Registry Cleaner_TemporaryKey.pfx" />
+    <None Include="Little Registry Cleaner.snk" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -265,6 +268,11 @@
     <Compile Include="XML Registry\xmlWriter.cs" />
   </ItemGroup>
   <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
       <Visible>False</Visible>
       <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
@@ -279,6 +287,11 @@
       <Visible>False</Visible>
       <ProductName>.NET Framework 3.5</ProductName>
       <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
       <Visible>False</Visible>

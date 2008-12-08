@@ -40,6 +40,8 @@ namespace Little_Registry_Cleaner
         private xmlReader xmlReader = new xmlReader();
         private xmlRegistry xmlReg = new xmlRegistry();
 
+        private int nSortColumn = -1;
+
         private void Restore_Load(object sender, EventArgs e)
         {
             DirectoryInfo di = new DirectoryInfo(Properties.Settings.Default.strOptionsBackupDir);

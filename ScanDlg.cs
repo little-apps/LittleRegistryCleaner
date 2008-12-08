@@ -47,57 +47,7 @@ namespace Little_Registry_Cleaner
 
         public static ScanDlg frmScanDlg;
 
-        public struct BadRegistryKey
-        {
-            public string strProblem;
-
-            /// <summary>
-            /// <see cref="Use strRegPath instead"/>
-            /// </summary>
-            public string strMainKey;
-            /// <summary>
-            /// <see cref="Use strRegPath instead"/>
-            /// </summary>
-            public string strSubKey;
-            public string strValueName;
-
-            /// <summary>
-            /// Gets/Sets the registry path
-            /// </summary>
-            public string strRegPath
-            {
-                get
-                {
-                    if (!string.IsNullOrEmpty(strMainKey) && !string.IsNullOrEmpty(strSubKey))
-                        return string.Format("{0}\\{1}", strMainKey, strSubKey);
-                    else if (!string.IsNullOrEmpty(strMainKey))
-                        return strMainKey;
-                    else
-                        return string.Empty;
-                }
-                set
-                {
-                    string strPath = value;
-
-                    if (strPath.Length == 0)
-                        return;
-
-                    int nSlash = strPath.IndexOf("\\");
-                    if (nSlash > -1)
-                    {
-                        strMainKey = strPath.Substring(0, nSlash);
-                        strSubKey = strPath.Substring(nSlash + 1);
-                    }
-                    else
-                    {
-                        strMainKey = strPath;
-                        strSubKey = "";
-                    }
-                }
-            }
-        }
-
-        public static ArrayList arrBadRegistryKeys = new ArrayList();
+        public static BadRegKeyArray arrBadRegistryKeys = new BadRegKeyArray();
 
         public ScanDlg(int nSectionCount)
         {
@@ -301,9 +251,9 @@ namespace Little_Registry_Cleaner
         /// <param name="strProblem">Reason its invalid</param>
         /// <param name="strPath">The path to registry key (including registry hive)</param>
         /// <returns>True if it was added</returns>
-        public static bool StoreInvalidKey(string strProblem, string strPath)
+        public static bool StoreInvalidKey(string Problem, string Path)
         {
-            return StoreInvalidKey(strProblem, strPath, "");
+            return StoreInvalidKey(Problem, Path, "");
         }
 
         /// <summary>
@@ -313,23 +263,16 @@ namespace Little_Registry_Cleaner
         /// <param name="strPath">The path to registry key (including registry hive)</param>
         /// <param name="strValueName">Value name (leave blank if theres none)</param>
         /// <returns>True if it was added</returns>
-        public static bool StoreInvalidKey(string strProblem, string strPath, string strValueName)
+        public static bool StoreInvalidKey(string Problem, string Path, string ValueName)
         {
-            BadRegistryKey p = new BadRegistryKey();
-
             // See if key exists
-            if (!xmlRegistry.keyExists(strPath))
+            if (!xmlRegistry.keyExists(Path))
                 return false;  
 
-            p.strProblem = strProblem;
-            p.strRegPath = strPath;
-            if (!string.IsNullOrEmpty(strValueName))
-                p.strValueName = strValueName;
-
-            if (arrBadRegistryKeys.Add((BadRegistryKey)p) > 0)
+            if (arrBadRegistryKeys.Add(Problem, Path, ValueName) > 0)
             {
-                frmScanDlg.labelProblems.Text = arrBadRegistryKeys.Count.ToString();
-                Logger.WriteToFile(Logger.strLogFilePath, "Found invalid registry key. Key Name: \"" + strValueName + "\" Path: \"" + strPath + "\" Reason: \"" + strProblem + "\"");
+                frmScanDlg.IncrementProblems();
+                Logger.WriteToFile(Logger.strLogFilePath, "Found invalid registry key. Key Name: \"" + ValueName + "\" Path: \"" + Path + "\" Reason: \"" + Problem + "\"");
                 return true;
             }
 
@@ -392,6 +335,17 @@ namespace Little_Registry_Cleaner
             }
 
             this.labelSection.Text = "Scanning: " + strSectionName;
+        }
+
+        public void IncrementProblems()
+        {
+            if (this.InvokeRequired)
+            {
+                this.Invoke(new MethodInvoker(IncrementProblems));
+                return;
+            }
+
+            this.labelProblems.Text = arrBadRegistryKeys.Count.ToString();
         }
 
         private void ScanDlg_FormClosing(object sender, FormClosingEventArgs e)

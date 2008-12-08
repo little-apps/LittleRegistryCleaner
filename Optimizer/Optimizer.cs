@@ -124,9 +124,9 @@ namespace Little_Registry_Cleaner.Optimizer
                     oHive.AnalyzeHive();
                     AddToListView(oHive);
                 }
-
-                SetButtonsEnabled(true); 
             }
+
+            SetButtonsEnabled(true);
         }
 
         private void SetButtonsEnabled(bool bValue)

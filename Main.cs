@@ -82,15 +82,15 @@ namespace Little_Registry_Cleaner
             // See if there are any bad registry keys
             if (ScanDlg.arrBadRegistryKeys.Count > 0)
             {
-                foreach (ScanDlg.BadRegistryKey p in ScanDlg.arrBadRegistryKeys)
+                foreach (BadRegistryKey p in ScanDlg.arrBadRegistryKeys)
                 {
                     ListViewItem listViewItem = new ListViewItem();
 
                     listViewItem.Checked = true;
 
-                    listViewItem.Text = p.strProblem;
-                    listViewItem.SubItems.Add(p.strRegPath);
-                    listViewItem.SubItems.Add(p.strValueName);
+                    listViewItem.Text = p.Problem;
+                    listViewItem.SubItems.Add(p.RegKeyPath);
+                    listViewItem.SubItems.Add(p.ValueName);
 
                     this.listResults.Items.Add(listViewItem);
                 }
@@ -124,15 +124,11 @@ namespace Little_Registry_Cleaner
                     // Generate filename to backup registry
                     string strBackupFile = string.Format("{0}\\{1:yyyy}_{1:MM}_{1:dd}_{1:HH}{1:mm}{1:ss}.xml", Properties.Settings.Default.strOptionsBackupDir, DateTime.Now);
 
-                    ArrayList arrBadRegKeys = new ArrayList();
+                    BadRegKeyArray arrBadRegKeys = new BadRegKeyArray();
 
                     foreach (ListViewItem listViewItem in this.listResults.CheckedItems)
                     {
-                        ScanDlg.BadRegistryKey obj = new ScanDlg.BadRegistryKey();
-                        obj.strProblem = listViewItem.SubItems[0].Text;
-                        obj.strRegPath = listViewItem.SubItems[1].Text;
-                        obj.strValueName = listViewItem.SubItems[2].Text;
-                        arrBadRegKeys.Add(obj);
+                        arrBadRegKeys.Add(listViewItem.SubItems[0].Text, listViewItem.SubItems[1].Text, listViewItem.SubItems[2].Text);
                     }
 
                     // Generate a restore file and delete keys & values

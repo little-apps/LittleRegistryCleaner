@@ -1259,7 +1259,7 @@ namespace Little_Registry_Cleaner.Xml
         /// <param name="arrBadRegistryKeys">Array containg bad registry keys</param>
         /// <param name="strBackupFile">Path to XML backup file</param>
         /// <returns>True if file was created</returns>
-        public bool deleteAsXml(ArrayList arrBadRegistryKeys, string strBackupFile)
+        public bool deleteAsXml(BadRegKeyArray arrBadRegistryKeys, string strBackupFile)
         {
             xmlWriter w = new xmlWriter();
 
@@ -1270,13 +1270,13 @@ namespace Little_Registry_Cleaner.Xml
             xmlElement wroot = new xmlElement(xmlRegistry.XML_ROOT);
             wroot.write(w, 1, false, true);
 
-            foreach (ScanDlg.BadRegistryKey p in arrBadRegistryKeys)
+            foreach (BadRegistryKey p in arrBadRegistryKeys)
             {
-                if (keyExists(p.strRegPath))
-                    this.saveAsXml(w, false, p.strRegPath, p.strValueName, p.strProblem);
+                if (keyExists(p.RegKeyPath))
+                    this.saveAsXml(w, false, p.RegKeyPath, p.ValueName, p.Problem);
 
                 // Remove problem from registry
-                deleteRegistryKey(p.strMainKey, p.strSubKey, p.strValueName);
+                deleteRegistryKey(p.strMainKey, p.strSubKey, p.ValueName);
             }
 
             // Write Closing Tag to Backup File
