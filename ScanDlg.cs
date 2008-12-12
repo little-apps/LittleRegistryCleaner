@@ -37,7 +37,7 @@ namespace Little_Registry_Cleaner
         public delegate void UpdateScanSubKeyDelgate(string strSubKey);
         public delegate void UpdateSectionDelegate(string strSection);
 
-        private Logger loggerScan;
+        private Utils.Logger loggerScan;
 
         private Thread threadMain;
         private Thread threadCurrent;
@@ -83,7 +83,7 @@ namespace Little_Registry_Cleaner
             if (!Directory.Exists(Little_Registry_Cleaner.Properties.Settings.Default.strOptionsLogDir))
                 Directory.CreateDirectory(Little_Registry_Cleaner.Properties.Settings.Default.strOptionsLogDir);
 
-            this.loggerScan = new Logger(strLogFile);
+            this.loggerScan = new Utils.Logger(strLogFile);
 
             this.progressBar1.Step = 1;
             this.progressBar1.Maximum = this.SectionCount;
@@ -272,7 +272,7 @@ namespace Little_Registry_Cleaner
             if (arrBadRegistryKeys.Add(Problem, Path, ValueName) > 0)
             {
                 frmScanDlg.IncrementProblems();
-                Logger.WriteToFile(Logger.strLogFilePath, "Found invalid registry key. Key Name: \"" + ValueName + "\" Path: \"" + Path + "\" Reason: \"" + Problem + "\"");
+                Utils.Logger.WriteToFile(Utils.Logger.strLogFilePath, "Found invalid registry key. Key Name: \"" + ValueName + "\" Path: \"" + Path + "\" Reason: \"" + Problem + "\"");
                 return true;
             }
 

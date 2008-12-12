@@ -196,3 +196,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - No longer collects Machine and username in crash reporter
 - Changed the look of update dialog, also added date to xml file
 - Uses CollectionBase class to store bad registry keys in array
+- Uses shlwapi.dll instead to parse drive type and added check for removable media in Utils.DirExists()
+- Cleaned up Utils.cs

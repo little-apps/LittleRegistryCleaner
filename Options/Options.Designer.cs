@@ -85,7 +85,7 @@
             this.checkBoxRemDrives.Name = "checkBoxRemDrives";
             this.checkBoxRemDrives.Size = new System.Drawing.Size(212, 17);
             this.checkBoxRemDrives.TabIndex = 11;
-            this.checkBoxRemDrives.Text = "Ignore missing files on removable drives";
+            this.checkBoxRemDrives.Text = "Ignore missing files on removable media";
             this.checkBoxRemDrives.UseVisualStyleBackColor = true;
             // 
             // checkBoxAutoUpdate

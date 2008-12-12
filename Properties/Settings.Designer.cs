@@ -176,12 +176,12 @@ namespace Little_Registry_Cleaner.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool bOptionsRemDrives {
+        public bool bOptionsRemMedia {
             get {
-                return ((bool)(this["bOptionsRemDrives"]));
+                return ((bool)(this["bOptionsRemMedia"]));
             }
             set {
-                this["bOptionsRemDrives"] = value;
+                this["bOptionsRemMedia"] = value;
             }
         }
     }

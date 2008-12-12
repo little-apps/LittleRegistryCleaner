@@ -63,9 +63,9 @@ namespace Little_Registry_Cleaner.Scanners
 
                         if (!string.IsNullOrEmpty(strAppDir))
                         {
-                            if (Utils.SearchPath(strAppPath, strAppPath))
+                            if (Utils.SearchPath(strAppPath, strAppPath) != "")
                                 bAppExists = true;
-                            else if (Utils.SearchPath(strSubKey, strAppPath))
+                            else if (Utils.SearchPath(strSubKey, strAppPath) != "")
                                 bAppExists = true;
                         }
 

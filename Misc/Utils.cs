@@ -36,6 +36,7 @@ namespace Little_Registry_Cleaner
         #region Signatures imported from http://pinvoke.net
 
         [DllImport("kernel32.dll")] public static extern int SearchPath(string strPath, string strFileName, string strExtension, uint nBufferLength, StringBuilder strBuffer, string strFilePart);
+        [DllImport("kernel32.dll")] public static extern DriveType GetDriveType([MarshalAs(UnmanagedType.LPStr)] string lpRootPathName);
 
         // Used for SHGetSpecialFolderPath
         public const int CSIDL_STARTUP = 0x0007; // All Users\Startup
@@ -49,7 +50,11 @@ namespace Little_Registry_Cleaner
         [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern string PathGetArgs(string path);
         [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern void PathRemoveArgs([In, Out] StringBuilder path);
         [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern int PathParseIconLocation([In, Out] StringBuilder path);
+        [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern void PathUnquoteSpaces([In, Out] StringBuilder path);
         [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern bool PathFileExists(string path);
+        [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern bool PathStripToRoot([In, Out] StringBuilder path);
+        [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern bool PathRemoveFileSpec([In, Out] StringBuilder path);
+        
 
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
         public struct SlowInfoCache
@@ -258,6 +263,93 @@ namespace Little_Registry_Cleaner
         }
 
         #endregion
+        #region Logger
+        public class Logger
+        {
+            /// <summary>
+            /// Contains the path to the current log file
+            /// </summary>
+            public static string strLogFilePath = "";
+
+            private bool bEnabled = false;
+
+            public Logger(string strLogPath)
+            {
+                Logger.strLogFilePath = strLogPath;
+
+                this.bEnabled = Properties.Settings.Default.bOptionsLog;
+
+                if (this.bEnabled)
+                {
+                    // Create log file
+                    try
+                    {
+                        using (StreamWriter stream = File.CreateText(Logger.strLogFilePath))
+                        {
+                            if (stream != null)
+                            {
+                                stream.WriteLine("Little Registry Cleaner (" + DateTime.Now.ToString() + ")");
+                                stream.WriteLine("Website: http://sourceforge.net/projects/littlecleaner");
+                                stream.WriteLine("Version: " + Application.ProductVersion);
+                                stream.WriteLine("----------------");
+                                stream.WriteLine("{0}: Starting scan...", DateTime.Now.ToLongTimeString());
+                                stream.Close();
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        System.Diagnostics.Debug.WriteLine(ex.Message);
+                    }
+                }
+            }
+
+
+
+            /// <summary>
+            /// Writes scanning info to log file with the date + time
+            /// </summary>
+            /// <param name="strLine">The string to write</param>
+            public void WriteLine(string strLine)
+            {
+                if (this.bEnabled)
+                {
+                    try
+                    {
+                        using (StreamWriter stream = File.AppendText(Logger.strLogFilePath))
+                            if (stream != null)
+                                stream.WriteLine("{0}: {1}", DateTime.Now.ToLongTimeString(), strLine);
+                    }
+                    catch (Exception ex)
+                    {
+                        System.Diagnostics.Debug.WriteLine(ex.Message);
+                    }
+                }
+            }
+
+            /// <summary>
+            /// Writes the specified string to the file
+            /// </summary>
+            /// <param name="strLogFilePath">The file to write to</param>
+            /// <param name="strLine">The string to write (w/ date + time)</param>
+            public static void WriteToFile(string strLogFilePath, string strLine)
+            {
+                if (Properties.Settings.Default.bOptionsLog)
+                {
+                    try
+                    {
+                        using (StreamWriter stream = File.AppendText(strLogFilePath))
+                            if (stream != null)
+                                stream.WriteLine("{0}: {1}", DateTime.Now.ToLongTimeString(), strLine);
+                    }
+                    catch (Exception ex)
+                    {
+                        System.Diagnostics.Debug.WriteLine(ex.Message);
+                    }
+                }
+            }
+        }
+        #endregion
 
         /// <summary>
         /// Starts the process using CreateProcess() API
@@ -287,6 +379,12 @@ namespace Little_Registry_Cleaner
         {
             try
             {
+                int nSlash = strPath.LastIndexOf(Path.DirectorySeparatorChar);
+                if (nSlash > 0)
+                {
+
+                }
+
                 StringBuilder path = new StringBuilder(strPath);
                 strArgs = PathGetArgs(strPath);
                 PathRemoveArgs(path);
@@ -301,28 +399,7 @@ namespace Little_Registry_Cleaner
             return true;
         }
 
-        /// <summary>
-        /// Extracts icon from path and returns Icon
-        /// </summary>
-        /// <param name="path">The full path in form "filename,index"</param>
-        /// <returns>Returns Icon</returns>
-        public static Icon ParseIconPath(string path)
-        {
-            StringBuilder sb = new StringBuilder(path);
-
-            int nIndex = PathParseIconLocation(sb);
-
-            if (sb.Length > 0)
-            {
-                IntPtr hIcon = ExtractIcon(IntPtr.Zero, sb.ToString(), nIndex);
-
-                Icon ico = (Icon)Icon.FromHandle(hIcon).Clone();
-
-                return ico;
-            }
-            else
-                return null;
-        }
+        
 
         /// <summary>
         /// Resolves path to .lnk shortcut
@@ -476,34 +553,39 @@ namespace Little_Registry_Cleaner
             StringBuilder path = new StringBuilder(260);
 
             if (Utils.SHGetSpecialFolderPath(IntPtr.Zero, path, nCSIDL, false))
-                return path.ToString();
+                return string.Copy(path.ToString());
+
             return "";
         }
 
         /// <summary>
-        /// Checks for the file in %PATH% variable
+        /// Checks for the file using the specified path and %PATH% variable
         /// </summary>
-        /// <param name="strFilePath">The file path</param>
-        /// <returns>True if it exists</returns>
-        public static bool SearchPath(string strFilePath)
+        /// <param name="FileName">The name of the file for which to search</param>
+        /// <param name="Path">The path to be searched for the file</param>
+        /// <returns>The path and file name of the file found</returns>
+        public static string SearchPath(string FileName, string Path)
         {
-            // Search for file in %path% variable
             StringBuilder strBuffer = new StringBuilder(260);
 
-            if (SearchPath(null, strFilePath, null, 260, strBuffer, null) != 0)
-                return true;
+            if (SearchPath(((!string.IsNullOrEmpty(Path)) ? (Path) : (null)), FileName, null, 260, strBuffer, null) != 0)
+                return string.Copy(strBuffer.ToString());
 
-            return false;
+            return "";
         }
 
-        public static bool SearchPath(string strFile, string strPath)
+        /// <summary>
+        /// Removes quotes from the path
+        /// </summary>
+        /// <param name="Path">Path w/ quotes</param>
+        /// <returns>Path w/o quotes</returns>
+        private static string UnqouteSpaces(string Path)
         {
-            StringBuilder strBuffer = new StringBuilder(260);
+            StringBuilder sb = new StringBuilder(Path);
 
-            if (SearchPath(strPath, strFile, null, 260, strBuffer, null) != 0)
-                return true;
+            PathUnquoteSpaces(sb);
 
-            return false;
+            return string.Copy(sb.ToString());
         }
 
         /// <summary>
@@ -511,86 +593,92 @@ namespace Little_Registry_Cleaner
         /// </summary>
         /// <param name="strDefaultIcon">The icon path</param>
         /// <returns>True if it exists</returns>
-        public static bool IconExists(string strIconPath)
+        public static bool IconExists(string IconPath)
         {
-            string strBuffer = strIconPath.Trim().ToLower();
+            string strFileName = string.Copy(IconPath.Trim().ToLower());
 
             // Remove quotes
-            if (strBuffer[0] == '"')
-            {
-                int i, iQouteLoc = 0, iQoutes = 1;
-                for (i = 0; (i < strBuffer.Length) && (iQoutes <= 2); i++)
-                {
-                    if (strBuffer[i] == '"')
-                    {
-                        strBuffer = strBuffer.Remove(i, 1);
-                        iQouteLoc = i;
-                        iQoutes++;
-                    }
-                }
-            }
+            strFileName = UnqouteSpaces(strFileName);
 
             // Get icon path
-            int nSlash = strBuffer.IndexOf(',');
+            int nSlash = strFileName.IndexOf(',');
             if (nSlash > -1)
-                strBuffer = strBuffer.Substring(0, nSlash);
+            {
+                strFileName = strFileName.Substring(0, nSlash);
 
-            if (Utils.FileExists(strBuffer))
-                return true;
+                return Utils.FileExists(strFileName);
+            }
+            else
+            {
+                StringBuilder sb = new StringBuilder(strFileName);
+                if (PathParseIconLocation(sb) >= 0)
+                    if (sb.Length > 0)
+                        return Utils.FileExists(sb.ToString());
+            }
 
             return false;
+        }
+
+        private static bool ValidDriveType(string path)
+        {
+            StringBuilder sb = new StringBuilder(path);
+            if (PathStripToRoot(sb)) 
+            {
+                DriveType dt = GetDriveType(sb.ToString());
+
+                if (Properties.Settings.Default.bOptionsRemMedia)
+                {
+                    // Just return true if its on a removable media
+                    if (dt == DriveType.Removable ||
+                        dt == DriveType.Network ||
+                        dt == DriveType.CDRom)
+                        return true;
+                }
+
+                // Return false for unkown and no root dir
+                if (dt == DriveType.NoRootDirectory ||
+                    dt == DriveType.Unknown)
+                    return false;
+            }
+
+            return true;
         }
 
         /// <summary>
         /// Sees if the file exists
         /// </summary>
-        /// <param name="strFileName">The filename</param>
-        /// <returns>True if it exists, false if it contains illegal characters</returns>
-        public static bool FileExists(string strPath)
+        /// <param name="FilePath">The filename (including path)</param>
+        /// <returns>True if it exists or false</returns>
+        public static bool FileExists(string FilePath)
         {
-            string strFileName = strPath;
-
-            if (string.IsNullOrEmpty(strPath))
-                return false;
-
-            // Remove quotes
-            if (strFileName[0] == '"')
+            if (!string.IsNullOrEmpty(FilePath))
             {
-                int i, iQouteLoc = 0, iQoutes = 1;
-                for (i = 0; (i < strFileName.Length) && (iQoutes <= 2); i++)
-                {
-                    if (strFileName[i] == '"')
-                    {
-                        strFileName = strFileName.Remove(i, 1);
-                        iQouteLoc = i;
-                        iQoutes++;
-                    }
-                }
+                string strFileName = string.Copy(FilePath);
+
+                // Remove quotes
+                strFileName = UnqouteSpaces(strFileName);
+
+                // Remove environment variables
+                strFileName = Environment.ExpandEnvironmentVariables(strFileName);
+
+                // Check for illegal characters
+                if (FindAnyIllegalChars(strFileName))
+                    return false;
+
+                // Check Drive Type
+                if (!ValidDriveType(strFileName))
+                    return false;
+
+                // Now see if file exists
+                if (File.Exists(strFileName))
+                    return true;
+
+                if (PathFileExists(strFileName))
+                    return true;
+
+                if (SearchPath(strFileName, "") != "")
+                    return true;
             }
-
-            strFileName = Environment.ExpandEnvironmentVariables(strFileName);
-
-            if (FindAnyIllegalChars(strFileName))
-                return false;
-
-            if (Path.IsPathRooted(strFileName))
-            {
-                DriveInfo driveInfo = new DriveInfo(Path.GetPathRoot(strFileName));
-
-                if (Properties.Settings.Default.bOptionsRemDrives)
-                    // Just return true if its on a removable drive
-                    if (driveInfo.DriveType == DriveType.Removable)
-                        return true;
-            }
-
-            if (File.Exists(strFileName))
-                return true;
-
-            if (PathFileExists(strFileName))
-                return true;
-
-            if (Utils.SearchPath(strFileName))
-                return true;
 
             return false;
         }
@@ -602,37 +690,26 @@ namespace Little_Registry_Cleaner
         /// <returns>True if it exists</returns>
         public static bool DirExists(string strPath)
         {
-            string strDirectory = strPath.Trim().ToLower();
-            int pos;
+            string strDirectory = string.Copy(strPath.Trim().ToLower());
 
             // Remove quotes
-            if (strDirectory[0] == '"')
-            {
-                int i, iQouteLoc = 0, iQoutes = 1;
-                for (i = 0; (i < strDirectory.Length) && (iQoutes <= 2); i++)
-                {
-                    if (strDirectory[i] == '"')
-                    {
-                        strDirectory = strDirectory.Remove(i, 1);
-                        iQouteLoc = i;
-                        iQoutes++;
-                    }
-                }
-            }
+            strDirectory = UnqouteSpaces(strDirectory);
 
+            // Expand enviroment variables
             strDirectory = Environment.ExpandEnvironmentVariables(strDirectory);
 
+            if (!ValidDriveType(strDirectory))
+                return false;
+
+            // Check for illegal chars
             if (FindAnyIllegalChars(strDirectory))
                 return false;
 
-            // Remove filename.ext from strDirectory
-            if ((pos = strDirectory.LastIndexOf(Path.DirectorySeparatorChar)) >= 0)
-            {
-                string strDirName = strDirectory.Substring(0, pos);
-
-                if (Directory.Exists(strDirName))
+            // Remove filename.ext and trailing backslash from path
+            StringBuilder sb = new StringBuilder(strDirectory);
+            if (PathRemoveFileSpec(sb))
+                if (Directory.Exists(sb.ToString()))
                     return true;
-            }
 
             if (Directory.Exists(strDirectory))
                 return true;
@@ -693,92 +770,6 @@ namespace Little_Registry_Cleaner
         }
     }
 
-    #region Logger
-    public class Logger
-    {
-        /// <summary>
-        /// Contains the path to the current log file
-        /// </summary>
-        public static string strLogFilePath = "";
-
-        private bool bEnabled = false;
-
-        public Logger(string strLogPath)
-        {
-            Logger.strLogFilePath = strLogPath;
-
-            this.bEnabled = Properties.Settings.Default.bOptionsLog;
-
-            if (this.bEnabled)
-            {
-                // Create log file
-                try
-                {
-                    using (StreamWriter stream = File.CreateText(Logger.strLogFilePath))
-                    {
-                        if (stream != null)
-                        {
-                            stream.WriteLine("Little Registry Cleaner (" + DateTime.Now.ToString() + ")");
-                            stream.WriteLine("Website: http://sourceforge.net/projects/littlecleaner");
-                            stream.WriteLine("Version: " + Application.ProductVersion);
-                            stream.WriteLine("----------------");
-                            stream.WriteLine("{0}: Starting scan...", DateTime.Now.ToLongTimeString());
-                            stream.Close();
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    System.Diagnostics.Debug.WriteLine(ex.Message);
-                }
-            }
-        }
-
-        
-
-        /// <summary>
-        /// Writes scanning info to log file with the date + time
-        /// </summary>
-        /// <param name="strLine">The string to write</param>
-        public void WriteLine(string strLine)
-        {
-            if (this.bEnabled)
-            {
-                try
-                {
-                    using (StreamWriter stream = File.AppendText(Logger.strLogFilePath))
-                        if (stream != null)
-                            stream.WriteLine("{0}: {1}", DateTime.Now.ToLongTimeString(), strLine);
-                }
-                catch (Exception ex)
-                {
-                    System.Diagnostics.Debug.WriteLine(ex.Message);
-                }
-            }
-        }
-
-        /// <summary>
-        /// Writes the specified string to the file
-        /// </summary>
-        /// <param name="strLogFilePath">The file to write to</param>
-        /// <param name="strLine">The string to write (w/ date + time)</param>
-        public static void WriteToFile(string strLogFilePath, string strLine)
-        {
-            if (Properties.Settings.Default.bOptionsLog)
-            {
-                try
-                {
-                    using (StreamWriter stream = File.AppendText(strLogFilePath))
-                        if (stream != null)
-                            stream.WriteLine("{0}: {1}", DateTime.Now.ToLongTimeString(), strLine);
-                }
-                catch (Exception ex)
-                {
-                    System.Diagnostics.Debug.WriteLine(ex.Message);
-                }
-            }
-        }
-    }
-    #endregion
+    
 
 }
