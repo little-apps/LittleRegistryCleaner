@@ -55,10 +55,8 @@ namespace Little_Registry_Cleaner.StartupManager
                 return;
             }
 
-            if (strSection.StartsWith(@"Registry\All Users") || strSection.StartsWith(@"Registry\Current User"))
+            if (strSection.StartsWith("HKEY"))
             {
-                RegistryKey regKey = null;
-                string strRegPath = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\" + strSection.Substring(strSection.LastIndexOf("\\") + 1);
                 string strPath = "";
 
                 if (!string.IsNullOrEmpty(this.textBoxFile.Text) && !string.IsNullOrEmpty(this.textBoxArgs.Text))
@@ -66,36 +64,24 @@ namespace Little_Registry_Cleaner.StartupManager
                 else
                     strPath = string.Format("\"{0}\"", this.textBoxFile.Text);
 
-                if (strSection.StartsWith(@"Registry\All Users"))
-                {
-                    regKey = Registry.LocalMachine.OpenSubKey(strRegPath, true);
-                }
-                else if (strSection.StartsWith(@"Registry\Current User"))
-                {
-                    regKey = Registry.CurrentUser.OpenSubKey(strRegPath, true);
-                }
+                string strMainKey = strSection.Substring(0, strSection.IndexOf('\\'));
+                string strSubKey = strSection.Substring(strSection.IndexOf('\\') + 1);
 
-                regKey.SetValue(strItem, strPath);
-                regKey.Close();
+                RegistryKey rk = Xml.xmlRegistry.openKey(strMainKey, strSubKey, true);
+
+                if (rk != null)
+                {
+                    rk.SetValue(strItem, strPath);
+                    rk.Close();
+                }
             }
-            else
+            else if (Directory.Exists(strSection))
             {
-                string strStartupFolder = "";
-
-                if (strSection == @"StartUp\All Users")
-                {
-                    strStartupFolder = Utils.GetSpecialFolderPath(Utils.CSIDL_STARTUP);
-                }
-                else if (strSection == @"StartUp\Current User")
-                {
-                    strStartupFolder = Utils.GetSpecialFolderPath(Utils.CSIDL_COMMON_STARTUP);
-                }
-
-                string strItemPath = string.Format("{0}\\{1}", strStartupFolder, strItem);
+                string strItemPath = Path.Combine(strSection, strItem);
 
                 File.Delete(strItemPath);
 
-                Utils.CreateShortcut(strItemPath, string.Format("\"{0}\"", this.textBoxFile.Text), this.textBoxArgs.Text);
+                Utils.CreateShortcut(strItemPath, '"' + this.textBoxFile.Text + '"', this.textBoxArgs.Text);
             }
         }
 

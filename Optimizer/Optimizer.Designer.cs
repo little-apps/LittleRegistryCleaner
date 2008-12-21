@@ -35,6 +35,8 @@
             this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
             this.buttonStart = new System.Windows.Forms.Button();
             this.buttonClose = new System.Windows.Forms.Button();
+            this.progressBarAnalyzed = new Common_Tools.XpProgressBar();
+            this.progressBarDefrag = new Common_Tools.XpProgressBar();
             this.SuspendLayout();
             // 
             // labelWarning
@@ -98,12 +100,42 @@
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
+            // progressBarAnalyzed
+            // 
+            this.progressBarAnalyzed.ColorBackGround = System.Drawing.Color.White;
+            this.progressBarAnalyzed.ColorBarBorder = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(240)))), ((int)(((byte)(170)))));
+            this.progressBarAnalyzed.ColorBarCenter = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(10)))));
+            this.progressBarAnalyzed.ColorText = System.Drawing.Color.Black;
+            this.progressBarAnalyzed.Location = new System.Drawing.Point(15, 12);
+            this.progressBarAnalyzed.Name = "progressBarAnalyzed";
+            this.progressBarAnalyzed.Position = 0;
+            this.progressBarAnalyzed.PositionMax = 100;
+            this.progressBarAnalyzed.PositionMin = 0;
+            this.progressBarAnalyzed.Size = new System.Drawing.Size(326, 29);
+            this.progressBarAnalyzed.TabIndex = 19;
+            // 
+            // progressBarDefrag
+            // 
+            this.progressBarDefrag.ColorBackGround = System.Drawing.Color.White;
+            this.progressBarDefrag.ColorBarBorder = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(240)))), ((int)(((byte)(170)))));
+            this.progressBarDefrag.ColorBarCenter = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(10)))));
+            this.progressBarDefrag.ColorText = System.Drawing.Color.Black;
+            this.progressBarDefrag.Location = new System.Drawing.Point(15, 49);
+            this.progressBarDefrag.Name = "progressBarDefrag";
+            this.progressBarDefrag.Position = 0;
+            this.progressBarDefrag.PositionMax = 100;
+            this.progressBarDefrag.PositionMin = 0;
+            this.progressBarDefrag.Size = new System.Drawing.Size(326, 29);
+            this.progressBarDefrag.TabIndex = 20;
+            // 
             // Optimizer
             // 
             this.AcceptButton = this.buttonClose;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(348, 383);
+            this.Controls.Add(this.progressBarDefrag);
+            this.Controls.Add(this.progressBarAnalyzed);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.labelWarning);
             this.Controls.Add(this.listView1);
@@ -130,6 +162,8 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.Button buttonStart;
         private System.Windows.Forms.Button buttonClose;
+        private Common_Tools.XpProgressBar progressBarAnalyzed;
+        private Common_Tools.XpProgressBar progressBarDefrag;
 
     }
 }

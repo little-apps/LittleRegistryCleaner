@@ -22,6 +22,7 @@
     <ApplicationIcon>little register cleaner.ico</ApplicationIcon>
     <TargetFrameworkSubset>Full</TargetFrameworkSubset>
     <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Little Registry Cleaner.snk</AssemblyOriginatorKeyFile>
     <PublishUrl>C:\Users\Welcome\Documents\Little Registry Cleaner\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -37,7 +38,6 @@
     <ApplicationVersion>0.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <AssemblyOriginatorKeyFile>Little Registry Cleaner.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -66,9 +66,6 @@
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.ServiceProcess" />
-    <Reference Include="System.Xml.Linq">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
     <Reference Include="System.Data.DataSetExtensions">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -98,9 +95,6 @@
     </Compile>
     <Compile Include="Optimizer\SecureDesktop.Designer.cs">
       <DependentUpon>SecureDesktop.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Optimizer\XpProgressBar.cs">
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Misc\Permissions.cs" />
     <Compile Include="Misc\RegEditGo.cs" />
@@ -306,7 +300,10 @@
     <Content Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <ProjectReference Include="Common Tools\Common Tools.csproj">
+      <Project>{9D2C42E6-8851-4B8E-9200-113E6CC2D4CD}</Project>
+      <Name>Common Tools</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

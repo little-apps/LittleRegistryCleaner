@@ -25,7 +25,7 @@ using System.Windows.Forms;
 
 // Copyright 2004-2005 Marcos Meli - www.MarcosMeli.com.ar
 
-namespace Little_Registry_Cleaner.Optimizer
+namespace Common_Tools
 {
 
     #region "  Gradient Mode  "
@@ -389,59 +389,58 @@ namespace Little_Registry_Cleaner.Optimizer
             //System.Diagnostics.Debug.WriteLine("Paint " + this.Name + "  Pos: "+this.Position.ToString());
             if (!this.IsDisposed)
             {
-                int mSteepTotal = mSteepWidth + mSteepDistance;
-                float mUtilWidth = this.Width - 6 + mSteepDistance;
+                    int mSteepTotal = mSteepWidth + mSteepDistance;
+                    float mUtilWidth = this.Width - 6 + mSteepDistance;
 
-                if (mDobleBack == null)
-                {
-                    mUtilWidth = this.Width - 6 + mSteepDistance;
-                    int mMaxSteeps = (int)(mUtilWidth / mSteepTotal);
-                    this.Width = 6 + mSteepTotal * mMaxSteeps;
-
-                    mDobleBack = new Bitmap(this.Width, this.Height);
-
-                    Graphics g2 = Graphics.FromImage(mDobleBack);
-
-                    CreatePaintElements();
-
-                    g2.Clear(mColorBackGround);
-
-                    if (this.BackgroundImage != null)
+                    if (mDobleBack == null)
                     {
-                        TextureBrush textuBrush = new TextureBrush(this.BackgroundImage, WrapMode.Tile);
-                        g2.FillRectangle(textuBrush, 0, 0, this.Width, this.Height);
-                        textuBrush.Dispose();
+                        mUtilWidth = this.Width - 6 + mSteepDistance;
+                        int mMaxSteeps = (int)(mUtilWidth / mSteepTotal);
+                        this.Width = 6 + mSteepTotal * mMaxSteeps;
+
+                        mDobleBack = new Bitmap(this.Width, this.Height);
+
+                        Graphics g2 = Graphics.FromImage(mDobleBack);
+
+                        CreatePaintElements();
+
+                        g2.Clear(mColorBackGround);
+
+                        if (this.BackgroundImage != null)
+                        {
+                            TextureBrush textuBrush = new TextureBrush(this.BackgroundImage, WrapMode.Tile);
+                            g2.FillRectangle(textuBrush, 0, 0, this.Width, this.Height);
+                            textuBrush.Dispose();
+                        }
+                        //				g2.DrawImage()
+
+                        g2.DrawRectangle(mPenOut2, outnnerRect2);
+                        g2.DrawRectangle(mPenOut, outnnerRect);
+                        g2.DrawRectangle(mPenIn, innerRect);
+                        g2.Dispose();
+
                     }
-                    //				g2.DrawImage()
 
-                    g2.DrawRectangle(mPenOut2, outnnerRect2);
-                    g2.DrawRectangle(mPenOut, outnnerRect);
-                    g2.DrawRectangle(mPenIn, innerRect);
-                    g2.Dispose();
+                    Image ima = new Bitmap(mDobleBack);
 
-                }
+                    Graphics gtemp = Graphics.FromImage(ima);
 
-                Image ima = new Bitmap(mDobleBack);
+                    int mCantSteeps = (int)((((float)mPosition - mMin) / (mMax - mMin)) * mUtilWidth / mSteepTotal);
 
-                Graphics gtemp = Graphics.FromImage(ima);
+                    for (int i = 0; i < mCantSteeps; i++)
+                    {
+                        DrawSteep(gtemp, i);
+                    }
 
-                int mCantSteeps = (int)((((float)mPosition - mMin) / (mMax - mMin)) * mUtilWidth / mSteepTotal);
+                    if (this.Text != String.Empty)
+                    {
+                        gtemp.TextRenderingHint = TextRenderingHint.AntiAlias;
+                        DrawCenterString(gtemp, this.ClientRectangle);
+                    }
 
-                for (int i = 0; i < mCantSteeps; i++)
-                {
-                    DrawSteep(gtemp, i);
-                }
-
-                if (this.Text != String.Empty)
-                {
-                    gtemp.TextRenderingHint = TextRenderingHint.AntiAlias;
-                    DrawCenterString(gtemp, this.ClientRectangle);
-                }
-
-                e.Graphics.DrawImage(ima, e.ClipRectangle.X, e.ClipRectangle.Y, e.ClipRectangle, GraphicsUnit.Pixel);
-                ima.Dispose();
-                gtemp.Dispose();
-
+                    e.Graphics.DrawImage(ima, e.ClipRectangle.X, e.ClipRectangle.Y, e.ClipRectangle, GraphicsUnit.Pixel);
+                    ima.Dispose();
+                    gtemp.Dispose();
             }
 
         }

@@ -96,6 +96,10 @@ namespace Little_Registry_Cleaner
             if (!Properties.Settings.Default.bOptionsRestore)
                 return false;
 
+            // See if DLL exists
+            if (string.IsNullOrEmpty(Utils.SearchPath("srclient.dll", "")))
+                return false;
+
             // Windows ME
             if (majorVersion == 4 && minorVersion == 90)
                 return true;

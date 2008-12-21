@@ -371,35 +371,72 @@ namespace Little_Registry_Cleaner
         /// <summary>
         /// Uses PathGetArgs and PathRemoveArgs API to extract file arguments
         /// </summary>
-        /// <param name="strPath">file path including arguments</param>
-        /// <param name="strFile">file path</param>
-        /// <param name="strArgs">arguments</param>
+        /// <param name="CmdLine">Command Line</param>
+        /// <param name="FilePath">file path</param>
+        /// <param name="Args">arguments</param>
         /// <returns>true or false if an exception was thrown</returns>
-        public static bool ExtractArguments(string strPath, out string strFile, out string strArgs)
+        public static bool ExtractArguments(string CmdLine, out string FilePath, out string Args)
         {
             try
             {
-                int nSlash = strPath.LastIndexOf(Path.DirectorySeparatorChar);
-                if (nSlash > 0)
-                {
+                Args = string.Copy(PathGetArgs(CmdLine));
 
-                }
-
-                StringBuilder path = new StringBuilder(strPath);
-                strArgs = PathGetArgs(strPath);
-                PathRemoveArgs(path);
-                strFile = path.ToString();
+                StringBuilder strCmdLine = new StringBuilder(CmdLine.ToLower().Trim());
+                PathRemoveArgs(strCmdLine);
+                FilePath = string.Copy(strCmdLine.ToString());
             }
             catch (Exception)
             {
-                strFile = strArgs = "";
+                FilePath = Args = "";
                 return false;
             }
 
             return true;
         }
 
-        
+        /// <summary>
+        /// Parses the file location w/o windows API
+        /// </summary>
+        /// <param name="Path">Path</param>
+        /// <param name="Location">Returns Location</param>
+        /// <returns>Returns true if file was located</returns>
+        public static bool ExtractFileLocation(string Path, out string Location, out string Arguments)
+        {
+            string strFilePath = string.Copy(Path.ToLower().Trim());
+            bool bRet = false;
+            Location = Arguments = "";
+
+            // Remove Quotes
+            strFilePath = UnqouteSpaces(strFilePath);
+
+            // Expand variables
+            strFilePath = Environment.ExpandEnvironmentVariables(strFilePath);
+
+            // Try to see file exists by combining parts
+            StringBuilder strFileFullPath = new StringBuilder(260);
+            int nPos = 0;
+            foreach (char ch in strFilePath.ToCharArray())
+            {
+               strFileFullPath = strFileFullPath.Append(ch);
+                nPos++;
+
+                // See if part exists
+               if (File.Exists(strFileFullPath.ToString()))
+               {
+                   Location = string.Copy(strFileFullPath.ToString());
+                   bRet = true;
+                   break;
+               }
+            }
+
+            if (bRet)
+            {
+                if (nPos > 0)
+                    Arguments = strFilePath.Remove(0, nPos).Trim();
+            }
+
+            return bRet;
+        }
 
         /// <summary>
         /// Resolves path to .lnk shortcut
@@ -546,24 +583,24 @@ namespace Little_Registry_Cleaner
         /// <summary>
         /// Returns special folder path specified by CSIDL
         /// </summary>
-        /// <param name="nCSIDL">CSIDL</param>
+        /// <param name="CSIDL">CSIDL</param>
         /// <returns>Special folder path</returns>
-        public static string GetSpecialFolderPath(int nCSIDL)
+        public static string GetSpecialFolderPath(int CSIDL)
         {
             StringBuilder path = new StringBuilder(260);
 
-            if (Utils.SHGetSpecialFolderPath(IntPtr.Zero, path, nCSIDL, false))
+            if (Utils.SHGetSpecialFolderPath(IntPtr.Zero, path, CSIDL, false))
                 return string.Copy(path.ToString());
 
             return "";
         }
 
         /// <summary>
-        /// Checks for the file using the specified path and %PATH% variable
+        /// Checks for the file using the specified path and/or %PATH% variable
         /// </summary>
         /// <param name="FileName">The name of the file for which to search</param>
-        /// <param name="Path">The path to be searched for the file</param>
-        /// <returns>The path and file name of the file found</returns>
+        /// <param name="Path">The path to be searched for the file (searches %path% variable if null)</param>
+        /// <returns>The path containing the file found or null</returns>
         public static string SearchPath(string FileName, string Path)
         {
             StringBuilder strBuffer = new StringBuilder(260);
@@ -591,7 +628,7 @@ namespace Little_Registry_Cleaner
         /// <summary>
         /// Gets the icon path and sees if it exists
         /// </summary>
-        /// <param name="strDefaultIcon">The icon path</param>
+        /// <param name="IconPath">The icon path</param>
         /// <returns>True if it exists</returns>
         public static bool IconExists(string IconPath)
         {
@@ -686,11 +723,11 @@ namespace Little_Registry_Cleaner
         /// <summary>
         /// Sees if the directory exists
         /// </summary>
-        /// <param name="strPath">The directory</param>
+        /// <param name="DirPath">The directory</param>
         /// <returns>True if it exists</returns>
-        public static bool DirExists(string strPath)
+        public static bool DirExists(string DirPath)
         {
-            string strDirectory = string.Copy(strPath.Trim().ToLower());
+            string strDirectory = string.Copy(DirPath.Trim().ToLower());
 
             // Remove quotes
             strDirectory = UnqouteSpaces(strDirectory);

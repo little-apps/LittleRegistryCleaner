@@ -21,12 +21,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Runtime.InteropServices;
 using Microsoft.Win32;
+using Common_Tools.TreeView;
 
 namespace Little_Registry_Cleaner.StartupManager
 {
@@ -39,8 +39,6 @@ namespace Little_Registry_Cleaner.StartupManager
 
         private void StartupManager_Load(object sender, EventArgs e)
         {
-            this.treeView1.Nodes[0].ExpandAll();
-
             LoadStartupFiles();
         }
 
@@ -49,8 +47,16 @@ namespace Little_Registry_Cleaner.StartupManager
             if (regKey == null)
                 return;
 
-            if (regKey.ValueCount < 1)
+            if (regKey.ValueCount <= 0)
                 return;
+
+            TreeListNode tlnRoot = new TreeListNode();
+            tlnRoot.Text = regKey.Name;
+
+            if (regKey.Name.StartsWith("HKEY_LOCAL_MACHINE"))
+                tlnRoot.ImageIndex = 0;
+            else
+                tlnRoot.ImageIndex = 1;
 
             foreach (string strItem in regKey.GetValueNames())
             {
@@ -58,48 +64,71 @@ namespace Little_Registry_Cleaner.StartupManager
 
                 if (!string.IsNullOrEmpty(strFilePath))
                 {
-                    // Convert HKLM\Software\Microsoft\... to Registry\All Users
-                    string strRegKey = regKey.Name;
-                    string strMainKey = strRegKey.Substring(0, strRegKey.IndexOf("\\"));
-                    string strPath = strRegKey.Substring(strRegKey.LastIndexOf("\\") + 1);
-
-                    string strShortKey = ShortRegKey(strMainKey, strPath);
-
                     // Get file arguments
-                    string strFile, strArgs;
-                    Utils.ExtractArguments(strFilePath, out strFile, out strArgs);
+                    string strFile = "", strArgs = "";
+                    if (!Utils.FileExists(strFilePath))
+                    {
+                        Utils.ExtractArguments(strFilePath, out strFile, out strArgs);
 
-                    ListViewItem listViewItem = new ListViewItem(new string[] { strItem, strShortKey, strFile , strArgs});
-                    listViewItem.Checked = true;
-                    this.listView1.Items.Add(listViewItem);
+                        if (!Utils.FileExists(strFile))
+                        {
+                            strFile = strArgs = "";
+                            Utils.ExtractFileLocation(strFilePath, out strFile, out strArgs);
+                        }
+                    }
+                    else
+                        strFile = string.Copy(strFilePath);
+
+                    TreeListNode tln = new TreeListNode();
+                    tln.Text = strItem;
+                    tln.SubItems.Add(strFile);
+                    tln.SubItems.Add(strArgs);
+                    tln.ImageIndex = 3;
+
+                    tlnRoot.Nodes.Add(tln);
                 }
             }
+
+            this.treeListView.Nodes.Add(tlnRoot);
         }
 
-        private void AddStartupFolder(string strFolder, string strShortFolder)
+        private void AddStartupFolder(string strFolder)
         {
             try
             {
-                if (string.IsNullOrEmpty(strFolder))
+                if (string.IsNullOrEmpty(strFolder) || !Directory.Exists(strFolder))
                     return;
 
-                if (!Directory.Exists(strFolder))
-                    return;
+                TreeListNode tlnRoot = new TreeListNode();
+                tlnRoot.Text = strFolder;
+                tlnRoot.ImageIndex = 2;
 
                 foreach (string strShortcut in Directory.GetFiles(strFolder))
                 {
                     string strShortcutName = Path.GetFileName(strShortcut);
                     string strFilePath, strFileArgs;
 
-                    if (strShortcutName != "desktop.ini")
+                    if (Path.GetExtension(strShortcut) == ".lnk")
                     {
                         Utils.ResolveShortcut(strShortcut, out strFilePath, out strFileArgs);
 
-                        ListViewItem listViewItem = new ListViewItem(new string[] { strShortcutName, strShortFolder, strFilePath, strFileArgs });
-                        listViewItem.Checked = true;
-                        this.listView1.Items.Add(listViewItem);
+                        TreeListNode tln = new TreeListNode();
+                        tln.Text = strShortcutName;
+                        tln.SubItems.Add(strFilePath);
+                        tln.SubItems.Add(strFileArgs);
+
+                        this.imageList1.Images.Add(strShortcutName, Icon.ExtractAssociatedIcon(strShortcut));
+
+                        tln.ImageIndex = this.imageList1.Images.Count;
+
+                        tlnRoot.Nodes.Add(tln);
                     }
                 }
+
+                if (tlnRoot.Nodes.Count <= 0)
+                    return;
+
+                this.treeListView.Nodes.Add(tlnRoot);
             }
             catch (Exception ex)
             {
@@ -113,7 +142,7 @@ namespace Little_Registry_Cleaner.StartupManager
         /// </summary>
         private void LoadStartupFiles()
         {
-            this.listView1.Items.Clear();
+            this.treeListView.Nodes.Clear();
 
             try
             {
@@ -142,72 +171,16 @@ namespace Little_Registry_Cleaner.StartupManager
                 System.Diagnostics.Debug.WriteLine(ex.Message);
             }
 
-            AddStartupFolder(Utils.GetSpecialFolderPath(Utils.CSIDL_STARTUP), @"StartUp\All Users");
-            AddStartupFolder(Utils.GetSpecialFolderPath(Utils.CSIDL_COMMON_STARTUP), @"StartUp\Current User");
+            AddStartupFolder(Utils.GetSpecialFolderPath(Utils.CSIDL_STARTUP));
+            AddStartupFolder(Utils.GetSpecialFolderPath(Utils.CSIDL_COMMON_STARTUP));
 
-            this.listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
-        }
-
-        
-
-        private static string ShortRegKey(string strMainKey, string strPath)
-        {
-            string strShortName = "";
-
-            if (strMainKey.ToUpper().CompareTo("HKEY_CURRENT_USER") == 0)
-                strShortName = string.Format(@"Registry\Current User\{0}", strPath);
-            else if (strMainKey.ToUpper().CompareTo("HKEY_LOCAL_MACHINE") == 0)
-                strShortName = string.Format(@"Registry\All Users\{0}", strPath);
-            else
-                return strShortName; // break here
-
-            return strShortName;
+            this.treeListView.ExpandAll();
+            this.treeListView.AutoResizeColumns();
         }
 
         private void toolStripButtonRefresh_Click(object sender, EventArgs e)
         {
             LoadStartupFiles();
-        }
-
-        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
-        {
-            // Reload list
-            LoadStartupFiles();
-
-
-            if (e.Node.Name == "NodeReg")
-            {
-                RemoveItemsStartingWith(@"Registry\");
-            }
-            else if (e.Node.Name == "NodeStart")
-            {
-                RemoveItemsStartingWith(@"StartUp\");
-            }
-            else if (e.Node.Name == "NodeRegAll")
-            {
-                RemoveItemsStartingWith(@"Registry\All Users");
-            }
-            else if (e.Node.Name == "NodeRegCurrent")
-            {
-                RemoveItemsStartingWith(@"Registry\Current User");
-            }
-            else if (e.Node.Name == "NodeStartAll")
-            {
-                RemoveItemsStartingWith(@"StartUp\All Users");
-            }
-            else if (e.Node.Name == "NodeStartCurrent")
-            {
-                RemoveItemsStartingWith(@"StartUp\Current User");
-            }
-        }
-
-        private void RemoveItemsStartingWith(string strText)
-        {
-            foreach (ListViewItem lvi in this.listView1.Items)
-            {
-                if (!lvi.SubItems[1].Text.StartsWith(strText))
-                    lvi.Remove();
-            }
         }
 
         private void toolStripButtonAdd_Click(object sender, EventArgs e)
@@ -219,63 +192,55 @@ namespace Little_Registry_Cleaner.StartupManager
 
         private void toolStripButtonDelete_Click(object sender, EventArgs e)
         {
-            if (this.listView1.SelectedItems.Count > 0)
+            if (this.treeListView.SelectedNodes.Count > 0)
             {
                 if (MessageBox.Show(this, "Are you sure you want to remove this startup program?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    foreach (ListViewItem lvi in this.listView1.SelectedItems)
+                    TreeListNode tln = this.treeListView.SelectedNodes[0];
+
+                    if (tln.SubItems.Count > 0)
                     {
-                        string strItem = lvi.SubItems[0].Text;
-                        string strSection = lvi.SubItems[1].Text;
-                        string strFilepath = lvi.SubItems[2].Text;
+                        string strItem = tln.Text;
+                        string strFilePath = tln.SubItems[0].Text;
+                        string strArgs = tln.SubItems[1].Text;
 
-                        if (strSection.StartsWith(@"Registry\"))
+                        if (tln.Parent.Text.StartsWith("HKEY"))
                         {
-                            RegistryKey regKey = null;
-                            string strRegPath = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\" + strSection.Substring(strSection.LastIndexOf("\\") + 1);
+                            string strRegPath = tln.Parent.Text;
+                            string strMainKey = strRegPath.Substring(0, strRegPath.IndexOf('\\'));
+                            string strSubKey = strRegPath.Substring(strRegPath.IndexOf('\\') + 1);
 
-                            if (strSection.StartsWith(@"Registry\All Users"))
-                            {
-                                regKey = Registry.LocalMachine.OpenSubKey(strRegPath, true);
-                            }
-                            else if (strSection.StartsWith(@"Registry\Current User"))
-                            {
-                                regKey = Registry.CurrentUser.OpenSubKey(strRegPath, true);
-                            }
+                            RegistryKey rk = Xml.xmlRegistry.openKey(strMainKey, strSubKey, true);
 
-                            regKey.DeleteValue(strItem, false);
-                            regKey.Close();
+                            if (rk != null)
+                            {
+                                rk.DeleteValue(strItem);
+                                rk.Close();
+                            }
                         }
-                        else
+                        else if (Directory.Exists(tln.Parent.Text))
                         {
-                            string strStartupFolder = "";
+                            string strPath = Path.Combine(tln.Parent.Text, strItem);
 
-                            if (strSection == @"StartUp\All Users")
-                            {
-                                strStartupFolder = Utils.GetSpecialFolderPath(Utils.CSIDL_STARTUP);
-                            }
-                            else if (strSection == @"StartUp\Current User")
-                            {
-                                strStartupFolder = Utils.GetSpecialFolderPath(Utils.CSIDL_COMMON_STARTUP);
-                            }
-
-                            File.Delete(string.Format("{0}\\{1}", strStartupFolder, strItem));
+                            if (File.Exists(strPath))
+                                File.Delete(strPath);
                         }
                     }
 
-                    LoadStartupFiles();
                 }
             }
+
+            LoadStartupFiles();
         }
 
         private void toolStripButtonEdit_Click(object sender, EventArgs e)
         {
-            if (this.listView1.SelectedItems.Count > 0)
+            if (this.treeListView.SelectedNodes.Count > 0)
             {
-                string strItem = this.listView1.SelectedItems[0].SubItems[0].Text;
-                string strSection = this.listView1.SelectedItems[0].SubItems[1].Text;
-                string strFilepath = this.listView1.SelectedItems[0].SubItems[2].Text;
-                string strFileArgs = this.listView1.SelectedItems[0].SubItems[3].Text;
+                string strItem = this.treeListView.SelectedNodes[0].Text;
+                string strSection = this.treeListView.SelectedNodes[0].Parent.Text;
+                string strFilepath = this.treeListView.SelectedNodes[0].SubItems[0].Text;
+                string strFileArgs = this.treeListView.SelectedNodes[0].SubItems[1].Text;
 
                 EditRunItem dlgEditRunValue = new EditRunItem(strItem, strSection, strFilepath, strFileArgs);
                 if (dlgEditRunValue.ShowDialog(this) == DialogResult.OK)
@@ -285,63 +250,31 @@ namespace Little_Registry_Cleaner.StartupManager
 
         private void toolStripButtonView_Click(object sender, EventArgs e)
         {
-            if (this.listView1.SelectedItems.Count > 0)
+            if (this.treeListView.SelectedNodes.Count > 0)
             {
-                string strItem = this.listView1.SelectedItems[0].SubItems[0].Text;
-                string strSection = this.listView1.SelectedItems[0].SubItems[1].Text;
+                string strItem = this.treeListView.SelectedNodes[0].Text;
 
-                if (strSection.StartsWith(@"Registry\"))
+                string strPath = this.treeListView.SelectedNodes[0].Parent.Text;
+
+                if (strPath.StartsWith("HKEY"))
                 {
-                    RegistryKey regKey = null;
-                    string strRegPath = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\" + strSection.Substring(strSection.LastIndexOf("\\") + 1);
-
-                    if (strSection.StartsWith(@"Registry\All Users"))
-                    {
-                        regKey = Registry.LocalMachine.OpenSubKey(strRegPath, true);
-                    }
-                    else if (strSection.StartsWith(@"Registry\Current User"))
-                    {
-                        regKey = Registry.CurrentUser.OpenSubKey(strRegPath, true);
-                    }
-
-                    if (regKey != null)
-                    {
-                        RegEditGo.GoTo(regKey.ToString(), strItem);
-                        regKey.Close();
-                    }
+                    RegEditGo.GoTo(strPath, strItem);
                 }
                 else
                 {
-                    string strStartupFolder = "";
-
-                    if (strSection == @"StartUp\All Users")
-                    {
-                        strStartupFolder = Utils.GetSpecialFolderPath(Utils.CSIDL_STARTUP);
-                    }
-                    else if (strSection == @"StartUp\Current User")
-                    {
-                        strStartupFolder = Utils.GetSpecialFolderPath(Utils.CSIDL_COMMON_STARTUP);
-                    }
-
-                    System.Diagnostics.Process.Start("explorer.exe", strStartupFolder);
+                    System.Diagnostics.Process.Start("explorer.exe", strPath);
                 }
             }
         }
 
-        private void StartupManager_Resize(object sender, EventArgs e)
-        {
-            if (this.listView1.Items.Count > 0)
-                this.listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
-        }
-
         private void toolStripButtonRun_Click(object sender, EventArgs e)
         {
-            if (this.listView1.SelectedItems.Count > 0)
+            if (this.treeListView.SelectedNodes.Count > 0)
             {
                 if (MessageBox.Show(this, "Running this program on vista will give it this programs priviledges\r\nAre you sure you want to continue?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    string strFilepath = this.listView1.SelectedItems[0].SubItems[2].Text;
-                    string strFileArgs = this.listView1.SelectedItems[0].SubItems[3].Text;
+                    string strFilepath = this.treeListView.SelectedNodes[0].SubItems[0].Text;
+                    string strFileArgs = this.treeListView.SelectedNodes[0].SubItems[1].Text;
 
                     System.Diagnostics.Process.Start(strFilepath, strFileArgs);
 

@@ -198,3 +198,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Uses CollectionBase class to store bad registry keys in array
 - Uses shlwapi.dll instead to parse drive type and added check for removable media in Utils.DirExists()
 - Cleaned up Utils.cs
+- Checks if file exists before extracting arguments in startup manager
+- Added check for srclient.dll before creating restore points
+- Scan dialog uses Xp Progress Bar
+- Added TreeListView that performs combines the treeview and listview into one and also added project for controls

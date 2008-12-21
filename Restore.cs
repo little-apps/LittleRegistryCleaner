@@ -53,10 +53,7 @@ namespace Little_Registry_Cleaner
             }
 
             if (this.listViewFiles.Items.Count > 0)
-            {
-                for (int i = 0; i < this.listViewFiles.Columns.Count; i++)
-                    this.listViewFiles.Columns[i].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
-            }
+                this.listViewFiles.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
         }
 
         
@@ -100,10 +97,7 @@ namespace Little_Registry_Cleaner
         private void Restore_Resize(object sender, EventArgs e)
         {
             if (this.listViewFiles.Items.Count > 0)
-            {
-                for (int i = 0; i < this.listViewFiles.Columns.Count ;i++)
-                    this.listViewFiles.Columns[i].AutoResize(ColumnHeaderAutoResizeStyle.HeaderSize);
-            }
+                this.listViewFiles.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
         }
     }
 }

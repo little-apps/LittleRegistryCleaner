@@ -50,27 +50,11 @@ namespace Little_Registry_Cleaner.Optimizer
 
         private static long lHiveSize = 0, lHiveTempSize = 0;
 
-        XpProgressBar progressBarAnalyzed = new XpProgressBar();
-        XpProgressBar progressBarDefrag = new XpProgressBar();
-
         public Optimizer()
         {
             InitializeComponent();
-
-            // Add custom progress bars using default properties
-            this.progressBarAnalyzed.Name = "progressBarAnalyzed";
-            this.progressBarAnalyzed.Location = new Point(12, 12);
-            this.progressBarAnalyzed.Size = new Size(326, 30);
-
-            this.progressBarDefrag.Name = "progressBarDefrag";
-            this.progressBarDefrag.Location = new Point(13, 48);
-            this.progressBarDefrag.Size = new Size(326, 30);
-
-            this.Controls.Add(this.progressBarAnalyzed);
-            this.Controls.Add(this.progressBarDefrag);
         }
 
-        
         private void Optimizer_Shown(object sender, EventArgs e)
         {
             if (MessageBox.Show(this, "The program will now analyze your registry files. Continue?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)

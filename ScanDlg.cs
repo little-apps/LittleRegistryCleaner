@@ -85,144 +85,133 @@ namespace Little_Registry_Cleaner
 
             this.loggerScan = new Utils.Logger(strLogFile);
 
-            this.progressBar1.Step = 1;
-            this.progressBar1.Maximum = this.SectionCount;
+            this.progressBar.Position = 0;
+            this.progressBar.PositionMin = 0;
+            this.progressBar.PositionMax = this.SectionCount;
 
             // Begin scanning
             try
             {
                 if (Main.bScanStartup)
                 {
-                    this.loggerScan.WriteLine("Checking for invalid startup entries");
                     this.UpdateSection("Startup entries");
 
                     this.threadCurrent = new Thread(new ThreadStart(delegate { new StartUp(); }));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
-                    this.progressBar1.PerformStep();
+                    this.progressBar.Position++;
                 }
 
                 if (Main.bScanSharedDLL)
                 {
-                    this.loggerScan.WriteLine("Checking for invalid DLL entries");
                     this.UpdateSection("Shared DLLs");
 
                     this.threadCurrent = new Thread(new ThreadStart(delegate { new DLLs(); }));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
-                    this.progressBar1.PerformStep();
+                    this.progressBar.Position++;
                 }
 
                 if (Main.bScanFonts)
                 {
-                    this.loggerScan.WriteLine("Checking for invalid font references");
                     this.UpdateSection("Windows Fonts");
 
                     this.threadCurrent = new Thread(new ThreadStart(delegate { new Fonts(); }));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
-                    this.progressBar1.PerformStep();
+                    this.progressBar.Position++;
                 }
 
                 if (Main.bScanAppInfo)
                 {
-                    this.loggerScan.WriteLine("Checking for invalid application info");
                     this.UpdateSection("Application info");
 
                     this.threadCurrent = new Thread(new ThreadStart(delegate { new AppInfo(); }));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
-                    this.progressBar1.PerformStep();
+                    this.progressBar.Position++;
                 }
 
                 if (Main.bScanAppPaths)
                 {
-                    this.loggerScan.WriteLine("Checking for invalid application paths");
                     this.UpdateSection("Program Locations");
 
                     this.threadCurrent = new Thread(new ThreadStart(delegate { new AppPaths(); }));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
-                    this.progressBar1.PerformStep();
+                    this.progressBar.Position++;
                 }
 
                 if (Main.bScanActivex)
                 {
-                    this.loggerScan.WriteLine("Checking for invalid ActiveX/COM objects");
                     this.UpdateSection("ActiveX/COM objects");
 
                     this.threadCurrent = new Thread(new ThreadStart(delegate { new COMObjects(); }));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
-                    this.progressBar1.PerformStep();
+                    this.progressBar.Position++;
                 }
 
                 if (Main.bScanDrivers)
                 {
-                    this.loggerScan.WriteLine("Checking for invalid driver entries");
                     this.UpdateSection("Drivers");
 
                     this.threadCurrent = new Thread(new ThreadStart(delegate { new Drivers(); }));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
-                    this.progressBar1.PerformStep();
+                    this.progressBar.Position++;
                 }
 
                 if (Main.bScanHelpFiles)
                 {
-                    this.loggerScan.WriteLine("Checking for invalid help files");
                     this.UpdateSection("Help files");
 
                     this.threadCurrent = new Thread(new ThreadStart(delegate { new HelpFiles(); }));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
-                    this.progressBar1.PerformStep();
+                    this.progressBar.Position++;
                 }
 
                 if (Main.bScanSounds)
                 {
-                    this.loggerScan.WriteLine("Checking for missing windows sounds");
                     this.UpdateSection("Sound events");
 
                     this.threadCurrent = new Thread(new ThreadStart(delegate { new Sounds(); }));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
-                    this.progressBar1.PerformStep();
+                    this.progressBar.Position++;
                 }
 
                 if (Main.bScanAppSettings)
                 {
-                    this.loggerScan.WriteLine("Checking for missing software settings");
                     this.UpdateSection("Software settings");
 
                     this.threadCurrent = new Thread(new ThreadStart(delegate { new AppSettings(); }));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
-                    this.progressBar1.PerformStep();
+                    this.progressBar.Position++;
                 }
-
 
                 if (Main.bScanHistoryList)
                 {
-                    this.loggerScan.WriteLine("Checking for missing recent documents links");
                     this.UpdateSection("History List");
 
                     this.threadCurrent = new Thread(new ThreadStart(delegate { new HistoryList(); }));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
-                }
 
-                this.progressBar1.PerformStep();
+                    this.progressBar.Position++;
+                }
 
                 this.DialogResult = DialogResult.OK;
             }
@@ -232,6 +221,7 @@ namespace Little_Registry_Cleaner
                 this.loggerScan.WriteLine("User aborted scan... Exiting.");
                 if (this.threadCurrent.IsAlive)
                     this.threadCurrent.Abort();
+
                 this.DialogResult = DialogResult.Abort;
             }
             finally
@@ -334,7 +324,10 @@ namespace Little_Registry_Cleaner
                 return;
             }
 
-            this.labelSection.Text = "Scanning: " + strSectionName;
+            string strText = "Scanning: " + strSectionName;
+
+            this.progressBar.Text = strText;
+            this.loggerScan.WriteLine(strText);
         }
 
         public void IncrementProblems()
