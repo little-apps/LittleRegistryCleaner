@@ -27,9 +27,9 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public class StartUp
+    public static class StartUp
     {
-        public StartUp()
+        public static void Scan()
         {
             try
             {
@@ -63,7 +63,7 @@ namespace Little_Registry_Cleaner.Scanners
         /// Checks for invalid files in startup registry key
         /// </summary>
         /// <param name="regKey">The registry key to scan</param>
-        private void CheckAutoRun(RegistryKey regKey)
+        private static void CheckAutoRun(RegistryKey regKey)
         {
             bool bRet = true;
 

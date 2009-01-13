@@ -202,3 +202,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Added check for srclient.dll before creating restore points
 - Scan dialog uses Xp Progress Bar
 - Added TreeListView that performs combines the treeview and listview into one and also added project for controls
+- BadRegistryKey class uses ListViewItem as base class
+- Moved xmlRegistry static functions to Utils class
+- Scanner classes are now static to make thread calling faster
+- Optimizer wont compact registry if difference is more than 90%
+- Hive class implements IDisposable interface

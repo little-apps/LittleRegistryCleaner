@@ -26,12 +26,12 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public class AppInfo
+    public static class AppInfo
     {
         /// <summary>
         /// Verifies installed programs in add/remove list
         /// </summary>
-        public AppInfo()
+        public static void Scan()
         {
             try
             {
@@ -42,7 +42,6 @@ namespace Little_Registry_Cleaner.Scanners
 
                     foreach (string strProgName in regKey.GetSubKeyNames())
                     {
-
                         RegistryKey regKey2 = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\" + strProgName);
 
                         ScanDlg.UpdateScanSubKey(regKey2.ToString());

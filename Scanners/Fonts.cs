@@ -26,7 +26,7 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public class Fonts
+    public static class Fonts
     {
         [DllImport("shell32.dll")]
         public static extern bool SHGetSpecialFolderPath(IntPtr hwndOwner, [Out] StringBuilder strPath, int nFolder, bool fCreate);
@@ -36,7 +36,7 @@ namespace Little_Registry_Cleaner.Scanners
         /// <summary>
         /// Finds invalid font references
         /// </summary>
-        public Fonts()
+        public static void Scan()
         {
             StringBuilder strPath = new StringBuilder(260);
 

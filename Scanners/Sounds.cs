@@ -25,19 +25,22 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public class Sounds
+    public static class Sounds
     {
-        public Sounds()
+        public static void Scan()
         {
-            RegistryKey regKey = Registry.CurrentUser.OpenSubKey("AppEvents\\Schemes\\Apps");
-            ParseSoundKeys(regKey);
+            using (RegistryKey regKey = Registry.CurrentUser.OpenSubKey("AppEvents\\Schemes\\Apps"))
+            {
+               if (regKey != null)
+                   ParseSoundKeys(regKey);
+            }
         }
 
         /// <summary>
         /// Goes deep into sub keys to see if files exist
         /// </summary>
         /// <param name="rk">Registry subkey</param>
-        private void ParseSoundKeys(RegistryKey rk)
+        private static void ParseSoundKeys(RegistryKey rk)
         {
             foreach (string strSubKey in rk.GetSubKeyNames())
             {

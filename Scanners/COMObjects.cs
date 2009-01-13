@@ -25,13 +25,13 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public class COMObjects
+    public static class COMObjects
     {
         
         /// <summary>
         /// Scans ActiveX/COM Objects
         /// </summary>
-        public COMObjects()
+        public static void Scan()
         {
             try
             {
@@ -65,7 +65,7 @@ namespace Little_Registry_Cleaner.Scanners
         /// Scans for the CLSID subkey
         /// <param name="regKey">Location of CLSID Sub Key</param>
         /// </summary>
-        private void ScanCLSIDSubKey(RegistryKey regKey)
+        private static void ScanCLSIDSubKey(RegistryKey regKey)
         {
             if (regKey == null)
                 return;
@@ -139,7 +139,7 @@ namespace Little_Registry_Cleaner.Scanners
         /// <summary>
         /// Looks for invalid references to AppIDs
         /// </summary>
-        private void ScanAppIds(RegistryKey regKey)
+        private static void ScanAppIds(RegistryKey regKey)
         {
             RegistryKey rkAppId = null;
 
@@ -168,7 +168,7 @@ namespace Little_Registry_Cleaner.Scanners
         /// <summary>
         /// Finds invalid ProgIDs referenced
         /// </summary>
-        private void ScanFileExts(RegistryKey regKey)
+        private static void ScanFileExts(RegistryKey regKey)
         {
             RegistryKey rkFileExt = null;
 
@@ -200,7 +200,7 @@ namespace Little_Registry_Cleaner.Scanners
         /// <summary>
         /// Finds invalid windows explorer entries
         /// </summary>
-        private void ScanExplorer()
+        private static void ScanExplorer()
         {
             // Check Browser Help Objects
             using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\explorer\\Browser Helper Objects"))
@@ -286,7 +286,7 @@ namespace Little_Registry_Cleaner.Scanners
 
         #region Scan Sub-Functions
 
-        private void ValidateFileExt(RegistryKey regKey)
+        private static void ValidateFileExt(RegistryKey regKey)
         {
             bool bProgidExists = false, bAppExists = false;
 
@@ -395,13 +395,12 @@ namespace Little_Registry_Cleaner.Scanners
             }
         }
 
-        #region Classes reference check functions
         /// <summary>
         /// Checks for inprocserver file
         /// </summary>
         /// <param name="regKey">The registry key contain Inprocserver subkey</param>
         /// <returns>False if Inprocserver is null or doesnt exist</returns>
-        private bool InprocServerExists(RegistryKey regKey)
+        private static bool InprocServerExists(RegistryKey regKey)
         {
             bool bRet = false;
 
@@ -449,7 +448,7 @@ namespace Little_Registry_Cleaner.Scanners
         /// <summary>
         /// Checks if IE toolbar GUID is valid
         /// </summary>
-        private bool IEToolbarIsValid(string strGuid)
+        private static bool IEToolbarIsValid(string strGuid)
         {
             bool bRet = false;
 
@@ -571,8 +570,6 @@ namespace Little_Registry_Cleaner.Scanners
 
             return false;
         }
-
-        #endregion
 
         #endregion
     }

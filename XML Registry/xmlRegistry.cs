@@ -108,78 +108,6 @@ namespace Little_Registry_Cleaner.Xml
             return ((IntPtr)i.DangerousGetHandle()).ToInt32();
         }
 
-        public static bool keyExists(string strInPath)
-        {
-            string strPath = strInPath;
-
-            if (strPath.Length == 0) return false;
-
-            string strMainKeyname = strPath;
-
-            int nSlash = strPath.IndexOf("\\");
-            if (nSlash > -1)
-            {
-                strMainKeyname = strPath.Substring(0, nSlash);
-                strPath = strPath.Substring(nSlash + 1);
-            }
-            else
-                strPath = "";
-
-            return keyExists(strMainKeyname, strPath);
-        }
-
-        public static bool keyExists(string strMainKey, string strPath)
-        {
-            bool bKeyExists = false;
-            RegistryKey reg = openKey(strMainKey, strPath, false);
-
-            if (reg != null)
-            {
-                bKeyExists = true;
-                reg.Close();
-            }
-
-            return bKeyExists;
-        }
-
-        public static RegistryKey openKey(string strMainKey, string strPath, bool bWritable)
-        {
-            RegistryKey reg = null;
-
-            try
-            {
-                if (strMainKey.ToUpper().CompareTo("HKEY_CLASSES_ROOT") == 0)
-                {
-                    reg = Registry.ClassesRoot.OpenSubKey(strPath, bWritable);
-                }
-                else if (strMainKey.ToUpper().CompareTo("HKEY_CURRENT_USER") == 0)
-                {
-                    reg = Registry.CurrentUser.OpenSubKey(strPath, bWritable);
-                }
-                else if (strMainKey.ToUpper().CompareTo("HKEY_LOCAL_MACHINE") == 0)
-                {
-                    reg = Registry.LocalMachine.OpenSubKey(strPath, bWritable);
-                }
-                else if (strMainKey.ToUpper().CompareTo("HKEY_USERS") == 0)
-                {
-                    reg = Registry.Users.OpenSubKey(strPath, bWritable);
-                }
-                else if (strMainKey.ToUpper().CompareTo("HKEY_CURRENT_CONFIG") == 0)
-                {
-                    reg = Registry.CurrentConfig.OpenSubKey(strPath, bWritable);
-                }
-                else
-                    return null; // break here
-            }
-            catch (Exception e)
-            {
-                ShowErrorMessage(e, "Error opening registry key");
-                return null;
-            }
-
-            return reg;
-        }
-
         ArrayList addRegistryValues(int hKey)
         {
             ArrayList arrValues = new ArrayList();
@@ -747,7 +675,7 @@ namespace Little_Registry_Cleaner.Xml
                 strPath = "";
 
             // open the key now
-            RegistryKey reg = openKey(strMainKeyname, strPath, false);
+            RegistryKey reg = Utils.RegOpenKey(strMainKeyname, strPath, false);
 
             if (reg != null) // it's ok
             {
@@ -1022,7 +950,7 @@ namespace Little_Registry_Cleaner.Xml
             try
             {
                 // open the key now
-                reg = openKey(strMainKey, strPath, true);
+                reg = Utils.RegOpenKey(strMainKey, strPath, true);
 
                 if (reg != null) // it's ok
                     return reg;
@@ -1272,7 +1200,7 @@ namespace Little_Registry_Cleaner.Xml
 
             foreach (BadRegistryKey p in arrBadRegistryKeys)
             {
-                if (keyExists(p.RegKeyPath))
+                if (Utils.RegKeyExists(p.RegKeyPath))
                     this.saveAsXml(w, false, p.RegKeyPath, p.ValueName, p.Problem);
 
                 // Remove problem from registry
@@ -1288,7 +1216,7 @@ namespace Little_Registry_Cleaner.Xml
 
         bool deleteRegistryKey(string strBaseKey, string strSubKey, string strLimitValue)
         {
-            RegistryKey regKey = openKey(strBaseKey, strSubKey, true);
+            RegistryKey regKey = Utils.RegOpenKey(strBaseKey, strSubKey, true);
 
             if (regKey == null)
                 return false;

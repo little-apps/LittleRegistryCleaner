@@ -110,6 +110,14 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButtonSettings = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonHelp = new System.Windows.Forms.ToolStripButton();
+            this.treeColumn1 = new Common_Tools.TreeViewAdv.Tree.TreeColumn();
+            this.treeColumn2 = new Common_Tools.TreeViewAdv.Tree.TreeColumn();
+            this.treeColumn3 = new Common_Tools.TreeViewAdv.Tree.TreeColumn();
+            this.nodeCheckBox1 = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeCheckBox();
+            this._sectionname = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
+            this._problem = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
+            this._data = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
+            this._valuename = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
             this.contextMenuStrip2.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
@@ -390,28 +398,28 @@
             this.listResults.ContextMenuStrip = this.contextMenuStrip1;
             this.listResults.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listResults.FullRowSelect = true;
-            this.listResults.Location = new System.Drawing.Point(174, 1);
-            this.listResults.Margin = new System.Windows.Forms.Padding(1);
+            this.listResults.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.listResults.Location = new System.Drawing.Point(176, 3);
             this.listResults.Name = "listResults";
-            this.listResults.Size = new System.Drawing.Size(634, 372);
-            this.listResults.TabIndex = 5;
+            this.listResults.Size = new System.Drawing.Size(630, 368);
+            this.listResults.TabIndex = 7;
             this.listResults.UseCompatibleStateImageBehavior = false;
             this.listResults.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "Problem";
-            this.columnHeader1.Width = 208;
+            this.columnHeader1.Width = 68;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Data";
-            this.columnHeader2.Width = 208;
+            this.columnHeader2.Width = 288;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Value";
-            this.columnHeader3.Width = 208;
+            this.columnHeader3.Text = "Value Name";
+            this.columnHeader3.Width = 136;
             // 
             // menuStrip1
             // 
@@ -548,7 +556,7 @@
             this.startupManagerToolStripMenuItem.Name = "startupManagerToolStripMenuItem";
             this.startupManagerToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.startupManagerToolStripMenuItem.Text = "Startup Manager";
-            this.startupManagerToolStripMenuItem.Click += new System.EventHandler(this.startupManagerToolStripMenuItem_Click);
+            this.startupManagerToolStripMenuItem.Click += new System.EventHandler(this.StartupManager);
             // 
             // uninstallManagerToolStripMenuItem
             // 
@@ -556,7 +564,7 @@
             this.uninstallManagerToolStripMenuItem.Name = "uninstallManagerToolStripMenuItem";
             this.uninstallManagerToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.uninstallManagerToolStripMenuItem.Text = "Uninstall Manager";
-            this.uninstallManagerToolStripMenuItem.Click += new System.EventHandler(this.uninstallManagerToolStripMenuItem_Click);
+            this.uninstallManagerToolStripMenuItem.Click += new System.EventHandler(this.UninstallManager);
             // 
             // toolStripSeparator8
             // 
@@ -719,6 +727,59 @@
             this.toolStripButtonHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripButtonHelp.Click += new System.EventHandler(this.LaunchHelpFile);
             // 
+            // treeColumn1
+            // 
+            this.treeColumn1.Header = "Problem";
+            this.treeColumn1.SortOrder = System.Windows.Forms.SortOrder.None;
+            this.treeColumn1.TooltipText = null;
+            this.treeColumn1.Width = 77;
+            // 
+            // treeColumn2
+            // 
+            this.treeColumn2.Header = "Data";
+            this.treeColumn2.SortOrder = System.Windows.Forms.SortOrder.None;
+            this.treeColumn2.TooltipText = null;
+            // 
+            // treeColumn3
+            // 
+            this.treeColumn3.Header = "Value Name";
+            this.treeColumn3.SortOrder = System.Windows.Forms.SortOrder.None;
+            this.treeColumn3.TooltipText = null;
+            // 
+            // nodeCheckBox1
+            // 
+            this.nodeCheckBox1.DataPropertyName = "IsChecked";
+            this.nodeCheckBox1.LeftMargin = 0;
+            this.nodeCheckBox1.ParentColumn = this.treeColumn1;
+            // 
+            // _sectionname
+            // 
+            this._sectionname.DataPropertyName = "SectionName";
+            this._sectionname.IncrementalSearchEnabled = true;
+            this._sectionname.LeftMargin = 3;
+            this._sectionname.ParentColumn = this.treeColumn1;
+            // 
+            // _problem
+            // 
+            this._problem.DataPropertyName = "Problem";
+            this._problem.IncrementalSearchEnabled = true;
+            this._problem.LeftMargin = 3;
+            this._problem.ParentColumn = this.treeColumn1;
+            // 
+            // _data
+            // 
+            this._data.DataPropertyName = "Data";
+            this._data.IncrementalSearchEnabled = true;
+            this._data.LeftMargin = 3;
+            this._data.ParentColumn = this.treeColumn2;
+            // 
+            // _valuename
+            // 
+            this._valuename.DataPropertyName = "ValueName";
+            this._valuename.IncrementalSearchEnabled = true;
+            this._valuename.LeftMargin = 3;
+            this._valuename.ParentColumn = this.treeColumn3;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -792,10 +853,6 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem1;
         private System.Windows.Forms.ToolStripButton toolStripButtonHelp;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
-        private System.Windows.Forms.ListView listResults;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ImageList imageListTreeView;
         private System.Windows.Forms.ToolStripMenuItem optimizeRegistryToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton toolStripButtonOptimizer;
@@ -811,6 +868,18 @@
         private System.Windows.Forms.ToolStripMenuItem startupManagerToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
         private System.Windows.Forms.ToolStripMenuItem uninstallManagerToolStripMenuItem;
+        private Common_Tools.TreeViewAdv.Tree.TreeColumn treeColumn1;
+        private Common_Tools.TreeViewAdv.Tree.TreeColumn treeColumn2;
+        private Common_Tools.TreeViewAdv.Tree.TreeColumn treeColumn3;
+        private Common_Tools.TreeViewAdv.Tree.NodeControls.NodeCheckBox nodeCheckBox1;
+        private Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox _problem;
+        private Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox _data;
+        private Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox _valuename;
+        private Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox _sectionname;
+        private System.Windows.Forms.ListView listResults;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
     }
 }
 

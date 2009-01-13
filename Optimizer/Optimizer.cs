@@ -146,6 +146,16 @@ namespace Little_Registry_Cleaner.Optimizer
                 ListViewItem lvi = new ListViewItem(new string[] { "TOTAL", Utils.ConvertSizeToString(lHiveSize), Utils.ConvertSizeToString(lHiveTempSize) });
                 lvi.Font = new Font(FontFamily.GenericSansSerif, 8.25F, FontStyle.Bold | FontStyle.Underline);
                 this.listView1.Items.Add(lvi);
+
+                long nHiveDiff = (lHiveTempSize * 100 / lHiveSize);
+                // Dont optimize if difference is above 90%
+                if (nHiveDiff > 90)
+                {
+                    MessageBox.Show(this, "Your registry does not need to be optimized", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+                    this.bAllowFormClosed = true;
+                    this.Close();
+                }
             }
         }
 

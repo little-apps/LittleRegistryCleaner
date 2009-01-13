@@ -29,6 +29,7 @@ using System.IO;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using Little_Registry_Cleaner.Xml;
+using Common_Tools.TreeViewAdv.Tree;
 using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner
@@ -82,17 +83,10 @@ namespace Little_Registry_Cleaner
             // See if there are any bad registry keys
             if (ScanDlg.arrBadRegistryKeys.Count > 0)
             {
+                // Load bad registry keys
                 foreach (BadRegistryKey p in ScanDlg.arrBadRegistryKeys)
                 {
-                    ListViewItem listViewItem = new ListViewItem();
-
-                    listViewItem.Checked = true;
-
-                    listViewItem.Text = p.Problem;
-                    listViewItem.SubItems.Add(p.RegKeyPath);
-                    listViewItem.SubItems.Add(p.ValueName);
-
-                    this.listResults.Items.Add(listViewItem);
+                    this.listResults.Items.Add(p);
                 }
 
                 this.listResults.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
@@ -126,9 +120,9 @@ namespace Little_Registry_Cleaner
 
                     BadRegKeyArray arrBadRegKeys = new BadRegKeyArray();
 
-                    foreach (ListViewItem listViewItem in this.listResults.CheckedItems)
+                    foreach (BadRegistryKey badRegKey in this.listResults.CheckedItems)
                     {
-                        arrBadRegKeys.Add(listViewItem.SubItems[0].Text, listViewItem.SubItems[1].Text, listViewItem.SubItems[2].Text);
+                        arrBadRegKeys.Add(badRegKey);
                     }
 
                     // Generate a restore file and delete keys & values
@@ -157,9 +151,6 @@ namespace Little_Registry_Cleaner
         {
             if (this.WindowState == FormWindowState.Minimized)
                 this.Hide();
-
-            if (this.listResults.Items.Count > 0)
-                this.listResults.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }
 
         private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -259,10 +250,6 @@ namespace Little_Registry_Cleaner
             if (MessageBox.Show(this, "Are you sure you want to exit?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
                 e.Cancel = true;
         }
-
-        
-
-        
 
         /// <summary>
         /// Checks for default program then launches URI
@@ -369,6 +356,8 @@ namespace Little_Registry_Cleaner
                 MessageBox.Show(this, "Added selected subkeys to the exclude list", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        
         #endregion
 
         #region "Main Menu Strip"
@@ -401,6 +390,17 @@ namespace Little_Registry_Cleaner
             frmAbout.ShowDialog(this);
         }
 
+        private void StartupManager(object sender, EventArgs e)
+        {
+            StartupManager.StartupManager dlgStartupManager = new StartupManager.StartupManager();
+            dlgStartupManager.ShowDialog(this);
+        }
+
+        private void UninstallManager(object sender, EventArgs e)
+        {
+            UninstallManager.UninstallManager dlgUninstallManager = new Little_Registry_Cleaner.UninstallManager.UninstallManager();
+            dlgUninstallManager.ShowDialog(this);
+        }
         #endregion
 
         #region "Notify Icon Menu"
@@ -432,20 +432,6 @@ namespace Little_Registry_Cleaner
             this.Close();
         }
         #endregion
-
-        private void startupManagerToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            StartupManager.StartupManager dlgStartupManager = new StartupManager.StartupManager();
-            dlgStartupManager.ShowDialog(this);
-        }
         #endregion
-
-        private void uninstallManagerToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            UninstallManager.UninstallManager dlgUninstallManager = new Little_Registry_Cleaner.UninstallManager.UninstallManager();
-            dlgUninstallManager.ShowDialog(this);
-        }
-
-
     }
 }

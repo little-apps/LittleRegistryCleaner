@@ -3,10 +3,3 @@ C:\Users\Welcome\Documents\Visual Studio 2008\Projects\Little Registry Cleaner\C
 C:\Users\Welcome\Documents\Visual Studio 2008\Projects\Little Registry Cleaner\Common Tools\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Welcome\Documents\Visual Studio 2008\Projects\Little Registry Cleaner\Common Tools\obj\Debug\Common Tools.dll
 C:\Users\Welcome\Documents\Visual Studio 2008\Projects\Little Registry Cleaner\Common Tools\obj\Debug\Common Tools.pdb
-C:\Users\Welcome\Documents\Visual Studio 2008\Projects\Little Registry Cleaner\Little Registry Cleaner\Common Tools\bin\Debug\Common Tools.dll
-C:\Users\Welcome\Documents\Visual Studio 2008\Projects\Little Registry Cleaner\Little Registry Cleaner\Common Tools\bin\Debug\Common Tools.pdb
-C:\Users\Welcome\Documents\Visual Studio 2008\Projects\Little Registry Cleaner\Little Registry Cleaner\Common Tools\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Welcome\Documents\Visual Studio 2008\Projects\Little Registry Cleaner\Little Registry Cleaner\Common Tools\obj\Debug\Common Tools.dll
-C:\Users\Welcome\Documents\Visual Studio 2008\Projects\Little Registry Cleaner\Little Registry Cleaner\Common Tools\obj\Debug\Common Tools.pdb
-C:\Users\Welcome\Documents\Visual Studio 2008\Projects\Little Registry Cleaner\Little Registry Cleaner\Common Tools\obj\Debug\Common_Tools.Properties.Resources.resources
-C:\Users\Welcome\Documents\Visual Studio 2008\Projects\Little Registry Cleaner\Little Registry Cleaner\Common Tools\obj\Debug\Common Tools.csproj.GenerateResource.Cache

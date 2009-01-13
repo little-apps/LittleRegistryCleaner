@@ -23,17 +23,12 @@ using System.Text;
 
 namespace Little_Registry_Cleaner
 {
-    public class BadRegistryKey
+    public class BadRegistryKey : System.Windows.Forms.ListViewItem
     {
-        private string _strProblem = "";
-        private string _strValueName = "";
-
-        public string strMainKey;
-        public string strSubKey;
-
         /// <summary>
         /// Get/Sets the problem
         /// </summary>
+        private string _strProblem = "";
         public string Problem
         {
             get { return _strProblem; }
@@ -43,6 +38,7 @@ namespace Little_Registry_Cleaner
         /// <summary>
         /// Gets/Sets the value name
         /// </summary>
+        private string _strValueName = "";
         public string ValueName
         {
             get { return _strValueName; }
@@ -50,8 +46,20 @@ namespace Little_Registry_Cleaner
         }
 
         /// <summary>
+        /// Gets/Sets the section name
+        /// </summary>
+        private string _strSectionName = "";
+        public string SectionName
+        {
+            get { return _strSectionName; }
+            set { _strSectionName = value; }
+        }
+
+        /// <summary>
         /// Gets/Sets the registry path
         /// </summary>
+        public string strMainKey = "";
+        public string strSubKey = "";
         public string RegKeyPath
         {
             get
@@ -90,16 +98,28 @@ namespace Little_Registry_Cleaner
         /// <param name="Problem">Reason registry key is invalid</param>
         /// <param name="RegistryKey">Path to registry key (including registry hive)</param>
         /// <param name="ValueName">Value Name (can be null)</param>
-        public BadRegistryKey(string Problem, string RegistryKey, string ValueName)
+        public BadRegistryKey(string SectionName, string Problem, string RegistryKey, string ValueName)
         {
-            this.Problem = Problem;
-            this.RegKeyPath = RegistryKey;
-            this.ValueName = ValueName;
-
-            if (!Xml.xmlRegistry.keyExists(RegistryKey))
+            if (!Utils.RegKeyExists(RegistryKey))
                 throw new ArgumentException("Registry Key path doesnt exist", "RegistryKey");
+
+            _strSectionName = SectionName;
+            _strProblem = Problem;
+            RegKeyPath = RegistryKey;
+            _strValueName = ValueName;
+
+            // Add listviewitem information
+            base.Checked = true;
+            base.Text = Problem;
+            base.SubItems.Add(RegistryKey);
+            if (!string.IsNullOrEmpty(ValueName))
+                base.SubItems.Add(ValueName);
         }
 
+        public override string ToString()
+        {
+            return string.Copy(RegKeyPath);
+        }
     }
 
     public class BadRegKeyArray : CollectionBase
@@ -110,14 +130,14 @@ namespace Little_Registry_Cleaner
             set { this.InnerList[index] = value; }
         }
 
-        public int Add(string Problem, string Path)
-        {
-            return Add(Problem, Path, "");
-        }
-
         public int Add(string Problem, string Path, string ValueName)
         {
-            BadRegistryKey p = new BadRegistryKey(Problem, Path, ValueName);
+            return (this.Add(ScanDlg.CurrentSection, Problem, Path, ValueName));
+        }
+
+        public int Add(string SectionName, string Problem, string Path, string ValueName)
+        {
+            BadRegistryKey p = new BadRegistryKey(SectionName, Problem, Path, ValueName);
 
             return (this.InnerList.Add((BadRegistryKey)p));
         }

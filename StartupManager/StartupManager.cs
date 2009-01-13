@@ -83,7 +83,14 @@ namespace Little_Registry_Cleaner.StartupManager
                     tln.Text = strItem;
                     tln.SubItems.Add(strFile);
                     tln.SubItems.Add(strArgs);
-                    tln.ImageIndex = 3;
+
+                    Icon ico = Utils.ExtractIcon(strFile);
+                    if (ico != null)
+                    {
+                        this.imageList1.Images.Add(strFile, ico);
+                        tln.ImageIndex = this.imageList1.Images.IndexOfKey(strFile);
+                    } else
+                        tln.ImageIndex = this.imageList1.Images.IndexOfKey("default");
 
                     tlnRoot.Nodes.Add(tln);
                 }
@@ -117,9 +124,14 @@ namespace Little_Registry_Cleaner.StartupManager
                         tln.SubItems.Add(strFilePath);
                         tln.SubItems.Add(strFileArgs);
 
-                        this.imageList1.Images.Add(strShortcutName, Icon.ExtractAssociatedIcon(strShortcut));
-
-                        tln.ImageIndex = this.imageList1.Images.Count;
+                        Icon ico = Utils.ExtractIcon(strFilePath);
+                        if (ico != null)
+                        {
+                            this.imageList1.Images.Add(strShortcutName, ico);
+                            tln.ImageIndex = this.imageList1.Images.IndexOfKey(strShortcutName);
+                        }
+                        else
+                            tln.ImageIndex = this.imageList1.Images.IndexOfKey("default");
 
                         tlnRoot.Nodes.Add(tln);
                     }
@@ -143,6 +155,9 @@ namespace Little_Registry_Cleaner.StartupManager
         private void LoadStartupFiles()
         {
             this.treeListView.Nodes.Clear();
+
+            if (!this.imageList1.Images.ContainsKey("default"))
+                this.imageList1.Images.Add("default", SystemIcons.Application);
 
             try
             {
@@ -210,7 +225,7 @@ namespace Little_Registry_Cleaner.StartupManager
                             string strMainKey = strRegPath.Substring(0, strRegPath.IndexOf('\\'));
                             string strSubKey = strRegPath.Substring(strRegPath.IndexOf('\\') + 1);
 
-                            RegistryKey rk = Xml.xmlRegistry.openKey(strMainKey, strSubKey, true);
+                            RegistryKey rk = Utils.RegOpenKey(strMainKey, strSubKey, true);
 
                             if (rk != null)
                             {

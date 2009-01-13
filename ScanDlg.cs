@@ -44,9 +44,9 @@ namespace Little_Registry_Cleaner
 
         private int SectionCount = 0;
         private int ItemsScanned = 0;
+        private static string strCurrentSection;
 
         public static ScanDlg frmScanDlg;
-
         public static BadRegKeyArray arrBadRegistryKeys = new BadRegKeyArray();
 
         public ScanDlg(int nSectionCount)
@@ -96,7 +96,7 @@ namespace Little_Registry_Cleaner
                 {
                     this.UpdateSection("Startup entries");
 
-                    this.threadCurrent = new Thread(new ThreadStart(delegate { new StartUp(); }));
+                    this.threadCurrent = new Thread(new ThreadStart(StartUp.Scan));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
@@ -107,7 +107,7 @@ namespace Little_Registry_Cleaner
                 {
                     this.UpdateSection("Shared DLLs");
 
-                    this.threadCurrent = new Thread(new ThreadStart(delegate { new DLLs(); }));
+                    this.threadCurrent = new Thread(new ThreadStart(DLLs.Scan));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
@@ -118,7 +118,7 @@ namespace Little_Registry_Cleaner
                 {
                     this.UpdateSection("Windows Fonts");
 
-                    this.threadCurrent = new Thread(new ThreadStart(delegate { new Fonts(); }));
+                    this.threadCurrent = new Thread(new ThreadStart(Fonts.Scan));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
@@ -129,7 +129,7 @@ namespace Little_Registry_Cleaner
                 {
                     this.UpdateSection("Application info");
 
-                    this.threadCurrent = new Thread(new ThreadStart(delegate { new AppInfo(); }));
+                    this.threadCurrent = new Thread(new ThreadStart(AppInfo.Scan));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
@@ -140,7 +140,7 @@ namespace Little_Registry_Cleaner
                 {
                     this.UpdateSection("Program Locations");
 
-                    this.threadCurrent = new Thread(new ThreadStart(delegate { new AppPaths(); }));
+                    this.threadCurrent = new Thread(new ThreadStart(AppPaths.Scan));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
@@ -151,7 +151,7 @@ namespace Little_Registry_Cleaner
                 {
                     this.UpdateSection("ActiveX/COM objects");
 
-                    this.threadCurrent = new Thread(new ThreadStart(delegate { new COMObjects(); }));
+                    this.threadCurrent = new Thread(new ThreadStart(COMObjects.Scan));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
@@ -162,7 +162,7 @@ namespace Little_Registry_Cleaner
                 {
                     this.UpdateSection("Drivers");
 
-                    this.threadCurrent = new Thread(new ThreadStart(delegate { new Drivers(); }));
+                    this.threadCurrent = new Thread(new ThreadStart(Drivers.Scan));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
@@ -173,7 +173,7 @@ namespace Little_Registry_Cleaner
                 {
                     this.UpdateSection("Help files");
 
-                    this.threadCurrent = new Thread(new ThreadStart(delegate { new HelpFiles(); }));
+                    this.threadCurrent = new Thread(new ThreadStart(HelpFiles.Scan));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
@@ -184,7 +184,7 @@ namespace Little_Registry_Cleaner
                 {
                     this.UpdateSection("Sound events");
 
-                    this.threadCurrent = new Thread(new ThreadStart(delegate { new Sounds(); }));
+                    this.threadCurrent = new Thread(new ThreadStart(Sounds.Scan));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
@@ -195,7 +195,7 @@ namespace Little_Registry_Cleaner
                 {
                     this.UpdateSection("Software settings");
 
-                    this.threadCurrent = new Thread(new ThreadStart(delegate { new AppSettings(); }));
+                    this.threadCurrent = new Thread(new ThreadStart(AppSettings.Scan));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
@@ -206,7 +206,7 @@ namespace Little_Registry_Cleaner
                 {
                     this.UpdateSection("History List");
 
-                    this.threadCurrent = new Thread(new ThreadStart(delegate { new HistoryList(); }));
+                    this.threadCurrent = new Thread(new ThreadStart(HistoryList.Scan));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
 
@@ -256,10 +256,10 @@ namespace Little_Registry_Cleaner
         public static bool StoreInvalidKey(string Problem, string Path, string ValueName)
         {
             // See if key exists
-            if (!xmlRegistry.keyExists(Path))
+            if (!Utils.RegKeyExists(Path))
                 return false;  
 
-            if (arrBadRegistryKeys.Add(Problem, Path, ValueName) > 0)
+            if (arrBadRegistryKeys.Add(ScanDlg.CurrentSection, Problem, Path, ValueName) > 0)
             {
                 frmScanDlg.IncrementProblems();
                 Utils.Logger.WriteToFile(Utils.Logger.strLogFilePath, "Found invalid registry key. Key Name: \"" + ValueName + "\" Path: \"" + Path + "\" Reason: \"" + Problem + "\"");
@@ -307,7 +307,7 @@ namespace Little_Registry_Cleaner
                 ScanDlg.frmScanDlg.textBoxSubKey.Text = strSubKey;
                 ScanDlg.frmScanDlg.ItemsScanned++;
             }
-            catch
+            catch (Exception)
             {
 
             }
@@ -315,22 +315,35 @@ namespace Little_Registry_Cleaner
 
         /// <summary>
         /// Updates the dialog with the current section being scanned
+        /// <param name="SectionName">Section Name thats being scanned</param>
         /// </summary>
-        public void UpdateSection(string strSectionName)
+        private void UpdateSection(string SectionName)
         {
             if (this.InvokeRequired)
             {
-                this.Invoke(new UpdateSectionDelegate(UpdateSection), strSectionName);
+                this.Invoke(new UpdateSectionDelegate(UpdateSection), SectionName);
                 return;
             }
 
-            string strText = "Scanning: " + strSectionName;
+            ScanDlg.strCurrentSection = SectionName;
+            string strText = "Scanning: " + SectionName;
 
             this.progressBar.Text = strText;
             this.loggerScan.WriteLine(strText);
         }
 
-        public void IncrementProblems()
+        /// <summary>
+        /// Returns current section name
+        /// </summary>
+        public static string CurrentSection
+        {
+            get { return strCurrentSection; }
+        }
+
+        /// <summary>
+        /// Updates the number of problems
+        /// </summary>
+        private void IncrementProblems()
         {
             if (this.InvokeRequired)
             {

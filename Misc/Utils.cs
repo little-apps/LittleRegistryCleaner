@@ -44,8 +44,7 @@ namespace Little_Registry_Cleaner
 
         [DllImport("shell32.dll")] public static extern bool SHGetSpecialFolderPath(IntPtr hwndOwner, [Out] StringBuilder lpszPath, int nFolder, bool fCreate);
         [DllImport("shell32.dll", EntryPoint = "FindExecutable")] public static extern long FindExecutableA(string lpFile, string lpDirectory, StringBuilder lpResult);
-        [DllImport("shell32.dll")] public static extern IntPtr ExtractIcon(IntPtr hInst, string lpszExeFileName, int nIconIndex);
-        
+        [DllImport("shell32.dll", EntryPoint = "ExtractIconEx")] public static extern int ExtractIconExA(string lpszFile, int nIconIndex, ref IntPtr phiconLarge, ref IntPtr phiconSmall, int nIcons);
          
         [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern string PathGetArgs(string path);
         [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern void PathRemoveArgs([In, Out] StringBuilder path);
@@ -54,6 +53,8 @@ namespace Little_Registry_Cleaner
         [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern bool PathFileExists(string path);
         [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern bool PathStripToRoot([In, Out] StringBuilder path);
         [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern bool PathRemoveFileSpec([In, Out] StringBuilder path);
+
+        [DllImport("user32.dll")] public static extern int DestroyIcon(IntPtr hIcon);
         
 
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
@@ -351,18 +352,88 @@ namespace Little_Registry_Cleaner
         }
         #endregion
 
+        public static bool RegKeyExists(string InPath)
+        {
+            string strPath = InPath;
+
+            if (strPath.Length == 0) return false;
+
+            string strMainKeyname = strPath;
+
+            int nSlash = strPath.IndexOf("\\");
+            if (nSlash > -1)
+            {
+                strMainKeyname = strPath.Substring(0, nSlash);
+                strPath = strPath.Substring(nSlash + 1);
+            }
+            else
+                strPath = "";
+
+            return RegKeyExists(strMainKeyname, strPath);
+        }
+
+        public static bool RegKeyExists(string MainKey, string SubKey)
+        {
+            bool bKeyExists = false;
+            RegistryKey reg = RegOpenKey(MainKey, SubKey, false);
+
+            if (reg != null)
+            {
+                bKeyExists = true;
+                reg.Close();
+            }
+
+            return bKeyExists;
+        }
+
+        public static RegistryKey RegOpenKey(string MainKey, string SubKey, bool bWritable)
+        {
+            RegistryKey reg = null;
+
+            try
+            {
+                if (MainKey.ToUpper().CompareTo("HKEY_CLASSES_ROOT") == 0)
+                {
+                    reg = Registry.ClassesRoot.OpenSubKey(SubKey, bWritable);
+                }
+                else if (MainKey.ToUpper().CompareTo("HKEY_CURRENT_USER") == 0)
+                {
+                    reg = Registry.CurrentUser.OpenSubKey(SubKey, bWritable);
+                }
+                else if (MainKey.ToUpper().CompareTo("HKEY_LOCAL_MACHINE") == 0)
+                {
+                    reg = Registry.LocalMachine.OpenSubKey(SubKey, bWritable);
+                }
+                else if (MainKey.ToUpper().CompareTo("HKEY_USERS") == 0)
+                {
+                    reg = Registry.Users.OpenSubKey(SubKey, bWritable);
+                }
+                else if (MainKey.ToUpper().CompareTo("HKEY_CURRENT_CONFIG") == 0)
+                {
+                    reg = Registry.CurrentConfig.OpenSubKey(SubKey, bWritable);
+                }
+                else
+                    return null; // break here
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+
+            return reg;
+        }
+
         /// <summary>
         /// Starts the process using CreateProcess() API
         /// </summary>
-        /// <param name="strExePath">The path to the executable</param>
+        /// <param name="CmdLine">Command line to execute</param>
         /// <returns>Process ID</returns>
-        public static IntPtr CreateProcess(string strExePath)
+        public static IntPtr CreateProcess(string CmdLine)
         {
             PROCESS_INFORMATION pi;
             STARTUPINFO si = new STARTUPINFO();
             si.wShowWindow = 1;
-            if (CreateProcess(null, strExePath, IntPtr.Zero, IntPtr.Zero,
-                false, 0, IntPtr.Zero, null, ref si, out pi))
+            if (CreateProcess(null, CmdLine, IntPtr.Zero, IntPtr.Zero, false, 0, IntPtr.Zero, null, ref si, out pi))
                 return pi.dwProcessId;
             else
                 return IntPtr.Zero;
@@ -656,7 +727,44 @@ namespace Little_Registry_Cleaner
             return false;
         }
 
-        private static bool ValidDriveType(string path)
+        /// <summary>
+        /// Extracts the large or small icon
+        /// </summary>
+        /// <param name="Path">Path to icon</param>
+        /// <returns>Large or small icon or null</returns>
+        public static Icon ExtractIcon(string Path)
+        {
+            IntPtr largeIcon = IntPtr.Zero;
+            IntPtr smallIcon = IntPtr.Zero;
+            ExtractIconExA(Path, 0, ref largeIcon, ref smallIcon, 1);
+
+            //Transform the bits into the icon image
+            Icon returnIcon = null;
+            if (smallIcon != IntPtr.Zero)
+                returnIcon = (Icon)Icon.FromHandle(smallIcon).Clone();
+            else if (largeIcon != IntPtr.Zero)
+                returnIcon = (Icon)Icon.FromHandle(largeIcon).Clone();
+
+            //clean up
+            DestroyIcon(smallIcon);
+            DestroyIcon(largeIcon);
+
+            return returnIcon;
+        }
+
+        enum VDTReturn
+        {
+            ValidDrive = 0,
+            InvalidDrive = 1,
+            SkipCheck = 3
+        }
+
+        /// <summary>
+        /// Sees if path has valid type
+        /// </summary>
+        /// <param name="path">Path containing drive</param>
+        /// <returns>ValidDriveTypeReturn enum</returns>
+        private static VDTReturn ValidDriveType(string path)
         {
             StringBuilder sb = new StringBuilder(path);
             if (PathStripToRoot(sb)) 
@@ -669,16 +777,16 @@ namespace Little_Registry_Cleaner
                     if (dt == DriveType.Removable ||
                         dt == DriveType.Network ||
                         dt == DriveType.CDRom)
-                        return true;
+                        return VDTReturn.SkipCheck;
                 }
 
                 // Return false for unkown and no root dir
                 if (dt == DriveType.NoRootDirectory ||
                     dt == DriveType.Unknown)
-                    return false;
+                    return VDTReturn.InvalidDrive;
             }
 
-            return true;
+            return VDTReturn.ValidDrive;
         }
 
         /// <summary>
@@ -703,8 +811,11 @@ namespace Little_Registry_Cleaner
                     return false;
 
                 // Check Drive Type
-                if (!ValidDriveType(strFileName))
+                VDTReturn ret = ValidDriveType(strFileName);
+                if (ret == VDTReturn.InvalidDrive)
                     return false;
+                else if (ret == VDTReturn.SkipCheck)
+                    return true;
 
                 // Now see if file exists
                 if (File.Exists(strFileName))
@@ -735,8 +846,12 @@ namespace Little_Registry_Cleaner
             // Expand enviroment variables
             strDirectory = Environment.ExpandEnvironmentVariables(strDirectory);
 
-            if (!ValidDriveType(strDirectory))
+            // Check drive type
+            VDTReturn ret = ValidDriveType(strDirectory);
+            if (ret == VDTReturn.InvalidDrive)
                 return false;
+            else if (ret == VDTReturn.SkipCheck)
+                return true;
 
             // Check for illegal chars
             if (FindAnyIllegalChars(strDirectory))

@@ -387,62 +387,65 @@ namespace Common_Tools
         protected override void OnPaint(PaintEventArgs e)
         {
             //System.Diagnostics.Debug.WriteLine("Paint " + this.Name + "  Pos: "+this.Position.ToString());
-            if (!this.IsDisposed)
+            try
             {
-                    int mSteepTotal = mSteepWidth + mSteepDistance;
-                    float mUtilWidth = this.Width - 6 + mSteepDistance;
+                int mSteepTotal = mSteepWidth + mSteepDistance;
+                float mUtilWidth = this.Width - 6 + mSteepDistance;
 
-                    if (mDobleBack == null)
+                if (mDobleBack == null)
+                {
+                    mUtilWidth = this.Width - 6 + mSteepDistance;
+                    int mMaxSteeps = (int)(mUtilWidth / mSteepTotal);
+                    this.Width = 6 + mSteepTotal * mMaxSteeps;
+
+                    mDobleBack = new Bitmap(this.Width, this.Height);
+
+                    Graphics g2 = Graphics.FromImage(mDobleBack);
+
+                    CreatePaintElements();
+
+                    g2.Clear(mColorBackGround);
+
+                    if (this.BackgroundImage != null)
                     {
-                        mUtilWidth = this.Width - 6 + mSteepDistance;
-                        int mMaxSteeps = (int)(mUtilWidth / mSteepTotal);
-                        this.Width = 6 + mSteepTotal * mMaxSteeps;
-
-                        mDobleBack = new Bitmap(this.Width, this.Height);
-
-                        Graphics g2 = Graphics.FromImage(mDobleBack);
-
-                        CreatePaintElements();
-
-                        g2.Clear(mColorBackGround);
-
-                        if (this.BackgroundImage != null)
-                        {
-                            TextureBrush textuBrush = new TextureBrush(this.BackgroundImage, WrapMode.Tile);
-                            g2.FillRectangle(textuBrush, 0, 0, this.Width, this.Height);
-                            textuBrush.Dispose();
-                        }
-                        //				g2.DrawImage()
-
-                        g2.DrawRectangle(mPenOut2, outnnerRect2);
-                        g2.DrawRectangle(mPenOut, outnnerRect);
-                        g2.DrawRectangle(mPenIn, innerRect);
-                        g2.Dispose();
-
+                        TextureBrush textuBrush = new TextureBrush(this.BackgroundImage, WrapMode.Tile);
+                        g2.FillRectangle(textuBrush, 0, 0, this.Width, this.Height);
+                        textuBrush.Dispose();
                     }
+                    //				g2.DrawImage()
 
-                    Image ima = new Bitmap(mDobleBack);
+                    g2.DrawRectangle(mPenOut2, outnnerRect2);
+                    g2.DrawRectangle(mPenOut, outnnerRect);
+                    g2.DrawRectangle(mPenIn, innerRect);
+                    g2.Dispose();
 
-                    Graphics gtemp = Graphics.FromImage(ima);
+                }
 
-                    int mCantSteeps = (int)((((float)mPosition - mMin) / (mMax - mMin)) * mUtilWidth / mSteepTotal);
+                Image ima = new Bitmap(mDobleBack);
 
-                    for (int i = 0; i < mCantSteeps; i++)
-                    {
-                        DrawSteep(gtemp, i);
-                    }
+                Graphics gtemp = Graphics.FromImage(ima);
 
-                    if (this.Text != String.Empty)
-                    {
-                        gtemp.TextRenderingHint = TextRenderingHint.AntiAlias;
-                        DrawCenterString(gtemp, this.ClientRectangle);
-                    }
+                int mCantSteeps = (int)((((float)mPosition - mMin) / (mMax - mMin)) * mUtilWidth / mSteepTotal);
 
-                    e.Graphics.DrawImage(ima, e.ClipRectangle.X, e.ClipRectangle.Y, e.ClipRectangle, GraphicsUnit.Pixel);
-                    ima.Dispose();
-                    gtemp.Dispose();
+                for (int i = 0; i < mCantSteeps; i++)
+                {
+                    DrawSteep(gtemp, i);
+                }
+
+                if (this.Text != String.Empty)
+                {
+                    gtemp.TextRenderingHint = TextRenderingHint.AntiAlias;
+                    DrawCenterString(gtemp, this.ClientRectangle);
+                }
+
+                e.Graphics.DrawImage(ima, e.ClipRectangle.X, e.ClipRectangle.Y, e.ClipRectangle, GraphicsUnit.Pixel);
+                ima.Dispose();
+                gtemp.Dispose();
             }
-
+            catch (ArgumentNullException)
+            {
+                return;
+            }
         }
 
         protected override void OnPaintBackground(PaintEventArgs e)

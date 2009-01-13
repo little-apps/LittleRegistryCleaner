@@ -25,12 +25,12 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public class AppPaths
+    public static class AppPaths
     {
         /// <summary>
         /// Verifies programs in App Paths
         /// </summary>
-        public AppPaths()
+        public static void Scan()
         {
             try
             {

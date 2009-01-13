@@ -25,15 +25,15 @@ using System.Windows.Forms;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public class AppSettings
+    public static class AppSettings
     {
-        public AppSettings()
+        public static void Scan()
         {
             ScanRegistryKey(Registry.LocalMachine.OpenSubKey("SOFTWARE"));
             ScanRegistryKey(Registry.CurrentUser.OpenSubKey("SOFTWARE"));
         }
 
-        private void ScanRegistryKey(RegistryKey baseRegKey)
+        private static void ScanRegistryKey(RegistryKey baseRegKey)
         {
             if (baseRegKey == null)
                 return;
@@ -67,7 +67,7 @@ namespace Little_Registry_Cleaner.Scanners
         /// </summary>
         /// <param name="regKey">The base registry key</param>
         /// <returns>Number of values in subkey</returns>
-        private int ParseAppSubKeys(RegistryKey regKey)
+        private static int ParseAppSubKeys(RegistryKey regKey)
         {
             if (regKey == null)
                 return 0;

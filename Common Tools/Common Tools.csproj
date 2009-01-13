@@ -58,6 +58,118 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="TreeViewAdv\BitmapHelper.cs" />
+    <Compile Include="TreeViewAdv\GifDecoder.cs" />
+    <Compile Include="TreeViewAdv\NumericTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\PerformanceAnalyzer.cs" />
+    <Compile Include="TreeViewAdv\ResourceHelper.cs" />
+    <Compile Include="TreeViewAdv\StringCollectionEditor.cs" />
+    <Compile Include="TreeViewAdv\TextHelper.cs" />
+    <Compile Include="TreeViewAdv\Threading\AbortableThreadPool.cs" />
+    <Compile Include="TreeViewAdv\Threading\WorkItem.cs" />
+    <Compile Include="TreeViewAdv\Threading\WorkItemStatus.cs" />
+    <Compile Include="TreeViewAdv\TimeCounter.cs" />
+    <Compile Include="TreeViewAdv\Tree\AutoRowHeightLayout.cs" />
+    <Compile Include="TreeViewAdv\Tree\ColumnCollection.cs" />
+    <Compile Include="TreeViewAdv\Tree\DrawContext.cs" />
+    <Compile Include="TreeViewAdv\Tree\DropPosition.cs" />
+    <Compile Include="TreeViewAdv\Tree\EditorContext.cs" />
+    <Compile Include="TreeViewAdv\Tree\Enums.cs" />
+    <Compile Include="TreeViewAdv\Tree\FixedRowHeightLayout.cs" />
+    <Compile Include="TreeViewAdv\Tree\IncrementalSearch.cs" />
+    <Compile Include="TreeViewAdv\Tree\Input\ClickColumnState.cs" />
+    <Compile Include="TreeViewAdv\Tree\Input\ColumnState.cs" />
+    <Compile Include="TreeViewAdv\Tree\Input\InputState.cs" />
+    <Compile Include="TreeViewAdv\Tree\Input\InputWithControl.cs" />
+    <Compile Include="TreeViewAdv\Tree\Input\InputWithShift.cs" />
+    <Compile Include="TreeViewAdv\Tree\Input\NormalInputState.cs" />
+    <Compile Include="TreeViewAdv\Tree\Input\ReorderColumnState.cs" />
+    <Compile Include="TreeViewAdv\Tree\Input\ResizeColumnState.cs" />
+    <Compile Include="TreeViewAdv\Tree\IRowLayout.cs" />
+    <Compile Include="TreeViewAdv\Tree\IToolTipProvider.cs" />
+    <Compile Include="TreeViewAdv\Tree\ITreeModel.cs" />
+    <Compile Include="TreeViewAdv\Tree\Node.cs" />
+    <Compile Include="TreeViewAdv\Tree\NodeControlInfo.cs" />
+    <Compile Include="TreeViewAdv\Tree\NodeControls\BaseTextControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\BindableControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\DrawEventArgs.cs" />
+    <Compile Include="TreeViewAdv\Tree\NodeControls\EditableControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\ExpandingIcon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\InteractiveControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodeCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodeComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodeControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodeControlsCollection.cs" />
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodeControlValueEventArgs.cs" />
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodeDecimalTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodeEventArgs.cs" />
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodeIcon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodeIntegerTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodeNumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodePlusMinus.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodeStateIcon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\NodeTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\SortedTreeModel.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreeColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\TreeColumnCollection.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreeColumnEventArgs.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreeListAdapter.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreeModel.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreeModelBase.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreeModelEventArgs.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreeNodeAdv.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreeNodeAdvMouseEventArgs.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreePath.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreePathEventArgs.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreeViewAdv.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\TreeViewAdv.Designer.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreeViewAdv.Draw.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\TreeViewAdv.Input.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\TreeViewAdv.Properties.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViewAdv\Tree\TreeViewAdvCancelEventArgs.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreeViewAdvEventArgs.cs" />
     <Compile Include="TreeView\ContainerListView.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -85,11 +197,22 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\check.bmp" />
     <Content Include="Resources\collsplit.bmp" />
+    <None Include="Resources\DVSplit.cur" />
+    <None Include="Resources\Folder.bmp" />
+    <None Include="Resources\FolderClosed.bmp" />
+    <None Include="Resources\Leaf.bmp" />
+    <None Include="Resources\loading_icon" />
     <Content Include="Resources\listview.bmp" />
+    <None Include="Resources\minus.bmp" />
+    <None Include="Resources\plus.bmp" />
+    <None Include="Resources\Thumbs.db" />
     <Content Include="Resources\treeview.bmp" />
     <Content Include="Resources\tv_minus.bmp" />
     <Content Include="Resources\tv_plus.bmp" />
+    <None Include="Resources\unknown.bmp" />
+    <None Include="Resources\uncheck.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

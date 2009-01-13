@@ -26,27 +26,28 @@ using System.Text.RegularExpressions;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    class HistoryList
+    public static class HistoryList
     {
-        public HistoryList()
+        public static void Scan()
         {
             try
             {
-                RegistryKey regKey = Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RecentDocs");
-
-                if (regKey == null)
-                    return;
-
-                FindInvalidLinks(regKey);
-
-                foreach (string strSubKey in regKey.GetSubKeyNames())
+                using (RegistryKey regKey = Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RecentDocs"))
                 {
-                    RegistryKey regKey2 = regKey.OpenSubKey(strSubKey);
+                    if (regKey == null)
+                        return;
 
-                    if (regKey2 == null)
-                        continue;
+                    FindInvalidLinks(regKey);
 
-                    FindInvalidLinks(regKey2);
+                    foreach (string strSubKey in regKey.GetSubKeyNames())
+                    {
+                        RegistryKey regKey2 = regKey.OpenSubKey(strSubKey);
+
+                        if (regKey2 == null)
+                            continue;
+
+                        FindInvalidLinks(regKey2);
+                    }
                 }
             }
             catch (System.Security.SecurityException ex)
@@ -56,7 +57,7 @@ namespace Little_Registry_Cleaner.Scanners
 
         }
 
-        private void FindInvalidLinks(RegistryKey regKey)
+        private static void FindInvalidLinks(RegistryKey regKey)
         {
             if (regKey == null)
                 return;
@@ -82,7 +83,7 @@ namespace Little_Registry_Cleaner.Scanners
             return;
         }
 
-        private string ExtractUnicodeStringFromBinary(object keyObj)
+        private static string ExtractUnicodeStringFromBinary(object keyObj)
         {
             string Value = keyObj.ToString();    //get object value 
             string strType = keyObj.GetType().Name;  //get object type

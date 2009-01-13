@@ -30,11 +30,11 @@ using System.ComponentModel;
 
 namespace Little_Registry_Cleaner.Optimizer
 {
-    public class Hive
+    public class Hive : IDisposable
     {
-        [DllImport("advapi32.dll", EntryPoint = "RegOpenKey")] public static extern int RegOpenKeyA(uint hKey, string lpSubKey, ref int phkResult);
+        [DllImport("advapi32.dll", EntryPoint = "RegOpenKey", SetLastError=true)] public static extern int RegOpenKeyA(uint hKey, string lpSubKey, ref int phkResult);
         [DllImport("advapi32.dll", EntryPoint = "RegReplaceKey", SetLastError=true)] public static extern int RegReplaceKeyA(int hKey, string lpSubKey, string lpNewFile, string lpOldFile);
-        [DllImport("advapi32.dll", EntryPoint = "RegSaveKey")] public static extern int RegSaveKeyA(int hKey, string lpFile, int lpSecurityAttributes);
+        [DllImport("advapi32.dll", EntryPoint = "RegSaveKey", SetLastError=true)] public static extern int RegSaveKeyA(int hKey, string lpFile, int lpSecurityAttributes);
         [DllImport("advapi32.dll")] public static extern int RegCloseKey(int hKey);
         [DllImport("kernel32.dll")] public static extern bool GetVolumePathName(string lpszFileName,[Out] StringBuilder lpszVolumePathName, uint cchBufferLength);
 
@@ -46,7 +46,11 @@ namespace Little_Registry_Cleaner.Optimizer
         public readonly string HiveName;
         public readonly string HivePath;
         public string HiveTempPath;
-        private int hKey;
+        private int hKey = 0;
+
+        private bool bAnaylzed = false;
+
+        private bool disposed = false;
 
         public Hive(string strHiveName, string strHivePath)
         {
@@ -55,66 +59,93 @@ namespace Little_Registry_Cleaner.Optimizer
 
             string strMSDOSPath = ConvertDeviceToMSDOSName(this.HivePath);
             if (Utils.FileExists(strMSDOSPath))
-                this.fiHive = new FileInfo(ConvertDeviceToMSDOSName(this.HivePath));
+                this.fiHive = new FileInfo(strMSDOSPath);
         }
 
-        ~Hive()
+        public void Dispose()
         {
-            if (this.hKey != 0)
-                RegCloseKey(hKey);
+            if (!this.disposed)
+            {
+                if (this.hKey != 0)
+                    RegCloseKey(hKey);
+
+                hKey = 0;
+
+                if (this.fiHiveTemp.Exists)
+                    this.fiHiveTemp.Delete();
+
+                disposed = true;
+            }
+
+            GC.SuppressFinalize(this);
         }
 
         /// <summary>
         /// Uses Windows RegSaveKeyA API to rewrite registry hive
         /// </summary>
         public void AnalyzeHive()
-        {    
-            int nRet = 0, hkey = 0;
-
-            string strMainKey = this.HiveName.ToLower();
-            string strSubKey = strMainKey.Substring(strMainKey.LastIndexOf('\\') + 1);
-
-            // Open Handle to registry key
-            if (strMainKey.Contains("\\registry\\machine"))
-                nRet = RegOpenKeyA(HKEY_LOCAL_MACHINE, strSubKey, ref hkey);
-            if (strMainKey.Contains("\\registry\\user"))
-                nRet = RegOpenKeyA(HKEY_USERS, strSubKey, ref hkey);
-
-            if (nRet != 0)
-                return;
-
-            // Get temporary path to new registry hive
-            HiveTempPath = Path.ChangeExtension(this.fiHive.FullName, ".temp");
-
-            if (File.Exists(HiveTempPath))
-                File.Delete(HiveTempPath);
-
-            Thread.BeginCriticalRegion();
-
-            if (RegSaveKeyA(hkey, HiveTempPath, 0) == 0)
+        {
+            try
             {
-                this.fiHiveTemp = new FileInfo(HiveTempPath);
-                this.hKey = hkey;
-            }
+                if (!bAnaylzed)
+                {
+                    int nRet = 0, hkey = 0;
 
-            Thread.EndCriticalRegion();
-            return;
+                    string strMainKey = this.HiveName.ToLower();
+                    string strSubKey = strMainKey.Substring(strMainKey.LastIndexOf('\\') + 1);
+
+                    // Open Handle to registry key
+                    if (strMainKey.Contains("\\registry\\machine"))
+                        nRet = RegOpenKeyA(HKEY_LOCAL_MACHINE, strSubKey, ref hkey);
+                    if (strMainKey.Contains("\\registry\\user"))
+                        nRet = RegOpenKeyA(HKEY_USERS, strSubKey, ref hkey);
+
+                    if (nRet != 0)
+                        return;
+
+                    // Get temporary path to new registry hive
+                    HiveTempPath = Path.ChangeExtension(this.fiHive.FullName, ".temp");
+
+                    // Remove old file if it exists
+                    if (File.Exists(HiveTempPath))
+                        File.Delete(HiveTempPath);
+
+                    Thread.BeginCriticalRegion();
+
+                    // Use API to rewrite the registry hive
+                    if (RegSaveKeyA(hkey, HiveTempPath, 0) == 0)
+                    {
+                        this.fiHiveTemp = new FileInfo(HiveTempPath);
+                        this.hKey = hkey;
+                        bAnaylzed = true;
+                    }
+
+                    Thread.EndCriticalRegion();
+                }
+            }
+            catch (Exception)
+            {
+
+            }
         }
 
+        /// <summary>
+        /// Compacts the registry hive
+        /// </summary>
         public void CompactHive() 
         {
-            if (this.fiHiveTemp != null)
-            {
-                string strOldHivePath = Path.ChangeExtension(this.fiHive.FullName, ".bak");
+            if (!bAnaylzed)
+                throw new Exception("You must analyze the hive before you can compact it");
 
-                try { File.Delete(strOldHivePath); }
-                catch (Exception ex) { System.Diagnostics.Debug.WriteLine(ex.Message); }
+            string strOldHivePath = Path.ChangeExtension(this.fiHive.FullName, ".bak");
 
-                if (RegReplaceKeyA(this.hKey, null, this.fiHiveTemp.FullName, strOldHivePath) != 0)
-                    throw new Exception("Error replacing old hive with compacted hive. Error Code: " + Marshal.GetLastWin32Error().ToString());
+            try { File.Delete(strOldHivePath); }
+            catch (Exception ex) { System.Diagnostics.Debug.WriteLine(ex.Message); }
 
-                this.fiHiveTemp = null;
-            }
+            if (RegReplaceKeyA(this.hKey, null, this.fiHiveTemp.FullName, strOldHivePath) != 0)
+                throw new Exception("Error replacing old hive with compacted hive. Error Code: " + Marshal.GetLastWin32Error().ToString());
+
+            // Hive should now be replaced with temporary hive
         }
 
         public static string ConvertDeviceToMSDOSName(string strDeviceName)

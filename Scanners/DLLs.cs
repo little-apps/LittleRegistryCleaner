@@ -25,12 +25,12 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public class DLLs
+    public static class DLLs
     {
         /// <summary>
         /// Scan for missing links to DLLS
         /// </summary>
-        public DLLs()
+        public static void Scan()
         {
             try
             {

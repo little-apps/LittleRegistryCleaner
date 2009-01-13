@@ -25,12 +25,12 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public class Drivers
+    public static class Drivers
     {
         /// <summary>
         /// Scans for invalid references to fonts
         /// </summary>
-        public Drivers()
+        public static void Scan()
         {
             try
             {

@@ -50,7 +50,7 @@ namespace Little_Registry_Cleaner
                 return;
             }
 
-            if (!Xml.xmlRegistry.keyExists(strBaseKey, strPath))
+            if (!Utils.RegKeyExists(strBaseKey, strPath))
             {
                 MessageBox.Show(this, "Specified registry key doesn't exist", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;

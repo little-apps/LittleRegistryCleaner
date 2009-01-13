@@ -25,9 +25,9 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public class HelpFiles
+    public static class HelpFiles
     {
-        public HelpFiles()
+        public static void Scan()
         {
             try
             {
@@ -43,7 +43,7 @@ namespace Little_Registry_Cleaner.Scanners
         /// <summary>
         /// Scans for invalid windows help files
         /// </summary>
-        private void CheckHelpFiles(RegistryKey regKey)
+        private static void CheckHelpFiles(RegistryKey regKey)
         {
             if (regKey == null)
                 return;
