@@ -207,3 +207,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Scanner classes are now static to make thread calling faster
 - Optimizer wont compact registry if difference is more than 90%
 - Hive class implements IDisposable interface
+- Implemented TreeViewAdv into Startup Manager and removed vista message when running a program
+- ExtractFileLocation() is private and integrated into ExtractArguments()

@@ -26,12 +26,14 @@ using System.Windows.Forms;
 using System.IO;
 using System.Runtime.InteropServices;
 using Microsoft.Win32;
-using Common_Tools.TreeView;
+using Common_Tools.TreeViewAdv.Tree;
 
 namespace Little_Registry_Cleaner.StartupManager
 {
     public partial class StartupManager : Form
     {
+        private TreeModel treeModel = new TreeModel();
+
         public StartupManager()
         {
             InitializeComponent();
@@ -39,114 +41,8 @@ namespace Little_Registry_Cleaner.StartupManager
 
         private void StartupManager_Load(object sender, EventArgs e)
         {
+            this.treeViewAdv1.Model = this.treeModel;
             LoadStartupFiles();
-        }
-
-        private void LoadRegistryAutoRun(RegistryKey regKey)
-        {
-            if (regKey == null)
-                return;
-
-            if (regKey.ValueCount <= 0)
-                return;
-
-            TreeListNode tlnRoot = new TreeListNode();
-            tlnRoot.Text = regKey.Name;
-
-            if (regKey.Name.StartsWith("HKEY_LOCAL_MACHINE"))
-                tlnRoot.ImageIndex = 0;
-            else
-                tlnRoot.ImageIndex = 1;
-
-            foreach (string strItem in regKey.GetValueNames())
-            {
-                string strFilePath = regKey.GetValue(strItem) as string;
-
-                if (!string.IsNullOrEmpty(strFilePath))
-                {
-                    // Get file arguments
-                    string strFile = "", strArgs = "";
-                    if (!Utils.FileExists(strFilePath))
-                    {
-                        Utils.ExtractArguments(strFilePath, out strFile, out strArgs);
-
-                        if (!Utils.FileExists(strFile))
-                        {
-                            strFile = strArgs = "";
-                            Utils.ExtractFileLocation(strFilePath, out strFile, out strArgs);
-                        }
-                    }
-                    else
-                        strFile = string.Copy(strFilePath);
-
-                    TreeListNode tln = new TreeListNode();
-                    tln.Text = strItem;
-                    tln.SubItems.Add(strFile);
-                    tln.SubItems.Add(strArgs);
-
-                    Icon ico = Utils.ExtractIcon(strFile);
-                    if (ico != null)
-                    {
-                        this.imageList1.Images.Add(strFile, ico);
-                        tln.ImageIndex = this.imageList1.Images.IndexOfKey(strFile);
-                    } else
-                        tln.ImageIndex = this.imageList1.Images.IndexOfKey("default");
-
-                    tlnRoot.Nodes.Add(tln);
-                }
-            }
-
-            this.treeListView.Nodes.Add(tlnRoot);
-        }
-
-        private void AddStartupFolder(string strFolder)
-        {
-            try
-            {
-                if (string.IsNullOrEmpty(strFolder) || !Directory.Exists(strFolder))
-                    return;
-
-                TreeListNode tlnRoot = new TreeListNode();
-                tlnRoot.Text = strFolder;
-                tlnRoot.ImageIndex = 2;
-
-                foreach (string strShortcut in Directory.GetFiles(strFolder))
-                {
-                    string strShortcutName = Path.GetFileName(strShortcut);
-                    string strFilePath, strFileArgs;
-
-                    if (Path.GetExtension(strShortcut) == ".lnk")
-                    {
-                        Utils.ResolveShortcut(strShortcut, out strFilePath, out strFileArgs);
-
-                        TreeListNode tln = new TreeListNode();
-                        tln.Text = strShortcutName;
-                        tln.SubItems.Add(strFilePath);
-                        tln.SubItems.Add(strFileArgs);
-
-                        Icon ico = Utils.ExtractIcon(strFilePath);
-                        if (ico != null)
-                        {
-                            this.imageList1.Images.Add(strShortcutName, ico);
-                            tln.ImageIndex = this.imageList1.Images.IndexOfKey(strShortcutName);
-                        }
-                        else
-                            tln.ImageIndex = this.imageList1.Images.IndexOfKey("default");
-
-                        tlnRoot.Nodes.Add(tln);
-                    }
-                }
-
-                if (tlnRoot.Nodes.Count <= 0)
-                    return;
-
-                this.treeListView.Nodes.Add(tlnRoot);
-            }
-            catch (Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine(ex.Message);
-            }
-
         }
 
         /// <summary>
@@ -154,11 +50,10 @@ namespace Little_Registry_Cleaner.StartupManager
         /// </summary>
         private void LoadStartupFiles()
         {
-            this.treeListView.Nodes.Clear();
+            // Clear old list
+            this.treeModel.Nodes.Clear();
 
-            if (!this.imageList1.Images.ContainsKey("default"))
-                this.imageList1.Images.Add("default", SystemIcons.Application);
-
+            // Adds registry keys
             try
             {
                 // all user keys
@@ -186,11 +81,119 @@ namespace Little_Registry_Cleaner.StartupManager
                 System.Diagnostics.Debug.WriteLine(ex.Message);
             }
 
+            // Adds startup folders
             AddStartupFolder(Utils.GetSpecialFolderPath(Utils.CSIDL_STARTUP));
             AddStartupFolder(Utils.GetSpecialFolderPath(Utils.CSIDL_COMMON_STARTUP));
 
-            this.treeListView.ExpandAll();
-            this.treeListView.AutoResizeColumns();
+            // Expands treeview
+            this.treeViewAdv1.ExpandAll();
+            this.treeViewAdv1.AutoResizeColumns();
+        }
+
+        /// <summary>
+        /// Loads registry sub key into tree view
+        /// </summary>
+        private void LoadRegistryAutoRun(RegistryKey regKey)
+        {
+
+            if (regKey == null)
+                return;
+
+            if (regKey.ValueCount <= 0)
+                return;
+
+            StartupManagerNode nodeRoot = new StartupManagerNode();
+
+            nodeRoot.Section = regKey.Name;   
+
+            foreach (string strItem in regKey.GetValueNames())
+            {
+                string strFilePath = regKey.GetValue(strItem) as string;
+
+                if (!string.IsNullOrEmpty(strFilePath))
+                {
+                    // Get file arguments
+                    string strFile = "", strArgs = "";
+                    if (!Utils.FileExists(strFilePath))
+                    {
+                        Utils.ExtractArguments(strFilePath, out strFile, out strArgs);
+
+                        if (!Utils.FileExists(strFile))
+                        {
+                            strFile = strArgs = "";
+                            Utils.ExtractArguments(strFilePath, out strFile, out strArgs);
+                        }
+                    }
+                    else
+                        strFile = string.Copy(strFilePath);
+
+                    StartupManagerNode node = new StartupManagerNode();
+
+                    node.Item = strItem;
+                    node.Path = strFile;
+                    node.Args = strArgs;
+
+                    Icon ico = Utils.ExtractIcon(strFile, true);
+                    if (ico != null)
+                        node.Image = (Image)ico.ToBitmap().Clone();
+                    else
+                        node.Image = (Image)SystemIcons.WinLogo.ToBitmap();
+
+                    nodeRoot.Nodes.Add(node);
+                }
+            }
+
+            this.treeModel.Nodes.Add(nodeRoot);
+        }
+
+        /// <summary>
+        /// Loads startup folder into tree view
+        /// </summary>
+        private void AddStartupFolder(string strFolder)
+        {
+
+            try
+            {
+                if (string.IsNullOrEmpty(strFolder) || !Directory.Exists(strFolder))
+                    return;
+
+                StartupManagerNode nodeRoot = new StartupManagerNode();
+                nodeRoot.Section = strFolder;
+
+                foreach (string strShortcut in Directory.GetFiles(strFolder))
+                {
+                    string strShortcutName = Path.GetFileName(strShortcut);
+                    string strFilePath, strFileArgs;
+
+                    if (Path.GetExtension(strShortcut) == ".lnk")
+                    {
+                        Utils.ResolveShortcut(strShortcut, out strFilePath, out strFileArgs);
+
+                        StartupManagerNode node = new StartupManagerNode();
+                        node.Item = strShortcutName;
+                        node.Path = strFilePath;
+                        node.Args = strFileArgs;
+
+                        Icon ico = Utils.ExtractIcon(strFilePath, true);
+                        if (ico != null)
+                            node.Image = (Image)ico.ToBitmap().Clone();
+                        else
+                            node.Image = (Image)SystemIcons.WinLogo.ToBitmap();
+
+                        nodeRoot.Nodes.Add(node);
+                    }
+                }
+
+                if (nodeRoot.Nodes.Count <= 0)
+                    return;
+
+                this.treeModel.Nodes.Add(nodeRoot);
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
+
         }
 
         private void toolStripButtonRefresh_Click(object sender, EventArgs e)
@@ -207,40 +210,36 @@ namespace Little_Registry_Cleaner.StartupManager
 
         private void toolStripButtonDelete_Click(object sender, EventArgs e)
         {
-            if (this.treeListView.SelectedNodes.Count > 0)
+            if (this.treeViewAdv1.SelectedNodes.Count > 0)
             {
                 if (MessageBox.Show(this, "Are you sure you want to remove this startup program?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    TreeListNode tln = this.treeListView.SelectedNodes[0];
+                    StartupManagerNode node = this.treeViewAdv1.SelectedNode.Tag as StartupManagerNode;
 
-                    if (tln.SubItems.Count > 0)
+                    string strSection = (node.Parent as StartupManagerNode).Section;
+
+                    if (Directory.Exists(strSection))
                     {
-                        string strItem = tln.Text;
-                        string strFilePath = tln.SubItems[0].Text;
-                        string strArgs = tln.SubItems[1].Text;
+                        // Startup folder
+                        string strPath = Path.Combine(strSection, node.Item);
 
-                        if (tln.Parent.Text.StartsWith("HKEY"))
-                        {
-                            string strRegPath = tln.Parent.Text;
-                            string strMainKey = strRegPath.Substring(0, strRegPath.IndexOf('\\'));
-                            string strSubKey = strRegPath.Substring(strRegPath.IndexOf('\\') + 1);
-
-                            RegistryKey rk = Utils.RegOpenKey(strMainKey, strSubKey, true);
-
-                            if (rk != null)
-                            {
-                                rk.DeleteValue(strItem);
-                                rk.Close();
-                            }
-                        }
-                        else if (Directory.Exists(tln.Parent.Text))
-                        {
-                            string strPath = Path.Combine(tln.Parent.Text, strItem);
-
-                            if (File.Exists(strPath))
-                                File.Delete(strPath);
-                        }
+                        if (File.Exists(strPath))
+                            File.Delete(strPath);
                     }
+                    else
+                    {
+                        // Registry key
+                        string strMainKey = strSection.Substring(0, strSection.IndexOf('\\'));
+                        string strSubKey = strSection.Substring(strSection.IndexOf('\\') + 1);
+                        RegistryKey rk = Utils.RegOpenKey(strMainKey, strSubKey, true);
+
+                        if (rk != null)
+                            rk.DeleteValue(node.Item);
+
+                        rk.Close();
+                    }
+
+                    MessageBox.Show(this, "Removed selected startup program", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
             }
@@ -250,26 +249,24 @@ namespace Little_Registry_Cleaner.StartupManager
 
         private void toolStripButtonEdit_Click(object sender, EventArgs e)
         {
-            if (this.treeListView.SelectedNodes.Count > 0)
+            if (this.treeViewAdv1.SelectedNodes.Count > 0)
             {
-                string strItem = this.treeListView.SelectedNodes[0].Text;
-                string strSection = this.treeListView.SelectedNodes[0].Parent.Text;
-                string strFilepath = this.treeListView.SelectedNodes[0].SubItems[0].Text;
-                string strFileArgs = this.treeListView.SelectedNodes[0].SubItems[1].Text;
+                StartupManagerNode node = this.treeViewAdv1.SelectedNode.Tag as StartupManagerNode;
 
-                EditRunItem dlgEditRunValue = new EditRunItem(strItem, strSection, strFilepath, strFileArgs);
-                if (dlgEditRunValue.ShowDialog(this) == DialogResult.OK)
+                string strSection = (node.Parent as StartupManagerNode).Section;
+
+                EditRunItem frmEditRunItem = new EditRunItem(node.Item, strSection, node.Path, node.Args);
+                if (frmEditRunItem.ShowDialog(this) == DialogResult.OK)
                     LoadStartupFiles();
             }
         }
 
         private void toolStripButtonView_Click(object sender, EventArgs e)
         {
-            if (this.treeListView.SelectedNodes.Count > 0)
+            if (this.treeViewAdv1.SelectedNodes.Count > 0)
             {
-                string strItem = this.treeListView.SelectedNodes[0].Text;
-
-                string strPath = this.treeListView.SelectedNodes[0].Parent.Text;
+                string strItem = (this.treeViewAdv1.SelectedNode.Tag as StartupManagerNode).Item;
+                string strPath = (this.treeViewAdv1.SelectedNode.Parent.Tag as StartupManagerNode).Section;
 
                 if (strPath.StartsWith("HKEY"))
                 {
@@ -284,12 +281,12 @@ namespace Little_Registry_Cleaner.StartupManager
 
         private void toolStripButtonRun_Click(object sender, EventArgs e)
         {
-            if (this.treeListView.SelectedNodes.Count > 0)
+            if (this.treeViewAdv1.SelectedNodes.Count > 0)
             {
-                if (MessageBox.Show(this, "Running this program on vista will give it this programs priviledges\r\nAre you sure you want to continue?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show(this, "Are you sure you want to run this program?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    string strFilepath = this.treeListView.SelectedNodes[0].SubItems[0].Text;
-                    string strFileArgs = this.treeListView.SelectedNodes[0].SubItems[1].Text;
+                    string strFilepath = (this.treeViewAdv1.SelectedNode.Tag as StartupManagerNode).Path;
+                    string strFileArgs = (this.treeViewAdv1.SelectedNode.Tag as StartupManagerNode).Args;
 
                     System.Diagnostics.Process.Start(strFilepath, strFileArgs);
 
@@ -298,4 +295,49 @@ namespace Little_Registry_Cleaner.StartupManager
             }
         }
     }
+
+    #region "Startup Manager Node"
+    class StartupManagerNode : Node
+    {
+        private string strSection = "";
+        public string Section
+        {
+            get { return strSection; }
+            set { strSection = value; }
+        }
+
+        private string strItem = "";
+        public string Item
+        {
+            get { return strItem; }
+            set { strItem = value; }
+        }
+
+        private string strPath = "";
+        public string Path
+        {
+            get { return strPath; }
+            set { strPath = value; }
+        }
+
+        private string strArgs = "";
+        public string Args
+        {
+            get { return strArgs; }
+            set { strArgs = value; }
+        }
+
+        private string _path = "";
+        public string ItemPath
+        {
+            get { return _path; }
+            set { _path = value; }
+        }
+
+        public StartupManagerNode() : base()
+        {
+
+        }
+    }
+    #endregion
 }

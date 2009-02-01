@@ -170,14 +170,6 @@
     </Compile>
     <Compile Include="TreeViewAdv\Tree\TreeViewAdvCancelEventArgs.cs" />
     <Compile Include="TreeViewAdv\Tree\TreeViewAdvEventArgs.cs" />
-    <Compile Include="TreeView\ContainerListView.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="TreeView\IParentChildList.cs" />
-    <Compile Include="TreeView\StringTools.cs" />
-    <Compile Include="TreeView\TreeListView.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="XpProgressBar.cs">
       <SubType>Component</SubType>
     </Compile>

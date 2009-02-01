@@ -87,7 +87,7 @@ namespace Little_Registry_Cleaner.Optimizer
         {
             try
             {
-                if (!bAnaylzed)
+                if (!this.bAnaylzed)
                 {
                     int nRet = 0, hkey = 0;
 
@@ -117,7 +117,7 @@ namespace Little_Registry_Cleaner.Optimizer
                     {
                         this.fiHiveTemp = new FileInfo(HiveTempPath);
                         this.hKey = hkey;
-                        bAnaylzed = true;
+                        this.bAnaylzed = true;
                     }
 
                     Thread.EndCriticalRegion();
@@ -134,7 +134,7 @@ namespace Little_Registry_Cleaner.Optimizer
         /// </summary>
         public void CompactHive() 
         {
-            if (!bAnaylzed)
+            if (!this.bAnaylzed)
                 throw new Exception("You must analyze the hive before you can compact it");
 
             string strOldHivePath = Path.ChangeExtension(this.fiHive.FullName, ".bak");

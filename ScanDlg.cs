@@ -47,6 +47,7 @@ namespace Little_Registry_Cleaner
         private static string strCurrentSection;
 
         public static ScanDlg frmScanDlg;
+
         public static BadRegKeyArray arrBadRegistryKeys = new BadRegKeyArray();
 
         public ScanDlg(int nSectionCount)

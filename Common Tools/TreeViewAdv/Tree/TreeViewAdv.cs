@@ -814,6 +814,8 @@ namespace Common_Tools.TreeViewAdv.Tree
                     }
                 }
             }
+
+            this.FullUpdate();
         } 
 
 

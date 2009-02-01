@@ -30,11 +30,17 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartupManager));
-            Common_Tools.TreeView.ToggleColumnHeader toggleColumnHeader1 = new Common_Tools.TreeView.ToggleColumnHeader();
-            Common_Tools.TreeView.ToggleColumnHeader toggleColumnHeader2 = new Common_Tools.TreeView.ToggleColumnHeader();
-            Common_Tools.TreeView.ToggleColumnHeader toggleColumnHeader3 = new Common_Tools.TreeView.ToggleColumnHeader();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.treeViewAdv1 = new Common_Tools.TreeViewAdv.Tree.TreeViewAdv();
+            this.treeColumn1 = new Common_Tools.TreeViewAdv.Tree.TreeColumn();
+            this.treeColumn2 = new Common_Tools.TreeViewAdv.Tree.TreeColumn();
+            this.treeColumn3 = new Common_Tools.TreeViewAdv.Tree.TreeColumn();
+            this.nodeIcon1 = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeIcon();
+            this.nodeTextBoxSection = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
+            this.nodeTextBoxItem = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
+            this.nodeTextBoxPath = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
+            this.nodeTextBoxArgs = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonAdd = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonEdit = new System.Windows.Forms.ToolStripButton();
@@ -43,8 +49,7 @@
             this.toolStripButtonRun = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButtonRefresh = new System.Windows.Forms.ToolStripButton();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.treeListView = new Common_Tools.TreeView.TreeListView();
+            this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
@@ -74,7 +79,7 @@
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 717F));
-            this.tableLayoutPanel1.Controls.Add(this.treeListView, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.treeViewAdv1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -82,6 +87,85 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(717, 382);
             this.tableLayoutPanel1.TabIndex = 1;
+            // 
+            // treeViewAdv1
+            // 
+            this.treeViewAdv1.BackColor = System.Drawing.SystemColors.Window;
+            this.treeViewAdv1.Columns.Add(this.treeColumn1);
+            this.treeViewAdv1.Columns.Add(this.treeColumn2);
+            this.treeViewAdv1.Columns.Add(this.treeColumn3);
+            this.treeViewAdv1.DefaultToolTipProvider = null;
+            this.treeViewAdv1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.treeViewAdv1.DragDropMarkColor = System.Drawing.Color.Black;
+            this.treeViewAdv1.FullRowSelect = true;
+            this.treeViewAdv1.GridLineStyle = Common_Tools.TreeViewAdv.Tree.GridLineStyle.Horizontal;
+            this.treeViewAdv1.LineColor = System.Drawing.SystemColors.ControlDark;
+            this.treeViewAdv1.Location = new System.Drawing.Point(3, 3);
+            this.treeViewAdv1.Model = null;
+            this.treeViewAdv1.Name = "treeViewAdv1";
+            this.treeViewAdv1.NodeControls.Add(this.nodeIcon1);
+            this.treeViewAdv1.NodeControls.Add(this.nodeTextBoxSection);
+            this.treeViewAdv1.NodeControls.Add(this.nodeTextBoxItem);
+            this.treeViewAdv1.NodeControls.Add(this.nodeTextBoxPath);
+            this.treeViewAdv1.NodeControls.Add(this.nodeTextBoxArgs);
+            this.treeViewAdv1.SelectedNode = null;
+            this.treeViewAdv1.Size = new System.Drawing.Size(711, 376);
+            this.treeViewAdv1.TabIndex = 0;
+            this.treeViewAdv1.Text = "treeViewAdv1";
+            this.treeViewAdv1.UseColumns = true;
+            // 
+            // treeColumn1
+            // 
+            this.treeColumn1.Header = "Section";
+            this.treeColumn1.SortOrder = System.Windows.Forms.SortOrder.None;
+            this.treeColumn1.TooltipText = null;
+            // 
+            // treeColumn2
+            // 
+            this.treeColumn2.Header = "Path";
+            this.treeColumn2.SortOrder = System.Windows.Forms.SortOrder.None;
+            this.treeColumn2.TooltipText = null;
+            // 
+            // treeColumn3
+            // 
+            this.treeColumn3.Header = "Arguments";
+            this.treeColumn3.SortOrder = System.Windows.Forms.SortOrder.None;
+            this.treeColumn3.TooltipText = null;
+            // 
+            // nodeIcon1
+            // 
+            this.nodeIcon1.DataPropertyName = "Image";
+            this.nodeIcon1.LeftMargin = 1;
+            this.nodeIcon1.ParentColumn = this.treeColumn1;
+            // 
+            // nodeTextBoxSection
+            // 
+            this.nodeTextBoxSection.DataPropertyName = "Section";
+            this.nodeTextBoxSection.IncrementalSearchEnabled = true;
+            this.nodeTextBoxSection.LeftMargin = 3;
+            this.nodeTextBoxSection.ParentColumn = this.treeColumn1;
+            this.nodeTextBoxSection.UseCompatibleTextRendering = true;
+            // 
+            // nodeTextBoxItem
+            // 
+            this.nodeTextBoxItem.DataPropertyName = "Item";
+            this.nodeTextBoxItem.IncrementalSearchEnabled = true;
+            this.nodeTextBoxItem.LeftMargin = 3;
+            this.nodeTextBoxItem.ParentColumn = this.treeColumn1;
+            // 
+            // nodeTextBoxPath
+            // 
+            this.nodeTextBoxPath.DataPropertyName = "Path";
+            this.nodeTextBoxPath.IncrementalSearchEnabled = true;
+            this.nodeTextBoxPath.LeftMargin = 3;
+            this.nodeTextBoxPath.ParentColumn = this.treeColumn2;
+            // 
+            // nodeTextBoxArgs
+            // 
+            this.nodeTextBoxArgs.DataPropertyName = "Args";
+            this.nodeTextBoxArgs.IncrementalSearchEnabled = true;
+            this.nodeTextBoxArgs.LeftMargin = 3;
+            this.nodeTextBoxArgs.ParentColumn = this.treeColumn3;
             // 
             // toolStrip1
             // 
@@ -167,69 +251,15 @@
             this.toolStripButtonRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripButtonRefresh.Click += new System.EventHandler(this.toolStripButtonRefresh_Click);
             // 
-            // imageList1
+            // imageList
             // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "User.png");
-            this.imageList1.Images.SetKeyName(1, "Users.png");
-            this.imageList1.Images.SetKeyName(2, "startup folder.png");
-            this.imageList1.Images.SetKeyName(3, "regedit 1.png");
-            this.imageList1.Images.SetKeyName(4, "folder.png");
-            // 
-            // treeListView
-            // 
-            this.treeListView.BackColor = System.Drawing.SystemColors.Window;
-            toggleColumnHeader1.Hovered = false;
-            toggleColumnHeader1.Image = null;
-            toggleColumnHeader1.Index = 0;
-            toggleColumnHeader1.Pressed = false;
-            toggleColumnHeader1.ScaleStyle = Common_Tools.TreeView.ColumnScaleStyle.Slide;
-            toggleColumnHeader1.Selected = false;
-            toggleColumnHeader1.Text = "Item";
-            toggleColumnHeader1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            toggleColumnHeader1.Visible = true;
-            toggleColumnHeader2.Hovered = false;
-            toggleColumnHeader2.Image = null;
-            toggleColumnHeader2.Index = 0;
-            toggleColumnHeader2.Pressed = false;
-            toggleColumnHeader2.ScaleStyle = Common_Tools.TreeView.ColumnScaleStyle.Slide;
-            toggleColumnHeader2.Selected = false;
-            toggleColumnHeader2.Text = "Path";
-            toggleColumnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            toggleColumnHeader2.Visible = true;
-            toggleColumnHeader3.Hovered = false;
-            toggleColumnHeader3.Image = null;
-            toggleColumnHeader3.Index = 0;
-            toggleColumnHeader3.Pressed = false;
-            toggleColumnHeader3.ScaleStyle = Common_Tools.TreeView.ColumnScaleStyle.Slide;
-            toggleColumnHeader3.Selected = false;
-            toggleColumnHeader3.Text = "Arguments";
-            toggleColumnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            toggleColumnHeader3.Visible = true;
-            this.treeListView.Columns.AddRange(new Common_Tools.TreeView.ToggleColumnHeader[] {
-            toggleColumnHeader1,
-            toggleColumnHeader2,
-            toggleColumnHeader3});
-            this.treeListView.ColumnSortColor = System.Drawing.Color.Gainsboro;
-            this.treeListView.ColumnTrackColor = System.Drawing.Color.WhiteSmoke;
-            this.treeListView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.treeListView.GridLineColor = System.Drawing.Color.WhiteSmoke;
-            this.treeListView.HeaderMenu = null;
-            this.treeListView.ItemHeight = 20;
-            this.treeListView.ItemMenu = null;
-            this.treeListView.LabelEdit = false;
-            this.treeListView.Location = new System.Drawing.Point(3, 3);
-            this.treeListView.Name = "treeListView";
-            this.treeListView.RowSelectColor = System.Drawing.SystemColors.Highlight;
-            this.treeListView.RowTrackColor = System.Drawing.Color.WhiteSmoke;
-            this.treeListView.ShowLines = true;
-            this.treeListView.ShowRootLines = true;
-            this.treeListView.Size = new System.Drawing.Size(711, 376);
-            this.treeListView.SmallImageList = this.imageList1;
-            this.treeListView.StateImageList = null;
-            this.treeListView.TabIndex = 0;
-            this.treeListView.Text = "treeListView1";
+            this.imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList.ImageStream")));
+            this.imageList.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList.Images.SetKeyName(0, "User.png");
+            this.imageList.Images.SetKeyName(1, "Users.png");
+            this.imageList.Images.SetKeyName(2, "startup folder.png");
+            this.imageList.Images.SetKeyName(3, "regedit 1.png");
+            this.imageList.Images.SetKeyName(4, "folder.png");
             // 
             // StartupManager
             // 
@@ -239,7 +269,6 @@
             this.Controls.Add(this.toolStripContainer1);
             this.Name = "StartupManager";
             this.ShowIcon = false;
-            this.ShowInTaskbar = false;
             this.Text = "Little Registry Cleaner - Startup Manager";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.StartupManager_Load);
@@ -264,11 +293,19 @@
         private System.Windows.Forms.ToolStripButton toolStripButtonRefresh;
         private System.Windows.Forms.ToolStripButton toolStripButtonRun;
         private System.Windows.Forms.ToolStripButton toolStripButtonView;
-        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.ImageList imageList;
         private System.Windows.Forms.ToolStripButton toolStripButtonAdd;
         private System.Windows.Forms.ToolStripButton toolStripButtonEdit;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private Common_Tools.TreeView.TreeListView treeListView;
+        private Common_Tools.TreeViewAdv.Tree.TreeViewAdv treeViewAdv1;
+        private Common_Tools.TreeViewAdv.Tree.TreeColumn treeColumn1;
+        private Common_Tools.TreeViewAdv.Tree.TreeColumn treeColumn2;
+        private Common_Tools.TreeViewAdv.Tree.TreeColumn treeColumn3;
+        private Common_Tools.TreeViewAdv.Tree.NodeControls.NodeIcon nodeIcon1;
+        private Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox nodeTextBoxSection;
+        private Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox nodeTextBoxItem;
+        private Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox nodeTextBoxPath;
+        private Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox nodeTextBoxArgs;
 
     }
 }

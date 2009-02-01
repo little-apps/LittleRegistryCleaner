@@ -455,11 +455,14 @@ namespace Little_Registry_Cleaner
                 StringBuilder strCmdLine = new StringBuilder(CmdLine.ToLower().Trim());
                 PathRemoveArgs(strCmdLine);
                 FilePath = string.Copy(strCmdLine.ToString());
+
+                // Try combining chars
+                if (!FileExists(FilePath))
+                    return ExtractFileLocation(CmdLine, out FilePath, out Args);
             }
             catch (Exception)
             {
-                FilePath = Args = "";
-                return false;
+                return ExtractFileLocation(CmdLine, out FilePath, out Args);
             }
 
             return true;
@@ -471,7 +474,7 @@ namespace Little_Registry_Cleaner
         /// <param name="Path">Path</param>
         /// <param name="Location">Returns Location</param>
         /// <returns>Returns true if file was located</returns>
-        public static bool ExtractFileLocation(string Path, out string Location, out string Arguments)
+        private static bool ExtractFileLocation(string Path, out string Location, out string Arguments)
         {
             string strFilePath = string.Copy(Path.ToLower().Trim());
             bool bRet = false;
@@ -732,11 +735,23 @@ namespace Little_Registry_Cleaner
         /// </summary>
         /// <param name="Path">Path to icon</param>
         /// <returns>Large or small icon or null</returns>
-        public static Icon ExtractIcon(string Path)
+        public static Icon ExtractIcon(string Path, bool bExtractPath)
         {
             IntPtr largeIcon = IntPtr.Zero;
             IntPtr smallIcon = IntPtr.Zero;
-            ExtractIconExA(Path, 0, ref largeIcon, ref smallIcon, 1);
+
+            string strPath = string.Copy(Path);
+
+            if (bExtractPath)
+            {
+                string strFilePath, strFileArgs;
+
+                ExtractArguments(Path, out strFilePath, out strFileArgs);
+
+                strPath = strFilePath;
+            }
+
+            ExtractIconExA(strPath, 0, ref largeIcon, ref smallIcon, 1);
 
             //Transform the bits into the icon image
             Icon returnIcon = null;
