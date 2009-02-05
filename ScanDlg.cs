@@ -44,9 +44,8 @@ namespace Little_Registry_Cleaner
 
         private int SectionCount = 0;
         private int ItemsScanned = 0;
-        private static string strCurrentSection;
 
-        public static ScanDlg frmScanDlg;
+        private static ScanDlg self;
 
         public static BadRegKeyArray arrBadRegistryKeys = new BadRegKeyArray();
 
@@ -55,7 +54,7 @@ namespace Little_Registry_Cleaner
             InitializeComponent();
 
             // Set pointer to scandlg variable
-            ScanDlg.frmScanDlg = this;
+            ScanDlg.self = this;
 
             // Set the section count so it can be accessed later
             this.SectionCount = nSectionCount;
@@ -262,7 +261,7 @@ namespace Little_Registry_Cleaner
 
             if (arrBadRegistryKeys.Add(ScanDlg.CurrentSection, Problem, Path, ValueName) > 0)
             {
-                frmScanDlg.IncrementProblems();
+                self.IncrementProblems();
                 Utils.Logger.WriteToFile(Utils.Logger.strLogFilePath, "Found invalid registry key. Key Name: \"" + ValueName + "\" Path: \"" + Path + "\" Reason: \"" + Problem + "\"");
                 return true;
             }
@@ -295,18 +294,20 @@ namespace Little_Registry_Cleaner
         /// <summary>
         /// Updates the textbox with the current subkey being scanned
         /// </summary>
-        public static void UpdateScanSubKey(string strSubKey)
+        public static void UpdateScanSubKey(string SubKey)
         {
             try
             {
-                if (ScanDlg.frmScanDlg.InvokeRequired)
+                if (self.InvokeRequired)
                 {
-                    ScanDlg.frmScanDlg.Invoke(new UpdateScanSubKeyDelgate(UpdateScanSubKey), strSubKey);
+                    self.BeginInvoke(new UpdateScanSubKeyDelgate(UpdateScanSubKey), SubKey);
                     return;
                 }
 
-                ScanDlg.frmScanDlg.textBoxSubKey.Text = strSubKey;
-                ScanDlg.frmScanDlg.ItemsScanned++;
+                string strSubKey = Utils.PrefixRegPath(SubKey);
+
+                self.textBoxSubKey.Text = strSubKey;
+                self.ItemsScanned++;
             }
             catch (Exception)
             {
@@ -326,19 +327,21 @@ namespace Little_Registry_Cleaner
                 return;
             }
 
-            ScanDlg.strCurrentSection = SectionName;
+            this.strCurrentSection = SectionName;
             string strText = "Scanning: " + SectionName;
 
             this.progressBar.Text = strText;
             this.loggerScan.WriteLine(strText);
         }
 
+        private string strCurrentSection = "";
+
         /// <summary>
         /// Returns current section name
         /// </summary>
         public static string CurrentSection
         {
-            get { return strCurrentSection; }
+            get { return self.strCurrentSection; }
         }
 
         /// <summary>

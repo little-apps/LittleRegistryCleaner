@@ -735,21 +735,12 @@ namespace Little_Registry_Cleaner
         /// </summary>
         /// <param name="Path">Path to icon</param>
         /// <returns>Large or small icon or null</returns>
-        public static Icon ExtractIcon(string Path, bool bExtractPath)
+        public static Icon ExtractIcon(string Path)
         {
             IntPtr largeIcon = IntPtr.Zero;
             IntPtr smallIcon = IntPtr.Zero;
 
-            string strPath = string.Copy(Path);
-
-            if (bExtractPath)
-            {
-                string strFilePath, strFileArgs;
-
-                ExtractArguments(Path, out strFilePath, out strFileArgs);
-
-                strPath = strFilePath;
-            }
+            string strPath = UnqouteSpaces(Path);
 
             ExtractIconExA(strPath, 0, ref largeIcon, ref smallIcon, 1);
 
@@ -934,6 +925,39 @@ namespace Little_Registry_Cleaner
             }
 
             return string.Format("Error: ({0})", nResult);
+        }
+
+        /// <summary>
+        /// Shortens the registry hive path
+        /// </summary>
+        /// <param name="SubKey">Path containing registry hive (EX: HKEY_CURRENT_USER/...) </param>
+        /// <returns>Shortened registry path  (EX: HKCU/...) </returns>
+        public static string PrefixRegPath(string SubKey)
+        {
+            string strSubKey = string.Copy(SubKey);
+
+            if (strSubKey.ToUpper().StartsWith("HKEY_CLASSES_ROOT"))
+            {
+                strSubKey = strSubKey.Replace("HKEY_CLASSES_ROOT", "HKCR");
+            }
+            else if (strSubKey.ToUpper().StartsWith("HKEY_CURRENT_USER"))
+            {
+                strSubKey = strSubKey.Replace("HKEY_CURRENT_USER", "HKCU");
+            }
+            else if (strSubKey.ToUpper().StartsWith("HKEY_LOCAL_MACHINE"))
+            {
+                strSubKey = strSubKey.Replace("HKEY_LOCAL_MACHINE", "HKLM");
+            }
+            else if (strSubKey.ToUpper().StartsWith("HKEY_USERS"))
+            {
+                strSubKey = strSubKey.Replace("HKEY_USERS", "HKU");
+            }
+            else if (strSubKey.ToUpper().StartsWith("HKEY_CURRENT_CONFIG"))
+            {
+                strSubKey = strSubKey.Replace("HKEY_CURRENT_CONFIG", "HKCC");
+            }
+
+            return strSubKey;
         }
     }
 

@@ -202,10 +202,12 @@
             // textBoxSearch
             // 
             this.textBoxSearch.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBoxSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxSearch.ForeColor = System.Drawing.SystemColors.GrayText;
             this.textBoxSearch.Location = new System.Drawing.Point(0, 0);
+            this.textBoxSearch.Multiline = true;
             this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(578, 20);
+            this.textBoxSearch.Size = new System.Drawing.Size(578, 23);
             this.textBoxSearch.TabIndex = 0;
             this.textBoxSearch.Text = "Search by name";
             this.textBoxSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
@@ -218,6 +220,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(625, 459);
             this.Controls.Add(this.toolStripContainer1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "UninstallManager";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;

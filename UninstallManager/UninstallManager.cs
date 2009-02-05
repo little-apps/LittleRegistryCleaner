@@ -31,19 +31,15 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.UninstallManager
 {
-    
-
     public partial class UninstallManager : Form
     {
         private static ProgramList arrProgList = new ProgramList();
         private int nSortColumn = -1;
 
+
         private RegistryKey Key
         {
-            get
-            {
-                return Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall");
-            }
+            get { return Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall"); }
         }
 
         public UninstallManager()
@@ -99,8 +95,6 @@ namespace Little_Registry_Cleaner.UninstallManager
 
         private void textBoxSearch_TextChanged(object sender, EventArgs e)
         {
-            if (this.textBoxSearch.ForeColor == SystemColors.GrayText) return;
-
             PopulateListView();
         }
 
@@ -126,7 +120,6 @@ namespace Little_Registry_Cleaner.UninstallManager
 
             foreach (DictionaryEntry de in arrProgList)
             {
-
                 ListViewItem lvi = new ListViewItem();
                 ProgramInfo objProgInfo = (ProgramInfo)de.Key;
 
@@ -137,9 +130,6 @@ namespace Little_Registry_Cleaner.UninstallManager
                     lvi.Text = objProgInfo.QuietDisplayName;
                 else
                     lvi.Text = objProgInfo.Key;
-
-                if (!regex.IsMatch(lvi.Text))
-                    continue;
 
                 // Publisher
                 lvi.SubItems.Add(((!string.IsNullOrEmpty(objProgInfo.DisplayName)) ? (objProgInfo.Publisher) : ("")));
@@ -161,7 +151,9 @@ namespace Little_Registry_Cleaner.UninstallManager
                     else
                         lvi.ImageIndex = 1; // ERROR
 
-                    this.listViewProgs.Items.Add(lvi);
+                    if (regex.IsMatch(lvi.Text))
+                        this.listViewProgs.Items.Add(lvi);
+
                     tempProgList.Add(objProgInfo, lvi);
                 }
             }

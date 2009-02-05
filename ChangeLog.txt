@@ -209,3 +209,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Hive class implements IDisposable interface
 - Implemented TreeViewAdv into Startup Manager and removed vista message when running a program
 - ExtractFileLocation() is private and integrated into ExtractArguments()
+- Added images to startup manager tree view
+- Fixed bug in uninstall manager that causes not to update listview properly
+- Startup and uninstall manager can no longer be minimized and maximized

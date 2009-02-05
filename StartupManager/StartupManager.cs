@@ -95,16 +95,18 @@ namespace Little_Registry_Cleaner.StartupManager
         /// </summary>
         private void LoadRegistryAutoRun(RegistryKey regKey)
         {
-
             if (regKey == null)
                 return;
 
             if (regKey.ValueCount <= 0)
                 return;
 
-            StartupManagerNode nodeRoot = new StartupManagerNode();
+            StartupManagerNode nodeRoot = new StartupManagerNode(regKey.Name);
 
-            nodeRoot.Section = regKey.Name;   
+            if (regKey.Name.Contains(Registry.CurrentUser.ToString()))
+                nodeRoot.Image = this.imageList.Images["User"];
+            else
+                nodeRoot.Image = this.imageList.Images["Users"];
 
             foreach (string strItem in regKey.GetValueNames())
             {
@@ -133,11 +135,9 @@ namespace Little_Registry_Cleaner.StartupManager
                     node.Path = strFile;
                     node.Args = strArgs;
 
-                    Icon ico = Utils.ExtractIcon(strFile, true);
+                    Icon ico = Utils.ExtractIcon(strFile);
                     if (ico != null)
                         node.Image = (Image)ico.ToBitmap().Clone();
-                    else
-                        node.Image = (Image)SystemIcons.WinLogo.ToBitmap();
 
                     nodeRoot.Nodes.Add(node);
                 }
@@ -151,14 +151,17 @@ namespace Little_Registry_Cleaner.StartupManager
         /// </summary>
         private void AddStartupFolder(string strFolder)
         {
-
             try
             {
                 if (string.IsNullOrEmpty(strFolder) || !Directory.Exists(strFolder))
                     return;
 
-                StartupManagerNode nodeRoot = new StartupManagerNode();
-                nodeRoot.Section = strFolder;
+                StartupManagerNode nodeRoot = new StartupManagerNode(strFolder);
+
+                if (Utils.GetSpecialFolderPath(Utils.CSIDL_STARTUP) == strFolder)
+                    nodeRoot.Image = this.imageList.Images["Users"];
+                else
+                    nodeRoot.Image = this.imageList.Images["User"];
 
                 foreach (string strShortcut in Directory.GetFiles(strFolder))
                 {
@@ -174,11 +177,9 @@ namespace Little_Registry_Cleaner.StartupManager
                         node.Path = strFilePath;
                         node.Args = strFileArgs;
 
-                        Icon ico = Utils.ExtractIcon(strFilePath, true);
+                        Icon ico = Utils.ExtractIcon(strFilePath);
                         if (ico != null)
                             node.Image = (Image)ico.ToBitmap().Clone();
-                        else
-                            node.Image = (Image)SystemIcons.WinLogo.ToBitmap();
 
                         nodeRoot.Nodes.Add(node);
                     }
@@ -299,6 +300,13 @@ namespace Little_Registry_Cleaner.StartupManager
     #region "Startup Manager Node"
     class StartupManagerNode : Node
     {
+        private Image img = null;
+        public new Image Image
+        {
+            get { return img; }
+            set { img = value; }
+        }
+
         private string strSection = "";
         public string Section
         {
@@ -334,9 +342,15 @@ namespace Little_Registry_Cleaner.StartupManager
             set { _path = value; }
         }
 
-        public StartupManagerNode() : base()
+        public StartupManagerNode() 
+            : base()
         {
+        }
 
+        public StartupManagerNode(string SectionName)
+            : base()
+        {
+            this.strSection = SectionName;
         }
     }
     #endregion

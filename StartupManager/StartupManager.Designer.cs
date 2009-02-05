@@ -255,11 +255,8 @@
             // 
             this.imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList.ImageStream")));
             this.imageList.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList.Images.SetKeyName(0, "User.png");
-            this.imageList.Images.SetKeyName(1, "Users.png");
-            this.imageList.Images.SetKeyName(2, "startup folder.png");
-            this.imageList.Images.SetKeyName(3, "regedit 1.png");
-            this.imageList.Images.SetKeyName(4, "folder.png");
+            this.imageList.Images.SetKeyName(0, "User");
+            this.imageList.Images.SetKeyName(1, "Users");
             // 
             // StartupManager
             // 
@@ -267,8 +264,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(717, 436);
             this.Controls.Add(this.toolStripContainer1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "StartupManager";
             this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "Little Registry Cleaner - Startup Manager";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.StartupManager_Load);

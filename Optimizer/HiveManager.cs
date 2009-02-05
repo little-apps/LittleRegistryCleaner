@@ -143,7 +143,7 @@ namespace Little_Registry_Cleaner.Optimizer
             catch (Exception ex) { System.Diagnostics.Debug.WriteLine(ex.Message); }
 
             if (RegReplaceKeyA(this.hKey, null, this.fiHiveTemp.FullName, strOldHivePath) != 0)
-                throw new Exception("Error replacing old hive with compacted hive. Error Code: " + Marshal.GetLastWin32Error().ToString());
+                throw Marshal.GetExceptionForHR(Marshal.GetLastWin32Error());
 
             // Hive should now be replaced with temporary hive
         }
@@ -179,6 +179,14 @@ namespace Little_Registry_Cleaner.Optimizer
         public void Remove(Hive oHive)
         {
             InnerList.Remove(oHive);
+        }
+
+        protected override void OnValidate(object value)
+        {
+            if (value.GetType() != typeof(Hive))
+                throw new ArgumentException("Object must be a Hive type", "value");
+
+            base.OnValidate(value);
         }
     }
 }
