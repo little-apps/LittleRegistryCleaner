@@ -36,12 +36,6 @@ namespace Little_Registry_Cleaner.UninstallManager
         private static ProgramList arrProgList = new ProgramList();
         private int nSortColumn = -1;
 
-
-        private RegistryKey Key
-        {
-            get { return Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall"); }
-        }
-
         public UninstallManager()
         {
             InitializeComponent();
@@ -49,12 +43,11 @@ namespace Little_Registry_Cleaner.UninstallManager
 
         private void UninstallManager_Load(object sender, EventArgs e)
         {
-            using (RegistryKey regKey = Key)
+            using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall"))
             {
                 foreach (string strSubKeyName in regKey.GetSubKeyNames())
                 {
-                    if (strSubKeyName.Contains("KB") ||
-                        strSubKeyName.Contains("Microsoft Security Patch"))
+                    if (strSubKeyName.Contains("KB") || strSubKeyName.Contains("Microsoft Security Patch"))
                         continue;
 
                     using (RegistryKey subKey = regKey.OpenSubKey(strSubKeyName))
@@ -147,9 +140,9 @@ namespace Little_Registry_Cleaner.UninstallManager
                     && (!objProgInfo.SystemComponent))
                 {
                     if (objProgInfo.Uninstallable)
-                        lvi.ImageIndex = 0; // OK
+                        lvi.ImageKey = "OK";
                     else
-                        lvi.ImageIndex = 1; // ERROR
+                        lvi.ImageKey = "ERROR";
 
                     if (regex.IsMatch(lvi.Text))
                         this.listViewProgs.Items.Add(lvi);

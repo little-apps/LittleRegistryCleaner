@@ -60,13 +60,13 @@
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.tableLayoutPanel1);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(625, 459);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(625, 447);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.LeftToolStripPanelVisible = false;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainer1.Name = "toolStripContainer1";
             this.toolStripContainer1.RightToolStripPanelVisible = false;
-            this.toolStripContainer1.Size = new System.Drawing.Size(625, 459);
+            this.toolStripContainer1.Size = new System.Drawing.Size(625, 447);
             this.toolStripContainer1.TabIndex = 0;
             this.toolStripContainer1.Text = "toolStripContainer1";
             this.toolStripContainer1.TopToolStripPanelVisible = false;
@@ -82,10 +82,10 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(625, 459);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(625, 447);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // listViewProgs
@@ -97,10 +97,10 @@
             this.listViewProgs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listViewProgs.FullRowSelect = true;
             this.listViewProgs.GridLines = true;
-            this.listViewProgs.Location = new System.Drawing.Point(3, 32);
+            this.listViewProgs.Location = new System.Drawing.Point(3, 33);
             this.listViewProgs.MultiSelect = false;
             this.listViewProgs.Name = "listViewProgs";
-            this.listViewProgs.Size = new System.Drawing.Size(619, 389);
+            this.listViewProgs.Size = new System.Drawing.Size(619, 371);
             this.listViewProgs.SmallImageList = this.imageList;
             this.listViewProgs.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listViewProgs.TabIndex = 1;
@@ -128,10 +128,10 @@
             // 
             this.imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList.ImageStream")));
             this.imageList.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList.Images.SetKeyName(0, "button_ok.png");
-            this.imageList.Images.SetKeyName(1, "error_button.png");
-            this.imageList.Images.SetKeyName(2, "install program.png");
-            this.imageList.Images.SetKeyName(3, "Delete.png");
+            this.imageList.Images.SetKeyName(0, "OK");
+            this.imageList.Images.SetKeyName(1, "ERROR");
+            this.imageList.Images.SetKeyName(2, "UNINSTALL");
+            this.imageList.Images.SetKeyName(3, "REMOVE");
             // 
             // flowLayoutPanel1
             // 
@@ -139,9 +139,9 @@
             this.flowLayoutPanel1.Controls.Add(this.buttonUninstall);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 427);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 410);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(619, 29);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(619, 34);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // buttonRemove
@@ -150,7 +150,7 @@
             this.buttonRemove.ImageList = this.imageList;
             this.buttonRemove.Location = new System.Drawing.Point(514, 3);
             this.buttonRemove.Name = "buttonRemove";
-            this.buttonRemove.Size = new System.Drawing.Size(102, 24);
+            this.buttonRemove.Size = new System.Drawing.Size(102, 30);
             this.buttonRemove.TabIndex = 3;
             this.buttonRemove.Text = "Remove Entry";
             this.buttonRemove.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -163,7 +163,7 @@
             this.buttonUninstall.ImageList = this.imageList;
             this.buttonUninstall.Location = new System.Drawing.Point(436, 3);
             this.buttonUninstall.Name = "buttonUninstall";
-            this.buttonUninstall.Size = new System.Drawing.Size(72, 23);
+            this.buttonUninstall.Size = new System.Drawing.Size(72, 30);
             this.buttonUninstall.TabIndex = 4;
             this.buttonUninstall.Text = "Uninstall";
             this.buttonUninstall.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -184,7 +184,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.textBoxSearch);
-            this.splitContainer1.Size = new System.Drawing.Size(619, 23);
+            this.splitContainer1.Size = new System.Drawing.Size(619, 24);
             this.splitContainer1.SplitterDistance = 37;
             this.splitContainer1.TabIndex = 3;
             // 
@@ -194,7 +194,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(37, 23);
+            this.pictureBox1.Size = new System.Drawing.Size(37, 24);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
@@ -207,7 +207,7 @@
             this.textBoxSearch.Location = new System.Drawing.Point(0, 0);
             this.textBoxSearch.Multiline = true;
             this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(578, 23);
+            this.textBoxSearch.Size = new System.Drawing.Size(578, 24);
             this.textBoxSearch.TabIndex = 0;
             this.textBoxSearch.Text = "Search by name";
             this.textBoxSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
@@ -218,7 +218,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(625, 459);
+            this.ClientSize = new System.Drawing.Size(625, 447);
             this.Controls.Add(this.toolStripContainer1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -226,7 +226,6 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "Little Registry Cleaner - Uninstall Manager";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.UninstallManager_Load);
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);
             this.toolStripContainer1.ResumeLayout(false);

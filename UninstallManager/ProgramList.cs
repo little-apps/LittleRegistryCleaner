@@ -27,7 +27,6 @@ namespace Little_Registry_Cleaner.UninstallManager
 {
     public class ProgramList : DictionaryBase
     {
-
         public ListViewItem this[ProgramInfo key]
         {
             get
@@ -56,7 +55,6 @@ namespace Little_Registry_Cleaner.UninstallManager
             }
         }
 
-
         public void Add(ProgramInfo key)
         {
             if (Dictionary.Contains(key))
@@ -83,5 +81,15 @@ namespace Little_Registry_Cleaner.UninstallManager
             Dictionary.Remove(key);
         }
 
+        protected override void OnValidate(object key, object value)
+        {
+            if (key != null && key.GetType() != typeof(ProgramInfo))
+                throw new ArgumentException("Key must be ProgramInfo type", "key");
+
+            if (value != null && value.GetType() != typeof(ListViewItem))
+                throw new ArgumentException("Value must be ListViewItem type", "value");
+
+            base.OnValidate(key, value);
+        }
     }
 }

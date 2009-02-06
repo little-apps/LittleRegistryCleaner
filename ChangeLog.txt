@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - TODO: List Alternate startup folders if they are different in startup manager
 - TODO: Check for missing DLLs that are ran by rundll32 and regsvr32
 - TODO: Create full registry backup when LRC is ran for the first time
-- TODO: Add quotes to file path if it has spaces
+- TODO: Show dialog when creating a system restore point
 
 - Dialogs are opened with main dialog as owner
 - Added Drivers Section
@@ -212,3 +212,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Added images to startup manager tree view
 - Fixed bug in uninstall manager that causes not to update listview properly
 - Startup and uninstall manager can no longer be minimized and maximized
+- Buttons are bigger in Uninstall manger and it is not started maximized
