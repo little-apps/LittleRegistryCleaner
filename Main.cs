@@ -59,15 +59,14 @@ namespace Little_Registry_Cleaner
         /// </summary>
         private void ScanRegistry()
         {
-            int nSectionCount = 0;
-
             // Clear old results
             this.listResults.Items.Clear();
             ScanDlg.arrBadRegistryKeys.Clear();
 
             // Get number of sections to scan
-            for (int i = 0; i < this.treeView1.Nodes[0].Nodes.Count; i++)
-                if (this.treeView1.Nodes[0].Nodes[i].Checked)
+            int nSectionCount = 0;
+            foreach (TreeNode tn in this.treeView1.TopNode.Nodes)
+                if (tn.Checked)
                     nSectionCount++;
 
             if (nSectionCount == 0)
@@ -91,8 +90,12 @@ namespace Little_Registry_Cleaner
 
                 this.listResults.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
 
-                // Notify user using notify icon
-                this.notifyIcon1.ShowBalloonTip(5000, Application.ProductName, string.Format("Found {0} Problems", ScanDlg.arrBadRegistryKeys.Count), ToolTipIcon.Info);
+                if (Form.ActiveForm == this) 
+                    // Notify user using message box
+                    MessageBox.Show(this, string.Format("Found {0} Problems", ScanDlg.arrBadRegistryKeys.Count), Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                else 
+                    // Notify user using notify icon
+                    this.notifyIcon1.ShowBalloonTip(5000, Application.ProductName, string.Format("Found {0} Problems", ScanDlg.arrBadRegistryKeys.Count), ToolTipIcon.Info);
 
                 // Enable menu items
                 this.fixToolStripMenuItem.Enabled = true;

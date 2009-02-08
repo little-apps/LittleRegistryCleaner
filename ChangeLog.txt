@@ -213,3 +213,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Fixed bug in uninstall manager that causes not to update listview properly
 - Startup and uninstall manager can no longer be minimized and maximized
 - Buttons are bigger in Uninstall manger and it is not started maximized
+- Displays message box instead of notify box when form is activated
