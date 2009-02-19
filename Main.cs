@@ -75,6 +75,9 @@ namespace Little_Registry_Cleaner
                 return;
             }
 
+            // Read start time of scan
+            DateTime dtStart = DateTime.Now;
+
             // Open Scan dialog
             ScanDlg frmScanBox = new ScanDlg(nSectionCount);
             frmScanBox.ShowDialog(this);
@@ -84,18 +87,19 @@ namespace Little_Registry_Cleaner
             {
                 // Load bad registry keys
                 foreach (BadRegistryKey p in ScanDlg.arrBadRegistryKeys)
-                {
                     this.listResults.Items.Add(p);
-                }
 
                 this.listResults.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
 
+                // Compute time between start and end of scan
+                TimeSpan ts = DateTime.Now - dtStart;
+
                 if (Form.ActiveForm == this) 
                     // Notify user using message box
-                    MessageBox.Show(this, string.Format("Found {0} Problems", ScanDlg.arrBadRegistryKeys.Count), Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(this, string.Format("Found {0} problems in {1} seconds", ScanDlg.arrBadRegistryKeys.Count, ts.TotalSeconds), Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else 
                     // Notify user using notify icon
-                    this.notifyIcon1.ShowBalloonTip(5000, Application.ProductName, string.Format("Found {0} Problems", ScanDlg.arrBadRegistryKeys.Count), ToolTipIcon.Info);
+                    this.notifyIcon1.ShowBalloonTip(5000, Application.ProductName, string.Format("Found {0} problems in {1} seconds", ScanDlg.arrBadRegistryKeys.Count, ts.TotalSeconds), ToolTipIcon.Info);
 
                 // Enable menu items
                 this.fixToolStripMenuItem.Enabled = true;
@@ -122,11 +126,8 @@ namespace Little_Registry_Cleaner
                     string strBackupFile = string.Format("{0}\\{1:yyyy}_{1:MM}_{1:dd}_{1:HH}{1:mm}{1:ss}.xml", Properties.Settings.Default.strOptionsBackupDir, DateTime.Now);
 
                     BadRegKeyArray arrBadRegKeys = new BadRegKeyArray();
-
                     foreach (BadRegistryKey badRegKey in this.listResults.CheckedItems)
-                    {
                         arrBadRegKeys.Add(badRegKey);
-                    }
 
                     // Generate a restore file and delete keys & values
                     xmlReg.deleteAsXml(arrBadRegKeys, strBackupFile);
@@ -284,11 +285,6 @@ namespace Little_Registry_Cleaner
 
         #region "Menu Events"
         #region "Global Menu Events"
-        private void StartOptimizer(object sender, EventArgs e)
-        {
-            Optimizer.Optimizer dlgOptimizer = new Little_Registry_Cleaner.Optimizer.Optimizer();
-            dlgOptimizer.ShowDialog();
-        }
 
         private void LaunchHelpFile(object sender, EventArgs e)
         {

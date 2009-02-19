@@ -37,7 +37,7 @@ namespace Little_Registry_Cleaner
         public delegate void UpdateScanSubKeyDelgate(string strSubKey);
         public delegate void UpdateSectionDelegate(string strSection);
 
-        private Utils.Logger loggerScan;
+        private Logger loggerScan = new Logger();
 
         private Thread threadMain;
         private Thread threadCurrent;
@@ -77,14 +77,6 @@ namespace Little_Registry_Cleaner
             // Sets threadMain to current thread
             this.threadMain = Thread.CurrentThread;
 
-            // Create log file
-            string strLogFile = string.Format("{0}\\{1:yyyy}_{1:MM}_{1:dd}_{1:HH}{1:mm}{1:ss}.txt", Little_Registry_Cleaner.Properties.Settings.Default.strOptionsLogDir, DateTime.Now);
-
-            if (!Directory.Exists(Little_Registry_Cleaner.Properties.Settings.Default.strOptionsLogDir))
-                Directory.CreateDirectory(Little_Registry_Cleaner.Properties.Settings.Default.strOptionsLogDir);
-
-            this.loggerScan = new Utils.Logger(strLogFile);
-
             this.progressBar.Position = 0;
             this.progressBar.PositionMin = 0;
             this.progressBar.PositionMax = this.SectionCount;
@@ -92,6 +84,8 @@ namespace Little_Registry_Cleaner
             // Begin scanning
             try
             {
+                this.loggerScan.WriteLine("Starting scan...");
+
                 if (Main.bScanStartup)
                 {
                     this.UpdateSection("Startup entries");
@@ -229,6 +223,10 @@ namespace Little_Registry_Cleaner
                 // Finished Scanning
                 this.loggerScan.WriteLine("Total Items Scanned: " + this.ItemsScanned.ToString());
                 this.loggerScan.WriteLine("Finished Scanning!");
+
+                if (File.Exists(Logger.strLogFilePath))
+                    System.Diagnostics.Process.Start(Logger.strLogFilePath);
+
                 this.Close();
             }
 
@@ -238,8 +236,8 @@ namespace Little_Registry_Cleaner
         /// <summary>
         /// Stores an invalid registry key to array list
         /// </summary>
-        /// <param name="strProblem">Reason its invalid</param>
-        /// <param name="strPath">The path to registry key (including registry hive)</param>
+        /// <param name="Problem">Reason its invalid</param>
+        /// <param name="Path">The path to registry key (including registry hive)</param>
         /// <returns>True if it was added</returns>
         public static bool StoreInvalidKey(string Problem, string Path)
         {
@@ -249,9 +247,9 @@ namespace Little_Registry_Cleaner
         /// <summary>
         /// Stores an invalid registry key to array list
         /// </summary>
-        /// <param name="strProblem">Reason its invalid</param>
-        /// <param name="strPath">The path to registry key (including registry hive)</param>
-        /// <param name="strValueName">Value name (leave blank if theres none)</param>
+        /// <param name="Problem">Reason its invalid</param>
+        /// <param name="Path">The path to registry key (including registry hive)</param>
+        /// <param name="ValueName">Value name (leave blank if theres none)</param>
         /// <returns>True if it was added</returns>
         public static bool StoreInvalidKey(string Problem, string Path, string ValueName)
         {
@@ -262,7 +260,7 @@ namespace Little_Registry_Cleaner
             if (arrBadRegistryKeys.Add(ScanDlg.CurrentSection, Problem, Path, ValueName) > 0)
             {
                 self.IncrementProblems();
-                Utils.Logger.WriteToFile(Utils.Logger.strLogFilePath, "Found invalid registry key. Key Name: \"" + ValueName + "\" Path: \"" + Path + "\" Reason: \"" + Problem + "\"");
+                Logger.WriteToFile(Logger.strLogFilePath, "Found invalid registry key. Key Name: \"" + ValueName + "\" Path: \"" + Path + "\" Reason: \"" + Problem + "\"");
                 return true;
             }
 
@@ -272,9 +270,9 @@ namespace Little_Registry_Cleaner
         /// <summary>
         /// Checks for registry subkey in ignore list
         /// </summary>
-        /// <param name="strPath">Registry subkey</param>
+        /// <param name="Path">Registry subkey</param>
         /// <returns>true if it is on the ignore list, otherwise false</returns>
-        private static bool IsOnIgnoreList(string strPath)
+        private static bool IsOnIgnoreList(string Path)
         {
             if (Properties.Settings.Default.arrayOptionsExcludeList != null)
             {
@@ -283,7 +281,7 @@ namespace Little_Registry_Cleaner
                     string[] arrayExcludePath = (string[])Properties.Settings.Default.arrayOptionsExcludeList[i];
                     string strExcludePath = string.Format("{0}\\{1}", arrayExcludePath[0], arrayExcludePath[1]);
 
-                    if (string.Compare(strExcludePath, strPath) == 0)
+                    if (string.Compare(strExcludePath, Path) == 0)
                         return true;
                 }
             }

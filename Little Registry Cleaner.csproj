@@ -47,6 +47,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -82,20 +83,8 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
-    <Compile Include="BadRegKeyArray.cs" />
-    <Compile Include="Optimizer\HiveManager.cs" />
-    <Compile Include="Optimizer\Optimizer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Optimizer\Optimizer.Designer.cs">
-      <DependentUpon>Optimizer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Optimizer\SecureDesktop.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Optimizer\SecureDesktop.Designer.cs">
-      <DependentUpon>SecureDesktop.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Misc\BadRegKeyArray.cs" />
+    <Compile Include="Misc\Logger.cs" />
     <Compile Include="Misc\Permissions.cs" />
     <Compile Include="Misc\RegEditGo.cs" />
     <Compile Include="StartupManager\EditRunItem.cs">
@@ -163,12 +152,6 @@
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Optimizer\Optimizer.resx">
-      <DependentUpon>Optimizer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Optimizer\SecureDesktop.resx">
-      <DependentUpon>SecureDesktop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StartupManager\EditRunItem.resx">
       <DependentUpon>EditRunItem.cs</DependentUpon>

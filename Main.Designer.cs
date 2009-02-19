@@ -80,7 +80,6 @@
             this.scanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fixToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.restoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.optimizeRegistryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -106,7 +105,6 @@
             this.toolStripButtonScan = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonFix = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonRestore = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonOptimizer = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButtonSettings = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonHelp = new System.Windows.Forms.ToolStripButton();
@@ -441,7 +439,6 @@
             this.scanToolStripMenuItem,
             this.fixToolStripMenuItem,
             this.restoreToolStripMenuItem,
-            this.optimizeRegistryToolStripMenuItem,
             this.toolStripSeparator3,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
@@ -452,7 +449,7 @@
             // 
             this.scanToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("scanToolStripMenuItem.Image")));
             this.scanToolStripMenuItem.Name = "scanToolStripMenuItem";
-            this.scanToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.scanToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.scanToolStripMenuItem.Text = "Scan registry";
             this.scanToolStripMenuItem.Click += new System.EventHandler(this.ScanRegistry);
             // 
@@ -461,7 +458,7 @@
             this.fixToolStripMenuItem.Enabled = false;
             this.fixToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("fixToolStripMenuItem.Image")));
             this.fixToolStripMenuItem.Name = "fixToolStripMenuItem";
-            this.fixToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.fixToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.fixToolStripMenuItem.Text = "Fix problems";
             this.fixToolStripMenuItem.Click += new System.EventHandler(this.FixRegistry);
             // 
@@ -469,28 +466,20 @@
             // 
             this.restoreToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("restoreToolStripMenuItem.Image")));
             this.restoreToolStripMenuItem.Name = "restoreToolStripMenuItem";
-            this.restoreToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.restoreToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.restoreToolStripMenuItem.Text = "Restore registry";
             this.restoreToolStripMenuItem.Click += new System.EventHandler(this.RestoreRegistry);
-            // 
-            // optimizeRegistryToolStripMenuItem
-            // 
-            this.optimizeRegistryToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("optimizeRegistryToolStripMenuItem.Image")));
-            this.optimizeRegistryToolStripMenuItem.Name = "optimizeRegistryToolStripMenuItem";
-            this.optimizeRegistryToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
-            this.optimizeRegistryToolStripMenuItem.Text = "Optimize registry";
-            this.optimizeRegistryToolStripMenuItem.Click += new System.EventHandler(this.StartOptimizer);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(161, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(152, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -650,7 +639,6 @@
             this.toolStripButtonScan,
             this.toolStripButtonFix,
             this.toolStripButtonRestore,
-            this.toolStripButtonOptimizer,
             this.toolStripSeparator5,
             this.toolStripButtonSettings,
             this.toolStripButtonHelp});
@@ -691,16 +679,6 @@
             this.toolStripButtonRestore.Text = "Restore registry";
             this.toolStripButtonRestore.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripButtonRestore.Click += new System.EventHandler(this.RestoreRegistry);
-            // 
-            // toolStripButtonOptimizer
-            // 
-            this.toolStripButtonOptimizer.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonOptimizer.Image")));
-            this.toolStripButtonOptimizer.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonOptimizer.Name = "toolStripButtonOptimizer";
-            this.toolStripButtonOptimizer.Size = new System.Drawing.Size(63, 51);
-            this.toolStripButtonOptimizer.Text = "Optimizer";
-            this.toolStripButtonOptimizer.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripButtonOptimizer.Click += new System.EventHandler(this.StartOptimizer);
             // 
             // toolStripSeparator5
             // 
@@ -854,8 +832,6 @@
         private System.Windows.Forms.ToolStripButton toolStripButtonHelp;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
         private System.Windows.Forms.ImageList imageListTreeView;
-        private System.Windows.Forms.ToolStripMenuItem optimizeRegistryToolStripMenuItem;
-        private System.Windows.Forms.ToolStripButton toolStripButtonOptimizer;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemOptions;
