@@ -19,8 +19,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.IO;
 using System.Drawing;
 using System.Windows.Forms;
@@ -373,7 +373,7 @@ namespace Little_Registry_Cleaner
                 if (!FileExists(FilePath))
                     return ExtractFileLocation(CmdLine, out FilePath, out Args);
             }
-            catch (Exception)
+            catch
             {
                 return ExtractFileLocation(CmdLine, out FilePath, out Args);
             }
@@ -404,7 +404,7 @@ namespace Little_Registry_Cleaner
             int nPos = 0;
             foreach (char ch in strFilePath.ToCharArray())
             {
-               strFileFullPath = strFileFullPath.Append(ch);
+                strFileFullPath = strFileFullPath.Append(ch);
                 nPos++;
 
                 // See if part exists
@@ -416,11 +416,8 @@ namespace Little_Registry_Cleaner
                }
             }
 
-            if (bRet)
-            {
-                if (nPos > 0)
-                    Arguments = strFilePath.Remove(0, nPos).Trim();
-            }
+            if (bRet && nPos > 0)
+                Arguments = strFilePath.Remove(0, nPos).Trim();
 
             return bRet;
         }
@@ -872,8 +869,38 @@ namespace Little_Registry_Cleaner
 
             return strSubKey;
         }
+
+        /// <summary>
+        /// Checks for default program then launches URI
+        /// </summary>
+        /// <param name="WebAddress">The address to launch</param>
+        /// <returns>False if the scheme is not set</returns>
+        public static bool LaunchURI(string WebAddress)
+        {
+            RegistryKey rk = Registry.ClassesRoot.OpenSubKey(@"HTTP\shell\open\command");
+            string strURL = string.Copy(WebAddress);
+            string strBrowserPath, strBrowserArgs;
+
+            if (rk == null || string.IsNullOrEmpty(strURL))
+                return false;
+
+            string strBrowserCmd = (string)rk.GetValue("");
+
+            if (!Utils.ExtractArguments(strBrowserCmd, out strBrowserPath, out strBrowserArgs))
+                return false;
+
+            strBrowserArgs = strBrowserArgs.Replace("%1", strURL);
+
+            try
+            {
+                Process.Start(strBrowserPath, strBrowserArgs);
+            }
+            catch
+            {
+                return false;
+            }
+
+            return true;
+        }
     }
-
-    
-
 }

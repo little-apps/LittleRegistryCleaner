@@ -442,9 +442,9 @@ namespace Common_Tools
                 ima.Dispose();
                 gtemp.Dispose();
             }
-            catch (ArgumentNullException)
+            catch
             {
-                return;
+                OnPaint(e);
             }
         }
 

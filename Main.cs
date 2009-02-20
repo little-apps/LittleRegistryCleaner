@@ -182,7 +182,7 @@ namespace Little_Registry_Cleaner
                 string strVersion = "", strChangeLogURL = "", strDownloadURL = "", strReleaseDate = "";
                 if (UpdateDlg.FindUpdate(ref strVersion, ref strReleaseDate,ref strChangeLogURL, ref strDownloadURL))
                     if (MessageBox.Show(this, "A newer version is available. Would you like to download it?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
-                        LaunchURI(strDownloadURL);
+                        Utils.LaunchURI(strDownloadURL);
             }
         }
 
@@ -253,34 +253,6 @@ namespace Little_Registry_Cleaner
 
             if (MessageBox.Show(this, "Are you sure you want to exit?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
                 e.Cancel = true;
-        }
-
-        /// <summary>
-        /// Checks for default program then launches URI
-        /// </summary>
-        /// <param name="uri">The URI to launch</param>
-        /// <returns>False if the scheme is not set</returns>
-        public static bool LaunchURI(string strUri)
-        {
-            if (!string.IsNullOrEmpty(strUri))
-            {
-                Uri uri = new Uri(strUri);
-
-                if (Uri.CheckSchemeName(uri.Scheme))
-                {
-                    try
-                    {
-                        if (Process.Start(uri.ToString()) != null)
-                            return true;
-                    }
-                    catch (Exception)
-                    {
-                        return false;
-                    }
-                }
-            }
-
-            return false;
         }
 
         #region "Menu Events"
@@ -368,7 +340,7 @@ namespace Little_Registry_Cleaner
 
         private void visitWebsiteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            LaunchURI("http://sourceforge.net/projects/littlecleaner/");
+            Utils.LaunchURI("http://sourceforge.net/projects/littlecleaner/");
         }
 
         private void viewChangeLogToolStripMenuItem_Click(object sender, EventArgs e)

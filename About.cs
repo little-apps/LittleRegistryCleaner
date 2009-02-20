@@ -44,7 +44,7 @@ namespace Little_Registry_Cleaner
 
         private void buttonWebsite_Click(object sender, EventArgs e)
         {
-            Main.LaunchURI("http://littlecleaner.sourceforge.net/");
+            Utils.LaunchURI("http://littlecleaner.sourceforge.net/");
         }
 
         private void buttonClose_Click(object sender, EventArgs e)
@@ -54,13 +54,13 @@ namespace Little_Registry_Cleaner
 
         private void linkLabelAuthor_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Main.LaunchURI("mailto:nick@littleapps.co.cc");
+            Utils.LaunchURI("mailto:nick@littleapps.co.cc");
 
         }
 
         private void richTextBox1_LinkClicked(object sender, LinkClickedEventArgs e)
         {
-            Main.LaunchURI(e.LinkText);
+            Utils.LaunchURI(e.LinkText);
         }
     }
 }

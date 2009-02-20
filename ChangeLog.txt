@@ -23,6 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - TODO: Check for missing DLLs that are ran by rundll32 and regsvr32
 - TODO: Create full registry backup when LRC is ran for the first time
 - TODO: Show dialog when creating a system restore point
+- TODO: Get arguments using regex: "{0,2}(?:(?:\\\\(?:\w+)\\(?:\w+\$?)|(?:[A-Z]):)(?:\\(?:[^\\:*?"'<>|\r\n]+))+|(?:[^\\:*?"'<>|\r\n]+))\.exe"?\ (?<commandstring>(?:[^\r\n]*(?=")|[^\r\n]*))
 
 - Dialogs are opened with main dialog as owner
 - Added Drivers Section
@@ -218,3 +219,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Opens log file after scanning finishes
 - Doesnt show crash reporter when debugging is enabled
 - Optimizer will now be in its own project (Little Registry Optimizer)
+- LaunchURI() checks for default browser HKCR\HTTP\shell\open\command
+
++ Version 1.1 Released

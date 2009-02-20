@@ -66,7 +66,7 @@ namespace Little_Registry_Cleaner
                 retVal = AdjustTokenPrivileges(htok, false, ref tp, 0, IntPtr.Zero, IntPtr.Zero);
                 return retVal;
             }
-            catch (Exception)
+            catch
             {
                 return false;
             }
