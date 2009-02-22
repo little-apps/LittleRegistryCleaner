@@ -217,6 +217,9 @@ namespace Little_Registry_Cleaner.StartupManager
                 {
                     StartupManagerNode node = this.treeViewAdv1.SelectedNode.Tag as StartupManagerNode;
 
+                    if (!node.IsLeaf)
+                        return;
+
                     string strSection = (node.Parent as StartupManagerNode).Section;
 
                     if (Directory.Exists(strSection))
@@ -254,6 +257,9 @@ namespace Little_Registry_Cleaner.StartupManager
             {
                 StartupManagerNode node = this.treeViewAdv1.SelectedNode.Tag as StartupManagerNode;
 
+                if (!node.IsLeaf)
+                    return;
+
                 string strSection = (node.Parent as StartupManagerNode).Section;
 
                 EditRunItem frmEditRunItem = new EditRunItem(node.Item, strSection, node.Path, node.Args);
@@ -266,6 +272,9 @@ namespace Little_Registry_Cleaner.StartupManager
         {
             if (this.treeViewAdv1.SelectedNodes.Count > 0)
             {
+                if (!(this.treeViewAdv1.SelectedNode.Tag as StartupManagerNode).IsLeaf)
+                    return;
+
                 string strItem = (this.treeViewAdv1.SelectedNode.Tag as StartupManagerNode).Item;
                 string strPath = (this.treeViewAdv1.SelectedNode.Parent.Tag as StartupManagerNode).Section;
 
@@ -284,6 +293,9 @@ namespace Little_Registry_Cleaner.StartupManager
         {
             if (this.treeViewAdv1.SelectedNodes.Count > 0)
             {
+                if (!(this.treeViewAdv1.SelectedNode.Tag as StartupManagerNode).IsLeaf)
+                    return;
+
                 if (MessageBox.Show(this, "Are you sure you want to run this program?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     string strFilepath = (this.treeViewAdv1.SelectedNode.Tag as StartupManagerNode).Path;
@@ -340,6 +352,14 @@ namespace Little_Registry_Cleaner.StartupManager
         {
             get { return _path; }
             set { _path = value; }
+        }
+
+        public override bool IsLeaf
+        {
+            get
+            {
+                return (string.IsNullOrEmpty(strSection));
+            }
         }
 
         public StartupManagerNode() 

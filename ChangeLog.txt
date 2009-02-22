@@ -220,5 +220,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Doesnt show crash reporter when debugging is enabled
 - Optimizer will now be in its own project (Little Registry Optimizer)
 - LaunchURI() checks for default browser HKCR\HTTP\shell\open\command
+- Startup Manager will check if item is leaf before executing operation
 
 + Version 1.1 Released
