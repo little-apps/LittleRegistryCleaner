@@ -223,3 +223,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Startup Manager will check if item is leaf before executing operation
 
 + Version 1.1 Released
+
+- Removed HKLM from subkey path in RemoveFromRegistry()

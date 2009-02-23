@@ -119,8 +119,10 @@ namespace Little_Registry_Cleaner.UninstallManager
 
         public void RemoveFromRegistry()
         {
-            string strKeyName = @"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\" + Key;
-            Registry.LocalMachine.DeleteSubKeyTree(strKeyName);
+            string strKeyName = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\" + Key;
+
+            if (Registry.LocalMachine.OpenSubKey(strKeyName) != null)
+                Registry.LocalMachine.DeleteSubKeyTree(strKeyName);
         }
 
         public override string ToString()
