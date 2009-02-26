@@ -225,3 +225,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 + Version 1.1 Released
 
 - Removed HKLM from subkey path in RemoveFromRegistry()
+- Removed View Changelog from main menu
