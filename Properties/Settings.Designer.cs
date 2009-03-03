@@ -184,5 +184,16 @@ namespace Little_Registry_Cleaner.Properties {
                 this["bOptionsRemMedia"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.DateTime dtLastStart {
+            get {
+                return ((global::System.DateTime)(this["dtLastStart"]));
+            }
+            set {
+                this["dtLastStart"] = value;
+            }
+        }
     }
 }

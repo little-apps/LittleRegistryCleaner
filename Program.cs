@@ -49,6 +49,10 @@ namespace Little_Registry_Cleaner
             // Set the build time
             Properties.Settings.Default.strBuildTime = new DateTime(2000, 1, 1).AddDays(Assembly.GetExecutingAssembly().GetName().Version.Build).ToShortDateString();
 
+            // Set last start time if its null
+            if (Properties.Settings.Default.dtLastStart == null)
+                Properties.Settings.Default.dtLastStart = DateTime.Now;
+
             // Create event log source
             if (!EventLog.SourceExists(Application.ProductName))
                 EventLog.CreateEventSource(Application.ProductName, "Application");
@@ -93,8 +97,13 @@ namespace Little_Registry_Cleaner
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Main());
 
+            // Release Mutex
             mutexMain.ReleaseMutex();
 
+            // Set last time program started
+            Properties.Settings.Default.dtLastStart = DateTime.Now;
+
+            // Save settings
             Properties.Settings.Default.Save();
 
             return;

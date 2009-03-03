@@ -226,3 +226,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 - Removed HKLM from subkey path in RemoveFromRegistry()
 - Removed View Changelog from main menu
+- Checks for updates every 2 weeks
