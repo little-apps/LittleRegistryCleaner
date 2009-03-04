@@ -87,8 +87,10 @@ namespace Little_Registry_Cleaner
             }   
 
             // Add event handler for thread exceptions
+#if (!DEBUG)
             AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);
             Application.ThreadException += new ThreadExceptionEventHandler(Application_ThreadException);
+#endif
 
             // Get SeBackupPrivilege and SeRestorePrivilege
             Permissions.SetPrivileges();
