@@ -229,3 +229,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Checks for updates every 2 weeks
 - Fixed invalid argument when trying to view registry key without value name
 - Crash reporter wont be displayed when debugging
+- Updated assembly info

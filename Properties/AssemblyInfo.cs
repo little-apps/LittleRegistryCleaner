@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Little Apps (http://www.littleapps.co.cc)")]
 [assembly: AssemblyProduct("Little Registry Cleaner")]
-[assembly: AssemblyCopyright("Copyright © Little Apps 2008")]
+[assembly: AssemblyCopyright("Copyright © Little Apps 2008-2009")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
