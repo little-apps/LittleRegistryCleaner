@@ -230,3 +230,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Fixed invalid argument when trying to view registry key without value name
 - Crash reporter wont be displayed when debugging
 - Updated assembly info
+- Fixed installer script so it deletes desktop shortcut
+- Checks for missing CLSID references in ProgID's

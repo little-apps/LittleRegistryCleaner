@@ -41,9 +41,9 @@ namespace Little_Registry_Cleaner.Scanners
                 ScanCLSIDSubKey(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Classes\\CLSID"));
 
                 // Scan file extensions
-                ScanFileExts(Registry.ClassesRoot);
-                ScanFileExts(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Classes"));
-                ScanFileExts(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Classes"));
+                ScanClasses (Registry.ClassesRoot);
+                ScanClasses(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Classes"));
+                ScanClasses(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Classes"));
 
                 // Scan appids
                 ScanAppIds(Registry.ClassesRoot.OpenSubKey("AppID"));
@@ -168,28 +168,46 @@ namespace Little_Registry_Cleaner.Scanners
         /// <summary>
         /// Finds invalid ProgIDs referenced
         /// </summary>
-        private static void ScanFileExts(RegistryKey regKey)
+        private static void ScanClasses(RegistryKey regKey)
         {
-            RegistryKey rkFileExt = null;
-
             if (regKey == null)
                 return;
 
-            foreach (string strFileExt in regKey.GetSubKeyNames())
+            foreach (string strSubKey in regKey.GetSubKeyNames())
             {
-                // Skip if its not a file extension or subkey doesnt exist
-                if ((rkFileExt = regKey.OpenSubKey(strFileExt)) == null || strFileExt[0] != '.')
-                    continue;
 
-                // Update scan dialog
-                ScanDlg.UpdateScanSubKey(rkFileExt.ToString());
+                if (strSubKey[0] == '.')
+                {
+                    RegistryKey rkFileExt = regKey.OpenSubKey(strSubKey);
 
-                // Find reference to ProgID
-                string strProgID = rkFileExt.GetValue("") as string;
+                    if (rkFileExt == null)
+                        continue;
 
-                if (!string.IsNullOrEmpty(strProgID))
-                    if (!ProgIDExists(strProgID))
-                        ScanDlg.StoreInvalidKey("Missing ProgID reference", rkFileExt.ToString());
+                    // Update scan dialog
+                    ScanDlg.UpdateScanSubKey(rkFileExt.ToString());
+
+                    // Find reference to ProgID
+                    string strProgID = rkFileExt.GetValue("") as string;
+
+                    if (!string.IsNullOrEmpty(strProgID))
+                        if (!ProgIDExists(strProgID))
+                            ScanDlg.StoreInvalidKey("Missing ProgID reference", rkFileExt.ToString());
+                }
+                else
+                {
+                    using (RegistryKey rkCLSID = regKey.OpenSubKey(string.Format("{0}\\CLSID", strSubKey)))
+                    {
+                        if (rkCLSID != null)
+                        {
+                            string strCLSID = rkCLSID.GetValue("") as string;
+
+                            if (!string.IsNullOrEmpty(strCLSID))
+                                if (!CLSIDExists(strCLSID))
+                                    ScanDlg.StoreInvalidKey("Missing CLSID reference", string.Format("{0}\\{1}", regKey.Name, strSubKey));
+                        }
+                    }
+
+                }
             }
 
             regKey.Close();
