@@ -265,6 +265,11 @@ namespace Little_Registry_Cleaner
 
         #endregion
         
+        /// <summary>
+        /// Parses the registry key path and sees if exists
+        /// </summary>
+        /// <param name="InPath">The registry path (including hive)</param>
+        /// <returns>True if it exists</returns>
         public static bool RegKeyExists(string InPath)
         {
             string strPath = InPath;
@@ -288,7 +293,7 @@ namespace Little_Registry_Cleaner
         public static bool RegKeyExists(string MainKey, string SubKey)
         {
             bool bKeyExists = false;
-            RegistryKey reg = RegOpenKey(MainKey, SubKey, false);
+            RegistryKey reg = RegOpenKey(MainKey, SubKey, true);
 
             if (reg != null)
             {

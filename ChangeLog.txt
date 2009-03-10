@@ -234,3 +234,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Checks for missing CLSID references in ProgID's
 - Added sorter for List View in main dialog
 - Scans for missing installer folders (HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders)
+- Makes sure registry key is writable before adding it to array
