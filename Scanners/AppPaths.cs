@@ -34,62 +34,83 @@ namespace Little_Registry_Cleaner.Scanners
         {
             try
             {
-                RegistryKey regKey = Registry.LocalMachine.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\App Paths");
-
-                if (regKey == null)
-                    return;
-
-                foreach (string strSubKey in regKey.GetSubKeyNames())
-                {
-                    RegistryKey regKey2 = regKey.OpenSubKey(strSubKey);
-
-                    if (regKey2 != null)
-                    {
-                        ScanDlg.UpdateScanSubKey(regKey2.ToString());
-
-                        if (Convert.ToInt32(regKey2.GetValue("BlockOnTSNonInstallMode")) == 1)
-                            continue;
-
-                        string strAppPath = regKey2.GetValue("") as string;
-                        string strAppDir = regKey2.GetValue("Path") as string;
-
-                        if (string.IsNullOrEmpty(strAppPath))
-                        {
-                            ScanDlg.StoreInvalidKey("Invalid registry key", regKey2.ToString());
-                            continue;
-                        }
-
-                        bool bAppExists = false;
-
-                        if (!string.IsNullOrEmpty(strAppDir))
-                        {
-                            if (Utils.SearchPath(strAppPath, strAppPath) != "")
-                                bAppExists = true;
-                            else if (Utils.SearchPath(strSubKey, strAppPath) != "")
-                                bAppExists = true;
-                        }
-
-                        if (bAppExists == false)
-                        {
-                            if (Utils.FileExists(strAppPath))
-                                bAppExists = true;
-                            else if (Utils.FileExists(strAppPath))
-                                bAppExists = true;
-                        }
-
-                        // Check if file exists
-                        if (!bAppExists)
-                            ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString());
-                    }
-                }
-
-                regKey.Close();
-
+                ScanInstallFolders();
+                ScanAppPaths();
             }
             catch (System.Security.SecurityException ex)
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
             }
+        }
+
+        private static void ScanInstallFolders()
+        {
+            RegistryKey regKey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders");
+
+            if (regKey == null)
+                return;
+
+            ScanDlg.UpdateScanSubKey(regKey.Name);
+
+            foreach (string strFolder in regKey.GetValueNames())
+            {
+                if (!Utils.DirExists(strFolder))
+                    ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strFolder);
+            }
+        }
+
+        private static void ScanAppPaths()
+        {
+            RegistryKey regKey = Registry.LocalMachine.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\App Paths");
+
+            if (regKey == null)
+                return;
+
+            foreach (string strSubKey in regKey.GetSubKeyNames())
+            {
+                RegistryKey regKey2 = regKey.OpenSubKey(strSubKey);
+
+                if (regKey2 != null)
+                {
+                    ScanDlg.UpdateScanSubKey(regKey2.ToString());
+
+                    if (Convert.ToInt32(regKey2.GetValue("BlockOnTSNonInstallMode")) == 1)
+                        continue;
+
+                    string strAppPath = regKey2.GetValue("") as string;
+                    string strAppDir = regKey2.GetValue("Path") as string;
+
+                    if (string.IsNullOrEmpty(strAppPath))
+                    {
+                        ScanDlg.StoreInvalidKey("Invalid registry key", regKey2.ToString());
+                        continue;
+                    }
+
+                    bool bAppExists = false;
+
+                    if (!string.IsNullOrEmpty(strAppDir))
+                    {
+                        if (Utils.SearchPath(strAppPath, strAppPath) != "")
+                            bAppExists = true;
+                        else if (Utils.SearchPath(strSubKey, strAppPath) != "")
+                            bAppExists = true;
+                    }
+
+                    if (bAppExists == false)
+                    {
+                        if (Utils.FileExists(strAppPath))
+                            bAppExists = true;
+                        else if (Utils.FileExists(strAppPath))
+                            bAppExists = true;
+                    }
+
+                    // Check if file exists
+                    if (!bAppExists)
+                        ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString());
+                }
+            }
+
+            regKey.Close();
         }
     }
 }

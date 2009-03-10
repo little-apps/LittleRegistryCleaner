@@ -27,7 +27,6 @@ namespace Little_Registry_Cleaner.Scanners
 {
     public static class COMObjects
     {
-        
         /// <summary>
         /// Scans ActiveX/COM Objects
         /// </summary>
@@ -175,6 +174,8 @@ namespace Little_Registry_Cleaner.Scanners
 
             foreach (string strSubKey in regKey.GetSubKeyNames())
             {
+                // Update scan dialog
+                ScanDlg.UpdateScanSubKey(string.Format("{0}\\{1}", regKey.Name, strSubKey));
 
                 if (strSubKey[0] == '.')
                 {
@@ -206,7 +207,13 @@ namespace Little_Registry_Cleaner.Scanners
                                     ScanDlg.StoreInvalidKey("Missing CLSID reference", string.Format("{0}\\{1}", regKey.Name, strSubKey));
                         }
                     }
+                }
 
+                // Check for unused progid/extension
+                using (RegistryKey rk = regKey.OpenSubKey(strSubKey))
+                {
+                    if (rk.ValueCount <= 0 && rk.SubKeyCount <= 0)
+                        ScanDlg.StoreInvalidKey("Unused ProgID/File Extension", rk.Name);
                 }
             }
 

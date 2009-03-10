@@ -49,6 +49,8 @@ namespace Little_Registry_Cleaner
         public static bool bScanSharedDLL = true;
         public static bool bScanHistoryList = true;
 
+        private BadRegKeySorter listViewItemSorter = new BadRegKeySorter();
+
         public Main()
         {
             InitializeComponent();
@@ -89,6 +91,8 @@ namespace Little_Registry_Cleaner
                 foreach (BadRegistryKey p in ScanDlg.arrBadRegistryKeys)
                     this.listResults.Items.Add(p);
 
+                // Sort and resize columns
+                this.listResults.Sort();
                 this.listResults.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
 
                 // Compute time between start and end of scan
@@ -176,6 +180,9 @@ namespace Little_Registry_Cleaner
             // Expand all sections
             this.treeView1.Nodes[0].ExpandAll();
 
+            // Add List View Item Sorter
+            this.listResults.ListViewItemSorter = this.listViewItemSorter;
+
             // See if we have the current version
             if (Properties.Settings.Default.bOptionsAutoUpdate)
             {
@@ -258,6 +265,33 @@ namespace Little_Registry_Cleaner
 
             if (MessageBox.Show(this, "Are you sure you want to exit?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
                 e.Cancel = true;
+        }
+
+        private void listResults_ColumnClick(object sender, ColumnClickEventArgs e)
+        {
+            // Determine if clicked column is already the column that is being sorted.
+            if (e.Column == this.listViewItemSorter.SortColumn)
+            {
+                // Reverse the current sort direction for this column.
+                if (this.listViewItemSorter.Order == SortOrder.Ascending)
+                {
+                    this.listViewItemSorter.Order = SortOrder.Descending;
+                }
+                else
+                {
+                    this.listViewItemSorter.Order = SortOrder.Ascending;
+                }
+            }
+            else
+            {
+                // Set the column number that is to be sorted; default to ascending.
+                this.listViewItemSorter.SortColumn = e.Column;
+                this.listViewItemSorter.Order = SortOrder.Ascending;
+            }
+
+            // Perform the sort with these new sort options.
+            this.listResults.Sort();
+
         }
 
         #region "Menu Events"
@@ -410,6 +444,8 @@ namespace Little_Registry_Cleaner
             this.Close();
         }
         #endregion
+
+        
         #endregion
     }
 }
