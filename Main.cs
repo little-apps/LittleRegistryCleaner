@@ -51,6 +51,12 @@ namespace Little_Registry_Cleaner
 
         private BadRegKeySorter listViewItemSorter = new BadRegKeySorter();
 
+        private static Logger _logger;
+        public static Logger Logger
+        {
+            get { return _logger; }
+        }
+
         public Main()
         {
             InitializeComponent();
@@ -80,6 +86,9 @@ namespace Little_Registry_Cleaner
             // Read start time of scan
             DateTime dtStart = DateTime.Now;
 
+            // Create new logger instance
+            Main._logger = new Logger();
+
             // Open Scan dialog
             ScanDlg frmScanBox = new ScanDlg(nSectionCount);
             frmScanBox.ShowDialog(this);
@@ -97,6 +106,9 @@ namespace Little_Registry_Cleaner
 
                 // Compute time between start and end of scan
                 TimeSpan ts = DateTime.Now - dtStart;
+
+                // Display log file
+                Main.Logger.DisplayLogFile();
 
                 if (Form.ActiveForm == this) 
                     // Notify user using message box

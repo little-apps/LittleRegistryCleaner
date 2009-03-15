@@ -37,8 +37,6 @@ namespace Little_Registry_Cleaner
         public delegate void UpdateScanSubKeyDelgate(string strSubKey);
         public delegate void UpdateSectionDelegate(string strSection);
 
-        private Logger loggerScan = new Logger();
-
         private Thread threadMain;
         private Thread threadCurrent;
 
@@ -84,7 +82,7 @@ namespace Little_Registry_Cleaner
             // Begin scanning
             try
             {
-                this.loggerScan.WriteLine("Starting scan...");
+                Main.Logger.WriteLine("Starting scan...");
 
                 if (Main.bScanStartup)
                 {
@@ -212,7 +210,7 @@ namespace Little_Registry_Cleaner
             catch (ThreadAbortException)
             {
                 // Scanning was aborted
-                this.loggerScan.WriteLine("User aborted scan... Exiting.");
+                Main.Logger.WriteLine("User aborted scan... Exiting.");
                 if (this.threadCurrent.IsAlive)
                     this.threadCurrent.Abort();
 
@@ -221,11 +219,8 @@ namespace Little_Registry_Cleaner
             finally
             {
                 // Finished Scanning
-                this.loggerScan.WriteLine("Total Items Scanned: " + this.ItemsScanned.ToString());
-                this.loggerScan.WriteLine("Finished Scanning!");
-
-                if (File.Exists(Logger.strLogFilePath))
-                    System.Diagnostics.Process.Start(Logger.strLogFilePath);
+                Main.Logger.WriteLine("Total Items Scanned: " + this.ItemsScanned.ToString());
+                Main.Logger.WriteLine("Finished Scanning!");
 
                 this.Close();
             }
@@ -260,7 +255,7 @@ namespace Little_Registry_Cleaner
             if (arrBadRegistryKeys.Add(ScanDlg.CurrentSection, Problem, Path, ValueName) > 0)
             {
                 self.IncrementProblems();
-                Logger.WriteToFile(Logger.strLogFilePath, "Found invalid registry key. Key Name: \"" + ValueName + "\" Path: \"" + Path + "\" Reason: \"" + Problem + "\"");
+                Main.Logger.WriteLine("Found invalid registry key. Key Name: \"" + ValueName + "\" Path: \"" + Path + "\" Reason: \"" + Problem + "\"");
                 return true;
             }
 
@@ -329,7 +324,7 @@ namespace Little_Registry_Cleaner
             string strText = "Scanning: " + SectionName;
 
             this.progressBar.Text = strText;
-            this.loggerScan.WriteLine(strText);
+            Main.Logger.WriteLine(strText);
         }
 
         private string strCurrentSection = "";

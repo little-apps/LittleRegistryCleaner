@@ -235,3 +235,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Added sorter for List View in main dialog
 - Scans for missing installer folders (HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders)
 - Makes sure registry key is writable before adding it to array
+- Displays type of exception in crash reporter
+- Log files are copied and displayed only if there were bad registry keys

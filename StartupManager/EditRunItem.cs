@@ -67,7 +67,7 @@ namespace Little_Registry_Cleaner.StartupManager
                 string strMainKey = strSection.Substring(0, strSection.IndexOf('\\'));
                 string strSubKey = strSection.Substring(strSection.IndexOf('\\') + 1);
 
-                RegistryKey rk = Utils.RegOpenKey(strMainKey, strSubKey, true);
+                RegistryKey rk = Utils.RegOpenKey(strMainKey, strSubKey);
 
                 if (rk != null)
                 {

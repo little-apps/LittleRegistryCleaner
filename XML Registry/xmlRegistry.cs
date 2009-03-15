@@ -675,7 +675,7 @@ namespace Little_Registry_Cleaner.Xml
                 strPath = "";
 
             // open the key now
-            RegistryKey reg = Utils.RegOpenKey(strMainKeyname, strPath, false);
+            RegistryKey reg = Utils.RegOpenKey(strMainKeyname, strPath);
 
             if (reg != null) // it's ok
             {
@@ -950,7 +950,7 @@ namespace Little_Registry_Cleaner.Xml
             try
             {
                 // open the key now
-                reg = Utils.RegOpenKey(strMainKey, strPath, true);
+                reg = Utils.RegOpenKey(strMainKey, strPath);
 
                 if (reg != null) // it's ok
                     return reg;
@@ -1216,7 +1216,7 @@ namespace Little_Registry_Cleaner.Xml
 
         bool deleteRegistryKey(string strBaseKey, string strSubKey, string strLimitValue)
         {
-            RegistryKey regKey = Utils.RegOpenKey(strBaseKey, strSubKey, true);
+            RegistryKey regKey = Utils.RegOpenKey(strBaseKey, strSubKey);
 
             if (regKey == null)
                 return false;

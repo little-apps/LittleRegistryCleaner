@@ -293,7 +293,7 @@ namespace Little_Registry_Cleaner
         public static bool RegKeyExists(string MainKey, string SubKey)
         {
             bool bKeyExists = false;
-            RegistryKey reg = RegOpenKey(MainKey, SubKey, true);
+            RegistryKey reg = RegOpenKey(MainKey, SubKey);
 
             if (reg != null)
             {
@@ -304,7 +304,7 @@ namespace Little_Registry_Cleaner
             return bKeyExists;
         }
 
-        public static RegistryKey RegOpenKey(string MainKey, string SubKey, bool bWritable)
+        public static RegistryKey RegOpenKey(string MainKey, string SubKey)
         {
             RegistryKey reg = null;
 
@@ -312,23 +312,23 @@ namespace Little_Registry_Cleaner
             {
                 if (MainKey.ToUpper().CompareTo("HKEY_CLASSES_ROOT") == 0)
                 {
-                    reg = Registry.ClassesRoot.OpenSubKey(SubKey, bWritable);
+                    reg = Registry.ClassesRoot.OpenSubKey(SubKey, true);
                 }
                 else if (MainKey.ToUpper().CompareTo("HKEY_CURRENT_USER") == 0)
                 {
-                    reg = Registry.CurrentUser.OpenSubKey(SubKey, bWritable);
+                    reg = Registry.CurrentUser.OpenSubKey(SubKey, true);
                 }
                 else if (MainKey.ToUpper().CompareTo("HKEY_LOCAL_MACHINE") == 0)
                 {
-                    reg = Registry.LocalMachine.OpenSubKey(SubKey, bWritable);
+                    reg = Registry.LocalMachine.OpenSubKey(SubKey, true);
                 }
                 else if (MainKey.ToUpper().CompareTo("HKEY_USERS") == 0)
                 {
-                    reg = Registry.Users.OpenSubKey(SubKey, bWritable);
+                    reg = Registry.Users.OpenSubKey(SubKey, true);
                 }
                 else if (MainKey.ToUpper().CompareTo("HKEY_CURRENT_CONFIG") == 0)
                 {
-                    reg = Registry.CurrentConfig.OpenSubKey(SubKey, bWritable);
+                    reg = Registry.CurrentConfig.OpenSubKey(SubKey, true);
                 }
                 else
                     return null; // break here

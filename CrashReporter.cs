@@ -82,6 +82,7 @@ namespace Little_Registry_Cleaner
             Exception ex = e;
             for (int i = 0; ex != null; ex = ex.InnerException, i++)
             {
+                this.listView2.Items.Add(new ListViewItem(new string[] { "Type #" + i.ToString(), ex.GetType().ToString() }));
                 if (!string.IsNullOrEmpty(ex.Message))
                     this.listView2.Items.Add(new ListViewItem(new string[] { "Message #" + i.ToString(), ex.Message }));
                 if (!string.IsNullOrEmpty(ex.Source))
