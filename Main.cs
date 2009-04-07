@@ -57,6 +57,11 @@ namespace Little_Registry_Cleaner
             get { return _logger; }
         }
 
+        public static DateTime LastStart
+        {
+            get { return DateTime.FromBinary(Properties.Settings.Default.dtLastStart); }
+        }
+
         public Main()
         {
             InitializeComponent();
@@ -105,7 +110,7 @@ namespace Little_Registry_Cleaner
                 this.listResults.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
 
                 // Compute time between start and end of scan
-                TimeSpan ts = DateTime.Now - dtStart;
+                TimeSpan ts = DateTime.Now.Subtract(dtStart);
 
                 // Display log file
                 Main.Logger.DisplayLogFile();
@@ -199,7 +204,7 @@ namespace Little_Registry_Cleaner
             if (Properties.Settings.Default.bOptionsAutoUpdate)
             {
                 // Only check if it has been >= 2 weeks since last check
-                TimeSpan ts = DateTime.Now - Properties.Settings.Default.dtLastStart;
+                TimeSpan ts = DateTime.Now.Subtract(Main.LastStart);
                 if (ts.TotalDays >= 14)
                 {
                     string strVersion = "", strChangeLogURL = "", strDownloadURL = "", strReleaseDate = "";

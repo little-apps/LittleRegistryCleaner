@@ -187,9 +187,10 @@ namespace Little_Registry_Cleaner.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public global::System.DateTime dtLastStart {
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public long dtLastStart {
             get {
-                return ((global::System.DateTime)(this["dtLastStart"]));
+                return ((long)(this["dtLastStart"]));
             }
             set {
                 this["dtLastStart"] = value;

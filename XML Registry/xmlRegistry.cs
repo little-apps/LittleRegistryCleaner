@@ -84,7 +84,7 @@ namespace Little_Registry_Cleaner.Xml
         [DllImport("advapi32.dll", EntryPoint = "RegOpenKey")] public static extern int RegOpenKeyA(int hKey, string lpSubKey, ref int phkResult);
         [DllImport("advapi32.dll")] public static extern int RegCloseKey(int hKey);
         [DllImport("advapi32.dll", EntryPoint = "RegQueryInfoKey")] public static extern int RegQueryInfoKeyA(int hKey, string lpClass, ref int lpcbClass, int lpReserved, ref int lpcSubKeys, ref int lpcbMaxSubKeyLen, ref int lpcbMaxClassLen, ref int lpcValues, ref int lpcbMaxValueNameLen, ref int lpcbMaxValueLen, ref int lpcbSecurityDescriptor, ref System.Runtime.InteropServices.ComTypes.FILETIME lpftLastWriteTime);
-        [DllImport("advapi32.dll", EntryPoint = "RegEnumValue")] public static extern int RegEnumValueA(int hKey, int dwIndex, ref byte lpValueName, ref int lpcbValueName, int lpReserved, ref int lpType, ref byte lpData, ref int lpcbData);
+        [DllImport("advapi32.dll", EntryPoint = "RegEnumValue")] public extern static int RegEnumValueA(int hkey, int index, byte[] lpValueName, ref int lpcbValueName, IntPtr reserved, ref int lpType, IntPtr lpData, ref int lpcbData);
         [DllImport("advapi32.dll", EntryPoint = "RegEnumKeyEx")] public static extern int RegEnumKeyExA(int hKey, int dwIndex, ref byte lpName, ref int lpcbName, int lpReserved, string lpClass, ref int lpcbClass, ref System.Runtime.InteropServices.ComTypes.FILETIME lpftLastWriteTime);
         [DllImport("advapi32.dll", EntryPoint = "RegSetValueEx")] public static extern int RegSetValueExA(int hKey, string lpSubKey, int reserved, int dwType, ref byte lpData, int cbData);
         [DllImport("advapi32.dll", EntryPoint = "RegDeleteValue")] public static extern int RegDeleteValueA(int hKey, string lpValueName);
@@ -141,7 +141,6 @@ namespace Little_Registry_Cleaner.Xml
 
             // Enumerate the child keys, until RegEnumKeyEx fails.
             byte[] achValueName = new byte[cchMaxValue + 1];
-            byte[] achValueData = new byte[cbMaxValueData + 1];
 
             string strDefaultName = IDS_DEFAULTVALUENAME; // (Default)
             string strDefaultValue = IDS_DEFAULTVALUEVALUE; // (value not set)
@@ -156,16 +155,23 @@ namespace Little_Registry_Cleaner.Xml
                     int dwType = 0;
 
                     achValueName[0] = 0;
-                    achValueData[0] = 0;
 
                     string sValueName = "";
+                    
+                    IntPtr ptrValueData = Marshal.AllocHGlobal(cchValueData);
 
-                    retValue = RegEnumValueA(hKey, j, ref achValueName[0],
+                    retValue = RegEnumValueA(
+                        hKey,
+                        j,
+                        achValueName,
                         ref cchValueName,
-                        0,
+                        IntPtr.Zero,
                         ref dwType,
-                        ref achValueData[0],
+                        ptrValueData,
                         ref cchValueData);
+
+                    byte[] achValueData = new byte[cchValueData];
+                    Marshal.Copy(ptrValueData, achValueData, 0, cchValueData);
 
                     if (retValue == ERROR_SUCCESS)
                     {
@@ -182,7 +188,7 @@ namespace Little_Registry_Cleaner.Xml
                             else
                             {
                                 p.setKeyValue(strDefaultName,
-                                    convertToString(REG_SZ, achValueData, cchValueData),
+                                    convertToString(dwType, achValueData, cchValueData),
                                     dwType);
                             }
                         }
@@ -204,6 +210,8 @@ namespace Little_Registry_Cleaner.Xml
 
                         arrValues.Add(p);
                     }
+
+                    Marshal.FreeHGlobal(ptrValueData);
                 }
             } // end if (cValues && cValues!=-1)
 
