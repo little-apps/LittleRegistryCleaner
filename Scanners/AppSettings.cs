@@ -31,6 +31,12 @@ namespace Little_Registry_Cleaner.Scanners
         {
             ScanRegistryKey(Registry.LocalMachine.OpenSubKey("SOFTWARE"));
             ScanRegistryKey(Registry.CurrentUser.OpenSubKey("SOFTWARE"));
+
+            if (Utils.Is64BitOS)
+            {
+                ScanRegistryKey(Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Wow6432Node"));
+                ScanRegistryKey(Registry.CurrentUser.OpenSubKey(@"SOFTWARE\Wow6432Node"));
+            }
         }
 
         private static void ScanRegistryKey(RegistryKey baseRegKey)

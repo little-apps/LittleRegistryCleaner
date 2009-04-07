@@ -38,16 +38,34 @@ namespace Little_Registry_Cleaner.Scanners
                 ScanCLSIDSubKey(Registry.ClassesRoot.OpenSubKey("CLSID"));
                 ScanCLSIDSubKey(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Classes\\CLSID"));
                 ScanCLSIDSubKey(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Classes\\CLSID"));
+                if (Utils.Is64BitOS)
+                {
+                    ScanCLSIDSubKey(Registry.ClassesRoot.OpenSubKey("Wow6432Node\\CLSID"));
+                    ScanCLSIDSubKey(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Wow6432Node\\Classes\\CLSID"));
+                    ScanCLSIDSubKey(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Wow6432Node\\Classes\\CLSID"));
+                }
 
                 // Scan file extensions
                 ScanClasses (Registry.ClassesRoot);
                 ScanClasses(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Classes"));
                 ScanClasses(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Classes"));
+                if (Utils.Is64BitOS)
+                {
+                    ScanClasses(Registry.ClassesRoot.OpenSubKey("Wow6432Node"));
+                    ScanClasses(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Wow6432Node\\Classes"));
+                    ScanClasses(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Wow6432Node\\Classes"));
+                }
 
                 // Scan appids
                 ScanAppIds(Registry.ClassesRoot.OpenSubKey("AppID"));
                 ScanAppIds(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Classes\\AppID"));
                 ScanAppIds(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Classes\\AppID"));
+                if (Utils.Is64BitOS)
+                {
+                    ScanClasses(Registry.ClassesRoot.OpenSubKey("Wow6432Node\\AppID"));
+                    ScanClasses(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Wow6432Node\\AppID"));
+                    ScanClasses(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Wow6432Node\\AppID"));
+                }
 
                 // Scan explorer subkey
                 ScanExplorer();
@@ -489,6 +507,18 @@ namespace Little_Registry_Cleaner.Scanners
             if (InprocServerExists(Registry.CurrentUser.OpenSubKey("Software\\Classes\\CLSID\\" + strGuid)))
                 bRet = true;
 
+            if (Utils.Is64BitOS)
+            {
+                if (InprocServerExists(Registry.ClassesRoot.OpenSubKey("Wow6432Node\\CLSID\\" + strGuid)))
+                    bRet = true;
+
+                if (InprocServerExists(Registry.LocalMachine.OpenSubKey("Software\\Wow6432Node\\Classes\\CLSID\\" + strGuid)))
+                    bRet = true;
+
+                if (InprocServerExists(Registry.CurrentUser.OpenSubKey("Software\\Wow6432Node\\Classes\\CLSID\\" + strGuid)))
+                    bRet = true;
+            }
+
             return bRet;
         }
 
@@ -501,7 +531,7 @@ namespace Little_Registry_Cleaner.Scanners
         {
             try
             {
-                if (Registry.ClassesRoot.OpenSubKey("Applications\\" + strApp) != null)
+                if (Registry.ClassesRoot.OpenSubKey(@"Applications\" + strApp) != null)
                     return true;
 
                 if (Registry.LocalMachine.OpenSubKey(@"Software\Classes\Applications\" + strApp) != null)
@@ -509,6 +539,18 @@ namespace Little_Registry_Cleaner.Scanners
 
                 if (Registry.CurrentUser.OpenSubKey(@"Software\Classes\Applications\" + strApp) != null)
                     return true;
+
+                if (Utils.Is64BitOS)
+                {
+                    if (Registry.ClassesRoot.OpenSubKey(@"Wow6432Node\Applications\" + strApp) != null)
+                        return true;
+
+                    if (Registry.LocalMachine.OpenSubKey(@"Software\Wow6432Node\Classes\Applications\" + strApp) != null)
+                        return true;
+
+                    if (Registry.CurrentUser.OpenSubKey(@"Software\Wow6432Node\Classes\Applications\" + strApp) != null)
+                        return true;
+                }
             }
             catch (System.Security.SecurityException ex)
             {
@@ -535,6 +577,18 @@ namespace Little_Registry_Cleaner.Scanners
 
                 if (Registry.CurrentUser.OpenSubKey("Software\\Classes\\CLSID\\" + strGuid) != null)
                     return true;
+
+                if (Utils.Is64BitOS)
+                {
+                    if (Registry.ClassesRoot.OpenSubKey("Wow6432Node\\CLSID\\" + strGuid) != null)
+                        return true;
+
+                    if (Registry.LocalMachine.OpenSubKey("Software\\Wow6432Node\\Classes\\CLSID\\" + strGuid) != null)
+                        return true;
+
+                    if (Registry.CurrentUser.OpenSubKey("Software\\Wow6432Node\\Classes\\CLSID\\" + strGuid) != null)
+                        return true;
+                }
             }
             catch (System.Security.SecurityException ex)
             {
@@ -561,6 +615,18 @@ namespace Little_Registry_Cleaner.Scanners
 
                 if (Registry.CurrentUser.OpenSubKey("Software\\Classes\\" + strProgID) != null)
                     return true;
+
+                if (Utils.Is64BitOS)
+                {
+                    if (Registry.ClassesRoot.OpenSubKey("Wow6432Node\\" + strProgID) != null)
+                        return true;
+
+                    if (Registry.LocalMachine.OpenSubKey("Software\\Wow6432Node\\Classes\\" + strProgID) != null)
+                        return true;
+
+                    if (Registry.CurrentUser.OpenSubKey("Software\\Wow6432Node\\Classes\\" + strProgID) != null)
+                        return true;
+                }
             }
             catch (System.Security.SecurityException ex)
             {
@@ -587,6 +653,18 @@ namespace Little_Registry_Cleaner.Scanners
 
                 if (Registry.CurrentUser.OpenSubKey("SOFTWARE\\Classes\\AppID\\" + strAppId) != null)
                     return true;
+
+                if (Utils.Is64BitOS)
+                {
+                    if (Registry.ClassesRoot.OpenSubKey("Wow6432Node\\AppID\\" + strAppId) != null)
+                        return true;
+
+                    if (Registry.LocalMachine.OpenSubKey("Software\\Wow6432Node\\Classes\\AppID\\" + strAppId) != null)
+                        return true;
+
+                    if (Registry.CurrentUser.OpenSubKey("Software\\Wow6432Node\\Classes\\AppID\\" + strAppId) != null)
+                        return true;
+                }
             }
             catch (System.Security.SecurityException ex)
             {

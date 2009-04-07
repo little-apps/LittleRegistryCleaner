@@ -237,3 +237,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Makes sure registry key is writable before adding it to array
 - Displays type of exception in crash reporter
 - Log files are copied and displayed only if there were bad registry keys
+- Fixed program crashing when it calls RegEnumValue() in 64 bit
+- Scans needed Wow6432Node subkeys for errors (needs more updating)

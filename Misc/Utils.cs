@@ -264,6 +264,14 @@ namespace Little_Registry_Cleaner
         }
 
         #endregion
+
+        /// <summary>
+        /// Returns true if the OS is 64 bit
+        /// </summary>
+        public static bool Is64BitOS
+        {
+            get { return (IntPtr.Size == 8); }
+        }
         
         /// <summary>
         /// Parses the registry key path and sees if exists
