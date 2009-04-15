@@ -239,3 +239,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Log files are copied and displayed only if there were bad registry keys
 - Fixed program crashing when it calls RegEnumValue() in 64 bit
 - Scans needed Wow6432Node subkeys for errors (needs more updating)
+- The logger is more verbose
+- Fixed updater because it wasnt checking the right timespan

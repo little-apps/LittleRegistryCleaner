@@ -33,6 +33,18 @@ namespace Little_Registry_Cleaner
         private string strDownloadURL;
         private string strChangeLogURL;
 
+        public static DateTime LastUpdate
+        {
+            get {
+                long o = Properties.Settings.Default.dtLastUpdate;
+                if (o != 0)
+                    return DateTime.FromBinary(o);
+                else
+                    return DateTime.MinValue;
+            }
+            set { Properties.Settings.Default.dtLastUpdate = value.ToBinary(); }
+        }
+
         public UpdateDlg()
         {
             InitializeComponent();
@@ -73,6 +85,20 @@ namespace Little_Registry_Cleaner
         public static bool FindUpdate(ref string strVersion, ref string strReleaseDate, ref string strChangeLogURL, ref string strDownloadURL)
         {
             bool bRet = false;
+
+            // Dont check cus this the first time the programs ran
+            if (LastUpdate == DateTime.MinValue)
+            {
+                LastUpdate = DateTime.Today;
+                return bRet;
+            }
+
+            // Only check if it has been >= 2 weeks since last check
+            if (DateTime.Now.Subtract(LastUpdate).TotalDays < 14)
+                return bRet;
+
+            // Set last update date since were checking
+            LastUpdate = DateTime.Today;
 
             try
             {

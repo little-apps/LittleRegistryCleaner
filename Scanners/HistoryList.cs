@@ -37,6 +37,8 @@ namespace Little_Registry_Cleaner.Scanners
                     if (regKey == null)
                         return;
 
+                    Main.Logger.WriteLine("Cleaning invalid references in " + regKey.Name);
+
                     FindInvalidLinks(regKey);
 
                     foreach (string strSubKey in regKey.GetSubKeyNames())

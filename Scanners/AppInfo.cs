@@ -35,6 +35,8 @@ namespace Little_Registry_Cleaner.Scanners
         {
             try
             {
+                Main.Logger.WriteLine("Verifying programs in Add/Remove list");
+
                 using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall"))
                 {
                     if (regKey == null)
@@ -66,6 +68,8 @@ namespace Little_Registry_Cleaner.Scanners
 
                     }
                 }
+
+                Main.Logger.WriteLine("Verifying registry entries in Add/Remove Cache");
 
                 using (RegistryKey rk = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Management\\ARPCache"))
                 {

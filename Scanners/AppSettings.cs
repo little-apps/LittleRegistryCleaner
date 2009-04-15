@@ -44,13 +44,16 @@ namespace Little_Registry_Cleaner.Scanners
             if (baseRegKey == null)
                 return;
 
+            Main.Logger.WriteLine("Scanning " + baseRegKey.Name + " for empty registry keys");
+
             foreach (string strSubKey in baseRegKey.GetSubKeyNames())
             {
                 // Skip needed keys, we dont want to mess the system up
-                if (strSubKey.CompareTo("Microsoft") == 0 || 
-                    strSubKey.CompareTo("Policies") == 0 ||
-                    strSubKey.CompareTo("Classes") == 0 ||
-                    strSubKey.CompareTo("Printers") == 0)
+                if (strSubKey == "Microsoft" ||
+                    strSubKey == "Policies" ||
+                    strSubKey == "Classes" ||
+                    strSubKey == "Printers" ||
+                    strSubKey == "Wow6432Node")
                     continue;
 
                 try

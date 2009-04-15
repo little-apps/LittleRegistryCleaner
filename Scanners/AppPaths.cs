@@ -34,7 +34,10 @@ namespace Little_Registry_Cleaner.Scanners
         {
             try
             {
+                Main.Logger.WriteLine("Checking for invalid installer folders");
                 ScanInstallFolders();
+
+                Main.Logger.WriteLine("Checking for invalid application paths");
                 ScanAppPaths();
             }
             catch (System.Security.SecurityException ex)

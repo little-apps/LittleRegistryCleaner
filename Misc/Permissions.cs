@@ -29,9 +29,6 @@ namespace Little_Registry_Cleaner
         [DllImport("advapi32.dll", ExactSpelling = true, SetLastError = true)]
         internal static extern bool AdjustTokenPrivileges(IntPtr htok, bool disall, ref TokPriv1Luid newst, int len, IntPtr prev, IntPtr relen);
 
-        [DllImport("kernel32.dll", ExactSpelling = true)]
-        internal static extern IntPtr GetCurrentProcess();
-
         [DllImport("advapi32.dll", ExactSpelling = true, SetLastError = true)]
         internal static extern bool OpenProcessToken(IntPtr h, int acc, ref IntPtr phtok);
 
@@ -50,21 +47,29 @@ namespace Little_Registry_Cleaner
         internal const int TOKEN_QUERY = 0x00000008;
         internal const int TOKEN_ADJUST_PRIVILEGES = 0x00000020;
 
-        public static bool SetPrivilege(string privilege)
+        public static bool SetPrivilege(string privilege, bool enabled)
         {
             try
             {
-                bool retVal;
-                TokPriv1Luid tp;
-                IntPtr hproc = GetCurrentProcess();
+                TokPriv1Luid tp = new TokPriv1Luid();
+                IntPtr hproc = System.Diagnostics.Process.GetCurrentProcess().Handle;
                 IntPtr htok = IntPtr.Zero;
-                retVal = OpenProcessToken(hproc, TOKEN_ADJUST_PRIVILEGES | TOKEN_QUERY, ref htok);
+                
+                if (!OpenProcessToken(hproc, TOKEN_ADJUST_PRIVILEGES | TOKEN_QUERY, ref htok))
+                    return false;
+
+                if (!LookupPrivilegeValue(null, privilege, ref tp.Luid))
+                    return false;
+
                 tp.Count = 1;
                 tp.Luid = 0;
-                tp.Attr = SE_PRIVILEGE_ENABLED;
-                retVal = LookupPrivilegeValue(null, privilege, ref tp.Luid);
-                retVal = AdjustTokenPrivileges(htok, false, ref tp, 0, IntPtr.Zero, IntPtr.Zero);
-                return retVal;
+                tp.Attr = ((enabled) ? (SE_PRIVILEGE_ENABLED) : (0));
+
+                AdjustTokenPrivileges(htok, false, ref tp, 0, IntPtr.Zero, IntPtr.Zero);
+                if (Marshal.GetLastWin32Error() != 0)
+                    return false;
+
+                return true;
             }
             catch
             {
@@ -72,12 +77,12 @@ namespace Little_Registry_Cleaner
             }
         }
 
-        public static void SetPrivileges()
+        public static void SetPrivileges(bool Enabled)
         {
-            SetPrivilege("SeShutdownPrivilege");
-            SetPrivilege("SeBackupPrivilege");
-            SetPrivilege("SeRestorePrivilege");
-            SetPrivilege("SeDebugPrivilege");
+            SetPrivilege("SeShutdownPrivilege", Enabled);
+            SetPrivilege("SeBackupPrivilege", Enabled);
+            SetPrivilege("SeRestorePrivilege", Enabled);
+            SetPrivilege("SeDebugPrivilege", Enabled);
         }
     }
 }

@@ -48,6 +48,8 @@ namespace Little_Registry_Cleaner.Scanners
             if (regKey == null)
                 return;
 
+            Main.Logger.WriteLine("Checking for missing help files in " + regKey.Name);
+
             ScanDlg.UpdateScanSubKey(regKey.ToString());
 
             foreach (string strHelpFile in regKey.GetValueNames())

@@ -31,8 +31,11 @@ namespace Little_Registry_Cleaner.Scanners
         {
             using (RegistryKey regKey = Registry.CurrentUser.OpenSubKey("AppEvents\\Schemes\\Apps"))
             {
-               if (regKey != null)
-                   ParseSoundKeys(regKey);
+                if (regKey != null)
+                {
+                    Main.Logger.WriteLine("Scanning for missing sound events");
+                    ParseSoundKeys(regKey);
+                }
             }
         }
 

@@ -62,9 +62,9 @@ namespace Little_Registry_Cleaner.Scanners
                 ScanAppIds(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Classes\\AppID"));
                 if (Utils.Is64BitOS)
                 {
-                    ScanClasses(Registry.ClassesRoot.OpenSubKey("Wow6432Node\\AppID"));
-                    ScanClasses(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Wow6432Node\\AppID"));
-                    ScanClasses(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Wow6432Node\\AppID"));
+                    ScanAppIds(Registry.ClassesRoot.OpenSubKey("Wow6432Node\\AppID"));
+                    ScanAppIds(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Wow6432Node\\AppID"));
+                    ScanAppIds(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Wow6432Node\\AppID"));
                 }
 
                 // Scan explorer subkey
@@ -86,6 +86,8 @@ namespace Little_Registry_Cleaner.Scanners
         {
             if (regKey == null)
                 return;
+
+            Main.Logger.WriteLine("Scanning " + regKey.Name + " for invalid CLSID's");
 
             foreach (string strCLSID in regKey.GetSubKeyNames())
             {
@@ -163,6 +165,8 @@ namespace Little_Registry_Cleaner.Scanners
             if (regKey == null)
                 return;
 
+            Main.Logger.WriteLine("Scanning " + regKey.Name + " for invalid AppID's");
+
             foreach (string strAppId in regKey.GetSubKeyNames())
             {
                 if ((rkAppId = regKey.OpenSubKey(strAppId)) == null)
@@ -189,6 +193,8 @@ namespace Little_Registry_Cleaner.Scanners
         {
             if (regKey == null)
                 return;
+
+            Main.Logger.WriteLine("Scanning " + regKey.Name + " for invalid Classes");
 
             foreach (string strSubKey in regKey.GetSubKeyNames())
             {
@@ -248,6 +254,8 @@ namespace Little_Registry_Cleaner.Scanners
             // Check Browser Help Objects
             using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\explorer\\Browser Helper Objects"))
             {
+                Main.Logger.WriteLine("Checking for invalid browser helper objects");
+
                 RegistryKey rkBHO = null;
 
                 if (regKey != null)
@@ -269,6 +277,8 @@ namespace Little_Registry_Cleaner.Scanners
             // Check IE Toolbars
             using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Internet Explorer\\Toolbar"))
             {
+                Main.Logger.WriteLine("Checking for invalid explorer toolbars");
+
                 if (regKey != null)
                 {
                     // Update scan dialog
@@ -287,6 +297,8 @@ namespace Little_Registry_Cleaner.Scanners
             {
                 RegistryKey rkExt = null;
 
+                Main.Logger.WriteLine("Checking for invalid explorer extensions");
+
                 if (regKey != null)
                 {
                     foreach (string strGuid in regKey.GetSubKeyNames())
@@ -302,10 +314,12 @@ namespace Little_Registry_Cleaner.Scanners
                 }
             }
 
-            // Check Explorer Exts
+            // Check Explorer File Exts
             using (RegistryKey regKey = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts"))
             {
                 RegistryKey rkFileExt = null;
+
+                Main.Logger.WriteLine("Checking for invalid explorer file extensions");
 
                 if (regKey != null)
                 {

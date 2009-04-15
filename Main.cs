@@ -57,10 +57,7 @@ namespace Little_Registry_Cleaner
             get { return _logger; }
         }
 
-        public static DateTime LastStart
-        {
-            get { return DateTime.FromBinary(Properties.Settings.Default.dtLastStart); }
-        }
+        
 
         public Main()
         {
@@ -203,15 +200,10 @@ namespace Little_Registry_Cleaner
             // See if we have the current version
             if (Properties.Settings.Default.bOptionsAutoUpdate)
             {
-                // Only check if it has been >= 2 weeks since last check
-                TimeSpan ts = DateTime.Now.Subtract(Main.LastStart);
-                if (ts.TotalDays >= 14)
-                {
-                    string strVersion = "", strChangeLogURL = "", strDownloadURL = "", strReleaseDate = "";
-                    if (UpdateDlg.FindUpdate(ref strVersion, ref strReleaseDate, ref strChangeLogURL, ref strDownloadURL))
-                        if (MessageBox.Show(this, "A newer version is available. Would you like to download it?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
-                            Utils.LaunchURI(strDownloadURL);
-                }
+                string strVersion = "", strChangeLogURL = "", strDownloadURL = "", strReleaseDate = "";
+                if (UpdateDlg.FindUpdate(ref strVersion, ref strReleaseDate, ref strChangeLogURL, ref strDownloadURL))
+                    if (MessageBox.Show(this, "A newer version is available. Would you like to download it?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                        Utils.LaunchURI(strDownloadURL);
             }
         }
 

@@ -156,15 +156,19 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StartupManager\EditRunItem.resx">
       <DependentUpon>EditRunItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="StartupManager\NewRunItem.resx">
       <DependentUpon>NewRunItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="StartupManager\StartupManager.resx">
       <DependentUpon>StartupManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UninstallManager\UninstallManager.resx">
       <DependentUpon>UninstallManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateDlg.resx">
       <DependentUpon>UpdateDlg.cs</DependentUpon>

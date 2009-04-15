@@ -39,6 +39,8 @@ namespace Little_Registry_Cleaner.Scanners
                 if (regKey == null)
                     return;
 
+                Main.Logger.WriteLine("Scanning for missing Shared DLLs");
+
                 ScanDlg.UpdateScanSubKey(regKey.ToString());
 
                 // Validate Each DLL from the value names

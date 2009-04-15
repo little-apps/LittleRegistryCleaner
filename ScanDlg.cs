@@ -47,6 +47,16 @@ namespace Little_Registry_Cleaner
 
         public static BadRegKeyArray arrBadRegistryKeys = new BadRegKeyArray();
 
+        private string strCurrentSection = "";
+
+        /// <summary>
+        /// Returns current section name
+        /// </summary>
+        public static string CurrentSection
+        {
+            get { return self.strCurrentSection; }
+        }
+
         public ScanDlg(int nSectionCount)
         {
             InitializeComponent();
@@ -88,9 +98,11 @@ namespace Little_Registry_Cleaner
                 {
                     this.UpdateSection("Startup entries");
 
+                    Main.Logger.WriteLine("Starting to scan startup entries");
                     this.threadCurrent = new Thread(new ThreadStart(StartUp.Scan));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
+                    Main.Logger.WriteLine("Scanning for startup entries finished");
 
                     this.progressBar.Position++;
                 }
@@ -99,9 +111,11 @@ namespace Little_Registry_Cleaner
                 {
                     this.UpdateSection("Shared DLLs");
 
+                    Main.Logger.WriteLine("Starting to scan shared dlls");
                     this.threadCurrent = new Thread(new ThreadStart(DLLs.Scan));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
+                    Main.Logger.WriteLine("Scanning for shared dlls finished");
 
                     this.progressBar.Position++;
                 }
@@ -110,9 +124,11 @@ namespace Little_Registry_Cleaner
                 {
                     this.UpdateSection("Windows Fonts");
 
+                    Main.Logger.WriteLine("Starting to scan windows fonts");
                     this.threadCurrent = new Thread(new ThreadStart(Fonts.Scan));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
+                    Main.Logger.WriteLine("Scanning for windows fonts finished");
 
                     this.progressBar.Position++;
                 }
@@ -121,9 +137,11 @@ namespace Little_Registry_Cleaner
                 {
                     this.UpdateSection("Application info");
 
+                    Main.Logger.WriteLine("Starting to scan application info");
                     this.threadCurrent = new Thread(new ThreadStart(AppInfo.Scan));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
+                    Main.Logger.WriteLine("Scanning for application info finished");
 
                     this.progressBar.Position++;
                 }
@@ -132,9 +150,11 @@ namespace Little_Registry_Cleaner
                 {
                     this.UpdateSection("Program Locations");
 
+                    Main.Logger.WriteLine("Starting to scan program locations");
                     this.threadCurrent = new Thread(new ThreadStart(AppPaths.Scan));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
+                    Main.Logger.WriteLine("Scanning for program locations finished");
 
                     this.progressBar.Position++;
                 }
@@ -143,9 +163,11 @@ namespace Little_Registry_Cleaner
                 {
                     this.UpdateSection("ActiveX/COM objects");
 
+                    Main.Logger.WriteLine("Starting to scan ActiveX/COM objects");
                     this.threadCurrent = new Thread(new ThreadStart(COMObjects.Scan));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
+                    Main.Logger.WriteLine("Scanning for ActiveX/COM objects finished");
 
                     this.progressBar.Position++;
                 }
@@ -154,9 +176,11 @@ namespace Little_Registry_Cleaner
                 {
                     this.UpdateSection("Drivers");
 
+                    Main.Logger.WriteLine("Starting to scan drivers");
                     this.threadCurrent = new Thread(new ThreadStart(Drivers.Scan));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
+                    Main.Logger.WriteLine("Scanning for drivers finished");
 
                     this.progressBar.Position++;
                 }
@@ -165,9 +189,11 @@ namespace Little_Registry_Cleaner
                 {
                     this.UpdateSection("Help files");
 
+                    Main.Logger.WriteLine("Starting to scan help files");
                     this.threadCurrent = new Thread(new ThreadStart(HelpFiles.Scan));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
+                    Main.Logger.WriteLine("Scanning for help files finished");
 
                     this.progressBar.Position++;
                 }
@@ -176,9 +202,11 @@ namespace Little_Registry_Cleaner
                 {
                     this.UpdateSection("Sound events");
 
+                    Main.Logger.WriteLine("Starting to scan sound events");
                     this.threadCurrent = new Thread(new ThreadStart(Sounds.Scan));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
+                    Main.Logger.WriteLine("Scanning for sound events finished");
 
                     this.progressBar.Position++;
                 }
@@ -187,9 +215,11 @@ namespace Little_Registry_Cleaner
                 {
                     this.UpdateSection("Software settings");
 
+                    Main.Logger.WriteLine("Starting to scan software settings");
                     this.threadCurrent = new Thread(new ThreadStart(AppSettings.Scan));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
+                    Main.Logger.WriteLine("Scanning for software settings finished");
 
                     this.progressBar.Position++;
                 }
@@ -198,9 +228,11 @@ namespace Little_Registry_Cleaner
                 {
                     this.UpdateSection("History List");
 
+                    Main.Logger.WriteLine("Starting to scan history list");
                     this.threadCurrent = new Thread(new ThreadStart(HistoryList.Scan));
                     this.threadCurrent.Start();
                     this.threadCurrent.Join();
+                    Main.Logger.WriteLine("Scanning for history list finished");
 
                     this.progressBar.Position++;
                 }
@@ -324,18 +356,9 @@ namespace Little_Registry_Cleaner
             string strText = "Scanning: " + SectionName;
 
             this.progressBar.Text = strText;
-            Main.Logger.WriteLine(strText);
         }
 
-        private string strCurrentSection = "";
-
-        /// <summary>
-        /// Returns current section name
-        /// </summary>
-        public static string CurrentSection
-        {
-            get { return self.strCurrentSection; }
-        }
+        
 
         /// <summary>
         /// Updates the number of problems

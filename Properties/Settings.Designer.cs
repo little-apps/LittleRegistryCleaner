@@ -188,12 +188,12 @@ namespace Little_Registry_Cleaner.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public long dtLastStart {
+        public long dtLastUpdate {
             get {
-                return ((long)(this["dtLastStart"]));
+                return ((long)(this["dtLastUpdate"]));
             }
             set {
-                this["dtLastStart"] = value;
+                this["dtLastUpdate"] = value;
             }
         }
     }

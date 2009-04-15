@@ -50,8 +50,8 @@ namespace Little_Registry_Cleaner
             Properties.Settings.Default.strBuildTime = new DateTime(2000, 1, 1).AddDays(Assembly.GetExecutingAssembly().GetName().Version.Build).ToShortDateString();
 
             // Set last start time if its null
-            if (Properties.Settings.Default.dtLastStart == 0)
-                Properties.Settings.Default.dtLastStart = DateTime.Now.ToBinary();
+            if (Properties.Settings.Default.dtLastUpdate == 0)
+                Properties.Settings.Default.dtLastUpdate = DateTime.Now.ToBinary();
 
             // Create event log source
             if (!EventLog.SourceExists(Application.ProductName))
@@ -86,24 +86,29 @@ namespace Little_Registry_Cleaner
                     Directory.CreateDirectory(Properties.Settings.Default.strErrorDir);
             }   
 
-            // Add event handler for thread exceptions
 #if (!DEBUG)
+            // Add event handler for thread exceptions
             AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);
             Application.ThreadException += new ThreadExceptionEventHandler(Application_ThreadException);
+#else
+            
 #endif
 
-            // Get SeBackupPrivilege and SeRestorePrivilege
-            Permissions.SetPrivileges();
+            // Enable needed privileges
+            Permissions.SetPrivileges(true);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Main());
 
+            // Disable needed privileges
+            Permissions.SetPrivileges(false);
+
             // Release Mutex
             mutexMain.ReleaseMutex();
 
             // Set last time program started
-            Properties.Settings.Default.dtLastStart = DateTime.Now.ToBinary();
+            Properties.Settings.Default.dtLastUpdate = DateTime.Now.ToBinary();
 
             // Save settings
             Properties.Settings.Default.Save();

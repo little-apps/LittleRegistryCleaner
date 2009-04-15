@@ -39,6 +39,8 @@ namespace Little_Registry_Cleaner.Scanners
                 if (regKey == null)
                     return;
 
+                Main.Logger.WriteLine("Scanning for missing drivers");
+
                 ScanDlg.UpdateScanSubKey(regKey.ToString());
 
                 foreach (string strDriverName in regKey.GetValueNames())

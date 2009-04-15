@@ -70,6 +70,7 @@ namespace Little_Registry_Cleaner.Scanners
             if (regKey == null)
                 return;
 
+            Main.Logger.WriteLine("Checking for invalid files in " + regKey.Name);
             ScanDlg.UpdateScanSubKey(regKey.ToString());
 
             foreach (string strProgName in regKey.GetValueNames())
