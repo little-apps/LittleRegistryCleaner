@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBoxShowLog = new System.Windows.Forms.CheckBox();
             this.checkBoxRemDrives = new System.Windows.Forms.CheckBox();
             this.checkBoxAutoUpdate = new System.Windows.Forms.CheckBox();
             this.checkBoxRestore = new System.Windows.Forms.CheckBox();
@@ -65,6 +66,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.checkBoxShowLog);
             this.groupBox1.Controls.Add(this.checkBoxRemDrives);
             this.groupBox1.Controls.Add(this.checkBoxAutoUpdate);
             this.groupBox1.Controls.Add(this.checkBoxRestore);
@@ -73,10 +75,20 @@
             this.groupBox1.Controls.Add(this.checkBoxLog);
             this.groupBox1.Location = new System.Drawing.Point(6, 112);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(444, 91);
+            this.groupBox1.Size = new System.Drawing.Size(444, 110);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Options";
+            // 
+            // checkBoxShowLog
+            // 
+            this.checkBoxShowLog.AutoSize = true;
+            this.checkBoxShowLog.Location = new System.Drawing.Point(197, 19);
+            this.checkBoxShowLog.Name = "checkBoxShowLog";
+            this.checkBoxShowLog.Size = new System.Drawing.Size(179, 17);
+            this.checkBoxShowLog.TabIndex = 12;
+            this.checkBoxShowLog.Text = "Show log after finished scanning";
+            this.checkBoxShowLog.UseVisualStyleBackColor = true;
             // 
             // checkBoxRemDrives
             // 
@@ -101,7 +113,7 @@
             // checkBoxRestore
             // 
             this.checkBoxRestore.AutoSize = true;
-            this.checkBoxRestore.Location = new System.Drawing.Point(197, 19);
+            this.checkBoxRestore.Location = new System.Drawing.Point(10, 87);
             this.checkBoxRestore.Name = "checkBoxRestore";
             this.checkBoxRestore.Size = new System.Drawing.Size(222, 17);
             this.checkBoxRestore.TabIndex = 9;
@@ -137,10 +149,11 @@
             this.checkBoxLog.TabIndex = 0;
             this.checkBoxLog.Text = "Log registry scans and fixes";
             this.checkBoxLog.UseVisualStyleBackColor = true;
+            this.checkBoxLog.CheckedChanged += new System.EventHandler(this.checkBoxLog_CheckedChanged);
             // 
             // buttonOK
             // 
-            this.buttonOK.Location = new System.Drawing.Point(369, 254);
+            this.buttonOK.Location = new System.Drawing.Point(369, 272);
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.Size = new System.Drawing.Size(45, 23);
             this.buttonOK.TabIndex = 1;
@@ -151,7 +164,7 @@
             // buttonCancel
             // 
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Location = new System.Drawing.Point(420, 254);
+            this.buttonCancel.Location = new System.Drawing.Point(420, 272);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(59, 23);
             this.buttonCancel.TabIndex = 2;
@@ -195,7 +208,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(464, 236);
+            this.tabControl1.Size = new System.Drawing.Size(464, 254);
             this.tabControl1.TabIndex = 6;
             // 
             // tabPage1
@@ -206,7 +219,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(456, 210);
+            this.tabPage1.Size = new System.Drawing.Size(456, 228);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "General";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -248,7 +261,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(456, 210);
+            this.tabPage2.Size = new System.Drawing.Size(456, 228);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Ignore List";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -313,7 +326,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(488, 286);
+            this.ClientSize = new System.Drawing.Size(488, 304);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.buttonOK);
             this.Controls.Add(this.buttonCancel);
@@ -368,5 +381,6 @@
         private System.Windows.Forms.Button buttonBrowse2;
         private System.Windows.Forms.CheckBox checkBoxAutoUpdate;
         private System.Windows.Forms.CheckBox checkBoxRemDrives;
+        private System.Windows.Forms.CheckBox checkBoxShowLog;
     }
 }

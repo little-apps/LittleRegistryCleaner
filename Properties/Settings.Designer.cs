@@ -196,5 +196,17 @@ namespace Little_Registry_Cleaner.Properties {
                 this["dtLastUpdate"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool bOptionsShowLog {
+            get {
+                return ((bool)(this["bOptionsShowLog"]));
+            }
+            set {
+                this["bOptionsShowLog"] = value;
+            }
+        }
     }
 }

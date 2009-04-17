@@ -126,7 +126,8 @@ namespace Little_Registry_Cleaner
 
                 File.Move(Logger.strLogFilePath, strNewFileName);
 
-                System.Diagnostics.Process.Start(strNewFileName);
+                if (Properties.Settings.Default.bOptionsShowLog)
+                    System.Diagnostics.Process.Start(strNewFileName);
             }
         }
     }

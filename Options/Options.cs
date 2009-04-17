@@ -34,7 +34,6 @@ namespace Little_Registry_Cleaner
             InitializeComponent();
         }
 
-        
         private void Options_Load(object sender, EventArgs e)
         {
             // Load settings
@@ -44,6 +43,10 @@ namespace Little_Registry_Cleaner
             this.checkBoxRestore.Checked = Properties.Settings.Default.bOptionsRestore;
             this.checkBoxAutoUpdate.Checked = Properties.Settings.Default.bOptionsAutoUpdate;
             this.checkBoxRemDrives.Checked = Properties.Settings.Default.bOptionsRemMedia;
+            this.checkBoxShowLog.Checked = Properties.Settings.Default.bOptionsShowLog;
+
+            // Disable show log option if logging is disabled
+            this.checkBoxShowLog.Enabled = this.checkBoxLog.Checked;
 
             // Load backup directorys
             this.textBoxBackupFolder.Text = Properties.Settings.Default.strOptionsBackupDir;
@@ -76,6 +79,7 @@ namespace Little_Registry_Cleaner
             Properties.Settings.Default.bOptionsRestore = this.checkBoxRestore.Checked;
             Properties.Settings.Default.bOptionsAutoUpdate = this.checkBoxAutoUpdate.Checked;
             Properties.Settings.Default.bOptionsRemMedia = this.checkBoxRemDrives.Checked;
+            Properties.Settings.Default.bOptionsShowLog = this.checkBoxShowLog.Checked;
 
             if (!string.IsNullOrEmpty(this.textBoxBackupFolder.Text))
                 Properties.Settings.Default.strOptionsBackupDir = this.textBoxBackupFolder.Text;
@@ -149,6 +153,11 @@ namespace Little_Registry_Cleaner
                 if (folderBrowserDlg.ShowDialog(this) == DialogResult.OK)
                     this.textBoxLogFolder.Text = folderBrowserDlg.SelectedPath;
             }
+        }
+
+        private void checkBoxLog_CheckedChanged(object sender, EventArgs e)
+        {
+            this.checkBoxShowLog.Enabled = this.checkBoxLog.Checked;
         }
     }
 }
