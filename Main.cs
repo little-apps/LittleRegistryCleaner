@@ -201,7 +201,7 @@ namespace Little_Registry_Cleaner
             if (Properties.Settings.Default.bOptionsAutoUpdate)
             {
                 string strVersion = "", strChangeLogURL = "", strDownloadURL = "", strReleaseDate = "";
-                if (UpdateDlg.FindUpdate(ref strVersion, ref strReleaseDate, ref strChangeLogURL, ref strDownloadURL))
+                if (UpdateDlg.FindUpdate(ref strVersion, ref strReleaseDate, ref strChangeLogURL, ref strDownloadURL, true))
                     if (MessageBox.Show(this, "A newer version is available. Would you like to download it?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                         Utils.LaunchURI(strDownloadURL);
             }
@@ -308,6 +308,12 @@ namespace Little_Registry_Cleaner
 
         private void LaunchHelpFile(object sender, EventArgs e)
         {
+            if (!File.Exists("Little Registry Cleaner.chm"))
+            {
+                MessageBox.Show(this, "Unable to find Little Registry Cleaner.chm", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             Help.ShowHelp(this, "Little Registry Cleaner.chm");
         }
 

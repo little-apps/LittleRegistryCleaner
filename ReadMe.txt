@@ -28,7 +28,7 @@ transfer or delete files without realizing that dozens of Registry entries aim t
 What are the System Requirements?
 
 Operating System
-Microsoft Windows 2000, XP and Vista
+Microsoft Windows 2000, XP and Vista (32Bit or 64Bit)
 
 Processor
 A processor that is able to run your computer at a moderate speed
@@ -75,4 +75,4 @@ Contact Information
 Please use one of the following addresses to contact us if you have any problems or questions regarding this program
 
 Website: http://littlecleaner.sourceforge.net/
-Email: nick@littleapps.co.cc
+Email: nick@littleapps.co.cc or ub3rst4r@users.sourceforge.net

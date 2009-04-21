@@ -887,33 +887,9 @@ namespace Little_Registry_Cleaner
         /// Checks for default program then launches URI
         /// </summary>
         /// <param name="WebAddress">The address to launch</param>
-        /// <returns>False if the scheme is not set</returns>
-        public static bool LaunchURI(string WebAddress)
+        public static void LaunchURI(string WebAddress)
         {
-            RegistryKey rk = Registry.ClassesRoot.OpenSubKey(@"HTTP\shell\open\command");
-            string strURL = string.Copy(WebAddress);
-            string strBrowserPath, strBrowserArgs;
-
-            if (rk == null || string.IsNullOrEmpty(strURL))
-                return false;
-
-            string strBrowserCmd = (string)rk.GetValue("");
-
-            if (!Utils.ExtractArguments(strBrowserCmd, out strBrowserPath, out strBrowserArgs))
-                return false;
-
-            strBrowserArgs = strBrowserArgs.Replace("%1", strURL);
-
-            try
-            {
-                Process.Start(strBrowserPath, strBrowserArgs);
-            }
-            catch
-            {
-                return false;
-            }
-
-            return true;
+            Help.ShowHelp(Form.ActiveForm, string.Copy(WebAddress));
         }
     }
 }

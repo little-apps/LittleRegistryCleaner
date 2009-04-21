@@ -55,7 +55,7 @@ namespace Little_Registry_Cleaner
 
             string strVersion = "", strChangeLogURL = "", strDownloadURL = "", strReleaseDate = "";
 
-            if (FindUpdate(ref strVersion, ref strReleaseDate, ref strChangeLogURL, ref strDownloadURL))
+            if (FindUpdate(ref strVersion, ref strReleaseDate, ref strChangeLogURL, ref strDownloadURL, false))
             {
                 this.strDownloadURL = strDownloadURL;
                 this.strChangeLogURL = strChangeLogURL;
@@ -81,21 +81,25 @@ namespace Little_Registry_Cleaner
         /// <param name="strReleaseDate">Date version was released</param>
         /// <param name="strChangeLogURL">Changelog URL</param>
         /// <param name="strDownloadURL">Download URL</param>
+        /// <param name="bCheckDate">Check last time since update</param>
         /// <returns>True if a update is available</returns>
-        public static bool FindUpdate(ref string strVersion, ref string strReleaseDate, ref string strChangeLogURL, ref string strDownloadURL)
+        public static bool FindUpdate(ref string strVersion, ref string strReleaseDate, ref string strChangeLogURL, ref string strDownloadURL, bool bCheckDate)
         {
             bool bRet = false;
 
-            // Dont check cus this the first time the programs ran
-            if (LastUpdate == DateTime.MinValue)
+            if (bCheckDate)
             {
-                LastUpdate = DateTime.Today;
-                return bRet;
-            }
+                // Dont check cus this the first time the programs ran
+                if (LastUpdate == DateTime.MinValue)
+                {
+                    LastUpdate = DateTime.Today;
+                    return bRet;
+                }
 
-            // Only check if it has been >= 2 weeks since last check
-            if (DateTime.Now.Subtract(LastUpdate).TotalDays < 14)
-                return bRet;
+                // Only check if it has been >= 2 weeks since last check
+                if (DateTime.Now.Subtract(LastUpdate).TotalDays < 14)
+                    return bRet;
+            }
 
             // Set last update date since were checking
             LastUpdate = DateTime.Today;
@@ -141,7 +145,7 @@ namespace Little_Registry_Cleaner
             catch (System.Net.WebException ex)
             {
                 if (MessageBox.Show(ex.Message, Application.ProductName, MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) == DialogResult.Retry)
-                    return FindUpdate(ref strVersion, ref strReleaseDate, ref strChangeLogURL, ref strDownloadURL);
+                    return FindUpdate(ref strVersion, ref strReleaseDate, ref strChangeLogURL, ref strDownloadURL, bCheckDate);
             }
 
             return bRet;

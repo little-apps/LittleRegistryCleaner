@@ -242,3 +242,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - The logger is more verbose
 - Fixed updater because it wasnt checking the right timespan
 - Added option to disable log being showed after scanning
+- Only checks last time since update when program starts
+
++ Version 1.2 Released
