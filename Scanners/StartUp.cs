@@ -27,8 +27,13 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public static class StartUp
+    public class StartUp : ScannerBase
     {
+        public override string ScannerName
+        {
+            get { return "Startup Files"; }
+        }
+
         public static void Scan()
         {
             try

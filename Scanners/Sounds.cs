@@ -25,8 +25,13 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public static class Sounds
+    public class Sounds : ScannerBase
     {
+        public override string ScannerName
+        {
+            get { return "Windows Sounds"; }
+        }
+
         public static void Scan()
         {
             using (RegistryKey regKey = Registry.CurrentUser.OpenSubKey("AppEvents\\Schemes\\Apps"))

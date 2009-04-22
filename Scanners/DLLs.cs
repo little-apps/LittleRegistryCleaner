@@ -25,8 +25,13 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public static class DLLs
+    public class DLLs : ScannerBase
     {
+        public override string ScannerName
+        {
+            get { return "Shared DLLs"; }
+        }
+
         /// <summary>
         /// Scan for missing links to DLLS
         /// </summary>

@@ -25,8 +25,13 @@ using System.Windows.Forms;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public static class AppSettings
+    public class AppSettings : ScannerBase
     {
+        public override string ScannerName
+        {
+            get { return "Application Settings"; }
+        }
+
         public static void Scan()
         {
             ScanRegistryKey(Registry.LocalMachine.OpenSubKey("SOFTWARE"));

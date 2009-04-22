@@ -25,8 +25,13 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public static class AppPaths
+    public class AppPaths : ScannerBase
     {
+        public override string ScannerName
+        {
+            get { return "Application Paths"; }
+        }
+
         /// <summary>
         /// Verifies programs in App Paths
         /// </summary>

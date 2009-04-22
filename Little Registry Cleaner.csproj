@@ -47,7 +47,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -88,6 +88,7 @@
     <Compile Include="Misc\Logger.cs" />
     <Compile Include="Misc\Permissions.cs" />
     <Compile Include="Misc\RegEditGo.cs" />
+    <Compile Include="Scanners\ScannerBase.cs" />
     <Compile Include="StartupManager\EditRunItem.cs">
       <SubType>Form</SubType>
     </Compile>

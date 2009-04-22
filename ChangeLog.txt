@@ -245,3 +245,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Only checks last time since update when program starts
 
 + Version 1.2 Released
+
+- Scan dialog is thread safe
+- Scanners use base class to save coding and work

@@ -25,8 +25,13 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public static class HelpFiles
+    public class HelpFiles : ScannerBase
     {
+        public override string ScannerName
+        {
+            get { return "Windows Help Files"; }
+        }
+
         public static void Scan()
         {
             try

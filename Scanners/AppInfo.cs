@@ -26,8 +26,13 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public static class AppInfo
+    public class AppInfo : ScannerBase
     {
+        public override string ScannerName
+        {
+            get { return "Application Info"; }
+        }
+
         /// <summary>
         /// Verifies installed programs in add/remove list
         /// </summary>

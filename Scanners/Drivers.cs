@@ -25,8 +25,13 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public static class Drivers
+    public class Drivers : ScannerBase
     {
+        public override string ScannerName
+        {
+            get { return "System Drivers"; }
+        }
+
         /// <summary>
         /// Scans for invalid references to fonts
         /// </summary>

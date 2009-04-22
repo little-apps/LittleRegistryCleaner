@@ -26,12 +26,17 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public static class Fonts
+    public class Fonts : ScannerBase
     {
         [DllImport("shell32.dll")]
         public static extern bool SHGetSpecialFolderPath(IntPtr hwndOwner, [Out] StringBuilder strPath, int nFolder, bool fCreate);
 
         const int CSIDL_FONTS = 0x0014;    // windows\fonts
+
+        public override string ScannerName
+        {
+            get { return "Windows Fonts"; }
+        }
 
         /// <summary>
         /// Finds invalid font references

@@ -34,11 +34,11 @@ namespace Little_Registry_Cleaner
 {
     public partial class ScanDlg : Form
     {
+        public delegate void ScanDelegate();
         public delegate void UpdateScanSubKeyDelgate(string strSubKey);
         public delegate void UpdateSectionDelegate(string strSection);
 
-        private Thread threadMain;
-        private Thread threadCurrent;
+        Thread threadMain, threadScan;
 
         private int SectionCount = 0;
         private int ItemsScanned = 0;
@@ -71,171 +71,57 @@ namespace Little_Registry_Cleaner
         
         private void ScanDlg_Shown(object sender, EventArgs e)
         {
-            CheckForIllegalCrossThreadCalls = false;
+            this.progressBar.Position = 0;
+            this.progressBar.PositionMin = 0;
+            this.progressBar.PositionMax = this.SectionCount;
 
             // Starts scanning registry on seperate thread
-            ThreadPool.QueueUserWorkItem(new WaitCallback(StartScanning));
+            this.threadMain = new Thread(new ThreadStart(StartScanning));
+            this.threadMain.Start();
         }
 
         /// <summary>
         /// Begins scanning for errors in the registry
         /// </summary>
-        private void StartScanning(object stateInfo)
+        private void StartScanning()
         {
-            // Sets threadMain to current thread
-            this.threadMain = Thread.CurrentThread;
-
-            this.progressBar.Position = 0;
-            this.progressBar.PositionMin = 0;
-            this.progressBar.PositionMax = this.SectionCount;
-
             // Begin scanning
             try
             {
                 Main.Logger.WriteLine("Starting scan...");
 
                 if (Main.bScanStartup)
-                {
-                    this.UpdateSection("Startup entries");
-
-                    Main.Logger.WriteLine("Starting to scan startup entries");
-                    this.threadCurrent = new Thread(new ThreadStart(StartUp.Scan));
-                    this.threadCurrent.Start();
-                    this.threadCurrent.Join();
-                    Main.Logger.WriteLine("Scanning for startup entries finished");
-
-                    this.progressBar.Position++;
-                }
+                    this.StartScanner(new StartUp());
 
                 if (Main.bScanSharedDLL)
-                {
-                    this.UpdateSection("Shared DLLs");
-
-                    Main.Logger.WriteLine("Starting to scan shared dlls");
-                    this.threadCurrent = new Thread(new ThreadStart(DLLs.Scan));
-                    this.threadCurrent.Start();
-                    this.threadCurrent.Join();
-                    Main.Logger.WriteLine("Scanning for shared dlls finished");
-
-                    this.progressBar.Position++;
-                }
+                    this.StartScanner(new DLLs());
 
                 if (Main.bScanFonts)
-                {
-                    this.UpdateSection("Windows Fonts");
-
-                    Main.Logger.WriteLine("Starting to scan windows fonts");
-                    this.threadCurrent = new Thread(new ThreadStart(Fonts.Scan));
-                    this.threadCurrent.Start();
-                    this.threadCurrent.Join();
-                    Main.Logger.WriteLine("Scanning for windows fonts finished");
-
-                    this.progressBar.Position++;
-                }
+                    this.StartScanner(new Fonts());
 
                 if (Main.bScanAppInfo)
-                {
-                    this.UpdateSection("Application info");
-
-                    Main.Logger.WriteLine("Starting to scan application info");
-                    this.threadCurrent = new Thread(new ThreadStart(AppInfo.Scan));
-                    this.threadCurrent.Start();
-                    this.threadCurrent.Join();
-                    Main.Logger.WriteLine("Scanning for application info finished");
-
-                    this.progressBar.Position++;
-                }
+                    this.StartScanner(new AppInfo());
 
                 if (Main.bScanAppPaths)
-                {
-                    this.UpdateSection("Program Locations");
-
-                    Main.Logger.WriteLine("Starting to scan program locations");
-                    this.threadCurrent = new Thread(new ThreadStart(AppPaths.Scan));
-                    this.threadCurrent.Start();
-                    this.threadCurrent.Join();
-                    Main.Logger.WriteLine("Scanning for program locations finished");
-
-                    this.progressBar.Position++;
-                }
+                    this.StartScanner(new AppPaths());
 
                 if (Main.bScanActivex)
-                {
-                    this.UpdateSection("ActiveX/COM objects");
-
-                    Main.Logger.WriteLine("Starting to scan ActiveX/COM objects");
-                    this.threadCurrent = new Thread(new ThreadStart(COMObjects.Scan));
-                    this.threadCurrent.Start();
-                    this.threadCurrent.Join();
-                    Main.Logger.WriteLine("Scanning for ActiveX/COM objects finished");
-
-                    this.progressBar.Position++;
-                }
+                    this.StartScanner(new COMObjects());
 
                 if (Main.bScanDrivers)
-                {
-                    this.UpdateSection("Drivers");
-
-                    Main.Logger.WriteLine("Starting to scan drivers");
-                    this.threadCurrent = new Thread(new ThreadStart(Drivers.Scan));
-                    this.threadCurrent.Start();
-                    this.threadCurrent.Join();
-                    Main.Logger.WriteLine("Scanning for drivers finished");
-
-                    this.progressBar.Position++;
-                }
+                    this.StartScanner(new Drivers());
 
                 if (Main.bScanHelpFiles)
-                {
-                    this.UpdateSection("Help files");
-
-                    Main.Logger.WriteLine("Starting to scan help files");
-                    this.threadCurrent = new Thread(new ThreadStart(HelpFiles.Scan));
-                    this.threadCurrent.Start();
-                    this.threadCurrent.Join();
-                    Main.Logger.WriteLine("Scanning for help files finished");
-
-                    this.progressBar.Position++;
-                }
+                    this.StartScanner(new HelpFiles());
 
                 if (Main.bScanSounds)
-                {
-                    this.UpdateSection("Sound events");
-
-                    Main.Logger.WriteLine("Starting to scan sound events");
-                    this.threadCurrent = new Thread(new ThreadStart(Sounds.Scan));
-                    this.threadCurrent.Start();
-                    this.threadCurrent.Join();
-                    Main.Logger.WriteLine("Scanning for sound events finished");
-
-                    this.progressBar.Position++;
-                }
+                    this.StartScanner(new Sounds());
 
                 if (Main.bScanAppSettings)
-                {
-                    this.UpdateSection("Software settings");
-
-                    Main.Logger.WriteLine("Starting to scan software settings");
-                    this.threadCurrent = new Thread(new ThreadStart(AppSettings.Scan));
-                    this.threadCurrent.Start();
-                    this.threadCurrent.Join();
-                    Main.Logger.WriteLine("Scanning for software settings finished");
-
-                    this.progressBar.Position++;
-                }
+                    this.StartScanner(new AppSettings());
 
                 if (Main.bScanHistoryList)
-                {
-                    this.UpdateSection("History List");
-
-                    Main.Logger.WriteLine("Starting to scan history list");
-                    this.threadCurrent = new Thread(new ThreadStart(HistoryList.Scan));
-                    this.threadCurrent.Start();
-                    this.threadCurrent.Join();
-                    Main.Logger.WriteLine("Scanning for history list finished");
-
-                    this.progressBar.Position++;
-                }
+                    this.StartScanner(new HistoryList());
 
                 this.DialogResult = DialogResult.OK;
             }
@@ -243,8 +129,8 @@ namespace Little_Registry_Cleaner
             {
                 // Scanning was aborted
                 Main.Logger.WriteLine("User aborted scan... Exiting.");
-                if (this.threadCurrent.IsAlive)
-                    this.threadCurrent.Abort();
+                if (this.threadScan.IsAlive)
+                    this.threadScan.Abort();
 
                 this.DialogResult = DialogResult.Abort;
             }
@@ -253,11 +139,31 @@ namespace Little_Registry_Cleaner
                 // Finished Scanning
                 Main.Logger.WriteLine("Total Items Scanned: " + this.ItemsScanned.ToString());
                 Main.Logger.WriteLine("Finished Scanning!");
-
-                this.Close();
             }
 
+            // Dialog will be closed automatically
+
             return;
+        }
+
+        /// <summary>
+        /// Starts a scanner
+        /// </summary>
+        public void StartScanner(ScannerBase scannerName)
+        {
+            System.Reflection.MethodInfo mi = scannerName.GetType().GetMethod("Scan", System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Static);
+            ScanDelegate objScan = (ScanDelegate)Delegate.CreateDelegate(typeof(ScanDelegate), mi);
+
+            this.UpdateSection(scannerName.ScannerName);
+            Main.Logger.WriteLine("Starting to scan: " + scannerName.ScannerName);
+
+            // Start scanning
+            this.threadScan = new Thread(new ThreadStart(objScan));
+            this.threadScan.Start();
+            this.threadScan.Join();
+
+            Main.Logger.WriteLine("Finished scanning: " + scannerName.ScannerName);
+            this.progressBar.Position++;
         }
 
         /// <summary>
@@ -348,7 +254,7 @@ namespace Little_Registry_Cleaner
         {
             if (this.InvokeRequired)
             {
-                this.Invoke(new UpdateSectionDelegate(UpdateSection), SectionName);
+                this.BeginInvoke(new UpdateSectionDelegate(UpdateSection), SectionName);
                 return;
             }
 
@@ -358,8 +264,6 @@ namespace Little_Registry_Cleaner
             this.progressBar.Text = strText;
         }
 
-        
-
         /// <summary>
         /// Updates the number of problems
         /// </summary>
@@ -367,7 +271,7 @@ namespace Little_Registry_Cleaner
         {
             if (this.InvokeRequired)
             {
-                this.Invoke(new MethodInvoker(IncrementProblems));
+                this.BeginInvoke(new MethodInvoker(IncrementProblems));
                 return;
             }
 

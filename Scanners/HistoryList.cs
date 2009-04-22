@@ -26,8 +26,13 @@ using System.Text.RegularExpressions;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public static class HistoryList
+    public class HistoryList : ScannerBase
     {
+        public override string ScannerName
+        {
+            get { return "Recent Documents"; }
+        }
+
         public static void Scan()
         {
             try

@@ -25,8 +25,13 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public static class COMObjects
+    public class COMObjects : ScannerBase
     {
+        public override string ScannerName
+        {
+            get { return "ActiveX/COM Objects"; }
+        }
+
         /// <summary>
         /// Scans ActiveX/COM Objects
         /// </summary>
