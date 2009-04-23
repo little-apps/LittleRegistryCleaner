@@ -20,15 +20,20 @@ using System;
 using System.Collections;
 using System.Windows.Forms;
 using System.Text;
+using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner
 {
     public class BadRegistryKey : ListViewItem
     {
+        private string _strProblem = "";
+        private string _strValueName = "";
+        private string _strSectionName = "";
+        private string _strData = "";
+
         /// <summary>
         /// Get/Sets the problem
         /// </summary>
-        private string _strProblem = "";
         public string Problem
         {
             get { return _strProblem; }
@@ -38,7 +43,6 @@ namespace Little_Registry_Cleaner
         /// <summary>
         /// Gets/Sets the value name
         /// </summary>
-        private string _strValueName = "";
         public string ValueName
         {
             get { return _strValueName; }
@@ -48,7 +52,6 @@ namespace Little_Registry_Cleaner
         /// <summary>
         /// Gets/Sets the section name
         /// </summary>
-        private string _strSectionName = "";
         public string SectionName
         {
             get { return _strSectionName; }
@@ -56,10 +59,20 @@ namespace Little_Registry_Cleaner
         }
 
         /// <summary>
-        /// Gets/Sets the registry path
+        /// Gets the data in the bad registry key
         /// </summary>
+        public string Data
+        {
+            get { return _strData; }
+        }
+
+        
         public string strMainKey = "";
         public string strSubKey = "";
+
+        /// <summary>
+        /// Gets/Sets the registry path
+        /// </summary>
         public string RegKeyPath
         {
             get
@@ -113,8 +126,69 @@ namespace Little_Registry_Cleaner
             base.Text = Problem;
             base.SubItems.Add(RegistryKey);
             if (!string.IsNullOrEmpty(ValueName))
+            {
                 base.SubItems.Add(ValueName);
+                GetValueData();
+            }
+        }
 
+        /// <summary>
+        /// Retrieves the value data
+        /// </summary>
+        private void GetValueData()
+        {
+            RegistryKey rk = Utils.RegOpenKey(this.strMainKey, this.strSubKey);
+
+            if (rk == null)
+                return;
+
+            RegistryValueKind rvk = rk.GetValueKind(ValueName);
+
+            switch (rvk)
+            {
+                case RegistryValueKind.MultiString:
+                    {
+                        string strValue = "";
+                        string[] strValues = (string[])rk.GetValue(ValueName);
+
+                        for (int i=0;i<strValues.Length;i++)
+                        {
+                            if (i != 0)
+                                strValue = string.Concat(strValue, ",");
+
+                            strValue = string.Format("{0} {1}", strValue, strValues[i]);
+                        }
+
+                        this._strData = string.Copy(strValue);
+
+                        break;
+                    }
+                case RegistryValueKind.Binary:
+                    {
+                        string strValue = "";
+
+                        foreach (byte b in (byte[])rk.GetValue(ValueName))
+                            strValue = string.Format("{0} {1:X2}", strValue, b);
+
+                        this._strData = string.Copy(strValue);
+
+                        break;
+                    }
+                case RegistryValueKind.DWord:
+                case RegistryValueKind.QWord:
+                    {
+                        this._strData = string.Format("0x{0:X} ({0:D})", rk.GetValue(ValueName));
+                        break;
+                    }
+                default:
+                    {
+                        this._strData = string.Format("{0}", rk.GetValue(ValueName));
+                        break;
+                    }
+
+            }
+
+            return;
         }
 
         public override string ToString()

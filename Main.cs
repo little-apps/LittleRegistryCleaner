@@ -460,6 +460,19 @@ namespace Little_Registry_Cleaner
         }
         #endregion
 
+        private void listResults_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (this.listResults.SelectedItems.Count > 0)
+            {
+                BadRegistryKey brk = (BadRegistryKey)this.listResults.SelectedItems[0];
+
+                this.detailsRegView1.Problem = brk.Problem;
+                this.detailsRegView1.RegKey = brk.RegKeyPath;
+                this.detailsRegView1.ValueName = brk.ValueName;
+                this.detailsRegView1.Data = brk.Data;
+            }
+        }
+
         
         #endregion
     }
