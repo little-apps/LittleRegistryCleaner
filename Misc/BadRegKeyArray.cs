@@ -128,67 +128,10 @@ namespace Little_Registry_Cleaner
             if (!string.IsNullOrEmpty(ValueName))
             {
                 base.SubItems.Add(ValueName);
-                GetValueData();
+                
+                // Convert value to string
+                this._strData = Utils.RegConvertXValueToString(Utils.RegOpenKey(this.strMainKey, this.strSubKey), ValueName);
             }
-        }
-
-        /// <summary>
-        /// Retrieves the value data
-        /// </summary>
-        private void GetValueData()
-        {
-            RegistryKey rk = Utils.RegOpenKey(this.strMainKey, this.strSubKey);
-
-            if (rk == null)
-                return;
-
-            RegistryValueKind rvk = rk.GetValueKind(ValueName);
-
-            switch (rvk)
-            {
-                case RegistryValueKind.MultiString:
-                    {
-                        string strValue = "";
-                        string[] strValues = (string[])rk.GetValue(ValueName);
-
-                        for (int i=0;i<strValues.Length;i++)
-                        {
-                            if (i != 0)
-                                strValue = string.Concat(strValue, ",");
-
-                            strValue = string.Format("{0} {1}", strValue, strValues[i]);
-                        }
-
-                        this._strData = string.Copy(strValue);
-
-                        break;
-                    }
-                case RegistryValueKind.Binary:
-                    {
-                        string strValue = "";
-
-                        foreach (byte b in (byte[])rk.GetValue(ValueName))
-                            strValue = string.Format("{0} {1:X2}", strValue, b);
-
-                        this._strData = string.Copy(strValue);
-
-                        break;
-                    }
-                case RegistryValueKind.DWord:
-                case RegistryValueKind.QWord:
-                    {
-                        this._strData = string.Format("0x{0:X} ({0:D})", rk.GetValue(ValueName));
-                        break;
-                    }
-                default:
-                    {
-                        this._strData = string.Format("{0}", rk.GetValue(ValueName));
-                        break;
-                    }
-
-            }
-
-            return;
         }
 
         public override string ToString()

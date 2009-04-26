@@ -35,7 +35,7 @@ namespace Little_Registry_Cleaner
     public partial class ScanDlg : Form
     {
         public delegate void ScanDelegate();
-        public delegate void UpdateScanSubKeyDelgate(string strSubKey);
+        public delegate void UpdateScanningObjectDelgate(string Object);
         public delegate void UpdateSectionDelegate(string strSection);
 
         Thread threadMain, threadScan;
@@ -193,7 +193,12 @@ namespace Little_Registry_Cleaner
             if (arrBadRegistryKeys.Add(ScanDlg.CurrentSection, Problem, Path, ValueName) > 0)
             {
                 self.IncrementProblems();
-                Main.Logger.WriteLine("Found invalid registry key. Key Name: \"" + ValueName + "\" Path: \"" + Path + "\" Reason: \"" + Problem + "\"");
+
+                if (!string.IsNullOrEmpty(ValueName))
+                    Main.Logger.WriteLine(string.Format("Bad Registry Value Found! Problem: \"{0}\" Path: \"{1}\" Value Name: \"{2}\"", Problem, Path, ValueName)); 
+                else
+                    Main.Logger.WriteLine(string.Format("Bad Registry Key Found! Problem: \"{0}\" Path: \"{1}\"", Problem, Path)); 
+
                 return true;
             }
 
@@ -223,21 +228,24 @@ namespace Little_Registry_Cleaner
         }
 
         /// <summary>
-        /// Updates the textbox with the current subkey being scanned
+        /// Updates the textbox with the current object being scanned
         /// </summary>
-        public static void UpdateScanSubKey(string SubKey)
+        public static void UpdateScanningObject(string Object)
         {
             try
             {
                 if (self.InvokeRequired)
                 {
-                    self.BeginInvoke(new UpdateScanSubKeyDelgate(UpdateScanSubKey), SubKey);
+                    self.BeginInvoke(new UpdateScanningObjectDelgate(UpdateScanningObject), Object);
                     return;
                 }
 
-                string strSubKey = Utils.PrefixRegPath(SubKey);
+                string strSubKey = Utils.PrefixRegPath(Object);
 
-                self.textBoxSubKey.Text = strSubKey;
+                if (string.IsNullOrEmpty(Object))
+                    return;
+
+                self.textBoxSubKey.Text = Object;
                 self.ItemsScanned++;
             }
             catch (Exception)

@@ -248,4 +248,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 - Scan dialog is thread safe
 - Scanners use base class to save coding and work
-= Added details control to display more information
+- Added details control to display more information
+- Convert value to string function is now a static function
+- Checks if registry key is not null before continuing in AppInfo.cs
+- Checks for MsiExec in UninstallString instead of evaluating WindowsInstaller in AppInfo.cs
+- Changed the log formatting of bad registry keys
+- Displays files and directorys being scanned in scan dialog
+- Resets details control after scanning is finished

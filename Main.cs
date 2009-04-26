@@ -57,8 +57,6 @@ namespace Little_Registry_Cleaner
             get { return _logger; }
         }
 
-        
-
         public Main()
         {
             InitializeComponent();
@@ -94,6 +92,12 @@ namespace Little_Registry_Cleaner
             // Open Scan dialog
             ScanDlg frmScanBox = new ScanDlg(nSectionCount);
             frmScanBox.ShowDialog(this);
+
+            // Reset details control
+            this.detailsRegView1.Problem = string.Empty;
+            this.detailsRegView1.RegKey = string.Empty;
+            this.detailsRegView1.ValueName = string.Empty;
+            this.detailsRegView1.Data = string.Empty;
 
             // See if there are any bad registry keys
             if (ScanDlg.arrBadRegistryKeys.Count > 0)

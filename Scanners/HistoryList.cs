@@ -68,8 +68,6 @@ namespace Little_Registry_Cleaner.Scanners
         {
             if (regKey == null)
                 return;
-
-            ScanDlg.UpdateScanSubKey(regKey.ToString());
             
             string strRecentDocs = Environment.GetFolderPath(Environment.SpecialFolder.Recent);
 
@@ -79,8 +77,9 @@ namespace Little_Registry_Cleaner.Scanners
                 if (!Regex.IsMatch(strValueName, "[0-9]"))
                     continue;
 
-                object obj = regKey.GetValue(strValueName);
-                string strFileName = ExtractUnicodeStringFromBinary(obj);
+                string strFileName = ExtractUnicodeStringFromBinary(regKey.GetValue(strValueName));
+
+                ScanDlg.UpdateScanningObject(strFileName);
 
                 // See if file exists in Recent Docs folder
                 if (!Utils.FileExists(string.Format("{0}\\{1}.lnk", strRecentDocs, strFileName)))

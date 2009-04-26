@@ -49,28 +49,31 @@ namespace Little_Registry_Cleaner.Scanners
 
                     foreach (string strProgName in regKey.GetSubKeyNames())
                     {
-                        RegistryKey regKey2 = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\" + strProgName);
-
-                        ScanDlg.UpdateScanSubKey(regKey2.ToString());
-
-                        // Skip if installed by msi installer
-                        if (Convert.ToInt32(regKey2.GetValue("WindowsInstaller")) == 1)
-                            continue;
-
-                        // Check display icon
-                        string strDisplayIcon = regKey2.GetValue("DisplayIcon") as string;
+                        using (RegistryKey regKey2 = regKey.OpenSubKey(strProgName))
                         {
-                            if (!string.IsNullOrEmpty(strDisplayIcon))
-                                if (!Utils.IconExists(strDisplayIcon))
-                                    ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "DisplayIcon");
+                            if (regKey2 != null)
+                            {
+                                ScanDlg.UpdateScanningObject(regKey2.ToString());
+
+                                string strUninstallString = string.Format("{0}", regKey2.GetValue("UninstallString"));
+                                string strDisplayIcon = string.Format("{0}", regKey2.GetValue("DisplayIcon"));
+                                string strInstallLocation = string.Format("{0}", regKey2.GetValue("InstallLocation"));
+
+                                // Skip if installed by msi installer
+                                if (strUninstallString.Contains("msiexec"))
+                                    continue;
+
+                                // Check display icon
+                                if (!string.IsNullOrEmpty(strDisplayIcon))
+                                    if (!Utils.IconExists(strDisplayIcon))
+                                        ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "DisplayIcon");
+
+                                // Check install location 
+                                if (!string.IsNullOrEmpty(strInstallLocation))
+                                    if ((!Utils.DirExists(strInstallLocation)) && (!Utils.FileExists(strInstallLocation)))
+                                        ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString());
+                            }
                         }
-
-                        // Check install location
-                        string strInstallLocation = regKey2.GetValue("InstallLocation") as string;
-                        if (!string.IsNullOrEmpty(strInstallLocation))
-                            if ((!Utils.DirExists(strInstallLocation)) && (!Utils.FileExists(strInstallLocation)))
-                                ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString());
-
                     }
                 }
 
@@ -87,6 +90,8 @@ namespace Little_Registry_Cleaner.Scanners
                         {
                             if (rkARPCache != null)
                             {
+                                ScanDlg.UpdateScanningObject(rkARPCache.Name);
+
                                 byte[] b = (byte[])rkARPCache.GetValue("SlowInfoCache");
 
                                 GCHandle gcHandle = GCHandle.Alloc(b, GCHandleType.Pinned);
@@ -97,7 +102,6 @@ namespace Little_Registry_Cleaner.Scanners
                                     ScanDlg.StoreInvalidKey("Invalid registry key", rkARPCache.ToString());
 
                                 gcHandle.Free();
-                                rkARPCache.Close();
                             }
                         }
                     }

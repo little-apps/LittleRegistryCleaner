@@ -46,11 +46,12 @@ namespace Little_Registry_Cleaner.Scanners
 
                 Main.Logger.WriteLine("Scanning for missing Shared DLLs");
 
-                ScanDlg.UpdateScanSubKey(regKey.ToString());
-
                 // Validate Each DLL from the value names
                 foreach (string strFilePath in regKey.GetValueNames())
                 {
+                    // Update scan dialog
+                    ScanDlg.UpdateScanningObject(strFilePath);
+
                     if (!string.IsNullOrEmpty(strFilePath))
                         if (!Utils.FileExists(strFilePath))
                             ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strFilePath);

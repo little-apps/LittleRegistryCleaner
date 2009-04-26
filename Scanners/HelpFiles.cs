@@ -55,11 +55,11 @@ namespace Little_Registry_Cleaner.Scanners
 
             Main.Logger.WriteLine("Checking for missing help files in " + regKey.Name);
 
-            ScanDlg.UpdateScanSubKey(regKey.ToString());
-
             foreach (string strHelpFile in regKey.GetValueNames())
             {
                 string strHelpPath = regKey.GetValue(strHelpFile) as string;
+
+                ScanDlg.UpdateScanningObject(strHelpPath);
 
                 if (string.IsNullOrEmpty(strHelpPath))
                     continue;

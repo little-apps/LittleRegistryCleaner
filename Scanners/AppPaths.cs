@@ -58,10 +58,10 @@ namespace Little_Registry_Cleaner.Scanners
             if (regKey == null)
                 return;
 
-            ScanDlg.UpdateScanSubKey(regKey.Name);
-
             foreach (string strFolder in regKey.GetValueNames())
             {
+                ScanDlg.UpdateScanningObject(strFolder);
+
                 if (!Utils.DirExists(strFolder))
                     ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strFolder);
             }
@@ -69,7 +69,7 @@ namespace Little_Registry_Cleaner.Scanners
 
         private static void ScanAppPaths()
         {
-            RegistryKey regKey = Registry.LocalMachine.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\App Paths");
+            RegistryKey regKey = Registry.LocalMachine.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\App Paths");
 
             if (regKey == null)
                 return;
@@ -80,7 +80,7 @@ namespace Little_Registry_Cleaner.Scanners
 
                 if (regKey2 != null)
                 {
-                    ScanDlg.UpdateScanSubKey(regKey2.ToString());
+                    ScanDlg.UpdateScanningObject(regKey2.ToString());
 
                     if (Convert.ToInt32(regKey2.GetValue("BlockOnTSNonInstallMode")) == 1)
                         continue;

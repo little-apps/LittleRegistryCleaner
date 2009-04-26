@@ -350,6 +350,64 @@ namespace Little_Registry_Cleaner
         }
 
         /// <summary>
+        /// Gets the value kind and converts it accordingly
+        /// </summary>
+        /// <returns>Registry value formatted to a string</returns>
+        public static string RegConvertXValueToString(RegistryKey regKey, string valueName)
+        {
+            string strRet = "";
+
+            if (regKey == null)
+                return strRet;
+
+            switch (regKey.GetValueKind(valueName))
+            {
+                case RegistryValueKind.MultiString:
+                    {
+                        string strValue = "";
+                        string[] strValues = (string[])regKey.GetValue(valueName);
+
+                        for (int i = 0; i < strValues.Length; i++)
+                        {
+                            if (i != 0)
+                                strValue = string.Concat(strValue, ",");
+
+                            strValue = string.Format("{0} {1}", strValue, strValues[i]);
+                        }
+
+                        strRet = string.Copy(strValue);
+
+                        break;
+                    }
+                case RegistryValueKind.Binary:
+                    {
+                        string strValue = "";
+
+                        foreach (byte b in (byte[])regKey.GetValue(valueName))
+                            strValue = string.Format("{0} {1:X2}", strValue, b);
+
+                        strRet = string.Copy(strValue);
+
+                        break;
+                    }
+                case RegistryValueKind.DWord:
+                case RegistryValueKind.QWord:
+                    {
+                        strRet = string.Format("0x{0:X} ({0:D})", regKey.GetValue(valueName));
+                        break;
+                    }
+                default:
+                    {
+                        strRet = string.Format("{0}", regKey.GetValue(valueName));
+                        break;
+                    }
+
+            }
+
+            return strRet;
+        }
+
+        /// <summary>
         /// Starts the process using CreateProcess() API
         /// </summary>
         /// <param name="CmdLine">Command line to execute</param>

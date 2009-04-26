@@ -76,12 +76,13 @@ namespace Little_Registry_Cleaner.Scanners
                 return;
 
             Main.Logger.WriteLine("Checking for invalid files in " + regKey.Name);
-            ScanDlg.UpdateScanSubKey(regKey.ToString());
-
+            
             foreach (string strProgName in regKey.GetValueNames())
             {
                 string strRunPath = regKey.GetValue(strProgName) as string;
                 string strFilePath, strArgs;
+
+                ScanDlg.UpdateScanningObject(strRunPath);
 
                 // Check if value is not empty
                 if (string.IsNullOrEmpty(strRunPath))

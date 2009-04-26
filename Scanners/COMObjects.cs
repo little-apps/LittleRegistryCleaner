@@ -101,7 +101,7 @@ namespace Little_Registry_Cleaner.Scanners
                 if (rkCLSID == null)
                     continue;
 
-                ScanDlg.UpdateScanSubKey(rkCLSID.ToString());
+                ScanDlg.UpdateScanningObject(rkCLSID.ToString());
 
                 // Check for valid AppID
                 string strAppID = regKey.GetValue("AppID") as string;
@@ -178,7 +178,7 @@ namespace Little_Registry_Cleaner.Scanners
                     continue;
 
                 // Update scan dialog
-                ScanDlg.UpdateScanSubKey(rkAppId.ToString());
+                ScanDlg.UpdateScanningObject(rkAppId.ToString());
 
                 // Check for reference to AppID
                 string strCLSID = rkAppId.GetValue("AppID") as string;
@@ -204,7 +204,7 @@ namespace Little_Registry_Cleaner.Scanners
             foreach (string strSubKey in regKey.GetSubKeyNames())
             {
                 // Update scan dialog
-                ScanDlg.UpdateScanSubKey(string.Format("{0}\\{1}", regKey.Name, strSubKey));
+                ScanDlg.UpdateScanningObject(string.Format("{0}\\{1}", regKey.Name, strSubKey));
 
                 if (strSubKey[0] == '.')
                 {
@@ -214,7 +214,7 @@ namespace Little_Registry_Cleaner.Scanners
                         continue;
 
                     // Update scan dialog
-                    ScanDlg.UpdateScanSubKey(rkFileExt.ToString());
+                    ScanDlg.UpdateScanningObject(rkFileExt.ToString());
 
                     // Find reference to ProgID
                     string strProgID = rkFileExt.GetValue("") as string;
@@ -270,7 +270,7 @@ namespace Little_Registry_Cleaner.Scanners
                         if ((rkBHO = regKey.OpenSubKey(strGuid)) != null)
                         {
                             // Update scan dialog
-                            ScanDlg.UpdateScanSubKey(rkBHO.ToString());
+                            ScanDlg.UpdateScanningObject(rkBHO.ToString());
 
                             if (!CLSIDExists(strGuid))
                                 ScanDlg.StoreInvalidKey("Missing CLSID reference", rkBHO.ToString());
@@ -286,11 +286,11 @@ namespace Little_Registry_Cleaner.Scanners
 
                 if (regKey != null)
                 {
-                    // Update scan dialog
-                    ScanDlg.UpdateScanSubKey(regKey.ToString());
-
                     foreach (string strGuid in regKey.GetValueNames())
                     {
+                        // Update scan dialog
+                        ScanDlg.UpdateScanningObject("CLSID: " + strGuid);
+
                         if (!IEToolbarIsValid(strGuid))
                             ScanDlg.StoreInvalidKey("Toolbar is not valid", regKey.ToString(), strGuid);
                     }
@@ -311,7 +311,7 @@ namespace Little_Registry_Cleaner.Scanners
                         if ((rkExt = regKey.OpenSubKey(strGuid)) != null)
                         {
                             // Update scan dialog
-                            ScanDlg.UpdateScanSubKey(rkExt.ToString());
+                            ScanDlg.UpdateScanningObject(rkExt.ToString());
 
                             ValidateExplorerExt(rkExt);
                         }
@@ -334,7 +334,7 @@ namespace Little_Registry_Cleaner.Scanners
                             continue;
 
                         // Update scan dialog
-                        ScanDlg.UpdateScanSubKey(rkFileExt.ToString());
+                        ScanDlg.UpdateScanningObject(rkFileExt.ToString());
 
                         ValidateFileExt(rkFileExt);
                     }

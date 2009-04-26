@@ -46,11 +46,11 @@ namespace Little_Registry_Cleaner.Scanners
 
                 Main.Logger.WriteLine("Scanning for missing drivers");
 
-                ScanDlg.UpdateScanSubKey(regKey.ToString());
-
                 foreach (string strDriverName in regKey.GetValueNames())
                 {
                     string strValue = regKey.GetValue(strDriverName) as string;
+
+                    ScanDlg.UpdateScanningObject(strValue);
 
                     if (!Utils.FileExists(strValue))
                         ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strDriverName);

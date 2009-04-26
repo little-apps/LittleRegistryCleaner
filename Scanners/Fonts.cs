@@ -55,8 +55,6 @@ namespace Little_Registry_Cleaner.Scanners
             if (!SHGetSpecialFolderPath(IntPtr.Zero, strPath, CSIDL_FONTS, false))
                 return;
 
-            ScanDlg.UpdateScanSubKey(regKey.ToString());
-
             foreach (string strFontName in regKey.GetValueNames())
             {
                 string strValue = regKey.GetValue(strFontName) as string;
@@ -71,6 +69,8 @@ namespace Little_Registry_Cleaner.Scanners
 
                 // Check for font in fonts folder
                 string strFontPath = String.Format("{0}\\{1}", strPath.ToString(), strValue);
+
+                ScanDlg.UpdateScanningObject(strFontPath);
 
                 if (!File.Exists(strFontPath))
                     ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.ToString(), strFontName);

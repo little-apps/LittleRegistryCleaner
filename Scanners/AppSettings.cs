@@ -86,7 +86,7 @@ namespace Little_Registry_Cleaner.Scanners
             if (regKey == null)
                 return 0;
 
-            ScanDlg.UpdateScanSubKey(regKey.ToString());
+            ScanDlg.UpdateScanningObject(regKey.ToString());
 
             int nValueCount = regKey.ValueCount;
 

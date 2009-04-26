@@ -62,7 +62,7 @@ namespace Little_Registry_Cleaner.Scanners
 
                         if (rk2 != null)
                         {
-                            ScanDlg.UpdateScanSubKey(rk2.ToString());
+                            ScanDlg.UpdateScanningObject(rk2.ToString());
 
                             string strSoundPath = rk2.GetValue("") as string;
 
@@ -77,7 +77,7 @@ namespace Little_Registry_Cleaner.Scanners
                         RegistryKey rk2 = rk.OpenSubKey(strSubKey);
                         if (rk2 != null)
                         {
-                            ScanDlg.UpdateScanSubKey(rk2.ToString());
+                            ScanDlg.UpdateScanningObject(rk2.ToString());
                             ParseSoundKeys(rk2);
                         }
                     }
