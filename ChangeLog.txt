@@ -255,3 +255,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Changed the log formatting of bad registry keys
 - Displays files and directorys being scanned in scan dialog
 - Resets details control after scanning is finished
+- Fixed null bug in COMObjects.ScanClasses()
+- Catches DllNotFoundException if srclient.dll cant be found when creating system restore points
+- Catches Exception if unable to convert SystemComponent or EstimatedSize when retrieving ARP info

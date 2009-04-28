@@ -240,10 +240,10 @@ namespace Little_Registry_Cleaner
                     return;
                 }
 
-                string strSubKey = Utils.PrefixRegPath(Object);
-
                 if (string.IsNullOrEmpty(Object))
                     return;
+
+                Object = Utils.PrefixRegPath(Object);
 
                 self.textBoxSubKey.Text = Object;
                 self.ItemsScanned++;

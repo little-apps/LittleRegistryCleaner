@@ -137,7 +137,7 @@ namespace Little_Registry_Cleaner.UninstallManager
 
                 if ((!string.IsNullOrEmpty(objProgInfo.DisplayName))
                     && (string.IsNullOrEmpty(objProgInfo.ParentKeyName))
-                    && (!objProgInfo.SystemComponent))
+                    && (objProgInfo.SystemComponent == 0))
                 {
                     if (objProgInfo.Uninstallable)
                         lvi.ImageKey = "OK";
@@ -186,7 +186,8 @@ namespace Little_Registry_Cleaner.UninstallManager
 
                     if (lvi.Selected)
                     {
-                        objProgInfo.Uninstall();
+                        if (MessageBox.Show(this, "Are you sure you want to uninstall this program?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                            objProgInfo.Uninstall();
                         break;
                     }
                 }

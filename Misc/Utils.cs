@@ -661,7 +661,7 @@ namespace Little_Registry_Cleaner
             StringBuilder strBuffer = new StringBuilder(260);
 
             if (SearchPath(((!string.IsNullOrEmpty(Path)) ? (Path) : (null)), FileName, null, 260, strBuffer, null) != 0)
-                return string.Copy(strBuffer.ToString());
+                return strBuffer.ToString();
 
             return "";
         }

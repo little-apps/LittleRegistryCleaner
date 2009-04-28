@@ -134,14 +134,22 @@ namespace Little_Registry_Cleaner
                 return 0;
             }
 
-            // Prepare Restore Point
-            rpInfo.dwEventType = BeginSystemChange;
-            // By default we create a verification system
-            rpInfo.dwRestorePtType = (int)RestoreType.Restore;
-            rpInfo.llSequenceNumber = 0;
-            rpInfo.szDescription = strDescription;
+            try
+            {
+                // Prepare Restore Point
+                rpInfo.dwEventType = BeginSystemChange;
+                // By default we create a verification system
+                rpInfo.dwRestorePtType = (int)RestoreType.Restore;
+                rpInfo.llSequenceNumber = 0;
+                rpInfo.szDescription = strDescription;
 
-            SRSetRestorePointW(ref rpInfo, out rpStatus);
+                SRSetRestorePointW(ref rpInfo, out rpStatus);
+            }
+            catch (DllNotFoundException )
+            {
+                lSeqNum = 0;
+                return 0;
+            }
             
             lSeqNum = rpStatus.llSequenceNumber;
 
@@ -161,10 +169,17 @@ namespace Little_Registry_Cleaner
             if (!SysRestoreAvailable())
                 return 0;
 
-            rpInfo.dwEventType = EndSystemChange;
-            rpInfo.llSequenceNumber = lSeqNum;
+            try
+            {
+                rpInfo.dwEventType = EndSystemChange;
+                rpInfo.llSequenceNumber = lSeqNum;
 
-            SRSetRestorePointW(ref rpInfo, out rpStatus);
+                SRSetRestorePointW(ref rpInfo, out rpStatus);
+            }
+            catch (DllNotFoundException)
+            {
+                return 0;
+            }
 
             return rpStatus.nStatus;
         }
@@ -182,11 +197,18 @@ namespace Little_Registry_Cleaner
             if (!SysRestoreAvailable())
                 return 0;
 
-            rpInfo.dwEventType = EndSystemChange;
-            rpInfo.dwRestorePtType = (int)RestoreType.CancelledOperation;
-            rpInfo.llSequenceNumber = lSeqNum;
+            try
+            {
+                rpInfo.dwEventType = EndSystemChange;
+                rpInfo.dwRestorePtType = (int)RestoreType.CancelledOperation;
+                rpInfo.llSequenceNumber = lSeqNum;
 
-            SRSetRestorePointW(ref rpInfo, out rpStatus);
+                SRSetRestorePointW(ref rpInfo, out rpStatus);
+            }
+            catch (DllNotFoundException)
+            {
+                return 0;
+            }
 
             return rpStatus.nStatus;
         }

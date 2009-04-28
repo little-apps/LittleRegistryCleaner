@@ -208,20 +208,18 @@ namespace Little_Registry_Cleaner.Scanners
 
                 if (strSubKey[0] == '.')
                 {
-                    RegistryKey rkFileExt = regKey.OpenSubKey(strSubKey);
+                    using (RegistryKey rkFileExt = regKey.OpenSubKey(strSubKey))
+                    {
+                        if (rkFileExt != null)
+                        {
+                            // Find reference to ProgID
+                            string strProgID = rkFileExt.GetValue("") as string;
 
-                    if (rkFileExt == null)
-                        continue;
-
-                    // Update scan dialog
-                    ScanDlg.UpdateScanningObject(rkFileExt.ToString());
-
-                    // Find reference to ProgID
-                    string strProgID = rkFileExt.GetValue("") as string;
-
-                    if (!string.IsNullOrEmpty(strProgID))
-                        if (!ProgIDExists(strProgID))
-                            ScanDlg.StoreInvalidKey("Missing ProgID reference", rkFileExt.ToString());
+                            if (!string.IsNullOrEmpty(strProgID))
+                                if (!ProgIDExists(strProgID))
+                                    ScanDlg.StoreInvalidKey("Missing ProgID reference", rkFileExt.ToString());
+                        }
+                    }
                 }
                 else
                 {
@@ -241,8 +239,11 @@ namespace Little_Registry_Cleaner.Scanners
                 // Check for unused progid/extension
                 using (RegistryKey rk = regKey.OpenSubKey(strSubKey))
                 {
-                    if (rk.ValueCount <= 0 && rk.SubKeyCount <= 0)
-                        ScanDlg.StoreInvalidKey("Unused ProgID/File Extension", rk.Name);
+                    if (rk != null)
+                    {
+                        if (rk.ValueCount <= 0 && rk.SubKeyCount <= 0)
+                            ScanDlg.StoreInvalidKey("Unused ProgID/File Extension", rk.Name);
+                    }
                 }
             }
 

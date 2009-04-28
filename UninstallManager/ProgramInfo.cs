@@ -30,25 +30,25 @@ namespace Little_Registry_Cleaner.UninstallManager
     {
 
         #region "Program Info"
-        public string Key;
-        public string DisplayName;
-        public string UninstallString;
-        public string QuietDisplayName;
-        public string QuietUninstallString;
-        public string DisplayVersion;
-        public string Publisher;
-        public string URLInfoAbout;
-        public string URLUpdateInfo;
-        public string HelpLink;
-        public string HelpTelephone;
-        public string Contact;
-        public string Comments;
-        public string Readme;
-        public string DisplayIcon;
-        public string ParentKeyName;
-        
-        public uint EstimatedSize;
-        public bool SystemComponent;
+        public readonly string Key;
+        public readonly string DisplayName;
+        public readonly string UninstallString;
+        public readonly string QuietDisplayName;
+        public readonly string QuietUninstallString;
+        public readonly string DisplayVersion;
+        public readonly string Publisher;
+        public readonly string URLInfoAbout;
+        public readonly string URLUpdateInfo;
+        public readonly string HelpLink;
+        public readonly string HelpTelephone;
+        public readonly string Contact;
+        public readonly string Comments;
+        public readonly string Readme;
+        public readonly string DisplayIcon;
+        public readonly string ParentKeyName;
+
+        public readonly uint EstimatedSize;
+        public readonly uint SystemComponent;
 
         public bool WindowsInstaller
         {
@@ -83,7 +83,6 @@ namespace Little_Registry_Cleaner.UninstallManager
             QuietUninstallString = regKey.GetValue("QuietUninstallString") as string;
             Publisher = regKey.GetValue("Publisher") as string;
             DisplayVersion = regKey.GetValue("DisplayVersion") as string;
-            EstimatedSize = Convert.ToUInt32(regKey.GetValue("EstimatedSize"));
             HelpLink = regKey.GetValue("HelpLink") as string;
             URLInfoAbout = regKey.GetValue("URLInfoAbout") as string;
             HelpTelephone = regKey.GetValue("HelpTelephone") as string;
@@ -93,7 +92,16 @@ namespace Little_Registry_Cleaner.UninstallManager
             DisplayIcon = regKey.GetValue("DisplayIcon") as string;
             ParentKeyName = regKey.GetValue("ParentKeyName") as string;
 
-            SystemComponent = (Convert.ToUInt32(regKey.GetValue("SystemComponent")) == 1);
+            try
+            {
+                SystemComponent = (uint)Convert.ToUInt32(regKey.GetValue("SystemComponent", 0));
+                EstimatedSize = (uint)Convert.ToUInt32(regKey.GetValue("EstimatedSize", 0));
+            }
+            catch (Exception)
+            {
+                SystemComponent = 0;
+                EstimatedSize = 0;
+            }
 
             SlowCache = false;
             InstallSize = 0;
