@@ -24,12 +24,24 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner
 {
-    public class BadRegistryKey : ListViewItem
+    public class BadRegistryKey : Common_Tools.TreeViewAdv.Tree.Node
     {
+        private CheckState _bChecked = CheckState.Checked;
         private string _strProblem = "";
         private string _strValueName = "";
         private string _strSectionName = "";
         private string _strData = "";
+
+        public CheckState Checked
+        {
+            get { return _bChecked; }
+            set { SetIsChecked(value, true, true); }
+        }
+
+        public new bool IsLeaf
+        {
+            get { return string.IsNullOrEmpty(this._strSectionName); }
+        }
 
         /// <summary>
         /// Get/Sets the problem
@@ -66,6 +78,42 @@ namespace Little_Registry_Cleaner
             get { return _strData; }
         }
 
+        private void SetIsChecked(CheckState value, bool updateChildren, bool updateParent)
+        {
+            this._bChecked = value;
+
+            if (updateChildren && this._bChecked != CheckState.Indeterminate)
+            {
+                foreach (BadRegistryKey c in this.Nodes)
+                    c.SetIsChecked(this._bChecked, true, false);
+            }
+
+            if (updateParent && this.IsLeaf)
+            {
+                (this.Parent as BadRegistryKey).VerifyCheckState();
+            }
+        }
+
+        private void VerifyCheckState()
+        {
+            CheckState state = CheckState.Indeterminate;
+
+            for (int i = 0; i < this.Nodes.Count; i++)
+            {
+                BadRegistryKey brk = this.Nodes[i] as BadRegistryKey;
+                CheckState current = brk.Checked;
+
+                if (i == 0)
+                    state = current;
+                else if (state != current)
+                {
+                    state = CheckState.Indeterminate;
+                    break;
+                }
+            }
+
+            this.SetIsChecked(state, false, true);
+        }
         
         public string strMainKey = "";
         public string strSubKey = "";
@@ -108,30 +156,38 @@ namespace Little_Registry_Cleaner
         /// <summary>
         /// Constructor for new bad registry key
         /// </summary>
+        /// <param name="SectionName">Section Name</param>
         /// <param name="Problem">Reason registry key is invalid</param>
         /// <param name="RegistryKey">Path to registry key (including registry hive)</param>
         /// <param name="ValueName">Value Name (can be null)</param>
-        public BadRegistryKey(string SectionName, string Problem, string RegistryKey, string ValueName)
+        public BadRegistryKey(string Problem, string RegistryKey, string ValueName)
         {
             if (!Utils.RegKeyExists(RegistryKey))
                 throw new ArgumentException("Registry Key path doesnt exist", "RegistryKey");
 
-            _strSectionName = SectionName;
+            _bChecked = CheckState.Checked;
             _strProblem = Problem;
             RegKeyPath = RegistryKey;
             _strValueName = ValueName;
 
-            // Add listviewitem information
-            base.Checked = true;
-            base.Text = Problem;
-            base.SubItems.Add(RegistryKey);
             if (!string.IsNullOrEmpty(ValueName))
-            {
-                base.SubItems.Add(ValueName);
-                
+            {             
                 // Convert value to string
                 this._strData = Utils.RegConvertXValueToString(Utils.RegOpenKey(this.strMainKey, this.strSubKey), ValueName);
             }
+        }
+
+        /// <summary>
+        /// Constructor for root node
+        /// </summary>
+        /// <param name="SectionName">Section Name</param>
+        public BadRegistryKey()
+        {
+            _bChecked = CheckState.Checked;
+            _strSectionName = "";
+            _strProblem = "";
+            RegKeyPath = "";
+            _strValueName = "";
         }
 
         public override string ToString()
@@ -142,26 +198,59 @@ namespace Little_Registry_Cleaner
 
     public class BadRegKeyArray : CollectionBase
     {
+        private int _problems = 0, _itemsscanned = 0, _sectioncount = 0;
+
+        public int Problems
+        {
+            get { return _problems; }
+            set { _problems = value; }
+        }
+
+        public int ItemsScanned
+        {
+            get { return _itemsscanned; }
+            set { _itemsscanned = value; }
+        }
+
+        public int SectionCount
+        {
+            get { return _sectioncount; }
+            set { _sectioncount = value; }
+        }
+
+        /// <summary>
+        /// Returns number of problems
+        /// </summary>
+        public new int Count
+        {
+            get { return _problems; }
+        }
+
         public BadRegistryKey this[int index]
         {
             get { return (BadRegistryKey)this.InnerList[index]; }
             set { this.InnerList[index] = value; }
         }
 
+        [Obsolete]
         public int Add(string Problem, string Path, string ValueName)
         {
             return (this.Add(ScanDlg.CurrentSection, Problem, Path, ValueName));
         }
 
+        [Obsolete]
         public int Add(string SectionName, string Problem, string Path, string ValueName)
         {
-            BadRegistryKey p = new BadRegistryKey(SectionName, Problem, Path, ValueName);
+            BadRegistryKey p = new BadRegistryKey(Problem, Path, ValueName);
 
             return (this.InnerList.Add((BadRegistryKey)p));
         }
 
         public int Add(BadRegistryKey BadRegKey)
         {
+            if (BadRegKey == null)
+                throw new ArgumentNullException("BadRegKey");
+
             return (this.InnerList.Add(BadRegKey));
         }
 
@@ -172,11 +261,17 @@ namespace Little_Registry_Cleaner
 
         public void Insert(int index, BadRegistryKey BadRegKey)
         {
+            if (BadRegKey == null)
+                throw new ArgumentNullException("BadRegKey");
+
             this.InnerList.Insert(index, BadRegKey);
         }
 
         public void Remove(BadRegistryKey BadRegKey)
         {
+            if (BadRegKey == null)
+                throw new ArgumentNullException("BadRegKey");
+
             this.InnerList.Remove(BadRegKey);
         }
 
@@ -185,10 +280,14 @@ namespace Little_Registry_Cleaner
             return (this.InnerList.Contains(BadRegKey));
         }
 
-        protected override void OnValidate(object value)
+        public void Clear(int SectionCount)
         {
-            if (value.GetType() != typeof(BadRegistryKey))
-                throw new ArgumentException("value must be of type BadRegistryKey", "value");
+            this._sectioncount = SectionCount;
+            this._itemsscanned = 0;
+            this._problems = 0;
+
+            // Clears all lists
+            base.Clear();
         }
     }
 

@@ -40,10 +40,8 @@ namespace Little_Registry_Cleaner
 
         Thread threadMain, threadScan;
 
-        private int SectionCount = 0;
-        private int ItemsScanned = 0;
-
         private static ScanDlg self;
+        private static ScannerBase currentScanner;
 
         public static BadRegKeyArray arrBadRegistryKeys = new BadRegKeyArray();
 
@@ -65,7 +63,7 @@ namespace Little_Registry_Cleaner
             ScanDlg.self = this;
 
             // Set the section count so it can be accessed later
-            this.SectionCount = nSectionCount;
+            ScanDlg.arrBadRegistryKeys.Clear(nSectionCount);
         }
 
         
@@ -73,7 +71,7 @@ namespace Little_Registry_Cleaner
         {
             this.progressBar.Position = 0;
             this.progressBar.PositionMin = 0;
-            this.progressBar.PositionMax = this.SectionCount;
+            this.progressBar.PositionMax = ScanDlg.arrBadRegistryKeys.SectionCount;
 
             // Starts scanning registry on seperate thread
             this.threadMain = new Thread(new ThreadStart(StartScanning));
@@ -137,7 +135,7 @@ namespace Little_Registry_Cleaner
             finally
             {
                 // Finished Scanning
-                Main.Logger.WriteLine("Total Items Scanned: " + this.ItemsScanned.ToString());
+                Main.Logger.WriteLine(string.Format("Total Items Scanned: {0}", ScanDlg.arrBadRegistryKeys.ItemsScanned));
                 Main.Logger.WriteLine("Finished Scanning!");
             }
 
@@ -151,16 +149,27 @@ namespace Little_Registry_Cleaner
         /// </summary>
         public void StartScanner(ScannerBase scannerName)
         {
+            currentScanner = scannerName;
+
             System.Reflection.MethodInfo mi = scannerName.GetType().GetMethod("Scan", System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Static);
             ScanDelegate objScan = (ScanDelegate)Delegate.CreateDelegate(typeof(ScanDelegate), mi);
-
-            this.UpdateSection(scannerName.ScannerName);
+            
             Main.Logger.WriteLine("Starting to scan: " + scannerName.ScannerName);
+
+            // Update section name
+            scannerName.RootNode.SectionName = scannerName.ScannerName;
+            this.UpdateSection(scannerName.ScannerName);
 
             // Start scanning
             this.threadScan = new Thread(new ThreadStart(objScan));
             this.threadScan.Start();
             this.threadScan.Join();
+
+            // Wait 250ms
+            Thread.Sleep(250);
+
+            if (scannerName.RootNode.Nodes.Count > 0)
+                ScanDlg.arrBadRegistryKeys.Add(scannerName.RootNode);
 
             Main.Logger.WriteLine("Finished scanning: " + scannerName.ScannerName);
             this.progressBar.Position++;
@@ -188,21 +197,18 @@ namespace Little_Registry_Cleaner
         {
             // See if key exists
             if (!Utils.RegKeyExists(Path))
-                return false;  
+                return false;
 
-            if (arrBadRegistryKeys.Add(ScanDlg.CurrentSection, Problem, Path, ValueName) > 0)
-            {
-                self.IncrementProblems();
+            ScanDlg.currentScanner.RootNode.Nodes.Add(new BadRegistryKey(Problem, Path, ValueName));
 
-                if (!string.IsNullOrEmpty(ValueName))
-                    Main.Logger.WriteLine(string.Format("Bad Registry Value Found! Problem: \"{0}\" Path: \"{1}\" Value Name: \"{2}\"", Problem, Path, ValueName)); 
-                else
-                    Main.Logger.WriteLine(string.Format("Bad Registry Key Found! Problem: \"{0}\" Path: \"{1}\"", Problem, Path)); 
+            self.IncrementProblems();
 
-                return true;
-            }
+            if (!string.IsNullOrEmpty(ValueName))
+                Main.Logger.WriteLine(string.Format("Bad Registry Value Found! Problem: \"{0}\" Path: \"{1}\" Value Name: \"{2}\"", Problem, Path, ValueName));
+            else
+                Main.Logger.WriteLine(string.Format("Bad Registry Key Found! Problem: \"{0}\" Path: \"{1}\"", Problem, Path));
 
-            return false;
+            return true;
         }
 
         /// <summary>
@@ -246,7 +252,7 @@ namespace Little_Registry_Cleaner
                 Object = Utils.PrefixRegPath(Object);
 
                 self.textBoxSubKey.Text = Object;
-                self.ItemsScanned++;
+                ScanDlg.arrBadRegistryKeys.ItemsScanned++;
             }
             catch (Exception)
             {
@@ -283,7 +289,8 @@ namespace Little_Registry_Cleaner
                 return;
             }
 
-            this.labelProblems.Text = arrBadRegistryKeys.Count.ToString();
+            ScanDlg.arrBadRegistryKeys.Problems++;
+            this.labelProblems.Text = ScanDlg.arrBadRegistryKeys.Problems.ToString();
         }
 
         private void ScanDlg_FormClosing(object sender, FormClosingEventArgs e)

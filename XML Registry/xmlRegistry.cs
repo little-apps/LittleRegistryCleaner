@@ -127,9 +127,9 @@ namespace Little_Registry_Cleaner.Xml
 
             // Get the class name and the value count. 
             retValue = RegQueryInfoKeyA(hKey,        // key handle 
-                null,					// buffer for class name 
-                ref classLength,					// length of class string 
-                0,                    // reserved 
+                null,					    // buffer for class name 
+                ref classLength,			// length of class string 
+                0,                          // reserved 
                 ref cSubKeys,               // number of subkeys 
                 ref cbMaxSubKey,            // longest subkey size 
                 ref cchMaxClass,            // longest class string 

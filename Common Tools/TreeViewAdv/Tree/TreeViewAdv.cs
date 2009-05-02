@@ -811,23 +811,36 @@ namespace Common_Tools.TreeViewAdv.Tree
 			}
 		}
 
-        public void AutoResizeColumns()
+        public void AutoResizeColumns(ColumnHeaderAutoResizeStyle headerAutoSize)
         {
-            foreach (NodeControl nc in this.NodeControls)
+            if (headerAutoSize == ColumnHeaderAutoResizeStyle.None)
+                return;
+            
+            foreach (TreeNodeAdv tna in this.VisibleNodes)
             {
-                foreach (TreeColumn col in this.Columns)
+                foreach (NodeControlInfo nci in this.GetNodeControls(tna))
                 {
-                    if (nc.ParentColumn == col)
+                    foreach (TreeColumn col in this.Columns)
                     {
-                        foreach (TreeNodeAdv tna in this.VisibleNodes)
+                        if (nci.Control.ParentColumn == col)
                         {
-                            int width = 0;
+                            int nWidth = 0;
 
-                            if (ShowPlusMinus)
-                                width = (this._plusMinus.LeftMargin + this._plusMinus.MeasureSize(tna, this._measureContext).Width); 
+                            Size sizeCntrl = nci.Control.GetActualSize(tna, this._measureContext);
 
-                            width += (nc.MeasureSize(tna, this._measureContext).Width + nc.LeftMargin);
-                            col.Width = Math.Max(col.Width, (width + nc.LeftMargin));
+                            if (col.Index == 0)
+                                nWidth += nci.Bounds.X;
+
+                            if (!sizeCntrl.IsEmpty)
+                                col.Width = Math.Max(col.Width, (sizeCntrl.Width + nWidth));
+
+                            if (headerAutoSize == ColumnHeaderAutoResizeStyle.HeaderSize)
+                            {
+                                Size sizeText = TextRenderer.MeasureText(col.Header, this._measureContext.Font);
+
+                                if (!sizeText.IsEmpty)
+                                    col.Width = Math.Max(col.Width, sizeText.Width);
+                            }
                         }
                     }
                 }

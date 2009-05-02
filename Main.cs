@@ -36,6 +36,8 @@ namespace Little_Registry_Cleaner
 {
     public partial class Main : Form
     {
+
+        #region Sections to scan
         // Sections to scan, these must be set to true
         public static bool bScanActivex = true;
         public static bool bScanStartup = true;
@@ -48,8 +50,11 @@ namespace Little_Registry_Cleaner
         public static bool bScanAppSettings = true;
         public static bool bScanSharedDLL = true;
         public static bool bScanHistoryList = true;
+        #endregion
 
         private BadRegKeySorter listViewItemSorter = new BadRegKeySorter();
+
+        private TreeModel treeModel = new TreeModel();
 
         private static Logger _logger;
         public static Logger Logger
@@ -68,8 +73,7 @@ namespace Little_Registry_Cleaner
         private void ScanRegistry()
         {
             // Clear old results
-            this.listResults.Items.Clear();
-            ScanDlg.arrBadRegistryKeys.Clear();
+            this.treeModel.Nodes.Clear();
 
             // Get number of sections to scan
             int nSectionCount = 0;
@@ -104,11 +108,13 @@ namespace Little_Registry_Cleaner
             {
                 // Load bad registry keys
                 foreach (BadRegistryKey p in ScanDlg.arrBadRegistryKeys)
-                    this.listResults.Items.Add(p);
+                {
+                    this.treeModel.Nodes.Add(p);
+                }
 
-                // Sort and resize columns
-                this.listResults.Sort();
-                this.listResults.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+                // Expand all and Resize columns 
+                this.treeViewAdvResults.ExpandAll();
+                this.treeViewAdvResults.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
 
                 // Compute time between start and end of scan
                 TimeSpan ts = DateTime.Now.Subtract(dtStart);
@@ -137,7 +143,7 @@ namespace Little_Registry_Cleaner
             xmlRegistry xmlReg = new xmlRegistry();
             long lSeqNum = 0;
 
-            if (this.listResults.Items.Count > 0)
+            if (this.treeModel.Nodes.Count > 0)
             {
                 if (MessageBox.Show(this, "Would you like to fix all selected problems?", "Little Registry Cleaner", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
@@ -148,8 +154,12 @@ namespace Little_Registry_Cleaner
                     string strBackupFile = string.Format("{0}\\{1:yyyy}_{1:MM}_{1:dd}_{1:HH}{1:mm}{1:ss}.xml", Properties.Settings.Default.strOptionsBackupDir, DateTime.Now);
 
                     BadRegKeyArray arrBadRegKeys = new BadRegKeyArray();
-                    foreach (BadRegistryKey badRegKey in this.listResults.CheckedItems)
-                        arrBadRegKeys.Add(badRegKey);
+                    foreach (BadRegistryKey badRegKeyRoot in this.treeModel.Nodes)
+                    {
+                        foreach (BadRegistryKey badRegKey in badRegKeyRoot.Nodes)
+                            if (badRegKey.Checked == CheckState.Checked)
+                                arrBadRegKeys.Add(badRegKey);
+                    }
 
                     // Generate a restore file and delete keys & values
                     xmlReg.deleteAsXml(arrBadRegKeys, strBackupFile);
@@ -163,8 +173,7 @@ namespace Little_Registry_Cleaner
                     MessageBox.Show(this, "Removed problems from registry", "Little Registry Cleaner", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     // Clear old results
-                    this.listResults.Items.Clear();
-                    ScanDlg.arrBadRegistryKeys.Clear();
+                    this.treeModel.Nodes.Clear();
 
                     // Scan again
                     if (Properties.Settings.Default.bOptionsRescan)
@@ -198,8 +207,8 @@ namespace Little_Registry_Cleaner
             // Expand all sections
             this.treeView1.Nodes[0].ExpandAll();
 
-            // Add List View Item Sorter
-            this.listResults.ListViewItemSorter = this.listViewItemSorter;
+            // Add tree model to treeviewadv
+            this.treeViewAdvResults.Model = this.treeModel;
 
             // See if we have the current version
             if (Properties.Settings.Default.bOptionsAutoUpdate)
@@ -268,6 +277,8 @@ namespace Little_Registry_Cleaner
                 Main.bScanHistoryList = e.Node.Checked;
         }
 
+        
+
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (this.WindowState == FormWindowState.Minimized)
@@ -282,28 +293,28 @@ namespace Little_Registry_Cleaner
 
         private void listResults_ColumnClick(object sender, ColumnClickEventArgs e)
         {
-            // Determine if clicked column is already the column that is being sorted.
-            if (e.Column == this.listViewItemSorter.SortColumn)
-            {
-                // Reverse the current sort direction for this column.
-                if (this.listViewItemSorter.Order == SortOrder.Ascending)
-                {
-                    this.listViewItemSorter.Order = SortOrder.Descending;
-                }
-                else
-                {
-                    this.listViewItemSorter.Order = SortOrder.Ascending;
-                }
-            }
-            else
-            {
-                // Set the column number that is to be sorted; default to ascending.
-                this.listViewItemSorter.SortColumn = e.Column;
-                this.listViewItemSorter.Order = SortOrder.Ascending;
-            }
+            //// Determine if clicked column is already the column that is being sorted.
+            //if (e.Column == this.listViewItemSorter.SortColumn)
+            //{
+            //    // Reverse the current sort direction for this column.
+            //    if (this.listViewItemSorter.Order == SortOrder.Ascending)
+            //    {
+            //        this.listViewItemSorter.Order = SortOrder.Descending;
+            //    }
+            //    else
+            //    {
+            //        this.listViewItemSorter.Order = SortOrder.Ascending;
+            //    }
+            //}
+            //else
+            //{
+            //    // Set the column number that is to be sorted; default to ascending.
+            //    this.listViewItemSorter.SortColumn = e.Column;
+            //    this.listViewItemSorter.Order = SortOrder.Ascending;
+            //}
 
-            // Perform the sort with these new sort options.
-            this.listResults.Sort();
+            //// Perform the sort with these new sort options.
+            //this.listResults.Sort();
 
         }
 
@@ -345,43 +356,53 @@ namespace Little_Registry_Cleaner
 
         private void ViewInRegEdit(object sender, EventArgs e)
         {
-            if (this.listResults.SelectedIndices.Count > 0 && this.listResults.Items.Count > 0)
+            if (this.treeViewAdvResults.SelectedNodes.Count > 0)
             {
-                string strSubKey = this.listResults.SelectedItems[0].SubItems[1].Text;
-                string strValueName = "";
-                if (this.listResults.SelectedItems[0].SubItems.Count > 2)
-                    strValueName = this.listResults.SelectedItems[0].SubItems[2].Text;
+                BadRegistryKey brk = this.treeViewAdvResults.SelectedNode.Tag as BadRegistryKey;
+                string strSubKey = brk.RegKeyPath;
+                string strValueName = brk.ValueName;
+
                 RegEditGo.GoTo(strSubKey, strValueName);
             }
         }
 
         private void SelectAllListResults(object sender, EventArgs e)
         {
-            for (int i = 0; i < this.listResults.Items.Count; i++)
-                this.listResults.Items[i].Checked = true;
+            foreach (BadRegistryKey brkRoot in this.treeModel.Nodes)
+            {
+                brkRoot.Checked = CheckState.Checked;
+                foreach (BadRegistryKey brk in brkRoot.Nodes)
+                    brk.Checked = CheckState.Checked;
+            }
+
+            this.treeViewAdvResults.Refresh();
         }
 
         private void SelectNoneListResults(object sender, EventArgs e)
         {
-            for (int i = 0; i < this.listResults.Items.Count; i++)
-                this.listResults.Items[i].Checked = false;
+            foreach (BadRegistryKey brkRoot in this.treeModel.Nodes)
+            {
+                brkRoot.Checked = CheckState.Unchecked;
+                foreach (BadRegistryKey brk in brkRoot.Nodes)
+                    brk.Checked = CheckState.Unchecked;
+            }
+
+            this.treeViewAdvResults.Refresh();
         }
 
         private void ExcludeSelectedListResults(object sender, EventArgs e)
         {
-            if (this.listResults.SelectedIndices.Count > 0 && this.listResults.Items.Count > 0)
+            if (this.treeViewAdvResults.SelectedNodes.Count > 0)
             {
-                for (int i = 0; i < this.listResults.SelectedItems.Count; i++)
+                for (int i = 0; i < this.treeViewAdvResults.SelectedNodes.Count; i++)
                 {
-                    string strPath = this.listResults.SelectedItems[i].SubItems[1].Text;
-
-                    string strBaseKey = strPath.Substring(0, strPath.IndexOf('\\'));
-                    string strSubKey = strPath.Substring(strPath.IndexOf('\\') + 1);
+                    BadRegistryKey brk = this.treeViewAdvResults.SelectedNodes[i].Tag as BadRegistryKey;
 
                     if (Properties.Settings.Default.arrayOptionsExcludeList == null)
                         Properties.Settings.Default.arrayOptionsExcludeList = new ArrayList();
 
-                    Properties.Settings.Default.arrayOptionsExcludeList.Add(new string[] { strBaseKey, strSubKey });
+                    if (!string.IsNullOrEmpty(brk.RegKeyPath))
+                        Properties.Settings.Default.arrayOptionsExcludeList.Add(new string[] { brk.strMainKey, brk.strSubKey });
                 }
 
                 MessageBox.Show(this, "Added selected subkeys to the exclude list", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -464,20 +485,22 @@ namespace Little_Registry_Cleaner
         }
         #endregion
 
-        private void listResults_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (this.listResults.SelectedItems.Count > 0)
-            {
-                BadRegistryKey brk = (BadRegistryKey)this.listResults.SelectedItems[0];
+        
+        #endregion
 
-                this.detailsRegView1.Problem = brk.Problem;
-                this.detailsRegView1.RegKey = brk.RegKeyPath;
-                this.detailsRegView1.ValueName = brk.ValueName;
-                this.detailsRegView1.Data = brk.Data;
-            }
+        private void treeViewAdvResults_SelectionChanged(object sender, EventArgs e)
+        {
+            if (this.treeViewAdvResults.SelectedNode == null)
+                return;
+
+            BadRegistryKey brk = this.treeViewAdvResults.SelectedNode.Tag as BadRegistryKey;
+
+            this.detailsRegView1.Problem = brk.Problem;
+            this.detailsRegView1.RegKey = brk.RegKeyPath;
+            this.detailsRegView1.ValueName = brk.ValueName;
+            this.detailsRegView1.Data = brk.Data;
         }
 
         
-        #endregion
     }
 }

@@ -15,11 +15,10 @@ namespace Little_Registry_Cleaner.Scanners
             get;
         }
 
-        // Returns current thread of scanner
-        public Thread CurrentThread
-        {
-            get { return Thread.CurrentThread; }
-        }
+        /// <summary>
+        /// The root node (used for scan dialog)
+        /// </summary>
+        public BadRegistryKey RootNode = new BadRegistryKey();
 
         public override string ToString()
         {

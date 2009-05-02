@@ -258,3 +258,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Fixed null bug in COMObjects.ScanClasses()
 - Catches DllNotFoundException if srclient.dll cant be found when creating system restore points
 - Catches Exception if unable to convert SystemComponent or EstimatedSize when retrieving ARP info
+- Disabled textbox editing in startup manager
+- Uses TreeViewAdv so UI has more nicer graphical design

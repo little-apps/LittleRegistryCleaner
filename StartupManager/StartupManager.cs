@@ -87,7 +87,7 @@ namespace Little_Registry_Cleaner.StartupManager
 
             // Expands treeview
             this.treeViewAdv1.ExpandAll();
-            this.treeViewAdv1.AutoResizeColumns();
+            this.treeViewAdv1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }
 
         /// <summary>

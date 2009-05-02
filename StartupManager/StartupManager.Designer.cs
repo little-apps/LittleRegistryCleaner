@@ -141,6 +141,7 @@
             // nodeTextBoxSection
             // 
             this.nodeTextBoxSection.DataPropertyName = "Section";
+            this.nodeTextBoxSection.EditEnabled = false;
             this.nodeTextBoxSection.IncrementalSearchEnabled = true;
             this.nodeTextBoxSection.LeftMargin = 3;
             this.nodeTextBoxSection.ParentColumn = this.treeColumn1;
@@ -149,6 +150,7 @@
             // nodeTextBoxItem
             // 
             this.nodeTextBoxItem.DataPropertyName = "Item";
+            this.nodeTextBoxItem.EditEnabled = false;
             this.nodeTextBoxItem.IncrementalSearchEnabled = true;
             this.nodeTextBoxItem.LeftMargin = 3;
             this.nodeTextBoxItem.ParentColumn = this.treeColumn1;
@@ -156,6 +158,7 @@
             // nodeTextBoxPath
             // 
             this.nodeTextBoxPath.DataPropertyName = "Path";
+            this.nodeTextBoxPath.EditEnabled = false;
             this.nodeTextBoxPath.IncrementalSearchEnabled = true;
             this.nodeTextBoxPath.LeftMargin = 3;
             this.nodeTextBoxPath.ParentColumn = this.treeColumn2;
@@ -163,6 +166,7 @@
             // nodeTextBoxArgs
             // 
             this.nodeTextBoxArgs.DataPropertyName = "Args";
+            this.nodeTextBoxArgs.EditEnabled = false;
             this.nodeTextBoxArgs.IncrementalSearchEnabled = true;
             this.nodeTextBoxArgs.LeftMargin = 3;
             this.nodeTextBoxArgs.ParentColumn = this.treeColumn3;

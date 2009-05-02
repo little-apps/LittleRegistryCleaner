@@ -191,7 +191,7 @@ namespace Common_Tools.TreeViewAdv.Tree
 			{
 				if (item.Bounds.X >= OffsetX && item.Bounds.X - OffsetX < this.Bounds.Width)// skip invisible nodes
 				{
-					context.Bounds = item.Bounds;
+                    context.Bounds = item.Bounds;
 					context.Graphics.SetClip(context.Bounds);
 					item.Control.Draw(node, context);
 					context.Graphics.ResetClip();
