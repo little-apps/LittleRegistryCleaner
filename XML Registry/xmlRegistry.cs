@@ -170,14 +170,14 @@ namespace Little_Registry_Cleaner.Xml
                         ptrValueData,
                         ref cchValueData);
 
-                    byte[] achValueData = new byte[cchValueData];
+                    byte[] achValueData = new byte[cchValueData + 1];
                     Marshal.Copy(ptrValueData, achValueData, 0, cchValueData);
 
                     if (retValue == ERROR_SUCCESS)
                     {
                         keyValue p = new keyValue();
 
-                        if (cchValueName == 0 && sValueName.Length == 0)
+                        if (cchValueName == 0 && string.IsNullOrEmpty(sValueName))
                         {
                             if (cchValueData == 0 && achValueData[0] == 0)
                             {

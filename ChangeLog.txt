@@ -260,3 +260,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Catches Exception if unable to convert SystemComponent or EstimatedSize when retrieving ARP info
 - Disabled textbox editing in startup manager
 - Uses TreeViewAdv so UI has more nicer graphical design
+- Fixed "Index was outside the bounds of the array" exception in xmlRegistry.addRegistryValues(Int32 hKey)
