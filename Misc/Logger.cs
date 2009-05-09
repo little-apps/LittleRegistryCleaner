@@ -36,7 +36,7 @@ namespace Little_Registry_Cleaner
             get { return strLogFilePath; }
         }
 
-        public bool IsEnabled
+        public static bool IsEnabled
         {
             get { return Properties.Settings.Default.bOptionsLog; }
         }
@@ -59,19 +59,23 @@ namespace Little_Registry_Cleaner
                         File.Delete(Logger.strLogFilePath);
 
                     // Create log file + write header
-                    using (StreamWriter stream = File.CreateText(Logger.strLogFilePath))
-                    {
-                        if (stream == null)
-                            return;
+                    StreamWriter stream = File.CreateText(Logger.strLogFilePath);
 
+                    if (stream != null)
+                    {
                         stream.WriteLine("Little Registry Cleaner (" + DateTime.Now.ToString() + ")");
                         stream.WriteLine("Website: http://sourceforge.net/projects/littlecleaner");
                         stream.WriteLine("Version: " + Application.ProductVersion);
                         stream.WriteLine("----------------");
+
+                        stream.Close();
+                        stream = null;
                     }
                 }
                 catch (Exception e)
-                { System.Diagnostics.Debug.WriteLine(e.Message); }
+                { 
+                    System.Diagnostics.Debug.WriteLine(e.Message);
+                }
             }
         }
 
@@ -85,9 +89,14 @@ namespace Little_Registry_Cleaner
             {
                 try
                 {
-                    using (StreamWriter stream = File.AppendText(Logger.strLogFilePath))
-                        if (stream != null)
-                            stream.WriteLine("{0}: {1}", DateTime.Now.ToLongTimeString(), Line);
+                    StreamWriter sw = File.AppendText(Logger.strLogFilePath);
+
+                    if (sw != null)
+                    {
+                        sw.WriteLine("{0}: {1}", DateTime.Now.ToLongTimeString(), Line);
+                        sw.Close();
+                        sw = null;
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -103,15 +112,23 @@ namespace Little_Registry_Cleaner
         /// <param name="Line">The string to write (w/ date + time)</param>
         public static void WriteToFile(string FilePath, string Line)
         {
-            try
+            if (IsEnabled)
             {
-                using (StreamWriter stream = File.AppendText(FilePath))
-                    if (stream != null)
-                        stream.WriteLine("{0}: {1}", DateTime.Now.ToLongTimeString(), Line);
-            }
-            catch (Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine(ex.Message);
+                try
+                {
+                    StreamWriter sw = File.AppendText(FilePath);
+
+                    if (sw != null)
+                    {
+                        sw.WriteLine("{0}: {1}", DateTime.Now.ToLongTimeString(), Line);
+                        sw.Close();
+                        sw = null;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    System.Diagnostics.Debug.WriteLine(ex.Message);
+                }
             }
         }
 
@@ -124,7 +141,7 @@ namespace Little_Registry_Cleaner
             {
                 string strNewFileName = string.Format("{0}\\{1:yyyy}_{1:MM}_{1:dd}_{1:HH}{1:mm}{1:ss}.txt", Little_Registry_Cleaner.Properties.Settings.Default.strOptionsLogDir, DateTime.Now);
 
-                File.Move(Logger.strLogFilePath, strNewFileName);
+                File.Copy(Logger.strLogFilePath, strNewFileName);
 
                 if (Properties.Settings.Default.bOptionsShowLog)
                     System.Diagnostics.Process.Start(strNewFileName);

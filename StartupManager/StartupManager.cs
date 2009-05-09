@@ -120,11 +120,9 @@ namespace Little_Registry_Cleaner.StartupManager
                     {
                         Utils.ExtractArguments(strFilePath, out strFile, out strArgs);
 
+                        // Make sure file exists
                         if (!Utils.FileExists(strFile))
-                        {
-                            strFile = strArgs = "";
-                            Utils.ExtractArguments(strFilePath, out strFile, out strArgs);
-                        }
+                            continue;
                     }
                     else
                         strFile = string.Copy(strFilePath);
@@ -170,7 +168,8 @@ namespace Little_Registry_Cleaner.StartupManager
 
                     if (Path.GetExtension(strShortcut) == ".lnk")
                     {
-                        Utils.ResolveShortcut(strShortcut, out strFilePath, out strFileArgs);
+                        if (!Utils.ResolveShortcut(strShortcut, out strFilePath, out strFileArgs))
+                            continue;
 
                         StartupManagerNode node = new StartupManagerNode();
                         node.Item = strShortcutName;
@@ -300,6 +299,10 @@ namespace Little_Registry_Cleaner.StartupManager
                 {
                     string strFilepath = (this.treeViewAdv1.SelectedNode.Tag as StartupManagerNode).Path;
                     string strFileArgs = (this.treeViewAdv1.SelectedNode.Tag as StartupManagerNode).Args;
+
+                    // File path cannot be empty
+                    if (string.IsNullOrEmpty(strFilepath))
+                        return;
 
                     System.Diagnostics.Process.Start(strFilepath, strFileArgs);
 

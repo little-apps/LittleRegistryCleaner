@@ -499,7 +499,8 @@ namespace Little_Registry_Cleaner
         /// <param name="shortcut">The path to the shortcut</param>
         /// <param name="filepath">Returns the file path</param>
         /// <param name="arguments">Returns the shortcuts arguments</param>
-        public static void ResolveShortcut(string shortcut, out string filepath, out string arguments)
+        /// <returns>Returns false if the filepath doesnt exist</returns>
+        public static bool ResolveShortcut(string shortcut, out string filepath, out string arguments)
         {
             ShellLink link = new ShellLink();
             ((IPersistFile)link).Load(shortcut, STGM_READ);
@@ -515,7 +516,10 @@ namespace Little_Registry_Cleaner
             filepath = path.ToString();
             arguments = args.ToString();
 
-            return;
+            if (!Utils.FileExists(filepath))
+                return false;
+
+            return true;
         }
 
         /// <summary>
