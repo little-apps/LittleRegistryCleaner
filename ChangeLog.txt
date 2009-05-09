@@ -262,3 +262,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Uses TreeViewAdv so UI has more nicer graphical design
 - Fixed "Index was outside the bounds of the array" exception in xmlRegistry.addRegistryValues(Int32 hKey)
 - Startup file paths are checked before being added to manager
+- Startup scanner has been fixed

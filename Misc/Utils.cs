@@ -434,6 +434,9 @@ namespace Little_Registry_Cleaner
         {
             try
             {
+                if (string.IsNullOrEmpty(CmdLine))
+                    return false;
+
                 Args = string.Copy(PathGetArgs(CmdLine));
 
                 StringBuilder strCmdLine = new StringBuilder(CmdLine.ToLower().Trim());
@@ -449,7 +452,7 @@ namespace Little_Registry_Cleaner
                 return ExtractFileLocation(CmdLine, out FilePath, out Args);
             }
 
-            return true;
+            return (!string.IsNullOrEmpty(FilePath));
         }
 
         /// <summary>
