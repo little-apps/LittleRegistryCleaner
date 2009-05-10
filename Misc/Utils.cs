@@ -41,6 +41,8 @@ namespace Little_Registry_Cleaner
         // Used for SHGetSpecialFolderPath
         public const int CSIDL_STARTUP = 0x0007; // All Users\Startup
         public const int CSIDL_COMMON_STARTUP = 0x0018; // Common Users\Startup
+        public const int CSIDL_PROGRAMS = 0x0002;   // All Users\Start Menu\Programs
+        public const int CSIDL_COMMON_PROGRAMS = 0x0017;   // Start Menu\Programs
 
         [DllImport("shell32.dll")] public static extern bool SHGetSpecialFolderPath(IntPtr hwndOwner, [Out] StringBuilder lpszPath, int nFolder, bool fCreate);
         [DllImport("shell32.dll", EntryPoint = "FindExecutable")] public static extern long FindExecutableA(string lpFile, string lpDirectory, StringBuilder lpResult);
@@ -432,6 +434,8 @@ namespace Little_Registry_Cleaner
         /// <returns>true or false if an exception was thrown</returns>
         public static bool ExtractArguments(string CmdLine, out string FilePath, out string Args)
         {
+            FilePath = Args = "";
+
             try
             {
                 if (string.IsNullOrEmpty(CmdLine))

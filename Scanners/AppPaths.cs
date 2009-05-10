@@ -39,6 +39,7 @@ namespace Little_Registry_Cleaner.Scanners
         {
             try
             {
+
                 Main.Logger.WriteLine("Checking for invalid installer folders");
                 ScanInstallFolders();
 

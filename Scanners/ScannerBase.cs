@@ -20,11 +20,18 @@ namespace Little_Registry_Cleaner.Scanners
         /// </summary>
         public BadRegistryKey RootNode = new BadRegistryKey();
 
+        /// <summary>
+        /// Returns the scanner name
+        /// </summary>
         public override string ToString()
         {
-            return ScannerName;
+            return (string)ScannerName.Clone();
         }
 
-        //abstract public void Scan();
+        //public virtual void Scan()
+        //{
+        //    return;
+        //}
+ 
     }
 }
