@@ -95,27 +95,28 @@ namespace Little_Registry_Cleaner.Scanners
                         continue;
                     }
 
-                    bool bAppExists = false;
+                    if (ScanDlg.IsOnIgnoreList(strAppPath))
+                        continue;
 
                     if (!string.IsNullOrEmpty(strAppDir))
                     {
-                        if (Utils.SearchPath(strAppPath, strAppPath) != "")
-                            bAppExists = true;
-                        else if (Utils.SearchPath(strSubKey, strAppPath) != "")
-                            bAppExists = true;
-                    }
+                        if (ScanDlg.IsOnIgnoreList(strAppDir))
+                            continue;
 
-                    if (bAppExists == false)
+                        if (Utils.SearchPath(strAppPath, strAppDir))
+                            continue;
+                        else if (Utils.SearchPath(strSubKey, strAppDir))
+                            continue;
+                    }
+                    else
                     {
                         if (Utils.FileExists(strAppPath))
-                            bAppExists = true;
+                            continue;
                         else if (Utils.FileExists(strAppPath))
-                            bAppExists = true;
+                            continue;
                     }
 
-                    // Check if file exists
-                    if (!bAppExists)
-                        ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString());
+                    ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.Name);
                 }
             }
 

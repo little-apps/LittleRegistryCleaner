@@ -264,3 +264,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Startup file paths are checked before being added to manager
 - Startup scanner has been fixed (also added 64bit compatiblity)
 - Cross checks start menu registry keys with folders for obsolete keys
+- Did some minor fixes to the ProgramList class
+- Files and folders can be added to the exclude list
+- Doesnt recursively check for obsolete software keys
+- Added checks for files and folders before there added to the problem list

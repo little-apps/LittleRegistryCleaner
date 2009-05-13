@@ -25,14 +25,20 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Little_Registry_Cleaner
+namespace Little_Registry_Cleaner.ExcludeList
 {
-    public partial class NewExcludeEntryDlg : Form
+    public partial class AddRegistryPath : Form
     {
-        public delegate void NewExcludeEntryHandler(string strRootKey, string strPath);
-        public event NewExcludeEntryHandler NewExcludeEntry;
+        private string _regPath;
+        /// <summary>
+        /// The registry path selected by the user
+        /// </summary>
+        public string RegistryPath
+        {
+            get { return _regPath; }
+        }
 
-        public NewExcludeEntryDlg()
+        public AddRegistryPath()
         {
             InitializeComponent();
 
@@ -42,21 +48,22 @@ namespace Little_Registry_Cleaner
        
         private void buttonOk_Click(object sender, EventArgs e)
         {
-            string strBaseKey = this.comboBox1.Text, strPath = this.textBox1.Text;
+            string strBaseKey = this.comboBox1.Text, strSubKey = this.textBox1.Text;
 
-            if (string.IsNullOrEmpty(strBaseKey) || string.IsNullOrEmpty(strPath))
+            if (string.IsNullOrEmpty(strBaseKey) || string.IsNullOrEmpty(strSubKey))
             {
                 MessageBox.Show(this, "Registry path cannot be empty", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            if (!Utils.RegKeyExists(strBaseKey, strPath))
+            if (!Utils.RegKeyExists(strBaseKey, strSubKey))
             {
                 MessageBox.Show(this, "Specified registry key doesn't exist", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            NewExcludeEntry(strBaseKey, strPath);
+            this._regPath = string.Format(@"{0}\{1}", strBaseKey, strSubKey);
+
             this.Close();
         }
     }

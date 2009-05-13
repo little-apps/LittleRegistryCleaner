@@ -29,30 +29,18 @@ namespace Little_Registry_Cleaner.UninstallManager
     {
         public ListViewItem this[ProgramInfo key]
         {
-            get
-            {
-                return (ListViewItem)Dictionary[key];
-            }
-            set
-            {
-                Dictionary[key] = value;
-            }
+            get { return (ListViewItem)Dictionary[key]; }
+            set { Dictionary[key] = value;  }
         }
 
         public ICollection Keys
         {
-            get
-            {
-                return (Dictionary.Keys);
-            }
+            get { return (Dictionary.Keys); }
         }
 
         public ICollection Values
         {
-            get
-            {
-                return (Dictionary.Values);
-            }
+            get { return (Dictionary.Values);  }
         }
 
         public void Add(ProgramInfo key)
@@ -83,10 +71,13 @@ namespace Little_Registry_Cleaner.UninstallManager
 
         protected override void OnValidate(object key, object value)
         {
-            if (key != null && key.GetType() != typeof(ProgramInfo))
+            if (key == null)
+                throw new ArgumentNullException("key");
+
+            if (key.GetType() != typeof(ProgramInfo))
                 throw new ArgumentException("Key must be ProgramInfo type", "key");
 
-            if (value != null && value.GetType() != typeof(ListViewItem))
+            if (value.GetType() != typeof(ListViewItem))
                 throw new ArgumentException("Value must be ListViewItem type", "value");
 
             base.OnValidate(key, value);

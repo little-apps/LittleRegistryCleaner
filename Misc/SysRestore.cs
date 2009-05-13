@@ -97,7 +97,7 @@ namespace Little_Registry_Cleaner
                 return false;
 
             // See if DLL exists
-            if (string.IsNullOrEmpty(Utils.SearchPath("srclient.dll", "")))
+            if (!Utils.SearchPath("srclient.dll"))
                 return false;
 
             // Windows ME

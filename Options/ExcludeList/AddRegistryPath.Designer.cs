@@ -1,6 +1,6 @@
-﻿namespace Little_Registry_Cleaner
+﻿namespace Little_Registry_Cleaner.ExcludeList
 {
-    partial class NewExcludeEntryDlg
+    partial class AddRegistryPath
     {
         /// <summary>
         /// Required designer variable.
@@ -102,6 +102,7 @@
             // 
             // buttonOk
             // 
+            this.buttonOk.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.buttonOk.Location = new System.Drawing.Point(197, 124);
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.Size = new System.Drawing.Size(75, 23);
@@ -110,7 +111,7 @@
             this.buttonOk.UseVisualStyleBackColor = true;
             this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
             // 
-            // NewExcludeEntryDlg
+            // AddRegistryPath
             // 
             this.AcceptButton = this.buttonOk;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -123,7 +124,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "NewExcludeEntryDlg";
+            this.Name = "AddRegistryPath";
             this.ShowInTaskbar = false;
             this.Text = "Add to ignore list";
             this.groupBox1.ResumeLayout(false);

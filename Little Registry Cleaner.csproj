@@ -100,6 +100,7 @@
     <Compile Include="Misc\Logger.cs" />
     <Compile Include="Misc\Permissions.cs" />
     <Compile Include="Misc\RegEditGo.cs" />
+    <Compile Include="Options\ExcludeList\ExcludeItem.cs" />
     <Compile Include="Scanners\ScannerBase.cs" />
     <Compile Include="StartupManager\EditRunItem.cs">
       <SubType>Form</SubType>
@@ -149,11 +150,11 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Options\NewExcludeEntryDlg.cs">
+    <Compile Include="Options\ExcludeList\AddRegistryPath.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Options\NewExcludeEntryDlg.Designer.cs">
-      <DependentUpon>NewExcludeEntryDlg.cs</DependentUpon>
+    <Compile Include="Options\ExcludeList\AddRegistryPath.Designer.cs">
+      <DependentUpon>AddRegistryPath.cs</DependentUpon>
     </Compile>
     <Compile Include="Options\Options.cs">
       <SubType>Form</SubType>
@@ -195,8 +196,8 @@
       <DependentUpon>Main.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Options\NewExcludeEntryDlg.resx">
-      <DependentUpon>NewExcludeEntryDlg.cs</DependentUpon>
+    <EmbeddedResource Include="Options\ExcludeList\AddRegistryPath.resx">
+      <DependentUpon>AddRegistryPath.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Options\Options.resx">

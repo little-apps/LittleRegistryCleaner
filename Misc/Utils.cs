@@ -661,20 +661,42 @@ namespace Little_Registry_Cleaner
             return "";
         }
 
+        public static bool SearchPath(string fileName)
+        {
+            string retPath = "";
+
+            return SearchPath(fileName, null, out retPath);
+        }
+
+        public static bool SearchPath(string fileName, string Path)
+        {
+            string retPath = "";
+
+            return SearchPath(fileName, Path, out retPath);
+        }
+
         /// <summary>
         /// Checks for the file using the specified path and/or %PATH% variable
         /// </summary>
-        /// <param name="FileName">The name of the file for which to search</param>
+        /// <param name="fileName">The name of the file for which to search</param>
         /// <param name="Path">The path to be searched for the file (searches %path% variable if null)</param>
-        /// <returns>The path containing the file found or null</returns>
-        public static string SearchPath(string FileName, string Path)
+        /// <param name="retPath">The path containing the file</param>
+        /// <returns>True if it was found</returns>
+        public static bool SearchPath(string fileName, string Path, out string retPath)
         {
             StringBuilder strBuffer = new StringBuilder(260);
 
-            if (SearchPath(((!string.IsNullOrEmpty(Path)) ? (Path) : (null)), FileName, null, 260, strBuffer, null) != 0)
-                return strBuffer.ToString();
+            int ret = SearchPath(((!string.IsNullOrEmpty(Path)) ? (Path) : (null)), fileName, null, 260, strBuffer, null);
 
-            return "";
+            if (ret != 0)
+            {
+                retPath = strBuffer.ToString();
+                return true;
+            }
+            else
+                retPath = "";
+
+            return false;
         }
 
         /// <summary>
@@ -794,37 +816,41 @@ namespace Little_Registry_Cleaner
         /// <returns>True if it exists or false</returns>
         public static bool FileExists(string FilePath)
         {
-            if (!string.IsNullOrEmpty(FilePath))
-            {
-                string strFileName = string.Copy(FilePath);
+            if (string.IsNullOrEmpty(FilePath))
+                throw new ArgumentNullException("FilePath");
 
-                // Remove quotes
-                strFileName = UnqouteSpaces(strFileName);
+            string strFileName = string.Copy(FilePath.Trim().ToLower());
 
-                // Remove environment variables
-                strFileName = Environment.ExpandEnvironmentVariables(strFileName);
+            // Remove quotes
+            strFileName = UnqouteSpaces(strFileName);
 
-                // Check for illegal characters
-                if (FindAnyIllegalChars(strFileName))
-                    return false;
+            // Remove environment variables
+            strFileName = Environment.ExpandEnvironmentVariables(strFileName);
 
-                // Check Drive Type
-                VDTReturn ret = ValidDriveType(strFileName);
-                if (ret == VDTReturn.InvalidDrive)
-                    return false;
-                else if (ret == VDTReturn.SkipCheck)
-                    return true;
+            // Check for illegal characters
+            if (FindAnyIllegalChars(strFileName))
+                return false;
 
-                // Now see if file exists
-                if (File.Exists(strFileName))
-                    return true;
+            // Check Drive Type
+            VDTReturn ret = ValidDriveType(strFileName);
+            if (ret == VDTReturn.InvalidDrive)
+                return false;
+            else if (ret == VDTReturn.SkipCheck)
+                return true;
 
-                if (PathFileExists(strFileName))
-                    return true;
+            // See if it is on exclude list
+            if (ScanDlg.IsOnIgnoreList(strFileName))
+                return true;
 
-                if (SearchPath(strFileName, "") != "")
-                    return true;
-            }
+            // Now see if file exists
+            if (File.Exists(strFileName))
+                return true;
+
+            if (PathFileExists(strFileName))
+                return true;
+
+            if (SearchPath(strFileName))
+                return true;
 
             return false;
         }
@@ -836,6 +862,9 @@ namespace Little_Registry_Cleaner
         /// <returns>True if it exists</returns>
         public static bool DirExists(string DirPath)
         {
+            if (string.IsNullOrEmpty(DirPath))
+                throw new ArgumentNullException("DirPath");
+
             string strDirectory = string.Copy(DirPath.Trim().ToLower());
 
             // Remove quotes
@@ -854,6 +883,10 @@ namespace Little_Registry_Cleaner
             // Check for illegal chars
             if (FindAnyIllegalChars(strDirectory))
                 return false;
+
+            // See if it is on the exclude list
+            if (ScanDlg.IsOnIgnoreList(strDirectory))
+                return true;
 
             // Remove filename.ext and trailing backslash from path
             StringBuilder sb = new StringBuilder(strDirectory);

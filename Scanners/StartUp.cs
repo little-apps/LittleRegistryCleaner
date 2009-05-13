@@ -108,16 +108,19 @@ namespace Little_Registry_Cleaner.Scanners
                 string strRunPath = regKey.GetValue(strProgName) as string;
                 string strFilePath, strArgs;
 
-                ScanDlg.UpdateScanningObject(strRunPath);
+                if (!string.IsNullOrEmpty(strRunPath))
+                {
+                    ScanDlg.UpdateScanningObject(strRunPath);
 
-                // Check run path by itself
-                if (Utils.FileExists(strRunPath))
-                    continue;
-
-                // See if file exists (also checks if string is null)
-                if (Utils.ExtractArguments(strRunPath, out strFilePath, out strArgs))
-                    if (Utils.FileExists(strFilePath))
+                    // Check run path by itself
+                    if (Utils.FileExists(strRunPath))
                         continue;
+
+                    // See if file exists (also checks if string is null)
+                    if (Utils.ExtractArguments(strRunPath, out strFilePath, out strArgs))
+                        if (Utils.FileExists(strFilePath))
+                            continue;
+                }
 
                 ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strProgName);
             }

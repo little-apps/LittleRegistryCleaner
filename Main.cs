@@ -398,14 +398,11 @@ namespace Little_Registry_Cleaner
                 {
                     BadRegistryKey brk = this.treeViewAdvResults.SelectedNodes[i].Tag as BadRegistryKey;
 
-                    if (Properties.Settings.Default.arrayOptionsExcludeList == null)
-                        Properties.Settings.Default.arrayOptionsExcludeList = new ArrayList();
-
                     if (!string.IsNullOrEmpty(brk.RegKeyPath))
-                        Properties.Settings.Default.arrayOptionsExcludeList.Add(new string[] { brk.strMainKey, brk.strSubKey });
+                        Properties.Settings.Default.arrayExcludeList.Add(new ExcludeList.ExcludeItem(brk.RegKeyPath, null, null));
                 }
 
-                MessageBox.Show(this, "Added selected subkeys to the exclude list", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(this, "Added selected registry keys to the exclude list", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

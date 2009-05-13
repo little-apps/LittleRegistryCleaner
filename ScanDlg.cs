@@ -199,6 +199,9 @@ namespace Little_Registry_Cleaner
             if (!Utils.RegKeyExists(Path))
                 return false;
 
+            if (IsOnIgnoreList(Path) || IsOnIgnoreList(ValueName))
+                return false;
+
             ScanDlg.currentScanner.RootNode.Nodes.Add(new BadRegistryKey(Problem, Path, ValueName));
 
             self.IncrementProblems();
@@ -212,22 +215,16 @@ namespace Little_Registry_Cleaner
         }
 
         /// <summary>
-        /// Checks for registry subkey in ignore list
+        /// Checks for the path in ignore list
         /// </summary>
-        /// <param name="Path">Registry subkey</param>
         /// <returns>true if it is on the ignore list, otherwise false</returns>
-        private static bool IsOnIgnoreList(string Path)
+        public static bool IsOnIgnoreList(string Path)
         {
-            if (Properties.Settings.Default.arrayOptionsExcludeList != null)
+            if (!string.IsNullOrEmpty(Path))
             {
-                for (int i = 0; i < Properties.Settings.Default.arrayOptionsExcludeList.Count; i++)
-                {
-                    string[] arrayExcludePath = (string[])Properties.Settings.Default.arrayOptionsExcludeList[i];
-                    string strExcludePath = string.Format("{0}\\{1}", arrayExcludePath[0], arrayExcludePath[1]);
-
-                    if (string.Compare(strExcludePath, Path) == 0)
+                foreach (ExcludeList.ExcludeItem i in Properties.Settings.Default.arrayExcludeList)
+                    if (string.Compare(i.ToString(), Path) == 0)
                         return true;
-                }
             }
 
             return false;

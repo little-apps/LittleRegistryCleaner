@@ -54,16 +54,16 @@ namespace Little_Registry_Cleaner.Scanners
             foreach (string strSubKey in baseRegKey.GetSubKeyNames())
             {
                 // Skip needed keys, we dont want to mess the system up
-                if (strSubKey == "Microsoft" ||
-                    strSubKey == "Policies" ||
-                    strSubKey == "Classes" ||
-                    strSubKey == "Printers" ||
-                    strSubKey == "Wow6432Node")
-                    continue;
+                //if (strSubKey == "Microsoft" ||
+                //    strSubKey == "Policies" ||
+                //    strSubKey == "Classes" ||
+                //    strSubKey == "Printers" ||
+                //    strSubKey == "Wow6432Node")
+                //    continue;
 
                 try
                 {
-                    if (ParseAppSubKeys(baseRegKey.OpenSubKey(strSubKey)) == 0)
+                    if (IsEmptyRegistryKey(baseRegKey.OpenSubKey(strSubKey, true)))
                         ScanDlg.StoreInvalidKey("The registry key doesn't contain any data", baseRegKey.Name + "\\" + strSubKey);
                 }
                 catch (System.Security.SecurityException ex)
@@ -80,31 +80,22 @@ namespace Little_Registry_Cleaner.Scanners
         /// Recursively goes through the registry keys and finds how many values there are
         /// </summary>
         /// <param name="regKey">The base registry key</param>
-        /// <returns>Number of values in subkey</returns>
-        private static int ParseAppSubKeys(RegistryKey regKey)
+        /// <returns>True if the registry key is emtpy</returns>
+        private static bool IsEmptyRegistryKey(RegistryKey regKey)
         {
             if (regKey == null)
-                return 0;
+                return false;
 
             ScanDlg.UpdateScanningObject(regKey.ToString());
 
             int nValueCount = regKey.ValueCount;
+            int nSubKeyCount = regKey.SubKeyCount;
 
             if (regKey.ValueCount == 0)
                 if (regKey.GetValue("") != null)
                     nValueCount = 1;
-            try
-            {
-                foreach (string strSubKey in regKey.GetSubKeyNames())
-                    nValueCount += ParseAppSubKeys(regKey.OpenSubKey(strSubKey));
-            }
-            catch (System.Security.SecurityException ex)
-            { 
-                System.Diagnostics.Debug.WriteLine(ex.Message);
-            }
 
-            regKey.Close();
-            return nValueCount;
+            return (nValueCount == 0 && nSubKeyCount == 0);
         }
     }
 }

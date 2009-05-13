@@ -17,7 +17,7 @@
 */
 
 using System;
-using System.Collections.Generic;
+using System.Collections;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -29,6 +29,13 @@ namespace Little_Registry_Cleaner
 {
     public partial class Options : Form
     {
+        private ExcludeList.ExcludeArray _arrayExclude = new ExcludeList.ExcludeArray();
+
+        public ExcludeList.ExcludeArray ExcludeArray
+        {
+            get { return _arrayExclude; }
+        }
+
         public Options()
         {
             InitializeComponent();
@@ -53,22 +60,11 @@ namespace Little_Registry_Cleaner
             this.textBoxLogFolder.Text = Properties.Settings.Default.strOptionsLogDir;
 
             // Load exclude list from settings
-            if (Properties.Settings.Default.arrayOptionsExcludeList == null)
-                Properties.Settings.Default.arrayOptionsExcludeList = new System.Collections.ArrayList();
+            if (Properties.Settings.Default.arrayExcludeList != null)
+                this._arrayExclude = new ExcludeList.ExcludeArray(Properties.Settings.Default.arrayExcludeList);
 
-            for (int i = 0; i < Properties.Settings.Default.arrayOptionsExcludeList.Count; i++)
-            {
-                string[] strExclude = (string[])Little_Registry_Cleaner.Properties.Settings.Default.arrayOptionsExcludeList[i];
-
-                string strSection = strExclude[0];
-                string strSubkey = strExclude[1];
-
-                this.listView1.Items.Add(new ListViewItem(new string[] { strSection, strSubkey }));
-            }
-
-            this.listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+            PopulateExcludeList();
         }
-
 
         private void buttonOK_Click(object sender, EventArgs e)
         {
@@ -91,43 +87,12 @@ namespace Little_Registry_Cleaner
             else
                 Properties.Settings.Default.strOptionsLogDir = string.Format("{0}\\Logs", Properties.Settings.Default.strProgramSettingsDir);
 
-            // Update exclude list in settings
-            Properties.Settings.Default.arrayOptionsExcludeList.Clear();
-            
-            for (int i = 0; i < this.listView1.Items.Count ;i++) 
-            {
-                ListViewItem listViewItem = this.listView1.Items[i];
-
-                string strSection = listViewItem.SubItems[0].Text;
-                string strSubkey = listViewItem.SubItems[1].Text;
-
-                Properties.Settings.Default.arrayOptionsExcludeList.Add(new string[] { strSection, strSubkey });
-            }
+            Properties.Settings.Default.arrayExcludeList = new ExcludeList.ExcludeArray(this._arrayExclude);
 
             this.Close();
         }
 
-        private void addEntryToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            NewExcludeEntryDlg frmNewExcludeEntry = new NewExcludeEntryDlg();
-            frmNewExcludeEntry.NewExcludeEntry += new NewExcludeEntryDlg.NewExcludeEntryHandler(frmNewExcludeEntry_NewExcludeEntry);
-            frmNewExcludeEntry.ShowDialog(this);
-        }
-
-        void frmNewExcludeEntry_NewExcludeEntry(string strRootKey, string strPath)
-        {
-            this.listView1.Items.Add(new ListViewItem(new string[] { strRootKey, strPath }));
-            this.listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
-        }
-
-        private void removeEntryToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (this.listView1.SelectedIndices.Count > 0 && this.listView1.Items.Count > 0)
-            {
-                if (MessageBox.Show(this, "Are you sure?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                    this.listView1.Items[this.listView1.SelectedIndices[0]].Remove();
-            }
-        }
+        #region General
 
         private void buttonBrowse_Click(object sender, EventArgs e)
         {
@@ -159,5 +124,79 @@ namespace Little_Registry_Cleaner
         {
             this.checkBoxShowLog.Enabled = this.checkBoxLog.Checked;
         }
+
+        #endregion
+
+        #region Exclude List
+        private void addRegistryPathToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ExcludeList.AddRegistryPath addRegistryPath = new ExcludeList.AddRegistryPath();
+            if (addRegistryPath.ShowDialog(this) == DialogResult.OK)
+            {
+                ExcludeArray.Add(new ExcludeList.ExcludeItem(addRegistryPath.RegistryPath, null, null));
+                PopulateExcludeList();
+            }
+        }
+
+        private void addFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Filter = "All files (*.*)|*.*";
+                openFileDialog.FilterIndex = 1;
+                openFileDialog.RestoreDirectory = true;
+
+                if (openFileDialog.ShowDialog(this) == DialogResult.OK)
+                {
+                    ExcludeArray.Add(new ExcludeList.ExcludeItem(null, null, openFileDialog.FileName));
+                    PopulateExcludeList();
+                }
+            }
+        }
+
+        private void addFolderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog())
+            {
+                folderBrowserDialog.Description = "Select the folder to exclude from the registry scan";
+
+                if (folderBrowserDialog.ShowDialog(this) == DialogResult.OK)
+                {
+                    ExcludeArray.Add(new ExcludeList.ExcludeItem(null, folderBrowserDialog.SelectedPath, null));
+                    PopulateExcludeList();
+                }
+            }
+        }
+
+        private void removeEntryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (this.listView1.SelectedIndices.Count > 0 && this.listView1.Items.Count > 0)
+            {
+                if (MessageBox.Show(this, "Are you sure?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    foreach (ExcludeList.ExcludeItem i in ExcludeArray)
+                    {
+                        if (i.ToString() == this.listView1.SelectedItems[0].Text)
+                        {
+                            ExcludeArray.Remove(i);
+                            break;
+                        }
+                    }
+
+                    PopulateExcludeList();
+                }
+            }
+        }
+
+        private void PopulateExcludeList()
+        {
+            this.listView1.Items.Clear();
+
+            foreach (ExcludeList.ExcludeItem item in ExcludeArray)
+                this.listView1.Items.Add(item.ToString());
+
+            this.listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+        }
+        #endregion
     }
 }

@@ -28,15 +28,18 @@
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SettingsSerializeAs(System.Configuration.SettingsSerializeAs.Binary)]
-        public global::System.Collections.ArrayList arrayOptionsExcludeList
+        public global::Little_Registry_Cleaner.ExcludeList.ExcludeArray arrayExcludeList
         {
             get
             {
-                return ((global::System.Collections.ArrayList)(this["arrayOptionsExcludeList"]));
+                if (((global::Little_Registry_Cleaner.ExcludeList.ExcludeArray)(this["arrayExcludeList"])) == null)
+                    ((this["arrayExcludeList"])) = new Little_Registry_Cleaner.ExcludeList.ExcludeArray();
+
+                return ((global::Little_Registry_Cleaner.ExcludeList.ExcludeArray)(this["arrayExcludeList"]));
             }
             set
             {
-                this["arrayOptionsExcludeList"] = value;
+                this["arrayExcludeList"] = value;
             }
         }
     }
