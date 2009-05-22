@@ -211,7 +211,7 @@ namespace Little_Registry_Cleaner
         private bool CreateErrorLog()
         {
             int i;
-            StreamWriter streamErrorLog = null;
+            StreamWriter streamErrorLog = StreamWriter.Null;
 
             try
             {

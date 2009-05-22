@@ -268,3 +268,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Files and folders can be added to the exclude list
 - Doesnt recursively check for obsolete software keys
 - Added checks for files and folders before there added to the problem list
+- Locks stream writer in logger so it cant be opened or written to at the same time

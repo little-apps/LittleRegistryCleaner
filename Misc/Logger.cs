@@ -21,6 +21,7 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Text;
 using System.IO;
+using System.Diagnostics;
 
 namespace Little_Registry_Cleaner
 {
@@ -36,10 +37,15 @@ namespace Little_Registry_Cleaner
             get { return strLogFilePath; }
         }
 
+        /// <summary>
+        /// Gets whether logging is enabled
+        /// </summary>
         public static bool IsEnabled
         {
             get { return Properties.Settings.Default.bOptionsLog; }
         }
+
+        private static StreamWriter streamWriter = StreamWriter.Null;
 
         public Logger()
         {
@@ -59,17 +65,16 @@ namespace Little_Registry_Cleaner
                         File.Delete(Logger.strLogFilePath);
 
                     // Create log file + write header
-                    StreamWriter stream = File.CreateText(Logger.strLogFilePath);
+                    streamWriter = File.CreateText(Logger.strLogFilePath);
 
-                    if (stream != null)
+                    lock (streamWriter)
                     {
-                        stream.WriteLine("Little Registry Cleaner (" + DateTime.Now.ToString() + ")");
-                        stream.WriteLine("Website: http://sourceforge.net/projects/littlecleaner");
-                        stream.WriteLine("Version: " + Application.ProductVersion);
-                        stream.WriteLine("----------------");
+                        streamWriter.WriteLine("Little Registry Cleaner (" + DateTime.Now.ToString() + ")");
+                        streamWriter.WriteLine("Website: http://sourceforge.net/projects/littlecleaner");
+                        streamWriter.WriteLine("Version: " + Application.ProductVersion);
+                        streamWriter.WriteLine("----------------");
 
-                        stream.Close();
-                        stream = null;
+                        streamWriter.Close();
                     }
                 }
                 catch (Exception e)
@@ -89,13 +94,13 @@ namespace Little_Registry_Cleaner
             {
                 try
                 {
-                    StreamWriter sw = File.AppendText(Logger.strLogFilePath);
+                    streamWriter = File.AppendText(Logger.strLogFilePath);
 
-                    if (sw != null)
+                    lock (streamWriter)
                     {
-                        sw.WriteLine("{0}: {1}", DateTime.Now.ToLongTimeString(), Line);
-                        sw.Close();
-                        sw = null;
+                        streamWriter.WriteLine("{0}: {1}", DateTime.Now.ToLongTimeString(), Line);
+                        streamWriter.Flush();
+                        streamWriter.Close();
                     }
                 }
                 catch (Exception ex)
@@ -116,13 +121,14 @@ namespace Little_Registry_Cleaner
             {
                 try
                 {
-                    StreamWriter sw = File.AppendText(FilePath);
 
-                    if (sw != null)
+                    streamWriter = File.AppendText(FilePath);
+
+                    lock (streamWriter)
                     {
-                        sw.WriteLine("{0}: {1}", DateTime.Now.ToLongTimeString(), Line);
-                        sw.Close();
-                        sw = null;
+                        streamWriter.Write(Line);
+                        streamWriter.Flush();
+                        streamWriter.Close();
                     }
                 }
                 catch (Exception ex)
@@ -141,10 +147,17 @@ namespace Little_Registry_Cleaner
             {
                 string strNewFileName = string.Format("{0}\\{1:yyyy}_{1:MM}_{1:dd}_{1:HH}{1:mm}{1:ss}.txt", Little_Registry_Cleaner.Properties.Settings.Default.strOptionsLogDir, DateTime.Now);
 
-                File.Copy(Logger.strLogFilePath, strNewFileName);
+                lock (Logger.streamWriter)
+                {
+                    File.Copy(Logger.strLogFilePath, strNewFileName);
 
-                if (Properties.Settings.Default.bOptionsShowLog)
-                    System.Diagnostics.Process.Start(strNewFileName);
+                    if (Properties.Settings.Default.bOptionsShowLog)
+                    {
+                        ProcessStartInfo startInfo = new ProcessStartInfo("NOTEPAD.EXE", strNewFileName);
+                        startInfo.ErrorDialog = true;
+                        System.Diagnostics.Process.Start(startInfo);
+                    }
+                }
             }
         }
     }
