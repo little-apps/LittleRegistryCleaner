@@ -79,7 +79,7 @@ namespace Little_Registry_Cleaner
                 }
                 catch (Exception e)
                 { 
-                    System.Diagnostics.Debug.WriteLine(e.Message);
+                    Debug.WriteLine(e.Message);
                 }
             }
         }
@@ -105,7 +105,7 @@ namespace Little_Registry_Cleaner
                 }
                 catch (Exception ex)
                 {
-                    System.Diagnostics.Debug.WriteLine(ex.Message);
+                    Debug.WriteLine(ex.Message);
                 }
             }
         }
@@ -133,7 +133,7 @@ namespace Little_Registry_Cleaner
                 }
                 catch (Exception ex)
                 {
-                    System.Diagnostics.Debug.WriteLine(ex.Message);
+                    Debug.WriteLine(ex.Message);
                 }
             }
         }
@@ -149,13 +149,20 @@ namespace Little_Registry_Cleaner
 
                 lock (Logger.streamWriter)
                 {
-                    File.Copy(Logger.strLogFilePath, strNewFileName);
-
-                    if (Properties.Settings.Default.bOptionsShowLog)
+                    try
                     {
-                        ProcessStartInfo startInfo = new ProcessStartInfo("NOTEPAD.EXE", strNewFileName);
-                        startInfo.ErrorDialog = true;
-                        System.Diagnostics.Process.Start(startInfo);
+                        File.Copy(Logger.strLogFilePath, strNewFileName);
+
+                        if (Properties.Settings.Default.bOptionsShowLog)
+                        {
+                            ProcessStartInfo startInfo = new ProcessStartInfo("NOTEPAD.EXE", strNewFileName);
+                            startInfo.ErrorDialog = true;
+                            System.Diagnostics.Process.Start(startInfo);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Debug.WriteLine(ex.Message);
                     }
                 }
             }
