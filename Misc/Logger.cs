@@ -25,6 +25,9 @@ using System.Diagnostics;
 
 namespace Little_Registry_Cleaner
 {
+    /// <summary>
+    /// This log class is used for the scanner modules
+    /// </summary>
     public class Logger
     {
         private static string strLogFilePath = "";
@@ -141,7 +144,8 @@ namespace Little_Registry_Cleaner
         /// <summary>
         /// Moves the temp file to the log directory and opens it with the default viewer
         /// </summary>
-        public void DisplayLogFile()
+        /// <returns>True if the file is displayed</returns>
+        public bool DisplayLogFile()
         {
             if (IsEnabled)
             {
@@ -151,14 +155,19 @@ namespace Little_Registry_Cleaner
                 {
                     try
                     {
+                        if (!File.Exists(strLogFilePath))
+                            return false;
+
                         File.Copy(Logger.strLogFilePath, strNewFileName);
 
                         if (Properties.Settings.Default.bOptionsShowLog)
                         {
                             ProcessStartInfo startInfo = new ProcessStartInfo("NOTEPAD.EXE", strNewFileName);
                             startInfo.ErrorDialog = true;
-                            System.Diagnostics.Process.Start(startInfo);
+                            Process.Start(startInfo);
                         }
+
+                        return true;
                     }
                     catch (Exception ex)
                     {
@@ -166,6 +175,8 @@ namespace Little_Registry_Cleaner
                     }
                 }
             }
+
+            return false;
         }
     }
 }

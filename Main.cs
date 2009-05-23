@@ -108,9 +108,7 @@ namespace Little_Registry_Cleaner
             {
                 // Load bad registry keys
                 foreach (BadRegistryKey p in ScanDlg.arrBadRegistryKeys)
-                {
                     this.treeModel.Nodes.Add(p);
-                }
 
                 // Expand all and Resize columns 
                 this.treeViewAdvResults.ExpandAll();
