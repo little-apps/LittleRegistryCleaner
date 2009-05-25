@@ -90,12 +90,12 @@ namespace Little_Registry_Cleaner
             // Read start time of scan
             DateTime dtStart = DateTime.Now;
 
-            // Create new logger instance
-            Main._logger = new Logger();
+            // Create new logger instance + write header
+            Main._logger = new Logger(Path.GetTempFileName());
 
             // Open Scan dialog
             ScanDlg frmScanBox = new ScanDlg(nSectionCount);
-            frmScanBox.ShowDialog(this);
+            DialogResult dlgResult = frmScanBox.ShowDialog(this);
 
             // Reset details control
             this.detailsRegView1.Problem = string.Empty;
@@ -114,18 +114,14 @@ namespace Little_Registry_Cleaner
                 this.treeViewAdvResults.ExpandAll();
                 this.treeViewAdvResults.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
 
-                // Compute time between start and end of scan
-                TimeSpan ts = DateTime.Now.Subtract(dtStart);
+                // Show notify box
+                if (dlgResult == DialogResult.OK)
+                    this.notifyIcon1.ShowBalloonTip(6000, Application.ProductName, "Finished scanning the registry", ToolTipIcon.Info);
+                else
+                    this.notifyIcon1.ShowBalloonTip(6000, Application.ProductName, "Aborted scanning the registry", ToolTipIcon.Info);
 
                 // Display log file
                 Main.Logger.DisplayLogFile();
-
-                if (Form.ActiveForm == this) 
-                    // Notify user using message box
-                    MessageBox.Show(this, string.Format("Found {0} problems in {1} seconds", ScanDlg.arrBadRegistryKeys.Count, ts.TotalSeconds), Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                else 
-                    // Notify user using notify icon
-                    this.notifyIcon1.ShowBalloonTip(5000, Application.ProductName, string.Format("Found {0} problems in {1} seconds", ScanDlg.arrBadRegistryKeys.Count, ts.TotalSeconds), ToolTipIcon.Info);
 
                 // Enable menu items
                 this.fixToolStripMenuItem.Enabled = true;

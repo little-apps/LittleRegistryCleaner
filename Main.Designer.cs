@@ -815,7 +815,6 @@
 
         #endregion
 
-        private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
@@ -876,6 +875,7 @@
         private Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox nodeLocation;
         private Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox nodeValueName;
         private Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox nodeSection;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }
 

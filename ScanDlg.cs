@@ -83,10 +83,17 @@ namespace Little_Registry_Cleaner
         /// </summary>
         private void StartScanning()
         {
+            // Get start time of scan
+            DateTime dateTimeStart = DateTime.Now;
+
+            // Begin Critical Region
+            Thread.BeginCriticalRegion();
+
             // Begin scanning
             try
             {
-                Main.Logger.WriteLine("Starting scan...");
+                Main.Logger.WriteLine("Started scan at " + DateTime.Now.ToString());
+                Main.Logger.WriteLine();
 
                 if (Main.bScanStartup)
                     this.StartScanner(new StartUp());
@@ -126,18 +133,27 @@ namespace Little_Registry_Cleaner
             catch (ThreadAbortException)
             {
                 // Scanning was aborted
-                Main.Logger.WriteLine("User aborted scan... Exiting.");
+                Main.Logger.Write("User aborted scan... ");
                 if (this.threadScan.IsAlive)
                     this.threadScan.Abort();
 
                 this.DialogResult = DialogResult.Abort;
+                Main.Logger.WriteLine("Exiting.\r\n");
             }
             finally
             {
-                // Finished Scanning
-                Main.Logger.WriteLine(string.Format("Total Items Scanned: {0}", ScanDlg.arrBadRegistryKeys.ItemsScanned));
-                Main.Logger.WriteLine("Finished Scanning!");
+                // Compute time between start and end of scan
+                TimeSpan ts = DateTime.Now.Subtract(dateTimeStart);
+
+                Main.Logger.WriteLine(string.Format("Total time elapsed: {0} seconds", ts.TotalSeconds));
+                Main.Logger.WriteLine(string.Format("Total problems found: {0}", ScanDlg.arrBadRegistryKeys.Count));
+                Main.Logger.WriteLine(string.Format("Total objects scanned: {0}", ScanDlg.arrBadRegistryKeys.ItemsScanned));
+                Main.Logger.WriteLine();
+                Main.Logger.WriteLine("Finished scan at " + DateTime.Now.ToString());
             }
+
+            // End Critical Region
+            Thread.EndCriticalRegion();
 
             // Dialog will be closed automatically
 
@@ -154,7 +170,7 @@ namespace Little_Registry_Cleaner
             System.Reflection.MethodInfo mi = scannerName.GetType().GetMethod("Scan", System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Static);
             ScanDelegate objScan = (ScanDelegate)Delegate.CreateDelegate(typeof(ScanDelegate), mi);
             
-            Main.Logger.WriteLine("Starting to scan: " + scannerName.ScannerName);
+            Main.Logger.WriteLine("Starting scanning: " + scannerName.ScannerName);
 
             // Update section name
             scannerName.RootNode.SectionName = scannerName.ScannerName;
@@ -172,6 +188,8 @@ namespace Little_Registry_Cleaner
                 ScanDlg.arrBadRegistryKeys.Add(scannerName.RootNode);
 
             Main.Logger.WriteLine("Finished scanning: " + scannerName.ScannerName);
+            Main.Logger.WriteLine();
+
             this.progressBar.Position++;
         }
 

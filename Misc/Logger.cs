@@ -28,7 +28,7 @@ namespace Little_Registry_Cleaner
     /// <summary>
     /// This log class is used for the scanner modules
     /// </summary>
-    public class Logger
+    public class Logger : StreamWriter
     {
         private static string strLogFilePath = "";
 
@@ -48,67 +48,39 @@ namespace Little_Registry_Cleaner
             get { return Properties.Settings.Default.bOptionsLog; }
         }
 
-        private static StreamWriter streamWriter = StreamWriter.Null;
+        public override Encoding Encoding
+        {
+            get { return Encoding.ASCII;  }
+        }
 
-        public Logger()
+        public Logger(string fileName) : base(fileName)
         {
             if (IsEnabled)
             {
                 try
                 {
-                    // Generate log file path
-                    Logger.strLogFilePath = Path.GetTempFileName();
+                    // Set log file path
+                    Logger.strLogFilePath = fileName;
+
+                    // Flush the buffers automatically
+                    this.AutoFlush = true;
 
                     // Create log directory if it doesnt exist
                     if (!Directory.Exists(Little_Registry_Cleaner.Properties.Settings.Default.strOptionsLogDir))
                         Directory.CreateDirectory(Little_Registry_Cleaner.Properties.Settings.Default.strOptionsLogDir);
 
-                    // Remove file if it already exists
-                    if (File.Exists(Logger.strLogFilePath))
-                        File.Delete(Logger.strLogFilePath);
-
-                    // Create log file + write header
-                    streamWriter = File.CreateText(Logger.strLogFilePath);
-
-                    lock (streamWriter)
+                    lock (this.BaseStream)
                     {
-                        streamWriter.WriteLine("Little Registry Cleaner (" + DateTime.Now.ToString() + ")");
-                        streamWriter.WriteLine("Website: http://sourceforge.net/projects/littlecleaner");
-                        streamWriter.WriteLine("Version: " + Application.ProductVersion);
-                        streamWriter.WriteLine("----------------");
-
-                        streamWriter.Close();
-                    }
-                }
-                catch (Exception e)
-                { 
-                    Debug.WriteLine(e.Message);
-                }
-            }
-        }
-
-        /// <summary>
-        /// Writes scanning info to log file with the date + time
-        /// </summary>
-        /// <param name="Line">The string to write</param>
-        public void WriteLine(string Line)
-        {
-            if (IsEnabled)
-            {
-                try
-                {
-                    streamWriter = File.AppendText(Logger.strLogFilePath);
-
-                    lock (streamWriter)
-                    {
-                        streamWriter.WriteLine("{0}: {1}", DateTime.Now.ToLongTimeString(), Line);
-                        streamWriter.Flush();
-                        streamWriter.Close();
+                        // Writes header to log file
+                        this.WriteLine("Little Registry Cleaner " + Application.ProductVersion);
+                        this.WriteLine("Website: http://sourceforge.net/projects/littlecleaner");
+                        this.WriteLine(Environment.OSVersion.ToString());
+                        this.WriteLine();
                     }
                 }
                 catch (Exception ex)
-                {
-                    Debug.WriteLine(ex.Message);
+                { 
+                    Debug.WriteLine(ex);
                 }
             }
         }
@@ -116,27 +88,27 @@ namespace Little_Registry_Cleaner
         /// <summary>
         /// Writes the specified string to the file
         /// </summary>
-        /// <param name="FilePath">The file to write to</param>
-        /// <param name="Line">The string to write (w/ date + time)</param>
-        public static void WriteToFile(string FilePath, string Line)
+        /// <param name="filePath">The file to write to</param>
+        /// <param name="value">The string to write</param>
+        public static void WriteToFile(string filePath, string value)
         {
             if (IsEnabled)
             {
                 try
                 {
 
-                    streamWriter = File.AppendText(FilePath);
+                    StreamWriter streamWriter = File.AppendText(filePath);
 
                     lock (streamWriter)
                     {
-                        streamWriter.Write(Line);
+                        streamWriter.Write(value);
                         streamWriter.Flush();
                         streamWriter.Close();
                     }
                 }
                 catch (Exception ex)
                 {
-                    Debug.WriteLine(ex.Message);
+                    Debug.WriteLine(ex);
                 }
             }
         }
@@ -151,9 +123,9 @@ namespace Little_Registry_Cleaner
             {
                 string strNewFileName = string.Format("{0}\\{1:yyyy}_{1:MM}_{1:dd}_{1:HH}{1:mm}{1:ss}.txt", Little_Registry_Cleaner.Properties.Settings.Default.strOptionsLogDir, DateTime.Now);
 
-                lock (Logger.streamWriter)
+                try
                 {
-                    try
+                    lock (this.BaseStream)
                     {
                         if (!File.Exists(strLogFilePath))
                             return false;
@@ -169,14 +141,23 @@ namespace Little_Registry_Cleaner
 
                         return true;
                     }
-                    catch (Exception ex)
-                    {
-                        Debug.WriteLine(ex.Message);
-                    }
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex);
                 }
             }
 
             return false;
+        }
+
+        /// <summary>
+        /// Returns the path to the filename
+        /// </summary>
+        /// <returns>Log path</returns>
+        public override string ToString()
+        {
+            return string.Copy(Logger.strLogFilePath);
         }
     }
 }
