@@ -77,22 +77,15 @@ namespace Little_Registry_Cleaner
                 Properties.Settings.Default.strOptionsLogDir = string.Format("{0}\\Logs", Properties.Settings.Default.strProgramSettingsDir);
                 if (!Directory.Exists(Properties.Settings.Default.strOptionsLogDir))
                     Directory.CreateDirectory(Properties.Settings.Default.strOptionsLogDir);
-            }
+            }  
 
-            if (string.IsNullOrEmpty(Properties.Settings.Default.strErrorDir))
-            {
-                Properties.Settings.Default.strErrorDir = string.Format("{0}\\Errors", Properties.Settings.Default.strProgramSettingsDir);
-                if (!Directory.Exists(Properties.Settings.Default.strErrorDir))
-                    Directory.CreateDirectory(Properties.Settings.Default.strErrorDir);
-            }   
-
-#if (!DEBUG)
+//#if (!DEBUG)
             // Add event handler for thread exceptions
             AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);
             Application.ThreadException += new ThreadExceptionEventHandler(Application_ThreadException);
-#else
+//#else
             
-#endif
+//#endif
 
             // Enable needed privileges
             Permissions.SetPrivileges(true);

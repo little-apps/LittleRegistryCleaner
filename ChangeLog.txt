@@ -270,3 +270,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Added checks for files and folders before there added to the problem list
 - Locks stream writer in logger so it cant be opened or written to at the same time
 - Logger uses streamwriter as a base class
+- Crash Reporter no longer saves reports to the hard disk before sending them
