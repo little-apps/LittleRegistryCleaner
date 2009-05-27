@@ -136,7 +136,7 @@ namespace Little_Registry_Cleaner
                         {
                             ProcessStartInfo startInfo = new ProcessStartInfo("NOTEPAD.EXE", strNewFileName);
                             startInfo.ErrorDialog = true;
-                            Process.Start(startInfo);
+                            Process.Start(startInfo).WaitForExit();
                         }
 
                         return true;

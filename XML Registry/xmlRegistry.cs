@@ -27,6 +27,7 @@ using System.Collections;
 using System.Windows.Forms;
 using System.Security.AccessControl;
 using System.IO;
+using System.ComponentModel;
 
 namespace Little_Registry_Cleaner.Xml
 {
@@ -1033,8 +1034,7 @@ namespace Little_Registry_Cleaner.Xml
                 }
             }
 
-            MessageBox.Show(string.Format("couldn't set value {0}", strName), Application.ProductName,
-                MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            throw new Win32Exception(hr);
         }
 
         void DeleteAsXml_DeleteKey(int hKey, string strName)
@@ -1049,8 +1049,7 @@ namespace Little_Registry_Cleaner.Xml
             if (hr == ERROR_SUCCESS)
                 return;
 
-            MessageBox.Show(string.Format("couldn't delete key {0}, returned: {1}", strName, hr), Application.ProductName,
-                MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            throw new Win32Exception(hr);
         }
 
         void DeleteAsXml_DeleteValue(int hKey, string strName)
@@ -1068,10 +1067,10 @@ namespace Little_Registry_Cleaner.Xml
             if (hr == ERROR_SUCCESS) // it's ok
                 return;
 
-            MessageBox.Show(string.Format("couldn't delete value {0}, returned: {1}", strName, hr), Application.ProductName,
-                MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            throw new Win32Exception(hr);
         }
 
+        [Obsolete("Use RegistryKey.DeleteSubKeyTree")]
         void DeleteAsXml_DeleteTree(int hKey)
         {
             if (hKey == 0) return;
@@ -1084,8 +1083,7 @@ namespace Little_Registry_Cleaner.Xml
             if (hr == ERROR_SUCCESS) // it's ok
                 return;
 
-            MessageBox.Show(string.Format("couldn't delete tree, returned: {0}", hr), Application.ProductName,
-                MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            throw new Win32Exception(hr);
         }
 
         public bool loadAsXml(xmlReader r, string strFilename)
@@ -1262,8 +1260,12 @@ namespace Little_Registry_Cleaner.Xml
 
                     if (reg != null)
                     {
+                        grantRegistryKeyRights(regKey, RegistryRights.FullControl);
+
                         reg.DeleteSubKeyTree(strSubKey);
+                        reg.Flush();
                         reg.Close();
+                        //DeleteAsXml_DeleteTree(getRegistryHandle(regKey));
                     }
                 }
                 catch (Exception e)
@@ -1278,6 +1280,17 @@ namespace Little_Registry_Cleaner.Xml
             return true;
         }
 
+        private void grantRegistryKeyRights(RegistryKey regKey, RegistryRights registryRights)
+        {
+            RegistrySecurity regSecurity = regKey.GetAccessControl();
+            string user = Environment.UserDomainName + "\\" + Environment.UserName;
+
+            RegistryAccessRule rule = new RegistryAccessRule(user, registryRights, InheritanceFlags.ContainerInherit | InheritanceFlags.ObjectInherit, PropagationFlags.InheritOnly, AccessControlType.Allow);
+
+            regSecurity.AddAccessRule(rule);
+            regKey.SetAccessControl(regSecurity);
+        }
+
         /// <summary>
         /// Shows error dialog
         /// </summary>
@@ -1287,8 +1300,8 @@ namespace Little_Registry_Cleaner.Xml
         {
 #if (DEBUG)
             System.Diagnostics.Debug.WriteLine(e.Message);
-            CrashReporter dlgError = new CrashReporter(e);
-            dlgError.ShowDialog();
+            //CrashReporter dlgError = new CrashReporter(e);
+            //dlgError.ShowDialog();
 #endif
             return;
         }

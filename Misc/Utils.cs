@@ -309,7 +309,7 @@ namespace Little_Registry_Cleaner
 
             return reg;
         }
-
+         
         /// <summary>
         /// Gets the value kind and converts it accordingly
         /// </summary>
