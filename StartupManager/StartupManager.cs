@@ -116,15 +116,6 @@ namespace Little_Registry_Cleaner.StartupManager
                 {
                     // Get file arguments
                     string strFile = "", strArgs = "";
-                    //if (!Utils.FileExists(strFilePath))
-                    //{
-                    //    if (!Utils.ExtractArguments(strFilePath, out strFile, out strArgs))
-                    //        continue;
-                    //}
-                    //else
-                    //{
-                    //    strFile = strFilePath;
-                    //}
 
                     if (Utils.FileExists(strFilePath))
                         strFile = strFilePath;

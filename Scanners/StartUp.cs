@@ -80,11 +80,6 @@ namespace Little_Registry_Cleaner.Scanners
                     checkAutoRun(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\RunEx"));
                     checkAutoRun(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Run"));
                 }
-
-                checkStartMenu(Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Explorer\MenuOrder\Start Menu2\Programs"));
-
-                if (Utils.Is64BitOS)
-                    checkStartMenu(Registry.CurrentUser.OpenSubKey(@"Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Explorer\MenuOrder\Start Menu2\Programs"));
             }
             catch (System.Security.SecurityException ex)
             {
@@ -129,35 +124,6 @@ namespace Little_Registry_Cleaner.Scanners
 
             regKey.Close();
             return;
-        }
-
-        /// <summary>
-        /// Cross checks start menu for obsolete keys
-        /// </summary>
-        /// <param name="regKey"></param>
-        private static void checkStartMenu(RegistryKey regKey)
-        {
-            if (regKey == null)
-                return;
-
-            string strAllUsersProgs = Utils.GetSpecialFolderPath(Utils.CSIDL_PROGRAMS);
-            string strCommonProgs = Utils.GetSpecialFolderPath(Utils.CSIDL_COMMON_PROGRAMS);
-
-            Main.Logger.WriteLine("Checking for obsolete start menu entries in " + regKey.Name);
-
-            foreach (string strFolderName in regKey.GetSubKeyNames())
-            {
-                RegistryKey rk = regKey.OpenSubKey(strFolderName);
-
-                if (rk == null)
-                    continue;
-
-                ScanDlg.UpdateScanningObject(rk.Name);
-
-                if (!Utils.DirExists(Path.Combine(strAllUsersProgs, strFolderName)))
-                    if (!Utils.DirExists(Path.Combine(strCommonProgs, strFolderName)))
-                        ScanDlg.StoreInvalidKey("Obsolete registry key", rk.Name);
-            }
         }
         
     }
