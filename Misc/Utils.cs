@@ -71,47 +71,6 @@ namespace Little_Registry_Cleaner
             public string Name;
         }
         #endregion
-        #region "Interop (CreateProcess)"
-        struct PROCESS_INFORMATION
-        {
-            public IntPtr hProcess;
-            public IntPtr hThread;
-            public IntPtr dwProcessId;
-            public IntPtr dwThreadId;
-        }
-
-        struct STARTUPINFO
-        {
-            public int cb;
-            public string lpReserved;
-            public string lpDesktop;
-            public string lpTitle;
-            public int dwX;
-            public int dwY;
-            public int dwXSize;
-            public int dwYSize;
-            public int dwXCountChars;
-            public int dwYCountChars;
-            public int dwFillAttribute;
-            public int dwFlags;
-            public short wShowWindow;
-            public short cbReserved2;
-            public byte lpReserved2;
-            public int hStdInput;
-            public int hStdOutput;
-            public int hStdError;
-        }
-
-        [DllImport("kernel32.dll")]
-        static extern bool CreateProcess(string lpApplicationName,
-          string lpCommandLine, IntPtr lpProcessAttributes, IntPtr lpThreadAttributes,
-          bool bInheritHandles, uint dwCreationFlags, IntPtr lpEnvironment,
-          string lpCurrentDirectory, [In] ref STARTUPINFO lpStartupInfo,
-          out PROCESS_INFORMATION lpProcessInformation);
-
-        [DllImport("kernel32.dll", SetLastError = true)]
-        static extern bool CloseHandle(IntPtr hObject);
-        #endregion
         #region "Interop (IShellLink and IPersistFile)"
         [Flags()]
         enum SLGP_FLAGS
@@ -410,77 +369,63 @@ namespace Little_Registry_Cleaner
         }
 
         /// <summary>
-        /// Starts the process using CreateProcess() API
-        /// </summary>
-        /// <param name="CmdLine">Command line to execute</param>
-        /// <returns>Process ID</returns>
-        public static IntPtr CreateProcess(string CmdLine)
-        {
-            PROCESS_INFORMATION pi;
-            STARTUPINFO si = new STARTUPINFO();
-            si.wShowWindow = 1;
-            if (CreateProcess(null, CmdLine, IntPtr.Zero, IntPtr.Zero, false, 0, IntPtr.Zero, null, ref si, out pi))
-                return pi.dwProcessId;
-            else
-                return IntPtr.Zero;
-        }
-
-        /// <summary>
         /// Uses PathGetArgs and PathRemoveArgs API to extract file arguments
         /// </summary>
-        /// <param name="CmdLine">Command Line</param>
-        /// <param name="FilePath">file path</param>
-        /// <param name="Args">arguments</param>
-        /// <returns>true or false if an exception was thrown</returns>
-        public static bool ExtractArguments(string CmdLine, out string FilePath, out string Args)
+        /// <param name="cmdLine">Command Line</param>
+        /// <param name="filePath">file path</param>
+        /// <param name="fileArgs">arguments</param>
+        /// <exception cref="ArgumentNullException">Thrown when cmdLine is null or empty</exception>
+        /// <returns>False if the path doesnt exist</returns>
+        public static bool ExtractArguments(string cmdLine, out string filePath, out string fileArgs)
         {
-            FilePath = Args = "";
+            StringBuilder strCmdLine = new StringBuilder(cmdLine.ToLower().Trim());
 
-            try
-            {
-                if (string.IsNullOrEmpty(CmdLine))
-                    return false;
+            filePath = fileArgs = "";
 
-                Args = string.Copy(PathGetArgs(CmdLine));
+            if (strCmdLine.Length <= 0)
+                throw new ArgumentNullException("cmdLine");
 
-                StringBuilder strCmdLine = new StringBuilder(CmdLine.ToLower().Trim());
-                PathRemoveArgs(strCmdLine);
-                FilePath = string.Copy(strCmdLine.ToString());
+            fileArgs = string.Copy(PathGetArgs(strCmdLine.ToString()));
 
-                // Try combining chars
-                if (!FileExists(FilePath))
-                    return ExtractFileLocation(CmdLine, out FilePath, out Args);
-            }
-            catch
-            {
-                return ExtractFileLocation(CmdLine, out FilePath, out Args);
-            }
+            PathRemoveArgs(strCmdLine);
 
-            return (!string.IsNullOrEmpty(FilePath));
+            filePath = string.Copy(strCmdLine.ToString());
+
+            if (!string.IsNullOrEmpty(filePath))
+                if (Utils.FileExists(filePath))
+                    return true;
+
+            return false;
         }
 
         /// <summary>
         /// Parses the file location w/o windows API
         /// </summary>
-        /// <param name="Path">Path</param>
-        /// <param name="Location">Returns Location</param>
+        /// <param name="cmdLine">Command Line</param>
+        /// <param name="filePath">file path</param>
+        /// <param name="fileArgs">arguments</param>
+        /// <exception cref="ArgumentNullException">Thrown when cmdLine is null or empty</exception>
         /// <returns>Returns true if file was located</returns>
-        private static bool ExtractFileLocation(string Path, out string Location, out string Arguments)
+        public static bool ExtractArguments2(string cmdLine, out string filePath, out string fileArgs)
         {
-            string strFilePath = string.Copy(Path.ToLower().Trim());
+            string strCmdLine = string.Copy(cmdLine.ToLower().Trim());
             bool bRet = false;
-            Location = Arguments = "";
+
+            filePath = fileArgs = "";
+
+            if (string.IsNullOrEmpty(strCmdLine))
+                throw new ArgumentNullException(cmdLine);
 
             // Remove Quotes
-            strFilePath = UnqouteSpaces(strFilePath);
+            strCmdLine = UnqouteSpaces(strCmdLine);
 
             // Expand variables
-            strFilePath = Environment.ExpandEnvironmentVariables(strFilePath);
+            strCmdLine = Environment.ExpandEnvironmentVariables(strCmdLine);
 
             // Try to see file exists by combining parts
             StringBuilder strFileFullPath = new StringBuilder(260);
             int nPos = 0;
-            foreach (char ch in strFilePath.ToCharArray())
+            foreach (char ch in strCmdLine.ToCharArray())
             {
                 strFileFullPath = strFileFullPath.Append(ch);
                 nPos++;
@@ -488,14 +433,14 @@ namespace Little_Registry_Cleaner
                 // See if part exists
                if (File.Exists(strFileFullPath.ToString()))
                {
-                   Location = string.Copy(strFileFullPath.ToString());
+                   filePath = string.Copy(strFileFullPath.ToString());
                    bRet = true;
                    break;
                }
             }
 
             if (bRet && nPos > 0)
-                Arguments = strFilePath.Remove(0, nPos).Trim();
+                fileArgs = strCmdLine.Remove(0, nPos).Trim();
 
             return bRet;
         }
@@ -813,13 +758,14 @@ namespace Little_Registry_Cleaner
         /// Sees if the file exists
         /// </summary>
         /// <param name="FilePath">The filename (including path)</param>
+        /// <exception cref="ArgumentNullException">Thrown if filePath is null or empty</exception>
         /// <returns>True if it exists or false</returns>
-        public static bool FileExists(string FilePath)
+        public static bool FileExists(string filePath)
         {
-            if (string.IsNullOrEmpty(FilePath))
+            if (string.IsNullOrEmpty(filePath))
                 throw new ArgumentNullException("FilePath");
 
-            string strFileName = string.Copy(FilePath.Trim().ToLower());
+            string strFileName = string.Copy(filePath.Trim().ToLower());
 
             // Remove quotes
             strFileName = UnqouteSpaces(strFileName);
@@ -858,14 +804,15 @@ namespace Little_Registry_Cleaner
         /// <summary>
         /// Sees if the directory exists
         /// </summary>
-        /// <param name="DirPath">The directory</param>
+        /// <param name="dirPath">The directory</param>
+        /// <exception cref="ArgumentNullException">Thrown when dirPath is null or empty</exception>
         /// <returns>True if it exists</returns>
-        public static bool DirExists(string DirPath)
+        public static bool DirExists(string dirPath)
         {
-            if (string.IsNullOrEmpty(DirPath))
-                throw new ArgumentNullException("DirPath");
+            if (string.IsNullOrEmpty(dirPath))
+                throw new ArgumentNullException("dirPath");
 
-            string strDirectory = string.Copy(DirPath.Trim().ToLower());
+            string strDirectory = string.Copy(dirPath.Trim().ToLower());
 
             // Remove quotes
             strDirectory = UnqouteSpaces(strDirectory);

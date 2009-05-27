@@ -111,18 +111,19 @@ namespace Little_Registry_Cleaner.UninstallManager
 
         public void Uninstall()
         {
+            string cmdLine = "";
+
             if (!string.IsNullOrEmpty(UninstallString))
             {
-                IntPtr pid = Utils.CreateProcess(UninstallString);
-                if (pid != IntPtr.Zero)
-                    Process.GetProcessById(pid.ToInt32()).WaitForExit();
+                cmdLine = this.UninstallString;
             }
             else if (!string.IsNullOrEmpty(QuietUninstallString))
             {
-                IntPtr pid = Utils.CreateProcess(QuietUninstallString);
-                if (pid != IntPtr.Zero)
-                    Process.GetProcessById(pid.ToInt32()).WaitForExit();
+                cmdLine = this.QuietUninstallString;
             }
+
+            Process proc = Process.Start(cmdLine);
+            proc.WaitForExit();
         }
 
         public void RemoveFromRegistry()

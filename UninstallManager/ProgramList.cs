@@ -77,8 +77,9 @@ namespace Little_Registry_Cleaner.UninstallManager
             if (key.GetType() != typeof(ProgramInfo))
                 throw new ArgumentException("Key must be ProgramInfo type", "key");
 
-            if (value.GetType() != typeof(ListViewItem))
-                throw new ArgumentException("Value must be ListViewItem type", "value");
+            if (value != null)
+                if (value.GetType() != typeof(ListViewItem))
+                    throw new ArgumentException("Value must be ListViewItem type", "value");
 
             base.OnValidate(key, value);
         }

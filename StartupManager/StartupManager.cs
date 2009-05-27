@@ -116,16 +116,25 @@ namespace Little_Registry_Cleaner.StartupManager
                 {
                     // Get file arguments
                     string strFile = "", strArgs = "";
-                    if (!Utils.FileExists(strFilePath))
-                    {
-                        Utils.ExtractArguments(strFilePath, out strFile, out strArgs);
+                    //if (!Utils.FileExists(strFilePath))
+                    //{
+                    //    if (!Utils.ExtractArguments(strFilePath, out strFile, out strArgs))
+                    //        continue;
+                    //}
+                    //else
+                    //{
+                    //    strFile = strFilePath;
+                    //}
 
-                        // Make sure file exists
-                        if (!Utils.FileExists(strFile))
-                            continue;
-                    }
+                    if (Utils.FileExists(strFilePath))
+                        strFile = strFilePath;
                     else
-                        strFile = string.Copy(strFilePath);
+                    {
+                        if (!Utils.ExtractArguments(strFilePath, out strFile, out strArgs))
+                            if (!Utils.ExtractArguments2(strFilePath, out strFile, out strArgs))
+                                // If command line cannot be extracted, set file path to command line
+                                strFile = strFilePath;
+                    }
 
                     StartupManagerNode node = new StartupManagerNode();
 
@@ -313,7 +322,7 @@ namespace Little_Registry_Cleaner.StartupManager
     }
 
     #region "Startup Manager Node"
-    class StartupManagerNode : Node
+    public class StartupManagerNode : Node
     {
         private Image img = null;
         public new Image Image
