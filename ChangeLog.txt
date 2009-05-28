@@ -271,3 +271,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Locks stream writer in logger so it cant be opened or written to at the same time
 - Logger uses streamwriter as a base class
 - Crash Reporter no longer saves reports to the hard disk before sending them
+- RegEditGo uses SetForegroundWindow instead of ShowWindow to bring up regedit
+- ActiveX scanner uses ole32.dll to get CLSID from program id and check icons
+
++ Version 1.3 Released

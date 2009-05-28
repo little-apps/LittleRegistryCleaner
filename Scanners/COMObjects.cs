@@ -21,12 +21,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
+using System.Runtime.InteropServices;
 using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.Scanners
 {
     public class COMObjects : ScannerBase
     {
+        //[DllImport("ole32.dll", CharSet = CharSet.Unicode, PreserveSig = false)]
+        //static extern Guid CLSIDFromProgID([MarshalAs(UnmanagedType.LPWStr)] string lpszProgID);
+        [DllImport("ole32.dll")]
+        static extern int CLSIDFromProgID([MarshalAs(UnmanagedType.LPWStr)] string lpszProgID, out Guid pclsid);
+        //[DllImport("ole32.dll", CharSet = CharSet.Unicode, PreserveSig = false)]
+        //static extern string ProgIDFromCLSID([In]ref Guid clsid);
+        //[DllImport("ole32.dll")]
+        //static extern int ProgIDFromCLSID([In] ref Guid clsid, [MarshalAs(UnmanagedType.LPWStr)] out string lplpszProgID);
+        [DllImport("ole32.dll")]
+        static extern IntPtr OleGetIconOfClass([In] ref Guid rclsid, [MarshalAs(UnmanagedType.LPWStr), Optional] string lpszLabel, bool fUseTypeAsLabel);
+
+
         public override string ScannerName
         {
             get { return "ActiveX/COM Objects"; }
@@ -50,7 +63,7 @@ namespace Little_Registry_Cleaner.Scanners
                     ScanCLSIDSubKey(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Wow6432Node\\Classes\\CLSID"));
                 }
 
-                // Scan file extensions
+                // Scan file extensions + progids
                 ScanClasses (Registry.ClassesRoot);
                 ScanClasses(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Classes"));
                 ScanClasses(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Classes"));
@@ -110,17 +123,14 @@ namespace Little_Registry_Cleaner.Scanners
                         ScanDlg.StoreInvalidKey("Missing AppID reference", rkCLSID.ToString(), "AppID");
 
                 // See if DefaultIcon exists
-                using (RegistryKey regKeyIcon = rkCLSID.OpenSubKey("DefaultIcon"))
+                if (rkCLSID.OpenSubKey("DefaultIcon") != null)
                 {
-                    if (regKeyIcon != null)
+                    Guid guid = Guid.Empty;
+                    if (Utils.TryParseGuid(strCLSID, out guid))
                     {
-                        string strDefaultIcon = regKeyIcon.GetValue("") as string;
-
-                        if (!string.IsNullOrEmpty(strDefaultIcon))
-                            if (!Utils.IconExists(strDefaultIcon))
-                                ScanDlg.StoreInvalidKey("Unable to find icon", regKeyIcon.ToString());
-
-                        regKeyIcon.Close();
+                        IntPtr icon = OleGetIconOfClass(ref guid, null, false);
+                        if (icon == IntPtr.Zero)
+                            ScanDlg.StoreInvalidKey("Unable to find icon", string.Format("{0}\\DefaultIcon", rkCLSID.ToString()));
                     }
                 }
 
@@ -192,7 +202,7 @@ namespace Little_Registry_Cleaner.Scanners
         }
 
         /// <summary>
-        /// Finds invalid ProgIDs referenced
+        /// Finds invalid File extensions + ProgIDs referenced
         /// </summary>
         private static void ScanClasses(RegistryKey regKey)
         {
@@ -223,17 +233,10 @@ namespace Little_Registry_Cleaner.Scanners
                 }
                 else
                 {
-                    using (RegistryKey rkCLSID = regKey.OpenSubKey(string.Format("{0}\\CLSID", strSubKey)))
-                    {
-                        if (rkCLSID != null)
-                        {
-                            string strCLSID = rkCLSID.GetValue("") as string;
-
-                            if (!string.IsNullOrEmpty(strCLSID))
-                                if (!CLSIDExists(strCLSID))
-                                    ScanDlg.StoreInvalidKey("Missing CLSID reference", string.Format("{0}\\{1}", regKey.Name, strSubKey));
-                        }
-                    }
+                    Guid guid = Guid.Empty;
+                    if (CLSIDFromProgID(strSubKey, out guid) == 0)
+                        if (!CLSIDExists(guid))
+                            ScanDlg.StoreInvalidKey("Missing CLSID reference", string.Format("{0}\\{1}", regKey.Name, strSubKey));
                 }
 
                 // Check for unused progid/extension
@@ -508,6 +511,11 @@ namespace Little_Registry_Cleaner.Scanners
             return bRet;
         }
 
+        private static bool IEToolbarIsValid(Guid guid)
+        {
+            return IEToolbarIsValid(guid.ToString("B"));
+        }
+
         /// <summary>
         /// Checks if IE toolbar GUID is valid
         /// </summary>
@@ -578,6 +586,11 @@ namespace Little_Registry_Cleaner.Scanners
             }
 
             return false;
+        }
+
+        private static bool CLSIDExists(Guid guid)
+        {
+            return CLSIDExists(guid.ToString("B"));
         }
 
         /// <summary>

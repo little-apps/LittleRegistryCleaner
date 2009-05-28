@@ -30,7 +30,7 @@ namespace Little_Registry_Cleaner
     static class Program
     {
         /// <summary>
-        /// <para>The main entry point for the application.</para>
+        /// The main entry point for the application.
         /// </summary>
         [STAThread]
         static void Main()

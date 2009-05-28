@@ -940,5 +940,33 @@ namespace Little_Registry_Cleaner
         {
             Help.ShowHelp(Form.ActiveForm, string.Copy(WebAddress));
         }
+
+        /// <summary>
+        /// Converts the string representation to its equivalent GUID
+        /// </summary>
+        /// <param name="s">String containing the GUID to be converted</param>
+        /// <param name="guid">If conversion is sucessful, this parameter is the GUID value of the string. Otherwise, it is empty.</param>
+        /// <returns>True if the conversion succeeded</returns>
+        public static bool TryParseGuid(string s, out Guid guid)
+        {
+            guid = Guid.Empty;
+
+            try
+            {
+                if (string.IsNullOrEmpty(s))
+                    return false;
+
+                if (!Regex.IsMatch(s, @"^(\{{0,1}([0-9a-fA-F]){8}-([0-9a-fA-F]){4}-([0-9a-fA-F]){4}-([0-9a-fA-F]){4}-([0-9a-fA-F]){12}\}{0,1})$"))
+                    return false;
+
+                guid = new Guid(s);
+            }
+            catch
+            {
+                return false;
+            }
+
+            return true;
+        }
     }
 }

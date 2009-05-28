@@ -1,9 +1,10 @@
 obj/*
-obj/*
-bin
 bin/*
-bin/*/*
-obj/*
-bin/*
-Optimizer(32)
+Little Registry Cleaner.chm
+*/bin/*
 */obj/*
+*/obj/*.*
+*/Debug/*
+*/Release/*
+*.exe.*
+*.dll.*

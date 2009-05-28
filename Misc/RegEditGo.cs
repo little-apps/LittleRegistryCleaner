@@ -49,8 +49,7 @@ namespace Little_Registry_Cleaner
                 wndApp = processes[0].MainWindowHandle;
                 processId = (uint)processes[0].Id;
 
-                const int SW_RESTORE = 9;
-                Interop.ShowWindow(wndApp, SW_RESTORE);
+                Interop.SetForegroundWindow(wndApp);
             }
 
             if (wndApp == IntPtr.Zero)
@@ -462,8 +461,8 @@ namespace Little_Registry_Cleaner
             internal static extern bool BringWindowToTop(IntPtr hWnd);
 
             [DllImport("user32.dll")]
-            internal static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
-
+            [return: MarshalAs(UnmanagedType.Bool)]
+            internal static extern bool SetForegroundWindow(IntPtr hWnd);
         }
 
         #endregion
