@@ -47,38 +47,10 @@ namespace Little_Registry_Cleaner.UninstallManager
             {
                 foreach (string strSubKeyName in regKey.GetSubKeyNames())
                 {
-                    if (strSubKeyName.Contains("KB") || strSubKeyName.Contains("Microsoft Security Patch"))
-                        continue;
-
                     using (RegistryKey subKey = regKey.OpenSubKey(strSubKeyName))
                     {
-                        ProgramInfo objProgInfo = new ProgramInfo(subKey);
-                        
-                        // Get cached information
-                        using (RegistryKey rkARPCache = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Management\\ARPCache\\" + strSubKeyName))
-                        {
-                            if (rkARPCache != null)
-                            {
-                                byte[] b = (byte[])rkARPCache.GetValue("SlowInfoCache");
-
-                                GCHandle gcHandle = GCHandle.Alloc(b, GCHandleType.Pinned);
-                                IntPtr ptr = gcHandle.AddrOfPinnedObject();
-                                Utils.SlowInfoCache objSlowInfoCache = (Utils.SlowInfoCache)Marshal.PtrToStructure(ptr, typeof(Utils.SlowInfoCache));
-
-                                objProgInfo.InstallSize = objSlowInfoCache.InstallSize;
-                                objProgInfo.Frequency = objSlowInfoCache.Frequency;
-                                objProgInfo.LastUsed = Utils.FileTime2DateTime(objSlowInfoCache.LastUsed);
-                                if (objSlowInfoCache.HasName == 1)
-                                    objProgInfo.FileName = objSlowInfoCache.Name;
-
-                                gcHandle.Free();
-                                rkARPCache.Close();
-                            }
-                        }
-
-                        arrProgList.Add(objProgInfo);
-
-                        subKey.Close();
+                        if (subKey != null)
+                            arrProgList.Add(new ProgramInfo(subKey));
                     }
                 }
             }
@@ -137,7 +109,7 @@ namespace Little_Registry_Cleaner.UninstallManager
 
                 if ((!string.IsNullOrEmpty(objProgInfo.DisplayName))
                     && (string.IsNullOrEmpty(objProgInfo.ParentKeyName))
-                    && (objProgInfo.SystemComponent == 0))
+                    && (!objProgInfo.SystemComponent))
                 {
                     if (objProgInfo.Uninstallable)
                         lvi.ImageKey = "OK";

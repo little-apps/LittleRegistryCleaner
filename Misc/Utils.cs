@@ -57,21 +57,8 @@ namespace Little_Registry_Cleaner
         [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern bool PathRemoveFileSpec([In, Out] StringBuilder path);
 
         [DllImport("user32.dll")] public static extern int DestroyIcon(IntPtr hIcon);
-        
-
-        [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode)]
-        public struct SlowInfoCache
-        {
-            public uint cbSize;
-            public uint HasName;
-            public Int64 InstallSize;
-            public FILETIME LastUsed;
-            public uint Frequency;
-            [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 262)]
-            public string Name;
-        }
         #endregion
-        #region "Interop (IShellLink and IPersistFile)"
+        #region Interop (IShellLink and IPersistFile)
         [Flags()]
         enum SLGP_FLAGS
         {
@@ -497,7 +484,7 @@ namespace Little_Registry_Cleaner
         /// </summary>
         /// <param name="ft">FILETIME structure</param>
         /// <returns>DateTime structure</returns>
-        public static DateTime FileTime2DateTime(FILETIME ft)
+        public static DateTime FileTime2DateTime(System.Runtime.InteropServices.ComTypes.FILETIME ft)
         {
             DateTime dt = DateTime.MaxValue;
             long hFT2 = (((long)ft.dwHighDateTime) << 32) + ft.dwLowDateTime;

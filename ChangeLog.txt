@@ -275,3 +275,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - ActiveX scanner uses ole32.dll to get CLSID from program id and check icons
 
 + Version 1.3 Released
+
+- Application info scanner uses program info class to collect data
+- Application Info scanner and uninstall manager use program info to get slow info cache

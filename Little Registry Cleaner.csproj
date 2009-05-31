@@ -289,7 +289,6 @@
     <Content Include="gpl.txt" />
     <Content Include="ChangeLog.txt" />
     <Content Include="little register cleaner.ico" />
-    <Content Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Common Tools\Common Tools.csproj">

@@ -22,14 +22,37 @@ using System.Text;
 using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.UninstallManager
 {
     public class ProgramInfo : IComparable<ProgramInfo>
     {
+        #region Slow Info Cache properties
 
-        #region "Program Info"
+        [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode, Size=552)]
+        internal struct SlowInfoCache
+        {
+            
+            public uint cbSize; // size of the SlowInfoCache (552 bytes)
+            public uint HasName; // unknown
+            public Int64 InstallSize; // program size in bytes
+            public System.Runtime.InteropServices.ComTypes.FILETIME LastUsed; // last time program was used
+            public uint Frequency; // 0-2 = rarely; 3-9 = occassionaly; 10+ = frequently
+            [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 262)]
+            public string Name; //remaining 524 bytes (max path of 260 + null) in unicode
+        }
+
+        public bool SlowCache;
+        public Int64 InstallSize;
+        public uint Frequency;
+        public DateTime LastUsed;
+        public string FileName;
+        public string SlowInfoCacheRegKey;
+        #endregion
+
+        #region Program Info
         public readonly string Key;
         public readonly string DisplayName;
         public readonly string UninstallString;
@@ -46,67 +69,123 @@ namespace Little_Registry_Cleaner.UninstallManager
         public readonly string Readme;
         public readonly string DisplayIcon;
         public readonly string ParentKeyName;
+        public readonly string InstallLocation;
+        public readonly string InstallSource;
 
-        public readonly uint EstimatedSize;
-        public readonly uint SystemComponent;
+        public readonly int NoModify;
+        public readonly int NoRepair;
+
+        public readonly int EstimatedSize;
+        public readonly bool SystemComponent;
+        private readonly int _windowsInstaller;
 
         public bool WindowsInstaller
         {
             get
             {
-                return (UninstallString.Contains("msiexec.exe") || QuietUninstallString.Contains("msiexec.exe"));
+                if (_windowsInstaller == 1)
+                    return true;
+
+                if (!string.IsNullOrEmpty(UninstallString))
+                    if (UninstallString.Contains("msiexec"))
+                        return true;
+
+                if (!string.IsNullOrEmpty(QuietUninstallString))
+                    if (QuietUninstallString.Contains("msiexec"))
+                        return true;
+
+                return false;
             }
         }
 
         public bool Uninstallable
         {
-            get
-            {
-                return ((!string.IsNullOrEmpty(UninstallString)) || (!string.IsNullOrEmpty(QuietUninstallString)));
-            }
+            get { return ((!string.IsNullOrEmpty(UninstallString)) || (!string.IsNullOrEmpty(QuietUninstallString))); }
         }
-
-        public bool SlowCache;
-        public Int64 InstallSize;
-        public uint Frequency;
-        public DateTime LastUsed;
-        public string FileName;
         #endregion
 
         public ProgramInfo(RegistryKey regKey)
         {
             Key = regKey.Name.Substring(regKey.Name.LastIndexOf('\\') + 1);
 
-            DisplayName = regKey.GetValue("DisplayName") as string;
-            QuietDisplayName = regKey.GetValue("QuietDisplayName") as string;
-            UninstallString = regKey.GetValue("UninstallString") as string;
-            QuietUninstallString = regKey.GetValue("QuietUninstallString") as string;
-            Publisher = regKey.GetValue("Publisher") as string;
-            DisplayVersion = regKey.GetValue("DisplayVersion") as string;
-            HelpLink = regKey.GetValue("HelpLink") as string;
-            URLInfoAbout = regKey.GetValue("URLInfoAbout") as string;
-            HelpTelephone = regKey.GetValue("HelpTelephone") as string;
-            Contact = regKey.GetValue("Contact") as string;
-            Readme = regKey.GetValue("Readme") as string;
-            Comments = regKey.GetValue("Comments") as string;
-            DisplayIcon = regKey.GetValue("DisplayIcon") as string;
-            ParentKeyName = regKey.GetValue("ParentKeyName") as string;
-
             try
             {
-                SystemComponent = (uint)Convert.ToUInt32(regKey.GetValue("SystemComponent", 0));
-                EstimatedSize = (uint)Convert.ToUInt32(regKey.GetValue("EstimatedSize", 0));
+                DisplayName = regKey.GetValue("DisplayName") as string;
+                QuietDisplayName = regKey.GetValue("QuietDisplayName") as string;
+                UninstallString = regKey.GetValue("UninstallString") as string;
+                QuietUninstallString = regKey.GetValue("QuietUninstallString") as string;
+                Publisher = regKey.GetValue("Publisher") as string;
+                DisplayVersion = regKey.GetValue("DisplayVersion") as string;
+                HelpLink = regKey.GetValue("HelpLink") as string;
+                URLInfoAbout = regKey.GetValue("URLInfoAbout") as string;
+                HelpTelephone = regKey.GetValue("HelpTelephone") as string;
+                Contact = regKey.GetValue("Contact") as string;
+                Readme = regKey.GetValue("Readme") as string;
+                Comments = regKey.GetValue("Comments") as string;
+                DisplayIcon = regKey.GetValue("DisplayIcon") as string;
+                ParentKeyName = regKey.GetValue("ParentKeyName") as string;
+                InstallLocation = regKey.GetValue("InstallLocation") as string;
+                InstallSource = regKey.GetValue("InstallSource") as string;
+
+                NoModify = (Int32)regKey.GetValue("NoModify", 0);
+                NoRepair = (Int32)regKey.GetValue("NoRepair", 0);
+
+                SystemComponent = (((Int32)regKey.GetValue("SystemComponent", 0) == 1)?(true):(false));
+                _windowsInstaller = (Int32)regKey.GetValue("WindowsInstaller", 0);
+                EstimatedSize = (Int32)regKey.GetValue("EstimatedSize", 0);
             }
             catch (Exception)
             {
-                SystemComponent = 0;
+                SystemComponent = false;
                 EstimatedSize = 0;
             }
 
-            SlowCache = false;
-            InstallSize = 0;
-            Frequency = 0;
-            LastUsed = DateTime.MinValue;
+            return;
+        }
+
+        /// <summary>
+        /// Gets cached information
+        /// </summary>
+        private void GetARPCache()
+        {
+            RegistryKey regKey = null;
+
+            try
+            {
+                if ((regKey = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\App Management\ARPCache\" + ParentKeyName)) == null)
+                    if ((regKey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\App Management\ARPCache\" + ParentKeyName)) == null)
+                        return;
+
+                byte[] b = (byte[])regKey.GetValue("SlowInfoCache");
+
+                GCHandle gcHandle = GCHandle.Alloc(b, GCHandleType.Pinned);
+                IntPtr ptr = gcHandle.AddrOfPinnedObject();
+                SlowInfoCache slowInfoCache = (SlowInfoCache)Marshal.PtrToStructure(ptr, typeof(SlowInfoCache));
+
+                this.SlowCache = true;
+                this.SlowInfoCacheRegKey = regKey.ToString();
+
+                this.InstallSize = slowInfoCache.InstallSize;
+                this.Frequency = slowInfoCache.Frequency;
+                this.LastUsed = Utils.FileTime2DateTime(slowInfoCache.LastUsed);
+                if (slowInfoCache.HasName == 1)
+                    this.FileName = slowInfoCache.Name;
+
+                if (gcHandle.IsAllocated)
+                    gcHandle.Free();
+
+                regKey.Close();
+            }
+            catch
+            {
+                SlowCache = false;
+                InstallSize = 0;
+                Frequency = 0;
+                LastUsed = DateTime.MinValue;
+                FileName = "";
+            }
+
+            return;
         }
 
         public void Uninstall()
@@ -114,13 +193,9 @@ namespace Little_Registry_Cleaner.UninstallManager
             string cmdLine = "";
 
             if (!string.IsNullOrEmpty(UninstallString))
-            {
                 cmdLine = this.UninstallString;
-            }
             else if (!string.IsNullOrEmpty(QuietUninstallString))
-            {
                 cmdLine = this.QuietUninstallString;
-            }
 
             Process proc = Process.Start(cmdLine);
             proc.WaitForExit();
@@ -139,7 +214,7 @@ namespace Little_Registry_Cleaner.UninstallManager
             return DisplayName;
         }
 
-        #region "IComparable members"
+        #region IComparable members
         public int CompareTo(ProgramInfo other)
         {
             return (DisplayName == null) ? 0 : DisplayName.CompareTo(other.DisplayName);

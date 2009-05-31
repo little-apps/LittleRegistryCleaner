@@ -55,23 +55,45 @@ namespace Little_Registry_Cleaner.Scanners
                             {
                                 ScanDlg.UpdateScanningObject(regKey2.ToString());
 
-                                string strUninstallString = string.Format("{0}", regKey2.GetValue("UninstallString"));
-                                string strDisplayIcon = string.Format("{0}", regKey2.GetValue("DisplayIcon"));
-                                string strInstallLocation = string.Format("{0}", regKey2.GetValue("InstallLocation"));
+                                UninstallManager.ProgramInfo progInfo = new Little_Registry_Cleaner.UninstallManager.ProgramInfo(regKey2);
 
-                                // Skip if installed by msi installer
-                                if (strUninstallString.Contains("msiexec"))
+                                if (regKey2.ValueCount <= 0)
+                                {
+                                    ScanDlg.StoreInvalidKey("Invalid registry key", regKey2.ToString());
+                                    continue;
+                                }
+
+                                if (progInfo.WindowsInstaller)
                                     continue;
 
+                                if (string.IsNullOrEmpty(progInfo.DisplayName) && (!progInfo.Uninstallable))
+                                {
+                                    ScanDlg.StoreInvalidKey("Invalid registry key", regKey2.ToString());
+                                    continue;
+                                }
+
                                 // Check display icon
-                                if (!string.IsNullOrEmpty(strDisplayIcon))
-                                    if (!Utils.IconExists(strDisplayIcon))
+                                if (!string.IsNullOrEmpty(progInfo.DisplayIcon))
+                                    if (!Utils.IconExists(progInfo.DisplayIcon))
                                         ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "DisplayIcon");
 
                                 // Check install location 
-                                if (!string.IsNullOrEmpty(strInstallLocation))
-                                    if ((!Utils.DirExists(strInstallLocation)) && (!Utils.FileExists(strInstallLocation)))
-                                        ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString());
+                                if (!string.IsNullOrEmpty(progInfo.InstallLocation))
+                                    if ((!Utils.DirExists(progInfo.InstallLocation)) && (!Utils.FileExists(progInfo.InstallLocation)))
+                                        ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "InstallLocation");
+
+                                // Check install source 
+                                if (!string.IsNullOrEmpty(progInfo.InstallSource))
+                                    if ((!Utils.DirExists(progInfo.InstallSource)) && (!Utils.FileExists(progInfo.InstallSource)))
+                                        ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "InstallSource");
+
+                                // Check ARP Cache
+                                if (progInfo.SlowCache)
+                                {
+                                    if (!string.IsNullOrEmpty(progInfo.FileName))
+                                        if (!Utils.FileExists(progInfo.FileName))
+                                            ScanDlg.StoreInvalidKey("Invalid registry key", progInfo.SlowInfoCacheRegKey);
+                                }
                             }
                         }
                     }
@@ -79,37 +101,28 @@ namespace Little_Registry_Cleaner.Scanners
 
                 Main.Logger.WriteLine("Verifying registry entries in Add/Remove Cache");
 
-                using (RegistryKey rk = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Management\\ARPCache"))
-                {
-                    if (rk == null)
-                        return;
-
-                    foreach (string strSubKey in rk.GetSubKeyNames())
-                    {
-                        using (RegistryKey rkARPCache = rk.OpenSubKey(strSubKey))
-                        {
-                            if (rkARPCache != null)
-                            {
-                                ScanDlg.UpdateScanningObject(rkARPCache.Name);
-
-                                byte[] b = (byte[])rkARPCache.GetValue("SlowInfoCache");
-
-                                GCHandle gcHandle = GCHandle.Alloc(b, GCHandleType.Pinned);
-                                IntPtr ptr = gcHandle.AddrOfPinnedObject();
-                                Utils.SlowInfoCache objSlowInfoCache = (Utils.SlowInfoCache)Marshal.PtrToStructure(ptr, typeof(Utils.SlowInfoCache));
-
-                                if ((Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\" + strSubKey) == null) && (Utils.FileExists(objSlowInfoCache.Name) == false))
-                                    ScanDlg.StoreInvalidKey("Invalid registry key", rkARPCache.ToString());
-
-                                gcHandle.Free();
-                            }
-                        }
-                    }
-                }
+                checkARPCache(Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\App Management\ARPCache\"));
+                checkARPCache(Registry.CurrentUser.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\App Management\ARPCache\"));
             }
             catch (System.Security.SecurityException ex)
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// Do a cross-reference check on ARP Cache keys
+        /// </summary>
+        /// <param name="regKey"></param>
+        private static void checkARPCache(RegistryKey regKey)
+        {
+            if (regKey == null)
+                return;
+
+            foreach (string subKey in regKey.GetSubKeyNames())
+            {
+                if (Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\" + subKey) == null)
+                    ScanDlg.StoreInvalidKey("Obsolete registry key", string.Format("{0}/{1}", regKey.Name, subKey));
             }
         }
     }
