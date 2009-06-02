@@ -52,8 +52,11 @@ namespace Little_Registry_Cleaner.Scanners
 
                     ScanDlg.UpdateScanningObject(strValue);
 
-                    if (!Utils.FileExists(strValue))
-                        ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strDriverName);
+                    if (!string.IsNullOrEmpty(strValue))
+                    {
+                        if (!Utils.FileExists(strValue))
+                            ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strDriverName);
+                    }
                 }
 
                 regKey.Close();

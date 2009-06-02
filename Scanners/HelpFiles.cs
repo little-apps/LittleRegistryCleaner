@@ -61,7 +61,7 @@ namespace Little_Registry_Cleaner.Scanners
 
                 ScanDlg.UpdateScanningObject(strHelpPath);
 
-                if (string.IsNullOrEmpty(strHelpPath))
+                if (string.IsNullOrEmpty(strHelpPath) || string.IsNullOrEmpty(strHelpFile))
                     continue;
 
                 if (HelpFileExists(strHelpFile, strHelpPath))

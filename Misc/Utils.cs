@@ -745,12 +745,11 @@ namespace Little_Registry_Cleaner
         /// Sees if the file exists
         /// </summary>
         /// <param name="FilePath">The filename (including path)</param>
-        /// <exception cref="ArgumentNullException">Thrown if filePath is null or empty</exception>
-        /// <returns>True if it exists or false</returns>
+        /// <returns>True if it exists. Otherwise, false if the file path is empty or doesnt exist.</returns>
         public static bool FileExists(string filePath)
         {
             if (string.IsNullOrEmpty(filePath))
-                throw new ArgumentNullException("FilePath");
+                return false;
 
             string strFileName = string.Copy(filePath.Trim().ToLower());
 
@@ -792,12 +791,11 @@ namespace Little_Registry_Cleaner
         /// Sees if the directory exists
         /// </summary>
         /// <param name="dirPath">The directory</param>
-        /// <exception cref="ArgumentNullException">Thrown when dirPath is null or empty</exception>
-        /// <returns>True if it exists</returns>
+        /// <returns>True if it exists. Otherwise, false if the directory path is empty or doesnt exist.</returns>
         public static bool DirExists(string dirPath)
         {
             if (string.IsNullOrEmpty(dirPath))
-                throw new ArgumentNullException("dirPath");
+                return false;
 
             string strDirectory = string.Copy(dirPath.Trim().ToLower());
 
