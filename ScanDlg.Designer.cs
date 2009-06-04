@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.progressBar = new Common_Tools.XpProgressBar();
             this.labelProblems = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonStop = new System.Windows.Forms.Button();
             this.textBoxSubKey = new System.Windows.Forms.TextBox();
-            this.progressBar = new Common_Tools.XpProgressBar();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,11 +50,26 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
+            // progressBar
+            // 
+            this.progressBar.ColorBackGround = System.Drawing.Color.White;
+            this.progressBar.ColorBarBorder = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(240)))), ((int)(((byte)(170)))));
+            this.progressBar.ColorBarCenter = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(10)))));
+            this.progressBar.ColorText = System.Drawing.Color.Black;
+            this.progressBar.Location = new System.Drawing.Point(6, 32);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Position = 0;
+            this.progressBar.PositionMax = 100;
+            this.progressBar.PositionMin = 0;
+            this.progressBar.Size = new System.Drawing.Size(300, 24);
+            this.progressBar.SteepDistance = ((byte)(0));
+            this.progressBar.TabIndex = 20;
+            // 
             // labelProblems
             // 
             this.labelProblems.Location = new System.Drawing.Point(91, 16);
             this.labelProblems.Name = "labelProblems";
-            this.labelProblems.Size = new System.Drawing.Size(35, 13);
+            this.labelProblems.Size = new System.Drawing.Size(67, 13);
             this.labelProblems.TabIndex = 6;
             this.labelProblems.Text = "0";
             // 
@@ -87,21 +102,6 @@
             this.textBoxSubKey.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBoxSubKey.Size = new System.Drawing.Size(367, 40);
             this.textBoxSubKey.TabIndex = 2;
-            // 
-            // progressBar
-            // 
-            this.progressBar.ColorBackGround = System.Drawing.Color.White;
-            this.progressBar.ColorBarBorder = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(240)))), ((int)(((byte)(170)))));
-            this.progressBar.ColorBarCenter = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(10)))));
-            this.progressBar.ColorText = System.Drawing.Color.Black;
-            this.progressBar.Location = new System.Drawing.Point(6, 32);
-            this.progressBar.Name = "progressBar";
-            this.progressBar.Position = 0;
-            this.progressBar.PositionMax = 100;
-            this.progressBar.PositionMin = 0;
-            this.progressBar.Size = new System.Drawing.Size(300, 24);
-            this.progressBar.SteepDistance = ((byte)(0));
-            this.progressBar.TabIndex = 20;
             // 
             // ScanDlg
             // 

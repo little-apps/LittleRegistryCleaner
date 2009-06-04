@@ -1210,7 +1210,7 @@ namespace Little_Registry_Cleaner.Xml
                     this.saveAsXml(w, false, p.RegKeyPath, p.ValueName, p.Problem);
 
                 // Remove problem from registry
-                deleteRegistryKey(p.strMainKey, p.strSubKey, p.ValueName);
+                deleteRegistryKey(p.baseRegKey, p.subRegKey, p.ValueName);
             }
 
             // Write Closing Tag to Backup File

@@ -280,3 +280,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Application Info scanner and uninstall manager use program info to get slow info cache
 - Added more checks for null or empty strings before checking for files/directories
 - No longer throws an exception when the path is null/empty in FileExists and DirExists()
+- Checks for value name + others before being added to bad registry key array

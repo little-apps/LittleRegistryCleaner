@@ -8,3 +8,5 @@ Little Registry Cleaner.chm
 */Release/*
 *.exe.*
 *.dll.*
+*/Debug/*
+*/Release/*

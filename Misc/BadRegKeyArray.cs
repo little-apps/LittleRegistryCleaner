@@ -26,11 +26,14 @@ namespace Little_Registry_Cleaner
 {
     public class BadRegistryKey : Common_Tools.TreeViewAdv.Tree.Node
     {
+        #region Properties
         private CheckState _bChecked = CheckState.Checked;
         private string _strProblem = "";
         private string _strValueName = "";
         private string _strSectionName = "";
         private string _strData = "";
+        public readonly string baseRegKey = "";
+        public readonly string subRegKey = "";
 
         public CheckState Checked
         {
@@ -44,21 +47,19 @@ namespace Little_Registry_Cleaner
         }
 
         /// <summary>
-        /// Get/Sets the problem
+        /// Get the problem
         /// </summary>
         public string Problem
         {
             get { return _strProblem; }
-            set { _strProblem = value; }
         }
 
         /// <summary>
-        /// Gets/Sets the value name
+        /// Gets the value name
         /// </summary>
         public string ValueName
         {
             get { return _strValueName; }
-            set { _strValueName = value; }
         }
 
         /// <summary>
@@ -114,66 +115,47 @@ namespace Little_Registry_Cleaner
 
             this.SetIsChecked(state, false, true);
         }
-        
-        public string strMainKey = "";
-        public string strSubKey = "";
 
         /// <summary>
-        /// Gets/Sets the registry path
+        /// Gets the registry path
         /// </summary>
         public string RegKeyPath
         {
             get
             {
-                if (!string.IsNullOrEmpty(strMainKey) && !string.IsNullOrEmpty(strSubKey))
-                    return string.Format("{0}\\{1}", strMainKey, strSubKey);
-                else if (!string.IsNullOrEmpty(strMainKey))
-                    return strMainKey;
+                if (!string.IsNullOrEmpty(baseRegKey) && !string.IsNullOrEmpty(subRegKey))
+                    return string.Format("{0}\\{1}", baseRegKey, subRegKey);
+                else if (!string.IsNullOrEmpty(baseRegKey))
+                    return baseRegKey;
 
                 return "";
             }
-            set
-            {
-                string strPath = value;
-
-                if (strPath.Length == 0)
-                    return;
-
-                int nSlash = strPath.IndexOf("\\");
-                if (nSlash > -1)
-                {
-                    strMainKey = strPath.Substring(0, nSlash);
-                    strSubKey = strPath.Substring(nSlash + 1);
-                }
-                else
-                {
-                    strMainKey = strPath;
-                    strSubKey = "";
-                }
-            }
         }
+        #endregion
 
         /// <summary>
         /// Constructor for new bad registry key
         /// </summary>
-        /// <param name="SectionName">Section Name</param>
-        /// <param name="Problem">Reason registry key is invalid</param>
-        /// <param name="RegistryKey">Path to registry key (including registry hive)</param>
-        /// <param name="ValueName">Value Name (can be null)</param>
-        public BadRegistryKey(string Problem, string RegistryKey, string ValueName)
+        /// <param name="problem">Reason registry key is invalid</param>
+        /// <param name="regPath">Path to registry key (including registry hive)</param>
+        /// <param name="valueName">Value Name (can be null)</param> 
+        public BadRegistryKey(string problem, string baseKey, string subKey, string valueName)
         {
-            if (!Utils.RegKeyExists(RegistryKey))
-                throw new ArgumentException("Registry Key path doesnt exist", "RegistryKey");
-
             _bChecked = CheckState.Checked;
-            _strProblem = Problem;
-            RegKeyPath = RegistryKey;
-            _strValueName = ValueName;
+            _strProblem = problem;
+            baseRegKey = baseKey;
+            subRegKey = subKey;
 
-            if (!string.IsNullOrEmpty(ValueName))
-            {             
+            if (!string.IsNullOrEmpty(valueName))
+            {
+                _strValueName = valueName;
+
+                // Open registry key
+                RegistryKey regKey = Utils.RegOpenKey(baseKey, subKey);
+
                 // Convert value to string
-                this._strData = Utils.RegConvertXValueToString(Utils.RegOpenKey(this.strMainKey, this.strSubKey), ValueName);
+                if (regKey != null)
+                    this._strData = Utils.RegConvertXValueToString(regKey, valueName);
             }
         }
 
@@ -186,7 +168,6 @@ namespace Little_Registry_Cleaner
             _bChecked = CheckState.Checked;
             _strSectionName = "";
             _strProblem = "";
-            RegKeyPath = "";
             _strValueName = "";
         }
 
@@ -230,20 +211,6 @@ namespace Little_Registry_Cleaner
         {
             get { return (BadRegistryKey)this.InnerList[index]; }
             set { this.InnerList[index] = value; }
-        }
-
-        [Obsolete]
-        public int Add(string Problem, string Path, string ValueName)
-        {
-            return (this.Add(ScanDlg.CurrentSection, Problem, Path, ValueName));
-        }
-
-        [Obsolete]
-        public int Add(string SectionName, string Problem, string Path, string ValueName)
-        {
-            BadRegistryKey p = new BadRegistryKey(Problem, Path, ValueName);
-
-            return (this.InnerList.Add((BadRegistryKey)p));
         }
 
         public int Add(BadRegistryKey BadRegKey)

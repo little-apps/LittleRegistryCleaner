@@ -220,41 +220,91 @@ namespace Little_Registry_Cleaner
         {
             get { return (IntPtr.Size == 8); }
         }
-        
+
+        #region Registry Functions
+        /// <summary>
+        /// Parses a registry key path and outputs the base and subkey to strings
+        /// </summary>
+        /// <param name="inPath">Registry key path</param>
+        /// <param name="baseKey">Base Key (Hive name)</param>
+        /// <param name="subKey">Sub Key Path</param>
+        /// <returns>True if the path was parsed successfully</returns>
+        public static bool ParseRegKeyPath(string inPath, out string baseKey, out string subKey)
+        {
+            baseKey = subKey = "";
+
+            if (string.IsNullOrEmpty(inPath))
+                return false;
+
+            string strMainKeyname = inPath;
+
+            try
+            {
+                int nSlash = strMainKeyname.IndexOf("\\");
+                if (nSlash > -1)
+                {
+                    baseKey = strMainKeyname.Substring(0, nSlash);
+                    subKey = strMainKeyname.Substring(nSlash + 1);
+                }
+                else if (strMainKeyname.ToUpper().StartsWith("HKEY"))
+                    baseKey = strMainKeyname;
+                else
+                    return false;
+            }
+            catch
+            {
+                return false;
+            }
+
+            return true;
+        }
+
         /// <summary>
         /// Parses the registry key path and sees if exists
         /// </summary>
         /// <param name="InPath">The registry path (including hive)</param>
         /// <returns>True if it exists</returns>
-        public static bool RegKeyExists(string InPath)
+        public static bool RegKeyExists(string inPath)
         {
-            string strPath = InPath;
+            string strBaseKey, strSubKey;
 
-            if (strPath.Length == 0) return false;
+            if (!ParseRegKeyPath(inPath, out strBaseKey, out strSubKey))
+                return false;
 
-            string strMainKeyname = strPath;
-
-            int nSlash = strPath.IndexOf("\\");
-            if (nSlash > -1)
-            {
-                strMainKeyname = strPath.Substring(0, nSlash);
-                strPath = strPath.Substring(nSlash + 1);
-            }
-            else
-                strPath = "";
-
-            return RegKeyExists(strMainKeyname, strPath);
+            return RegKeyExists(strBaseKey, strSubKey);
         }
 
-        public static bool RegKeyExists(string MainKey, string SubKey)
+        public static bool RegKeyExists(string mainKey, string subKey)
         {
             bool bKeyExists = false;
-            RegistryKey reg = RegOpenKey(MainKey, SubKey);
+            RegistryKey reg = RegOpenKey(mainKey, subKey);
 
             if (reg != null)
             {
                 bKeyExists = true;
                 reg.Close();
+            }
+
+            return bKeyExists;
+        }
+
+        public static bool ValueNameExists(string mainKey, string subKey, string valueName)
+        {
+            bool bKeyExists = false;
+            RegistryKey reg = RegOpenKey(mainKey, subKey);
+
+            try
+            {
+                if (reg != null)
+                {
+                    if (reg.GetValue(valueName) != null)
+                        bKeyExists = true;
+                    reg.Close();
+                }
+            }
+            catch
+            {
+                return false;
             }
 
             return bKeyExists;
@@ -308,52 +358,61 @@ namespace Little_Registry_Cleaner
             if (regKey == null)
                 return strRet;
 
-            switch (regKey.GetValueKind(valueName))
+            try
             {
-                case RegistryValueKind.MultiString:
-                    {
-                        string strValue = "";
-                        string[] strValues = (string[])regKey.GetValue(valueName);
 
-                        for (int i = 0; i < strValues.Length; i++)
+                switch (regKey.GetValueKind(valueName))
+                {
+                    case RegistryValueKind.MultiString:
                         {
-                            if (i != 0)
-                                strValue = string.Concat(strValue, ",");
+                            string strValue = "";
+                            string[] strValues = (string[])regKey.GetValue(valueName);
 
-                            strValue = string.Format("{0} {1}", strValue, strValues[i]);
+                            for (int i = 0; i < strValues.Length; i++)
+                            {
+                                if (i != 0)
+                                    strValue = string.Concat(strValue, ",");
+
+                                strValue = string.Format("{0} {1}", strValue, strValues[i]);
+                            }
+
+                            strRet = string.Copy(strValue);
+
+                            break;
+                        }
+                    case RegistryValueKind.Binary:
+                        {
+                            string strValue = "";
+
+                            foreach (byte b in (byte[])regKey.GetValue(valueName))
+                                strValue = string.Format("{0} {1:X2}", strValue, b);
+
+                            strRet = string.Copy(strValue);
+
+                            break;
+                        }
+                    case RegistryValueKind.DWord:
+                    case RegistryValueKind.QWord:
+                        {
+                            strRet = string.Format("0x{0:X} ({0:D})", regKey.GetValue(valueName));
+                            break;
+                        }
+                    default:
+                        {
+                            strRet = string.Format("{0}", regKey.GetValue(valueName));
+                            break;
                         }
 
-                        strRet = string.Copy(strValue);
-
-                        break;
-                    }
-                case RegistryValueKind.Binary:
-                    {
-                        string strValue = "";
-
-                        foreach (byte b in (byte[])regKey.GetValue(valueName))
-                            strValue = string.Format("{0} {1:X2}", strValue, b);
-
-                        strRet = string.Copy(strValue);
-
-                        break;
-                    }
-                case RegistryValueKind.DWord:
-                case RegistryValueKind.QWord:
-                    {
-                        strRet = string.Format("0x{0:X} ({0:D})", regKey.GetValue(valueName));
-                        break;
-                    }
-                default:
-                    {
-                        strRet = string.Format("{0}", regKey.GetValue(valueName));
-                        break;
-                    }
-
+                }
+            }
+            catch
+            {
+                return "";
             }
 
             return strRet;
         }
+        #endregion
 
         /// <summary>
         /// Uses PathGetArgs and PathRemoveArgs API to extract file arguments

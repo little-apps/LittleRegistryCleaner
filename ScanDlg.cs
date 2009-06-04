@@ -194,7 +194,8 @@ namespace Little_Registry_Cleaner
         }
 
         /// <summary>
-        /// Stores an invalid registry key to array list
+        /// <para>Stores an invalid registry key to array list</para>
+        /// <para>Use IsOnIgnoreList to check for ignored registry keys and paths</para>
         /// </summary>
         /// <param name="Problem">Reason its invalid</param>
         /// <param name="Path">The path to registry key (including registry hive)</param>
@@ -205,29 +206,46 @@ namespace Little_Registry_Cleaner
         }
 
         /// <summary>
-        /// Stores an invalid registry key to array list
+        /// <para>Stores an invalid registry key to array list</para>
+        /// <para>Use IsOnIgnoreList to check for ignored registry keys and paths</para>
         /// </summary>
-        /// <param name="Problem">Reason its invalid</param>
-        /// <param name="Path">The path to registry key (including registry hive)</param>
-        /// <param name="ValueName">Value name (leave blank if theres none)</param>
-        /// <returns>True if it was added</returns>
-        public static bool StoreInvalidKey(string Problem, string Path, string ValueName)
+        /// <param name="problem">Reason its invalid</param>
+        /// <param name="regPath">The path to registry key (including registry hive)</param>
+        /// <param name="valueName">Value name (leave blank if theres none)</param>
+        /// <returns>True if it was added. Otherwise, false.</returns>
+        public static bool StoreInvalidKey(string problem, string regPath, string valueName)
         {
-            // See if key exists
-            if (!Utils.RegKeyExists(Path))
+            string baseKey, subKey;
+
+            // Check for null parameters
+            if (string.IsNullOrEmpty(problem) || string.IsNullOrEmpty(regPath))
                 return false;
 
-            if (IsOnIgnoreList(Path) || IsOnIgnoreList(ValueName))
+            // Make sure registry key exists
+            if (!Utils.RegKeyExists(regPath))
                 return false;
 
-            ScanDlg.currentScanner.RootNode.Nodes.Add(new BadRegistryKey(Problem, Path, ValueName));
+            // Parse registry key to base and subkey
+            if (!Utils.ParseRegKeyPath(regPath, out baseKey, out subKey))
+                return false;
+
+            // Check for ignored registry path
+            if (IsOnIgnoreList(regPath))
+                return false;
+
+            // If value name is specified, see if it exists
+            if (!string.IsNullOrEmpty(valueName))
+                if (!Utils.ValueNameExists(baseKey, subKey, valueName))
+                    return false;
+
+            ScanDlg.currentScanner.RootNode.Nodes.Add(new BadRegistryKey(problem, baseKey, subKey, valueName));
 
             self.IncrementProblems();
 
-            if (!string.IsNullOrEmpty(ValueName))
-                Main.Logger.WriteLine(string.Format("Bad Registry Value Found! Problem: \"{0}\" Path: \"{1}\" Value Name: \"{2}\"", Problem, Path, ValueName));
+            if (!string.IsNullOrEmpty(valueName))
+                Main.Logger.WriteLine(string.Format("Bad Registry Value Found! Problem: \"{0}\" Path: \"{1}\" Value Name: \"{2}\"", problem, regPath, valueName));
             else
-                Main.Logger.WriteLine(string.Format("Bad Registry Key Found! Problem: \"{0}\" Path: \"{1}\"", Problem, Path));
+                Main.Logger.WriteLine(string.Format("Bad Registry Key Found! Problem: \"{0}\" Path: \"{1}\"", problem, regPath));
 
             return true;
         }
