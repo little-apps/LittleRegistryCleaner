@@ -95,14 +95,8 @@ namespace Little_Registry_Cleaner.Scanners
                         continue;
                     }
 
-                    if (ScanDlg.IsOnIgnoreList(strAppPath))
-                        continue;
-
                     if (!string.IsNullOrEmpty(strAppDir))
                     {
-                        if (ScanDlg.IsOnIgnoreList(strAppDir))
-                            continue;
-
                         if (Utils.SearchPath(strAppPath, strAppDir))
                             continue;
                         else if (Utils.SearchPath(strSubKey, strAppDir))

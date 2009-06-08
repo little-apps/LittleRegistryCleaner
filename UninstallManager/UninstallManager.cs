@@ -33,7 +33,7 @@ namespace Little_Registry_Cleaner.UninstallManager
 {
     public partial class UninstallManager : Form
     {
-        private static ProgramList arrProgList = new ProgramList();
+        private ProgramList arrProgList = new ProgramList();
         private int nSortColumn = -1;
 
         public UninstallManager()

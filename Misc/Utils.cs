@@ -803,8 +803,11 @@ namespace Little_Registry_Cleaner
         /// <summary>
         /// Sees if the file exists
         /// </summary>
-        /// <param name="FilePath">The filename (including path)</param>
-        /// <returns>True if it exists. Otherwise, false if the file path is empty or doesnt exist.</returns>
+        /// <remarks>Always use this to check for files in the scanners!</remarks>
+        /// <param name="filePath">The filename (including path)</param>
+        /// <returns>
+        /// True if it exists or if the path should be skipped. Otherwise, false if the file path is empty or doesnt exist
+        /// </returns>
         public static bool FileExists(string filePath)
         {
             if (string.IsNullOrEmpty(filePath))
@@ -849,8 +852,9 @@ namespace Little_Registry_Cleaner
         /// <summary>
         /// Sees if the directory exists
         /// </summary>
+        /// <remarks>Always use this to check for directories in the scanners!</remarks>
         /// <param name="dirPath">The directory</param>
-        /// <returns>True if it exists. Otherwise, false if the directory path is empty or doesnt exist.</returns>
+        /// <returns>True if it exists or if the path should be skipped. Otherwise, false if the file path is empty or doesnt exist</returns>
         public static bool DirExists(string dirPath)
         {
             if (string.IsNullOrEmpty(dirPath))
@@ -922,7 +926,6 @@ namespace Little_Registry_Cleaner
 
             return false;
         }
-
 
         /// <summary>
         /// Uses the FindExecutable API to search for the file that opens the specified document

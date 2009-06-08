@@ -75,17 +75,17 @@ namespace Little_Registry_Cleaner.Scanners
                                 // Check display icon
                                 if (!string.IsNullOrEmpty(progInfo.DisplayIcon))
                                     if (!Utils.IconExists(progInfo.DisplayIcon))
-                                        ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "DisplayIcon");
+                                            ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "DisplayIcon");
 
                                 // Check install location 
                                 if (!string.IsNullOrEmpty(progInfo.InstallLocation))
                                     if ((!Utils.DirExists(progInfo.InstallLocation)) && (!Utils.FileExists(progInfo.InstallLocation)))
-                                        ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "InstallLocation");
+                                            ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "InstallLocation");
 
                                 // Check install source 
                                 if (!string.IsNullOrEmpty(progInfo.InstallSource))
                                     if ((!Utils.DirExists(progInfo.InstallSource)) && (!Utils.FileExists(progInfo.InstallSource)))
-                                        ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "InstallSource");
+                                            ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "InstallSource");
 
                                 // Check ARP Cache
                                 if (progInfo.SlowCache)

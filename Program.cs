@@ -77,7 +77,7 @@ namespace Little_Registry_Cleaner
                 Properties.Settings.Default.strOptionsLogDir = string.Format("{0}\\Logs", Properties.Settings.Default.strProgramSettingsDir);
                 if (!Directory.Exists(Properties.Settings.Default.strOptionsLogDir))
                     Directory.CreateDirectory(Properties.Settings.Default.strOptionsLogDir);
-            }  
+            }
 
 //#if (!DEBUG)
             // Add event handler for thread exceptions
