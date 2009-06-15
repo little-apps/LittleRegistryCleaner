@@ -929,6 +929,11 @@ namespace Little_Registry_Cleaner.Xml
             return true;
         }
 
+        /// <summary>
+        /// Loads a registry key path
+        /// </summary>
+        /// <param name="arrInternalKeyLoads">ArrayList containing path</param>
+        /// <returns>The RegistryKey. Otherwise, it is null if it couldnt be loaded</returns>
         RegistryKey LoadAsXml_OpenKey(ArrayList arrInternalKeyLoads)
         {
             RegistryKey reg = null;
@@ -985,20 +990,17 @@ namespace Little_Registry_Cleaner.Xml
                 {
                     reg = Registry.CurrentConfig.CreateSubKey(strPath);
                 }
-                else
-                    return null; // break here
             }
             catch (Exception e)
             {
-                ShowErrorMessage(e, "Error Creating Sub Key");
+                ShowErrorMessage(e, string.Format("couldn't create key {0}\\{1}", strMainKey, strPath));
                 return null;
             }
 
             if (reg != null) // it's ok
                 return reg;
 
-            MessageBox.Show(string.Format("couldn't create key {0}\\{1}", strMainKey, strPath), Application.ProductName,
-                MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            ShowErrorMessage(new Exception("RegistryKey is null"), string.Format("couldn't create key {0}\\{1}", strMainKey, strPath));
 
             return null;
         }
@@ -1034,7 +1036,7 @@ namespace Little_Registry_Cleaner.Xml
                 }
             }
 
-            throw new Win32Exception(hr);
+            ShowErrorMessage(new Win32Exception(hr), string.Format("Error setting value. Name: {0} Value: {1} Type: {2}", strName, strValue, strType));
         }
 
         void DeleteAsXml_DeleteKey(int hKey, string strName)
@@ -1049,7 +1051,7 @@ namespace Little_Registry_Cleaner.Xml
             if (hr == ERROR_SUCCESS)
                 return;
 
-            throw new Win32Exception(hr);
+            ShowErrorMessage(new Win32Exception(hr), string.Format("Error deleting key: {0}", strName));
         }
 
         void DeleteAsXml_DeleteValue(int hKey, string strName)
@@ -1067,10 +1069,10 @@ namespace Little_Registry_Cleaner.Xml
             if (hr == ERROR_SUCCESS) // it's ok
                 return;
 
-            throw new Win32Exception(hr);
+            ShowErrorMessage(new Win32Exception(hr), string.Format("Error deleting value: {0}", strName));
         }
 
-        [Obsolete("Use RegistryKey.DeleteSubKeyTree")]
+        [Obsolete("Use RegistryKey.DeleteSubKeyTree() instead")]
         void DeleteAsXml_DeleteTree(int hKey)
         {
             if (hKey == 0) return;
@@ -1083,7 +1085,7 @@ namespace Little_Registry_Cleaner.Xml
             if (hr == ERROR_SUCCESS) // it's ok
                 return;
 
-            throw new Win32Exception(hr);
+            ShowErrorMessage(new Win32Exception(hr), string.Format("Error deleting subkey tree: {0}", hKey));
         }
 
         public bool loadAsXml(xmlReader r, string strFilename)
@@ -1292,18 +1294,15 @@ namespace Little_Registry_Cleaner.Xml
         }
 
         /// <summary>
-        /// Shows error dialog
+        /// Throws exception in debug mode
         /// </summary>
         /// <param name="e">Exception class</param>
         /// <param name="strTitle">Exception description</param>
         private static void ShowErrorMessage(Exception e, string strTitle)
         {
 #if (DEBUG)
-            System.Diagnostics.Debug.WriteLine(e.Message);
-            //CrashReporter dlgError = new CrashReporter(e);
-            //dlgError.ShowDialog();
+            throw e;
 #endif
-            return;
         }
     }
 }
