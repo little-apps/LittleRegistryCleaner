@@ -18,7 +18,7 @@
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Runtime.InteropServices;
 
@@ -47,6 +47,14 @@ namespace Little_Registry_Cleaner
         internal const int TOKEN_QUERY = 0x00000008;
         internal const int TOKEN_ADJUST_PRIVILEGES = 0x00000020;
 
+        public static void SetPrivileges(bool Enabled)
+        {
+            SetPrivilege("SeShutdownPrivilege", Enabled);
+            SetPrivilege("SeBackupPrivilege", Enabled);
+            SetPrivilege("SeRestorePrivilege", Enabled);
+            SetPrivilege("SeDebugPrivilege", Enabled);
+        }
+
         public static bool SetPrivilege(string privilege, bool enabled)
         {
             try
@@ -54,7 +62,7 @@ namespace Little_Registry_Cleaner
                 TokPriv1Luid tp = new TokPriv1Luid();
                 IntPtr hproc = System.Diagnostics.Process.GetCurrentProcess().Handle;
                 IntPtr htok = IntPtr.Zero;
-                
+
                 if (!OpenProcessToken(hproc, TOKEN_ADJUST_PRIVILEGES | TOKEN_QUERY, ref htok))
                     return false;
 
@@ -77,12 +85,39 @@ namespace Little_Registry_Cleaner
             }
         }
 
-        public static void SetPrivileges(bool Enabled)
+        /// <summary>
+        /// Checks if the user is an admin
+        /// </summary>
+        /// <returns>True if it is in admin group</returns>
+        public static bool IsUserAdministrator
         {
-            SetPrivilege("SeShutdownPrivilege", Enabled);
-            SetPrivilege("SeBackupPrivilege", Enabled);
-            SetPrivilege("SeRestorePrivilege", Enabled);
-            SetPrivilege("SeDebugPrivilege", Enabled);
+            get
+            {
+                //bool value to hold our return value
+                bool isAdmin;
+                try
+                {
+                    //get the currently logged in user
+                    WindowsIdentity user = WindowsIdentity.GetCurrent();
+                    WindowsPrincipal principal = new WindowsPrincipal(user);
+                    isAdmin = principal.IsInRole(WindowsBuiltInRole.Administrator);
+                }
+                catch (UnauthorizedAccessException ex)
+                {
+                    isAdmin = false;
+#if (DEBUG)
+                   throw ex;
+#endif
+                }
+                catch (Exception ex)
+                {
+                    isAdmin = false;
+#if (DEBUG)
+                    throw ex;
+#endif
+                }
+                return isAdmin;
+            }
         }
     }
 }

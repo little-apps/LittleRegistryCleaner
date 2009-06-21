@@ -62,22 +62,32 @@ namespace Little_Registry_Cleaner
 
             Process proc = Process.GetCurrentProcess();
 
+            // dates and time
             sb.AppendLine(string.Format("Current Date/Time: {0}", DateTime.Now.ToString()));
             sb.AppendLine(string.Format("Exec. Date/Time: {0}", proc.StartTime.ToString()));
             sb.AppendLine(string.Format("Build Date: {0}", Properties.Settings.Default.strBuildTime));
+            // os info
             sb.AppendLine(string.Format("OS: {0}", Environment.OSVersion.VersionString));
             sb.AppendLine(string.Format("Language: {0}", Application.CurrentCulture.ToString()));
+            // uptime stats
             sb.AppendLine(string.Format("System Uptime: {0} Days {1} Hours {2} Mins {3} Secs", Math.Round((decimal)Environment.TickCount / 86400000), Math.Round((decimal)Environment.TickCount / 3600000 % 24), Math.Round((decimal)Environment.TickCount / 120000 % 60), Math.Round((decimal)Environment.TickCount / 1000 % 60)));
             sb.AppendLine(string.Format("Program Uptime: {0}", proc.TotalProcessorTime.ToString()));
+            // process id
             sb.AppendLine(string.Format("PID: {0}", proc.Id));
+            // exe name
+            sb.AppendLine(string.Format("Executable: {0}", Application.ExecutablePath));
+            sb.AppendLine(string.Format("Process Name: {0}", proc.ToString()));
+            sb.AppendLine(string.Format("Main Module Name: {0}", proc.MainModule.ModuleName));
+            // exe stats
             sb.AppendLine(string.Format("Module Count: {0}", proc.Modules.Count));
             sb.AppendLine(string.Format("Thread Count: {0}", proc.Threads.Count));
             sb.AppendLine(string.Format("Thread ID: {0}", Thread.CurrentThread.ManagedThreadId));
-            sb.AppendLine(string.Format("Executable: {0}", Application.ExecutablePath));
-            sb.AppendLine(string.Format("Process Name: {0}", proc.ToString()));
+            sb.AppendLine(string.Format("Is Admin: {0}", Permissions.IsUserAdministrator));
+            sb.AppendLine(string.Format("Is Debugged: {0}", Debugger.IsAttached));
+            // versions
             sb.AppendLine(string.Format("Version: {0}", Application.ProductVersion));
             sb.AppendLine(string.Format("CLR Version: {0}", Environment.Version.ToString()));
-            sb.AppendLine(string.Format("Main Module Name: {0}", proc.MainModule.ModuleName));
+            
 
             Exception ex = e;
             for (int i = 0; ex != null; ex = ex.InnerException, i++)
