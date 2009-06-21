@@ -61,13 +61,7 @@ namespace Little_Registry_Cleaner.Scanners
 
                 ScanDlg.UpdateScanningObject(strHelpPath);
 
-                if (string.IsNullOrEmpty(strHelpPath) || string.IsNullOrEmpty(strHelpFile))
-                    continue;
-
-                if (HelpFileExists(strHelpFile, strHelpPath))
-                    continue;
-
-                else
+                if (!HelpFileExists(strHelpFile, strHelpPath))
                     ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.ToString(), strHelpFile);
             }
 
@@ -77,18 +71,21 @@ namespace Little_Registry_Cleaner.Scanners
         /// <summary>
         /// Sees if the help file exists
         /// </summary>
-        /// <param name="strValueName">Should contain the filename</param>
-        /// <param name="strValue">Should be the path to file</param>
+        /// <param name="helpFile">Should contain the filename</param>
+        /// <param name="helpPath">Should be the path to file</param>
         /// <returns>True if it exists</returns>
-        private static bool HelpFileExists(string strValueName, string strValue)
+        private static bool HelpFileExists(string helpFile, string helpPath)
         {
-            if (Utils.FileExists(strValue))
+            if (string.IsNullOrEmpty(helpFile) || string.IsNullOrEmpty(helpPath))
                 return true;
 
-            if (Utils.FileExists(strValueName))
+            if (Utils.FileExists(helpPath))
                 return true;
 
-            if (Utils.FileExists(Path.Combine(strValue, strValueName)))
+            if (Utils.FileExists(helpFile))
+                return true;
+
+            if (Utils.FileExists(Path.Combine(helpPath, helpFile)))
                 return true;
 
             return false;

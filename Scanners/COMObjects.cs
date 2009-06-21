@@ -449,38 +449,31 @@ namespace Little_Registry_Cleaner.Scanners
         /// <returns>False if Inprocserver is null or doesnt exist</returns>
         private static bool InprocServerExists(RegistryKey regKey)
         {
-            try
+            if (regKey != null)
             {
-                if (regKey != null)
+                using (RegistryKey regKeyInprocSrvr = regKey.OpenSubKey("InprocServer"))
                 {
-                    using (RegistryKey regKeyInprocSrvr = regKey.OpenSubKey("InprocServer"))
+                    if (regKeyInprocSrvr != null)
                     {
-                        if (regKeyInprocSrvr != null)
-                        {
-                            string strInprocServer = regKeyInprocSrvr.GetValue("") as string;
+                        string strInprocServer = regKeyInprocSrvr.GetValue("") as string;
 
-                            if (!string.IsNullOrEmpty(strInprocServer))
-                                if (Utils.FileExists(strInprocServer))
-                                        return true;
-                        }
-                    }
-
-                    using (RegistryKey regKeyInprocSrvr32 = regKey.OpenSubKey("InprocServer32"))
-                    {
-                        if (regKeyInprocSrvr32 != null)
-                        {
-                            string strInprocServer32 = regKeyInprocSrvr32.GetValue("") as string;
-
-                            if (!string.IsNullOrEmpty(strInprocServer32))
-                                if (Utils.FileExists(strInprocServer32))
-                                        return true;
-                        }
+                        if (!string.IsNullOrEmpty(strInprocServer))
+                            if (Utils.FileExists(strInprocServer))
+                                return true;
                     }
                 }
-            }
-            catch (System.Security.SecurityException ex)
-            {
-                System.Diagnostics.Debug.WriteLine(ex.Message);
+
+                using (RegistryKey regKeyInprocSrvr32 = regKey.OpenSubKey("InprocServer32"))
+                {
+                    if (regKeyInprocSrvr32 != null)
+                    {
+                        string strInprocServer32 = regKeyInprocSrvr32.GetValue("") as string;
+
+                        if (!string.IsNullOrEmpty(strInprocServer32))
+                            if (Utils.FileExists(strInprocServer32))
+                                return true;
+                    }
+                }
             }
 
             return false;

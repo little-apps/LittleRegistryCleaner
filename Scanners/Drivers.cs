@@ -39,25 +39,24 @@ namespace Little_Registry_Cleaner.Scanners
         {
             try
             {
-                RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Drivers32");
-
-                if (regKey == null)
-                    return;
-
-                Main.Logger.WriteLine("Scanning for missing drivers");
-
-                foreach (string strDriverName in regKey.GetValueNames())
+                using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Drivers32"))
                 {
-                    string strValue = regKey.GetValue(strDriverName) as string;
+                    if (regKey == null)
+                        return;
 
-                    ScanDlg.UpdateScanningObject(strValue);
+                    Main.Logger.WriteLine("Scanning for missing drivers");
 
-                    if (!string.IsNullOrEmpty(strValue))
-                        if (!Utils.FileExists(strValue))
-                            ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strDriverName);
+                    foreach (string strDriverName in regKey.GetValueNames())
+                    {
+                        string strValue = regKey.GetValue(strDriverName) as string;
+
+                        ScanDlg.UpdateScanningObject(strValue);
+
+                        if (!string.IsNullOrEmpty(strValue))
+                            if (!Utils.FileExists(strValue))
+                                ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strDriverName);
+                    }
                 }
-
-                regKey.Close();
             }
             catch (System.Security.SecurityException ex)
             {

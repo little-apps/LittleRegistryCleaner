@@ -34,13 +34,20 @@ namespace Little_Registry_Cleaner.Scanners
 
         public static void Scan()
         {
-            using (RegistryKey regKey = Registry.CurrentUser.OpenSubKey("AppEvents\\Schemes\\Apps"))
+            try
             {
-                if (regKey != null)
+                using (RegistryKey regKey = Registry.CurrentUser.OpenSubKey("AppEvents\\Schemes\\Apps"))
                 {
-                    Main.Logger.WriteLine("Scanning for missing sound events");
-                    ParseSoundKeys(regKey);
+                    if (regKey != null)
+                    {
+                        Main.Logger.WriteLine("Scanning for missing sound events");
+                        ParseSoundKeys(regKey);
+                    }
                 }
+            }
+            catch (System.Security.SecurityException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
             }
         }
 
@@ -52,40 +59,35 @@ namespace Little_Registry_Cleaner.Scanners
         {
             foreach (string strSubKey in rk.GetSubKeyNames())
             {
-                try
+
+                // Ignores ".Default" Subkey
+                if ((strSubKey.CompareTo(".Current") == 0) || (strSubKey.CompareTo(".Modified") == 0))
                 {
-                    // Ignores ".Default" Subkey
-                    if ((strSubKey.CompareTo(".Current") == 0) || (strSubKey.CompareTo(".Modified") == 0))
+                    // Gets the (default) key and sees if the file exists
+                    RegistryKey rk2 = rk.OpenSubKey(strSubKey);
+
+                    if (rk2 != null)
                     {
-                        // Gets the (default) key and sees if the file exists
-                        RegistryKey rk2 = rk.OpenSubKey(strSubKey);
+                        ScanDlg.UpdateScanningObject(rk2.ToString());
 
-                        if (rk2 != null)
-                        {
-                            ScanDlg.UpdateScanningObject(rk2.ToString());
+                        string strSoundPath = rk2.GetValue("") as string;
 
-                            string strSoundPath = rk2.GetValue("") as string;
-
-                            if (!string.IsNullOrEmpty(strSoundPath))
-                                if (!Utils.FileExists(strSoundPath))
-                                    ScanDlg.StoreInvalidKey("Invalid file or folder", rk2.Name, "(default)");
-                        }
-
+                        if (!string.IsNullOrEmpty(strSoundPath))
+                            if (!Utils.FileExists(strSoundPath))
+                                ScanDlg.StoreInvalidKey("Invalid file or folder", rk2.Name, "(default)");
                     }
-                    else if (!string.IsNullOrEmpty(strSubKey))
+
+                }
+                else if (!string.IsNullOrEmpty(strSubKey))
+                {
+                    RegistryKey rk2 = rk.OpenSubKey(strSubKey);
+                    if (rk2 != null)
                     {
-                        RegistryKey rk2 = rk.OpenSubKey(strSubKey);
-                        if (rk2 != null)
-                        {
-                            ScanDlg.UpdateScanningObject(rk2.ToString());
-                            ParseSoundKeys(rk2);
-                        }
+                        ScanDlg.UpdateScanningObject(rk2.ToString());
+                        ParseSoundKeys(rk2);
                     }
                 }
-                catch (System.Security.SecurityException ex)
-                {
-                    System.Diagnostics.Debug.WriteLine(ex.Message);
-                }
+
             }
 
             return;

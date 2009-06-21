@@ -34,13 +34,20 @@ namespace Little_Registry_Cleaner.Scanners
 
         public static void Scan()
         {
-            ScanRegistryKey(Registry.LocalMachine.OpenSubKey("SOFTWARE"));
-            ScanRegistryKey(Registry.CurrentUser.OpenSubKey("SOFTWARE"));
-
-            if (Utils.Is64BitOS)
+            try
             {
-                ScanRegistryKey(Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Wow6432Node"));
-                ScanRegistryKey(Registry.CurrentUser.OpenSubKey(@"SOFTWARE\Wow6432Node"));
+                ScanRegistryKey(Registry.LocalMachine.OpenSubKey("SOFTWARE"));
+                ScanRegistryKey(Registry.CurrentUser.OpenSubKey("SOFTWARE"));
+
+                if (Utils.Is64BitOS)
+                {
+                    ScanRegistryKey(Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Wow6432Node"));
+                    ScanRegistryKey(Registry.CurrentUser.OpenSubKey(@"SOFTWARE\Wow6432Node"));
+                }
+            }
+            catch (System.Security.SecurityException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
             }
         }
 
@@ -61,15 +68,8 @@ namespace Little_Registry_Cleaner.Scanners
                 //    strSubKey == "Wow6432Node")
                 //    continue;
 
-                try
-                {
-                    if (IsEmptyRegistryKey(baseRegKey.OpenSubKey(strSubKey, true)))
-                        ScanDlg.StoreInvalidKey("The registry key doesn't contain any data", baseRegKey.Name + "\\" + strSubKey);
-                }
-                catch (System.Security.SecurityException ex)
-                { 
-                    System.Diagnostics.Debug.WriteLine(ex.Message);
-                }
+                if (IsEmptyRegistryKey(baseRegKey.OpenSubKey(strSubKey, true)))
+                    ScanDlg.StoreInvalidKey("The registry key doesn't contain any data", baseRegKey.Name + "\\" + strSubKey);
             }
 
             baseRegKey.Close();

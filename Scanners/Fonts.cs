@@ -45,38 +45,45 @@ namespace Little_Registry_Cleaner.Scanners
         {
             StringBuilder strPath = new StringBuilder(260);
 
-            RegistryKey regKey = Registry.LocalMachine.OpenSubKey("Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts");
-
-            if (regKey == null)
-                return;
-
-            Main.Logger.WriteLine("Scanning for invalid fonts");
-
-            if (!SHGetSpecialFolderPath(IntPtr.Zero, strPath, CSIDL_FONTS, false))
-                return;
-
-            foreach (string strFontName in regKey.GetValueNames())
+            try
             {
-                string strValue = regKey.GetValue(strFontName) as string;
+                using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey("Software\\Microsoft\\Windows NT\\CurrentVersion\\Fonts"))
+                {
+                    if (regKey == null)
+                        return;
 
-                // Skip if value is empty
-                if (string.IsNullOrEmpty(strValue))
-                    continue;
+                    Main.Logger.WriteLine("Scanning for invalid fonts");
 
-                // Check value by itself
-                if (Utils.FileExists(strValue))
-                    continue;
+                    if (!SHGetSpecialFolderPath(IntPtr.Zero, strPath, CSIDL_FONTS, false))
+                        return;
 
-                // Check for font in fonts folder
-                string strFontPath = String.Format("{0}\\{1}", strPath.ToString(), strValue);
+                    foreach (string strFontName in regKey.GetValueNames())
+                    {
+                        string strValue = regKey.GetValue(strFontName) as string;
 
-                ScanDlg.UpdateScanningObject(strFontPath);
+                        // Skip if value is empty
+                        if (string.IsNullOrEmpty(strValue))
+                            continue;
 
-                if (!File.Exists(strFontPath))
-                    ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.ToString(), strFontName);
+                        // Check value by itself
+                        if (Utils.FileExists(strValue))
+                            continue;
+
+                        // Check for font in fonts folder
+                        string strFontPath = String.Format("{0}\\{1}", strPath.ToString(), strValue);
+
+                        ScanDlg.UpdateScanningObject(strFontPath);
+
+                        if (!File.Exists(strFontPath))
+                            ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.ToString(), strFontName);
+                    }
+
+                }
             }
-
-            regKey.Close();
+            catch (System.Security.SecurityException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
         }
     }
 }
