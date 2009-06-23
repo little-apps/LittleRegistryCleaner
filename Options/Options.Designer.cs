@@ -52,11 +52,11 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.removeEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addRegistryPathToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.removeEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -78,7 +78,7 @@
             this.groupBox1.Location = new System.Drawing.Point(6, 112);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(444, 110);
-            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Options";
             // 
@@ -88,7 +88,7 @@
             this.checkBoxShowLog.Location = new System.Drawing.Point(197, 19);
             this.checkBoxShowLog.Name = "checkBoxShowLog";
             this.checkBoxShowLog.Size = new System.Drawing.Size(179, 17);
-            this.checkBoxShowLog.TabIndex = 12;
+            this.checkBoxShowLog.TabIndex = 1;
             this.checkBoxShowLog.Text = "Show log after finished scanning";
             this.checkBoxShowLog.UseVisualStyleBackColor = true;
             // 
@@ -98,7 +98,7 @@
             this.checkBoxRemDrives.Location = new System.Drawing.Point(197, 65);
             this.checkBoxRemDrives.Name = "checkBoxRemDrives";
             this.checkBoxRemDrives.Size = new System.Drawing.Size(212, 17);
-            this.checkBoxRemDrives.TabIndex = 11;
+            this.checkBoxRemDrives.TabIndex = 5;
             this.checkBoxRemDrives.Text = "Ignore missing files on removable media";
             this.checkBoxRemDrives.UseVisualStyleBackColor = true;
             // 
@@ -108,7 +108,7 @@
             this.checkBoxAutoUpdate.Location = new System.Drawing.Point(10, 65);
             this.checkBoxAutoUpdate.Name = "checkBoxAutoUpdate";
             this.checkBoxAutoUpdate.Size = new System.Drawing.Size(177, 17);
-            this.checkBoxAutoUpdate.TabIndex = 10;
+            this.checkBoxAutoUpdate.TabIndex = 4;
             this.checkBoxAutoUpdate.Text = "Check for updates automatically";
             this.checkBoxAutoUpdate.UseVisualStyleBackColor = true;
             // 
@@ -118,7 +118,7 @@
             this.checkBoxRestore.Location = new System.Drawing.Point(10, 87);
             this.checkBoxRestore.Name = "checkBoxRestore";
             this.checkBoxRestore.Size = new System.Drawing.Size(222, 17);
-            this.checkBoxRestore.TabIndex = 9;
+            this.checkBoxRestore.TabIndex = 6;
             this.checkBoxRestore.Text = "Create system restore points automatically";
             this.checkBoxRestore.UseVisualStyleBackColor = true;
             // 
@@ -128,7 +128,7 @@
             this.checkBoxDeleteBackup.Location = new System.Drawing.Point(197, 42);
             this.checkBoxDeleteBackup.Name = "checkBoxDeleteBackup";
             this.checkBoxDeleteBackup.Size = new System.Drawing.Size(236, 17);
-            this.checkBoxDeleteBackup.TabIndex = 8;
+            this.checkBoxDeleteBackup.TabIndex = 3;
             this.checkBoxDeleteBackup.Text = "Delete backup file after restoring the registry ";
             this.checkBoxDeleteBackup.UseVisualStyleBackColor = true;
             // 
@@ -138,7 +138,7 @@
             this.checkBoxRescan.Location = new System.Drawing.Point(10, 42);
             this.checkBoxRescan.Name = "checkBoxRescan";
             this.checkBoxRescan.Size = new System.Drawing.Size(190, 17);
-            this.checkBoxRescan.TabIndex = 7;
+            this.checkBoxRescan.TabIndex = 2;
             this.checkBoxRescan.Text = "Re-Scan after fixing registry issues ";
             this.checkBoxRescan.UseVisualStyleBackColor = true;
             // 
@@ -180,14 +180,14 @@
             this.textBoxBackupFolder.Name = "textBoxBackupFolder";
             this.textBoxBackupFolder.ReadOnly = true;
             this.textBoxBackupFolder.Size = new System.Drawing.Size(361, 20);
-            this.textBoxBackupFolder.TabIndex = 3;
+            this.textBoxBackupFolder.TabIndex = 0;
             // 
             // buttonBrowse1
             // 
             this.buttonBrowse1.Location = new System.Drawing.Point(373, 16);
             this.buttonBrowse1.Name = "buttonBrowse1";
             this.buttonBrowse1.Size = new System.Drawing.Size(68, 23);
-            this.buttonBrowse1.TabIndex = 4;
+            this.buttonBrowse1.TabIndex = 1;
             this.buttonBrowse1.Text = "Browse...";
             this.buttonBrowse1.UseVisualStyleBackColor = true;
             this.buttonBrowse1.Click += new System.EventHandler(this.buttonBrowse_Click);
@@ -199,7 +199,7 @@
             this.groupBox2.Location = new System.Drawing.Point(6, 6);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(444, 47);
-            this.groupBox2.TabIndex = 5;
+            this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Select a folder to backup deleted registry entries ";
             // 
@@ -211,7 +211,7 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(464, 254);
-            this.tabControl1.TabIndex = 6;
+            this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
@@ -233,7 +233,7 @@
             this.groupBox3.Location = new System.Drawing.Point(6, 59);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(444, 47);
-            this.groupBox3.TabIndex = 6;
+            this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Select a folder to save the log files to";
             // 
@@ -274,7 +274,7 @@
             this.label1.Location = new System.Drawing.Point(3, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(164, 13);
-            this.label1.TabIndex = 1;
+            this.label1.TabIndex = 0;
             this.label1.Text = "Right click to add/remove entries";
             // 
             // listView1
@@ -285,7 +285,7 @@
             this.listView1.Location = new System.Drawing.Point(6, 22);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(444, 200);
-            this.listView1.TabIndex = 0;
+            this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
@@ -303,14 +303,7 @@
             this.toolStripSeparator1,
             this.removeEntryToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(169, 120);
-            // 
-            // removeEntryToolStripMenuItem
-            // 
-            this.removeEntryToolStripMenuItem.Name = "removeEntryToolStripMenuItem";
-            this.removeEntryToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
-            this.removeEntryToolStripMenuItem.Text = "Remove Entry";
-            this.removeEntryToolStripMenuItem.Click += new System.EventHandler(this.removeEntryToolStripMenuItem_Click);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(169, 98);
             // 
             // addFileToolStripMenuItem
             // 
@@ -337,6 +330,13 @@
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(165, 6);
+            // 
+            // removeEntryToolStripMenuItem
+            // 
+            this.removeEntryToolStripMenuItem.Name = "removeEntryToolStripMenuItem";
+            this.removeEntryToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.removeEntryToolStripMenuItem.Text = "Remove Entry";
+            this.removeEntryToolStripMenuItem.Click += new System.EventHandler(this.removeEntryToolStripMenuItem_Click);
             // 
             // Options
             // 

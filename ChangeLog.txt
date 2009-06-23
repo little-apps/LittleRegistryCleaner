@@ -292,3 +292,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Displays if user is administrator and if process is being debugged in crashreporter
 - Added Try-Catch blocks for System.Security.SecurityException in Fonts, HelpFiles and Sounds
 - Cleaned up nested try-catch blocks in scanners
+- Fixed the tab order in the dialogs

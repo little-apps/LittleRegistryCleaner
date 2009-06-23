@@ -134,7 +134,7 @@
             this.buttonClose.Location = new System.Drawing.Point(343, 227);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(53, 23);
-            this.buttonClose.TabIndex = 8;
+            this.buttonClose.TabIndex = 1;
             this.buttonClose.Text = "Close";
             this.buttonClose.UseVisualStyleBackColor = true;
             this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
@@ -144,7 +144,7 @@
             this.buttonWebsite.Location = new System.Drawing.Point(12, 227);
             this.buttonWebsite.Name = "buttonWebsite";
             this.buttonWebsite.Size = new System.Drawing.Size(96, 23);
-            this.buttonWebsite.TabIndex = 9;
+            this.buttonWebsite.TabIndex = 0;
             this.buttonWebsite.Text = "Project Website";
             this.buttonWebsite.UseVisualStyleBackColor = true;
             this.buttonWebsite.Click += new System.EventHandler(this.buttonWebsite_Click);

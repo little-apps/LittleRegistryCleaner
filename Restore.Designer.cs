@@ -48,7 +48,7 @@
             buttonBrowse.Location = new System.Drawing.Point(230, 3);
             buttonBrowse.Name = "buttonBrowse";
             buttonBrowse.Size = new System.Drawing.Size(95, 23);
-            buttonBrowse.TabIndex = 7;
+            buttonBrowse.TabIndex = 0;
             buttonBrowse.Text = "Open Directory...";
             buttonBrowse.UseVisualStyleBackColor = true;
             buttonBrowse.Click += new System.EventHandler(this.buttonBrowse_Click);
@@ -76,7 +76,7 @@
             this.listViewFiles.Name = "listViewFiles";
             this.listViewFiles.Size = new System.Drawing.Size(399, 311);
             this.listViewFiles.Sorting = System.Windows.Forms.SortOrder.Ascending;
-            this.listViewFiles.TabIndex = 5;
+            this.listViewFiles.TabIndex = 0;
             this.listViewFiles.UseCompatibleStateImageBehavior = false;
             this.listViewFiles.View = System.Windows.Forms.View.Details;
             // 
@@ -110,7 +110,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 92.37537F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(405, 374);
-            this.tableLayoutPanel1.TabIndex = 7;
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // flowLayoutPanel1
             // 
@@ -121,7 +121,7 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 346);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(399, 25);
-            this.flowLayoutPanel1.TabIndex = 8;
+            this.flowLayoutPanel1.TabIndex = 1;
             // 
             // buttonRestore
             // 
@@ -129,7 +129,7 @@
             this.buttonRestore.Location = new System.Drawing.Point(331, 3);
             this.buttonRestore.Name = "buttonRestore";
             this.buttonRestore.Size = new System.Drawing.Size(65, 23);
-            this.buttonRestore.TabIndex = 8;
+            this.buttonRestore.TabIndex = 1;
             this.buttonRestore.Text = "Restore";
             this.buttonRestore.UseVisualStyleBackColor = true;
             this.buttonRestore.Click += new System.EventHandler(this.buttonRestore_Click);

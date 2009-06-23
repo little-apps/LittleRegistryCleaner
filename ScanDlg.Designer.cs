@@ -47,7 +47,7 @@
             this.groupBox1.Location = new System.Drawing.Point(12, 9);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(379, 111);
-            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
             // progressBar
@@ -63,14 +63,14 @@
             this.progressBar.PositionMin = 0;
             this.progressBar.Size = new System.Drawing.Size(300, 24);
             this.progressBar.SteepDistance = ((byte)(0));
-            this.progressBar.TabIndex = 20;
+            this.progressBar.TabIndex = 2;
             // 
             // labelProblems
             // 
             this.labelProblems.Location = new System.Drawing.Point(91, 16);
             this.labelProblems.Name = "labelProblems";
             this.labelProblems.Size = new System.Drawing.Size(67, 13);
-            this.labelProblems.TabIndex = 6;
+            this.labelProblems.TabIndex = 4;
             this.labelProblems.Text = "0";
             // 
             // label1
@@ -80,7 +80,7 @@
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label1.Size = new System.Drawing.Size(89, 13);
-            this.label1.TabIndex = 5;
+            this.label1.TabIndex = 3;
             this.label1.Text = "Problems Found: ";
             // 
             // buttonStop
@@ -88,7 +88,7 @@
             this.buttonStop.Location = new System.Drawing.Point(316, 33);
             this.buttonStop.Name = "buttonStop";
             this.buttonStop.Size = new System.Drawing.Size(57, 23);
-            this.buttonStop.TabIndex = 3;
+            this.buttonStop.TabIndex = 0;
             this.buttonStop.Text = "Stop";
             this.buttonStop.UseVisualStyleBackColor = true;
             this.buttonStop.Click += new System.EventHandler(this.buttonStop_Click);
@@ -101,7 +101,7 @@
             this.textBoxSubKey.ReadOnly = true;
             this.textBoxSubKey.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBoxSubKey.Size = new System.Drawing.Size(367, 40);
-            this.textBoxSubKey.TabIndex = 2;
+            this.textBoxSubKey.TabIndex = 1;
             // 
             // ScanDlg
             // 

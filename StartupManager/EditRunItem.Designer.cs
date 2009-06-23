@@ -53,7 +53,7 @@
             this.buttonCancel.Location = new System.Drawing.Point(180, 71);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(51, 23);
-            this.buttonCancel.TabIndex = 2;
+            this.buttonCancel.TabIndex = 5;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
             // 
@@ -63,7 +63,7 @@
             this.buttonOk.Location = new System.Drawing.Point(135, 71);
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.Size = new System.Drawing.Size(39, 23);
-            this.buttonOk.TabIndex = 3;
+            this.buttonOk.TabIndex = 4;
             this.buttonOk.Text = "OK";
             this.buttonOk.UseVisualStyleBackColor = true;
             this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
@@ -80,7 +80,7 @@
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(237, 100);
-            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Edit Startup Entry";
             // 
@@ -89,7 +89,7 @@
             this.buttonBrowse.Location = new System.Drawing.Point(206, 17);
             this.buttonBrowse.Name = "buttonBrowse";
             this.buttonBrowse.Size = new System.Drawing.Size(25, 23);
-            this.buttonBrowse.TabIndex = 7;
+            this.buttonBrowse.TabIndex = 2;
             this.buttonBrowse.Text = "...";
             this.buttonBrowse.UseVisualStyleBackColor = true;
             this.buttonBrowse.Click += new System.EventHandler(this.buttonBrowse_Click);
@@ -99,7 +99,7 @@
             this.textBoxArgs.Location = new System.Drawing.Point(64, 42);
             this.textBoxArgs.Name = "textBoxArgs";
             this.textBoxArgs.Size = new System.Drawing.Size(167, 20);
-            this.textBoxArgs.TabIndex = 6;
+            this.textBoxArgs.TabIndex = 3;
             // 
             // label2
             // 

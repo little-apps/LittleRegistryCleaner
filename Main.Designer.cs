@@ -265,7 +265,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 13F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(173, 405);
-            this.tableLayoutPanel2.TabIndex = 6;
+            this.tableLayoutPanel2.TabIndex = 0;
             // 
             // treeView1
             // 
@@ -352,7 +352,7 @@
             this.treeView1.SelectedImageIndex = 0;
             this.treeView1.ShowNodeToolTips = true;
             this.treeView1.Size = new System.Drawing.Size(173, 392);
-            this.treeView1.TabIndex = 10;
+            this.treeView1.TabIndex = 0;
             this.treeView1.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
             // 
             // imageListTreeView
@@ -407,7 +407,7 @@
             this.detailsRegView1.Location = new System.Drawing.Point(3, 292);
             this.detailsRegView1.Name = "detailsRegView1";
             this.detailsRegView1.Size = new System.Drawing.Size(624, 104);
-            this.detailsRegView1.TabIndex = 12;
+            this.detailsRegView1.TabIndex = 1;
             // 
             // treeViewAdvResults
             // 
@@ -432,7 +432,7 @@
             this.treeViewAdvResults.SelectedNode = null;
             this.treeViewAdvResults.SelectionMode = Common_Tools.TreeViewAdv.Tree.TreeSelectionMode.Multi;
             this.treeViewAdvResults.Size = new System.Drawing.Size(624, 283);
-            this.treeViewAdvResults.TabIndex = 13;
+            this.treeViewAdvResults.TabIndex = 0;
             this.treeViewAdvResults.Text = "treeViewAdv1";
             this.treeViewAdvResults.UseColumns = true;
             this.treeViewAdvResults.SelectionChanged += new System.EventHandler(this.treeViewAdvResults_SelectionChanged);
@@ -511,7 +511,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(809, 24);
-            this.menuStrip1.TabIndex = 11;
+            this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
@@ -719,7 +719,7 @@
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(809, 54);
             this.toolStrip1.Stretch = true;
-            this.toolStrip1.TabIndex = 8;
+            this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripButtonScan

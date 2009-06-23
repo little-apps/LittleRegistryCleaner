@@ -211,7 +211,6 @@
     <Content Include="Resources\listview.bmp" />
     <None Include="Resources\minus.bmp" />
     <None Include="Resources\plus.bmp" />
-    <None Include="Resources\Thumbs.db" />
     <Content Include="Resources\treeview.bmp" />
     <Content Include="Resources\tv_minus.bmp" />
     <Content Include="Resources\tv_plus.bmp" />

@@ -151,7 +151,7 @@
             this.buttonRemove.Location = new System.Drawing.Point(514, 3);
             this.buttonRemove.Name = "buttonRemove";
             this.buttonRemove.Size = new System.Drawing.Size(102, 30);
-            this.buttonRemove.TabIndex = 3;
+            this.buttonRemove.TabIndex = 1;
             this.buttonRemove.Text = "Remove Entry";
             this.buttonRemove.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonRemove.UseVisualStyleBackColor = true;
@@ -164,7 +164,7 @@
             this.buttonUninstall.Location = new System.Drawing.Point(436, 3);
             this.buttonUninstall.Name = "buttonUninstall";
             this.buttonUninstall.Size = new System.Drawing.Size(72, 30);
-            this.buttonUninstall.TabIndex = 4;
+            this.buttonUninstall.TabIndex = 0;
             this.buttonUninstall.Text = "Uninstall";
             this.buttonUninstall.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonUninstall.UseVisualStyleBackColor = true;
@@ -186,7 +186,7 @@
             this.splitContainer1.Panel2.Controls.Add(this.textBoxSearch);
             this.splitContainer1.Size = new System.Drawing.Size(619, 24);
             this.splitContainer1.SplitterDistance = 37;
-            this.splitContainer1.TabIndex = 3;
+            this.splitContainer1.TabIndex = 0;
             // 
             // pictureBox1
             // 

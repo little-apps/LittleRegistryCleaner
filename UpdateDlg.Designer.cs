@@ -50,7 +50,7 @@
             this.labelInfo.Location = new System.Drawing.Point(13, 143);
             this.labelInfo.Name = "labelInfo";
             this.labelInfo.Size = new System.Drawing.Size(136, 13);
-            this.labelInfo.TabIndex = 12;
+            this.labelInfo.TabIndex = 2;
             this.labelInfo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // buttonDownload
@@ -58,7 +58,7 @@
             this.buttonDownload.Location = new System.Drawing.Point(16, 159);
             this.buttonDownload.Name = "buttonDownload";
             this.buttonDownload.Size = new System.Drawing.Size(63, 23);
-            this.buttonDownload.TabIndex = 13;
+            this.buttonDownload.TabIndex = 0;
             this.buttonDownload.Text = "Download";
             this.buttonDownload.UseVisualStyleBackColor = true;
             this.buttonDownload.Click += new System.EventHandler(this.buttonDownload_Click);
@@ -68,7 +68,7 @@
             this.buttonChangelog.Location = new System.Drawing.Point(81, 159);
             this.buttonChangelog.Name = "buttonChangelog";
             this.buttonChangelog.Size = new System.Drawing.Size(68, 23);
-            this.buttonChangelog.TabIndex = 14;
+            this.buttonChangelog.TabIndex = 1;
             this.buttonChangelog.Text = "Changelog";
             this.buttonChangelog.UseVisualStyleBackColor = true;
             this.buttonChangelog.Click += new System.EventHandler(this.buttonChangelog_Click);

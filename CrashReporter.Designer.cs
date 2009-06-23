@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrashReporter));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.checkBoxRestart = new System.Windows.Forms.CheckBox();
             this.pictureBoxErr = new System.Windows.Forms.PictureBox();
             this.buttonSend = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonDontSend = new System.Windows.Forms.Button();
             this.panelDevider = new System.Windows.Forms.Panel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.checkBoxRestart = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxErr)).BeginInit();
             this.SuspendLayout();
@@ -55,6 +55,16 @@
             this.panel1.Size = new System.Drawing.Size(414, 91);
             this.panel1.TabIndex = 5;
             // 
+            // checkBoxRestart
+            // 
+            this.checkBoxRestart.AutoSize = true;
+            this.checkBoxRestart.Location = new System.Drawing.Point(12, 67);
+            this.checkBoxRestart.Name = "checkBoxRestart";
+            this.checkBoxRestart.Size = new System.Drawing.Size(102, 17);
+            this.checkBoxRestart.TabIndex = 0;
+            this.checkBoxRestart.Text = "Restart Program";
+            this.checkBoxRestart.UseVisualStyleBackColor = true;
+            // 
             // pictureBoxErr
             // 
             this.pictureBoxErr.Location = new System.Drawing.Point(12, 15);
@@ -68,7 +78,7 @@
             this.buttonSend.Location = new System.Drawing.Point(212, 63);
             this.buttonSend.Name = "buttonSend";
             this.buttonSend.Size = new System.Drawing.Size(112, 23);
-            this.buttonSend.TabIndex = 11;
+            this.buttonSend.TabIndex = 1;
             this.buttonSend.Text = "Send Error Report";
             this.buttonSend.UseVisualStyleBackColor = true;
             this.buttonSend.Click += new System.EventHandler(this.buttonSend_Click);
@@ -91,7 +101,7 @@
             this.buttonDontSend.Location = new System.Drawing.Point(330, 63);
             this.buttonDontSend.Name = "buttonDontSend";
             this.buttonDontSend.Size = new System.Drawing.Size(70, 23);
-            this.buttonDontSend.TabIndex = 12;
+            this.buttonDontSend.TabIndex = 2;
             this.buttonDontSend.Text = "Don\'t Send";
             this.buttonDontSend.UseVisualStyleBackColor = true;
             this.buttonDontSend.Click += new System.EventHandler(this.buttonDontSend_Click);
@@ -112,19 +122,9 @@
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(414, 340);
-            this.richTextBox1.TabIndex = 9;
+            this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             this.richTextBox1.WordWrap = false;
-            // 
-            // checkBoxRestart
-            // 
-            this.checkBoxRestart.AutoSize = true;
-            this.checkBoxRestart.Location = new System.Drawing.Point(12, 67);
-            this.checkBoxRestart.Name = "checkBoxRestart";
-            this.checkBoxRestart.Size = new System.Drawing.Size(102, 17);
-            this.checkBoxRestart.TabIndex = 13;
-            this.checkBoxRestart.Text = "Restart Program";
-            this.checkBoxRestart.UseVisualStyleBackColor = true;
             // 
             // CrashReporter
             // 

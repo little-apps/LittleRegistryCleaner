@@ -49,7 +49,7 @@
             this.buttonCancel.Location = new System.Drawing.Point(236, 130);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(48, 23);
-            this.buttonCancel.TabIndex = 0;
+            this.buttonCancel.TabIndex = 1;
             this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
             // 
@@ -59,7 +59,7 @@
             this.buttonOk.Location = new System.Drawing.Point(190, 130);
             this.buttonOk.Name = "buttonOk";
             this.buttonOk.Size = new System.Drawing.Size(40, 23);
-            this.buttonOk.TabIndex = 1;
+            this.buttonOk.TabIndex = 0;
             this.buttonOk.Text = "OK";
             this.buttonOk.UseVisualStyleBackColor = true;
             this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
@@ -102,14 +102,14 @@
             this.textBoxPath.Name = "textBoxPath";
             this.textBoxPath.ReadOnly = true;
             this.textBoxPath.Size = new System.Drawing.Size(177, 20);
-            this.textBoxPath.TabIndex = 4;
+            this.textBoxPath.TabIndex = 3;
             // 
             // buttonFileDlg
             // 
             this.buttonFileDlg.Location = new System.Drawing.Point(238, 37);
             this.buttonFileDlg.Name = "buttonFileDlg";
             this.buttonFileDlg.Size = new System.Drawing.Size(28, 23);
-            this.buttonFileDlg.TabIndex = 3;
+            this.buttonFileDlg.TabIndex = 4;
             this.buttonFileDlg.Text = "...";
             this.buttonFileDlg.UseVisualStyleBackColor = true;
             this.buttonFileDlg.Click += new System.EventHandler(this.buttonFileDlg_Click);
@@ -119,7 +119,7 @@
             this.textBoxName.Location = new System.Drawing.Point(42, 17);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(224, 20);
-            this.textBoxName.TabIndex = 2;
+            this.textBoxName.TabIndex = 1;
             // 
             // label2
             // 
@@ -127,7 +127,7 @@
             this.label2.Location = new System.Drawing.Point(6, 43);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 13);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 2;
             this.label2.Text = "File path:";
             // 
             // label1
@@ -145,7 +145,7 @@
             this.label4.Location = new System.Drawing.Point(12, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 13);
-            this.label4.TabIndex = 3;
+            this.label4.TabIndex = 0;
             this.label4.Text = "Section:";
             // 
             // comboBoxSection
@@ -166,7 +166,7 @@
             this.comboBoxSection.Location = new System.Drawing.Point(57, 6);
             this.comboBoxSection.Name = "comboBoxSection";
             this.comboBoxSection.Size = new System.Drawing.Size(227, 21);
-            this.comboBoxSection.TabIndex = 4;
+            this.comboBoxSection.TabIndex = 1;
             // 
             // NewRunItem
             // 
