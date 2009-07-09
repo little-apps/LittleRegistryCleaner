@@ -30,29 +30,29 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("ActiveX/COM");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Application Info");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Program Locations");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Software Settings");
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Startup");
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("System Drivers");
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Shared DLLs");
-            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Help Files");
-            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Sound Events");
-            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("History List");
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Windows Fonts");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("My Computer", new System.Windows.Forms.TreeNode[] {
-            treeNode13,
-            treeNode14,
-            treeNode15,
-            treeNode16,
-            treeNode17,
-            treeNode18,
-            treeNode19,
-            treeNode20,
-            treeNode21,
-            treeNode22,
-            treeNode23});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("ActiveX/COM");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Application Info");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Program Locations");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Software Settings");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Startup");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("System Drivers");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Shared DLLs");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Help Files");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Sound Events");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("History List");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Windows Fonts");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("My Computer", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3,
+            treeNode4,
+            treeNode5,
+            treeNode6,
+            treeNode7,
+            treeNode8,
+            treeNode9,
+            treeNode10,
+            treeNode11});
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.hideShowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -72,16 +72,6 @@
             this.imageListTreeView = new System.Windows.Forms.ImageList(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.detailsRegView1 = new Common_Tools.DetailsRegView();
-            this.treeViewAdvResults = new Common_Tools.TreeViewAdv.Tree.TreeViewAdv();
-            this.treeColumn1 = new Common_Tools.TreeViewAdv.Tree.TreeColumn();
-            this.treeColumn2 = new Common_Tools.TreeViewAdv.Tree.TreeColumn();
-            this.treeColumn3 = new Common_Tools.TreeViewAdv.Tree.TreeColumn();
-            this.nodeCheckBox = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeCheckBox();
-            this.nodeSection = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
-            this.nodeProblem = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
-            this.nodeLocation = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
-            this.nodeValueName = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.scanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -114,6 +104,16 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButtonSettings = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonHelp = new System.Windows.Forms.ToolStripButton();
+            this.detailsRegView1 = new Common_Tools.DetailsRegView();
+            this.treeViewAdvResults = new Common_Tools.TreeViewAdv.Tree.TreeViewAdv();
+            this.treeColumn1 = new Common_Tools.TreeViewAdv.Tree.TreeColumn();
+            this.treeColumn2 = new Common_Tools.TreeViewAdv.Tree.TreeColumn();
+            this.treeColumn3 = new Common_Tools.TreeViewAdv.Tree.TreeColumn();
+            this.nodeCheckBox = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeCheckBox();
+            this.nodeSection = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
+            this.nodeProblem = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
+            this.nodeLocation = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
+            this.nodeValueName = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
             this.contextMenuStrip2.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
@@ -276,79 +276,79 @@
             this.treeView1.Location = new System.Drawing.Point(0, 13);
             this.treeView1.Margin = new System.Windows.Forms.Padding(0);
             this.treeView1.Name = "treeView1";
-            treeNode13.Checked = true;
-            treeNode13.ImageKey = "activexcom.ico";
-            treeNode13.Name = "NodeActiveX";
-            treeNode13.SelectedImageKey = "activexcom.ico";
-            treeNode13.Text = "ActiveX/COM";
-            treeNode13.ToolTipText = "Locations to ActiveX and COM objects that no longer exist";
-            treeNode14.Checked = true;
-            treeNode14.ImageKey = "appinfo.ico";
-            treeNode14.Name = "NodeAppInfo";
-            treeNode14.SelectedImageKey = "appinfo.ico";
-            treeNode14.Text = "Application Info";
-            treeNode14.ToolTipText = "Currently installed applications";
-            treeNode15.Checked = true;
-            treeNode15.ImageIndex = 11;
-            treeNode15.Name = "NodeAppPaths";
-            treeNode15.SelectedImageKey = "programlocations.ico";
-            treeNode15.Text = "Program Locations";
-            treeNode15.ToolTipText = "Removes invalid application paths";
-            treeNode16.Checked = true;
-            treeNode16.ImageKey = "appinfo.ico";
-            treeNode16.Name = "NodeAppSettings";
-            treeNode16.SelectedImageKey = "appinfo.ico";
-            treeNode16.Text = "Software Settings";
-            treeNode16.ToolTipText = "Scans for software registry keys with no data";
-            treeNode17.Checked = true;
-            treeNode17.ImageKey = "startup.ico";
-            treeNode17.Name = "NodeStartup";
-            treeNode17.SelectedImageKey = "startup.ico";
-            treeNode17.Text = "Startup";
-            treeNode17.ToolTipText = "Programs that run when windows starts up";
-            treeNode18.Checked = true;
-            treeNode18.ImageKey = "drivers.ico";
-            treeNode18.Name = "NodeDrivers";
-            treeNode18.SelectedImageKey = "drivers.ico";
-            treeNode18.Text = "System Drivers";
-            treeNode18.ToolTipText = "Finds invalid references to drivers";
-            treeNode19.Checked = true;
-            treeNode19.ImageKey = "shareddlls.ico";
-            treeNode19.Name = "NodeSharedDlls";
-            treeNode19.SelectedImageKey = "shareddlls.ico";
-            treeNode19.Text = "Shared DLLs";
-            treeNode19.ToolTipText = "Scans for invalid DLL references";
-            treeNode20.Checked = true;
-            treeNode20.ImageKey = "helpfiles.ico";
-            treeNode20.Name = "NodeHelp";
-            treeNode20.SelectedImageKey = "helpfiles.ico";
-            treeNode20.Text = "Help Files";
-            treeNode20.ToolTipText = "Scans for help files that no longer exist";
-            treeNode21.Checked = true;
-            treeNode21.ImageKey = "soundevents.ico";
-            treeNode21.Name = "NodeSounds";
-            treeNode21.SelectedImageKey = "soundevents.ico";
-            treeNode21.Text = "Sound Events";
-            treeNode21.ToolTipText = "Scans for missing windows sounds";
-            treeNode22.Checked = true;
-            treeNode22.ImageKey = "historylist.ico";
-            treeNode22.Name = "NodeHistoryList";
-            treeNode22.SelectedImageKey = "historylist.ico";
-            treeNode22.Text = "History List";
-            treeNode22.ToolTipText = "Scans for missing recent documents links";
-            treeNode23.Checked = true;
-            treeNode23.ImageKey = "fonts.ico";
-            treeNode23.Name = "NodeFonts";
-            treeNode23.SelectedImageKey = "fonts.ico";
-            treeNode23.Text = "Windows Fonts";
-            treeNode23.ToolTipText = "Finds invalid font references";
-            treeNode24.Checked = true;
-            treeNode24.ImageKey = "mycomputer.ico";
-            treeNode24.Name = "Node0";
-            treeNode24.SelectedImageKey = "mycomputer.ico";
-            treeNode24.Text = "My Computer";
+            treeNode1.Checked = true;
+            treeNode1.ImageKey = "activexcom.ico";
+            treeNode1.Name = "NodeActiveX";
+            treeNode1.SelectedImageKey = "activexcom.ico";
+            treeNode1.Text = "ActiveX/COM";
+            treeNode1.ToolTipText = "Locations to ActiveX and COM objects that no longer exist";
+            treeNode2.Checked = true;
+            treeNode2.ImageKey = "appinfo.ico";
+            treeNode2.Name = "NodeAppInfo";
+            treeNode2.SelectedImageKey = "appinfo.ico";
+            treeNode2.Text = "Application Info";
+            treeNode2.ToolTipText = "Currently installed applications";
+            treeNode3.Checked = true;
+            treeNode3.ImageIndex = 11;
+            treeNode3.Name = "NodeAppPaths";
+            treeNode3.SelectedImageKey = "programlocations.ico";
+            treeNode3.Text = "Program Locations";
+            treeNode3.ToolTipText = "Removes invalid application paths";
+            treeNode4.Checked = true;
+            treeNode4.ImageKey = "appinfo.ico";
+            treeNode4.Name = "NodeAppSettings";
+            treeNode4.SelectedImageKey = "appinfo.ico";
+            treeNode4.Text = "Software Settings";
+            treeNode4.ToolTipText = "Scans for software registry keys with no data";
+            treeNode5.Checked = true;
+            treeNode5.ImageKey = "startup.ico";
+            treeNode5.Name = "NodeStartup";
+            treeNode5.SelectedImageKey = "startup.ico";
+            treeNode5.Text = "Startup";
+            treeNode5.ToolTipText = "Programs that run when windows starts up";
+            treeNode6.Checked = true;
+            treeNode6.ImageKey = "drivers.ico";
+            treeNode6.Name = "NodeDrivers";
+            treeNode6.SelectedImageKey = "drivers.ico";
+            treeNode6.Text = "System Drivers";
+            treeNode6.ToolTipText = "Finds invalid references to drivers";
+            treeNode7.Checked = true;
+            treeNode7.ImageKey = "shareddlls.ico";
+            treeNode7.Name = "NodeSharedDlls";
+            treeNode7.SelectedImageKey = "shareddlls.ico";
+            treeNode7.Text = "Shared DLLs";
+            treeNode7.ToolTipText = "Scans for invalid DLL references";
+            treeNode8.Checked = true;
+            treeNode8.ImageKey = "helpfiles.ico";
+            treeNode8.Name = "NodeHelp";
+            treeNode8.SelectedImageKey = "helpfiles.ico";
+            treeNode8.Text = "Help Files";
+            treeNode8.ToolTipText = "Scans for help files that no longer exist";
+            treeNode9.Checked = true;
+            treeNode9.ImageKey = "soundevents.ico";
+            treeNode9.Name = "NodeSounds";
+            treeNode9.SelectedImageKey = "soundevents.ico";
+            treeNode9.Text = "Sound Events";
+            treeNode9.ToolTipText = "Scans for missing windows sounds";
+            treeNode10.Checked = true;
+            treeNode10.ImageKey = "historylist.ico";
+            treeNode10.Name = "NodeHistoryList";
+            treeNode10.SelectedImageKey = "historylist.ico";
+            treeNode10.Text = "History List";
+            treeNode10.ToolTipText = "Scans for missing recent documents links";
+            treeNode11.Checked = true;
+            treeNode11.ImageKey = "fonts.ico";
+            treeNode11.Name = "NodeFonts";
+            treeNode11.SelectedImageKey = "fonts.ico";
+            treeNode11.Text = "Windows Fonts";
+            treeNode11.ToolTipText = "Finds invalid font references";
+            treeNode12.Checked = true;
+            treeNode12.ImageKey = "mycomputer.ico";
+            treeNode12.Name = "Node0";
+            treeNode12.SelectedImageKey = "mycomputer.ico";
+            treeNode12.Text = "My Computer";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode24});
+            treeNode12});
             this.treeView1.SelectedImageIndex = 0;
             this.treeView1.ShowNodeToolTips = true;
             this.treeView1.Size = new System.Drawing.Size(173, 392);
@@ -398,107 +398,6 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 110F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(630, 399);
             this.tableLayoutPanel3.TabIndex = 7;
-            // 
-            // detailsRegView1
-            // 
-            this.detailsRegView1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.detailsRegView1.BackColor = System.Drawing.SystemColors.Control;
-            this.detailsRegView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.detailsRegView1.Location = new System.Drawing.Point(3, 292);
-            this.detailsRegView1.Name = "detailsRegView1";
-            this.detailsRegView1.Size = new System.Drawing.Size(624, 104);
-            this.detailsRegView1.TabIndex = 1;
-            // 
-            // treeViewAdvResults
-            // 
-            this.treeViewAdvResults.BackColor = System.Drawing.SystemColors.Window;
-            this.treeViewAdvResults.Columns.Add(this.treeColumn1);
-            this.treeViewAdvResults.Columns.Add(this.treeColumn2);
-            this.treeViewAdvResults.Columns.Add(this.treeColumn3);
-            this.treeViewAdvResults.ContextMenuStrip = this.contextMenuStrip1;
-            this.treeViewAdvResults.DefaultToolTipProvider = null;
-            this.treeViewAdvResults.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.treeViewAdvResults.DragDropMarkColor = System.Drawing.Color.Black;
-            this.treeViewAdvResults.FullRowSelect = true;
-            this.treeViewAdvResults.LineColor = System.Drawing.SystemColors.ControlDark;
-            this.treeViewAdvResults.Location = new System.Drawing.Point(3, 3);
-            this.treeViewAdvResults.Model = null;
-            this.treeViewAdvResults.Name = "treeViewAdvResults";
-            this.treeViewAdvResults.NodeControls.Add(this.nodeCheckBox);
-            this.treeViewAdvResults.NodeControls.Add(this.nodeSection);
-            this.treeViewAdvResults.NodeControls.Add(this.nodeProblem);
-            this.treeViewAdvResults.NodeControls.Add(this.nodeLocation);
-            this.treeViewAdvResults.NodeControls.Add(this.nodeValueName);
-            this.treeViewAdvResults.SelectedNode = null;
-            this.treeViewAdvResults.SelectionMode = Common_Tools.TreeViewAdv.Tree.TreeSelectionMode.Multi;
-            this.treeViewAdvResults.Size = new System.Drawing.Size(624, 283);
-            this.treeViewAdvResults.TabIndex = 0;
-            this.treeViewAdvResults.Text = "treeViewAdv1";
-            this.treeViewAdvResults.UseColumns = true;
-            this.treeViewAdvResults.SelectionChanged += new System.EventHandler(this.treeViewAdvResults_SelectionChanged);
-            // 
-            // treeColumn1
-            // 
-            this.treeColumn1.Header = "Problem";
-            this.treeColumn1.SortOrder = System.Windows.Forms.SortOrder.None;
-            this.treeColumn1.TooltipText = null;
-            this.treeColumn1.Width = 75;
-            // 
-            // treeColumn2
-            // 
-            this.treeColumn2.Header = "Location";
-            this.treeColumn2.SortOrder = System.Windows.Forms.SortOrder.None;
-            this.treeColumn2.TooltipText = null;
-            this.treeColumn2.Width = 175;
-            // 
-            // treeColumn3
-            // 
-            this.treeColumn3.Header = "Value Name";
-            this.treeColumn3.SortOrder = System.Windows.Forms.SortOrder.None;
-            this.treeColumn3.TooltipText = null;
-            this.treeColumn3.Width = 100;
-            // 
-            // nodeCheckBox
-            // 
-            this.nodeCheckBox.DataPropertyName = "Checked";
-            this.nodeCheckBox.LeftMargin = 0;
-            this.nodeCheckBox.ParentColumn = this.treeColumn1;
-            // 
-            // nodeSection
-            // 
-            this.nodeSection.DataPropertyName = "SectionName";
-            this.nodeSection.EditEnabled = false;
-            this.nodeSection.IncrementalSearchEnabled = true;
-            this.nodeSection.LeftMargin = 3;
-            this.nodeSection.ParentColumn = this.treeColumn1;
-            this.nodeSection.Trimming = System.Drawing.StringTrimming.EllipsisCharacter;
-            // 
-            // nodeProblem
-            // 
-            this.nodeProblem.DataPropertyName = "Problem";
-            this.nodeProblem.EditEnabled = false;
-            this.nodeProblem.IncrementalSearchEnabled = true;
-            this.nodeProblem.LeftMargin = 3;
-            this.nodeProblem.ParentColumn = this.treeColumn1;
-            this.nodeProblem.Trimming = System.Drawing.StringTrimming.EllipsisCharacter;
-            // 
-            // nodeLocation
-            // 
-            this.nodeLocation.DataPropertyName = "RegKeyPath";
-            this.nodeLocation.EditEnabled = false;
-            this.nodeLocation.IncrementalSearchEnabled = true;
-            this.nodeLocation.LeftMargin = 3;
-            this.nodeLocation.ParentColumn = this.treeColumn2;
-            this.nodeLocation.Trimming = System.Drawing.StringTrimming.EllipsisCharacter;
-            // 
-            // nodeValueName
-            // 
-            this.nodeValueName.DataPropertyName = "ValueName";
-            this.nodeValueName.EditEnabled = false;
-            this.nodeValueName.IncrementalSearchEnabled = true;
-            this.nodeValueName.LeftMargin = 3;
-            this.nodeValueName.ParentColumn = this.treeColumn3;
-            this.nodeValueName.Trimming = System.Drawing.StringTrimming.EllipsisCharacter;
             // 
             // menuStrip1
             // 
@@ -777,6 +676,107 @@
             this.toolStripButtonHelp.Text = "Help";
             this.toolStripButtonHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripButtonHelp.Click += new System.EventHandler(this.LaunchHelpFile);
+            // 
+            // detailsRegView1
+            // 
+            this.detailsRegView1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.detailsRegView1.BackColor = System.Drawing.SystemColors.Control;
+            this.detailsRegView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.detailsRegView1.Location = new System.Drawing.Point(3, 292);
+            this.detailsRegView1.Name = "detailsRegView1";
+            this.detailsRegView1.Size = new System.Drawing.Size(624, 104);
+            this.detailsRegView1.TabIndex = 1;
+            // 
+            // treeViewAdvResults
+            // 
+            this.treeViewAdvResults.BackColor = System.Drawing.SystemColors.Window;
+            this.treeViewAdvResults.Columns.Add(this.treeColumn1);
+            this.treeViewAdvResults.Columns.Add(this.treeColumn2);
+            this.treeViewAdvResults.Columns.Add(this.treeColumn3);
+            this.treeViewAdvResults.ContextMenuStrip = this.contextMenuStrip1;
+            this.treeViewAdvResults.DefaultToolTipProvider = null;
+            this.treeViewAdvResults.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.treeViewAdvResults.DragDropMarkColor = System.Drawing.Color.Black;
+            this.treeViewAdvResults.FullRowSelect = true;
+            this.treeViewAdvResults.LineColor = System.Drawing.SystemColors.ControlDark;
+            this.treeViewAdvResults.Location = new System.Drawing.Point(3, 3);
+            this.treeViewAdvResults.Model = null;
+            this.treeViewAdvResults.Name = "treeViewAdvResults";
+            this.treeViewAdvResults.NodeControls.Add(this.nodeCheckBox);
+            this.treeViewAdvResults.NodeControls.Add(this.nodeSection);
+            this.treeViewAdvResults.NodeControls.Add(this.nodeProblem);
+            this.treeViewAdvResults.NodeControls.Add(this.nodeLocation);
+            this.treeViewAdvResults.NodeControls.Add(this.nodeValueName);
+            this.treeViewAdvResults.SelectedNode = null;
+            this.treeViewAdvResults.SelectionMode = Common_Tools.TreeViewAdv.Tree.TreeSelectionMode.Multi;
+            this.treeViewAdvResults.Size = new System.Drawing.Size(624, 283);
+            this.treeViewAdvResults.TabIndex = 0;
+            this.treeViewAdvResults.Text = "treeViewAdv1";
+            this.treeViewAdvResults.UseColumns = true;
+            this.treeViewAdvResults.SelectionChanged += new System.EventHandler(this.treeViewAdvResults_SelectionChanged);
+            // 
+            // treeColumn1
+            // 
+            this.treeColumn1.Header = "Problem";
+            this.treeColumn1.SortOrder = System.Windows.Forms.SortOrder.None;
+            this.treeColumn1.TooltipText = null;
+            this.treeColumn1.Width = 75;
+            // 
+            // treeColumn2
+            // 
+            this.treeColumn2.Header = "Location";
+            this.treeColumn2.SortOrder = System.Windows.Forms.SortOrder.None;
+            this.treeColumn2.TooltipText = null;
+            this.treeColumn2.Width = 175;
+            // 
+            // treeColumn3
+            // 
+            this.treeColumn3.Header = "Value Name";
+            this.treeColumn3.SortOrder = System.Windows.Forms.SortOrder.None;
+            this.treeColumn3.TooltipText = null;
+            this.treeColumn3.Width = 100;
+            // 
+            // nodeCheckBox
+            // 
+            this.nodeCheckBox.DataPropertyName = "Checked";
+            this.nodeCheckBox.LeftMargin = 0;
+            this.nodeCheckBox.ParentColumn = this.treeColumn1;
+            // 
+            // nodeSection
+            // 
+            this.nodeSection.DataPropertyName = "SectionName";
+            this.nodeSection.EditEnabled = false;
+            this.nodeSection.IncrementalSearchEnabled = true;
+            this.nodeSection.LeftMargin = 3;
+            this.nodeSection.ParentColumn = this.treeColumn1;
+            this.nodeSection.Trimming = System.Drawing.StringTrimming.EllipsisCharacter;
+            // 
+            // nodeProblem
+            // 
+            this.nodeProblem.DataPropertyName = "Problem";
+            this.nodeProblem.EditEnabled = false;
+            this.nodeProblem.IncrementalSearchEnabled = true;
+            this.nodeProblem.LeftMargin = 3;
+            this.nodeProblem.ParentColumn = this.treeColumn1;
+            this.nodeProblem.Trimming = System.Drawing.StringTrimming.EllipsisCharacter;
+            // 
+            // nodeLocation
+            // 
+            this.nodeLocation.DataPropertyName = "RegKeyPath";
+            this.nodeLocation.EditEnabled = false;
+            this.nodeLocation.IncrementalSearchEnabled = true;
+            this.nodeLocation.LeftMargin = 3;
+            this.nodeLocation.ParentColumn = this.treeColumn2;
+            this.nodeLocation.Trimming = System.Drawing.StringTrimming.EllipsisCharacter;
+            // 
+            // nodeValueName
+            // 
+            this.nodeValueName.DataPropertyName = "ValueName";
+            this.nodeValueName.EditEnabled = false;
+            this.nodeValueName.IncrementalSearchEnabled = true;
+            this.nodeValueName.LeftMargin = 3;
+            this.nodeValueName.ParentColumn = this.treeColumn3;
+            this.nodeValueName.Trimming = System.Drawing.StringTrimming.EllipsisCharacter;
             // 
             // Main
             // 

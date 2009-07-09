@@ -293,3 +293,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Added Try-Catch blocks for System.Security.SecurityException in Fonts, HelpFiles and Sounds
 - Cleaned up nested try-catch blocks in scanners
 - Fixed the tab order in the dialogs
+- Build Time uses MM/dd/yyyy format instead of ToShortDateString because of windows 7 new format
+- Checks for update when dialog is shown instead of loaded
+
++ Version 1.3.2 Released

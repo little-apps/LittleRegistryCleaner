@@ -50,9 +50,8 @@ namespace Little_Registry_Cleaner
             InitializeComponent();
         }
 
-        private void UpdateDlg_Load(object sender, EventArgs e)
+        protected override void OnShown(EventArgs e)
         {
-
             string strVersion = "", strChangeLogURL = "", strDownloadURL = "", strReleaseDate = "";
 
             if (FindUpdate(ref strVersion, ref strReleaseDate, ref strChangeLogURL, ref strDownloadURL, false))
@@ -72,6 +71,8 @@ namespace Little_Registry_Cleaner
 
                 this.labelInfo.Text = "You have the latest version";
             }
+
+            base.OnShown(e);
         }
 
         /// <summary>

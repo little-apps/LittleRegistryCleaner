@@ -4,6 +4,7 @@ using System.Reflection;
 using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Text;
+using System.Drawing;
 
 namespace Common_Tools.TreeViewAdv
 {
@@ -16,11 +17,11 @@ namespace Common_Tools.TreeViewAdv
             get { return _dVSplitCursor; }
         }
 
-		private static GifDecoder _loadingIcon = GetGifDecoder(Properties.Resources.loading_icon);
-		public static GifDecoder LoadingIcon
-		{
-			get { return _loadingIcon; }
-		}
+        private static GifDecoder _loadingIcon = GetGifDecoder(Properties.Resources.loading_icon);
+        public static GifDecoder LoadingIcon
+        {
+            get { return _loadingIcon; }
+        }
 
         /// <summary>
         /// Help function to convert byte[] from resource into Cursor Type 

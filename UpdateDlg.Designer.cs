@@ -88,7 +88,6 @@
             this.Name = "UpdateDlg";
             this.ShowInTaskbar = false;
             this.Text = "Check for update";
-            this.Load += new System.EventHandler(this.UpdateDlg_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

@@ -13,9 +13,11 @@ namespace Common_Tools.TreeViewAdv.Tree.NodeControls
 	/// </summary>
 	public class ExpandingIcon: NodeControl
 	{
-		private static GifDecoder _gif = ResourceHelper.LoadingIcon;
+        private static GifDecoder _gif = ResourceHelper.LoadingIcon;
 		private static int _index = 0;
 		private static Thread _animatingThread;
+
+      
 
 		public override Size MeasureSize(TreeNodeAdv node, DrawContext context)
 		{
@@ -35,17 +37,17 @@ namespace Common_Tools.TreeViewAdv.Tree.NodeControls
 			context.Graphics.DrawImage(img, rect.Location);
 		}
 
-		public static void Start()
-		{
-			_index = 0;
-			if (_animatingThread == null)
-			{
-				_animatingThread = new Thread(new ThreadStart(IterateIcons));
-				_animatingThread.IsBackground = true;
-				_animatingThread.Priority = ThreadPriority.Lowest;
-				_animatingThread.Start();
-			}
-		}
+        public static void Start()
+        {
+            _index = 0;
+            if (_animatingThread == null)
+            {
+                _animatingThread = new Thread(new ThreadStart(IterateIcons));
+                _animatingThread.IsBackground = true;
+                _animatingThread.Priority = ThreadPriority.Lowest;
+                _animatingThread.Start();
+            }
+        }
 
 		private static void IterateIcons()
 		{
