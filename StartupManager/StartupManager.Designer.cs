@@ -274,7 +274,6 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "Little Registry Cleaner - Startup Manager";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.StartupManager_Load);
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);
             this.toolStripContainer1.TopToolStripPanel.ResumeLayout(false);

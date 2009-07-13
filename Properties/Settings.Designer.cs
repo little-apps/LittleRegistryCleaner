@@ -73,18 +73,6 @@ namespace Little_Registry_Cleaner.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string strOptionsBackupDir {
-            get {
-                return ((string)(this["strOptionsBackupDir"]));
-            }
-            set {
-                this["strOptionsBackupDir"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool bOptionsRestore {
             get {
@@ -92,30 +80,6 @@ namespace Little_Registry_Cleaner.Properties {
             }
             set {
                 this["bOptionsRestore"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string strOptionsLogDir {
-            get {
-                return ((string)(this["strOptionsLogDir"]));
-            }
-            set {
-                this["strOptionsLogDir"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string strProgramSettingsDir {
-            get {
-                return ((string)(this["strProgramSettingsDir"]));
-            }
-            set {
-                this["strProgramSettingsDir"] = value;
             }
         }
         

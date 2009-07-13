@@ -42,6 +42,8 @@ namespace Little_Registry_Cleaner
 
         private void Restore_Load(object sender, EventArgs e)
         {
+
+
             DirectoryInfo di = new DirectoryInfo(Properties.Settings.Default.strOptionsBackupDir);
 
             foreach (FileInfo fi in di.GetFiles()) {

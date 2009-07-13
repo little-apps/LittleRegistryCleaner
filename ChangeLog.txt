@@ -295,5 +295,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Fixed the tab order in the dialogs
 - Build Time uses MM/dd/yyyy format instead of ToShortDateString because of windows 7 new format
 - Checks for update when dialog is shown instead of loaded
+- Changed window settings for restore dialog and startup manager
+- Directory settings are controlled through Settings.cs instead of Program.cs
 
 + Version 1.3.2 Released

@@ -42,5 +42,56 @@
                 this["arrayExcludeList"] = value;
             }
         }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string strProgramSettingsDir
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(this["strProgramSettingsDir"] as string))
+                    this["strProgramSettingsDir"] = string.Format("{0}\\Little Registry Cleaner", global::System.Environment.GetFolderPath(global::System.Environment.SpecialFolder.CommonProgramFiles));
+
+                if (!global::System.IO.Directory.Exists(this["strProgramSettingsDir"] as string))
+                    global::System.IO.Directory.CreateDirectory(this["strProgramSettingsDir"] as string);
+
+                return this["strProgramSettingsDir"] as string;
+            }
+            set { this["strProgramSettingsDir"] = value; }
+        }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string strOptionsBackupDir
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(this["strOptionsBackupDir"] as string))
+                    this["strOptionsBackupDir"] = string.Format("{0}\\Backups", strProgramSettingsDir);
+
+                if (!global::System.IO.Directory.Exists(this["strOptionsBackupDir"] as string))
+                    global::System.IO.Directory.CreateDirectory(this["strOptionsBackupDir"] as string);
+
+                return this["strOptionsBackupDir"] as string;;
+            }
+            set { this["strOptionsBackupDir"] = value; }
+        }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string strOptionsLogDir
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(this["strOptionsLogDir"] as string))
+                    this["strOptionsLogDir"] = string.Format("{0}\\Logs", strProgramSettingsDir);
+
+                if (!global::System.IO.Directory.Exists(this["strOptionsLogDir"] as string))
+                    global::System.IO.Directory.CreateDirectory(this["strOptionsLogDir"] as string);
+
+                return this["strOptionsLogDir"] as string;
+            }
+            set { this["strOptionsLogDir"] = value; }
+        }
     }
 }
