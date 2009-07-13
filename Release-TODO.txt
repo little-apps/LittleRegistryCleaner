@@ -2,11 +2,11 @@
 2. Make sure version is set right
 3. Build solution
 4. Copy executable and configuration to NSIS directory and PE directory
-5. Update Change Log in NSIS directory and PE directory
-5. If files are added, make sure NSIS file is updated
-6. Compile and test NSIS
-7. Compress source code using zip (example: Little_Registry_Optimizer_mm_dd_yyyy.zip)
-8. Remove output and bazaar directories from zip file
-9. Add Files and commit build to bazaar vcs
-10. Upload source code and compiled NSIS to sourceforge
-11. Update update.xml on sourceforge site
+5. Update changes in changelog.txt and Little Registry Cleaner.chm
+6. If files are added, make sure NSIS file is updated
+7. Compile and test NSIS
+8. Compress source code using zip (example: Little_Registry_Optimizer_mm_dd_yyyy.zip)
+9. Remove output and bazaar directories from zip file
+10. Add Files and commit build to bazaar vcs
+11. Upload source code and compiled NSIS to sourceforge
+12. Update update.xml on sourceforge site
