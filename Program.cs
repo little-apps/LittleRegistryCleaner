@@ -46,9 +46,6 @@ namespace Little_Registry_Cleaner
                 return;
             }
 
-            // Set the build time
-            Properties.Settings.Default.strBuildTime = new DateTime(2000, 1, 1).AddDays(Assembly.GetExecutingAssembly().GetName().Version.Build).ToString("MM/dd/yyyy");
-
             // Set last start time if its null
             if (Properties.Settings.Default.dtLastUpdate == 0)
                 Properties.Settings.Default.dtLastUpdate = DateTime.Now.ToBinary();

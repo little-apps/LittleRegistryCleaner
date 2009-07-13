@@ -17,9 +17,6 @@
     <Setting Name="bOptionsRestore" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
-    <Setting Name="strBuildTime" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
     <Setting Name="strBugReportAddr" Type="System.String" Scope="Application">
       <Value Profile="(Default)">http://lilapps.f-snet.com/bugreport.php</Value>
     </Setting>

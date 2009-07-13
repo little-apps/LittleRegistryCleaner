@@ -93,5 +93,15 @@
             }
             set { this["strOptionsLogDir"] = value; }
         }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string strBuildTime
+        {
+            get
+            {
+                return new global::System.DateTime(2000, 1, 1).AddDays(global::System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.Build).ToString("MM/dd/yyyy");
+            }
+        }
     }
 }

@@ -83,18 +83,6 @@ namespace Little_Registry_Cleaner.Properties {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string strBuildTime {
-            get {
-                return ((string)(this["strBuildTime"]));
-            }
-            set {
-                this["strBuildTime"] = value;
-            }
-        }
-        
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("http://lilapps.f-snet.com/bugreport.php")]
