@@ -87,6 +87,7 @@ namespace Little_Registry_Cleaner
         public static bool FindUpdate(ref string strVersion, ref string strReleaseDate, ref string strChangeLogURL, ref string strDownloadURL, bool bCheckDate)
         {
             bool bRet = false;
+            DateTime dtReleaseDate;
 
             if (bCheckDate)
             {
@@ -133,10 +134,10 @@ namespace Little_Registry_Cleaner
                 if (verApp.Major < verLatest.Major || verApp.Minor < verLatest.Minor)
                     bRet = true;
 
-                DateTime dtReleaseDate, dtBuildDate = DateTime.Parse(Properties.Settings.Default.strBuildTime);
-
-                if (DateTime.TryParse(strReleaseDate, out dtReleaseDate))
+                if (DateTime.TryParseExact(strReleaseDate, @"MM/dd/yyyy", null, System.Globalization.DateTimeStyles.None, out dtReleaseDate))
                 {
+                    DateTime dtBuildDate = new DateTime(2000, 1, 1).AddDays(System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.Build);
+
                     // See if date from xml is later than build date
                     if (DateTime.Compare(dtReleaseDate, dtBuildDate) > 0)
                         bRet = true;
@@ -147,6 +148,12 @@ namespace Little_Registry_Cleaner
             {
                 if (MessageBox.Show(ex.Message, Application.ProductName, MessageBoxButtons.RetryCancel, MessageBoxIcon.Error) == DialogResult.Retry)
                     return FindUpdate(ref strVersion, ref strReleaseDate, ref strChangeLogURL, ref strDownloadURL, bCheckDate);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(string.Format("The updater encountered an error ({0}). Please try again later...", ex.Message), Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                bRet = false;
             }
 
             return bRet;
