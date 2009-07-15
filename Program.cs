@@ -46,10 +46,6 @@ namespace Little_Registry_Cleaner
                 return;
             }
 
-            // Set last start time if its null
-            if (Properties.Settings.Default.dtLastUpdate == 0)
-                Properties.Settings.Default.dtLastUpdate = DateTime.Now.ToBinary();
-
             // Create event log source
             if (!EventLog.SourceExists(Application.ProductName))
                 EventLog.CreateEventSource(Application.ProductName, "Application");
