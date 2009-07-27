@@ -314,8 +314,7 @@ namespace Common_Tools.TreeViewAdv.Tree
 			}
 		}
 
-        // Font proprety for Tahoma as default font
-        private static Font _font = new Font("Tahoma", 8.25F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0)), false);
+        private static Font _font = new Font(FontFamily.GenericSansSerif, 8.25F, FontStyle.Regular, GraphicsUnit.Point, 0, false);
         [Category("Appearance")]
         public override Font Font
         {

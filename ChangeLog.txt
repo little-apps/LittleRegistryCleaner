@@ -303,3 +303,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 - Fixed the updater so that the build dates can be compared
 - No longer sets the last update time in Program.cs
+- Uses Generic Sans Serif font family for advanced tree view instead of Tahoma
