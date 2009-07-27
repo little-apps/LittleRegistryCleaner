@@ -207,8 +207,8 @@
     <None Include="Resources\Folder.bmp" />
     <None Include="Resources\FolderClosed.bmp" />
     <None Include="Resources\Leaf.bmp" />
-    <None Include="Resources\loading_icon" />
     <Content Include="Resources\listview.bmp" />
+    <None Include="Resources\loading_icon" />
     <None Include="Resources\minus.bmp" />
     <None Include="Resources\plus.bmp" />
     <Content Include="Resources\treeview.bmp" />

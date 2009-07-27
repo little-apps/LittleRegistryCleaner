@@ -65,6 +65,8 @@ namespace Little_Registry_Cleaner
         public Main()
         {
             InitializeComponent();
+
+            
         } 
 
         /// <summary>
@@ -270,8 +272,6 @@ namespace Little_Registry_Cleaner
             else if (e.Node.Name.CompareTo("NodeHistoryList") == 0)
                 Main.bScanHistoryList = e.Node.Checked;
         }
-
-        
 
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {

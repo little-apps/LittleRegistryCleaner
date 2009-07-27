@@ -17,8 +17,6 @@ namespace Common_Tools.TreeViewAdv.Tree.NodeControls
 		private static int _index = 0;
 		private static Thread _animatingThread;
 
-      
-
 		public override Size MeasureSize(TreeNodeAdv node, DrawContext context)
 		{
 			return ResourceHelper.LoadingIcon.FrameSize;
