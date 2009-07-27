@@ -97,8 +97,8 @@ namespace Little_Registry_Cleaner
                 return false;
 
             // See if DLL exists
-            if (!Utils.SearchPath("srclient.dll"))
-                return false;
+            if (Utils.SearchPath("srclient.dll"))
+                return true;
 
             // Windows ME
             if (majorVersion == 4 && minorVersion == 90)
@@ -110,6 +110,10 @@ namespace Little_Registry_Cleaner
 
             // Windows Vista
             if (majorVersion == 6 && minorVersion == 0)
+                return true;
+
+            // Windows Se7en
+            if (majorVersion == 6 && minorVersion == 1)
                 return true;
 
             // All others : Win 95, 98, 2000, Server
@@ -204,6 +208,34 @@ namespace Little_Registry_Cleaner
                 rpInfo.llSequenceNumber = lSeqNum;
 
                 SRSetRestorePointW(ref rpInfo, out rpStatus);
+            }
+            catch (DllNotFoundException)
+            {
+                return 0;
+            }
+
+            return rpStatus.nStatus;
+        }
+
+        public static int FirstRunRestore(string strDescription)
+        {
+            RestorePointInfo rpInfo = new RestorePointInfo();
+            STATEMGRSTATUS rpStatus = new STATEMGRSTATUS();
+
+            if (!SysRestoreAvailable())
+                return 0;
+
+            try
+            {
+                // Prepare Restore Point
+                rpInfo.dwEventType = BeginSystemChange;
+                rpInfo.dwRestorePtType = (int)RestoreType.FirstRun;
+                rpInfo.llSequenceNumber = 0;
+                rpInfo.szDescription = strDescription;
+
+                SRSetRestorePointW(ref rpInfo, out rpStatus);
+
+                EndRestore(rpStatus.llSequenceNumber);
             }
             catch (DllNotFoundException)
             {

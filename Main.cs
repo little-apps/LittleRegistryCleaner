@@ -65,8 +65,6 @@ namespace Little_Registry_Cleaner
         public Main()
         {
             InitializeComponent();
-
-            
         } 
 
         /// <summary>
@@ -213,6 +211,18 @@ namespace Little_Registry_Cleaner
                 if (UpdateDlg.FindUpdate(ref strVersion, ref strReleaseDate, ref strChangeLogURL, ref strDownloadURL, true))
                     if (MessageBox.Show(this, "A newer version is available. Would you like to download it?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                         Utils.LaunchURI(strDownloadURL);
+            }
+
+            // Increase number to program starts
+            Properties.Settings.Default.nProgramStarts += 1;
+
+            // Check if we need to create restore point
+            if (Properties.Settings.Default.nProgramStarts == 1)
+            {
+                if (MessageBox.Show(this, "This your first time running Little Registry Cleaner. \r\nWould you like to create a restore point?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    SysRestore.FirstRunRestore("First time running Little Registry Cleaner");
+                }
             }
         }
 

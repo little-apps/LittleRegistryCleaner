@@ -305,3 +305,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - No longer sets the last update time in Program.cs
 - Uses Generic Sans Serif font family for advanced tree view instead of Tahoma
 - Removed label above section list in main dialog and replaced "My Computer" with "Sections to Scan"
+- System restore works with Windows Se7en and beyond
+- Creates restore point if running program for first time
+- No longer waits for log file to close before fixing problems
