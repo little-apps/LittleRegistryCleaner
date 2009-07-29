@@ -308,3 +308,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - System restore works with Windows Se7en and beyond
 - Creates restore point if running program for first time
 - No longer waits for log file to close before fixing problems
+- Tries to catch exception if an error is thrown when uninstalling a program or removing a registry key

@@ -31,10 +31,10 @@ namespace Little_Registry_Cleaner.UninstallManager
     {
         #region Slow Info Cache properties
 
-        [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode, Size=552)]
+        [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Unicode, Size = 552)]
         internal struct SlowInfoCache
         {
-            
+
             public uint cbSize; // size of the SlowInfoCache (552 bytes)
             public uint HasName; // unknown
             public Int64 InstallSize; // program size in bytes
@@ -130,7 +130,7 @@ namespace Little_Registry_Cleaner.UninstallManager
                 NoModify = (Int32)regKey.GetValue("NoModify", 0);
                 NoRepair = (Int32)regKey.GetValue("NoRepair", 0);
 
-                SystemComponent = (((Int32)regKey.GetValue("SystemComponent", 0) == 1)?(true):(false));
+                SystemComponent = (((Int32)regKey.GetValue("SystemComponent", 0) == 1) ? (true) : (false));
                 _windowsInstaller = (Int32)regKey.GetValue("WindowsInstaller", 0);
                 EstimatedSize = (Int32)regKey.GetValue("EstimatedSize", 0);
             }
@@ -188,7 +188,7 @@ namespace Little_Registry_Cleaner.UninstallManager
             return;
         }
 
-        public void Uninstall()
+        public bool Uninstall()
         {
             string cmdLine = "";
 
@@ -197,16 +197,50 @@ namespace Little_Registry_Cleaner.UninstallManager
             else if (!string.IsNullOrEmpty(QuietUninstallString))
                 cmdLine = this.QuietUninstallString;
 
-            Process proc = Process.Start(cmdLine);
-            proc.WaitForExit();
+            if (string.IsNullOrEmpty(cmdLine))
+            {
+                if (MessageBox.Show("Unable to find uninstall string.\r\n Would you like to manually remove it from the registry?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes)
+                    this.RemoveFromRegistry();
+
+                return false;
+            }
+
+            try
+            {
+                Process proc = Process.Start(cmdLine);
+                proc.WaitForExit();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(string.Format("Error uninstalling program: {0}", ex.Message), Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                return false;
+            }
+
+            MessageBox.Show("Sucessfully uninstalled program", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            return true;
         }
 
-        public void RemoveFromRegistry()
+        public bool RemoveFromRegistry()
         {
             string strKeyName = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\" + Key;
 
-            if (Registry.LocalMachine.OpenSubKey(strKeyName) != null)
-                Registry.LocalMachine.DeleteSubKeyTree(strKeyName);
+            try
+            {
+                if (Registry.LocalMachine.OpenSubKey(strKeyName, true) != null)
+                    Registry.LocalMachine.DeleteSubKeyTree(strKeyName);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(string.Format("Error removing registry key: {0}", ex.Message), Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                return false;
+            }
+
+            MessageBox.Show("Sucessfully removed registry key", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            return true;
         }
 
         public override string ToString()
