@@ -301,3 +301,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Uses ListViewItem.Tag to store programinfo instead of dictionary
 - No longer sets last update date before program exits
 - Sets owner of registry key and uses default values instead of existing ones in grantRegistryKeyRights()
+
++ Version 1.3.3 Released
