@@ -14,17 +14,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-- TODO: Add more sections
-- TODO: Change look of results
-- TODO: Check more keys for ActiveX/COM from http://msdn.microsoft.com/en-us/library/ms690440(VS.85).aspx
-- TODO: Rebuild MRU List after keys are removed
-- TODO: Fix saveAsXml() to only store needed subkeys
-- TODO: List Alternate startup folders if they are different in startup manager
-- TODO: Check for missing DLLs that are ran by rundll32 and regsvr32
-- TODO: Create full registry backup when LRC is ran for the first time
-- TODO: Show dialog when creating a system restore point
-- TODO: Get arguments using regex: "{0,2}(?:(?:\\\\(?:\w+)\\(?:\w+\$?)|(?:[A-Z]):)(?:\\(?:[^\\:*?"'<>|\r\n]+))+|(?:[^\\:*?"'<>|\r\n]+))\.exe"?\ (?<commandstring>(?:[^\r\n]*(?=")|[^\r\n]*))
-
 - Dialogs are opened with main dialog as owner
 - Added Drivers Section
 - Opens seperate dialog for scanning
