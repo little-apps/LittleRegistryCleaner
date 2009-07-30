@@ -300,3 +300,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Tries to catch exception if an error is thrown when uninstalling a program or removing a registry key
 - Uses ListViewItem.Tag to store programinfo instead of dictionary
 - No longer sets last update date before program exits
+- Sets owner of registry key and uses default values instead of existing ones in grantRegistryKeyRights()

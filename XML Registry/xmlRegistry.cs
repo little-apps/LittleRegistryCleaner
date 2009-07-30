@@ -1284,12 +1284,13 @@ namespace Little_Registry_Cleaner.Xml
 
         private void grantRegistryKeyRights(RegistryKey regKey, RegistryRights registryRights)
         {
-            RegistrySecurity regSecurity = regKey.GetAccessControl();
-            string user = Environment.UserDomainName + "\\" + Environment.UserName;
+            RegistrySecurity regSecurity = new RegistrySecurity();
+            System.Security.Principal.NTAccount user = new System.Security.Principal.NTAccount(Environment.UserDomainName, Environment.UserName);
 
             RegistryAccessRule rule = new RegistryAccessRule(user, registryRights, InheritanceFlags.ContainerInherit | InheritanceFlags.ObjectInherit, PropagationFlags.InheritOnly, AccessControlType.Allow);
 
             regSecurity.AddAccessRule(rule);
+            regSecurity.SetOwner(user);
             regKey.SetAccessControl(regSecurity);
         }
 
