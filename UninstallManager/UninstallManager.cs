@@ -33,7 +33,6 @@ namespace Little_Registry_Cleaner.UninstallManager
 {
     public partial class UninstallManager : Form
     {
-        private ProgramList arrProgList = new ProgramList();
         private int nSortColumn = -1;
 
         public UninstallManager()
@@ -43,18 +42,6 @@ namespace Little_Registry_Cleaner.UninstallManager
 
         private void UninstallManager_Load(object sender, EventArgs e)
         {
-            using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall"))
-            {
-                foreach (string strSubKeyName in regKey.GetSubKeyNames())
-                {
-                    using (RegistryKey subKey = regKey.OpenSubKey(strSubKeyName))
-                    {
-                        if (subKey != null)
-                            arrProgList.Add(new ProgramInfo(subKey));
-                    }
-                }
-            }
-
             PopulateListView();
         }
 
@@ -65,6 +52,11 @@ namespace Little_Registry_Cleaner.UninstallManager
 
         private void PopulateListView()
         {
+            List<ProgramInfo> listProgInfo = new List<ProgramInfo>();
+
+            // Clear listview
+            this.listViewProgs.Items.Clear();
+
             // Turn textbox into regex pattern
             Regex regex = new Regex("", RegexOptions.IgnoreCase);
 
@@ -80,50 +72,59 @@ namespace Little_Registry_Cleaner.UninstallManager
                 regex = new Regex(result.ToString(), RegexOptions.IgnoreCase);
             }
 
-            ProgramList tempProgList = new ProgramList();
-            this.listViewProgs.Items.Clear();
+            // Get the program info list
+            using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall"))
+            {
+                foreach (string strSubKeyName in regKey.GetSubKeyNames())
+                {
+                    using (RegistryKey subKey = regKey.OpenSubKey(strSubKeyName))
+                    {
+                        if (subKey != null)
+                            listProgInfo.Add(new ProgramInfo(subKey));
+                    }
+                }
+            }
 
-            foreach (DictionaryEntry de in arrProgList)
+            // Populate list view
+            foreach (ProgramInfo progInfo in listProgInfo)
             {
                 ListViewItem lvi = new ListViewItem();
-                ProgramInfo objProgInfo = (ProgramInfo)de.Key;
 
                 // Display Name
-                if (!string.IsNullOrEmpty(objProgInfo.DisplayName))
-                    lvi.Text = objProgInfo.DisplayName;
-                else if (!string.IsNullOrEmpty(objProgInfo.QuietDisplayName))
-                    lvi.Text = objProgInfo.QuietDisplayName;
+                if (!string.IsNullOrEmpty(progInfo.DisplayName))
+                    lvi.Text = progInfo.DisplayName;
+                else if (!string.IsNullOrEmpty(progInfo.QuietDisplayName))
+                    lvi.Text = progInfo.QuietDisplayName;
                 else
-                    lvi.Text = objProgInfo.Key;
+                    lvi.Text = progInfo.Key;
 
                 // Publisher
-                lvi.SubItems.Add(((!string.IsNullOrEmpty(objProgInfo.DisplayName)) ? (objProgInfo.Publisher) : ("")));
+                lvi.SubItems.Add(((!string.IsNullOrEmpty(progInfo.DisplayName)) ? (progInfo.Publisher) : ("")));
 
                 // Estimated Size
-                if (objProgInfo.InstallSize > 0)
-                    lvi.SubItems.Add(Utils.ConvertSizeToString((uint)objProgInfo.InstallSize));
-                else if (objProgInfo.EstimatedSize > 0)
-                    lvi.SubItems.Add(Utils.ConvertSizeToString(objProgInfo.EstimatedSize * 1024));
+                if (progInfo.InstallSize > 0)
+                    lvi.SubItems.Add(Utils.ConvertSizeToString((uint)progInfo.InstallSize));
+                else if (progInfo.EstimatedSize > 0)
+                    lvi.SubItems.Add(Utils.ConvertSizeToString(progInfo.EstimatedSize * 1024));
                 else
                     lvi.SubItems.Add("");
 
-                if ((!string.IsNullOrEmpty(objProgInfo.DisplayName))
-                    && (string.IsNullOrEmpty(objProgInfo.ParentKeyName))
-                    && (!objProgInfo.SystemComponent))
+                if ((!string.IsNullOrEmpty(progInfo.DisplayName))
+                    && (string.IsNullOrEmpty(progInfo.ParentKeyName))
+                    && (!progInfo.SystemComponent))
                 {
-                    if (objProgInfo.Uninstallable)
+                    if (progInfo.Uninstallable)
                         lvi.ImageKey = "OK";
                     else
                         lvi.ImageKey = "ERROR";
 
+                    // Add program info to tag
+                    lvi.Tag = progInfo;
+
                     if (regex.IsMatch(lvi.Text))
                         this.listViewProgs.Items.Add(lvi);
-
-                    tempProgList.Add(objProgInfo, lvi);
                 }
             }
-
-            arrProgList = tempProgList;
 
             this.listViewProgs.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }
@@ -151,18 +152,11 @@ namespace Little_Registry_Cleaner.UninstallManager
         {
             if (this.listViewProgs.SelectedItems.Count > 0)
             {
-                foreach (DictionaryEntry de in arrProgList)
-                {
-                    ProgramInfo objProgInfo = (ProgramInfo)de.Key;
-                    ListViewItem lvi = (ListViewItem)de.Value;
+                ListViewItem lvi = this.listViewProgs.SelectedItems[0];
+                ProgramInfo progInfo = lvi.Tag as ProgramInfo;
 
-                    if (lvi.Selected)
-                    {
-                        if (MessageBox.Show(this, "Are you sure you want to uninstall this program?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                            objProgInfo.Uninstall();
-                        break;
-                    }
-                }
+                if (MessageBox.Show(this, "Are you sure you want to uninstall this program?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    progInfo.Uninstall();
 
                 PopulateListView();
             }
@@ -172,18 +166,11 @@ namespace Little_Registry_Cleaner.UninstallManager
         {
             if (this.listViewProgs.SelectedItems.Count > 0)
             {
-                foreach (DictionaryEntry de in arrProgList)
-                {
-                    ProgramInfo objProgInfo = (ProgramInfo)de.Key;
-                    ListViewItem lvi = (ListViewItem)de.Value;
+                ListViewItem lvi = this.listViewProgs.SelectedItems[0];
+                ProgramInfo progInfo = lvi.Tag as ProgramInfo;
 
-                    if (lvi.Selected)
-                    {
-                        if (MessageBox.Show(this, "Are you sure you want to remove this program from the registry?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                            objProgInfo.RemoveFromRegistry();
-                        break;
-                    }
-                }
+                if (MessageBox.Show(this, "Are you sure you want to remove this program from the registry?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    progInfo.RemoveFromRegistry();
 
                 PopulateListView();
             }
@@ -222,17 +209,10 @@ namespace Little_Registry_Cleaner.UninstallManager
         {
             if (this.listViewProgs.SelectedItems.Count > 0)
             {
-                foreach (DictionaryEntry de in arrProgList)
-                {
-                    ProgramInfo objProgInfo = (ProgramInfo)de.Key;
-                    ListViewItem lvi = (ListViewItem)de.Value;
+                ListViewItem lvi = this.listViewProgs.SelectedItems[0];
+                ProgramInfo progInfo = lvi.Tag as ProgramInfo;
 
-                    if (lvi.Selected)
-                    {
-                        this.buttonUninstall.Enabled = objProgInfo.Uninstallable;
-                        break;
-                    }
-                }
+                this.buttonUninstall.Enabled = progInfo.Uninstallable;
             }
         }
     }

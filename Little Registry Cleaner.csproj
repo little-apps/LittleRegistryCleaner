@@ -123,7 +123,6 @@
     <Compile Include="Scanners\HistoryList.cs">
     </Compile>
     <Compile Include="UninstallManager\ProgramInfo.cs" />
-    <Compile Include="UninstallManager\ProgramList.cs" />
     <Compile Include="UninstallManager\UninstallManager.cs">
       <SubType>Form</SubType>
     </Compile>
