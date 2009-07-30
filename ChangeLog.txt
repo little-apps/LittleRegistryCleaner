@@ -299,3 +299,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - No longer waits for log file to close before fixing problems
 - Tries to catch exception if an error is thrown when uninstalling a program or removing a registry key
 - Uses ListViewItem.Tag to store programinfo instead of dictionary
+- No longer sets last update date before program exits

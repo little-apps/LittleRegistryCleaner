@@ -71,9 +71,6 @@ namespace Little_Registry_Cleaner
             // Release Mutex
             mutexMain.ReleaseMutex();
 
-            // Set last time program started
-            Properties.Settings.Default.dtLastUpdate = DateTime.Now.ToBinary();
-
             // Save settings
             Properties.Settings.Default.Save();
 
