@@ -110,8 +110,8 @@ namespace Little_Registry_Cleaner
                 foreach (BadRegistryKey p in ScanDlg.arrBadRegistryKeys)
                     this.treeModel.Nodes.Add(p);
 
-                // Expand all and Resize columns 
-                this.treeViewAdvResults.ExpandAll();
+                // Collapse all and Resize columns 
+                this.treeViewAdvResults.CollapseAll();
                 this.treeViewAdvResults.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
 
                 // Show notify box
@@ -489,6 +489,7 @@ namespace Little_Registry_Cleaner
         
         #endregion
 
+        #region "Tree View Adv Events"
         private void treeViewAdvResults_SelectionChanged(object sender, EventArgs e)
         {
             if (this.treeViewAdvResults.SelectedNode == null)
@@ -502,6 +503,10 @@ namespace Little_Registry_Cleaner
             this.detailsRegView1.Data = brk.Data;
         }
 
-        
+        private void treeViewAdvResults_Expanded(object sender, TreeViewAdvEventArgs e)
+        {
+            this.treeViewAdvResults.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+        }
+        #endregion
     }
 }

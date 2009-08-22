@@ -303,3 +303,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Sets owner of registry key and uses default values instead of existing ones in grantRegistryKeyRights()
 
 + Version 1.3.3 Released
+
+- Collapses nodes instead of expanding them when finished scanning registry

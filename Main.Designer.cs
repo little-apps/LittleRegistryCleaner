@@ -67,6 +67,8 @@
             this.viewInRegeditToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.treeView1 = new System.Windows.Forms.TreeView();
             this.imageListTreeView = new System.Windows.Forms.ImageList(this.components);
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.detailsRegView1 = new Common_Tools.DetailsRegView();
@@ -111,18 +113,16 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButtonSettings = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonHelp = new System.Windows.Forms.ToolStripButton();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.treeView1 = new System.Windows.Forms.TreeView();
             this.contextMenuStrip2.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // notifyIcon1
@@ -249,6 +249,110 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(809, 405);
             this.tableLayoutPanel1.TabIndex = 9;
             // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel2.Controls.Add(this.treeView1, 0, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel2.MaximumSize = new System.Drawing.Size(173, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 405F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(173, 405);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // treeView1
+            // 
+            this.treeView1.CheckBoxes = true;
+            this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.treeView1.ImageIndex = 0;
+            this.treeView1.ImageList = this.imageListTreeView;
+            this.treeView1.Location = new System.Drawing.Point(0, 0);
+            this.treeView1.Margin = new System.Windows.Forms.Padding(0);
+            this.treeView1.Name = "treeView1";
+            treeNode1.Checked = true;
+            treeNode1.ImageKey = "activexcom.ico";
+            treeNode1.Name = "NodeActiveX";
+            treeNode1.SelectedImageKey = "activexcom.ico";
+            treeNode1.Text = "ActiveX/COM";
+            treeNode1.ToolTipText = "Locations to ActiveX and COM objects that no longer exist";
+            treeNode2.Checked = true;
+            treeNode2.ImageKey = "appinfo.ico";
+            treeNode2.Name = "NodeAppInfo";
+            treeNode2.SelectedImageKey = "appinfo.ico";
+            treeNode2.Text = "Application Info";
+            treeNode2.ToolTipText = "Currently installed applications";
+            treeNode3.Checked = true;
+            treeNode3.ImageIndex = 11;
+            treeNode3.Name = "NodeAppPaths";
+            treeNode3.SelectedImageKey = "programlocations.ico";
+            treeNode3.Text = "Program Locations";
+            treeNode3.ToolTipText = "Removes invalid application paths";
+            treeNode4.Checked = true;
+            treeNode4.ImageKey = "appinfo.ico";
+            treeNode4.Name = "NodeAppSettings";
+            treeNode4.SelectedImageKey = "appinfo.ico";
+            treeNode4.Text = "Software Settings";
+            treeNode4.ToolTipText = "Scans for software registry keys with no data";
+            treeNode5.Checked = true;
+            treeNode5.ImageKey = "startup.ico";
+            treeNode5.Name = "NodeStartup";
+            treeNode5.SelectedImageKey = "startup.ico";
+            treeNode5.Text = "Startup";
+            treeNode5.ToolTipText = "Programs that run when windows starts up";
+            treeNode6.Checked = true;
+            treeNode6.ImageKey = "drivers.ico";
+            treeNode6.Name = "NodeDrivers";
+            treeNode6.SelectedImageKey = "drivers.ico";
+            treeNode6.Text = "System Drivers";
+            treeNode6.ToolTipText = "Finds invalid references to drivers";
+            treeNode7.Checked = true;
+            treeNode7.ImageKey = "shareddlls.ico";
+            treeNode7.Name = "NodeSharedDlls";
+            treeNode7.SelectedImageKey = "shareddlls.ico";
+            treeNode7.Text = "Shared DLLs";
+            treeNode7.ToolTipText = "Scans for invalid DLL references";
+            treeNode8.Checked = true;
+            treeNode8.ImageKey = "helpfiles.ico";
+            treeNode8.Name = "NodeHelp";
+            treeNode8.SelectedImageKey = "helpfiles.ico";
+            treeNode8.Text = "Help Files";
+            treeNode8.ToolTipText = "Scans for help files that no longer exist";
+            treeNode9.Checked = true;
+            treeNode9.ImageKey = "soundevents.ico";
+            treeNode9.Name = "NodeSounds";
+            treeNode9.SelectedImageKey = "soundevents.ico";
+            treeNode9.Text = "Sound Events";
+            treeNode9.ToolTipText = "Scans for missing windows sounds";
+            treeNode10.Checked = true;
+            treeNode10.ImageKey = "historylist.ico";
+            treeNode10.Name = "NodeHistoryList";
+            treeNode10.SelectedImageKey = "historylist.ico";
+            treeNode10.Text = "History List";
+            treeNode10.ToolTipText = "Scans for missing recent documents links";
+            treeNode11.Checked = true;
+            treeNode11.ImageKey = "fonts.ico";
+            treeNode11.Name = "NodeFonts";
+            treeNode11.SelectedImageKey = "fonts.ico";
+            treeNode11.Text = "Windows Fonts";
+            treeNode11.ToolTipText = "Finds invalid font references";
+            treeNode12.Checked = true;
+            treeNode12.ImageKey = "mycomputer.ico";
+            treeNode12.Name = "Node0";
+            treeNode12.SelectedImageKey = "mycomputer.ico";
+            treeNode12.Text = "Sections to Scan";
+            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode12});
+            this.treeView1.SelectedImageIndex = 0;
+            this.treeView1.ShowNodeToolTips = true;
+            this.treeView1.Size = new System.Drawing.Size(173, 405);
+            this.treeView1.TabIndex = 0;
+            this.treeView1.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
+            // 
             // imageListTreeView
             // 
             this.imageListTreeView.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListTreeView.ImageStream")));
@@ -319,6 +423,7 @@
             this.treeViewAdvResults.Text = "treeViewAdv1";
             this.treeViewAdvResults.UseColumns = true;
             this.treeViewAdvResults.SelectionChanged += new System.EventHandler(this.treeViewAdvResults_SelectionChanged);
+            this.treeViewAdvResults.Expanded += new System.EventHandler<Common_Tools.TreeViewAdv.Tree.TreeViewAdvEventArgs>(this.treeViewAdvResults_Expanded);
             // 
             // treeColumn1
             // 
@@ -661,110 +766,6 @@
             this.toolStripButtonHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripButtonHelp.Click += new System.EventHandler(this.LaunchHelpFile);
             // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 1;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.Controls.Add(this.treeView1, 0, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel2.MaximumSize = new System.Drawing.Size(173, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(173, 405);
-            this.tableLayoutPanel2.TabIndex = 0;
-            // 
-            // treeView1
-            // 
-            this.treeView1.CheckBoxes = true;
-            this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.treeView1.ImageIndex = 0;
-            this.treeView1.ImageList = this.imageListTreeView;
-            this.treeView1.Location = new System.Drawing.Point(0, 0);
-            this.treeView1.Margin = new System.Windows.Forms.Padding(0);
-            this.treeView1.Name = "treeView1";
-            treeNode1.Checked = true;
-            treeNode1.ImageKey = "activexcom.ico";
-            treeNode1.Name = "NodeActiveX";
-            treeNode1.SelectedImageKey = "activexcom.ico";
-            treeNode1.Text = "ActiveX/COM";
-            treeNode1.ToolTipText = "Locations to ActiveX and COM objects that no longer exist";
-            treeNode2.Checked = true;
-            treeNode2.ImageKey = "appinfo.ico";
-            treeNode2.Name = "NodeAppInfo";
-            treeNode2.SelectedImageKey = "appinfo.ico";
-            treeNode2.Text = "Application Info";
-            treeNode2.ToolTipText = "Currently installed applications";
-            treeNode3.Checked = true;
-            treeNode3.ImageIndex = 11;
-            treeNode3.Name = "NodeAppPaths";
-            treeNode3.SelectedImageKey = "programlocations.ico";
-            treeNode3.Text = "Program Locations";
-            treeNode3.ToolTipText = "Removes invalid application paths";
-            treeNode4.Checked = true;
-            treeNode4.ImageKey = "appinfo.ico";
-            treeNode4.Name = "NodeAppSettings";
-            treeNode4.SelectedImageKey = "appinfo.ico";
-            treeNode4.Text = "Software Settings";
-            treeNode4.ToolTipText = "Scans for software registry keys with no data";
-            treeNode5.Checked = true;
-            treeNode5.ImageKey = "startup.ico";
-            treeNode5.Name = "NodeStartup";
-            treeNode5.SelectedImageKey = "startup.ico";
-            treeNode5.Text = "Startup";
-            treeNode5.ToolTipText = "Programs that run when windows starts up";
-            treeNode6.Checked = true;
-            treeNode6.ImageKey = "drivers.ico";
-            treeNode6.Name = "NodeDrivers";
-            treeNode6.SelectedImageKey = "drivers.ico";
-            treeNode6.Text = "System Drivers";
-            treeNode6.ToolTipText = "Finds invalid references to drivers";
-            treeNode7.Checked = true;
-            treeNode7.ImageKey = "shareddlls.ico";
-            treeNode7.Name = "NodeSharedDlls";
-            treeNode7.SelectedImageKey = "shareddlls.ico";
-            treeNode7.Text = "Shared DLLs";
-            treeNode7.ToolTipText = "Scans for invalid DLL references";
-            treeNode8.Checked = true;
-            treeNode8.ImageKey = "helpfiles.ico";
-            treeNode8.Name = "NodeHelp";
-            treeNode8.SelectedImageKey = "helpfiles.ico";
-            treeNode8.Text = "Help Files";
-            treeNode8.ToolTipText = "Scans for help files that no longer exist";
-            treeNode9.Checked = true;
-            treeNode9.ImageKey = "soundevents.ico";
-            treeNode9.Name = "NodeSounds";
-            treeNode9.SelectedImageKey = "soundevents.ico";
-            treeNode9.Text = "Sound Events";
-            treeNode9.ToolTipText = "Scans for missing windows sounds";
-            treeNode10.Checked = true;
-            treeNode10.ImageKey = "historylist.ico";
-            treeNode10.Name = "NodeHistoryList";
-            treeNode10.SelectedImageKey = "historylist.ico";
-            treeNode10.Text = "History List";
-            treeNode10.ToolTipText = "Scans for missing recent documents links";
-            treeNode11.Checked = true;
-            treeNode11.ImageKey = "fonts.ico";
-            treeNode11.Name = "NodeFonts";
-            treeNode11.SelectedImageKey = "fonts.ico";
-            treeNode11.Text = "Windows Fonts";
-            treeNode11.ToolTipText = "Finds invalid font references";
-            treeNode12.Checked = true;
-            treeNode12.ImageKey = "mycomputer.ico";
-            treeNode12.Name = "Node0";
-            treeNode12.SelectedImageKey = "mycomputer.ico";
-            treeNode12.Text = "Sections to Scan";
-            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode12});
-            this.treeView1.SelectedImageIndex = 0;
-            this.treeView1.ShowNodeToolTips = true;
-            this.treeView1.Size = new System.Drawing.Size(173, 405);
-            this.treeView1.TabIndex = 0;
-            this.treeView1.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
-            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -788,12 +789,12 @@
             this.toolStripContainer1.ResumeLayout(false);
             this.toolStripContainer1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
