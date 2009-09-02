@@ -50,6 +50,13 @@ namespace Little_Registry_Cleaner
             if (!EventLog.SourceExists(Application.ProductName))
                 EventLog.CreateEventSource(Application.ProductName, "Application");
 
+            // If application is being ran for first time or is newer version, then upgrade settings
+            if (Properties.Settings.Default.bUpgradeSettings)
+            {
+                Properties.Settings.Default.Upgrade();
+                Properties.Settings.Default.bUpgradeSettings = false;
+            }
+
 //#if (!DEBUG)
             // Add event handler for thread exceptions
             AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);

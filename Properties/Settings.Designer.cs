@@ -160,5 +160,17 @@ namespace Little_Registry_Cleaner.Properties {
                 this["nProgramStarts"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool bUpgradeSettings {
+            get {
+                return ((bool)(this["bUpgradeSettings"]));
+            }
+            set {
+                this["bUpgradeSettings"] = value;
+            }
+        }
     }
 }
