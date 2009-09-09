@@ -77,6 +77,7 @@
             this.treeColumn2 = new Common_Tools.TreeViewAdv.Tree.TreeColumn();
             this.treeColumn3 = new Common_Tools.TreeViewAdv.Tree.TreeColumn();
             this.nodeCheckBox = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeCheckBox();
+            this.nodeIcon = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeIcon();
             this.nodeSection = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
             this.nodeProblem = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
             this.nodeLocation = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
@@ -412,6 +413,7 @@
             this.treeViewAdvResults.Model = null;
             this.treeViewAdvResults.Name = "treeViewAdvResults";
             this.treeViewAdvResults.NodeControls.Add(this.nodeCheckBox);
+            this.treeViewAdvResults.NodeControls.Add(this.nodeIcon);
             this.treeViewAdvResults.NodeControls.Add(this.nodeSection);
             this.treeViewAdvResults.NodeControls.Add(this.nodeProblem);
             this.treeViewAdvResults.NodeControls.Add(this.nodeLocation);
@@ -451,6 +453,12 @@
             this.nodeCheckBox.DataPropertyName = "Checked";
             this.nodeCheckBox.LeftMargin = 0;
             this.nodeCheckBox.ParentColumn = this.treeColumn1;
+            // 
+            // nodeIcon
+            // 
+            this.nodeIcon.DataPropertyName = "Img";
+            this.nodeIcon.LeftMargin = 1;
+            this.nodeIcon.ParentColumn = this.treeColumn1;
             // 
             // nodeSection
             // 
@@ -861,6 +869,7 @@
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TreeView treeView1;
+        private Common_Tools.TreeViewAdv.Tree.NodeControls.NodeIcon nodeIcon;
     }
 }
 

@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ScanDlg));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.progressBar = new Common_Tools.XpProgressBar();
             this.labelProblems = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonStop = new System.Windows.Forms.Button();
             this.textBoxSubKey = new System.Windows.Forms.TextBox();
+            this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,6 +106,22 @@
             this.textBoxSubKey.Size = new System.Drawing.Size(367, 40);
             this.textBoxSubKey.TabIndex = 1;
             // 
+            // imageList
+            // 
+            this.imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList.ImageStream")));
+            this.imageList.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList.Images.SetKeyName(0, "ActiveX/COM Objects");
+            this.imageList.Images.SetKeyName(1, "Application Info");
+            this.imageList.Images.SetKeyName(2, "System Drivers");
+            this.imageList.Images.SetKeyName(3, "Windows Fonts");
+            this.imageList.Images.SetKeyName(4, "Windows Help Files");
+            this.imageList.Images.SetKeyName(5, "Recent Documents");
+            this.imageList.Images.SetKeyName(6, "programlocations.ico");
+            this.imageList.Images.SetKeyName(7, "Shared DLLs");
+            this.imageList.Images.SetKeyName(8, "Application Settings");
+            this.imageList.Images.SetKeyName(9, "Windows Sounds");
+            this.imageList.Images.SetKeyName(10, "Startup Files");
+            // 
             // ScanDlg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -134,5 +153,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelProblems;
         private Common_Tools.XpProgressBar progressBar;
+        private System.Windows.Forms.ImageList imageList;
     }
 }

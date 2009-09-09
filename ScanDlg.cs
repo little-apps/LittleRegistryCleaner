@@ -174,6 +174,7 @@ namespace Little_Registry_Cleaner
 
             // Update section name
             scannerName.RootNode.SectionName = scannerName.ScannerName;
+            scannerName.RootNode.Img = this.imageList.Images[scannerName.ScannerName];
             this.UpdateSection(scannerName.ScannerName);
 
             // Start scanning

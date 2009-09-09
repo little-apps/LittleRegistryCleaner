@@ -20,6 +20,7 @@ using System;
 using System.Collections;
 using System.Windows.Forms;
 using System.Text;
+using System.Drawing;
 using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner
@@ -28,6 +29,7 @@ namespace Little_Registry_Cleaner
     {
         #region Properties
         private CheckState _bChecked = CheckState.Checked;
+        private Image _icon;
         private string _strProblem = "";
         private string _strValueName = "";
         private string _strSectionName = "";
@@ -44,6 +46,12 @@ namespace Little_Registry_Cleaner
         public new bool IsLeaf
         {
             get { return string.IsNullOrEmpty(this._strSectionName); }
+        }
+
+        public Image Img
+        {
+            set { _icon = value; }
+            get { return _icon; }
         }
 
         /// <summary>
