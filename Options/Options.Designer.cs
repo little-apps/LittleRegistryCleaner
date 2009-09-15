@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Options));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.checkBoxShowLog = new System.Windows.Forms.CheckBox();
             this.checkBoxRemDrives = new System.Windows.Forms.CheckBox();
@@ -75,120 +76,77 @@
             this.groupBox1.Controls.Add(this.checkBoxDeleteBackup);
             this.groupBox1.Controls.Add(this.checkBoxRescan);
             this.groupBox1.Controls.Add(this.checkBoxLog);
-            this.groupBox1.Location = new System.Drawing.Point(6, 112);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(444, 110);
-            this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Options";
             // 
             // checkBoxShowLog
             // 
-            this.checkBoxShowLog.AutoSize = true;
-            this.checkBoxShowLog.Location = new System.Drawing.Point(197, 19);
+            resources.ApplyResources(this.checkBoxShowLog, "checkBoxShowLog");
             this.checkBoxShowLog.Name = "checkBoxShowLog";
-            this.checkBoxShowLog.Size = new System.Drawing.Size(179, 17);
-            this.checkBoxShowLog.TabIndex = 1;
-            this.checkBoxShowLog.Text = "Show log after finished scanning";
             this.checkBoxShowLog.UseVisualStyleBackColor = true;
             // 
             // checkBoxRemDrives
             // 
-            this.checkBoxRemDrives.AutoSize = true;
-            this.checkBoxRemDrives.Location = new System.Drawing.Point(197, 65);
+            resources.ApplyResources(this.checkBoxRemDrives, "checkBoxRemDrives");
             this.checkBoxRemDrives.Name = "checkBoxRemDrives";
-            this.checkBoxRemDrives.Size = new System.Drawing.Size(212, 17);
-            this.checkBoxRemDrives.TabIndex = 5;
-            this.checkBoxRemDrives.Text = "Ignore missing files on removable media";
             this.checkBoxRemDrives.UseVisualStyleBackColor = true;
             // 
             // checkBoxAutoUpdate
             // 
-            this.checkBoxAutoUpdate.AutoSize = true;
-            this.checkBoxAutoUpdate.Location = new System.Drawing.Point(10, 65);
+            resources.ApplyResources(this.checkBoxAutoUpdate, "checkBoxAutoUpdate");
             this.checkBoxAutoUpdate.Name = "checkBoxAutoUpdate";
-            this.checkBoxAutoUpdate.Size = new System.Drawing.Size(177, 17);
-            this.checkBoxAutoUpdate.TabIndex = 4;
-            this.checkBoxAutoUpdate.Text = "Check for updates automatically";
             this.checkBoxAutoUpdate.UseVisualStyleBackColor = true;
             // 
             // checkBoxRestore
             // 
-            this.checkBoxRestore.AutoSize = true;
-            this.checkBoxRestore.Location = new System.Drawing.Point(10, 87);
+            resources.ApplyResources(this.checkBoxRestore, "checkBoxRestore");
             this.checkBoxRestore.Name = "checkBoxRestore";
-            this.checkBoxRestore.Size = new System.Drawing.Size(222, 17);
-            this.checkBoxRestore.TabIndex = 6;
-            this.checkBoxRestore.Text = "Create system restore points automatically";
             this.checkBoxRestore.UseVisualStyleBackColor = true;
             // 
             // checkBoxDeleteBackup
             // 
-            this.checkBoxDeleteBackup.AutoSize = true;
-            this.checkBoxDeleteBackup.Location = new System.Drawing.Point(197, 42);
+            resources.ApplyResources(this.checkBoxDeleteBackup, "checkBoxDeleteBackup");
             this.checkBoxDeleteBackup.Name = "checkBoxDeleteBackup";
-            this.checkBoxDeleteBackup.Size = new System.Drawing.Size(236, 17);
-            this.checkBoxDeleteBackup.TabIndex = 3;
-            this.checkBoxDeleteBackup.Text = "Delete backup file after restoring the registry ";
             this.checkBoxDeleteBackup.UseVisualStyleBackColor = true;
             // 
             // checkBoxRescan
             // 
-            this.checkBoxRescan.AutoSize = true;
-            this.checkBoxRescan.Location = new System.Drawing.Point(10, 42);
+            resources.ApplyResources(this.checkBoxRescan, "checkBoxRescan");
             this.checkBoxRescan.Name = "checkBoxRescan";
-            this.checkBoxRescan.Size = new System.Drawing.Size(190, 17);
-            this.checkBoxRescan.TabIndex = 2;
-            this.checkBoxRescan.Text = "Re-Scan after fixing registry issues ";
             this.checkBoxRescan.UseVisualStyleBackColor = true;
             // 
             // checkBoxLog
             // 
-            this.checkBoxLog.AutoSize = true;
-            this.checkBoxLog.Location = new System.Drawing.Point(10, 19);
+            resources.ApplyResources(this.checkBoxLog, "checkBoxLog");
             this.checkBoxLog.Name = "checkBoxLog";
-            this.checkBoxLog.Size = new System.Drawing.Size(156, 17);
-            this.checkBoxLog.TabIndex = 0;
-            this.checkBoxLog.Text = "Log registry scans and fixes";
             this.checkBoxLog.UseVisualStyleBackColor = true;
             this.checkBoxLog.CheckedChanged += new System.EventHandler(this.checkBoxLog_CheckedChanged);
             // 
             // buttonOK
             // 
-            this.buttonOK.Location = new System.Drawing.Point(369, 272);
+            resources.ApplyResources(this.buttonOK, "buttonOK");
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(45, 23);
-            this.buttonOK.TabIndex = 1;
-            this.buttonOK.Text = "OK";
             this.buttonOK.UseVisualStyleBackColor = true;
             this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
             // 
             // buttonCancel
             // 
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Location = new System.Drawing.Point(420, 272);
+            resources.ApplyResources(this.buttonCancel, "buttonCancel");
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(59, 23);
-            this.buttonCancel.TabIndex = 2;
-            this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
             // 
             // textBoxBackupFolder
             // 
-            this.textBoxBackupFolder.Location = new System.Drawing.Point(6, 19);
-            this.textBoxBackupFolder.MaxLength = 260;
+            resources.ApplyResources(this.textBoxBackupFolder, "textBoxBackupFolder");
             this.textBoxBackupFolder.Name = "textBoxBackupFolder";
             this.textBoxBackupFolder.ReadOnly = true;
-            this.textBoxBackupFolder.Size = new System.Drawing.Size(361, 20);
-            this.textBoxBackupFolder.TabIndex = 0;
             // 
             // buttonBrowse1
             // 
-            this.buttonBrowse1.Location = new System.Drawing.Point(373, 16);
+            resources.ApplyResources(this.buttonBrowse1, "buttonBrowse1");
             this.buttonBrowse1.Name = "buttonBrowse1";
-            this.buttonBrowse1.Size = new System.Drawing.Size(68, 23);
-            this.buttonBrowse1.TabIndex = 1;
-            this.buttonBrowse1.Text = "Browse...";
             this.buttonBrowse1.UseVisualStyleBackColor = true;
             this.buttonBrowse1.Click += new System.EventHandler(this.buttonBrowse_Click);
             // 
@@ -196,103 +154,74 @@
             // 
             this.groupBox2.Controls.Add(this.textBoxBackupFolder);
             this.groupBox2.Controls.Add(this.buttonBrowse1);
-            this.groupBox2.Location = new System.Drawing.Point(6, 6);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(444, 47);
-            this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Select a folder to backup deleted registry entries ";
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(464, 254);
-            this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.groupBox3);
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Controls.Add(this.groupBox2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(456, 228);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "General";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.buttonBrowse2);
             this.groupBox3.Controls.Add(this.textBoxLogFolder);
-            this.groupBox3.Location = new System.Drawing.Point(6, 59);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(444, 47);
-            this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Select a folder to save the log files to";
             // 
             // buttonBrowse2
             // 
-            this.buttonBrowse2.Location = new System.Drawing.Point(374, 16);
+            resources.ApplyResources(this.buttonBrowse2, "buttonBrowse2");
             this.buttonBrowse2.Name = "buttonBrowse2";
-            this.buttonBrowse2.Size = new System.Drawing.Size(67, 23);
-            this.buttonBrowse2.TabIndex = 1;
-            this.buttonBrowse2.Text = "Browse...";
             this.buttonBrowse2.UseVisualStyleBackColor = true;
             this.buttonBrowse2.Click += new System.EventHandler(this.buttonBrowse2_Click);
             // 
             // textBoxLogFolder
             // 
-            this.textBoxLogFolder.Location = new System.Drawing.Point(6, 19);
-            this.textBoxLogFolder.MaxLength = 260;
+            resources.ApplyResources(this.textBoxLogFolder, "textBoxLogFolder");
             this.textBoxLogFolder.Name = "textBoxLogFolder";
             this.textBoxLogFolder.ReadOnly = true;
-            this.textBoxLogFolder.Size = new System.Drawing.Size(361, 20);
-            this.textBoxLogFolder.TabIndex = 0;
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Controls.Add(this.listView1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(456, 228);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Ignore List";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 6);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Right click to add/remove entries";
             // 
             // listView1
             // 
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1});
             this.listView1.ContextMenuStrip = this.contextMenuStrip1;
-            this.listView1.Location = new System.Drawing.Point(6, 22);
+            resources.ApplyResources(this.listView1, "listView1");
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(444, 200);
-            this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Files and folders to exclude";
-            this.columnHeader1.Width = 437;
+            resources.ApplyResources(this.columnHeader1, "columnHeader1");
             // 
             // contextMenuStrip1
             // 
@@ -303,48 +232,43 @@
             this.toolStripSeparator1,
             this.removeEntryToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(169, 98);
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             // 
             // addFileToolStripMenuItem
             // 
             this.addFileToolStripMenuItem.Name = "addFileToolStripMenuItem";
-            this.addFileToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.addFileToolStripMenuItem.Text = "Add File";
+            resources.ApplyResources(this.addFileToolStripMenuItem, "addFileToolStripMenuItem");
             this.addFileToolStripMenuItem.Click += new System.EventHandler(this.addFileToolStripMenuItem_Click);
             // 
             // addFolderToolStripMenuItem
             // 
             this.addFolderToolStripMenuItem.Name = "addFolderToolStripMenuItem";
-            this.addFolderToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.addFolderToolStripMenuItem.Text = "Add Folder";
+            resources.ApplyResources(this.addFolderToolStripMenuItem, "addFolderToolStripMenuItem");
             this.addFolderToolStripMenuItem.Click += new System.EventHandler(this.addFolderToolStripMenuItem_Click);
             // 
             // addRegistryPathToolStripMenuItem
             // 
             this.addRegistryPathToolStripMenuItem.Name = "addRegistryPathToolStripMenuItem";
-            this.addRegistryPathToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.addRegistryPathToolStripMenuItem.Text = "Add Registry Path";
+            resources.ApplyResources(this.addRegistryPathToolStripMenuItem, "addRegistryPathToolStripMenuItem");
             this.addRegistryPathToolStripMenuItem.Click += new System.EventHandler(this.addRegistryPathToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(165, 6);
+            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             // 
             // removeEntryToolStripMenuItem
             // 
             this.removeEntryToolStripMenuItem.Name = "removeEntryToolStripMenuItem";
-            this.removeEntryToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.removeEntryToolStripMenuItem.Text = "Remove Entry";
+            resources.ApplyResources(this.removeEntryToolStripMenuItem, "removeEntryToolStripMenuItem");
             this.removeEntryToolStripMenuItem.Click += new System.EventHandler(this.removeEntryToolStripMenuItem_Click);
             // 
             // Options
             // 
             this.AcceptButton = this.buttonOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(488, 304);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.buttonOK);
             this.Controls.Add(this.buttonCancel);
@@ -355,7 +279,6 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "Little Registry Cleaner - Options";
             this.Load += new System.EventHandler(this.Options_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

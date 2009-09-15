@@ -67,7 +67,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="TreeViewAdv\BitmapHelper.cs" />
-    <Compile Include="TreeViewAdv\GifDecoder.cs" />
     <Compile Include="TreeViewAdv\NumericTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -107,9 +106,6 @@
     </Compile>
     <Compile Include="TreeViewAdv\Tree\NodeControls\DrawEventArgs.cs" />
     <Compile Include="TreeViewAdv\Tree\NodeControls\EditableControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="TreeViewAdv\Tree\NodeControls\ExpandingIcon.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="TreeViewAdv\Tree\NodeControls\InteractiveControl.cs">

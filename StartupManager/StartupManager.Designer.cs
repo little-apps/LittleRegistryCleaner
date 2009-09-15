@@ -63,13 +63,9 @@
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.tableLayoutPanel1);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(717, 382);
-            this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.toolStripContainer1.ContentPanel, "toolStripContainer1.ContentPanel");
+            resources.ApplyResources(this.toolStripContainer1, "toolStripContainer1");
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(717, 436);
-            this.toolStripContainer1.TabIndex = 0;
-            this.toolStripContainer1.Text = "toolStripContainer1";
             // 
             // toolStripContainer1.TopToolStripPanel
             // 
@@ -77,16 +73,9 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 717F));
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.treeViewAdv1, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(717, 382);
-            this.tableLayoutPanel1.TabIndex = 1;
             // 
             // treeViewAdv1
             // 
@@ -95,12 +84,11 @@
             this.treeViewAdv1.Columns.Add(this.treeColumn2);
             this.treeViewAdv1.Columns.Add(this.treeColumn3);
             this.treeViewAdv1.DefaultToolTipProvider = null;
-            this.treeViewAdv1.Dock = System.Windows.Forms.DockStyle.Fill;
+            resources.ApplyResources(this.treeViewAdv1, "treeViewAdv1");
             this.treeViewAdv1.DragDropMarkColor = System.Drawing.Color.Black;
             this.treeViewAdv1.FullRowSelect = true;
             this.treeViewAdv1.GridLineStyle = Common_Tools.TreeViewAdv.Tree.GridLineStyle.Horizontal;
             this.treeViewAdv1.LineColor = System.Drawing.SystemColors.ControlDark;
-            this.treeViewAdv1.Location = new System.Drawing.Point(3, 3);
             this.treeViewAdv1.Model = null;
             this.treeViewAdv1.Name = "treeViewAdv1";
             this.treeViewAdv1.NodeControls.Add(this.nodeIcon1);
@@ -109,26 +97,23 @@
             this.treeViewAdv1.NodeControls.Add(this.nodeTextBoxPath);
             this.treeViewAdv1.NodeControls.Add(this.nodeTextBoxArgs);
             this.treeViewAdv1.SelectedNode = null;
-            this.treeViewAdv1.Size = new System.Drawing.Size(711, 376);
-            this.treeViewAdv1.TabIndex = 0;
-            this.treeViewAdv1.Text = "treeViewAdv1";
             this.treeViewAdv1.UseColumns = true;
             // 
             // treeColumn1
             // 
-            this.treeColumn1.Header = "Section";
+            resources.ApplyResources(this.treeColumn1, "treeColumn1");
             this.treeColumn1.SortOrder = System.Windows.Forms.SortOrder.None;
             this.treeColumn1.TooltipText = null;
             // 
             // treeColumn2
             // 
-            this.treeColumn2.Header = "Path";
+            resources.ApplyResources(this.treeColumn2, "treeColumn2");
             this.treeColumn2.SortOrder = System.Windows.Forms.SortOrder.None;
             this.treeColumn2.TooltipText = null;
             // 
             // treeColumn3
             // 
-            this.treeColumn3.Header = "Arguments";
+            resources.ApplyResources(this.treeColumn3, "treeColumn3");
             this.treeColumn3.SortOrder = System.Windows.Forms.SortOrder.None;
             this.treeColumn3.TooltipText = null;
             // 
@@ -173,7 +158,7 @@
             // 
             // toolStrip1
             // 
-            this.toolStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -184,75 +169,48 @@
             this.toolStripButtonRun,
             this.toolStripSeparator1,
             this.toolStripButtonRefresh});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(717, 54);
             this.toolStrip1.Stretch = true;
-            this.toolStrip1.TabIndex = 0;
             // 
             // toolStripButtonAdd
             // 
-            this.toolStripButtonAdd.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonAdd.Image")));
-            this.toolStripButtonAdd.ImageTransparentColor = System.Drawing.Color.Magenta;
+            resources.ApplyResources(this.toolStripButtonAdd, "toolStripButtonAdd");
             this.toolStripButtonAdd.Name = "toolStripButtonAdd";
-            this.toolStripButtonAdd.Size = new System.Drawing.Size(36, 51);
-            this.toolStripButtonAdd.Text = "Add";
-            this.toolStripButtonAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripButtonAdd.Click += new System.EventHandler(this.toolStripButtonAdd_Click);
             // 
             // toolStripButtonEdit
             // 
-            this.toolStripButtonEdit.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonEdit.Image")));
-            this.toolStripButtonEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
+            resources.ApplyResources(this.toolStripButtonEdit, "toolStripButtonEdit");
             this.toolStripButtonEdit.Name = "toolStripButtonEdit";
-            this.toolStripButtonEdit.Size = new System.Drawing.Size(36, 51);
-            this.toolStripButtonEdit.Text = "Edit";
-            this.toolStripButtonEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripButtonEdit.Click += new System.EventHandler(this.toolStripButtonEdit_Click);
             // 
             // toolStripButtonDelete
             // 
-            this.toolStripButtonDelete.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonDelete.Image")));
-            this.toolStripButtonDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
+            resources.ApplyResources(this.toolStripButtonDelete, "toolStripButtonDelete");
             this.toolStripButtonDelete.Name = "toolStripButtonDelete";
-            this.toolStripButtonDelete.Size = new System.Drawing.Size(44, 51);
-            this.toolStripButtonDelete.Text = "Delete";
-            this.toolStripButtonDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripButtonDelete.Click += new System.EventHandler(this.toolStripButtonDelete_Click);
             // 
             // toolStripButtonView
             // 
-            this.toolStripButtonView.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonView.Image")));
-            this.toolStripButtonView.ImageTransparentColor = System.Drawing.Color.Magenta;
+            resources.ApplyResources(this.toolStripButtonView, "toolStripButtonView");
             this.toolStripButtonView.Name = "toolStripButtonView";
-            this.toolStripButtonView.Size = new System.Drawing.Size(63, 51);
-            this.toolStripButtonView.Text = "View Item";
-            this.toolStripButtonView.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripButtonView.Click += new System.EventHandler(this.toolStripButtonView_Click);
             // 
             // toolStripButtonRun
             // 
-            this.toolStripButtonRun.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonRun.Image")));
-            this.toolStripButtonRun.ImageTransparentColor = System.Drawing.Color.Magenta;
+            resources.ApplyResources(this.toolStripButtonRun, "toolStripButtonRun");
             this.toolStripButtonRun.Name = "toolStripButtonRun";
-            this.toolStripButtonRun.Size = new System.Drawing.Size(36, 51);
-            this.toolStripButtonRun.Text = "Run";
-            this.toolStripButtonRun.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripButtonRun.Click += new System.EventHandler(this.toolStripButtonRun_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 54);
+            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
             // 
             // toolStripButtonRefresh
             // 
-            this.toolStripButtonRefresh.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonRefresh.Image")));
-            this.toolStripButtonRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
+            resources.ApplyResources(this.toolStripButtonRefresh, "toolStripButtonRefresh");
             this.toolStripButtonRefresh.Name = "toolStripButtonRefresh";
-            this.toolStripButtonRefresh.Size = new System.Drawing.Size(50, 51);
-            this.toolStripButtonRefresh.Text = "Refresh";
-            this.toolStripButtonRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripButtonRefresh.Click += new System.EventHandler(this.toolStripButtonRefresh_Click);
             // 
             // imageList
@@ -264,16 +222,14 @@
             // 
             // StartupManager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(717, 436);
             this.Controls.Add(this.toolStripContainer1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "StartupManager";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "Little Registry Cleaner - Startup Manager";
             this.Load += new System.EventHandler(this.StartupManager_Load);
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);
             this.toolStripContainer1.TopToolStripPanel.ResumeLayout(false);

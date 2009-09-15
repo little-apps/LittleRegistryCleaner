@@ -47,10 +47,8 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.buttonStop);
             this.groupBox1.Controls.Add(this.textBoxSubKey);
-            this.groupBox1.Location = new System.Drawing.Point(12, 9);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(379, 111);
-            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
             // progressBar
@@ -59,52 +57,35 @@
             this.progressBar.ColorBarBorder = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(240)))), ((int)(((byte)(170)))));
             this.progressBar.ColorBarCenter = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(150)))), ((int)(((byte)(10)))));
             this.progressBar.ColorText = System.Drawing.Color.Black;
-            this.progressBar.Location = new System.Drawing.Point(6, 32);
+            resources.ApplyResources(this.progressBar, "progressBar");
             this.progressBar.Name = "progressBar";
             this.progressBar.Position = 0;
             this.progressBar.PositionMax = 100;
             this.progressBar.PositionMin = 0;
-            this.progressBar.Size = new System.Drawing.Size(300, 24);
             this.progressBar.SteepDistance = ((byte)(0));
-            this.progressBar.TabIndex = 2;
             // 
             // labelProblems
             // 
-            this.labelProblems.Location = new System.Drawing.Point(91, 16);
+            resources.ApplyResources(this.labelProblems, "labelProblems");
             this.labelProblems.Name = "labelProblems";
-            this.labelProblems.Size = new System.Drawing.Size(67, 13);
-            this.labelProblems.TabIndex = 4;
-            this.labelProblems.Text = "0";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 16);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(89, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Problems Found: ";
             // 
             // buttonStop
             // 
-            this.buttonStop.Location = new System.Drawing.Point(316, 33);
+            resources.ApplyResources(this.buttonStop, "buttonStop");
             this.buttonStop.Name = "buttonStop";
-            this.buttonStop.Size = new System.Drawing.Size(57, 23);
-            this.buttonStop.TabIndex = 0;
-            this.buttonStop.Text = "Stop";
             this.buttonStop.UseVisualStyleBackColor = true;
             this.buttonStop.Click += new System.EventHandler(this.buttonStop_Click);
             // 
             // textBoxSubKey
             // 
-            this.textBoxSubKey.Location = new System.Drawing.Point(6, 62);
-            this.textBoxSubKey.Multiline = true;
+            resources.ApplyResources(this.textBoxSubKey, "textBoxSubKey");
             this.textBoxSubKey.Name = "textBoxSubKey";
             this.textBoxSubKey.ReadOnly = true;
-            this.textBoxSubKey.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBoxSubKey.Size = new System.Drawing.Size(367, 40);
-            this.textBoxSubKey.TabIndex = 1;
             // 
             // imageList
             // 
@@ -124,9 +105,8 @@
             // 
             // ScanDlg
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(403, 129);
             this.Controls.Add(this.groupBox1);
             this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -135,8 +115,6 @@
             this.Name = "ScanDlg";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Little Registry Cleaner - Scanning...";
             this.Shown += new System.EventHandler(this.ScanDlg_Shown);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ScanDlg_FormClosing);
             this.groupBox1.ResumeLayout(false);

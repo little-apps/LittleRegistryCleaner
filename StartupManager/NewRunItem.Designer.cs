@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewRunItem));
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonOk = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -46,21 +47,15 @@
             // buttonCancel
             // 
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Location = new System.Drawing.Point(236, 130);
+            resources.ApplyResources(this.buttonCancel, "buttonCancel");
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(48, 23);
-            this.buttonCancel.TabIndex = 1;
-            this.buttonCancel.Text = "Cancel";
             this.buttonCancel.UseVisualStyleBackColor = true;
             // 
             // buttonOk
             // 
             this.buttonOk.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.buttonOk.Location = new System.Drawing.Point(190, 130);
+            resources.ApplyResources(this.buttonOk, "buttonOk");
             this.buttonOk.Name = "buttonOk";
-            this.buttonOk.Size = new System.Drawing.Size(40, 23);
-            this.buttonOk.TabIndex = 0;
-            this.buttonOk.Text = "OK";
             this.buttonOk.UseVisualStyleBackColor = true;
             this.buttonOk.Click += new System.EventHandler(this.buttonOk_Click);
             // 
@@ -73,108 +68,77 @@
             this.groupBox1.Controls.Add(this.textBoxName);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 33);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(272, 91);
-            this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Name and Path";
             // 
             // textBoxArgs
             // 
-            this.textBoxArgs.Location = new System.Drawing.Point(66, 62);
+            resources.ApplyResources(this.textBoxArgs, "textBoxArgs");
             this.textBoxArgs.Name = "textBoxArgs";
-            this.textBoxArgs.Size = new System.Drawing.Size(200, 20);
-            this.textBoxArgs.TabIndex = 6;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 65);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Arguments:";
             // 
             // textBoxPath
             // 
-            this.textBoxPath.Location = new System.Drawing.Point(55, 40);
+            resources.ApplyResources(this.textBoxPath, "textBoxPath");
             this.textBoxPath.Name = "textBoxPath";
             this.textBoxPath.ReadOnly = true;
-            this.textBoxPath.Size = new System.Drawing.Size(177, 20);
-            this.textBoxPath.TabIndex = 3;
             // 
             // buttonFileDlg
             // 
-            this.buttonFileDlg.Location = new System.Drawing.Point(238, 37);
+            resources.ApplyResources(this.buttonFileDlg, "buttonFileDlg");
             this.buttonFileDlg.Name = "buttonFileDlg";
-            this.buttonFileDlg.Size = new System.Drawing.Size(28, 23);
-            this.buttonFileDlg.TabIndex = 4;
-            this.buttonFileDlg.Text = "...";
             this.buttonFileDlg.UseVisualStyleBackColor = true;
             this.buttonFileDlg.Click += new System.EventHandler(this.buttonFileDlg_Click);
             // 
             // textBoxName
             // 
-            this.textBoxName.Location = new System.Drawing.Point(42, 17);
+            resources.ApplyResources(this.textBoxName, "textBoxName");
             this.textBoxName.Name = "textBoxName";
-            this.textBoxName.Size = new System.Drawing.Size(224, 20);
-            this.textBoxName.TabIndex = 1;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 43);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "File path:";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 20);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Name:";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 9);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 13);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Section:";
             // 
             // comboBoxSection
             // 
             this.comboBoxSection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSection.FormattingEnabled = true;
             this.comboBoxSection.Items.AddRange(new object[] {
-            "StartUp\\All Users",
-            "StartUp\\Current User",
-            "Registry\\All Users\\Run",
-            "Registry\\All Users\\Run Once",
-            "Registry\\All Users\\Run Services",
-            "Registry\\All Users\\Run Services Once",
-            "Registry\\Current User\\Run",
-            "Registry\\Current User\\Run Once",
-            "Registry\\Current User\\Run Services",
-            "Registry\\Current User\\Run Services Once"});
-            this.comboBoxSection.Location = new System.Drawing.Point(57, 6);
+            resources.GetString("comboBoxSection.Items"),
+            resources.GetString("comboBoxSection.Items1"),
+            resources.GetString("comboBoxSection.Items2"),
+            resources.GetString("comboBoxSection.Items3"),
+            resources.GetString("comboBoxSection.Items4"),
+            resources.GetString("comboBoxSection.Items5"),
+            resources.GetString("comboBoxSection.Items6"),
+            resources.GetString("comboBoxSection.Items7"),
+            resources.GetString("comboBoxSection.Items8"),
+            resources.GetString("comboBoxSection.Items9")});
+            resources.ApplyResources(this.comboBoxSection, "comboBoxSection");
             this.comboBoxSection.Name = "comboBoxSection";
-            this.comboBoxSection.Size = new System.Drawing.Size(227, 21);
-            this.comboBoxSection.TabIndex = 1;
             // 
             // NewRunItem
             // 
             this.AcceptButton = this.buttonOk;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;
-            this.ClientSize = new System.Drawing.Size(297, 162);
             this.Controls.Add(this.comboBoxSection);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox1);
@@ -186,7 +150,6 @@
             this.Name = "NewRunItem";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "New Run Item";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

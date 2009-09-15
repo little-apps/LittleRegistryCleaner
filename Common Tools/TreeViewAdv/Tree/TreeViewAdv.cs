@@ -207,34 +207,6 @@ namespace Common_Tools.TreeViewAdv.Tree
 			_controls = new NodeControlsCollection(this);
 
             Font = _font;
-			ExpandingIcon.IconChanged += ExpandingIconChanged;
-		}
-
-		void ExpandingIconChanged(object sender, EventArgs e)
-		{
-			if (IsHandleCreated)
-				Invoke(new MethodInvoker(DrawIcons));
-		}
-
-		private void DrawIcons()
-		{
-			Graphics gr = Graphics.FromHwnd(this.Handle);
-			int firstRowY = _rowLayout.GetRowBounds(FirstVisibleRow).Y;
-			DrawContext context = new DrawContext();
-			context.Graphics = gr;
-			for (int i = 0; i < _expandingNodes.Count; i++)
-			{
-				foreach (NodeControlInfo info in GetNodeControls(_expandingNodes[i]))
-					if (info.Control is ExpandingIcon)
-					{
-						Rectangle rect = info.Bounds;
-						rect.X -= OffsetX;
-						rect.Y -= firstRowY;
-						context.Bounds = rect;
-						info.Control.Draw(info.Node, context);
-					}
-			}
-			gr.Dispose();
 		}
 
 		#region Public Methods
@@ -748,12 +720,10 @@ namespace Common_Tools.TreeViewAdv.Tree
 			{
 				if (AsyncExpanding && LoadOnDemand)
 				{
-					AddExpandingNode(node);
 					node.AssignIsExpanded(true);
 					Invalidate();
 				}
 				ReadChilds(node, AsyncExpanding);
-				RemoveExpandingNode(node);
 			}
 			node.AssignIsExpanded(value);
 			SmartFullUpdate();
@@ -762,19 +732,6 @@ namespace Common_Tools.TreeViewAdv.Tree
 				OnExpanded(node);
 			else
 				OnCollapsed(node);
-		}
-
-		private void RemoveExpandingNode(TreeNodeAdv node)
-		{
-			node.IsExpandingNow = false;
-			_expandingNodes.Remove(node);
-		}
-
-		private void AddExpandingNode(TreeNodeAdv node)
-		{
-			node.IsExpandingNow = true;
-			_expandingNodes.Add(node);
-			ExpandingIcon.Start();
 		}
 
 		internal void SetIsExpandedRecursive(TreeNodeAdv root, bool value)

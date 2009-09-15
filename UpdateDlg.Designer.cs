@@ -38,46 +38,33 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(16, 12);
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(133, 128);
-            this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
             // labelInfo
             // 
-            this.labelInfo.Location = new System.Drawing.Point(13, 143);
+            resources.ApplyResources(this.labelInfo, "labelInfo");
             this.labelInfo.Name = "labelInfo";
-            this.labelInfo.Size = new System.Drawing.Size(136, 13);
-            this.labelInfo.TabIndex = 2;
-            this.labelInfo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // buttonDownload
             // 
-            this.buttonDownload.Location = new System.Drawing.Point(16, 159);
+            resources.ApplyResources(this.buttonDownload, "buttonDownload");
             this.buttonDownload.Name = "buttonDownload";
-            this.buttonDownload.Size = new System.Drawing.Size(63, 23);
-            this.buttonDownload.TabIndex = 0;
-            this.buttonDownload.Text = "Download";
             this.buttonDownload.UseVisualStyleBackColor = true;
             this.buttonDownload.Click += new System.EventHandler(this.buttonDownload_Click);
             // 
             // buttonChangelog
             // 
-            this.buttonChangelog.Location = new System.Drawing.Point(81, 159);
+            resources.ApplyResources(this.buttonChangelog, "buttonChangelog");
             this.buttonChangelog.Name = "buttonChangelog";
-            this.buttonChangelog.Size = new System.Drawing.Size(68, 23);
-            this.buttonChangelog.TabIndex = 1;
-            this.buttonChangelog.Text = "Changelog";
             this.buttonChangelog.UseVisualStyleBackColor = true;
             this.buttonChangelog.Click += new System.EventHandler(this.buttonChangelog_Click);
             // 
             // UpdateDlg
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(160, 189);
             this.Controls.Add(this.buttonChangelog);
             this.Controls.Add(this.buttonDownload);
             this.Controls.Add(this.labelInfo);
@@ -87,7 +74,6 @@
             this.MinimizeBox = false;
             this.Name = "UpdateDlg";
             this.ShowInTaskbar = false;
-            this.Text = "Check for update";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

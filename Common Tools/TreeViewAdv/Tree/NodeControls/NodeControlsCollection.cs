@@ -83,7 +83,7 @@ namespace Common_Tools.TreeViewAdv.Tree.NodeControls
 		{
 			_types = new Type[] { typeof(NodeTextBox), typeof(NodeIntegerTextBox), typeof(NodeDecimalTextBox), 
 				typeof(NodeComboBox), typeof(NodeCheckBox),
-				typeof(NodeStateIcon), typeof(NodeIcon), typeof(NodeNumericUpDown), typeof(ExpandingIcon)  };
+				typeof(NodeStateIcon), typeof(NodeIcon), typeof(NodeNumericUpDown) };
 		}
 
 		protected override System.Type[] CreateNewItemTypes()
