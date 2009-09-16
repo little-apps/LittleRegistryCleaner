@@ -21,25 +21,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-using System.Runtime.InteropServices;
 using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.Scanners
 {
     public class COMObjects : ScannerBase
     {
-        //[DllImport("ole32.dll", CharSet = CharSet.Unicode, PreserveSig = false)]
-        //static extern Guid CLSIDFromProgID([MarshalAs(UnmanagedType.LPWStr)] string lpszProgID);
-        [DllImport("ole32.dll")]
-        static extern int CLSIDFromProgID([MarshalAs(UnmanagedType.LPWStr)] string lpszProgID, out Guid pclsid);
-        //[DllImport("ole32.dll", CharSet = CharSet.Unicode, PreserveSig = false)]
-        //static extern string ProgIDFromCLSID([In]ref Guid clsid);
-        //[DllImport("ole32.dll")]
-        //static extern int ProgIDFromCLSID([In] ref Guid clsid, [MarshalAs(UnmanagedType.LPWStr)] out string lplpszProgID);
-        [DllImport("ole32.dll")]
-        static extern IntPtr OleGetIconOfClass([In] ref Guid rclsid, [MarshalAs(UnmanagedType.LPWStr), Optional] string lpszLabel, bool fUseTypeAsLabel);
-
-
         public override string ScannerName
         {
             get { return "ActiveX/COM Objects"; }
@@ -127,16 +114,12 @@ namespace Little_Registry_Cleaner.Scanners
                 {
                     if (regKeyDefaultIcon != null)
                     {
-                        Guid guid = Guid.Empty;
                         string iconPath = regKeyDefaultIcon.GetValue("") as string;
 
-                        if (Utils.TryParseGuid(strCLSID, out guid))
-                        {
-                            IntPtr icon = OleGetIconOfClass(ref guid, null, false);
-                            if (icon == IntPtr.Zero)
+                        if (!string.IsNullOrEmpty(iconPath))
+                            if (!Utils.IconExists(iconPath))
                                 if (!ScanDlg.IsOnIgnoreList(iconPath))
                                     ScanDlg.StoreInvalidKey("Unable to find icon", string.Format("{0}\\DefaultIcon", rkCLSID.ToString()));
-                        }
                     }
                 }
 
@@ -223,8 +206,13 @@ namespace Little_Registry_Cleaner.Scanners
                 // Update scan dialog
                 ScanDlg.UpdateScanningObject(string.Format("{0}\\{1}", regKey.Name, strSubKey));
 
+                // Skip any file (*)
+                if (strSubKey == "*")
+                    continue;
+
                 if (strSubKey[0] == '.')
                 {
+                    // File Extension
                     using (RegistryKey rkFileExt = regKey.OpenSubKey(strSubKey))
                     {
                         if (rkFileExt != null)
@@ -240,10 +228,39 @@ namespace Little_Registry_Cleaner.Scanners
                 }
                 else
                 {
-                    Guid guid = Guid.Empty;
-                    if (CLSIDFromProgID(strSubKey, out guid) == 0)
-                        if (!clsidExists(guid.ToString("B")))
-                            ScanDlg.StoreInvalidKey("Missing CLSID reference", string.Format("{0}\\{1}", regKey.Name, strSubKey));
+                    // ProgID or file class
+
+                    // See if DefaultIcon exists
+                    using (RegistryKey regKeyDefaultIcon = regKey.OpenSubKey(string.Format("{0}\\DefaultIcon", strSubKey)))
+                    {
+                        if (regKeyDefaultIcon != null)
+                        {
+                            string iconPath = regKeyDefaultIcon.GetValue("") as string;
+
+                            if (!string.IsNullOrEmpty(iconPath))
+                                if (!Utils.IconExists(iconPath))
+                                    if (!ScanDlg.IsOnIgnoreList(iconPath))
+                                        ScanDlg.StoreInvalidKey("Unable to find icon", regKeyDefaultIcon.Name);
+                        }
+                    }
+
+                    // Check referenced CLSID
+                    try
+                    {
+                        Type clsid = Type.GetTypeFromProgID(strSubKey);
+
+                        if (clsid == null)
+                            continue;
+
+                        string guid = clsid.GUID.ToString("B");
+                        if (!string.IsNullOrEmpty(guid))
+                            if (!clsidExists(guid))
+                                ScanDlg.StoreInvalidKey("Missing CLSID reference", string.Format("{0}\\{1}", regKey.Name, strSubKey));
+                    }
+                    catch (Exception ex)
+                    {
+                        System.Diagnostics.Debug.WriteLine(ex.Message);
+                    }
                 }
 
                 // Check for unused progid/extension
@@ -537,6 +554,9 @@ namespace Little_Registry_Cleaner.Scanners
             {
                 foreach (RegistryKey rk in listRegKeys)
                 {
+                    if (rk == null)
+                        continue;
+
                     using (RegistryKey subKey = rk.OpenSubKey(appName))
                     {
                         if (subKey != null)
@@ -577,6 +597,9 @@ namespace Little_Registry_Cleaner.Scanners
             {
                 foreach (RegistryKey rk in listRegKeys)
                 {
+                    if (rk == null)
+                        continue;
+
                     using (RegistryKey subKey = rk.OpenSubKey(clsid))
                     {
                         if (subKey != null)
@@ -617,6 +640,9 @@ namespace Little_Registry_Cleaner.Scanners
             {
                 foreach (RegistryKey rk in listRegKeys)
                 {
+                    if (rk == null)
+                        continue;
+
                     using (RegistryKey subKey = rk.OpenSubKey(progID))
                     {
                         if (subKey != null)
@@ -657,6 +683,9 @@ namespace Little_Registry_Cleaner.Scanners
             {
                 foreach (RegistryKey rk in listRegKeys)
                 {
+                    if (rk == null)
+                        continue;
+
                     using (RegistryKey subKey = rk.OpenSubKey(appID))
                     {
                         if (subKey != null)

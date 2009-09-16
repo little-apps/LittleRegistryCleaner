@@ -97,7 +97,7 @@
             this.imageList.Images.SetKeyName(3, "Windows Fonts");
             this.imageList.Images.SetKeyName(4, "Windows Help Files");
             this.imageList.Images.SetKeyName(5, "Recent Documents");
-            this.imageList.Images.SetKeyName(6, "programlocations.ico");
+            this.imageList.Images.SetKeyName(6, "Application Paths");
             this.imageList.Images.SetKeyName(7, "Shared DLLs");
             this.imageList.Images.SetKeyName(8, "Application Settings");
             this.imageList.Images.SetKeyName(9, "Windows Sounds");

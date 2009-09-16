@@ -308,3 +308,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Upgrades settings to newer version if program has been updated
 - Displays icon associated with section in treeview advanced
 - Removed expanding icon control from treeview advanced
+- Changed icon for Program Locations in treeview to correct one
+- No longer imports ole32.dll for ActiveX/COM scanner
+- Checks ProgID's for missing icons

@@ -716,6 +716,14 @@ namespace Little_Registry_Cleaner
             // Remove quotes
             strFileName = UnqouteSpaces(strFileName);
 
+            // Remove starting @
+            if (strFileName.StartsWith("@"))
+                strFileName = strFileName.Substring(1);
+
+            // Return true if %1
+            if (strFileName == "%1")
+                return true;
+
             // Get icon path
             int nSlash = strFileName.IndexOf(',');
             if (nSlash > -1)
@@ -728,7 +736,7 @@ namespace Little_Registry_Cleaner
             {
                 StringBuilder sb = new StringBuilder(strFileName);
                 if (PathParseIconLocation(sb) >= 0)
-                    if (sb.Length > 0)
+                    if (!string.IsNullOrEmpty(sb.ToString()))
                         return Utils.FileExists(sb.ToString());
             }
 

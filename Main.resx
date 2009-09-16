@@ -151,7 +151,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAD8
-        FgAAAk1TRnQBSQFMAgEBDAEAAZwBAAGcAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        FgAAAk1TRnQBSQFMAgEBDAEAAaQBAAGkAQABEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAAUADAAEBAQABCAYAARAYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -286,38 +286,38 @@
         b/////8GGQAAAAthcHBpbmZvLmljbwAAAAAFCQAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9k
         ZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJ
         bmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABhoAAAARUHJvZ3Jh
-        bSBMb2NhdGlvbnMGGwAAAAxOb2RlQXBwUGF0aHMB/////wYcAAAAAP////8GHQAAABRwcm9ncmFtbG9j
-        YXRpb25zLmljbwAAAAAFCgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dARO
+        bSBMb2NhdGlvbnMGGwAAAAxOb2RlQXBwUGF0aHMB/////wYcAAAAFHByb2dyYW1sb2NhdGlvbnMuaWNv
+        /////wYdAAAAFHByb2dyYW1sb2NhdGlvbnMuaWNvAAAAAAUKAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1z
+        LlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0
+        ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGHgAA
+        ABFTb2Z0d2FyZSBTZXR0aW5ncwYfAAAAD05vZGVBcHBTZXR0aW5ncwH/////BiAAAAALYXBwaW5mby5p
+        Y2//////BiEAAAALYXBwaW5mby5pY28AAAAABQsAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5v
+        ZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdl
+        SW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYiAAAAB1N0YXJ0
+        dXAGIwAAAAtOb2RlU3RhcnR1cAH/////BiQAAAALc3RhcnR1cC5pY2//////BiUAAAALc3RhcnR1cC5p
+        Y28AAAAABQwAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0No
+        ZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtl
+        eQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYmAAAADlN5c3RlbSBEcml2ZXJzBicAAAALTm9kZURy
+        aXZlcnMB/////wYoAAAAC2RyaXZlcnMuaWNv/////wYpAAAAC2RyaXZlcnMuaWNvAAAAAAUNAAAAHVN5
+        c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5k
+        ZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEB
+        AAABAAEAAQgICAIAAAAGKgAAAAtTaGFyZWQgRExMcwYrAAAADk5vZGVTaGFyZWREbGxzAf////8GLAAA
+        AA5zaGFyZWRkbGxzLmljb/////8GLQAAAA5zaGFyZWRkbGxzLmljbwAAAAAFDgAAAB1TeXN0ZW0uV2lu
+        ZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdl
+        S2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEI
+        CAgCAAAABi4AAAAKSGVscCBGaWxlcwYvAAAACE5vZGVIZWxwAf////8GMAAAAA1oZWxwZmlsZXMuaWNv
+        /////wYxAAAADWhlbHBmaWxlcy5pY28AAAAABQ8AAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5v
+        ZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdl
+        SW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYyAAAADFNvdW5k
+        IEV2ZW50cwYzAAAACk5vZGVTb3VuZHMB/////wY0AAAAD3NvdW5kZXZlbnRzLmljb/////8GNQAAAA9z
+        b3VuZGV2ZW50cy5pY28AAAAABRAAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRl
+        eHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2Vs
+        ZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAY2AAAADEhpc3RvcnkgTGlzdAY3
+        AAAAD05vZGVIaXN0b3J5TGlzdAH/////BjgAAAAPaGlzdG9yeWxpc3QuaWNv/////wY5AAAAD2hpc3Rv
+        cnlsaXN0LmljbwAAAAAFEQAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dARO
         YW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3Rl
-        ZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABh4AAAARU29mdHdhcmUgU2V0dGluZ3MG
-        HwAAAA9Ob2RlQXBwU2V0dGluZ3MB/////wYgAAAAC2FwcGluZm8uaWNv/////wYhAAAAC2FwcGluZm8u
-        aWNvAAAAAAULAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXND
-        aGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VL
-        ZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGIgAAAAdTdGFydHVwBiMAAAALTm9kZVN0YXJ0dXAB
-        /////wYkAAAAC3N0YXJ0dXAuaWNv/////wYlAAAAC3N0YXJ0dXAuaWNvAAAAAAUMAAAAHVN5c3RlbS5X
-        aW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1h
-        Z2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAAABAAEA
-        AQgICAIAAAAGJgAAAA5TeXN0ZW0gRHJpdmVycwYnAAAAC05vZGVEcml2ZXJzAf////8GKAAAAAtkcml2
-        ZXJzLmljb/////8GKQAAAAtkcml2ZXJzLmljbwAAAAAFDQAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5U
-        cmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVk
-        SW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABioAAAAL
-        U2hhcmVkIERMTHMGKwAAAA5Ob2RlU2hhcmVkRGxscwH/////BiwAAAAOc2hhcmVkZGxscy5pY2//////
-        Bi0AAAAOc2hhcmVkZGxscy5pY28AAAAABQ4AAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUI
-        AAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5k
-        ZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYuAAAACkhlbHAgRmls
-        ZXMGLwAAAAhOb2RlSGVscAH/////BjAAAAANaGVscGZpbGVzLmljb/////8GMQAAAA1oZWxwZmlsZXMu
-        aWNvAAAAAAUPAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXND
-        aGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VL
-        ZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGMgAAAAxTb3VuZCBFdmVudHMGMwAAAApOb2RlU291
-        bmRzAf////8GNAAAAA9zb3VuZGV2ZW50cy5pY2//////BjUAAAAPc291bmRldmVudHMuaWNvAAAAAAUQ
-        AAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCklt
-        YWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRD
-        b3VudAEBAAABAAEAAQgICAIAAAAGNgAAAAxIaXN0b3J5IExpc3QGNwAAAA9Ob2RlSGlzdG9yeUxpc3QB
-        /////wY4AAAAD2hpc3RvcnlsaXN0Lmljb/////8GOQAAAA9oaXN0b3J5bGlzdC5pY28AAAAABREAAAAd
-        U3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJ
-        bmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50
-        AQEAAAEAAQABCAgIAgAAAAY6AAAADVdpbmRvd3MgRm9udHMGOwAAAAlOb2RlRm9udHMB/////wY8AAAA
-        CWZvbnRzLmljb/////8GPQAAAAlmb250cy5pY28AAAAACw==
+        ZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABjoAAAANV2luZG93cyBGb250cwY7AAAA
+        CU5vZGVGb250cwH/////BjwAAAAJZm9udHMuaWNv/////wY9AAAACWZvbnRzLmljbwAAAAAL
 </value>
   </data>
   <data name="treeView1.SelectedImageIndex" type="System.Int32, mscorlib">
@@ -396,7 +396,7 @@
     <value>detailsRegView1</value>
   </data>
   <data name="&gt;&gt;detailsRegView1.Type" xml:space="preserve">
-    <value>Common_Tools.DetailsRegView, Common Tools, Version=1.0.3545.22809, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common_Tools.DetailsRegView, Common Tools, Version=1.0.3545.27420, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;detailsRegView1.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -480,7 +480,7 @@
     <value>treeViewAdvResults</value>
   </data>
   <data name="&gt;&gt;treeViewAdvResults.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.TreeViewAdv, Common Tools, Version=1.0.3545.22809, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common_Tools.TreeViewAdv.Tree.TreeViewAdv, Common Tools, Version=1.0.3545.27420, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;treeViewAdvResults.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -606,7 +606,7 @@
     <value>toolStripContainer1</value>
   </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>655, 17</value>
+    <value>0, 0</value>
   </metadata>
   <data name="menuStrip1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>None</value>
@@ -4778,7 +4778,7 @@
         CFUEgPrggw9+lMPiCQWKSl1qypApU6YsKDGmXiseyfxkLsTZCJ5ebvME+ARn8LbDsd/8My9I6v2SGbJD
         hiPlhyGZNmbFijgp115FJQuGxVTJCz+vV0FEqCYokYMsXXL3YIDKqNxPNAitJJvFpjSR38Z3njvT5sjQ
         CaJlwFoFpYZvHzZs2NS2Dz7Yq3758o0B92JUiCK5chVretNNjynK94awW6S8v0NW6KfbL5HcrB/M6Fw2
-        Q4hPOlY4BUAudFDbkagXmSE7ZDhMuQWDnnzS9O3TJ1GJKNoQdZpL40MnYtOMU58pzYiMFRI3iVVTARpp
+        Q4hPOlY4BUAudFDbkagXmSE7ZDhMuQWDnnzS9OndO1GJKNoQdZpL40MnYtOMU58pzYiMFRI3iVVTARpp
         TRENChW8P8vVZgPzXEp3wfh3w/iVYZXi46sU6ZpbvPixH+vUCQy79dbxXSMjo2oULHhb3hw5CHemvxCK
         wSSu6LXXlm5YvHjj3jfe+O6o22+f8WutWtum58yZsIrEGYGN8qZW6HbXFB3KdiQ+SQ87kwJg+pkcWtOP
         rJAZskOGr8kby9yATbe33367EplPc2XPnr3Iu+++e5yxgpRmbVn2EhhJW2IooKEogL+3W6GH5rrbTR+U
@@ -4847,7 +4847,7 @@
         kQnPVK8eF1W79sFujRsvkwKPlinXudFF6ypSWgMetB+hhM5DynGesHHFhCCQkdi3NKVJg9Klez0SGTmy
         S7Vqvzx5ww2rumsTR/fIyH1tSpQ40l4HJD2aO3f8Q9rM0UK9/gHl+zdRYuf9WhpCTTSf4B6/8QzP8g7v
         UgZlUSZlUwd1UWcw7n5+sm6caB0CDgGHgEPAIeAQcAg4BBwCDgGHgEPAIeAQcAg4BBwCDgGHgEPAIeAQ
-        cAg4BBwCDgGHgEPAIeAQcAicJwT+D814AYFTnMN/AAAAAElFTkSuQmCC
+        cAg4BBwCDgGHgEPAIeAQcAicJwT+D8qvAX5kX65MAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="toolStripButtonRestore.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
@@ -5171,7 +5171,7 @@
         6NAhpwSHDx8+q7hhqpAu5bbbbvtdJD7i2nENuZZcU1zqn6QS+BeFphLE+ECPdOc/f/Ob35SUcGSovbbK
         UvIIrjxs+oAqnKIVJXgCNawdCOZiA+3t2rVzAm/YsElm7Tq9MxH0Lbc8cyEhYXRuUlIg2IYN0/NSU6cK
         5qdLWDOtTZs5+ru5Eto8Pcf8/NO+/Twhx2z9foasPD2vadP0vEaN0vOSkwPlqJHwUE61aj2cUlStmpgd
-        Hx9vCQkJTiFAlcaNGzuXgavgNYIKBJ5hRQARCBhJJaGgcQugAQEiSiCEy1P2sFX8QS89b0munQ7XMDpA
+        Hx9vCQkJTiFAlcaNGzuXgavgNYIKBJ5hRQARCBhJJaGgcQugAQEiSiBFz1P2sFX8QS89b0munQ7XMDpA
         /JNSgnCwFxY+VOjN//Vf/1VaFvJ7Ce8owZkXvg/28O3h1I04wEM9loTg8bn4dQI3BN+6dfsLycldMwKB
         P3khPn5EbmLimFysuWHDVwXVMyTs2UKGeUKIBUKKxXITS6VAy61//5VCkdWC7DWy1LWKIda6zw88sFbB
         4xplBauEMCtkzcusR4/F1qXLQqcsKAZKkZg4Tv9rZG5Cwv05AULUyVQBykAIlAFkwPWACgrwCikC75n3
@@ -5261,7 +5261,7 @@
         EgUua/0azU5Q5L9Tpd48ctIwMeHn9Qj+nn76KaV8Q7Plu3KAfmf9CvxKlBxlZcqNtQqVJ1ps9WlWLWmu
         1ai32BIbrpDFr7UEBJ+y0aqnbLLqjTZZtYYbJfwNVlVKUDV5nVOCqnWlCHVQBClAx81SgPN/cKu+kX+Q
         lXXRXlPRqFHqLCtX4RWrUGmcVY2bYLXrvKpMYbaCvCWOQHrppR1i9Q5IaB+6UjL9BSACyIAroJUNkojU
-        kKpoTMyw3FKlmmRq5PwiqSHVQ1JwsgJQl4CQYVXfPyA6Pk8osFMZRMK1okCRvh/rl9Y9JEIiiyiUf+r9
+        kKpoTMyw3FKlmmRq5PwiqSHVQ1JwsgJQl4CQYVXfP6AYIU8osFMZRMK1okCRvh/rl9Y9JEIiiyiUf+r9
         D0L3w5kEJAoIL7ZqlZ5F0OesP+L7S8r6y1YYbxWrTLUqCfKRyt8T6q+whEby9akbrHqqBJ+yWcJ/zeJ1
         qjXcZHENNgoJChShSkQRQIMWHbfYp5//aSoA8cDxE+ds8JCNFlNlgpUuO9bKSxFAhKRaNK7OctzBgw+u
         K6QEkEMoAChAajhx4h5XMyAroCQOWxrQxQkZZAV0HoPGGCMBIbJgHI1JZWhiuAHJP0uj8Q+FUOCysUB0
@@ -5471,7 +5471,7 @@
         rIEoxheUFRwnK/A3MYQmRiuZQqFz6NChQ/n8QFrawuwSJf2dRYJby7ibSzh3oJhADRFkB5SP4Qkgi4KG
         0qCRxPUPRBFGQZYQYQ+JD4QEd/4+y/Ye+v4uYPc72dZpiDqQithsQi3BbTzL5wo0vu5W4KqTSEOptW9X
         S7ksn5tiOrJH6R7Brxd+SSw/SvhBk0cQ8Su4dpYfFj5+n2uLAnjLJ+rXY45rLOwFyYTAD9kgI39XEF/0
-        QZZXvHV8UUgQvp+Qv6EUQUV5nURxAy01PzBHQcdZ3zlEnoqvIjJlMRFB4XvvvUfgkgdJRNWwRMloJNCi
+        QZZXvHV8UUgQvp+Qv6EUQUV5nURxAy01PzBHQcdZ3zlEnoqvIjJlMRFB4XvvvUemkAdJRNWwRMloJNCi
         ZAVDbNSiMdLdZEK7gGkkceNlDg3EGua3lKl07BQhzB4GtQR+3uXRLFu25cL3CgLPKwhcsjHD2t+PAhRM
         KbHLwO048ltNpABuUJXVtxJ+YPkI/w03I8kCCdrjEH7ZyiHY9+leiOzxwifoI+CLFj6BHuVePoO0ZF8K
         wM+KmZ2jnL8lMonIBhn5jh9/e7jrEr5HgfAt5UgLCQiBFYYKnSv4l3/5l14aJNmmerPbUEF7MkELLBVB
@@ -5557,7 +5557,7 @@
         HNyFmzX/KnhdsKI+ikKFyykD0HqTzr9HhOAVAmvEKom6ERgUK1E4MI0gsV4CtPDhZ/yOx/BY/oa/5Tm8
         hYcFzv/kf/MaUMyihB7t3/8q9MsI/VoUwaOCdxEgg3cTXHyEQNUMoWCNWCVwjFJQWEF4ROIoB8xbUYff
         8Rgey9/wtzyHt3Cem//hBY6L4jXwWrD0MMT/1dqvQ9hXe+jlXAQWFlYIXAVCQSHomkFQWCjQjPA4KAfW
-        W9Thd/5x/I23bp6L5+S5fSAXFri39D8rof9fkArLPRqF6HoAAAAASUVORK5CYII=
+        W9Thd/5x/I23bp6L5+S5fSAXFri39D8rof9fCnrLNGAP//gAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="toolStripButtonHelp.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
@@ -8850,9 +8850,6 @@
         AAAA4AAAAOAAAADgAAAAgAAAAIAAAAAAAQAAAAEAAAAHAACCDwAAx/8AAA==
 </value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>825, 475</value>
   </data>
@@ -8864,6 +8861,24 @@
   </data>
   <data name="&gt;&gt;imageListTreeView.Type" xml:space="preserve">
     <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;treeColumn1.Name" xml:space="preserve">
+    <value>treeColumn1</value>
+  </data>
+  <data name="&gt;&gt;treeColumn1.Type" xml:space="preserve">
+    <value>Common_Tools.TreeViewAdv.Tree.TreeColumn, Common Tools, Version=1.0.3545.27420, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;treeColumn2.Name" xml:space="preserve">
+    <value>treeColumn2</value>
+  </data>
+  <data name="&gt;&gt;treeColumn2.Type" xml:space="preserve">
+    <value>Common_Tools.TreeViewAdv.Tree.TreeColumn, Common Tools, Version=1.0.3545.27420, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;treeColumn3.Name" xml:space="preserve">
+    <value>treeColumn3</value>
+  </data>
+  <data name="&gt;&gt;treeColumn3.Type" xml:space="preserve">
+    <value>Common_Tools.TreeViewAdv.Tree.TreeColumn, Common Tools, Version=1.0.3545.27420, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;selectAllToolStripMenuItem.Name" xml:space="preserve">
     <value>selectAllToolStripMenuItem</value>
@@ -8894,6 +8909,42 @@
   </data>
   <data name="&gt;&gt;viewInRegeditToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nodeCheckBox.Name" xml:space="preserve">
+    <value>nodeCheckBox</value>
+  </data>
+  <data name="&gt;&gt;nodeCheckBox.Type" xml:space="preserve">
+    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeCheckBox, Common Tools, Version=1.0.3545.27420, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;nodeIcon.Name" xml:space="preserve">
+    <value>nodeIcon</value>
+  </data>
+  <data name="&gt;&gt;nodeIcon.Type" xml:space="preserve">
+    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeIcon, Common Tools, Version=1.0.3545.27420, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;nodeSection.Name" xml:space="preserve">
+    <value>nodeSection</value>
+  </data>
+  <data name="&gt;&gt;nodeSection.Type" xml:space="preserve">
+    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox, Common Tools, Version=1.0.3545.27420, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;nodeProblem.Name" xml:space="preserve">
+    <value>nodeProblem</value>
+  </data>
+  <data name="&gt;&gt;nodeProblem.Type" xml:space="preserve">
+    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox, Common Tools, Version=1.0.3545.27420, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;nodeLocation.Name" xml:space="preserve">
+    <value>nodeLocation</value>
+  </data>
+  <data name="&gt;&gt;nodeLocation.Type" xml:space="preserve">
+    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox, Common Tools, Version=1.0.3545.27420, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;nodeValueName.Name" xml:space="preserve">
+    <value>nodeValueName</value>
+  </data>
+  <data name="&gt;&gt;nodeValueName.Type" xml:space="preserve">
+    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox, Common Tools, Version=1.0.3545.27420, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;fileToolStripMenuItem.Name" xml:space="preserve">
     <value>fileToolStripMenuItem</value>
@@ -9104,60 +9155,6 @@
   </data>
   <data name="&gt;&gt;exitToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;treeColumn1.Name" xml:space="preserve">
-    <value>treeColumn1</value>
-  </data>
-  <data name="&gt;&gt;treeColumn1.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.TreeColumn, Common Tools, Version=1.0.3545.22809, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;treeColumn2.Name" xml:space="preserve">
-    <value>treeColumn2</value>
-  </data>
-  <data name="&gt;&gt;treeColumn2.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.TreeColumn, Common Tools, Version=1.0.3545.22809, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;treeColumn3.Name" xml:space="preserve">
-    <value>treeColumn3</value>
-  </data>
-  <data name="&gt;&gt;treeColumn3.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.TreeColumn, Common Tools, Version=1.0.3545.22809, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;nodeCheckBox.Name" xml:space="preserve">
-    <value>nodeCheckBox</value>
-  </data>
-  <data name="&gt;&gt;nodeCheckBox.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeCheckBox, Common Tools, Version=1.0.3545.22809, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;nodeIcon.Name" xml:space="preserve">
-    <value>nodeIcon</value>
-  </data>
-  <data name="&gt;&gt;nodeIcon.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeIcon, Common Tools, Version=1.0.3545.22809, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;nodeSection.Name" xml:space="preserve">
-    <value>nodeSection</value>
-  </data>
-  <data name="&gt;&gt;nodeSection.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox, Common Tools, Version=1.0.3545.22809, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;nodeProblem.Name" xml:space="preserve">
-    <value>nodeProblem</value>
-  </data>
-  <data name="&gt;&gt;nodeProblem.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox, Common Tools, Version=1.0.3545.22809, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;nodeLocation.Name" xml:space="preserve">
-    <value>nodeLocation</value>
-  </data>
-  <data name="&gt;&gt;nodeLocation.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox, Common Tools, Version=1.0.3545.22809, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;nodeValueName.Name" xml:space="preserve">
-    <value>nodeValueName</value>
-  </data>
-  <data name="&gt;&gt;nodeValueName.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox, Common Tools, Version=1.0.3545.22809, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Main</value>
