@@ -29,6 +29,9 @@ namespace Little_Registry_Cleaner
         {
             uint processId;
 
+            // Checks if access is disabled to regedit, and adds access to it
+            CheckAccess();
+
             Process[] processes = Process.GetProcessesByName("RegEdit");
             if (processes.Length == 0)
             {
@@ -54,37 +57,37 @@ namespace Little_Registry_Cleaner
 
             if (wndApp == IntPtr.Zero)
             {
-                throw new SystemException("no app handle");
+                ShowErrorMessage(new SystemException("no app handle"));
             }
 
             // get handle to treeview
             wndTreeView = Interop.FindWindowEx(wndApp, IntPtr.Zero, "SysTreeView32", null);
             if (wndTreeView == IntPtr.Zero)
             {
-                throw new SystemException("no treeview");
+                ShowErrorMessage(new SystemException("no treeview"));
             }
 
             // get handle to listview
             wndListView = Interop.FindWindowEx(wndApp, IntPtr.Zero, "SysListView32", null);
             if (wndListView == IntPtr.Zero)
             {
-                throw new SystemException("no listview");
+                ShowErrorMessage(new SystemException("no listview"));
             }
 
 
             // allocate buffer in local process
             lpLocalBuffer = Marshal.AllocHGlobal(dwBufferSize);
             if (lpLocalBuffer == IntPtr.Zero)
-                throw new SystemException("Failed to allocate memory in local process");
+                ShowErrorMessage(new SystemException("Failed to allocate memory in local process"));
 
             hProcess = Interop.OpenProcess(Interop.PROCESS_ALL_ACCESS, false, processId);
             if (hProcess == IntPtr.Zero)
-                throw new ApplicationException("Failed to access process");
+                ShowErrorMessage(new ApplicationException("Failed to access process"));
 
             // Allocate a buffer in the remote process
             lpRemoteBuffer = Interop.VirtualAllocEx(hProcess, IntPtr.Zero, dwBufferSize, Interop.MEM_COMMIT, Interop.PAGE_READWRITE);
             if (lpRemoteBuffer == IntPtr.Zero)
-                throw new SystemException("Failed to allocate memory in remote process");
+                ShowErrorMessage(new SystemException("Failed to allocate memory in remote process"));
         }
 
         ~RegEditGo()
@@ -278,7 +281,7 @@ namespace Little_Registry_Cleaner
             // copy local tvItem to remote buffer
             bool bSuccess = Interop.WriteProcessMemory(hProcess, lpRemoteBuffer, ref tvi, Marshal.SizeOf(typeof(Interop.TVITEM)), IntPtr.Zero);
             if (!bSuccess)
-                throw new SystemException("Failed to write to process memory");
+                ShowErrorMessage(new SystemException("Failed to write to process memory"));
 
 
             Interop.SendMessage(wndTreeView, Interop.TVM_GETITEMW, IntPtr.Zero, lpRemoteBuffer);
@@ -286,7 +289,7 @@ namespace Little_Registry_Cleaner
             // copy tvItem back into local buffer (copy whole buffer because we don't yet know how big the string is)
             bSuccess = Interop.ReadProcessMemory(hProcess, lpRemoteBuffer, lpLocalBuffer, dwBufferSize, IntPtr.Zero);
             if (!bSuccess)
-                throw new SystemException("Failed to read from process memory");
+                ShowErrorMessage(new SystemException("Failed to read from process memory"));
 
             return Marshal.PtrToStringUni((IntPtr)(lpLocalBuffer.ToInt32() + Marshal.SizeOf(typeof(Interop.TVITEM))));
         }
@@ -302,7 +305,7 @@ namespace Little_Registry_Cleaner
                 }
                 itemChild = Interop.SendMessage(wndTreeView, Interop.TVM_GETNEXTITEM, (IntPtr)Interop.TVGN_NEXT, itemChild);
             }
-            Debug.WriteLine(string.Format("key '{0}' not found!", key));
+            ShowErrorMessage(new SystemException(string.Format("TVM_GETNEXTITEM failed... key '{0}' not found!", key)));
             return IntPtr.Zero;
         }
 
@@ -326,11 +329,11 @@ namespace Little_Registry_Cleaner
             // copy local lvItem to remote buffer
             bool bSuccess = Interop.WriteProcessMemory(hProcess, lpRemoteBuffer, ref lvItem, Marshal.SizeOf(typeof(Interop.LVITEM)), IntPtr.Zero);
             if (!bSuccess)
-                throw new SystemException("Failed to write to process memory");
+                ShowErrorMessage(new SystemException("Failed to write to process memory"));
 
             // Send the message to the remote window with the address of the remote buffer
             if (Interop.SendMessage(wndListView, LVM_SETITEMSTATE, (IntPtr)item, lpRemoteBuffer) == IntPtr.Zero)
-                throw new SystemException("LVM_GETITEM Failed ");
+                ShowErrorMessage(new SystemException("LVM_GETITEM Failed "));
         }
 
         private string GetLVItemText(int item)
@@ -349,7 +352,7 @@ namespace Little_Registry_Cleaner
             // copy local lvItem to remote buffer
             bool bSuccess = Interop.WriteProcessMemory(hProcess, lpRemoteBuffer, ref lvItem, Marshal.SizeOf(typeof(Interop.LVITEM)), IntPtr.Zero);
             if (!bSuccess)
-                throw new SystemException("Failed to write to process memory");
+                ShowErrorMessage(new SystemException("Failed to write to process memory"));
 
             // Send the message to the remote window with the address of the remote buffer
             if (Interop.SendMessage(wndListView, LVM_GETITEM, IntPtr.Zero, lpRemoteBuffer) == IntPtr.Zero)
@@ -358,11 +361,41 @@ namespace Little_Registry_Cleaner
             // copy lvItem back into local buffer (copy whole buffer because we don't yet know how big the string is)
             bSuccess = Interop.ReadProcessMemory(hProcess, lpRemoteBuffer, lpLocalBuffer, dwBufferSize, IntPtr.Zero);
             if (!bSuccess)
-                throw new SystemException("Failed to read from process memory");
+                ShowErrorMessage(new SystemException("Failed to read from process memory"));
 
             return Marshal.PtrToStringAnsi((IntPtr)(lpLocalBuffer.ToInt32() + Marshal.SizeOf(typeof(Interop.LVITEM))));
         }
 
+        private void CheckAccess()
+        {
+            using (RegistryKey regKey = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Policies\System", true))
+            {
+                if (regKey == null)
+                    return;
+
+                int? n = regKey.GetValue("DisableRegistryTools") as int?;
+
+                // Value doesnt exists
+                if (!n.HasValue)
+                    return;
+
+                // User has access
+                if (n.Value == 0)
+                    return;
+
+                // Value is either 1 or 2 which means we cant access regedit.exe
+
+                // So, lets enable access
+                regKey.SetValue("DisableRegistryTools", (int)0, RegistryValueKind.DWord);
+            }
+        }
+
+        private void ShowErrorMessage(Exception ex)
+        {
+#if (DEBUG)
+            throw ex;
+#endif
+        }
 
         private class Interop
         {

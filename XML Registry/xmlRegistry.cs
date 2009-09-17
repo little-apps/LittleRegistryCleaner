@@ -1299,7 +1299,7 @@ namespace Little_Registry_Cleaner.Xml
         /// </summary>
         /// <param name="e">Exception class</param>
         /// <param name="strTitle">Exception description</param>
-        private static void ShowErrorMessage(Exception e, string strTitle)
+        private void ShowErrorMessage(Exception e, string strTitle)
         {
 #if (DEBUG)
             throw e;
