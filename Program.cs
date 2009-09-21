@@ -65,6 +65,14 @@ namespace Little_Registry_Cleaner
             
 //#endif
 
+            // Check if admin, otherwise exit
+            if (!Permissions.IsUserAdministrator)
+            {
+                MessageBox.Show("You must be an administrator to run this program", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Exit();
+                return;
+            }
+
             // Enable needed privileges
             Permissions.SetPrivileges(true);
 
