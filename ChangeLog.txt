@@ -312,3 +312,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - No longer imports ole32.dll for ActiveX/COM scanner
 - Checks ProgID's for missing icons
 - Checks for access to regedit.exe and adds correct access if its incorrect
+- Fixed icon for software settings
+- Tries to catch exception when removing startup entry if file or registry value doesnt exist

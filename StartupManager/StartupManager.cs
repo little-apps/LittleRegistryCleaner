@@ -216,6 +216,8 @@ namespace Little_Registry_Cleaner.StartupManager
                 {
                     StartupManagerNode node = this.treeViewAdv1.SelectedNode.Tag as StartupManagerNode;
 
+                    bool bFailed = false;
+
                     if (!node.IsLeaf)
                         return;
 
@@ -226,8 +228,16 @@ namespace Little_Registry_Cleaner.StartupManager
                         // Startup folder
                         string strPath = Path.Combine(strSection, node.Item);
 
-                        if (File.Exists(strPath))
-                            File.Delete(strPath);
+                        try
+                        {
+                            if (File.Exists(strPath))
+                                File.Delete(strPath);
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(this, ex.Message, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            bFailed = true;
+                        }
                     }
                     else
                     {
@@ -236,13 +246,22 @@ namespace Little_Registry_Cleaner.StartupManager
                         string strSubKey = strSection.Substring(strSection.IndexOf('\\') + 1);
                         RegistryKey rk = Utils.RegOpenKey(strMainKey, strSubKey);
 
-                        if (rk != null)
-                            rk.DeleteValue(node.Item);
+                        try 
+                        {
+                            if (rk != null)
+                                rk.DeleteValue(node.Item);
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(this, ex.Message, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            bFailed = true;
+                        }
 
                         rk.Close();
                     }
 
-                    MessageBox.Show(this, "Removed selected startup program", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (!bFailed)
+                        MessageBox.Show(this, "Removed selected startup program", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
             }
