@@ -131,7 +131,7 @@ namespace Little_Registry_Cleaner
                 Version verLatest = new Version(strVersion);
 
                 // Compare major and minor version parts
-                if (verApp.Major < verLatest.Major || verApp.Minor < verLatest.Minor)
+                if (verApp.CompareTo(verLatest) < 0)
                     bRet = true;
 
                 if (DateTime.TryParseExact(strReleaseDate, @"MM/dd/yyyy", null, System.Globalization.DateTimeStyles.None, out dtReleaseDate))

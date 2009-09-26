@@ -11,24 +11,45 @@ namespace Common_Tools
 {
     public partial class DetailsRegView : UserControl
     {
+
         public string Data
         {
-            set { this.labelData.Text = "Data: " + value; }
+            set { this.labelData1.Text = value; }
         }
 
         public string RegKey
         {
-            set { this.labelHKEY.Text = "Location: " + value; }
+            set { this.labelHKEY1.Text = value; }
         }
 
         public string Problem
         {
-            set { this.labelProblem.Text = "Problem: " + value; }
+            set { this.labelProblem1.Text = value; }
         }
 
         public string ValueName
         {
-            set { this.labelValueName.Text = "Value Name: " + value; }
+            set { this.labelValueName1.Text = value; }
+        }
+
+        public void ReloadControls()
+        {
+            System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(DetailsRegView));
+
+            // Details
+            this.labelDetails.Text = resources.GetString("labelDetails.Text");
+
+            // Problem
+            this.labelProblem.Text = resources.GetString("labelProblem.Text");
+
+            // Location
+            this.labelHKEY.Text = resources.GetString("labelHKEY.Text");
+
+            // Value Name
+            this.labelValueName.Text = resources.GetString("labelValueName.Text");
+
+            // Data
+            this.labelData.Text = resources.GetString("labelData.Text");
         }
 
         public DetailsRegView()
