@@ -130,7 +130,7 @@ namespace Little_Registry_Cleaner
                 Version verApp = new Version(Application.ProductVersion);
                 Version verLatest = new Version(strVersion);
 
-                // Compare major and minor version parts
+                // Compare current version to latest
                 if (verApp.CompareTo(verLatest) < 0)
                     bRet = true;
 

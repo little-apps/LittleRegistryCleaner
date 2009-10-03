@@ -22,12 +22,14 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
+using System.Resources;
+using System.Globalization;
+using System.Threading;
 using Little_Registry_Cleaner.Xml;
 using Common_Tools.TreeViewAdv.Tree;
 using Microsoft.Win32;
@@ -508,5 +510,144 @@ namespace Little_Registry_Cleaner
             this.treeViewAdvResults.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
         }
         #endregion
+
+        private void ChangeLanguage(object sender, EventArgs e)
+        {
+            ToolStripMenuItem lang = sender as ToolStripMenuItem;
+            CultureInfo ci = CultureInfo.CurrentUICulture;
+
+            
+
+            // Uncheck old language
+            foreach (ToolStripMenuItem tsmi in this.languageToolStripMenuItem.DropDownItems)
+            {
+                if (tsmi.Checked)
+                    tsmi.Checked = false;
+            }
+
+            ResourceManager rm = new ResourceManager("Main", this.GetType().Assembly);
+
+            switch (lang.Text)
+            {
+                case "English":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
+                    break;
+
+                case "Spanish":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("es");
+                    break;
+
+                case "Arabic":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("ar");
+                    break;
+
+                case "German":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("de");
+                    break;
+
+                case "Greek":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("el");
+                    break;
+
+                case "French":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr");
+                    break;
+
+                case "Italian":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("it");
+                    break;
+
+                case "Japanese":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("ja");
+                    break;
+
+                case "Dutch":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("nl");
+                    break;
+
+                case "Portugese":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("pt");
+                    break;
+
+                case "Russian":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("ru");
+                    break;
+
+                case "Polish":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("pl");
+                    break;
+
+                case "Swedish":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("sv");
+                    break;
+
+                case "Thai":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("th");
+                    break;
+
+                case "Vietnamese":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("vi");
+                    break;
+
+                case "Chinese (Simplified)":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CHS");
+                    break;
+                case "Chinese (Traditional)":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CHT");
+                    break;
+            }
+
+            this.ReloadControls();
+
+            lang.Checked = true;
+        }
+
+        private void ReloadControls()
+        {
+            // Reload control strings
+            ResourceManager resources = new ResourceManager(typeof(Main));
+            this.Text = resources.GetString("$this.Text");
+            this.aboutToolStripMenuItem.Text = resources.GetString("aboutToolStripMenuItem.Text");
+            this.aboutToolStripMenuItem1.Text = resources.GetString("aboutToolStripMenuItem1.Text");
+            this.checkForUpdatesToolStripMenuItem.Text = resources.GetString("checkForUpdatesToolStripMenuItem.Text");
+            this.editToolStripMenuItem.Text = resources.GetString("editToolStripMenuItem.Text");
+            this.excludeSelectedToolStripMenuItem.Text = resources.GetString("excludeSelectedToolStripMenuItem.Text");
+            this.excludeSelectedToolStripMenuItem1.Text = resources.GetString("excludeSelectedToolStripMenuItem1.Text");
+            this.exitToolStripMenuItem.Text = resources.GetString("exitToolStripMenuItem.Text");
+            this.fileToolStripMenuItem.Text = resources.GetString("fileToolStripMenuItem.Text");
+            this.fixToolStripMenuItem.Text = resources.GetString("fixToolStripMenuItem.Text");
+            this.helpToolStripMenuItem.Text = resources.GetString("helpToolStripMenuItem.Text");
+            this.helpToolStripMenuItem1.Text = resources.GetString("helpToolStripMenuItem1.Text");
+            this.hideShowToolStripMenuItem.Text = resources.GetString("hideShowToolStripMenuItem.Text");
+            this.languageToolStripMenuItem.Text = resources.GetString("languageToolStripMenuItem.Text");
+            this.notifyIcon1.Text = resources.GetString("notifyIcon1.Text");
+            this.restoreToolStripMenuItem.Text = resources.GetString("restoreToolStripMenuItem.Text");
+            this.scanToolStripMenuItem.Text = resources.GetString("scanToolStripMenuItem.Text");
+            this.selectAllToolStripMenuItem.Text = resources.GetString("selectAllToolStripMenuItem.Text");
+            this.selectAllToolStripMenuItem1.Text = resources.GetString("selectAllToolStripMenuItem1.Text");
+            this.selectNoneToolStripMenuItem.Text = resources.GetString("selectNoneToolStripMenuItem.Text");
+            this.selectNoneToolStripMenuItem1.Text = resources.GetString("selectNoneToolStripMenuItem1.Text");
+            this.startupManagerToolStripMenuItem.Text = resources.GetString("startupManagerToolStripMenuItem.Text");
+            this.toolsToolStripMenuItem.Text = resources.GetString("toolsToolStripMenuItem.Text");
+            this.toolStripButtonFix.Text = resources.GetString("toolStripButtonFix.Text");
+            this.toolStripButtonHelp.Text = resources.GetString("toolStripButtonHelp.Text");
+            this.toolStripButtonRestore.Text = resources.GetString("toolStripButtonRestore.Text");
+            this.toolStripButtonScan.Text = resources.GetString("toolStripButtonScan.Text");
+            this.toolStripButtonSettings.Text = resources.GetString("toolStripButtonSettings.Text");
+            this.toolStripMenuItemOptions.Text = resources.GetString("toolStripMenuItemOptions.Text");
+            this.treeColumn1.Header = resources.GetString("treeColumn1.Header");
+            this.treeColumn2.Header = resources.GetString("treeColumn2.Header");
+            this.treeColumn3.Header = resources.GetString("treeColumn3.Header");
+            this.uninstallManagerToolStripMenuItem.Text = resources.GetString("uninstallManagerToolStripMenuItem.Text");
+            this.viewInRegeditToolStripMenuItem.Text = resources.GetString("viewInRegeditToolStripMenuItem.Text");
+            this.viewInRegeditToolStripMenuItem1.Text = resources.GetString("viewInRegeditToolStripMenuItem1.Text");
+            this.visitWebsiteToolStripMenuItem.Text = resources.GetString("visitWebsiteToolStripMenuItem.Text");
+
+            this.detailsRegView1.ReloadControls();
+
+            this.treeView1.Nodes.Clear();
+            this.treeView1.Nodes.Add(resources.GetObject("treeView1.Nodes") as TreeNode);
+            this.treeView1.ExpandAll();
+        }
     }
 }

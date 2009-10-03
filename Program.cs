@@ -57,13 +57,13 @@ namespace Little_Registry_Cleaner
                 Properties.Settings.Default.bUpgradeSettings = false;
             }
 
-//#if (!DEBUG)
+            //#if (!DEBUG)
             // Add event handler for thread exceptions
             AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);
             Application.ThreadException += new ThreadExceptionEventHandler(Application_ThreadException);
-//#else
-            
-//#endif
+            //#else
+
+            //#endif
 
             // Check if admin, otherwise exit
             if (!Permissions.IsUserAdministrator)

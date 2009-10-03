@@ -36,12 +36,12 @@
             this.labelProblem1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.labelHKEY = new System.Windows.Forms.Label();
+            this.labelHKEY1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.labelValueName = new System.Windows.Forms.Label();
+            this.labelValueName1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.labelData = new System.Windows.Forms.Label();
-            this.labelHKEY1 = new System.Windows.Forms.Label();
-            this.labelValueName1 = new System.Windows.Forms.Label();
             this.labelData1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -95,6 +95,11 @@
             resources.ApplyResources(this.labelHKEY, "labelHKEY");
             this.labelHKEY.Name = "labelHKEY";
             // 
+            // labelHKEY1
+            // 
+            resources.ApplyResources(this.labelHKEY1, "labelHKEY1");
+            this.labelHKEY1.Name = "labelHKEY1";
+            // 
             // flowLayoutPanel3
             // 
             this.flowLayoutPanel3.Controls.Add(this.labelValueName);
@@ -107,6 +112,11 @@
             resources.ApplyResources(this.labelValueName, "labelValueName");
             this.labelValueName.Name = "labelValueName";
             // 
+            // labelValueName1
+            // 
+            resources.ApplyResources(this.labelValueName1, "labelValueName1");
+            this.labelValueName1.Name = "labelValueName1";
+            // 
             // flowLayoutPanel4
             // 
             this.flowLayoutPanel4.Controls.Add(this.labelData);
@@ -118,16 +128,6 @@
             // 
             resources.ApplyResources(this.labelData, "labelData");
             this.labelData.Name = "labelData";
-            // 
-            // labelHKEY1
-            // 
-            resources.ApplyResources(this.labelHKEY1, "labelHKEY1");
-            this.labelHKEY1.Name = "labelHKEY1";
-            // 
-            // labelValueName1
-            // 
-            resources.ApplyResources(this.labelValueName1, "labelValueName1");
-            this.labelValueName1.Name = "labelValueName1";
             // 
             // labelData1
             // 

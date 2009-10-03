@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+  <data name="treeView1.Nodes" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZRMAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQJY2hpbGRyZW4wCWNoaWxkcmVuMQljaGlsZHJlbjIJY2hpbGRyZW4zCWNoaWxkcmVuNAljaGlsZHJlbjUJY2hpbGRyZW42CWNoaWxkcmVuNwljaGlsZHJlbjgJY2hpbGRyZW45CmNoaWxkcmVuMTABAQAAAQABAAQEBAQEBAQEBAQEAQgICB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlAgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlAgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlAgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAAgAAAAYDAAAAIeOCueOCreODo+ODs+OBmeOCi+OCu+OCr+OCt+ODp+ODswYEAAAABU5vZGUwAf////8GBQAAAA5teWNvbXB1dGVyLmljb/////8GBgAAAA5teWNvbXB1dGVyLmljbwsAAAAJBwAAAAkIAAAACQkAAAAJCgAAAAkLAAAACQwAAAAJDQAAAAkOAAAACQ8AAAAJEAAAAAkRAAAABQcAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYSAAAAE+OBrkFjdGl2ZVggLyBDT03jga4GEwAAAAtOb2RlQWN0aXZlWAH/////BhQAAAAOYWN0aXZleGNvbS5pY2//////BhUAAAAOYWN0aXZleGNvbS5pY28AAAAABQgAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYWAAAAHuOCouODl+ODquOCseODvOOCt+ODp+ODs+aDheWgsQYXAAAAC05vZGVBcHBJbmZvAf////8GGAAAAAthcHBpbmZvLmljb/////8GGQAAAAthcHBpbmZvLmljbwAAAAAFCQAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABhoAAAAY44OX44Ot44Kw44Op44Og44Gu5aC05omABhsAAAAMTm9kZUFwcFBhdGhzAf////8GHAAAABRwcm9ncmFtbG9jYXRpb25zLmljb/////8GHQAAABRwcm9ncmFtbG9jYXRpb25zLmljbwAAAAAFCgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABh4AAAAb44K944OV44OI44Km44Kn44Ki44Gu6Kit5a6aBh8AAAAPTm9kZUFwcFNldHRpbmdzAf////8GIAAAABRzb2Z0d2FyZXNldHRpbmdzLmljb/////8JIAAAAAAAAAAFCwAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABiEAAAAV44K544K/44O844OI44Ki44OD44OXBiIAAAALTm9kZVN0YXJ0dXAB/////wYjAAAAC3N0YXJ0dXAuaWNv/////wYkAAAAC3N0YXJ0dXAuaWNvAAAAAAUMAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGJQAAABjjgrfjgrnjg4bjg6Djg4njg6njgqTjg5AGJgAAAAtOb2RlRHJpdmVycwH/////BicAAAALZHJpdmVycy5pY2//////BigAAAALZHJpdmVycy5pY28AAAAABQ0AAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYpAAAACeWFseaciURMTAYqAAAADk5vZGVTaGFyZWREbGxzAf////8GKwAAAA5zaGFyZWRkbGxzLmljb/////8GLAAAAA5zaGFyZWRkbGxzLmljbwAAAAAFDgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABi0AAAAV44OY44Or44OX44OV44Kh44Kk44OrBi4AAAAITm9kZUhlbHAB/////wYvAAAADWhlbHBmaWxlcy5pY2//////BjAAAAANaGVscGZpbGVzLmljbwAAAAAFDwAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABjEAAAAY44K144Km44Oz44OJ44Kk44OZ44Oz44OIBjIAAAAKTm9kZVNvdW5kcwH/////BjMAAAAPc291bmRldmVudHMuaWNv/////wY0AAAAD3NvdW5kZXZlbnRzLmljbwAAAAAFEAAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABjUAAAAP5bGl5q2044Oq44K544OIBjYAAAAPTm9kZUhpc3RvcnlMaXN0Af////8GNwAAAA9oaXN0b3J5bGlzdC5pY2//////BjgAAAAPaGlzdG9yeWxpc3QuaWNvAAAAAAURAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGOQAAABNXaW5kb3dz44OV44Kp44Oz44OIBjoAAAAJTm9kZUZvbnRzAf////8GOwAAAAlmb250cy5pY2//////BjwAAAAJZm9udHMuaWNvAAAAAAs=</value>
+  </data>
+  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="unicode"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="treeView1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0" /&gt;&lt;Rows Styles="Percent,100.1" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="treeColumn1.Header" xml:space="preserve">
+    <value>問題</value>
+  </data>
+  <data name="treeColumn2.Header" xml:space="preserve">
+    <value>場所</value>
+  </data>
+  <data name="treeColumn3.Header" xml:space="preserve">
+    <value>Nombre del valor</value>
+  </data>
+  <data name="selectAllToolStripMenuItem.Text" xml:space="preserve">
+    <value>すべて選択</value>
+  </data>
+  <data name="selectNoneToolStripMenuItem.Text" xml:space="preserve">
+    <value>Noneを選択します</value>
+  </data>
+  <data name="excludeSelectedToolStripMenuItem.Text" xml:space="preserve">
+    <value>除外選択</value>
+  </data>
+  <data name="viewInRegeditToolStripMenuItem.Text" xml:space="preserve">
+    <value>プロフィールファイル名を指定で</value>
+  </data>
+  <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="unicode"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="detailsRegView1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="treeViewAdvResults" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0" /&gt;&lt;Rows Styles="Percent,100,Absolute,110" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="unicode"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel3" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="Absolute,405" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="scanToolStripMenuItem.Text" xml:space="preserve">
+    <value>スキャンレジストリ</value>
+  </data>
+  <data name="fixToolStripMenuItem.Text" xml:space="preserve">
+    <value>問題を修正</value>
+  </data>
+  <data name="restoreToolStripMenuItem.Text" xml:space="preserve">
+    <value>復元するレジストリ</value>
+  </data>
+  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
+    <value>終了</value>
+  </data>
+  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="selectAllToolStripMenuItem1.Text" xml:space="preserve">
+    <value>すべて選択</value>
+  </data>
+  <data name="selectNoneToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Noneを選択します</value>
+  </data>
+  <data name="excludeSelectedToolStripMenuItem1.Text" xml:space="preserve">
+    <value>除外選択</value>
+  </data>
+  <data name="viewInRegeditToolStripMenuItem1.Text" xml:space="preserve">
+    <value>プロフィールファイル名を指定で</value>
+  </data>
+  <data name="editToolStripMenuItem.Text" xml:space="preserve">
+    <value>[編集]</value>
+  </data>
+  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Inglés</value>
+  </data>
+  <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
+    <value>フランス語</value>
+  </data>
+  <data name="spanishToolStripMenuItem.Text" xml:space="preserve">
+    <value>スペイン語</value>
+  </data>
+  <data name="portugeseToolStripMenuItem.Text" xml:space="preserve">
+    <value>ポルトガル語</value>
+  </data>
+  <data name="italianToolStripMenuItem.Text" xml:space="preserve">
+    <value>イタリア語</value>
+  </data>
+  <data name="dutchToolStripMenuItem.Text" xml:space="preserve">
+    <value>オランダ語</value>
+  </data>
+  <data name="germanToolStripMenuItem.Text" xml:space="preserve">
+    <value>ドイツ語</value>
+  </data>
+  <data name="russianToolStripMenuItem.Text" xml:space="preserve">
+    <value>ロシア語</value>
+  </data>
+  <data name="greekToolStripMenuItem.Text" xml:space="preserve">
+    <value>ギリシャ語</value>
+  </data>
+  <data name="arabicToolStripMenuItem.Text" xml:space="preserve">
+    <value>アラビア語</value>
+  </data>
+  <data name="swedishToolStripMenuItem.Text" xml:space="preserve">
+    <value>スウェーデン語</value>
+  </data>
+  <data name="japaneseToolStripMenuItem.Text" xml:space="preserve">
+    <value>日本語</value>
+  </data>
+  <data name="chineseSimplifiedToolStripMenuItem.Text" xml:space="preserve">
+    <value>中国語（簡体字）</value>
+  </data>
+  <data name="chineseTraditionalToolStripMenuItem.Text" xml:space="preserve">
+    <value>中国語（繁体字）</value>
+  </data>
+  <data name="vietnameseToolStripMenuItem.Text" xml:space="preserve">
+    <value>ベトナム語</value>
+  </data>
+  <data name="thaiToolStripMenuItem.Text" xml:space="preserve">
+    <value>タイ</value>
+  </data>
+  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
+    <value>Lengua</value>
+  </data>
+  <data name="startupManagerToolStripMenuItem.Text" xml:space="preserve">
+    <value>スタートアップマネージャ</value>
+  </data>
+  <data name="uninstallManagerToolStripMenuItem.Text" xml:space="preserve">
+    <value>をアンインストールするマネージャ</value>
+  </data>
+  <data name="toolStripMenuItemOptions.Text" xml:space="preserve">
+    <value>オプション</value>
+  </data>
+  <data name="toolsToolStripMenuItem.Text" xml:space="preserve">
+    <value>道具</value>
+  </data>
+  <data name="helpToolStripMenuItem1.Text" xml:space="preserve">
+    <value>ヘルプ</value>
+  </data>
+  <data name="visitWebsiteToolStripMenuItem.Text" xml:space="preserve">
+    <value>ご覧のウェブサイト</value>
+  </data>
+  <data name="checkForUpdatesToolStripMenuItem.Text" xml:space="preserve">
+    <value>更新プログラムの確認</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>〜について...</value>
+  </data>
+  <data name="helpToolStripMenuItem.Text" xml:space="preserve">
+    <value>ヘルプ</value>
+  </data>
+  <data name="toolStripButtonScan.Text" xml:space="preserve">
+    <value>スキャンレジストリ</value>
+  </data>
+  <data name="toolStripButtonFix.Text" xml:space="preserve">
+    <value>問題を修正</value>
+  </data>
+  <data name="toolStripButtonRestore.Text" xml:space="preserve">
+    <value>復元するレジストリ</value>
+  </data>
+  <data name="toolStripButtonSettings.Text" xml:space="preserve">
+    <value>オプション</value>
+  </data>
+  <data name="toolStripButtonHelp.Text" xml:space="preserve">
+    <value>ヘルプ</value>
+  </data>
+  <data name="hideShowToolStripMenuItem.Text" xml:space="preserve">
+    <value>非表示/表示</value>
+  </data>
+  <data name="aboutToolStripMenuItem1.Text" xml:space="preserve">
+    <value>〜について...</value>
+  </data>
+  <data name="exitToolStripMenuItem1.Text" xml:space="preserve">
+    <value>終了</value>
+  </data>
+  <data name="notifyIcon1.Text" xml:space="preserve">
+    <value>リトルレジスタクリーナー</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>リトルRegistry Cleanerは、</value>
+  </data>
+</root>

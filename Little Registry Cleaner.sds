@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<desktop scan="12" scanned="20090930180228" built="20090930181704" lang="pl" pane="TLogPane" col="9" row="tableLayoutPanel1.flowLayoutPanel4.labelData.Text">
+  <language id="en" autoime="0" autokeyboard="0"/>
+  <language id="fr" autoime="0" autokeyboard="0"/>
+  <language id="es" autoime="0" autokeyboard="0"/>
+  <language id="pt" autoime="0" autokeyboard="0"/>
+  <language id="it" autoime="0" autokeyboard="0"/>
+  <language id="nl" autoime="0" autokeyboard="0"/>
+  <language id="de" autoime="0" autokeyboard="0"/>
+  <language id="ru" autoime="0" autokeyboard="0"/>
+  <language id="el" autoime="0" autokeyboard="0"/>
+  <language id="ar" autoime="0" autokeyboard="0"/>
+  <language id="sv" autoime="0" autokeyboard="0"/>
+  <language id="zh" autoime="0" autokeyboard="0"/>
+  <language id="zh.tra" autoime="0" autokeyboard="0"/>
+  <language id="ja" autoime="0" autokeyboard="0"/>
+  <language id="vi" autoime="0" autokeyboard="0"/>
+  <language id="th" autoime="0" autokeyboard="0"/>
+  <language id="pl" autoime="0" autokeyboard="0"/>
+  <triggers>
+    <item class="TRemoveUnusedItemsTrigger" position="1"/>
+    <item class="TValidateTrigger" position="5"/>
+  </triggers>
+  <sheet>
+    <columns>
+      <item class="TFlagsColumn" width="38"/>
+      <item class="TPathColumn" width="120"/>
+      <item class="TTranslationStatusColumn" width="93"/>
+      <item class="TOriginalColumn" width="54"/>
+      <item class="TTranslationColumn" lang="zh" width="54"/>
+      <item class="TTranslationColumn" lang="zh.tra" width="54"/>
+      <item class="TTranslationColumn" lang="ar" width="54"/>
+      <item class="TTranslationColumn" lang="sv" width="54"/>
+      <item class="TTranslationColumn" lang="th" width="54"/>
+      <item class="TTranslationColumn" lang="pl" width="57"/>
+      <item class="TTranslationColumn" lang="ja" width="54"/>
+      <item class="TTranslationColumn" lang="vi" width="54"/>
+      <item class="TTranslationColumn" lang="el" width="54"/>
+      <item class="TTranslationColumn" lang="es" width="54"/>
+      <item class="TTranslationColumn" lang="pt" width="54"/>
+      <item class="TTranslationColumn" lang="en" width="54"/>
+      <item class="TTranslationColumn" lang="fr" width="54"/>
+      <item class="TTranslationColumn" lang="de" width="54"/>
+      <item class="TTranslationColumn" lang="ru" width="54"/>
+      <item class="TTranslationColumn" lang="it" width="54"/>
+      <item class="TTranslationColumn" lang="nl" width="35"/>
+    </columns>
+    <params>
+      <findtext>lokaliz</findtext>
+    </params>
+  </sheet>
+  <path>
+    <item>All</item>
+    <item>Common Tools\Common Tools.csproj</item>
+    <item>Forms</item>
+    <item>Common_Tools.DetailsRegView</item>
+  </path>
+  <exchange method="exmImportProject">
+  </exchange>
+</desktop>

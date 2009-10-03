@@ -246,7 +246,7 @@ namespace Little_Registry_Cleaner.StartupManager
                         string strSubKey = strSection.Substring(strSection.IndexOf('\\') + 1);
                         RegistryKey rk = Utils.RegOpenKey(strMainKey, strSubKey);
 
-                        try 
+                        try
                         {
                             if (rk != null)
                                 rk.DeleteValue(node.Item);
@@ -384,7 +384,7 @@ namespace Little_Registry_Cleaner.StartupManager
             }
         }
 
-        public StartupManagerNode() 
+        public StartupManagerNode()
             : base()
         {
         }
