@@ -26,7 +26,7 @@ using System.Text.RegularExpressions;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public class HistoryList : ScannerBase
+    public class RecentDocs : ScannerBase
     {
         public override string ScannerName
         {

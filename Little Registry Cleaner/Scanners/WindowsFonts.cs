@@ -26,7 +26,7 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public class Fonts : ScannerBase
+    public class WindowsFonts : ScannerBase
     {
         [DllImport("shell32.dll")]
         public static extern bool SHGetSpecialFolderPath(IntPtr hwndOwner, [Out] StringBuilder strPath, int nFolder, bool fCreate);

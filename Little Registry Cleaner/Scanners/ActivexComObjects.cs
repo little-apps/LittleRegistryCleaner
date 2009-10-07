@@ -25,7 +25,7 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public class COMObjects : ScannerBase
+    public class ActivexComObjects : ScannerBase
     {
         public override string ScannerName
         {

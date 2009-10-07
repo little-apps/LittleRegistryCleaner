@@ -321,5 +321,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - LRC has translations for 17 different languages
 - Fixed backup directory, it doesnt point to the comman program files once options are changed
 - The backup and logs directory will be in the current directory if the release is portable edition
+- Renamed scanner files to more proper names
 
 + Version 1.4 Released

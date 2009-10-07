@@ -96,37 +96,37 @@ namespace Little_Registry_Cleaner
                 Main.Logger.WriteLine();
 
                 if (Main.bScanStartup)
-                    this.StartScanner(new StartUp());
+                    this.StartScanner(new StartupFiles());
 
                 if (Main.bScanSharedDLL)
-                    this.StartScanner(new DLLs());
+                    this.StartScanner(new SharedDLLs());
 
                 if (Main.bScanFonts)
-                    this.StartScanner(new Fonts());
+                    this.StartScanner(new WindowsFonts());
 
                 if (Main.bScanAppInfo)
-                    this.StartScanner(new AppInfo());
+                    this.StartScanner(new ApplicationInfo());
 
                 if (Main.bScanAppPaths)
-                    this.StartScanner(new AppPaths());
+                    this.StartScanner(new ApplicationPaths());
 
                 if (Main.bScanActivex)
-                    this.StartScanner(new COMObjects());
+                    this.StartScanner(new ActivexComObjects());
 
                 if (Main.bScanDrivers)
-                    this.StartScanner(new Drivers());
+                    this.StartScanner(new SystemDrivers());
 
                 if (Main.bScanHelpFiles)
-                    this.StartScanner(new HelpFiles());
+                    this.StartScanner(new WindowsHelpFiles());
 
                 if (Main.bScanSounds)
-                    this.StartScanner(new Sounds());
+                    this.StartScanner(new WindowsSounds());
 
                 if (Main.bScanAppSettings)
-                    this.StartScanner(new AppSettings());
+                    this.StartScanner(new ApplicationSettings());
 
                 if (Main.bScanHistoryList)
-                    this.StartScanner(new HistoryList());
+                    this.StartScanner(new RecentDocs());
 
                 this.DialogResult = DialogResult.OK;
             }

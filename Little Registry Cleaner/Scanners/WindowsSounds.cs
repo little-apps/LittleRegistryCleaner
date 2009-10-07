@@ -25,7 +25,7 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public class Sounds : ScannerBase
+    public class WindowsSounds : ScannerBase
     {
         public override string ScannerName
         {

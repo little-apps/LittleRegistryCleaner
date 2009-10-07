@@ -25,7 +25,7 @@ using System.Windows.Forms;
 
 namespace Little_Registry_Cleaner.Scanners
 {
-    public class AppSettings : ScannerBase
+    public class ApplicationSettings : ScannerBase
     {
         public override string ScannerName
         {
