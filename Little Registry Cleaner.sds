@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<desktop scan="12" scanned="20090930180228" built="20090930181704" lang="pl" pane="TLogPane" col="9" row="tableLayoutPanel1.flowLayoutPanel4.labelData.Text">
+<desktop scan="12" scanned="20090930180228" built="20091002205417" lang="zh" pane="TValidationPane" col="3" row="groupBox2.richTextBox1.Text">
   <language id="en" autoime="0" autokeyboard="0"/>
   <language id="fr" autoime="0" autokeyboard="0"/>
   <language id="es" autoime="0" autokeyboard="0"/>
@@ -18,8 +18,7 @@
   <language id="th" autoime="0" autokeyboard="0"/>
   <language id="pl" autoime="0" autokeyboard="0"/>
   <triggers>
-    <item class="TRemoveUnusedItemsTrigger" position="1"/>
-    <item class="TValidateTrigger" position="5"/>
+    <item class="TRemoveUnusedItemsTrigger" position="2"/>
   </triggers>
   <sheet>
     <columns>
@@ -51,9 +50,9 @@
   </sheet>
   <path>
     <item>All</item>
-    <item>Common Tools\Common Tools.csproj</item>
+    <item>Little Registry Cleaner.csproj</item>
     <item>Forms</item>
-    <item>Common_Tools.DetailsRegView</item>
+    <item>Little_Registry_Cleaner.About</item>
   </path>
   <exchange method="exmImportProject">
   </exchange>

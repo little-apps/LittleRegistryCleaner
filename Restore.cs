@@ -42,8 +42,6 @@ namespace Little_Registry_Cleaner
 
         private void Restore_Load(object sender, EventArgs e)
         {
-
-
             DirectoryInfo di = new DirectoryInfo(Properties.Settings.Default.strOptionsBackupDir);
 
             foreach (FileInfo fi in di.GetFiles()) {
@@ -57,8 +55,6 @@ namespace Little_Registry_Cleaner
             if (this.listViewFiles.Items.Count > 0)
                 this.listViewFiles.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
         }
-
-        
 
         private void buttonRestore_Click(object sender, EventArgs e)
         {
@@ -92,8 +88,7 @@ namespace Little_Registry_Cleaner
 
         private void buttonBrowse_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(Properties.Settings.Default.strOptionsBackupDir))
-                Process.Start(Properties.Settings.Default.strOptionsBackupDir);
+            Process.Start(Properties.Settings.Default.strOptionsBackupDir);
         }
 
         private void Restore_Resize(object sender, EventArgs e)

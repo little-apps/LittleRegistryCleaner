@@ -51,7 +51,7 @@ namespace Little_Registry_Cleaner
                 EventLog.CreateEventSource(Application.ProductName, "Application");
 
             // If application is being ran for first time or is newer version, then upgrade settings
-            if (Properties.Settings.Default.bUpgradeSettings)
+            if (Properties.Settings.Default.bUpgradeSettings || !Properties.Settings.Default.IsSynchronized)
             {
                 Properties.Settings.Default.Upgrade();
                 Properties.Settings.Default.bUpgradeSettings = false;

@@ -77,15 +77,11 @@ namespace Little_Registry_Cleaner
             Properties.Settings.Default.bOptionsRemMedia = this.checkBoxRemDrives.Checked;
             Properties.Settings.Default.bOptionsShowLog = this.checkBoxShowLog.Checked;
 
-            if (!string.IsNullOrEmpty(this.textBoxBackupFolder.Text))
+            if (this.textBoxBackupFolder.Text != Properties.Settings.Default.strOptionsBackupDir)
                 Properties.Settings.Default.strOptionsBackupDir = this.textBoxBackupFolder.Text;
-            else
-                Properties.Settings.Default.strOptionsBackupDir = string.Format("{0}\\Backups", Properties.Settings.Default.strProgramSettingsDir);
 
-            if (!string.IsNullOrEmpty(this.textBoxLogFolder.Text))
+            if (this.textBoxLogFolder.Text != Properties.Settings.Default.strOptionsLogDir)
                 Properties.Settings.Default.strOptionsLogDir = this.textBoxLogFolder.Text;
-            else
-                Properties.Settings.Default.strOptionsLogDir = string.Format("{0}\\Logs", Properties.Settings.Default.strProgramSettingsDir);
 
             Properties.Settings.Default.arrayExcludeList = new ExcludeList.ExcludeArray(this._arrayExclude);
 

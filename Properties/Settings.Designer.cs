@@ -172,5 +172,14 @@ namespace Little_Registry_Cleaner.Properties {
                 this["bUpgradeSettings"] = value;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool bPortableEdition {
+            get {
+                return ((bool)(this["bPortableEdition"]));
+            }
+        }
     }
 }

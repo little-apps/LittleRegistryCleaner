@@ -317,3 +317,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Checks if user is administrator when program starts up
 
 + Version 1.3.4 Released
+
+- LRC has translations for 17 different languages
+- Fixed backup directory, it doesnt point to the comman program files once options are changed
+- The backup and logs directory will be in the current directory if the release is portable edition
+
++ Version 1.4 Released

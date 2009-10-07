@@ -49,7 +49,9 @@
         {
             get
             {
-                if (string.IsNullOrEmpty(this["strProgramSettingsDir"] as string))
+                if ((bool)this["bPortableEdition"])
+                    this["strProgramSettingsDir"] = global::System.Environment.CurrentDirectory;
+                else
                     this["strProgramSettingsDir"] = string.Format("{0}\\Little Registry Cleaner", global::System.Environment.GetFolderPath(global::System.Environment.SpecialFolder.CommonProgramFiles));
 
                 if (!global::System.IO.Directory.Exists(this["strProgramSettingsDir"] as string))
@@ -72,7 +74,7 @@
                 if (!global::System.IO.Directory.Exists(this["strOptionsBackupDir"] as string))
                     global::System.IO.Directory.CreateDirectory(this["strOptionsBackupDir"] as string);
 
-                return this["strOptionsBackupDir"] as string;;
+                return this["strOptionsBackupDir"] as string;
             }
             set { this["strOptionsBackupDir"] = value; }
         }
