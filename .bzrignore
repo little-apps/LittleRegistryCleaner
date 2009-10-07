@@ -1,11 +1,11 @@
-bin/*/*.*
-obj/*/*.*
-Common Tools/bin/*/*.*
-Common Tools/obj/*/*.*
+*/bin/*/*.*
+*/obj/*/*.*
+*/Common Tools/bin/*/*.*
+*/Common Tools/obj/*/*.*
 *.dll
 *.pdb
 *.exe.config
 *.exe.manifest
 *.exe
 *.resources
-Little Registry Cleaner.chm
+*/Little Registry Cleaner.chm
