@@ -245,21 +245,16 @@ namespace Little_Registry_Cleaner.Scanners
                     }
 
                     // Check referenced CLSID
-                    try
+                    using (RegistryKey rkCLSID = regKey.OpenSubKey(string.Format("{0}\\CLSID", strSubKey)))
                     {
-                        Type clsid = Type.GetTypeFromProgID(strSubKey);
+                        if (rkCLSID != null)
+                        {
+                            string guid = rkCLSID.GetValue("") as string;
 
-                        if (clsid == null)
-                            continue;
-
-                        string guid = clsid.GUID.ToString("B");
-                        if (!string.IsNullOrEmpty(guid))
-                            if (!clsidExists(guid))
-                                ScanDlg.StoreInvalidKey("Missing CLSID reference", string.Format("{0}\\{1}", regKey.Name, strSubKey));
-                    }
-                    catch (Exception ex)
-                    {
-                        System.Diagnostics.Debug.WriteLine(ex.Message);
+                            if (!string.IsNullOrEmpty(guid))
+                                if (!clsidExists(guid))
+                                    ScanDlg.StoreInvalidKey("Missing CLSID reference", string.Format("{0}\\{1}", regKey.Name, strSubKey));
+                        }
                     }
                 }
 

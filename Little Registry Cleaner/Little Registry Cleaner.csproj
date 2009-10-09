@@ -122,7 +122,7 @@
       <DependentUpon>StartupManager.cs</DependentUpon>
     </Compile>
     <Compile Include="Misc\SysRestore.cs" />
-    <Compile Include="Scanners\HistoryList.cs">
+    <Compile Include="Scanners\RecentDocs.cs">
     </Compile>
     <Compile Include="UninstallManager\ProgramInfo.cs" />
     <Compile Include="UninstallManager\UninstallManager.cs">
@@ -246,17 +246,17 @@
     <Compile Include="ScanDlg.Designer.cs">
       <DependentUpon>ScanDlg.cs</DependentUpon>
     </Compile>
-    <Compile Include="Scanners\AppPaths.cs" />
-    <Compile Include="Scanners\AppSettings.cs" />
-    <Compile Include="Scanners\COMObjects.cs" />
-    <Compile Include="Scanners\DLLs.cs" />
-    <Compile Include="Scanners\Drivers.cs" />
-    <Compile Include="Scanners\Fonts.cs" />
-    <Compile Include="Scanners\HelpFiles.cs" />
-    <Compile Include="Scanners\AppInfo.cs" />
-    <Compile Include="Scanners\Sounds.cs" />
+    <Compile Include="Scanners\ApplicationPaths.cs" />
+    <Compile Include="Scanners\ApplicationSettings.cs" />
+    <Compile Include="Scanners\ActivexComObjects.cs" />
+    <Compile Include="Scanners\SharedDLLs.cs" />
+    <Compile Include="Scanners\SystemDrivers.cs" />
+    <Compile Include="Scanners\WindowsFonts.cs" />
+    <Compile Include="Scanners\WindowsHelpFiles.cs" />
+    <Compile Include="Scanners\ApplicationInfo.cs" />
+    <Compile Include="Scanners\WindowsSounds.cs" />
     <Compile Include="Settings.cs" />
-    <Compile Include="Scanners\StartUp.cs" />
+    <Compile Include="Scanners\StartupFiles.cs" />
     <Compile Include="XML Registry\keyValue.cs" />
     <Compile Include="XML Registry\xmlElement.cs" />
     <Compile Include="XML Registry\xmlReader.cs" />
