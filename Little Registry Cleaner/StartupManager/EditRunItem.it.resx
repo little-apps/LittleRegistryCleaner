@@ -122,8 +122,14 @@
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>Annulla</value>
   </data>
+  <data name="buttonOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Argomenti:</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>File:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Modifica di voce di avvio</value>

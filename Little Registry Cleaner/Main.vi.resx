@@ -147,11 +147,17 @@
   <data name="viewInRegeditToolStripMenuItem.Text" xml:space="preserve">
     <value>Xem trong regedit</value>
   </data>
+  <data name="treeViewAdvResults.Text" xml:space="preserve">
+    <value>treeViewAdv1</value>
+  </data>
   <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="unicode"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="detailsRegView1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="treeViewAdvResults" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0" /&gt;&lt;Rows Styles="Percent,100,Absolute,110" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="unicode"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel3" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="Absolute,405" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="toolStripContainer1.Text" xml:space="preserve">
+    <value>toolStripContainer1</value>
   </data>
   <data name="scanToolStripMenuItem.Text" xml:space="preserve">
     <value>Quét registry</value>
@@ -161,6 +167,9 @@
   </data>
   <data name="restoreToolStripMenuItem.Text" xml:space="preserve">
     <value>Khôi phục registry</value>
+  </data>
+  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
+    <value>Exit</value>
   </data>
   <data name="fileToolStripMenuItem.Text" xml:space="preserve">
     <value>Tệp</value>
@@ -210,6 +219,9 @@
   <data name="arabicToolStripMenuItem.Text" xml:space="preserve">
     <value>Tiếng A-rập</value>
   </data>
+  <data name="polishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tiếng Ba Lan</value>
+  </data>
   <data name="swedishToolStripMenuItem.Text" xml:space="preserve">
     <value>Tiếng Thụy Điển</value>
   </data>
@@ -231,6 +243,12 @@
   <data name="languageToolStripMenuItem.Text" xml:space="preserve">
     <value>Ngôn ngữ</value>
   </data>
+  <data name="startupManagerToolStripMenuItem.Text" xml:space="preserve">
+    <value>Startup Manager</value>
+  </data>
+  <data name="uninstallManagerToolStripMenuItem.Text" xml:space="preserve">
+    <value>Uninstall Manager</value>
+  </data>
   <data name="toolStripMenuItemOptions.Text" xml:space="preserve">
     <value>Tùy chọn</value>
   </data>
@@ -240,6 +258,9 @@
   <data name="helpToolStripMenuItem1.Text" xml:space="preserve">
     <value>Giúp đỡ</value>
   </data>
+  <data name="visitWebsiteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Visit Website</value>
+  </data>
   <data name="checkForUpdatesToolStripMenuItem.Text" xml:space="preserve">
     <value>Kiểm tra các bản cập nhật</value>
   </data>
@@ -248,6 +269,9 @@
   </data>
   <data name="helpToolStripMenuItem.Text" xml:space="preserve">
     <value>Giúp đỡ</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
   </data>
   <data name="toolStripButtonScan.Text" xml:space="preserve">
     <value>Quét registry</value>
@@ -264,13 +288,25 @@
   <data name="toolStripButtonHelp.Text" xml:space="preserve">
     <value>Giúp đỡ</value>
   </data>
+  <data name="toolStrip1.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="hideShowToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
   <data name="hideShowToolStripMenuItem.Text" xml:space="preserve">
     <value>Hide / Show</value>
   </data>
   <data name="aboutToolStripMenuItem1.Text" xml:space="preserve">
     <value>Về...</value>
   </data>
+  <data name="exitToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
   <data name="notifyIcon1.Text" xml:space="preserve">
     <value>Đăng ký ít bụi</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Little Registry Cleaner</value>
   </data>
 </root>

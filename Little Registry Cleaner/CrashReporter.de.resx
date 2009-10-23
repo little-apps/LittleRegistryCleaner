@@ -125,6 +125,9 @@
   <data name="buttonSend.Text" xml:space="preserve">
     <value>Problembericht senden</value>
   </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>In einer Komponente der Little Registry Cleaner ist ein Ausnahme aufgetreten. Wir haben einen Fehlerbericht erstellt, den Sie uns senden können. Wir werden diesen Bericht als vertraulich und anonym behandeln.</value>
   </data>

@@ -44,16 +44,13 @@ namespace Little_Registry_Cleaner
         private void Options_Load(object sender, EventArgs e)
         {
             // Load settings
-            this.checkBoxDeleteBackup.Checked = Properties.Settings.Default.bOptionsDelBackup;
-            this.checkBoxRescan.Checked = Properties.Settings.Default.bOptionsRescan;
-            this.checkBoxLog.Checked = Properties.Settings.Default.bOptionsLog;
-            this.checkBoxRestore.Checked = Properties.Settings.Default.bOptionsRestore;
-            this.checkBoxAutoUpdate.Checked = Properties.Settings.Default.bOptionsAutoUpdate;
-            this.checkBoxRemDrives.Checked = Properties.Settings.Default.bOptionsRemMedia;
-            this.checkBoxShowLog.Checked = Properties.Settings.Default.bOptionsShowLog;
-
-            // Disable show log option if logging is disabled
-            this.checkBoxShowLog.Enabled = this.checkBoxLog.Checked;
+            this.listViewOptions.Items[0].Checked = Properties.Settings.Default.bOptionsLog;
+            this.listViewOptions.Items[1].Checked = Properties.Settings.Default.bOptionsRescan;
+            this.listViewOptions.Items[2].Checked = Properties.Settings.Default.bOptionsAutoUpdate;
+            this.listViewOptions.Items[3].Checked = Properties.Settings.Default.bOptionsRestore;
+            this.listViewOptions.Items[4].Checked = Properties.Settings.Default.bOptionsShowLog;
+            this.listViewOptions.Items[5].Checked = Properties.Settings.Default.bOptionsDelBackup;
+            this.listViewOptions.Items[6].Checked = Properties.Settings.Default.bOptionsRemMedia; 
 
             // Load backup directorys
             this.textBoxBackupFolder.Text = Properties.Settings.Default.strOptionsBackupDir;
@@ -69,13 +66,13 @@ namespace Little_Registry_Cleaner
         private void buttonOK_Click(object sender, EventArgs e)
         {
             // Update settings
-            Properties.Settings.Default.bOptionsRescan = this.checkBoxRescan.Checked;
-            Properties.Settings.Default.bOptionsDelBackup = this.checkBoxDeleteBackup.Checked;
-            Properties.Settings.Default.bOptionsLog = this.checkBoxLog.Checked;
-            Properties.Settings.Default.bOptionsRestore = this.checkBoxRestore.Checked;
-            Properties.Settings.Default.bOptionsAutoUpdate = this.checkBoxAutoUpdate.Checked;
-            Properties.Settings.Default.bOptionsRemMedia = this.checkBoxRemDrives.Checked;
-            Properties.Settings.Default.bOptionsShowLog = this.checkBoxShowLog.Checked;
+            Properties.Settings.Default.bOptionsLog = this.listViewOptions.Items[0].Checked;
+            Properties.Settings.Default.bOptionsRescan = this.listViewOptions.Items[1].Checked;
+            Properties.Settings.Default.bOptionsAutoUpdate = this.listViewOptions.Items[2].Checked;
+            Properties.Settings.Default.bOptionsRestore = this.listViewOptions.Items[3].Checked;
+            Properties.Settings.Default.bOptionsShowLog = this.listViewOptions.Items[4].Checked;
+            Properties.Settings.Default.bOptionsDelBackup = this.listViewOptions.Items[5].Checked;
+            Properties.Settings.Default.bOptionsRemMedia = this.listViewOptions.Items[6].Checked;
 
             if (this.textBoxBackupFolder.Text != Properties.Settings.Default.strOptionsBackupDir)
                 Properties.Settings.Default.strOptionsBackupDir = this.textBoxBackupFolder.Text;
@@ -114,11 +111,6 @@ namespace Little_Registry_Cleaner
                 if (folderBrowserDlg.ShowDialog(this) == DialogResult.OK)
                     this.textBoxLogFolder.Text = folderBrowserDlg.SelectedPath;
             }
-        }
-
-        private void checkBoxLog_CheckedChanged(object sender, EventArgs e)
-        {
-            this.checkBoxShowLog.Enabled = this.checkBoxLog.Checked;
         }
 
         #endregion

@@ -122,6 +122,9 @@
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>Ακύρωση</value>
   </data>
+  <data name="buttonOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Τα ορίσματα:</value>
   </data>
@@ -143,6 +146,9 @@
   <data name="comboBoxSection.Items1" xml:space="preserve">
     <value>StartUp\Current χρήστη</value>
   </data>
+  <data name="comboBoxSection.Items2" xml:space="preserve">
+    <value>Registry\All Users\Run</value>
+  </data>
   <data name="comboBoxSection.Items3" xml:space="preserve">
     <value>Registry\All Users\Run μία φορά</value>
   </data>
@@ -151,6 +157,9 @@
   </data>
   <data name="comboBoxSection.Items5" xml:space="preserve">
     <value>Registry\All Users\Run Services μία φορά</value>
+  </data>
+  <data name="comboBoxSection.Items6" xml:space="preserve">
+    <value>Registry\Current User\Run</value>
   </data>
   <data name="comboBoxSection.Items7" xml:space="preserve">
     <value>Registry\Current User\Run μία φορά</value>

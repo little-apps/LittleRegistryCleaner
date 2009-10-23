@@ -146,6 +146,9 @@
   <data name="comboBoxSection.Items1" xml:space="preserve">
     <value>StartUp\Current 使用者</value>
   </data>
+  <data name="comboBoxSection.Items2" xml:space="preserve">
+    <value>Registry\All Users\Run</value>
+  </data>
   <data name="comboBoxSection.Items3" xml:space="preserve">
     <value>Registry\All Users\Run 一次</value>
   </data>
@@ -154,6 +157,9 @@
   </data>
   <data name="comboBoxSection.Items5" xml:space="preserve">
     <value>Registry\All Users\Run 服務一次</value>
+  </data>
+  <data name="comboBoxSection.Items6" xml:space="preserve">
+    <value>Registry\Current User\Run</value>
   </data>
   <data name="comboBoxSection.Items7" xml:space="preserve">
     <value>Registry\Current User\Run 一次</value>

@@ -122,6 +122,9 @@
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>Hủy</value>
   </data>
+  <data name="buttonOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Đối số:</value>
   </data>
@@ -137,8 +140,14 @@
   <data name="label4.Text" xml:space="preserve">
     <value>Phần:</value>
   </data>
+  <data name="comboBoxSection.Items" xml:space="preserve">
+    <value>StartUp\All Users</value>
+  </data>
   <data name="comboBoxSection.Items1" xml:space="preserve">
     <value>StartUp\hiện tại của người dùng</value>
+  </data>
+  <data name="comboBoxSection.Items2" xml:space="preserve">
+    <value>Registry\All Users\Run</value>
   </data>
   <data name="comboBoxSection.Items3" xml:space="preserve">
     <value>Registry\All Users\Run Sau khi</value>
@@ -148,6 +157,9 @@
   </data>
   <data name="comboBoxSection.Items5" xml:space="preserve">
     <value>Registry\All Users\Run Dịch vụ Sau khi</value>
+  </data>
+  <data name="comboBoxSection.Items6" xml:space="preserve">
+    <value>Registry\Current User\Run</value>
   </data>
   <data name="comboBoxSection.Items7" xml:space="preserve">
     <value>Registry\Current User\Run Sau khi</value>

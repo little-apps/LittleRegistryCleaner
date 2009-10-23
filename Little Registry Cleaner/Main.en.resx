@@ -126,13 +126,187 @@
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="unicode"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="treeView1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0" /&gt;&lt;Rows Styles="Percent,100.1" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
+  <data name="treeColumn1.Header" xml:space="preserve">
+    <value>Problem</value>
+  </data>
+  <data name="treeColumn2.Header" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="treeColumn3.Header" xml:space="preserve">
+    <value>Value Name</value>
+  </data>
+  <data name="selectAllToolStripMenuItem.Text" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="selectNoneToolStripMenuItem.Text" xml:space="preserve">
+    <value>Select None</value>
+  </data>
+  <data name="excludeSelectedToolStripMenuItem.Text" xml:space="preserve">
+    <value>Exclude Selected</value>
+  </data>
+  <data name="viewInRegeditToolStripMenuItem.Text" xml:space="preserve">
+    <value>View in regedit</value>
+  </data>
+  <data name="treeViewAdvResults.Text" xml:space="preserve">
+    <value>treeViewAdv1</value>
+  </data>
   <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="unicode"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="detailsRegView1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="treeViewAdvResults" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0" /&gt;&lt;Rows Styles="Percent,100,Absolute,110" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="unicode"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel3" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="Absolute,405" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
+  <data name="toolStripContainer1.Text" xml:space="preserve">
+    <value>toolStripContainer1</value>
+  </data>
+  <data name="scanToolStripMenuItem.Text" xml:space="preserve">
+    <value>Scan registry</value>
+  </data>
+  <data name="fixToolStripMenuItem.Text" xml:space="preserve">
+    <value>Fix problems</value>
+  </data>
+  <data name="restoreToolStripMenuItem.Text" xml:space="preserve">
+    <value>Restore registry</value>
+  </data>
+  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="selectAllToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="selectNoneToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Select None</value>
+  </data>
+  <data name="excludeSelectedToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Exclude Selected</value>
+  </data>
+  <data name="viewInRegeditToolStripMenuItem1.Text" xml:space="preserve">
+    <value>View in regedit</value>
+  </data>
+  <data name="editToolStripMenuItem.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
+    <value>French</value>
+  </data>
+  <data name="spanishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Spanish</value>
+  </data>
   <data name="portugeseToolStripMenuItem.Text" xml:space="preserve">
     <value>Portugese</value>
+  </data>
+  <data name="italianToolStripMenuItem.Text" xml:space="preserve">
+    <value>Italian</value>
+  </data>
+  <data name="dutchToolStripMenuItem.Text" xml:space="preserve">
+    <value>Dutch</value>
+  </data>
+  <data name="germanToolStripMenuItem.Text" xml:space="preserve">
+    <value>German</value>
+  </data>
+  <data name="russianToolStripMenuItem.Text" xml:space="preserve">
+    <value>Russian</value>
+  </data>
+  <data name="greekToolStripMenuItem.Text" xml:space="preserve">
+    <value>Greek</value>
+  </data>
+  <data name="arabicToolStripMenuItem.Text" xml:space="preserve">
+    <value>Arabic</value>
+  </data>
+  <data name="polishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Polish</value>
+  </data>
+  <data name="swedishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Swedish</value>
+  </data>
+  <data name="japaneseToolStripMenuItem.Text" xml:space="preserve">
+    <value>Japanese</value>
+  </data>
+  <data name="chineseSimplifiedToolStripMenuItem.Text" xml:space="preserve">
+    <value>Chinese (Simplified)</value>
+  </data>
+  <data name="chineseTraditionalToolStripMenuItem.Text" xml:space="preserve">
+    <value>Chinese (Traditional)</value>
+  </data>
+  <data name="vietnameseToolStripMenuItem.Text" xml:space="preserve">
+    <value>Vietnamese</value>
+  </data>
+  <data name="thaiToolStripMenuItem.Text" xml:space="preserve">
+    <value>Thai</value>
+  </data>
+  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="startupManagerToolStripMenuItem.Text" xml:space="preserve">
+    <value>Startup Manager</value>
+  </data>
+  <data name="uninstallManagerToolStripMenuItem.Text" xml:space="preserve">
+    <value>Uninstall Manager</value>
+  </data>
+  <data name="toolStripMenuItemOptions.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="toolsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="helpToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="visitWebsiteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Visit Website</value>
+  </data>
+  <data name="checkForUpdatesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Check for updates</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>About...</value>
+  </data>
+  <data name="helpToolStripMenuItem.Text" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="toolStripButtonScan.Text" xml:space="preserve">
+    <value>Scan registry</value>
+  </data>
+  <data name="toolStripButtonFix.Text" xml:space="preserve">
+    <value>Fix problems</value>
+  </data>
+  <data name="toolStripButtonRestore.Text" xml:space="preserve">
+    <value>Restore registry</value>
+  </data>
+  <data name="toolStripButtonSettings.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="toolStripButtonHelp.Text" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="toolStrip1.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="hideShowToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
+  <data name="hideShowToolStripMenuItem.Text" xml:space="preserve">
+    <value>Hide/Show</value>
+  </data>
+  <data name="aboutToolStripMenuItem1.Text" xml:space="preserve">
+    <value>About...</value>
+  </data>
+  <data name="exitToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="notifyIcon1.Text" xml:space="preserve">
+    <value>Little Register Cleaner</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Little Registry Cleaner</value>
   </data>
 </root>

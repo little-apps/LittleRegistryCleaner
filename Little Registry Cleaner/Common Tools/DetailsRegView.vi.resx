@@ -123,14 +123,26 @@
   <data name="labelDetails.Text" xml:space="preserve">
     <value>Chi tiết</value>
   </data>
+  <data name="labelProblem.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="labelProblem.Text" xml:space="preserve">
     <value>Vấn đề:</value>
+  </data>
+  <data name="labelHKEY.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="labelHKEY.Text" xml:space="preserve">
     <value>Vị trí:</value>
   </data>
+  <data name="labelValueName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="labelValueName.Text" xml:space="preserve">
     <value>Giá trị Tên:</value>
+  </data>
+  <data name="labelData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="labelData.Text" xml:space="preserve">
     <value>Dữ liệu:</value>

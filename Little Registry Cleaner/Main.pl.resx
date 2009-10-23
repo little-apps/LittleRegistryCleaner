@@ -192,6 +192,9 @@
   <data name="spanishToolStripMenuItem.Text" xml:space="preserve">
     <value>Hiszpański</value>
   </data>
+  <data name="portugeseToolStripMenuItem.Text" xml:space="preserve">
+    <value>Portugalski</value>
+  </data>
   <data name="italianToolStripMenuItem.Text" xml:space="preserve">
     <value>Włoski</value>
   </data>
@@ -209,6 +212,9 @@
   </data>
   <data name="arabicToolStripMenuItem.Text" xml:space="preserve">
     <value>Arabski</value>
+  </data>
+  <data name="polishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Polski</value>
   </data>
   <data name="swedishToolStripMenuItem.Text" xml:space="preserve">
     <value>Szwedzki</value>
@@ -273,6 +279,9 @@
   <data name="toolStripButtonHelp.Text" xml:space="preserve">
     <value>Pomoc</value>
   </data>
+  <data name="hideShowToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
   <data name="hideShowToolStripMenuItem.Text" xml:space="preserve">
     <value>Pokaż/Ukryj</value>
   </data>
@@ -281,5 +290,11 @@
   </data>
   <data name="exitToolStripMenuItem1.Text" xml:space="preserve">
     <value>Zakończ</value>
+  </data>
+  <data name="notifyIcon1.Text" xml:space="preserve">
+    <value>Trochę Register Cleaner</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Little rejestru Cleaner</value>
   </data>
 </root>

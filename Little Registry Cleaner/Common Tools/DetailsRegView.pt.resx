@@ -123,14 +123,26 @@
   <data name="labelDetails.Text" xml:space="preserve">
     <value>Detalhes</value>
   </data>
+  <data name="labelProblem.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="labelProblem.Text" xml:space="preserve">
     <value>Problema:</value>
+  </data>
+  <data name="labelHKEY.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="labelHKEY.Text" xml:space="preserve">
     <value>Local:</value>
   </data>
+  <data name="labelValueName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="labelValueName.Text" xml:space="preserve">
     <value>Nome do valor:</value>
+  </data>
+  <data name="labelData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="labelData.Text" xml:space="preserve">
     <value>Dados:</value>

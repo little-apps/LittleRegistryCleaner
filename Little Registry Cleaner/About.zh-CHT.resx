@@ -117,8 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="label3.Text" xml:space="preserve">
     <value>建立日期:</value>
   </data>
@@ -130,6 +130,9 @@
   </data>
   <data name="richTextBox1.Text" xml:space="preserve">
     <value>該程序是自由軟件：你可以重新發布它和/或修改的條件下，在GNU通用公共許可證的出版自由軟件基金會，或者第3版的許可證，或者（根據你的選擇）用任何更新的版本。這程式的目的是希望它有用，但沒有任何擔保，甚至沒有隱含的保證對適銷性或特定目的。請參閱GNU通用公共許可證的更多細節。您應該已經收到副本的GNU通用公共許可證隨著這一計劃。如果沒有，請參閱&lt;http://www.gnu.org/licenses/&gt;.</value>
+  </data>
+  <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="labelTitle.Text" xml:space="preserve">
     <value>小註冊表清理器</value>

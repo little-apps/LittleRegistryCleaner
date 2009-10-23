@@ -125,6 +125,9 @@
   <data name="buttonSend.Text" xml:space="preserve">
     <value>Fout rapport verzenden</value>
   </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Er is een uitzondering opgetreden in een onderdeel van de kleine register reinigings. Wij hebben een fouten rapport gemaakt dat u ons kunt verzenden. Wij zullen dit rapport vertrouwelijk en anoniem behandelen.</value>
   </data>

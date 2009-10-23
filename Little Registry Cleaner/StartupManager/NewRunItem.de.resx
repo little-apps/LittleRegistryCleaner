@@ -131,6 +131,9 @@
   <data name="label2.Text" xml:space="preserve">
     <value>Dateipfad:</value>
   </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Name:</value>
+  </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Name und Pfad</value>
   </data>
@@ -143,14 +146,26 @@
   <data name="comboBoxSection.Items1" xml:space="preserve">
     <value>StartUp\Current-Benutzer</value>
   </data>
+  <data name="comboBoxSection.Items2" xml:space="preserve">
+    <value>Registry\All Users\Run</value>
+  </data>
   <data name="comboBoxSection.Items3" xml:space="preserve">
     <value>Registry\All Users\Run einmal</value>
+  </data>
+  <data name="comboBoxSection.Items4" xml:space="preserve">
+    <value>Registry\All Users\Run Services</value>
   </data>
   <data name="comboBoxSection.Items5" xml:space="preserve">
     <value>Registry\All Users\Run Services einmal</value>
   </data>
+  <data name="comboBoxSection.Items6" xml:space="preserve">
+    <value>Registry\Current User\Run</value>
+  </data>
   <data name="comboBoxSection.Items7" xml:space="preserve">
     <value>Registry\Current User\Run einmal</value>
+  </data>
+  <data name="comboBoxSection.Items8" xml:space="preserve">
+    <value>Registry\Current User\Run Services</value>
   </data>
   <data name="comboBoxSection.Items9" xml:space="preserve">
     <value>Registry\Current User\Run Services einmal</value>

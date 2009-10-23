@@ -122,6 +122,9 @@
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>Anuluj</value>
   </data>
+  <data name="buttonOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Parametry:</value>
   </data>

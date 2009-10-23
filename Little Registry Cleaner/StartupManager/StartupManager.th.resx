@@ -135,6 +135,9 @@
   <data name="toolStripButtonAdd.Text" xml:space="preserve">
     <value>เพิ่ม</value>
   </data>
+  <data name="toolStripButtonEdit.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
   <data name="toolStripButtonDelete.Text" xml:space="preserve">
     <value>ลบ</value>
   </data>
@@ -146,5 +149,8 @@
   </data>
   <data name="toolStripButtonRefresh.Text" xml:space="preserve">
     <value>รีเฟรช</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Little Registry Cleaner - Startup Manager</value>
   </data>
 </root>

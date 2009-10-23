@@ -122,6 +122,12 @@
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>Annuler</value>
   </data>
+  <data name="buttonOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Arguments:</value>
+  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Chemin du fichier:</value>
   </data>
@@ -130,6 +136,9 @@
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Nom et chemin</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Section:</value>
   </data>
   <data name="comboBoxSection.Items" xml:space="preserve">
     <value>Startup\All Users</value>

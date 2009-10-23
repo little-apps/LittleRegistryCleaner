@@ -117,10 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="label3.Text" xml:space="preserve">
     <value>Construir data:</value>
+  </data>
+  <data name="linkLabelAuthor.Text" xml:space="preserve">
+    <value>Nick H.</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Autor:</value>
@@ -131,6 +134,9 @@
 Este programa é distribuído na esperança de que será útil, mas sem qualquer garantia; sem sequer a garantia implícita de COMERCIABILIDADE ou adequação a um fim específico.  Consulte a GNU GPL para obter mais detalhes.
 
 Você deve ter recebido uma cópia da GNU General Public License juntamente com este programa.  Se não for, consulte &lt;http://www.gnu.org/licenses/&gt;.</value>
+  </data>
+  <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="labelTitle.Text" xml:space="preserve">
     <value>Pouco Registry Cleaner</value>

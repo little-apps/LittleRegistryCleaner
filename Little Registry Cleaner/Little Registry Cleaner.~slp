@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.0.290" date="20090930180822" scan="12" scanned="20090930180228">
+<document version="2.0.291" date="20091021233048" scan="13" scanned="20091021233041">
   <lang id="en"/>
   <lang id="fr"/>
   <lang id="es"/>
@@ -311,7 +311,7 @@
       </node>
     </node>
   </source>
-  <source class="TVisualStudioNetProjectSource" name="Little Registry Cleaner.csproj" original="en" date="20090912044410" defaultoutputdir="bin\Debug" netversion="net35" toolsversion="net35" rootnamespace="Little_Registry_Cleaner" configuration="Debug">
+  <source class="TVisualStudioNetProjectSource" name="Little Registry Cleaner.csproj" original="en" date="20091007220428" defaultoutputdir="bin\Debug" netversion="net35" toolsversion="net35" rootnamespace="Little_Registry_Cleaner" configuration="Debug">
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TColorData</class>
@@ -2142,6 +2142,11 @@
                     <lang id="pl" status="3">Arabski</lang>
                   </row>
                 </component>
+                <component class="TVisMenuItem" name="polishToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
+                  <row id="Size.Height" state="0">22</row>
+                  <row id="Size.Width" state="0">184</row>
+                  <row id="Text" state="0">Polish</row>
+                </component>
                 <component class="TVisMenuItem" name="swedishToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
                   <row id="Size.Height" state="0">22</row>
                   <row id="Size.Width" state="0">184</row>
@@ -2940,12 +2945,8 @@
                   <lang id="th" status="2">Options</lang>
                   <lang id="pl" status="2">Ustawienia</lang>
                 </row>
-                <component class="TVisCheckBox" name="checkBoxLog" type="System.Windows.Forms.CheckBox" autosize="1">
-                  <row id="Location.X">10</row>
-                  <row id="Location.Y">19</row>
-                  <row id="Size.Height">17</row>
-                  <row id="Size.Width">156</row>
-                  <row id="Text" state="0">
+                <component class="TVisCheckBox" name="checkBoxLog" state="1" type="System.Windows.Forms.CheckBox">
+                  <row id="Text" state="1">
                     <native>Log registry scans and fixes</native>
                     <lang id="en" status="2">Log registry scans and fixes</lang>
                     <lang id="fr" status="2">Connectez-vous scans de registre et des correctifs</lang>
@@ -2966,12 +2967,8 @@
                     <lang id="pl" status="2">Twórz raporty skanowania i napraw</lang>
                   </row>
                 </component>
-                <component class="TVisCheckBox" name="checkBoxRescan" type="System.Windows.Forms.CheckBox" autosize="1">
-                  <row id="Location.X">10</row>
-                  <row id="Location.Y">42</row>
-                  <row id="Size.Height">17</row>
-                  <row id="Size.Width">190</row>
-                  <row id="Text" state="0">
+                <component class="TVisCheckBox" name="checkBoxRescan" state="1" type="System.Windows.Forms.CheckBox">
+                  <row id="Text" state="1">
                     <native>Re-Scan after fixing registry issues </native>
                     <lang id="en" status="2">Re-Scan after fixing registry issues </lang>
                     <lang id="fr" status="2">Re-Scan après la fixation des problèmes de Registre </lang>
@@ -2992,12 +2989,8 @@
                     <lang id="pl" status="2">Skanuj ponownie po naprawieniu błędów</lang>
                   </row>
                 </component>
-                <component class="TVisCheckBox" name="checkBoxDeleteBackup" type="System.Windows.Forms.CheckBox" autosize="1">
-                  <row id="Location.X">197</row>
-                  <row id="Location.Y">42</row>
-                  <row id="Size.Height">17</row>
-                  <row id="Size.Width">236</row>
-                  <row id="Text" state="0">
+                <component class="TVisCheckBox" name="checkBoxDeleteBackup" state="1" type="System.Windows.Forms.CheckBox">
+                  <row id="Text" state="1">
                     <native>Delete backup file after restoring the registry </native>
                     <lang id="en" status="2">Delete backup file after restoring the registry </lang>
                     <lang id="fr" status="2">Supprimer le fichier de sauvegarde après la restauration du Registre </lang>
@@ -3018,12 +3011,8 @@
                     <lang id="pl" status="2">Usuń kopię zapasową po przywróceniu rejestru</lang>
                   </row>
                 </component>
-                <component class="TVisCheckBox" name="checkBoxRestore" type="System.Windows.Forms.CheckBox" autosize="1">
-                  <row id="Location.X">10</row>
-                  <row id="Location.Y">87</row>
-                  <row id="Size.Height">17</row>
-                  <row id="Size.Width">222</row>
-                  <row id="Text" state="0">
+                <component class="TVisCheckBox" name="checkBoxRestore" state="1" type="System.Windows.Forms.CheckBox">
+                  <row id="Text" state="1">
                     <native>Create system restore points automatically</native>
                     <lang id="en" status="2">Create system restore points automatically</lang>
                     <lang id="fr" status="2">Créer automatiquement des points de restauration système</lang>
@@ -3044,12 +3033,8 @@
                     <lang id="pl" status="2">Automatycznie twórz punkty przywracania systemu</lang>
                   </row>
                 </component>
-                <component class="TVisCheckBox" name="checkBoxAutoUpdate" type="System.Windows.Forms.CheckBox" autosize="1">
-                  <row id="Location.X">10</row>
-                  <row id="Location.Y">65</row>
-                  <row id="Size.Height">17</row>
-                  <row id="Size.Width">177</row>
-                  <row id="Text" state="0">
+                <component class="TVisCheckBox" name="checkBoxAutoUpdate" state="1" type="System.Windows.Forms.CheckBox">
+                  <row id="Text" state="1">
                     <native>Check for updates automatically</native>
                     <lang id="en" status="2">Check for updates automatically</lang>
                     <lang id="fr" status="2">Vérifiez les mises à jour automatiquement</lang>
@@ -3070,12 +3055,8 @@
                     <lang id="pl" status="2">Automatycznie sprawdzaj, czy dostępne są uaktualnienia</lang>
                   </row>
                 </component>
-                <component class="TVisCheckBox" name="checkBoxRemDrives" type="System.Windows.Forms.CheckBox" autosize="1">
-                  <row id="Location.X">197</row>
-                  <row id="Location.Y">65</row>
-                  <row id="Size.Height">17</row>
-                  <row id="Size.Width">212</row>
-                  <row id="Text" state="0">
+                <component class="TVisCheckBox" name="checkBoxRemDrives" state="1" type="System.Windows.Forms.CheckBox">
+                  <row id="Text" state="1">
                     <native>Ignore missing files on removable media</native>
                     <lang id="en" status="2">Ignore missing files on removable media</lang>
                     <lang id="fr" status="2">Ignorer les fichiers manquants sur un support amovible</lang>
@@ -3096,12 +3077,8 @@
                     <lang id="pl" status="2">Pomiń brakujące pliki na nośnikach wymiennych</lang>
                   </row>
                 </component>
-                <component class="TVisCheckBox" name="checkBoxShowLog" type="System.Windows.Forms.CheckBox" autosize="1">
-                  <row id="Location.X">197</row>
-                  <row id="Location.Y">19</row>
-                  <row id="Size.Height">17</row>
-                  <row id="Size.Width">179</row>
-                  <row id="Text" state="0">
+                <component class="TVisCheckBox" name="checkBoxShowLog" state="1" type="System.Windows.Forms.CheckBox">
+                  <row id="Text" state="1">
                     <native>Show log after finished scanning</native>
                     <lang id="en" status="2">Show log after finished scanning</lang>
                     <lang id="fr" status="2">Voir le journal après avoir fini de numériser</lang>
@@ -3121,6 +3098,128 @@
                     <lang id="th" status="2">Log แสดงหลังจากเสร็จสิ้นการสแกน</lang>
                     <lang id="pl" status="2">Otwórz plik raportu po zakończeniu skanowania</lang>
                   </row>
+                </component>
+                <component class="TVisListView" name="listViewOptions" state="0" type="System.Windows.Forms.ListView" viewstyle="vsList">
+                  <row id="Location.X" state="0">6</row>
+                  <row id="Location.Y" state="0">19</row>
+                  <row id="Size.Height" state="0">85</row>
+                  <row id="Size.Width" state="0">432</row>
+                  <item name="Items[0]" state="0">
+                    <row id="Text" state="0">
+                      <native>Log registry scans and fixes</native>
+                      <lang id="en" status="2">Log registry scans and fixes</lang>
+                      <lang id="fr" status="2">Connectez-vous scans de registre et des correctifs</lang>
+                      <lang id="es" status="2">Análisis de registro de registro y revisiones</lang>
+                      <lang id="pt" status="2">Pesquisas de registro de log e correções</lang>
+                      <lang id="it" status="2">Registro del Registro di sistema scansioni e le correzioni</lang>
+                      <lang id="nl" status="2">Register log boek worden gescand en worden opgelost</lang>
+                      <lang id="de" status="2">Registrierung Logscans und fixes</lang>
+                      <lang id="ru" status="2">Журнал сканирование реестра и исправления</lang>
+                      <lang id="el" status="2">Αρχείο καταγραφής μητρώου σαρώνει και διορθώνει</lang>
+                      <lang id="ar" status="2">التسجيل سجل بتفحص وإصلاحات</lang>
+                      <lang id="sv" status="2">Loggen registret sökningar och korrigeringar</lang>
+                      <lang id="zh" status="2">日志注册表扫描和修复</lang>
+                      <lang id="zh.tra" status="2">日誌註冊表掃描和修復</lang>
+                      <lang id="ja" status="2">レジストリをスキャンし、修正ログ</lang>
+                      <lang id="vi" status="2">Đăng nhập quét registry và sửa chữa</lang>
+                      <lang id="th" status="2">Log สแกนรีจิสทรีและการแก้ไข</lang>
+                      <lang id="pl" status="2">Twórz raporty skanowania i napraw</lang>
+                    </row>
+                  </item>
+                  <item name="Items[1]" state="0">
+                    <row id="Text" state="0">Re-Scan after fixing registry issues</row>
+                  </item>
+                  <item name="Items[2]" state="0">
+                    <row id="Text" state="0">
+                      <native>Check for updates automatically</native>
+                      <lang id="en" status="2">Check for updates automatically</lang>
+                      <lang id="fr" status="2">Vérifiez les mises à jour automatiquement</lang>
+                      <lang id="es" status="2">Comprobar si hay actualizaciones automáticamente</lang>
+                      <lang id="pt" status="2">Verificar atualizações automaticamente</lang>
+                      <lang id="it" status="2">Controllare automaticamente gli aggiornamenti</lang>
+                      <lang id="nl" status="2">Automatisch controleren op updates</lang>
+                      <lang id="de" status="2">Automatisch nach Aktualisierungen suchen</lang>
+                      <lang id="ru" status="2">Автоматическая проверка обновлений</lang>
+                      <lang id="el" status="2">Αυτόματος έλεγχος για ενημερωμένες εκδόσεις</lang>
+                      <lang id="ar" status="2">البحث عن التحديثات تلقائياً</lang>
+                      <lang id="sv" status="2">SÃ¶k efter uppdateringar automatiskt</lang>
+                      <lang id="zh" status="2">自动检查更新</lang>
+                      <lang id="zh.tra" status="2">自動檢查更新</lang>
+                      <lang id="ja" status="2">更新プログラムを自動的にチェック</lang>
+                      <lang id="vi" status="2">Kiểm tra cho cập nhật tự động</lang>
+                      <lang id="th" status="2">ตรวจสอบข้อมูลปรับปรุงอัตโนมัติ</lang>
+                      <lang id="pl" status="2">Automatycznie sprawdzaj, czy dostępne są uaktualnienia</lang>
+                    </row>
+                  </item>
+                  <item name="Items[3]" state="0">
+                    <row id="Text" state="0">
+                      <native>Create system restore points automatically</native>
+                      <lang id="en" status="2">Create system restore points automatically</lang>
+                      <lang id="fr" status="2">Créer automatiquement des points de restauration système</lang>
+                      <lang id="es" status="2">Crear sistema de puntos de restauración automáticamente</lang>
+                      <lang id="pt" status="2">Criar pontos de restauração do sistema automaticamente</lang>
+                      <lang id="it" status="2">Creare sistema punti di ripristino automatico</lang>
+                      <lang id="nl" status="2">Systeem automatisch herstel punten maken</lang>
+                      <lang id="de" status="2">Erstellen Sie System Wiederherstellungspunkte automatisch</lang>
+                      <lang id="ru" status="2">Создание системы точки восстановления автоматически</lang>
+                      <lang id="el" status="2">Δημιουργία συστήματος σημεία επαναφοράς αυτόματα</lang>
+                      <lang id="ar" status="2">إنشاء نقاط استعادة النظام تلقائياً</lang>
+                      <lang id="sv" status="2">Skapa återställningspunkter automatiskt</lang>
+                      <lang id="zh" status="2">创建系统还原点自动</lang>
+                      <lang id="zh.tra" status="2">創建系統還原點自動</lang>
+                      <lang id="ja" status="2">システムが自動的に復元ポイントを作成します。</lang>
+                      <lang id="vi" status="2">Tạo điểm khôi phục hệ thống tự động</lang>
+                      <lang id="th" status="2">สร้างจุดคืนค่าระบบอัตโนมัติ</lang>
+                      <lang id="pl" status="2">Automatycznie twórz punkty przywracania systemu</lang>
+                    </row>
+                  </item>
+                  <item name="Items[4]" state="0">
+                    <row id="Text" state="0">
+                      <native>Show log after finished scanning</native>
+                      <lang id="en" status="2">Show log after finished scanning</lang>
+                      <lang id="fr" status="2">Voir le journal après avoir fini de numériser</lang>
+                      <lang id="es" status="2">Mostrar registro una vez finalizado el análisis</lang>
+                      <lang id="pt" status="2">Mostrar log após a conclusão da digitalização</lang>
+                      <lang id="it" status="2">Mostra registro al termine dell'operazione di scansione</lang>
+                      <lang id="nl" status="2">Log boek na scannen weer geven</lang>
+                      <lang id="de" status="2">Zeigen Sie Protokoll nach Abschluss der Scan an</lang>
+                      <lang id="ru" status="2">Показать журнал после окончания сканирования</lang>
+                      <lang id="el" status="2">Εμφάνιση αρχείου καταγραφής μετά την ολοκλήρωση της σάρωσης</lang>
+                      <lang id="ar" status="2">إظهار سجل بعد الانتهاء من المسح الضوئي</lang>
+                      <lang id="sv" status="2">Visa logg när klar med skanningen</lang>
+                      <lang id="zh" status="2">显示记录完成扫描后</lang>
+                      <lang id="zh.tra" status="2">顯示記錄完成掃描後</lang>
+                      <lang id="ja" status="2">ログを表示後、スキャンが終了</lang>
+                      <lang id="vi" status="2">Hiển thị nhật ký sau khi đã hoàn thành quét</lang>
+                      <lang id="th" status="2">Log แสดงหลังจากเสร็จสิ้นการสแกน</lang>
+                      <lang id="pl" status="2">Otwórz plik raportu po zakończeniu skanowania</lang>
+                    </row>
+                  </item>
+                  <item name="Items[5]" state="0">
+                    <row id="Text" state="0">Delete backup file after restoring the registry</row>
+                  </item>
+                  <item name="Items[6]" state="0">
+                    <row id="Text" state="0">
+                      <native>Ignore missing files on removable media</native>
+                      <lang id="en" status="2">Ignore missing files on removable media</lang>
+                      <lang id="fr" status="2">Ignorer les fichiers manquants sur un support amovible</lang>
+                      <lang id="es" status="2">Omitir archivos que faltan en medios extraíbles</lang>
+                      <lang id="pt" status="2">Ignorar arquivos ausentes em mídia removível</lang>
+                      <lang id="it" status="2">Ignorare i file mancanti su supporti rimovibili</lang>
+                      <lang id="nl" status="2">Ontbrekende bestanden op verwisselbare media negeren</lang>
+                      <lang id="de" status="2">Ignorieren Sie fehlende Dateien auf Wechselmedien</lang>
+                      <lang id="ru" status="2">Игнорировать отсутствующие файлы на съемном носителе</lang>
+                      <lang id="el" status="2">Αγνοεί αρχεία που λείπουν σε αφαιρούμενα μέσα αποθήκευσης</lang>
+                      <lang id="ar" status="2">تجاهل الملفات المفقودة على وسائط قابلة للإزالة</lang>
+                      <lang id="sv" status="2">Ignorera filer som saknas på flyttbara media</lang>
+                      <lang id="zh" status="2">在可移动媒体忽略丢失的文件</lang>
+                      <lang id="zh.tra" status="2">忽略丟失的文件在可移動媒體</lang>
+                      <lang id="ja" status="2">リムーバブルメディア上に存在しないファイルを無視する</lang>
+                      <lang id="vi" status="2">Bỏ qua các tập tin bị thiếu trên phương tiện di động</lang>
+                      <lang id="th" status="2">ไม่สนใจไฟล์ที่ขาดหายไปในสื่อที่ถอดได้</lang>
+                      <lang id="pl" status="2">Pomiń brakujące pliki na nośnikach wymiennych</lang>
+                    </row>
+                  </item>
                 </component>
               </component>
               <component class="TVisGroupBox" name="groupBox3" type="System.Windows.Forms.GroupBox">
@@ -4651,8 +4750,6 @@
             <lang id="th" status="2">Little Registry Cleaner - Uninstall Manager</lang>
             <lang id="pl" status="2">Little Registry Cleaner - Menadżer deinstalacji</lang>
           </row>
-          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
-          </component>
           <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer" align="alClient">
             <row id="Location.X">0</row>
             <row id="Location.Y">0</row>
@@ -4875,6 +4972,8 @@
                 </column>
               </component>
             </component>
+          </component>
+          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
           </component>
         </form>
       </node>

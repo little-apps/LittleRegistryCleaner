@@ -31,13 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Options));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBoxShowLog = new System.Windows.Forms.CheckBox();
-            this.checkBoxRemDrives = new System.Windows.Forms.CheckBox();
-            this.checkBoxAutoUpdate = new System.Windows.Forms.CheckBox();
-            this.checkBoxRestore = new System.Windows.Forms.CheckBox();
-            this.checkBoxDeleteBackup = new System.Windows.Forms.CheckBox();
-            this.checkBoxRescan = new System.Windows.Forms.CheckBox();
-            this.checkBoxLog = new System.Windows.Forms.CheckBox();
+            this.listViewOptions = new System.Windows.Forms.ListView();
             this.buttonOK = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.textBoxBackupFolder = new System.Windows.Forms.TextBox();
@@ -69,59 +63,26 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.checkBoxShowLog);
-            this.groupBox1.Controls.Add(this.checkBoxRemDrives);
-            this.groupBox1.Controls.Add(this.checkBoxAutoUpdate);
-            this.groupBox1.Controls.Add(this.checkBoxRestore);
-            this.groupBox1.Controls.Add(this.checkBoxDeleteBackup);
-            this.groupBox1.Controls.Add(this.checkBoxRescan);
-            this.groupBox1.Controls.Add(this.checkBoxLog);
+            this.groupBox1.Controls.Add(this.listViewOptions);
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
-            // checkBoxShowLog
+            // listViewOptions
             // 
-            resources.ApplyResources(this.checkBoxShowLog, "checkBoxShowLog");
-            this.checkBoxShowLog.Name = "checkBoxShowLog";
-            this.checkBoxShowLog.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxRemDrives
-            // 
-            resources.ApplyResources(this.checkBoxRemDrives, "checkBoxRemDrives");
-            this.checkBoxRemDrives.Name = "checkBoxRemDrives";
-            this.checkBoxRemDrives.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxAutoUpdate
-            // 
-            resources.ApplyResources(this.checkBoxAutoUpdate, "checkBoxAutoUpdate");
-            this.checkBoxAutoUpdate.Name = "checkBoxAutoUpdate";
-            this.checkBoxAutoUpdate.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxRestore
-            // 
-            resources.ApplyResources(this.checkBoxRestore, "checkBoxRestore");
-            this.checkBoxRestore.Name = "checkBoxRestore";
-            this.checkBoxRestore.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxDeleteBackup
-            // 
-            resources.ApplyResources(this.checkBoxDeleteBackup, "checkBoxDeleteBackup");
-            this.checkBoxDeleteBackup.Name = "checkBoxDeleteBackup";
-            this.checkBoxDeleteBackup.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxRescan
-            // 
-            resources.ApplyResources(this.checkBoxRescan, "checkBoxRescan");
-            this.checkBoxRescan.Name = "checkBoxRescan";
-            this.checkBoxRescan.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxLog
-            // 
-            resources.ApplyResources(this.checkBoxLog, "checkBoxLog");
-            this.checkBoxLog.Name = "checkBoxLog";
-            this.checkBoxLog.UseVisualStyleBackColor = true;
-            this.checkBoxLog.CheckedChanged += new System.EventHandler(this.checkBoxLog_CheckedChanged);
+            this.listViewOptions.CheckBoxes = true;
+            this.listViewOptions.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            ((System.Windows.Forms.ListViewItem)(resources.GetObject("listViewOptions.Items"))),
+            ((System.Windows.Forms.ListViewItem)(resources.GetObject("listViewOptions.Items1"))),
+            ((System.Windows.Forms.ListViewItem)(resources.GetObject("listViewOptions.Items2"))),
+            ((System.Windows.Forms.ListViewItem)(resources.GetObject("listViewOptions.Items3"))),
+            ((System.Windows.Forms.ListViewItem)(resources.GetObject("listViewOptions.Items4"))),
+            ((System.Windows.Forms.ListViewItem)(resources.GetObject("listViewOptions.Items5"))),
+            ((System.Windows.Forms.ListViewItem)(resources.GetObject("listViewOptions.Items6")))});
+            resources.ApplyResources(this.listViewOptions, "listViewOptions");
+            this.listViewOptions.Name = "listViewOptions";
+            this.listViewOptions.UseCompatibleStateImageBehavior = false;
+            this.listViewOptions.View = System.Windows.Forms.View.List;
             // 
             // buttonOK
             // 
@@ -281,7 +242,6 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Load += new System.EventHandler(this.Options_Load);
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.tabControl1.ResumeLayout(false);
@@ -298,14 +258,11 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox checkBoxLog;
         private System.Windows.Forms.Button buttonOK;
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.Button buttonBrowse1;
         private System.Windows.Forms.TextBox textBoxBackupFolder;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.CheckBox checkBoxDeleteBackup;
-        private System.Windows.Forms.CheckBox checkBoxRescan;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage1;
@@ -314,16 +271,13 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem removeEntryToolStripMenuItem;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox checkBoxRestore;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox textBoxLogFolder;
         private System.Windows.Forms.Button buttonBrowse2;
-        private System.Windows.Forms.CheckBox checkBoxAutoUpdate;
-        private System.Windows.Forms.CheckBox checkBoxRemDrives;
-        private System.Windows.Forms.CheckBox checkBoxShowLog;
         private System.Windows.Forms.ToolStripMenuItem addFileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addFolderToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addRegistryPathToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ListView listViewOptions;
     }
 }

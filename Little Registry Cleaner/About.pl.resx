@@ -117,8 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="label3.Text" xml:space="preserve">
     <value>Data kompilacji:</value>
   </data>
@@ -131,6 +131,12 @@
 Niniejsze oprogramowanie jest rozpowszechniane z nadzieją, że okaże się przydatne, nie jest natomiast objęte JAKĄKOLWIEK GWARANCJĄ, w tym domyślną gwarancją UŻYTECZNOŚCI HANDLOWEJ lub PRZYDATNOŚCI DO KONKRETNEGO CELU. Przeczytaj licencję GNU General Public License, aby zapoznać się ze szczegółami.
 
 Kopia licencji GNU General Public License powinna zostać dostarczona wraz z niniejszym oprogramowaniem. W przeciwnym wypadku odwiedź stronę &lt;http://www.gnu.org/licenses/&gt;</value>
+  </data>
+  <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="labelTitle.Text" xml:space="preserve">
+    <value>Little rejestru Cleaner</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="buttonClose.Text" xml:space="preserve">

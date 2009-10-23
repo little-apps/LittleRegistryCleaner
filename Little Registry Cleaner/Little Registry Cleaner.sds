@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<desktop scan="12" scanned="20090930180228" built="20091002205417" lang="zh" pane="TValidationPane" col="3" row="groupBox2.richTextBox1.Text">
+<desktop scan="15" scanned="20091022000742" built="20091022001328" lang="zh" pane="TLogPane" col="3" row="groupBox2.richTextBox1.Text">
   <language id="en" autoime="0" autokeyboard="0"/>
   <language id="fr" autoime="0" autokeyboard="0"/>
   <language id="es" autoime="0" autokeyboard="0"/>
@@ -18,7 +18,8 @@
   <language id="th" autoime="0" autokeyboard="0"/>
   <language id="pl" autoime="0" autokeyboard="0"/>
   <triggers>
-    <item class="TRemoveUnusedItemsTrigger" position="2"/>
+    <item class="TRemoveUnusedItemsTrigger" position="7"/>
+    <item class="TValidateTrigger" position="2"/>
   </triggers>
   <sheet>
     <columns>

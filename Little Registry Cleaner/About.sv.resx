@@ -117,10 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="label3.Text" xml:space="preserve">
     <value>Skapa datum:</value>
+  </data>
+  <data name="linkLabelAuthor.Text" xml:space="preserve">
+    <value>Nick H.</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Författare:</value>
@@ -131,6 +134,9 @@
 Det här programmet distribueras i hopp om att det kommer att vara användbara, men utan någon garanti, utan även den underförstådda garantin för säljbarhet eller lämplighet för en särskilt syfte.  Se GNU General Public License om du vill veta mer.
 
 Du bör ha fått en kopia av GNU General Public License tillsammans med det här programmet.  Om du inte se &lt;http://www.gnu.org/licenses/&gt;.</value>
+  </data>
+  <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="labelTitle.Text" xml:space="preserve">
     <value>Liten Registry Cleaner</value>

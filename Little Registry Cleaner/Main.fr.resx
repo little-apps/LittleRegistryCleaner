@@ -135,6 +135,9 @@
   <data name="treeColumn3.Header" xml:space="preserve">
     <value>Nom de la valeur</value>
   </data>
+  <data name="selectAllToolStripMenuItem.Text" xml:space="preserve">
+    <value>Select All</value>
+  </data>
   <data name="selectNoneToolStripMenuItem.Text" xml:space="preserve">
     <value>Sélectionnez Aucun</value>
   </data>
@@ -159,8 +162,14 @@
   <data name="restoreToolStripMenuItem.Text" xml:space="preserve">
     <value>Restaurer registre</value>
   </data>
+  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
   <data name="fileToolStripMenuItem.Text" xml:space="preserve">
     <value>Fichier</value>
+  </data>
+  <data name="selectAllToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Select All</value>
   </data>
   <data name="selectNoneToolStripMenuItem1.Text" xml:space="preserve">
     <value>Sélectionnez Aucun</value>
@@ -204,6 +213,9 @@
   <data name="arabicToolStripMenuItem.Text" xml:space="preserve">
     <value>Arabe</value>
   </data>
+  <data name="polishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Polonais</value>
+  </data>
   <data name="swedishToolStripMenuItem.Text" xml:space="preserve">
     <value>Suédois</value>
   </data>
@@ -219,11 +231,20 @@
   <data name="vietnameseToolStripMenuItem.Text" xml:space="preserve">
     <value>Vietnamien</value>
   </data>
+  <data name="thaiToolStripMenuItem.Text" xml:space="preserve">
+    <value>Thai</value>
+  </data>
   <data name="languageToolStripMenuItem.Text" xml:space="preserve">
     <value>Langue</value>
   </data>
   <data name="startupManagerToolStripMenuItem.Text" xml:space="preserve">
     <value>Gestionnaire de démarrage</value>
+  </data>
+  <data name="uninstallManagerToolStripMenuItem.Text" xml:space="preserve">
+    <value>Uninstall Manager</value>
+  </data>
+  <data name="toolStripMenuItemOptions.Text" xml:space="preserve">
+    <value>Options</value>
   </data>
   <data name="toolsToolStripMenuItem.Text" xml:space="preserve">
     <value>Outils</value>
@@ -252,13 +273,28 @@
   <data name="toolStripButtonRestore.Text" xml:space="preserve">
     <value>Restaurer registre</value>
   </data>
+  <data name="toolStripButtonSettings.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
   <data name="toolStripButtonHelp.Text" xml:space="preserve">
     <value>Aider</value>
+  </data>
+  <data name="hideShowToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
   </data>
   <data name="hideShowToolStripMenuItem.Text" xml:space="preserve">
     <value>Hide / Show</value>
   </data>
   <data name="aboutToolStripMenuItem1.Text" xml:space="preserve">
     <value>À propos de...</value>
+  </data>
+  <data name="exitToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="notifyIcon1.Text" xml:space="preserve">
+    <value>Little Register Cleaner</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Little Registry Cleaner</value>
   </data>
 </root>

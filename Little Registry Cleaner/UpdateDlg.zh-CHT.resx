@@ -122,6 +122,9 @@
   <data name="buttonDownload.Text" xml:space="preserve">
     <value>下載</value>
   </data>
+  <data name="buttonChangelog.Text" xml:space="preserve">
+    <value>Changelog</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>檢查更新</value>
   </data>
