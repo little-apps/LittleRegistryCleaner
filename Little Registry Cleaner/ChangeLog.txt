@@ -324,5 +324,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Renamed scanner files to more proper names
 - Uses my own code instead of Type.GetTypeFromProgID()
 - Replaced checkboxes with listview in options so different languages can be displayed properly
+- Added power user option that allows the program to automatically repair problems and close the program
 
 + Version 1.4 Released

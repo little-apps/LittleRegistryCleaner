@@ -54,6 +54,8 @@ namespace Little_Registry_Cleaner
         public static bool bScanHistoryList = true;
         #endregion
 
+        private bool bDisplayExitMsgBox = true;
+
         private BadRegKeySorter listViewItemSorter = new BadRegKeySorter();
 
         private TreeModel treeModel = new TreeModel();
@@ -121,13 +123,17 @@ namespace Little_Registry_Cleaner
                     this.notifyIcon1.ShowBalloonTip(6000, Application.ProductName, "Finished scanning the registry", ToolTipIcon.Info);
                 else
                     this.notifyIcon1.ShowBalloonTip(6000, Application.ProductName, "Aborted scanning the registry", ToolTipIcon.Info);
-
-                // Display log file
-                Main.Logger.DisplayLogFile();
+                
+                // Copy to directory and display log file
+                Main.Logger.DisplayLogFile((Properties.Settings.Default.bOptionsAutoRepair && dlgResult == DialogResult.OK));
 
                 // Enable menu items
                 this.fixToolStripMenuItem.Enabled = true;
                 this.toolStripButtonFix.Enabled = true;
+
+                // If power user option selected, Automatically fix problems
+                if (Properties.Settings.Default.bOptionsAutoRepair && dlgResult == DialogResult.OK)
+                    this.FixProblems();
             }
         }
         
@@ -141,40 +147,53 @@ namespace Little_Registry_Cleaner
 
             if (this.treeModel.Nodes.Count > 0)
             {
-                if (MessageBox.Show(this, "Would you like to fix all selected problems?", "Little Registry Cleaner", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (!Properties.Settings.Default.bOptionsAutoRepair)
                 {
-                    // Create Restore Point
-                    SysRestore.StartRestore("Before Little Registry Cleaner Registry Fix", out lSeqNum);
+                    if (MessageBox.Show(this, "Would you like to fix all selected problems?", "Little Registry Cleaner", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
+                        return;
+                }
 
-                    // Generate filename to backup registry
-                    string strBackupFile = string.Format("{0}\\{1:yyyy}_{1:MM}_{1:dd}_{1:HH}{1:mm}{1:ss}.xml", Properties.Settings.Default.strProgramSettingsDir, DateTime.Now);
+                // Create Restore Point
+                SysRestore.StartRestore("Before Little Registry Cleaner Registry Fix", out lSeqNum);
 
-                    BadRegKeyArray arrBadRegKeys = new BadRegKeyArray();
-                    foreach (BadRegistryKey badRegKeyRoot in this.treeModel.Nodes)
-                    {
-                        foreach (BadRegistryKey badRegKey in badRegKeyRoot.Nodes)
-                            if (badRegKey.Checked == CheckState.Checked)
-                                arrBadRegKeys.Add(badRegKey);
-                    }
+                // Generate filename to backup registry
+                string strBackupFile = string.Format("{0}\\{1:yyyy}_{1:MM}_{1:dd}_{1:HH}{1:mm}{1:ss}.xml", Properties.Settings.Default.strProgramSettingsDir, DateTime.Now);
 
-                    // Generate a restore file and delete keys & values
-                    xmlReg.deleteAsXml(arrBadRegKeys, strBackupFile);
+                BadRegKeyArray arrBadRegKeys = new BadRegKeyArray();
+                foreach (BadRegistryKey badRegKeyRoot in this.treeModel.Nodes)
+                {
+                    foreach (BadRegistryKey badRegKey in badRegKeyRoot.Nodes)
+                        if (badRegKey.Checked == CheckState.Checked)
+                            arrBadRegKeys.Add(badRegKey);
+                }
 
-                    // Disable menu items
-                    this.fixToolStripMenuItem.Enabled = false;
-                    this.toolStripButtonFix.Enabled = false;
+                // Generate a restore file and delete keys & values
+                xmlReg.deleteAsXml(arrBadRegKeys, strBackupFile);
 
-                    SysRestore.EndRestore(lSeqNum);
+                // Disable menu items
+                this.fixToolStripMenuItem.Enabled = false;
+                this.toolStripButtonFix.Enabled = false;
 
+                SysRestore.EndRestore(lSeqNum);
+
+                // Display message box
+                if (!Properties.Settings.Default.bOptionsAutoExit)
                     MessageBox.Show(this, "Removed problems from registry", "Little Registry Cleaner", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    // Clear old results
-                    this.treeModel.Nodes.Clear();
+                // Clear old results
+                this.treeModel.Nodes.Clear();
 
-                    // Scan again
-                    if (Properties.Settings.Default.bOptionsRescan)
-                        ScanRegistry();
+                // If power user option selected, Automatically exit program
+                if (Properties.Settings.Default.bOptionsAutoExit)
+                {
+                    this.bDisplayExitMsgBox = false;
+                    this.Close();
+                    return;
                 }
+
+                // Scan again
+                if (Properties.Settings.Default.bOptionsRescan)
+                    ScanRegistry();
             }
         }
 
@@ -293,8 +312,11 @@ namespace Little_Registry_Cleaner
                 this.WindowState = FormWindowState.Normal;
             }
 
-            if (MessageBox.Show(this, "Are you sure you want to exit?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
-                e.Cancel = true;
+            if (bDisplayExitMsgBox)
+            {
+                if (MessageBox.Show(this, "Are you sure you want to exit?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                    e.Cancel = true;
+            }
         }
 
         private void listResults_ColumnClick(object sender, ColumnClickEventArgs e)

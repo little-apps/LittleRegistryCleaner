@@ -50,7 +50,9 @@ namespace Little_Registry_Cleaner
             this.listViewOptions.Items[3].Checked = Properties.Settings.Default.bOptionsRestore;
             this.listViewOptions.Items[4].Checked = Properties.Settings.Default.bOptionsShowLog;
             this.listViewOptions.Items[5].Checked = Properties.Settings.Default.bOptionsDelBackup;
-            this.listViewOptions.Items[6].Checked = Properties.Settings.Default.bOptionsRemMedia; 
+            this.listViewOptions.Items[6].Checked = Properties.Settings.Default.bOptionsRemMedia;
+            this.listViewOptions.Items[7].Checked = Properties.Settings.Default.bOptionsAutoRepair;
+            this.listViewOptions.Items[8].Checked = Properties.Settings.Default.bOptionsAutoExit; 
 
             // Load backup directorys
             this.textBoxBackupFolder.Text = Properties.Settings.Default.strOptionsBackupDir;
@@ -73,6 +75,8 @@ namespace Little_Registry_Cleaner
             Properties.Settings.Default.bOptionsShowLog = this.listViewOptions.Items[4].Checked;
             Properties.Settings.Default.bOptionsDelBackup = this.listViewOptions.Items[5].Checked;
             Properties.Settings.Default.bOptionsRemMedia = this.listViewOptions.Items[6].Checked;
+            Properties.Settings.Default.bOptionsAutoRepair = this.listViewOptions.Items[7].Checked;
+            Properties.Settings.Default.bOptionsAutoExit = this.listViewOptions.Items[8].Checked;
 
             if (this.textBoxBackupFolder.Text != Properties.Settings.Default.strOptionsBackupDir)
                 Properties.Settings.Default.strOptionsBackupDir = this.textBoxBackupFolder.Text;

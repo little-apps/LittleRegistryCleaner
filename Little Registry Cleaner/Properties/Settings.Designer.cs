@@ -181,5 +181,29 @@ namespace Little_Registry_Cleaner.Properties {
                 return ((bool)(this["bPortableEdition"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool bOptionsAutoRepair {
+            get {
+                return ((bool)(this["bOptionsAutoRepair"]));
+            }
+            set {
+                this["bOptionsAutoRepair"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool bOptionsAutoExit {
+            get {
+                return ((bool)(this["bOptionsAutoExit"]));
+            }
+            set {
+                this["bOptionsAutoExit"] = value;
+            }
+        }
     }
 }

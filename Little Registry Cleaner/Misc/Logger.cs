@@ -116,8 +116,9 @@ namespace Little_Registry_Cleaner
         /// <summary>
         /// Moves the temp file to the log directory and opens it with the default viewer
         /// </summary>
+        /// <param name="bCopyOnly">Only copies the log file and doesn't display it</param>
         /// <returns>True if the file is displayed</returns>
-        public bool DisplayLogFile()
+        public bool DisplayLogFile(bool bCopyOnly)
         {
             if (IsEnabled)
             {

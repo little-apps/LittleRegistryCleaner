@@ -78,7 +78,9 @@
             ((System.Windows.Forms.ListViewItem)(resources.GetObject("listViewOptions.Items3"))),
             ((System.Windows.Forms.ListViewItem)(resources.GetObject("listViewOptions.Items4"))),
             ((System.Windows.Forms.ListViewItem)(resources.GetObject("listViewOptions.Items5"))),
-            ((System.Windows.Forms.ListViewItem)(resources.GetObject("listViewOptions.Items6")))});
+            ((System.Windows.Forms.ListViewItem)(resources.GetObject("listViewOptions.Items6"))),
+            ((System.Windows.Forms.ListViewItem)(resources.GetObject("listViewOptions.Items7"))),
+            ((System.Windows.Forms.ListViewItem)(resources.GetObject("listViewOptions.Items8")))});
             resources.ApplyResources(this.listViewOptions, "listViewOptions");
             this.listViewOptions.Name = "listViewOptions";
             this.listViewOptions.UseCompatibleStateImageBehavior = false;
