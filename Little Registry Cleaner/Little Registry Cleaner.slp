@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.0.291" date="20091022001957" scan="15" scanned="20091022000742">
+<document version="2.0.291" date="20091024214114" scan="17" scanned="20091024195017">
   <lang id="en"/>
   <lang id="fr"/>
   <lang id="es"/>
@@ -2313,28 +2313,6 @@
                     <lang id="pl" status="3">Tajski</lang>
                   </row>
                 </component>
-                <component class="TVisComboBox" name="toolStripComboBox1" state="1" type="System.Windows.Forms.ToolStripComboBox">
-                  <row id="Text" state="1">
-                    <native>English</native>
-                    <lang id="en" status="2">English</lang>
-                    <lang id="fr" status="2">Anglais</lang>
-                    <lang id="es" status="2">Inglês</lang>
-                    <lang id="pt" status="2">Inglese</lang>
-                    <lang id="it" status="2">Inglés</lang>
-                    <lang id="nl" status="2">Engels</lang>
-                    <lang id="de" status="2">Inglés</lang>
-                    <lang id="ru" status="2">Anglais</lang>
-                    <lang id="el" status="2">Anglais</lang>
-                    <lang id="ar" status="2">Inglés</lang>
-                    <lang id="sv" status="2">Inglés</lang>
-                    <lang id="zh" status="2">Inglés</lang>
-                    <lang id="zh.tra" status="2">Inglese</lang>
-                    <lang id="ja" status="2">Inglés</lang>
-                    <lang id="vi" status="2">Tiếng Anh</lang>
-                    <lang id="th" status="2">อังกฤษ</lang>
-                    <lang id="pl" status="3">Angielski</lang>
-                  </row>
-                </component>
               </component>
               <component class="TVisMenuItem" name="toolsToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
                 <row id="Size.Height">20</row>
@@ -2968,160 +2946,6 @@
                   <lang id="th" status="2">Options</lang>
                   <lang id="pl" status="2">Ustawienia</lang>
                 </row>
-                <component class="TVisCheckBox" name="checkBoxLog" state="1" type="System.Windows.Forms.CheckBox">
-                  <row id="Text" state="1">
-                    <native>Log registry scans and fixes</native>
-                    <lang id="en" status="2">Log registry scans and fixes</lang>
-                    <lang id="fr" status="2">Connectez-vous scans de registre et des correctifs</lang>
-                    <lang id="es" status="2">Análisis de registro de registro y revisiones</lang>
-                    <lang id="pt" status="2">Pesquisas de registro de log e correções</lang>
-                    <lang id="it" status="2">Registro del Registro di sistema scansioni e le correzioni</lang>
-                    <lang id="nl" status="2">Register log boek worden gescand en worden opgelost</lang>
-                    <lang id="de" status="2">Registrierung Logscans und fixes</lang>
-                    <lang id="ru" status="2">Журнал сканирование реестра и исправления</lang>
-                    <lang id="el" status="2">Αρχείο καταγραφής μητρώου σαρώνει και διορθώνει</lang>
-                    <lang id="ar" status="2">التسجيل سجل بتفحص وإصلاحات</lang>
-                    <lang id="sv" status="2">Loggen registret sökningar och korrigeringar</lang>
-                    <lang id="zh" status="2">日志注册表扫描和修复</lang>
-                    <lang id="zh.tra" status="2">日誌註冊表掃描和修復</lang>
-                    <lang id="ja" status="2">レジストリをスキャンし、修正ログ</lang>
-                    <lang id="vi" status="2">Đăng nhập quét registry và sửa chữa</lang>
-                    <lang id="th" status="2">Log สแกนรีจิสทรีและการแก้ไข</lang>
-                    <lang id="pl" status="2">Twórz raporty skanowania i napraw</lang>
-                  </row>
-                </component>
-                <component class="TVisCheckBox" name="checkBoxRescan" state="1" type="System.Windows.Forms.CheckBox">
-                  <row id="Text" state="1">
-                    <native>Re-Scan after fixing registry issues </native>
-                    <lang id="en" status="2">Re-Scan after fixing registry issues </lang>
-                    <lang id="fr" status="2">Re-Scan après la fixation des problèmes de Registre </lang>
-                    <lang id="es" status="2">Re-Scan después de solucionar problemas de registro </lang>
-                    <lang id="pt" status="2">Re-Scan depois de corrigir problemas de registro </lang>
-                    <lang id="it" status="2">Re-Scan dopo la correzione di problemi del Registro di sistema </lang>
-                    <lang id="nl" status="2">Na de vaststelling van de register problemen re-Scan </lang>
-                    <lang id="de" status="2">Nach beheben Registrierung Probleme re-Scan </lang>
-                    <lang id="ru" status="2">Re-Scan после установлении реестра вопросов </lang>
-                    <lang id="el" status="2">Re-Scan μετά τον καθορισμό των προβλημάτων του μητρώου </lang>
-                    <lang id="ar" status="2">Re-Scan بعد إصلاح التسجيل وإصلاحها </lang>
-                    <lang id="sv" status="2">Re-Scan efter registret frågor </lang>
-                    <lang id="zh" status="2">重新修复后扫描注册表问题- </lang>
-                    <lang id="zh.tra" status="2">重新修復後掃描註冊表問題- </lang>
-                    <lang id="ja" status="2">再スキャンレジストリの問題を修正した後- </lang>
-                    <lang id="vi" status="2">Re-Quét sau khi sửa chữa các vấn đề đăng ký </lang>
-                    <lang id="th" status="2">Scan ใหม่หลังจากแก้ไขปัญหาสตรี- </lang>
-                    <lang id="pl" status="2">Skanuj ponownie po naprawieniu błędów</lang>
-                  </row>
-                </component>
-                <component class="TVisCheckBox" name="checkBoxDeleteBackup" state="1" type="System.Windows.Forms.CheckBox">
-                  <row id="Text" state="1">
-                    <native>Delete backup file after restoring the registry </native>
-                    <lang id="en" status="2">Delete backup file after restoring the registry </lang>
-                    <lang id="fr" status="2">Supprimer le fichier de sauvegarde après la restauration du Registre </lang>
-                    <lang id="es" status="2">Eliminar el archivo de copia de seguridad después de restaurar el registro </lang>
-                    <lang id="pt" status="2">Excluir o arquivo de backup depois de restaurar o registro </lang>
-                    <lang id="it" status="2">Eliminare i file di backup dopo il ripristino del Registro di sistema </lang>
-                    <lang id="nl" status="2">Back-upbestand na het terugzetten van het register verwijderen </lang>
-                    <lang id="de" status="2">Löschen Sie backup-Datei nach dem Wiederherstellen der Registrierung </lang>
-                    <lang id="ru" status="2">Удалить файл резервной копии после восстановления реестра </lang>
-                    <lang id="el" status="2">Διαγραφή αρχείου αντιγράφων ασφαλείας μετά την επαναφορά του μητρώου </lang>
-                    <lang id="ar" status="2">حذف ملف النسخة الاحتياطية بعد استعادة التسجيل </lang>
-                    <lang id="sv" status="2">Ta bort säkerhetskopian efter återställning av registret </lang>
-                    <lang id="zh" status="2">删除备份文件恢复注册表后 </lang>
-                    <lang id="zh.tra" status="2">刪除備份文件恢復註冊表後 </lang>
-                    <lang id="ja" status="2">レジストリの復元後に削除するバックアップファイル </lang>
-                    <lang id="vi" status="2">Xóa sau khi khôi phục tập tin sao lưu registry </lang>
-                    <lang id="th" status="2">ลบไฟล์สำรองหลังจากเรียกคืนรีจิสตรี </lang>
-                    <lang id="pl" status="2">Usuń kopię zapasową po przywróceniu rejestru</lang>
-                  </row>
-                </component>
-                <component class="TVisCheckBox" name="checkBoxRestore" state="1" type="System.Windows.Forms.CheckBox">
-                  <row id="Text" state="1">
-                    <native>Create system restore points automatically</native>
-                    <lang id="en" status="2">Create system restore points automatically</lang>
-                    <lang id="fr" status="2">Créer automatiquement des points de restauration système</lang>
-                    <lang id="es" status="2">Crear sistema de puntos de restauración automáticamente</lang>
-                    <lang id="pt" status="2">Criar pontos de restauração do sistema automaticamente</lang>
-                    <lang id="it" status="2">Creare sistema punti di ripristino automatico</lang>
-                    <lang id="nl" status="2">Systeem automatisch herstel punten maken</lang>
-                    <lang id="de" status="2">Erstellen Sie System Wiederherstellungspunkte automatisch</lang>
-                    <lang id="ru" status="2">Создание системы точки восстановления автоматически</lang>
-                    <lang id="el" status="2">Δημιουργία συστήματος σημεία επαναφοράς αυτόματα</lang>
-                    <lang id="ar" status="2">إنشاء نقاط استعادة النظام تلقائياً</lang>
-                    <lang id="sv" status="2">Skapa återställningspunkter automatiskt</lang>
-                    <lang id="zh" status="2">创建系统还原点自动</lang>
-                    <lang id="zh.tra" status="2">創建系統還原點自動</lang>
-                    <lang id="ja" status="2">システムが自動的に復元ポイントを作成します。</lang>
-                    <lang id="vi" status="2">Tạo điểm khôi phục hệ thống tự động</lang>
-                    <lang id="th" status="2">สร้างจุดคืนค่าระบบอัตโนมัติ</lang>
-                    <lang id="pl" status="2">Automatycznie twórz punkty przywracania systemu</lang>
-                  </row>
-                </component>
-                <component class="TVisCheckBox" name="checkBoxAutoUpdate" state="1" type="System.Windows.Forms.CheckBox">
-                  <row id="Text" state="1">
-                    <native>Check for updates automatically</native>
-                    <lang id="en" status="2">Check for updates automatically</lang>
-                    <lang id="fr" status="2">Vérifiez les mises à jour automatiquement</lang>
-                    <lang id="es" status="2">Comprobar si hay actualizaciones automáticamente</lang>
-                    <lang id="pt" status="2">Verificar atualizações automaticamente</lang>
-                    <lang id="it" status="2">Controllare automaticamente gli aggiornamenti</lang>
-                    <lang id="nl" status="2">Automatisch controleren op updates</lang>
-                    <lang id="de" status="2">Automatisch nach Aktualisierungen suchen</lang>
-                    <lang id="ru" status="2">Автоматическая проверка обновлений</lang>
-                    <lang id="el" status="2">Αυτόματος έλεγχος για ενημερωμένες εκδόσεις</lang>
-                    <lang id="ar" status="2">البحث عن التحديثات تلقائياً</lang>
-                    <lang id="sv" status="2">SÃ¶k efter uppdateringar automatiskt</lang>
-                    <lang id="zh" status="2">自动检查更新</lang>
-                    <lang id="zh.tra" status="2">自動檢查更新</lang>
-                    <lang id="ja" status="2">更新プログラムを自動的にチェック</lang>
-                    <lang id="vi" status="2">Kiểm tra cho cập nhật tự động</lang>
-                    <lang id="th" status="2">ตรวจสอบข้อมูลปรับปรุงอัตโนมัติ</lang>
-                    <lang id="pl" status="2">Automatycznie sprawdzaj, czy dostępne są uaktualnienia</lang>
-                  </row>
-                </component>
-                <component class="TVisCheckBox" name="checkBoxRemDrives" state="1" type="System.Windows.Forms.CheckBox">
-                  <row id="Text" state="1">
-                    <native>Ignore missing files on removable media</native>
-                    <lang id="en" status="2">Ignore missing files on removable media</lang>
-                    <lang id="fr" status="2">Ignorer les fichiers manquants sur un support amovible</lang>
-                    <lang id="es" status="2">Omitir archivos que faltan en medios extraíbles</lang>
-                    <lang id="pt" status="2">Ignorar arquivos ausentes em mídia removível</lang>
-                    <lang id="it" status="2">Ignorare i file mancanti su supporti rimovibili</lang>
-                    <lang id="nl" status="2">Ontbrekende bestanden op verwisselbare media negeren</lang>
-                    <lang id="de" status="2">Ignorieren Sie fehlende Dateien auf Wechselmedien</lang>
-                    <lang id="ru" status="2">Игнорировать отсутствующие файлы на съемном носителе</lang>
-                    <lang id="el" status="2">Αγνοεί αρχεία που λείπουν σε αφαιρούμενα μέσα αποθήκευσης</lang>
-                    <lang id="ar" status="2">تجاهل الملفات المفقودة على وسائط قابلة للإزالة</lang>
-                    <lang id="sv" status="2">Ignorera filer som saknas på flyttbara media</lang>
-                    <lang id="zh" status="2">在可移动媒体忽略丢失的文件</lang>
-                    <lang id="zh.tra" status="2">忽略丟失的文件在可移動媒體</lang>
-                    <lang id="ja" status="2">リムーバブルメディア上に存在しないファイルを無視する</lang>
-                    <lang id="vi" status="2">Bỏ qua các tập tin bị thiếu trên phương tiện di động</lang>
-                    <lang id="th" status="2">ไม่สนใจไฟล์ที่ขาดหายไปในสื่อที่ถอดได้</lang>
-                    <lang id="pl" status="2">Pomiń brakujące pliki na nośnikach wymiennych</lang>
-                  </row>
-                </component>
-                <component class="TVisCheckBox" name="checkBoxShowLog" state="1" type="System.Windows.Forms.CheckBox">
-                  <row id="Text" state="1">
-                    <native>Show log after finished scanning</native>
-                    <lang id="en" status="2">Show log after finished scanning</lang>
-                    <lang id="fr" status="2">Voir le journal après avoir fini de numériser</lang>
-                    <lang id="es" status="2">Mostrar registro una vez finalizado el análisis</lang>
-                    <lang id="pt" status="2">Mostrar log após a conclusão da digitalização</lang>
-                    <lang id="it" status="2">Mostra registro al termine dell'operazione di scansione</lang>
-                    <lang id="nl" status="2">Log boek na scannen weer geven</lang>
-                    <lang id="de" status="2">Zeigen Sie Protokoll nach Abschluss der Scan an</lang>
-                    <lang id="ru" status="2">Показать журнал после окончания сканирования</lang>
-                    <lang id="el" status="2">Εμφάνιση αρχείου καταγραφής μετά την ολοκλήρωση της σάρωσης</lang>
-                    <lang id="ar" status="2">إظهار سجل بعد الانتهاء من المسح الضوئي</lang>
-                    <lang id="sv" status="2">Visa logg när klar med skanningen</lang>
-                    <lang id="zh" status="2">显示记录完成扫描后</lang>
-                    <lang id="zh.tra" status="2">顯示記錄完成掃描後</lang>
-                    <lang id="ja" status="2">ログを表示後、スキャンが終了</lang>
-                    <lang id="vi" status="2">Hiển thị nhật ký sau khi đã hoàn thành quét</lang>
-                    <lang id="th" status="2">Log แสดงหลังจากเสร็จสิ้นการสแกน</lang>
-                    <lang id="pl" status="2">Otwórz plik raportu po zakończeniu skanowania</lang>
-                  </row>
-                </component>
                 <component class="TVisListView" name="listViewOptions" state="0" type="System.Windows.Forms.ListView" viewstyle="vsList">
                   <row id="Location.X" state="0">6</row>
                   <row id="Location.Y" state="0">19</row>
@@ -3279,6 +3103,50 @@
                       <lang id="vi" status="2">Bỏ qua các tập tin bị thiếu trên phương tiện di động</lang>
                       <lang id="th" status="2">ไม่สนใจไฟล์ที่ขาดหายไปในสื่อที่ถอดได้</lang>
                       <lang id="pl" status="2">Pomiń brakujące pliki na nośnikach wymiennych</lang>
+                    </row>
+                  </item>
+                  <item name="Items[7]" state="0">
+                    <row id="Text" state="0">
+                      <native>Automatically repair registry items</native>
+                      <lang id="en" status="2">Automatically repair registry items</lang>
+                      <lang id="fr" status="2">Réparer automatiquement les éléments du registre</lang>
+                      <lang id="es" status="2">Reparar automáticamente los elementos del registro</lang>
+                      <lang id="pt" status="2">Reparar automaticamente os itens do registro</lang>
+                      <lang id="it" status="2">Riparare automaticamente gli elementi del Registro di sistema</lang>
+                      <lang id="nl" status="2">Automatisch reparatie registry items</lang>
+                      <lang id="de" status="2">Automatisch reparieren Registrierungseinträge</lang>
+                      <lang id="ru" status="2">Автоматически восстанавливать реестр пунктов</lang>
+                      <lang id="el" status="2">Αυτόματη επισκευή στοιχεία μητρώου</lang>
+                      <lang id="ar" status="2">تلقائيا إصلاح عناصر السجل</lang>
+                      <lang id="sv" status="2">Automatiskt reparera registerposter</lang>
+                      <lang id="zh" status="2">自动修复注册表项</lang>
+                      <lang id="zh.tra" status="2">自動修復註冊表項</lang>
+                      <lang id="ja" status="2">自動的にレジストリ項目を修復する</lang>
+                      <lang id="vi" status="2">Tự động sửa chữa các registry</lang>
+                      <lang id="th" status="2">โดยอัตโนมัติซ่อมแซมรายการรีจิสทรี</lang>
+                      <lang id="pl" status="2">Automatycznie napraw elementów rejestru</lang>
+                    </row>
+                  </item>
+                  <item name="Items[8]" state="0">
+                    <row id="Text" state="0">
+                      <native>Exit program after repairing registry</native>
+                      <lang id="en" status="2">Exit program after repairing registry</lang>
+                      <lang id="fr" status="2">Programme de sortie après réparation du registre</lang>
+                      <lang id="es" status="2">Programa de salida después de la reparación del registro</lang>
+                      <lang id="pt" status="2">Programa de saída após o reparo do registro</lang>
+                      <lang id="it" status="2">Programma di uscita dopo la riparazione del Registro di sistema</lang>
+                      <lang id="nl" status="2">Exit programma na reparatie register</lang>
+                      <lang id="de" status="2">Exit-Programm nach der Reparatur Registrierung</lang>
+                      <lang id="ru" status="2">Выход из программы после ремонта реестра</lang>
+                      <lang id="el" status="2">Έξοδος από το πρόγραμμα μετά την επισκευή του μητρώου</lang>
+                      <lang id="ar" status="2">بعد خروج برنامج اصلاح التسجيل</lang>
+                      <lang id="sv" status="2">Avsluta program efter reparation register</lang>
+                      <lang id="zh" status="2">退出程序后修复注册表</lang>
+                      <lang id="zh.tra" status="2">退出程序後修復註冊表</lang>
+                      <lang id="ja" status="2">レジストリの修復後、出口プログラム</lang>
+                      <lang id="vi" status="2">Thoát khỏi chương trình sau khi sửa chữa registry</lang>
+                      <lang id="th" status="2">โปรแกรมออกหลังจากซ่อมรีจิสทรี</lang>
+                      <lang id="pl" status="2">Zakończ program po naprawie rejestru</lang>
                     </row>
                   </item>
                 </component>
