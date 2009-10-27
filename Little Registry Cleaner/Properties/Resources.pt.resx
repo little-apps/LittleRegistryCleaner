@@ -117,4 +117,73 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ActivexComObjects" xml:space="preserve">
+    <value>ActiveX / COM Objects</value>
+  </data>
+  <data name="ApplicationInfo" xml:space="preserve">
+    <value>Informações de aplicação</value>
+  </data>
+  <data name="ApplicationPaths" xml:space="preserve">
+    <value>Application Paths</value>
+  </data>
+  <data name="ApplicationSettings" xml:space="preserve">
+    <value>Configurações do aplicativo</value>
+  </data>
+  <data name="InvalidFile" xml:space="preserve">
+    <value>Arquivo ou pasta inválido</value>
+  </data>
+  <data name="InvalidFileExt" xml:space="preserve">
+    <value>Extensão de arquivo não utilizados</value>
+  </data>
+  <data name="InvalidInprocServer" xml:space="preserve">
+    <value>Incapaz de encontrar InprocServer</value>
+  </data>
+  <data name="InvalidInprocServer32" xml:space="preserve">
+    <value>Incapaz de encontrar InprocServer32</value>
+  </data>
+  <data name="InvalidProgIDFileExt" xml:space="preserve">
+    <value>ProgID Livre / Extensão de Arquivo</value>
+  </data>
+  <data name="InvalidRegKey" xml:space="preserve">
+    <value>Inválido chave de registro</value>
+  </data>
+  <data name="InvalidToolbar" xml:space="preserve">
+    <value>Barra de ferramentas não é válido</value>
+  </data>
+  <data name="MissingAppID" xml:space="preserve">
+    <value>Missing referência AppID</value>
+  </data>
+  <data name="MissingCLSID" xml:space="preserve">
+    <value>Missing referência CLSID</value>
+  </data>
+  <data name="MissingProgID" xml:space="preserve">
+    <value>Missing referência ProgID</value>
+  </data>
+  <data name="NoRegKey" xml:space="preserve">
+    <value>A chave de registo não contém quaisquer dados</value>
+  </data>
+  <data name="ObsoleteRegKey" xml:space="preserve">
+    <value>Chave de registro obsoletos</value>
+  </data>
+  <data name="RecentDocs" xml:space="preserve">
+    <value>Documentos Recentes</value>
+  </data>
+  <data name="SharedDLLs" xml:space="preserve">
+    <value>DLLs compartilhadas</value>
+  </data>
+  <data name="StartupFiles" xml:space="preserve">
+    <value>Arquivos de inicialização</value>
+  </data>
+  <data name="SystemDrivers" xml:space="preserve">
+    <value>Drivers de sistema</value>
+  </data>
+  <data name="WindowsFonts" xml:space="preserve">
+    <value>Fontes do Windows</value>
+  </data>
+  <data name="WindowsHelpFiles" xml:space="preserve">
+    <value>Arquivos de ajuda do Windows</value>
+  </data>
+  <data name="WindowsSounds" xml:space="preserve">
+    <value>Windows Sounds</value>
+  </data>
 </root>

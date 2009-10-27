@@ -30,7 +30,7 @@ namespace Little_Registry_Cleaner.Scanners
     {
         public override string ScannerName
         {
-            get { return "Application Info"; }
+            get { return Properties.Resources.ApplicationInfo; }
         }
 
         /// <summary>

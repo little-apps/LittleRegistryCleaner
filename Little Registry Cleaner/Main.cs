@@ -69,7 +69,9 @@ namespace Little_Registry_Cleaner
         public Main()
         {
             InitializeComponent();
-        } 
+        }
+
+        
 
         /// <summary>
         /// Begins scanning the registry
@@ -225,6 +227,9 @@ namespace Little_Registry_Cleaner
             // Add tree model to treeviewadv
             this.treeViewAdvResults.Model = this.treeModel;
 
+            // Set language to current culture
+            this.SetCurrentLang();
+
             // See if we have the current version
             if (Properties.Settings.Default.bOptionsAutoUpdate)
             {
@@ -348,6 +353,94 @@ namespace Little_Registry_Cleaner
 
         #region "Menu Events"
         #region "Global Menu Events"
+        private void ChangeLanguage(object sender, EventArgs e)
+        {
+            ToolStripMenuItem lang = sender as ToolStripMenuItem;
+            CultureInfo ci = CultureInfo.CurrentUICulture;
+
+            // Uncheck old language
+            foreach (ToolStripMenuItem tsmi in this.languageToolStripMenuItem.DropDownItems)
+            {
+                if (tsmi.Checked)
+                    tsmi.Checked = false;
+            }
+
+            ResourceManager rm = new ResourceManager("Main", this.GetType().Assembly);
+
+            switch (lang.Text)
+            {
+                case "English":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
+                    break;
+
+                case "Spanish":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("es");
+                    break;
+
+                case "Arabic":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("ar");
+                    break;
+
+                case "German":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("de");
+                    break;
+
+                case "Greek":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("el");
+                    break;
+
+                case "French":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr");
+                    break;
+
+                case "Italian":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("it");
+                    break;
+
+                case "Japanese":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("ja");
+                    break;
+
+                case "Dutch":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("nl");
+                    break;
+
+                case "Portuguese":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("pt");
+                    break;
+
+                case "Russian":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("ru");
+                    break;
+
+                case "Polish":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("pl");
+                    break;
+
+                case "Swedish":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("sv");
+                    break;
+
+                case "Thai":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("th");
+                    break;
+
+                case "Vietnamese":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("vi");
+                    break;
+
+                case "Chinese (Simplified)":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CHS");
+                    break;
+                case "Chinese (Traditional)":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CHT");
+                    break;
+            }
+
+            this.ReloadControls();
+
+            lang.Checked = true;
+        }
 
         private void LaunchHelpFile(object sender, EventArgs e)
         {
@@ -533,12 +626,13 @@ namespace Little_Registry_Cleaner
         }
         #endregion
 
-        private void ChangeLanguage(object sender, EventArgs e)
+        /// <summary>
+        /// Sets LRC language to current culture
+        /// </summary>
+        private void SetCurrentLang()
         {
-            ToolStripMenuItem lang = sender as ToolStripMenuItem;
+            ToolStripMenuItem lang = null;
             CultureInfo ci = CultureInfo.CurrentUICulture;
-
-            
 
             // Uncheck old language
             foreach (ToolStripMenuItem tsmi in this.languageToolStripMenuItem.DropDownItems)
@@ -547,87 +641,93 @@ namespace Little_Registry_Cleaner
                     tsmi.Checked = false;
             }
 
-            ResourceManager rm = new ResourceManager("Main", this.GetType().Assembly);
-
-            switch (lang.Text)
+            switch (ci.TwoLetterISOLanguageName)
             {
-                case "English":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
+                case "en":
+                    lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["englishToolStripMenuItem"];
                     break;
 
-                case "Spanish":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("es");
+                case "es":
+                    lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["spanishToolStripMenuItem"];
                     break;
 
-                case "Arabic":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("ar");
+                case "ar":
+                    lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["arabicToolStripMenuItem"];
                     break;
 
-                case "German":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("de");
+                case "de":
+                    lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["germanToolStripMenuItem"];
                     break;
 
-                case "Greek":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("el");
+                case "el":
+                    lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["greekToolStripMenuItem"];
                     break;
 
-                case "French":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr");
+                case "fr":
+                    lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["frenchToolStripMenuItem"];
                     break;
 
-                case "Italian":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("it");
+                case "it":
+                    lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["italianToolStripMenuItem"];
                     break;
 
-                case "Japanese":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("ja");
+                case "ja":
+                    lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["japaneseToolStripMenuItem"];
                     break;
 
-                case "Dutch":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("nl");
+                case "nl":
+                    lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["dutchToolStripMenuItem"];
                     break;
 
-                case "Portugese":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("pt");
+                case "pt":
+                    lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["portugueseToolStripMenuItem"];
                     break;
 
-                case "Russian":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("ru");
+                case "ru":
+                    lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["russianToolStripMenuItem"];
                     break;
 
-                case "Polish":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("pl");
+                case "pl":
+                    lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["polishToolStripMenuItem"];
                     break;
 
-                case "Swedish":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("sv");
+                case "sv":
+                    lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["swedishToolStripMenuItem"];
                     break;
 
-                case "Thai":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("th");
+                case "th":
+                    lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["thaiToolStripMenuItem"];
                     break;
 
-                case "Vietnamese":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("vi");
+                case "vi":
+                    lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["vietnameseToolStripMenuItem"];
                     break;
 
-                case "Chinese (Simplified)":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CHS");
+                case "zh":
+                    {
+                        if (ci.EnglishName == "Chinese (Simplified)")
+                            lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["chineseSimplifiedToolStripMenuItem"];
+                        else // Chinese (Traditional)
+                            lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["chineseTraditionalToolStripMenuItem"];
+                    }
                     break;
-                case "Chinese (Traditional)":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CHT");
+                default:
+                    lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["englishToolStripMenuItem"];
                     break;
             }
 
-            this.ReloadControls();
-
             lang.Checked = true;
+
+            this.ReloadControls();
         }
 
+        /// <summary>
+        /// Reloads controls from resource file
+        /// </summary>
         private void ReloadControls()
         {
-            // Reload control strings
             ResourceManager resources = new ResourceManager(typeof(Main));
+
             this.Text = resources.GetString("$this.Text");
             this.aboutToolStripMenuItem.Text = resources.GetString("aboutToolStripMenuItem.Text");
             this.aboutToolStripMenuItem1.Text = resources.GetString("aboutToolStripMenuItem1.Text");

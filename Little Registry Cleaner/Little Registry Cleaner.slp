@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.0.291" date="20091024214114" scan="17" scanned="20091024195017">
+<document version="2.0.291" date="20091025003021" scan="19" scanned="20091025000924">
   <lang id="en"/>
   <lang id="fr"/>
   <lang id="es"/>
@@ -12,7 +12,7 @@
   <lang id="ar"/>
   <lang id="sv"/>
   <lang id="zh"/>
-  <lang id="zh.tra"/>
+  <lang id="zh.tra" ime="imOn"/>
   <lang id="ja"/>
   <lang id="vi"/>
   <lang id="th"/>
@@ -1491,7 +1491,7 @@
                 <row id="Text" state="0">
                   <native>Scan registry</native>
                   <lang id="en" status="2">Scan registry</lang>
-                  <lang id="fr" status="2">Scan Registry</lang>
+                  <lang id="fr" date="20091024223828" status="3">Enregistrement de balayage</lang>
                   <lang id="es" status="2">Análisis del registro</lang>
                   <lang id="pt" status="2">Varredura do registro</lang>
                   <lang id="it" status="2">Scansione del Registro di sistema</lang>
@@ -1662,7 +1662,7 @@
                   <row id="Text" state="0">
                     <native>Scan registry</native>
                     <lang id="en" status="2">Scan registry</lang>
-                    <lang id="fr" status="2">Scan Registry</lang>
+                    <lang id="fr" status="3">Enregistrement de balayage</lang>
                     <lang id="es" status="2">Análisis del registro</lang>
                     <lang id="pt" status="2">Varredura do registro</lang>
                     <lang id="it" status="2">Scansione del Registro di sistema</lang>
@@ -2325,7 +2325,7 @@
                   <lang id="pt" status="2">Ferramentas</lang>
                   <lang id="it" status="2">Strumenti</lang>
                   <lang id="nl" status="2">Hulp programma's</lang>
-                  <lang id="de" status="2">Tools</lang>
+                  <lang id="de" date="20091024224133" status="3">Werkzeuge</lang>
                   <lang id="ru" status="2">Инструменты</lang>
                   <lang id="el" status="2">Εργαλεία</lang>
                   <lang id="ar" status="2">أدوات</lang>
@@ -3634,6 +3634,32 @@
             <row id="Location.Y">9</row>
             <row id="Size.Height">111</row>
             <row id="Size.Width">379</row>
+            <component class="TVisLabel" name="label1" state="1" type="System.Windows.Forms.Label">
+              <row id="RightToLeft" state="1">
+                <native>rorLeftToRight</native>
+                <lang id="ar" status="2">rorRightToLeft</lang>
+              </row>
+              <row id="Text" state="1">
+                <native>Problems Found: </native>
+                <lang id="en" status="2">Problems Found: </lang>
+                <lang id="fr" status="2">Les problèmes trouvés: </lang>
+                <lang id="es" status="2">Problemas que se encuentra: </lang>
+                <lang id="pt" status="2">Problemas encontrados: </lang>
+                <lang id="it" status="2">Problemi a trovare: </lang>
+                <lang id="nl" status="2">Problemen gevonden: </lang>
+                <lang id="de" status="2">Probleme, die gefunden: </lang>
+                <lang id="ru" status="2">Обнаружены проблемы: </lang>
+                <lang id="el" status="2">Προβλήματα που εντοπίστηκαν: </lang>
+                <lang id="ar" status="2">تم العثور على مشاكل: </lang>
+                <lang id="sv" status="2">Problem som hittades: </lang>
+                <lang id="zh" status="2">发现的问题: </lang>
+                <lang id="zh.tra" status="2">找到的問題: </lang>
+                <lang id="ja" status="2">問題が見つかりました: </lang>
+                <lang id="vi" status="2">Vấn đề Found: </lang>
+                <lang id="th" status="2">พบปัญหา: </lang>
+                <lang id="pl" status="2">Znalezionych błędów:</lang>
+              </row>
+            </component>
             <component class="TVisEdit" name="textBoxSubKey" type="System.Windows.Forms.TextBox">
               <row id="Location.X">6</row>
               <row id="Location.Y">62</row>
@@ -3670,60 +3696,38 @@
                 <lang id="pl" status="2">Zatrzymaj</lang>
               </row>
             </component>
-            <component class="TVisLabel" name="label1" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
-              <row id="Location.X">6</row>
-              <row id="Location.Y">16</row>
-              <row id="RightToLeft">
-                <native>rorLeftToRight</native>
-                <lang id="ar" status="2">rorRightToLeft</lang>
+            <component class="TVisLabel" name="labelProblems" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
+              <row id="ImeMode" state="0">imNone</row>
+              <row id="Location.X" state="3">
+                <prev>91</prev>
+                <native>6</native>
               </row>
+              <row id="Location.Y">16</row>
+              <row id="RightToLeft" state="0">rorLeftToRight</row>
               <row id="Size.Height">13</row>
-              <row id="Size.Width">89</row>
-              <row id="Text" state="0">
+              <row id="Size.Width" state="3">
+                <prev>67</prev>
+                <native>89</native>
+              </row>
+              <row id="Text">
                 <native>Problems Found: </native>
                 <lang id="en" status="2">Problems Found: </lang>
                 <lang id="fr" status="2">Les problèmes trouvés: </lang>
-                <lang id="es" status="2">Problemas que se encuentra: </lang>
+                <lang id="es" status="2">Problemas encontrados: </lang>
                 <lang id="pt" status="2">Problemas encontrados: </lang>
-                <lang id="it" status="2">Problemi a trovare: </lang>
+                <lang id="it" status="2">Problemi riscontrati: </lang>
                 <lang id="nl" status="2">Problemen gevonden: </lang>
-                <lang id="de" status="2">Probleme, die gefunden: </lang>
-                <lang id="ru" status="2">Обнаружены проблемы: </lang>
-                <lang id="el" status="2">Προβλήματα που εντοπίστηκαν: </lang>
-                <lang id="ar" status="2">تم العثور على مشاكل: </lang>
-                <lang id="sv" status="2">Problem som hittades: </lang>
+                <lang id="de" status="2">Probleme gefunden: </lang>
+                <lang id="ru" status="2">Проблемы, выявленные: </lang>
+                <lang id="el" status="2">Προβλήματα που διαπιστώθηκαν: </lang>
+                <lang id="ar" status="2">المشاكل التي وجدت: </lang>
+                <lang id="sv" status="2">Problem Found: </lang>
                 <lang id="zh" status="2">发现的问题: </lang>
-                <lang id="zh.tra" status="2">找到的問題: </lang>
+                <lang id="zh.tra" status="2">發現的問題: </lang>
                 <lang id="ja" status="2">問題が見つかりました: </lang>
                 <lang id="vi" status="2">Vấn đề Found: </lang>
                 <lang id="th" status="2">พบปัญหา: </lang>
-                <lang id="pl" status="2">Znalezionych błędów:</lang>
-              </row>
-            </component>
-            <component class="TVisLabel" name="labelProblems" type="System.Windows.Forms.Label">
-              <row id="Location.X">91</row>
-              <row id="Location.Y">16</row>
-              <row id="Size.Height">13</row>
-              <row id="Size.Width">67</row>
-              <row id="Text" state="0">
-                <native>0</native>
-                <lang id="en" status="2">0</lang>
-                <lang id="fr" status="2">0</lang>
-                <lang id="es" status="2">0</lang>
-                <lang id="pt" status="2">0</lang>
-                <lang id="it" status="2">0</lang>
-                <lang id="nl" status="2">0</lang>
-                <lang id="de" status="2">0</lang>
-                <lang id="ru" status="2">0</lang>
-                <lang id="el" status="2">0</lang>
-                <lang id="ar" status="2">0</lang>
-                <lang id="sv" status="2">0</lang>
-                <lang id="zh" status="2">0</lang>
-                <lang id="zh.tra" status="2">0</lang>
-                <lang id="ja" status="2">0</lang>
-                <lang id="vi" status="2">0</lang>
-                <lang id="th" status="2">0</lang>
-                <lang id="pl" status="2">0</lang>
+                <lang id="pl" status="2">Wykrytych problemów: </lang>
               </row>
             </component>
             <component class="TVisProgressBar" name="progressBar" type="Common_Tools.XpProgressBar">
@@ -3855,7 +3859,7 @@
                 <lang id="fr" status="2">Fichier:</lang>
                 <lang id="es" status="2">Archivo:</lang>
                 <lang id="pt" status="2">Arquivo:</lang>
-                <lang id="it" status="2">File:</lang>
+                <lang id="it" date="20091024224916" status="3">Schedario:</lang>
                 <lang id="nl" status="2">Bestand:</lang>
                 <lang id="de" status="2">Datei:</lang>
                 <lang id="ru" status="2">Файл:</lang>
@@ -5000,6 +5004,466 @@
     </node>
     <node class="TNetStringFolder" name="Strings">
       <node class="TNetStringNode" name="Little_Registry_Cleaner.Properties.Resources">
+        <row id="ActivexComObjects" state="0">
+          <native>ActiveX/COM Objects</native>
+          <lang id="en" status="2">ActiveX/COM Objects</lang>
+          <lang id="fr" status="2">ActiveX / COM Objects</lang>
+          <lang id="es" status="2">ActiveX / COM de objetos</lang>
+          <lang id="pt" status="2">ActiveX / COM Objects</lang>
+          <lang id="it" status="2">ActiveX / COM Objects</lang>
+          <lang id="nl" status="2">ActiveX / COM Objects</lang>
+          <lang id="de" status="2">ActiveX / COM-Objekte</lang>
+          <lang id="ru" status="2">ActiveX / COM-объектов</lang>
+          <lang id="el" status="2">ActiveX / COM Objects</lang>
+          <lang id="ar" status="2">ActiveX / كائنات كوم</lang>
+          <lang id="sv" status="2">ActiveX / COM-objekt</lang>
+          <lang id="zh" status="2">的ActiveX / COM对象</lang>
+          <lang id="zh.tra" status="2">的ActiveX / COM對象</lang>
+          <lang id="ja" status="2">のActiveX / COMオブジェクト</lang>
+          <lang id="vi" status="2">ActiveX / COM Objects</lang>
+          <lang id="th" status="2">ActiveX Objects / COM</lang>
+          <lang id="pl" status="2">ActiveX / COM Objects</lang>
+        </row>
+        <row id="ApplicationInfo" state="0">
+          <native>Application Info</native>
+          <lang id="en" status="2">Application Info</lang>
+          <lang id="fr" status="2">Demande d'info</lang>
+          <lang id="es" status="2">Información de aplicación</lang>
+          <lang id="pt" status="2">Informações de aplicação</lang>
+          <lang id="it" status="2">Informazioni di applicazione</lang>
+          <lang id="nl" status="2">Toepassings gegevens</lang>
+          <lang id="de" status="2">Anwendung Info</lang>
+          <lang id="ru" status="2">Информация О применении</lang>
+          <lang id="el" status="2">Πληροφορίες εφαρμογής</lang>
+          <lang id="ar" status="2">معلومات التطبيق</lang>
+          <lang id="sv" status="2">Programmet info</lang>
+          <lang id="zh" status="2">应用信息</lang>
+          <lang id="zh.tra" status="2">應用信息</lang>
+          <lang id="ja" status="2">アプリケーション情報</lang>
+          <lang id="vi" status="2">Thông tin ứng dụng</lang>
+          <lang id="th" status="2">ข้อมูลการสมัคร</lang>
+          <lang id="pl" status="2">Informacje o programach</lang>
+        </row>
+        <row id="ApplicationPaths" state="0">
+          <native>Application Paths</native>
+          <lang id="en" status="2">Application Paths</lang>
+          <lang id="fr" status="2">Application Paths</lang>
+          <lang id="es" status="2">Rutas de aplicación</lang>
+          <lang id="pt" status="2">Application Paths</lang>
+          <lang id="it" status="2">Application Paths</lang>
+          <lang id="nl" status="2">Application Paths</lang>
+          <lang id="de" status="2">Application Paths</lang>
+          <lang id="ru" status="2">Application Paths</lang>
+          <lang id="el" status="2">Εφαρμογή Μονοπάτια</lang>
+          <lang id="ar" status="2">تطبيق المسارات</lang>
+          <lang id="sv" status="2">Ansökan Paths</lang>
+          <lang id="zh" status="2">应用程序路径</lang>
+          <lang id="zh.tra" status="2">應用程序路徑</lang>
+          <lang id="ja" status="2">アプリケーションのパス</lang>
+          <lang id="vi" status="2">Đơn Path</lang>
+          <lang id="th" status="2">เส้นทาง Application</lang>
+          <lang id="pl" status="2">Application Paths</lang>
+        </row>
+        <row id="ApplicationSettings" state="0">
+          <native>Application Settings</native>
+          <lang id="en" status="2">Application Settings</lang>
+          <lang id="fr" status="2">Paramètres de l'application</lang>
+          <lang id="es" status="2">Configuración de la aplicación</lang>
+          <lang id="pt" status="2">Configurações do aplicativo</lang>
+          <lang id="it" status="2">Impostazioni applicazione</lang>
+          <lang id="nl" status="2">Application Settings</lang>
+          <lang id="de" status="2">Anwendungseinstellungen</lang>
+          <lang id="ru" status="2">Настройки приложения</lang>
+          <lang id="el" status="2">Ρυθμίσεις εφαρμογής</lang>
+          <lang id="ar" status="2">تطبيق الإعدادات</lang>
+          <lang id="sv" status="2">Programinställningar</lang>
+          <lang id="zh" status="2">应用程序设置</lang>
+          <lang id="zh.tra" status="2">應用程序設置</lang>
+          <lang id="ja" status="2">アプリケーションの設定]</lang>
+          <lang id="vi" status="2">Cài đặt ứng dụng</lang>
+          <lang id="th" status="2">การตั้งค่าการสมัคร</lang>
+          <lang id="pl" status="2">Ustawienia aplikacji</lang>
+        </row>
+        <row id="InvalidFile" state="0">
+          <native>Invalid file or folder</native>
+          <lang id="en" status="2">Invalid file or folder</lang>
+          <lang id="fr" status="2">Blancs fichier ou un dossier</lang>
+          <lang id="es" status="2">De archivo no válido o una carpeta</lang>
+          <lang id="pt" status="2">Arquivo ou pasta inválido</lang>
+          <lang id="it" status="2">Non validi di file o una cartella</lang>
+          <lang id="nl" status="2">Ongeldig bestand of map</lang>
+          <lang id="de" status="2">Ungültige Datei oder einen Ordner</lang>
+          <lang id="ru" status="2">Неверный файл или папка</lang>
+          <lang id="el" status="2">Άκυρα αρχείο ή το φάκελο</lang>
+          <lang id="ar" status="2">الملف غير صالح أو مجلد</lang>
+          <lang id="sv" status="2">Ogiltig fil eller mapp</lang>
+          <lang id="zh" status="2">无效的文件或文件夹</lang>
+          <lang id="zh.tra" status="2">無效的文件或文件夾</lang>
+          <lang id="ja" status="2">無効なファイルまたはフォルダ</lang>
+          <lang id="vi" status="2">Không hợp lệ tập tin hoặc thư mục</lang>
+          <lang id="th" status="2">ไฟล์ไม่ถูกต้องหรือโฟลเดอร์</lang>
+          <lang id="pl" status="2">Nieprawidłowy plik lub folder</lang>
+        </row>
+        <row id="InvalidFileExt" state="0">
+          <native>Unused File Extension</native>
+          <lang id="en" status="2">Unused File Extension</lang>
+          <lang id="fr" status="2">Extension de fichier non utilisés</lang>
+          <lang id="es" status="2">Extensión de archivo no utilizada</lang>
+          <lang id="pt" status="2">Extensão de arquivo não utilizados</lang>
+          <lang id="it" status="2">Estensione file inutilizzati</lang>
+          <lang id="nl" status="2">Ongebruikte File Extension</lang>
+          <lang id="de" status="2">Nicht genutzte File Extension</lang>
+          <lang id="ru" status="2">Неиспользованные File Extension</lang>
+          <lang id="el" status="2">Αχρησιμοποίητα αρχείου Επέκταση</lang>
+          <lang id="ar" status="2">غير المستخدمة ملحق ملف</lang>
+          <lang id="sv" status="2">Oanvända File Extension</lang>
+          <lang id="zh" status="2">未使用的文件扩展名</lang>
+          <lang id="zh.tra" status="2">未使用的文件擴展名</lang>
+          <lang id="ja" status="2">未使用のファイル拡張子</lang>
+          <lang id="vi" status="2">Không sử dụng File Extension</lang>
+          <lang id="th" status="2">ไม่ได้ใช้ Extension File</lang>
+          <lang id="pl" status="2">Niewykorzystane Rozszerzenie pliku</lang>
+        </row>
+        <row id="InvalidInprocServer" state="0">
+          <native>Unable to find InprocServer</native>
+          <lang id="en" status="2">Unable to find InprocServer</lang>
+          <lang id="fr" status="2">Impossible de trouver InProcServer</lang>
+          <lang id="es" status="2">No se puede encontrar InprocServer</lang>
+          <lang id="pt" status="2">Incapaz de encontrar InprocServer</lang>
+          <lang id="it" status="2">In grado di trovare InprocServer</lang>
+          <lang id="nl" status="2">Kan InprocServer vinden</lang>
+          <lang id="de" status="2">Kann InprocServer finden</lang>
+          <lang id="ru" status="2">Невозможно найти InprocServer</lang>
+          <lang id="el" status="2">Ανίκανος να βρει InprocServer</lang>
+          <lang id="ar" status="2">غير قادر على العثور InprocServer</lang>
+          <lang id="sv" status="2">Inte hitta InprocServer</lang>
+          <lang id="zh" status="2">无法找到InprocServer</lang>
+          <lang id="zh.tra" status="2">無法找到InprocServer</lang>
+          <lang id="ja" status="2">InprocServerを見つけることができません</lang>
+          <lang id="vi" status="2">Không tìm thấy InprocServer</lang>
+          <lang id="th" status="2">ไม่พบ InprocServer</lang>
+          <lang id="pl" status="2">Nie można znaleźć InprocServer</lang>
+        </row>
+        <row id="InvalidInprocServer32" state="0">
+          <native>Unable to find InprocServer32</native>
+          <lang id="en" status="2">Unable to find InprocServer32</lang>
+          <lang id="fr" status="2">Impossible de trouver InprocServer32</lang>
+          <lang id="es" status="2">No se puede encontrar InprocServer32</lang>
+          <lang id="pt" status="2">Incapaz de encontrar InprocServer32</lang>
+          <lang id="it" status="2">In grado di trovare InprocServer32</lang>
+          <lang id="nl" status="2">Kan InprocServer32 vinden</lang>
+          <lang id="de" status="2">Kann InprocServer32 finden</lang>
+          <lang id="ru" status="2">Невозможно найти InprocServer32</lang>
+          <lang id="el" status="2">Ανίκανος να βρει InprocServer32</lang>
+          <lang id="ar" status="2">غير قادر على العثور InprocServer32</lang>
+          <lang id="sv" status="2">Inte hitta InprocServer32</lang>
+          <lang id="zh" status="2">无法找到InprocServer32</lang>
+          <lang id="zh.tra" status="2">無法找到InprocServer32</lang>
+          <lang id="ja" status="2">InprocServer32を見つけることができません</lang>
+          <lang id="vi" status="2">Không tìm thấy InProcServer32</lang>
+          <lang id="th" status="2">ไม่พบ InprocServer32</lang>
+          <lang id="pl" status="2">Nie można znaleźć InprocServer32</lang>
+        </row>
+        <row id="InvalidProgIDFileExt" state="0">
+          <native>Unused ProgID/File Extension</native>
+          <lang id="en" status="2">Unused ProgID/File Extension</lang>
+          <lang id="fr" status="2">ProgID inutilisés / extension de fichier</lang>
+          <lang id="es" status="2">ProgID no utilizados / extensión de archivo</lang>
+          <lang id="pt" status="2">ProgID Livre / Extensão de Arquivo</lang>
+          <lang id="it" status="2">Inutilizzati ProgID / File Extension</lang>
+          <lang id="nl" status="2">Ongebruikte ProgID / File Extension</lang>
+          <lang id="de" status="2">Ungenutzte ProgID / File Extension</lang>
+          <lang id="ru" status="2">Неиспользованные ProgID / File Extension</lang>
+          <lang id="el" status="2">Αχρησιμοποίητα ProgID / Επέκταση αρχείου</lang>
+          <lang id="ar" status="2">معرف البرنامج غير المستخدمة / ملحق ملف</lang>
+          <lang id="sv" status="2">Oanvända ProgID / filändelse</lang>
+          <lang id="zh" status="2">未使用的ProgID /文件扩展名</lang>
+          <lang id="zh.tra" status="2">未使用的ProgID /文件擴展名</lang>
+          <lang id="ja" status="2">未使用のProgID /ファイル拡張子</lang>
+          <lang id="vi" status="2">Không sử dụng ProgID / File Extension</lang>
+          <lang id="th" status="2">ไม่ได้ใช้ ProgID / File Extension</lang>
+          <lang id="pl" status="2">Niewykorzystane ProgID / File Extension</lang>
+        </row>
+        <row id="InvalidRegKey" state="0">
+          <native>Invalid registry key</native>
+          <lang id="en" status="2">Invalid registry key</lang>
+          <lang id="fr" status="2">Blancs clé de registre</lang>
+          <lang id="es" status="2">Clave de registro no válido</lang>
+          <lang id="pt" status="2">Inválido chave de registro</lang>
+          <lang id="it" status="2">Chiave di Registro di sistema non valido</lang>
+          <lang id="nl" status="2">Ongeldige registersleutel</lang>
+          <lang id="de" status="2">Ungültige Registrierungsschlüssel</lang>
+          <lang id="ru" status="2">Неверное реестра</lang>
+          <lang id="el" status="2">Άκυρο κλειδί μητρώου</lang>
+          <lang id="ar" status="2">صالح مفتاح التسجيل</lang>
+          <lang id="sv" status="2">Ogiltig registernyckel</lang>
+          <lang id="zh" status="2">无效的注册表项</lang>
+          <lang id="zh.tra" status="2">無效的註冊表項</lang>
+          <lang id="ja" status="2">無効なレジストリキー</lang>
+          <lang id="vi" status="2">Không hợp lệ đăng ky</lang>
+          <lang id="th" status="2">คีย์รีจิสทรีไม่ถูกต้อง</lang>
+          <lang id="pl" status="2">Nieprawidłowy klucz rejestru</lang>
+        </row>
+        <row id="InvalidToolbar" state="0">
+          <native>Toolbar is invalid</native>
+          <lang id="en" status="2">Toolbar is invalid</lang>
+          <lang id="fr" status="2">Barre d'outils n'est pas valide</lang>
+          <lang id="es" status="2">Barra de herramientas no es válido</lang>
+          <lang id="pt" status="2">Barra de ferramentas não é válido</lang>
+          <lang id="it" status="2">Barra degli strumenti non è valido</lang>
+          <lang id="nl" status="2">Toolbar is ongeldig</lang>
+          <lang id="de" status="2">Toolbar ist ungültig</lang>
+          <lang id="ru" status="2">Панель инструментов недействительными</lang>
+          <lang id="el" status="2">Toolbar είναι άκυρη</lang>
+          <lang id="ar" status="2">شريط الأدوات غير صالحة</lang>
+          <lang id="sv" status="2">Toolbar är ogiltig</lang>
+          <lang id="zh" status="2">工具栏无效</lang>
+          <lang id="zh.tra" status="2">工具欄無效</lang>
+          <lang id="ja" status="2">ツールバーが無効です</lang>
+          <lang id="vi" status="2">Thanh công cụ không hợp lệ</lang>
+          <lang id="th" status="2">แถบเครื่องมือไม่ถูกต้อง</lang>
+          <lang id="pl" status="2">Toolbar jest nieprawidłowy</lang>
+        </row>
+        <row id="MissingAppID" state="0">
+          <native>Missing AppID reference</native>
+          <lang id="en" status="2">Missing AppID reference</lang>
+          <lang id="fr" status="2">Manquant de référence AppID</lang>
+          <lang id="es" status="2">Falta de referencia AppID</lang>
+          <lang id="pt" status="2">Missing referência AppID</lang>
+          <lang id="it" status="2">Missing AppID riferimento</lang>
+          <lang id="nl" status="2">Ontbrekende AppID verwijzing</lang>
+          <lang id="de" status="2">Fehlende AppID Referenz</lang>
+          <lang id="ru" status="2">Отсутствует ссылка AppID</lang>
+          <lang id="el" status="2">Missing AppID αναφοράς</lang>
+          <lang id="ar" status="2">معرف التطبيق مرجع مفقود</lang>
+          <lang id="sv" status="2">Missing AppID referens</lang>
+          <lang id="zh" status="2">失踪的AppID参考</lang>
+          <lang id="zh.tra" status="2">失踪的AppID參考</lang>
+          <lang id="ja" status="2">行方不明AppIDを参照</lang>
+          <lang id="vi" status="2">Thiếu AppID tham khảo</lang>
+          <lang id="th" status="2">อ้างอิงไม่มี AppID</lang>
+          <lang id="pl" status="2">Zaginione AppID odniesienia</lang>
+        </row>
+        <row id="MissingCLSID" state="0">
+          <native>Missing CLSID reference</native>
+          <lang id="en" status="2">Missing CLSID reference</lang>
+          <lang id="fr" status="2">Manquant de référence CLSID</lang>
+          <lang id="es" status="2">Falta de referencia CLSID</lang>
+          <lang id="pt" status="2">Missing referência CLSID</lang>
+          <lang id="it" status="2">Missing CLSID di riferimento</lang>
+          <lang id="nl" status="2">Ontbrekende CLSID verwijzing</lang>
+          <lang id="de" status="2">Fehlende CLSID Verweis</lang>
+          <lang id="ru" status="2">Отсутствует CLSID Ссылка</lang>
+          <lang id="el" status="2">Missing CLSID αναφοράς</lang>
+          <lang id="ar" status="2">المفقودين CLSID المرجعية</lang>
+          <lang id="sv" status="2">Missing CLSID referens</lang>
+          <lang id="zh" status="2">失踪的CLSID参考</lang>
+          <lang id="zh.tra" status="2">失踪的CLSID參考</lang>
+          <lang id="ja" status="2">行方不明のCLSIDを参照</lang>
+          <lang id="vi" status="2">Thiếu CLSID tham khảo</lang>
+          <lang id="th" status="2">อ้างอิงไม่มี CLSID</lang>
+          <lang id="pl" status="2">Zaginione CLSID odniesienia</lang>
+        </row>
+        <row id="MissingProgID" state="0">
+          <native>Missing ProgID reference</native>
+          <lang id="en" status="2">Missing ProgID reference</lang>
+          <lang id="fr" status="2">Manquant de référence ProgID</lang>
+          <lang id="es" status="2">Falta de referencia ProgID</lang>
+          <lang id="pt" status="2">Missing referência ProgID</lang>
+          <lang id="it" status="2">Missing ProgID di riferimento</lang>
+          <lang id="nl" status="2">Ontbrekende ProgID verwijzing</lang>
+          <lang id="de" status="2">Fehlende ProgID Referenz</lang>
+          <lang id="ru" status="2">Отсутствует ссылка ProgID</lang>
+          <lang id="el" status="2">Missing ProgID αναφοράς</lang>
+          <lang id="ar" status="2">معرف البرنامج مرجع مفقود</lang>
+          <lang id="sv" status="2">Missing ProgID referens</lang>
+          <lang id="zh" status="2">失踪的ProgID参考</lang>
+          <lang id="zh.tra" status="2">失踪的ProgID參考</lang>
+          <lang id="ja" status="2">行方不明のProgIDを参照</lang>
+          <lang id="vi" status="2">Thiếu ProgID tham khảo</lang>
+          <lang id="th" status="2">อ้างอิงไม่มี ProgID</lang>
+          <lang id="pl" status="2">Zaginione ProgID odniesienia</lang>
+        </row>
+        <row id="NoRegKey" state="0">
+          <native>The registry key doesn't contain any data</native>
+          <lang id="en" status="2">The registry key doesn't contain any data</lang>
+          <lang id="fr" status="2">La clé de Registre ne contient pas de données</lang>
+          <lang id="es" status="2">La clave del Registro no contiene ningún dato</lang>
+          <lang id="pt" status="2">A chave de registo não contém quaisquer dados</lang>
+          <lang id="it" status="2">La chiave di registro non contiene tutti i dati</lang>
+          <lang id="nl" status="2">De registersleutel bevat geen gegevens</lang>
+          <lang id="de" status="2">Der Registrierungsschlüssel enthält keine Daten</lang>
+          <lang id="ru" status="2">Реестра не содержит никаких данных</lang>
+          <lang id="el" status="2">Το κλειδί μητρώου δεν περιέχει δεδομένα</lang>
+          <lang id="ar" status="2">مفتاح التسجيل لا يحتوي على أية بيانات</lang>
+          <lang id="sv" status="2">Registernyckeln innehåller inga uppgifter</lang>
+          <lang id="zh" status="2">该注册表项不包含任何数据</lang>
+          <lang id="zh.tra" status="2">該註冊表項不包含任何數據</lang>
+          <lang id="ja" status="2">レジストリキーは任意のデータが含まれていません</lang>
+          <lang id="vi" status="2">Chìa khóa registry không chứa bất kỳ dữ liệu</lang>
+          <lang id="th" status="2">คีย์รีจิสทรีไม่มีข้อมูลใดๆ</lang>
+          <lang id="pl" status="2">Klucz rejestru nie zawiera żadnych danych</lang>
+        </row>
+        <row id="ObsoleteRegKey" state="0">
+          <native>Obsolete registry key</native>
+          <lang id="en" status="2">Obsolete registry key</lang>
+          <lang id="fr" status="2">Clé de registre obsolètes</lang>
+          <lang id="es" status="2">Clave de registro obsoletos</lang>
+          <lang id="pt" status="2">Chave de registro obsoletos</lang>
+          <lang id="it" status="2">Chiave di registro obsolete</lang>
+          <lang id="nl" status="2">Verouderde registersleutel</lang>
+          <lang id="de" status="2">Veraltete Registrierungsschlüssel</lang>
+          <lang id="ru" status="2">Устаревшие ключа реестра</lang>
+          <lang id="el" status="2">Ξεπερασμένα κλειδί μητρώου</lang>
+          <lang id="ar" status="2">عفا عليها الزمن مفتاح التسجيل</lang>
+          <lang id="sv" status="2">Föråldrade registernyckel</lang>
+          <lang id="zh" status="2">废弃的注册表项</lang>
+          <lang id="zh.tra" status="2">廢棄的註冊表項</lang>
+          <lang id="ja" status="2">廃止されたレジストリキー</lang>
+          <lang id="vi" status="2">Lỗi thời đăng ky</lang>
+          <lang id="th" status="2">คีย์รีจิสทรีเลิกใช้</lang>
+          <lang id="pl" status="2">Przestarzały klucz rejestru</lang>
+        </row>
+        <row id="RecentDocs" state="0">
+          <native>Recent Documents</native>
+          <lang id="en" status="2">Recent Documents</lang>
+          <lang id="fr" status="2">Documents récents</lang>
+          <lang id="es" status="2">Documentos recientes</lang>
+          <lang id="pt" status="2">Documentos Recentes</lang>
+          <lang id="it" status="2">Documenti recenti</lang>
+          <lang id="nl" status="2">Recente documenten</lang>
+          <lang id="de" status="2">Zuletzt verwendete Dokumente</lang>
+          <lang id="ru" status="2">Последние документы</lang>
+          <lang id="el" status="2">Πρόσφατα έγγραφα</lang>
+          <lang id="ar" status="2">وثائق صدرت حديثا</lang>
+          <lang id="sv" status="2">Senaste dokument</lang>
+          <lang id="zh" status="2">最近的文档</lang>
+          <lang id="zh.tra" status="2">最近的文檔</lang>
+          <lang id="ja" status="2">最近の資料</lang>
+          <lang id="vi" status="2">Recent Documents</lang>
+          <lang id="th" status="2">เอกสารล่าสุด</lang>
+          <lang id="pl" status="2">Ostatnie dokumenty</lang>
+        </row>
+        <row id="SharedDLLs" state="0">
+          <native>Shared DLLs</native>
+          <lang id="en" status="2">Shared DLLs</lang>
+          <lang id="fr" status="2">Des DLL partagées</lang>
+          <lang id="es" status="2">Compartido de archivos DLL</lang>
+          <lang id="pt" status="2">DLLs compartilhadas</lang>
+          <lang id="it" status="2">DLL condivise</lang>
+          <lang id="nl" status="2">Gedeelde dll-bestanden</lang>
+          <lang id="de" status="2">Freigegebenen DLLs</lang>
+          <lang id="ru" status="2">Общих библиотек</lang>
+          <lang id="el" status="2">Κοινόχρηστο dll</lang>
+          <lang id="ar" status="2">ملفات DLL المشتركة</lang>
+          <lang id="sv" status="2">Delade DLL-filer</lang>
+          <lang id="zh" status="2">共享DLL</lang>
+          <lang id="zh.tra" status="2">共享DLL</lang>
+          <lang id="ja" status="2">共有DLL</lang>
+          <lang id="vi" status="2">Shared DLLs</lang>
+          <lang id="th" status="2">กำลังร่วมกัน</lang>
+          <lang id="pl" status="2">Współdzielone biblioteki DLL</lang>
+        </row>
+        <row id="StartupFiles" state="0">
+          <native>Startup Files</native>
+          <lang id="en" status="2">Startup Files</lang>
+          <lang id="fr" status="2">Fichiers de démarrage</lang>
+          <lang id="es" status="2">Los archivos de inicio</lang>
+          <lang id="pt" status="2">Arquivos de inicialização</lang>
+          <lang id="it" status="2">File di avvio</lang>
+          <lang id="nl" status="2">Opstartbestanden</lang>
+          <lang id="de" status="2">Startdateien</lang>
+          <lang id="ru" status="2">Загрузка файлов</lang>
+          <lang id="el" status="2">Startup Files</lang>
+          <lang id="ar" status="2">بدء تشغيل ملفات</lang>
+          <lang id="sv" status="2">Startfiler</lang>
+          <lang id="zh" status="2">启动文件</lang>
+          <lang id="zh.tra" status="2">啟動文件</lang>
+          <lang id="ja" status="2">スタートアップファイル</lang>
+          <lang id="vi" status="2">Startup Files</lang>
+          <lang id="th" status="2">ไฟล์ Startup</lang>
+          <lang id="pl" status="2">Plików startowych</lang>
+        </row>
+        <row id="SystemDrivers" state="0">
+          <native>System Drivers</native>
+          <lang id="en" status="2">System Drivers</lang>
+          <lang id="fr" status="2">Pilotes système</lang>
+          <lang id="es" status="2">Controladores de sistema</lang>
+          <lang id="pt" status="2">Drivers de sistema</lang>
+          <lang id="it" status="2">Driver di sistema</lang>
+          <lang id="nl" status="2">Systeem stuur programma's</lang>
+          <lang id="de" status="2">Systemtreiber</lang>
+          <lang id="ru" status="2">Системные драйверы</lang>
+          <lang id="el" status="2">Προγράμματα οδήγησης συστήματος</lang>
+          <lang id="ar" status="2">برامج تشغيل النظام</lang>
+          <lang id="sv" status="2">Systemdrivrutiner</lang>
+          <lang id="zh" status="2">系统驱动程序</lang>
+          <lang id="zh.tra" status="2">系統驅動程序</lang>
+          <lang id="ja" status="2">システムドライバ</lang>
+          <lang id="vi" status="2">Hệ thống điều khiển</lang>
+          <lang id="th" status="2">โปรแกรมควบคุมระบบ</lang>
+          <lang id="pl" status="2">Sterowniki systemowe</lang>
+        </row>
+        <row id="WindowsFonts" state="0">
+          <native>Windows Fonts</native>
+          <lang id="en" status="2">Windows Fonts</lang>
+          <lang id="fr" status="2">Windows Fonts</lang>
+          <lang id="es" status="2">Fuentes de Windows</lang>
+          <lang id="pt" status="2">Fontes do Windows</lang>
+          <lang id="it" status="2">Caratteri di Windows</lang>
+          <lang id="nl" status="2">Windows-lettertypen</lang>
+          <lang id="de" status="2">Windows-Schriftarten</lang>
+          <lang id="ru" status="2">Шрифты Windows</lang>
+          <lang id="el" status="2">Γραμματοσειρές των Windows</lang>
+          <lang id="ar" status="2">خطوط Windows</lang>
+          <lang id="sv" status="2">Windows teckensnitt</lang>
+          <lang id="zh" status="2">Windows字体</lang>
+          <lang id="zh.tra" status="2">Windows字體</lang>
+          <lang id="ja" status="2">Windowsフォント</lang>
+          <lang id="vi" status="2">Windows Fonts</lang>
+          <lang id="th" status="2">อักษร Windows</lang>
+          <lang id="pl" status="2">Czcionki systemowe</lang>
+        </row>
+        <row id="WindowsHelpFiles" state="0">
+          <native>Windows Help Files</native>
+          <lang id="en" status="2">Windows Help Files</lang>
+          <lang id="fr" status="2">Fichiers d'aide Windows</lang>
+          <lang id="es" status="2">Archivos de Ayuda de Windows</lang>
+          <lang id="pt" status="2">Arquivos de ajuda do Windows</lang>
+          <lang id="it" status="2">File di Guida di Windows</lang>
+          <lang id="nl" status="2">Windows Help-bestanden</lang>
+          <lang id="de" status="2">Windows-Hilfe-Dateien</lang>
+          <lang id="ru" status="2">Файлы Windows Помощь</lang>
+          <lang id="el" status="2">Αρχείων των Windows Βοήθεια</lang>
+          <lang id="ar" status="2">نوافذ ملفات التعليمات</lang>
+          <lang id="sv" status="2">Windows Hjälpfiler</lang>
+          <lang id="zh" status="2">Windows帮助文件</lang>
+          <lang id="zh.tra" status="2">Windows幫助文件</lang>
+          <lang id="ja" status="2">Windowsのヘルプファイル</lang>
+          <lang id="vi" status="2">Windows Trợ giúp Files</lang>
+          <lang id="th" status="2">Windows Files Help</lang>
+          <lang id="pl" status="2">Pliki Pomocy systemu Windows</lang>
+        </row>
+        <row id="WindowsSounds" state="0">
+          <native>Windows Sounds</native>
+          <lang id="en" status="2">Windows Sounds</lang>
+          <lang id="fr" status="2">Sons de Windows</lang>
+          <lang id="es" status="2">Sonidos de Windows</lang>
+          <lang id="pt" status="2">Windows Sounds</lang>
+          <lang id="it" status="2">Windows Sounds</lang>
+          <lang id="nl" status="2">Windows Sounds</lang>
+          <lang id="de" status="2">Windows-Sounds</lang>
+          <lang id="ru" status="2">Windows Sounds</lang>
+          <lang id="el" status="2">Windows Sounds</lang>
+          <lang id="ar" status="2">نوافذ الأصوات</lang>
+          <lang id="sv" status="2">Windows Sounds</lang>
+          <lang id="zh" status="2">视窗声音</lang>
+          <lang id="zh.tra" status="2">視窗聲音</lang>
+          <lang id="ja" status="2">Windowsのサウンド</lang>
+          <lang id="vi" status="2">Windows Sounds</lang>
+          <lang id="th" status="2">Windows เสียง</lang>
+          <lang id="pl" status="2">Windows Sounds</lang>
+        </row>
       </node>
     </node>
   </source>

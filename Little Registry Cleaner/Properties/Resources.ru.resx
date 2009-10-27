@@ -117,4 +117,73 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ActivexComObjects" xml:space="preserve">
+    <value>ActiveX / COM-объектов</value>
+  </data>
+  <data name="ApplicationInfo" xml:space="preserve">
+    <value>Информация О применении</value>
+  </data>
+  <data name="ApplicationPaths" xml:space="preserve">
+    <value>Application Paths</value>
+  </data>
+  <data name="ApplicationSettings" xml:space="preserve">
+    <value>Настройки приложения</value>
+  </data>
+  <data name="InvalidFile" xml:space="preserve">
+    <value>Неверный файл или папка</value>
+  </data>
+  <data name="InvalidFileExt" xml:space="preserve">
+    <value>Неиспользованные File Extension</value>
+  </data>
+  <data name="InvalidInprocServer" xml:space="preserve">
+    <value>Невозможно найти InprocServer</value>
+  </data>
+  <data name="InvalidInprocServer32" xml:space="preserve">
+    <value>Невозможно найти InprocServer32</value>
+  </data>
+  <data name="InvalidProgIDFileExt" xml:space="preserve">
+    <value>Неиспользованные ProgID / File Extension</value>
+  </data>
+  <data name="InvalidRegKey" xml:space="preserve">
+    <value>Неверное реестра</value>
+  </data>
+  <data name="InvalidToolbar" xml:space="preserve">
+    <value>Панель инструментов недействительными</value>
+  </data>
+  <data name="MissingAppID" xml:space="preserve">
+    <value>Отсутствует ссылка AppID</value>
+  </data>
+  <data name="MissingCLSID" xml:space="preserve">
+    <value>Отсутствует CLSID Ссылка</value>
+  </data>
+  <data name="MissingProgID" xml:space="preserve">
+    <value>Отсутствует ссылка ProgID</value>
+  </data>
+  <data name="NoRegKey" xml:space="preserve">
+    <value>Реестра не содержит никаких данных</value>
+  </data>
+  <data name="ObsoleteRegKey" xml:space="preserve">
+    <value>Устаревшие ключа реестра</value>
+  </data>
+  <data name="RecentDocs" xml:space="preserve">
+    <value>Последние документы</value>
+  </data>
+  <data name="SharedDLLs" xml:space="preserve">
+    <value>Общих библиотек</value>
+  </data>
+  <data name="StartupFiles" xml:space="preserve">
+    <value>Загрузка файлов</value>
+  </data>
+  <data name="SystemDrivers" xml:space="preserve">
+    <value>Системные драйверы</value>
+  </data>
+  <data name="WindowsFonts" xml:space="preserve">
+    <value>Шрифты Windows</value>
+  </data>
+  <data name="WindowsHelpFiles" xml:space="preserve">
+    <value>Файлы Windows Помощь</value>
+  </data>
+  <data name="WindowsSounds" xml:space="preserve">
+    <value>Windows Sounds</value>
+  </data>
 </root>

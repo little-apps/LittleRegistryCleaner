@@ -326,5 +326,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Replaced checkboxes with listview in options so different languages can be displayed properly
 - Added power user option that allows the program to automatically repair problems and close the program
 - Country flags are displayed beside each language
+- Automatically changes to current ui culture once the program is started
 
 + Version 1.4 Released

@@ -69,9 +69,13 @@ namespace Little_Registry_Cleaner
         
         private void ScanDlg_Shown(object sender, EventArgs e)
         {
+            // Setup progress bar
             this.progressBar.Position = 0;
             this.progressBar.PositionMin = 0;
             this.progressBar.PositionMax = ScanDlg.arrBadRegistryKeys.SectionCount;
+
+            // Append 0 to problem label
+            this.labelProblems.Text = string.Format("{0} 0", this.labelProblems.Text);
 
             // Starts scanning registry on seperate thread
             this.threadMain = new Thread(new ThreadStart(StartScanning));
@@ -324,7 +328,11 @@ namespace Little_Registry_Cleaner
             }
 
             ScanDlg.arrBadRegistryKeys.Problems++;
-            this.labelProblems.Text = ScanDlg.arrBadRegistryKeys.Problems.ToString();
+            
+            // Get resourced string for problems
+            System.Resources.ResourceManager rm = new System.Resources.ResourceManager(typeof(ScanDlg));
+            
+            this.labelProblems.Text = string.Format("{0} {1}", rm.GetString("labelProblems.Text"), ScanDlg.arrBadRegistryKeys.Problems);
         }
 
         private void ScanDlg_FormClosing(object sender, FormClosingEventArgs e)

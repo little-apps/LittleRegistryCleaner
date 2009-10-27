@@ -220,7 +220,7 @@
     <value>Voir dans regedit</value>
   </data>
   <data name="toolStripButtonScan.Text" xml:space="preserve">
-    <value>Scan Registry</value>
+    <value>Enregistrement de balayage</value>
   </data>
   <data name="toolStripButtonFix.Text" xml:space="preserve">
     <value>Corriger les problèmes</value>
@@ -235,7 +235,7 @@
     <value>Aider</value>
   </data>
   <data name="scanToolStripMenuItem.Text" xml:space="preserve">
-    <value>Scan Registry</value>
+    <value>Enregistrement de balayage</value>
   </data>
   <data name="fixToolStripMenuItem.Text" xml:space="preserve">
     <value>Corriger les problèmes</value>

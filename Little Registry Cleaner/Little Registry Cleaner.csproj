@@ -18,7 +18,6 @@
     <TargetZone>LocalIntranet</TargetZone>
     <SignManifests>false</SignManifests>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
     <ApplicationIcon>little register cleaner.ico</ApplicationIcon>
     <TargetFrameworkSubset>Full</TargetFrameworkSubset>
     <SignAssembly>false</SignAssembly>
@@ -42,6 +41,7 @@
     <ApplicationVersion>0.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

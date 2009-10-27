@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<desktop scan="17" scanned="20091024195017" built="20091024195159" lang="pl" pane="TLogPane" col="3" row="Text">
+<desktop scan="20" scanned="20091025213528" built="20091025213601" lang="it" pane="TLogPane" viewmode="1" col="17" row="ActivexComObjects">
   <language id="en" autoime="0" autokeyboard="0"/>
   <language id="fr" autoime="0" autokeyboard="0"/>
   <language id="es" autoime="0" autokeyboard="0"/>
@@ -18,31 +18,31 @@
   <language id="th" autoime="0" autokeyboard="0"/>
   <language id="pl" autoime="0" autokeyboard="0"/>
   <triggers>
-    <item class="TValidateTrigger" position="3"/>
+    <item class="TRemoveUnusedItemsTrigger" position="5"/>
+    <item class="TValidateTrigger" position="5"/>
   </triggers>
   <sheet>
     <columns>
       <item class="TFlagsColumn" width="38"/>
-      <item class="TPathColumn" width="120"/>
+      <item class="TPathColumn" width="31"/>
       <item class="TTranslationStatusColumn" width="93"/>
-      <item class="TOriginalColumn" width="54"/>
-      <item class="TTranslationColumn" lang="zh" width="54"/>
-      <item class="TTranslationColumn" lang="zh.tra" width="54"/>
-      <item class="TTranslationColumn" lang="ar" width="54"/>
-      <item class="TTranslationColumn" lang="sv" width="54"/>
-      <item class="TTranslationColumn" lang="th" width="54"/>
-      <item class="TTranslationColumn" lang="ja" width="54"/>
-      <item class="TTranslationColumn" lang="vi" width="54"/>
-      <item class="TTranslationColumn" lang="el" width="54"/>
-      <item class="TTranslationColumn" lang="es" width="54"/>
-      <item class="TTranslationColumn" lang="pt" width="54"/>
-      <item class="TTranslationColumn" lang="en" width="54"/>
-      <item class="TTranslationColumn" lang="fr" width="54"/>
-      <item class="TTranslationColumn" lang="de" width="54"/>
-      <item class="TTranslationColumn" lang="ru" width="54"/>
-      <item class="TTranslationColumn" lang="it" width="54"/>
-      <item class="TTranslationColumn" lang="nl" width="35"/>
-      <item class="TTranslationColumn" lang="pl" width="57"/>
+      <item class="TOriginalColumn" width="61"/>
+      <item class="TTranslationColumn" lang="zh" width="61"/>
+      <item class="TTranslationColumn" lang="zh.tra" width="61"/>
+      <item class="TTranslationColumn" lang="ar" width="61"/>
+      <item class="TTranslationColumn" lang="sv" width="61"/>
+      <item class="TTranslationColumn" lang="th" width="61"/>
+      <item class="TTranslationColumn" lang="ja" width="61"/>
+      <item class="TTranslationColumn" lang="vi" width="61"/>
+      <item class="TTranslationColumn" lang="el" width="61"/>
+      <item class="TTranslationColumn" lang="es" width="61"/>
+      <item class="TTranslationColumn" lang="pt" width="61"/>
+      <item class="TTranslationColumn" lang="fr" width="61"/>
+      <item class="TTranslationColumn" lang="de" width="61"/>
+      <item class="TTranslationColumn" lang="ru" width="61"/>
+      <item class="TTranslationColumn" lang="it" width="61"/>
+      <item class="TTranslationColumn" lang="nl" width="62"/>
+      <item class="TTranslationColumn" lang="pl" width="68"/>
     </columns>
     <params>
       <findtext>lokaliz</findtext>
@@ -51,8 +51,8 @@
   <path>
     <item>All</item>
     <item>Little Registry Cleaner.csproj</item>
-    <item>Forms</item>
-    <item>Little_Registry_Cleaner.Options</item>
+    <item>Strings</item>
+    <item>Little_Registry_Cleaner.Properties.Resources</item>
   </path>
   <exchange method="exmImportProject">
   </exchange>
