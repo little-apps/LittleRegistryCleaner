@@ -29,7 +29,7 @@ namespace Little_Registry_Cleaner.Scanners
     {
         public override string ScannerName
         {
-            get { return "Application Settings"; }
+            get { return Strings.ApplicationSettings; }
         }
 
         public static void Scan()
@@ -69,7 +69,7 @@ namespace Little_Registry_Cleaner.Scanners
                 //    continue;
 
                 if (IsEmptyRegistryKey(baseRegKey.OpenSubKey(strSubKey, true)))
-                    ScanDlg.StoreInvalidKey("The registry key doesn't contain any data", baseRegKey.Name + "\\" + strSubKey);
+                    ScanDlg.StoreInvalidKey(Strings.NoRegKey, baseRegKey.Name + "\\" + strSubKey);
             }
 
             baseRegKey.Close();

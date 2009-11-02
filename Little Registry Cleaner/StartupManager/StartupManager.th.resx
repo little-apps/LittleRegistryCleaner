@@ -136,7 +136,7 @@
     <value>เพิ่ม</value>
   </data>
   <data name="toolStripButtonEdit.Text" xml:space="preserve">
-    <value>Edit</value>
+    <value>เรียบเรียง</value>
   </data>
   <data name="toolStripButtonDelete.Text" xml:space="preserve">
     <value>ลบ</value>

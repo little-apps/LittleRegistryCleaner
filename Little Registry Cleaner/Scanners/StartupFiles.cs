@@ -31,7 +31,7 @@ namespace Little_Registry_Cleaner.Scanners
     {
         public override string ScannerName
         {
-            get { return "Startup Files"; }
+            get { return Strings.StartupFiles; }
         }
 
         public static void Scan()
@@ -118,7 +118,7 @@ namespace Little_Registry_Cleaner.Scanners
                     if (Utils.ExtractArguments2(strRunPath, out strFilePath, out strArgs))
                         continue;
 
-                    ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strProgName);
+                    ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.Name, strProgName);
                 }
             }
 

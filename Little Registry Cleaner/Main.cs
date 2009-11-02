@@ -34,6 +34,8 @@ using Little_Registry_Cleaner.Xml;
 using Common_Tools.TreeViewAdv.Tree;
 using Microsoft.Win32;
 
+// TODO: Translate messagebox strings
+
 namespace Little_Registry_Cleaner
 {
     public partial class Main : Form
@@ -70,8 +72,6 @@ namespace Little_Registry_Cleaner
         {
             InitializeComponent();
         }
-
-        
 
         /// <summary>
         /// Begins scanning the registry
@@ -370,72 +370,79 @@ namespace Little_Registry_Cleaner
             switch (lang.Text)
             {
                 case "English":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
+                    ci = new CultureInfo("en");
                     break;
 
                 case "Spanish":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("es");
+                    ci = new CultureInfo("es");
                     break;
 
                 case "Arabic":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("ar");
+                    ci = new CultureInfo("ar");
                     break;
 
                 case "German":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("de");
+                    ci = new CultureInfo("de");
                     break;
 
                 case "Greek":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("el");
+                    ci = new CultureInfo("el");
                     break;
 
                 case "French":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr");
+                    ci = new CultureInfo("fr");
                     break;
 
                 case "Italian":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("it");
+                    ci = new CultureInfo("it");
                     break;
 
                 case "Japanese":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("ja");
+                    ci = new CultureInfo("ja");
                     break;
 
                 case "Dutch":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("nl");
+                    ci = new CultureInfo("nl");
                     break;
 
                 case "Portuguese":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("pt");
+                    ci = new CultureInfo("pt");
                     break;
 
                 case "Russian":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("ru");
+                    ci = new CultureInfo("ru");
                     break;
 
                 case "Polish":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("pl");
+                    ci = new CultureInfo("pl");
                     break;
 
                 case "Swedish":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("sv");
+                    ci = new CultureInfo("sv");
                     break;
 
                 case "Thai":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("th");
+                    ci = new CultureInfo("th");
                     break;
 
                 case "Vietnamese":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("vi");
+                    ci = new CultureInfo("vi");
                     break;
 
                 case "Chinese (Simplified)":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CHS");
+                    ci = new CultureInfo("zh-CHS");
                     break;
                 case "Chinese (Traditional)":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-CHT");
+                    ci = new CultureInfo("zh-CHT");
                     break;
             }
+
+            if (ci.Name == "zh-CHS" || ci.Name == "zh-CHT")
+                Application.CurrentCulture = ci;
+            else
+                Application.CurrentCulture = CultureInfo.CreateSpecificCulture(ci.Name);
+            Thread.CurrentThread.CurrentUICulture = ci;
+            Scanners.Strings.Culture = ci;
 
             this.ReloadControls();
 
@@ -770,6 +777,8 @@ namespace Little_Registry_Cleaner
             this.treeView1.Nodes.Clear();
             this.treeView1.Nodes.Add(resources.GetObject("treeView1.Nodes") as TreeNode);
             this.treeView1.ExpandAll();
+
+
         }
     }
 }

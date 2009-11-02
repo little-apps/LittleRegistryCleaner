@@ -30,7 +30,7 @@ namespace Little_Registry_Cleaner.Scanners
     {
         public override string ScannerName
         {
-            get { return Properties.Resources.ApplicationInfo; }
+            get { return Strings.ApplicationInfo; }
         }
 
         /// <summary>
@@ -59,7 +59,7 @@ namespace Little_Registry_Cleaner.Scanners
 
                                 if (regKey2.ValueCount <= 0)
                                 {
-                                    ScanDlg.StoreInvalidKey("Invalid registry key", regKey2.ToString());
+                                    ScanDlg.StoreInvalidKey(Strings.InvalidRegKey, regKey2.ToString());
                                     continue;
                                 }
 
@@ -68,31 +68,31 @@ namespace Little_Registry_Cleaner.Scanners
 
                                 if (string.IsNullOrEmpty(progInfo.DisplayName) && (!progInfo.Uninstallable))
                                 {
-                                    ScanDlg.StoreInvalidKey("Invalid registry key", regKey2.ToString());
+                                    ScanDlg.StoreInvalidKey(Strings.InvalidRegKey, regKey2.ToString());
                                     continue;
                                 }
 
                                 // Check display icon
                                 if (!string.IsNullOrEmpty(progInfo.DisplayIcon))
                                     if (!Utils.IconExists(progInfo.DisplayIcon))
-                                            ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "DisplayIcon");
+                                        ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey2.ToString(), "DisplayIcon");
 
                                 // Check install location 
                                 if (!string.IsNullOrEmpty(progInfo.InstallLocation))
                                     if ((!Utils.DirExists(progInfo.InstallLocation)) && (!Utils.FileExists(progInfo.InstallLocation)))
-                                            ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "InstallLocation");
+                                        ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey2.ToString(), "InstallLocation");
 
                                 // Check install source 
                                 if (!string.IsNullOrEmpty(progInfo.InstallSource))
                                     if ((!Utils.DirExists(progInfo.InstallSource)) && (!Utils.FileExists(progInfo.InstallSource)))
-                                            ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.ToString(), "InstallSource");
+                                        ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey2.ToString(), "InstallSource");
 
                                 // Check ARP Cache
                                 if (progInfo.SlowCache)
                                 {
                                     if (!string.IsNullOrEmpty(progInfo.FileName))
                                         if (!Utils.FileExists(progInfo.FileName))
-                                            ScanDlg.StoreInvalidKey("Invalid registry key", progInfo.SlowInfoCacheRegKey);
+                                            ScanDlg.StoreInvalidKey(Strings.InvalidRegKey, progInfo.SlowInfoCacheRegKey);
                                 }
                             }
                         }
@@ -122,7 +122,7 @@ namespace Little_Registry_Cleaner.Scanners
             foreach (string subKey in regKey.GetSubKeyNames())
             {
                 if (Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\" + subKey) == null)
-                    ScanDlg.StoreInvalidKey("Obsolete registry key", string.Format("{0}/{1}", regKey.Name, subKey));
+                    ScanDlg.StoreInvalidKey(Strings.ObsoleteRegKey, string.Format("{0}/{1}", regKey.Name, subKey));
             }
         }
     }

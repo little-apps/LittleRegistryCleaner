@@ -29,7 +29,7 @@ namespace Little_Registry_Cleaner.Scanners
     {
         public override string ScannerName
         {
-            get { return "Windows Sounds"; }
+            get { return Strings.WindowsSounds; }
         }
 
         public static void Scan()
@@ -74,7 +74,7 @@ namespace Little_Registry_Cleaner.Scanners
 
                         if (!string.IsNullOrEmpty(strSoundPath))
                             if (!Utils.FileExists(strSoundPath))
-                                ScanDlg.StoreInvalidKey("Invalid file or folder", rk2.Name, "(default)");
+                                ScanDlg.StoreInvalidKey(Strings.InvalidFile, rk2.Name, "(default)");
                     }
 
                 }

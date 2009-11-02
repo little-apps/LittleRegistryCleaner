@@ -29,7 +29,7 @@ namespace Little_Registry_Cleaner.Scanners
     {
         public override string ScannerName
         {
-            get { return Properties.Resources.ActivexComObjects; }
+            get { return Strings.ActivexComObjects; }
         }
 
         /// <summary>
@@ -107,7 +107,7 @@ namespace Little_Registry_Cleaner.Scanners
                 string strAppID = regKey.GetValue("AppID") as string;
                 if (!string.IsNullOrEmpty(strAppID))
                     if (!appidExists(strAppID))
-                        ScanDlg.StoreInvalidKey(Properties.Resources.MissingAppID, rkCLSID.ToString(), "AppID");
+                        ScanDlg.StoreInvalidKey(Strings.MissingAppID, rkCLSID.ToString(), "AppID");
 
                 // See if DefaultIcon exists
                 using (RegistryKey regKeyDefaultIcon = rkCLSID.OpenSubKey("DefaultIcon"))
@@ -119,7 +119,7 @@ namespace Little_Registry_Cleaner.Scanners
                         if (!string.IsNullOrEmpty(iconPath))
                             if (!Utils.IconExists(iconPath))
                                 if (!ScanDlg.IsOnIgnoreList(iconPath))
-                                    ScanDlg.StoreInvalidKey(Properties.Resources.InvalidFile, string.Format("{0}\\DefaultIcon", rkCLSID.ToString()));
+                                    ScanDlg.StoreInvalidKey(Strings.InvalidFile, string.Format("{0}\\DefaultIcon", rkCLSID.ToString()));
                     }
                 }
 
@@ -132,7 +132,7 @@ namespace Little_Registry_Cleaner.Scanners
 
                         if (!string.IsNullOrEmpty(strInprocServer))
                             if (!Utils.FileExists(strInprocServer))
-                                ScanDlg.StoreInvalidKey(Properties.Resources.InvalidInprocServer, regKeyInprocSrvr.ToString());
+                                ScanDlg.StoreInvalidKey(Strings.InvalidInprocServer, regKeyInprocSrvr.ToString());
 
                         regKeyInprocSrvr.Close();
                     }
@@ -146,7 +146,7 @@ namespace Little_Registry_Cleaner.Scanners
 
                         if (!string.IsNullOrEmpty(strInprocServer32))
                             if (!Utils.FileExists(strInprocServer32))
-                                ScanDlg.StoreInvalidKey(Properties.Resources.InvalidInprocServer32, regKeyInprocSrvr32.ToString());
+                                ScanDlg.StoreInvalidKey(Strings.InvalidInprocServer32, regKeyInprocSrvr32.ToString());
 
                         regKeyInprocSrvr32.Close();
                     }
@@ -183,7 +183,7 @@ namespace Little_Registry_Cleaner.Scanners
 
                         if (!string.IsNullOrEmpty(strCLSID))
                             if (!appidExists(strCLSID))
-                                ScanDlg.StoreInvalidKey(Properties.Resources.MissingAppID, rkAppId.ToString());
+                                ScanDlg.StoreInvalidKey(Strings.MissingAppID, rkAppId.ToString());
                     }
                 }
             }
@@ -222,7 +222,7 @@ namespace Little_Registry_Cleaner.Scanners
 
                             if (!string.IsNullOrEmpty(strProgID))
                                 if (!progIDExists(strProgID))
-                                    ScanDlg.StoreInvalidKey(Properties.Resources.MissingProgID, rkFileExt.ToString());
+                                    ScanDlg.StoreInvalidKey(Strings.MissingProgID, rkFileExt.ToString());
                         }
                     }
                 }
@@ -240,7 +240,7 @@ namespace Little_Registry_Cleaner.Scanners
                             if (!string.IsNullOrEmpty(iconPath))
                                 if (!Utils.IconExists(iconPath))
                                     if (!ScanDlg.IsOnIgnoreList(iconPath))
-                                        ScanDlg.StoreInvalidKey(Properties.Resources.InvalidFile, regKeyDefaultIcon.Name);
+                                        ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKeyDefaultIcon.Name);
                         }
                     }
 
@@ -253,7 +253,7 @@ namespace Little_Registry_Cleaner.Scanners
 
                             if (!string.IsNullOrEmpty(guid))
                                 if (!clsidExists(guid))
-                                    ScanDlg.StoreInvalidKey(Properties.Resources.MissingCLSID, string.Format("{0}\\{1}", regKey.Name, strSubKey));
+                                    ScanDlg.StoreInvalidKey(Strings.MissingCLSID, string.Format("{0}\\{1}", regKey.Name, strSubKey));
                         }
                     }
                 }
@@ -264,7 +264,7 @@ namespace Little_Registry_Cleaner.Scanners
                     if (rk != null)
                     {
                         if (rk.ValueCount <= 0 && rk.SubKeyCount <= 0)
-                            ScanDlg.StoreInvalidKey(Properties.Resources.InvalidProgIDFileExt, rk.Name);
+                            ScanDlg.StoreInvalidKey(Strings.InvalidProgIDFileExt, rk.Name);
                     }
                 }
             }
@@ -296,7 +296,7 @@ namespace Little_Registry_Cleaner.Scanners
                             ScanDlg.UpdateScanningObject(rkBHO.ToString());
 
                             if (!clsidExists(strGuid))
-                                ScanDlg.StoreInvalidKey(Properties.Resources.MissingCLSID, rkBHO.ToString());
+                                ScanDlg.StoreInvalidKey(Strings.MissingCLSID, rkBHO.ToString());
                         }
                     }
                 }
@@ -315,7 +315,7 @@ namespace Little_Registry_Cleaner.Scanners
                         ScanDlg.UpdateScanningObject("CLSID: " + strGuid);
 
                         if (!IEToolbarIsValid(strGuid))
-                            ScanDlg.StoreInvalidKey(Properties.Resources.InvalidToolbar, regKey.ToString(), strGuid);
+                            ScanDlg.StoreInvalidKey(Strings.InvalidToolbar, regKey.ToString(), strGuid);
                     }
                 }
             }
@@ -412,7 +412,7 @@ namespace Little_Registry_Cleaner.Scanners
             }
 
             if (!bProgidExists && !bAppExists)
-                ScanDlg.StoreInvalidKey(Properties.Resources.InvalidFileExt, regKey.ToString());
+                ScanDlg.StoreInvalidKey(Strings.InvalidFileExt, regKey.ToString());
 
             return;
         }
@@ -425,28 +425,28 @@ namespace Little_Registry_Cleaner.Scanners
                 string strHotIcon = regKey.GetValue("HotIcon") as string;
                 if (!string.IsNullOrEmpty(strHotIcon))
                     if (!Utils.IconExists(strHotIcon))
-                        ScanDlg.StoreInvalidKey(Properties.Resources.InvalidFile, regKey.ToString(), "HotIcon");
+                        ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.ToString(), "HotIcon");
 
                 string strIcon = regKey.GetValue("Icon") as string;
                 if (!string.IsNullOrEmpty(strIcon))
                     if (!Utils.IconExists(strIcon))
-                        ScanDlg.StoreInvalidKey(Properties.Resources.InvalidFile, regKey.ToString(), "Icon");
+                        ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.ToString(), "Icon");
 
                 // Lookup CLSID extension
                 string strClsidExt = regKey.GetValue("ClsidExtension") as string;
                 if (!string.IsNullOrEmpty(strClsidExt))
-                    ScanDlg.StoreInvalidKey(Properties.Resources.MissingCLSID, regKey.ToString(), "ClsidExtension");
+                    ScanDlg.StoreInvalidKey(Strings.MissingCLSID, regKey.ToString(), "ClsidExtension");
 
                 // See if files exist
                 string strExec = regKey.GetValue("Exec") as string;
                 if (!string.IsNullOrEmpty(strExec))
                     if (!Utils.FileExists(strExec))
-                        ScanDlg.StoreInvalidKey(Properties.Resources.InvalidFile, regKey.ToString(), "Exec");
+                        ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.ToString(), "Exec");
 
                 string strScript = regKey.GetValue("Script") as string;
                 if (!string.IsNullOrEmpty(strScript))
                     if (!Utils.FileExists(strScript))
-                        ScanDlg.StoreInvalidKey(Properties.Resources.InvalidFile, regKey.ToString(), "Script");
+                        ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.ToString(), "Script");
             }
             catch (System.Security.SecurityException ex)
             {

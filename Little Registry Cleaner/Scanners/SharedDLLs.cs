@@ -29,7 +29,7 @@ namespace Little_Registry_Cleaner.Scanners
     {
         public override string ScannerName
         {
-            get { return "Shared DLLs"; }
+            get { return Strings.SharedDLLs; }
         }
 
         /// <summary>
@@ -54,7 +54,7 @@ namespace Little_Registry_Cleaner.Scanners
 
                     if (!string.IsNullOrEmpty(strFilePath))
                         if (!Utils.FileExists(strFilePath))
-                            ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strFilePath);
+                            ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.Name, strFilePath);
                 }
 
                 regKey.Close();

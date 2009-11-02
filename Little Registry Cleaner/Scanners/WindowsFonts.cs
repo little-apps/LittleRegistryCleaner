@@ -28,15 +28,15 @@ namespace Little_Registry_Cleaner.Scanners
 {
     public class WindowsFonts : ScannerBase
     {
+        public override string ScannerName
+        {
+            get { return Strings.WindowsFonts; }
+        }
+
         [DllImport("shell32.dll")]
         public static extern bool SHGetSpecialFolderPath(IntPtr hwndOwner, [Out] StringBuilder strPath, int nFolder, bool fCreate);
 
-        const int CSIDL_FONTS = 0x0014;    // windows\fonts
-
-        public override string ScannerName
-        {
-            get { return "Windows Fonts"; }
-        }
+        const int CSIDL_FONTS = 0x0014;    // windows\fonts 
 
         /// <summary>
         /// Finds invalid font references
@@ -75,7 +75,7 @@ namespace Little_Registry_Cleaner.Scanners
                         ScanDlg.UpdateScanningObject(strFontPath);
 
                         if (!File.Exists(strFontPath))
-                            ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.ToString(), strFontName);
+                            ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.ToString(), strFontName);
                     }
 
                 }

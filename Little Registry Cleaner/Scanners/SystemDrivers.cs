@@ -29,7 +29,7 @@ namespace Little_Registry_Cleaner.Scanners
     {
         public override string ScannerName
         {
-            get { return "System Drivers"; }
+            get { return Strings.SystemDrivers; }
         }
 
         /// <summary>
@@ -54,7 +54,7 @@ namespace Little_Registry_Cleaner.Scanners
 
                         if (!string.IsNullOrEmpty(strValue))
                             if (!Utils.FileExists(strValue))
-                                ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strDriverName);
+                                ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.Name, strDriverName);
                     }
                 }
             }

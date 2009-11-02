@@ -30,7 +30,7 @@ namespace Little_Registry_Cleaner.Scanners
     {
         public override string ScannerName
         {
-            get { return "Recent Documents"; }
+            get { return Strings.RecentDocs; }
         }
 
         public static void Scan()
@@ -84,7 +84,7 @@ namespace Little_Registry_Cleaner.Scanners
                 // See if file exists in Recent Docs folder
                 if (!string.IsNullOrEmpty(strFileName))
                     if (!Utils.FileExists(string.Format("{0}\\{1}.lnk", strRecentDocs, strFileName)))
-                        ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.ToString(), strValueName);
+                        ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.ToString(), strValueName);
             }
 
             return;

@@ -91,17 +91,17 @@
             // 
             this.imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList.ImageStream")));
             this.imageList.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList.Images.SetKeyName(0, "ActiveX/COM Objects");
-            this.imageList.Images.SetKeyName(1, "Application Info");
-            this.imageList.Images.SetKeyName(2, "System Drivers");
-            this.imageList.Images.SetKeyName(3, "Windows Fonts");
-            this.imageList.Images.SetKeyName(4, "Windows Help Files");
-            this.imageList.Images.SetKeyName(5, "Recent Documents");
-            this.imageList.Images.SetKeyName(6, "Application Paths");
-            this.imageList.Images.SetKeyName(7, "Shared DLLs");
-            this.imageList.Images.SetKeyName(8, "Application Settings");
-            this.imageList.Images.SetKeyName(9, "Windows Sounds");
-            this.imageList.Images.SetKeyName(10, "Startup Files");
+            this.imageList.Images.SetKeyName(0, "ActiveXComObjects");
+            this.imageList.Images.SetKeyName(1, "ApplicationInfo");
+            this.imageList.Images.SetKeyName(2, "SystemDrivers");
+            this.imageList.Images.SetKeyName(3, "WindowsFonts");
+            this.imageList.Images.SetKeyName(4, "WindowsHelpFiles");
+            this.imageList.Images.SetKeyName(5, "RecentDocs");
+            this.imageList.Images.SetKeyName(6, "ApplicationPaths");
+            this.imageList.Images.SetKeyName(7, "SharedDLLs");
+            this.imageList.Images.SetKeyName(8, "ApplicationSettings");
+            this.imageList.Images.SetKeyName(9, "WindowsSounds");
+            this.imageList.Images.SetKeyName(10, "StartupFiles");
             // 
             // ScanDlg
             // 

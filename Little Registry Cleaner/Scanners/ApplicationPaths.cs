@@ -29,7 +29,7 @@ namespace Little_Registry_Cleaner.Scanners
     {
         public override string ScannerName
         {
-            get { return "Application Paths"; }
+            get { return Strings.ApplicationPaths; }
         }
 
         /// <summary>
@@ -64,7 +64,7 @@ namespace Little_Registry_Cleaner.Scanners
                 ScanDlg.UpdateScanningObject(strFolder);
 
                 if (!Utils.DirExists(strFolder))
-                    ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.Name, strFolder);
+                    ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.Name, strFolder);
             }
         }
 
@@ -91,7 +91,7 @@ namespace Little_Registry_Cleaner.Scanners
 
                     if (string.IsNullOrEmpty(strAppPath))
                     {
-                        ScanDlg.StoreInvalidKey("Invalid registry key", regKey2.ToString());
+                        ScanDlg.StoreInvalidKey(Strings.InvalidRegKey, regKey2.ToString());
                         continue;
                     }
 
@@ -110,7 +110,7 @@ namespace Little_Registry_Cleaner.Scanners
                             continue;
                     }
 
-                    ScanDlg.StoreInvalidKey("Invalid file or folder", regKey2.Name);
+                    ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey2.Name);
                 }
             }
 

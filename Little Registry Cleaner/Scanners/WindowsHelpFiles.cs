@@ -29,7 +29,7 @@ namespace Little_Registry_Cleaner.Scanners
     {
         public override string ScannerName
         {
-            get { return "Windows Help Files"; }
+            get { return Strings.WindowsHelpFiles; }
         }
 
         public static void Scan()
@@ -62,7 +62,7 @@ namespace Little_Registry_Cleaner.Scanners
                 ScanDlg.UpdateScanningObject(strHelpPath);
 
                 if (!HelpFileExists(strHelpFile, strHelpPath))
-                    ScanDlg.StoreInvalidKey("Invalid file or folder", regKey.ToString(), strHelpFile);
+                    ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.ToString(), strHelpFile);
             }
 
             return;
