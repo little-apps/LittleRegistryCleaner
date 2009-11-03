@@ -140,36 +140,6 @@
   <data name="label4.Text" xml:space="preserve">
     <value>項:</value>
   </data>
-  <data name="comboBoxSection.Items" xml:space="preserve">
-    <value>スタート\すべてのユーザー</value>
-  </data>
-  <data name="comboBoxSection.Items1" xml:space="preserve">
-    <value>スタートアップ\現在のユーザー</value>
-  </data>
-  <data name="comboBoxSection.Items2" xml:space="preserve">
-    <value>レジストリ\All Usersの\を実行し</value>
-  </data>
-  <data name="comboBoxSection.Items3" xml:space="preserve">
-    <value>レジストリ\All Usersの\一度だけ実行</value>
-  </data>
-  <data name="comboBoxSection.Items4" xml:space="preserve">
-    <value>レジストリ\All Usersの\実行サービス</value>
-  </data>
-  <data name="comboBoxSection.Items5" xml:space="preserve">
-    <value>レジストリ\All Usersの\を実行しサービスの一</value>
-  </data>
-  <data name="comboBoxSection.Items6" xml:space="preserve">
-    <value>レジストリ\現在のユーザーの構成\実行</value>
-  </data>
-  <data name="comboBoxSection.Items7" xml:space="preserve">
-    <value>レジストリ\現在のユーザーの構成\一度だけ実行</value>
-  </data>
-  <data name="comboBoxSection.Items8" xml:space="preserve">
-    <value>レジストリ\現在のユーザーの構成\実行サービス</value>
-  </data>
-  <data name="comboBoxSection.Items9" xml:space="preserve">
-    <value>レジストリ\現在のユーザーの構成\実行サービスの一</value>
-  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>新しいRunアイテム</value>
   </data>

@@ -117,73 +117,118 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ActivexComObjects" xml:space="preserve">
-    <value>的ActiveX / COM對象</value>
+  <data name="crashReporterFail" xml:space="preserve">
+    <value>錯誤報告無法發送</value>
   </data>
-  <data name="ApplicationInfo" xml:space="preserve">
-    <value>應用信息</value>
+  <data name="crashReporterSuccess" xml:space="preserve">
+    <value>成功發送錯誤報告</value>
   </data>
-  <data name="ApplicationPaths" xml:space="preserve">
-    <value>應用程序路徑</value>
+  <data name="mainAddExcludeEntry" xml:space="preserve">
+    <value>新增選定的註冊表項的排除列表</value>
   </data>
-  <data name="ApplicationSettings" xml:space="preserve">
-    <value>應用程序設置</value>
+  <data name="mainAskExit" xml:space="preserve">
+    <value>您確定要退出?</value>
   </data>
-  <data name="InvalidFile" xml:space="preserve">
-    <value>無效的文件或文件夾</value>
+  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
+    <value>這是您第一次運行的小處清潔。\r\n您要創建一個還原點?</value>
   </data>
-  <data name="InvalidFileExt" xml:space="preserve">
-    <value>未使用的文件擴展名</value>
+  <data name="mainInvalidHelpFile" xml:space="preserve">
+    <value>無法找到小處Cleaner.chm</value>
   </data>
-  <data name="InvalidInprocServer" xml:space="preserve">
-    <value>無法找到InprocServer</value>
+  <data name="mainProblemsFix" xml:space="preserve">
+    <value>你想解決問題的所有選擇?</value>
   </data>
-  <data name="InvalidInprocServer32" xml:space="preserve">
-    <value>無法找到InprocServer32</value>
+  <data name="mainProblemsRemoved" xml:space="preserve">
+    <value>從註冊表中刪除的問題</value>
   </data>
-  <data name="InvalidProgIDFileExt" xml:space="preserve">
-    <value>未使用的ProgID /文件擴展名</value>
+  <data name="mainScanningAborted" xml:space="preserve">
+    <value>中止掃描註冊表</value>
   </data>
-  <data name="InvalidRegKey" xml:space="preserve">
-    <value>無效的註冊表項</value>
+  <data name="mainScanningFinished" xml:space="preserve">
+    <value>完成掃描註冊表</value>
   </data>
-  <data name="InvalidToolbar" xml:space="preserve">
-    <value>工具欄無效</value>
+  <data name="mainSelectSections" xml:space="preserve">
+    <value>請選擇一節掃描</value>
   </data>
-  <data name="MissingAppID" xml:space="preserve">
-    <value>失踪的AppID參考</value>
+  <data name="mainUpdateAsk" xml:space="preserve">
+    <value>較新版本可用。您是否要下載?</value>
   </data>
-  <data name="MissingCLSID" xml:space="preserve">
-    <value>失踪的CLSID參考</value>
+  <data name="needAdmin" xml:space="preserve">
+    <value>您必須是管理員才能運行此程序</value>
   </data>
-  <data name="MissingProgID" xml:space="preserve">
-    <value>失踪的ProgID參考</value>
+  <data name="optionsExcludeDir" xml:space="preserve">
+    <value>選擇文件夾，以排除從註冊表掃描</value>
   </data>
-  <data name="NoRegKey" xml:space="preserve">
-    <value>該註冊表項不包含任何數據</value>
+  <data name="optionsExcludeEmptyRegPath" xml:space="preserve">
+    <value>註冊表路徑不能為空</value>
   </data>
-  <data name="ObsoleteRegKey" xml:space="preserve">
-    <value>廢棄的註冊表項</value>
+  <data name="optionsExcludeFile" xml:space="preserve">
+    <value>選擇一個文件，以排除從註冊表掃描</value>
   </data>
-  <data name="RecentDocs" xml:space="preserve">
-    <value>最近的文檔</value>
+  <data name="optionsExcludeInvalidRegPath" xml:space="preserve">
+    <value>指定的註冊表項不存在</value>
   </data>
-  <data name="SharedDLLs" xml:space="preserve">
-    <value>共享DLL</value>
+  <data name="optionsExcludeRemove" xml:space="preserve">
+    <value>你確定?</value>
   </data>
-  <data name="StartupFiles" xml:space="preserve">
-    <value>啟動文件</value>
+  <data name="optionsSelectBackupDir" xml:space="preserve">
+    <value>選擇文件夾備份文件將被放置</value>
   </data>
-  <data name="SystemDrivers" xml:space="preserve">
-    <value>系統驅動程序</value>
+  <data name="optionsSelectLogDir" xml:space="preserve">
+    <value>選擇文件夾的日誌文件將被放置</value>
   </data>
-  <data name="WindowsFonts" xml:space="preserve">
-    <value>Windows字體</value>
+  <data name="programAlreadyRunning" xml:space="preserve">
+    <value>另一個程序似乎已經運行...</value>
   </data>
-  <data name="WindowsHelpFiles" xml:space="preserve">
-    <value>Windows幫助文件</value>
+  <data name="restoreAsk" xml:space="preserve">
+    <value>你確定?</value>
   </data>
-  <data name="WindowsSounds" xml:space="preserve">
-    <value>視窗聲音</value>
+  <data name="restoreError" xml:space="preserve">
+    <value>錯誤恢復註冊表</value>
+  </data>
+  <data name="restoreRestored" xml:space="preserve">
+    <value>成功地恢復註冊表</value>
+  </data>
+  <data name="scanDlgExit" xml:space="preserve">
+    <value>你確定?</value>
+  </data>
+  <data name="scanDlgProgressBarScanning" xml:space="preserve">
+    <value>掃描: </value>
+  </data>
+  <data name="smCannotFindFile" xml:space="preserve">
+    <value>該文件找不到</value>
+  </data>
+  <data name="smEmptyName" xml:space="preserve">
+    <value>快捷鍵/值名稱不能為空</value>
+  </data>
+  <data name="smEmptyPath" xml:space="preserve">
+    <value>文件路徑不能為空</value>
+  </data>
+  <data name="smRan" xml:space="preserve">
+    <value>試圖運行:</value>
+  </data>
+  <data name="smRemove" xml:space="preserve">
+    <value>您確定要刪除此啟動程序?</value>
+  </data>
+  <data name="smRemoved" xml:space="preserve">
+    <value>刪除選定的啟動程序</value>
+  </data>
+  <data name="smRun" xml:space="preserve">
+    <value>你確定要運行此程序?</value>
+  </data>
+  <data name="umForceUninstall" xml:space="preserve">
+    <value>您確定要刪除該程序從註冊表?</value>
+  </data>
+  <data name="umSearchText" xml:space="preserve">
+    <value>按名稱搜索</value>
+  </data>
+  <data name="umUninstall" xml:space="preserve">
+    <value>您確定要卸載此程序?</value>
+  </data>
+  <data name="updateLatest" xml:space="preserve">
+    <value>您有最新版本</value>
+  </data>
+  <data name="updateNewer" xml:space="preserve">
+    <value>較新的版本可用</value>
   </data>
 </root>

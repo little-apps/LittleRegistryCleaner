@@ -125,9 +125,6 @@
   <data name="buttonSend.Text" xml:space="preserve">
     <value>發送錯誤報告</value>
   </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>發生了異常的一個組成部分，在小處清潔。我們已創建一個錯誤報告，您可以給我們。我們將對此報告機密和匿名.</value>
   </data>

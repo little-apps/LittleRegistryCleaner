@@ -311,7 +311,7 @@ namespace Little_Registry_Cleaner
             }
 
             this.strCurrentSection = SectionName;
-            string strText = "Scanning: " + SectionName;
+            string strText = Properties.Resources.scanDlgProgressBarScanning + SectionName;
 
             this.progressBar.Text = strText;
         }
@@ -341,7 +341,7 @@ namespace Little_Registry_Cleaner
             {
                 if (e.CloseReason == CloseReason.UserClosing)
                 {
-                    if (MessageBox.Show(this, "Are you sure?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                    if (MessageBox.Show(this, Properties.Resources.scanDlgExit, Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
                         e.Cancel = true;
                     else
                         this.threadMain.Abort();

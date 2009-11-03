@@ -34,8 +34,6 @@ using Little_Registry_Cleaner.Xml;
 using Common_Tools.TreeViewAdv.Tree;
 using Microsoft.Win32;
 
-// TODO: Translate messagebox strings
-
 namespace Little_Registry_Cleaner
 {
     public partial class Main : Form
@@ -89,7 +87,7 @@ namespace Little_Registry_Cleaner
 
             if (nSectionCount == 0)
             {
-                MessageBox.Show(this, "Please select a section to scan", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(this, Properties.Resources.mainSelectSections, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -122,9 +120,9 @@ namespace Little_Registry_Cleaner
 
                 // Show notify box
                 if (dlgResult == DialogResult.OK)
-                    this.notifyIcon1.ShowBalloonTip(6000, Application.ProductName, "Finished scanning the registry", ToolTipIcon.Info);
+                    this.notifyIcon1.ShowBalloonTip(6000, Application.ProductName, Properties.Resources.mainScanningFinished, ToolTipIcon.Info);
                 else
-                    this.notifyIcon1.ShowBalloonTip(6000, Application.ProductName, "Aborted scanning the registry", ToolTipIcon.Info);
+                    this.notifyIcon1.ShowBalloonTip(6000, Application.ProductName, Properties.Resources.mainScanningAborted, ToolTipIcon.Info);
                 
                 // Copy to directory and display log file
                 Main.Logger.DisplayLogFile((Properties.Settings.Default.bOptionsAutoRepair && dlgResult == DialogResult.OK));
@@ -151,7 +149,7 @@ namespace Little_Registry_Cleaner
             {
                 if (!Properties.Settings.Default.bOptionsAutoRepair)
                 {
-                    if (MessageBox.Show(this, "Would you like to fix all selected problems?", "Little Registry Cleaner", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
+                    if (MessageBox.Show(this, Properties.Resources.mainProblemsFix, Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes)
                         return;
                 }
 
@@ -180,7 +178,7 @@ namespace Little_Registry_Cleaner
 
                 // Display message box
                 if (!Properties.Settings.Default.bOptionsAutoExit)
-                    MessageBox.Show(this, "Removed problems from registry", "Little Registry Cleaner", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(this, Properties.Resources.mainProblemsRemoved, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 // Clear old results
                 this.treeModel.Nodes.Clear();
@@ -235,7 +233,7 @@ namespace Little_Registry_Cleaner
             {
                 string strVersion = "", strChangeLogURL = "", strDownloadURL = "", strReleaseDate = "";
                 if (UpdateDlg.FindUpdate(ref strVersion, ref strReleaseDate, ref strChangeLogURL, ref strDownloadURL, true))
-                    if (MessageBox.Show(this, "A newer version is available. Would you like to download it?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                    if (MessageBox.Show(this, Properties.Resources.mainUpdateAsk, Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                         Utils.LaunchURI(strDownloadURL);
             }
 
@@ -245,7 +243,7 @@ namespace Little_Registry_Cleaner
             // Check if we need to create restore point
             if (Properties.Settings.Default.nProgramStarts == 1)
             {
-                if (MessageBox.Show(this, "This your first time running Little Registry Cleaner. \r\nWould you like to create a restore point?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show(this, Properties.Resources.mainFirstTimeRestorePoint, Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     SysRestore.FirstRunRestore("First time running Little Registry Cleaner");
                 }
@@ -319,7 +317,7 @@ namespace Little_Registry_Cleaner
 
             if (bDisplayExitMsgBox)
             {
-                if (MessageBox.Show(this, "Are you sure you want to exit?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                if (MessageBox.Show(this, Properties.Resources.mainAskExit, Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
                     e.Cancel = true;
             }
         }
@@ -443,6 +441,7 @@ namespace Little_Registry_Cleaner
                 Application.CurrentCulture = CultureInfo.CreateSpecificCulture(ci.Name);
             Thread.CurrentThread.CurrentUICulture = ci;
             Scanners.Strings.Culture = ci;
+            Properties.Resources.Culture = ci;
 
             this.ReloadControls();
 
@@ -453,7 +452,7 @@ namespace Little_Registry_Cleaner
         {
             if (!File.Exists("Little Registry Cleaner.chm"))
             {
-                MessageBox.Show(this, "Unable to find Little Registry Cleaner.chm", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(this, Properties.Resources.mainInvalidHelpFile, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -530,7 +529,7 @@ namespace Little_Registry_Cleaner
                         Properties.Settings.Default.arrayExcludeList.Add(new ExcludeList.ExcludeItem(brk.RegKeyPath, null, null));
                 }
 
-                MessageBox.Show(this, "Added selected registry keys to the exclude list", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(this, Properties.Resources.mainAddExcludeEntry, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

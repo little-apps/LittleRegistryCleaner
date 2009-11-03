@@ -165,25 +165,10 @@
   <data name="ObsoleteRegKey" xml:space="preserve">
     <value>Lỗi thời đăng ky</value>
   </data>
-  <data name="RecentDocs" xml:space="preserve">
-    <value>Recent Documents</value>
-  </data>
-  <data name="SharedDLLs" xml:space="preserve">
-    <value>Shared DLLs</value>
-  </data>
-  <data name="StartupFiles" xml:space="preserve">
-    <value>Startup Files</value>
-  </data>
   <data name="SystemDrivers" xml:space="preserve">
     <value>Hệ thống điều khiển</value>
   </data>
-  <data name="WindowsFonts" xml:space="preserve">
-    <value>Windows Fonts</value>
-  </data>
   <data name="WindowsHelpFiles" xml:space="preserve">
     <value>Windows Trợ giúp Files</value>
-  </data>
-  <data name="WindowsSounds" xml:space="preserve">
-    <value>Windows Sounds</value>
   </data>
 </root>

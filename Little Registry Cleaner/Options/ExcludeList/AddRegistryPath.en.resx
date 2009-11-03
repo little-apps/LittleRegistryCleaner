@@ -119,34 +119,4 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Registry Path:</value>
-  </data>
-  <data name="comboBox1.Items" xml:space="preserve">
-    <value>HKEY_CLASSES_ROOT</value>
-  </data>
-  <data name="comboBox1.Items1" xml:space="preserve">
-    <value>HKEY_CURRENT_USER</value>
-  </data>
-  <data name="comboBox1.Items2" xml:space="preserve">
-    <value>HKEY_LOCAL_MACHINE</value>
-  </data>
-  <data name="comboBox1.Items3" xml:space="preserve">
-    <value>HKEY_USERS</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Select Section:</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Add to ignore list</value>
-  </data>
-  <data name="buttonCancel.Text" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="buttonOk.Text" xml:space="preserve">
-    <value>Add Entry</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Add to ignore list</value>
-  </data>
 </root>

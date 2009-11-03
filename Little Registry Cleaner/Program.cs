@@ -41,7 +41,7 @@ namespace Little_Registry_Cleaner
             // If mutex isnt available, show message and exit...
             if (!bMutexCreated)
             {
-                MessageBox.Show("Another program seems to be running already...", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.programAlreadyRunning, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Application.Exit();
                 return;
             }
@@ -68,7 +68,7 @@ namespace Little_Registry_Cleaner
             // Check if admin, otherwise exit
             if (!Permissions.IsUserAdministrator)
             {
-                MessageBox.Show("You must be an administrator to run this program", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.needAdmin, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Application.Exit();
                 return;
             }

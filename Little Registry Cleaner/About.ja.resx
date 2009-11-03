@@ -131,9 +131,6 @@
   <data name="richTextBox1.Text" xml:space="preserve">
     <value>このプログラムはフリーソフトウェアです：あなたはこれを再配布することができます/またはGNU General Public Licenseには、Free Software Foundationが、ライセンスのいずれかのバージョン3またはそれ以降のバージョンのオプション（）で発行の条件の下でそれを変更します。このプログラムは、期待して有用であると思われるのが、配布されていかなる保証もない現状;商品性または特定目的に対する適合性にも黙示の保証はありません。詳細については、GNU General Public Licenseを参照してください。あなたはこのプログラムと共に、GNU General Public Licenseのコピーを受け取っている必要があります。ない場合は、参照してください&lt;http://www.gnu.org/licenses/&gt;.</value>
   </data>
-  <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
   <data name="labelTitle.Text" xml:space="preserve">
     <value>小さな Registry Cleaner</value>
   </data>

@@ -212,7 +212,7 @@ namespace Little_Registry_Cleaner.StartupManager
         {
             if (this.treeViewAdv1.SelectedNodes.Count > 0)
             {
-                if (MessageBox.Show(this, "Are you sure you want to remove this startup program?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show(this, Properties.Resources.smRemove, Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     StartupManagerNode node = this.treeViewAdv1.SelectedNode.Tag as StartupManagerNode;
 
@@ -261,7 +261,7 @@ namespace Little_Registry_Cleaner.StartupManager
                     }
 
                     if (!bFailed)
-                        MessageBox.Show(this, "Removed selected startup program", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show(this, Properties.Resources.smRemoved, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
             }
@@ -314,7 +314,7 @@ namespace Little_Registry_Cleaner.StartupManager
                 if (!(this.treeViewAdv1.SelectedNode.Tag as StartupManagerNode).IsLeaf)
                     return;
 
-                if (MessageBox.Show(this, "Are you sure you want to run this program?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show(this, Properties.Resources.smRun, Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     string strFilepath = (this.treeViewAdv1.SelectedNode.Tag as StartupManagerNode).Path;
                     string strFileArgs = (this.treeViewAdv1.SelectedNode.Tag as StartupManagerNode).Args;
@@ -325,7 +325,7 @@ namespace Little_Registry_Cleaner.StartupManager
 
                     System.Diagnostics.Process.Start(strFilepath, strFileArgs);
 
-                    MessageBox.Show(this, "Attempted to run: " + strFilepath, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(this, string.Format("{0}: {1}", Properties.Resources.smRun, strFilepath), Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }

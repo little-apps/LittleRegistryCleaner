@@ -168,9 +168,6 @@
     <value>Seleccione una carpeta para guardar los archivos de registro</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>General</value>
-  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Haga clic con el botón derecho del ratón para agregar o quitar las entradas</value>
   </data>

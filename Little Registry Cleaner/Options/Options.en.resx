@@ -146,53 +146,5 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Options</value>
-  </data>
-  <data name="buttonOK.Text" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="buttonCancel.Text" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="buttonBrowse1.Text" xml:space="preserve">
-    <value>Browse...</value>
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Select a folder to backup deleted registry entries </value>
-  </data>
-  <data name="buttonBrowse2.Text" xml:space="preserve">
-    <value>Browse...</value>
-  </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>Select a folder to save the log files to</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>General</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Right click to add/remove entries</value>
-  </data>
-  <data name="columnHeader1.Text" xml:space="preserve">
-    <value>Files and folders to exclude</value>
-  </data>
-  <data name="addFileToolStripMenuItem.Text" xml:space="preserve">
-    <value>Add File</value>
-  </data>
-  <data name="addFolderToolStripMenuItem.Text" xml:space="preserve">
-    <value>Add Folder</value>
-  </data>
-  <data name="addRegistryPathToolStripMenuItem.Text" xml:space="preserve">
-    <value>Add Registry Path</value>
-  </data>
-  <data name="removeEntryToolStripMenuItem.Text" xml:space="preserve">
-    <value>Remove Entry</value>
-  </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>Ignore List</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Little Registry Cleaner - Options</value>
-  </data>
 </root>

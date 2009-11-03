@@ -122,9 +122,6 @@
   <data name="buttonDownload.Text" xml:space="preserve">
     <value>Scaricare</value>
   </data>
-  <data name="buttonChangelog.Text" xml:space="preserve">
-    <value>Changelog</value>
-  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Controllo per aggiornamento</value>
   </data>

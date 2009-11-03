@@ -122,20 +122,11 @@
   <data name="label3.Text" xml:space="preserve">
     <value>Xây dựng gia:</value>
   </data>
-  <data name="linkLabelAuthor.Text" xml:space="preserve">
-    <value>Nick H.</value>
-  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Tác giả:</value>
   </data>
   <data name="richTextBox1.Text" xml:space="preserve">
     <value>Chương trình này là phần mềm: bạn có thể phát hành lại nó và / hoặc sửa đổi nó với điều kiện của Giấy phép Công cộng GNU như được xuất bản bởi các Phần mềm Tự do, hoặc là phiên bản 3 của Giấy phép này, hoặc (tùy chọn) bất kỳ phiên bản sau. Này Chương trình được phân phối với hy vọng rằng nó sẽ hữu ích, nhưng KHÔNG CÓ BẢO ĐẢM; mà không cần bảo hành ngay cả ngụ ý của BÁN hoặc PHÙ HỢP CHO MỘT MỤC ĐÍCH CỤ THỂ. Xem GNU General Public License để biết thêm chi tiết. Bạn nên đã nhận được một bản sao của Giấy phép Công cộng GNU cùng với chương trình này. Nếu không, xem &lt;http://www.gnu.org/licenses/&gt;.</value>
-  </data>
-  <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
-  <data name="labelTitle.Text" xml:space="preserve">
-    <value>Little Registry Cleaner</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="buttonClose.Text" xml:space="preserve">

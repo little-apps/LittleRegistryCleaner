@@ -117,73 +117,115 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ActivexComObjects" xml:space="preserve">
-    <value>ActiveX / COM Objects</value>
+  <data name="crashReporterFail" xml:space="preserve">
+    <value>Các báo cáo lỗi không thể được gửi</value>
   </data>
-  <data name="ApplicationInfo" xml:space="preserve">
-    <value>Thông tin ứng dụng</value>
+  <data name="crashReporterSuccess" xml:space="preserve">
+    <value>Gửi báo cáo lỗi thành công</value>
   </data>
-  <data name="ApplicationPaths" xml:space="preserve">
-    <value>Đơn Path</value>
+  <data name="mainAddExcludeEntry" xml:space="preserve">
+    <value>Added chọn khóa registry vào danh sách loại trừ</value>
   </data>
-  <data name="ApplicationSettings" xml:space="preserve">
-    <value>Cài đặt ứng dụng</value>
+  <data name="mainAskExit" xml:space="preserve">
+    <value>Bạn có chắc bạn muốn thoát ra?</value>
   </data>
-  <data name="InvalidFile" xml:space="preserve">
-    <value>Không hợp lệ tập tin hoặc thư mục</value>
+  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
+    <value>Điều này của bạn lần đầu tiên chạy Little Registry Cleaner.\r\nBạn có muốn tạo một điểm khôi phục?</value>
   </data>
-  <data name="InvalidFileExt" xml:space="preserve">
-    <value>Không sử dụng File Extension</value>
+  <data name="mainInvalidHelpFile" xml:space="preserve">
+    <value>Không tìm thấy Little Registry Cleaner.chm</value>
   </data>
-  <data name="InvalidInprocServer" xml:space="preserve">
-    <value>Không tìm thấy InprocServer</value>
+  <data name="mainProblemsFix" xml:space="preserve">
+    <value>Bạn có muốn sửa chữa tất cả các vấn đề lựa chọn?</value>
   </data>
-  <data name="InvalidInprocServer32" xml:space="preserve">
-    <value>Không tìm thấy InProcServer32</value>
+  <data name="mainProblemsRemoved" xml:space="preserve">
+    <value>Loại bỏ các vấn đề từ registry</value>
   </data>
-  <data name="InvalidProgIDFileExt" xml:space="preserve">
-    <value>Không sử dụng ProgID / File Extension</value>
+  <data name="mainScanningAborted" xml:space="preserve">
+    <value>Hủy bỏ chức năng quét registry</value>
   </data>
-  <data name="InvalidRegKey" xml:space="preserve">
-    <value>Không hợp lệ đăng ky</value>
+  <data name="mainScanningFinished" xml:space="preserve">
+    <value>Đã hoàn thành chức năng quét registry</value>
   </data>
-  <data name="InvalidToolbar" xml:space="preserve">
-    <value>Thanh công cụ không hợp lệ</value>
+  <data name="mainSelectSections" xml:space="preserve">
+    <value>Hãy lựa chọn một phần để quét</value>
   </data>
-  <data name="MissingAppID" xml:space="preserve">
-    <value>Thiếu AppID tham khảo</value>
+  <data name="mainUpdateAsk" xml:space="preserve">
+    <value>Một phiên bản mới hơn có sẵn. Bạn có muốn tải nó?</value>
   </data>
-  <data name="MissingCLSID" xml:space="preserve">
-    <value>Thiếu CLSID tham khảo</value>
+  <data name="needAdmin" xml:space="preserve">
+    <value>Bạn có phải là một quản trị để chạy chương trình này</value>
   </data>
-  <data name="MissingProgID" xml:space="preserve">
-    <value>Thiếu ProgID tham khảo</value>
+  <data name="optionsExcludeDir" xml:space="preserve">
+    <value>Chọn thư mục để loại trừ từ registry quét</value>
   </data>
-  <data name="NoRegKey" xml:space="preserve">
-    <value>Chìa khóa registry không chứa bất kỳ dữ liệu</value>
+  <data name="optionsExcludeEmptyRegPath" xml:space="preserve">
+    <value>Registry đường dẫn không thể để trống</value>
   </data>
-  <data name="ObsoleteRegKey" xml:space="preserve">
-    <value>Lỗi thời đăng ky</value>
+  <data name="optionsExcludeFile" xml:space="preserve">
+    <value>Chọn một tập tin để loại trừ từ registry quét</value>
   </data>
-  <data name="RecentDocs" xml:space="preserve">
-    <value>Recent Documents</value>
+  <data name="optionsExcludeInvalidRegPath" xml:space="preserve">
+    <value>Quy định đăng ký khóa không tồn tại</value>
   </data>
-  <data name="SharedDLLs" xml:space="preserve">
-    <value>Shared DLLs</value>
+  <data name="optionsExcludeRemove" xml:space="preserve">
+    <value>Bạn có chắc chắn?</value>
   </data>
-  <data name="StartupFiles" xml:space="preserve">
-    <value>Startup Files</value>
+  <data name="optionsSelectBackupDir" xml:space="preserve">
+    <value>Chọn thư mục nơi các tập tin sao lưu sẽ được đặt</value>
   </data>
-  <data name="SystemDrivers" xml:space="preserve">
-    <value>Hệ thống điều khiển</value>
+  <data name="optionsSelectLogDir" xml:space="preserve">
+    <value>Chọn thư mục nơi mà các file bản ghi sẽ được đặt</value>
   </data>
-  <data name="WindowsFonts" xml:space="preserve">
-    <value>Windows Fonts</value>
+  <data name="programAlreadyRunning" xml:space="preserve">
+    <value>Một chương trình có vẻ là đã chạy...</value>
   </data>
-  <data name="WindowsHelpFiles" xml:space="preserve">
-    <value>Windows Trợ giúp Files</value>
+  <data name="restoreAsk" xml:space="preserve">
+    <value>Bạn có chắc chắn?</value>
   </data>
-  <data name="WindowsSounds" xml:space="preserve">
-    <value>Windows Sounds</value>
+  <data name="restoreError" xml:space="preserve">
+    <value>Lỗi phục hồi registry</value>
+  </data>
+  <data name="restoreRestored" xml:space="preserve">
+    <value>Thành công phục hồi registry</value>
+  </data>
+  <data name="scanDlgExit" xml:space="preserve">
+    <value>Bạn có chắc chắn?</value>
+  </data>
+  <data name="smCannotFindFile" xml:space="preserve">
+    <value>Các tập tin không thể tìm được</value>
+  </data>
+  <data name="smEmptyName" xml:space="preserve">
+    <value>Shortcut / Giá trị tên không thể để trống</value>
+  </data>
+  <data name="smEmptyPath" xml:space="preserve">
+    <value>File đường dẫn không thể để trống</value>
+  </data>
+  <data name="smRan" xml:space="preserve">
+    <value>Cố gắng để chạy:</value>
+  </data>
+  <data name="smRemove" xml:space="preserve">
+    <value>Bạn có chắc bạn muốn loại bỏ chương trình này khởi động?</value>
+  </data>
+  <data name="smRemoved" xml:space="preserve">
+    <value>Bỏ chọn khởi động chương trình</value>
+  </data>
+  <data name="smRun" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn chạy chương trình này?</value>
+  </data>
+  <data name="umForceUninstall" xml:space="preserve">
+    <value>Bạn có chắc bạn muốn loại bỏ chương trình này từ registry?</value>
+  </data>
+  <data name="umSearchText" xml:space="preserve">
+    <value>Tìm kiếm theo tên</value>
+  </data>
+  <data name="umUninstall" xml:space="preserve">
+    <value>Bạn có chắc là bạn muốn bỏ cài đặt chương trình này?</value>
+  </data>
+  <data name="updateLatest" xml:space="preserve">
+    <value>Bạn có phiên bản mới nhất</value>
+  </data>
+  <data name="updateNewer" xml:space="preserve">
+    <value>Mơi hơn phiên bản sẵn sàng</value>
   </data>
 </root>

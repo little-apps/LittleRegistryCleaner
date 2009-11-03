@@ -95,7 +95,7 @@ namespace Little_Registry_Cleaner
         {
             using (FolderBrowserDialog folderBrowserDlg = new FolderBrowserDialog())
             {
-                folderBrowserDlg.Description = "Select the folder where the backup files will be placed";
+                folderBrowserDlg.Description = Properties.Resources.optionsSelectBackupDir;
                 folderBrowserDlg.SelectedPath = this.textBoxBackupFolder.Text;
                 folderBrowserDlg.ShowNewFolderButton = true;
 
@@ -108,7 +108,7 @@ namespace Little_Registry_Cleaner
         {
             using (FolderBrowserDialog folderBrowserDlg = new FolderBrowserDialog())
             {
-                folderBrowserDlg.Description = "Select the folder where the log files will be placed";
+                folderBrowserDlg.Description = Properties.Resources.optionsSelectLogDir;
                 folderBrowserDlg.SelectedPath = this.textBoxLogFolder.Text;
                 folderBrowserDlg.ShowNewFolderButton = true;
 
@@ -134,6 +134,7 @@ namespace Little_Registry_Cleaner
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
+                openFileDialog.Title = Properties.Resources.optionsExcludeFile;
                 openFileDialog.Filter = "All files (*.*)|*.*";
                 openFileDialog.FilterIndex = 1;
                 openFileDialog.RestoreDirectory = true;
@@ -150,7 +151,7 @@ namespace Little_Registry_Cleaner
         {
             using (FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog())
             {
-                folderBrowserDialog.Description = "Select the folder to exclude from the registry scan";
+                folderBrowserDialog.Description = Properties.Resources.optionsExcludeDir;
 
                 if (folderBrowserDialog.ShowDialog(this) == DialogResult.OK)
                 {
@@ -164,7 +165,7 @@ namespace Little_Registry_Cleaner
         {
             if (this.listView1.SelectedIndices.Count > 0 && this.listView1.Items.Count > 0)
             {
-                if (MessageBox.Show(this, "Are you sure?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show(this, Properties.Resources.optionsExcludeRemove, Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     foreach (ExcludeList.ExcludeItem i in ExcludeArray)
                     {

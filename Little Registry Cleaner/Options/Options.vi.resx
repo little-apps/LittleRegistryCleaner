@@ -149,9 +149,6 @@
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Tùy chọn</value>
   </data>
-  <data name="buttonOK.Text" xml:space="preserve">
-    <value>OK</value>
-  </data>
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>Hủy</value>
   </data>
@@ -176,9 +173,6 @@
   </data>
   <data name="columnHeader1.Text" xml:space="preserve">
     <value>Tập tin và thư mục để loại trừ</value>
-  </data>
-  <data name="addFileToolStripMenuItem.Text" xml:space="preserve">
-    <value>Add File</value>
   </data>
   <data name="addFolderToolStripMenuItem.Text" xml:space="preserve">
     <value>Thêm Folder</value>

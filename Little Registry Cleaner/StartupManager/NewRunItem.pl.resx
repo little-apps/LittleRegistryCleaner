@@ -122,9 +122,6 @@
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>Anuluj</value>
   </data>
-  <data name="buttonOk.Text" xml:space="preserve">
-    <value>OK</value>
-  </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Parametry:</value>
   </data>
@@ -139,12 +136,6 @@
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>Sekcja:</value>
-  </data>
-  <data name="comboBoxSection.Items" xml:space="preserve">
-    <value>Uruchamianie\Wszyscy użytkownicy</value>
-  </data>
-  <data name="comboBoxSection.Items1" xml:space="preserve">
-    <value>Uruchamianie\Bieżący użytkownik</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Nowy element uruchamiania systemu</value>

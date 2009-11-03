@@ -122,9 +122,6 @@
   <data name="label3.Text" xml:space="preserve">
     <value>Δημιουργία Ημ/νία:</value>
   </data>
-  <data name="linkLabelAuthor.Text" xml:space="preserve">
-    <value>Nick H.</value>
-  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Συγγραφέας:</value>
   </data>
@@ -134,9 +131,6 @@
 Αυτό το πρόγραμμα διανέμεται με την ελπίδα ότι θα ήταν χρήσιμο, αλλά ΧΩΡΊΣ ΚΆΘΕ WARRANTY, χωρίς καν την σιωπηρή εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ για Α ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ.  Δείτε το GNU General Public License για περισσότερες λεπτομέρειες.
 
 Θα πρέπει να έχετε λάβει ένα αντίγραφο από το GNU General Public License μαζί με αυτό το πρόγραμμα.  Εάν όχι, ανατρέξτε στην ενότητα &lt;http://www.gnu.org/licenses/&gt;.</value>
-  </data>
-  <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="labelTitle.Text" xml:space="preserve">
     <value>Μικρή Registry Cleaner</value>

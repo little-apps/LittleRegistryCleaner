@@ -122,9 +122,6 @@
   <data name="label3.Text" xml:space="preserve">
     <value>Construir data:</value>
   </data>
-  <data name="linkLabelAuthor.Text" xml:space="preserve">
-    <value>Nick H.</value>
-  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Autor:</value>
   </data>
@@ -134,9 +131,6 @@
 Este programa é distribuído na esperança de que será útil, mas sem qualquer garantia; sem sequer a garantia implícita de COMERCIABILIDADE ou adequação a um fim específico.  Consulte a GNU GPL para obter mais detalhes.
 
 Você deve ter recebido uma cópia da GNU General Public License juntamente com este programa.  Se não for, consulte &lt;http://www.gnu.org/licenses/&gt;.</value>
-  </data>
-  <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="labelTitle.Text" xml:space="preserve">
     <value>Pouco Registry Cleaner</value>

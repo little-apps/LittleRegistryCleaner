@@ -132,9 +132,6 @@ Niniejsze oprogramowanie jest rozpowszechniane z nadzieją, że okaże się przy
 
 Kopia licencji GNU General Public License powinna zostać dostarczona wraz z niniejszym oprogramowaniem. W przeciwnym wypadku odwiedź stronę &lt;http://www.gnu.org/licenses/&gt;</value>
   </data>
-  <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
   <data name="labelTitle.Text" xml:space="preserve">
     <value>Little rejestru Cleaner</value>
   </data>

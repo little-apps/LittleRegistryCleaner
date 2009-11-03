@@ -140,36 +140,6 @@
   <data name="label4.Text" xml:space="preserve">
     <value>В разделе:</value>
   </data>
-  <data name="comboBoxSection.Items" xml:space="preserve">
-    <value>StartUp\All пользователи</value>
-  </data>
-  <data name="comboBoxSection.Items1" xml:space="preserve">
-    <value>StartUp\Current пользователей</value>
-  </data>
-  <data name="comboBoxSection.Items2" xml:space="preserve">
-    <value>Registry\All Users\Run</value>
-  </data>
-  <data name="comboBoxSection.Items3" xml:space="preserve">
-    <value>После Registry\All Users\Run</value>
-  </data>
-  <data name="comboBoxSection.Items4" xml:space="preserve">
-    <value>Registry\All Users\Run Services</value>
-  </data>
-  <data name="comboBoxSection.Items5" xml:space="preserve">
-    <value>После службы Users\Run Registry\All</value>
-  </data>
-  <data name="comboBoxSection.Items6" xml:space="preserve">
-    <value>Registry\Current User\Run</value>
-  </data>
-  <data name="comboBoxSection.Items7" xml:space="preserve">
-    <value>После Registry\Current User\Run</value>
-  </data>
-  <data name="comboBoxSection.Items8" xml:space="preserve">
-    <value>Registry\Current User\Run Services</value>
-  </data>
-  <data name="comboBoxSection.Items9" xml:space="preserve">
-    <value>После службы User\Run Registry\Current</value>
-  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Новый пункт выполнить</value>
   </data>

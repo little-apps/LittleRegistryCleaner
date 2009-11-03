@@ -327,5 +327,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Added power user option that allows the program to automatically repair problems and close the program
 - Country flags are displayed beside each language
 - Automatically changes to current ui culture once the program is started
+- Translated strings that are not controls and are in the code files
 
 + Version 1.4 Released

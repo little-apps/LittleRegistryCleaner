@@ -55,13 +55,13 @@ namespace Little_Registry_Cleaner.StartupManager
 
             if (string.IsNullOrEmpty(this.textBoxName.Text))
             {
-                MessageBox.Show(this, "Shortcut/Value name cannot be empty", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(this, Properties.Resources.smEmptyName, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             if (string.IsNullOrEmpty(this.textBoxPath.Text))
             {
-                MessageBox.Show(this, "File path cannot be empty", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(this, Properties.Resources.smEmptyPath, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 

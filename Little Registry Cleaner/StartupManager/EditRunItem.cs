@@ -51,7 +51,7 @@ namespace Little_Registry_Cleaner.StartupManager
         {
             if (!Utils.FileExists(this.textBoxFile.Text))
             {
-                MessageBox.Show(this, "The file could not be found", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(this, Properties.Resources.smCannotFindFile, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 

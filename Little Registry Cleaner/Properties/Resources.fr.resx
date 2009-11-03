@@ -117,73 +117,118 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ActivexComObjects" xml:space="preserve">
-    <value>ActiveX / COM Objects</value>
+  <data name="crashReporterFail" xml:space="preserve">
+    <value>Le rapport de bogue n'a pas pu être envoyé.</value>
   </data>
-  <data name="ApplicationInfo" xml:space="preserve">
-    <value>Demande d'info</value>
+  <data name="crashReporterSuccess" xml:space="preserve">
+    <value>Rapport de bogue envoyé</value>
   </data>
-  <data name="ApplicationPaths" xml:space="preserve">
-    <value>Application Paths</value>
+  <data name="mainAddExcludeEntry" xml:space="preserve">
+    <value>Ajouté des clés de registre sélectionnée à la liste d'exclusion</value>
   </data>
-  <data name="ApplicationSettings" xml:space="preserve">
-    <value>Paramètres de l'application</value>
+  <data name="mainAskExit" xml:space="preserve">
+    <value>Vous êtes vraiment quitter?</value>
   </data>
-  <data name="InvalidFile" xml:space="preserve">
-    <value>Blancs fichier ou un dossier</value>
+  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
+    <value>Ce votre première fois en cours d'exécution Little Registry Cleaner. vous souhaitez créer un point de restauration de \r\nWould?</value>
   </data>
-  <data name="InvalidFileExt" xml:space="preserve">
-    <value>Extension de fichier non utilisés</value>
+  <data name="mainInvalidHelpFile" xml:space="preserve">
+    <value>Impossible de trouver le petit registre Cleaner.chm</value>
   </data>
-  <data name="InvalidInprocServer" xml:space="preserve">
-    <value>Impossible de trouver InProcServer</value>
+  <data name="mainProblemsFix" xml:space="preserve">
+    <value>Vous souhaitez corriger tous les problèmes sélectionnés?</value>
   </data>
-  <data name="InvalidInprocServer32" xml:space="preserve">
-    <value>Impossible de trouver InprocServer32</value>
+  <data name="mainProblemsRemoved" xml:space="preserve">
+    <value>Problèmes supprimées du registre</value>
   </data>
-  <data name="InvalidProgIDFileExt" xml:space="preserve">
-    <value>ProgID inutilisés / extension de fichier</value>
+  <data name="mainScanningAborted" xml:space="preserve">
+    <value>Abandonné l'analyse du registre</value>
   </data>
-  <data name="InvalidRegKey" xml:space="preserve">
-    <value>Blancs clé de registre</value>
+  <data name="mainScanningFinished" xml:space="preserve">
+    <value>L'analyse est terminée le registre.</value>
   </data>
-  <data name="InvalidToolbar" xml:space="preserve">
-    <value>Barre d'outils n'est pas valide</value>
+  <data name="mainSelectSections" xml:space="preserve">
+    <value>Veuillez sélectionner une section à analyser</value>
   </data>
-  <data name="MissingAppID" xml:space="preserve">
-    <value>Manquant de référence AppID</value>
+  <data name="mainUpdateAsk" xml:space="preserve">
+    <value>Une version plus récente est disponible. Souhaitez-vous télécharger?</value>
   </data>
-  <data name="MissingCLSID" xml:space="preserve">
-    <value>Manquant de référence CLSID</value>
+  <data name="needAdmin" xml:space="preserve">
+    <value>Vous devez être administrateur pour exécuter ce programme.</value>
   </data>
-  <data name="MissingProgID" xml:space="preserve">
-    <value>Manquant de référence ProgID</value>
+  <data name="optionsExcludeDir" xml:space="preserve">
+    <value>Sélectionnez le dossier à exclure de l'analyse du registre</value>
   </data>
-  <data name="NoRegKey" xml:space="preserve">
-    <value>La clé de Registre ne contient pas de données</value>
+  <data name="optionsExcludeEmptyRegPath" xml:space="preserve">
+    <value>Chemin d'accès du Registre ne peut pas être vide</value>
   </data>
-  <data name="ObsoleteRegKey" xml:space="preserve">
-    <value>Clé de registre obsolètes</value>
+  <data name="optionsExcludeFile" xml:space="preserve">
+    <value>Sélectionnez un fichier à exclure de l'analyse du registre</value>
   </data>
-  <data name="RecentDocs" xml:space="preserve">
-    <value>Documents récents</value>
+  <data name="optionsExcludeInvalidRegPath" xml:space="preserve">
+    <value>Clé de registre spécifiée n'existe pas</value>
   </data>
-  <data name="SharedDLLs" xml:space="preserve">
-    <value>Des DLL partagées</value>
+  <data name="optionsExcludeRemove" xml:space="preserve">
+    <value>Es-tu sûr?</value>
   </data>
-  <data name="StartupFiles" xml:space="preserve">
-    <value>Fichiers de démarrage</value>
+  <data name="optionsSelectBackupDir" xml:space="preserve">
+    <value>Sélectionnez le dossier dans lequel seront placés les fichiers de sauvegarde</value>
   </data>
-  <data name="SystemDrivers" xml:space="preserve">
-    <value>Pilotes système</value>
+  <data name="optionsSelectLogDir" xml:space="preserve">
+    <value>Sélectionnez le dossier dans lequel seront placés les fichiers journaux</value>
   </data>
-  <data name="WindowsFonts" xml:space="preserve">
-    <value>Polices de Windows</value>
+  <data name="programAlreadyRunning" xml:space="preserve">
+    <value>Un autre programme semble être en cours d'exécution déjà...</value>
   </data>
-  <data name="WindowsHelpFiles" xml:space="preserve">
-    <value>Fichiers d'aide Windows</value>
+  <data name="restoreAsk" xml:space="preserve">
+    <value>Es-tu sûr?</value>
   </data>
-  <data name="WindowsSounds" xml:space="preserve">
-    <value>Sons de Windows</value>
+  <data name="restoreError" xml:space="preserve">
+    <value>Erreur lors de restauration du registre</value>
+  </data>
+  <data name="restoreRestored" xml:space="preserve">
+    <value>Registre restauré avec succès</value>
+  </data>
+  <data name="scanDlgExit" xml:space="preserve">
+    <value>Es-tu sûr?</value>
+  </data>
+  <data name="scanDlgProgressBarScanning" xml:space="preserve">
+    <value>L'analyse: </value>
+  </data>
+  <data name="smCannotFindFile" xml:space="preserve">
+    <value>Le fichier n'a pas pu être trouvé.</value>
+  </data>
+  <data name="smEmptyName" xml:space="preserve">
+    <value>Le nom du raccourci/valeur ne peut pas être vide</value>
+  </data>
+  <data name="smEmptyPath" xml:space="preserve">
+    <value>Chemin d'accès du fichier ne peut pas être vide</value>
+  </data>
+  <data name="smRan" xml:space="preserve">
+    <value>Tentative d'exécution:</value>
+  </data>
+  <data name="smRemove" xml:space="preserve">
+    <value>Vous êtes certain de que vouloir supprimer ce programme de démarrage?</value>
+  </data>
+  <data name="smRemoved" xml:space="preserve">
+    <value>Supprimé le programme de démarrage sélectionnés</value>
+  </data>
+  <data name="smRun" xml:space="preserve">
+    <value>Vous êtes vraiment exécuter ce programme.?</value>
+  </data>
+  <data name="umForceUninstall" xml:space="preserve">
+    <value>Vous êtes certain de que vouloir supprimer ce programme dans le registre?</value>
+  </data>
+  <data name="umSearchText" xml:space="preserve">
+    <value>Recherche par nom</value>
+  </data>
+  <data name="umUninstall" xml:space="preserve">
+    <value>Vous souhaitez désinstaller ce programme vraiment?</value>
+  </data>
+  <data name="updateLatest" xml:space="preserve">
+    <value>Vous avez la dernière version.</value>
+  </data>
+  <data name="updateNewer" xml:space="preserve">
+    <value>Une version plus récente disponible</value>
   </data>
 </root>

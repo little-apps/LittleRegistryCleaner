@@ -62,14 +62,14 @@ namespace Little_Registry_Cleaner
                 this.buttonDownload.Enabled = true;
                 this.buttonChangelog.Enabled = true;
 
-                this.labelInfo.Text = "Newer version available";
+                this.labelInfo.Text = Properties.Resources.updateNewer;
             }
             else
             {
                 this.buttonDownload.Enabled = false;
                 this.buttonChangelog.Enabled = false;
 
-                this.labelInfo.Text = "You have the latest version";
+                this.labelInfo.Text = Properties.Resources.updateLatest;
             }
 
             base.OnShown(e);

@@ -203,12 +203,12 @@ namespace Little_Registry_Cleaner
 
             if (response.StatusCode == HttpStatusCode.OK)
             {
-                MessageBox.Show(this, "Sent bug report successfully", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(this, Properties.Resources.crashReporterSuccess, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return true;
             }
             else
             {
-                MessageBox.Show(this, "The bug report could not be sent", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(this, Properties.Resources.crashReporterFail, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
         }

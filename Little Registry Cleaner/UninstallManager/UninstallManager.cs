@@ -143,7 +143,7 @@ namespace Little_Registry_Cleaner.UninstallManager
             if (this.textBoxSearch.Text.Trim() == "")
             {
                 this.textBoxSearch.ForeColor = SystemColors.GrayText;
-                this.textBoxSearch.Text = "Search by name";
+                this.textBoxSearch.Text = Properties.Resources.umSearchText;
             }
 
         }
@@ -155,7 +155,7 @@ namespace Little_Registry_Cleaner.UninstallManager
                 ListViewItem lvi = this.listViewProgs.SelectedItems[0];
                 ProgramInfo progInfo = lvi.Tag as ProgramInfo;
 
-                if (MessageBox.Show(this, "Are you sure you want to uninstall this program?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show(this, Properties.Resources.umUninstall, Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     progInfo.Uninstall();
 
                 PopulateListView();
@@ -169,7 +169,7 @@ namespace Little_Registry_Cleaner.UninstallManager
                 ListViewItem lvi = this.listViewProgs.SelectedItems[0];
                 ProgramInfo progInfo = lvi.Tag as ProgramInfo;
 
-                if (MessageBox.Show(this, "Are you sure you want to remove this program from the registry?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show(this, Properties.Resources.umForceUninstall, Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     progInfo.RemoveFromRegistry();
 
                 PopulateListView();

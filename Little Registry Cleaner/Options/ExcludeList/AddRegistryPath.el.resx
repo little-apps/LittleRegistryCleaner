@@ -122,18 +122,6 @@
   <data name="label2.Text" xml:space="preserve">
     <value>Διαδρομή μητρώου:</value>
   </data>
-  <data name="comboBox1.Items" xml:space="preserve">
-    <value>HKEY_CLASSES_ROOT</value>
-  </data>
-  <data name="comboBox1.Items1" xml:space="preserve">
-    <value>HKEY_CURRENT_USER</value>
-  </data>
-  <data name="comboBox1.Items2" xml:space="preserve">
-    <value>HKEY_LOCAL_MACHINE</value>
-  </data>
-  <data name="comboBox1.Items3" xml:space="preserve">
-    <value>HKEY_USERS</value>
-  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Επιλέξτε το τμήμα:</value>
   </data>

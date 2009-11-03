@@ -135,9 +135,6 @@
   <data name="buttonUninstall.Text" xml:space="preserve">
     <value>Odinstaluj</value>
   </data>
-  <data name="textBoxSearch.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.5pt</value>
-  </data>
   <data name="textBoxSearch.Text" xml:space="preserve">
     <value>Szukaj wg nazwy</value>
   </data>

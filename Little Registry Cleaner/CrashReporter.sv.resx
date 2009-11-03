@@ -125,9 +125,6 @@
   <data name="buttonSend.Text" xml:space="preserve">
     <value>Skicka felrapport</value>
   </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Ett undantag uppstod i en komponent i Little Registry Cleaner. Vi har skapat en felrapport som du kan skicka. Vi kommer att behandla detta betänkande behandlas konfidentiellt och anonymt.</value>
   </data>

@@ -122,9 +122,6 @@
   <data name="label3.Text" xml:space="preserve">
     <value>Datum maken:</value>
   </data>
-  <data name="linkLabelAuthor.Text" xml:space="preserve">
-    <value>Nick H.</value>
-  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Auteur:</value>
   </data>
@@ -134,9 +131,6 @@
 Dit programma wordt verdeeld in de hoop dat het nuttig zijn, maar zonder enige garantie; zonder zelfs de impliciete garantie van verkoopbaarheid of geschiktheid voor een bepaald doel zal zijn.  Zie de GNU-generaal Volks-licentie voor meer informatie.
 
 U hebt ontvangen een kopie van de GNU-generaal Volks licentie samen met dit programma.  Als dit niet het geval is, Zie &lt;http://www.gnu.org/licenses/&gt;.</value>
-  </data>
-  <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="labelTitle.Text" xml:space="preserve">
     <value>Weinig register reinigings</value>

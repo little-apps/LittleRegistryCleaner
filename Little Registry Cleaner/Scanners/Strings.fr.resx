@@ -123,9 +123,6 @@
   <data name="ApplicationInfo" xml:space="preserve">
     <value>Demande d'info</value>
   </data>
-  <data name="ApplicationPaths" xml:space="preserve">
-    <value>Application Paths</value>
-  </data>
   <data name="ApplicationSettings" xml:space="preserve">
     <value>Paramètres de l'application</value>
   </data>

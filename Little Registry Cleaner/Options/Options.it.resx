@@ -149,9 +149,6 @@
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Opzioni</value>
   </data>
-  <data name="buttonOK.Text" xml:space="preserve">
-    <value>OK</value>
-  </data>
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>Annulla</value>
   </data>

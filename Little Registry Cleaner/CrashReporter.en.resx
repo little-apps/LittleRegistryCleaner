@@ -119,23 +119,5 @@
   </resheader>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
-  <data name="checkBoxRestart.Text" xml:space="preserve">
-    <value>Restart Program</value>
-  </data>
-  <data name="buttonSend.Text" xml:space="preserve">
-    <value>Send Error Report</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>An exception occured in a component of Little Registry Cleaner. We have created an error report that you can send us. We will treat this report as confidential and anonymous.</value>
-  </data>
-  <data name="buttonDontSend.Text" xml:space="preserve">
-    <value>Don't Send</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Little Registry Cleaner - Crash Reporter</value>
-  </data>
 </root>

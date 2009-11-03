@@ -125,9 +125,6 @@
   <data name="buttonSend.Text" xml:space="preserve">
     <value>Enviar el informe de errores</value>
   </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Se produjo una excepción en un componente de Little limpiador de registro. Hemos creado un informe de errores que usted puede enviarnos. Consideraremos este informe como confidencial y anónimo.</value>
   </data>

@@ -125,9 +125,6 @@
   <data name="buttonSend.Text" xml:space="preserve">
     <value>を送信するエラー報告</value>
   </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>例外リトルレジストリCleanerのコンポーネントで発生しました。我々は、エラーレポートをお送りすることができますを作成している。私たちは、このレポートは機密情報として扱いますと匿名.</value>
   </data>

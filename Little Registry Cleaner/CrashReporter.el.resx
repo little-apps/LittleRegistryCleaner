@@ -125,9 +125,6 @@
   <data name="buttonSend.Text" xml:space="preserve">
     <value>Αποστολή αναφοράς σφάλματος</value>
   </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Παρουσιάστηκε εξαίρεση στο στοιχείο του Little καθαρισμού μητρώου. Έχουμε δημιουργήσει μια αναφορά σφάλματος την οποία μπορείτε να μας στείλετε. Θα χειριστούμε αυτήν την έκθεση ως εμπιστευτική και ανώνυμη.</value>
   </data>

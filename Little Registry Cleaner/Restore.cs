@@ -62,7 +62,7 @@ namespace Little_Registry_Cleaner
 
             if (this.listViewFiles.SelectedIndices.Count > 0 && this.listViewFiles.Items.Count > 0)
             {
-                if (MessageBox.Show(this, "Are you sure?", "Little Registry Cleaner", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show(this, Properties.Resources.restoreAsk, Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     string strFile = this.listViewFiles.SelectedItems[0].Text;
                     string strFilePath = string.Format("{0}\\{1}", Properties.Settings.Default.strOptionsBackupDir, strFile);
@@ -71,7 +71,7 @@ namespace Little_Registry_Cleaner
 
                     if (xmlReg.loadAsXml(xmlReader, strFilePath))
                     {
-                        MessageBox.Show(this, "Successfully restored registry", "Little Registry Cleaner", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show(this, Properties.Resources.restoreRestored, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         if (Properties.Settings.Default.bOptionsDelBackup)
                         {
                             File.Delete(strFilePath);
@@ -79,7 +79,7 @@ namespace Little_Registry_Cleaner
                         }
                     }
                     else
-                        MessageBox.Show(this, "Error restoring registry", "Little Registry Cleaner", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show(this, Properties.Resources.restoreError, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                     SysRestore.EndRestore(lSeqNum);
                 }

@@ -52,14 +52,14 @@ namespace Little_Registry_Cleaner.ExcludeList
 
             if (string.IsNullOrEmpty(strBaseKey) || string.IsNullOrEmpty(strSubKey))
             {
-                MessageBox.Show(this, "Registry path cannot be empty", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(this, Properties.Resources.optionsExcludeEmptyRegPath, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.DialogResult = DialogResult.None;
                 return;
             }
 
             if (!Utils.RegKeyExists(strBaseKey, strSubKey))
             {
-                MessageBox.Show(this, "Specified registry key doesn't exist", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(this, Properties.Resources.optionsExcludeInvalidRegPath, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.DialogResult = DialogResult.None;
                 return;
             }

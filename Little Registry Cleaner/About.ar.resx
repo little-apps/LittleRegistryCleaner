@@ -135,9 +135,6 @@
 
 وينبغي أن كنت قد تلقيت نسخة من جنو العمومية مع هذا البرنامج.  إذا لم انظر &lt;http://www.gnu.org/licenses/&gt;.</value>
   </data>
-  <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
   <data name="labelTitle.Text" xml:space="preserve">
     <value>التسجيل ضئيلة الأنظف</value>
   </data>

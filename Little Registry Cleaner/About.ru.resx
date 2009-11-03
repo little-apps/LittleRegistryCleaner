@@ -122,9 +122,6 @@
   <data name="label3.Text" xml:space="preserve">
     <value>Построить Дата:</value>
   </data>
-  <data name="linkLabelAuthor.Text" xml:space="preserve">
-    <value>Nick H.</value>
-  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Автор:</value>
   </data>
@@ -134,9 +131,6 @@
 Эта программа распространяется в надежде на то, что она окажется полезной, но без каких бы то ни было гарантий; даже подразумеваемой гарантии или ТОВАРНОСТИ или пригодности для конкретных целях.  Смотрите GNU General Public License для получения дополнительной информации.
 
 Вы должны были получить копию GNU General Public License наряду с этой программой.  Если нет, см. &lt;http://www.gnu.org/licenses/&gt;.</value>
-  </data>
-  <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="labelTitle.Text" xml:space="preserve">
     <value>Мало реестра чистого</value>

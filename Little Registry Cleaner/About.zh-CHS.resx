@@ -131,9 +131,6 @@
   <data name="richTextBox1.Text" xml:space="preserve">
     <value>该程序是自由软件：你可以重新发布它和/或修改在GNU通用公共自由软件基金会，使用许可证版本3，或（您自行选择）任何更新的版本出版许可证条款。这程式的目的是希望它有用，但没有任何担保，甚至没有适销性或针对特定用途的隐含的担保。详情请参阅GNU通用公共许可证。您应该已经收到一份GNU通用公共许可证的副本连同本程序。如果没有，请参阅&lt;http://www.gnu.org/licenses/&gt;。</value>
   </data>
-  <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
-  </data>
   <data name="labelTitle.Text" xml:space="preserve">
     <value>小注册表清理器</value>
   </data>

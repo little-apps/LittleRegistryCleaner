@@ -117,73 +117,118 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ActivexComObjects" xml:space="preserve">
-    <value>のActiveX / COMオブジェクト</value>
+  <data name="crashReporterFail" xml:space="preserve">
+    <value>バグレポートを送信できませんでした</value>
   </data>
-  <data name="ApplicationInfo" xml:space="preserve">
-    <value>アプリケーション情報</value>
+  <data name="crashReporterSuccess" xml:space="preserve">
+    <value>送信されたバグレポートが正常に</value>
   </data>
-  <data name="ApplicationPaths" xml:space="preserve">
-    <value>アプリケーションのパス</value>
+  <data name="mainAddExcludeEntry" xml:space="preserve">
+    <value>追加のリストを除外するために、レジストリキーを選択</value>
   </data>
-  <data name="ApplicationSettings" xml:space="preserve">
-    <value>アプリケーションの設定]</value>
+  <data name="mainAskExit" xml:space="preserve">
+    <value>あなたが終了してもよろしいですか?</value>
   </data>
-  <data name="InvalidFile" xml:space="preserve">
-    <value>無効なファイルまたはフォルダ</value>
+  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
+    <value>これはあなたの最初の時間リトルRegistry Cleanerは、実行している。\Rは\を復元ポイントを作成するようにnWould?</value>
   </data>
-  <data name="InvalidFileExt" xml:space="preserve">
-    <value>未使用のファイル拡張子</value>
+  <data name="mainInvalidHelpFile" xml:space="preserve">
+    <value>リトルレジストリCleaner.chmを見つけることができません</value>
   </data>
-  <data name="InvalidInprocServer" xml:space="preserve">
-    <value>InprocServerを見つけることができません</value>
+  <data name="mainProblemsFix" xml:space="preserve">
+    <value>選択したすべての問題を修正するか?</value>
   </data>
-  <data name="InvalidInprocServer32" xml:space="preserve">
-    <value>InprocServer32を見つけることができません</value>
+  <data name="mainProblemsRemoved" xml:space="preserve">
+    <value>レジストリから削除された問題</value>
   </data>
-  <data name="InvalidProgIDFileExt" xml:space="preserve">
-    <value>未使用のProgID /ファイル拡張子</value>
+  <data name="mainScanningAborted" xml:space="preserve">
+    <value>中止には、レジストリをスキャン</value>
   </data>
-  <data name="InvalidRegKey" xml:space="preserve">
-    <value>無効なレジストリキー</value>
+  <data name="mainScanningFinished" xml:space="preserve">
+    <value>レジストリをスキャン仕上がり</value>
   </data>
-  <data name="InvalidToolbar" xml:space="preserve">
-    <value>ツールバーが無効です</value>
+  <data name="mainSelectSections" xml:space="preserve">
+    <value>してくださいスキャンするセクションを選択</value>
   </data>
-  <data name="MissingAppID" xml:space="preserve">
-    <value>行方不明AppIDを参照</value>
+  <data name="mainUpdateAsk" xml:space="preserve">
+    <value>新しいバージョンが利用可能です。それをダウンロードなさいますか?</value>
   </data>
-  <data name="MissingCLSID" xml:space="preserve">
-    <value>行方不明のCLSIDを参照</value>
+  <data name="needAdmin" xml:space="preserve">
+    <value>あなたはこのプログラムを実行するための管理者である必要があります</value>
   </data>
-  <data name="MissingProgID" xml:space="preserve">
-    <value>行方不明のProgIDを参照</value>
+  <data name="optionsExcludeDir" xml:space="preserve">
+    <value>選択したフォルダには、レジストリのスキャンを除外する</value>
   </data>
-  <data name="NoRegKey" xml:space="preserve">
-    <value>レジストリキーは任意のデータが含まれていません</value>
+  <data name="optionsExcludeEmptyRegPath" xml:space="preserve">
+    <value>レジストリパスを空にすることはできません</value>
   </data>
-  <data name="ObsoleteRegKey" xml:space="preserve">
-    <value>廃止されたレジストリキー</value>
+  <data name="optionsExcludeFile" xml:space="preserve">
+    <value>を選択するには、レジストリのスキャンを除外するファイル</value>
   </data>
-  <data name="RecentDocs" xml:space="preserve">
-    <value>最近の資料</value>
+  <data name="optionsExcludeInvalidRegPath" xml:space="preserve">
+    <value>指定されたレジストリキーが存在しない</value>
   </data>
-  <data name="SharedDLLs" xml:space="preserve">
-    <value>共有DLL</value>
+  <data name="optionsExcludeRemove" xml:space="preserve">
+    <value>必ずあなたは?</value>
   </data>
-  <data name="StartupFiles" xml:space="preserve">
-    <value>スタートアップファイル</value>
+  <data name="optionsSelectBackupDir" xml:space="preserve">
+    <value>選択したフォルダは、バックアップファイルが置かれる</value>
   </data>
-  <data name="SystemDrivers" xml:space="preserve">
-    <value>システムドライバ</value>
+  <data name="optionsSelectLogDir" xml:space="preserve">
+    <value>フォルダを選択しますここでは、ログファイルが置かれる</value>
   </data>
-  <data name="WindowsFonts" xml:space="preserve">
-    <value>Windowsフォント</value>
+  <data name="programAlreadyRunning" xml:space="preserve">
+    <value>もう1つのプログラムが既に実行されているようだ...</value>
   </data>
-  <data name="WindowsHelpFiles" xml:space="preserve">
-    <value>Windowsのヘルプファイル</value>
+  <data name="restoreAsk" xml:space="preserve">
+    <value>必ずあなたは?</value>
   </data>
-  <data name="WindowsSounds" xml:space="preserve">
-    <value>Windowsのサウンド</value>
+  <data name="restoreError" xml:space="preserve">
+    <value>エラーを復元するレジストリ</value>
+  </data>
+  <data name="restoreRestored" xml:space="preserve">
+    <value>正常に、レジストリの復元</value>
+  </data>
+  <data name="scanDlgExit" xml:space="preserve">
+    <value>必ずあなたは?</value>
+  </data>
+  <data name="scanDlgProgressBarScanning" xml:space="preserve">
+    <value>スキャン: </value>
+  </data>
+  <data name="smCannotFindFile" xml:space="preserve">
+    <value>ファイルが見つかりませんでした</value>
+  </data>
+  <data name="smEmptyName" xml:space="preserve">
+    <value>ショートカット/値の名前を空にすることはできません</value>
+  </data>
+  <data name="smEmptyPath" xml:space="preserve">
+    <value>ファイルのパスを空にすることはできません</value>
+  </data>
+  <data name="smRan" xml:space="preserve">
+    <value>を実行しようとしました:</value>
+  </data>
+  <data name="smRemove" xml:space="preserve">
+    <value>あなたがこのスタートアッププログラムを削除してもよろしいですか?</value>
+  </data>
+  <data name="smRemoved" xml:space="preserve">
+    <value>削除選択されたスタートアッププログラム</value>
+  </data>
+  <data name="smRun" xml:space="preserve">
+    <value>あなたがこのプログラムを実行してもよろしいですか?</value>
+  </data>
+  <data name="umForceUninstall" xml:space="preserve">
+    <value>あなたは、レジストリからこのプログラムを削除してもよろしいですか?</value>
+  </data>
+  <data name="umSearchText" xml:space="preserve">
+    <value>名前で検索</value>
+  </data>
+  <data name="umUninstall" xml:space="preserve">
+    <value>あなたがこのプログラムをアンインストールしてもよろしいですか?</value>
+  </data>
+  <data name="updateLatest" xml:space="preserve">
+    <value>現在の最新バージョンがある</value>
+  </data>
+  <data name="updateNewer" xml:space="preserve">
+    <value>新しいバージョンが利用可能</value>
   </data>
 </root>

@@ -122,9 +122,6 @@
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>Hủy</value>
   </data>
-  <data name="buttonOk.Text" xml:space="preserve">
-    <value>OK</value>
-  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Đối số:</value>
   </data>

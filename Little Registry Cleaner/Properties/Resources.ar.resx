@@ -117,73 +117,118 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ActivexComObjects" xml:space="preserve">
-    <value>ActiveX / كائنات كوم</value>
+  <data name="crashReporterFail" xml:space="preserve">
+    <value>تقرير الشوائب لا يمكن إرسالها</value>
   </data>
-  <data name="ApplicationInfo" xml:space="preserve">
-    <value>معلومات التطبيق</value>
+  <data name="crashReporterSuccess" xml:space="preserve">
+    <value>أرسلت علة التقرير بنجاح</value>
   </data>
-  <data name="ApplicationPaths" xml:space="preserve">
-    <value>تطبيق المسارات</value>
+  <data name="mainAddExcludeEntry" xml:space="preserve">
+    <value>وأضاف مختارة مفاتيح التسجيل إلى استبعاد قائمة</value>
   </data>
-  <data name="ApplicationSettings" xml:space="preserve">
-    <value>تطبيق الإعدادات</value>
+  <data name="mainAskExit" xml:space="preserve">
+    <value>هل أنت متأكد أنك تريد الخروج?</value>
   </data>
-  <data name="InvalidFile" xml:space="preserve">
-    <value>الملف غير صالح أو مجلد</value>
+  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
+    <value>هذه أول مرة يستخدم ليتل السجل النظيف.\ص\nWould كنت ترغب في إنشاء نقطة استعادة?</value>
   </data>
-  <data name="InvalidFileExt" xml:space="preserve">
-    <value>غير المستخدمة ملحق ملف</value>
+  <data name="mainInvalidHelpFile" xml:space="preserve">
+    <value>قادر على العثور على قلم ليتل Cleaner.chm</value>
   </data>
-  <data name="InvalidInprocServer" xml:space="preserve">
-    <value>غير قادر على العثور InprocServer</value>
+  <data name="mainProblemsFix" xml:space="preserve">
+    <value>هل ترغب في حل جميع المشاكل مختارة?</value>
   </data>
-  <data name="InvalidInprocServer32" xml:space="preserve">
-    <value>غير قادر على العثور InprocServer32</value>
+  <data name="mainProblemsRemoved" xml:space="preserve">
+    <value>إزالة المشاكل من التسجيل</value>
   </data>
-  <data name="InvalidProgIDFileExt" xml:space="preserve">
-    <value>معرف البرنامج غير المستخدمة / ملحق ملف</value>
+  <data name="mainScanningAborted" xml:space="preserve">
+    <value>إحباط مسح السجل</value>
   </data>
-  <data name="InvalidRegKey" xml:space="preserve">
-    <value>صالح مفتاح التسجيل</value>
+  <data name="mainScanningFinished" xml:space="preserve">
+    <value>الانتهاء من المسح والتسجيل</value>
   </data>
-  <data name="InvalidToolbar" xml:space="preserve">
-    <value>شريط الأدوات غير صالحة</value>
+  <data name="mainSelectSections" xml:space="preserve">
+    <value>الرجاء اختيار القسم لمسح</value>
   </data>
-  <data name="MissingAppID" xml:space="preserve">
-    <value>معرف التطبيق مرجع مفقود</value>
+  <data name="mainUpdateAsk" xml:space="preserve">
+    <value>ويتوفر الإصدار الأحدث. هل ترغب في تحميل البرنامج?</value>
   </data>
-  <data name="MissingCLSID" xml:space="preserve">
-    <value>المفقودين CLSID المرجعية</value>
+  <data name="needAdmin" xml:space="preserve">
+    <value>يجب عليك أن تكون مسؤولا لتشغيل هذا البرنامج</value>
   </data>
-  <data name="MissingProgID" xml:space="preserve">
-    <value>معرف البرنامج مرجع مفقود</value>
+  <data name="optionsExcludeDir" xml:space="preserve">
+    <value>حدد المجلد لاستبعاد من التسجيل المسح الضوئي</value>
   </data>
-  <data name="NoRegKey" xml:space="preserve">
-    <value>مفتاح التسجيل لا يحتوي على أية بيانات</value>
+  <data name="optionsExcludeEmptyRegPath" xml:space="preserve">
+    <value>التسجيل المسار لا يمكن أن تكون فارغة</value>
   </data>
-  <data name="ObsoleteRegKey" xml:space="preserve">
-    <value>عفا عليها الزمن مفتاح التسجيل</value>
+  <data name="optionsExcludeFile" xml:space="preserve">
+    <value>حدد ملف لاستبعاد من التسجيل المسح الضوئي</value>
   </data>
-  <data name="RecentDocs" xml:space="preserve">
-    <value>وثائق صدرت حديثا</value>
+  <data name="optionsExcludeInvalidRegPath" xml:space="preserve">
+    <value>مفتاح التسجيل المحدد غير موجود</value>
   </data>
-  <data name="SharedDLLs" xml:space="preserve">
-    <value>ملفات DLL المشتركة</value>
+  <data name="optionsExcludeRemove" xml:space="preserve">
+    <value>هل أنت متأكد?</value>
   </data>
-  <data name="StartupFiles" xml:space="preserve">
-    <value>بدء تشغيل ملفات</value>
+  <data name="optionsSelectBackupDir" xml:space="preserve">
+    <value>حدد المجلد حيث ملفات النسخة الاحتياطية سوف توضع</value>
   </data>
-  <data name="SystemDrivers" xml:space="preserve">
-    <value>برامج تشغيل النظام</value>
+  <data name="optionsSelectLogDir" xml:space="preserve">
+    <value>حدد المجلد حيث ملفات السجل ستوضع</value>
   </data>
-  <data name="WindowsFonts" xml:space="preserve">
-    <value>خطوط Windows</value>
+  <data name="programAlreadyRunning" xml:space="preserve">
+    <value>برنامج آخر ويبدو أن إدارة بالفعل...</value>
   </data>
-  <data name="WindowsHelpFiles" xml:space="preserve">
-    <value>نوافذ ملفات التعليمات</value>
+  <data name="restoreAsk" xml:space="preserve">
+    <value>هل أنت متأكد?</value>
   </data>
-  <data name="WindowsSounds" xml:space="preserve">
-    <value>نوافذ الأصوات</value>
+  <data name="restoreError" xml:space="preserve">
+    <value>الخطأ استعادة التسجيل</value>
+  </data>
+  <data name="restoreRestored" xml:space="preserve">
+    <value>بنجاح استعادة التسجيل</value>
+  </data>
+  <data name="scanDlgExit" xml:space="preserve">
+    <value>هل أنت متأكد?</value>
+  </data>
+  <data name="scanDlgProgressBarScanning" xml:space="preserve">
+    <value>المسح الضوئي: </value>
+  </data>
+  <data name="smCannotFindFile" xml:space="preserve">
+    <value>الملف لا يمكن العثور على</value>
+  </data>
+  <data name="smEmptyName" xml:space="preserve">
+    <value>الاختصار / اسم القيمة لا يمكن أن تكون فارغة</value>
+  </data>
+  <data name="smEmptyPath" xml:space="preserve">
+    <value>مسار الملف لا يمكن أن تكون فارغة</value>
+  </data>
+  <data name="smRan" xml:space="preserve">
+    <value>حاول تشغيل:</value>
+  </data>
+  <data name="smRemove" xml:space="preserve">
+    <value>هل أنت متأكد من أنك تريد إزالة هذا البرنامج بدء التشغيل?</value>
+  </data>
+  <data name="smRemoved" xml:space="preserve">
+    <value>إزالة مختارة بدء البرنامج</value>
+  </data>
+  <data name="smRun" xml:space="preserve">
+    <value>هل أنت متأكد من أنك تريد تشغيل هذا البرنامج?</value>
+  </data>
+  <data name="umForceUninstall" xml:space="preserve">
+    <value>هل أنت متأكد من أنك تريد إزالة هذا البرنامج من التسجيل?</value>
+  </data>
+  <data name="umSearchText" xml:space="preserve">
+    <value>البحث حسب الاسم</value>
+  </data>
+  <data name="umUninstall" xml:space="preserve">
+    <value>هل أنت متأكد من أنك تريد إلغاء تثبيت هذا البرنامج?</value>
+  </data>
+  <data name="updateLatest" xml:space="preserve">
+    <value>لديك أحدث إصدار</value>
+  </data>
+  <data name="updateNewer" xml:space="preserve">
+    <value>أحدث نسخة متوفرة</value>
   </data>
 </root>

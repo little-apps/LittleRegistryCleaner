@@ -61,209 +61,344 @@ namespace Little_Registry_Cleaner.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ActiveX/COM Objects.
+        ///   Looks up a localized string similar to The bug report could not be sent.
         /// </summary>
-        internal static string ActivexComObjects {
+        internal static string crashReporterFail {
             get {
-                return ResourceManager.GetString("ActivexComObjects", resourceCulture);
+                return ResourceManager.GetString("crashReporterFail", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Application Info.
+        ///   Looks up a localized string similar to Sent bug report successfully.
         /// </summary>
-        internal static string ApplicationInfo {
+        internal static string crashReporterSuccess {
             get {
-                return ResourceManager.GetString("ApplicationInfo", resourceCulture);
+                return ResourceManager.GetString("crashReporterSuccess", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Application Paths.
+        ///   Looks up a localized string similar to Added selected registry keys to the exclude list.
         /// </summary>
-        internal static string ApplicationPaths {
+        internal static string mainAddExcludeEntry {
             get {
-                return ResourceManager.GetString("ApplicationPaths", resourceCulture);
+                return ResourceManager.GetString("mainAddExcludeEntry", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Application Settings.
+        ///   Looks up a localized string similar to Are you sure you want to exit?.
         /// </summary>
-        internal static string ApplicationSettings {
+        internal static string mainAskExit {
             get {
-                return ResourceManager.GetString("ApplicationSettings", resourceCulture);
+                return ResourceManager.GetString("mainAskExit", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid file or folder.
+        ///   Looks up a localized string similar to This your first time running Little Registry Cleaner. \r\nWould you like to create a restore point?.
         /// </summary>
-        internal static string InvalidFile {
+        internal static string mainFirstTimeRestorePoint {
             get {
-                return ResourceManager.GetString("InvalidFile", resourceCulture);
+                return ResourceManager.GetString("mainFirstTimeRestorePoint", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Unused File Extension.
+        ///   Looks up a localized string similar to Unable to find Little Registry Cleaner.chm.
         /// </summary>
-        internal static string InvalidFileExt {
+        internal static string mainInvalidHelpFile {
             get {
-                return ResourceManager.GetString("InvalidFileExt", resourceCulture);
+                return ResourceManager.GetString("mainInvalidHelpFile", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Unable to find InprocServer.
+        ///   Looks up a localized string similar to Would you like to fix all selected problems?.
         /// </summary>
-        internal static string InvalidInprocServer {
+        internal static string mainProblemsFix {
             get {
-                return ResourceManager.GetString("InvalidInprocServer", resourceCulture);
+                return ResourceManager.GetString("mainProblemsFix", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Unable to find InprocServer32.
+        ///   Looks up a localized string similar to Removed problems from registry.
         /// </summary>
-        internal static string InvalidInprocServer32 {
+        internal static string mainProblemsRemoved {
             get {
-                return ResourceManager.GetString("InvalidInprocServer32", resourceCulture);
+                return ResourceManager.GetString("mainProblemsRemoved", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Unused ProgID/File Extension.
+        ///   Looks up a localized string similar to Aborted scanning the registry.
         /// </summary>
-        internal static string InvalidProgIDFileExt {
+        internal static string mainScanningAborted {
             get {
-                return ResourceManager.GetString("InvalidProgIDFileExt", resourceCulture);
+                return ResourceManager.GetString("mainScanningAborted", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid registry key.
+        ///   Looks up a localized string similar to Finished scanning the registry.
         /// </summary>
-        internal static string InvalidRegKey {
+        internal static string mainScanningFinished {
             get {
-                return ResourceManager.GetString("InvalidRegKey", resourceCulture);
+                return ResourceManager.GetString("mainScanningFinished", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Toolbar is invalid.
+        ///   Looks up a localized string similar to Please select a section to scan.
         /// </summary>
-        internal static string InvalidToolbar {
+        internal static string mainSelectSections {
             get {
-                return ResourceManager.GetString("InvalidToolbar", resourceCulture);
+                return ResourceManager.GetString("mainSelectSections", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Missing AppID reference.
+        ///   Looks up a localized string similar to A newer version is available. Would you like to download it?.
         /// </summary>
-        internal static string MissingAppID {
+        internal static string mainUpdateAsk {
             get {
-                return ResourceManager.GetString("MissingAppID", resourceCulture);
+                return ResourceManager.GetString("mainUpdateAsk", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Missing CLSID reference.
+        ///   Looks up a localized string similar to You must be an administrator to run this program.
         /// </summary>
-        internal static string MissingCLSID {
+        internal static string needAdmin {
             get {
-                return ResourceManager.GetString("MissingCLSID", resourceCulture);
+                return ResourceManager.GetString("needAdmin", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Missing ProgID reference.
+        ///   Looks up a localized string similar to Select the folder to exclude from the registry scan.
         /// </summary>
-        internal static string MissingProgID {
+        internal static string optionsExcludeDir {
             get {
-                return ResourceManager.GetString("MissingProgID", resourceCulture);
+                return ResourceManager.GetString("optionsExcludeDir", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The registry key doesn&apos;t contain any data.
+        ///   Looks up a localized string similar to Registry path cannot be empty.
         /// </summary>
-        internal static string NoRegKey {
+        internal static string optionsExcludeEmptyRegPath {
             get {
-                return ResourceManager.GetString("NoRegKey", resourceCulture);
+                return ResourceManager.GetString("optionsExcludeEmptyRegPath", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Obsolete registry key.
+        ///   Looks up a localized string similar to Select a file to exclude from the registry scan.
         /// </summary>
-        internal static string ObsoleteRegKey {
+        internal static string optionsExcludeFile {
             get {
-                return ResourceManager.GetString("ObsoleteRegKey", resourceCulture);
+                return ResourceManager.GetString("optionsExcludeFile", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Recent Documents.
+        ///   Looks up a localized string similar to Specified registry key doesn&apos;t exist.
         /// </summary>
-        internal static string RecentDocs {
+        internal static string optionsExcludeInvalidRegPath {
             get {
-                return ResourceManager.GetString("RecentDocs", resourceCulture);
+                return ResourceManager.GetString("optionsExcludeInvalidRegPath", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Shared DLLs.
+        ///   Looks up a localized string similar to Are you sure?.
         /// </summary>
-        internal static string SharedDLLs {
+        internal static string optionsExcludeRemove {
             get {
-                return ResourceManager.GetString("SharedDLLs", resourceCulture);
+                return ResourceManager.GetString("optionsExcludeRemove", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Startup Files.
+        ///   Looks up a localized string similar to Select the folder where the backup files will be placed.
         /// </summary>
-        internal static string StartupFiles {
+        internal static string optionsSelectBackupDir {
             get {
-                return ResourceManager.GetString("StartupFiles", resourceCulture);
+                return ResourceManager.GetString("optionsSelectBackupDir", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to System Drivers.
+        ///   Looks up a localized string similar to Select the folder where the log files will be placed.
         /// </summary>
-        internal static string SystemDrivers {
+        internal static string optionsSelectLogDir {
             get {
-                return ResourceManager.GetString("SystemDrivers", resourceCulture);
+                return ResourceManager.GetString("optionsSelectLogDir", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Windows Fonts.
+        ///   Looks up a localized string similar to Another program seems to be running already....
         /// </summary>
-        internal static string WindowsFonts {
+        internal static string programAlreadyRunning {
             get {
-                return ResourceManager.GetString("WindowsFonts", resourceCulture);
+                return ResourceManager.GetString("programAlreadyRunning", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Windows Help Files.
+        ///   Looks up a localized string similar to Are you sure?.
         /// </summary>
-        internal static string WindowsHelpFiles {
+        internal static string restoreAsk {
             get {
-                return ResourceManager.GetString("WindowsHelpFiles", resourceCulture);
+                return ResourceManager.GetString("restoreAsk", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Windows Sounds.
+        ///   Looks up a localized string similar to Error restoring registry.
         /// </summary>
-        internal static string WindowsSounds {
+        internal static string restoreError {
             get {
-                return ResourceManager.GetString("WindowsSounds", resourceCulture);
+                return ResourceManager.GetString("restoreError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Successfully restored registry.
+        /// </summary>
+        internal static string restoreRestored {
+            get {
+                return ResourceManager.GetString("restoreRestored", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you sure?.
+        /// </summary>
+        internal static string scanDlgExit {
+            get {
+                return ResourceManager.GetString("scanDlgExit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scanning: .
+        /// </summary>
+        internal static string scanDlgProgressBarScanning {
+            get {
+                return ResourceManager.GetString("scanDlgProgressBarScanning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The file could not be found.
+        /// </summary>
+        internal static string smCannotFindFile {
+            get {
+                return ResourceManager.GetString("smCannotFindFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shortcut/Value name cannot be empty.
+        /// </summary>
+        internal static string smEmptyName {
+            get {
+                return ResourceManager.GetString("smEmptyName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to File path cannot be empty.
+        /// </summary>
+        internal static string smEmptyPath {
+            get {
+                return ResourceManager.GetString("smEmptyPath", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attempted to run:.
+        /// </summary>
+        internal static string smRan {
+            get {
+                return ResourceManager.GetString("smRan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you sure you want to remove this startup program?.
+        /// </summary>
+        internal static string smRemove {
+            get {
+                return ResourceManager.GetString("smRemove", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Removed selected startup program.
+        /// </summary>
+        internal static string smRemoved {
+            get {
+                return ResourceManager.GetString("smRemoved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you sure you want to run this program?.
+        /// </summary>
+        internal static string smRun {
+            get {
+                return ResourceManager.GetString("smRun", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you sure you want to remove this program from the registry?.
+        /// </summary>
+        internal static string umForceUninstall {
+            get {
+                return ResourceManager.GetString("umForceUninstall", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search by name.
+        /// </summary>
+        internal static string umSearchText {
+            get {
+                return ResourceManager.GetString("umSearchText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you sure you want to uninstall this program?.
+        /// </summary>
+        internal static string umUninstall {
+            get {
+                return ResourceManager.GetString("umUninstall", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You have the latest version.
+        /// </summary>
+        internal static string updateLatest {
+            get {
+                return ResourceManager.GetString("updateLatest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Newer version available.
+        /// </summary>
+        internal static string updateNewer {
+            get {
+                return ResourceManager.GetString("updateNewer", resourceCulture);
             }
         }
     }

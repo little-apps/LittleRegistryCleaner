@@ -125,9 +125,6 @@
   <data name="buttonSend.Text" xml:space="preserve">
     <value>Отправить отчет</value>
   </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 8.25pt, style=Bold</value>
-  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Произошла исключение в компоненте маленьким чисткой реестра. Мы создали отчет об ошибке, который вы можете отправить нам. Мы будет рассматривать этот доклад в качестве конфиденциальных и анонимных.</value>
   </data>

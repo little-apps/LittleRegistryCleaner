@@ -122,9 +122,6 @@
   <data name="label3.Text" xml:space="preserve">
     <value>Datum erstellen:</value>
   </data>
-  <data name="linkLabelAuthor.Text" xml:space="preserve">
-    <value>Nick H.</value>
-  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Autor:</value>
   </data>
@@ -134,9 +131,6 @@
 Dieses Programm wird in der Hoffnung verteilt, dass es Nützlichkeit, jedoch ohne Garantie geliefert; selbst stillschweigende Garantien von MERCHANTABILITY oder Eignung für einen bestimmten Zweck sein wird.  Finden Sie unter der GNU General Public License für weitere Details.
 
 Sie sollten eine Kopie der GNU General Public License zusammen mit diesem Programm erhalten haben.  Wenn nicht, finden Sie unter &lt;http://www.gnu.org/licenses/&gt;.</value>
-  </data>
-  <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="labelTitle.Text" xml:space="preserve">
     <value>Wenig Registry Cleaner</value>

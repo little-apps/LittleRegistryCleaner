@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.0.291" date="20091101221525" scan="25" scanned="20091101221410">
+<document version="2.0.287" date="20091102210418" scan="27" scanned="20091102202946">
   <lang id="en"/>
   <lang id="fr"/>
   <lang id="es"/>
@@ -311,7 +311,7 @@
       </node>
     </node>
   </source>
-  <source class="TVisualStudioNetProjectSource" name="Little Registry Cleaner.csproj" original="en" date="20091102021310" defaultoutputdir="bin\Debug" netversion="net35" toolsversion="net35" rootnamespace="Little_Registry_Cleaner" configuration="Debug">
+  <source class="TVisualStudioNetProjectSource" name="Little Registry Cleaner.csproj" original="en" date="20091103024848" defaultoutputdir="bin\Debug" netversion="net35" toolsversion="net35" rootnamespace="Little_Registry_Cleaner" configuration="Debug">
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TColorData</class>
@@ -1025,6 +1025,193 @@
           </component>
           <component class="TVisEdit" name="nodeValueName" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox">
           </component>
+          <component class="TVisPopupMenu" name="contextMenuStrip1" type="System.Windows.Forms.ContextMenuStrip">
+            <row id="Size.Height">98</row>
+            <row id="Size.Width">162</row>
+            <component class="TVisMenuItem" name="selectAllToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text" state="0">
+                <native>Select All</native>
+                <lang id="en" status="2">Select All</lang>
+                <lang id="fr" status="3">Choisissez tous</lang>
+                <lang id="es" status="2">Seleccionar todo</lang>
+                <lang id="pt" status="2">Selecione todos</lang>
+                <lang id="it" status="2">Seleziona tutto</lang>
+                <lang id="nl" status="2">Alles selecteren.</lang>
+                <lang id="de" status="2">Wählen Sie alle</lang>
+                <lang id="ru" status="2">Выделить все</lang>
+                <lang id="el" status="2">Επιλογή όλων</lang>
+                <lang id="ar" status="2">تحديد الكل</lang>
+                <lang id="sv" status="2">Markera alla</lang>
+                <lang id="zh" status="2">选择所有</lang>
+                <lang id="zh.tra" status="2">選擇所有</lang>
+                <lang id="ja" status="2">すべて選択</lang>
+                <lang id="vi" status="2">Chọn Tất cả</lang>
+                <lang id="th" status="2">เลือกทั้งหมด</lang>
+                <lang id="pl" status="3">Zaznacz wszystko</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="selectNoneToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text" state="0">
+                <native>Select None</native>
+                <lang id="en" status="2">Select None</lang>
+                <lang id="fr" status="2">Sélectionnez Aucun</lang>
+                <lang id="es" status="2">Seleccione Ninguno</lang>
+                <lang id="pt" status="2">Selecione Nenhum</lang>
+                <lang id="it" status="2">Selezionare Nessuno</lang>
+                <lang id="nl" status="2">Selecteer geen</lang>
+                <lang id="de" status="2">Wählen Sie keine</lang>
+                <lang id="ru" status="2">Выберите «нет»</lang>
+                <lang id="el" status="2">Επιλέξτε "Κανένα"</lang>
+                <lang id="ar" status="2">حدد بلا</lang>
+                <lang id="sv" status="2">Välj Ingen</lang>
+                <lang id="zh" status="2">选择无</lang>
+                <lang id="zh.tra" status="2">選擇無</lang>
+                <lang id="ja" date="20091030211940" status="3">[なし] を選択します。</lang>
+                <lang id="vi" status="2">Chọn Không</lang>
+                <lang id="th" status="2">ไม่มีเลือก</lang>
+                <lang id="pl" status="3">Odznacz wszystko</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="toolStripSeparator1" type="System.Windows.Forms.ToolStripSeparator">
+              <row id="Size.Height">6</row>
+              <row id="Size.Width">158</row>
+            </component>
+            <component class="TVisMenuItem" name="excludeSelectedToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text" state="0">
+                <native>Exclude Selected</native>
+                <lang id="en" status="2">Exclude Selected</lang>
+                <lang id="fr" status="2">Exclure Sélection</lang>
+                <lang id="es" status="2">Excluir seleccionado</lang>
+                <lang id="pt" status="2">Excluir selecionado</lang>
+                <lang id="it" status="2">Escludere selezionati</lang>
+                <lang id="nl" status="2">Geselecteerde uitsluiten</lang>
+                <lang id="de" status="2">Ausgewählte ausschließen</lang>
+                <lang id="ru" status="2">Исключить отдельные</lang>
+                <lang id="el" status="2">Εξαίρεση επιλεγμένων</lang>
+                <lang id="ar" status="2">استبعاد المحددة</lang>
+                <lang id="sv" status="2">Exkludera vald</lang>
+                <lang id="zh" status="2">排除选择</lang>
+                <lang id="zh.tra" status="2">排除選擇</lang>
+                <lang id="ja" status="2">除外選択</lang>
+                <lang id="vi" status="2">Loại trừ được chọn</lang>
+                <lang id="th" status="2">ยกเว้นเลือก</lang>
+                <lang id="pl" status="3">Pomiń zaznaczone</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="viewInRegeditToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text" state="0">
+                <native>View in regedit</native>
+                <lang id="en" status="2">View in regedit</lang>
+                <lang id="fr" status="2">Voir dans regedit</lang>
+                <lang id="es" status="2">Ver en regedit</lang>
+                <lang id="pt" status="2">Exibir regedit</lang>
+                <lang id="it" status="2">Visualizzare in regedit</lang>
+                <lang id="nl" status="2">In regedit weer geven</lang>
+                <lang id="de" status="2">In Regedit anzeigen</lang>
+                <lang id="ru" status="2">Просмотр в regedit</lang>
+                <lang id="el" status="2">Προβολή σε regedit</lang>
+                <lang id="ar" status="2">عرض في regedit</lang>
+                <lang id="sv" status="2">Visa i regedit</lang>
+                <lang id="zh" status="2">查看输入regedit</lang>
+                <lang id="zh.tra" status="2">查看輸入regedit</lang>
+                <lang id="ja" status="2">プロフィールファイル名を指定で</lang>
+                <lang id="vi" status="2">Xem trong regedit</lang>
+                <lang id="th" status="2">ดูใน regedit</lang>
+                <lang id="pl" status="3">Otwórz w regedit</lang>
+              </row>
+            </component>
+          </component>
+          <component class="TVisPopupMenu" name="contextMenuStrip2" type="System.Windows.Forms.ContextMenuStrip">
+            <row id="Size.Height">76</row>
+            <row id="Size.Width">137</row>
+            <component class="TVisMenuItem" name="hideShowToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem" parentfont="0">
+              <row id="Font">Segoe UI,9,style=Bold</row>
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">136</row>
+              <row id="Text" state="0">
+                <native>Hide/Show</native>
+                <lang id="en" status="2">Hide/Show</lang>
+                <lang id="fr" date="20091030210846" status="3">Peau / Exposition</lang>
+                <lang id="es" status="2">Ocultar/mostrar</lang>
+                <lang id="pt" status="2">Mostrar/ocultar</lang>
+                <lang id="it" status="2">Mostra/Nascondi</lang>
+                <lang id="nl" status="2">Verbergen/weer geven</lang>
+                <lang id="de" status="2">Ausblenden/einblenden</lang>
+                <lang id="ru" status="2">Скрыть/Показать</lang>
+                <lang id="el" status="2">Απόκρυψη/Εμφάνιση</lang>
+                <lang id="ar" status="2">إظهار/إخفاء</lang>
+                <lang id="sv" status="2">Dölj/visa</lang>
+                <lang id="zh" status="2">隐藏/显示</lang>
+                <lang id="zh.tra" status="2">隱藏/顯示</lang>
+                <lang id="ja" status="2">非表示/表示</lang>
+                <lang id="vi" status="2">Hide / Show</lang>
+                <lang id="th" status="2">ซ่อน / แสดง</lang>
+                <lang id="pl" status="3">Pokaż/Ukryj</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="aboutToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">136</row>
+              <row id="Text" state="0">
+                <native>About...</native>
+                <lang id="en" status="2">About...</lang>
+                <lang id="fr" status="2">À propos de...</lang>
+                <lang id="es" status="2">Acerca de...</lang>
+                <lang id="pt" status="2">Sobre...</lang>
+                <lang id="it" status="2">Sulla...</lang>
+                <lang id="nl" status="2">Over...</lang>
+                <lang id="de" status="2">Über...</lang>
+                <lang id="ru" status="2">О...</lang>
+                <lang id="el" status="2">Σχετικά με...</lang>
+                <lang id="ar" status="2">حول...</lang>
+                <lang id="sv" status="2">Om...</lang>
+                <lang id="zh" status="2">大约...</lang>
+                <lang id="zh.tra" status="2">大約...</lang>
+                <lang id="ja" status="2">〜について...</lang>
+                <lang id="vi" status="2">Về...</lang>
+                <lang id="th" status="2">เกี่ยวกับ...</lang>
+                <lang id="pl" status="3">O programie...</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="toolStripSeparator4" type="System.Windows.Forms.ToolStripSeparator">
+              <row id="Size.Height">6</row>
+              <row id="Size.Width">133</row>
+            </component>
+            <component class="TVisMenuItem" name="exitToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">136</row>
+              <row id="Text" state="0">
+                <native>Exit</native>
+                <lang id="en" status="2">Exit</lang>
+                <lang id="fr" status="3">Sortie</lang>
+                <lang id="es" status="2">Salida</lang>
+                <lang id="pt" status="2">Saída</lang>
+                <lang id="it" status="2">Uscita</lang>
+                <lang id="nl" status="2">Uitgang</lang>
+                <lang id="de" status="2">Ausfahrt</lang>
+                <lang id="ru" status="2">Выезда</lang>
+                <lang id="el" status="2">Εξόδου</lang>
+                <lang id="ar" status="2">خروج</lang>
+                <lang id="sv" status="2">Avsluta</lang>
+                <lang id="zh" status="2">退出</lang>
+                <lang id="zh.tra" status="2">退出</lang>
+                <lang id="ja" status="2">終了</lang>
+                <lang id="vi" status="3">Cửa ra</lang>
+                <lang id="th" status="2">ออกจาก</lang>
+                <lang id="pl" status="3">Zakończ</lang>
+              </row>
+            </component>
+          </component>
+          <component class="TVisImageList" name="imageListTreeView" type="System.Windows.Forms.ImageList">
+          </component>
           <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer" align="alClient">
             <row id="Location.X">0</row>
             <row id="Location.Y">0</row>
@@ -1365,7 +1552,7 @@
                         <lang id="zh" status="2">共享DLL</lang>
                         <lang id="zh.tra" status="2">共享DLL</lang>
                         <lang id="ja" status="2">共有DLL</lang>
-                        <lang id="vi" status="2">Shared DLLs</lang>
+                        <lang id="vi" status="3">DLLs Dùng chung</lang>
                         <lang id="th" status="2">กำลังร่วมกัน</lang>
                         <lang id="pl" status="3">Współdzielone biblioteki DLL</lang>
                       </row>
@@ -1453,13 +1640,161 @@
                         <lang id="zh" status="2">Windows字体</lang>
                         <lang id="zh.tra" status="2">Windows字體</lang>
                         <lang id="ja" status="2">Windowsフォント</lang>
-                        <lang id="vi" status="2">Windows Fonts</lang>
+                        <lang id="vi" status="3">Phông Windows</lang>
                         <lang id="th" status="2">อักษร Windows</lang>
                         <lang id="pl" status="3">Czcionki systemowe</lang>
                       </row>
                     </item>
                   </item>
                 </component>
+              </component>
+            </component>
+            <component class="TVisToolBar" name="toolStrip1" type="System.Windows.Forms.ToolStrip">
+              <row id="Location.X">0</row>
+              <row id="Location.Y">24</row>
+              <row id="Size.Height">54</row>
+              <row id="Size.Width">809</row>
+              <row id="Text" locked="1" state="0">
+                <native>toolStrip1</native>
+                <lang id="en">toolStrip1</lang>
+                <lang id="es">toolStrip1</lang>
+                <lang id="pt">toolStrip1</lang>
+                <lang id="it">toolStrip1</lang>
+                <lang id="nl">toolStrip1</lang>
+                <lang id="de">toolStrip1</lang>
+                <lang id="ru">toolStrip1</lang>
+                <lang id="el">toolStrip1</lang>
+                <lang id="ar">toolStrip1</lang>
+                <lang id="sv">toolStrip1</lang>
+                <lang id="zh">toolStrip1</lang>
+                <lang id="zh.tra">toolStrip1</lang>
+                <lang id="ja">toolStrip1</lang>
+                <lang id="vi">toolStrip1</lang>
+                <lang id="th">toolStrip1</lang>
+              </row>
+              <component class="TVisToolButton" name="toolStripButtonScan" type="System.Windows.Forms.ToolStripButton">
+                <row id="Size.Height">51</row>
+                <row id="Size.Width">78</row>
+                <row id="Text" state="0">
+                  <native>Scan registry</native>
+                  <lang id="en" status="2">Scan registry</lang>
+                  <lang id="fr" date="20091024223828" status="3">Enregistrement de balayage</lang>
+                  <lang id="es" status="2">Análisis del registro</lang>
+                  <lang id="pt" status="2">Varredura do registro</lang>
+                  <lang id="it" status="2">Scansione del Registro di sistema</lang>
+                  <lang id="nl" status="2">Register scannen</lang>
+                  <lang id="de" status="2">Registrierung scannen</lang>
+                  <lang id="ru" status="2">Сканирование реестра</lang>
+                  <lang id="el" status="2">Σάρωση του μητρώου</lang>
+                  <lang id="ar" status="2">مسح السجل</lang>
+                  <lang id="sv" status="2">Registret</lang>
+                  <lang id="zh" status="2">扫描注册表</lang>
+                  <lang id="zh.tra" status="2">掃描註冊表</lang>
+                  <lang id="ja" status="2">スキャンレジストリ</lang>
+                  <lang id="vi" status="2">Quét registry</lang>
+                  <lang id="th" date="20091030213735" status="3">สแกนรีจิสทรี</lang>
+                  <lang id="pl" status="2">Skanuj rejestr</lang>
+                </row>
+              </component>
+              <component class="TVisToolButton" name="toolStripButtonFix" type="System.Windows.Forms.ToolStripButton">
+                <row id="Size.Height">51</row>
+                <row id="Size.Width">78</row>
+                <row id="Text" state="0">
+                  <native>Fix problems</native>
+                  <lang id="en" status="2">Fix problems</lang>
+                  <lang id="fr" status="2">Corriger les problèmes</lang>
+                  <lang id="es" status="2">Solucionar problemas</lang>
+                  <lang id="pt" status="2">Corrigir problemas</lang>
+                  <lang id="it" status="2">Risoluzione dei problemi</lang>
+                  <lang id="nl" status="2">Problemen oplossen</lang>
+                  <lang id="de" status="2">Beheben von Problemen</lang>
+                  <lang id="ru" status="2">Устранение неполадок</lang>
+                  <lang id="el" status="2">Διόρθωση προβλημάτων</lang>
+                  <lang id="ar" status="2">إصلاح المشاكل</lang>
+                  <lang id="sv" status="2">Åtgärda problem</lang>
+                  <lang id="zh" status="2">解决问题</lang>
+                  <lang id="zh.tra" status="2">解決問題</lang>
+                  <lang id="ja" status="2">問題を修正</lang>
+                  <lang id="vi" status="2">Sửa vấn đề</lang>
+                  <lang id="th" status="2">แก้ไขปัญหา</lang>
+                  <lang id="pl" status="2">Napraw błędy</lang>
+                </row>
+              </component>
+              <component class="TVisToolButton" name="toolStripButtonRestore" type="System.Windows.Forms.ToolStripButton">
+                <row id="Size.Height">51</row>
+                <row id="Size.Width">92</row>
+                <row id="Text" state="0">
+                  <native>Restore registry</native>
+                  <lang id="en" status="2">Restore registry</lang>
+                  <lang id="fr" status="2">Restaurer registre</lang>
+                  <lang id="es" status="2">Restaurar registro</lang>
+                  <lang id="pt" status="2">Restaurar o registro</lang>
+                  <lang id="it" status="2">Ripristinare il Registro di sistema</lang>
+                  <lang id="nl" status="2">Register herstellen</lang>
+                  <lang id="de" status="2">Wiederherstellen der Registrierung</lang>
+                  <lang id="ru" status="2">Восстановление реестра</lang>
+                  <lang id="el" status="2">Επαναφορά του μητρώου</lang>
+                  <lang id="ar" status="2">استعادة التسجيل</lang>
+                  <lang id="sv" status="2">Återställa registret</lang>
+                  <lang id="zh" status="2">还原注册表</lang>
+                  <lang id="zh.tra" status="2">還原註冊表</lang>
+                  <lang id="ja" status="2">復元するレジストリ</lang>
+                  <lang id="vi" status="2">Khôi phục registry</lang>
+                  <lang id="th" date="20091030213512" status="3">การคืนค่ารีจิสทรี</lang>
+                  <lang id="pl" status="2">Przywróć rejestr</lang>
+                </row>
+              </component>
+              <component class="TVisToolSeparator" name="toolStripSeparator5" type="System.Windows.Forms.ToolStripSeparator">
+                <row id="Size.Height">54</row>
+                <row id="Size.Width">6</row>
+              </component>
+              <component class="TVisToolButton" name="toolStripButtonSettings" type="System.Windows.Forms.ToolStripButton">
+                <row id="Size.Height">51</row>
+                <row id="Size.Width">53</row>
+                <row id="Text" state="0">
+                  <native>Options</native>
+                  <lang id="en" status="2">Options</lang>
+                  <lang id="fr" status="2">Options</lang>
+                  <lang id="es" status="2">Opciones</lang>
+                  <lang id="pt" status="2">Opções</lang>
+                  <lang id="it" status="2">Opzioni</lang>
+                  <lang id="nl" status="2">Opties</lang>
+                  <lang id="de" status="2">Optionen</lang>
+                  <lang id="ru" status="2">Параметры</lang>
+                  <lang id="el" status="2">Επιλογές</lang>
+                  <lang id="ar" status="2">خيارات</lang>
+                  <lang id="sv" status="2">Alternativ</lang>
+                  <lang id="zh" status="2">选项</lang>
+                  <lang id="zh.tra" status="2">選項</lang>
+                  <lang id="ja" status="2">オプション</lang>
+                  <lang id="vi" status="2">Tùy chọn</lang>
+                  <lang id="th" status="3">ตัวเลือก</lang>
+                  <lang id="pl" status="2">Ustawienia</lang>
+                </row>
+              </component>
+              <component class="TVisToolButton" name="toolStripButtonHelp" type="System.Windows.Forms.ToolStripButton">
+                <row id="Size.Height">51</row>
+                <row id="Size.Width">36</row>
+                <row id="Text" state="0">
+                  <native>Help</native>
+                  <lang id="en" status="2">Help</lang>
+                  <lang id="fr" status="2">Aider</lang>
+                  <lang id="es" status="2">Ayuda</lang>
+                  <lang id="pt" status="2">Ajuda</lang>
+                  <lang id="it" status="2">Guida</lang>
+                  <lang id="nl" status="2">Help</lang>
+                  <lang id="de" status="2">Hilfe</lang>
+                  <lang id="ru" status="2">Справка</lang>
+                  <lang id="el" status="2">Βοήθεια</lang>
+                  <lang id="ar" status="2">تعليمات</lang>
+                  <lang id="sv" status="2">Hjälp</lang>
+                  <lang id="zh" status="2">帮助</lang>
+                  <lang id="zh.tra" status="2">幫助</lang>
+                  <lang id="ja" status="2">ヘルプ</lang>
+                  <lang id="vi" status="2">Giúp đỡ</lang>
+                  <lang id="th" status="2">ช่วยเหลือ</lang>
+                  <lang id="pl" status="2">Pomoc</lang>
+                </row>
               </component>
             </component>
             <component class="TVisMenuBar" name="menuStrip1" type="System.Windows.Forms.MenuStrip">
@@ -2394,341 +2729,6 @@
                 </component>
               </component>
             </component>
-            <component class="TVisToolBar" name="toolStrip1" type="System.Windows.Forms.ToolStrip">
-              <row id="Location.X">0</row>
-              <row id="Location.Y">24</row>
-              <row id="Size.Height">54</row>
-              <row id="Size.Width">809</row>
-              <row id="Text" locked="1" state="0">
-                <native>toolStrip1</native>
-                <lang id="en">toolStrip1</lang>
-                <lang id="es">toolStrip1</lang>
-                <lang id="pt">toolStrip1</lang>
-                <lang id="it">toolStrip1</lang>
-                <lang id="nl">toolStrip1</lang>
-                <lang id="de">toolStrip1</lang>
-                <lang id="ru">toolStrip1</lang>
-                <lang id="el">toolStrip1</lang>
-                <lang id="ar">toolStrip1</lang>
-                <lang id="sv">toolStrip1</lang>
-                <lang id="zh">toolStrip1</lang>
-                <lang id="zh.tra">toolStrip1</lang>
-                <lang id="ja">toolStrip1</lang>
-                <lang id="vi">toolStrip1</lang>
-                <lang id="th">toolStrip1</lang>
-              </row>
-              <component class="TVisToolButton" name="toolStripButtonScan" type="System.Windows.Forms.ToolStripButton">
-                <row id="Size.Height">51</row>
-                <row id="Size.Width">78</row>
-                <row id="Text" state="0">
-                  <native>Scan registry</native>
-                  <lang id="en" status="2">Scan registry</lang>
-                  <lang id="fr" date="20091024223828" status="3">Enregistrement de balayage</lang>
-                  <lang id="es" status="2">Análisis del registro</lang>
-                  <lang id="pt" status="2">Varredura do registro</lang>
-                  <lang id="it" status="2">Scansione del Registro di sistema</lang>
-                  <lang id="nl" status="2">Register scannen</lang>
-                  <lang id="de" status="2">Registrierung scannen</lang>
-                  <lang id="ru" status="2">Сканирование реестра</lang>
-                  <lang id="el" status="2">Σάρωση του μητρώου</lang>
-                  <lang id="ar" status="2">مسح السجل</lang>
-                  <lang id="sv" status="2">Registret</lang>
-                  <lang id="zh" status="2">扫描注册表</lang>
-                  <lang id="zh.tra" status="2">掃描註冊表</lang>
-                  <lang id="ja" status="2">スキャンレジストリ</lang>
-                  <lang id="vi" status="2">Quét registry</lang>
-                  <lang id="th" date="20091030213735" status="3">สแกนรีจิสทรี</lang>
-                  <lang id="pl" status="2">Skanuj rejestr</lang>
-                </row>
-              </component>
-              <component class="TVisToolButton" name="toolStripButtonFix" type="System.Windows.Forms.ToolStripButton">
-                <row id="Size.Height">51</row>
-                <row id="Size.Width">78</row>
-                <row id="Text" state="0">
-                  <native>Fix problems</native>
-                  <lang id="en" status="2">Fix problems</lang>
-                  <lang id="fr" status="2">Corriger les problèmes</lang>
-                  <lang id="es" status="2">Solucionar problemas</lang>
-                  <lang id="pt" status="2">Corrigir problemas</lang>
-                  <lang id="it" status="2">Risoluzione dei problemi</lang>
-                  <lang id="nl" status="2">Problemen oplossen</lang>
-                  <lang id="de" status="2">Beheben von Problemen</lang>
-                  <lang id="ru" status="2">Устранение неполадок</lang>
-                  <lang id="el" status="2">Διόρθωση προβλημάτων</lang>
-                  <lang id="ar" status="2">إصلاح المشاكل</lang>
-                  <lang id="sv" status="2">Åtgärda problem</lang>
-                  <lang id="zh" status="2">解决问题</lang>
-                  <lang id="zh.tra" status="2">解決問題</lang>
-                  <lang id="ja" status="2">問題を修正</lang>
-                  <lang id="vi" status="2">Sửa vấn đề</lang>
-                  <lang id="th" status="2">แก้ไขปัญหา</lang>
-                  <lang id="pl" status="2">Napraw błędy</lang>
-                </row>
-              </component>
-              <component class="TVisToolButton" name="toolStripButtonRestore" type="System.Windows.Forms.ToolStripButton">
-                <row id="Size.Height">51</row>
-                <row id="Size.Width">92</row>
-                <row id="Text" state="0">
-                  <native>Restore registry</native>
-                  <lang id="en" status="2">Restore registry</lang>
-                  <lang id="fr" status="2">Restaurer registre</lang>
-                  <lang id="es" status="2">Restaurar registro</lang>
-                  <lang id="pt" status="2">Restaurar o registro</lang>
-                  <lang id="it" status="2">Ripristinare il Registro di sistema</lang>
-                  <lang id="nl" status="2">Register herstellen</lang>
-                  <lang id="de" status="2">Wiederherstellen der Registrierung</lang>
-                  <lang id="ru" status="2">Восстановление реестра</lang>
-                  <lang id="el" status="2">Επαναφορά του μητρώου</lang>
-                  <lang id="ar" status="2">استعادة التسجيل</lang>
-                  <lang id="sv" status="2">Återställa registret</lang>
-                  <lang id="zh" status="2">还原注册表</lang>
-                  <lang id="zh.tra" status="2">還原註冊表</lang>
-                  <lang id="ja" status="2">復元するレジストリ</lang>
-                  <lang id="vi" status="2">Khôi phục registry</lang>
-                  <lang id="th" date="20091030213512" status="3">การคืนค่ารีจิสทรี</lang>
-                  <lang id="pl" status="2">Przywróć rejestr</lang>
-                </row>
-              </component>
-              <component class="TVisToolSeparator" name="toolStripSeparator5" type="System.Windows.Forms.ToolStripSeparator">
-                <row id="Size.Height">54</row>
-                <row id="Size.Width">6</row>
-              </component>
-              <component class="TVisToolButton" name="toolStripButtonSettings" type="System.Windows.Forms.ToolStripButton">
-                <row id="Size.Height">51</row>
-                <row id="Size.Width">53</row>
-                <row id="Text" state="0">
-                  <native>Options</native>
-                  <lang id="en" status="2">Options</lang>
-                  <lang id="fr" status="2">Options</lang>
-                  <lang id="es" status="2">Opciones</lang>
-                  <lang id="pt" status="2">Opções</lang>
-                  <lang id="it" status="2">Opzioni</lang>
-                  <lang id="nl" status="2">Opties</lang>
-                  <lang id="de" status="2">Optionen</lang>
-                  <lang id="ru" status="2">Параметры</lang>
-                  <lang id="el" status="2">Επιλογές</lang>
-                  <lang id="ar" status="2">خيارات</lang>
-                  <lang id="sv" status="2">Alternativ</lang>
-                  <lang id="zh" status="2">选项</lang>
-                  <lang id="zh.tra" status="2">選項</lang>
-                  <lang id="ja" status="2">オプション</lang>
-                  <lang id="vi" status="2">Tùy chọn</lang>
-                  <lang id="th" status="3">ตัวเลือก</lang>
-                  <lang id="pl" status="2">Ustawienia</lang>
-                </row>
-              </component>
-              <component class="TVisToolButton" name="toolStripButtonHelp" type="System.Windows.Forms.ToolStripButton">
-                <row id="Size.Height">51</row>
-                <row id="Size.Width">36</row>
-                <row id="Text" state="0">
-                  <native>Help</native>
-                  <lang id="en" status="2">Help</lang>
-                  <lang id="fr" status="2">Aider</lang>
-                  <lang id="es" status="2">Ayuda</lang>
-                  <lang id="pt" status="2">Ajuda</lang>
-                  <lang id="it" status="2">Guida</lang>
-                  <lang id="nl" status="2">Help</lang>
-                  <lang id="de" status="2">Hilfe</lang>
-                  <lang id="ru" status="2">Справка</lang>
-                  <lang id="el" status="2">Βοήθεια</lang>
-                  <lang id="ar" status="2">تعليمات</lang>
-                  <lang id="sv" status="2">Hjälp</lang>
-                  <lang id="zh" status="2">帮助</lang>
-                  <lang id="zh.tra" status="2">幫助</lang>
-                  <lang id="ja" status="2">ヘルプ</lang>
-                  <lang id="vi" status="2">Giúp đỡ</lang>
-                  <lang id="th" status="2">ช่วยเหลือ</lang>
-                  <lang id="pl" status="2">Pomoc</lang>
-                </row>
-              </component>
-            </component>
-          </component>
-          <component class="TVisPopupMenu" name="contextMenuStrip1" type="System.Windows.Forms.ContextMenuStrip">
-            <row id="Size.Height">98</row>
-            <row id="Size.Width">162</row>
-            <component class="TVisMenuItem" name="selectAllToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text" state="0">
-                <native>Select All</native>
-                <lang id="en" status="2">Select All</lang>
-                <lang id="fr" status="3">Choisissez tous</lang>
-                <lang id="es" status="2">Seleccionar todo</lang>
-                <lang id="pt" status="2">Selecione todos</lang>
-                <lang id="it" status="2">Seleziona tutto</lang>
-                <lang id="nl" status="2">Alles selecteren.</lang>
-                <lang id="de" status="2">Wählen Sie alle</lang>
-                <lang id="ru" status="2">Выделить все</lang>
-                <lang id="el" status="2">Επιλογή όλων</lang>
-                <lang id="ar" status="2">تحديد الكل</lang>
-                <lang id="sv" status="2">Markera alla</lang>
-                <lang id="zh" status="2">选择所有</lang>
-                <lang id="zh.tra" status="2">選擇所有</lang>
-                <lang id="ja" status="2">すべて選択</lang>
-                <lang id="vi" status="2">Chọn Tất cả</lang>
-                <lang id="th" status="2">เลือกทั้งหมด</lang>
-                <lang id="pl" status="3">Zaznacz wszystko</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="selectNoneToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text" state="0">
-                <native>Select None</native>
-                <lang id="en" status="2">Select None</lang>
-                <lang id="fr" status="2">Sélectionnez Aucun</lang>
-                <lang id="es" status="2">Seleccione Ninguno</lang>
-                <lang id="pt" status="2">Selecione Nenhum</lang>
-                <lang id="it" status="2">Selezionare Nessuno</lang>
-                <lang id="nl" status="2">Selecteer geen</lang>
-                <lang id="de" status="2">Wählen Sie keine</lang>
-                <lang id="ru" status="2">Выберите «нет»</lang>
-                <lang id="el" status="2">Επιλέξτε "Κανένα"</lang>
-                <lang id="ar" status="2">حدد بلا</lang>
-                <lang id="sv" status="2">Välj Ingen</lang>
-                <lang id="zh" status="2">选择无</lang>
-                <lang id="zh.tra" status="2">選擇無</lang>
-                <lang id="ja" date="20091030211940" status="3">[なし] を選択します。</lang>
-                <lang id="vi" status="2">Chọn Không</lang>
-                <lang id="th" status="2">ไม่มีเลือก</lang>
-                <lang id="pl" status="3">Odznacz wszystko</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="toolStripSeparator1" type="System.Windows.Forms.ToolStripSeparator">
-              <row id="Size.Height">6</row>
-              <row id="Size.Width">158</row>
-            </component>
-            <component class="TVisMenuItem" name="excludeSelectedToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text" state="0">
-                <native>Exclude Selected</native>
-                <lang id="en" status="2">Exclude Selected</lang>
-                <lang id="fr" status="2">Exclure Sélection</lang>
-                <lang id="es" status="2">Excluir seleccionado</lang>
-                <lang id="pt" status="2">Excluir selecionado</lang>
-                <lang id="it" status="2">Escludere selezionati</lang>
-                <lang id="nl" status="2">Geselecteerde uitsluiten</lang>
-                <lang id="de" status="2">Ausgewählte ausschließen</lang>
-                <lang id="ru" status="2">Исключить отдельные</lang>
-                <lang id="el" status="2">Εξαίρεση επιλεγμένων</lang>
-                <lang id="ar" status="2">استبعاد المحددة</lang>
-                <lang id="sv" status="2">Exkludera vald</lang>
-                <lang id="zh" status="2">排除选择</lang>
-                <lang id="zh.tra" status="2">排除選擇</lang>
-                <lang id="ja" status="2">除外選択</lang>
-                <lang id="vi" status="2">Loại trừ được chọn</lang>
-                <lang id="th" status="2">ยกเว้นเลือก</lang>
-                <lang id="pl" status="3">Pomiń zaznaczone</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="viewInRegeditToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text" state="0">
-                <native>View in regedit</native>
-                <lang id="en" status="2">View in regedit</lang>
-                <lang id="fr" status="2">Voir dans regedit</lang>
-                <lang id="es" status="2">Ver en regedit</lang>
-                <lang id="pt" status="2">Exibir regedit</lang>
-                <lang id="it" status="2">Visualizzare in regedit</lang>
-                <lang id="nl" status="2">In regedit weer geven</lang>
-                <lang id="de" status="2">In Regedit anzeigen</lang>
-                <lang id="ru" status="2">Просмотр в regedit</lang>
-                <lang id="el" status="2">Προβολή σε regedit</lang>
-                <lang id="ar" status="2">عرض في regedit</lang>
-                <lang id="sv" status="2">Visa i regedit</lang>
-                <lang id="zh" status="2">查看输入regedit</lang>
-                <lang id="zh.tra" status="2">查看輸入regedit</lang>
-                <lang id="ja" status="2">プロフィールファイル名を指定で</lang>
-                <lang id="vi" status="2">Xem trong regedit</lang>
-                <lang id="th" status="2">ดูใน regedit</lang>
-                <lang id="pl" status="3">Otwórz w regedit</lang>
-              </row>
-            </component>
-          </component>
-          <component class="TVisPopupMenu" name="contextMenuStrip2" type="System.Windows.Forms.ContextMenuStrip">
-            <row id="Size.Height">76</row>
-            <row id="Size.Width">137</row>
-            <component class="TVisMenuItem" name="hideShowToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem" parentfont="0">
-              <row id="Font">Segoe UI,9,style=Bold</row>
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">136</row>
-              <row id="Text" state="0">
-                <native>Hide/Show</native>
-                <lang id="en" status="2">Hide/Show</lang>
-                <lang id="fr" date="20091030210846" status="3">Peau / Exposition</lang>
-                <lang id="es" status="2">Ocultar/mostrar</lang>
-                <lang id="pt" status="2">Mostrar/ocultar</lang>
-                <lang id="it" status="2">Mostra/Nascondi</lang>
-                <lang id="nl" status="2">Verbergen/weer geven</lang>
-                <lang id="de" status="2">Ausblenden/einblenden</lang>
-                <lang id="ru" status="2">Скрыть/Показать</lang>
-                <lang id="el" status="2">Απόκρυψη/Εμφάνιση</lang>
-                <lang id="ar" status="2">إظهار/إخفاء</lang>
-                <lang id="sv" status="2">Dölj/visa</lang>
-                <lang id="zh" status="2">隐藏/显示</lang>
-                <lang id="zh.tra" status="2">隱藏/顯示</lang>
-                <lang id="ja" status="2">非表示/表示</lang>
-                <lang id="vi" status="2">Hide / Show</lang>
-                <lang id="th" status="2">ซ่อน / แสดง</lang>
-                <lang id="pl" status="3">Pokaż/Ukryj</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="aboutToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">136</row>
-              <row id="Text" state="0">
-                <native>About...</native>
-                <lang id="en" status="2">About...</lang>
-                <lang id="fr" status="2">À propos de...</lang>
-                <lang id="es" status="2">Acerca de...</lang>
-                <lang id="pt" status="2">Sobre...</lang>
-                <lang id="it" status="2">Sulla...</lang>
-                <lang id="nl" status="2">Over...</lang>
-                <lang id="de" status="2">Über...</lang>
-                <lang id="ru" status="2">О...</lang>
-                <lang id="el" status="2">Σχετικά με...</lang>
-                <lang id="ar" status="2">حول...</lang>
-                <lang id="sv" status="2">Om...</lang>
-                <lang id="zh" status="2">大约...</lang>
-                <lang id="zh.tra" status="2">大約...</lang>
-                <lang id="ja" status="2">〜について...</lang>
-                <lang id="vi" status="2">Về...</lang>
-                <lang id="th" status="2">เกี่ยวกับ...</lang>
-                <lang id="pl" status="3">O programie...</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="toolStripSeparator4" type="System.Windows.Forms.ToolStripSeparator">
-              <row id="Size.Height">6</row>
-              <row id="Size.Width">133</row>
-            </component>
-            <component class="TVisMenuItem" name="exitToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">136</row>
-              <row id="Text" state="0">
-                <native>Exit</native>
-                <lang id="en" status="2">Exit</lang>
-                <lang id="fr" status="3">Sortie</lang>
-                <lang id="es" status="2">Salida</lang>
-                <lang id="pt" status="2">Saída</lang>
-                <lang id="it" status="2">Uscita</lang>
-                <lang id="nl" status="2">Uitgang</lang>
-                <lang id="de" status="2">Ausfahrt</lang>
-                <lang id="ru" status="2">Выезда</lang>
-                <lang id="el" status="2">Εξόδου</lang>
-                <lang id="ar" status="2">خروج</lang>
-                <lang id="sv" status="2">Avsluta</lang>
-                <lang id="zh" status="2">退出</lang>
-                <lang id="zh.tra" status="2">退出</lang>
-                <lang id="ja" status="2">終了</lang>
-                <lang id="vi" status="3">Cửa ra</lang>
-                <lang id="th" status="2">ออกจาก</lang>
-                <lang id="pl" status="3">Zakończ</lang>
-              </row>
-            </component>
-          </component>
-          <component class="TVisImageList" name="imageListTreeView" type="System.Windows.Forms.ImageList">
           </component>
           <component class="TVisHiddenComponent" name="notifyIcon1" type="System.Windows.Forms.NotifyIcon">
             <row id="Text" state="3">
@@ -3629,6 +3629,8 @@
             <lang id="th" status="2">Little Registry Cleaner - สแกน...</lang>
             <lang id="pl" status="2">Little Registry Cleaner - Trwa skanowanie...</lang>
           </row>
+          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
+          </component>
           <component class="TVisGroupBox" name="groupBox1" type="System.Windows.Forms.GroupBox">
             <row id="Location.X">12</row>
             <row id="Location.Y">9</row>
@@ -3670,6 +3672,12 @@
                 <lang id="pl" status="2">Zatrzymaj</lang>
               </row>
             </component>
+            <component class="TVisLabel" name="label1" state="0" type="System.Windows.Forms.Label">
+              <row id="Location.X" state="0">0</row>
+              <row id="Location.Y" state="0">0</row>
+              <row id="Size.Height" state="0">23</row>
+              <row id="Size.Width" state="0">100</row>
+            </component>
             <component class="TVisLabel" name="labelProblems" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
               <row id="ImeMode" state="0">imNone</row>
               <row id="Location.X" state="3">
@@ -3710,8 +3718,6 @@
               <row id="Size.Height">24</row>
               <row id="Size.Width">300</row>
             </component>
-          </component>
-          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
           </component>
         </form>
       </node>
@@ -4122,9 +4128,10 @@
             </row>
           </component>
           <component class="TVisComboBox" name="comboBoxSection" type="System.Windows.Forms.ComboBox">
-            <row id="Items.Registry\All Users\Run" locked="1" state="0">
+            <row id="Items.Registry\All Users\Run" excluded="1" state="0">
               <native>Registry\All Users\Run</native>
               <lang id="en">Registry\All Users\Run</lang>
+              <lang id="fr" status="2">Registry\All Users\Run</lang>
               <lang id="es">Registry\All Users\Run</lang>
               <lang id="pt">Registry\All Users\Run</lang>
               <lang id="it">Registry\All Users\Run</lang>
@@ -4139,10 +4146,12 @@
               <lang id="ja">レジストリ\All Usersの\を実行し</lang>
               <lang id="vi">Registry\All Users\Run</lang>
               <lang id="th">Registry\All Users\Run</lang>
+              <lang id="pl" status="2">Registry\All Users\Run</lang>
             </row>
-            <row id="Items.Registry\All Users\Run Once" locked="1" state="0">
+            <row id="Items.Registry\All Users\Run Once" excluded="1" state="0">
               <native>Registry\All Users\Run Once</native>
               <lang id="en">Registry\All Users\Run Once</lang>
+              <lang id="fr" status="2">Une fois les Users\Run Registry\All</lang>
               <lang id="es">Una vez Users\Run de Registry\All</lang>
               <lang id="pt">Once Users\Run de Registry\All</lang>
               <lang id="it">Once Users\Run Registry\All</lang>
@@ -4157,10 +4166,12 @@
               <lang id="ja">レジストリ\All Usersの\一度だけ実行</lang>
               <lang id="vi">Registry\All Users\Run Sau khi</lang>
               <lang id="th">Registry\All Users\Run เมื่อ</lang>
+              <lang id="pl" status="2">Registry\All Users\Run Once</lang>
             </row>
-            <row id="Items.Registry\All Users\Run Services" locked="1" state="0">
+            <row id="Items.Registry\All Users\Run Services" excluded="1" state="0">
               <native>Registry\All Users\Run Services</native>
               <lang id="en">Registry\All Users\Run Services</lang>
+              <lang id="fr" status="2">Services de Users\Run Registry\All</lang>
               <lang id="es">Registry\All Users\Run Services</lang>
               <lang id="pt">Serviços de Users\Run de Registry\All</lang>
               <lang id="it">Registry\All Users\Run Services</lang>
@@ -4175,10 +4186,12 @@
               <lang id="ja">レジストリ\All Usersの\実行サービス</lang>
               <lang id="vi">Registry\All Users\Run Dịch vụ</lang>
               <lang id="th">Registry\All Users\Run Services</lang>
+              <lang id="pl" status="2">Registry\All Users\Run Usługi</lang>
             </row>
-            <row id="Items.Registry\All Users\Run Services Once" locked="1" state="0">
+            <row id="Items.Registry\All Users\Run Services Once" excluded="1" state="0">
               <native>Registry\All Users\Run Services Once</native>
               <lang id="en">Registry\All Users\Run Services Once</lang>
+              <lang id="fr" status="2">Une fois les services de Users\Run Registry\All</lang>
               <lang id="es">Registry\All Users\Run servicios una vez</lang>
               <lang id="pt">Registry\All Users\Run Services Once</lang>
               <lang id="it">Registry\All Users\Run Services Once</lang>
@@ -4193,10 +4206,12 @@
               <lang id="ja">レジストリ\All Usersの\を実行しサービスの一</lang>
               <lang id="vi">Registry\All Users\Run Dịch vụ Sau khi</lang>
               <lang id="th">Registry\All Users\Services Run เมื่อ</lang>
+              <lang id="pl" status="2">Registry\All Users\Run Usługi Po</lang>
             </row>
-            <row id="Items.Registry\Current User\Run" locked="1" state="0">
+            <row id="Items.Registry\Current User\Run" excluded="1" state="0">
               <native>Registry\Current User\Run</native>
               <lang id="en">Registry\Current User\Run</lang>
+              <lang id="fr" status="2">Registry\Current User\Run</lang>
               <lang id="es">Registry\Current User\Run</lang>
               <lang id="pt">Registry\Current User\Run</lang>
               <lang id="it">Registry\Current User\Run</lang>
@@ -4211,10 +4226,12 @@
               <lang id="ja">レジストリ\現在のユーザーの構成\実行</lang>
               <lang id="vi">Registry\Current User\Run</lang>
               <lang id="th">Registry\Current User\Run</lang>
+              <lang id="pl" status="2">Registry\Current User\Run</lang>
             </row>
-            <row id="Items.Registry\Current User\Run Once" locked="1" state="0">
+            <row id="Items.Registry\Current User\Run Once" excluded="1" state="0">
               <native>Registry\Current User\Run Once</native>
               <lang id="en">Registry\Current User\Run Once</lang>
+              <lang id="fr" status="2">Une fois les User\Run Registry\Current</lang>
               <lang id="es">Una vez User\Run de Registry\Current</lang>
               <lang id="pt">Once User\Run de Registry\Current</lang>
               <lang id="it">Once User\Run Registry\Current</lang>
@@ -4229,10 +4246,12 @@
               <lang id="ja">レジストリ\現在のユーザーの構成\一度だけ実行</lang>
               <lang id="vi">Registry\Current User\Run Sau khi</lang>
               <lang id="th">Registry\Current User\Run เมื่อ</lang>
+              <lang id="pl" status="2">Registry\Current User\Run Once</lang>
             </row>
-            <row id="Items.Registry\Current User\Run Services" locked="1" state="0">
+            <row id="Items.Registry\Current User\Run Services" excluded="1" state="0">
               <native>Registry\Current User\Run Services</native>
               <lang id="en">Registry\Current User\Run Services</lang>
+              <lang id="fr" status="2">Services de User\Run Registry\Current</lang>
               <lang id="es">Registry\Current User\Run Services</lang>
               <lang id="pt">Serviços de User\Run de Registry\Current</lang>
               <lang id="it">Registry\Current User\Run Services</lang>
@@ -4247,10 +4266,12 @@
               <lang id="ja">レジストリ\現在のユーザーの構成\実行サービス</lang>
               <lang id="vi">Registry\Current User\Run Dịch vụ</lang>
               <lang id="th">Registry\Current User Services\Run</lang>
+              <lang id="pl" status="2">Registry\Current User\Run Usługi</lang>
             </row>
-            <row id="Items.Registry\Current User\Run Services Once" locked="1" state="0">
+            <row id="Items.Registry\Current User\Run Services Once" excluded="1" state="0">
               <native>Registry\Current User\Run Services Once</native>
               <lang id="en">Registry\Current User\Run Services Once</lang>
+              <lang id="fr" status="2">Une fois les services de User\Run Registry\Current</lang>
               <lang id="es">Registry\Current User\Run servicios una vez</lang>
               <lang id="pt">Registry\Current User\Run Services Once</lang>
               <lang id="it">Registry\Current User\Run Services Once</lang>
@@ -4265,8 +4286,9 @@
               <lang id="ja">レジストリ\現在のユーザーの構成\実行サービスの一</lang>
               <lang id="vi">Registry\Current User\Run Dịch vụ Sau khi</lang>
               <lang id="th">Registry\Current User\Run บริการเมื่อ</lang>
+              <lang id="pl" status="2">Registry\Current User\Run Usługi Po</lang>
             </row>
-            <row id="Items.StartUp\All Users" state="0">
+            <row id="Items.StartUp\All Users" excluded="1" state="0">
               <native>StartUp\All Users</native>
               <lang id="en" status="2">StartUp\All Users</lang>
               <lang id="fr" status="2">Startup\All Users</lang>
@@ -4286,7 +4308,7 @@
               <lang id="th" status="2">Startup\ผู้ใช้ทั้งหมด</lang>
               <lang id="pl" status="3">Uruchamianie\Wszyscy użytkownicy</lang>
             </row>
-            <row id="Items.StartUp\Current User" state="0">
+            <row id="Items.StartUp\Current User" excluded="1" state="0">
               <native>StartUp\Current User</native>
               <lang id="en" status="2">StartUp\Current User</lang>
               <lang id="fr" status="2">Startup\Utilisateur actuel</lang>
@@ -4344,6 +4366,10 @@
           <component class="TVisEdit" name="nodeTextBoxPath" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox">
           </component>
           <component class="TVisEdit" name="nodeTextBoxArgs" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox">
+          </component>
+          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
+          </component>
+          <component class="TVisHiddenComponent" name="nodeIcon1" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeIcon">
           </component>
           <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer" align="alClient">
             <row id="Location.X">0</row>
@@ -4628,10 +4654,6 @@
               </component>
             </component>
           </component>
-          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
-          </component>
-          <component class="TVisHiddenComponent" name="nodeIcon1" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeIcon">
-          </component>
         </form>
       </node>
       <node class="TNetFormNode" name="Little_Registry_Cleaner.UninstallManager.UninstallManager">
@@ -4658,6 +4680,8 @@
             <lang id="th" status="2">Little Registry Cleaner - Uninstall Manager</lang>
             <lang id="pl" status="2">Little Registry Cleaner - Menadżer deinstalacji</lang>
           </row>
+          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
+          </component>
           <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer" align="alClient">
             <row id="Location.X">0</row>
             <row id="Location.Y">0</row>
@@ -4881,8 +4905,6 @@
               </component>
             </component>
           </component>
-          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
-          </component>
         </form>
       </node>
       <node class="TNetFormNode" name="Little_Registry_Cleaner.UpdateDlg">
@@ -4978,7 +5000,7 @@
     </node>
     <node class="TNetStringFolder" name="Strings">
       <node class="TNetStringNode" name="Little_Registry_Cleaner.Properties.Resources">
-        <row id="ActivexComObjects" state="0">
+        <row id="ActivexComObjects" excluded="1" state="1">
           <native>ActiveX/COM Objects</native>
           <lang id="en" status="2">ActiveX/COM Objects</lang>
           <lang id="fr" status="2">ActiveX / COM Objects</lang>
@@ -4998,7 +5020,7 @@
           <lang id="th" status="2">ActiveX Objects / COM</lang>
           <lang id="pl" status="2">ActiveX / COM Objects</lang>
         </row>
-        <row id="ApplicationInfo" state="0">
+        <row id="ApplicationInfo" excluded="1" state="1">
           <native>Application Info</native>
           <lang id="en" status="2">Application Info</lang>
           <lang id="fr" status="2">Demande d'info</lang>
@@ -5018,13 +5040,12 @@
           <lang id="th" status="2">ข้อมูลการสมัคร</lang>
           <lang id="pl" status="2">Informacje o programach</lang>
         </row>
-        <row id="ApplicationPaths" state="0">
+        <row id="ApplicationPaths" excluded="1" state="1">
           <native>Application Paths</native>
           <lang id="en" status="2">Application Paths</lang>
           <lang id="fr" status="2">Application Paths</lang>
           <lang id="es" status="2">Rutas de aplicación</lang>
           <lang id="pt" status="2">Application Paths</lang>
-          <lang id="it" status="2">Application Paths</lang>
           <lang id="nl" status="2">Application Paths</lang>
           <lang id="de" status="2">Application Paths</lang>
           <lang id="ru" status="2">Application Paths</lang>
@@ -5038,13 +5059,12 @@
           <lang id="th" status="2">เส้นทาง Application</lang>
           <lang id="pl" status="2">Application Paths</lang>
         </row>
-        <row id="ApplicationSettings" state="0">
+        <row id="ApplicationSettings" excluded="1" state="1">
           <native>Application Settings</native>
           <lang id="en" status="2">Application Settings</lang>
           <lang id="fr" status="2">Paramètres de l'application</lang>
           <lang id="es" status="2">Configuración de la aplicación</lang>
           <lang id="pt" status="2">Configurações do aplicativo</lang>
-          <lang id="it" status="2">Impostazioni applicazione</lang>
           <lang id="nl" status="2">Application Settings</lang>
           <lang id="de" status="2">Anwendungseinstellungen</lang>
           <lang id="ru" status="2">Настройки приложения</lang>
@@ -5058,13 +5078,12 @@
           <lang id="th" status="2">การตั้งค่าการสมัคร</lang>
           <lang id="pl" status="2">Ustawienia aplikacji</lang>
         </row>
-        <row id="InvalidFile" state="0">
+        <row id="InvalidFile" excluded="1" state="1">
           <native>Invalid file or folder</native>
           <lang id="en" status="2">Invalid file or folder</lang>
           <lang id="fr" status="2">Blancs fichier ou un dossier</lang>
           <lang id="es" status="2">De archivo no válido o una carpeta</lang>
           <lang id="pt" status="2">Arquivo ou pasta inválido</lang>
-          <lang id="it" status="2">Non validi di file o una cartella</lang>
           <lang id="nl" status="2">Ongeldig bestand of map</lang>
           <lang id="de" status="2">Ungültige Datei oder einen Ordner</lang>
           <lang id="ru" status="2">Неверный файл или папка</lang>
@@ -5078,13 +5097,12 @@
           <lang id="th" status="2">ไฟล์ไม่ถูกต้องหรือโฟลเดอร์</lang>
           <lang id="pl" status="2">Nieprawidłowy plik lub folder</lang>
         </row>
-        <row id="InvalidFileExt" state="0">
+        <row id="InvalidFileExt" excluded="1" state="1">
           <native>Unused File Extension</native>
           <lang id="en" status="2">Unused File Extension</lang>
           <lang id="fr" status="2">Extension de fichier non utilisés</lang>
           <lang id="es" status="2">Extensión de archivo no utilizada</lang>
           <lang id="pt" status="2">Extensão de arquivo não utilizados</lang>
-          <lang id="it" status="2">Estensione file inutilizzati</lang>
           <lang id="nl" status="2">Ongebruikte File Extension</lang>
           <lang id="de" status="2">Nicht genutzte File Extension</lang>
           <lang id="ru" status="2">Неиспользованные File Extension</lang>
@@ -5098,13 +5116,12 @@
           <lang id="th" status="2">ไม่ได้ใช้ Extension File</lang>
           <lang id="pl" status="2">Niewykorzystane Rozszerzenie pliku</lang>
         </row>
-        <row id="InvalidInprocServer" state="0">
+        <row id="InvalidInprocServer" excluded="1" state="1">
           <native>Unable to find InprocServer</native>
           <lang id="en" status="2">Unable to find InprocServer</lang>
           <lang id="fr" status="2">Impossible de trouver InProcServer</lang>
           <lang id="es" status="2">No se puede encontrar InprocServer</lang>
           <lang id="pt" status="2">Incapaz de encontrar InprocServer</lang>
-          <lang id="it" status="2">In grado di trovare InprocServer</lang>
           <lang id="nl" status="2">Kan InprocServer vinden</lang>
           <lang id="de" status="2">Kann InprocServer finden</lang>
           <lang id="ru" status="2">Невозможно найти InprocServer</lang>
@@ -5118,13 +5135,12 @@
           <lang id="th" status="2">ไม่พบ InprocServer</lang>
           <lang id="pl" status="2">Nie można znaleźć InprocServer</lang>
         </row>
-        <row id="InvalidInprocServer32" state="0">
+        <row id="InvalidInprocServer32" excluded="1" state="1">
           <native>Unable to find InprocServer32</native>
           <lang id="en" status="2">Unable to find InprocServer32</lang>
           <lang id="fr" status="2">Impossible de trouver InprocServer32</lang>
           <lang id="es" status="2">No se puede encontrar InprocServer32</lang>
           <lang id="pt" status="2">Incapaz de encontrar InprocServer32</lang>
-          <lang id="it" status="2">In grado di trovare InprocServer32</lang>
           <lang id="nl" status="2">Kan InprocServer32 vinden</lang>
           <lang id="de" status="2">Kann InprocServer32 finden</lang>
           <lang id="ru" status="2">Невозможно найти InprocServer32</lang>
@@ -5138,13 +5154,12 @@
           <lang id="th" status="2">ไม่พบ InprocServer32</lang>
           <lang id="pl" status="2">Nie można znaleźć InprocServer32</lang>
         </row>
-        <row id="InvalidProgIDFileExt" state="0">
+        <row id="InvalidProgIDFileExt" excluded="1" state="1">
           <native>Unused ProgID/File Extension</native>
           <lang id="en" status="2">Unused ProgID/File Extension</lang>
           <lang id="fr" status="2">ProgID inutilisés / extension de fichier</lang>
           <lang id="es" status="2">ProgID no utilizados / extensión de archivo</lang>
           <lang id="pt" status="2">ProgID Livre / Extensão de Arquivo</lang>
-          <lang id="it" status="2">Inutilizzati ProgID / File Extension</lang>
           <lang id="nl" status="2">Ongebruikte ProgID / File Extension</lang>
           <lang id="de" status="2">Ungenutzte ProgID / File Extension</lang>
           <lang id="ru" status="2">Неиспользованные ProgID / File Extension</lang>
@@ -5158,13 +5173,12 @@
           <lang id="th" status="2">ไม่ได้ใช้ ProgID / File Extension</lang>
           <lang id="pl" status="2">Niewykorzystane ProgID / File Extension</lang>
         </row>
-        <row id="InvalidRegKey" state="0">
+        <row id="InvalidRegKey" excluded="1" state="1">
           <native>Invalid registry key</native>
           <lang id="en" status="2">Invalid registry key</lang>
           <lang id="fr" status="2">Blancs clé de registre</lang>
           <lang id="es" status="2">Clave de registro no válido</lang>
           <lang id="pt" status="2">Inválido chave de registro</lang>
-          <lang id="it" status="2">Chiave di Registro di sistema non valido</lang>
           <lang id="nl" status="2">Ongeldige registersleutel</lang>
           <lang id="de" status="2">Ungültige Registrierungsschlüssel</lang>
           <lang id="ru" status="2">Неверное реестра</lang>
@@ -5178,13 +5192,12 @@
           <lang id="th" status="2">คีย์รีจิสทรีไม่ถูกต้อง</lang>
           <lang id="pl" status="2">Nieprawidłowy klucz rejestru</lang>
         </row>
-        <row id="InvalidToolbar" state="0">
+        <row id="InvalidToolbar" excluded="1" state="1">
           <native>Toolbar is invalid</native>
           <lang id="en" status="2">Toolbar is invalid</lang>
           <lang id="fr" status="2">Barre d'outils n'est pas valide</lang>
           <lang id="es" status="2">Barra de herramientas no es válido</lang>
           <lang id="pt" status="2">Barra de ferramentas não é válido</lang>
-          <lang id="it" status="2">Barra degli strumenti non è valido</lang>
           <lang id="nl" status="2">Toolbar is ongeldig</lang>
           <lang id="de" status="2">Toolbar ist ungültig</lang>
           <lang id="ru" status="2">Панель инструментов недействительными</lang>
@@ -5198,13 +5211,12 @@
           <lang id="th" status="2">แถบเครื่องมือไม่ถูกต้อง</lang>
           <lang id="pl" status="2">Toolbar jest nieprawidłowy</lang>
         </row>
-        <row id="MissingAppID" state="0">
+        <row id="MissingAppID" excluded="1" state="1">
           <native>Missing AppID reference</native>
           <lang id="en" status="2">Missing AppID reference</lang>
           <lang id="fr" status="2">Manquant de référence AppID</lang>
           <lang id="es" status="2">Falta de referencia AppID</lang>
           <lang id="pt" status="2">Missing referência AppID</lang>
-          <lang id="it" status="2">Missing AppID riferimento</lang>
           <lang id="nl" status="2">Ontbrekende AppID verwijzing</lang>
           <lang id="de" status="2">Fehlende AppID Referenz</lang>
           <lang id="ru" status="2">Отсутствует ссылка AppID</lang>
@@ -5218,13 +5230,12 @@
           <lang id="th" status="2">อ้างอิงไม่มี AppID</lang>
           <lang id="pl" status="2">Zaginione AppID odniesienia</lang>
         </row>
-        <row id="MissingCLSID" state="0">
+        <row id="MissingCLSID" excluded="1" state="1">
           <native>Missing CLSID reference</native>
           <lang id="en" status="2">Missing CLSID reference</lang>
           <lang id="fr" status="2">Manquant de référence CLSID</lang>
           <lang id="es" status="2">Falta de referencia CLSID</lang>
           <lang id="pt" status="2">Missing referência CLSID</lang>
-          <lang id="it" status="2">Missing CLSID di riferimento</lang>
           <lang id="nl" status="2">Ontbrekende CLSID verwijzing</lang>
           <lang id="de" status="2">Fehlende CLSID Verweis</lang>
           <lang id="ru" status="2">Отсутствует CLSID Ссылка</lang>
@@ -5238,13 +5249,12 @@
           <lang id="th" status="2">อ้างอิงไม่มี CLSID</lang>
           <lang id="pl" status="2">Zaginione CLSID odniesienia</lang>
         </row>
-        <row id="MissingProgID" state="0">
+        <row id="MissingProgID" excluded="1" state="1">
           <native>Missing ProgID reference</native>
           <lang id="en" status="2">Missing ProgID reference</lang>
           <lang id="fr" status="2">Manquant de référence ProgID</lang>
           <lang id="es" status="2">Falta de referencia ProgID</lang>
           <lang id="pt" status="2">Missing referência ProgID</lang>
-          <lang id="it" status="2">Missing ProgID di riferimento</lang>
           <lang id="nl" status="2">Ontbrekende ProgID verwijzing</lang>
           <lang id="de" status="2">Fehlende ProgID Referenz</lang>
           <lang id="ru" status="2">Отсутствует ссылка ProgID</lang>
@@ -5258,13 +5268,12 @@
           <lang id="th" status="2">อ้างอิงไม่มี ProgID</lang>
           <lang id="pl" status="2">Zaginione ProgID odniesienia</lang>
         </row>
-        <row id="NoRegKey" state="0">
+        <row id="NoRegKey" excluded="1" state="1">
           <native>The registry key doesn't contain any data</native>
           <lang id="en" status="2">The registry key doesn't contain any data</lang>
           <lang id="fr" status="2">La clé de Registre ne contient pas de données</lang>
           <lang id="es" status="2">La clave del Registro no contiene ningún dato</lang>
           <lang id="pt" status="2">A chave de registo não contém quaisquer dados</lang>
-          <lang id="it" status="2">La chiave di registro non contiene tutti i dati</lang>
           <lang id="nl" status="2">De registersleutel bevat geen gegevens</lang>
           <lang id="de" status="2">Der Registrierungsschlüssel enthält keine Daten</lang>
           <lang id="ru" status="2">Реестра не содержит никаких данных</lang>
@@ -5278,13 +5287,12 @@
           <lang id="th" status="2">คีย์รีจิสทรีไม่มีข้อมูลใดๆ</lang>
           <lang id="pl" status="2">Klucz rejestru nie zawiera żadnych danych</lang>
         </row>
-        <row id="ObsoleteRegKey" state="0">
+        <row id="ObsoleteRegKey" excluded="1" state="1">
           <native>Obsolete registry key</native>
           <lang id="en" status="2">Obsolete registry key</lang>
           <lang id="fr" status="2">Clé de registre obsolètes</lang>
           <lang id="es" status="2">Clave de registro obsoletos</lang>
           <lang id="pt" status="2">Chave de registro obsoletos</lang>
-          <lang id="it" status="2">Chiave di registro obsolete</lang>
           <lang id="nl" status="2">Verouderde registersleutel</lang>
           <lang id="de" status="2">Veraltete Registrierungsschlüssel</lang>
           <lang id="ru" status="2">Устаревшие ключа реестра</lang>
@@ -5298,13 +5306,12 @@
           <lang id="th" status="2">คีย์รีจิสทรีเลิกใช้</lang>
           <lang id="pl" status="2">Przestarzały klucz rejestru</lang>
         </row>
-        <row id="RecentDocs" state="0">
+        <row id="RecentDocs" excluded="1" state="1">
           <native>Recent Documents</native>
           <lang id="en" status="2">Recent Documents</lang>
           <lang id="fr" status="2">Documents récents</lang>
           <lang id="es" status="2">Documentos recientes</lang>
           <lang id="pt" status="2">Documentos Recentes</lang>
-          <lang id="it" status="2">Documenti recenti</lang>
           <lang id="nl" status="2">Recente documenten</lang>
           <lang id="de" status="2">Zuletzt verwendete Dokumente</lang>
           <lang id="ru" status="2">Последние документы</lang>
@@ -5318,13 +5325,12 @@
           <lang id="th" status="2">เอกสารล่าสุด</lang>
           <lang id="pl" status="2">Ostatnie dokumenty</lang>
         </row>
-        <row id="SharedDLLs" state="0">
+        <row id="SharedDLLs" excluded="1" state="1">
           <native>Shared DLLs</native>
           <lang id="en" status="2">Shared DLLs</lang>
           <lang id="fr" status="2">Des DLL partagées</lang>
           <lang id="es" status="2">Compartido de archivos DLL</lang>
           <lang id="pt" status="2">DLLs compartilhadas</lang>
-          <lang id="it" status="2">DLL condivise</lang>
           <lang id="nl" status="2">Gedeelde dll-bestanden</lang>
           <lang id="de" status="2">Freigegebenen DLLs</lang>
           <lang id="ru" status="2">Общих библиотек</lang>
@@ -5338,13 +5344,12 @@
           <lang id="th" status="2">กำลังร่วมกัน</lang>
           <lang id="pl" status="2">Współdzielone biblioteki DLL</lang>
         </row>
-        <row id="StartupFiles" state="0">
+        <row id="StartupFiles" excluded="1" state="1">
           <native>Startup Files</native>
           <lang id="en" status="2">Startup Files</lang>
           <lang id="fr" status="2">Fichiers de démarrage</lang>
           <lang id="es" status="2">Los archivos de inicio</lang>
           <lang id="pt" status="2">Arquivos de inicialização</lang>
-          <lang id="it" status="2">File di avvio</lang>
           <lang id="nl" status="2">Opstartbestanden</lang>
           <lang id="de" status="2">Startdateien</lang>
           <lang id="ru" status="2">Загрузка файлов</lang>
@@ -5358,13 +5363,12 @@
           <lang id="th" status="2">ไฟล์ Startup</lang>
           <lang id="pl" status="2">Plików startowych</lang>
         </row>
-        <row id="SystemDrivers" state="0">
+        <row id="SystemDrivers" excluded="1" state="1">
           <native>System Drivers</native>
           <lang id="en" status="2">System Drivers</lang>
           <lang id="fr" status="2">Pilotes système</lang>
           <lang id="es" status="2">Controladores de sistema</lang>
           <lang id="pt" status="2">Drivers de sistema</lang>
-          <lang id="it" status="2">Driver di sistema</lang>
           <lang id="nl" status="2">Systeem stuur programma's</lang>
           <lang id="de" status="2">Systemtreiber</lang>
           <lang id="ru" status="2">Системные драйверы</lang>
@@ -5378,13 +5382,12 @@
           <lang id="th" status="2">โปรแกรมควบคุมระบบ</lang>
           <lang id="pl" status="2">Sterowniki systemowe</lang>
         </row>
-        <row id="WindowsFonts" state="0">
+        <row id="WindowsFonts" excluded="1" state="1">
           <native>Windows Fonts</native>
           <lang id="en" status="2">Windows Fonts</lang>
           <lang id="fr" status="3">Polices de Windows</lang>
           <lang id="es" status="2">Fuentes de Windows</lang>
           <lang id="pt" status="2">Fontes do Windows</lang>
-          <lang id="it" status="2">Caratteri di Windows</lang>
           <lang id="nl" status="2">Windows-lettertypen</lang>
           <lang id="de" status="2">Windows-Schriftarten</lang>
           <lang id="ru" status="2">Шрифты Windows</lang>
@@ -5398,13 +5401,12 @@
           <lang id="th" status="2">อักษร Windows</lang>
           <lang id="pl" status="2">Czcionki systemowe</lang>
         </row>
-        <row id="WindowsHelpFiles" state="0">
+        <row id="WindowsHelpFiles" excluded="1" state="1">
           <native>Windows Help Files</native>
           <lang id="en" status="2">Windows Help Files</lang>
           <lang id="fr" status="2">Fichiers d'aide Windows</lang>
           <lang id="es" status="2">Archivos de Ayuda de Windows</lang>
           <lang id="pt" status="2">Arquivos de ajuda do Windows</lang>
-          <lang id="it" status="2">File di Guida di Windows</lang>
           <lang id="nl" status="2">Windows Help-bestanden</lang>
           <lang id="de" status="2">Windows-Hilfe-Dateien</lang>
           <lang id="ru" status="2">Файлы Windows Помощь</lang>
@@ -5418,13 +5420,12 @@
           <lang id="th" status="2">Windows Files Help</lang>
           <lang id="pl" status="2">Pliki Pomocy systemu Windows</lang>
         </row>
-        <row id="WindowsSounds" state="0">
+        <row id="WindowsSounds" excluded="1" state="1">
           <native>Windows Sounds</native>
           <lang id="en" status="2">Windows Sounds</lang>
           <lang id="fr" status="2">Sons de Windows</lang>
           <lang id="es" status="2">Sonidos de Windows</lang>
           <lang id="pt" status="2">Windows Sounds</lang>
-          <lang id="it" status="2">Windows Sounds</lang>
           <lang id="nl" status="2">Windows Sounds</lang>
           <lang id="de" status="2">Windows-Sounds</lang>
           <lang id="ru" status="2">Windows Sounds</lang>
@@ -5437,6 +5438,765 @@
           <lang id="vi" status="2">Windows Sounds</lang>
           <lang id="th" status="2">Windows เสียง</lang>
           <lang id="pl" status="2">Windows Sounds</lang>
+        </row>
+        <row id="crashReporterFail" state="0">
+          <native>The bug report could not be sent</native>
+          <lang id="en" status="2">The bug report could not be sent</lang>
+          <lang id="fr" status="2">Le rapport de bogue n'a pas pu être envoyé.</lang>
+          <lang id="es" status="2">No se pudo enviar el informe de fallo</lang>
+          <lang id="pt" status="2">O relatório de erro não pode ser enviado</lang>
+          <lang id="it" status="2">La segnalazione di bug, non ha potuto essere inviato</lang>
+          <lang id="nl" status="2">De bug rapport kon niet worden verzonden</lang>
+          <lang id="de" status="2">Der Fehlerbericht konnte nicht gesendet werden</lang>
+          <lang id="ru" status="2">Отчет об ошибке не может быть отправлено</lang>
+          <lang id="el" status="2">Η αναφορά σφάλματος δεν θα μπορούσαν να αποσταλούν</lang>
+          <lang id="ar" status="2">تقرير الشوائب لا يمكن إرسالها</lang>
+          <lang id="sv" status="2">Felrapporten kunde inte skickas</lang>
+          <lang id="zh" status="2">错误报告无法发送</lang>
+          <lang id="zh.tra" status="2">錯誤報告無法發送</lang>
+          <lang id="ja" status="2">バグレポートを送信できませんでした</lang>
+          <lang id="vi" status="2">Các báo cáo lỗi không thể được gửi</lang>
+          <lang id="th" status="2">รายงานบักไม่สามารถส่ง</lang>
+          <lang id="pl" status="2">Raport o błędzie Nie można wysłać</lang>
+        </row>
+        <row id="crashReporterSuccess" state="0">
+          <native>Sent bug report successfully</native>
+          <lang id="en" status="2">Sent bug report successfully</lang>
+          <lang id="fr" status="2">Rapport de bogue envoyé</lang>
+          <lang id="es" status="2">Enviado el informe de fallo correctamente</lang>
+          <lang id="pt" status="2">Relatório de erro enviada com sucesso</lang>
+          <lang id="it" status="2">Bug report inviato correttamente</lang>
+          <lang id="nl" status="2">Verzonden bug report succes</lang>
+          <lang id="de" status="2">Sent Fehlerbericht erfolgreich</lang>
+          <lang id="ru" status="2">Направлено сообщение об ошибке успешной</lang>
+          <lang id="el" status="2">Απέστειλε αναφορά σφάλματος με επιτυχία</lang>
+          <lang id="ar" status="2">أرسلت علة التقرير بنجاح</lang>
+          <lang id="sv" status="2">Skickat felrapport framgångsrikt</lang>
+          <lang id="zh" status="2">成功发送错误报告</lang>
+          <lang id="zh.tra" status="2">成功發送錯誤報告</lang>
+          <lang id="ja" status="2">送信されたバグレポートが正常に</lang>
+          <lang id="vi" status="2">Gửi báo cáo lỗi thành công</lang>
+          <lang id="th" status="2">รายงานข้อบกพร่องที่ส่งสำเร็จ</lang>
+          <lang id="pl" status="2">Raport o błędach wysłane</lang>
+        </row>
+        <row id="mainAddExcludeEntry" state="0">
+          <native>Added selected registry keys to the exclude list</native>
+          <lang id="en" status="2">Added selected registry keys to the exclude list</lang>
+          <lang id="fr" status="2">Ajouté des clés de registre sélectionnée à la liste d'exclusion</lang>
+          <lang id="es" status="2">Agrega claves del registro seleccionado a la lista de exclusión</lang>
+          <lang id="pt" status="2">Adicionado selecionados chaves de registo para a lista de exclusão</lang>
+          <lang id="it" status="2">Ha aggiunto selezionati chiavi di registro per l'elenco di esclusione</lang>
+          <lang id="nl" status="2">Toegevoegd geselecteerde registersleutels om de lijst uit te sluiten</lang>
+          <lang id="de" status="2">Added ausgewählten Registrierungsschlüssel, um die Exclude-Liste</lang>
+          <lang id="ru" status="2">Добавлено выбранных ключей реестра в списке исключить</lang>
+          <lang id="el" status="2">Προστέθηκε επιλέγονται κλειδιά μητρώου για να αποκλείσει την λίστα</lang>
+          <lang id="ar" status="2">وأضاف مختارة مفاتيح التسجيل إلى استبعاد قائمة</lang>
+          <lang id="sv" status="2">La utvalda registernycklar till utesluta listan</lang>
+          <lang id="zh" status="2">新增选定的注册表项的排除列表</lang>
+          <lang id="zh.tra" status="2">新增選定的註冊表項的排除列表</lang>
+          <lang id="ja" status="2">追加のリストを除外するために、レジストリキーを選択</lang>
+          <lang id="vi" status="2">Added chọn khóa registry vào danh sách loại trừ</lang>
+          <lang id="th" status="2">เพิ่มเลือกรีจิสทรีคีย์ที่ไม่รวมรายการ</lang>
+          <lang id="pl" status="2">Dodano wybranych kluczy rejestru w celu wyłączenia lista</lang>
+        </row>
+        <row id="mainAskExit" state="0">
+          <native>Are you sure you want to exit?</native>
+          <lang id="en" status="2">Are you sure you want to exit?</lang>
+          <lang id="fr" status="2">Vous êtes vraiment quitter?</lang>
+          <lang id="es" status="2">Está seguro de que desea salir?</lang>
+          <lang id="pt" status="2">Tem certeza de que deseja sair?</lang>
+          <lang id="it" status="2">Sei sicuro di voler uscire?</lang>
+          <lang id="nl" status="2">Weet u zeker dat u wilt afsluiten?</lang>
+          <lang id="de" status="2">Sind Sie sicher, dass Sie zum Beenden?</lang>
+          <lang id="ru" status="2">Вы уверены, что хотите выйти?</lang>
+          <lang id="el" status="2">Είστε σίγουροι ότι θέλετε να βγείτε?</lang>
+          <lang id="ar" status="2">هل أنت متأكد أنك تريد الخروج?</lang>
+          <lang id="sv" status="2">Är du säker på att du vill avsluta?</lang>
+          <lang id="zh" status="2">您确定要退出?</lang>
+          <lang id="zh.tra" status="2">您確定要退出?</lang>
+          <lang id="ja" status="2">あなたが終了してもよろしいですか?</lang>
+          <lang id="vi" status="2">Bạn có chắc bạn muốn thoát ra?</lang>
+          <lang id="th" status="2">คุณแน่ใจหรือว่าต้องการออก?</lang>
+          <lang id="pl" status="2">Czy na pewno chcesz zakończyć?</lang>
+        </row>
+        <row id="mainFirstTimeRestorePoint" state="0">
+          <native>This your first time running Little Registry Cleaner. \r\nWould you like to create a restore point?</native>
+          <lang id="en" status="2">This your first time running Little Registry Cleaner. \r\nWould you like to create a restore point?</lang>
+          <lang id="fr" status="2">Ce votre première fois en cours d'exécution Little Registry Cleaner. vous souhaitez créer un point de restauration de \r\nWould?</lang>
+          <lang id="es" status="2">Esta la primera vez que ejecuta Little limpiador de registro. \r\nWould le gustaría crear un punto de restauración?</lang>
+          <lang id="pt" status="2">Desta vez, a sua primeira execução Little Registry Cleaner.\r\nGostaria de criar um ponto de restauração?</lang>
+          <lang id="it" status="2">La tua prima volta in esecuzione Little Registry Cleaner.\r\nVuoi creare un punto di ripristino?</lang>
+          <lang id="nl" status="2">Dit de eerste keer lopen Little Registry Cleaner.\r\nWilt u om een herstelpunt?</lang>
+          <lang id="de" status="2">Diese Sie das erste Mal Little Registry Cleaner.\r\nMöchten Sie einen Wiederherstellungspunkt erstellen?</lang>
+          <lang id="ru" status="2">Это ваш первый раз подряд Little Registry Cleaner.\R\nВы хотите создать точку восстановления?</lang>
+          <lang id="el" status="2">Αυτή η πρώτη φορά που σας τρέχει Little Registry Cleaner.\r\nΘέλετε να δημιουργήσετε ένα σημείο επαναφοράς?</lang>
+          <lang id="ar" status="2">هذه أول مرة يستخدم ليتل السجل النظيف.\ص\nWould كنت ترغب في إنشاء نقطة استعادة?</lang>
+          <lang id="sv" status="2">Här första gången du kör Little Registry Cleaner.\r\nVill du skapa en återställningspunkt?</lang>
+          <lang id="zh" status="2">这是您第一次运行的小处清洁。\r\n您要创建一个还原点?</lang>
+          <lang id="zh.tra" status="2">這是您第一次運行的小處清潔。\r\n您要創建一個還原點?</lang>
+          <lang id="ja" status="2">これはあなたの最初の時間リトルRegistry Cleanerは、実行している。\Rは\を復元ポイントを作成するようにnWould?</lang>
+          <lang id="vi" status="2">Điều này của bạn lần đầu tiên chạy Little Registry Cleaner.\r\nBạn có muốn tạo một điểm khôi phục?</lang>
+          <lang id="th" status="2">นี้เป็นครั้งแรกของคุณทำงาน Little Registry Cleaner.\r\n คุณต้องการสร้างจุด restore point?</lang>
+          <lang id="pl" status="2">To twój pierwszy raz kolejny Little Registry Cleaner.\r\nCzy chcesz utworzyć punkt przywracania?</lang>
+        </row>
+        <row id="mainInvalidHelpFile" state="0">
+          <native>Unable to find Little Registry Cleaner.chm</native>
+          <lang id="en" status="2">Unable to find Little Registry Cleaner.chm</lang>
+          <lang id="fr" status="2">Impossible de trouver le petit registre Cleaner.chm</lang>
+          <lang id="es" status="2">No se puede encontrar Little Cleaner.chm de registro</lang>
+          <lang id="pt" status="2">Incapaz de encontrar Little Secretaria Cleaner.chm</lang>
+          <lang id="it" status="2">In grado di trovare Little Registro Cleaner.chm</lang>
+          <lang id="nl" status="2">Kan Little griffie Cleaner.chm vinden</lang>
+          <lang id="de" status="2">Nicht finden Little Registry Cleaner.chm</lang>
+          <lang id="ru" status="2">Не удается найти небольшое реестра Cleaner.chm</lang>
+          <lang id="el" status="2">Ανίκανος να βρει Little Γραμματεία Cleaner.chm</lang>
+          <lang id="ar" status="2">قادر على العثور على قلم ليتل Cleaner.chm</lang>
+          <lang id="sv" status="2">Inte hitta Little kansli Cleaner.chm</lang>
+          <lang id="zh" status="2">无法找到小处Cleaner.chm</lang>
+          <lang id="zh.tra" status="2">無法找到小處Cleaner.chm</lang>
+          <lang id="ja" status="2">リトルレジストリCleaner.chmを見つけることができません</lang>
+          <lang id="vi" status="2">Không tìm thấy Little Registry Cleaner.chm</lang>
+          <lang id="th" status="2">ไม่พบ Little Registry Cleaner.chm</lang>
+          <lang id="pl" status="2">Nie można znaleźć Little Registry Cleaner.chm</lang>
+        </row>
+        <row id="mainProblemsFix" state="0">
+          <native>Would you like to fix all selected problems?</native>
+          <lang id="en" status="2">Would you like to fix all selected problems?</lang>
+          <lang id="fr" status="2">Vous souhaitez corriger tous les problèmes sélectionnés?</lang>
+          <lang id="es" status="2">¿Le gustaría corregir todos los problemas seleccionados?</lang>
+          <lang id="pt" status="2">Gostaria de corrigir todos os problemas selecionados?</lang>
+          <lang id="it" status="2">Vuoi risolvere tutti i problemi selezionati?</lang>
+          <lang id="nl" status="2">Wilt u vast te stellen alle geselecteerde problemen?</lang>
+          <lang id="de" status="2">Möchten Sie alle ausgewählten Probleme zu beheben?</lang>
+          <lang id="ru" status="2">Хотите, чтобы исправить все выбранные проблем?</lang>
+          <lang id="el" status="2">Θα θέλατε να καθορίσει όλα τα επιλεγμένα προβλήματα?</lang>
+          <lang id="ar" status="2">هل ترغب في حل جميع المشاكل مختارة?</lang>
+          <lang id="sv" status="2">Vill du fixa alla utvalda problem?</lang>
+          <lang id="zh" status="2">你想解决问题的所有选择?</lang>
+          <lang id="zh.tra" status="2">你想解決問題的所有選擇?</lang>
+          <lang id="ja" status="2">選択したすべての問題を修正するか?</lang>
+          <lang id="vi" status="2">Bạn có muốn sửa chữa tất cả các vấn đề lựa chọn?</lang>
+          <lang id="th" status="2">คุณต้องการที่จะแก้ไขปัญหาที่เลือกทั้งหมด?</lang>
+          <lang id="pl" status="2">Chcesz naprawić wszystkie wybrane problemy?</lang>
+        </row>
+        <row id="mainProblemsRemoved" state="0">
+          <native>Removed problems from registry</native>
+          <lang id="en" status="2">Removed problems from registry</lang>
+          <lang id="fr" status="2">Problèmes supprimées du registre</lang>
+          <lang id="es" status="2">Se ha eliminado los problemas del registro</lang>
+          <lang id="pt" status="2">Problemas removido do Registro</lang>
+          <lang id="it" status="2">Rimossi i problemi dal registro</lang>
+          <lang id="nl" status="2">Removed problemen uit register</lang>
+          <lang id="de" status="2">Probleme aus der Registry entfernt</lang>
+          <lang id="ru" status="2">Удален проблемы из реестра</lang>
+          <lang id="el" status="2">Αφαιρούνται προβλήματα από το μητρώο</lang>
+          <lang id="ar" status="2">إزالة المشاكل من التسجيل</lang>
+          <lang id="sv" status="2">Removed problem från registren</lang>
+          <lang id="zh" status="2">从注册表中删除的问题</lang>
+          <lang id="zh.tra" status="2">從註冊表中刪除的問題</lang>
+          <lang id="ja" status="2">レジストリから削除された問題</lang>
+          <lang id="vi" status="2">Loại bỏ các vấn đề từ registry</lang>
+          <lang id="th" status="2">ปัญหาออกจากรีจิสทรี</lang>
+          <lang id="pl" status="2">Usunięto problemy z rejestru</lang>
+        </row>
+        <row id="mainScanningAborted" state="0">
+          <native>Aborted scanning the registry</native>
+          <lang id="en" status="2">Aborted scanning the registry</lang>
+          <lang id="fr" status="2">Abandonné l'analyse du registre</lang>
+          <lang id="es" status="2">Anulado el análisis del registro</lang>
+          <lang id="pt" status="2">Abortada a varredura do registro</lang>
+          <lang id="it" status="2">Interrotta la scansione del Registro di sistema</lang>
+          <lang id="nl" status="2">Aborted scannen van de registry</lang>
+          <lang id="de" status="2">Aborted Scanning der Registrierung</lang>
+          <lang id="ru" status="2">Прервано сканирования реестра</lang>
+          <lang id="el" status="2">Aborted σάρωση του μητρώου</lang>
+          <lang id="ar" status="2">إحباط مسح السجل</lang>
+          <lang id="sv" status="2">Aborterade scanning registret</lang>
+          <lang id="zh" status="2">中止扫描注册表</lang>
+          <lang id="zh.tra" status="2">中止掃描註冊表</lang>
+          <lang id="ja" status="2">中止には、レジストリをスキャン</lang>
+          <lang id="vi" status="2">Hủy bỏ chức năng quét registry</lang>
+          <lang id="th" status="2">Aborted สแกนรีจิสทรี</lang>
+          <lang id="pl" status="2">Aborted skanowania rejestru</lang>
+        </row>
+        <row id="mainScanningFinished" state="0">
+          <native>Finished scanning the registry</native>
+          <lang id="en" status="2">Finished scanning the registry</lang>
+          <lang id="fr" status="2">L'analyse est terminée le registre.</lang>
+          <lang id="es" status="2">Finalizado el análisis del registro</lang>
+          <lang id="pt" status="2">Acabados de varredura do registro</lang>
+          <lang id="it" status="2">Termine della scansione del Registro di sistema</lang>
+          <lang id="nl" status="2">Afgewerkt scannen van de registry</lang>
+          <lang id="de" status="2">Abgeschlossene Scanning der Registrierung</lang>
+          <lang id="ru" status="2">Завершения сканирования реестра</lang>
+          <lang id="el" status="2">Ολοκληρώσετε τη σάρωση του μητρώου</lang>
+          <lang id="ar" status="2">الانتهاء من المسح والتسجيل</lang>
+          <lang id="sv" status="2">Färdiga scanning registret</lang>
+          <lang id="zh" status="2">完成扫描注册表</lang>
+          <lang id="zh.tra" status="2">完成掃描註冊表</lang>
+          <lang id="ja" status="2">レジストリをスキャン仕上がり</lang>
+          <lang id="vi" status="2">Đã hoàn thành chức năng quét registry</lang>
+          <lang id="th" status="2">เสร็จสิ้นการสแกนรีจิสทรี</lang>
+          <lang id="pl" status="2">Zakończono skanowanie rejestru</lang>
+        </row>
+        <row id="mainSelectSections" state="0">
+          <native>Please select a section to scan</native>
+          <lang id="en" status="2">Please select a section to scan</lang>
+          <lang id="fr" status="2">Veuillez sélectionner une section à analyser</lang>
+          <lang id="es" status="2">Por favor, seleccione una sección para analizar</lang>
+          <lang id="pt" status="2">Por favor, selecione uma seção para digitalizar</lang>
+          <lang id="it" status="2">Si prega di selezionare una sezione per la scansione</lang>
+          <lang id="nl" status="2">Selecteer een sectie te scannen</lang>
+          <lang id="de" status="2">Bitte wählen Sie einen Abschnitt zum Scannen</lang>
+          <lang id="ru" status="2">Пожалуйста, выберите раздел для сканирования</lang>
+          <lang id="el" status="2">Παρακαλώ επιλέξτε ένα τμήμα για να σαρώσετε</lang>
+          <lang id="ar" status="2">الرجاء اختيار القسم لمسح</lang>
+          <lang id="sv" status="2">Välj en sektion för att skanna</lang>
+          <lang id="zh" status="2">请选择一节扫描</lang>
+          <lang id="zh.tra" status="2">請選擇一節掃描</lang>
+          <lang id="ja" status="2">してくださいスキャンするセクションを選択</lang>
+          <lang id="vi" status="2">Hãy lựa chọn một phần để quét</lang>
+          <lang id="th" status="2">โปรดเลือกส่วนที่จะสแกน</lang>
+          <lang id="pl" status="2">Wybierz punkt skanowania</lang>
+        </row>
+        <row id="mainUpdateAsk" state="0">
+          <native>A newer version is available. Would you like to download it?</native>
+          <lang id="en" status="2">A newer version is available. Would you like to download it?</lang>
+          <lang id="fr" status="2">Une version plus récente est disponible. Souhaitez-vous télécharger?</lang>
+          <lang id="es" status="2">Hay disponible una versión más reciente. ¿Desea descargarlo?</lang>
+          <lang id="pt" status="2">Uma nova versão está disponível. Gostaria de fazer o download?</lang>
+          <lang id="it" status="2">Una versione più recente è disponibile. Vuoi scaricarlo?</lang>
+          <lang id="nl" status="2">Een nieuwere versie beschikbaar is. Wilt u het te downloaden?</lang>
+          <lang id="de" status="2">Eine neuere Version verfügbar ist. Möchten Sie es herunterladen?</lang>
+          <lang id="ru" status="2">Доступна новая версия. Хотите скачать его?</lang>
+          <lang id="el" status="2">Μια νεώτερη έκδοση είναι διαθέσιμη. Θέλετε να το κατεβάσετε?</lang>
+          <lang id="ar" status="2">ويتوفر الإصدار الأحدث. هل ترغب في تحميل البرنامج?</lang>
+          <lang id="sv" status="2">En nyare version finns tillgänglig. Vill du ladda ner den?</lang>
+          <lang id="zh" status="2">较新版本可用。您是否要下载?</lang>
+          <lang id="zh.tra" status="2">較新版本可用。您是否要下載?</lang>
+          <lang id="ja" status="2">新しいバージョンが利用可能です。それをダウンロードなさいますか?</lang>
+          <lang id="vi" status="2">Một phiên bản mới hơn có sẵn. Bạn có muốn tải nó?</lang>
+          <lang id="th" status="2">เวอร์ชันใหม่มี. คุณต้องการดาวน์โหลด?</lang>
+          <lang id="pl" status="2">Jest dostępna nowsza wersja. Chcesz, aby go pobrać?</lang>
+        </row>
+        <row id="needAdmin" state="0">
+          <native>You must be an administrator to run this program</native>
+          <lang id="en" status="2">You must be an administrator to run this program</lang>
+          <lang id="fr" status="2">Vous devez être administrateur pour exécuter ce programme.</lang>
+          <lang id="es" status="2">Debe ser un administrador para ejecutar este programa</lang>
+          <lang id="pt" status="2">Você deve ser um administrador para executar este programa</lang>
+          <lang id="it" status="2">È necessario essere un amministratore per eseguire questo programma</lang>
+          <lang id="nl" status="2">U moet een beheerder zijn om dit programma uit te voeren</lang>
+          <lang id="de" status="2">Sie müssen als Administrator angemeldet sein, um dieses Programm ausführen</lang>
+          <lang id="ru" status="2">Вы должны быть администратором для запуска этой программы</lang>
+          <lang id="el" status="2">Πρέπει να είστε διαχειριστής, για να τρέξει αυτό το πρόγραμμα</lang>
+          <lang id="ar" status="2">يجب عليك أن تكون مسؤولا لتشغيل هذا البرنامج</lang>
+          <lang id="sv" status="2">Du måste vara administratör för att köra programmet</lang>
+          <lang id="zh" status="2">您必须是管理员才能运行此程序</lang>
+          <lang id="zh.tra" status="2">您必須是管理員才能運行此程序</lang>
+          <lang id="ja" status="2">あなたはこのプログラムを実行するための管理者である必要があります</lang>
+          <lang id="vi" status="2">Bạn có phải là một quản trị để chạy chương trình này</lang>
+          <lang id="th" status="2">คุณต้องเป็นผู้ดูแลระบบเพื่อรันโปรแกรมนี้</lang>
+          <lang id="pl" status="2">Musisz być administratorem, żeby uruchomić ten program</lang>
+        </row>
+        <row id="optionsExcludeDir" state="0">
+          <native>Select the folder to exclude from the registry scan</native>
+          <lang id="en" status="2">Select the folder to exclude from the registry scan</lang>
+          <lang id="fr" status="2">Sélectionnez le dossier à exclure de l'analyse du registre</lang>
+          <lang id="es" status="2">Seleccione la carpeta para excluir el análisis del registro</lang>
+          <lang id="pt" status="2">Selecione a pasta para excluir da varredura do registro</lang>
+          <lang id="it" status="2">Selezionare la cartella da escludere dal Registro di sistema di scansione</lang>
+          <lang id="nl" status="2">Selecteer de map uit te sluiten van het register scan</lang>
+          <lang id="de" status="2">Wählen Sie den Ordner aus der Registry-Scan ausschließen</lang>
+          <lang id="ru" status="2">Выберите папку для исключения из реестра, сканирование</lang>
+          <lang id="el" status="2">Επιλέξτε το φάκελο για να αποκλείσει από το μητρώο σάρωσης</lang>
+          <lang id="ar" status="2">حدد المجلد لاستبعاد من التسجيل المسح الضوئي</lang>
+          <lang id="sv" status="2">Välj mapp att utesluta från registret Scan</lang>
+          <lang id="zh" status="2">选择文件夹，以排除从注册表扫描</lang>
+          <lang id="zh.tra" status="2">選擇文件夾，以排除從註冊表掃描</lang>
+          <lang id="ja" status="2">選択したフォルダには、レジストリのスキャンを除外する</lang>
+          <lang id="vi" status="2">Chọn thư mục để loại trừ từ registry quét</lang>
+          <lang id="th" status="2">เลือกโฟลเดอร์ที่จะออกจากรีจิสทรีสแกน</lang>
+          <lang id="pl" status="2">Wybierz folder, do wyłączenia z rejestru skanowania</lang>
+        </row>
+        <row id="optionsExcludeEmptyRegPath" state="0">
+          <native>Registry path cannot be empty</native>
+          <lang id="en" status="2">Registry path cannot be empty</lang>
+          <lang id="fr" status="2">Chemin d'accès du Registre ne peut pas être vide</lang>
+          <lang id="es" status="2">Ruta del registro no puede estar vacío</lang>
+          <lang id="pt" status="2">Caminho de registo não pode ser vazio</lang>
+          <lang id="it" status="2">Percorso del Registro di sistema non può essere vuoto</lang>
+          <lang id="nl" status="2">Register pad kan niet leeg zijn</lang>
+          <lang id="de" status="2">Registry-Pfad darf nicht leer sein</lang>
+          <lang id="ru" status="2">Путь реестра не может быть пустым</lang>
+          <lang id="el" status="2">Γραμματεία διαδρομή δεν μπορεί να είναι κενή</lang>
+          <lang id="ar" status="2">التسجيل المسار لا يمكن أن تكون فارغة</lang>
+          <lang id="sv" status="2">Registersökväg kan inte vara tom</lang>
+          <lang id="zh" status="2">注册表路径不能为空</lang>
+          <lang id="zh.tra" status="2">註冊表路徑不能為空</lang>
+          <lang id="ja" status="2">レジストリパスを空にすることはできません</lang>
+          <lang id="vi" status="2">Registry đường dẫn không thể để trống</lang>
+          <lang id="th" status="2">เส้นทาง Registry ไม่ว่างเปล่า</lang>
+          <lang id="pl" status="2">Ścieżka rejestru nie może być pusta</lang>
+        </row>
+        <row id="optionsExcludeFile" state="0">
+          <native>Select a file to exclude from the registry scan</native>
+          <lang id="en" status="2">Select a file to exclude from the registry scan</lang>
+          <lang id="fr" status="2">Sélectionnez un fichier à exclure de l'analyse du registre</lang>
+          <lang id="es" status="2">Seleccione un archivo para excluir el análisis del registro</lang>
+          <lang id="pt" status="2">Selecione um arquivo para excluir o registro de digitalização</lang>
+          <lang id="it" status="2">Selezionare un file da escludere dal Registro di sistema di scansione</lang>
+          <lang id="nl" status="2">Selecteer een bestand uit te sluiten van het register scan</lang>
+          <lang id="de" status="2">Wählen Sie eine Datei aus der Registrierung Vorgang ausschließen</lang>
+          <lang id="ru" status="2">Выбор файла для исключения из реестра, сканирование</lang>
+          <lang id="el" status="2">Επιλέξτε ένα αρχείο για να αποκλείσει από το μητρώο σάρωσης</lang>
+          <lang id="ar" status="2">حدد ملف لاستبعاد من التسجيل المسح الضوئي</lang>
+          <lang id="sv" status="2">Välj en fil att från registret Scan</lang>
+          <lang id="zh" status="2">选择一个文件，从注册表中排除扫描</lang>
+          <lang id="zh.tra" status="2">選擇一個文件，以排除從註冊表掃描</lang>
+          <lang id="ja" status="2">を選択するには、レジストリのスキャンを除外するファイル</lang>
+          <lang id="vi" status="2">Chọn một tập tin để loại trừ từ registry quét</lang>
+          <lang id="th" status="2">เลือกไฟล์ที่จะไม่รวมรีจิสทรีสแกน</lang>
+          <lang id="pl" status="2">Wybierz plik do wyłączenia z rejestru skanowania</lang>
+        </row>
+        <row id="optionsExcludeInvalidRegPath" state="0">
+          <native>Specified registry key doesn't exist</native>
+          <lang id="en" status="2">Specified registry key doesn't exist</lang>
+          <lang id="fr" status="2">Clé de registre spécifiée n'existe pas</lang>
+          <lang id="es" status="2">Clave de registro especificada no existe</lang>
+          <lang id="pt" status="2">Chave de registro especificada não existe</lang>
+          <lang id="it" status="2">Chiave di registro specificato non esiste</lang>
+          <lang id="nl" status="2">Bepaald registersleutel niet bestaat</lang>
+          <lang id="de" status="2">Angegebenen Registrierungsschlüssel ist nicht vorhanden</lang>
+          <lang id="ru" status="2">Указанный раздел реестра не существует</lang>
+          <lang id="el" status="2">Καθορισμένη κλειδί μητρώου δεν υπάρχει</lang>
+          <lang id="ar" status="2">مفتاح التسجيل المحدد غير موجود</lang>
+          <lang id="sv" status="2">Fastställt registernyckeln finns inte</lang>
+          <lang id="zh" status="2">指定的注册表项不存在</lang>
+          <lang id="zh.tra" status="2">指定的註冊表項不存在</lang>
+          <lang id="ja" status="2">指定されたレジストリキーが存在しない</lang>
+          <lang id="vi" status="2">Quy định đăng ký khóa không tồn tại</lang>
+          <lang id="th" status="2">รีจิสทรีคีย์ที่ระบุไม่มี</lang>
+          <lang id="pl" status="2">Określony klucz rejestru nie istnieje</lang>
+        </row>
+        <row id="optionsExcludeRemove" state="0">
+          <native>Are you sure?</native>
+          <lang id="en" status="2">Are you sure?</lang>
+          <lang id="fr" status="2">Es-tu sûr?</lang>
+          <lang id="es" status="2">Estás seguro?</lang>
+          <lang id="pt" status="2">Tem certeza?</lang>
+          <lang id="it" status="2">Sei sicuro?</lang>
+          <lang id="nl" status="2">Weet u zeker?</lang>
+          <lang id="de" status="2">Sind Sie sicher,?</lang>
+          <lang id="ru" status="2">Вы уверены, что?</lang>
+          <lang id="el" status="2">Είστε σίγουροι?</lang>
+          <lang id="ar" status="2">هل أنت متأكد?</lang>
+          <lang id="sv" status="2">Är du säker?</lang>
+          <lang id="zh" status="2">你确定?</lang>
+          <lang id="zh.tra" status="2">你確定?</lang>
+          <lang id="ja" status="2">必ずあなたは?</lang>
+          <lang id="vi" status="2">Bạn có chắc chắn?</lang>
+          <lang id="th" status="2">คุณแน่ใจหรือไม่?</lang>
+          <lang id="pl" status="2">Czy na pewno?</lang>
+        </row>
+        <row id="optionsSelectBackupDir" state="0">
+          <native>Select the folder where the backup files will be placed</native>
+          <lang id="en" status="2">Select the folder where the backup files will be placed</lang>
+          <lang id="fr" status="2">Sélectionnez le dossier dans lequel seront placés les fichiers de sauvegarde</lang>
+          <lang id="es" status="2">Seleccione la carpeta donde se colocarán los archivos de copia de seguridad</lang>
+          <lang id="pt" status="2">Selecione a pasta onde os arquivos de backup serão colocados</lang>
+          <lang id="it" status="2">Selezionare la cartella in cui i file di backup verrà posizionato</lang>
+          <lang id="nl" status="2">Selecteer de map waarin de back-up bestanden zullen worden geplaatst</lang>
+          <lang id="de" status="2">Wählen Sie den Ordner, in dem die Backup-Dateien abgelegt werden</lang>
+          <lang id="ru" status="2">Выберите папку, в которой резервные файлы будут помещены</lang>
+          <lang id="el" status="2">Επιλέξτε το φάκελλο όπου τα αρχεία αντιγράφων ασφαλείας θα πρέπει να τοποθετηθεί</lang>
+          <lang id="ar" status="2">حدد المجلد حيث ملفات النسخة الاحتياطية سوف توضع</lang>
+          <lang id="sv" status="2">Välj den mapp där säkerhetskopian kommer att placeras</lang>
+          <lang id="zh" status="2">选择文件夹备份文件将被放置</lang>
+          <lang id="zh.tra" status="2">選擇文件夾備份文件將被放置</lang>
+          <lang id="ja" status="2">選択したフォルダは、バックアップファイルが置かれる</lang>
+          <lang id="vi" status="2">Chọn thư mục nơi các tập tin sao lưu sẽ được đặt</lang>
+          <lang id="th" status="2">เลือกโฟลเดอร์ที่แฟ้มสำรองจะถูกวางไว้</lang>
+          <lang id="pl" status="2">Wybierz folder, do którego kopii zapasowej zostanie umieszczony</lang>
+        </row>
+        <row id="optionsSelectLogDir" state="0">
+          <native>Select the folder where the log files will be placed</native>
+          <lang id="en" status="2">Select the folder where the log files will be placed</lang>
+          <lang id="fr" status="2">Sélectionnez le dossier dans lequel seront placés les fichiers journaux</lang>
+          <lang id="es" status="2">Seleccione la carpeta donde se colocarán los archivos de registro</lang>
+          <lang id="pt" status="2">Selecione a pasta onde os arquivos de log será colocado</lang>
+          <lang id="it" status="2">Selezionare la cartella dove il file di registro sarà messo</lang>
+          <lang id="nl" status="2">Selecteer de map waar de log-bestanden zullen worden geplaatst</lang>
+          <lang id="de" status="2">Wählen Sie den Ordner, in dem die Log-Dateien abgelegt werden</lang>
+          <lang id="ru" status="2">Выберите папку, в которой файлы журналов будет уделяться</lang>
+          <lang id="el" status="2">Επιλέξτε το φάκελλο όπου τα αρχεία καταγραφής θα τοποθετηθεί</lang>
+          <lang id="ar" status="2">حدد المجلد حيث ملفات السجل ستوضع</lang>
+          <lang id="sv" status="2">Välj den mapp där alla loggfiler placeras</lang>
+          <lang id="zh" status="2">选择文件夹的日志文件将被放置</lang>
+          <lang id="zh.tra" status="2">選擇文件夾的日誌文件將被放置</lang>
+          <lang id="ja" status="2">フォルダを選択しますここでは、ログファイルが置かれる</lang>
+          <lang id="vi" status="2">Chọn thư mục nơi mà các file bản ghi sẽ được đặt</lang>
+          <lang id="th" status="2">เลือกโฟลเดอร์ที่แฟ้มบันทึกจะถูกวางไว้</lang>
+          <lang id="pl" status="2">Wybierz folder, w którym pliki dziennika zostaną umieszczone</lang>
+        </row>
+        <row id="programAlreadyRunning" state="0">
+          <native>Another program seems to be running already...</native>
+          <lang id="en" status="2">Another program seems to be running already...</lang>
+          <lang id="fr" status="2">Un autre programme semble être en cours d'exécution déjà...</lang>
+          <lang id="es" status="2">Otro programa parece estar ya en ejecución...</lang>
+          <lang id="pt" status="2">Outro programa parece estar a correr já...</lang>
+          <lang id="it" status="2">Un altro programma sembra essere già in esecuzione...</lang>
+          <lang id="nl" status="2">Een ander programma lijkt te draaien reeds...</lang>
+          <lang id="de" status="2">Ein anderes Programm scheint zu sein, läuft bereits...</lang>
+          <lang id="ru" status="2">Другая программа, кажется, бежит уже...</lang>
+          <lang id="el" status="2">Ένα άλλο πρόγραμμα, φαίνεται να είναι σε λειτουργία ήδη...</lang>
+          <lang id="ar" status="2">برنامج آخر ويبدو أن إدارة بالفعل...</lang>
+          <lang id="sv" status="2">Annat program tycks vara igång redan...</lang>
+          <lang id="zh" status="2">另一个程序似乎已经运行...</lang>
+          <lang id="zh.tra" status="2">另一個程序似乎已經運行...</lang>
+          <lang id="ja" status="2">もう1つのプログラムが既に実行されているようだ...</lang>
+          <lang id="vi" status="2">Một chương trình có vẻ là đã chạy...</lang>
+          <lang id="th" status="2">โปรแกรมอื่นน่าจะทำงานแล้ว...</lang>
+          <lang id="pl" status="2">Inny program wydaje się być uruchomiony już...</lang>
+        </row>
+        <row id="restoreAsk" state="0">
+          <native>Are you sure?</native>
+          <lang id="en" status="2">Are you sure?</lang>
+          <lang id="fr" status="2">Es-tu sûr?</lang>
+          <lang id="es" status="2">Estás seguro?</lang>
+          <lang id="pt" status="2">Tem certeza?</lang>
+          <lang id="it" status="2">Sei sicuro?</lang>
+          <lang id="nl" status="2">Weet u zeker?</lang>
+          <lang id="de" status="2">Sind Sie sicher,?</lang>
+          <lang id="ru" status="2">Вы уверены, что?</lang>
+          <lang id="el" status="2">Είστε σίγουροι?</lang>
+          <lang id="ar" status="2">هل أنت متأكد?</lang>
+          <lang id="sv" status="2">Är du säker?</lang>
+          <lang id="zh" status="2">你确定?</lang>
+          <lang id="zh.tra" status="2">你確定?</lang>
+          <lang id="ja" status="2">必ずあなたは?</lang>
+          <lang id="vi" status="2">Bạn có chắc chắn?</lang>
+          <lang id="th" status="2">คุณแน่ใจหรือไม่?</lang>
+          <lang id="pl" status="2">Czy na pewno?</lang>
+        </row>
+        <row id="restoreError" state="0">
+          <native>Error restoring registry</native>
+          <lang id="en" status="2">Error restoring registry</lang>
+          <lang id="fr" status="2">Erreur lors de restauration du registre</lang>
+          <lang id="es" status="2">Registro de restauración de error</lang>
+          <lang id="pt" status="2">Erro Registro restauração</lang>
+          <lang id="it" status="2">Errore di ripristino del Registro di sistema</lang>
+          <lang id="nl" status="2">Fout bij het herstellen van het register</lang>
+          <lang id="de" status="2">Error restoring Registrierung</lang>
+          <lang id="ru" status="2">Ошибки восстановления реестра</lang>
+          <lang id="el" status="2">Σφάλμα αποκατάσταση του μητρώου</lang>
+          <lang id="ar" status="2">الخطأ استعادة التسجيل</lang>
+          <lang id="sv" status="2">Fel återställa registret</lang>
+          <lang id="zh" status="2">错误恢复注册表</lang>
+          <lang id="zh.tra" status="2">錯誤恢復註冊表</lang>
+          <lang id="ja" status="2">エラーを復元するレジストリ</lang>
+          <lang id="vi" status="2">Lỗi phục hồi registry</lang>
+          <lang id="th" status="2">ข้อผิดพลาดของรีจิสทรีคืน</lang>
+          <lang id="pl" status="2">Błąd przywracania rejestru</lang>
+        </row>
+        <row id="restoreRestored" state="0">
+          <native>Successfully restored registry</native>
+          <lang id="en" status="2">Successfully restored registry</lang>
+          <lang id="fr" status="2">Registre restauré avec succès</lang>
+          <lang id="es" status="2">Registro restaurado con éxito</lang>
+          <lang id="pt" status="2">Restaurado com êxito do registo</lang>
+          <lang id="it" status="2">Ripristinato con successo del Registro di sistema</lang>
+          <lang id="nl" status="2">Succesvol hersteld register</lang>
+          <lang id="de" status="2">Erfolgreich wiederhergestellt Registrierung</lang>
+          <lang id="ru" status="2">Удалось восстановить реестр</lang>
+          <lang id="el" status="2">Επιτυχώς αποκατασταθεί μητρώου</lang>
+          <lang id="ar" status="2">بنجاح استعادة التسجيل</lang>
+          <lang id="sv" status="2">Återställts register</lang>
+          <lang id="zh" status="2">成功地恢复注册表</lang>
+          <lang id="zh.tra" status="2">成功地恢復註冊表</lang>
+          <lang id="ja" status="2">正常に、レジストリの復元</lang>
+          <lang id="vi" status="2">Thành công phục hồi registry</lang>
+          <lang id="th" status="2">บูรณะเรียบร้อยสตรี</lang>
+          <lang id="pl" status="2">Pomyślnie przywrócić rejestr</lang>
+        </row>
+        <row id="scanDlgExit" state="0">
+          <native>Are you sure?</native>
+          <lang id="en" status="2">Are you sure?</lang>
+          <lang id="fr" status="2">Es-tu sûr?</lang>
+          <lang id="es" status="2">Estás seguro?</lang>
+          <lang id="pt" status="2">Tem certeza?</lang>
+          <lang id="it" status="2">Sei sicuro?</lang>
+          <lang id="nl" status="2">Weet u zeker?</lang>
+          <lang id="de" status="2">Sind Sie sicher,?</lang>
+          <lang id="ru" status="2">Вы уверены, что?</lang>
+          <lang id="el" status="2">Είστε σίγουροι?</lang>
+          <lang id="ar" status="2">هل أنت متأكد?</lang>
+          <lang id="sv" status="2">Är du säker?</lang>
+          <lang id="zh" status="2">你确定?</lang>
+          <lang id="zh.tra" status="2">你確定?</lang>
+          <lang id="ja" status="2">必ずあなたは?</lang>
+          <lang id="vi" status="2">Bạn có chắc chắn?</lang>
+          <lang id="th" status="2">คุณแน่ใจหรือไม่?</lang>
+          <lang id="pl" status="2">Czy na pewno?</lang>
+        </row>
+        <row id="scanDlgProgressBarScanning" state="0">
+          <native>Scanning: </native>
+          <lang id="en" status="2">Scanning: </lang>
+          <lang id="fr" status="2">L'analyse: </lang>
+          <lang id="es" status="2">Análisis: </lang>
+          <lang id="pt" status="2">Digitalização: </lang>
+          <lang id="it" status="2">Scansione: </lang>
+          <lang id="de" status="2">Scanning: </lang>
+          <lang id="ru" status="2">Сканирование: </lang>
+          <lang id="el" status="2">Σάρωση: </lang>
+          <lang id="ar" status="2">المسح الضوئي: </lang>
+          <lang id="sv" status="2">Scanning: </lang>
+          <lang id="zh" status="2">扫描: </lang>
+          <lang id="zh.tra" status="2">掃描: </lang>
+          <lang id="ja" status="2">スキャン: </lang>
+          <lang id="vi" status="2">Scanning: </lang>
+          <lang id="th" status="2">สแกน: </lang>
+          <lang id="pl" status="2">Skanowanie: </lang>
+        </row>
+        <row id="smCannotFindFile" state="0">
+          <native>The file could not be found</native>
+          <lang id="en" status="2">The file could not be found</lang>
+          <lang id="fr" status="2">Le fichier n'a pas pu être trouvé.</lang>
+          <lang id="es" status="2">No se encontró el archivo</lang>
+          <lang id="pt" status="2">O arquivo não pôde ser encontrado</lang>
+          <lang id="it" status="2">Il file non è stato trovato</lang>
+          <lang id="nl" status="2">Het bestand kan niet worden gevonden</lang>
+          <lang id="de" status="2">Die Datei konnte nicht gefunden werden</lang>
+          <lang id="ru" status="2">Файл не может быть найден</lang>
+          <lang id="el" status="2">Το αρχείο δεν θα μπορούσε να βρεθεί</lang>
+          <lang id="ar" status="2">الملف لا يمكن العثور على</lang>
+          <lang id="sv" status="2">Filen kunde inte hittas</lang>
+          <lang id="zh" status="2">该文件找不到</lang>
+          <lang id="zh.tra" status="2">該文件找不到</lang>
+          <lang id="ja" status="2">ファイルが見つかりませんでした</lang>
+          <lang id="vi" status="2">Các tập tin không thể tìm được</lang>
+          <lang id="th" status="2">ไฟล์ไม่พบ</lang>
+          <lang id="pl" status="2">Plik nie może być uznana za</lang>
+        </row>
+        <row id="smEmptyName" state="0">
+          <native>Shortcut/Value name cannot be empty</native>
+          <lang id="en" status="2">Shortcut/Value name cannot be empty</lang>
+          <lang id="fr" status="2">Le nom du raccourci/valeur ne peut pas être vide</lang>
+          <lang id="es" status="2">El nombre de método abreviado/valor no puede estar vacío</lang>
+          <lang id="pt" status="2">Atalho / nome do valor não pode ser vazio</lang>
+          <lang id="it" status="2">Di scelta rapida / Nome valore non può essere vuoto</lang>
+          <lang id="nl" status="2">Shortcut / Waarde naam mag niet leeg zijn</lang>
+          <lang id="de" status="2">Shortcut / Wert-Name kann nicht leer sein</lang>
+          <lang id="ru" status="2">Ярлык / Значение имени не может быть пустым</lang>
+          <lang id="el" status="2">Συντόμευση / όνομα αξία δεν μπορεί να είναι κενή</lang>
+          <lang id="ar" status="2">الاختصار / اسم القيمة لا يمكن أن تكون فارغة</lang>
+          <lang id="sv" status="2">Genväg / Value namn kan inte vara tom</lang>
+          <lang id="zh" status="2">快捷键/值名称不能为空</lang>
+          <lang id="zh.tra" status="2">快捷鍵/值名稱不能為空</lang>
+          <lang id="ja" status="2">ショートカット/値の名前を空にすることはできません</lang>
+          <lang id="vi" status="2">Shortcut / Giá trị tên không thể để trống</lang>
+          <lang id="th" status="2">ทางลัด / ชื่อ Value ไม่ว่างเปล่า</lang>
+          <lang id="pl" status="2">Skrót / nazwa wartości nie może być puste</lang>
+        </row>
+        <row id="smEmptyPath" state="0">
+          <native>File path cannot be empty</native>
+          <lang id="en" status="2">File path cannot be empty</lang>
+          <lang id="fr" status="2">Chemin d'accès du fichier ne peut pas être vide</lang>
+          <lang id="es" status="2">Ruta del archivo no puede estar vacía</lang>
+          <lang id="pt" status="2">Caminho do arquivo não pode estar vazio</lang>
+          <lang id="it" status="2">Percorso di file non può essere vuoto</lang>
+          <lang id="nl" status="2">Bestand pad kan niet leeg zijn</lang>
+          <lang id="de" status="2">Dateipfad darf nicht leer sein</lang>
+          <lang id="ru" status="2">Путь к файлу не может быть пустым</lang>
+          <lang id="el" status="2">Φάκελος διαδρομή δεν μπορεί να είναι κενή</lang>
+          <lang id="ar" status="2">مسار الملف لا يمكن أن تكون فارغة</lang>
+          <lang id="sv" status="2">Sökväg kan inte vara tom</lang>
+          <lang id="zh" status="2">文件路径不能为空</lang>
+          <lang id="zh.tra" status="2">文件路徑不能為空</lang>
+          <lang id="ja" status="2">ファイルのパスを空にすることはできません</lang>
+          <lang id="vi" status="2">File đường dẫn không thể để trống</lang>
+          <lang id="th" status="2">เส้นทางของไฟล์ไม่สามารถว่างเปล่า</lang>
+          <lang id="pl" status="2">Ścieżka pliku nie może być pusta</lang>
+        </row>
+        <row id="smRan" state="0">
+          <native>Attempted to run:</native>
+          <lang id="en" status="2">Attempted to run:</lang>
+          <lang id="fr" status="2">Tentative d'exécution:</lang>
+          <lang id="es" status="2">Ha intentado ejecutar:</lang>
+          <lang id="pt" status="2">Tentativa de executar:</lang>
+          <lang id="it" status="2">Tentato di eseguire:</lang>
+          <lang id="nl" status="2">Poging lopen:</lang>
+          <lang id="de" status="2">Es wurde versucht, zu laufen:</lang>
+          <lang id="ru" status="2">Попытался бежать:</lang>
+          <lang id="el" status="2">Προσπάθησε να τρέχει:</lang>
+          <lang id="ar" status="2">حاول تشغيل:</lang>
+          <lang id="sv" status="2">Försökte köra:</lang>
+          <lang id="zh" status="2">试图运行:</lang>
+          <lang id="zh.tra" status="2">試圖運行:</lang>
+          <lang id="ja" status="2">を実行しようとしました:</lang>
+          <lang id="vi" status="2">Cố gắng để chạy:</lang>
+          <lang id="th" status="2">พยายามใช้:</lang>
+          <lang id="pl" status="2">Próbowano uruchomić:</lang>
+        </row>
+        <row id="smRemove" state="0">
+          <native>Are you sure you want to remove this startup program?</native>
+          <lang id="en" status="2">Are you sure you want to remove this startup program?</lang>
+          <lang id="fr" status="2">Vous êtes certain de que vouloir supprimer ce programme de démarrage?</lang>
+          <lang id="es" status="2">Está seguro de que desea quitar este programa de inicio?</lang>
+          <lang id="pt" status="2">Tem certeza de que deseja remover este programa de inicialização?</lang>
+          <lang id="it" status="2">Sei sicuro di voler rimuovere questo programma di avvio?</lang>
+          <lang id="nl" status="2">Weet u zeker dat u dit wilt opstarten programma te verwijderen?</lang>
+          <lang id="de" status="2">Sind Sie sicher, dass Sie diese Start-Programm zu entfernen?</lang>
+          <lang id="ru" status="2">Вы уверены, что хотите удалить эту программу запуска?</lang>
+          <lang id="el" status="2">Είστε σίγουροι ότι θέλετε να καταργήσετε αυτό το πρόγραμμα εκκίνησης?</lang>
+          <lang id="ar" status="2">هل أنت متأكد من أنك تريد إزالة هذا البرنامج بدء التشغيل?</lang>
+          <lang id="sv" status="2">Är du säker på att du vill ta bort startprogram?</lang>
+          <lang id="zh" status="2">您确定要删除此启动程序?</lang>
+          <lang id="zh.tra" status="2">您確定要刪除此啟動程序?</lang>
+          <lang id="ja" status="2">あなたがこのスタートアッププログラムを削除してもよろしいですか?</lang>
+          <lang id="vi" status="2">Bạn có chắc bạn muốn loại bỏ chương trình này khởi động?</lang>
+          <lang id="th" status="2">คุณแน่ใจหรือว่าต้องการลบโปรแกรมเริ่มต้นนี้?</lang>
+          <lang id="pl" status="2">Czy na pewno chcesz usunąć ten program startowy?</lang>
+        </row>
+        <row id="smRemoved" state="0">
+          <native>Removed selected startup program</native>
+          <lang id="en" status="2">Removed selected startup program</lang>
+          <lang id="fr" status="2">Supprimé le programme de démarrage sélectionnés</lang>
+          <lang id="es" status="2">Programa de inicio seleccionado eliminado</lang>
+          <lang id="pt" status="2">Removido programa de inicialização selecionado</lang>
+          <lang id="it" status="2">Rimosso programma di avvio selezionato</lang>
+          <lang id="nl" status="2">Removed geselecteerde opstarten programma</lang>
+          <lang id="de" status="2">Removed Startup-Programm ausgewählt</lang>
+          <lang id="ru" status="2">Удалено выбранных запуске программы</lang>
+          <lang id="el" status="2">Αφαιρέθηκε επιλεγμένο πρόγραμμα εκκίνησης</lang>
+          <lang id="ar" status="2">إزالة مختارة بدء البرنامج</lang>
+          <lang id="sv" status="2">Valt bort startprogram</lang>
+          <lang id="zh" status="2">删除选定的启动程序</lang>
+          <lang id="zh.tra" status="2">刪除選定的啟動程序</lang>
+          <lang id="ja" status="2">削除選択されたスタートアッププログラム</lang>
+          <lang id="vi" status="2">Bỏ chọn khởi động chương trình</lang>
+          <lang id="th" status="2">โปรแกรม startup ลบที่เลือก</lang>
+          <lang id="pl" status="2">Usunięto wybranego programu startowego</lang>
+        </row>
+        <row id="smRun" state="0">
+          <native>Are you sure you want to run this program?</native>
+          <lang id="en" status="2">Are you sure you want to run this program?</lang>
+          <lang id="fr" status="2">Vous êtes vraiment exécuter ce programme.?</lang>
+          <lang id="es" status="2">Está seguro de que desea ejecutar este programa?</lang>
+          <lang id="pt" status="2">Tem certeza de que deseja executar este programa?</lang>
+          <lang id="it" status="2">Sei sicuro di voler eseguire il programma?</lang>
+          <lang id="nl" status="2">Weet u zeker dat u dit programma uitvoert?</lang>
+          <lang id="de" status="2">Sind Sie sicher, dass Sie dieses Programm ausführen?</lang>
+          <lang id="ru" status="2">Вы действительно хотите запустить эту программу?</lang>
+          <lang id="el" status="2">Είστε σίγουροι ότι θέλετε να εκτελέσετε αυτό το πρόγραμμα?</lang>
+          <lang id="ar" status="2">هل أنت متأكد من أنك تريد تشغيل هذا البرنامج?</lang>
+          <lang id="sv" status="2">Är du säker på att du vill köra programmet?</lang>
+          <lang id="zh" status="2">你确定要运行此程序?</lang>
+          <lang id="zh.tra" status="2">你確定要運行此程序?</lang>
+          <lang id="ja" status="2">あなたがこのプログラムを実行してもよろしいですか?</lang>
+          <lang id="vi" status="2">Bạn có chắc chắn muốn chạy chương trình này?</lang>
+          <lang id="th" status="2">คุณแน่ใจหรือว่าต้องการใช้โปรแกรมนี้?</lang>
+          <lang id="pl" status="2">Czy na pewno chcesz uruchomić ten program?</lang>
+        </row>
+        <row id="umForceUninstall" state="0">
+          <native>Are you sure you want to remove this program from the registry?</native>
+          <lang id="en" status="2">Are you sure you want to remove this program from the registry?</lang>
+          <lang id="fr" status="2">Vous êtes certain de que vouloir supprimer ce programme dans le registre?</lang>
+          <lang id="es" status="2">Está seguro de que desea quitar este programa desde el registro?</lang>
+          <lang id="pt" status="2">Tem certeza que deseja remover este programa a partir do registo?</lang>
+          <lang id="it" status="2">Sei sicuro di voler rimuovere questo programma dal Registro di sistema?</lang>
+          <lang id="nl" status="2">Weet u zeker dat u dit programma te verwijderen uit het register?</lang>
+          <lang id="de" status="2">Sind Sie sicher, dass Sie dieses Programm aus der Registrierung entfernen?</lang>
+          <lang id="ru" status="2">Вы уверены, что хотите удалить эту программу из реестра?</lang>
+          <lang id="el" status="2">Είστε σίγουροι ότι θέλετε να καταργήσετε αυτό το πρόγραμμα από το μητρώο?</lang>
+          <lang id="ar" status="2">هل أنت متأكد من أنك تريد إزالة هذا البرنامج من التسجيل?</lang>
+          <lang id="sv" status="2">Är du säker på att du vill ta bort programmet från registret?</lang>
+          <lang id="zh" status="2">你确定要从注册表中删除该程序?</lang>
+          <lang id="zh.tra" status="2">您確定要刪除該程序從註冊表?</lang>
+          <lang id="ja" status="2">あなたは、レジストリからこのプログラムを削除してもよろしいですか?</lang>
+          <lang id="vi" status="2">Bạn có chắc bạn muốn loại bỏ chương trình này từ registry?</lang>
+          <lang id="th" status="2">คุณแน่ใจหรือว่าต้องการลบโปรแกรมนี้ออกจากรีจิสทรี?</lang>
+          <lang id="pl" status="2">Czy na pewno chcesz usunąć ten program z rejestru?</lang>
+        </row>
+        <row id="umSearchText" state="0">
+          <native>Search by name</native>
+          <lang id="en" status="2">Search by name</lang>
+          <lang id="fr" status="2">Recherche par nom</lang>
+          <lang id="es" status="2">Buscar por nombre</lang>
+          <lang id="pt" status="2">Pesquisar por nome</lang>
+          <lang id="it" status="2">Ricerca per nome</lang>
+          <lang id="nl" status="2">Zoeken op naam</lang>
+          <lang id="de" status="2">Suche nach Namen</lang>
+          <lang id="ru" status="2">Поиск по названию</lang>
+          <lang id="el" status="2">Αναζήτηση με βάση το όνομα</lang>
+          <lang id="ar" status="2">البحث حسب الاسم</lang>
+          <lang id="sv" status="2">Söka efter namn</lang>
+          <lang id="zh" status="2">按姓名搜索</lang>
+          <lang id="zh.tra" status="2">按名稱搜索</lang>
+          <lang id="ja" status="2">名前で検索</lang>
+          <lang id="vi" status="2">Tìm kiếm theo tên</lang>
+          <lang id="th" status="2">ค้นหาโดยใช้ชื่อ</lang>
+          <lang id="pl" status="2">Szukaj wg nazwy</lang>
+        </row>
+        <row id="umUninstall" state="0">
+          <native>Are you sure you want to uninstall this program?</native>
+          <lang id="en" status="2">Are you sure you want to uninstall this program?</lang>
+          <lang id="fr" status="2">Vous souhaitez désinstaller ce programme vraiment?</lang>
+          <lang id="es" status="2">¿Estás seguro de que desea desinstalar este programa?</lang>
+          <lang id="pt" status="2">Tem certeza que pretende desinstalar este programa?</lang>
+          <lang id="it" status="2">Sei sicuro di voler disinstallare questo programma?</lang>
+          <lang id="nl" status="2">Weet u zeker dat u dit programma verwijderen?</lang>
+          <lang id="de" status="2">Sind Sie sicher, dass Sie dieses Programm deinstallieren?</lang>
+          <lang id="ru" status="2">Вы уверены, что хотите удалить эту программу?</lang>
+          <lang id="el" status="2">Είστε σίγουροι ότι θέλετε να καταργήσετε την εγκατάσταση αυτού του προγράμματος?</lang>
+          <lang id="ar" status="2">هل أنت متأكد من أنك تريد إلغاء تثبيت هذا البرنامج?</lang>
+          <lang id="sv" status="2">Är du säker på att du vill avinstallera programmet?</lang>
+          <lang id="zh" status="2">您确定要卸载此程序?</lang>
+          <lang id="zh.tra" status="2">您確定要卸載此程序?</lang>
+          <lang id="ja" status="2">あなたがこのプログラムをアンインストールしてもよろしいですか?</lang>
+          <lang id="vi" status="2">Bạn có chắc là bạn muốn bỏ cài đặt chương trình này?</lang>
+          <lang id="th" status="2">คุณแน่ใจหรือว่าต้องการยกเลิกการติดตั้งโปรแกรมนี้?</lang>
+          <lang id="pl" status="2">Czy na pewno chcesz odinstalować ten program?</lang>
+        </row>
+        <row id="updateLatest" state="0">
+          <native>You have the latest version</native>
+          <lang id="en" status="2">You have the latest version</lang>
+          <lang id="fr" status="2">Vous avez la dernière version.</lang>
+          <lang id="es" status="2">Usted tiene la última versión</lang>
+          <lang id="pt" status="2">Você tem a versão mais recente</lang>
+          <lang id="it" status="2">Hai l'ultima versione</lang>
+          <lang id="nl" status="2">U hebt de laatste versie</lang>
+          <lang id="de" status="2">Sie haben die neueste Version</lang>
+          <lang id="ru" status="2">У Вас есть последняя версия</lang>
+          <lang id="el" status="2">Έχετε την πιο πρόσφατη έκδοση</lang>
+          <lang id="ar" status="2">لديك أحدث إصدار</lang>
+          <lang id="sv" status="2">Du har den senaste versionen</lang>
+          <lang id="zh" status="2">您有最新版本</lang>
+          <lang id="zh.tra" status="2">您有最新版本</lang>
+          <lang id="ja" status="2">現在の最新バージョンがある</lang>
+          <lang id="vi" status="2">Bạn có phiên bản mới nhất</lang>
+          <lang id="th" status="2">คุณมีรุ่นล่าสุด</lang>
+          <lang id="pl" status="2">Masz najnowszą wersję</lang>
+        </row>
+        <row id="updateNewer" state="0">
+          <native>Newer version available</native>
+          <lang id="en" status="2">Newer version available</lang>
+          <lang id="fr" status="2">Une version plus récente disponible</lang>
+          <lang id="es" status="2">La versión más reciente disponible</lang>
+          <lang id="pt" status="2">Versão mais recente disponível</lang>
+          <lang id="it" status="2">Nuova versione disponibile</lang>
+          <lang id="nl" status="2">Nieuwere versie beschikbaar</lang>
+          <lang id="de" status="2">Neuere Version verfügbar</lang>
+          <lang id="ru" status="2">Новые версии доступны</lang>
+          <lang id="el" status="2">Νεότερη έκδοση διαθέσιμη</lang>
+          <lang id="ar" status="2">أحدث نسخة متوفرة</lang>
+          <lang id="sv" status="2">Nyare version tillgänglig</lang>
+          <lang id="zh" status="2">较新的版本可用</lang>
+          <lang id="zh.tra" status="2">較新的版本可用</lang>
+          <lang id="ja" status="2">新しいバージョンが利用可能</lang>
+          <lang id="vi" status="2">Mơi hơn phiên bản sẵn sàng</lang>
+          <lang id="th" status="2">รุ่นใหม่มี</lang>
+          <lang id="pl" status="2">Wersja dostępna Nowsze</lang>
         </row>
       </node>
       <node class="TNetStringNode" name="Little_Registry_Cleaner.Scanners.Strings" state="0">
@@ -5483,13 +6243,13 @@
         <row id="ApplicationPaths" state="0">
           <native>Application Paths</native>
           <lang id="en" status="2">Application Paths</lang>
-          <lang id="fr" status="2">Application Paths</lang>
+          <lang id="fr" date="20091102204651" status="3">Application tracés</lang>
           <lang id="es" status="2">Rutas de aplicación</lang>
-          <lang id="pt" status="2">Application Paths</lang>
-          <lang id="it" status="2">Application Paths</lang>
-          <lang id="nl" status="2">Application Paths</lang>
-          <lang id="de" status="2">Application Paths</lang>
-          <lang id="ru" status="2">Application Paths</lang>
+          <lang id="pt" date="20091102204759" status="3">Planos de aplicação</lang>
+          <lang id="it" date="20091102204538" status="3">Percorsi di applicazione</lang>
+          <lang id="nl" date="20091102204934" status="3">Toepassings paden</lang>
+          <lang id="de" date="20091102205009" status="3">Anwendung-Pfade</lang>
+          <lang id="ru" date="20091102205205" status="3">Пути применения</lang>
           <lang id="el" status="2">Εφαρμογή Μονοπάτια</lang>
           <lang id="ar" status="2">تطبيق المسارات</lang>
           <lang id="sv" status="2">Ansökan Paths</lang>
@@ -5498,7 +6258,7 @@
           <lang id="ja" status="2">アプリケーションのパス</lang>
           <lang id="vi" status="2">Đơn Path</lang>
           <lang id="th" status="2">เส้นทาง Application</lang>
-          <lang id="pl" status="2">Application Paths</lang>
+          <lang id="pl" date="20091102210407" status="3">Ścieżki aplikacji</lang>
         </row>
         <row id="ApplicationSettings" state="0">
           <native>Application Settings</native>
@@ -5507,7 +6267,7 @@
           <lang id="es" status="2">Configuración de la aplicación</lang>
           <lang id="pt" status="2">Configurações do aplicativo</lang>
           <lang id="it" status="2">Impostazioni applicazione</lang>
-          <lang id="nl" status="2">Application Settings</lang>
+          <lang id="nl" date="20091102204918" status="3">Toepassings instellingen</lang>
           <lang id="de" status="2">Anwendungseinstellungen</lang>
           <lang id="ru" status="2">Настройки приложения</lang>
           <lang id="el" status="2">Ρυθμίσεις εφαρμογής</lang>
@@ -5776,7 +6536,7 @@
           <lang id="zh" status="2">最近的文档</lang>
           <lang id="zh.tra" status="2">最近的文檔</lang>
           <lang id="ja" status="2">最近の資料</lang>
-          <lang id="vi" status="2">Recent Documents</lang>
+          <lang id="vi" date="20091102210028" status="3">Những tài liệu Gần đây</lang>
           <lang id="th" status="2">เอกสารล่าสุด</lang>
           <lang id="pl" status="2">Ostatnie dokumenty</lang>
         </row>
@@ -5796,7 +6556,7 @@
           <lang id="zh" status="2">共享DLL</lang>
           <lang id="zh.tra" status="2">共享DLL</lang>
           <lang id="ja" status="2">共有DLL</lang>
-          <lang id="vi" status="2">Shared DLLs</lang>
+          <lang id="vi" date="20091102210012" status="3">DLLs Dùng chung</lang>
           <lang id="th" status="2">กำลังร่วมกัน</lang>
           <lang id="pl" status="2">Współdzielone biblioteki DLL</lang>
         </row>
@@ -5816,7 +6576,7 @@
           <lang id="zh" status="2">启动文件</lang>
           <lang id="zh.tra" status="2">開機檔案</lang>
           <lang id="ja" status="2">起動ファイル</lang>
-          <lang id="vi" status="2">Startup Files</lang>
+          <lang id="vi" date="20091102205954" status="3">Những hồ sơ Khởi động</lang>
           <lang id="th" status="2">เริ่มต้นระบบแฟ้ม</lang>
           <lang id="pl" status="2">Pliki startowe</lang>
         </row>
@@ -5856,7 +6616,7 @@
           <lang id="zh" status="2">Windows字体</lang>
           <lang id="zh.tra" status="2">Windows字體</lang>
           <lang id="ja" status="2">Windowsフォント</lang>
-          <lang id="vi" status="2">Windows Fonts</lang>
+          <lang id="vi" date="20091102205808" status="3">Phông Windows</lang>
           <lang id="th" status="2">อักษร Windows</lang>
           <lang id="pl" status="2">Czcionki systemowe</lang>
         </row>
@@ -5877,7 +6637,7 @@
           <lang id="zh.tra" status="2">Windows幫助文件</lang>
           <lang id="ja" status="2">Windowsのヘルプファイル</lang>
           <lang id="vi" status="2">Windows Trợ giúp Files</lang>
-          <lang id="th" status="2">Windows Files Help</lang>
+          <lang id="th" date="20091102210300" status="3">แฟ้มวิธีใช้ windows</lang>
           <lang id="pl" status="2">Pliki Pomocy systemu Windows</lang>
         </row>
         <row id="WindowsSounds" state="0">
@@ -5885,24 +6645,22 @@
           <lang id="en" status="2">Windows Sounds</lang>
           <lang id="fr" status="2">Sons de Windows</lang>
           <lang id="es" status="2">Sonidos de Windows</lang>
-          <lang id="pt" status="2">Windows Sounds</lang>
-          <lang id="it" status="2">Windows Sounds</lang>
-          <lang id="nl" status="2">Windows Sounds</lang>
-          <lang id="de" status="2">Windows-Sounds</lang>
-          <lang id="ru" status="2">Windows Sounds</lang>
-          <lang id="el" status="2">Windows Sounds</lang>
+          <lang id="pt" date="20091102204823" status="3">Sons do Windows</lang>
+          <lang id="it" date="20091102204513" status="3">Suoni di Windows</lang>
+          <lang id="nl" date="20091102204856" status="3">Windows geluiden</lang>
+          <lang id="de" date="20091102205118" status="3">Windows-Töne</lang>
+          <lang id="ru" date="20091102205142" status="3">Звуки Windows</lang>
+          <lang id="el" date="20091102205255" status="3">Ήχοι παραθύρων</lang>
           <lang id="ar" status="2">نوافذ الأصوات</lang>
-          <lang id="sv" status="2">Windows Sounds</lang>
+          <lang id="sv" date="20091102205356" status="3">Windows-ljud</lang>
           <lang id="zh" status="2">视窗声音</lang>
           <lang id="zh.tra" status="2">視窗聲音</lang>
           <lang id="ja" status="2">Windowsのサウンド</lang>
-          <lang id="vi" status="2">Windows Sounds</lang>
+          <lang id="vi" date="20091102205706" status="3">Những âm thanh Windows</lang>
           <lang id="th" status="2">Windows เสียง</lang>
-          <lang id="pl" status="2">Windows Sounds</lang>
+          <lang id="pl" date="20091102210340" status="3">Dźwięki systemu Windows</lang>
         </row>
       </node>
     </node>
   </source>
-  <dictionaries>
-  </dictionaries>
 </document>

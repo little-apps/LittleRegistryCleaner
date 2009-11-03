@@ -117,73 +117,118 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ActivexComObjects" xml:space="preserve">
-    <value>ActiveX Objects / COM</value>
+  <data name="crashReporterFail" xml:space="preserve">
+    <value>รายงานบักไม่สามารถส่ง</value>
   </data>
-  <data name="ApplicationInfo" xml:space="preserve">
-    <value>ข้อมูลการสมัคร</value>
+  <data name="crashReporterSuccess" xml:space="preserve">
+    <value>รายงานข้อบกพร่องที่ส่งสำเร็จ</value>
   </data>
-  <data name="ApplicationPaths" xml:space="preserve">
-    <value>เส้นทาง Application</value>
+  <data name="mainAddExcludeEntry" xml:space="preserve">
+    <value>เพิ่มเลือกรีจิสทรีคีย์ที่ไม่รวมรายการ</value>
   </data>
-  <data name="ApplicationSettings" xml:space="preserve">
-    <value>การตั้งค่าการสมัคร</value>
+  <data name="mainAskExit" xml:space="preserve">
+    <value>คุณแน่ใจหรือว่าต้องการออก?</value>
   </data>
-  <data name="InvalidFile" xml:space="preserve">
-    <value>ไฟล์ไม่ถูกต้องหรือโฟลเดอร์</value>
+  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
+    <value>นี้เป็นครั้งแรกของคุณทำงาน Little Registry Cleaner.\r\n คุณต้องการสร้างจุด restore point?</value>
   </data>
-  <data name="InvalidFileExt" xml:space="preserve">
-    <value>ไม่ได้ใช้ Extension File</value>
+  <data name="mainInvalidHelpFile" xml:space="preserve">
+    <value>ไม่พบ Little Registry Cleaner.chm</value>
   </data>
-  <data name="InvalidInprocServer" xml:space="preserve">
-    <value>ไม่พบ InprocServer</value>
+  <data name="mainProblemsFix" xml:space="preserve">
+    <value>คุณต้องการที่จะแก้ไขปัญหาที่เลือกทั้งหมด?</value>
   </data>
-  <data name="InvalidInprocServer32" xml:space="preserve">
-    <value>ไม่พบ InprocServer32</value>
+  <data name="mainProblemsRemoved" xml:space="preserve">
+    <value>ปัญหาออกจากรีจิสทรี</value>
   </data>
-  <data name="InvalidProgIDFileExt" xml:space="preserve">
-    <value>ไม่ได้ใช้ ProgID / File Extension</value>
+  <data name="mainScanningAborted" xml:space="preserve">
+    <value>Aborted สแกนรีจิสทรี</value>
   </data>
-  <data name="InvalidRegKey" xml:space="preserve">
-    <value>คีย์รีจิสทรีไม่ถูกต้อง</value>
+  <data name="mainScanningFinished" xml:space="preserve">
+    <value>เสร็จสิ้นการสแกนรีจิสทรี</value>
   </data>
-  <data name="InvalidToolbar" xml:space="preserve">
-    <value>แถบเครื่องมือไม่ถูกต้อง</value>
+  <data name="mainSelectSections" xml:space="preserve">
+    <value>โปรดเลือกส่วนที่จะสแกน</value>
   </data>
-  <data name="MissingAppID" xml:space="preserve">
-    <value>อ้างอิงไม่มี AppID</value>
+  <data name="mainUpdateAsk" xml:space="preserve">
+    <value>เวอร์ชันใหม่มี. คุณต้องการดาวน์โหลด?</value>
   </data>
-  <data name="MissingCLSID" xml:space="preserve">
-    <value>อ้างอิงไม่มี CLSID</value>
+  <data name="needAdmin" xml:space="preserve">
+    <value>คุณต้องเป็นผู้ดูแลระบบเพื่อรันโปรแกรมนี้</value>
   </data>
-  <data name="MissingProgID" xml:space="preserve">
-    <value>อ้างอิงไม่มี ProgID</value>
+  <data name="optionsExcludeDir" xml:space="preserve">
+    <value>เลือกโฟลเดอร์ที่จะออกจากรีจิสทรีสแกน</value>
   </data>
-  <data name="NoRegKey" xml:space="preserve">
-    <value>คีย์รีจิสทรีไม่มีข้อมูลใดๆ</value>
+  <data name="optionsExcludeEmptyRegPath" xml:space="preserve">
+    <value>เส้นทาง Registry ไม่ว่างเปล่า</value>
   </data>
-  <data name="ObsoleteRegKey" xml:space="preserve">
-    <value>คีย์รีจิสทรีเลิกใช้</value>
+  <data name="optionsExcludeFile" xml:space="preserve">
+    <value>เลือกไฟล์ที่จะไม่รวมรีจิสทรีสแกน</value>
   </data>
-  <data name="RecentDocs" xml:space="preserve">
-    <value>เอกสารล่าสุด</value>
+  <data name="optionsExcludeInvalidRegPath" xml:space="preserve">
+    <value>รีจิสทรีคีย์ที่ระบุไม่มี</value>
   </data>
-  <data name="SharedDLLs" xml:space="preserve">
-    <value>กำลังร่วมกัน</value>
+  <data name="optionsExcludeRemove" xml:space="preserve">
+    <value>คุณแน่ใจหรือไม่?</value>
   </data>
-  <data name="StartupFiles" xml:space="preserve">
-    <value>ไฟล์ Startup</value>
+  <data name="optionsSelectBackupDir" xml:space="preserve">
+    <value>เลือกโฟลเดอร์ที่แฟ้มสำรองจะถูกวางไว้</value>
   </data>
-  <data name="SystemDrivers" xml:space="preserve">
-    <value>โปรแกรมควบคุมระบบ</value>
+  <data name="optionsSelectLogDir" xml:space="preserve">
+    <value>เลือกโฟลเดอร์ที่แฟ้มบันทึกจะถูกวางไว้</value>
   </data>
-  <data name="WindowsFonts" xml:space="preserve">
-    <value>อักษร Windows</value>
+  <data name="programAlreadyRunning" xml:space="preserve">
+    <value>โปรแกรมอื่นน่าจะทำงานแล้ว...</value>
   </data>
-  <data name="WindowsHelpFiles" xml:space="preserve">
-    <value>Windows Files Help</value>
+  <data name="restoreAsk" xml:space="preserve">
+    <value>คุณแน่ใจหรือไม่?</value>
   </data>
-  <data name="WindowsSounds" xml:space="preserve">
-    <value>Windows เสียง</value>
+  <data name="restoreError" xml:space="preserve">
+    <value>ข้อผิดพลาดของรีจิสทรีคืน</value>
+  </data>
+  <data name="restoreRestored" xml:space="preserve">
+    <value>บูรณะเรียบร้อยสตรี</value>
+  </data>
+  <data name="scanDlgExit" xml:space="preserve">
+    <value>คุณแน่ใจหรือไม่?</value>
+  </data>
+  <data name="scanDlgProgressBarScanning" xml:space="preserve">
+    <value>สแกน: </value>
+  </data>
+  <data name="smCannotFindFile" xml:space="preserve">
+    <value>ไฟล์ไม่พบ</value>
+  </data>
+  <data name="smEmptyName" xml:space="preserve">
+    <value>ทางลัด / ชื่อ Value ไม่ว่างเปล่า</value>
+  </data>
+  <data name="smEmptyPath" xml:space="preserve">
+    <value>เส้นทางของไฟล์ไม่สามารถว่างเปล่า</value>
+  </data>
+  <data name="smRan" xml:space="preserve">
+    <value>พยายามใช้:</value>
+  </data>
+  <data name="smRemove" xml:space="preserve">
+    <value>คุณแน่ใจหรือว่าต้องการลบโปรแกรมเริ่มต้นนี้?</value>
+  </data>
+  <data name="smRemoved" xml:space="preserve">
+    <value>โปรแกรม startup ลบที่เลือก</value>
+  </data>
+  <data name="smRun" xml:space="preserve">
+    <value>คุณแน่ใจหรือว่าต้องการใช้โปรแกรมนี้?</value>
+  </data>
+  <data name="umForceUninstall" xml:space="preserve">
+    <value>คุณแน่ใจหรือว่าต้องการลบโปรแกรมนี้ออกจากรีจิสทรี?</value>
+  </data>
+  <data name="umSearchText" xml:space="preserve">
+    <value>ค้นหาโดยใช้ชื่อ</value>
+  </data>
+  <data name="umUninstall" xml:space="preserve">
+    <value>คุณแน่ใจหรือว่าต้องการยกเลิกการติดตั้งโปรแกรมนี้?</value>
+  </data>
+  <data name="updateLatest" xml:space="preserve">
+    <value>คุณมีรุ่นล่าสุด</value>
+  </data>
+  <data name="updateNewer" xml:space="preserve">
+    <value>รุ่นใหม่มี</value>
   </data>
 </root>
