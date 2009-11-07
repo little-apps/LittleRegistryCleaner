@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(About));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.labelBuildTime = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.linkLabelAuthor = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
@@ -45,8 +43,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.labelBuildTime);
-            this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.linkLabelAuthor);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.richTextBox1);
@@ -55,19 +51,6 @@
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
-            // 
-            // labelBuildTime
-            // 
-            this.labelBuildTime.AutoEllipsis = true;
-            resources.ApplyResources(this.labelBuildTime, "labelBuildTime");
-            this.labelBuildTime.ForeColor = System.Drawing.Color.DarkGray;
-            this.labelBuildTime.Name = "labelBuildTime";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.ForeColor = System.Drawing.Color.DarkGray;
-            this.label3.Name = "label3";
             // 
             // linkLabelAuthor
             // 
@@ -145,7 +128,5 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.LinkLabel linkLabelAuthor;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label labelBuildTime;
     }
 }

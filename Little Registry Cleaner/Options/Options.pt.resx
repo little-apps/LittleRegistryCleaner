@@ -189,6 +189,9 @@
   <data name="removeEntryToolStripMenuItem.Text" xml:space="preserve">
     <value>Remova a entrada</value>
   </data>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>Ignorar a lista</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Pouco Registry Cleaner - opções</value>
   </data>

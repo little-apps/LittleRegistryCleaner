@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.0.287" date="20091102210418" scan="27" scanned="20091102202946">
+<document version="2.0.287" date="20091106183351" scan="29" scanned="20091105230746">
   <lang id="en"/>
   <lang id="fr"/>
   <lang id="es"/>
@@ -110,16 +110,16 @@
                 <row id="Text">
                   <native>Data:</native>
                   <lang id="en" status="2">Data:</lang>
-                  <lang id="fr" status="2">Data:</lang>
+                  <lang id="fr" date="20091106183243" status="3">Données:</lang>
                   <lang id="es" status="2">Datos:</lang>
                   <lang id="pt" status="2">Dados:</lang>
-                  <lang id="it" status="2">Data:</lang>
-                  <lang id="nl" status="2">Data:</lang>
-                  <lang id="de" status="2">Data:</lang>
+                  <lang id="it" date="20091106183349" status="3">Dati:</lang>
+                  <lang id="nl" date="20091106183258" status="3">Gegevens:</lang>
+                  <lang id="de" date="20091106183311" status="3">Daten:</lang>
                   <lang id="ru" status="2">Данные:</lang>
                   <lang id="el" status="2">Δεδομένα:</lang>
                   <lang id="ar" status="2">البيانات:</lang>
-                  <lang id="sv" status="2">Data:</lang>
+                  <lang id="sv" status="3">Data:</lang>
                   <lang id="zh" status="2">数据:</lang>
                   <lang id="zh.tra" status="2">數據:</lang>
                   <lang id="ja" status="2">データ:</lang>
@@ -259,11 +259,11 @@
                   <lang id="pt" status="2">Problema:</lang>
                   <lang id="it" status="2">Problema:</lang>
                   <lang id="nl" status="2">Probleem:</lang>
-                  <lang id="de" status="2">Problem:</lang>
+                  <lang id="de" status="3">Problem:</lang>
                   <lang id="ru" status="2">Проблемы:</lang>
                   <lang id="el" status="2">Πρόβλημα:</lang>
                   <lang id="ar" status="2">المشكلة:</lang>
-                  <lang id="sv" status="2">Problem:</lang>
+                  <lang id="sv" date="20091106183102" status="3">Problemet:</lang>
                   <lang id="zh" status="2">问题:</lang>
                   <lang id="zh.tra" status="2">問題:</lang>
                   <lang id="ja" status="2">問題:</lang>
@@ -288,8 +288,8 @@
                 <lang id="es" status="2">Detalles</lang>
                 <lang id="pt" status="2">Detalhes</lang>
                 <lang id="it" status="2">Dettagli</lang>
-                <lang id="nl" status="2">Details</lang>
-                <lang id="de" status="2">Details</lang>
+                <lang id="nl" status="3">Details</lang>
+                <lang id="de" status="3">Details</lang>
                 <lang id="ru" status="2">Подробности</lang>
                 <lang id="el" status="2">Λεπτομέρειες</lang>
                 <lang id="ar" status="2">التفاصيل</lang>
@@ -326,7 +326,7 @@
       <component name="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeIcon" class="TVisHiddenComponent"/>
       <component name="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox" class="TVisEdit" auto="1"/>
       <component name="Common_Tools.TreeViewAdv.Tree.TreeColumn" class="TVisHiddenComponent"/>
-      <component name="Common_Tools.TreeViewAdv.Tree.TreeViewAdv" class="TVisListView"/>
+      <component name="Common_Tools.TreeViewAdv.Tree.TreeViewAdv" class="TVisBasicControl"/>
       <component name="Common_Tools.XpProgressBar" class="TVisProgressBar"/>
       <component name="System.Windows.Forms.Button" class="TVisPictureButton"/>
       <component name="System.Windows.Forms.CheckBox" class="TVisCheckBox"/>
@@ -388,25 +388,70 @@
             <lang id="zh" status="2">小处清洁-关于...</lang>
             <lang id="zh.tra" status="2">小處清潔-關於...</lang>
             <lang id="ja" status="2">リトルRegistry Cleanerは-会社概要...</lang>
-            <lang id="vi" status="2">Little Registry Cleaner - Giới thiệu về...</lang>
+            <lang id="vi" date="20091105213407" status="3">Người lau chùi Nơi đăng ký Nhỏ - Giới thiệu về...</lang>
             <lang id="th" status="2">Little Registry Cleaner - เกี่ยวกับ...</lang>
             <lang id="pl" status="2">O programie Little Registry Cleaner</lang>
           </row>
           <component class="TVisGroupBox" name="groupBox2" type="System.Windows.Forms.GroupBox">
-            <row id="Location.X">12</row>
-            <row id="Location.Y">12</row>
-            <row id="Size.Height">209</row>
-            <row id="Size.Width">384</row>
+            <row id="Location.X" state="3">
+              <prev>12</prev>
+              <native>6</native>
+            </row>
+            <row id="Location.Y" state="3">
+              <prev>12</prev>
+              <native>0</native>
+            </row>
+            <row id="Size.Height" state="3">
+              <prev>209</prev>
+              <native>227</native>
+            </row>
+            <row id="Size.Width" state="3">
+              <prev>384</prev>
+              <native>391</native>
+            </row>
+            <component class="TVisLabel" name="label3" state="1" type="System.Windows.Forms.Label">
+              <row id="Text" state="1">
+                <native>Build Date:</native>
+                <lang id="en" status="2">Build Date:</lang>
+                <lang id="fr" date="20091106173153" status="3">Date de construction:</lang>
+                <lang id="es" status="2">Construir la fecha:</lang>
+                <lang id="pt" status="2">Construir data:</lang>
+                <lang id="it" status="2">Costruire data:</lang>
+                <lang id="nl" status="2">Datum maken:</lang>
+                <lang id="de" status="2">Datum erstellen:</lang>
+                <lang id="ru" status="2">Построить Дата:</lang>
+                <lang id="el" status="2">Δημιουργία Ημ/νία:</lang>
+                <lang id="ar" status="2">بناء تاريخ:</lang>
+                <lang id="sv" status="2">Skapa datum:</lang>
+                <lang id="zh" status="2">建立日期:</lang>
+                <lang id="zh.tra" status="2">建立日期:</lang>
+                <lang id="ja" status="2">ビルドの日付:</lang>
+                <lang id="vi" status="2">Xây dựng gia:</lang>
+                <lang id="th" status="2">วันที่สร้าง:</lang>
+                <lang id="pl" status="2">Data kompilacji:</lang>
+              </row>
+            </component>
             <component class="TVisImage" name="pictureBox1" type="System.Windows.Forms.PictureBox" stretch="1">
-              <row id="Location.X">6</row>
-              <row id="Location.Y">19</row>
+              <row id="ImeMode" state="0">imNone</row>
+              <row id="Location.X" state="3">
+                <prev>6</prev>
+                <native>9</native>
+              </row>
+              <row id="Location.Y" state="3">
+                <prev>19</prev>
+                <native>12</native>
+              </row>
               <row id="Size.Height">32</row>
               <row id="Size.Width">32</row>
             </component>
             <component class="TVisLabel" name="labelTitle" type="System.Windows.Forms.Label" autosize="1" parentfont="0" wordwrap="0">
               <row id="Font">Microsoft Sans Serif,12</row>
+              <row id="ImeMode" state="0">imNone</row>
               <row id="Location.X">44</row>
-              <row id="Location.Y">19</row>
+              <row id="Location.Y" state="3">
+                <prev>19</prev>
+                <native>11</native>
+              </row>
               <row id="Size.Height">20</row>
               <row id="Size.Width">164</row>
               <row id="Text" state="0">
@@ -425,40 +470,57 @@
                 <lang id="zh" status="2">小注册表清理器</lang>
                 <lang id="zh.tra" status="2">小註冊表清理器</lang>
                 <lang id="ja" status="3">小さな Registry Cleaner</lang>
-                <lang id="vi" status="2">Little Registry Cleaner</lang>
+                <lang id="vi" date="20091105213417" status="3">Người lau chùi Nơi đăng ký Nhỏ</lang>
                 <lang id="th" status="3">รีจิสทรีน้อยตัวล้าง</lang>
-                <lang id="pl" status="2">Little rejestru Cleaner</lang>
+                <lang id="pl" status="3">Mały Registratura Sprzątacz</lang>
               </row>
             </component>
             <component class="TVisEdit" name="richTextBox1" type="System.Windows.Forms.RichTextBox">
-              <row id="Location.X">7</row>
-              <row id="Location.Y">57</row>
-              <row id="Size.Height">146</row>
-              <row id="Size.Width">372</row>
-              <row id="Text" state="0">
-                <native>This program is free software: you can redistribute it and/or modify#lit under the terms of the GNU General Public License as published by#lthe Free Software Foundation, either version 3 of the License, or#l(at your option) any later version.#l#lThis program is distributed in the hope that it will be useful,#lbut WITHOUT ANY WARRANTY; without even the implied warranty of#lMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the#lGNU General Public License for more details.#l#lYou should have received a copy of the GNU General Public License#lalong with this program.  If not, see &lt;http://www.gnu.org/licenses/>.</native>
-                <lang id="en" status="2">This program is free software: you can redistribute it and/or modify#nit under the terms of the GNU General Public License as published by#nthe Free Software Foundation, either version 3 of the License, or#n(at your option) any later version.#n#nThis program is distributed in the hope that it will be useful,#nbut WITHOUT ANY WARRANTY; without even the implied warranty of#nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the#nGNU General Public License for more details.#n#nYou should have received a copy of the GNU General Public License#nalong with this program.  If not, see &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="fr" status="2">Ce logiciel est gratuit: vous pouvez le redistribuer et / ou le modifier selon les termes de la GNU General Public License telle que publiée par la Free Software Foundation, soit la version 3 de la Licence, ou (à votre choix) toute version ultérieure. Ce programme est distribué dans l'espoir qu'il sera utile, mais SANS AUCUNE GARANTIE, sans même la garantie implicite de COMMERCIALISATION ou D'ADAPTATION A UN USAGE PARTICULIER. Voir la GNU General Public License pour plus de détails. Vous devriez avoir reçu un exemplaire de la Licence Publique Générale GNU avec ce programme. Sinon, consultez &lt;http://www.gnu.org/licenses/>。</lang>
-                <lang id="es" status="2">Este programa es software libre: usted puede redistribuirlo y/o modificarlo bajo los términos de la GNU General Public License publicada por la Free Software Foundation, ya sea la versión 3 de la licencia, o (a su opción) cualquier versión posterior.#n#nEste programa se distribuye con la esperanza de que será útil, pero sin ninguna garantía, ni siquiera la garantía implícita de comerciabilidad o idoneidad para un propósito PARTICULAR.  Consulte la GNU General Public License para obtener más detalles.#n#nDebe haber recibido una copia de la licencia pública GNU General junto con este programa.  Si no, véase &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="pt" status="2">Este programa é software livre: você pode redistribuí-lo e/ou modificá-lo nos termos da GNU General Public License conforme publicada pela Free Software Foundation, tanto a versão 3 da licença, ou (sua opção) qualquer versão posterior.#n#nEste programa é distribuído na esperança de que será útil, mas sem qualquer garantia; sem sequer a garantia implícita de COMERCIABILIDADE ou adequação a um fim específico.  Consulte a GNU GPL para obter mais detalhes.#n#nVocê deve ter recebido uma cópia da GNU General Public License juntamente com este programa.  Se não for, consulte &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="it" status="2">Questo programma è software libero: ridistribuirla e/o modificarla secondo i termini della GNU General Public License come pubblicato dalla Free Software Foundation, versione 3 della licenza o (a propria discrezione) qualsiasi versione successiva.#n#nQuesto programma è distribuito nella speranza che possa essere utile, ma senza alcuna garanzia; senza neppure la garanzia implicita di commerciabilità o idoneità per uno scopo particolare.  Vedere la GNU General Public License per maggiori dettagli.#n#nSi dovrebbe avere ricevuto una copia della licenza pubblica generica GNU insieme a questo programma.  Se non, vedere &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="nl" status="2">Dit programma is gratis software: u kunt en/het herverdelen of wijzigen in het kader van de GNU-generaal Volks licentie zoals door de vrije Software Foundation, beide versie 3 van de licentie of (op de optie) gepubliceerd met een latere versie.#n#nDit programma wordt verdeeld in de hoop dat het nuttig zijn, maar zonder enige garantie; zonder zelfs de impliciete garantie van verkoopbaarheid of geschiktheid voor een bepaald doel zal zijn.  Zie de GNU-generaal Volks-licentie voor meer informatie.#n#nU hebt ontvangen een kopie van de GNU-generaal Volks licentie samen met dit programma.  Als dit niet het geval is, Zie &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="de" status="2">Dieses Programm ist freie Software: Sie weitergeben und/oder unter den Bedingungen der GNU General Public License veröffentlicht von der Free Software Foundation, Version 3 der Lizenz oder (nach Ihrer Wahl) any later Version ändern können.#n#nDieses Programm wird in der Hoffnung verteilt, dass es Nützlichkeit, jedoch ohne Garantie geliefert; selbst stillschweigende Garantien von MERCHANTABILITY oder Eignung für einen bestimmten Zweck sein wird.  Finden Sie unter der GNU General Public License für weitere Details.#n#nSie sollten eine Kopie der GNU General Public License zusammen mit diesem Programm erhalten haben.  Wenn nicht, finden Sie unter &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="ru" status="2">Эта программа является свободным программным обеспечением: Вы можете перераспределить или изменить его на условиях GNU General Public License, опубликованной Фондом свободного программного обеспечения, либо версии 3 лицензии, либо (на Ваш выбор) любой более поздней версии.#n#nЭта программа распространяется в надежде на то, что она окажется полезной, но без каких бы то ни было гарантий; даже подразумеваемой гарантии или ТОВАРНОСТИ или пригодности для конкретных целях.  Смотрите GNU General Public License для получения дополнительной информации.#n#nВы должны были получить копию GNU General Public License наряду с этой программой.  Если нет, см. &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="el" status="2">Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό: ή/μπορείτε να το επιστρέψει και τροποποιήσετε σύμφωνα με τους όρους της GNU General Public License όπως έχουν δημοσιευθεί από το ίδρυμα ελεύθερου λογισμικού, είτε έκδοση 3 της άδειας χρήσης, ή (κατά την επιλογή) οποιαδήποτε μεταγενέστερη έκδοση.#n#nΑυτό το πρόγραμμα διανέμεται με την ελπίδα ότι θα ήταν χρήσιμο, αλλά ΧΩΡΊΣ ΚΆΘΕ WARRANTY, χωρίς καν την σιωπηρή εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ για Α ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ.  Δείτε το GNU General Public License για περισσότερες λεπτομέρειες.#n#nΘα πρέπει να έχετε λάβει ένα αντίγραφο από το GNU General Public License μαζί με αυτό το πρόγραμμα.  Εάν όχι, ανατρέξτε στην ενότητα &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="ar" status="2">هذا البرنامج هو البرمجيات الحرة: و/لك يمكن توزيع عليه أو تعديله تحت شروط جنو العمومية كما تنشرها "مؤسسة البرمجيات الحرة" إما الإصدار 3 من الترخيص أو (في الخيار لك) أي إصدار أحدث.#n#nيتم توزيع هذا البرنامج على أمل أن سيكون من المفيد ولكن "بدون أي الضمان"; دون حتى ضمان ضمني من بالتسويق أو وملاءمته FOR A معين الغرض.  انظر إلى جنو العمومية للحصول على مزيد من التفاصيل.#n#nوينبغي أن كنت قد تلقيت نسخة من جنو العمومية مع هذا البرنامج.  إذا لم انظر &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="sv" status="2">Det här programmet är fri programvara: du kan vidaredistribuera det och/eller ändra den enligt villkoren i GNU General Public License as published by Free Software Foundation, antingen version 3 of the License, or (at your option) any later version.#n#nDet här programmet distribueras i hopp om att det kommer att vara användbara, men utan någon garanti, utan även den underförstådda garantin för säljbarhet eller lämplighet för en särskilt syfte.  Se GNU General Public License om du vill veta mer.#n#nDu bör ha fått en kopia av GNU General Public License tillsammans med det här programmet.  Om du inte se &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="zh" status="2">该程序是自由软件：你可以重新发布它和/或修改在GNU通用公共自由软件基金会，使用许可证版本3，或（您自行选择）任何更新的版本出版许可证条款。这程式的目的是希望它有用，但没有任何担保，甚至没有适销性或针对特定用途的隐含的担保。详情请参阅GNU通用公共许可证。您应该已经收到一份GNU通用公共许可证的副本连同本程序。如果没有，请参阅&lt;http://www.gnu.org/licenses/>。</lang>
-                <lang id="zh.tra" status="2">該程序是自由軟件：你可以重新發布它和/或修改的條件下，在GNU通用公共許可證的出版自由軟件基金會，或者第3版的許可證，或者（根據你的選擇）用任何更新的版本。這程式的目的是希望它有用，但沒有任何擔保，甚至沒有隱含的保證對適銷性或特定目的。請參閱GNU通用公共許可證的更多細節。您應該已經收到副本的GNU通用公共許可證隨著這一計劃。如果沒有，請參閱&lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="ja" status="2">このプログラムはフリーソフトウェアです：あなたはこれを再配布することができます/またはGNU General Public Licenseには、Free Software Foundationが、ライセンスのいずれかのバージョン3またはそれ以降のバージョンのオプション（）で発行の条件の下でそれを変更します。このプログラムは、期待して有用であると思われるのが、配布されていかなる保証もない現状;商品性または特定目的に対する適合性にも黙示の保証はありません。詳細については、GNU General Public Licenseを参照してください。あなたはこのプログラムと共に、GNU General Public Licenseのコピーを受け取っている必要があります。ない場合は、参照してください&lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="vi" status="2">Chương trình này là phần mềm: bạn có thể phát hành lại nó và / hoặc sửa đổi nó với điều kiện của Giấy phép Công cộng GNU như được xuất bản bởi các Phần mềm Tự do, hoặc là phiên bản 3 của Giấy phép này, hoặc (tùy chọn) bất kỳ phiên bản sau. Này Chương trình được phân phối với hy vọng rằng nó sẽ hữu ích, nhưng KHÔNG CÓ BẢO ĐẢM; mà không cần bảo hành ngay cả ngụ ý của BÁN hoặc PHÙ HỢP CHO MỘT MỤC ĐÍCH CỤ THỂ. Xem GNU General Public License để biết thêm chi tiết. Bạn nên đã nhận được một bản sao của Giấy phép Công cộng GNU cùng với chương trình này. Nếu không, xem &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="th" status="2">ซอฟต์แวร์โปรแกรมนี้ฟรี: คุณสามารถแจกจ่ายได้และ / หรือแก้ไขภายใต้เงื่อนไขของ GNU General Public License เผยแพร่ตามที่ Free Software Foundation, รุ่นทั้ง 3 ใบอนุญาตหรือ (ในตัวเลือกของคุณ) รุ่นหลังๆ. นี้โปรแกรมการกระจายในหวังว่ามันจะเป็นประโยชน์แต่ไม่รับประกันใดๆ; ไม่มีแม้การรับประกันโดยนัยของสินค้าหรือความเหมาะสมสำหรับวัตถุประสงค์เฉพาะ. ดู GNU General Public License รายละเอียดเพิ่มเติม. คุณจะได้รับสำเนาของ GNU General Public License พร้อมกับโปรแกรมนี้. ถ้าไม่เห็น &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="pl" status="2">Niniejsze oprogramowanie jest darmowe. Możesz je rozpowszechniać lub modyfikować zgodnie z warunkami licencji GNU General Public License w wersji 3 lub późniejszej wydanej przez Free Software Foundation.#n#nNiniejsze oprogramowanie jest rozpowszechniane z nadzieją, że okaże się przydatne, nie jest natomiast objęte JAKĄKOLWIEK GWARANCJĄ, w tym domyślną gwarancją UŻYTECZNOŚCI HANDLOWEJ lub PRZYDATNOŚCI DO KONKRETNEGO CELU. Przeczytaj licencję GNU General Public License, aby zapoznać się ze szczegółami.#n#nKopia licencji GNU General Public License powinna zostać dostarczona wraz z niniejszym oprogramowaniem. W przeciwnym wypadku odwiedź stronę &lt;http://www.gnu.org/licenses/></lang>
+              <row id="Location.X" state="3">
+                <prev>7</prev>
+                <native>9</native>
+              </row>
+              <row id="Location.Y" state="3">
+                <prev>57</prev>
+                <native>50</native>
+              </row>
+              <row id="Size.Height" state="3">
+                <prev>146</prev>
+                <native>171</native>
+              </row>
+              <row id="Size.Width" state="3">
+                <prev>372</prev>
+                <native>376</native>
+              </row>
+              <row id="Text" state="3">
+                <prev>This program is free software: you can redistribute it and/or modify#nit under the terms of the GNU General Public License as published by#nthe Free Software Foundation, either version 3 of the License, or#n(at your option) any later version.#n#nThis program is distributed in the hope that it will be useful,#nbut WITHOUT ANY WARRANTY; without even the implied warranty of#nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the#nGNU General Public License for more details.#n#nYou should have received a copy of the GNU General Public License#nalong with this program.  If not, see &lt;http://www.gnu.org/licenses/>.</prev>
+                <native>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.#l#lThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.#l#lYou should have received a copy of the GNU General Public License along with this program.  If not, see &lt;http://www.gnu.org/licenses/>.</native>
+                <lang id="en" date="20091105201208" invalidated="1" status="3">This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.#n#nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.#n#nYou should have received a copy of the GNU General Public License along with this program.  If not, see &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="fr" date="20091105200750" invalidated="1" status="3">Ce logiciel est gratuit: vous pouvez le redistribuer et / ou le modifier selon les termes de la GNU General Public License telle que publiée par la Free Software Foundation, soit la version 3 de la Licence, ou (à votre choix) toute version ultérieure.#n#nCe programme est distribué dans l'espoir qu'il sera utile, mais SANS AUCUNE GARANTIE, sans même la garantie implicite de COMMERCIALISATION ou D'ADAPTATION A UN USAGE PARTICULIER. Voir la GNU General Public License pour plus de détails.#n#nVous devriez avoir reçu un exemplaire de la Licence Publique Générale GNU avec ce programme. Sinon, consultez &lt;http://www.gnu.org/licenses/>。</lang>
+                <lang id="es" invalidated="1" status="2">Este programa es software libre: usted puede redistribuirlo y/o modificarlo bajo los términos de la GNU General Public License publicada por la Free Software Foundation, ya sea la versión 3 de la licencia, o (a su opción) cualquier versión posterior.#n#nEste programa se distribuye con la esperanza de que será útil, pero sin ninguna garantía, ni siquiera la garantía implícita de comerciabilidad o idoneidad para un propósito PARTICULAR.  Consulte la GNU General Public License para obtener más detalles.#n#nDebe haber recibido una copia de la licencia pública GNU General junto con este programa.  Si no, véase &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="pt" invalidated="1" status="2">Este programa é software livre: você pode redistribuí-lo e/ou modificá-lo nos termos da GNU General Public License conforme publicada pela Free Software Foundation, tanto a versão 3 da licença, ou (sua opção) qualquer versão posterior.#n#nEste programa é distribuído na esperança de que será útil, mas sem qualquer garantia; sem sequer a garantia implícita de COMERCIABILIDADE ou adequação a um fim específico.  Consulte a GNU GPL para obter mais detalhes.#n#nVocê deve ter recebido uma cópia da GNU General Public License juntamente com este programa.  Se não for, consulte &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="it" invalidated="1" status="2">Questo programma è software libero: ridistribuirla e/o modificarla secondo i termini della GNU General Public License come pubblicato dalla Free Software Foundation, versione 3 della licenza o (a propria discrezione) qualsiasi versione successiva.#n#nQuesto programma è distribuito nella speranza che possa essere utile, ma senza alcuna garanzia; senza neppure la garanzia implicita di commerciabilità o idoneità per uno scopo particolare.  Vedere la GNU General Public License per maggiori dettagli.#n#nSi dovrebbe avere ricevuto una copia della licenza pubblica generica GNU insieme a questo programma.  Se non, vedere &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="nl" invalidated="1" status="2">Dit programma is gratis software: u kunt en/het herverdelen of wijzigen in het kader van de GNU-generaal Volks licentie zoals door de vrije Software Foundation, beide versie 3 van de licentie of (op de optie) gepubliceerd met een latere versie.#n#nDit programma wordt verdeeld in de hoop dat het nuttig zijn, maar zonder enige garantie; zonder zelfs de impliciete garantie van verkoopbaarheid of geschiktheid voor een bepaald doel zal zijn.  Zie de GNU-generaal Volks-licentie voor meer informatie.#n#nU hebt ontvangen een kopie van de GNU-generaal Volks licentie samen met dit programma.  Als dit niet het geval is, Zie &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="de" invalidated="1" status="2">Dieses Programm ist freie Software: Sie weitergeben und/oder unter den Bedingungen der GNU General Public License veröffentlicht von der Free Software Foundation, Version 3 der Lizenz oder (nach Ihrer Wahl) any later Version ändern können.#n#nDieses Programm wird in der Hoffnung verteilt, dass es Nützlichkeit, jedoch ohne Garantie geliefert; selbst stillschweigende Garantien von MERCHANTABILITY oder Eignung für einen bestimmten Zweck sein wird.  Finden Sie unter der GNU General Public License für weitere Details.#n#nSie sollten eine Kopie der GNU General Public License zusammen mit diesem Programm erhalten haben.  Wenn nicht, finden Sie unter &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="ru" invalidated="1" status="2">Эта программа является свободным программным обеспечением: Вы можете перераспределить или изменить его на условиях GNU General Public License, опубликованной Фондом свободного программного обеспечения, либо версии 3 лицензии, либо (на Ваш выбор) любой более поздней версии.#n#nЭта программа распространяется в надежде на то, что она окажется полезной, но без каких бы то ни было гарантий; даже подразумеваемой гарантии или ТОВАРНОСТИ или пригодности для конкретных целях.  Смотрите GNU General Public License для получения дополнительной информации.#n#nВы должны были получить копию GNU General Public License наряду с этой программой.  Если нет, см. &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="el" invalidated="1" status="2">Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό: ή/μπορείτε να το επιστρέψει και τροποποιήσετε σύμφωνα με τους όρους της GNU General Public License όπως έχουν δημοσιευθεί από το ίδρυμα ελεύθερου λογισμικού, είτε έκδοση 3 της άδειας χρήσης, ή (κατά την επιλογή) οποιαδήποτε μεταγενέστερη έκδοση.#n#nΑυτό το πρόγραμμα διανέμεται με την ελπίδα ότι θα ήταν χρήσιμο, αλλά ΧΩΡΊΣ ΚΆΘΕ WARRANTY, χωρίς καν την σιωπηρή εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ για Α ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ.  Δείτε το GNU General Public License για περισσότερες λεπτομέρειες.#n#nΘα πρέπει να έχετε λάβει ένα αντίγραφο από το GNU General Public License μαζί με αυτό το πρόγραμμα.  Εάν όχι, ανατρέξτε στην ενότητα &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="ar" invalidated="1" status="2">هذا البرنامج هو البرمجيات الحرة: و/لك يمكن توزيع عليه أو تعديله تحت شروط جنو العمومية كما تنشرها "مؤسسة البرمجيات الحرة" إما الإصدار 3 من الترخيص أو (في الخيار لك) أي إصدار أحدث.#n#nيتم توزيع هذا البرنامج على أمل أن سيكون من المفيد ولكن "بدون أي الضمان"; دون حتى ضمان ضمني من بالتسويق أو وملاءمته FOR A معين الغرض.  انظر إلى جنو العمومية للحصول على مزيد من التفاصيل.#n#nوينبغي أن كنت قد تلقيت نسخة من جنو العمومية مع هذا البرنامج.  إذا لم انظر &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="sv" invalidated="1" status="2">Det här programmet är fri programvara: du kan vidaredistribuera det och/eller ändra den enligt villkoren i GNU General Public License as published by Free Software Foundation, antingen version 3 of the License, or (at your option) any later version.#n#nDet här programmet distribueras i hopp om att det kommer att vara användbara, men utan någon garanti, utan även den underförstådda garantin för säljbarhet eller lämplighet för en särskilt syfte.  Se GNU General Public License om du vill veta mer.#n#nDu bör ha fått en kopia av GNU General Public License tillsammans med det här programmet.  Om du inte se &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="zh" date="20091105201040" invalidated="1" status="3">该程序是自由软件：你可以重新发布它和/或修改在GNU通用公共自由软件基金会，使用许可证版本3，或（您自行选择）任何更新的版本出版许可证条款。#n#n这个程式的目的是希望它有用，但没有任何担保，甚至没有适销性或针对特定用途的隐含的担保。详情请参阅GNU通用公共许可证。#n#n您应已收到附随于本程序的GNU通用公共许可证的副本。如果不是，参阅&lt;http://www.gnu.org/licenses/>。</lang>
+                <lang id="zh.tra" date="20091105201902" status="3">該程序是自由軟件：你可以重新發布它和/或修改的條件下，在GNU通用公共許可證的出版自由軟件基金會，或者第3版的許可證，或者（根據你的選擇）用任何更新的版本。#n#n這個程式的目的是希望它有用，但沒有任何擔保，甚至沒有隱含的保證對適銷性或特定目的。請參閱GNU通用公共許可證的更多細節。#n#n您應該已經收到副本的GNU通用公共許可證隨著這一計劃。如果不是，參閱&lt;http://www.gnu.org/licenses/>。</lang>
+                <lang id="ja" date="20091105201756" status="3">このプログラムはフリーソフトウェアです：あなたはこれを再配布することができます/またはGNU General Public Licenseには、Free Software Foundationが、ライセンスのいずれかのバージョン3またはそれ以降のバージョンのオプション（）で発行の条件の下でそれを変更します。#n#nこのプログラムは、期待して有用であると思われるのが、配布されていかなる保証もない現状;商品性または特定目的に対する適合性にも黙示の保証はありません。詳細については、GNU General Public Licenseを参照してください。#n#nあなたはこのプログラムと共に、GNU General Public Licenseのコピーを受け取っている必要があります。ていない場合は、参照してください&lt;http://www.gnu.org/licenses/>。</lang>
+                <lang id="vi" date="20091105201639" status="3">Chương trình này là phần mềm: bạn có thể phát hành lại nó và / hoặc sửa đổi nó với điều kiện của Giấy phép Công cộng GNU như được xuất bản bởi các Phần mềm Tự do, hoặc là phiên bản 3 của Giấy phép này, hoặc (tùy chọn) bất kỳ phiên bản sau.#n#nChương trình này được phân phối với hy vọng rằng nó sẽ hữu ích, nhưng KHÔNG CÓ BẢO ĐẢM; mà không cần bảo hành ngay cả ngụ ý của BÁN hoặc PHÙ HỢP CHO MỘT MỤC ĐÍCH CỤ THỂ. Xem GNU General Public License để biết thêm chi tiết.#n#nBạn nên đã nhận được một bản sao của Giấy phép Công cộng GNU cùng với chương trình này. Nếu không, xem &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="th" date="20091105201427" status="3">ซอฟต์แวร์ โปรแกรมนี้ฟรี: คุณสามารถแจกจ่ายได้และ / หรือแก้ไขภายใต้เงื่อนไขของ GNU General Public License เผยแพร่ตามที่ Free Software Foundation, รุ่นทั้ง 3 ใบอนุญาตหรือ (ในตัวเลือกของคุณ) รุ่นหลังๆ.#n#nโปรแกรมนี้จะกระจายในหวังว่ามันจะเป็นประโยชน์แต่ไม่รับประกันใดๆ; ไม่มีแม้การรับประกันโดยนัยของสินค้าหรือความเหมาะสมสำหรับวัตถุประสงค์ เฉพาะ. ดู GNU General Public License รายละเอียดเพิ่มเติม.#n#nคุณควรได้รับสำเนาของ GNU General Public License พร้อมกับโปรแกรมนี้. ถ้าไม่เห็น &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="pl" invalidated="1" status="2">Niniejsze oprogramowanie jest darmowe. Możesz je rozpowszechniać lub modyfikować zgodnie z warunkami licencji GNU General Public License w wersji 3 lub późniejszej wydanej przez Free Software Foundation.#n#nNiniejsze oprogramowanie jest rozpowszechniane z nadzieją, że okaże się przydatne, nie jest natomiast objęte JAKĄKOLWIEK GWARANCJĄ, w tym domyślną gwarancją UŻYTECZNOŚCI HANDLOWEJ lub PRZYDATNOŚCI DO KONKRETNEGO CELU. Przeczytaj licencję GNU General Public License, aby zapoznać się ze szczegółami.#n#nKopia licencji GNU General Public License powinna zostać dostarczona wraz z niniejszym oprogramowaniem. W przeciwnym wypadku odwiedź stronę &lt;http://www.gnu.org/licenses/></lang>
               </row>
             </component>
             <component class="TVisLabel" name="label2" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
+              <row id="ImeMode" state="0">imNone</row>
               <row id="Location.X">45</row>
-              <row id="Location.Y">41</row>
+              <row id="Location.Y" state="3">
+                <prev>41</prev>
+                <native>31</native>
+              </row>
               <row id="Size.Height">13</row>
               <row id="Size.Width">41</row>
               <row id="Text" state="0">
@@ -483,11 +545,15 @@
               </row>
             </component>
             <component class="TVisLabel" name="linkLabelAuthor" type="System.Windows.Forms.LinkLabel" autosize="1" wordwrap="0">
+              <row id="ImeMode" state="0">imNone</row>
               <row id="Location.X">83</row>
-              <row id="Location.Y">41</row>
+              <row id="Location.Y" state="3">
+                <prev>41</prev>
+                <native>31</native>
+              </row>
               <row id="Size.Height">13</row>
               <row id="Size.Width">43</row>
-              <row id="Text" locked="1" state="0">
+              <row id="Text" locked="1" excluded="1" state="0">
                 <native>Nick H.</native>
                 <lang id="en">Nick H.</lang>
                 <lang id="es">Nick H.</lang>
@@ -506,44 +572,17 @@
                 <lang id="th">Nick H.</lang>
               </row>
             </component>
-            <component class="TVisLabel" name="label3" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
-              <row id="ForeColor" hidden="1">$00A9A9A9</row>
-              <row id="Location.X">258</row>
-              <row id="Location.Y">16</row>
-              <row id="Size.Height">13</row>
-              <row id="Size.Width">59</row>
-              <row id="Text" state="0">
-                <native>Build Date:</native>
-                <lang id="en" status="2">Build Date:</lang>
-                <lang id="fr" status="2">Build Date:</lang>
-                <lang id="es" status="2">Construir la fecha:</lang>
-                <lang id="pt" status="2">Construir data:</lang>
-                <lang id="it" status="2">Costruire data:</lang>
-                <lang id="nl" status="2">Datum maken:</lang>
-                <lang id="de" status="2">Datum erstellen:</lang>
-                <lang id="ru" status="2">Построить Дата:</lang>
-                <lang id="el" status="2">Δημιουργία Ημ/νία:</lang>
-                <lang id="ar" status="2">بناء تاريخ:</lang>
-                <lang id="sv" status="2">Skapa datum:</lang>
-                <lang id="zh" status="2">建立日期:</lang>
-                <lang id="zh.tra" status="2">建立日期:</lang>
-                <lang id="ja" status="2">ビルドの日付:</lang>
-                <lang id="vi" status="2">Xây dựng gia:</lang>
-                <lang id="th" status="2">วันที่สร้าง:</lang>
-                <lang id="pl" status="2">Data kompilacji:</lang>
-              </row>
-            </component>
-            <component class="TVisLabel" name="labelBuildTime" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
-              <row id="ForeColor" hidden="1">$00A9A9A9</row>
-              <row id="Location.X">313</row>
-              <row id="Location.Y">16</row>
-              <row id="Size.Height">13</row>
-              <row id="Size.Width">0</row>
-            </component>
           </component>
           <component class="TVisPictureButton" name="buttonClose" type="System.Windows.Forms.Button">
-            <row id="Location.X">343</row>
-            <row id="Location.Y">227</row>
+            <row id="ImeMode" state="0">imNone</row>
+            <row id="Location.X" state="3">
+              <prev>343</prev>
+              <native>344</native>
+            </row>
+            <row id="Location.Y" state="3">
+              <prev>227</prev>
+              <native>233</native>
+            </row>
             <row id="Size.Height">23</row>
             <row id="Size.Width">53</row>
             <row id="Text" state="0">
@@ -568,15 +607,22 @@
             </row>
           </component>
           <component class="TVisPictureButton" name="buttonWebsite" type="System.Windows.Forms.Button">
-            <row id="Location.X">12</row>
-            <row id="Location.Y">227</row>
+            <row id="ImeMode" state="0">imNone</row>
+            <row id="Location.X" state="3">
+              <prev>12</prev>
+              <native>6</native>
+            </row>
+            <row id="Location.Y" state="3">
+              <prev>227</prev>
+              <native>233</native>
+            </row>
             <row id="Size.Height">23</row>
             <row id="Size.Width">96</row>
             <row id="Text" state="0">
               <native>Project Website</native>
               <lang id="en" status="2">Project Website</lang>
-              <lang id="fr" status="2">Site Web du projet</lang>
-              <lang id="es" status="2">Sitio Web del proyecto</lang>
+              <lang id="fr" date="20091105202110" status="3">Accueil</lang>
+              <lang id="es" date="20091105202315" status="3">Inicio</lang>
               <lang id="pt" status="2">Site do projeto</lang>
               <lang id="it" status="2">Sito del progetto</lang>
               <lang id="nl" status="2">Project-website</lang>
@@ -584,12 +630,12 @@
               <lang id="ru" status="2">Сайт проекта</lang>
               <lang id="el" status="2">Τοποθεσία Web έργου</lang>
               <lang id="ar" status="2">موقع المشروع</lang>
-              <lang id="sv" status="2">Projektets webbplats</lang>
+              <lang id="sv" date="20091105202140" status="3">Hem</lang>
               <lang id="zh" status="2">项目网站</lang>
               <lang id="zh.tra" status="2">項目網站</lang>
-              <lang id="ja" status="2">プロジェクトウェブサイト</lang>
+              <lang id="ja" date="20091105202207" status="3">家</lang>
               <lang id="vi" status="2">Dự án Website</lang>
-              <lang id="th" status="2">เว็บไซต์โครงการ</lang>
+              <lang id="th" date="20091105202244" status="3">บ้าน</lang>
               <lang id="pl" status="2">Strona Projektu</lang>
             </row>
           </component>
@@ -602,7 +648,7 @@
           <row id="Text" state="0">
             <native>Little Registry Cleaner - Crash Reporter</native>
             <lang id="en" status="2">Little Registry Cleaner - Crash Reporter</lang>
-            <lang id="fr" status="2">Little Registry Cleaner - Crash Reporter</lang>
+            <lang id="fr" date="20091105213514" status="3">Peu Registry Cleaner - Crash Reporter</lang>
             <lang id="es" status="2">Registro poco limpiador - Crash Reporter</lang>
             <lang id="pt" status="2">Pouco Registry Cleaner - Crash Reporter</lang>
             <lang id="it" status="2">Registro poco Cleaner - Crash Reporter</lang>
@@ -615,8 +661,8 @@
             <lang id="zh" status="2">小处清洁-崩溃记者</lang>
             <lang id="zh.tra" status="2">小處清潔-崩潰記者</lang>
             <lang id="ja" status="2">リトルレジストリクリーナー-クラッシュレポーター</lang>
-            <lang id="vi" status="2">Little Registry Cleaner - Crash Reporter</lang>
-            <lang id="th" status="2">Little Registry Cleaner - ผิดพลาด Reporter</lang>
+            <lang id="vi" date="20091106173253" status="3">Phóng viên Sự cố Người lau chùi Nơi đăng ký Nhỏ</lang>
+            <lang id="th" date="20091105223822" status="3">รีจิสทรีน้อยตัวล้าง - ผิดพลาด Reporter</lang>
             <lang id="pl" status="2">Little Registry Cleaner - Powiadomienie o błędzie</lang>
           </row>
           <component class="TVisPanel" name="panel1" type="System.Windows.Forms.Panel" align="alTop">
@@ -798,7 +844,7 @@
               <lang id="ja" status="2">無視リストに追加する</lang>
               <lang id="vi" status="2">Thêm vào danh sách bỏ qua</lang>
               <lang id="th" status="2">เพิ่มรายชื่อ</lang>
-              <lang id="pl" status="2">Dodaj wpis rejestru, który zostanie pominięty:</lang>
+              <lang id="pl" status="3">Wpisy pomijane</lang>
             </row>
             <component class="TVisLabel" name="label1" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
               <row id="Location.X">6</row>
@@ -827,7 +873,7 @@
               </row>
             </component>
             <component class="TVisComboBox" name="comboBox1" type="System.Windows.Forms.ComboBox">
-              <row id="Items.HKEY_CLASSES_ROOT" locked="1" state="0">
+              <row id="Items.HKEY_CLASSES_ROOT" locked="1" excluded="1" state="0">
                 <native>HKEY_CLASSES_ROOT</native>
                 <lang id="en">HKEY_CLASSES_ROOT</lang>
                 <lang id="es">HKEY_CLASSES_ROOT</lang>
@@ -845,7 +891,7 @@
                 <lang id="vi">HKEY_CLASSES_ROOT</lang>
                 <lang id="th">HKEY_CLASSES_ROOT</lang>
               </row>
-              <row id="Items.HKEY_CURRENT_USER" locked="1" state="0">
+              <row id="Items.HKEY_CURRENT_USER" locked="1" excluded="1" state="0">
                 <native>HKEY_CURRENT_USER</native>
                 <lang id="en">HKEY_CURRENT_USER</lang>
                 <lang id="es">HKEY_CURRENT_USER</lang>
@@ -863,7 +909,7 @@
                 <lang id="vi">HKEY_CURRENT_USER</lang>
                 <lang id="th">HKEY_CURRENT_USER</lang>
               </row>
-              <row id="Items.HKEY_LOCAL_MACHINE" locked="1" state="0">
+              <row id="Items.HKEY_LOCAL_MACHINE" locked="1" excluded="1" state="0">
                 <native>HKEY_LOCAL_MACHINE</native>
                 <lang id="en">HKEY_LOCAL_MACHINE</lang>
                 <lang id="es">HKEY_LOCAL_MACHINE</lang>
@@ -881,7 +927,7 @@
                 <lang id="vi">HKEY_LOCAL_MACHINE</lang>
                 <lang id="th">HKEY_LOCAL_MACHINE</lang>
               </row>
-              <row id="Items.HKEY_USERS" locked="1" state="0">
+              <row id="Items.HKEY_USERS" locked="1" excluded="1" state="0">
                 <native>HKEY_USERS</native>
                 <lang id="en">HKEY_USERS</lang>
                 <lang id="es">HKEY_USERS</lang>
@@ -925,7 +971,7 @@
                 <lang id="zh" status="2">注册表路径:</lang>
                 <lang id="zh.tra" status="2">註冊表路徑:</lang>
                 <lang id="ja" status="2">レジストリパス:</lang>
-                <lang id="vi" status="2">Registry Path:</lang>
+                <lang id="vi" date="20091106173743" status="3">Chìa khóa Nơi đăng ký:</lang>
                 <lang id="th" status="2">เส้นทาง Registry:</lang>
                 <lang id="pl" status="2">Ścieżka:</lang>
               </row>
@@ -984,7 +1030,7 @@
               <lang id="zh" status="2">新增项目</lang>
               <lang id="zh.tra" status="2">新增項目</lang>
               <lang id="ja" status="2">エントリを追加する</lang>
-              <lang id="vi" status="2">Add Entry</lang>
+              <lang id="vi" date="20091106173340" status="3">Thêm Mục vào</lang>
               <lang id="th" status="2">เพิ่มรายการ</lang>
               <lang id="pl" status="2">Dodaj wpis</lang>
             </row>
@@ -1011,9 +1057,9 @@
             <lang id="zh" status="2">小注册表清理器</lang>
             <lang id="zh.tra" status="2">小註冊表清理器</lang>
             <lang id="ja" date="20091030211909" status="3">小さな Registry Cleaner</lang>
-            <lang id="vi" status="2">Little Registry Cleaner</lang>
+            <lang id="vi" status="3">Người lau chùi Nơi đăng ký Nhỏ</lang>
             <lang id="th" date="20091030213620" status="3">รีจิสทรีน้อยตัวล้าง</lang>
-            <lang id="pl" status="2">Little rejestru Cleaner</lang>
+            <lang id="pl" date="20091105225459" status="3">Mały Registratura Sprzątacz</lang>
           </row>
           <component class="TVisCheckBox" name="nodeCheckBox" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeCheckBox">
           </component>
@@ -1025,199 +1071,12 @@
           </component>
           <component class="TVisEdit" name="nodeValueName" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox">
           </component>
-          <component class="TVisPopupMenu" name="contextMenuStrip1" type="System.Windows.Forms.ContextMenuStrip">
-            <row id="Size.Height">98</row>
-            <row id="Size.Width">162</row>
-            <component class="TVisMenuItem" name="selectAllToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text" state="0">
-                <native>Select All</native>
-                <lang id="en" status="2">Select All</lang>
-                <lang id="fr" status="3">Choisissez tous</lang>
-                <lang id="es" status="2">Seleccionar todo</lang>
-                <lang id="pt" status="2">Selecione todos</lang>
-                <lang id="it" status="2">Seleziona tutto</lang>
-                <lang id="nl" status="2">Alles selecteren.</lang>
-                <lang id="de" status="2">Wählen Sie alle</lang>
-                <lang id="ru" status="2">Выделить все</lang>
-                <lang id="el" status="2">Επιλογή όλων</lang>
-                <lang id="ar" status="2">تحديد الكل</lang>
-                <lang id="sv" status="2">Markera alla</lang>
-                <lang id="zh" status="2">选择所有</lang>
-                <lang id="zh.tra" status="2">選擇所有</lang>
-                <lang id="ja" status="2">すべて選択</lang>
-                <lang id="vi" status="2">Chọn Tất cả</lang>
-                <lang id="th" status="2">เลือกทั้งหมด</lang>
-                <lang id="pl" status="3">Zaznacz wszystko</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="selectNoneToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text" state="0">
-                <native>Select None</native>
-                <lang id="en" status="2">Select None</lang>
-                <lang id="fr" status="2">Sélectionnez Aucun</lang>
-                <lang id="es" status="2">Seleccione Ninguno</lang>
-                <lang id="pt" status="2">Selecione Nenhum</lang>
-                <lang id="it" status="2">Selezionare Nessuno</lang>
-                <lang id="nl" status="2">Selecteer geen</lang>
-                <lang id="de" status="2">Wählen Sie keine</lang>
-                <lang id="ru" status="2">Выберите «нет»</lang>
-                <lang id="el" status="2">Επιλέξτε "Κανένα"</lang>
-                <lang id="ar" status="2">حدد بلا</lang>
-                <lang id="sv" status="2">Välj Ingen</lang>
-                <lang id="zh" status="2">选择无</lang>
-                <lang id="zh.tra" status="2">選擇無</lang>
-                <lang id="ja" date="20091030211940" status="3">[なし] を選択します。</lang>
-                <lang id="vi" status="2">Chọn Không</lang>
-                <lang id="th" status="2">ไม่มีเลือก</lang>
-                <lang id="pl" status="3">Odznacz wszystko</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="toolStripSeparator1" type="System.Windows.Forms.ToolStripSeparator">
-              <row id="Size.Height">6</row>
-              <row id="Size.Width">158</row>
-            </component>
-            <component class="TVisMenuItem" name="excludeSelectedToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text" state="0">
-                <native>Exclude Selected</native>
-                <lang id="en" status="2">Exclude Selected</lang>
-                <lang id="fr" status="2">Exclure Sélection</lang>
-                <lang id="es" status="2">Excluir seleccionado</lang>
-                <lang id="pt" status="2">Excluir selecionado</lang>
-                <lang id="it" status="2">Escludere selezionati</lang>
-                <lang id="nl" status="2">Geselecteerde uitsluiten</lang>
-                <lang id="de" status="2">Ausgewählte ausschließen</lang>
-                <lang id="ru" status="2">Исключить отдельные</lang>
-                <lang id="el" status="2">Εξαίρεση επιλεγμένων</lang>
-                <lang id="ar" status="2">استبعاد المحددة</lang>
-                <lang id="sv" status="2">Exkludera vald</lang>
-                <lang id="zh" status="2">排除选择</lang>
-                <lang id="zh.tra" status="2">排除選擇</lang>
-                <lang id="ja" status="2">除外選択</lang>
-                <lang id="vi" status="2">Loại trừ được chọn</lang>
-                <lang id="th" status="2">ยกเว้นเลือก</lang>
-                <lang id="pl" status="3">Pomiń zaznaczone</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="viewInRegeditToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text" state="0">
-                <native>View in regedit</native>
-                <lang id="en" status="2">View in regedit</lang>
-                <lang id="fr" status="2">Voir dans regedit</lang>
-                <lang id="es" status="2">Ver en regedit</lang>
-                <lang id="pt" status="2">Exibir regedit</lang>
-                <lang id="it" status="2">Visualizzare in regedit</lang>
-                <lang id="nl" status="2">In regedit weer geven</lang>
-                <lang id="de" status="2">In Regedit anzeigen</lang>
-                <lang id="ru" status="2">Просмотр в regedit</lang>
-                <lang id="el" status="2">Προβολή σε regedit</lang>
-                <lang id="ar" status="2">عرض في regedit</lang>
-                <lang id="sv" status="2">Visa i regedit</lang>
-                <lang id="zh" status="2">查看输入regedit</lang>
-                <lang id="zh.tra" status="2">查看輸入regedit</lang>
-                <lang id="ja" status="2">プロフィールファイル名を指定で</lang>
-                <lang id="vi" status="2">Xem trong regedit</lang>
-                <lang id="th" status="2">ดูใน regedit</lang>
-                <lang id="pl" status="3">Otwórz w regedit</lang>
-              </row>
-            </component>
-          </component>
-          <component class="TVisPopupMenu" name="contextMenuStrip2" type="System.Windows.Forms.ContextMenuStrip">
-            <row id="Size.Height">76</row>
-            <row id="Size.Width">137</row>
-            <component class="TVisMenuItem" name="hideShowToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem" parentfont="0">
-              <row id="Font">Segoe UI,9,style=Bold</row>
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">136</row>
-              <row id="Text" state="0">
-                <native>Hide/Show</native>
-                <lang id="en" status="2">Hide/Show</lang>
-                <lang id="fr" date="20091030210846" status="3">Peau / Exposition</lang>
-                <lang id="es" status="2">Ocultar/mostrar</lang>
-                <lang id="pt" status="2">Mostrar/ocultar</lang>
-                <lang id="it" status="2">Mostra/Nascondi</lang>
-                <lang id="nl" status="2">Verbergen/weer geven</lang>
-                <lang id="de" status="2">Ausblenden/einblenden</lang>
-                <lang id="ru" status="2">Скрыть/Показать</lang>
-                <lang id="el" status="2">Απόκρυψη/Εμφάνιση</lang>
-                <lang id="ar" status="2">إظهار/إخفاء</lang>
-                <lang id="sv" status="2">Dölj/visa</lang>
-                <lang id="zh" status="2">隐藏/显示</lang>
-                <lang id="zh.tra" status="2">隱藏/顯示</lang>
-                <lang id="ja" status="2">非表示/表示</lang>
-                <lang id="vi" status="2">Hide / Show</lang>
-                <lang id="th" status="2">ซ่อน / แสดง</lang>
-                <lang id="pl" status="3">Pokaż/Ukryj</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="aboutToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">136</row>
-              <row id="Text" state="0">
-                <native>About...</native>
-                <lang id="en" status="2">About...</lang>
-                <lang id="fr" status="2">À propos de...</lang>
-                <lang id="es" status="2">Acerca de...</lang>
-                <lang id="pt" status="2">Sobre...</lang>
-                <lang id="it" status="2">Sulla...</lang>
-                <lang id="nl" status="2">Over...</lang>
-                <lang id="de" status="2">Über...</lang>
-                <lang id="ru" status="2">О...</lang>
-                <lang id="el" status="2">Σχετικά με...</lang>
-                <lang id="ar" status="2">حول...</lang>
-                <lang id="sv" status="2">Om...</lang>
-                <lang id="zh" status="2">大约...</lang>
-                <lang id="zh.tra" status="2">大約...</lang>
-                <lang id="ja" status="2">〜について...</lang>
-                <lang id="vi" status="2">Về...</lang>
-                <lang id="th" status="2">เกี่ยวกับ...</lang>
-                <lang id="pl" status="3">O programie...</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="toolStripSeparator4" type="System.Windows.Forms.ToolStripSeparator">
-              <row id="Size.Height">6</row>
-              <row id="Size.Width">133</row>
-            </component>
-            <component class="TVisMenuItem" name="exitToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">136</row>
-              <row id="Text" state="0">
-                <native>Exit</native>
-                <lang id="en" status="2">Exit</lang>
-                <lang id="fr" status="3">Sortie</lang>
-                <lang id="es" status="2">Salida</lang>
-                <lang id="pt" status="2">Saída</lang>
-                <lang id="it" status="2">Uscita</lang>
-                <lang id="nl" status="2">Uitgang</lang>
-                <lang id="de" status="2">Ausfahrt</lang>
-                <lang id="ru" status="2">Выезда</lang>
-                <lang id="el" status="2">Εξόδου</lang>
-                <lang id="ar" status="2">خروج</lang>
-                <lang id="sv" status="2">Avsluta</lang>
-                <lang id="zh" status="2">退出</lang>
-                <lang id="zh.tra" status="2">退出</lang>
-                <lang id="ja" status="2">終了</lang>
-                <lang id="vi" status="3">Cửa ra</lang>
-                <lang id="th" status="2">ออกจาก</lang>
-                <lang id="pl" status="3">Zakończ</lang>
-              </row>
-            </component>
-          </component>
-          <component class="TVisImageList" name="imageListTreeView" type="System.Windows.Forms.ImageList">
-          </component>
           <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer" align="alClient">
             <row id="Location.X">0</row>
             <row id="Location.Y">0</row>
             <row id="Size.Height">483</row>
             <row id="Size.Width">809</row>
-            <row id="Text" locked="1" state="0">
+            <row id="Text" locked="1" excluded="1" state="0">
               <native>toolStripContainer1</native>
               <lang id="en">toolStripContainer1</lang>
               <lang id="es">toolStripContainer1</lang>
@@ -1265,13 +1124,13 @@
                 <row id="Location.Y">3</row>
                 <row id="Size.Height">399</row>
                 <row id="Size.Width">630</row>
-                <component class="TVisListView" name="treeViewAdvResults" type="Common_Tools.TreeViewAdv.Tree.TreeViewAdv" align="alClient">
+                <component class="TVisBasicControl" name="treeViewAdvResults" type="Common_Tools.TreeViewAdv.Tree.TreeViewAdv" align="alClient">
                   <row id="BackColor" hidden="1">clWindow</row>
                   <row id="Location.X">3</row>
                   <row id="Location.Y">3</row>
                   <row id="Size.Height">283</row>
                   <row id="Size.Width">624</row>
-                  <row id="Text" locked="1" state="0">
+                  <row id="Text" locked="1" excluded="1" state="0">
                     <native>treeViewAdv1</native>
                     <lang id="en">treeViewAdv1</lang>
                     <lang id="es">treeViewAdv1</lang>
@@ -1508,7 +1367,7 @@
                         <lang id="zh" status="2">启动</lang>
                         <lang id="zh.tra" status="2">啟動</lang>
                         <lang id="ja" status="2">スタートアップ</lang>
-                        <lang id="vi" status="2">Startup</lang>
+                        <lang id="vi" date="20091106173927" status="3">Khởi động</lang>
                         <lang id="th" status="2">การเริ่มต้น</lang>
                         <lang id="pl" status="3">Uruchamianie systemu</lang>
                       </row>
@@ -1627,7 +1486,7 @@
                       <row id="Text" state="0">
                         <native>Windows Fonts</native>
                         <lang id="en" status="2">Windows Fonts</lang>
-                        <lang id="fr" date="20091030203103" status="3">Polices de Windows</lang>
+                        <lang id="fr" date="20091030203103" status="3">Policies de Windows</lang>
                         <lang id="es" status="2">Fuentes de Windows</lang>
                         <lang id="pt" status="2">Fontes do Windows</lang>
                         <lang id="it" status="2">Caratteri di Windows</lang>
@@ -1654,7 +1513,7 @@
               <row id="Location.Y">24</row>
               <row id="Size.Height">54</row>
               <row id="Size.Width">809</row>
-              <row id="Text" locked="1" state="0">
+              <row id="Text" locked="1" excluded="1" state="0">
                 <native>toolStrip1</native>
                 <lang id="en">toolStrip1</lang>
                 <lang id="es">toolStrip1</lang>
@@ -1754,7 +1613,7 @@
                 <row id="Text" state="0">
                   <native>Options</native>
                   <lang id="en" status="2">Options</lang>
-                  <lang id="fr" status="2">Options</lang>
+                  <lang id="fr" date="20091106174527" status="3">Arrangements</lang>
                   <lang id="es" status="2">Opciones</lang>
                   <lang id="pt" status="2">Opções</lang>
                   <lang id="it" status="2">Opzioni</lang>
@@ -1781,7 +1640,7 @@
                   <lang id="fr" status="2">Aider</lang>
                   <lang id="es" status="2">Ayuda</lang>
                   <lang id="pt" status="2">Ajuda</lang>
-                  <lang id="it" status="2">Guida</lang>
+                  <lang id="it" date="20091105195239" status="3">Aiuto</lang>
                   <lang id="nl" status="2">Help</lang>
                   <lang id="de" status="2">Hilfe</lang>
                   <lang id="ru" status="2">Справка</lang>
@@ -1802,7 +1661,7 @@
               <row id="Location.Y">0</row>
               <row id="Size.Height">24</row>
               <row id="Size.Width">809</row>
-              <row id="Text" locked="1" state="0">
+              <row id="Text" locked="1" excluded="1" state="0">
                 <native>menuStrip1</native>
                 <lang id="en">menuStrip1</lang>
                 <lang id="es">menuStrip1</lang>
@@ -1829,7 +1688,7 @@
                   <lang id="fr" status="2">Fichier</lang>
                   <lang id="es" status="2">Archivo</lang>
                   <lang id="pt" status="2">Arquivo</lang>
-                  <lang id="it" status="2">File</lang>
+                  <lang id="it" date="20091105195331" status="3">Schedario</lang>
                   <lang id="nl" status="2">Bestand</lang>
                   <lang id="de" status="2">Datei</lang>
                   <lang id="ru" status="2">Файл</lang>
@@ -2542,7 +2401,7 @@
                     <lang id="zh" status="2">启动管理器</lang>
                     <lang id="zh.tra" status="2">啟動管理器</lang>
                     <lang id="ja" status="2">スタートアップマネージャ</lang>
-                    <lang id="vi" status="2">Startup Manager</lang>
+                    <lang id="vi" date="20091106174310" status="3">Khởi động trình quản lý</lang>
                     <lang id="th" date="20091030213545" status="3">ผู้จัดการการเริ่มต้น</lang>
                     <lang id="pl" status="3">Menadżer uruchamiania</lang>
                   </row>
@@ -2566,7 +2425,7 @@
                     <lang id="zh" status="2">卸载管理</lang>
                     <lang id="zh.tra" status="2">卸載管理</lang>
                     <lang id="ja" status="2">をアンインストールするマネージャ</lang>
-                    <lang id="vi" status="2">Uninstall Manager</lang>
+                    <lang id="vi" date="20091106174207" status="3">Chương trình quản lý</lang>
                     <lang id="th" date="20091030213439" status="3">การถอนการติดตั้งโปรแกรมจัดการ</lang>
                     <lang id="pl" status="3">Menadżer deinstalacji</lang>
                   </row>
@@ -2581,7 +2440,7 @@
                   <row id="Text" state="0">
                     <native>Options</native>
                     <lang id="en" status="2">Options</lang>
-                    <lang id="fr" status="2">Options</lang>
+                    <lang id="fr" status="3">Arrangements</lang>
                     <lang id="es" status="2">Opciones</lang>
                     <lang id="pt" status="2">Opções</lang>
                     <lang id="it" status="2">Opzioni</lang>
@@ -2609,7 +2468,7 @@
                   <lang id="fr" status="2">Aider</lang>
                   <lang id="es" status="2">Ayuda</lang>
                   <lang id="pt" status="2">Ajuda</lang>
-                  <lang id="it" status="2">Guida</lang>
+                  <lang id="it" status="3">Aiuto</lang>
                   <lang id="nl" status="2">Help</lang>
                   <lang id="de" status="2">Hilfe</lang>
                   <lang id="ru" status="2">Справка</lang>
@@ -2632,7 +2491,7 @@
                     <lang id="fr" status="2">Aider</lang>
                     <lang id="es" status="2">Ayuda</lang>
                     <lang id="pt" status="2">Ajuda</lang>
-                    <lang id="it" status="2">Guida</lang>
+                    <lang id="it" status="3">Aiuto</lang>
                     <lang id="nl" status="2">Help</lang>
                     <lang id="de" status="2">Hilfe</lang>
                     <lang id="ru" status="2">Справка</lang>
@@ -2670,7 +2529,7 @@
                     <lang id="zh" status="2">访问网站</lang>
                     <lang id="zh.tra" status="2">訪問網站</lang>
                     <lang id="ja" status="2">ご覧のウェブサイト</lang>
-                    <lang id="vi" status="2">Visit Website</lang>
+                    <lang id="vi" date="20091106174751" status="3">Chuyến thăm Website</lang>
                     <lang id="th" status="2">เว็บไซต์เยี่ยมชม</lang>
                     <lang id="pl" status="3">Strona WWW</lang>
                   </row>
@@ -2730,6 +2589,193 @@
               </component>
             </component>
           </component>
+          <component class="TVisPopupMenu" name="contextMenuStrip1" type="System.Windows.Forms.ContextMenuStrip">
+            <row id="Size.Height">98</row>
+            <row id="Size.Width">162</row>
+            <component class="TVisMenuItem" name="selectAllToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text" state="0">
+                <native>Select All</native>
+                <lang id="en" status="2">Select All</lang>
+                <lang id="fr" status="3">Choisissez tous</lang>
+                <lang id="es" status="2">Seleccionar todo</lang>
+                <lang id="pt" status="2">Selecione todos</lang>
+                <lang id="it" status="2">Seleziona tutto</lang>
+                <lang id="nl" status="2">Alles selecteren.</lang>
+                <lang id="de" status="2">Wählen Sie alle</lang>
+                <lang id="ru" status="2">Выделить все</lang>
+                <lang id="el" status="2">Επιλογή όλων</lang>
+                <lang id="ar" status="2">تحديد الكل</lang>
+                <lang id="sv" status="2">Markera alla</lang>
+                <lang id="zh" status="2">选择所有</lang>
+                <lang id="zh.tra" status="2">選擇所有</lang>
+                <lang id="ja" status="2">すべて選択</lang>
+                <lang id="vi" status="2">Chọn Tất cả</lang>
+                <lang id="th" status="2">เลือกทั้งหมด</lang>
+                <lang id="pl" status="3">Zaznacz wszystko</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="selectNoneToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text" state="0">
+                <native>Select None</native>
+                <lang id="en" status="2">Select None</lang>
+                <lang id="fr" status="2">Sélectionnez Aucun</lang>
+                <lang id="es" status="2">Seleccione Ninguno</lang>
+                <lang id="pt" status="2">Selecione Nenhum</lang>
+                <lang id="it" status="2">Selezionare Nessuno</lang>
+                <lang id="nl" status="2">Selecteer geen</lang>
+                <lang id="de" status="2">Wählen Sie keine</lang>
+                <lang id="ru" status="2">Выберите «нет»</lang>
+                <lang id="el" status="2">Επιλέξτε "Κανένα"</lang>
+                <lang id="ar" status="2">حدد بلا</lang>
+                <lang id="sv" status="2">Välj Ingen</lang>
+                <lang id="zh" status="2">选择无</lang>
+                <lang id="zh.tra" status="2">選擇無</lang>
+                <lang id="ja" date="20091030211940" status="3">[なし] を選択します。</lang>
+                <lang id="vi" status="2">Chọn Không</lang>
+                <lang id="th" status="2">ไม่มีเลือก</lang>
+                <lang id="pl" status="3">Odznacz wszystko</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="toolStripSeparator1" type="System.Windows.Forms.ToolStripSeparator">
+              <row id="Size.Height">6</row>
+              <row id="Size.Width">158</row>
+            </component>
+            <component class="TVisMenuItem" name="excludeSelectedToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text" state="0">
+                <native>Exclude Selected</native>
+                <lang id="en" status="2">Exclude Selected</lang>
+                <lang id="fr" status="2">Exclure Sélection</lang>
+                <lang id="es" status="2">Excluir seleccionado</lang>
+                <lang id="pt" status="2">Excluir selecionado</lang>
+                <lang id="it" status="2">Escludere selezionati</lang>
+                <lang id="nl" status="2">Geselecteerde uitsluiten</lang>
+                <lang id="de" status="2">Ausgewählte ausschließen</lang>
+                <lang id="ru" status="2">Исключить отдельные</lang>
+                <lang id="el" status="2">Εξαίρεση επιλεγμένων</lang>
+                <lang id="ar" status="2">استبعاد المحددة</lang>
+                <lang id="sv" status="2">Exkludera vald</lang>
+                <lang id="zh" status="2">排除选择</lang>
+                <lang id="zh.tra" status="2">排除選擇</lang>
+                <lang id="ja" status="2">除外選択</lang>
+                <lang id="vi" status="2">Loại trừ được chọn</lang>
+                <lang id="th" status="2">ยกเว้นเลือก</lang>
+                <lang id="pl" status="3">Pomiń zaznaczone</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="viewInRegeditToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text" state="0">
+                <native>View in regedit</native>
+                <lang id="en" status="2">View in regedit</lang>
+                <lang id="fr" status="2">Voir dans regedit</lang>
+                <lang id="es" status="2">Ver en regedit</lang>
+                <lang id="pt" status="2">Exibir regedit</lang>
+                <lang id="it" status="2">Visualizzare in regedit</lang>
+                <lang id="nl" status="2">In regedit weer geven</lang>
+                <lang id="de" status="2">In Regedit anzeigen</lang>
+                <lang id="ru" status="2">Просмотр в regedit</lang>
+                <lang id="el" status="2">Προβολή σε regedit</lang>
+                <lang id="ar" status="2">عرض في regedit</lang>
+                <lang id="sv" status="2">Visa i regedit</lang>
+                <lang id="zh" status="2">查看输入regedit</lang>
+                <lang id="zh.tra" status="2">查看輸入regedit</lang>
+                <lang id="ja" status="2">プロフィールファイル名を指定で</lang>
+                <lang id="vi" status="2">Xem trong regedit</lang>
+                <lang id="th" status="2">ดูใน regedit</lang>
+                <lang id="pl" status="3">Otwórz w regedit</lang>
+              </row>
+            </component>
+          </component>
+          <component class="TVisPopupMenu" name="contextMenuStrip2" type="System.Windows.Forms.ContextMenuStrip">
+            <row id="Size.Height">76</row>
+            <row id="Size.Width">137</row>
+            <component class="TVisMenuItem" name="hideShowToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem" parentfont="0">
+              <row id="Font">Segoe UI,9,style=Bold</row>
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">136</row>
+              <row id="Text" state="0">
+                <native>Hide/Show</native>
+                <lang id="en" status="2">Hide/Show</lang>
+                <lang id="fr" date="20091030210846" status="3">Peau / Exposition</lang>
+                <lang id="es" status="2">Ocultar/mostrar</lang>
+                <lang id="pt" status="2">Mostrar/ocultar</lang>
+                <lang id="it" status="2">Mostra/Nascondi</lang>
+                <lang id="nl" status="2">Verbergen/weer geven</lang>
+                <lang id="de" status="2">Ausblenden/einblenden</lang>
+                <lang id="ru" status="2">Скрыть/Показать</lang>
+                <lang id="el" status="2">Απόκρυψη/Εμφάνιση</lang>
+                <lang id="ar" status="2">إظهار/إخفاء</lang>
+                <lang id="sv" status="2">Dölj/visa</lang>
+                <lang id="zh" status="2">隐藏/显示</lang>
+                <lang id="zh.tra" status="2">隱藏/顯示</lang>
+                <lang id="ja" status="2">非表示/表示</lang>
+                <lang id="vi" date="20091106174632" status="3">Che giấu/Chỉ ra</lang>
+                <lang id="th" status="2">ซ่อน / แสดง</lang>
+                <lang id="pl" status="3">Pokaż/Ukryj</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="aboutToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">136</row>
+              <row id="Text" state="0">
+                <native>About...</native>
+                <lang id="en" status="2">About...</lang>
+                <lang id="fr" status="2">À propos de...</lang>
+                <lang id="es" status="2">Acerca de...</lang>
+                <lang id="pt" status="2">Sobre...</lang>
+                <lang id="it" status="2">Sulla...</lang>
+                <lang id="nl" status="2">Over...</lang>
+                <lang id="de" status="2">Über...</lang>
+                <lang id="ru" status="2">О...</lang>
+                <lang id="el" status="2">Σχετικά με...</lang>
+                <lang id="ar" status="2">حول...</lang>
+                <lang id="sv" status="2">Om...</lang>
+                <lang id="zh" status="2">大约...</lang>
+                <lang id="zh.tra" status="2">大約...</lang>
+                <lang id="ja" status="2">〜について...</lang>
+                <lang id="vi" status="2">Về...</lang>
+                <lang id="th" status="2">เกี่ยวกับ...</lang>
+                <lang id="pl" status="3">O programie...</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="toolStripSeparator4" type="System.Windows.Forms.ToolStripSeparator">
+              <row id="Size.Height">6</row>
+              <row id="Size.Width">133</row>
+            </component>
+            <component class="TVisMenuItem" name="exitToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">136</row>
+              <row id="Text" state="0">
+                <native>Exit</native>
+                <lang id="en" status="2">Exit</lang>
+                <lang id="fr" status="3">Sortie</lang>
+                <lang id="es" status="2">Salida</lang>
+                <lang id="pt" status="2">Saída</lang>
+                <lang id="it" status="2">Uscita</lang>
+                <lang id="nl" status="2">Uitgang</lang>
+                <lang id="de" status="2">Ausfahrt</lang>
+                <lang id="ru" status="2">Выезда</lang>
+                <lang id="el" status="2">Εξόδου</lang>
+                <lang id="ar" status="2">خروج</lang>
+                <lang id="sv" status="2">Avsluta</lang>
+                <lang id="zh" status="2">退出</lang>
+                <lang id="zh.tra" status="2">退出</lang>
+                <lang id="ja" status="2">終了</lang>
+                <lang id="vi" status="3">Cửa ra</lang>
+                <lang id="th" status="2">ออกจาก</lang>
+                <lang id="pl" status="3">Zakończ</lang>
+              </row>
+            </component>
+          </component>
+          <component class="TVisImageList" name="imageListTreeView" type="System.Windows.Forms.ImageList">
+          </component>
           <component class="TVisHiddenComponent" name="notifyIcon1" type="System.Windows.Forms.NotifyIcon">
             <row id="Text" state="3">
               <prev>Little Register Cleaner</prev>
@@ -2737,20 +2783,20 @@
               <lang id="en" date="20091030211011" invalidated="1" status="3">Little Registry Cleaner</lang>
               <lang id="fr" date="20091030211106" invalidated="1" status="3">Peu de décapant d'enregistrement</lang>
               <lang id="es" invalidated="1" status="2">Registro de poco más limpia</lang>
-              <lang id="pt" invalidated="1" status="2">Pouco Register Limpador</lang>
+              <lang id="pt" invalidated="1" status="2">Pouco Registry Cleaner</lang>
               <lang id="it" invalidated="1" status="2">Registro poco Cleaner</lang>
-              <lang id="nl" invalidated="1" status="2">Iets schonere registreren</lang>
-              <lang id="de" invalidated="1" status="2">Wenig registrieren Cleaner</lang>
-              <lang id="ru" invalidated="1" status="2">Мало зарегистрировать переход к более чистому</lang>
-              <lang id="el" invalidated="1" status="2">Μητρώο κάπως Cleaner</lang>
-              <lang id="ar" invalidated="1" status="2">سجل قليلا الأنظف</lang>
-              <lang id="sv" invalidated="1" status="2">Något Register Cleaner</lang>
-              <lang id="zh" invalidated="1" status="2">小注册清洁</lang>
-              <lang id="zh.tra" invalidated="1" status="2">小註冊清潔</lang>
+              <lang id="nl" invalidated="1" status="2">Weinig register reinigings</lang>
+              <lang id="de" invalidated="1" status="2">Wenig Registry Cleaner</lang>
+              <lang id="ru" invalidated="1" status="2">Мало реестра чистого</lang>
+              <lang id="el" invalidated="1" status="2">Μικρή Registry Cleaner</lang>
+              <lang id="ar" invalidated="1" status="2">التسجيل ضئيلة الأنظف</lang>
+              <lang id="sv" invalidated="1" status="2">Liten Registry Cleaner</lang>
+              <lang id="zh" invalidated="1" status="2">小注册表清理器</lang>
+              <lang id="zh.tra" invalidated="1" status="2">小註冊表清理器</lang>
               <lang id="ja" status="3">小さな Registry Cleaner</lang>
-              <lang id="vi" invalidated="1" status="2">Đăng ký ít bụi</lang>
+              <lang id="vi" status="3">Người lau chùi Nơi đăng ký Nhỏ</lang>
               <lang id="th" status="3">รีจิสทรีน้อยตัวล้าง</lang>
-              <lang id="pl" invalidated="1" status="2">Trochę Register Cleaner</lang>
+              <lang id="pl" status="3">Mały Registratura Sprzątacz</lang>
             </row>
           </component>
           <component class="TVisHiddenComponent" name="nodeIcon" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeIcon">
@@ -2764,7 +2810,7 @@
           <row id="Text" state="0">
             <native>Little Registry Cleaner - Options</native>
             <lang id="en" status="2">Little Registry Cleaner - Options</lang>
-            <lang id="fr" status="2">Little Registry Cleaner - Options</lang>
+            <lang id="fr" date="20091106175851" status="3">Peu de décapant d'enregistrement - Configurez</lang>
             <lang id="es" status="2">Registro poco limpiador - opciones</lang>
             <lang id="pt" status="2">Pouco Registry Cleaner - opções</lang>
             <lang id="it" status="2">Registro poco Cleaner - opzioni</lang>
@@ -2778,7 +2824,7 @@
             <lang id="zh.tra" status="2">小註冊表清理器-選項</lang>
             <lang id="ja" status="2">リトルRegistry Cleanerは、 - [オプション]</lang>
             <lang id="vi" status="2">Little Registry Cleaner - Tùy chọn</lang>
-            <lang id="th" status="2">Little Registry Cleaner - Options</lang>
+            <lang id="th" date="20091106175528" status="3">รีจิสทรีน้อยตัวล้าง - Tùy chọn</lang>
             <lang id="pl" status="2">Little Registry Cleaner - Ustawienia</lang>
           </row>
           <component class="TVisPictureButton" name="buttonCancel" type="System.Windows.Forms.Button">
@@ -2826,7 +2872,7 @@
               <lang id="ar" status="2">موافق</lang>
               <lang id="sv" status="2">OKEJ</lang>
               <lang id="zh" status="2">行</lang>
-              <lang id="zh.tra" status="2">行</lang>
+              <lang id="zh.tra" status="2">還行</lang>
               <lang id="ja" status="2">[OK]を</lang>
               <lang id="vi" status="2">OK</lang>
               <lang id="th" status="2">OK</lang>
@@ -2847,7 +2893,7 @@
                 <native>General</native>
                 <lang id="en" status="2">General</lang>
                 <lang id="fr" status="2">Général</lang>
-                <lang id="es" status="2">General</lang>
+                <lang id="es" date="20091106175231" status="3">Común</lang>
                 <lang id="pt" status="2">Geral</lang>
                 <lang id="it" status="2">Generale</lang>
                 <lang id="nl" status="2">Algemene</lang>
@@ -2929,7 +2975,7 @@
                 <row id="Text" state="0">
                   <native>Options</native>
                   <lang id="en" status="2">Options</lang>
-                  <lang id="fr" status="2">Options</lang>
+                  <lang id="fr" status="3">Arrangements</lang>
                   <lang id="es" status="2">Opciones</lang>
                   <lang id="pt" status="2">Opções</lang>
                   <lang id="it" status="2">Opzioni</lang>
@@ -3220,7 +3266,7 @@
                 <lang id="en" status="2">Ignore List</lang>
                 <lang id="fr" status="2">Ignorer la liste</lang>
                 <lang id="es" status="2">Ignorar la lista</lang>
-                <lang id="pt" status="2">Ignore List</lang>
+                <lang id="pt" date="20091106175400" status="3">Ignorar a lista</lang>
                 <lang id="it" status="2">Ignorare elenco</lang>
                 <lang id="nl" status="2">Lijst negeren</lang>
                 <lang id="de" status="2">Liste ignorieren</lang>
@@ -3314,7 +3360,7 @@
                 <lang id="zh" status="2">添加文件</lang>
                 <lang id="zh.tra" status="2">添加文件</lang>
                 <lang id="ja" status="2">ファイルを追加する</lang>
-                <lang id="vi" status="2">Add File</lang>
+                <lang id="vi" date="20091106174845" status="3">Thêm Hồ sơ</lang>
                 <lang id="th" status="2">เพิ่มไฟล์</lang>
                 <lang id="pl" status="2">Dodaj plik</lang>
               </row>
@@ -3408,7 +3454,7 @@
             <lang id="fr" status="2">Little Registry Cleaner - Restaurer registre</lang>
             <lang id="es" status="2">Registro poco restaurar limpiador - registro</lang>
             <lang id="pt" status="2">Pouco Registry Cleaner - restaurar o registro</lang>
-            <lang id="it" status="2">Registro poco Cleaner - ripristino del Registro</lang>
+            <lang id="it" date="20091106172503" status="2">Registro poco Cleaner - ripristino del Registro</lang>
             <lang id="nl" status="2">Weinig register reinigings medium - register herstellen</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Registrierung wiederherstellen</lang>
             <lang id="ru" status="2">Мало реестра очиститель - восстановление реестра</lang>
@@ -3418,8 +3464,8 @@
             <lang id="zh" status="2">小处清洁-还原注册表</lang>
             <lang id="zh.tra" status="2">小處清潔-還原註冊表</lang>
             <lang id="ja" status="2">リトルレジストリクリーナー-復元レジストリ</lang>
-            <lang id="vi" status="2">Little Registry Cleaner - Khôi phục Registry</lang>
-            <lang id="th" status="2">Little Registry Cleaner - Restore Registry</lang>
+            <lang id="vi" date="20091106180137" status="3">Người lau chùi Nơi đăng ký Nhỏ - Khôi phục Nơi đăng ký</lang>
+            <lang id="th" date="20091106172637" status="3">รีจิสทรีน้อยตัวล้าง - การคืนค่ารีจิสทรี</lang>
             <lang id="pl" status="2">Little Registry Cleaner - Przywróć rejestr</lang>
           </row>
           <component class="TVisGridPanel" name="tableLayoutPanel1" type="System.Windows.Forms.TableLayoutPanel" align="alClient">
@@ -3452,16 +3498,19 @@
                 <row id="Location.X">230</row>
                 <row id="Location.Y">3</row>
                 <row id="Size.Height">23</row>
-                <row id="Size.Width">95</row>
+                <row id="Size.Width">
+                  <native>95</native>
+                  <lang id="nl" status="0">99</lang>
+                </row>
                 <row id="Text" state="0">
                   <native>Open Directory...</native>
                   <lang id="en" status="2">Open Directory...</lang>
-                  <lang id="fr" status="2">Open Directory...</lang>
-                  <lang id="es" status="2">Open Directory...</lang>
-                  <lang id="pt" status="2">Open Directory...</lang>
-                  <lang id="it" status="2">Open Directory...</lang>
-                  <lang id="nl" status="2">Open Directory...</lang>
-                  <lang id="de" status="2">Open Directory...</lang>
+                  <lang id="fr" date="20091106171845" status="3">Ouvrez l'annuaire...</lang>
+                  <lang id="es" date="20091106171914" status="3">Abra el directorio...</lang>
+                  <lang id="pt" date="20091106171932" status="3">Abra o diretório...</lang>
+                  <lang id="it" date="20091106172355" status="3">Apra l'indice...</lang>
+                  <lang id="nl" date="20091106172027" status="3">Open de map...</lang>
+                  <lang id="de" date="20091106172044" status="3">Geöffneten Ordner...</lang>
                   <lang id="ru" status="2">Открытый каталог...</lang>
                   <lang id="el" status="2">Άνοιγμα καταλόγου...</lang>
                   <lang id="ar" status="2">دليل المفتوحة...</lang>
@@ -3469,8 +3518,8 @@
                   <lang id="zh" status="2">开放目录...</lang>
                   <lang id="zh.tra" status="2">開放目錄...</lang>
                   <lang id="ja" status="2">オープンディレクトリ...</lang>
-                  <lang id="vi" status="2">Open Directory...</lang>
-                  <lang id="th" status="2">Open Directory...</lang>
+                  <lang id="vi" date="20091106172322" status="3">Thư mục Mở...</lang>
+                  <lang id="th" date="20091106172157" status="3">ไดเรกทอรีที่เปิด...</lang>
                   <lang id="pl" status="2">Otwórz folder...</lang>
                 </row>
               </component>
@@ -3478,7 +3527,10 @@
                 <row id="Location.X">331</row>
                 <row id="Location.Y">3</row>
                 <row id="Size.Height">23</row>
-                <row id="Size.Width">65</row>
+                <row id="Size.Width">
+                  <native>65</native>
+                  <lang id="de" status="0">86</lang>
+                </row>
                 <row id="Text" state="0">
                   <native>Restore</native>
                   <lang id="en" status="2">Restore</lang>
@@ -3536,7 +3588,7 @@
                 <row id="Text" state="0">
                   <native>File Name</native>
                   <lang id="en" status="2">File Name</lang>
-                  <lang id="fr" status="2">File Name</lang>
+                  <lang id="fr" date="20091106172854" status="3">Nom de fichier</lang>
                   <lang id="es" status="2">Nombre del archivo</lang>
                   <lang id="pt" status="2">Nome do arquivo</lang>
                   <lang id="it" status="2">Nome del file</lang>
@@ -3585,7 +3637,7 @@
                   <lang id="fr" status="2">Taille</lang>
                   <lang id="es" status="2">Tamaño</lang>
                   <lang id="pt" status="2">Tamanho</lang>
-                  <lang id="it" date="20090917120539" status="3">Size</lang>
+                  <lang id="it" date="20091106172426" status="3">Formato</lang>
                   <lang id="nl" status="2">Grootte</lang>
                   <lang id="de" status="2">Größe</lang>
                   <lang id="ru" status="2">Размер</lang>
@@ -3625,12 +3677,10 @@
             <lang id="zh" status="2">小注册表清理器-扫描...</lang>
             <lang id="zh.tra" status="2">小注冊表清潔-掃描...</lang>
             <lang id="ja" status="2">リトルレジストリクリーナー-スキャン...</lang>
-            <lang id="vi" status="2">Little Registry Cleaner - Scanning...</lang>
+            <lang id="vi" date="20091106180213" status="3">Người lau chùi Nơi đăng ký Nhỏ - Sự Quét...</lang>
             <lang id="th" status="2">Little Registry Cleaner - สแกน...</lang>
             <lang id="pl" status="2">Little Registry Cleaner - Trwa skanowanie...</lang>
           </row>
-          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
-          </component>
           <component class="TVisGroupBox" name="groupBox1" type="System.Windows.Forms.GroupBox">
             <row id="Location.X">12</row>
             <row id="Location.Y">9</row>
@@ -3695,21 +3745,21 @@
                 <native>Problems Found: </native>
                 <lang id="en" status="2">Problems Found: </lang>
                 <lang id="fr" status="2">Les problèmes trouvés: </lang>
-                <lang id="es" status="2">Problemas encontrados: </lang>
+                <lang id="es" status="2">Problemas que se encuentra: </lang>
                 <lang id="pt" status="2">Problemas encontrados: </lang>
-                <lang id="it" status="2">Problemi riscontrati: </lang>
+                <lang id="it" status="2">Problemi a trovare: </lang>
                 <lang id="nl" status="2">Problemen gevonden: </lang>
-                <lang id="de" status="2">Probleme gefunden: </lang>
-                <lang id="ru" status="2">Проблемы, выявленные: </lang>
-                <lang id="el" status="2">Προβλήματα που διαπιστώθηκαν: </lang>
-                <lang id="ar" status="2">المشاكل التي وجدت: </lang>
-                <lang id="sv" status="2">Problem Found: </lang>
+                <lang id="de" status="2">Probleme, die gefunden: </lang>
+                <lang id="ru" status="2">Обнаружены проблемы: </lang>
+                <lang id="el" status="2">Προβλήματα που εντοπίστηκαν: </lang>
+                <lang id="ar" status="2">تم العثور على مشاكل: </lang>
+                <lang id="sv" status="2">Problem som hittades: </lang>
                 <lang id="zh" status="2">发现的问题: </lang>
-                <lang id="zh.tra" status="2">發現的問題: </lang>
+                <lang id="zh.tra" status="2">找到的問題: </lang>
                 <lang id="ja" status="2">問題が見つかりました: </lang>
-                <lang id="vi" status="2">Vấn đề Found: </lang>
+                <lang id="vi" date="20091106180237" status="3">Những vấn đề được tìm thấy: </lang>
                 <lang id="th" status="2">พบปัญหา: </lang>
-                <lang id="pl" status="2">Wykrytych problemów: </lang>
+                <lang id="pl" status="3">Znalezionych błędów:</lang>
               </row>
             </component>
             <component class="TVisProgressBar" name="progressBar" type="Common_Tools.XpProgressBar">
@@ -3718,6 +3768,8 @@
               <row id="Size.Height">24</row>
               <row id="Size.Width">300</row>
             </component>
+          </component>
+          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
           </component>
         </form>
       </node>
@@ -4060,7 +4112,7 @@
               <row id="Location.Y">37</row>
               <row id="Size.Height">23</row>
               <row id="Size.Width">28</row>
-              <row id="Text" state="0">...</row>
+              <row id="Text" excluded="1" state="0">...</row>
             </component>
             <component class="TVisEdit" name="textBoxPath" type="System.Windows.Forms.TextBox">
               <row id="Location.X">55</row>
@@ -4109,7 +4161,7 @@
             <row id="Text" state="0">
               <native>Section:</native>
               <lang id="en" status="2">Section:</lang>
-              <lang id="fr" status="2">Section:</lang>
+              <lang id="fr" date="20091106180635" status="3">Quartier:</lang>
               <lang id="es" status="2">Sección:</lang>
               <lang id="pt" status="2">Seção:</lang>
               <lang id="it" status="2">Sezione:</lang>
@@ -4355,8 +4407,8 @@
             <lang id="zh" status="2">小注册表清理器-启动管理器</lang>
             <lang id="zh.tra" status="2">小注冊表清潔-啟動管理器</lang>
             <lang id="ja" status="2">リトルレジストリクリーナー-スタートアップマネージャ</lang>
-            <lang id="vi" status="2">Little Registry Cleaner - Startup Manager</lang>
-            <lang id="th" status="2">Little Registry Cleaner - Startup Manager</lang>
+            <lang id="vi" date="20091106180752" status="3">Người lau chùi Nơi đăng ký Nhỏ - Giám đốc Khởi động</lang>
+            <lang id="th" date="20091106180846" status="3">รีจิสทรีน้อยตัวล้าง - ตัวจัดการการเริ่มต้น</lang>
             <lang id="pl" status="2">Little Registry Cleaner - Menadżer uruchamiania</lang>
           </row>
           <component class="TVisEdit" name="nodeTextBoxSection" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox" rendering="trGdiPlus">
@@ -4367,16 +4419,12 @@
           </component>
           <component class="TVisEdit" name="nodeTextBoxArgs" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox">
           </component>
-          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
-          </component>
-          <component class="TVisHiddenComponent" name="nodeIcon1" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeIcon">
-          </component>
           <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer" align="alClient">
             <row id="Location.X">0</row>
             <row id="Location.Y">0</row>
             <row id="Size.Height">436</row>
             <row id="Size.Width">717</row>
-            <row id="Text" locked="1" state="0">
+            <row id="Text" locked="1" excluded="1" state="0">
               <native>toolStripContainer1</native>
               <lang id="en">toolStripContainer1</lang>
               <lang id="es">toolStripContainer1</lang>
@@ -4408,13 +4456,13 @@
               <row id="Location.Y">0</row>
               <row id="Size.Height">382</row>
               <row id="Size.Width">717</row>
-              <component class="TVisListView" name="treeViewAdv1" type="Common_Tools.TreeViewAdv.Tree.TreeViewAdv" align="alClient">
+              <component class="TVisBasicControl" name="treeViewAdv1" type="Common_Tools.TreeViewAdv.Tree.TreeViewAdv" align="alClient">
                 <row id="BackColor" hidden="1">clWindow</row>
                 <row id="Location.X">3</row>
                 <row id="Location.Y">3</row>
                 <row id="Size.Height">376</row>
                 <row id="Size.Width">711</row>
-                <row id="Text" locked="1" state="0">
+                <row id="Text" locked="1" excluded="1" state="0">
                   <native>treeViewAdv1</native>
                   <lang id="en">treeViewAdv1</lang>
                   <lang id="es">treeViewAdv1</lang>
@@ -4435,7 +4483,7 @@
                   <row id="Header" state="0">
                     <native>Section</native>
                     <lang id="en" status="2">Section</lang>
-                    <lang id="fr" status="2">Section</lang>
+                    <lang id="fr" date="20091106181232" status="3">Secteur</lang>
                     <lang id="es" status="2">Sección</lang>
                     <lang id="pt" status="2">Seção</lang>
                     <lang id="it" status="2">Sezione</lang>
@@ -4582,7 +4630,7 @@
                 <row id="Text" state="0">
                   <native>View Item</native>
                   <lang id="en" status="2">View Item</lang>
-                  <lang id="fr" status="2">View Item</lang>
+                  <lang id="fr" date="20091106180928" status="3">Point de vue</lang>
                   <lang id="es" status="2">Ver artículo</lang>
                   <lang id="pt" status="2">Exibir item</lang>
                   <lang id="it" status="2">Punto di vista</lang>
@@ -4634,7 +4682,7 @@
                 <row id="Text" state="0">
                   <native>Refresh</native>
                   <lang id="en" status="2">Refresh</lang>
-                  <lang id="fr" status="2">Refresh</lang>
+                  <lang id="fr" date="20091106180944" status="3">Actualisation</lang>
                   <lang id="es" status="2">Actualización</lang>
                   <lang id="pt" status="2">Atualizar</lang>
                   <lang id="it" status="2">Aggiornamento</lang>
@@ -4654,6 +4702,10 @@
               </component>
             </component>
           </component>
+          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
+          </component>
+          <component class="TVisHiddenComponent" name="nodeIcon1" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeIcon">
+          </component>
         </form>
       </node>
       <node class="TNetFormNode" name="Little_Registry_Cleaner.UninstallManager.UninstallManager">
@@ -4663,7 +4715,7 @@
           <row id="Text" state="0">
             <native>Little Registry Cleaner - Uninstall Manager</native>
             <lang id="en" status="2">Little Registry Cleaner - Uninstall Manager</lang>
-            <lang id="fr" status="2">Little Registry Cleaner - Uninstall Manager</lang>
+            <lang id="fr" date="20091106181424" status="3">Peu de décapant d'enregistrement - Désinstallez le directeur</lang>
             <lang id="es" status="2">Registro poco Cleaner - desinstalar Manager</lang>
             <lang id="pt" status="2">Registro pouca limpeza - Uninstall Manager</lang>
             <lang id="it" status="2">Registro poco Cleaner - disinstallazione Manager</lang>
@@ -4676,18 +4728,16 @@
             <lang id="zh" status="2">小注册表清理器-卸载经理</lang>
             <lang id="zh.tra" status="2">小注冊表清潔-卸載 Manager</lang>
             <lang id="ja" status="2">リトルレジストリクリーナー-アンインストールマネージャ</lang>
-            <lang id="vi" status="2">Little Registry Cleaner - Uninstall Manager</lang>
-            <lang id="th" status="2">Little Registry Cleaner - Uninstall Manager</lang>
+            <lang id="vi" date="20091106181648" status="3">Người lau chùi Nơi đăng ký Nhỏ - Chương trình quản lý</lang>
+            <lang id="th" date="20091106181713" status="3">รีจิสทรีน้อยตัวล้าง - การถอนการติดตั้งโปรแกรมจัดการ</lang>
             <lang id="pl" status="2">Little Registry Cleaner - Menadżer deinstalacji</lang>
           </row>
-          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
-          </component>
           <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer" align="alClient">
             <row id="Location.X">0</row>
             <row id="Location.Y">0</row>
             <row id="Size.Height">447</row>
             <row id="Size.Width">625</row>
-            <row id="Text" locked="1" state="0">
+            <row id="Text" locked="1" excluded="1" state="0">
               <native>toolStripContainer1</native>
               <lang id="en">toolStripContainer1</lang>
               <lang id="es">toolStripContainer1</lang>
@@ -4820,7 +4870,7 @@
                     <lang id="ar" status="2">إزالة إدخال</lang>
                     <lang id="sv" status="2">Ta bort post</lang>
                     <lang id="zh" status="2">删除条目</lang>
-                    <lang id="zh.tra" status="2">刪除專案</lang>
+                    <lang id="zh.tra" status="2">刪除條目</lang>
                     <lang id="ja" status="2">エントリ削除</lang>
                     <lang id="vi" status="2">Hủy bỏ Entry</lang>
                     <lang id="th" status="2">เข้าลบ</lang>
@@ -4846,7 +4896,7 @@
                     <lang id="ru" status="2">Программа</lang>
                     <lang id="el" status="2">Πρόγραμμα</lang>
                     <lang id="ar" status="2">البرنامج</lang>
-                    <lang id="sv" status="2">Program</lang>
+                    <lang id="sv" date="20091106181845" status="3">Ansökan</lang>
                     <lang id="zh" status="2">计划</lang>
                     <lang id="zh.tra" status="2">程式</lang>
                     <lang id="ja" status="2">プログラム</lang>
@@ -4862,7 +4912,7 @@
                     <lang id="en" status="2">Publisher</lang>
                     <lang id="fr" status="2">Editeur</lang>
                     <lang id="es" status="2">Editorial</lang>
-                    <lang id="pt" status="2">Publisher</lang>
+                    <lang id="pt" date="20091106181737" status="3">Editor</lang>
                     <lang id="it" status="2">Editore</lang>
                     <lang id="nl" status="2">In Pub lis her</lang>
                     <lang id="de" status="2">Herausgeber</lang>
@@ -4874,7 +4924,7 @@
                     <lang id="zh.tra" status="2">發佈伺服器</lang>
                     <lang id="ja" status="2">出版社</lang>
                     <lang id="vi" status="2">Nhà xuất bản</lang>
-                    <lang id="th" status="2">Publisher</lang>
+                    <lang id="th" date="20091106181800" status="3">ผู้เผยแพร่</lang>
                     <lang id="pl" status="2">Producent</lang>
                   </row>
                   <row id="Width" class="TIntegerRow">109</row>
@@ -4905,6 +4955,8 @@
               </component>
             </component>
           </component>
+          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
+          </component>
         </form>
       </node>
       <node class="TNetFormNode" name="Little_Registry_Cleaner.UpdateDlg">
@@ -4914,7 +4966,7 @@
           <row id="Text" state="0">
             <native>Check for update</native>
             <lang id="en" status="2">Check for update</lang>
-            <lang id="fr" status="2">Check for update</lang>
+            <lang id="fr" date="20091106182601" status="3">Vérifiez la mise à jour</lang>
             <lang id="es" status="2">Comprobación de actualización</lang>
             <lang id="pt" status="2">Verificação para atualização</lang>
             <lang id="it" status="2">Controllo per aggiornamento</lang>
@@ -4953,7 +5005,7 @@
               <lang id="en" status="2">Download</lang>
               <lang id="fr" status="2">Télécharger</lang>
               <lang id="es" status="2">Descargar</lang>
-              <lang id="pt" status="2">Download</lang>
+              <lang id="pt" date="20091106182453" status="3">Transferência</lang>
               <lang id="it" status="2">Scaricare</lang>
               <lang id="nl" status="2">Downloaden</lang>
               <lang id="de" status="2">Download</lang>
@@ -4977,21 +5029,21 @@
             <row id="Text" state="0">
               <native>Changelog</native>
               <lang id="en" status="2">Changelog</lang>
-              <lang id="fr" status="2">Changelog</lang>
+              <lang id="fr" date="20091106182105" status="3">Journal modification</lang>
               <lang id="es" status="2">Registro de cambios</lang>
-              <lang id="pt" status="2">Changelog</lang>
-              <lang id="it" status="2">Changelog</lang>
-              <lang id="nl" status="2">Changelog</lang>
-              <lang id="de" status="2">Changelog</lang>
-              <lang id="ru" status="2">История изменений</lang>
-              <lang id="el" status="2">Changelog</lang>
-              <lang id="ar" status="2">Changelog</lang>
+              <lang id="pt" date="20091106182138" status="3">Log de alterações</lang>
+              <lang id="it" date="20091106182408" status="3">Log delle modifiche</lang>
+              <lang id="nl" date="20091106182153" status="3">Wijzigings log bestand</lang>
+              <lang id="de" date="20091106182207" status="3">Änderungsprotokoll</lang>
+              <lang id="ru" date="20091106182224" status="3">Журнал изменений</lang>
+              <lang id="el" date="20091106182238" status="3">Αλλαγή καταγραφής</lang>
+              <lang id="ar" date="20091106182255" status="3">سجل التغيير</lang>
               <lang id="sv" status="2">Ändringslogg</lang>
               <lang id="zh" status="2">更新日志</lang>
-              <lang id="zh.tra" status="2">Changelog</lang>
+              <lang id="zh.tra" date="20091106182314" status="3">更改日誌</lang>
               <lang id="ja" status="2">変更履歴</lang>
-              <lang id="vi" status="2">Changelog</lang>
-              <lang id="th" status="2">Changelog</lang>
+              <lang id="vi" date="20091106182428" status="3">Thay đổi đăng nhập</lang>
+              <lang id="th" date="20091106182332" status="3">บันทึกการเปลี่ยนแปลง</lang>
               <lang id="pl" status="2">Lista zmian</lang>
             </row>
           </component>
@@ -5046,6 +5098,7 @@
           <lang id="fr" status="2">Application Paths</lang>
           <lang id="es" status="2">Rutas de aplicación</lang>
           <lang id="pt" status="2">Application Paths</lang>
+          <lang id="it" status="2">Trajetos da aplicação</lang>
           <lang id="nl" status="2">Application Paths</lang>
           <lang id="de" status="2">Application Paths</lang>
           <lang id="ru" status="2">Application Paths</lang>
@@ -5065,6 +5118,7 @@
           <lang id="fr" status="2">Paramètres de l'application</lang>
           <lang id="es" status="2">Configuración de la aplicación</lang>
           <lang id="pt" status="2">Configurações do aplicativo</lang>
+          <lang id="it" status="2">Anwendung Einstellungen</lang>
           <lang id="nl" status="2">Application Settings</lang>
           <lang id="de" status="2">Anwendungseinstellungen</lang>
           <lang id="ru" status="2">Настройки приложения</lang>
@@ -5084,6 +5138,7 @@
           <lang id="fr" status="2">Blancs fichier ou un dossier</lang>
           <lang id="es" status="2">De archivo no válido o una carpeta</lang>
           <lang id="pt" status="2">Arquivo ou pasta inválido</lang>
+          <lang id="it" status="2">Lima o dispositivo di piegatura non valida</lang>
           <lang id="nl" status="2">Ongeldig bestand of map</lang>
           <lang id="de" status="2">Ungültige Datei oder einen Ordner</lang>
           <lang id="ru" status="2">Неверный файл или папка</lang>
@@ -5103,6 +5158,7 @@
           <lang id="fr" status="2">Extension de fichier non utilisés</lang>
           <lang id="es" status="2">Extensión de archivo no utilizada</lang>
           <lang id="pt" status="2">Extensão de arquivo não utilizados</lang>
+          <lang id="it" status="2">Extensão de lima não utilizada</lang>
           <lang id="nl" status="2">Ongebruikte File Extension</lang>
           <lang id="de" status="2">Nicht genutzte File Extension</lang>
           <lang id="ru" status="2">Неиспользованные File Extension</lang>
@@ -5122,6 +5178,7 @@
           <lang id="fr" status="2">Impossible de trouver InProcServer</lang>
           <lang id="es" status="2">No se puede encontrar InprocServer</lang>
           <lang id="pt" status="2">Incapaz de encontrar InprocServer</lang>
+          <lang id="it" status="2">Onbekwaam om InprocServer te vinden</lang>
           <lang id="nl" status="2">Kan InprocServer vinden</lang>
           <lang id="de" status="2">Kann InprocServer finden</lang>
           <lang id="ru" status="2">Невозможно найти InprocServer</lang>
@@ -5141,6 +5198,7 @@
           <lang id="fr" status="2">Impossible de trouver InprocServer32</lang>
           <lang id="es" status="2">No se puede encontrar InprocServer32</lang>
           <lang id="pt" status="2">Incapaz de encontrar InprocServer32</lang>
+          <lang id="it" status="2">Nicht imstande, InprocServer32 zu finden</lang>
           <lang id="nl" status="2">Kan InprocServer32 vinden</lang>
           <lang id="de" status="2">Kann InprocServer32 finden</lang>
           <lang id="ru" status="2">Невозможно найти InprocServer32</lang>
@@ -5160,6 +5218,7 @@
           <lang id="fr" status="2">ProgID inutilisés / extension de fichier</lang>
           <lang id="es" status="2">ProgID no utilizados / extensión de archivo</lang>
           <lang id="pt" status="2">ProgID Livre / Extensão de Arquivo</lang>
+          <lang id="it" status="2">De ongebruikte Uitbreiding van ProgID/van het Dossier</lang>
           <lang id="nl" status="2">Ongebruikte ProgID / File Extension</lang>
           <lang id="de" status="2">Ungenutzte ProgID / File Extension</lang>
           <lang id="ru" status="2">Неиспользованные ProgID / File Extension</lang>
@@ -5179,6 +5238,7 @@
           <lang id="fr" status="2">Blancs clé de registre</lang>
           <lang id="es" status="2">Clave de registro no válido</lang>
           <lang id="pt" status="2">Inválido chave de registro</lang>
+          <lang id="it" status="2">Ongeldige registratiesleutel</lang>
           <lang id="nl" status="2">Ongeldige registersleutel</lang>
           <lang id="de" status="2">Ungültige Registrierungsschlüssel</lang>
           <lang id="ru" status="2">Неверное реестра</lang>
@@ -5198,6 +5258,7 @@
           <lang id="fr" status="2">Barre d'outils n'est pas valide</lang>
           <lang id="es" status="2">Barra de herramientas no es válido</lang>
           <lang id="pt" status="2">Barra de ferramentas não é válido</lang>
+          <lang id="it" status="2">Toolbar è non valido</lang>
           <lang id="nl" status="2">Toolbar is ongeldig</lang>
           <lang id="de" status="2">Toolbar ist ungültig</lang>
           <lang id="ru" status="2">Панель инструментов недействительными</lang>
@@ -5217,6 +5278,7 @@
           <lang id="fr" status="2">Manquant de référence AppID</lang>
           <lang id="es" status="2">Falta de referencia AppID</lang>
           <lang id="pt" status="2">Missing referência AppID</lang>
+          <lang id="it" status="2">Referência faltando de AppID</lang>
           <lang id="nl" status="2">Ontbrekende AppID verwijzing</lang>
           <lang id="de" status="2">Fehlende AppID Referenz</lang>
           <lang id="ru" status="2">Отсутствует ссылка AppID</lang>
@@ -5236,6 +5298,7 @@
           <lang id="fr" status="2">Manquant de référence CLSID</lang>
           <lang id="es" status="2">Falta de referencia CLSID</lang>
           <lang id="pt" status="2">Missing referência CLSID</lang>
+          <lang id="it" status="2">Fehlender CLSID Hinweis</lang>
           <lang id="nl" status="2">Ontbrekende CLSID verwijzing</lang>
           <lang id="de" status="2">Fehlende CLSID Verweis</lang>
           <lang id="ru" status="2">Отсутствует CLSID Ссылка</lang>
@@ -5255,6 +5318,7 @@
           <lang id="fr" status="2">Manquant de référence ProgID</lang>
           <lang id="es" status="2">Falta de referencia ProgID</lang>
           <lang id="pt" status="2">Missing referência ProgID</lang>
+          <lang id="it" status="2">Référence manquante de ProgID</lang>
           <lang id="nl" status="2">Ontbrekende ProgID verwijzing</lang>
           <lang id="de" status="2">Fehlende ProgID Referenz</lang>
           <lang id="ru" status="2">Отсутствует ссылка ProgID</lang>
@@ -5274,6 +5338,7 @@
           <lang id="fr" status="2">La clé de Registre ne contient pas de données</lang>
           <lang id="es" status="2">La clave del Registro no contiene ningún dato</lang>
           <lang id="pt" status="2">A chave de registo não contém quaisquer dados</lang>
+          <lang id="it" status="2">La chiave di registrazione non contiene alcuni dati</lang>
           <lang id="nl" status="2">De registersleutel bevat geen gegevens</lang>
           <lang id="de" status="2">Der Registrierungsschlüssel enthält keine Daten</lang>
           <lang id="ru" status="2">Реестра не содержит никаких данных</lang>
@@ -5293,6 +5358,7 @@
           <lang id="fr" status="2">Clé de registre obsolètes</lang>
           <lang id="es" status="2">Clave de registro obsoletos</lang>
           <lang id="pt" status="2">Chave de registro obsoletos</lang>
+          <lang id="it" status="2">Chiave obsoleta di registrazione</lang>
           <lang id="nl" status="2">Verouderde registersleutel</lang>
           <lang id="de" status="2">Veraltete Registrierungsschlüssel</lang>
           <lang id="ru" status="2">Устаревшие ключа реестра</lang>
@@ -5312,6 +5378,7 @@
           <lang id="fr" status="2">Documents récents</lang>
           <lang id="es" status="2">Documentos recientes</lang>
           <lang id="pt" status="2">Documentos Recentes</lang>
+          <lang id="it" status="2">Documentos recientes</lang>
           <lang id="nl" status="2">Recente documenten</lang>
           <lang id="de" status="2">Zuletzt verwendete Dokumente</lang>
           <lang id="ru" status="2">Последние документы</lang>
@@ -5331,6 +5398,7 @@
           <lang id="fr" status="2">Des DLL partagées</lang>
           <lang id="es" status="2">Compartido de archivos DLL</lang>
           <lang id="pt" status="2">DLLs compartilhadas</lang>
+          <lang id="it" status="2">Gedeelde DLLs</lang>
           <lang id="nl" status="2">Gedeelde dll-bestanden</lang>
           <lang id="de" status="2">Freigegebenen DLLs</lang>
           <lang id="ru" status="2">Общих библиотек</lang>
@@ -5350,6 +5418,7 @@
           <lang id="fr" status="2">Fichiers de démarrage</lang>
           <lang id="es" status="2">Los archivos de inicio</lang>
           <lang id="pt" status="2">Arquivos de inicialização</lang>
+          <lang id="it" status="2">Lime Startup</lang>
           <lang id="nl" status="2">Opstartbestanden</lang>
           <lang id="de" status="2">Startdateien</lang>
           <lang id="ru" status="2">Загрузка файлов</lang>
@@ -5369,6 +5438,7 @@
           <lang id="fr" status="2">Pilotes système</lang>
           <lang id="es" status="2">Controladores de sistema</lang>
           <lang id="pt" status="2">Drivers de sistema</lang>
+          <lang id="it" status="2">Driver del sistema</lang>
           <lang id="nl" status="2">Systeem stuur programma's</lang>
           <lang id="de" status="2">Systemtreiber</lang>
           <lang id="ru" status="2">Системные драйверы</lang>
@@ -5388,6 +5458,7 @@
           <lang id="fr" status="3">Polices de Windows</lang>
           <lang id="es" status="2">Fuentes de Windows</lang>
           <lang id="pt" status="2">Fontes do Windows</lang>
+          <lang id="it" status="2">Fuentes de Windows</lang>
           <lang id="nl" status="2">Windows-lettertypen</lang>
           <lang id="de" status="2">Windows-Schriftarten</lang>
           <lang id="ru" status="2">Шрифты Windows</lang>
@@ -5407,6 +5478,7 @@
           <lang id="fr" status="2">Fichiers d'aide Windows</lang>
           <lang id="es" status="2">Archivos de Ayuda de Windows</lang>
           <lang id="pt" status="2">Arquivos de ajuda do Windows</lang>
+          <lang id="it" status="2">Dossiers d'aide de Windows</lang>
           <lang id="nl" status="2">Windows Help-bestanden</lang>
           <lang id="de" status="2">Windows-Hilfe-Dateien</lang>
           <lang id="ru" status="2">Файлы Windows Помощь</lang>
@@ -5426,6 +5498,7 @@
           <lang id="fr" status="2">Sons de Windows</lang>
           <lang id="es" status="2">Sonidos de Windows</lang>
           <lang id="pt" status="2">Windows Sounds</lang>
+          <lang id="it" status="2">Windows Töne</lang>
           <lang id="nl" status="2">Windows Sounds</lang>
           <lang id="de" status="2">Windows-Sounds</lang>
           <lang id="ru" status="2">Windows Sounds</lang>
@@ -5946,15 +6019,16 @@
           <lang id="es" status="2">Análisis: </lang>
           <lang id="pt" status="2">Digitalização: </lang>
           <lang id="it" status="2">Scansione: </lang>
-          <lang id="de" status="2">Scanning: </lang>
+          <lang id="nl" status="2">Esame: </lang>
+          <lang id="de" date="20091106182906" status="3">Scannen: </lang>
           <lang id="ru" status="2">Сканирование: </lang>
           <lang id="el" status="2">Σάρωση: </lang>
           <lang id="ar" status="2">المسح الضوئي: </lang>
-          <lang id="sv" status="2">Scanning: </lang>
+          <lang id="sv" date="20091106182958" status="3">Skanning: </lang>
           <lang id="zh" status="2">扫描: </lang>
           <lang id="zh.tra" status="2">掃描: </lang>
           <lang id="ja" status="2">スキャン: </lang>
-          <lang id="vi" status="2">Scanning: </lang>
+          <lang id="vi" date="20091106182937" status="3">Sự Quét: </lang>
           <lang id="th" status="2">สแกน: </lang>
           <lang id="pl" status="2">Skanowanie: </lang>
         </row>
@@ -6603,7 +6677,7 @@
         <row id="WindowsFonts" state="0">
           <native>Windows Fonts</native>
           <lang id="en" status="2">Windows Fonts</lang>
-          <lang id="fr" status="2">Polices de Windows</lang>
+          <lang id="fr" date="20091105230305" status="3">Policies de Windows</lang>
           <lang id="es" status="2">Fuentes de Windows</lang>
           <lang id="pt" status="2">Fontes do Windows</lang>
           <lang id="it" status="2">Caratteri di Windows</lang>

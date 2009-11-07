@@ -121,6 +121,9 @@
   <data name="columnHeader1.Text" xml:space="preserve">
     <value>Programa</value>
   </data>
+  <data name="columnHeader2.Text" xml:space="preserve">
+    <value>Editor</value>
+  </data>
   <data name="columnHeader3.Text" xml:space="preserve">
     <value>Tamanho estimado</value>
   </data>

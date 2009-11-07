@@ -119,6 +119,9 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <data name="buttonBrowse.Text" xml:space="preserve">
+    <value>Apra l'indice...</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="label1.Text" xml:space="preserve">
     <value>Selezionare un file riportati di seguito per ripristinare il Registro di sistema a uno stato precedente</value>
@@ -128,6 +131,9 @@
   </data>
   <data name="columnHeader2.Text" xml:space="preserve">
     <value>Data</value>
+  </data>
+  <data name="columnHeader3.Text" xml:space="preserve">
+    <value>Formato</value>
   </data>
   <data name="buttonRestore.Text" xml:space="preserve">
     <value>Ripristino</value>

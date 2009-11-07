@@ -117,11 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Construir la fecha:</value>
-  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
   <data name="label2.Text" xml:space="preserve">
     <value>Autor:</value>
   </data>
@@ -135,12 +133,11 @@ Debe haber recibido una copia de la licencia pública GNU General junto con este
   <data name="labelTitle.Text" xml:space="preserve">
     <value>Registro de poco más limpia</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="buttonClose.Text" xml:space="preserve">
     <value>Cerrar</value>
   </data>
   <data name="buttonWebsite.Text" xml:space="preserve">
-    <value>Sitio Web del proyecto</value>
+    <value>Inicio</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Registro poco Cleaner - acerca de...</value>

@@ -183,4 +183,7 @@
   <data name="WindowsHelpFiles" xml:space="preserve">
     <value>Αρχείων των Windows Βοήθεια</value>
   </data>
+  <data name="WindowsSounds" xml:space="preserve">
+    <value>Ήχοι παραθύρων</value>
+  </data>
 </root>

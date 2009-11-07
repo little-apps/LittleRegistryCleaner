@@ -117,23 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
   <data name="label2.Text" xml:space="preserve">
     <value>Auteur:</value>
   </data>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>Ce logiciel est gratuit: vous pouvez le redistribuer et / ou le modifier selon les termes de la GNU General Public License telle que publiée par la Free Software Foundation, soit la version 3 de la Licence, ou (à votre choix) toute version ultérieure. Ce programme est distribué dans l'espoir qu'il sera utile, mais SANS AUCUNE GARANTIE, sans même la garantie implicite de COMMERCIALISATION ou D'ADAPTATION A UN USAGE PARTICULIER. Voir la GNU General Public License pour plus de détails. Vous devriez avoir reçu un exemplaire de la Licence Publique Générale GNU avec ce programme. Sinon, consultez &lt;http://www.gnu.org/licenses/&gt;。</value>
+    <value>Ce logiciel est gratuit: vous pouvez le redistribuer et / ou le modifier selon les termes de la GNU General Public License telle que publiée par la Free Software Foundation, soit la version 3 de la Licence, ou (à votre choix) toute version ultérieure.
+
+Ce programme est distribué dans l'espoir qu'il sera utile, mais SANS AUCUNE GARANTIE, sans même la garantie implicite de COMMERCIALISATION ou D'ADAPTATION A UN USAGE PARTICULIER. Voir la GNU General Public License pour plus de détails.
+
+Vous devriez avoir reçu un exemplaire de la Licence Publique Générale GNU avec ce programme. Sinon, consultez &lt;http://www.gnu.org/licenses/&gt;。</value>
   </data>
   <data name="labelTitle.Text" xml:space="preserve">
     <value>Peu de décapant d'enregistrement</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="buttonClose.Text" xml:space="preserve">
     <value>Fermer</value>
   </data>
   <data name="buttonWebsite.Text" xml:space="preserve">
-    <value>Site Web du projet</value>
+    <value>Accueil</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Little Registry Cleaner - A propos...</value>

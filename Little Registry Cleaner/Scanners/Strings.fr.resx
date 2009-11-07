@@ -123,6 +123,9 @@
   <data name="ApplicationInfo" xml:space="preserve">
     <value>Demande d'info</value>
   </data>
+  <data name="ApplicationPaths" xml:space="preserve">
+    <value>Application tracés</value>
+  </data>
   <data name="ApplicationSettings" xml:space="preserve">
     <value>Paramètres de l'application</value>
   </data>
@@ -175,7 +178,7 @@
     <value>Pilotes système</value>
   </data>
   <data name="WindowsFonts" xml:space="preserve">
-    <value>Polices de Windows</value>
+    <value>Policies de Windows</value>
   </data>
   <data name="WindowsHelpFiles" xml:space="preserve">
     <value>Fichiers d'aide Windows</value>

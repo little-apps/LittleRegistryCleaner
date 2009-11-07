@@ -183,4 +183,7 @@
   <data name="tabPage2.Text" xml:space="preserve">
     <value>รายชื่อที่</value>
   </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>รีจิสทรีน้อยตัวล้าง - Tùy chọn</value>
+  </data>
 </root>

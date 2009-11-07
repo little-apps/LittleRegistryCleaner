@@ -126,7 +126,7 @@
     <value>Wybierz sekcję:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Dodaj wpis rejestru, który zostanie pominięty:</value>
+    <value>Wpisy pomijane</value>
   </data>
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>Anuluj</value>

@@ -289,7 +289,7 @@
     <value>Выезда</value>
   </data>
   <data name="notifyIcon1.Text" xml:space="preserve">
-    <value>Мало зарегистрировать переход к более чистому</value>
+    <value>Мало реестра чистого</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Мало реестра чистого</value>

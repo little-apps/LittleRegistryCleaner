@@ -123,6 +123,9 @@
   <data name="labelDetails.Text" xml:space="preserve">
     <value>Detaljer</value>
   </data>
+  <data name="labelProblem.Text" xml:space="preserve">
+    <value>Problemet:</value>
+  </data>
   <data name="labelHKEY.Text" xml:space="preserve">
     <value>Plats:</value>
   </data>

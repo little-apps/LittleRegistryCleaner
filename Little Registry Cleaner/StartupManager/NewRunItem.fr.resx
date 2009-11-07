@@ -131,6 +131,9 @@
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Nom et chemin</value>
   </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Quartier:</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>New Run Point</value>
   </data>

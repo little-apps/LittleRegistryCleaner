@@ -121,7 +121,7 @@
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="labelProblems.Text" xml:space="preserve">
-    <value>Probleme gefunden: </value>
+    <value>Probleme, die gefunden: </value>
   </data>
   <data name="buttonStop.Text" xml:space="preserve">
     <value>Beenden</value>

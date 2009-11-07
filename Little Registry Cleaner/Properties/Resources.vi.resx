@@ -192,6 +192,9 @@
   <data name="scanDlgExit" xml:space="preserve">
     <value>Bạn có chắc chắn?</value>
   </data>
+  <data name="scanDlgProgressBarScanning" xml:space="preserve">
+    <value>Sự Quét: </value>
+  </data>
   <data name="smCannotFindFile" xml:space="preserve">
     <value>Các tập tin không thể tìm được</value>
   </data>

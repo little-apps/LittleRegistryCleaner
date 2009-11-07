@@ -165,6 +165,9 @@
   <data name="exitToolStripMenuItem.Text" xml:space="preserve">
     <value>Uscita</value>
   </data>
+  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Schedario</value>
+  </data>
   <data name="selectAllToolStripMenuItem1.Text" xml:space="preserve">
     <value>Seleziona tutto</value>
   </data>
@@ -244,7 +247,7 @@
     <value>Strumenti</value>
   </data>
   <data name="helpToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Guida</value>
+    <value>Aiuto</value>
   </data>
   <data name="visitWebsiteToolStripMenuItem.Text" xml:space="preserve">
     <value>Visita sito</value>
@@ -256,7 +259,7 @@
     <value>Sulla...</value>
   </data>
   <data name="helpToolStripMenuItem.Text" xml:space="preserve">
-    <value>Guida</value>
+    <value>Aiuto</value>
   </data>
   <data name="toolStripButtonScan.Text" xml:space="preserve">
     <value>Scansione del Registro di sistema</value>
@@ -271,7 +274,7 @@
     <value>Opzioni</value>
   </data>
   <data name="toolStripButtonHelp.Text" xml:space="preserve">
-    <value>Guida</value>
+    <value>Aiuto</value>
   </data>
   <data name="hideShowToolStripMenuItem.Text" xml:space="preserve">
     <value>Mostra/Nascondi</value>

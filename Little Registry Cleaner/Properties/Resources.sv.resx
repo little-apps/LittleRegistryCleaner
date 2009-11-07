@@ -192,6 +192,9 @@
   <data name="scanDlgExit" xml:space="preserve">
     <value>Är du säker?</value>
   </data>
+  <data name="scanDlgProgressBarScanning" xml:space="preserve">
+    <value>Skanning: </value>
+  </data>
   <data name="smCannotFindFile" xml:space="preserve">
     <value>Filen kunde inte hittas</value>
   </data>

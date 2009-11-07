@@ -122,6 +122,9 @@
   <data name="buttonDownload.Text" xml:space="preserve">
     <value>Το στοιχείο λήψης</value>
   </data>
+  <data name="buttonChangelog.Text" xml:space="preserve">
+    <value>Αλλαγή καταγραφής</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Έλεγχος για την ενημερωμένη έκδοση</value>
   </data>

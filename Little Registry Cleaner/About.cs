@@ -39,7 +39,7 @@ namespace Little_Registry_Cleaner
             this.labelTitle.Text = this.labelTitle.Text + " v" + Application.ProductVersion;
 
             // Get build time
-            this.labelBuildTime.Text = Properties.Settings.Default.strBuildTime;
+            //this.labelBuildTime.Text = Properties.Settings.Default.strBuildTime;
         }
 
         private void buttonWebsite_Click(object sender, EventArgs e)

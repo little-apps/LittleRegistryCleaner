@@ -123,7 +123,7 @@
     <value>Скачать</value>
   </data>
   <data name="buttonChangelog.Text" xml:space="preserve">
-    <value>История изменений</value>
+    <value>Журнал изменений</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Проверить наличие обновлений</value>

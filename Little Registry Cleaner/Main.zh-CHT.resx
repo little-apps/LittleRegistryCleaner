@@ -289,7 +289,7 @@
     <value>退出</value>
   </data>
   <data name="notifyIcon1.Text" xml:space="preserve">
-    <value>小註冊清潔</value>
+    <value>小註冊表清理器</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>小註冊表清理器</value>

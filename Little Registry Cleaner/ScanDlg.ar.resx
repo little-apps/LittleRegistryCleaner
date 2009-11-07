@@ -124,7 +124,7 @@
     <value>Yes</value>
   </data>
   <data name="labelProblems.Text" xml:space="preserve">
-    <value>المشاكل التي وجدت: </value>
+    <value>تم العثور على مشاكل: </value>
   </data>
   <data name="buttonStop.Text" xml:space="preserve">
     <value>إيقاف</value>
