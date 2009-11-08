@@ -67,6 +67,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="TreeViewAdv\BitmapHelper.cs" />
+    <Compile Include="TreeViewAdv\GifDecoder.cs" />
     <Compile Include="TreeViewAdv\NumericTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -79,7 +80,9 @@
     <Compile Include="TreeViewAdv\Threading\WorkItemStatus.cs" />
     <Compile Include="TreeViewAdv\TimeCounter.cs" />
     <Compile Include="TreeViewAdv\Tree\AutoRowHeightLayout.cs" />
+    <Compile Include="TreeViewAdv\Tree\ColumnCollection.cs" />
     <Compile Include="TreeViewAdv\Tree\DrawContext.cs" />
+    <Compile Include="TreeViewAdv\Tree\DropNodeValidatingEventArgs.cs" />
     <Compile Include="TreeViewAdv\Tree\DropPosition.cs" />
     <Compile Include="TreeViewAdv\Tree\EditorContext.cs" />
     <Compile Include="TreeViewAdv\Tree\Enums.cs" />
@@ -96,6 +99,8 @@
     <Compile Include="TreeViewAdv\Tree\IRowLayout.cs" />
     <Compile Include="TreeViewAdv\Tree\IToolTipProvider.cs" />
     <Compile Include="TreeViewAdv\Tree\ITreeModel.cs" />
+    <Compile Include="TreeViewAdv\Tree\ListModel.cs" />
+    <Compile Include="TreeViewAdv\Tree\NativeMethods.cs" />
     <Compile Include="TreeViewAdv\Tree\Node.cs" />
     <Compile Include="TreeViewAdv\Tree\NodeControlInfo.cs" />
     <Compile Include="TreeViewAdv\Tree\NodeControls\BaseTextControl.cs">
@@ -108,9 +113,14 @@
     <Compile Include="TreeViewAdv\Tree\NodeControls\EditableControl.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\EditEventArgs.cs" />
+    <Compile Include="TreeViewAdv\Tree\NodeControls\ExpandingIcon.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="TreeViewAdv\Tree\NodeControls\InteractiveControl.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="TreeViewAdv\Tree\NodeControls\LabelEventArgs.cs" />
     <Compile Include="TreeViewAdv\Tree\NodeControls\NodeCheckBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -165,6 +175,9 @@
     <Compile Include="TreeViewAdv\Tree\TreeViewAdv.Draw.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="TreeViewAdv\Tree\TreeViewAdv.Editor.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="TreeViewAdv\Tree\TreeViewAdv.Input.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -173,6 +186,7 @@
     </Compile>
     <Compile Include="TreeViewAdv\Tree\TreeViewAdvCancelEventArgs.cs" />
     <Compile Include="TreeViewAdv\Tree\TreeViewAdvEventArgs.cs" />
+    <Compile Include="TreeViewAdv\Tree\TreeViewRowDrawEventArgs.cs" />
     <Compile Include="XpProgressBar.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -195,6 +209,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="TreeViewAdv\Tree\TreeViewAdv.resx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\check.bmp" />

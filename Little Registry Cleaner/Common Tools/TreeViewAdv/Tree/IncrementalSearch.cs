@@ -63,16 +63,17 @@ namespace Common_Tools.TreeViewAdv.Tree
 			if (_tree.SelectedNode != null)
 				node = _tree.SelectedNode.NextVisibleNode;
 			if (node == null)
-				node = _tree.Root;
+				node = _tree.Root.NextVisibleNode;
 
-			foreach (string label in IterateNodeLabels(node))
-			{
-				if (label.StartsWith(_searchString))
+			if (node != null)
+				foreach (string label in IterateNodeLabels(node))
 				{
-					_tree.SelectedNode = _currentNode;
-					return;
+					if (label.StartsWith(_searchString))
+					{
+						_tree.SelectedNode = _currentNode;
+						return;
+					}
 				}
-			}
 		}
 
 		public virtual void EndSearch()

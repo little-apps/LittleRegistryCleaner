@@ -52,6 +52,14 @@ namespace Common_Tools.TreeViewAdv.Tree
 			_path = path;
 		}
 
+		public TreePath(TreePath parent, object node)
+		{
+			_path = new object[parent.FullPath.Length + 1];
+			for (int i = 0; i < _path.Length - 1; i++)
+				_path[i] = parent.FullPath[i];
+			_path[_path.Length - 1] = node;
+		}
+
 		public bool IsEmpty()
 		{
 			return (_path.Length == 0);

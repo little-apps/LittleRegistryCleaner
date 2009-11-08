@@ -15,6 +15,29 @@ namespace Common_Tools.TreeViewAdv.Tree.NodeControls
 		private Bitmap _plus;
 		private Bitmap _minus;
 
+		private VisualStyleRenderer _openedRenderer;
+		private VisualStyleRenderer OpenedRenderer
+		{
+			get
+			{
+				if (_openedRenderer == null)
+					_openedRenderer = new VisualStyleRenderer(VisualStyleElement.TreeView.Glyph.Opened);
+				return _openedRenderer;
+
+			}
+		}
+
+		private VisualStyleRenderer _closedRenderer;
+		private VisualStyleRenderer ClosedRenderer
+		{
+			get
+			{
+				if (_closedRenderer == null)
+					_closedRenderer = new VisualStyleRenderer(VisualStyleElement.TreeView.Glyph.Closed);
+				return _closedRenderer;
+			}
+		}
+
 		public NodePlusMinus()
 		{
 			_plus = Resources.plus;
@@ -36,9 +59,9 @@ namespace Common_Tools.TreeViewAdv.Tree.NodeControls
 				{
 					VisualStyleRenderer renderer;
 					if (node.IsExpanded)
-						renderer = new VisualStyleRenderer(VisualStyleElement.TreeView.Glyph.Opened);
+						renderer = OpenedRenderer;
 					else
-						renderer = new VisualStyleRenderer(VisualStyleElement.TreeView.Glyph.Closed);
+						renderer = ClosedRenderer;
 					renderer.DrawBackground(context.Graphics, new Rectangle(r.X, r.Y + dy, ImageSize, ImageSize));
 				}
 				else

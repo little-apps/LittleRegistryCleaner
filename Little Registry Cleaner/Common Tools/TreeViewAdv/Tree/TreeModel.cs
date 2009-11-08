@@ -6,8 +6,8 @@ using System.Collections.ObjectModel;
 namespace Common_Tools.TreeViewAdv.Tree
 {
 	/// <summary>
-	/// Provides a simple ready to use implementation of ITreeModel. Warning: this class is not optimized 
-	/// to work with big amount of data. In this case create you own implementation of ITreeModel, and pay attention
+	/// Provides a simple ready to use implementation of <see cref="ITreeModel"/>. Warning: this class is not optimized 
+	/// to work with big amount of data. In this case create you own implementation of <c>ITreeModel</c>, and pay attention
 	/// on GetChildren and IsLeaf methods.
 	/// </summary>
 	public class TreeModel : ITreeModel

@@ -1,17 +1,58 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows.Forms;
 using System.Drawing;
-using System.Windows.Forms.VisualStyles;
 using System.Diagnostics;
 using System.Drawing.Drawing2D;
+using System.Windows.Forms;
 using Common_Tools.TreeViewAdv.Tree.NodeControls;
 
 namespace Common_Tools.TreeViewAdv.Tree
 {
 	public partial class TreeViewAdv
 	{
+        public void AutoSizeColumns()
+        {
+            if (this.Columns.Count <= 0)
+                throw new Exception("Treeviewadv doesn't contain any columns");
+
+            foreach (TreeColumn tc in this.Columns)
+                this.AutoSizeColumn(tc, ColumnHeaderAutoResizeStyle.HeaderSize);
+        }
+
+        public void AutoSizeColumn(TreeColumn col, ColumnHeaderAutoResizeStyle headerAutoSize)
+        {
+            if (!Columns.Contains(col))
+                throw new ArgumentException("column is not a part of treeviewadv", "col");
+
+            if (headerAutoSize == ColumnHeaderAutoResizeStyle.None)
+                return;
+
+            foreach (TreeNodeAdv tna in this.VisibleNodes)
+            {
+                foreach (NodeControlInfo nci in this.GetNodeControls(tna))
+                {
+                    if (nci.Control.ParentColumn == col)
+                    {
+                        int nWidth = 0;
+
+                        Size sizeCntrl = nci.Control.GetActualSize(tna, this._measureContext);
+
+                        if (col.Index == 0)
+                            nWidth += nci.Bounds.X;
+
+                        if (!sizeCntrl.IsEmpty)
+                            col.Width = Math.Max(col.Width, (sizeCntrl.Width + nWidth));
+
+                        if (headerAutoSize == ColumnHeaderAutoResizeStyle.HeaderSize)
+                        {
+                            Size sizeText = TextRenderer.MeasureText(col.Header, this._measureContext.Font);
+
+                            if (!sizeText.IsEmpty)
+                                col.Width = Math.Max(col.Width, sizeText.Width);
+                        }
+                    }
+                }
+            }
+        } 
 
 		private void CreatePens()
 		{
@@ -94,7 +135,7 @@ namespace Common_Tools.TreeViewAdv.Tree
 		{
 			TreeNodeAdv node = RowMap[row];
 			context.DrawSelection = DrawSelectionMode.None;
-			context.CurrentEditorOwner = _currentEditorOwner;
+			context.CurrentEditorOwner = CurrentEditorOwner;
 			if (DragMode)
 			{
 				if ((_dropPosition.Node == node) && _dropPosition.Position == NodePosition.Inside && HighlightDropPosition)
@@ -108,6 +149,8 @@ namespace Common_Tools.TreeViewAdv.Tree
 					context.DrawSelection = DrawSelectionMode.Inactive;
 			}
 			context.DrawFocus = Focused && CurrentNode == node;
+			
+			OnRowDraw(e, node, context, row, rowRect);
 
 			if (FullRowSelect)
 			{
@@ -189,9 +232,9 @@ namespace Common_Tools.TreeViewAdv.Tree
 		{
 			foreach (NodeControlInfo item in GetNodeControls(node))
 			{
-				if (item.Bounds.X >= OffsetX && item.Bounds.X - OffsetX < this.Bounds.Width)// skip invisible nodes
+				if (item.Bounds.Right >= OffsetX && item.Bounds.X - OffsetX < this.Bounds.Width)// skip invisible nodes
 				{
-                    context.Bounds = item.Bounds;
+					context.Bounds = item.Bounds;
 					context.Graphics.SetClip(context.Bounds);
 					item.Control.Draw(node, context);
 					context.Graphics.ResetClip();

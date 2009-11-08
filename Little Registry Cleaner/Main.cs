@@ -116,7 +116,7 @@ namespace Little_Registry_Cleaner
 
                 // Collapse all and Resize columns 
                 this.treeViewAdvResults.CollapseAll();
-                this.treeViewAdvResults.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+                this.treeViewAdvResults.AutoSizeColumns();
 
                 // Show notify box
                 if (dlgResult == DialogResult.OK)
@@ -630,7 +630,7 @@ namespace Little_Registry_Cleaner
 
         private void treeViewAdvResults_Expanded(object sender, TreeViewAdvEventArgs e)
         {
-            this.treeViewAdvResults.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+            this.treeViewAdvResults.AutoSizeColumns();
         }
         #endregion
 

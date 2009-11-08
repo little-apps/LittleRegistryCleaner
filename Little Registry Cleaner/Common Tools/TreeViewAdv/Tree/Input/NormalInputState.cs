@@ -77,6 +77,10 @@ namespace Common_Tools.TreeViewAdv.Tree
 						args.Handled = true;
 						args.SuppressKeyPress = true;
 						break;
+					case Keys.A:
+						if (args.Modifiers == Keys.Control)
+							Tree.SelectAllNodes();
+						break;
 				}
 			}
 		}
@@ -119,7 +123,7 @@ namespace Common_Tools.TreeViewAdv.Tree
 		public override void MouseUp(TreeNodeAdvMouseEventArgs args)
 		{
 			Tree.ItemDragMode = false;
-			if (_mouseDownFlag)
+			if (_mouseDownFlag && args.Node != null)
 			{
 				if (args.Button == MouseButtons.Left)
 					DoMouseOperation(args);
@@ -146,7 +150,7 @@ namespace Common_Tools.TreeViewAdv.Tree
 
 		protected virtual void MouseDownAtEmptySpace(TreeNodeAdvMouseEventArgs args)
 		{
-			Tree.ClearSelectionInternal();
+			Tree.ClearSelection();
 		}
 
 		protected virtual void FocusRow(TreeNodeAdv node)
@@ -178,6 +182,9 @@ namespace Common_Tools.TreeViewAdv.Tree
 
 		protected virtual void DoMouseOperation(TreeNodeAdvMouseEventArgs args)
 		{
+			if (Tree.SelectedNodes.Count == 1 && args.Node != null && args.Node.IsSelected)
+				return;
+
 			Tree.SuspendSelectionEvent = true;
 			try
 			{

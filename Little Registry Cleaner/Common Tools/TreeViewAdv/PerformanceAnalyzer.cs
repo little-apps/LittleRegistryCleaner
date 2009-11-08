@@ -113,18 +113,22 @@ namespace Common_Tools.TreeViewAdv
 			foreach (PerformanceInfo info in Performances)
 				len = Math.Max(info.Name.Length, len);
 
-			sb.AppendLine("Name".PadRight(len) + " Count              Time, ms           Percentage, %");
-			sb.AppendLine("---------------------------------------------------------------------------------");
+			sb.AppendLine("Name".PadRight(len) + " Count              Total Time, ms    Avg. Time, ms       Percentage, %");
+			sb.AppendLine("----------------------------------------------------------------------------------------------");
 			foreach (PerformanceInfo info in Performances)
 			{
 				sb.Append(info.Name.PadRight(len));
 				double p = 0;
+				double avgt = 0;
 				if (totalTime != 0)
 					p = info.TotalTime / totalTime;
+				if (info.Count > 0)
+					avgt = info.TotalTime * 1000 / info.Count;
 				string c = info.Count.ToString("0,0").PadRight(20);
-				string t = (info.TotalTime * 1000).ToString("0,0.00").PadRight(20);
+				string tt = (info.TotalTime * 1000).ToString("0,0.00").PadRight(20);
+				string t = avgt.ToString("0.0000").PadRight(20);
 				string sp = (p * 100).ToString("###").PadRight(20);
-				sb.AppendFormat(" " + c + t + sp + "\n");
+				sb.AppendFormat(" " + c + tt + t + sp + "\n");
 			}
 			return sb.ToString();
 		}

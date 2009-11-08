@@ -1,9 +1,6 @@
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Collections.ObjectModel;
-using System.Drawing;
-using System.Windows.Forms;
 using System.Runtime.Serialization;
 using System.Security.Permissions;
 
@@ -43,6 +40,11 @@ namespace Common_Tools.TreeViewAdv.Tree
 						this[i]._index++;
 					base.InsertItem(index, item);
 				}
+
+				if (_owner.Tree != null && _owner.Tree.Model == null)
+				{
+					_owner.Tree.SmartFullUpdate();
+				}
 			}
 
 			protected override void RemoveItem(int index)
@@ -53,6 +55,12 @@ namespace Common_Tools.TreeViewAdv.Tree
 				for (int i = index + 1; i < Count; i++)
 					this[i]._index--;
 				base.RemoveItem(index);
+
+				if (_owner.Tree != null && _owner.Tree.Model == null)
+				{
+					_owner.Tree.UpdateSelection();
+					_owner.Tree.SmartFullUpdate();
+				}
 			}
 
 			protected override void SetItem(int index, TreeNodeAdv item)
@@ -65,19 +73,51 @@ namespace Common_Tools.TreeViewAdv.Tree
 		}
 		#endregion
 
+		#region Events
+
+		public event EventHandler<TreeViewAdvEventArgs> Collapsing;
+		internal void OnCollapsing()
+		{
+			if (Collapsing != null)
+				Collapsing(this, new TreeViewAdvEventArgs(this));
+		}
+
+		public event EventHandler<TreeViewAdvEventArgs> Collapsed;
+		internal void OnCollapsed()
+		{
+			if (Collapsed != null)
+				Collapsed(this, new TreeViewAdvEventArgs(this));
+		}
+
+		public event EventHandler<TreeViewAdvEventArgs> Expanding;
+		internal void OnExpanding()
+		{
+			if (Expanding != null)
+				Expanding(this, new TreeViewAdvEventArgs(this));
+		}
+
+		public event EventHandler<TreeViewAdvEventArgs> Expanded;
+		internal void OnExpanded()
+		{
+			if (Expanded != null)
+				Expanded(this, new TreeViewAdvEventArgs(this));
+		}
+
+		#endregion
+
 		#region Properties
 
 		private TreeViewAdv _tree;
-		internal TreeViewAdv Tree
+		public TreeViewAdv Tree
 		{
 			get { return _tree; }
 		}
 
 		private int _row;
-		internal int Row
+		public int Row
 		{
 			get { return _row; }
-			set { _row = value; }
+			internal set { _row = value; }
 		}
 
 		private int _index = -1;
@@ -93,7 +133,7 @@ namespace Common_Tools.TreeViewAdv.Tree
 		public bool IsSelected
 		{
 			get { return _isSelected; }
-			set 
+			set
 			{
 				if (_isSelected != value)
 				{
@@ -153,8 +193,8 @@ namespace Common_Tools.TreeViewAdv.Tree
 		private bool _isExpanded;
 		public bool IsExpanded
 		{
-            get { return _isExpanded; }
-            set 
+			get { return _isExpanded; }
+			set
 			{
 				if (value)
 					Expand();
@@ -182,6 +222,20 @@ namespace Common_Tools.TreeViewAdv.Tree
 					return 0;
 				else
 					return _parent.Level + 1;
+			}
+		}
+
+		public TreeNodeAdv PreviousNode
+		{
+			get
+			{
+				if (_parent != null)
+				{
+					int index = Index;
+					if (index > 0)
+						return _parent.Nodes[index - 1];
+				}
+				return null;
 			}
 		}
 
@@ -282,9 +336,17 @@ namespace Common_Tools.TreeViewAdv.Tree
 			set { _isExpandingNow = value; }
 		}
 
+		private bool _autoExpandOnStructureChanged = false;
+		public bool AutoExpandOnStructureChanged
+		{
+			get { return _autoExpandOnStructureChanged; }
+			set { _autoExpandOnStructureChanged = value; }
+		}
+
 		#endregion
 
-		public TreeNodeAdv(object tag): this(null, tag)
+		public TreeNodeAdv(object tag)
+			: this(null, tag)
 		{
 		}
 
@@ -295,31 +357,31 @@ namespace Common_Tools.TreeViewAdv.Tree
 			_nodes = new NodeCollection(this);
 			_children = new ReadOnlyCollection<TreeNodeAdv>(_nodes);
 			_tag = tag;
-        }
+		}
 
-        public override string ToString()
+		public override string ToString()
 		{
 			if (Tag != null)
 				return Tag.ToString();
 			else
 				return base.ToString();
-        }
+		}
 
-        public void Collapse()
-        {
+		public void Collapse()
+		{
 			if (_isExpanded)
 				Collapse(true);
-        }
+		}
 
-        public void CollapseAll()
-        {
-            Collapse(false);
-        }
+		public void CollapseAll()
+		{
+			Collapse(false);
+		}
 
-        public void Collapse(bool ignoreChildren)
-        {
+		public void Collapse(bool ignoreChildren)
+		{
 			SetIsExpanded(false, ignoreChildren);
-        }
+		}
 
 		public void Expand()
 		{
@@ -333,26 +395,23 @@ namespace Common_Tools.TreeViewAdv.Tree
 		}
 
 		public void Expand(bool ignoreChildren)
-        {
+		{
 			SetIsExpanded(true, ignoreChildren);
 		}
 
 		private void SetIsExpanded(bool value, bool ignoreChildren)
 		{
 			if (Tree == null)
-			{
 				_isExpanded = value;
-				if (!ignoreChildren)
-					Tree.SetIsExpandedRecursive(this, value);
-			}
 			else
 				Tree.SetIsExpanded(this, value, ignoreChildren);
 		}
 
 		#region ISerializable Members
 
-        private TreeNodeAdv(SerializationInfo info, StreamingContext context): this(null, null)
-        {
+		private TreeNodeAdv(SerializationInfo info, StreamingContext context)
+			: this(null, null)
+		{
 			int nodesCount = 0;
 			nodesCount = info.GetInt32("NodesCount");
 			_isExpanded = info.GetBoolean("IsExpanded");
@@ -364,9 +423,9 @@ namespace Common_Tools.TreeViewAdv.Tree
 				Nodes.Add(child);
 			}
 
-        }
+		}
 
-		[SecurityPermission(SecurityAction.Demand, SerializationFormatter=true)]
+		[SecurityPermission(SecurityAction.Demand, SerializationFormatter = true)]
 		public void GetObjectData(SerializationInfo info, StreamingContext context)
 		{
 			info.AddValue("IsExpanded", IsExpanded);

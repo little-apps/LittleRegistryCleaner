@@ -103,6 +103,10 @@ namespace Common_Tools.TreeViewAdv.Tree.NodeControls
 			return num;
 		}
 
+		protected override void DisposeEditor(Control editor)
+		{
+		}
+
 		protected override void DoApplyChanges(TreeNodeAdv node, Control editor)
 		{
 			SetValue(node, (editor as NumericUpDown).Value);

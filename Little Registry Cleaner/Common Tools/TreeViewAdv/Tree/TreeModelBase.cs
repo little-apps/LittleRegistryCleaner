@@ -37,5 +37,10 @@ namespace Common_Tools.TreeViewAdv.Tree
 			if (NodesRemoved != null)
 				NodesRemoved(this, args);
 		}
+
+		public virtual void Refresh()
+		{
+			OnStructureChanged(new TreePathEventArgs(TreePath.Empty));
+		}
 	}
 }

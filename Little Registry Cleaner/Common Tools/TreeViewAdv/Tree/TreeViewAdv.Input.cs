@@ -127,6 +127,12 @@ namespace Common_Tools.TreeViewAdv.Tree
 
 		protected override void OnMouseDown(MouseEventArgs e)
 		{
+			if (CurrentEditorOwner != null)
+			{
+				CurrentEditorOwner.EndEdit(true);
+				return;
+			}
+
 			if (!Focused)
 				Focus();
 
@@ -180,11 +186,16 @@ namespace Common_Tools.TreeViewAdv.Tree
 
 			if (!args.Handled)
 			{
-				if (args.Node != null && args.Button == MouseButtons.Left)
-					args.Node.IsExpanded = !args.Node.IsExpanded;
-
 				if (args.Node != null)
 					OnNodeMouseDoubleClick(args);
+				else
+					Input.MouseDoubleClick(args);
+
+				if (!args.Handled)
+				{
+					if (args.Node != null && args.Button == MouseButtons.Left)
+						args.Node.IsExpanded = !args.Node.IsExpanded;
+				}
 			}
 
 			base.OnMouseDoubleClick(e);
@@ -413,6 +424,7 @@ namespace Common_Tools.TreeViewAdv.Tree
 		private void SetDropPosition(Point pt)
 		{
 			TreeNodeAdv node = GetNodeAt(pt);
+			OnDropNodeValidating(pt, ref node);
 			_dropPosition.Node = node;
 			if (node != null)
 			{

@@ -48,5 +48,10 @@ namespace Common_Tools.TreeViewAdv.Tree
             Tree.UpdateView();
             return true;
         }
+
+		public override void MouseDoubleClick(TreeNodeAdvMouseEventArgs args)
+		{
+            Tree.AutoSizeColumn(Column, ColumnHeaderAutoResizeStyle.ColumnContent);
+		}
 	}
 }

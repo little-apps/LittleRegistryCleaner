@@ -8,21 +8,21 @@ namespace Common_Tools.TreeViewAdv
 {
 	public static class TextHelper
 	{
-		public static StringAlignment TranslateAligment(HorizontalAlignment aligment)
+		public static StringAlignment TranslateAligment(HorizontalAlignment alignment)
 		{
-			if (aligment == HorizontalAlignment.Left)
+			if (alignment == HorizontalAlignment.Left)
 				return StringAlignment.Near;
-			else if (aligment == HorizontalAlignment.Right)
+			else if (alignment == HorizontalAlignment.Right)
 				return StringAlignment.Far;
 			else
 				return StringAlignment.Center;
 		}
 
-        public static TextFormatFlags TranslateAligmentToFlag(HorizontalAlignment aligment)
+        public static TextFormatFlags TranslateAligmentToFlag(HorizontalAlignment alignment)
         {
-            if (aligment == HorizontalAlignment.Left)
+            if (alignment == HorizontalAlignment.Left)
                 return TextFormatFlags.Left;
-            else if (aligment == HorizontalAlignment.Right)
+            else if (alignment == HorizontalAlignment.Right)
                 return TextFormatFlags.Right;
             else
                 return TextFormatFlags.HorizontalCenter;

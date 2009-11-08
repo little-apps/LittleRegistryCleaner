@@ -10,12 +10,12 @@ namespace Common_Tools.TreeViewAdv.Tree.NodeControls
 {
 	public class NodeDecimalTextBox : NodeTextBox
 	{
-		private bool _allowDecimalSeperator = true;
+		private bool _allowDecimalSeparator = true;
 		[DefaultValue(true)]
-		public bool AllowDecimalSeperator
+		public bool AllowDecimalSeparator
 		{
-			get { return _allowDecimalSeperator; }
-			set { _allowDecimalSeperator = value; }
+			get { return _allowDecimalSeparator; }
+			set { _allowDecimalSeparator = value; }
 		}
 
 		private bool _allowNegativeSign = true;
@@ -33,7 +33,7 @@ namespace Common_Tools.TreeViewAdv.Tree.NodeControls
 		protected override TextBox CreateTextBox()
 		{
 			NumericTextBox textBox = new NumericTextBox();
-			textBox.AllowDecimalSeperator = AllowDecimalSeperator;
+			textBox.AllowDecimalSeparator = AllowDecimalSeparator;
 			textBox.AllowNegativeSign = AllowNegativeSign;
 			return textBox;
 		}

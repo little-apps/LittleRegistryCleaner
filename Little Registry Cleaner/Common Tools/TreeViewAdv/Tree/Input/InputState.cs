@@ -29,5 +29,9 @@ namespace Common_Tools.TreeViewAdv.Tree
 		{
 			return false;
 		}
+
+		public virtual void MouseDoubleClick(TreeNodeAdvMouseEventArgs args)
+		{
+		}
 	}
 }

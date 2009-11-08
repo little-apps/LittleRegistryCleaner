@@ -46,11 +46,20 @@ namespace Common_Tools.TreeViewAdv.Tree.NodeControls
 		public string Text
 		{
 			get { return _text; }
+			set { _text = value; }
 		}
 
-		public DrawEventArgs(TreeNodeAdv node, DrawContext context, string text)
+
+		private EditableControl _control;
+		public EditableControl Control
+		{
+			get { return _control; }
+		}
+
+		public DrawEventArgs(TreeNodeAdv node, EditableControl control, DrawContext context, string text)
 			: base(node)
 		{
+			_control = control;
 			_context = context;
 			_text = text;
 		}

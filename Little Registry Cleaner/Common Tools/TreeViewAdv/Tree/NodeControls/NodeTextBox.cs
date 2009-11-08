@@ -8,17 +8,9 @@ using System.ComponentModel;
 
 namespace Common_Tools.TreeViewAdv.Tree.NodeControls
 {
-	public class NodeTextBox: BaseTextControl
+	public class NodeTextBox : BaseTextControl
 	{
 		private const int MinTextBoxWidth = 30;
-
-		private TextBox EditorTextBox
-		{
-			get
-			{
-				return CurrentEditor as TextBox;
-			}
-		}
 
 		public NodeTextBox()
 		{
@@ -38,10 +30,10 @@ namespace Common_Tools.TreeViewAdv.Tree.NodeControls
 
 		public override void KeyDown(KeyEventArgs args)
 		{
-			if (args.KeyCode == Keys.F2 && Parent.CurrentNode != null)
+			if (args.KeyCode == Keys.F2 && Parent.CurrentNode != null && EditEnabled)
 			{
 				args.Handled = true;
-				BeginEditByUser();
+				BeginEdit();
 			}
 		}
 
@@ -51,7 +43,8 @@ namespace Common_Tools.TreeViewAdv.Tree.NodeControls
 			textBox.TextAlign = TextAlign;
 			textBox.Text = GetLabel(node);
 			textBox.BorderStyle = BorderStyle.FixedSingle;
-			textBox.TextChanged += new EventHandler(textBox_TextChanged);
+			textBox.TextChanged += EditorTextChanged;
+			textBox.KeyDown += EditorKeyDown;
 			_label = textBox.Text;
 			SetEditControlProperties(textBox, node);
 			return textBox;
@@ -62,60 +55,72 @@ namespace Common_Tools.TreeViewAdv.Tree.NodeControls
 			return new TextBox();
 		}
 
-		private string _label;
-		private void textBox_TextChanged(object sender, EventArgs e)
+		protected override void DisposeEditor(Control editor)
 		{
-			_label = EditorTextBox.Text;
+			var textBox = editor as TextBox;
+			textBox.TextChanged -= EditorTextChanged;
+			textBox.KeyDown -= EditorKeyDown;
+		}
+
+		private void EditorKeyDown(object sender, KeyEventArgs e)
+		{
+			if (e.KeyCode == Keys.Escape)
+				EndEdit(false);
+			else if (e.KeyCode == Keys.Enter)
+				EndEdit(true);
+		}
+
+		private string _label;
+		private void EditorTextChanged(object sender, EventArgs e)
+		{
+			var textBox = sender as TextBox;
+			_label = textBox.Text;
 			Parent.UpdateEditorBounds();
 		}
 
 		protected override void DoApplyChanges(TreeNodeAdv node, Control editor)
 		{
+			var label = (editor as TextBox).Text;
 			string oldLabel = GetLabel(node);
-			if (oldLabel != _label)
+			if (oldLabel != label)
 			{
-				SetLabel(node, _label);
-				OnLabelChanged();
+				SetLabel(node, label);
+				OnLabelChanged(node.Tag, oldLabel, label);
 			}
 		}
 
-		public void Cut()
+		public override void Cut(Control control)
 		{
-			if (EditorTextBox != null)
-				EditorTextBox.Cut();
+			(control as TextBox).Cut();
 		}
 
-		public void Copy()
+		public override void Copy(Control control)
 		{
-			if (EditorTextBox != null)
-				EditorTextBox.Copy();
+			(control as TextBox).Copy();
 		}
 
-		public void Paste()
+		public override void Paste(Control control)
 		{
-			if (EditorTextBox != null)
-				EditorTextBox.Paste();
+			(control as TextBox).Paste();
 		}
 
-		public void Delete()
+		public override void Delete(Control control)
 		{
-			if (EditorTextBox != null)
+			var textBox = control as TextBox;
+			int len = Math.Max(textBox.SelectionLength, 1);
+			if (textBox.SelectionStart < textBox.Text.Length)
 			{
-				int len = Math.Max(EditorTextBox.SelectionLength, 1);
-				if (EditorTextBox.SelectionStart < EditorTextBox.Text.Length)
-				{
-					int start = EditorTextBox.SelectionStart;
-					EditorTextBox.Text = EditorTextBox.Text.Remove(EditorTextBox.SelectionStart, len);
-					EditorTextBox.SelectionStart = start;
-				}
+				int start = textBox.SelectionStart;
+				textBox.Text = textBox.Text.Remove(textBox.SelectionStart, len);
+				textBox.SelectionStart = start;
 			}
 		}
 
-		public event EventHandler LabelChanged;
-		protected void OnLabelChanged()
+		public event EventHandler<LabelEventArgs> LabelChanged;
+		protected void OnLabelChanged(object subject, string oldLabel, string newLabel)
 		{
 			if (LabelChanged != null)
-				LabelChanged(this, EventArgs.Empty);
+				LabelChanged(this, new LabelEventArgs(subject, oldLabel, newLabel));
 		}
 	}
 }

@@ -14,18 +14,6 @@ namespace Common_Tools.TreeViewAdv.Tree.NodeControls
 
 		#region Properties
 
-		private TreeNodeAdv _editNode;
-		protected TreeNodeAdv EditNode
-		{
-			get { return _editNode; }
-		}
-
-		private Control _editor;
-		protected Control CurrentEditor
-		{
-			get { return _editor; }
-		}
-
 		private bool _editOnClick = false;
 		[DefaultValue(false)]
 		public bool EditOnClick
@@ -33,7 +21,7 @@ namespace Common_Tools.TreeViewAdv.Tree.NodeControls
 			get { return _editOnClick; }
 			set { _editOnClick = value; }
 		}
-		
+
 		#endregion
 
 		protected EditableControl()
@@ -47,7 +35,7 @@ namespace Common_Tools.TreeViewAdv.Tree.NodeControls
 		{
 			_timer.Stop();
 			if (_editFlag)
-				BeginEditByUser();
+				BeginEdit();
 			_editFlag = false;
 		}
 
@@ -55,7 +43,9 @@ namespace Common_Tools.TreeViewAdv.Tree.NodeControls
 		{
 			Size size = CalculateEditorSize(context);
 			context.Editor.Bounds = new Rectangle(context.Bounds.X, context.Bounds.Y,
-				Math.Min(size.Width, context.Bounds.Width), context.Bounds.Height);
+				Math.Min(size.Width, context.Bounds.Width),
+				Math.Min(size.Height, Parent.ClientSize.Height - context.Bounds.Y)
+			);
 		}
 
 		protected abstract Size CalculateEditorSize(EditorContext context);
@@ -65,94 +55,83 @@ namespace Common_Tools.TreeViewAdv.Tree.NodeControls
 			return (node.Tag != null) && IsEditEnabled(node);
 		}
 
-		protected void BeginEditByUser()
-		{
-			if (EditEnabled)
-				BeginEdit();
-		}
-
 		public void BeginEdit()
 		{
-			if (Parent.CurrentNode != null && CanEdit(Parent.CurrentNode))
+			if (Parent != null && Parent.CurrentNode != null && CanEdit(Parent.CurrentNode))
 			{
 				CancelEventArgs args = new CancelEventArgs();
 				OnEditorShowing(args);
 				if (!args.Cancel)
 				{
-					_editor = CreateEditor(Parent.CurrentNode);
-					_editor.Validating += new CancelEventHandler(EditorValidating);
-					_editor.KeyDown += new KeyEventHandler(EditorKeyDown);
-					_editNode = Parent.CurrentNode;
-					Parent.DisplayEditor(_editor, this);
+					var editor = CreateEditor(Parent.CurrentNode);
+					Parent.DisplayEditor(editor, this);
 				}
 			}
 		}
 
-		private void EditorKeyDown(object sender, KeyEventArgs e)
-		{
-			if (e.KeyCode == Keys.Escape)
-				EndEdit(false);
-			else if (e.KeyCode == Keys.Enter)
-				EndEdit(true);
-		}
-
-		private void EditorValidating(object sender, CancelEventArgs e)
-		{
-			ApplyChanges();
-		}
-
-		internal void HideEditor(Control editor)
-		{
-			editor.Validating -= new CancelEventHandler(EditorValidating);
-			editor.Parent = null;
-			editor.Dispose();
-			_editNode = null;
-			OnEditorHided();
-		}
-
 		public void EndEdit(bool applyChanges)
 		{
-			if (!applyChanges)
-				_editor.Validating -= new CancelEventHandler(EditorValidating);
-			Parent.Focus();
+			if (Parent != null)
+				if (Parent.HideEditor(applyChanges))
+					OnEditorHided();
 		}
 
 		public virtual void UpdateEditor(Control control)
 		{
 		}
 
-		public virtual void ApplyChanges()
+		internal void ApplyChanges(TreeNodeAdv node, Control editor)
 		{
-			try
-			{
-				DoApplyChanges(_editNode, _editor);
-			}
-			catch (ArgumentException ex)
-			{
-				MessageBox.Show(ex.Message, "Value is not valid", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-			}
+			DoApplyChanges(node, editor);
+			OnChangesApplied();
+		}
+
+		internal void DoDisposeEditor(Control editor)
+		{
+			DisposeEditor(editor);
 		}
 
 		protected abstract void DoApplyChanges(TreeNodeAdv node, Control editor);
 
 		protected abstract Control CreateEditor(TreeNodeAdv node);
 
+		protected abstract void DisposeEditor(Control editor);
+
+		public virtual void Cut(Control control)
+		{
+		}
+
+		public virtual void Copy(Control control)
+		{
+		}
+
+		public virtual void Paste(Control control)
+		{
+		}
+
+		public virtual void Delete(Control control)
+		{
+		}
+
 		public override void MouseDown(TreeNodeAdvMouseEventArgs args)
 		{
-			_editFlag = (!EditOnClick && args.Button == MouseButtons.Left 
+			_editFlag = (!EditOnClick && args.Button == MouseButtons.Left
 				&& args.ModifierKeys == Keys.None && args.Node.IsSelected);
 		}
 
 		public override void MouseUp(TreeNodeAdvMouseEventArgs args)
 		{
-			if (EditOnClick && args.Button == MouseButtons.Left && args.ModifierKeys == Keys.None)
+			if (args.Node.IsSelected)
 			{
-				Parent.ItemDragMode = false;
-				BeginEdit();
-				args.Handled = true;
+				if (EditOnClick && args.Button == MouseButtons.Left && args.ModifierKeys == Keys.None)
+				{
+					Parent.ItemDragMode = false;
+					BeginEdit();
+					args.Handled = true;
+				}
+				else if (_editFlag)// && args.Node.IsSelected)
+					_timer.Start();
 			}
-			else if (_editFlag && args.Node.IsSelected)
-				_timer.Start();
 		}
 
 		public override void MouseDoubleClick(TreeNodeAdvMouseEventArgs args)
@@ -182,6 +161,13 @@ namespace Common_Tools.TreeViewAdv.Tree.NodeControls
 		{
 			if (EditorHided != null)
 				EditorHided(this, EventArgs.Empty);
+		}
+
+		public event EventHandler ChangesApplied;
+		protected void OnChangesApplied()
+		{
+			if (ChangesApplied != null)
+				ChangesApplied(this, EventArgs.Empty);
 		}
 
 		#endregion

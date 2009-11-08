@@ -329,5 +329,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Automatically changes to current ui culture once the program is started
 - Translated strings that are not controls and are in the code files
 - Fixed error when switching to chinese (traditional or simplified)
+- Upgraded TreeView Advanced to version 1.7
 
 + Version 1.4 Released

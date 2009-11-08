@@ -4,7 +4,6 @@ using System.Reflection;
 using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Text;
-using System.Drawing;
 
 namespace Common_Tools.TreeViewAdv
 {
@@ -17,6 +16,12 @@ namespace Common_Tools.TreeViewAdv
             get { return _dVSplitCursor; }
         }
 
+		private static GifDecoder _loadingIcon = GetGifDecoder(Properties.Resources.loading_icon);
+		public static GifDecoder LoadingIcon
+		{
+			get { return _loadingIcon; }
+		}
+
         /// <summary>
         /// Help function to convert byte[] from resource into Cursor Type 
         /// </summary>
@@ -27,6 +32,17 @@ namespace Common_Tools.TreeViewAdv
             using (MemoryStream s = new MemoryStream(data))
                 return new Cursor(s);
         }
+
+		/// <summary>
+		/// Help function to convert byte[] from resource into GifDecoder Type 
+		/// </summary>
+		/// <param name="data"></param>
+		/// <returns></returns>
+		private static GifDecoder GetGifDecoder(byte[] data)
+		{
+			using(MemoryStream ms = new MemoryStream(data))
+				return new GifDecoder(ms, true);
+		}
 
     }
 }

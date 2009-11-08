@@ -1023,17 +1023,5 @@ namespace Little_Registry_Cleaner
 
             return true;
         }
-
-        /// <summary>
-        /// Gets the string from the Resources.resx file
-        /// </summary>
-        /// <param name="name">name of the string</param>
-        /// <returns>string</returns>
-        public static string GetLocalizedResourceString(string name)
-        {
-            System.Resources.ResourceManager global = new System.Resources.ResourceManager("Little_Registry_Cleaner.Properties.Resources", System.Reflection.Assembly.GetExecutingAssembly());
-
-            return global.GetString(name, System.Threading.Thread.CurrentThread.CurrentUICulture);
-        }
     }
 }
