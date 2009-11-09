@@ -56,8 +56,6 @@ namespace Little_Registry_Cleaner
 
         private bool bDisplayExitMsgBox = true;
 
-        private BadRegKeySorter listViewItemSorter = new BadRegKeySorter();
-
         private TreeModel treeModel = new TreeModel();
 
         private static Logger _logger;
@@ -114,9 +112,9 @@ namespace Little_Registry_Cleaner
                 foreach (BadRegistryKey p in ScanDlg.arrBadRegistryKeys)
                     this.treeModel.Nodes.Add(p);
 
-                // Collapse all and Resize columns 
-                this.treeViewAdvResults.CollapseAll();
-                this.treeViewAdvResults.AutoSizeColumns();
+                // Expand all and Resize columns 
+                this.treeViewAdvResults.ExpandAll();
+                this.treeViewAdvResults.AutoSizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
 
                 // Show notify box
                 if (dlgResult == DialogResult.OK)
@@ -223,7 +221,7 @@ namespace Little_Registry_Cleaner
             this.treeView1.Nodes[0].ExpandAll();
 
             // Add tree model to treeviewadv
-            this.treeViewAdvResults.Model = this.treeModel;
+            this.treeViewAdvResults.Model = new SortedTreeModel(this.treeModel);
 
             // Set language to current culture
             this.SetCurrentLang();
@@ -320,33 +318,6 @@ namespace Little_Registry_Cleaner
                 if (MessageBox.Show(this, Properties.Resources.mainAskExit, Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
                     e.Cancel = true;
             }
-        }
-
-        private void listResults_ColumnClick(object sender, ColumnClickEventArgs e)
-        {
-            //// Determine if clicked column is already the column that is being sorted.
-            //if (e.Column == this.listViewItemSorter.SortColumn)
-            //{
-            //    // Reverse the current sort direction for this column.
-            //    if (this.listViewItemSorter.Order == SortOrder.Ascending)
-            //    {
-            //        this.listViewItemSorter.Order = SortOrder.Descending;
-            //    }
-            //    else
-            //    {
-            //        this.listViewItemSorter.Order = SortOrder.Ascending;
-            //    }
-            //}
-            //else
-            //{
-            //    // Set the column number that is to be sorted; default to ascending.
-            //    this.listViewItemSorter.SortColumn = e.Column;
-            //    this.listViewItemSorter.Order = SortOrder.Ascending;
-            //}
-
-            //// Perform the sort with these new sort options.
-            //this.listResults.Sort();
-
         }
 
         #region "Menu Events"
@@ -630,7 +601,20 @@ namespace Little_Registry_Cleaner
 
         private void treeViewAdvResults_Expanded(object sender, TreeViewAdvEventArgs e)
         {
-            this.treeViewAdvResults.AutoSizeColumns();
+            this.treeViewAdvResults.AutoSizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
+        }
+
+        private void treeViewAdvResults_ColumnClicked(object sender, TreeColumnEventArgs e)
+        {
+            TreeColumn col = e.Column;
+            if (col.SortOrder == SortOrder.Ascending)
+                col.SortOrder = SortOrder.Descending;
+            else
+                col.SortOrder = SortOrder.Ascending;
+
+            (this.treeViewAdvResults.Model as SortedTreeModel).Comparer = new BadRegKeySorter(col.Header, col.SortOrder);
+
+            this.treeViewAdvResults.ExpandAll();
         }
         #endregion
 
@@ -778,8 +762,8 @@ namespace Little_Registry_Cleaner
             this.treeView1.Nodes.Clear();
             this.treeView1.Nodes.Add(resources.GetObject("treeView1.Nodes") as TreeNode);
             this.treeView1.ExpandAll();
-
-
         }
+
+        
     }
 }

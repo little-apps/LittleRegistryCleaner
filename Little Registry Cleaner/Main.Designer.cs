@@ -216,23 +216,27 @@
             this.treeViewAdvResults.SelectionMode = Common_Tools.TreeViewAdv.Tree.TreeSelectionMode.Multi;
             this.treeViewAdvResults.UseColumns = true;
             this.treeViewAdvResults.SelectionChanged += new System.EventHandler(this.treeViewAdvResults_SelectionChanged);
+            this.treeViewAdvResults.ColumnClicked += new System.EventHandler<Common_Tools.TreeViewAdv.Tree.TreeColumnEventArgs>(this.treeViewAdvResults_ColumnClicked);
             this.treeViewAdvResults.Expanded += new System.EventHandler<Common_Tools.TreeViewAdv.Tree.TreeViewAdvEventArgs>(this.treeViewAdvResults_Expanded);
             // 
             // treeColumn1
             // 
             resources.ApplyResources(this.treeColumn1, "treeColumn1");
+            this.treeColumn1.Sortable = true;
             this.treeColumn1.SortOrder = System.Windows.Forms.SortOrder.None;
             this.treeColumn1.TooltipText = null;
             // 
             // treeColumn2
             // 
             resources.ApplyResources(this.treeColumn2, "treeColumn2");
+            this.treeColumn2.Sortable = true;
             this.treeColumn2.SortOrder = System.Windows.Forms.SortOrder.None;
             this.treeColumn2.TooltipText = null;
             // 
             // treeColumn3
             // 
             resources.ApplyResources(this.treeColumn3, "treeColumn3");
+            this.treeColumn3.Sortable = true;
             this.treeColumn3.SortOrder = System.Windows.Forms.SortOrder.None;
             this.treeColumn3.TooltipText = null;
             // 
@@ -287,11 +291,11 @@
             this.nodeIcon.DataPropertyName = "Img";
             this.nodeIcon.LeftMargin = 1;
             this.nodeIcon.ParentColumn = this.treeColumn1;
+            this.nodeIcon.ScaleMode = Common_Tools.TreeViewAdv.Tree.ImageScaleMode.Clip;
             // 
             // nodeSection
             // 
             this.nodeSection.DataPropertyName = "SectionName";
-            this.nodeSection.EditEnabled = false;
             this.nodeSection.IncrementalSearchEnabled = true;
             this.nodeSection.LeftMargin = 3;
             this.nodeSection.ParentColumn = this.treeColumn1;
@@ -300,7 +304,6 @@
             // nodeProblem
             // 
             this.nodeProblem.DataPropertyName = "Problem";
-            this.nodeProblem.EditEnabled = false;
             this.nodeProblem.IncrementalSearchEnabled = true;
             this.nodeProblem.LeftMargin = 3;
             this.nodeProblem.ParentColumn = this.treeColumn1;
@@ -309,7 +312,6 @@
             // nodeLocation
             // 
             this.nodeLocation.DataPropertyName = "RegKeyPath";
-            this.nodeLocation.EditEnabled = false;
             this.nodeLocation.IncrementalSearchEnabled = true;
             this.nodeLocation.LeftMargin = 3;
             this.nodeLocation.ParentColumn = this.treeColumn2;
@@ -318,7 +320,6 @@
             // nodeValueName
             // 
             this.nodeValueName.DataPropertyName = "ValueName";
-            this.nodeValueName.EditEnabled = false;
             this.nodeValueName.IncrementalSearchEnabled = true;
             this.nodeValueName.LeftMargin = 3;
             this.nodeValueName.ParentColumn = this.treeColumn3;

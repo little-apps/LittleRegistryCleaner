@@ -9,13 +9,13 @@ namespace Common_Tools.TreeViewAdv.Tree
 {
 	public partial class TreeViewAdv
 	{
-        public void AutoSizeColumns()
+        public void AutoSizeColumns(ColumnHeaderAutoResizeStyle headerAutoSize)
         {
             if (this.Columns.Count <= 0)
                 throw new Exception("Treeviewadv doesn't contain any columns");
 
             foreach (TreeColumn tc in this.Columns)
-                this.AutoSizeColumn(tc, ColumnHeaderAutoResizeStyle.HeaderSize);
+                this.AutoSizeColumn(tc, headerAutoSize);
         }
 
         public void AutoSizeColumn(TreeColumn col, ColumnHeaderAutoResizeStyle headerAutoSize)

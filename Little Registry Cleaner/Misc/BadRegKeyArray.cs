@@ -181,7 +181,10 @@ namespace Little_Registry_Cleaner
 
         public override string ToString()
         {
-            return string.Copy(RegKeyPath);
+            if (this.IsLeaf)
+                return string.Copy(RegKeyPath);
+            else
+                return string.Copy(SectionName);
         }
     }
 
@@ -268,89 +271,43 @@ namespace Little_Registry_Cleaner
 
     public class BadRegKeySorter : IComparer
     {
-        /// <summary>
-        /// Specifies the column to be sorted
-        /// </summary>
-        private int ColumnToSort = 0;
-        /// <summary>
-        /// Specifies the order in which to sort (i.e. 'Ascending').
-        /// </summary>
-        private SortOrder OrderOfSort = SortOrder.Ascending;
-        /// <summary>
-        /// Case insensitive comparer object
-        /// </summary>
-        private CaseInsensitiveComparer ObjectCompare = new CaseInsensitiveComparer();
+        private string _mode;
+        private SortOrder _order;
 
-        public BadRegKeySorter()
+        public BadRegKeySorter(string mode, SortOrder order)
         {
+            _mode = mode;
+            _order = order;
         }
 
-        /// <summary>
-        /// This method is inherited from the IComparer interface.  It compares the two objects passed using a case insensitive comparison.
-        /// </summary>
-        /// <param name="x">First object to be compared</param>
-        /// <param name="y">Second object to be compared</param>
-        /// <returns>The result of the comparison. "0" if equal, negative if 'x' is less than 'y' and positive if 'x' is greater than 'y'</returns>
         public int Compare(object x, object y)
         {
-            // Cast the objects to be compared to ListViewItem objects
-            ListViewItem listviewX = (ListViewItem)x;
-            ListViewItem listviewY = (ListViewItem)y;
+            BadRegistryKey a = x as BadRegistryKey;
+            BadRegistryKey b = y as BadRegistryKey;
+            int res = 0;
 
-            // See if columns exist, otherwise return 0
-            if (listviewX.SubItems.Count <= ColumnToSort || listviewY.SubItems.Count <= ColumnToSort)
-                return 0;
-
-            // Compare the two items
-            int compareResult = ObjectCompare.Compare(listviewX.SubItems[ColumnToSort].Text, listviewY.SubItems[ColumnToSort].Text);
-
-            // Calculate correct return value based on object comparison
-            if (OrderOfSort == SortOrder.Ascending)
+            if (_mode == "Problem")
             {
-                // Ascending sort is selected, return normal result of compare operation
-                return compareResult;
+                string strA = ((a.IsLeaf) ? (a.Problem) : (a.SectionName));
+                string strB = ((b.IsLeaf) ? (b.Problem) : (b.SectionName));
+                res = string.Compare(strA, strB);
             }
-            else if (OrderOfSort == SortOrder.Descending)
+            else if (_mode == "Location")
             {
-                // Descending sort is selected, return negative result of compare operation
-                return (-compareResult);
+                res = string.Compare(a.baseRegKey, b.baseRegKey);
             }
+            else if (_mode == "Value Name")
+                res = string.Compare(a.ValueName, b.ValueName);
+
+            if (_order == SortOrder.Ascending)
+                return -res;
             else
-            {
-                // Return '0' to indicate they are equal
-                return 0;
-            }
+                return res;
         }
 
-        /// <summary>
-        /// Gets or sets the number of the column to which to apply the sorting operation (Defaults to '0').
-        /// </summary>
-        public int SortColumn
+        private string GetData(object x)
         {
-            set
-            {
-                ColumnToSort = value;
-            }
-            get
-            {
-                return ColumnToSort;
-            }
+            return (x as BadRegistryKey).ToString();
         }
-
-        /// <summary>
-        /// Gets or sets the order of sorting to apply (for example, 'Ascending' or 'Descending').
-        /// </summary>
-        public SortOrder Order
-        {
-            set
-            {
-                OrderOfSort = value;
-            }
-            get
-            {
-                return OrderOfSort;
-            }
-        }
-
     }
 }

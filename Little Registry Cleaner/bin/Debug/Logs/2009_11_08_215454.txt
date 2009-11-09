@@ -1,0 +1,40 @@
+Little Registry Cleaner 1.4
+Website: http://sourceforge.net/projects/littlecleaner
+Microsoft Windows NT 6.1.7600.0
+
+Started scan at 08/11/2009 9:54:36 PM
+
+Starting scanning: ActiveX/COM Objects
+Scanning HKEY_CLASSES_ROOT\CLSID for invalid CLSID's
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID for invalid CLSID's
+Scanning HKEY_CURRENT_USER\SOFTWARE\Classes\CLSID for invalid CLSID's
+Scanning HKEY_CLASSES_ROOT\Wow6432Node\CLSID for invalid CLSID's
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Classes\CLSID for invalid CLSID's
+Scanning HKEY_CLASSES_ROOT for invalid Classes
+Bad Registry Key Found! Problem: "Missing CLSID reference" Path: "HKEY_CLASSES_ROOT\RegMaid.Document"
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE\Classes for invalid Classes
+Bad Registry Key Found! Problem: "Missing ProgID reference" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.xht"
+Bad Registry Key Found! Problem: "Missing ProgID reference" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.xhtml"
+Bad Registry Key Found! Problem: "Missing CLSID reference" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\RegMaid.Document"
+Scanning HKEY_CURRENT_USER\SOFTWARE\Classes for invalid Classes
+Scanning HKEY_CLASSES_ROOT\Wow6432Node for invalid Classes
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Classes for invalid Classes
+Scanning HKEY_CLASSES_ROOT\AppID for invalid AppID's
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID for invalid AppID's
+Scanning HKEY_CURRENT_USER\SOFTWARE\Classes\AppID for invalid AppID's
+Scanning HKEY_CLASSES_ROOT\Wow6432Node\AppID for invalid AppID's
+Checking for invalid browser helper objects
+Checking for invalid explorer toolbars
+Checking for invalid explorer extensions
+Checking for invalid explorer file extensions
+Bad Registry Key Found! Problem: "Unused File Extension" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.006"
+Bad Registry Key Found! Problem: "Unused File Extension" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.com]"
+Bad Registry Key Found! Problem: "Unused File Extension" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.gws"
+Bad Registry Key Found! Problem: "Unused File Extension" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.m7p"
+Finished scanning: ActiveX/COM Objects
+
+Total time elapsed: 17.447 seconds
+Total problems found: 8
+Total objects scanned: 44702
+
+Finished scan at 08/11/2009 9:54:54 PM

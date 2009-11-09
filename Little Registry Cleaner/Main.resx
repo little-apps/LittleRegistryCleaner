@@ -151,7 +151,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAD8
-        FgAAAk1TRnQBSQFMAgEBDAEAASQBAQEkAQEBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        FgAAAk1TRnQBSQFMAgEBDAEAATQBAQE0AQEBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAAUADAAEBAQABCAYAARAYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -396,7 +396,7 @@
     <value>detailsRegView1</value>
   </data>
   <data name="&gt;&gt;detailsRegView1.Type" xml:space="preserve">
-    <value>Common_Tools.DetailsRegView, Common Tools, Version=1.0.3592.34594, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common_Tools.DetailsRegView, Common Tools, Version=1.0.3599.39014, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;detailsRegView1.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -480,7 +480,7 @@
     <value>treeViewAdvResults</value>
   </data>
   <data name="&gt;&gt;treeViewAdvResults.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.TreeViewAdv, Common Tools, Version=1.0.3592.34594, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common_Tools.TreeViewAdv.Tree.TreeViewAdv, Common Tools, Version=1.0.3599.39014, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;treeViewAdvResults.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -9215,19 +9215,19 @@
     <value>treeColumn1</value>
   </data>
   <data name="&gt;&gt;treeColumn1.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.TreeColumn, Common Tools, Version=1.0.3592.34594, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common_Tools.TreeViewAdv.Tree.TreeColumn, Common Tools, Version=1.0.3599.39014, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;treeColumn2.Name" xml:space="preserve">
     <value>treeColumn2</value>
   </data>
   <data name="&gt;&gt;treeColumn2.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.TreeColumn, Common Tools, Version=1.0.3592.34594, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common_Tools.TreeViewAdv.Tree.TreeColumn, Common Tools, Version=1.0.3599.39014, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;treeColumn3.Name" xml:space="preserve">
     <value>treeColumn3</value>
   </data>
   <data name="&gt;&gt;treeColumn3.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.TreeColumn, Common Tools, Version=1.0.3592.34594, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common_Tools.TreeViewAdv.Tree.TreeColumn, Common Tools, Version=1.0.3599.39014, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;selectAllToolStripMenuItem.Name" xml:space="preserve">
     <value>selectAllToolStripMenuItem</value>
@@ -9263,37 +9263,37 @@
     <value>nodeCheckBox</value>
   </data>
   <data name="&gt;&gt;nodeCheckBox.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeCheckBox, Common Tools, Version=1.0.3592.34594, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeCheckBox, Common Tools, Version=1.0.3599.39014, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;nodeIcon.Name" xml:space="preserve">
     <value>nodeIcon</value>
   </data>
   <data name="&gt;&gt;nodeIcon.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeIcon, Common Tools, Version=1.0.3592.34594, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeIcon, Common Tools, Version=1.0.3599.39014, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;nodeSection.Name" xml:space="preserve">
     <value>nodeSection</value>
   </data>
   <data name="&gt;&gt;nodeSection.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox, Common Tools, Version=1.0.3592.34594, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox, Common Tools, Version=1.0.3599.39014, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;nodeProblem.Name" xml:space="preserve">
     <value>nodeProblem</value>
   </data>
   <data name="&gt;&gt;nodeProblem.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox, Common Tools, Version=1.0.3592.34594, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox, Common Tools, Version=1.0.3599.39014, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;nodeLocation.Name" xml:space="preserve">
     <value>nodeLocation</value>
   </data>
   <data name="&gt;&gt;nodeLocation.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox, Common Tools, Version=1.0.3592.34594, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox, Common Tools, Version=1.0.3599.39014, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;nodeValueName.Name" xml:space="preserve">
     <value>nodeValueName</value>
   </data>
   <data name="&gt;&gt;nodeValueName.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox, Common Tools, Version=1.0.3592.34594, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox, Common Tools, Version=1.0.3599.39014, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;toolStripButtonScan.Name" xml:space="preserve">
     <value>toolStripButtonScan</value>
