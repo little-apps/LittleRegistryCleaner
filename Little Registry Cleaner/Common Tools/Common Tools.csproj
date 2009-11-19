@@ -49,11 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DetailsRegView.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="DetailsRegKey.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DetailsRegView.Designer.cs">
-      <DependentUpon>DetailsRegView.cs</DependentUpon>
+    <Compile Include="DetailsRegKey.Designer.cs">
+      <DependentUpon>DetailsRegKey.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -200,8 +200,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="DetailsRegView.resx">
-      <DependentUpon>DetailsRegView.cs</DependentUpon>
+    <EmbeddedResource Include="DetailsRegKey.resx">
+      <DependentUpon>DetailsRegKey.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

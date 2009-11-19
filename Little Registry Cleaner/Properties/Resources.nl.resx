@@ -153,9 +153,6 @@
   <data name="mainUpdateAsk" xml:space="preserve">
     <value>Een nieuwere versie beschikbaar is. Wilt u het te downloaden?</value>
   </data>
-  <data name="needAdmin" xml:space="preserve">
-    <value>U moet een beheerder zijn om dit programma uit te voeren</value>
-  </data>
   <data name="optionsExcludeDir" xml:space="preserve">
     <value>Selecteer de map uit te sluiten van het register scan</value>
   </data>
@@ -177,8 +174,26 @@
   <data name="optionsSelectLogDir" xml:space="preserve">
     <value>Selecteer de map waar de log-bestanden zullen worden geplaatst</value>
   </data>
+  <data name="piErrorRegKey" xml:space="preserve">
+    <value>Fout verwijderen van registersleutel:</value>
+  </data>
+  <data name="piErrorUninstalling" xml:space="preserve">
+    <value>Fout bij het verwijderen van het programma:</value>
+  </data>
+  <data name="piInvalidUninstallString" xml:space="preserve">
+    <value>Kan geen teken reeks voor het verwijderen. Wilt u deze handmatig uit het register verwijderen?</value>
+  </data>
+  <data name="piSuccessRegKey" xml:space="preserve">
+    <value>Registersleutel verwijderd gebruikersnaam</value>
+  </data>
+  <data name="piSuccessUninstall" xml:space="preserve">
+    <value>Gebruikersnaam verwijderd programma</value>
+  </data>
   <data name="programAlreadyRunning" xml:space="preserve">
     <value>Een ander programma lijkt te draaien reeds...</value>
+  </data>
+  <data name="programNeedAdmin" xml:space="preserve">
+    <value>U moet een beheerder zijn om dit programma uit te voeren</value>
   </data>
   <data name="restoreAsk" xml:space="preserve">
     <value>Weet u zeker?</value>

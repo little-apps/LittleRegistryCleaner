@@ -68,7 +68,7 @@ namespace Little_Registry_Cleaner
             // Check if admin, otherwise exit
             if (!Permissions.IsUserAdministrator)
             {
-                MessageBox.Show(Properties.Resources.needAdmin, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Properties.Resources.programNeedAdmin, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Application.Exit();
                 return;
             }

@@ -130,7 +130,7 @@
     <value>Are you sure you want to exit?</value>
   </data>
   <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>This your first time running Little Registry Cleaner. \r\nWould you like to create a restore point?</value>
+    <value>This your first time running Little Registry Cleaner. Would you like to create a restore point?</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>Unable to find Little Registry Cleaner.chm</value>
@@ -153,9 +153,6 @@
   <data name="mainUpdateAsk" xml:space="preserve">
     <value>A newer version is available. Would you like to download it?</value>
   </data>
-  <data name="needAdmin" xml:space="preserve">
-    <value>You must be an administrator to run this program</value>
-  </data>
   <data name="optionsExcludeDir" xml:space="preserve">
     <value>Select the folder to exclude from the registry scan</value>
   </data>
@@ -177,8 +174,26 @@
   <data name="optionsSelectLogDir" xml:space="preserve">
     <value>Select the folder where the log files will be placed</value>
   </data>
+  <data name="piErrorRegKey" xml:space="preserve">
+    <value>Error removing registry key:</value>
+  </data>
+  <data name="piErrorUninstalling" xml:space="preserve">
+    <value>Error uninstalling program:</value>
+  </data>
+  <data name="piInvalidUninstallString" xml:space="preserve">
+    <value>Unable to find uninstall string. Would you like to manually remove it from the registry?</value>
+  </data>
+  <data name="piSuccessRegKey" xml:space="preserve">
+    <value>Sucessfully removed registry key</value>
+  </data>
+  <data name="piSuccessUninstall" xml:space="preserve">
+    <value>Sucessfully uninstalled program</value>
+  </data>
   <data name="programAlreadyRunning" xml:space="preserve">
     <value>Another program seems to be running already...</value>
+  </data>
+  <data name="programNeedAdmin" xml:space="preserve">
+    <value>You must be an administrator to run this program</value>
   </data>
   <data name="restoreAsk" xml:space="preserve">
     <value>Are you sure?</value>

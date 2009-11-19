@@ -153,9 +153,6 @@
   <data name="mainUpdateAsk" xml:space="preserve">
     <value>Доступна новая версия. Хотите скачать его?</value>
   </data>
-  <data name="needAdmin" xml:space="preserve">
-    <value>Вы должны быть администратором для запуска этой программы</value>
-  </data>
   <data name="optionsExcludeDir" xml:space="preserve">
     <value>Выберите папку для исключения из реестра, сканирование</value>
   </data>
@@ -177,8 +174,26 @@
   <data name="optionsSelectLogDir" xml:space="preserve">
     <value>Выберите папку, в которой файлы журналов будет уделяться</value>
   </data>
+  <data name="piErrorRegKey" xml:space="preserve">
+    <value>Ошибка при удалении реестра:</value>
+  </data>
+  <data name="piErrorUninstalling" xml:space="preserve">
+    <value>Ошибка Деинсталляция программы:</value>
+  </data>
+  <data name="piInvalidUninstallString" xml:space="preserve">
+    <value>Не удается найти удаления строки. Вы хотите вручную удалить его из реестра?</value>
+  </data>
+  <data name="piSuccessRegKey" xml:space="preserve">
+    <value>Успешно удаляются реестра</value>
+  </data>
+  <data name="piSuccessUninstall" xml:space="preserve">
+    <value>Программа успешно удалена</value>
+  </data>
   <data name="programAlreadyRunning" xml:space="preserve">
     <value>Другая программа, кажется, бежит уже...</value>
+  </data>
+  <data name="programNeedAdmin" xml:space="preserve">
+    <value>Вы должны быть администратором для запуска этой программы</value>
   </data>
   <data name="restoreAsk" xml:space="preserve">
     <value>Вы уверены, что?</value>

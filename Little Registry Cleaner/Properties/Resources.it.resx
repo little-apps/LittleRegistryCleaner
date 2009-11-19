@@ -153,9 +153,6 @@
   <data name="mainUpdateAsk" xml:space="preserve">
     <value>Una versione più recente è disponibile. Vuoi scaricarlo?</value>
   </data>
-  <data name="needAdmin" xml:space="preserve">
-    <value>È necessario essere un amministratore per eseguire questo programma</value>
-  </data>
   <data name="optionsExcludeDir" xml:space="preserve">
     <value>Selezionare la cartella da escludere dal Registro di sistema di scansione</value>
   </data>
@@ -177,8 +174,26 @@
   <data name="optionsSelectLogDir" xml:space="preserve">
     <value>Selezionare la cartella dove il file di registro sarà messo</value>
   </data>
+  <data name="piErrorRegKey" xml:space="preserve">
+    <value>Rimozione chiave del Registro di sistema di errore:</value>
+  </data>
+  <data name="piErrorUninstalling" xml:space="preserve">
+    <value>Programma di disinstallazione di errore:</value>
+  </data>
+  <data name="piInvalidUninstallString" xml:space="preserve">
+    <value>Impossibile trovare la stringa di disinstallazione. Vuoi rimuovere manualmente dal Registro di sistema?</value>
+  </data>
+  <data name="piSuccessRegKey" xml:space="preserve">
+    <value>Chiave del Registro di sistema Hai rimosso</value>
+  </data>
+  <data name="piSuccessUninstall" xml:space="preserve">
+    <value>Programma hai disinstallato</value>
+  </data>
   <data name="programAlreadyRunning" xml:space="preserve">
     <value>Un altro programma sembra essere già in esecuzione...</value>
+  </data>
+  <data name="programNeedAdmin" xml:space="preserve">
+    <value>È necessario essere un amministratore per eseguire questo programma</value>
   </data>
   <data name="restoreAsk" xml:space="preserve">
     <value>Sei sicuro?</value>

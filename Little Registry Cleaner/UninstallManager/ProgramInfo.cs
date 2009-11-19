@@ -199,7 +199,7 @@ namespace Little_Registry_Cleaner.UninstallManager
 
             if (string.IsNullOrEmpty(cmdLine))
             {
-                if (MessageBox.Show("Unable to find uninstall string.\r\n Would you like to manually remove it from the registry?", Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes)
+                if (MessageBox.Show(Properties.Resources.piInvalidUninstallString, Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Error) == DialogResult.Yes)
                     this.RemoveFromRegistry();
 
                 return false;
@@ -212,12 +212,12 @@ namespace Little_Registry_Cleaner.UninstallManager
             }
             catch (Exception ex)
             {
-                MessageBox.Show(string.Format("Error uninstalling program: {0}", ex.Message), Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(string.Format("{0} {1}", Properties.Resources.piErrorUninstalling, ex.Message), Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 return false;
             }
 
-            MessageBox.Show("Sucessfully uninstalled program", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(Properties.Resources.piSuccessUninstall, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             return true;
         }
@@ -233,12 +233,12 @@ namespace Little_Registry_Cleaner.UninstallManager
             }
             catch (Exception ex)
             {
-                MessageBox.Show(string.Format("Error removing registry key: {0}", ex.Message), Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(string.Format("{0}: {1}", Properties.Resources.piErrorRegKey, ex.Message), Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 return false;
             }
 
-            MessageBox.Show("Sucessfully removed registry key", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(Properties.Resources.piSuccessRegKey, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             return true;
         }

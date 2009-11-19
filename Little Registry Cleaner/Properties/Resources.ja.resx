@@ -153,9 +153,6 @@
   <data name="mainUpdateAsk" xml:space="preserve">
     <value>新しいバージョンが利用可能です。それをダウンロードなさいますか?</value>
   </data>
-  <data name="needAdmin" xml:space="preserve">
-    <value>あなたはこのプログラムを実行するための管理者である必要があります</value>
-  </data>
   <data name="optionsExcludeDir" xml:space="preserve">
     <value>選択したフォルダには、レジストリのスキャンを除外する</value>
   </data>
@@ -177,8 +174,26 @@
   <data name="optionsSelectLogDir" xml:space="preserve">
     <value>フォルダを選択しますここでは、ログファイルが置かれる</value>
   </data>
+  <data name="piErrorRegKey" xml:space="preserve">
+    <value>削除するレジストリ キーのエラー:</value>
+  </data>
+  <data name="piErrorUninstalling" xml:space="preserve">
+    <value>エラーのアンインストール プログラム:</value>
+  </data>
+  <data name="piInvalidUninstallString" xml:space="preserve">
+    <value>アンインストールの文字列を見つけることができません。 手動でレジストリから削除したいです。?</value>
+  </data>
+  <data name="piSuccessRegKey" xml:space="preserve">
+    <value>レジストリ キーの削除を正常に</value>
+  </data>
+  <data name="piSuccessUninstall" xml:space="preserve">
+    <value>アンインストールを正常にプログラム</value>
+  </data>
   <data name="programAlreadyRunning" xml:space="preserve">
     <value>もう1つのプログラムが既に実行されているようだ...</value>
+  </data>
+  <data name="programNeedAdmin" xml:space="preserve">
+    <value>あなたはこのプログラムを実行するための管理者である必要があります</value>
   </data>
   <data name="restoreAsk" xml:space="preserve">
     <value>必ずあなたは?</value>

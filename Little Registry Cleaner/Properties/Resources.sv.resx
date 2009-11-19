@@ -153,9 +153,6 @@
   <data name="mainUpdateAsk" xml:space="preserve">
     <value>En nyare version finns tillgänglig. Vill du ladda ner den?</value>
   </data>
-  <data name="needAdmin" xml:space="preserve">
-    <value>Du måste vara administratör för att köra programmet</value>
-  </data>
   <data name="optionsExcludeDir" xml:space="preserve">
     <value>Välj mapp att utesluta från registret Scan</value>
   </data>
@@ -177,8 +174,26 @@
   <data name="optionsSelectLogDir" xml:space="preserve">
     <value>Välj den mapp där alla loggfiler placeras</value>
   </data>
+  <data name="piErrorRegKey" xml:space="preserve">
+    <value>Fel ta bort registernyckeln:</value>
+  </data>
+  <data name="piErrorUninstalling" xml:space="preserve">
+    <value>Fel avinstallera program:</value>
+  </data>
+  <data name="piInvalidUninstallString" xml:space="preserve">
+    <value>Det gick inte att hitta avinstallationen sträng. Vill du manuellt ta bort det frÃ ¥ n registret?</value>
+  </data>
+  <data name="piSuccessRegKey" xml:space="preserve">
+    <value>Sucessfully bort registernyckeln</value>
+  </data>
+  <data name="piSuccessUninstall" xml:space="preserve">
+    <value>Sucessfully avinstalleras programmet</value>
+  </data>
   <data name="programAlreadyRunning" xml:space="preserve">
     <value>Annat program tycks vara igång redan...</value>
+  </data>
+  <data name="programNeedAdmin" xml:space="preserve">
+    <value>Du måste vara administratör för att köra programmet</value>
   </data>
   <data name="restoreAsk" xml:space="preserve">
     <value>Är du säker?</value>

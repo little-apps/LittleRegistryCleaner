@@ -153,9 +153,6 @@
   <data name="mainUpdateAsk" xml:space="preserve">
     <value>ويتوفر الإصدار الأحدث. هل ترغب في تحميل البرنامج?</value>
   </data>
-  <data name="needAdmin" xml:space="preserve">
-    <value>يجب عليك أن تكون مسؤولا لتشغيل هذا البرنامج</value>
-  </data>
   <data name="optionsExcludeDir" xml:space="preserve">
     <value>حدد المجلد لاستبعاد من التسجيل المسح الضوئي</value>
   </data>
@@ -177,8 +174,26 @@
   <data name="optionsSelectLogDir" xml:space="preserve">
     <value>حدد المجلد حيث ملفات السجل ستوضع</value>
   </data>
+  <data name="piErrorRegKey" xml:space="preserve">
+    <value>خطأ في إزالة مفتاح التسجيل:</value>
+  </data>
+  <data name="piErrorUninstalling" xml:space="preserve">
+    <value>خطأ في تثبيت البرنامج:</value>
+  </data>
+  <data name="piInvalidUninstallString" xml:space="preserve">
+    <value>غير قادر على العثور على السلسلة إلغاء التثبيت. هل ترغب في إزالة يدويًا من السجل?</value>
+  </data>
+  <data name="piSuccessRegKey" xml:space="preserve">
+    <value>مفتاح التسجيل بنجاح إزالة</value>
+  </data>
+  <data name="piSuccessUninstall" xml:space="preserve">
+    <value>بنجاح إزالة تثبيت البرنامج</value>
+  </data>
   <data name="programAlreadyRunning" xml:space="preserve">
     <value>برنامج آخر ويبدو أن إدارة بالفعل...</value>
+  </data>
+  <data name="programNeedAdmin" xml:space="preserve">
+    <value>يجب عليك أن تكون مسؤولا لتشغيل هذا البرنامج</value>
   </data>
   <data name="restoreAsk" xml:space="preserve">
     <value>هل أنت متأكد?</value>

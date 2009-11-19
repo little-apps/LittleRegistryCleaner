@@ -99,28 +99,31 @@ namespace Little_Registry_Cleaner
             ScanDlg frmScanBox = new ScanDlg(nSectionCount);
             DialogResult dlgResult = frmScanBox.ShowDialog(this);
 
-            // Reset details control
-            this.detailsRegView1.Problem = string.Empty;
-            this.detailsRegView1.RegKey = string.Empty;
-            this.detailsRegView1.ValueName = string.Empty;
-            this.detailsRegView1.Data = string.Empty;
-
             // See if there are any bad registry keys
             if (ScanDlg.arrBadRegistryKeys.Count > 0)
             {
                 // Load bad registry keys
-                foreach (BadRegistryKey p in ScanDlg.arrBadRegistryKeys)
+                foreach (BadRegistryKey p in ScanDlg.arrBadRegistryKeys) 
                     this.treeModel.Nodes.Add(p);
 
                 // Expand all and Resize columns 
                 this.treeViewAdvResults.ExpandAll();
                 this.treeViewAdvResults.AutoSizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
 
-                // Show notify box
+                // Show notify box and set status text
+                ResourceManager rm = new ResourceManager(this.GetType());
                 if (dlgResult == DialogResult.OK)
+                {
                     this.notifyIcon1.ShowBalloonTip(6000, Application.ProductName, Properties.Resources.mainScanningFinished, ToolTipIcon.Info);
+                    this.toolStripStatusLabel1.Text = Properties.Resources.mainScanningFinished;
+                    this.toolStripStatusLabel1.Tag = "mainScanningFinished";
+                }
                 else
+                {
                     this.notifyIcon1.ShowBalloonTip(6000, Application.ProductName, Properties.Resources.mainScanningAborted, ToolTipIcon.Info);
+                    this.toolStripStatusLabel1.Text = Properties.Resources.mainScanningAborted;
+                    this.toolStripStatusLabel1.Tag = "mainScanningAborted";
+                }
                 
                 // Copy to directory and display log file
                 Main.Logger.DisplayLogFile((Properties.Settings.Default.bOptionsAutoRepair && dlgResult == DialogResult.OK));
@@ -168,11 +171,16 @@ namespace Little_Registry_Cleaner
                 // Generate a restore file and delete keys & values
                 xmlReg.deleteAsXml(arrBadRegKeys, strBackupFile);
 
+                SysRestore.EndRestore(lSeqNum);
+
                 // Disable menu items
                 this.fixToolStripMenuItem.Enabled = false;
                 this.toolStripButtonFix.Enabled = false;
 
-                SysRestore.EndRestore(lSeqNum);
+                // Clear status text
+                ResourceManager rm = new ResourceManager(this.GetType());
+                this.toolStripStatusLabel1.Text = rm.GetString("toolStripStatusLabel1.Text");
+                this.toolStripStatusLabel1.Tag = "toolStripStatusLabel1.Text";
 
                 // Display message box
                 if (!Properties.Settings.Default.bOptionsAutoExit)
@@ -466,45 +474,7 @@ namespace Little_Registry_Cleaner
             }
         }
 
-        private void SelectAllListResults(object sender, EventArgs e)
-        {
-            foreach (BadRegistryKey brkRoot in this.treeModel.Nodes)
-            {
-                brkRoot.Checked = CheckState.Checked;
-                foreach (BadRegistryKey brk in brkRoot.Nodes)
-                    brk.Checked = CheckState.Checked;
-            }
-
-            this.treeViewAdvResults.Refresh();
-        }
-
-        private void SelectNoneListResults(object sender, EventArgs e)
-        {
-            foreach (BadRegistryKey brkRoot in this.treeModel.Nodes)
-            {
-                brkRoot.Checked = CheckState.Unchecked;
-                foreach (BadRegistryKey brk in brkRoot.Nodes)
-                    brk.Checked = CheckState.Unchecked;
-            }
-
-            this.treeViewAdvResults.Refresh();
-        }
-
-        private void ExcludeSelectedListResults(object sender, EventArgs e)
-        {
-            if (this.treeViewAdvResults.SelectedNodes.Count > 0)
-            {
-                for (int i = 0; i < this.treeViewAdvResults.SelectedNodes.Count; i++)
-                {
-                    BadRegistryKey brk = this.treeViewAdvResults.SelectedNodes[i].Tag as BadRegistryKey;
-
-                    if (!string.IsNullOrEmpty(brk.RegKeyPath))
-                        Properties.Settings.Default.arrayExcludeList.Add(new ExcludeList.ExcludeItem(brk.RegKeyPath, null, null));
-                }
-
-                MessageBox.Show(this, Properties.Resources.mainAddExcludeEntry, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
+       
 
         
         #endregion
@@ -586,17 +556,12 @@ namespace Little_Registry_Cleaner
         #endregion
 
         #region "Tree View Adv Events"
-        private void treeViewAdvResults_SelectionChanged(object sender, EventArgs e)
+        private void treeViewAdvResults_NodeMouseDoubleClick(object sender, TreeNodeAdvMouseEventArgs e)
         {
-            if (this.treeViewAdvResults.SelectedNode == null)
-                return;
+            BadRegistryKey brk = e.Node.Tag as BadRegistryKey;
 
-            BadRegistryKey brk = this.treeViewAdvResults.SelectedNode.Tag as BadRegistryKey;
-
-            this.detailsRegView1.Problem = brk.Problem;
-            this.detailsRegView1.RegKey = brk.RegKeyPath;
-            this.detailsRegView1.ValueName = brk.ValueName;
-            this.detailsRegView1.Data = brk.Data;
+            Common_Tools.DetailsRegKey details = new Common_Tools.DetailsRegKey(brk.Problem, brk.RegKeyPath, brk.ValueName, brk.Data);
+            details.ShowDialog(this);
         }
 
         private void treeViewAdvResults_Expanded(object sender, TreeViewAdvEventArgs e)
@@ -615,6 +580,57 @@ namespace Little_Registry_Cleaner
             (this.treeViewAdvResults.Model as SortedTreeModel).Comparer = new BadRegKeySorter(col.Header, col.SortOrder);
 
             this.treeViewAdvResults.ExpandAll();
+        }
+
+        private void treeViewAdvResults_SelectAll(object sender, EventArgs e)
+        {
+            foreach (BadRegistryKey brkRoot in this.treeModel.Nodes)
+            {
+                brkRoot.Checked = CheckState.Checked;
+                foreach (BadRegistryKey brk in brkRoot.Nodes)
+                    brk.Checked = CheckState.Checked;
+            }
+
+            this.treeViewAdvResults.Refresh();
+        }
+
+        private void treeViewAdvResults_SelectNone(object sender, EventArgs e)
+        {
+            foreach (BadRegistryKey brkRoot in this.treeModel.Nodes)
+            {
+                brkRoot.Checked = CheckState.Unchecked;
+                foreach (BadRegistryKey brk in brkRoot.Nodes)
+                    brk.Checked = CheckState.Unchecked;
+            }
+
+            this.treeViewAdvResults.Refresh();
+        }
+
+        private void treeViewAdvResults_InvertSelection(object sender, EventArgs e)
+        {
+            foreach (BadRegistryKey brkRoot in this.treeModel.Nodes)
+            {
+                foreach (BadRegistryKey brk in brkRoot.Nodes)
+                    brk.Checked = ((brk.Checked == CheckState.Checked) ? (CheckState.Unchecked) : (CheckState.Checked));
+            }
+
+            this.treeViewAdvResults.Refresh();
+        }
+
+        private void treeViewAdvResults_ExcludeSelected(object sender, EventArgs e)
+        {
+            if (this.treeViewAdvResults.SelectedNodes.Count > 0)
+            {
+                for (int i = 0; i < this.treeViewAdvResults.SelectedNodes.Count; i++)
+                {
+                    BadRegistryKey brk = this.treeViewAdvResults.SelectedNodes[i].Tag as BadRegistryKey;
+
+                    if (!string.IsNullOrEmpty(brk.RegKeyPath))
+                        Properties.Settings.Default.arrayExcludeList.Add(new ExcludeList.ExcludeItem(brk.RegKeyPath, null, null));
+                }
+
+                MessageBox.Show(this, Properties.Resources.mainAddExcludeEntry, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
         #endregion
 
@@ -757,12 +773,21 @@ namespace Little_Registry_Cleaner
             this.viewInRegeditToolStripMenuItem1.Text = resources.GetString("viewInRegeditToolStripMenuItem1.Text");
             this.visitWebsiteToolStripMenuItem.Text = resources.GetString("visitWebsiteToolStripMenuItem.Text");
 
-            this.detailsRegView1.ReloadControls();
+            if ((string)this.toolStripStatusLabel1.Tag == "mainScanningFinished")
+                this.toolStripStatusLabel1.Text = Properties.Resources.mainScanningFinished;
+            else if ((string)this.toolStripStatusLabel1.Tag == "mainScanningAborted")
+                this.toolStripStatusLabel1.Text = Properties.Resources.mainScanningAborted;
+            else
+                this.toolStripStatusLabel1.Text = resources.GetString("toolStripStatusLabel1.Text");
 
             this.treeView1.Nodes.Clear();
             this.treeView1.Nodes.Add(resources.GetObject("treeView1.Nodes") as TreeNode);
             this.treeView1.ExpandAll();
         }
+
+        
+
+        
 
         
     }

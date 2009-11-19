@@ -153,9 +153,6 @@
   <data name="mainUpdateAsk" xml:space="preserve">
     <value>Une version plus récente est disponible. Souhaitez-vous télécharger?</value>
   </data>
-  <data name="needAdmin" xml:space="preserve">
-    <value>Vous devez être administrateur pour exécuter ce programme.</value>
-  </data>
   <data name="optionsExcludeDir" xml:space="preserve">
     <value>Sélectionnez le dossier à exclure de l'analyse du registre</value>
   </data>
@@ -177,8 +174,26 @@
   <data name="optionsSelectLogDir" xml:space="preserve">
     <value>Sélectionnez le dossier dans lequel seront placés les fichiers journaux</value>
   </data>
+  <data name="piErrorRegKey" xml:space="preserve">
+    <value>Clé de registre suppression erreur:</value>
+  </data>
+  <data name="piErrorUninstalling" xml:space="preserve">
+    <value>Programme de désinstallation erreur:</value>
+  </data>
+  <data name="piInvalidUninstallString" xml:space="preserve">
+    <value>Impossible de trouver la chaîne de désinstallation. Vous souhaitez supprimer manuellement du registre?</value>
+  </data>
+  <data name="piSuccessRegKey" xml:space="preserve">
+    <value>Clé de registre réussi supprimé</value>
+  </data>
+  <data name="piSuccessUninstall" xml:space="preserve">
+    <value>Programme réussi désinstallé</value>
+  </data>
   <data name="programAlreadyRunning" xml:space="preserve">
     <value>Un autre programme semble être en cours d'exécution déjà...</value>
+  </data>
+  <data name="programNeedAdmin" xml:space="preserve">
+    <value>Vous devez être administrateur pour exécuter ce programme.</value>
   </data>
   <data name="restoreAsk" xml:space="preserve">
     <value>Es-tu sûr?</value>

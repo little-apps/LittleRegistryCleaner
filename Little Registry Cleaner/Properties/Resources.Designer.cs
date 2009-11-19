@@ -97,7 +97,7 @@ namespace Little_Registry_Cleaner.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This your first time running Little Registry Cleaner. \r\nWould you like to create a restore point?.
+        ///   Looks up a localized string similar to This your first time running Little Registry Cleaner. Would you like to create a restore point?.
         /// </summary>
         internal static string mainFirstTimeRestorePoint {
             get {
@@ -169,15 +169,6 @@ namespace Little_Registry_Cleaner.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must be an administrator to run this program.
-        /// </summary>
-        internal static string needAdmin {
-            get {
-                return ResourceManager.GetString("needAdmin", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Select the folder to exclude from the registry scan.
         /// </summary>
         internal static string optionsExcludeDir {
@@ -241,11 +232,65 @@ namespace Little_Registry_Cleaner.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Error removing registry key:.
+        /// </summary>
+        internal static string piErrorRegKey {
+            get {
+                return ResourceManager.GetString("piErrorRegKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error uninstalling program:.
+        /// </summary>
+        internal static string piErrorUninstalling {
+            get {
+                return ResourceManager.GetString("piErrorUninstalling", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unable to find uninstall string. Would you like to manually remove it from the registry?.
+        /// </summary>
+        internal static string piInvalidUninstallString {
+            get {
+                return ResourceManager.GetString("piInvalidUninstallString", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sucessfully removed registry key.
+        /// </summary>
+        internal static string piSuccessRegKey {
+            get {
+                return ResourceManager.GetString("piSuccessRegKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sucessfully uninstalled program.
+        /// </summary>
+        internal static string piSuccessUninstall {
+            get {
+                return ResourceManager.GetString("piSuccessUninstall", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Another program seems to be running already....
         /// </summary>
         internal static string programAlreadyRunning {
             get {
                 return ResourceManager.GetString("programAlreadyRunning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You must be an administrator to run this program.
+        /// </summary>
+        internal static string programNeedAdmin {
+            get {
+                return ResourceManager.GetString("programNeedAdmin", resourceCulture);
             }
         }
         

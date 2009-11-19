@@ -153,9 +153,6 @@
   <data name="mainUpdateAsk" xml:space="preserve">
     <value>較新版本可用。您是否要下載?</value>
   </data>
-  <data name="needAdmin" xml:space="preserve">
-    <value>您必須是管理員才能運行此程序</value>
-  </data>
   <data name="optionsExcludeDir" xml:space="preserve">
     <value>選擇文件夾，以排除從註冊表掃描</value>
   </data>
@@ -177,8 +174,26 @@
   <data name="optionsSelectLogDir" xml:space="preserve">
     <value>選擇文件夾的日誌文件將被放置</value>
   </data>
+  <data name="piErrorRegKey" xml:space="preserve">
+    <value>錯誤刪除註冊表項:</value>
+  </data>
+  <data name="piErrorUninstalling" xml:space="preserve">
+    <value>卸載程式時出錯:</value>
+  </data>
+  <data name="piInvalidUninstallString" xml:space="preserve">
+    <value>無法卸載字串。 要從註冊表中手動刪除?</value>
+  </data>
+  <data name="piSuccessRegKey" xml:space="preserve">
+    <value>無法刪除註冊表項</value>
+  </data>
+  <data name="piSuccessUninstall" xml:space="preserve">
+    <value>無法卸載程式</value>
+  </data>
   <data name="programAlreadyRunning" xml:space="preserve">
     <value>另一個程序似乎已經運行...</value>
+  </data>
+  <data name="programNeedAdmin" xml:space="preserve">
+    <value>您必須是管理員才能運行此程序</value>
   </data>
   <data name="restoreAsk" xml:space="preserve">
     <value>你確定?</value>

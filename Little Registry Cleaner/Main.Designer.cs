@@ -29,15 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             System.Windows.Forms.ToolStripMenuItem portugueseToolStripMenuItem;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.treeView1 = new System.Windows.Forms.TreeView();
-            this.imageListTreeView = new System.Windows.Forms.ImageList(this.components);
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.detailsRegView1 = new Common_Tools.DetailsRegView();
             this.treeViewAdvResults = new Common_Tools.TreeViewAdv.Tree.TreeViewAdv();
             this.treeColumn1 = new Common_Tools.TreeViewAdv.Tree.TreeColumn();
             this.treeColumn2 = new Common_Tools.TreeViewAdv.Tree.TreeColumn();
@@ -45,6 +42,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectNoneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.invertSelectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.excludeSelectedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewInRegeditToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -54,13 +52,9 @@
             this.nodeProblem = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
             this.nodeLocation = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
             this.nodeValueName = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButtonScan = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonFix = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonRestore = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButtonSettings = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonHelp = new System.Windows.Forms.ToolStripButton();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.imageListTreeView = new System.Windows.Forms.ImageList(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.scanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -71,6 +65,7 @@
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectAllToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.selectNoneToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.invertSelectionToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.excludeSelectedToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.viewInRegeditToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -103,6 +98,13 @@
             this.checkForUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButtonScan = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonFix = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonRestore = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButtonSettings = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonHelp = new System.Windows.Forms.ToolStripButton();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.hideShowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -110,20 +112,31 @@
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             portugueseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripContainer1.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
+            // portugueseToolStripMenuItem
+            // 
+            resources.ApplyResources(portugueseToolStripMenuItem, "portugueseToolStripMenuItem");
+            portugueseToolStripMenuItem.Name = "portugueseToolStripMenuItem";
+            portugueseToolStripMenuItem.Click += new System.EventHandler(this.ChangeLanguage);
+            // 
             // toolStripContainer1
             // 
+            // 
+            // toolStripContainer1.BottomToolStripPanel
+            // 
+            this.toolStripContainer1.BottomToolStripPanel.Controls.Add(this.statusStrip1);
             // 
             // toolStripContainer1.ContentPanel
             // 
@@ -134,63 +147,28 @@
             // 
             // toolStripContainer1.TopToolStripPanel
             // 
-            this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.menuStrip1);
             this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.toolStrip1);
+            this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.menuStrip1);
+            // 
+            // statusStrip1
+            // 
+            resources.ApplyResources(this.statusStrip1, "statusStrip1");
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Name = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            resources.ApplyResources(this.toolStripStatusLabel1, "toolStripStatusLabel1");
+            this.toolStripStatusLabel1.Tag = "\"toolStripStatusLabel1.Text\"";
             // 
             // tableLayoutPanel1
             // 
             resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.treeViewAdvResults, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            // 
-            // tableLayoutPanel2
-            // 
-            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
-            this.tableLayoutPanel2.Controls.Add(this.treeView1, 0, 0);
-            this.tableLayoutPanel2.MaximumSize = new System.Drawing.Size(173, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            // 
-            // treeView1
-            // 
-            this.treeView1.CheckBoxes = true;
-            resources.ApplyResources(this.treeView1, "treeView1");
-            this.treeView1.ImageList = this.imageListTreeView;
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            ((System.Windows.Forms.TreeNode)(resources.GetObject("treeView1.Nodes")))});
-            this.treeView1.ShowNodeToolTips = true;
-            this.treeView1.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
-            // 
-            // imageListTreeView
-            // 
-            this.imageListTreeView.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListTreeView.ImageStream")));
-            this.imageListTreeView.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageListTreeView.Images.SetKeyName(0, "activexcom.ico");
-            this.imageListTreeView.Images.SetKeyName(1, "drivers.ico");
-            this.imageListTreeView.Images.SetKeyName(2, "fonts.ico");
-            this.imageListTreeView.Images.SetKeyName(3, "helpfiles.ico");
-            this.imageListTreeView.Images.SetKeyName(4, "historylist.ico");
-            this.imageListTreeView.Images.SetKeyName(5, "mycomputer.ico");
-            this.imageListTreeView.Images.SetKeyName(6, "shareddlls.ico");
-            this.imageListTreeView.Images.SetKeyName(7, "softwaresettings.ico");
-            this.imageListTreeView.Images.SetKeyName(8, "soundevents.ico");
-            this.imageListTreeView.Images.SetKeyName(9, "startup.ico");
-            this.imageListTreeView.Images.SetKeyName(10, "appinfo.ico");
-            this.imageListTreeView.Images.SetKeyName(11, "programlocations.ico");
-            // 
-            // tableLayoutPanel3
-            // 
-            resources.ApplyResources(this.tableLayoutPanel3, "tableLayoutPanel3");
-            this.tableLayoutPanel3.Controls.Add(this.detailsRegView1, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.treeViewAdvResults, 0, 0);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            // 
-            // detailsRegView1
-            // 
-            resources.ApplyResources(this.detailsRegView1, "detailsRegView1");
-            this.detailsRegView1.BackColor = System.Drawing.SystemColors.Control;
-            this.detailsRegView1.Name = "detailsRegView1";
             // 
             // treeViewAdvResults
             // 
@@ -215,8 +193,7 @@
             this.treeViewAdvResults.SelectedNode = null;
             this.treeViewAdvResults.SelectionMode = Common_Tools.TreeViewAdv.Tree.TreeSelectionMode.Multi;
             this.treeViewAdvResults.UseColumns = true;
-            this.treeViewAdvResults.SelectionChanged += new System.EventHandler(this.treeViewAdvResults_SelectionChanged);
-            this.treeViewAdvResults.ColumnClicked += new System.EventHandler<Common_Tools.TreeViewAdv.Tree.TreeColumnEventArgs>(this.treeViewAdvResults_ColumnClicked);
+            this.treeViewAdvResults.NodeMouseDoubleClick += new System.EventHandler<Common_Tools.TreeViewAdv.Tree.TreeNodeAdvMouseEventArgs>(this.treeViewAdvResults_NodeMouseDoubleClick);
             this.treeViewAdvResults.Expanded += new System.EventHandler<Common_Tools.TreeViewAdv.Tree.TreeViewAdvEventArgs>(this.treeViewAdvResults_Expanded);
             // 
             // treeColumn1
@@ -245,6 +222,7 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.selectAllToolStripMenuItem,
             this.selectNoneToolStripMenuItem,
+            this.invertSelectionToolStripMenuItem,
             this.toolStripSeparator1,
             this.excludeSelectedToolStripMenuItem,
             this.viewInRegeditToolStripMenuItem});
@@ -255,13 +233,19 @@
             // 
             this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
             resources.ApplyResources(this.selectAllToolStripMenuItem, "selectAllToolStripMenuItem");
-            this.selectAllToolStripMenuItem.Click += new System.EventHandler(this.SelectAllListResults);
+            this.selectAllToolStripMenuItem.Click += new System.EventHandler(this.treeViewAdvResults_SelectAll);
             // 
             // selectNoneToolStripMenuItem
             // 
             this.selectNoneToolStripMenuItem.Name = "selectNoneToolStripMenuItem";
             resources.ApplyResources(this.selectNoneToolStripMenuItem, "selectNoneToolStripMenuItem");
-            this.selectNoneToolStripMenuItem.Click += new System.EventHandler(this.SelectNoneListResults);
+            this.selectNoneToolStripMenuItem.Click += new System.EventHandler(this.treeViewAdvResults_SelectNone);
+            // 
+            // invertSelectionToolStripMenuItem
+            // 
+            this.invertSelectionToolStripMenuItem.Name = "invertSelectionToolStripMenuItem";
+            resources.ApplyResources(this.invertSelectionToolStripMenuItem, "invertSelectionToolStripMenuItem");
+            this.invertSelectionToolStripMenuItem.Click += new System.EventHandler(this.treeViewAdvResults_InvertSelection);
             // 
             // toolStripSeparator1
             // 
@@ -272,7 +256,7 @@
             // 
             this.excludeSelectedToolStripMenuItem.Name = "excludeSelectedToolStripMenuItem";
             resources.ApplyResources(this.excludeSelectedToolStripMenuItem, "excludeSelectedToolStripMenuItem");
-            this.excludeSelectedToolStripMenuItem.Click += new System.EventHandler(this.ExcludeSelectedListResults);
+            this.excludeSelectedToolStripMenuItem.Click += new System.EventHandler(this.treeViewAdvResults_ExcludeSelected);
             // 
             // viewInRegeditToolStripMenuItem
             // 
@@ -283,6 +267,7 @@
             // nodeCheckBox
             // 
             this.nodeCheckBox.DataPropertyName = "Checked";
+            this.nodeCheckBox.EditEnabled = true;
             this.nodeCheckBox.LeftMargin = 0;
             this.nodeCheckBox.ParentColumn = this.treeColumn1;
             // 
@@ -325,55 +310,40 @@
             this.nodeValueName.ParentColumn = this.treeColumn3;
             this.nodeValueName.Trimming = System.Drawing.StringTrimming.EllipsisCharacter;
             // 
-            // toolStrip1
+            // tableLayoutPanel2
             // 
-            resources.ApplyResources(this.toolStrip1, "toolStrip1");
-            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButtonScan,
-            this.toolStripButtonFix,
-            this.toolStripButtonRestore,
-            this.toolStripSeparator5,
-            this.toolStripButtonSettings,
-            this.toolStripButtonHelp});
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Stretch = true;
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
+            this.tableLayoutPanel2.Controls.Add(this.treeView1, 0, 0);
+            this.tableLayoutPanel2.MaximumSize = new System.Drawing.Size(173, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             // 
-            // toolStripButtonScan
+            // treeView1
             // 
-            resources.ApplyResources(this.toolStripButtonScan, "toolStripButtonScan");
-            this.toolStripButtonScan.Name = "toolStripButtonScan";
-            this.toolStripButtonScan.Click += new System.EventHandler(this.ScanRegistry);
+            this.treeView1.CheckBoxes = true;
+            resources.ApplyResources(this.treeView1, "treeView1");
+            this.treeView1.ImageList = this.imageListTreeView;
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            ((System.Windows.Forms.TreeNode)(resources.GetObject("treeView1.Nodes")))});
+            this.treeView1.ShowNodeToolTips = true;
+            this.treeView1.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseClick);
             // 
-            // toolStripButtonFix
+            // imageListTreeView
             // 
-            resources.ApplyResources(this.toolStripButtonFix, "toolStripButtonFix");
-            this.toolStripButtonFix.Name = "toolStripButtonFix";
-            this.toolStripButtonFix.Click += new System.EventHandler(this.FixRegistry);
-            // 
-            // toolStripButtonRestore
-            // 
-            resources.ApplyResources(this.toolStripButtonRestore, "toolStripButtonRestore");
-            this.toolStripButtonRestore.Name = "toolStripButtonRestore";
-            this.toolStripButtonRestore.Click += new System.EventHandler(this.RestoreRegistry);
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            resources.ApplyResources(this.toolStripSeparator5, "toolStripSeparator5");
-            // 
-            // toolStripButtonSettings
-            // 
-            resources.ApplyResources(this.toolStripButtonSettings, "toolStripButtonSettings");
-            this.toolStripButtonSettings.Name = "toolStripButtonSettings";
-            this.toolStripButtonSettings.Click += new System.EventHandler(this.OpenOptions);
-            // 
-            // toolStripButtonHelp
-            // 
-            resources.ApplyResources(this.toolStripButtonHelp, "toolStripButtonHelp");
-            this.toolStripButtonHelp.Name = "toolStripButtonHelp";
-            this.toolStripButtonHelp.Click += new System.EventHandler(this.LaunchHelpFile);
+            this.imageListTreeView.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListTreeView.ImageStream")));
+            this.imageListTreeView.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageListTreeView.Images.SetKeyName(0, "activexcom.ico");
+            this.imageListTreeView.Images.SetKeyName(1, "drivers.ico");
+            this.imageListTreeView.Images.SetKeyName(2, "fonts.ico");
+            this.imageListTreeView.Images.SetKeyName(3, "helpfiles.ico");
+            this.imageListTreeView.Images.SetKeyName(4, "historylist.ico");
+            this.imageListTreeView.Images.SetKeyName(5, "mycomputer.ico");
+            this.imageListTreeView.Images.SetKeyName(6, "shareddlls.ico");
+            this.imageListTreeView.Images.SetKeyName(7, "softwaresettings.ico");
+            this.imageListTreeView.Images.SetKeyName(8, "soundevents.ico");
+            this.imageListTreeView.Images.SetKeyName(9, "startup.ico");
+            this.imageListTreeView.Images.SetKeyName(10, "appinfo.ico");
+            this.imageListTreeView.Images.SetKeyName(11, "programlocations.ico");
             // 
             // menuStrip1
             // 
@@ -431,6 +401,7 @@
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.selectAllToolStripMenuItem1,
             this.selectNoneToolStripMenuItem1,
+            this.invertSelectionToolStripMenuItem1,
             this.toolStripSeparator7,
             this.excludeSelectedToolStripMenuItem1,
             this.viewInRegeditToolStripMenuItem1});
@@ -441,13 +412,18 @@
             // 
             this.selectAllToolStripMenuItem1.Name = "selectAllToolStripMenuItem1";
             resources.ApplyResources(this.selectAllToolStripMenuItem1, "selectAllToolStripMenuItem1");
-            this.selectAllToolStripMenuItem1.Click += new System.EventHandler(this.SelectAllListResults);
+            this.selectAllToolStripMenuItem1.Click += new System.EventHandler(this.treeViewAdvResults_SelectAll);
             // 
             // selectNoneToolStripMenuItem1
             // 
             this.selectNoneToolStripMenuItem1.Name = "selectNoneToolStripMenuItem1";
             resources.ApplyResources(this.selectNoneToolStripMenuItem1, "selectNoneToolStripMenuItem1");
-            this.selectNoneToolStripMenuItem1.Click += new System.EventHandler(this.SelectNoneListResults);
+            this.selectNoneToolStripMenuItem1.Click += new System.EventHandler(this.treeViewAdvResults_SelectNone);
+            // 
+            // invertSelectionToolStripMenuItem1
+            // 
+            this.invertSelectionToolStripMenuItem1.Name = "invertSelectionToolStripMenuItem1";
+            resources.ApplyResources(this.invertSelectionToolStripMenuItem1, "invertSelectionToolStripMenuItem1");
             // 
             // toolStripSeparator7
             // 
@@ -458,7 +434,7 @@
             // 
             this.excludeSelectedToolStripMenuItem1.Name = "excludeSelectedToolStripMenuItem1";
             resources.ApplyResources(this.excludeSelectedToolStripMenuItem1, "excludeSelectedToolStripMenuItem1");
-            this.excludeSelectedToolStripMenuItem1.Click += new System.EventHandler(this.ExcludeSelectedListResults);
+            this.excludeSelectedToolStripMenuItem1.Click += new System.EventHandler(this.treeViewAdvResults_ExcludeSelected);
             // 
             // viewInRegeditToolStripMenuItem1
             // 
@@ -508,12 +484,6 @@
             resources.ApplyResources(this.spanishToolStripMenuItem, "spanishToolStripMenuItem");
             this.spanishToolStripMenuItem.Name = "spanishToolStripMenuItem";
             this.spanishToolStripMenuItem.Click += new System.EventHandler(this.ChangeLanguage);
-            // 
-            // portugueseToolStripMenuItem
-            // 
-            resources.ApplyResources(portugueseToolStripMenuItem, "portugueseToolStripMenuItem");
-            portugueseToolStripMenuItem.Name = "portugueseToolStripMenuItem";
-            portugueseToolStripMenuItem.Click += new System.EventHandler(this.ChangeLanguage);
             // 
             // italianToolStripMenuItem
             // 
@@ -672,6 +642,56 @@
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
+            // toolStrip1
+            // 
+            resources.ApplyResources(this.toolStrip1, "toolStrip1");
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButtonScan,
+            this.toolStripButtonFix,
+            this.toolStripButtonRestore,
+            this.toolStripSeparator5,
+            this.toolStripButtonSettings,
+            this.toolStripButtonHelp});
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Stretch = true;
+            // 
+            // toolStripButtonScan
+            // 
+            resources.ApplyResources(this.toolStripButtonScan, "toolStripButtonScan");
+            this.toolStripButtonScan.Name = "toolStripButtonScan";
+            this.toolStripButtonScan.Click += new System.EventHandler(this.ScanRegistry);
+            // 
+            // toolStripButtonFix
+            // 
+            resources.ApplyResources(this.toolStripButtonFix, "toolStripButtonFix");
+            this.toolStripButtonFix.Name = "toolStripButtonFix";
+            this.toolStripButtonFix.Click += new System.EventHandler(this.FixRegistry);
+            // 
+            // toolStripButtonRestore
+            // 
+            resources.ApplyResources(this.toolStripButtonRestore, "toolStripButtonRestore");
+            this.toolStripButtonRestore.Name = "toolStripButtonRestore";
+            this.toolStripButtonRestore.Click += new System.EventHandler(this.RestoreRegistry);
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            resources.ApplyResources(this.toolStripSeparator5, "toolStripSeparator5");
+            // 
+            // toolStripButtonSettings
+            // 
+            resources.ApplyResources(this.toolStripButtonSettings, "toolStripButtonSettings");
+            this.toolStripButtonSettings.Name = "toolStripButtonSettings";
+            this.toolStripButtonSettings.Click += new System.EventHandler(this.OpenOptions);
+            // 
+            // toolStripButtonHelp
+            // 
+            resources.ApplyResources(this.toolStripButtonHelp, "toolStripButtonHelp");
+            this.toolStripButtonHelp.Name = "toolStripButtonHelp";
+            this.toolStripButtonHelp.Click += new System.EventHandler(this.LaunchHelpFile);
+            // 
             // notifyIcon1
             // 
             this.notifyIcon1.ContextMenuStrip = this.contextMenuStrip2;
@@ -721,19 +741,22 @@
             this.Shown += new System.EventHandler(this.Main_Shown);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
             this.Resize += new System.EventHandler(this.Main_Resize);
+            this.toolStripContainer1.BottomToolStripPanel.ResumeLayout(false);
+            this.toolStripContainer1.BottomToolStripPanel.PerformLayout();
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);
             this.toolStripContainer1.TopToolStripPanel.ResumeLayout(false);
             this.toolStripContainer1.TopToolStripPanel.PerformLayout();
             this.toolStripContainer1.ResumeLayout(false);
             this.toolStripContainer1.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel3.ResumeLayout(false);
             this.contextMenuStrip1.ResumeLayout(false);
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.contextMenuStrip2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -787,9 +810,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
         private System.Windows.Forms.ToolStripMenuItem uninstallManagerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem checkForUpdatesToolStripMenuItem;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private Common_Tools.DetailsRegView detailsRegView1;
-        private Common_Tools.TreeViewAdv.Tree.TreeViewAdv treeViewAdvResults;
         private Common_Tools.TreeViewAdv.Tree.TreeColumn treeColumn1;
         private Common_Tools.TreeViewAdv.Tree.TreeColumn treeColumn2;
         private Common_Tools.TreeViewAdv.Tree.TreeColumn treeColumn3;
@@ -819,6 +839,11 @@
         private System.Windows.Forms.ToolStripMenuItem frenchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem japaneseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem polishToolStripMenuItem;
+        private Common_Tools.TreeViewAdv.Tree.TreeViewAdv treeViewAdvResults;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripMenuItem invertSelectionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem invertSelectionToolStripMenuItem1;
     }
 }
 

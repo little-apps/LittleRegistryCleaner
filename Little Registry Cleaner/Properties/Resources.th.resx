@@ -153,9 +153,6 @@
   <data name="mainUpdateAsk" xml:space="preserve">
     <value>เวอร์ชันใหม่มี. คุณต้องการดาวน์โหลด?</value>
   </data>
-  <data name="needAdmin" xml:space="preserve">
-    <value>คุณต้องเป็นผู้ดูแลระบบเพื่อรันโปรแกรมนี้</value>
-  </data>
   <data name="optionsExcludeDir" xml:space="preserve">
     <value>เลือกโฟลเดอร์ที่จะออกจากรีจิสทรีสแกน</value>
   </data>
@@ -177,8 +174,26 @@
   <data name="optionsSelectLogDir" xml:space="preserve">
     <value>เลือกโฟลเดอร์ที่แฟ้มบันทึกจะถูกวางไว้</value>
   </data>
+  <data name="piErrorRegKey" xml:space="preserve">
+    <value>ข้อผิดพลาดเอารีจิสทรีคีย์:</value>
+  </data>
+  <data name="piErrorUninstalling" xml:space="preserve">
+    <value>ข้อผิดพลาด uninstalling โปรแกรม:</value>
+  </data>
+  <data name="piInvalidUninstallString" xml:space="preserve">
+    <value>ไม่สามารถค้นหาการถอนการติดตั้งสาย คุณต้องการด้วยตนเองเอาออกจากรีจิสทรี?</value>
+  </data>
+  <data name="piSuccessRegKey" xml:space="preserve">
+    <value>สำเร็จในการลบรีจิสทรีคีย์</value>
+  </data>
+  <data name="piSuccessUninstall" xml:space="preserve">
+    <value>สำเร็จในการถอนการติดตั้งโปรแกรม</value>
+  </data>
   <data name="programAlreadyRunning" xml:space="preserve">
     <value>โปรแกรมอื่นน่าจะทำงานแล้ว...</value>
+  </data>
+  <data name="programNeedAdmin" xml:space="preserve">
+    <value>คุณต้องเป็นผู้ดูแลระบบเพื่อรันโปรแกรมนี้</value>
   </data>
   <data name="restoreAsk" xml:space="preserve">
     <value>คุณแน่ใจหรือไม่?</value>

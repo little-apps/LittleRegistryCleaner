@@ -332,5 +332,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Upgraded TreeView Advanced to version 1.7
 - Expands all nodes when finished scanning registry
 - Added a sorter tree model so the results can be sorted
+- Details are shown in a window instead of in the main window
+- Added status strip to display welcome and results messages
 
 + Version 1.4 Released

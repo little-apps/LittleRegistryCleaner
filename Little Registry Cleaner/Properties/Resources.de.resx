@@ -153,9 +153,6 @@
   <data name="mainUpdateAsk" xml:space="preserve">
     <value>Eine neuere Version verfügbar ist. Möchten Sie es herunterladen?</value>
   </data>
-  <data name="needAdmin" xml:space="preserve">
-    <value>Sie müssen als Administrator angemeldet sein, um dieses Programm ausführen</value>
-  </data>
   <data name="optionsExcludeDir" xml:space="preserve">
     <value>Wählen Sie den Ordner aus der Registry-Scan ausschließen</value>
   </data>
@@ -177,8 +174,26 @@
   <data name="optionsSelectLogDir" xml:space="preserve">
     <value>Wählen Sie den Ordner, in dem die Log-Dateien abgelegt werden</value>
   </data>
+  <data name="piErrorRegKey" xml:space="preserve">
+    <value>Fehler beim Entfernen von Registry-Schlüssel:</value>
+  </data>
+  <data name="piErrorUninstalling" xml:space="preserve">
+    <value>Fehler beim Deinstallieren von Programm:</value>
+  </data>
+  <data name="piInvalidUninstallString" xml:space="preserve">
+    <value>Kann nicht Deinstallation String gefunden werden. Möchten Sie Sie aus der Registrierung manuell zu entfernen?</value>
+  </data>
+  <data name="piSuccessRegKey" xml:space="preserve">
+    <value>Registrierungsschlüssel wurde erfolgreich entfernt</value>
+  </data>
+  <data name="piSuccessUninstall" xml:space="preserve">
+    <value>Wurde erfolgreich deinstalliert Programm</value>
+  </data>
   <data name="programAlreadyRunning" xml:space="preserve">
     <value>Ein anderes Programm scheint zu sein, läuft bereits...</value>
+  </data>
+  <data name="programNeedAdmin" xml:space="preserve">
+    <value>Sie müssen als Administrator angemeldet sein, um dieses Programm ausführen</value>
   </data>
   <data name="restoreAsk" xml:space="preserve">
     <value>Sind Sie sicher,?</value>
