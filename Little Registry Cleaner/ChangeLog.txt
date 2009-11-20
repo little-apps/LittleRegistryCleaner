@@ -319,7 +319,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 + Version 1.3.4 Released
 
 - LRC has translations for 17 different languages
-- Fixed backup directory, it doesnt point to the comman program files once options are changed
+- Fixed backup directory, it doesnt point to the common program files once options are changed
 - The backup and logs directory will be in the current directory if the release is portable edition
 - Renamed scanner files to more proper names
 - Uses my own code instead of Type.GetTypeFromProgID()
