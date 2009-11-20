@@ -9,3 +9,5 @@
 *.exe
 *.resources
 */Little Registry Cleaner.chm
+*.slp
+*.~slp
