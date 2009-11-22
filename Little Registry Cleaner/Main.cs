@@ -158,7 +158,7 @@ namespace Little_Registry_Cleaner
                 SysRestore.StartRestore("Before Little Registry Cleaner Registry Fix", out lSeqNum);
 
                 // Generate filename to backup registry
-                string strBackupFile = string.Format("{0}\\{1:yyyy}_{1:MM}_{1:dd}_{1:HH}{1:mm}{1:ss}.xml", Properties.Settings.Default.strProgramSettingsDir, DateTime.Now);
+                string strBackupFile = string.Format("{0}\\{1:yyyy}_{1:MM}_{1:dd}_{1:HH}{1:mm}{1:ss}.xml", Properties.Settings.Default.strOptionsBackupDir, DateTime.Now);
 
                 BadRegKeyArray arrBadRegKeys = new BadRegKeyArray();
                 foreach (BadRegistryKey badRegKeyRoot in this.treeModel.Nodes)

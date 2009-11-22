@@ -336,3 +336,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Added status strip to display welcome and results messages
 
 + Version 1.4 Released
+
+- Restore points are saved to correct location (v1.4.0.1 released)

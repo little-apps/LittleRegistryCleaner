@@ -175,7 +175,7 @@ namespace Little_Registry_Cleaner.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool bPortableEdition {
             get {
                 return ((bool)(this["bPortableEdition"]));
