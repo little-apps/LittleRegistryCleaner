@@ -97,7 +97,8 @@ namespace Little_Registry_Cleaner.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This your first time running Little Registry Cleaner. Would you like to create a restore point?.
+        ///   Looks up a localized string similar to This your first time running Little Registry Cleaner.
+        ///Would you like to create a restore point?.
         /// </summary>
         internal static string mainFirstTimeRestorePoint {
             get {

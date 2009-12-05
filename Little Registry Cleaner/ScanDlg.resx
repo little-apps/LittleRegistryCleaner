@@ -132,7 +132,7 @@
     <value>progressBar</value>
   </data>
   <data name="&gt;&gt;progressBar.Type" xml:space="preserve">
-    <value>Common_Tools.XpProgressBar, Common Tools, Version=1.0.3592.34594, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common_Tools.XpProgressBar, Common Tools, Version=1.0.3611.768, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;progressBar.Parent" xml:space="preserve">
     <value>groupBox1</value>
@@ -174,27 +174,6 @@
   <data name="&gt;&gt;labelProblems.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 23</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="buttonStop.Location" type="System.Drawing.Point, System.Drawing">
     <value>316, 33</value>
   </data>
@@ -217,7 +196,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;buttonStop.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="textBoxSubKey.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 62</value>
@@ -244,7 +223,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;textBoxSubKey.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 9</value>
@@ -275,7 +254,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAC8
-        JAAAAk1TRnQBSQFMAgEBCwEAARgBAAEYAQABEAEAARABAAT/AREBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        JAAAAk1TRnQBSQFMAgEBCwEAASABAAEgAQABEAEAARABAAT/AREBAAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABMAMAAQEBAAEQBgABGBQAAZwBcwG9AXcBvQF3Ad4BewHeAXsB3gF7AVoBawGUAVIBSgEpAdYBWgFS
         AUoB1gFaAf8BfwYAAXsBbwHWAVoB1gFaAdYBWgGUAVIBlAFSAZQBUgGUAVIBlAFSAXMBTgFzAU4BcwFO
         AXMBTgH/AX8MAAH/AX8B3gF7ATkBZwGUAlIBSgFSAUoBGAFjAd4BewH/AX8mAAG9AXcB3gF7Ab0BdwHW

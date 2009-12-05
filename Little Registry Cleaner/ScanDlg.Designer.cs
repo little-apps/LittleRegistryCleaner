@@ -33,7 +33,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.progressBar = new Common_Tools.XpProgressBar();
             this.labelProblems = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.buttonStop = new System.Windows.Forms.Button();
             this.textBoxSubKey = new System.Windows.Forms.TextBox();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
@@ -44,7 +43,6 @@
             // 
             this.groupBox1.Controls.Add(this.progressBar);
             this.groupBox1.Controls.Add(this.labelProblems);
-            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.buttonStop);
             this.groupBox1.Controls.Add(this.textBoxSubKey);
             resources.ApplyResources(this.groupBox1, "groupBox1");
@@ -68,11 +66,6 @@
             // 
             resources.ApplyResources(this.labelProblems, "labelProblems");
             this.labelProblems.Name = "labelProblems";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
             // 
             // buttonStop
             // 
@@ -128,7 +121,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBoxSubKey;
         private System.Windows.Forms.Button buttonStop;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelProblems;
         private Common_Tools.XpProgressBar progressBar;
         private System.Windows.Forms.ImageList imageList;

@@ -1,0 +1,92 @@
+Little Registry Cleaner 1.4.0.1
+Website: http://sourceforge.net/projects/littlecleaner
+Microsoft Windows NT 6.1.7600.0
+
+Started scan at 25/11/2009 8:12:42 PM
+
+Starting scanning: Startup Files
+Checking for invalid files in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run
+Checking for invalid files in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+Checking for invalid files in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+Checking for invalid files in HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run
+Checking for invalid files in HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+Checking for invalid files in HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+Checking for invalid files in HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run
+Checking for invalid files in HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\RunOnce
+Checking for invalid files in HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Run
+Finished scanning: Startup Files
+
+Starting scanning: Shared DLLs
+Scanning for missing shared DLLs
+Finished scanning: Shared DLLs
+
+Starting scanning: Windows Fonts
+Scanning for invalid fonts
+Finished scanning: Windows Fonts
+
+Starting scanning: Application Info
+Verifying programs in Add/Remove list
+Verifying registry entries in Add/Remove Cache
+Finished scanning: Application Info
+
+Starting scanning: Application Paths
+Checking for invalid installer folders
+Checking for invalid application paths
+Finished scanning: Application Paths
+
+Starting scanning: ActiveX/COM Objects
+Scanning HKEY_CLASSES_ROOT\CLSID for invalid CLSID's
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID for invalid CLSID's
+Scanning HKEY_CURRENT_USER\SOFTWARE\Classes\CLSID for invalid CLSID's
+Scanning HKEY_CLASSES_ROOT\Wow6432Node\CLSID for invalid CLSID's
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Classes\CLSID for invalid CLSID's
+Scanning HKEY_CLASSES_ROOT for invalid Classes
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE\Classes for invalid Classes
+Scanning HKEY_CURRENT_USER\SOFTWARE\Classes for invalid Classes
+Scanning HKEY_CLASSES_ROOT\Wow6432Node for invalid Classes
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Classes for invalid Classes
+Scanning HKEY_CLASSES_ROOT\AppID for invalid AppID's
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID for invalid AppID's
+Scanning HKEY_CURRENT_USER\SOFTWARE\Classes\AppID for invalid AppID's
+Scanning HKEY_CLASSES_ROOT\Wow6432Node\AppID for invalid AppID's
+Checking for invalid browser helper objects
+Checking for invalid explorer toolbars
+Checking for invalid explorer extensions
+Checking for invalid explorer file extensions
+Bad Registry Key Found! Problem: "Unused File Extension" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.gws"
+Finished scanning: ActiveX/COM Objects
+
+Starting scanning: System Drivers
+Scanning for missing drivers
+Finished scanning: System Drivers
+
+Starting scanning: Windows Help Files
+Checking for missing help files in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\HTML Help
+Finished scanning: Windows Help Files
+
+Starting scanning: Windows Sounds
+Scanning for missing sound events
+Finished scanning: Windows Sounds
+
+Starting scanning: Application Settings
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE for empty registry keys
+Bad Registry Key Found! Problem: "The registry key doesn't contain any data" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\NvRaid"
+Bad Registry Key Found! Problem: "The registry key doesn't contain any data" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\NvRaidDisk"
+Scanning HKEY_CURRENT_USER\SOFTWARE for empty registry keys
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node for empty registry keys
+Scanning HKEY_CURRENT_USER\SOFTWARE\Wow6432Node for empty registry keys
+Finished scanning: Application Settings
+
+Starting scanning: Recent Documents
+Cleaning invalid references in HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
+Bad Registry Value Found! Problem: "Invalid file or folder" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "23"
+Bad Registry Value Found! Problem: "Invalid file or folder" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "43"
+Bad Registry Value Found! Problem: "Invalid file or folder" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.jpg" Value Name: "2"
+Bad Registry Value Found! Problem: "Invalid file or folder" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\Folder" Value Name: "11"
+Finished scanning: Recent Documents
+
+Total time elapsed: 28.994 seconds
+Total problems found: 7
+Total objects scanned: 55783
+
+Finished scan at 25/11/2009 8:13:11 PM
