@@ -119,27 +119,51 @@
   </resheader>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <data name="linkLabelAuthor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+  <data name="linkLabelAuthor.Text" xml:space="preserve">
+    <value>Nick H.</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Автор:</value>
   </data>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>Эта программа является свободным программным обеспечением: Вы можете перераспределить или изменить его на условиях GNU General Public License, опубликованной Фондом свободного программного обеспечения, либо версии 3 лицензии, либо (на Ваш выбор) любой более поздней версии.
+    <value>Эта программа является свободным программным обеспечением: Вы можете распространять или изменять её на условиях лицензии GNU General Public License, опубликованной Фондом свободного программного обеспечения, версии 3, либо (на Ваш выбор) любой более поздней версии.
 
-Эта программа распространяется в надежде на то, что она окажется полезной, но без каких бы то ни было гарантий; даже подразумеваемой гарантии или ТОВАРНОСТИ или пригодности для конкретных целях.  Смотрите GNU General Public License для получения дополнительной информации.
+Эта программа распространяется в надежде на то, что она окажется полезной, но без каких бы то ни было гарантий; даже подразумеваемой гарантии или ТОВАРНОСТИ или пригодности для конкретных целей.  Смотрите GNU General Public License для получения дополнительной информации.
 
-Вы должны были получить копию GNU General Public License наряду с этой программой.  Если нет, см. &lt;http://www.gnu.org/licenses/&gt;.</value>
+Вы должны были получить копию GNU General Public License вместе с этой программой.  Если нет, см. &lt;http://www.gnu.org/licenses/&gt;.</value>
+  </data>
+  <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="labelTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="labelTitle.Text" xml:space="preserve">
-    <value>Мало реестра чистого</value>
+    <value>Little Registry Cleaner</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonClose.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="buttonClose.Text" xml:space="preserve">
     <value>Закрыть</value>
+  </data>
+  <data name="buttonWebsite.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="buttonWebsite.Text" xml:space="preserve">
     <value>Сайт проекта</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Мало реестра переход к более чистому - О...</value>
+    <value>Little Registry Cleaner - О программе</value>
   </data>
 </root>

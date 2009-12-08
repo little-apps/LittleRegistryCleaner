@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<desktop scan="34" scanned="20091125210510" built="20091119200839" lang="en" pane="TLogPane" col="20" row="Text">
+<desktop scan="37" scanned="20091207224950" built="20091207225155" lang="ru" pane="TLogPane" col="8" row="Common Tools\Common Tools.csproj.Forms.Common_Tools.DetailsRegKey.Text">
   <language id="en" autoime="0" autokeyboard="0"/>
   <language id="fr" autoime="0" autokeyboard="0"/>
   <language id="es" autoime="0" autokeyboard="0"/>
@@ -17,8 +17,10 @@
   <language id="vi" autoime="0" autokeyboard="0"/>
   <language id="th" autoime="0" autokeyboard="0"/>
   <language id="pl" autoime="0" autokeyboard="0"/>
+  <language id="hu" autoime="0" autokeyboard="0"/>
   <triggers>
     <item class="TRemoveUnusedItemsTrigger" position="4"/>
+    <item class="TValidateTrigger" position="5"/>
   </triggers>
   <sheet>
     <columns>
@@ -26,7 +28,6 @@
       <item class="TPathColumn" width="29"/>
       <item class="TTranslationStatusColumn" width="93"/>
       <item class="TOriginalColumn" width="58"/>
-      <item class="TTranslationColumn" lang="fr" width="58"/>
       <item class="TTranslationColumn" lang="es" width="58"/>
       <item class="TTranslationColumn" lang="pt" width="58"/>
       <item class="TTranslationColumn" lang="nl" width="58"/>
@@ -43,18 +44,20 @@
       <item class="TTranslationColumn" lang="pl" width="58"/>
       <item class="TTranslationColumn" lang="it" width="58"/>
       <item class="TTranslationColumn" lang="en" width="58"/>
+      <item class="TTranslationColumn" lang="hu" width="58"/>
     </columns>
-    <params processall="1" origin="soEntireScope">
+    <params origin="soEntireScope">
       <findtext>Little Registry Cleaner</findtext>
       <findtext>lokaliz</findtext>
     </params>
   </sheet>
   <path>
     <item>All</item>
-    <item>Little Registry Cleaner.csproj</item>
-    <item>Forms</item>
-    <item>Little_Registry_Cleaner.Main</item>
   </path>
-  <exchange method="exmImportProject">
+  <exchange method="exmImportProject" options="[eoSetup,eoSpellChecker,eoLanguages]" author="Nick H." description="Little registry cleaner" packagename="Little registry cleanerRu" showpackage="0">
   </exchange>
+  <export format="efText" escape="seSisulizer">
+    <filter locked="bfBoth">
+    </filter>
+  </export>
 </desktop>

@@ -120,13 +120,25 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="label2.Text" xml:space="preserve">
-    <value>Путь реестра:</value>
+    <value>Путь в реестре:</value>
+  </data>
+  <data name="comboBox1.Items" xml:space="preserve">
+    <value>HKEY_CLASSES_ROOT</value>
+  </data>
+  <data name="comboBox1.Items1" xml:space="preserve">
+    <value>HKEY_CURRENT_USER</value>
+  </data>
+  <data name="comboBox1.Items2" xml:space="preserve">
+    <value>HKEY_LOCAL_MACHINE</value>
+  </data>
+  <data name="comboBox1.Items3" xml:space="preserve">
+    <value>HKEY_USERS</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Выберите раздел:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Добавить игнорировать список</value>
+    <value>Добавить в список исключений</value>
   </data>
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>Отмена</value>
@@ -135,6 +147,6 @@
     <value>Добавить запись</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Добавить игнорировать список</value>
+    <value>Добавить в список исключений</value>
   </data>
 </root>

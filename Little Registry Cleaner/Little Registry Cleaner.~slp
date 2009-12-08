@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.0.287" date="20091119202726" scan="33" scanned="20091118233725">
+<document version="2.0.292" date="20091205165944" scan="35" scanned="20091205160725">
   <lang id="en"/>
   <lang id="fr"/>
   <lang id="es"/>
@@ -17,6 +17,7 @@
   <lang id="vi"/>
   <lang id="th"/>
   <lang id="pl"/>
+  <lang id="hu"/>
   <source class="TVisualStudioNetProjectSource" name="Common Tools\Common Tools.csproj" original="en" encoding="" date="20091119063626" defaultoutputdir="Common Tools\bin\Debug" assemblykind="naLibrary" netversion="net35" toolsversion="net35" rootnamespace="Common_Tools" configuration="Debug">
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -3859,6 +3860,8 @@
             <lang id="th" status="2">Little Registry Cleaner - สแกน...</lang>
             <lang id="pl" status="2">Little Registry Cleaner - Trwa skanowanie...</lang>
           </row>
+          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
+          </component>
           <component class="TVisGroupBox" name="groupBox1" type="System.Windows.Forms.GroupBox">
             <row id="Location.X">12</row>
             <row id="Location.Y">9</row>
@@ -3900,12 +3903,6 @@
                 <lang id="pl" status="2">Zatrzymaj</lang>
               </row>
             </component>
-            <component class="TVisLabel" name="label1" state="0" type="System.Windows.Forms.Label">
-              <row id="Location.X" state="0">0</row>
-              <row id="Location.Y" state="0">0</row>
-              <row id="Size.Height" state="0">23</row>
-              <row id="Size.Width" state="0">100</row>
-            </component>
             <component class="TVisLabel" name="labelProblems" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
               <row id="ImeMode" state="0">imNone</row>
               <row id="Location.X" state="3">
@@ -3946,8 +3943,6 @@
               <row id="Size.Height">24</row>
               <row id="Size.Width">300</row>
             </component>
-          </component>
-          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
           </component>
         </form>
       </node>
@@ -4597,6 +4592,10 @@
           </component>
           <component class="TVisEdit" name="nodeTextBoxArgs" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox">
           </component>
+          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
+          </component>
+          <component class="TVisHiddenComponent" name="nodeIcon1" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeIcon">
+          </component>
           <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer" align="alClient">
             <row id="Location.X">0</row>
             <row id="Location.Y">0</row>
@@ -4880,10 +4879,6 @@
               </component>
             </component>
           </component>
-          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
-          </component>
-          <component class="TVisHiddenComponent" name="nodeIcon1" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeIcon">
-          </component>
         </form>
       </node>
       <node class="TNetFormNode" name="Little_Registry_Cleaner.UninstallManager.UninstallManager">
@@ -4910,6 +4905,8 @@
             <lang id="th" date="20091106181713" status="3">รีจิสทรีน้อยตัวล้าง - การถอนการติดตั้งโปรแกรมจัดการ</lang>
             <lang id="pl" status="2">Little Registry Cleaner - Menadżer deinstalacji</lang>
           </row>
+          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
+          </component>
           <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer" align="alClient">
             <row id="Location.X">0</row>
             <row id="Location.Y">0</row>
@@ -5133,8 +5130,6 @@
               </component>
             </component>
           </component>
-          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
-          </component>
         </form>
       </node>
       <node class="TNetFormNode" name="Little_Registry_Cleaner.UpdateDlg">
@@ -5311,8 +5306,8 @@
           <lang id="pl" status="2">Czy na pewno chcesz zakończyć?</lang>
         </row>
         <row id="mainFirstTimeRestorePoint" state="3">
-          <prev>This your first time running Little Registry Cleaner. \r\nWould you like to create a restore point?</prev>
-          <native>This your first time running Little Registry Cleaner. Would you like to create a restore point?</native>
+          <prev>This your first time running Little Registry Cleaner. Would you like to create a restore point?</prev>
+          <native>This your first time running Little Registry Cleaner.#c#lWould you like to create a restore point?</native>
           <lang id="en" invalidated="1" status="2">This your first time running Little Registry Cleaner. \r\nWould you like to create a restore point?</lang>
           <lang id="fr" invalidated="1" status="2">Ce votre première fois en cours d'exécution Little Registry Cleaner. vous souhaitez créer un point de restauration de \r\nWould?</lang>
           <lang id="es" invalidated="1" status="2">Esta la primera vez que ejecuta Little limpiador de registro. \r\nWould le gustaría crear un punto de restauración?</lang>

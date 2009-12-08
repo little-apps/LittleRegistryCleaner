@@ -339,3 +339,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 - Restore points are saved to correct location (v1.4.0.1 released)
 - Removed unneeded label in scan dialog
+- Updated Russian Translations

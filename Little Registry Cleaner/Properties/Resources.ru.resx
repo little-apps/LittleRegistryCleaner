@@ -118,115 +118,115 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="crashReporterFail" xml:space="preserve">
-    <value>Отчет об ошибке не может быть отправлено</value>
+    <value>Сообщение об ошибке не удалось отправить</value>
   </data>
   <data name="crashReporterSuccess" xml:space="preserve">
-    <value>Направлено сообщение об ошибке успешной</value>
+    <value>Сообщение об ошибке успешно отправлено</value>
   </data>
   <data name="mainAddExcludeEntry" xml:space="preserve">
-    <value>Добавлено выбранных ключей реестра в списке исключить</value>
+    <value>Выбранные ключи реестра добавлены в список исключений</value>
   </data>
   <data name="mainAskExit" xml:space="preserve">
     <value>Вы уверены, что хотите выйти?</value>
   </data>
   <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>Это ваш первый раз подряд Little Registry Cleaner.\R\nВы хотите создать точку восстановления?</value>
+    <value>Это ваш первый запуск Little Registry Cleaner.\R\nВы хотите создать точку восстановления?</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
-    <value>Не удается найти небольшое реестра Cleaner.chm</value>
+    <value>Не удается найти Little Registry Cleaner.chm</value>
   </data>
   <data name="mainProblemsFix" xml:space="preserve">
-    <value>Хотите, чтобы исправить все выбранные проблем?</value>
+    <value>Хотите исправить все выбранные ошибки?</value>
   </data>
   <data name="mainProblemsRemoved" xml:space="preserve">
-    <value>Удален проблемы из реестра</value>
+    <value>Ошибки реестра удалены</value>
   </data>
   <data name="mainScanningAborted" xml:space="preserve">
-    <value>Прервано сканирования реестра</value>
+    <value>Сканирование реестра прервано</value>
   </data>
   <data name="mainScanningFinished" xml:space="preserve">
-    <value>Завершения сканирования реестра</value>
+    <value>Сканирование реестра завершено</value>
   </data>
   <data name="mainSelectSections" xml:space="preserve">
     <value>Пожалуйста, выберите раздел для сканирования</value>
   </data>
   <data name="mainUpdateAsk" xml:space="preserve">
-    <value>Доступна новая версия. Хотите скачать его?</value>
+    <value>Доступна новая версия. Хотите скачать ее?</value>
   </data>
   <data name="optionsExcludeDir" xml:space="preserve">
-    <value>Выберите папку для исключения из реестра, сканирование</value>
+    <value>Выберите папку для исключения из сканирования</value>
   </data>
   <data name="optionsExcludeEmptyRegPath" xml:space="preserve">
     <value>Путь реестра не может быть пустым</value>
   </data>
   <data name="optionsExcludeFile" xml:space="preserve">
-    <value>Выбор файла для исключения из реестра, сканирование</value>
+    <value>Выберите файл для исключения из сканирования</value>
   </data>
   <data name="optionsExcludeInvalidRegPath" xml:space="preserve">
     <value>Указанный раздел реестра не существует</value>
   </data>
   <data name="optionsExcludeRemove" xml:space="preserve">
-    <value>Вы уверены, что?</value>
+    <value>Вы уверены?</value>
   </data>
   <data name="optionsSelectBackupDir" xml:space="preserve">
-    <value>Выберите папку, в которой резервные файлы будут помещены</value>
+    <value>Выберите папку, в которой будут храниться резервные копии</value>
   </data>
   <data name="optionsSelectLogDir" xml:space="preserve">
-    <value>Выберите папку, в которой файлы журналов будет уделяться</value>
+    <value>Выберите папку, в которой будут храниться логи</value>
   </data>
   <data name="piErrorRegKey" xml:space="preserve">
-    <value>Ошибка при удалении реестра:</value>
+    <value>Ошибка при удалении элемента реестра:</value>
   </data>
   <data name="piErrorUninstalling" xml:space="preserve">
-    <value>Ошибка Деинсталляция программы:</value>
+    <value>Ошибка при деинсталляции программы:</value>
   </data>
   <data name="piInvalidUninstallString" xml:space="preserve">
-    <value>Не удается найти удаления строки. Вы хотите вручную удалить его из реестра?</value>
+    <value>Не удается найти строку деинсталляции. Хотите вручную удалить из реестра?</value>
   </data>
   <data name="piSuccessRegKey" xml:space="preserve">
-    <value>Успешно удаляются реестра</value>
+    <value>Ключ реестра успешно удален</value>
   </data>
   <data name="piSuccessUninstall" xml:space="preserve">
     <value>Программа успешно удалена</value>
   </data>
   <data name="programAlreadyRunning" xml:space="preserve">
-    <value>Другая программа, кажется, бежит уже...</value>
+    <value>Другая копия программы уже запущена...</value>
   </data>
   <data name="programNeedAdmin" xml:space="preserve">
-    <value>Вы должны быть администратором для запуска этой программы</value>
+    <value>Вы должны иметь права администратора для запуска этой программы</value>
   </data>
   <data name="restoreAsk" xml:space="preserve">
-    <value>Вы уверены, что?</value>
+    <value>Вы уверены?</value>
   </data>
   <data name="restoreError" xml:space="preserve">
-    <value>Ошибки восстановления реестра</value>
+    <value>Ошибка восстановления реестра</value>
   </data>
   <data name="restoreRestored" xml:space="preserve">
-    <value>Удалось восстановить реестр</value>
+    <value>Реестр успешно восстановлен</value>
   </data>
   <data name="scanDlgExit" xml:space="preserve">
-    <value>Вы уверены, что?</value>
+    <value>Вы уверены?</value>
   </data>
   <data name="scanDlgProgressBarScanning" xml:space="preserve">
     <value>Сканирование: </value>
   </data>
   <data name="smCannotFindFile" xml:space="preserve">
-    <value>Файл не может быть найден</value>
+    <value>Файл не найден</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
-    <value>Ярлык / Значение имени не может быть пустым</value>
+    <value>Название не может быть пустым</value>
   </data>
   <data name="smEmptyPath" xml:space="preserve">
     <value>Путь к файлу не может быть пустым</value>
   </data>
   <data name="smRan" xml:space="preserve">
-    <value>Попытался бежать:</value>
+    <value>Попытка запуска:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>Вы уверены, что хотите удалить эту программу запуска?</value>
+    <value>Вы уверены, что хотите удалить эту программу из автозапуска?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
-    <value>Удалено выбранных запуске программы</value>
+    <value>Выбранные элементы автозагрузки удалены</value>
   </data>
   <data name="smRun" xml:space="preserve">
     <value>Вы действительно хотите запустить эту программу?</value>
@@ -241,9 +241,9 @@
     <value>Вы уверены, что хотите удалить эту программу?</value>
   </data>
   <data name="updateLatest" xml:space="preserve">
-    <value>У Вас есть последняя версия</value>
+    <value>У Вас новейшая версия</value>
   </data>
   <data name="updateNewer" xml:space="preserve">
-    <value>Новые версии доступны</value>
+    <value>Доступна более новая версия</value>
   </data>
 </root>

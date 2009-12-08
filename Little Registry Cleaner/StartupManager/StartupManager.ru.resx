@@ -119,38 +119,44 @@
   </resheader>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="treeColumn1.Header" xml:space="preserve">
-    <value>В разделе</value>
+    <value>Раздел</value>
   </data>
   <data name="treeColumn2.Header" xml:space="preserve">
     <value>Путь</value>
   </data>
   <data name="treeColumn3.Header" xml:space="preserve">
-    <value>Аргументы</value>
+    <value>Параметры</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+  <data name="treeViewAdv1.Text" xml:space="preserve">
+    <value>treeViewAdv1</value>
+  </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="unicode"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="treeViewAdv1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,717" /&gt;&lt;Rows Styles="Percent,100.1" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="UTF-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="treeViewAdv1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,717" /&gt;&lt;Rows Styles="Percent,100.1" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="toolStripContainer1.Text" xml:space="preserve">
+    <value>toolStripContainer1</value>
   </data>
   <data name="toolStripButtonAdd.Text" xml:space="preserve">
-    <value>Добавить</value>
+    <value>Создать</value>
   </data>
   <data name="toolStripButtonEdit.Text" xml:space="preserve">
-    <value>Редактирование</value>
+    <value>Редактировать</value>
   </data>
   <data name="toolStripButtonDelete.Text" xml:space="preserve">
     <value>Удалить</value>
   </data>
   <data name="toolStripButtonView.Text" xml:space="preserve">
-    <value>Просмотр элементов</value>
+    <value>Просмотр элемента</value>
   </data>
   <data name="toolStripButtonRun.Text" xml:space="preserve">
-    <value>Запустить</value>
+    <value>Выполнить</value>
   </data>
   <data name="toolStripButtonRefresh.Text" xml:space="preserve">
     <value>Обновить</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Мало реестра переход к более чистому - Startup Manager</value>
+    <value>Little Registry Cleaner - Менеджер автозагрузки</value>
   </data>
 </root>
