@@ -136,10 +136,10 @@
     <value>Ongebruikte File Extension</value>
   </data>
   <data name="InvalidInprocServer" xml:space="preserve">
-    <value>InprocServer gevonden</value>
+    <value>InprocServer niet gevonden</value>
   </data>
   <data name="InvalidInprocServer32" xml:space="preserve">
-    <value>InprocServer32 gevonden</value>
+    <value>InprocServer32 niet gevonden</value>
   </data>
   <data name="InvalidProgIDFileExt" xml:space="preserve">
     <value>Ongebruikte ProgID / File Extension</value>
@@ -163,7 +163,7 @@
     <value>De registersleutel bevat geen gegevens</value>
   </data>
   <data name="ObsoleteRegKey" xml:space="preserve">
-    <value>Verouderde registersleutel</value>
+    <value>Ongebruikte registersleutel</value>
   </data>
   <data name="RecentDocs" xml:space="preserve">
     <value>Recente documenten</value>
@@ -172,10 +172,10 @@
     <value>Gedeelde dll-bestanden</value>
   </data>
   <data name="StartupFiles" xml:space="preserve">
-    <value>Opstarten van de bestanden</value>
+    <value>Opstart-bestanden</value>
   </data>
   <data name="SystemDrivers" xml:space="preserve">
-    <value>Systeem stuur programma's</value>
+    <value>Systeem stuurprogramma's</value>
   </data>
   <data name="WindowsFonts" xml:space="preserve">
     <value>Windows-lettertypen</value>

@@ -25,26 +25,26 @@
   <sheet>
     <columns>
       <item class="TFlagsColumn" width="38"/>
-      <item class="TPathColumn" width="29"/>
+      <item class="TPathColumn" width="121"/>
       <item class="TTranslationStatusColumn" width="93"/>
-      <item class="TOriginalColumn" width="58"/>
-      <item class="TTranslationColumn" lang="es" width="58"/>
-      <item class="TTranslationColumn" lang="pt" width="58"/>
-      <item class="TTranslationColumn" lang="nl" width="58"/>
-      <item class="TTranslationColumn" lang="de" width="58"/>
-      <item class="TTranslationColumn" lang="ru" width="58"/>
-      <item class="TTranslationColumn" lang="el" width="58"/>
-      <item class="TTranslationColumn" lang="ar" width="58"/>
-      <item class="TTranslationColumn" lang="sv" width="58"/>
-      <item class="TTranslationColumn" lang="zh" width="58"/>
-      <item class="TTranslationColumn" lang="zh.tra" width="58"/>
-      <item class="TTranslationColumn" lang="ja" width="58"/>
-      <item class="TTranslationColumn" lang="vi" width="58"/>
-      <item class="TTranslationColumn" lang="th" width="58"/>
-      <item class="TTranslationColumn" lang="pl" width="58"/>
-      <item class="TTranslationColumn" lang="it" width="58"/>
-      <item class="TTranslationColumn" lang="en" width="58"/>
-      <item class="TTranslationColumn" lang="hu" width="58"/>
+      <item class="TOriginalColumn" width="53"/>
+      <item class="TTranslationColumn" lang="es" width="53"/>
+      <item class="TTranslationColumn" lang="pt" width="53"/>
+      <item class="TTranslationColumn" lang="nl" width="53"/>
+      <item class="TTranslationColumn" lang="de" width="53"/>
+      <item class="TTranslationColumn" lang="ru" width="53"/>
+      <item class="TTranslationColumn" lang="el" width="53"/>
+      <item class="TTranslationColumn" lang="ar" width="53"/>
+      <item class="TTranslationColumn" lang="sv" width="53"/>
+      <item class="TTranslationColumn" lang="zh" width="53"/>
+      <item class="TTranslationColumn" lang="zh.tra" width="53"/>
+      <item class="TTranslationColumn" lang="ja" width="53"/>
+      <item class="TTranslationColumn" lang="vi" width="53"/>
+      <item class="TTranslationColumn" lang="th" width="53"/>
+      <item class="TTranslationColumn" lang="pl" width="53"/>
+      <item class="TTranslationColumn" lang="it" width="53"/>
+      <item class="TTranslationColumn" lang="en" width="53"/>
+      <item class="TTranslationColumn" lang="hu" width="51"/>
     </columns>
     <params origin="soEntireScope">
       <findtext>Little Registry Cleaner</findtext>
@@ -54,9 +54,9 @@
   <path>
     <item>All</item>
   </path>
-  <exchange method="exmImportProject" options="[eoSetup,eoSpellChecker,eoLanguages]" author="Nick H." description="Little registry cleaner" packagename="Little registry cleanerRu" showpackage="0">
+  <exchange method="exmExportFile" options="[eoSetup,eoSpellChecker,eoLanguages]" author="Nick H." description="Little registry cleaner" packagename="Little registry cleanerRu" showpackage="0">
   </exchange>
-  <export format="efText" escape="seSisulizer">
+  <export format="efXliff">
     <filter locked="bfBoth">
     </filter>
   </export>

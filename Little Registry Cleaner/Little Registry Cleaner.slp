@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.0.292" date="20091207225310" scan="37" scanned="20091207224950">
+<document version="2.0.292" date="20091212111813" scan="37" scanned="20091207224950">
   <lang id="en"/>
   <lang id="fr"/>
   <lang id="es"/>
@@ -57,7 +57,7 @@
             <lang id="es" status="2">Little Registry Cleaner - Detalles...</lang>
             <lang id="pt" status="2">Little Registry Cleaner - Detalhes...</lang>
             <lang id="it" status="2">Little Registry Cleaner - Dettagli...</lang>
-            <lang id="nl" date="20091118234537" status="3">Weinig register reinigings - Details...</lang>
+            <lang id="nl" date="20091118234537" status="3">Kleine Registerreiniger - Details...</lang>
             <lang id="de" date="20091118234619" status="3">Wenig Registry Cleaner - Details...</lang>
             <lang id="ru" status="3">Little Registry Cleaner - Подробности...</lang>
             <lang id="el" status="2">Μικρή Registry Cleaner - Λεπτομέρειες...</lang>
@@ -119,7 +119,7 @@
                   <lang id="es" status="2">Nombre de valor:</lang>
                   <lang id="pt" status="2">Nome do valor:</lang>
                   <lang id="it" status="2">Nome valore:</lang>
-                  <lang id="nl" status="2">Waarde Name:</lang>
+                  <lang id="nl" status="3">Waarde Naam:</lang>
                   <lang id="de" status="2">Preis-Name:</lang>
                   <lang id="ru" status="2">Параметр:</lang>
                   <lang id="el" status="2">Όνομα τιμής:</lang>
@@ -498,7 +498,7 @@
             <lang id="es" status="2">Registro poco Cleaner - acerca de...</lang>
             <lang id="pt" status="2">Registro pouca limpeza - about...</lang>
             <lang id="it" status="2">Registro poco Cleaner - informazioni...</lang>
-            <lang id="nl" status="2">Weinig register reinigings cassette - info...</lang>
+            <lang id="nl" status="3">Kleine Registerreiniger - info...</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - über...</lang>
             <lang id="ru" status="3">Little Registry Cleaner - О программе</lang>
             <lang id="el" status="2">Μικρή Registry Cleaner - πληροφορίες για...</lang>
@@ -597,7 +597,7 @@
                 <lang id="es" invalidated="1" status="2">Este programa es software libre: usted puede redistribuirlo y/o modificarlo bajo los términos de la GNU General Public License publicada por la Free Software Foundation, ya sea la versión 3 de la licencia, o (a su opción) cualquier versión posterior.#n#nEste programa se distribuye con la esperanza de que será útil, pero sin ninguna garantía, ni siquiera la garantía implícita de comerciabilidad o idoneidad para un propósito PARTICULAR.  Consulte la GNU General Public License para obtener más detalles.#n#nDebe haber recibido una copia de la licencia pública GNU General junto con este programa.  Si no, véase &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="pt" invalidated="1" status="2">Este programa é software livre: você pode redistribuí-lo e/ou modificá-lo nos termos da GNU General Public License conforme publicada pela Free Software Foundation, tanto a versão 3 da licença, ou (sua opção) qualquer versão posterior.#n#nEste programa é distribuído na esperança de que será útil, mas sem qualquer garantia; sem sequer a garantia implícita de COMERCIABILIDADE ou adequação a um fim específico.  Consulte a GNU GPL para obter mais detalhes.#n#nVocê deve ter recebido uma cópia da GNU General Public License juntamente com este programa.  Se não for, consulte &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="it" invalidated="1" status="2">Questo programma è software libero: ridistribuirla e/o modificarla secondo i termini della GNU General Public License come pubblicato dalla Free Software Foundation, versione 3 della licenza o (a propria discrezione) qualsiasi versione successiva.#n#nQuesto programma è distribuito nella speranza che possa essere utile, ma senza alcuna garanzia; senza neppure la garanzia implicita di commerciabilità o idoneità per uno scopo particolare.  Vedere la GNU General Public License per maggiori dettagli.#n#nSi dovrebbe avere ricevuto una copia della licenza pubblica generica GNU insieme a questo programma.  Se non, vedere &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="nl" invalidated="1" status="2">Dit programma is gratis software: u kunt en/het herverdelen of wijzigen in het kader van de GNU-generaal Volks licentie zoals door de vrije Software Foundation, beide versie 3 van de licentie of (op de optie) gepubliceerd met een latere versie.#n#nDit programma wordt verdeeld in de hoop dat het nuttig zijn, maar zonder enige garantie; zonder zelfs de impliciete garantie van verkoopbaarheid of geschiktheid voor een bepaald doel zal zijn.  Zie de GNU-generaal Volks-licentie voor meer informatie.#n#nU hebt ontvangen een kopie van de GNU-generaal Volks licentie samen met dit programma.  Als dit niet het geval is, Zie &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="nl" status="3">Dit programma is gratis software: u kunt het verspreiden en/of wijzigen in het kader van de GNU General Public License zoals gepubliceerd door de Free Software Foundation, in versie 3 van de licentie of (naar keuze) een latere versie.#n#nDit programma wordt verspreid in de hoop dat het nuttig zal zijn, maar ZONDER ENIGE GARANTIE; zonder zelfs de impliciete garantie van VERKOOPBAARHEID of GESCHIKTHEID VOOR EEN BEPAALD DOEL.  Zie de GNU General Public License voor meer informatie.#n#nU hebt een kopie ontvangen van de GNU General Public License samen met dit programma.  Als dit niet het geval is, Zie &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="de" invalidated="1" status="2">Dieses Programm ist freie Software: Sie weitergeben und/oder unter den Bedingungen der GNU General Public License veröffentlicht von der Free Software Foundation, Version 3 der Lizenz oder (nach Ihrer Wahl) any later Version ändern können.#n#nDieses Programm wird in der Hoffnung verteilt, dass es Nützlichkeit, jedoch ohne Garantie geliefert; selbst stillschweigende Garantien von MERCHANTABILITY oder Eignung für einen bestimmten Zweck sein wird.  Finden Sie unter der GNU General Public License für weitere Details.#n#nSie sollten eine Kopie der GNU General Public License zusammen mit diesem Programm erhalten haben.  Wenn nicht, finden Sie unter &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="ru" status="3">Эта программа является свободным программным обеспечением: Вы можете распространять или изменять её на условиях лицензии GNU General Public License, опубликованной Фондом свободного программного обеспечения, версии 3, либо (на Ваш выбор) любой более поздней версии.#n#nЭта программа распространяется в надежде на то, что она окажется полезной, но без каких бы то ни было гарантий; даже подразумеваемой гарантии или ТОВАРНОСТИ или пригодности для конкретных целей.  Смотрите GNU General Public License для получения дополнительной информации.#n#nВы должны были получить копию GNU General Public License вместе с этой программой.  Если нет, см. &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="el" invalidated="1" status="2">Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό: ή/μπορείτε να το επιστρέψει και τροποποιήσετε σύμφωνα με τους όρους της GNU General Public License όπως έχουν δημοσιευθεί από το ίδρυμα ελεύθερου λογισμικού, είτε έκδοση 3 της άδειας χρήσης, ή (κατά την επιλογή) οποιαδήποτε μεταγενέστερη έκδοση.#n#nΑυτό το πρόγραμμα διανέμεται με την ελπίδα ότι θα ήταν χρήσιμο, αλλά ΧΩΡΊΣ ΚΆΘΕ WARRANTY, χωρίς καν την σιωπηρή εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ για Α ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ.  Δείτε το GNU General Public License για περισσότερες λεπτομέρειες.#n#nΘα πρέπει να έχετε λάβει ένα αντίγραφο από το GNU General Public License μαζί με αυτό το πρόγραμμα.  Εάν όχι, ανατρέξτε στην ενότητα &lt;http://www.gnu.org/licenses/>.</lang>
@@ -749,7 +749,7 @@
             <lang id="es" status="2">Registro poco limpiador - Crash Reporter</lang>
             <lang id="pt" status="2">Pouco Registry Cleaner - Crash Reporter</lang>
             <lang id="it" status="2">Registro poco Cleaner - Crash Reporter</lang>
-            <lang id="nl" status="2">Weinig register reinigings medium - crash reporter</lang>
+            <lang id="nl" status="3">Kleine Registerreiniger - Crash Reporter</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Crash Reporter</lang>
             <lang id="ru" status="3">Little Registry Cleaner - Отчет об ошибке</lang>
             <lang id="el" status="2">Μικρή μητρώου κασέτας καθαρισμού - Crash αναφοράς</lang>
@@ -807,7 +807,7 @@
                 <lang id="es" status="2">Se produjo una excepción en un componente de Little limpiador de registro. Hemos creado un informe de errores que usted puede enviarnos. Consideraremos este informe como confidencial y anónimo.</lang>
                 <lang id="pt" status="2">Uma exceção ocorreu em um componente de Little Limpador de registro. Criamos um relatório de erro que você pode enviar-nos. Este relatório será tratado como confidencial e anônimo.</lang>
                 <lang id="it" status="2">Si è verificato un eccezione in un componente del registro Little Cleaner. Abbiamo creato una segnalazione di errore che potete inviarci. Trattiamo questa relazione come riservate e anonime.</lang>
-                <lang id="nl" status="2">Er is een uitzondering opgetreden in een onderdeel van de kleine register reinigings. Wij hebben een fouten rapport gemaakt dat u ons kunt verzenden. Wij zullen dit rapport vertrouwelijk en anoniem behandelen.</lang>
+                <lang id="nl" status="3">Er is een uitzondering opgetreden in een onderdeel van de Kleine Registerreiniger. Wij hebben een foutrapport gemaakt dat u ons kunt sturen. Wij zullen dit rapport vertrouwelijk en anoniem behandelen.</lang>
                 <lang id="de" status="2">In einer Komponente der Little Registry Cleaner ist ein Ausnahme aufgetreten. Wir haben einen Fehlerbericht erstellt, den Sie uns senden können. Wir werden diesen Bericht als vertraulich und anonym behandeln.</lang>
                 <lang id="ru" status="3">В одном из компонентов Little Registry Cleaner произошла исключительная ситуация. Мы создали отчет об ошибке, который Вы можете отправить нам. Вся отправляемая информация конфиденциальна и анонимна.</lang>
                 <lang id="el" status="2">Παρουσιάστηκε εξαίρεση στο στοιχείο του Little καθαρισμού μητρώου. Έχουμε δημιουργήσει μια αναφορά σφάλματος την οποία μπορείτε να μας στείλετε. Θα χειριστούμε αυτήν την έκθεση ως εμπιστευτική και ανώνυμη.</lang>
@@ -833,7 +833,7 @@
                 <lang id="es" status="2">Enviar el informe de errores</lang>
                 <lang id="pt" status="2">Enviar relatório de erros</lang>
                 <lang id="it" status="2">Inviare la segnalazione errori</lang>
-                <lang id="nl" status="2">Fout rapport verzenden</lang>
+                <lang id="nl" status="3">Foutrapport verzenden</lang>
                 <lang id="de" status="2">Problembericht senden</lang>
                 <lang id="ru" status="2">Отправить отчет</lang>
                 <lang id="el" status="2">Αποστολή αναφοράς σφάλματος</lang>
@@ -905,7 +905,7 @@
             <lang id="es" status="2">Agregar a lista de ignorar</lang>
             <lang id="pt" status="2">Adicionar à lista de ignorar</lang>
             <lang id="it" status="2">Aggiungere a ignorare elenco</lang>
-            <lang id="nl" status="2">Toevoegen aan lijst negeren</lang>
+            <lang id="nl" status="3">Toevoegen aan Negeren-lijst</lang>
             <lang id="de" status="2">Fügen zur Liste ignorieren hinzu</lang>
             <lang id="ru" status="3">Добавить в список исключений</lang>
             <lang id="el" status="2">Προσθήκη να αγνοήσει λίστα</lang>
@@ -930,7 +930,7 @@
               <lang id="es" status="2">Agregar a lista de ignorar</lang>
               <lang id="pt" status="2">Adicionar à lista de ignorar</lang>
               <lang id="it" status="2">Aggiungere a ignorare elenco</lang>
-              <lang id="nl" status="2">Toevoegen aan lijst negeren</lang>
+              <lang id="nl" status="3">Toevoegen aan Negeren-lijst</lang>
               <lang id="de" status="2">Fügen zur Liste ignorieren hinzu</lang>
               <lang id="ru" status="3">Добавить в список исключений</lang>
               <lang id="el" status="2">Προσθήκη να αγνοήσει λίστα</lang>
@@ -955,7 +955,7 @@
                 <lang id="es" status="2">Seleccione la sección:</lang>
                 <lang id="pt" status="2">Selecione a seção:</lang>
                 <lang id="it" status="2">Selezionare la sezione:</lang>
-                <lang id="nl" status="2">Selecteer de sectie:</lang>
+                <lang id="nl" status="3">Selecteer de Sectie:</lang>
                 <lang id="de" status="2">Wählen Sie Abschnitt:</lang>
                 <lang id="ru" status="2">Выберите раздел:</lang>
                 <lang id="el" status="2">Επιλέξτε το τμήμα:</lang>
@@ -1184,7 +1184,7 @@
                 <lang id="es" status="2">Seleccionar todo</lang>
                 <lang id="pt" status="2">Selecione todos</lang>
                 <lang id="it" status="2">Seleziona tutto</lang>
-                <lang id="nl" status="2">Alles selecteren.</lang>
+                <lang id="nl" status="3">Selecteer alles</lang>
                 <lang id="de" status="2">Wählen Sie alle</lang>
                 <lang id="ru" status="3">Выбрать все</lang>
                 <lang id="el" status="2">Επιλογή όλων</lang>
@@ -1208,7 +1208,7 @@
                 <lang id="es" status="2">Seleccione Ninguno</lang>
                 <lang id="pt" status="2">Selecione Nenhum</lang>
                 <lang id="it" status="2">Selezionare Nessuno</lang>
-                <lang id="nl" status="2">Selecteer geen</lang>
+                <lang id="nl" status="3">Selecteer niets</lang>
                 <lang id="de" status="2">Wählen Sie keine</lang>
                 <lang id="ru" status="3">Очистить выбор</lang>
                 <lang id="el" status="2">Επιλέξτε "Κανένα"</lang>
@@ -1284,7 +1284,7 @@
                 <lang id="es" status="2">Ver en regedit</lang>
                 <lang id="pt" status="2">Exibir regedit</lang>
                 <lang id="it" status="2">Visualizzare in regedit</lang>
-                <lang id="nl" status="2">In regedit weer geven</lang>
+                <lang id="nl" status="3">In regedit weergeven</lang>
                 <lang id="de" status="2">In Regedit anzeigen</lang>
                 <lang id="ru" status="3">Просмотр в regedit</lang>
                 <lang id="el" status="2">Προβολή σε regedit</lang>
@@ -1313,7 +1313,7 @@
                 <lang id="es" status="2">Ocultar/mostrar</lang>
                 <lang id="pt" status="2">Mostrar/ocultar</lang>
                 <lang id="it" status="2">Mostra/Nascondi</lang>
-                <lang id="nl" status="2">Verbergen/weer geven</lang>
+                <lang id="nl" status="3">Verbergen/Tonen</lang>
                 <lang id="de" status="2">Ausblenden/einblenden</lang>
                 <lang id="ru" status="2">Скрыть/Показать</lang>
                 <lang id="el" status="2">Απόκρυψη/Εμφάνιση</lang>
@@ -1365,7 +1365,7 @@
                 <lang id="es" status="2">Salida</lang>
                 <lang id="pt" status="2">Saída</lang>
                 <lang id="it" status="2">Uscita</lang>
-                <lang id="nl" status="2">Uitgang</lang>
+                <lang id="nl" status="3">Einde</lang>
                 <lang id="de" status="2">Ausfahrt</lang>
                 <lang id="ru" status="3">Выход</lang>
                 <lang id="el" status="2">Εξόδου</lang>
@@ -1420,7 +1420,7 @@
                   <lang id="es" status="2">Bienvenido a Little Registry Cleaner!</lang>
                   <lang id="pt" status="2">Bem-vindo a Little Registry Cleaner!</lang>
                   <lang id="it" status="2">Benvenuti a Little Registry Cleaner!</lang>
-                  <lang id="nl" status="2">Welkom bij Little Registry Cleaner!</lang>
+                  <lang id="nl" status="3">Welkom bij Kleine Registerreiniger!</lang>
                   <lang id="de" status="2">Willkommen bei Little Registry Cleaner!</lang>
                   <lang id="ru" status="3">Добро пожаловать в Little Registry Cleaner!</lang>
                   <lang id="el" status="2">Καλώς ήλθατε στο Little Registry Cleaner!</lang>
@@ -1487,7 +1487,7 @@
                       <lang id="es" status="2">Secciones para el análisis</lang>
                       <lang id="pt" status="2">Seções para fazer a varredura</lang>
                       <lang id="it" status="2">Sezioni da analizzare</lang>
-                      <lang id="nl" status="2">Secties te scannen</lang>
+                      <lang id="nl" status="3">Te scannen secties</lang>
                       <lang id="de" status="2">Abschnitte zu scannende</lang>
                       <lang id="ru" status="2">Разделы для просмотра</lang>
                       <lang id="el" status="2">Ενότητες προς σάρωση</lang>
@@ -1530,7 +1530,7 @@
                         <lang id="es" status="2">Información de aplicación</lang>
                         <lang id="pt" status="2">Informações de aplicação</lang>
                         <lang id="it" status="2">Informazioni di applicazione</lang>
-                        <lang id="nl" status="2">Toepassings gegevens</lang>
+                        <lang id="nl" status="3">Applicatiegegevens</lang>
                         <lang id="de" status="2">Anwendung Info</lang>
                         <lang id="ru" status="3">Информация о программе</lang>
                         <lang id="el" status="2">Πληροφορίες εφαρμογής</lang>
@@ -1618,7 +1618,7 @@
                         <lang id="es" status="2">Controladores de sistema</lang>
                         <lang id="pt" status="2">Drivers de sistema</lang>
                         <lang id="it" status="2">Driver di sistema</lang>
-                        <lang id="nl" status="2">Systeem stuur programma's</lang>
+                        <lang id="nl" status="3">Systeem stuurprogramma's</lang>
                         <lang id="de" status="2">Systemtreiber</lang>
                         <lang id="ru" status="2">Системные драйверы</lang>
                         <lang id="el" status="2">Προγράμματα οδήγησης συστήματος</lang>
@@ -1684,7 +1684,7 @@
                         <lang id="es" status="2">Eventos de sonido</lang>
                         <lang id="pt" status="2">Eventos de som</lang>
                         <lang id="it" status="2">Eventi audio</lang>
-                        <lang id="nl" status="2">Geluids gebeurtenissen</lang>
+                        <lang id="nl" status="3">Geluids-gebeurtenissen</lang>
                         <lang id="de" status="2">Sound Ereignisse</lang>
                         <lang id="ru" status="2">Звуковые события</lang>
                         <lang id="el" status="2">Συμβάντα ήχου</lang>
@@ -1830,7 +1830,7 @@
                     <lang id="es" status="2">Nombre del valor</lang>
                     <lang id="pt" status="2">Nome do valor</lang>
                     <lang id="it" status="2">Nome valore</lang>
-                    <lang id="nl" status="2">Waarden aam</lang>
+                    <lang id="nl" status="3">Waarde-naam</lang>
                     <lang id="de" status="2">Wertname</lang>
                     <lang id="ru" status="3">Название</lang>
                     <lang id="el" status="2">Όνομα τιμής</lang>
@@ -1978,7 +1978,7 @@
                     <lang id="es" status="2">Salida</lang>
                     <lang id="pt" status="2">Saída</lang>
                     <lang id="it" status="2">Uscita</lang>
-                    <lang id="nl" status="2">Uitgang</lang>
+                    <lang id="nl" status="3">Einde</lang>
                     <lang id="de" status="2">Ausfahrt</lang>
                     <lang id="ru" status="3">Выход</lang>
                     <lang id="el" status="2">Εξόδου</lang>
@@ -2026,7 +2026,7 @@
                     <lang id="es" status="2">Seleccionar todo</lang>
                     <lang id="pt" status="2">Selecione todos</lang>
                     <lang id="it" status="2">Seleziona tutto</lang>
-                    <lang id="nl" status="2">Alles selecteren.</lang>
+                    <lang id="nl" status="3">Selecteer alles</lang>
                     <lang id="de" status="2">Wählen Sie alle</lang>
                     <lang id="ru" status="3">Выбрать все</lang>
                     <lang id="el" status="2">Επιλογή όλων</lang>
@@ -2050,7 +2050,7 @@
                     <lang id="es" status="2">Seleccione Ninguno</lang>
                     <lang id="pt" status="2">Selecione Nenhum</lang>
                     <lang id="it" status="2">Selezionare Nessuno</lang>
-                    <lang id="nl" status="2">Selecteer geen</lang>
+                    <lang id="nl" status="3">Selecteer niets</lang>
                     <lang id="de" status="2">Wählen Sie keine</lang>
                     <lang id="ru" status="3">Очистить выбор</lang>
                     <lang id="el" status="2">Επιλέξτε "Κανένα"</lang>
@@ -2126,7 +2126,7 @@
                     <lang id="es" status="2">Ver en regedit</lang>
                     <lang id="pt" status="2">Exibir regedit</lang>
                     <lang id="it" status="2">Visualizzare in regedit</lang>
-                    <lang id="nl" status="2">In regedit weer geven</lang>
+                    <lang id="nl" status="3">In regedit weergeven</lang>
                     <lang id="de" status="2">In Regedit anzeigen</lang>
                     <lang id="ru" status="3">Просмотр в regedit</lang>
                     <lang id="el" status="2">Προβολή σε regedit</lang>
@@ -2151,7 +2151,7 @@
                   <lang id="es" status="2">Lingua</lang>
                   <lang id="pt" status="2">Taal</lang>
                   <lang id="it" date="20091030214057" status="3">Lingua</lang>
-                  <lang id="nl" status="2">Langue</lang>
+                  <lang id="nl" status="3">Taal</lang>
                   <lang id="de" status="2">Lengua</lang>
                   <lang id="ru" status="3">Язык</lang>
                   <lang id="el" date="20091030213943" status="3">Γλώσσα</lang>
@@ -2294,7 +2294,7 @@
                     <lang id="es" status="2">Neerlandés</lang>
                     <lang id="pt" status="2">Holandês</lang>
                     <lang id="it" status="2">Olandese</lang>
-                    <lang id="nl" status="2">Nederlandse</lang>
+                    <lang id="nl" status="3">Nederlands</lang>
                     <lang id="de" status="2">Niederländisch</lang>
                     <lang id="ru" status="2">Голландский</lang>
                     <lang id="el" status="2">Ολλανδικά</lang>
@@ -2486,7 +2486,7 @@
                     <lang id="es" status="2">Chino (simplificado)</lang>
                     <lang id="pt" status="2">Chinês (simplificado)</lang>
                     <lang id="it" status="2">Cinese (semplificato)</lang>
-                    <lang id="nl" status="2">Chinese (Simplified)</lang>
+                    <lang id="nl" status="3">Chinese (vereenvoudigd)</lang>
                     <lang id="de" status="2">Chinesisch (Taiwan)</lang>
                     <lang id="ru" status="2">Китайский (упрощенный)</lang>
                     <lang id="el" status="2">Κινέζικα (απλοποιημένα)</lang>
@@ -2583,7 +2583,7 @@
                   <lang id="es" status="2">Herramientas</lang>
                   <lang id="pt" status="2">Ferramentas</lang>
                   <lang id="it" status="2">Strumenti</lang>
-                  <lang id="nl" status="2">Hulp programma's</lang>
+                  <lang id="nl" status="3">Gereedschap</lang>
                   <lang id="de" date="20091024224133" status="3">Werkzeuge</lang>
                   <lang id="ru" status="2">Инструменты</lang>
                   <lang id="el" status="2">Εργαλεία</lang>
@@ -2606,7 +2606,7 @@
                     <lang id="es" status="2">Administrador de inicio</lang>
                     <lang id="pt" status="2">Gerenciador de inicialização</lang>
                     <lang id="it" status="2">Gestione di avvio</lang>
-                    <lang id="nl" status="2">Opstarten van de Manager</lang>
+                    <lang id="nl" status="3">Manager starten</lang>
                     <lang id="de" status="2">Start-Manager</lang>
                     <lang id="ru" status="3">Менеджер автозагрузки</lang>
                     <lang id="el" status="2">Διαχείριση εκκίνησης</lang>
@@ -2989,7 +2989,7 @@
             <lang id="es" status="2">Registro poco limpiador - opciones</lang>
             <lang id="pt" status="2">Pouco Registry Cleaner - opções</lang>
             <lang id="it" status="2">Registro poco Cleaner - opzioni</lang>
-            <lang id="nl" status="2">Weinig register reinigings medium - opties</lang>
+            <lang id="nl" status="3">Kleine Registerreiniger - Opties</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Optionen</lang>
             <lang id="ru" status="3">Little Registry Cleaner - Настройки</lang>
             <lang id="el" status="2">Μικρή μητρώου κασέτας καθαρισμού - επιλογές</lang>
@@ -3071,7 +3071,7 @@
                 <lang id="es" date="20091106175231" status="3">Común</lang>
                 <lang id="pt" status="2">Geral</lang>
                 <lang id="it" status="2">Generale</lang>
-                <lang id="nl" status="2">Algemene</lang>
+                <lang id="nl" status="3">Algemeen</lang>
                 <lang id="de" status="2">Allgemeine</lang>
                 <lang id="ru" status="2">Общие</lang>
                 <lang id="el" status="2">Γενικά</lang>
@@ -3096,7 +3096,7 @@
                   <lang id="es" status="2">Seleccione una carpeta para las entradas del registro eliminados de copia de seguridad </lang>
                   <lang id="pt" status="2">Selecione uma pasta para entradas do Registro excluído backup </lang>
                   <lang id="it" status="2">Selezionare una cartella di backup del Registro di sistema eliminata voci </lang>
-                  <lang id="nl" status="2">Selecteer een map naar de back-verwijderde registervermeldingen </lang>
+                  <lang id="nl" status="3">Selecteer een map voor een backup van de verwijderde registervermeldingen </lang>
                   <lang id="de" status="2">Wählen Sie einen Ordner backup gelöschten Einträge </lang>
                   <lang id="ru" status="3">Выберите папку для резервного копирования удаленных элементов реестра</lang>
                   <lang id="el" status="2">Επιλέξτε ένα φάκελο αντιγράφων ασφαλείας διαγράφηκε μητρώου καταχωρήσεις </lang>
@@ -3180,7 +3180,7 @@
                       <lang id="es" status="2">Análisis de registro de registro y revisiones</lang>
                       <lang id="pt" status="2">Pesquisas de registro de log e correções</lang>
                       <lang id="it" status="2">Registro del Registro di sistema scansioni e le correzioni</lang>
-                      <lang id="nl" status="2">Register log boek worden gescand en worden opgelost</lang>
+                      <lang id="nl" status="3">Log de scans en reparaties</lang>
                       <lang id="de" status="2">Registrierung Logscans und fixes</lang>
                       <lang id="ru" status="3">Журналировать операции с реестром</lang>
                       <lang id="el" status="2">Αρχείο καταγραφής μητρώου σαρώνει και διορθώνει</lang>
@@ -3202,7 +3202,7 @@
                       <lang id="es" status="2">Re-Scan después de solucionar problemas de registro</lang>
                       <lang id="pt" status="2">Re-Scan depois de corrigir problemas de registro</lang>
                       <lang id="it" status="2">Re-Scan dopo la correzione di problemi del Registro di sistema</lang>
-                      <lang id="nl" status="2">Na de vaststelling van de register problemen re-Scan</lang>
+                      <lang id="nl" status="3">Scan opnieuw na het repareren van de register problemen</lang>
                       <lang id="de" status="2">Nach beheben Registrierung Probleme re-Scan</lang>
                       <lang id="ru" status="3">Повторная проверка после устранения ошибок</lang>
                       <lang id="el" status="2">Re-Scan μετά τον καθορισμό των προβλημάτων του μητρώου</lang>
@@ -3246,7 +3246,7 @@
                       <lang id="es" status="2">Crear sistema de puntos de restauración automáticamente</lang>
                       <lang id="pt" status="2">Criar pontos de restauração do sistema automaticamente</lang>
                       <lang id="it" status="2">Creare sistema punti di ripristino automatico</lang>
-                      <lang id="nl" status="2">Systeem automatisch herstel punten maken</lang>
+                      <lang id="nl" status="3">Automatisch Systeemherstelpunten maken</lang>
                       <lang id="de" status="2">Erstellen Sie System Wiederherstellungspunkte automatisch</lang>
                       <lang id="ru" status="3">Автоматически создавать точку восстановления</lang>
                       <lang id="el" status="2">Δημιουργία συστήματος σημεία επαναφοράς αυτόματα</lang>
@@ -3268,7 +3268,7 @@
                       <lang id="es" status="2">Mostrar registro una vez finalizado el análisis</lang>
                       <lang id="pt" status="2">Mostrar log após a conclusão da digitalização</lang>
                       <lang id="it" status="2">Mostra registro al termine dell'operazione di scansione</lang>
-                      <lang id="nl" status="2">Log boek na scannen weer geven</lang>
+                      <lang id="nl" status="3">Logboek tonen na scannen</lang>
                       <lang id="de" status="2">Zeigen Sie Protokoll nach Abschluss der Scan an</lang>
                       <lang id="ru" status="2">Показать журнал после окончания сканирования</lang>
                       <lang id="el" status="2">Εμφάνιση αρχείου καταγραφής μετά την ολοκλήρωση της σάρωσης</lang>
@@ -3290,7 +3290,7 @@
                       <lang id="es" status="2">Eliminar el archivo de copia de seguridad después de restaurar el registro</lang>
                       <lang id="pt" status="2">Excluir o arquivo de backup depois de restaurar o registro</lang>
                       <lang id="it" status="2">Eliminare i file di backup dopo il ripristino del Registro di sistema</lang>
-                      <lang id="nl" status="2">Back-upbestand na het terugzetten van het register verwijderen</lang>
+                      <lang id="nl" status="3">Back-upbestand verwijderen na het terugzetten van het register</lang>
                       <lang id="de" status="2">Löschen Sie backup-Datei nach dem Wiederherstellen der Registrierung</lang>
                       <lang id="ru" status="2">Удалить файл резервной копии после восстановления реестра</lang>
                       <lang id="el" status="2">Διαγραφή αρχείου αντιγράφων ασφαλείας μετά την επαναφορά του μητρώου</lang>
@@ -3334,7 +3334,7 @@
                       <lang id="es" status="2">Reparar automáticamente los elementos del registro</lang>
                       <lang id="pt" status="2">Reparar automaticamente os itens do registro</lang>
                       <lang id="it" status="2">Riparare automaticamente gli elementi del Registro di sistema</lang>
-                      <lang id="nl" status="2">Automatisch reparatie registry items</lang>
+                      <lang id="nl" status="3">Registeritems automatisch repereren</lang>
                       <lang id="de" status="2">Automatisch reparieren Registrierungseinträge</lang>
                       <lang id="ru" status="3">Автоматически восстанавливать элементы реестра</lang>
                       <lang id="el" status="2">Αυτόματη επισκευή στοιχεία μητρώου</lang>
@@ -3356,7 +3356,7 @@
                       <lang id="es" status="2">Programa de salida después de la reparación del registro</lang>
                       <lang id="pt" status="2">Programa de saída após o reparo do registro</lang>
                       <lang id="it" status="2">Programma di uscita dopo la riparazione del Registro di sistema</lang>
-                      <lang id="nl" status="2">Exit programma na reparatie register</lang>
+                      <lang id="nl" status="3">Programma sluiten na reparatie van het register</lang>
                       <lang id="de" status="2">Exit-Programm nach der Reparatur Registrierung</lang>
                       <lang id="ru" status="3">Выйти из программы после ремонта реестра</lang>
                       <lang id="el" status="2">Έξοδος από το πρόγραμμα μετά την επισκευή του μητρώου</lang>
@@ -3384,7 +3384,7 @@
                   <lang id="es" status="2">Seleccione una carpeta para guardar los archivos de registro</lang>
                   <lang id="pt" status="2">Selecione uma pasta para salvar os arquivos de log para</lang>
                   <lang id="it" status="2">Selezionare una cartella in cui salvare i file di log per</lang>
-                  <lang id="nl" status="2">Selecteer een map naar het log boek bestanden opslaan</lang>
+                  <lang id="nl" status="3">Selecteer een map om het logboek op te slaan</lang>
                   <lang id="de" status="2">Wählen Sie einen Ordner aus, um die Protokolldateien, um zu speichern</lang>
                   <lang id="ru" status="3">Выберите папку для сохранения логов</lang>
                   <lang id="el" status="2">Επιλέξτε ένα φάκελο για την αποθήκευση των αρχείων καταγραφής</lang>
@@ -3469,7 +3469,7 @@
                     <lang id="es" status="2">Archivos y carpetas para excluir</lang>
                     <lang id="pt" status="2">Arquivos e pastas a excluir</lang>
                     <lang id="it" status="2">I file e cartelle da escludere</lang>
-                    <lang id="nl" status="2">Bestanden en mappen uit te sluiten</lang>
+                    <lang id="nl" status="3">Bestanden en mappen die uitgesloten moeten worden</lang>
                     <lang id="de" status="2">Dateien und Ordner ausschließen</lang>
                     <lang id="ru" status="3">Исключаемые файлы и папки</lang>
                     <lang id="el" status="2">Αρχεία και φακέλους για να αποκλείσετε</lang>
@@ -3497,7 +3497,7 @@
                   <lang id="es" status="2">Haga clic con el botón derecho del ratón para agregar o quitar las entradas</lang>
                   <lang id="pt" status="2">Clique com o botão direito do mouse para adicionar/remover entradas</lang>
                   <lang id="it" status="2">Fare clic con il pulsante destro del mouse per aggiungere o rimuovere voci</lang>
-                  <lang id="nl" status="2">Klik met de rechter muis knop op te posten toevoegen of verwijderen</lang>
+                  <lang id="nl" status="3">Klik met de rechter muisknop om vermeldingen toe te voegen of te verwijderen</lang>
                   <lang id="de" status="2">Klicken Sie mit der rechten Maustaste auf Hinzufügen und Entfernen von Einträgen</lang>
                   <lang id="ru" status="3">Щелкните правой кнопкой, чтобы добавить или удалить записи</lang>
                   <lang id="el" status="2">Κάντε δεξιό κλικ για να προσθέσετε/καταργήσετε καταχωρήσεις</lang>
@@ -3574,7 +3574,7 @@
                 <lang id="es" status="2">Agregar la ruta del registro</lang>
                 <lang id="pt" status="2">Adicione o caminho de registro</lang>
                 <lang id="it" status="2">Aggiungere il percorso del Registro</lang>
-                <lang id="nl" status="2">Register pad toevoegen</lang>
+                <lang id="nl" status="3">Register-pad toevoegen</lang>
                 <lang id="de" status="2">Registry-Pfad hinzufügen</lang>
                 <lang id="ru" status="2">Добавление пути реестра</lang>
                 <lang id="el" status="2">Προσθήκη διαδρομής μητρώου</lang>
@@ -3630,7 +3630,7 @@
             <lang id="es" status="2">Registro poco restaurar limpiador - registro</lang>
             <lang id="pt" status="2">Pouco Registry Cleaner - restaurar o registro</lang>
             <lang id="it" date="20091106172503" status="2">Registro poco Cleaner - ripristino del Registro</lang>
-            <lang id="nl" status="2">Weinig register reinigings medium - register herstellen</lang>
+            <lang id="nl" status="3">Kleine Registerreiniger - Register terugzetten</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Registrierung wiederherstellen</lang>
             <lang id="ru" status="3">Little Registry Cleaner - восстановление реестра</lang>
             <lang id="el" status="2">Μικρή μητρώου κασέτας καθαρισμού - Επαναφορά μητρώου</lang>
@@ -3713,7 +3713,7 @@
                   <lang id="es" status="2">Restauración</lang>
                   <lang id="pt" status="2">Restauração</lang>
                   <lang id="it" status="2">Ripristino</lang>
-                  <lang id="nl" status="2">Herstellen</lang>
+                  <lang id="nl" status="3">Terugzetten</lang>
                   <lang id="de" status="2">Wiederherstellen</lang>
                   <lang id="ru" status="2">Восстановление</lang>
                   <lang id="el" status="2">Επαναφορά</lang>
@@ -3740,7 +3740,7 @@
                 <lang id="es" status="2">Seleccione un archivo que aparece a continuación para restaurar su registro a un estado anterior</lang>
                 <lang id="pt" status="2">Selecione um arquivo abaixo para restaurar o registro para um estado anterior</lang>
                 <lang id="it" status="2">Selezionare un file riportati di seguito per ripristinare il Registro di sistema a uno stato precedente</lang>
-                <lang id="nl" status="2">Selecteer een bestand hieronder uw register terugzetten naar een vorige staat</lang>
+                <lang id="nl" status="3">Selecteer hieronder een bestand om uw register terug te zetten naar een eerdere versie</lang>
                 <lang id="de" status="2">Wählen Sie eine Datei unten, um Ihre Registrierung zu einem früheren Zustand wiederherstellen</lang>
                 <lang id="ru" status="3">Выберите файл, чтобы восстановить ваш реестр в предыдущее состояние</lang>
                 <lang id="el" status="2">Επιλέξτε ένα αρχείο παρακάτω, για να επαναφέρετε το μητρώο σας σε μια προηγούμενη κατάσταση</lang>
@@ -3767,7 +3767,7 @@
                   <lang id="es" status="2">Nombre del archivo</lang>
                   <lang id="pt" status="2">Nome do arquivo</lang>
                   <lang id="it" status="2">Nome del file</lang>
-                  <lang id="nl" status="2">Bestands naam</lang>
+                  <lang id="nl" status="3">Bestandsnaam</lang>
                   <lang id="de" status="2">Dateiname</lang>
                   <lang id="ru" status="2">Имя файла</lang>
                   <lang id="el" status="2">Όνομα αρχείου</lang>
@@ -3843,7 +3843,7 @@
             <lang id="es" status="2">Registro poco limpiador - análisis...</lang>
             <lang id="pt" status="2">Pouco Registry Cleaner - Scanning...</lang>
             <lang id="it" status="2">Registro poco Cleaner - analisi...</lang>
-            <lang id="nl" status="2">Weinig register reinigings - Scanning...</lang>
+            <lang id="nl" status="3">Kleine Registerreiniger - Scannen...</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Scanning...</lang>
             <lang id="ru" status="3">Little Registry Cleaner - Сканирование...</lang>
             <lang id="el" status="2">Μικρή Registry Cleaner - Scanning...</lang>
@@ -3919,7 +3919,7 @@
                 <lang id="es" status="2">Problemas que se encuentra: </lang>
                 <lang id="pt" status="2">Problemas encontrados: </lang>
                 <lang id="it" status="2">Problemi a trovare: </lang>
-                <lang id="nl" status="2">Problemen gevonden: </lang>
+                <lang id="nl" status="3">Gevonden problemen: </lang>
                 <lang id="de" status="2">Probleme, die gefunden: </lang>
                 <lang id="ru" status="2">Обнаружены проблемы: </lang>
                 <lang id="el" status="2">Προβλήματα που εντοπίστηκαν: </lang>
@@ -3953,7 +3953,7 @@
             <lang id="es" status="2">Editar elemento de ejecutar</lang>
             <lang id="pt" status="2">Editar item executar</lang>
             <lang id="it" status="2">Modifica oggetto di esecuzione</lang>
-            <lang id="nl" status="2">Run object bewerken</lang>
+            <lang id="nl" status="3">Run-object bewerken</lang>
             <lang id="de" status="2">Run-Element bearbeiten</lang>
             <lang id="ru" status="3">Редактирование элемента автозагрузки </lang>
             <lang id="el" status="2">Επεξεργασία στοιχείου εκτέλεση</lang>
@@ -3978,7 +3978,7 @@
               <lang id="es" status="2">Editar la entrada de inicio</lang>
               <lang id="pt" status="2">Editar entrada de inicialização</lang>
               <lang id="it" status="2">Modifica di voce di avvio</lang>
-              <lang id="nl" status="2">Opstarten vermelding bewerken</lang>
+              <lang id="nl" status="3">Opstart-vermelding bewerken</lang>
               <lang id="de" status="2">AutoStart-Eintrag bearbeiten</lang>
               <lang id="ru" status="3">Изменить элемент автозагрузки</lang>
               <lang id="el" status="2">Επεξεργασία καταχώρησης εκκίνησης</lang>
@@ -4128,7 +4128,7 @@
             <lang id="es" status="2">Nuevo punto de ejecución</lang>
             <lang id="pt" status="2">Novo ponto de executar</lang>
             <lang id="it" status="2">Nuovo punto di esecuzione</lang>
-            <lang id="nl" status="2">Nieuwe Run object</lang>
+            <lang id="nl" status="3">Nieuw Run-object</lang>
             <lang id="de" status="2">Neue ausführen-Nummer</lang>
             <lang id="ru" status="3">Создание элемента автозагрузки</lang>
             <lang id="el" status="2">Νέα εκτέλεση στοιχείου</lang>
@@ -4567,7 +4567,7 @@
             <lang id="es" status="2">Registro poco Cleaner - Manager de inicio</lang>
             <lang id="pt" status="2">Registro pouca limpeza - Gerenciador de inicialização</lang>
             <lang id="it" status="2">Registro poco Cleaner - avvio Manager</lang>
-            <lang id="nl" status="2">Weinig register reinigings cassette - opstarten Manager</lang>
+            <lang id="nl" status="3">Kleine Registerreiniger - Manager starten</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Start-Manager</lang>
             <lang id="ru" status="3">Little Registry Cleaner - Менеджер автозагрузки</lang>
             <lang id="el" status="2">Μικρή Registry Cleaner - Διαχείριση εκκίνησης</lang>
@@ -4888,7 +4888,7 @@
             <lang id="es" status="2">Registro poco Cleaner - desinstalar Manager</lang>
             <lang id="pt" status="2">Registro pouca limpeza - Uninstall Manager</lang>
             <lang id="it" status="2">Registro poco Cleaner - disinstallazione Manager</lang>
-            <lang id="nl" status="2">Weinig register reinigings cassette - Manager verwijderen</lang>
+            <lang id="nl" status="3">Kleine Registerreiniger - Manager verwijderen</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Manager deinstallieren</lang>
             <lang id="ru" status="3">Little Registry Cleaner - Менеджер деинсталляции</lang>
             <lang id="el" status="2">Μικρή Registry Cleaner - κατάργηση της εγκατάστασης διαχείρισης</lang>
@@ -5085,7 +5085,7 @@
                     <lang id="es" status="2">Editorial</lang>
                     <lang id="pt" date="20091106181737" status="3">Editor</lang>
                     <lang id="it" status="2">Editore</lang>
-                    <lang id="nl" status="2">In Pub lis her</lang>
+                    <lang id="nl" status="3">Publisher</lang>
                     <lang id="de" status="2">Herausgeber</lang>
                     <lang id="ru" status="2">Издатель</lang>
                     <lang id="el" status="2">Ο Publisher</lang>
@@ -5139,7 +5139,7 @@
             <lang id="es" status="2">Comprobación de actualización</lang>
             <lang id="pt" status="2">Verificação para atualização</lang>
             <lang id="it" status="2">Controllo per aggiornamento</lang>
-            <lang id="nl" status="2">Selectie vakje voor update</lang>
+            <lang id="nl" status="3">Controleer voor update</lang>
             <lang id="de" status="2">Kontrollkästchen für die Aktualisierung</lang>
             <lang id="ru" status="2">Проверить наличие обновлений</lang>
             <lang id="el" status="2">Έλεγχος για την ενημερωμένη έκδοση</lang>
@@ -5202,7 +5202,7 @@
               <lang id="es" status="2">Registro de cambios</lang>
               <lang id="pt" date="20091106182138" status="3">Log de alterações</lang>
               <lang id="it" date="20091106182408" status="3">Log delle modifiche</lang>
-              <lang id="nl" date="20091106182153" status="3">Wijzigings log bestand</lang>
+              <lang id="nl" date="20091106182153" status="3">Wijzigings-log</lang>
               <lang id="de" date="20091106182207" status="3">Änderungsprotokoll</lang>
               <lang id="ru" date="20091106182224" status="3">Журнал изменений</lang>
               <lang id="el" date="20091106182238" status="3">Αλλαγή καταγραφής</lang>
@@ -5228,7 +5228,7 @@
           <lang id="es" status="2">No se pudo enviar el informe de fallo</lang>
           <lang id="pt" status="2">O relatório de erro não pode ser enviado</lang>
           <lang id="it" status="2">La segnalazione di bug, non ha potuto essere inviato</lang>
-          <lang id="nl" status="2">De bug rapport kon niet worden verzonden</lang>
+          <lang id="nl" status="3">Het bugrapport kon niet worden verzonden</lang>
           <lang id="de" status="2">Der Fehlerbericht konnte nicht gesendet werden</lang>
           <lang id="ru" status="3">Сообщение об ошибке не удалось отправить</lang>
           <lang id="el" status="2">Η αναφορά σφάλματος δεν θα μπορούσαν να αποσταλούν</lang>
@@ -5248,7 +5248,7 @@
           <lang id="es" status="2">Enviado el informe de fallo correctamente</lang>
           <lang id="pt" status="2">Relatório de erro enviada com sucesso</lang>
           <lang id="it" status="2">Bug report inviato correttamente</lang>
-          <lang id="nl" status="2">Verzonden bug report succes</lang>
+          <lang id="nl" status="3">Bugreport verzonden</lang>
           <lang id="de" status="2">Sent Fehlerbericht erfolgreich</lang>
           <lang id="ru" status="3">Сообщение об ошибке успешно отправлено</lang>
           <lang id="el" status="2">Απέστειλε αναφορά σφάλματος με επιτυχία</lang>
@@ -5268,7 +5268,7 @@
           <lang id="es" status="2">Agrega claves del registro seleccionado a la lista de exclusión</lang>
           <lang id="pt" status="2">Adicionado selecionados chaves de registo para a lista de exclusão</lang>
           <lang id="it" status="2">Ha aggiunto selezionati chiavi di registro per l'elenco di esclusione</lang>
-          <lang id="nl" status="2">Toegevoegd geselecteerde registersleutels om de lijst uit te sluiten</lang>
+          <lang id="nl" status="3">Geselecteerde registersleutels toegevoegd aan de Uitsluiten-lijst</lang>
           <lang id="de" status="2">Added ausgewählten Registrierungsschlüssel, um die Exclude-Liste</lang>
           <lang id="ru" status="3">Выбранные ключи реестра добавлены в список исключений</lang>
           <lang id="el" status="2">Προστέθηκε επιλέγονται κλειδιά μητρώου για να αποκλείσει την λίστα</lang>
@@ -5309,7 +5309,7 @@
           <lang id="es" invalidated="1" status="2">Esta la primera vez que ejecuta Little limpiador de registro. \r\nWould le gustaría crear un punto de restauración?</lang>
           <lang id="pt" invalidated="1" status="2">Desta vez, a sua primeira execução Little Registry Cleaner.\r\nGostaria de criar um ponto de restauração?</lang>
           <lang id="it" invalidated="1" status="2">La tua prima volta in esecuzione Little Registry Cleaner.\r\nVuoi creare un punto di ripristino?</lang>
-          <lang id="nl" invalidated="1" status="2">Dit de eerste keer lopen Little Registry Cleaner.\r\nWilt u om een herstelpunt?</lang>
+          <lang id="nl" date="20091212111738" status="3">Dit is de eerste keer dat u Kleine Registerreiniger gebruikt.#nWilt u een herstelpunt aanmaken?</lang>
           <lang id="de" invalidated="1" status="2">Diese Sie das erste Mal Little Registry Cleaner.\r\nMöchten Sie einen Wiederherstellungspunkt erstellen?</lang>
           <lang id="ru" status="3">Это ваш первый запуск Little Registry Cleaner.\R\nВы хотите создать точку восстановления?</lang>
           <lang id="el" invalidated="1" status="2">Αυτή η πρώτη φορά που σας τρέχει Little Registry Cleaner.\r\nΘέλετε να δημιουργήσετε ένα σημείο επαναφοράς?</lang>
@@ -5329,7 +5329,7 @@
           <lang id="es" status="2">No se puede encontrar Little Cleaner.chm de registro</lang>
           <lang id="pt" status="2">Incapaz de encontrar Little Secretaria Cleaner.chm</lang>
           <lang id="it" status="2">In grado di trovare Little Registro Cleaner.chm</lang>
-          <lang id="nl" status="2">Kan Little griffie Cleaner.chm vinden</lang>
+          <lang id="nl" status="3">Kan Little Registry Cleaner.chm niet vinden</lang>
           <lang id="de" status="2">Nicht finden Little Registry Cleaner.chm</lang>
           <lang id="ru" status="3">Не удается найти Little Registry Cleaner.chm</lang>
           <lang id="el" status="2">Ανίκανος να βρει Little Γραμματεία Cleaner.chm</lang>
@@ -5349,7 +5349,7 @@
           <lang id="es" status="2">¿Le gustaría corregir todos los problemas seleccionados?</lang>
           <lang id="pt" status="2">Gostaria de corrigir todos os problemas selecionados?</lang>
           <lang id="it" status="2">Vuoi risolvere tutti i problemi selezionati?</lang>
-          <lang id="nl" status="2">Wilt u vast te stellen alle geselecteerde problemen?</lang>
+          <lang id="nl" status="3">Wilt alle geselecteerde problemen repareren?</lang>
           <lang id="de" status="2">Möchten Sie alle ausgewählten Probleme zu beheben?</lang>
           <lang id="ru" status="3">Хотите исправить все выбранные ошибки?</lang>
           <lang id="el" status="2">Θα θέλατε να καθορίσει όλα τα επιλεγμένα προβλήματα?</lang>
@@ -5369,7 +5369,7 @@
           <lang id="es" status="2">Se ha eliminado los problemas del registro</lang>
           <lang id="pt" status="2">Problemas removido do Registro</lang>
           <lang id="it" status="2">Rimossi i problemi dal registro</lang>
-          <lang id="nl" status="2">Removed problemen uit register</lang>
+          <lang id="nl" status="3">Problemen uit het register verwijderd</lang>
           <lang id="de" status="2">Probleme aus der Registry entfernt</lang>
           <lang id="ru" status="3">Ошибки реестра удалены</lang>
           <lang id="el" status="2">Αφαιρούνται προβλήματα από το μητρώο</lang>
@@ -5389,7 +5389,7 @@
           <lang id="es" status="2">Anulado el análisis del registro</lang>
           <lang id="pt" status="2">Abortada a varredura do registro</lang>
           <lang id="it" status="2">Interrotta la scansione del Registro di sistema</lang>
-          <lang id="nl" status="2">Aborted scannen van de registry</lang>
+          <lang id="nl" status="3">Registerscan afgebroken</lang>
           <lang id="de" status="2">Aborted Scanning der Registrierung</lang>
           <lang id="ru" status="3">Сканирование реестра прервано</lang>
           <lang id="el" status="2">Aborted σάρωση του μητρώου</lang>
@@ -5409,7 +5409,7 @@
           <lang id="es" status="2">Finalizado el análisis del registro</lang>
           <lang id="pt" status="2">Acabados de varredura do registro</lang>
           <lang id="it" status="2">Termine della scansione del Registro di sistema</lang>
-          <lang id="nl" status="2">Afgewerkt scannen van de registry</lang>
+          <lang id="nl" status="3">Registerscan is klaar</lang>
           <lang id="de" status="2">Abgeschlossene Scanning der Registrierung</lang>
           <lang id="ru" status="3">Сканирование реестра завершено</lang>
           <lang id="el" status="2">Ολοκληρώσετε τη σάρωση του μητρώου</lang>
@@ -5429,7 +5429,7 @@
           <lang id="es" status="2">Por favor, seleccione una sección para analizar</lang>
           <lang id="pt" status="2">Por favor, selecione uma seção para digitalizar</lang>
           <lang id="it" status="2">Si prega di selezionare una sezione per la scansione</lang>
-          <lang id="nl" status="2">Selecteer een sectie te scannen</lang>
+          <lang id="nl" status="3">Selecteer een sectie om te scannen</lang>
           <lang id="de" status="2">Bitte wählen Sie einen Abschnitt zum Scannen</lang>
           <lang id="ru" status="2">Пожалуйста, выберите раздел для сканирования</lang>
           <lang id="el" status="2">Παρακαλώ επιλέξτε ένα τμήμα για να σαρώσετε</lang>
@@ -5449,7 +5449,7 @@
           <lang id="es" status="2">Hay disponible una versión más reciente. ¿Desea descargarlo?</lang>
           <lang id="pt" status="2">Uma nova versão está disponível. Gostaria de fazer o download?</lang>
           <lang id="it" status="2">Una versione più recente è disponibile. Vuoi scaricarlo?</lang>
-          <lang id="nl" status="2">Een nieuwere versie beschikbaar is. Wilt u het te downloaden?</lang>
+          <lang id="nl" status="3">Er is een nieuwere versie beschikbaar. Wilt u het die downloaden?</lang>
           <lang id="de" status="2">Eine neuere Version verfügbar ist. Möchten Sie es herunterladen?</lang>
           <lang id="ru" status="3">Доступна новая версия. Хотите скачать ее?</lang>
           <lang id="el" status="2">Μια νεώτερη έκδοση είναι διαθέσιμη. Θέλετε να το κατεβάσετε?</lang>
@@ -5469,7 +5469,7 @@
           <lang id="es" status="2">Seleccione la carpeta para excluir el análisis del registro</lang>
           <lang id="pt" status="2">Selecione a pasta para excluir da varredura do registro</lang>
           <lang id="it" status="2">Selezionare la cartella da escludere dal Registro di sistema di scansione</lang>
-          <lang id="nl" status="2">Selecteer de map uit te sluiten van het register scan</lang>
+          <lang id="nl" status="3">Selecteer een map die van de registerscan moet worden uitgesloten</lang>
           <lang id="de" status="2">Wählen Sie den Ordner aus der Registry-Scan ausschließen</lang>
           <lang id="ru" status="3">Выберите папку для исключения из сканирования</lang>
           <lang id="el" status="2">Επιλέξτε το φάκελο για να αποκλείσει από το μητρώο σάρωσης</lang>
@@ -5509,7 +5509,7 @@
           <lang id="es" status="2">Seleccione un archivo para excluir el análisis del registro</lang>
           <lang id="pt" status="2">Selecione um arquivo para excluir o registro de digitalização</lang>
           <lang id="it" status="2">Selezionare un file da escludere dal Registro di sistema di scansione</lang>
-          <lang id="nl" status="2">Selecteer een bestand uit te sluiten van het register scan</lang>
+          <lang id="nl" status="3">Selecteer een bestand dat van de registerscan moet worden uitgesloten</lang>
           <lang id="de" status="2">Wählen Sie eine Datei aus der Registrierung Vorgang ausschließen</lang>
           <lang id="ru" status="3">Выберите файл для исключения из сканирования</lang>
           <lang id="el" status="2">Επιλέξτε ένα αρχείο για να αποκλείσει από το μητρώο σάρωσης</lang>
@@ -5529,7 +5529,7 @@
           <lang id="es" status="2">Clave de registro especificada no existe</lang>
           <lang id="pt" status="2">Chave de registro especificada não existe</lang>
           <lang id="it" status="2">Chiave di registro specificato non esiste</lang>
-          <lang id="nl" status="2">Bepaald registersleutel niet bestaat</lang>
+          <lang id="nl" status="3">De aangegeven registersleutel bestaat niet</lang>
           <lang id="de" status="2">Angegebenen Registrierungsschlüssel ist nicht vorhanden</lang>
           <lang id="ru" status="2">Указанный раздел реестра не существует</lang>
           <lang id="el" status="2">Καθορισμένη κλειδί μητρώου δεν υπάρχει</lang>
@@ -5549,7 +5549,7 @@
           <lang id="es" status="2">Estás seguro?</lang>
           <lang id="pt" status="2">Tem certeza?</lang>
           <lang id="it" status="2">Sei sicuro?</lang>
-          <lang id="nl" status="2">Weet u zeker?</lang>
+          <lang id="nl" status="3">Weet u het zeker?</lang>
           <lang id="de" status="2">Sind Sie sicher,?</lang>
           <lang id="ru" status="3">Вы уверены?</lang>
           <lang id="el" status="2">Είστε σίγουροι?</lang>
@@ -5569,7 +5569,7 @@
           <lang id="es" status="2">Seleccione la carpeta donde se colocarán los archivos de copia de seguridad</lang>
           <lang id="pt" status="2">Selecione a pasta onde os arquivos de backup serão colocados</lang>
           <lang id="it" status="2">Selezionare la cartella in cui i file di backup verrà posizionato</lang>
-          <lang id="nl" status="2">Selecteer de map waarin de back-up bestanden zullen worden geplaatst</lang>
+          <lang id="nl" status="3">Selecteer de map waarin de back-upbestanden zullen worden geplaatst</lang>
           <lang id="de" status="2">Wählen Sie den Ordner, in dem die Backup-Dateien abgelegt werden</lang>
           <lang id="ru" status="3">Выберите папку, в которой будут храниться резервные копии</lang>
           <lang id="el" status="2">Επιλέξτε το φάκελλο όπου τα αρχεία αντιγράφων ασφαλείας θα πρέπει να τοποθετηθεί</lang>
@@ -5609,7 +5609,7 @@
           <lang id="es" status="2">Error eliminar clave de registro:</lang>
           <lang id="pt" status="2">Chave de registro de remoção de erro:</lang>
           <lang id="it" status="2">Rimozione chiave del Registro di sistema di errore:</lang>
-          <lang id="nl" status="2">Fout verwijderen van registersleutel:</lang>
+          <lang id="nl" status="3">Fout bij het verwijderen van registersleutel:</lang>
           <lang id="de" status="2">Fehler beim Entfernen von Registry-Schlüssel:</lang>
           <lang id="ru" status="3">Ошибка при удалении элемента реестра:</lang>
           <lang id="el" status="2">Σφάλμα κατά την κατάργηση κλειδιού μητρώου:</lang>
@@ -5649,7 +5649,7 @@
           <lang id="es" status="2">No se puede encontrar la cadena de desinstalación. ¿Le gustaría quitarlo manualmente el registro?</lang>
           <lang id="pt" status="2">Não é possível encontrar a cadeia de caracteres de desinstalação. Você gostaria de removê-lo manualmente no registro?</lang>
           <lang id="it" status="2">Impossibile trovare la stringa di disinstallazione. Vuoi rimuovere manualmente dal Registro di sistema?</lang>
-          <lang id="nl" status="2">Kan geen teken reeks voor het verwijderen. Wilt u deze handmatig uit het register verwijderen?</lang>
+          <lang id="nl" status="3">Kan geen verwijder-tekenreeks vinden. Wilt u deze handmatig uit het register verwijderen?</lang>
           <lang id="de" status="2">Kann nicht Deinstallation String gefunden werden. Möchten Sie Sie aus der Registrierung manuell zu entfernen?</lang>
           <lang id="ru" status="3">Не удается найти строку деинсталляции. Хотите вручную удалить из реестра?</lang>
           <lang id="el" status="2">Δεν είναι δυνατή η εύρεση της συμβολοσειράς κατάργησης της εγκατάστασης. Θα θέλατε να καταργήσετε με μη αυτόματο τρόπο από το μητρώο?</lang>
@@ -5669,7 +5669,7 @@
           <lang id="es" status="2">Clave del registro de correctamente eliminado</lang>
           <lang id="pt" status="2">Chave de registo com êxito removido</lang>
           <lang id="it" status="2">Chiave del Registro di sistema Hai rimosso</lang>
-          <lang id="nl" status="2">Registersleutel verwijderd gebruikersnaam</lang>
+          <lang id="nl" status="3">Registersleutel verwijderd</lang>
           <lang id="de" status="2">Registrierungsschlüssel wurde erfolgreich entfernt</lang>
           <lang id="ru" status="3">Ключ реестра успешно удален</lang>
           <lang id="el" status="2">Το κλειδί μητρώου ολοκληρώθηκε με επιτυχία την κατάργηση</lang>
@@ -5689,7 +5689,7 @@
           <lang id="es" status="2">Programa correctamente desinstalado</lang>
           <lang id="pt" status="2">Programa com êxito desinstalado</lang>
           <lang id="it" status="2">Programma hai disinstallato</lang>
-          <lang id="nl" status="2">Gebruikersnaam verwijderd programma</lang>
+          <lang id="nl" status="3">Programma verwijderd</lang>
           <lang id="de" status="2">Wurde erfolgreich deinstalliert Programm</lang>
           <lang id="ru" status="2">Программа успешно удалена</lang>
           <lang id="el" status="2">Πρόγραμμα ολοκληρώθηκε με επιτυχία την κατάργηση της εγκατάστασης</lang>
@@ -5709,7 +5709,7 @@
           <lang id="es" status="2">Otro programa parece estar ya en ejecución...</lang>
           <lang id="pt" status="2">Outro programa parece estar a correr já...</lang>
           <lang id="it" status="2">Un altro programma sembra essere già in esecuzione...</lang>
-          <lang id="nl" status="2">Een ander programma lijkt te draaien reeds...</lang>
+          <lang id="nl" status="3">Er lijkt al een ander programma te draaien...</lang>
           <lang id="de" status="2">Ein anderes Programm scheint zu sein, läuft bereits...</lang>
           <lang id="ru" status="3">Другая копия программы уже запущена...</lang>
           <lang id="el" status="2">Ένα άλλο πρόγραμμα, φαίνεται να είναι σε λειτουργία ήδη...</lang>
@@ -5729,7 +5729,7 @@
           <lang id="es" status="2">Debe ser un administrador para ejecutar este programa</lang>
           <lang id="pt" status="2">Você deve ser um administrador para executar este programa</lang>
           <lang id="it" status="2">È necessario essere un amministratore per eseguire questo programma</lang>
-          <lang id="nl" status="2">U moet een beheerder zijn om dit programma uit te voeren</lang>
+          <lang id="nl" status="3">U moet beheerder-rechten hebben om dit programma uit te voeren</lang>
           <lang id="de" status="2">Sie müssen als Administrator angemeldet sein, um dieses Programm ausführen</lang>
           <lang id="ru" status="3">Вы должны иметь права администратора для запуска этой программы</lang>
           <lang id="el" status="2">Πρέπει να είστε διαχειριστής, για να τρέξει αυτό το πρόγραμμα</lang>
@@ -5749,7 +5749,7 @@
           <lang id="es" status="2">Estás seguro?</lang>
           <lang id="pt" status="2">Tem certeza?</lang>
           <lang id="it" status="2">Sei sicuro?</lang>
-          <lang id="nl" status="2">Weet u zeker?</lang>
+          <lang id="nl" status="3">Weet u het zeker?</lang>
           <lang id="de" status="2">Sind Sie sicher,?</lang>
           <lang id="ru" status="3">Вы уверены?</lang>
           <lang id="el" status="2">Είστε σίγουροι?</lang>
@@ -5789,7 +5789,7 @@
           <lang id="es" status="2">Registro restaurado con éxito</lang>
           <lang id="pt" status="2">Restaurado com êxito do registo</lang>
           <lang id="it" status="2">Ripristinato con successo del Registro di sistema</lang>
-          <lang id="nl" status="2">Succesvol hersteld register</lang>
+          <lang id="nl" status="3">Register succesvol hersteld</lang>
           <lang id="de" status="2">Erfolgreich wiederhergestellt Registrierung</lang>
           <lang id="ru" status="3">Реестр успешно восстановлен</lang>
           <lang id="el" status="2">Επιτυχώς αποκατασταθεί μητρώου</lang>
@@ -5809,7 +5809,7 @@
           <lang id="es" status="2">Estás seguro?</lang>
           <lang id="pt" status="2">Tem certeza?</lang>
           <lang id="it" status="2">Sei sicuro?</lang>
-          <lang id="nl" status="2">Weet u zeker?</lang>
+          <lang id="nl" status="3">Weet u het zeker?</lang>
           <lang id="de" status="2">Sind Sie sicher,?</lang>
           <lang id="ru" status="3">Вы уверены?</lang>
           <lang id="el" status="2">Είστε σίγουροι?</lang>
@@ -5829,7 +5829,7 @@
           <lang id="es" status="2">Análisis: </lang>
           <lang id="pt" status="2">Digitalização: </lang>
           <lang id="it" status="2">Scansione: </lang>
-          <lang id="nl" status="2">Esame: </lang>
+          <lang id="nl" status="3">Scannen: </lang>
           <lang id="de" date="20091106182906" status="3">Scannen: </lang>
           <lang id="ru" status="2">Сканирование: </lang>
           <lang id="el" status="2">Σάρωση: </lang>
@@ -5909,7 +5909,7 @@
           <lang id="es" status="2">Ha intentado ejecutar:</lang>
           <lang id="pt" status="2">Tentativa de executar:</lang>
           <lang id="it" status="2">Tentato di eseguire:</lang>
-          <lang id="nl" status="2">Poging lopen:</lang>
+          <lang id="nl" status="3">Geprobeerd te starten:</lang>
           <lang id="de" status="2">Es wurde versucht, zu laufen:</lang>
           <lang id="ru" status="3">Попытка запуска:</lang>
           <lang id="el" status="2">Προσπάθησε να τρέχει:</lang>
@@ -5929,7 +5929,7 @@
           <lang id="es" status="2">Está seguro de que desea quitar este programa de inicio?</lang>
           <lang id="pt" status="2">Tem certeza de que deseja remover este programa de inicialização?</lang>
           <lang id="it" status="2">Sei sicuro di voler rimuovere questo programma di avvio?</lang>
-          <lang id="nl" status="2">Weet u zeker dat u dit wilt opstarten programma te verwijderen?</lang>
+          <lang id="nl" status="3">Weet u zeker dat u dit programma wilt verwijderen?</lang>
           <lang id="de" status="2">Sind Sie sicher, dass Sie diese Start-Programm zu entfernen?</lang>
           <lang id="ru" status="3">Вы уверены, что хотите удалить эту программу из автозапуска?</lang>
           <lang id="el" status="2">Είστε σίγουροι ότι θέλετε να καταργήσετε αυτό το πρόγραμμα εκκίνησης?</lang>
@@ -5949,7 +5949,7 @@
           <lang id="es" status="2">Programa de inicio seleccionado eliminado</lang>
           <lang id="pt" status="2">Removido programa de inicialização selecionado</lang>
           <lang id="it" status="2">Rimosso programma di avvio selezionato</lang>
-          <lang id="nl" status="2">Removed geselecteerde opstarten programma</lang>
+          <lang id="nl" status="3">Geselecteerde opstart-programma verwijderd</lang>
           <lang id="de" status="2">Removed Startup-Programm ausgewählt</lang>
           <lang id="ru" status="3">Выбранные элементы автозагрузки удалены</lang>
           <lang id="el" status="2">Αφαιρέθηκε επιλεγμένο πρόγραμμα εκκίνησης</lang>
@@ -5969,7 +5969,7 @@
           <lang id="es" status="2">Está seguro de que desea ejecutar este programa?</lang>
           <lang id="pt" status="2">Tem certeza de que deseja executar este programa?</lang>
           <lang id="it" status="2">Sei sicuro di voler eseguire il programma?</lang>
-          <lang id="nl" status="2">Weet u zeker dat u dit programma uitvoert?</lang>
+          <lang id="nl" status="3">Weet u zeker dat u dit programma wilt starten?</lang>
           <lang id="de" status="2">Sind Sie sicher, dass Sie dieses Programm ausführen?</lang>
           <lang id="ru" status="2">Вы действительно хотите запустить эту программу?</lang>
           <lang id="el" status="2">Είστε σίγουροι ότι θέλετε να εκτελέσετε αυτό το πρόγραμμα?</lang>
@@ -5989,7 +5989,7 @@
           <lang id="es" status="2">Está seguro de que desea quitar este programa desde el registro?</lang>
           <lang id="pt" status="2">Tem certeza que deseja remover este programa a partir do registo?</lang>
           <lang id="it" status="2">Sei sicuro di voler rimuovere questo programma dal Registro di sistema?</lang>
-          <lang id="nl" status="2">Weet u zeker dat u dit programma te verwijderen uit het register?</lang>
+          <lang id="nl" status="3">Weet u zeker dat u dit programma uit het register wilt verwijderen?</lang>
           <lang id="de" status="2">Sind Sie sicher, dass Sie dieses Programm aus der Registrierung entfernen?</lang>
           <lang id="ru" status="2">Вы уверены, что хотите удалить эту программу из реестра?</lang>
           <lang id="el" status="2">Είστε σίγουροι ότι θέλετε να καταργήσετε αυτό το πρόγραμμα από το μητρώο?</lang>
@@ -6029,7 +6029,7 @@
           <lang id="es" status="2">¿Estás seguro de que desea desinstalar este programa?</lang>
           <lang id="pt" status="2">Tem certeza que pretende desinstalar este programa?</lang>
           <lang id="it" status="2">Sei sicuro di voler disinstallare questo programma?</lang>
-          <lang id="nl" status="2">Weet u zeker dat u dit programma verwijderen?</lang>
+          <lang id="nl" status="3">Weet u zeker dat u dit programma wilt verwijderen?</lang>
           <lang id="de" status="2">Sind Sie sicher, dass Sie dieses Programm deinstallieren?</lang>
           <lang id="ru" status="2">Вы уверены, что хотите удалить эту программу?</lang>
           <lang id="el" status="2">Είστε σίγουροι ότι θέλετε να καταργήσετε την εγκατάσταση αυτού του προγράμματος?</lang>
@@ -6211,7 +6211,7 @@
           <lang id="es" status="2">No se puede encontrar InprocServer</lang>
           <lang id="pt" status="2">Não é possível encontrar InprocServer</lang>
           <lang id="it" status="2">Impossibile trovare il InprocServer</lang>
-          <lang id="nl" status="2">InprocServer gevonden</lang>
+          <lang id="nl" status="3">InprocServer niet gevonden</lang>
           <lang id="de" status="2">Konnte nicht gefunden werden InprocServer</lang>
           <lang id="ru" status="2">Не удалось найти InprocServer</lang>
           <lang id="el" status="2">Δεν είναι δυνατή η εύρεση του InprocServer</lang>
@@ -6231,7 +6231,7 @@
           <lang id="es" status="2">No se puede encontrar InprocServer32</lang>
           <lang id="pt" status="2">Não é possível encontrar InprocServer32</lang>
           <lang id="it" status="2">Impossibile trovare InprocServer32</lang>
-          <lang id="nl" status="2">InprocServer32 gevonden</lang>
+          <lang id="nl" status="3">InprocServer32 niet gevonden</lang>
           <lang id="de" status="2">Konnte nicht gefunden werden InprocServer32</lang>
           <lang id="ru" status="2">Не удалось найти InprocServer32</lang>
           <lang id="el" status="2">Δεν είναι δυνατή η εύρεση InprocServer32</lang>
@@ -6391,7 +6391,7 @@
           <lang id="es" status="2">Clave del registro obsoletas</lang>
           <lang id="pt" status="2">Chave de registro obsoletos</lang>
           <lang id="it" status="2">Chiave di registro obsolete</lang>
-          <lang id="nl" status="2">Verouderde registersleutel</lang>
+          <lang id="nl" status="3">Ongebruikte registersleutel</lang>
           <lang id="de" status="2">Veraltete Registrierungsschlüssel</lang>
           <lang id="ru" status="3">Устаревшие ключи реестра</lang>
           <lang id="el" status="2">Το κλειδί μητρώου άνευ αντικειμένου</lang>
@@ -6451,7 +6451,7 @@
           <lang id="es" status="2">Archivos de inicio</lang>
           <lang id="pt" status="2">Arquivos de inicialização</lang>
           <lang id="it" status="2">File di avvio</lang>
-          <lang id="nl" status="2">Opstarten van de bestanden</lang>
+          <lang id="nl" status="3">Opstart-bestanden</lang>
           <lang id="de" status="2">Start-Dateien</lang>
           <lang id="ru" status="3">Файлы автозагрузки</lang>
           <lang id="el" status="2">Αρχεία εκκίνησης</lang>
@@ -6471,7 +6471,7 @@
           <lang id="es" status="2">Controladores de sistema</lang>
           <lang id="pt" status="2">Drivers de sistema</lang>
           <lang id="it" status="2">Driver di sistema</lang>
-          <lang id="nl" status="2">Systeem stuur programma's</lang>
+          <lang id="nl" status="3">Systeem stuurprogramma's</lang>
           <lang id="de" status="2">Systemtreiber</lang>
           <lang id="ru" status="2">Системные драйверы</lang>
           <lang id="el" status="2">Προγράμματα οδήγησης συστήματος</lang>

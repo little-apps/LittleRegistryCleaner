@@ -122,6 +122,9 @@
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>Annuleren</value>
   </data>
+  <data name="buttonOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Argumenten:</value>
   </data>
@@ -129,9 +132,9 @@
     <value>Bestand:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Opstarten vermelding bewerken</value>
+    <value>Opstart-vermelding bewerken</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Run object bewerken</value>
+    <value>Run-object bewerken</value>
   </data>
 </root>

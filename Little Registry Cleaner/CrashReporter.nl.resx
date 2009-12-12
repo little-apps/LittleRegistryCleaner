@@ -123,16 +123,19 @@
     <value>Programma opnieuw starten</value>
   </data>
   <data name="buttonSend.Text" xml:space="preserve">
-    <value>Fout rapport verzenden</value>
+    <value>Foutrapport verzenden</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Er is een uitzondering opgetreden in een onderdeel van de kleine register reinigings. Wij hebben een fouten rapport gemaakt dat u ons kunt verzenden. Wij zullen dit rapport vertrouwelijk en anoniem behandelen.</value>
+    <value>Er is een uitzondering opgetreden in een onderdeel van de Kleine Registerreiniger. Wij hebben een foutrapport gemaakt dat u ons kunt sturen. Wij zullen dit rapport vertrouwelijk en anoniem behandelen.</value>
   </data>
   <data name="buttonDontSend.Text" xml:space="preserve">
     <value>Niet verzenden</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="$this.Text" xml:space="preserve">
-    <value>Weinig register reinigings medium - crash reporter</value>
+    <value>Kleine Registerreiniger - Crash Reporter</value>
   </data>
 </root>

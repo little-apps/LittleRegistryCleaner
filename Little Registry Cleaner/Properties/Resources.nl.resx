@@ -118,97 +118,98 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="crashReporterFail" xml:space="preserve">
-    <value>De bug rapport kon niet worden verzonden</value>
+    <value>Het bugrapport kon niet worden verzonden</value>
   </data>
   <data name="crashReporterSuccess" xml:space="preserve">
-    <value>Verzonden bug report succes</value>
+    <value>Bugreport verzonden</value>
   </data>
   <data name="mainAddExcludeEntry" xml:space="preserve">
-    <value>Toegevoegd geselecteerde registersleutels om de lijst uit te sluiten</value>
+    <value>Geselecteerde registersleutels toegevoegd aan de Uitsluiten-lijst</value>
   </data>
   <data name="mainAskExit" xml:space="preserve">
     <value>Weet u zeker dat u wilt afsluiten?</value>
   </data>
   <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>Dit de eerste keer lopen Little Registry Cleaner.\r\nWilt u om een herstelpunt?</value>
+    <value>Dit is de eerste keer dat u Kleine Registerreiniger gebruikt.
+Wilt u een herstelpunt aanmaken?</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
-    <value>Kan Little griffie Cleaner.chm vinden</value>
+    <value>Kan Little Registry Cleaner.chm niet vinden</value>
   </data>
   <data name="mainProblemsFix" xml:space="preserve">
-    <value>Wilt u vast te stellen alle geselecteerde problemen?</value>
+    <value>Wilt alle geselecteerde problemen repareren?</value>
   </data>
   <data name="mainProblemsRemoved" xml:space="preserve">
-    <value>Removed problemen uit register</value>
+    <value>Problemen uit het register verwijderd</value>
   </data>
   <data name="mainScanningAborted" xml:space="preserve">
-    <value>Aborted scannen van de registry</value>
+    <value>Registerscan afgebroken</value>
   </data>
   <data name="mainScanningFinished" xml:space="preserve">
-    <value>Afgewerkt scannen van de registry</value>
+    <value>Registerscan is klaar</value>
   </data>
   <data name="mainSelectSections" xml:space="preserve">
-    <value>Selecteer een sectie te scannen</value>
+    <value>Selecteer een sectie om te scannen</value>
   </data>
   <data name="mainUpdateAsk" xml:space="preserve">
-    <value>Een nieuwere versie beschikbaar is. Wilt u het te downloaden?</value>
+    <value>Er is een nieuwere versie beschikbaar. Wilt u het die downloaden?</value>
   </data>
   <data name="optionsExcludeDir" xml:space="preserve">
-    <value>Selecteer de map uit te sluiten van het register scan</value>
+    <value>Selecteer een map die van de registerscan moet worden uitgesloten</value>
   </data>
   <data name="optionsExcludeEmptyRegPath" xml:space="preserve">
     <value>Register pad kan niet leeg zijn</value>
   </data>
   <data name="optionsExcludeFile" xml:space="preserve">
-    <value>Selecteer een bestand uit te sluiten van het register scan</value>
+    <value>Selecteer een bestand dat van de registerscan moet worden uitgesloten</value>
   </data>
   <data name="optionsExcludeInvalidRegPath" xml:space="preserve">
-    <value>Bepaald registersleutel niet bestaat</value>
+    <value>De aangegeven registersleutel bestaat niet</value>
   </data>
   <data name="optionsExcludeRemove" xml:space="preserve">
-    <value>Weet u zeker?</value>
+    <value>Weet u het zeker?</value>
   </data>
   <data name="optionsSelectBackupDir" xml:space="preserve">
-    <value>Selecteer de map waarin de back-up bestanden zullen worden geplaatst</value>
+    <value>Selecteer de map waarin de back-upbestanden zullen worden geplaatst</value>
   </data>
   <data name="optionsSelectLogDir" xml:space="preserve">
     <value>Selecteer de map waar de log-bestanden zullen worden geplaatst</value>
   </data>
   <data name="piErrorRegKey" xml:space="preserve">
-    <value>Fout verwijderen van registersleutel:</value>
+    <value>Fout bij het verwijderen van registersleutel:</value>
   </data>
   <data name="piErrorUninstalling" xml:space="preserve">
     <value>Fout bij het verwijderen van het programma:</value>
   </data>
   <data name="piInvalidUninstallString" xml:space="preserve">
-    <value>Kan geen teken reeks voor het verwijderen. Wilt u deze handmatig uit het register verwijderen?</value>
+    <value>Kan geen verwijder-tekenreeks vinden. Wilt u deze handmatig uit het register verwijderen?</value>
   </data>
   <data name="piSuccessRegKey" xml:space="preserve">
-    <value>Registersleutel verwijderd gebruikersnaam</value>
+    <value>Registersleutel verwijderd</value>
   </data>
   <data name="piSuccessUninstall" xml:space="preserve">
-    <value>Gebruikersnaam verwijderd programma</value>
+    <value>Programma verwijderd</value>
   </data>
   <data name="programAlreadyRunning" xml:space="preserve">
-    <value>Een ander programma lijkt te draaien reeds...</value>
+    <value>Er lijkt al een ander programma te draaien...</value>
   </data>
   <data name="programNeedAdmin" xml:space="preserve">
-    <value>U moet een beheerder zijn om dit programma uit te voeren</value>
+    <value>U moet beheerder-rechten hebben om dit programma uit te voeren</value>
   </data>
   <data name="restoreAsk" xml:space="preserve">
-    <value>Weet u zeker?</value>
+    <value>Weet u het zeker?</value>
   </data>
   <data name="restoreError" xml:space="preserve">
     <value>Fout bij het herstellen van het register</value>
   </data>
   <data name="restoreRestored" xml:space="preserve">
-    <value>Succesvol hersteld register</value>
+    <value>Register succesvol hersteld</value>
   </data>
   <data name="scanDlgExit" xml:space="preserve">
-    <value>Weet u zeker?</value>
+    <value>Weet u het zeker?</value>
   </data>
   <data name="scanDlgProgressBarScanning" xml:space="preserve">
-    <value>Esame: </value>
+    <value>Scannen: </value>
   </data>
   <data name="smCannotFindFile" xml:space="preserve">
     <value>Het bestand kan niet worden gevonden</value>
@@ -220,25 +221,25 @@
     <value>Bestand pad kan niet leeg zijn</value>
   </data>
   <data name="smRan" xml:space="preserve">
-    <value>Poging lopen:</value>
+    <value>Geprobeerd te starten:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>Weet u zeker dat u dit wilt opstarten programma te verwijderen?</value>
+    <value>Weet u zeker dat u dit programma wilt verwijderen?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
-    <value>Removed geselecteerde opstarten programma</value>
+    <value>Geselecteerde opstart-programma verwijderd</value>
   </data>
   <data name="smRun" xml:space="preserve">
-    <value>Weet u zeker dat u dit programma uitvoert?</value>
+    <value>Weet u zeker dat u dit programma wilt starten?</value>
   </data>
   <data name="umForceUninstall" xml:space="preserve">
-    <value>Weet u zeker dat u dit programma te verwijderen uit het register?</value>
+    <value>Weet u zeker dat u dit programma uit het register wilt verwijderen?</value>
   </data>
   <data name="umSearchText" xml:space="preserve">
     <value>Zoeken op naam</value>
   </data>
   <data name="umUninstall" xml:space="preserve">
-    <value>Weet u zeker dat u dit programma verwijderen?</value>
+    <value>Weet u zeker dat u dit programma wilt verwijderen?</value>
   </data>
   <data name="updateLatest" xml:space="preserve">
     <value>U hebt de laatste versie</value>

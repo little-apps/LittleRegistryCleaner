@@ -123,9 +123,9 @@
     <value>Downloaden</value>
   </data>
   <data name="buttonChangelog.Text" xml:space="preserve">
-    <value>Wijzigings log bestand</value>
+    <value>Wijzigings-log</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Selectie vakje voor update</value>
+    <value>Controleer voor update</value>
   </data>
 </root>

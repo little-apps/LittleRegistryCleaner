@@ -122,11 +122,23 @@
   <data name="label2.Text" xml:space="preserve">
     <value>Register pad:</value>
   </data>
+  <data name="comboBox1.Items" xml:space="preserve">
+    <value>HKEY_CLASSES_ROOT</value>
+  </data>
+  <data name="comboBox1.Items1" xml:space="preserve">
+    <value>HKEY_CURRENT_USER</value>
+  </data>
+  <data name="comboBox1.Items2" xml:space="preserve">
+    <value>HKEY_LOCAL_MACHINE</value>
+  </data>
+  <data name="comboBox1.Items3" xml:space="preserve">
+    <value>HKEY_USERS</value>
+  </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Selecteer de sectie:</value>
+    <value>Selecteer de Sectie:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Toevoegen aan lijst negeren</value>
+    <value>Toevoegen aan Negeren-lijst</value>
   </data>
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>Annuleren</value>
@@ -135,6 +147,6 @@
     <value>Vermelding toevoegen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Toevoegen aan lijst negeren</value>
+    <value>Toevoegen aan Negeren-lijst</value>
   </data>
 </root>

@@ -119,27 +119,51 @@
   </resheader>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <data name="linkLabelAuthor.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+  <data name="linkLabelAuthor.Text" xml:space="preserve">
+    <value>Nick H.</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Auteur:</value>
   </data>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>Dit programma is gratis software: u kunt en/het herverdelen of wijzigen in het kader van de GNU-generaal Volks licentie zoals door de vrije Software Foundation, beide versie 3 van de licentie of (op de optie) gepubliceerd met een latere versie.
+    <value>Dit programma is gratis software: u kunt het verspreiden en/of wijzigen in het kader van de GNU General Public License zoals gepubliceerd door de Free Software Foundation, in versie 3 van de licentie of (naar keuze) een latere versie.
 
-Dit programma wordt verdeeld in de hoop dat het nuttig zijn, maar zonder enige garantie; zonder zelfs de impliciete garantie van verkoopbaarheid of geschiktheid voor een bepaald doel zal zijn.  Zie de GNU-generaal Volks-licentie voor meer informatie.
+Dit programma wordt verspreid in de hoop dat het nuttig zal zijn, maar ZONDER ENIGE GARANTIE; zonder zelfs de impliciete garantie van VERKOOPBAARHEID of GESCHIKTHEID VOOR EEN BEPAALD DOEL.  Zie de GNU General Public License voor meer informatie.
 
-U hebt ontvangen een kopie van de GNU-generaal Volks licentie samen met dit programma.  Als dit niet het geval is, Zie &lt;http://www.gnu.org/licenses/&gt;.</value>
+U hebt een kopie ontvangen van de GNU General Public License samen met dit programma.  Als dit niet het geval is, Zie &lt;http://www.gnu.org/licenses/&gt;.</value>
+  </data>
+  <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="labelTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="labelTitle.Text" xml:space="preserve">
-    <value>Weinig register reinigings</value>
+    <value>Little Registry Cleaner</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonClose.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="buttonClose.Text" xml:space="preserve">
     <value>Sluiten</value>
+  </data>
+  <data name="buttonWebsite.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="buttonWebsite.Text" xml:space="preserve">
     <value>Project-website</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Weinig register reinigings cassette - info...</value>
+    <value>Kleine Registerreiniger - info...</value>
   </data>
 </root>
