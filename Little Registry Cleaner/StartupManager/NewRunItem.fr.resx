@@ -122,6 +122,12 @@
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>Annuler</value>
   </data>
+  <data name="buttonOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Arguments:</value>
+  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Chemin du fichier:</value>
   </data>
@@ -133,6 +139,36 @@
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>Quartier:</value>
+  </data>
+  <data name="comboBoxSection.Items" xml:space="preserve">
+    <value>StartUp\All Users</value>
+  </data>
+  <data name="comboBoxSection.Items1" xml:space="preserve">
+    <value>StartUp\Current User</value>
+  </data>
+  <data name="comboBoxSection.Items2" xml:space="preserve">
+    <value>Registry\All Users\Run</value>
+  </data>
+  <data name="comboBoxSection.Items3" xml:space="preserve">
+    <value>Registry\All Users\Run Once</value>
+  </data>
+  <data name="comboBoxSection.Items4" xml:space="preserve">
+    <value>Registry\All Users\Run Services</value>
+  </data>
+  <data name="comboBoxSection.Items5" xml:space="preserve">
+    <value>Registry\All Users\Run Services Once</value>
+  </data>
+  <data name="comboBoxSection.Items6" xml:space="preserve">
+    <value>Registry\Current User\Run</value>
+  </data>
+  <data name="comboBoxSection.Items7" xml:space="preserve">
+    <value>Registry\Current User\Run Once</value>
+  </data>
+  <data name="comboBoxSection.Items8" xml:space="preserve">
+    <value>Registry\Current User\Run Services</value>
+  </data>
+  <data name="comboBoxSection.Items9" xml:space="preserve">
+    <value>Registry\Current User\Run Services Once</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>New Run Point</value>

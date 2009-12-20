@@ -122,6 +122,9 @@
     <value>Tiếng Bồ Đào Nha</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <data name="toolStripStatusLabel1.Text" xml:space="preserve">
+    <value>Welcome to Little Registry Cleaner!</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="treeColumn1.Header" xml:space="preserve">
     <value>Vấn đề</value>
@@ -147,14 +150,20 @@
   <data name="viewInRegeditToolStripMenuItem.Text" xml:space="preserve">
     <value>Xem trong regedit</value>
   </data>
+  <data name="treeViewAdvResults.Text" xml:space="preserve">
+    <value>treeViewAdv1</value>
+  </data>
   <data name="treeView1.Nodes" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZRMAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQJY2hpbGRyZW4wCWNoaWxkcmVuMQljaGlsZHJlbjIJY2hpbGRyZW4zCWNoaWxkcmVuNAljaGlsZHJlbjUJY2hpbGRyZW42CWNoaWxkcmVuNwljaGlsZHJlbjgJY2hpbGRyZW45CmNoaWxkcmVuMTABAQAAAQABAAQEBAQEBAQEBAQEAQgICB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlAgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlAgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlAgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAAgAAAAYDAAAAElBo4bqnbiDEkeG7gyBRdcOpdAYEAAAABU5vZGUwAf////8GBQAAAA5teWNvbXB1dGVyLmljb/////8GBgAAAA5teWNvbXB1dGVyLmljbwsAAAAJBwAAAAkIAAAACQkAAAAJCgAAAAkLAAAACQwAAAAJDQAAAAkOAAAACQ8AAAAJEAAAAAkRAAAABQcAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYSAAAADUFjdGl2ZVggLyBDT00GEwAAAAtOb2RlQWN0aXZlWAH/////BhQAAAAOYWN0aXZleGNvbS5pY2//////BhUAAAAOYWN0aXZleGNvbS5pY28AAAAABQgAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYWAAAAF1Row7RuZyB0aW4g4bupbmcgZOG7pW5nBhcAAAALTm9kZUFwcEluZm8B/////wYYAAAAC2FwcGluZm8uaWNv/////wYZAAAAC2FwcGluZm8uaWNvAAAAAAUJAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGGgAAAB5DaMawxqFuZyB0csOsbmggxJDhu4thIMSRaeG7g20GGwAAAAxOb2RlQXBwUGF0aHMB/////wYcAAAAFHByb2dyYW1sb2NhdGlvbnMuaWNv/////wYdAAAAFHByb2dyYW1sb2NhdGlvbnMuaWNvAAAAAAUKAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGHgAAABhDw6BpIMSR4bq3dCBwaOG6p24gbeG7gW0GHwAAAA9Ob2RlQXBwU2V0dGluZ3MB/////wYgAAAAFHNvZnR3YXJlc2V0dGluZ3MuaWNv/////wkgAAAAAAAAAAULAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGIQAAAA5LaOG7n2kgxJHhu5luZwYiAAAAC05vZGVTdGFydHVwAf////8GIwAAAAtzdGFydHVwLmljb/////8GJAAAAAtzdGFydHVwLmljbwAAAAAFDAAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABiUAAAAcSOG7hyB0aOG7kW5nIMSRaeG7gXUga2hp4buDbgYmAAAAC05vZGVEcml2ZXJzAf////8GJwAAAAtkcml2ZXJzLmljb/////8GKAAAAAtkcml2ZXJzLmljbwAAAAAFDQAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABikAAAAQRExMcyBEw7luZyBjaHVuZwYqAAAADk5vZGVTaGFyZWREbGxzAf////8GKwAAAA5zaGFyZWRkbGxzLmljb/////8GLAAAAA5zaGFyZWRkbGxzLmljbwAAAAAFDgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABi0AAAARVHLhu6MgZ2nDunAgRmlsZXMGLgAAAAhOb2RlSGVscAH/////Bi8AAAANaGVscGZpbGVzLmljb/////8GMAAAAA1oZWxwZmlsZXMuaWNvAAAAAAUPAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGMQAAABVT4buxIGtp4buHbiDDom0gdGhhbmgGMgAAAApOb2RlU291bmRzAf////8GMwAAAA9zb3VuZGV2ZW50cy5pY2//////BjQAAAAPc291bmRldmVudHMuaWNvAAAAAAUQAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGNQAAABZM4buLY2ggc+G7rSBEYW5oIHPDoWNoBjYAAAAPTm9kZUhpc3RvcnlMaXN0Af////8GNwAAAA9oaXN0b3J5bGlzdC5pY2//////BjgAAAAPaGlzdG9yeWxpc3QuaWNvAAAAAAURAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGOQAAAA5QaMO0bmcgV2luZG93cwY6AAAACU5vZGVGb250cwH/////BjsAAAAJZm9udHMuaWNv/////wY8AAAACWZvbnRzLmljbwAAAAAL</value>
   </data>
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="unicode"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="treeView1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0" /&gt;&lt;Rows Styles="Percent,100.1" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="UTF-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="treeView1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0" /&gt;&lt;Rows Styles="Percent,100.1" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="unicode"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="treeViewAdvResults" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="Absolute,405" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="UTF-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="treeViewAdvResults" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="Absolute,405" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="toolStripContainer1.Text" xml:space="preserve">
+    <value>toolStripContainer1</value>
   </data>
   <data name="toolStripButtonScan.Text" xml:space="preserve">
     <value>Quét registry</value>
@@ -170,6 +179,9 @@
   </data>
   <data name="toolStripButtonHelp.Text" xml:space="preserve">
     <value>Giúp đỡ</value>
+  </data>
+  <data name="toolStrip1.Text" xml:space="preserve">
+    <value>toolStrip1</value>
   </data>
   <data name="scanToolStripMenuItem.Text" xml:space="preserve">
     <value>Quét registry</value>
@@ -282,6 +294,12 @@
   <data name="helpToolStripMenuItem.Text" xml:space="preserve">
     <value>Giúp đỡ</value>
   </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="hideShowToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
   <data name="hideShowToolStripMenuItem.Text" xml:space="preserve">
     <value>Che giấu/Chỉ ra</value>
   </data>
@@ -292,9 +310,9 @@
     <value>Cửa ra</value>
   </data>
   <data name="notifyIcon1.Text" xml:space="preserve">
-    <value>Người lau chùi Nơi đăng ký Nhỏ</value>
+    <value>Little Registry Cleaner</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Người lau chùi Nơi đăng ký Nhỏ</value>
+    <value>Little Registry Cleaner</value>
   </data>
 </root>

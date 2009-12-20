@@ -150,14 +150,20 @@
   <data name="viewInRegeditToolStripMenuItem.Text" xml:space="preserve">
     <value>プロフィールファイル名を指定で</value>
   </data>
+  <data name="treeViewAdvResults.Text" xml:space="preserve">
+    <value>treeViewAdv1</value>
+  </data>
   <data name="treeView1.Nodes" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZRMAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQJY2hpbGRyZW4wCWNoaWxkcmVuMQljaGlsZHJlbjIJY2hpbGRyZW4zCWNoaWxkcmVuNAljaGlsZHJlbjUJY2hpbGRyZW42CWNoaWxkcmVuNwljaGlsZHJlbjgJY2hpbGRyZW45CmNoaWxkcmVuMTABAQAAAQABAAQEBAQEBAQEBAQEAQgICB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlAgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlAgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlAgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAAgAAAAYDAAAAIeOCueOCreODo+ODs+OBmeOCi+OCu+OCr+OCt+ODp+ODswYEAAAABU5vZGUwAf////8GBQAAAA5teWNvbXB1dGVyLmljb/////8GBgAAAA5teWNvbXB1dGVyLmljbwsAAAAJBwAAAAkIAAAACQkAAAAJCgAAAAkLAAAACQwAAAAJDQAAAAkOAAAACQ8AAAAJEAAAAAkRAAAABQcAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYSAAAAE+OBrkFjdGl2ZVggLyBDT03jga4GEwAAAAtOb2RlQWN0aXZlWAH/////BhQAAAAOYWN0aXZleGNvbS5pY2//////BhUAAAAOYWN0aXZleGNvbS5pY28AAAAABQgAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYWAAAAHuOCouODl+ODquOCseODvOOCt+ODp+ODs+aDheWgsQYXAAAAC05vZGVBcHBJbmZvAf////8GGAAAAAthcHBpbmZvLmljb/////8GGQAAAAthcHBpbmZvLmljbwAAAAAFCQAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABhoAAAAY44OX44Ot44Kw44Op44Og44Gu5aC05omABhsAAAAMTm9kZUFwcFBhdGhzAf////8GHAAAABRwcm9ncmFtbG9jYXRpb25zLmljb/////8GHQAAABRwcm9ncmFtbG9jYXRpb25zLmljbwAAAAAFCgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABh4AAAAb44K944OV44OI44Km44Kn44Ki44Gu6Kit5a6aBh8AAAAPTm9kZUFwcFNldHRpbmdzAf////8GIAAAABRzb2Z0d2FyZXNldHRpbmdzLmljb/////8JIAAAAAAAAAAFCwAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABiEAAAAV44K544K/44O844OI44Ki44OD44OXBiIAAAALTm9kZVN0YXJ0dXAB/////wYjAAAAC3N0YXJ0dXAuaWNv/////wYkAAAAC3N0YXJ0dXAuaWNvAAAAAAUMAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGJQAAABjjgrfjgrnjg4bjg6Djg4njg6njgqTjg5AGJgAAAAtOb2RlRHJpdmVycwH/////BicAAAALZHJpdmVycy5pY2//////BigAAAALZHJpdmVycy5pY28AAAAABQ0AAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYpAAAACeWFseaciURMTAYqAAAADk5vZGVTaGFyZWREbGxzAf////8GKwAAAA5zaGFyZWRkbGxzLmljb/////8GLAAAAA5zaGFyZWRkbGxzLmljbwAAAAAFDgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABi0AAAAV44OY44Or44OX44OV44Kh44Kk44OrBi4AAAAITm9kZUhlbHAB/////wYvAAAADWhlbHBmaWxlcy5pY2//////BjAAAAANaGVscGZpbGVzLmljbwAAAAAFDwAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABjEAAAAY44K144Km44Oz44OJ44Kk44OZ44Oz44OIBjIAAAAKTm9kZVNvdW5kcwH/////BjMAAAAPc291bmRldmVudHMuaWNv/////wY0AAAAD3NvdW5kZXZlbnRzLmljbwAAAAAFEAAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABjUAAAAP5bGl5q2044Oq44K544OIBjYAAAAPTm9kZUhpc3RvcnlMaXN0Af////8GNwAAAA9oaXN0b3J5bGlzdC5pY2//////BjgAAAAPaGlzdG9yeWxpc3QuaWNvAAAAAAURAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGOQAAABNXaW5kb3dz44OV44Kp44Oz44OIBjoAAAAJTm9kZUZvbnRzAf////8GOwAAAAlmb250cy5pY2//////BjwAAAAJZm9udHMuaWNvAAAAAAs=</value>
   </data>
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="unicode"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="treeView1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0" /&gt;&lt;Rows Styles="Percent,100.1" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="UTF-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="treeView1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0" /&gt;&lt;Rows Styles="Percent,100.1" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="unicode"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="treeViewAdvResults" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="Absolute,405" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="UTF-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="treeViewAdvResults" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="Absolute,405" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="toolStripContainer1.Text" xml:space="preserve">
+    <value>toolStripContainer1</value>
   </data>
   <data name="toolStripButtonScan.Text" xml:space="preserve">
     <value>スキャンレジストリ</value>
@@ -173,6 +179,9 @@
   </data>
   <data name="toolStripButtonHelp.Text" xml:space="preserve">
     <value>ヘルプ</value>
+  </data>
+  <data name="toolStrip1.Text" xml:space="preserve">
+    <value>toolStrip1</value>
   </data>
   <data name="scanToolStripMenuItem.Text" xml:space="preserve">
     <value>スキャンレジストリ</value>
@@ -285,6 +294,12 @@
   <data name="helpToolStripMenuItem.Text" xml:space="preserve">
     <value>ヘルプ</value>
   </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="hideShowToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
   <data name="hideShowToolStripMenuItem.Text" xml:space="preserve">
     <value>非表示/表示</value>
   </data>
@@ -295,9 +310,9 @@
     <value>終了</value>
   </data>
   <data name="notifyIcon1.Text" xml:space="preserve">
-    <value>小さな Registry Cleaner</value>
+    <value>Little Registry Cleaner</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>小さな Registry Cleaner</value>
+    <value>Little Registry Cleaner</value>
   </data>
 </root>

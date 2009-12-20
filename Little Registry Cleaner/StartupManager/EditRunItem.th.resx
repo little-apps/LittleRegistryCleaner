@@ -122,6 +122,9 @@
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>ยกเลิก</value>
   </data>
+  <data name="buttonOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>การขัดแย้ง:</value>
   </data>

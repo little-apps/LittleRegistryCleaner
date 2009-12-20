@@ -125,6 +125,9 @@
   <data name="buttonSend.Text" xml:space="preserve">
     <value>Gửi Báo cáo Lỗi</value>
   </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Một ngoại lệ xảy ra ở một thành phần của Little Registry Cleaner. Chúng tôi đã tạo ra một báo cáo lỗi mà bạn có thể gửi cho chúng tôi. Chúng tôi sẽ xử lý báo cáo này là bí mật và vô danh.</value>
   </data>

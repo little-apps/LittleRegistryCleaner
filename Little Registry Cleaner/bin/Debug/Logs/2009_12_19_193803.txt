@@ -1,0 +1,186 @@
+Little Registry Cleaner 1.4.0.1
+Website: http://sourceforge.net/projects/littlecleaner
+Microsoft Windows NT 6.1.7600.0
+
+Started scan at 19/12/2009 7:37:26 PM
+
+Starting scanning: Indítási fájlok
+Checking for invalid files in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run
+Checking for invalid files in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+Checking for invalid files in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+Checking for invalid files in HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run
+Checking for invalid files in HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce" Value Name: "FlashPlayerUpdate"
+Checking for invalid files in HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+Checking for invalid files in HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run
+Checking for invalid files in HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\RunOnce
+Checking for invalid files in HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Run
+Finished scanning: Indítási fájlok
+
+Starting scanning: Megosztott DLL-ek
+Scanning for missing shared DLLs
+Finished scanning: Megosztott DLL-ek
+
+Starting scanning: Windows betűtípusok
+Scanning for invalid fonts
+Finished scanning: Windows betűtípusok
+
+Starting scanning: Információ az alkalmazásról
+Verifying programs in Add/Remove list
+Verifying registry entries in Add/Remove Cache
+Finished scanning: Információ az alkalmazásról
+
+Starting scanning: Alkalmazás útvonalak
+Checking for invalid installer folders
+Checking for invalid application paths
+Finished scanning: Alkalmazás útvonalak
+
+Starting scanning: ActiveX/COM Objektumok
+Scanning HKEY_CLASSES_ROOT\CLSID for invalid CLSID's
+Bad Registry Key Found! Problem: "InprocServer32 nem található" Path: "HKEY_CLASSES_ROOT\CLSID\{BE4159EC-CACB-4b31-A4FE-3F87B97CFBC7}\InprocServer32"
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID for invalid CLSID's
+Bad Registry Key Found! Problem: "InprocServer32 nem található" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BE4159EC-CACB-4b31-A4FE-3F87B97CFBC7}\InprocServer32"
+Scanning HKEY_CURRENT_USER\SOFTWARE\Classes\CLSID for invalid CLSID's
+Scanning HKEY_CLASSES_ROOT\Wow6432Node\CLSID for invalid CLSID's
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Classes\CLSID for invalid CLSID's
+Scanning HKEY_CLASSES_ROOT for invalid Classes
+Bad Registry Key Found! Problem: "Hiányzó CLSID hivatkozás" Path: "HKEY_CLASSES_ROOT\JavaPlugin.FamilyVersionSupport"
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE\Classes for invalid Classes
+Bad Registry Key Found! Problem: "Hiányzó ProgID hivatkozás" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.xht"
+Bad Registry Key Found! Problem: "Hiányzó ProgID hivatkozás" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.xhtml"
+Bad Registry Key Found! Problem: "Hiányzó CLSID hivatkozás" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\JavaPlugin.FamilyVersionSupport"
+Scanning HKEY_CURRENT_USER\SOFTWARE\Classes for invalid Classes
+Scanning HKEY_CLASSES_ROOT\Wow6432Node for invalid Classes
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Classes for invalid Classes
+Scanning HKEY_CLASSES_ROOT\AppID for invalid AppID's
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID for invalid AppID's
+Scanning HKEY_CURRENT_USER\SOFTWARE\Classes\AppID for invalid AppID's
+Scanning HKEY_CLASSES_ROOT\Wow6432Node\AppID for invalid AppID's
+Checking for invalid browser helper objects
+Checking for invalid explorer toolbars
+Checking for invalid explorer extensions
+Checking for invalid explorer file extensions
+Bad Registry Key Found! Problem: "Nem használt fájl bővítés" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.sqlite"
+Bad Registry Key Found! Problem: "Nem használt fájl bővítés" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.sqlite-journal"
+Finished scanning: ActiveX/COM Objektumok
+
+Starting scanning: Rendszer meghajtók
+Scanning for missing drivers
+Finished scanning: Rendszer meghajtók
+
+Starting scanning: Windows segítség fájlok
+Checking for missing help files in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\HTML Help
+Finished scanning: Windows segítség fájlok
+
+Starting scanning: Windows hangok
+Scanning for missing sound events
+Finished scanning: Windows hangok
+
+Starting scanning: Alkalmazás beállítások
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE for empty registry keys
+Scanning HKEY_CURRENT_USER\SOFTWARE for empty registry keys
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node for empty registry keys
+Scanning HKEY_CURRENT_USER\SOFTWARE\Wow6432Node for empty registry keys
+Finished scanning: Alkalmazás beállítások
+
+Starting scanning: Legutóbbi documentumok
+Cleaning invalid references in HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "63"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "66"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "67"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "69"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "70"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "79"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "0"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "97"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "58"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "60"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "6"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "112"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "29"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "14"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "115"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "86"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "116"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "25"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "74"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "78"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "84"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "121"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "27"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "81"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "104"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "23"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "87"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "105"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "111"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "126"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "62"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "130"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "131"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "117"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "135"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "136"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "32"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "98"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "96"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "21"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "106"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "140"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "18"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "143"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "108"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "53"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.7z" Value Name: "0"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.asm" Value Name: "0"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.htm" Value Name: "1"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.htm" Value Name: "3"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.htm" Value Name: "4"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.htm" Value Name: "6"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.htm" Value Name: "7"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.htm" Value Name: "8"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.html" Value Name: "2"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.ini" Value Name: "0"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.jpg" Value Name: "4"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.nfo" Value Name: "1"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.nfo" Value Name: "2"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.pdf" Value Name: "0"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.pdf" Value Name: "3"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.png" Value Name: "6"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.png" Value Name: "0"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.rar" Value Name: "2"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.rar" Value Name: "7"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.rar" Value Name: "6"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.rar" Value Name: "8"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.rar" Value Name: "9"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.rar" Value Name: "0"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.rar" Value Name: "1"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.sds" Value Name: "0"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.sle" Value Name: "0"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.sln" Value Name: "3"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.slp" Value Name: "0"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.sqlite-journal" Value Name: "0"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.txt" Value Name: "0"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.txt" Value Name: "3"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.txt" Value Name: "8"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.xlf" Value Name: "0"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.xls" Value Name: "0"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.xls" Value Name: "1"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.xpi" Value Name: "0"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.XviD-OMiCRON" Value Name: "0"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.zip" Value Name: "0"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.zip" Value Name: "1"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.zip" Value Name: "2"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.zip" Value Name: "4"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.zip" Value Name: "5"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.zip" Value Name: "3"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.zip" Value Name: "8"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\Folder" Value Name: "27"
+Bad Registry Value Found! Problem: "Érvénytelen fájl vagy mappa" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\Folder" Value Name: "10"
+Finished scanning: Legutóbbi documentumok
+
+Total time elapsed: 31.203 seconds
+Total problems found: 101
+Total objects scanned: 56029
+
+Finished scan at 19/12/2009 7:37:57 PM

@@ -412,6 +412,9 @@ namespace Little_Registry_Cleaner
                 case "Chinese (Traditional)":
                     ci = new CultureInfo("zh-CHT");
                     break;
+                case "Hungarian":
+                    ci = new CultureInfo("hu");
+                    break;
             }
 
             if (ci.Name == "zh-CHS")

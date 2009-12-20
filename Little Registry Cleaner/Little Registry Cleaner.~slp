@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.0.292" date="20091212111549" scan="37" scanned="20091207224950">
+<document version="2.0.292" date="20091212131343" scan="37" scanned="20091207224950">
   <lang id="en"/>
   <lang id="fr"/>
   <lang id="es"/>
@@ -19,6 +19,7 @@
   <lang id="pl"/>
   <lang id="hu"/>
   <source class="TVisualStudioNetProjectSource" name="Common Tools\Common Tools.csproj" original="en" date="20091119063626" defaultoutputdir="Common Tools\bin\Debug" assemblykind="naLibrary" netversion="net35" toolsversion="net35" rootnamespace="Common_Tools" configuration="Debug">
+    <outputfile dir="..\bin\Debug"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TColorData</class>
@@ -223,201 +224,7 @@
           </component>
         </form>
       </node>
-      <node class="TNetFormNode" name="Common_Tools.DetailsRegView" state="1" excluded="1">
-        <form class="TNetForm" name="Common_Tools.DetailsRegView" type="Common_Tools.DetailsRegView" prefix="vcpInline" kind="fkFrame">
-          <component class="TVisGridPanel" name="tableLayoutPanel1" state="1" type="System.Windows.Forms.TableLayoutPanel">
-            <columns>
-              <item class="TVisGridItem" name="Column0" type="stPercent"/>
-            </columns>
-            <rows>
-              <item class="TVisGridItem" name="Row0" type="stPercent"/>
-              <item class="TVisGridItem" name="Row1" type="stPercent"/>
-              <item class="TVisGridItem" name="Row2" type="stPercent"/>
-              <item class="TVisGridItem" name="Row3" type="stPercent"/>
-              <item class="TVisGridItem" name="Row4" type="stPercent"/>
-            </rows>
-            <component class="TVisWrapPanel" name="flowLayoutPanel4" state="1" type="System.Windows.Forms.FlowLayoutPanel">
-              <component class="TVisLabel" name="labelData" state="1" type="System.Windows.Forms.Label">
-                <row id="Text" state="1">
-                  <native>Data:</native>
-                  <lang id="en" status="2">Data:</lang>
-                  <lang id="fr" date="20091106183243" status="3">Données:</lang>
-                  <lang id="es" status="2">Datos:</lang>
-                  <lang id="pt" status="2">Dados:</lang>
-                  <lang id="it" date="20091106183349" status="3">Dati:</lang>
-                  <lang id="nl" date="20091106183258" status="3">Gegevens:</lang>
-                  <lang id="de" date="20091106183311" status="3">Daten:</lang>
-                  <lang id="ru" status="2">Данные:</lang>
-                  <lang id="el" status="2">Δεδομένα:</lang>
-                  <lang id="ar" status="2">البيانات:</lang>
-                  <lang id="sv" status="3">Data:</lang>
-                  <lang id="zh" status="2">数据:</lang>
-                  <lang id="zh.tra" status="2">數據:</lang>
-                  <lang id="ja" status="2">データ:</lang>
-                  <lang id="vi" status="2">Dữ liệu:</lang>
-                  <lang id="th" status="2">ข้อมูล:</lang>
-                  <lang id="pl" status="3">Dane wartości:</lang>
-                </row>
-              </component>
-            </component>
-            <component class="TVisWrapPanel" name="flowLayoutPanel3" state="1" type="System.Windows.Forms.FlowLayoutPanel">
-              <component class="TVisLabel" name="labelValueName" state="1" type="System.Windows.Forms.Label">
-                <row id="Text" state="1">
-                  <native>Value Name:</native>
-                  <lang id="en" status="2">Value Name:</lang>
-                  <lang id="fr" status="2">Nom de la valeur:</lang>
-                  <lang id="es" status="2">Nombre de valor:</lang>
-                  <lang id="pt" status="2">Nome do valor:</lang>
-                  <lang id="it" status="2">Nome valore:</lang>
-                  <lang id="nl" status="2">Waarde Name:</lang>
-                  <lang id="de" status="2">Preis-Name:</lang>
-                  <lang id="ru" status="2">Параметр:</lang>
-                  <lang id="el" status="2">Όνομα τιμής:</lang>
-                  <lang id="ar" status="2">قيمة الاسم:</lang>
-                  <lang id="sv" status="2">Värdenamn:</lang>
-                  <lang id="zh" status="2">值名称:</lang>
-                  <lang id="zh.tra" status="2">值名稱:</lang>
-                  <lang id="ja" status="2">値の名前:</lang>
-                  <lang id="vi" status="2">Giá trị Tên:</lang>
-                  <lang id="th" status="2">ชื่อ Value:</lang>
-                  <lang id="pl" status="3">Nazwa wartości:</lang>
-                </row>
-              </component>
-            </component>
-            <component class="TVisWrapPanel" name="flowLayoutPanel2" state="1" type="System.Windows.Forms.FlowLayoutPanel">
-              <component class="TVisLabel" name="labelHKEY" state="1" type="System.Windows.Forms.Label">
-                <row id="Text" state="1">
-                  <native>Location:</native>
-                  <lang id="en" status="2">Location:</lang>
-                  <lang id="fr" status="2">Emplacement:</lang>
-                  <lang id="es" status="2">Ubicación:</lang>
-                  <lang id="pt" status="2">Local:</lang>
-                  <lang id="it" status="2">Località:</lang>
-                  <lang id="nl" status="2">Locatie:</lang>
-                  <lang id="de" status="2">Standort:</lang>
-                  <lang id="ru" status="2">Местонахождение:</lang>
-                  <lang id="el" status="2">Τοποθεσία:</lang>
-                  <lang id="ar" status="2">موقع:</lang>
-                  <lang id="sv" status="2">Plats:</lang>
-                  <lang id="zh" status="2">位置:</lang>
-                  <lang id="zh.tra" status="2">位置:</lang>
-                  <lang id="ja" status="2">場所:</lang>
-                  <lang id="vi" status="2">Vị trí:</lang>
-                  <lang id="th" status="2">ตำแหน่ง:</lang>
-                  <lang id="pl" status="3">Lokalizacja:</lang>
-                </row>
-              </component>
-            </component>
-            <component class="TVisWrapPanel" name="flowLayoutPanel1" state="1" type="System.Windows.Forms.FlowLayoutPanel">
-              <component class="TVisLabel" name="labelProblem" state="1" type="System.Windows.Forms.Label">
-                <row id="Text" state="1">
-                  <native>Problem:</native>
-                  <lang id="en" status="2">Problem:</lang>
-                  <lang id="fr" status="2">Problème:</lang>
-                  <lang id="es" status="2">Problema:</lang>
-                  <lang id="pt" status="2">Problema:</lang>
-                  <lang id="it" status="2">Problema:</lang>
-                  <lang id="nl" status="2">Probleem:</lang>
-                  <lang id="de" status="3">Problem:</lang>
-                  <lang id="ru" status="2">Проблемы:</lang>
-                  <lang id="el" status="2">Πρόβλημα:</lang>
-                  <lang id="ar" status="2">المشكلة:</lang>
-                  <lang id="sv" date="20091106183102" status="3">Problemet:</lang>
-                  <lang id="zh" status="2">问题:</lang>
-                  <lang id="zh.tra" status="2">問題:</lang>
-                  <lang id="ja" status="2">問題:</lang>
-                  <lang id="vi" status="2">Vấn đề:</lang>
-                  <lang id="th" status="2">ปัญหา:</lang>
-                  <lang id="pl" status="3">Rodzaj błędu:</lang>
-                </row>
-              </component>
-            </component>
-            <component class="TVisLabel" name="labelDetails" state="1" type="System.Windows.Forms.Label">
-              <row id="Text" state="1">
-                <native>Details</native>
-                <lang id="en" status="2">Details</lang>
-                <lang id="fr" status="2">Détails</lang>
-                <lang id="es" status="2">Detalles</lang>
-                <lang id="pt" status="2">Detalhes</lang>
-                <lang id="it" status="2">Dettagli</lang>
-                <lang id="nl" status="3">Details</lang>
-                <lang id="de" status="3">Details</lang>
-                <lang id="ru" status="2">Подробности</lang>
-                <lang id="el" status="2">Λεπτομέρειες</lang>
-                <lang id="ar" status="2">التفاصيل</lang>
-                <lang id="sv" status="2">Detaljer</lang>
-                <lang id="zh" status="2">详细信息</lang>
-                <lang id="zh.tra" status="2">詳細信息</lang>
-                <lang id="ja" status="2">詳細</lang>
-                <lang id="vi" status="2">Chi tiết</lang>
-                <lang id="th" status="2">รายละเอียด</lang>
-                <lang id="pl" status="3">Szczegóły wpisu:</lang>
-              </row>
-            </component>
-          </component>
-        </form>
-      </node>
       <node class="TNetFormNode" name="Common_Tools.TreeViewAdv.Tree.TreeViewAdv" state="0">
-        <row id="_errorProvider.TrayLocation" state="1">
-          <native>236, 17</native>
-          <lang id="en" status="2">236, 17</lang>
-          <lang id="fr" status="2">236, 17</lang>
-          <lang id="es" status="2">236, 17</lang>
-          <lang id="pt" status="2">236, 17</lang>
-          <lang id="it" status="2">236, 17</lang>
-          <lang id="nl" status="2">236, 17</lang>
-          <lang id="de" status="2">236, 17</lang>
-          <lang id="ru" status="2">236, 17</lang>
-          <lang id="el" status="2">236, 17</lang>
-          <lang id="ar" status="2">236, 17</lang>
-          <lang id="sv" status="2">236, 17</lang>
-          <lang id="zh" status="2">236、 17</lang>
-          <lang id="zh.tra" status="2">236、 17</lang>
-          <lang id="ja" status="2">236, 17</lang>
-          <lang id="vi" status="2">236, 17</lang>
-          <lang id="th" status="2">236 17</lang>
-          <lang id="pl" status="2">236, 17</lang>
-        </row>
-        <row id="_hScrollBar.TrayLocation" state="1">
-          <native>17, 17</native>
-          <lang id="en" status="2">17, 17</lang>
-          <lang id="fr" status="2">17, 17</lang>
-          <lang id="es" status="2">17, 17</lang>
-          <lang id="pt" status="2">17, 17</lang>
-          <lang id="it" status="2">17, 17</lang>
-          <lang id="nl" status="2">17, 17</lang>
-          <lang id="de" status="2">17, 17</lang>
-          <lang id="ru" status="2">17, 17</lang>
-          <lang id="el" status="2">17, 17</lang>
-          <lang id="ar" status="2">17, 17</lang>
-          <lang id="sv" status="2">17, 17</lang>
-          <lang id="zh" status="2">17、 17</lang>
-          <lang id="zh.tra" status="2">17、 17</lang>
-          <lang id="ja" status="2">17, 17</lang>
-          <lang id="vi" status="2">17, 17</lang>
-          <lang id="th" status="2">17 17</lang>
-          <lang id="pl" status="2">17, 17</lang>
-        </row>
-        <row id="_vScrollBar.TrayLocation" state="1">
-          <native>127, 17</native>
-          <lang id="en" status="2">127, 17</lang>
-          <lang id="fr" status="2">127, 17</lang>
-          <lang id="es" status="2">127, 17</lang>
-          <lang id="pt" status="2">127, 17</lang>
-          <lang id="it" status="2">127, 17</lang>
-          <lang id="nl" status="2">127, 17</lang>
-          <lang id="de" status="2">127, 17</lang>
-          <lang id="ru" status="2">127, 17</lang>
-          <lang id="el" status="2">127, 17</lang>
-          <lang id="ar" status="2">127, 17</lang>
-          <lang id="sv" status="2">127, 17</lang>
-          <lang id="zh" status="2">127、 17</lang>
-          <lang id="zh.tra" status="2">127、 17</lang>
-          <lang id="ja" status="2">127, 17</lang>
-          <lang id="vi" status="2">127, 17</lang>
-          <lang id="th" status="2">127 17</lang>
-          <lang id="pl" status="2">127, 17</lang>
-        </row>
         <form class="TNetForm" name="Common_Tools.TreeViewAdv.Tree.TreeViewAdv" state="0" type="Common_Tools.TreeViewAdv.Tree.TreeViewAdv" prefix="vcpInherited">
           <row id="BackColor" hidden="1" state="0">clWindow</row>
         </form>
@@ -1167,6 +974,220 @@
           <component class="TVisEdit" name="nodeLocation" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox">
           </component>
           <component class="TVisEdit" name="nodeValueName" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox">
+          </component>
+          <component class="TVisPopupMenu" name="contextMenuStrip1" type="System.Windows.Forms.ContextMenuStrip">
+            <row id="Size.Height" state="3">
+              <prev>98</prev>
+              <native>120</native>
+            </row>
+            <row id="Size.Width">162</row>
+            <component class="TVisMenuItem" name="selectAllToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text" state="0">
+                <native>Select All</native>
+                <lang id="en" status="2">Select All</lang>
+                <lang id="fr" status="3">Choisissez tous</lang>
+                <lang id="es" status="2">Seleccionar todo</lang>
+                <lang id="pt" status="2">Selecione todos</lang>
+                <lang id="it" status="2">Seleziona tutto</lang>
+                <lang id="nl" status="3">Selecteer alles</lang>
+                <lang id="de" status="2">Wählen Sie alle</lang>
+                <lang id="ru" status="3">Выбрать все</lang>
+                <lang id="el" status="2">Επιλογή όλων</lang>
+                <lang id="ar" status="2">تحديد الكل</lang>
+                <lang id="sv" status="2">Markera alla</lang>
+                <lang id="zh" status="2">选择所有</lang>
+                <lang id="zh.tra" status="2">選擇所有</lang>
+                <lang id="ja" status="2">すべて選択</lang>
+                <lang id="vi" status="2">Chọn Tất cả</lang>
+                <lang id="th" status="2">เลือกทั้งหมด</lang>
+                <lang id="pl" status="3">Zaznacz wszystko</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="selectNoneToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text" state="0">
+                <native>Select None</native>
+                <lang id="en" status="2">Select None</lang>
+                <lang id="fr" status="2">Sélectionnez Aucun</lang>
+                <lang id="es" status="2">Seleccione Ninguno</lang>
+                <lang id="pt" status="2">Selecione Nenhum</lang>
+                <lang id="it" status="2">Selezionare Nessuno</lang>
+                <lang id="nl" status="3">Selecteer niets</lang>
+                <lang id="de" status="2">Wählen Sie keine</lang>
+                <lang id="ru" status="3">Очистить выбор</lang>
+                <lang id="el" status="2">Επιλέξτε "Κανένα"</lang>
+                <lang id="ar" status="2">حدد بلا</lang>
+                <lang id="sv" status="2">Välj Ingen</lang>
+                <lang id="zh" status="2">选择无</lang>
+                <lang id="zh.tra" status="2">選擇無</lang>
+                <lang id="ja" date="20091030211940" status="3">[なし] を選択します。</lang>
+                <lang id="vi" status="2">Chọn Không</lang>
+                <lang id="th" status="2">ไม่มีเลือก</lang>
+                <lang id="pl" status="3">Odznacz wszystko</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="invertSelectionToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height" state="0">22</row>
+              <row id="Size.Width" state="0">161</row>
+              <row id="Text" state="0">
+                <native>Invert Selection</native>
+                <lang id="en" status="2">Invert Selection</lang>
+                <lang id="fr" status="2">Inverser la sélection</lang>
+                <lang id="es" status="2">Invertir la selección</lang>
+                <lang id="pt" status="2">Inverter selecção</lang>
+                <lang id="it" status="2">Inverti la selezione</lang>
+                <lang id="nl" status="2">Selectie omkeren</lang>
+                <lang id="de" status="2">Auswahl umkehren</lang>
+                <lang id="ru" status="2">Инвертировать выделение</lang>
+                <lang id="el" status="2">Αντιστροφή της επιλογής</lang>
+                <lang id="ar" status="2">عكس الاختيار</lang>
+                <lang id="sv" status="2">Invertera markering</lang>
+                <lang id="zh" status="2">反选</lang>
+                <lang id="zh.tra" status="2">反選</lang>
+                <lang id="ja" status="2">逆選択</lang>
+                <lang id="vi" status="2">Đảo ngược lựa chọn</lang>
+                <lang id="th" status="2">เลือกกลับกัน</lang>
+                <lang id="pl" status="2">Odwróć zaznaczenie</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="toolStripSeparator1" type="System.Windows.Forms.ToolStripSeparator">
+              <row id="Size.Height">6</row>
+              <row id="Size.Width">158</row>
+            </component>
+            <component class="TVisMenuItem" name="excludeSelectedToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text" state="0">
+                <native>Exclude Selected</native>
+                <lang id="en" status="2">Exclude Selected</lang>
+                <lang id="fr" status="2">Exclure Sélection</lang>
+                <lang id="es" status="2">Excluir seleccionado</lang>
+                <lang id="pt" status="2">Excluir selecionado</lang>
+                <lang id="it" status="2">Escludere selezionati</lang>
+                <lang id="nl" status="2">Geselecteerde uitsluiten</lang>
+                <lang id="de" status="2">Ausgewählte ausschließen</lang>
+                <lang id="ru" status="3">Исключить выбранные</lang>
+                <lang id="el" status="2">Εξαίρεση επιλεγμένων</lang>
+                <lang id="ar" status="2">استبعاد المحددة</lang>
+                <lang id="sv" status="2">Exkludera vald</lang>
+                <lang id="zh" status="2">排除选择</lang>
+                <lang id="zh.tra" status="2">排除選擇</lang>
+                <lang id="ja" status="2">除外選択</lang>
+                <lang id="vi" status="2">Loại trừ được chọn</lang>
+                <lang id="th" status="2">ยกเว้นเลือก</lang>
+                <lang id="pl" status="3">Pomiń zaznaczone</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="viewInRegeditToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text" state="0">
+                <native>View in regedit</native>
+                <lang id="en" status="2">View in regedit</lang>
+                <lang id="fr" status="2">Voir dans regedit</lang>
+                <lang id="es" status="2">Ver en regedit</lang>
+                <lang id="pt" status="2">Exibir regedit</lang>
+                <lang id="it" status="2">Visualizzare in regedit</lang>
+                <lang id="nl" status="3">In regedit weergeven</lang>
+                <lang id="de" status="2">In Regedit anzeigen</lang>
+                <lang id="ru" status="3">Просмотр в regedit</lang>
+                <lang id="el" status="2">Προβολή σε regedit</lang>
+                <lang id="ar" status="2">عرض في regedit</lang>
+                <lang id="sv" status="2">Visa i regedit</lang>
+                <lang id="zh" status="2">查看输入regedit</lang>
+                <lang id="zh.tra" status="2">查看輸入regedit</lang>
+                <lang id="ja" status="2">プロフィールファイル名を指定で</lang>
+                <lang id="vi" status="2">Xem trong regedit</lang>
+                <lang id="th" status="2">ดูใน regedit</lang>
+                <lang id="pl" status="3">Otwórz w regedit</lang>
+              </row>
+            </component>
+          </component>
+          <component class="TVisPopupMenu" name="contextMenuStrip2" type="System.Windows.Forms.ContextMenuStrip">
+            <row id="Size.Height">76</row>
+            <row id="Size.Width">137</row>
+            <component class="TVisMenuItem" name="hideShowToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem" parentfont="0">
+              <row id="Font">Segoe UI,9,style=Bold</row>
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">136</row>
+              <row id="Text" state="0">
+                <native>Hide/Show</native>
+                <lang id="en" status="2">Hide/Show</lang>
+                <lang id="fr" date="20091030210846" status="3">Peau / Exposition</lang>
+                <lang id="es" status="2">Ocultar/mostrar</lang>
+                <lang id="pt" status="2">Mostrar/ocultar</lang>
+                <lang id="it" status="2">Mostra/Nascondi</lang>
+                <lang id="nl" status="3">Verbergen/Tonen</lang>
+                <lang id="de" status="2">Ausblenden/einblenden</lang>
+                <lang id="ru" status="2">Скрыть/Показать</lang>
+                <lang id="el" status="2">Απόκρυψη/Εμφάνιση</lang>
+                <lang id="ar" status="2">إظهار/إخفاء</lang>
+                <lang id="sv" status="2">Dölj/visa</lang>
+                <lang id="zh" status="2">隐藏/显示</lang>
+                <lang id="zh.tra" status="2">隱藏/顯示</lang>
+                <lang id="ja" status="2">非表示/表示</lang>
+                <lang id="vi" date="20091106174632" status="3">Che giấu/Chỉ ra</lang>
+                <lang id="th" status="2">ซ่อน / แสดง</lang>
+                <lang id="pl" status="3">Pokaż/Ukryj</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="aboutToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">136</row>
+              <row id="Text" state="0">
+                <native>About...</native>
+                <lang id="en" status="2">About...</lang>
+                <lang id="fr" status="2">À propos de...</lang>
+                <lang id="es" status="2">Acerca de...</lang>
+                <lang id="pt" status="2">Sobre...</lang>
+                <lang id="it" status="2">Sulla...</lang>
+                <lang id="nl" status="2">Over...</lang>
+                <lang id="de" status="2">Über...</lang>
+                <lang id="ru" status="3">О программе...</lang>
+                <lang id="el" status="2">Σχετικά με...</lang>
+                <lang id="ar" status="2">حول...</lang>
+                <lang id="sv" status="2">Om...</lang>
+                <lang id="zh" status="2">大约...</lang>
+                <lang id="zh.tra" status="2">大約...</lang>
+                <lang id="ja" status="2">〜について...</lang>
+                <lang id="vi" status="2">Về...</lang>
+                <lang id="th" status="2">เกี่ยวกับ...</lang>
+                <lang id="pl" status="3">O programie...</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="toolStripSeparator4" type="System.Windows.Forms.ToolStripSeparator">
+              <row id="Size.Height">6</row>
+              <row id="Size.Width">133</row>
+            </component>
+            <component class="TVisMenuItem" name="exitToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">136</row>
+              <row id="Text" state="0">
+                <native>Exit</native>
+                <lang id="en" status="2">Exit</lang>
+                <lang id="fr" status="3">Sortie</lang>
+                <lang id="es" status="2">Salida</lang>
+                <lang id="pt" status="2">Saída</lang>
+                <lang id="it" status="2">Uscita</lang>
+                <lang id="nl" status="3">Einde</lang>
+                <lang id="de" status="2">Ausfahrt</lang>
+                <lang id="ru" status="3">Выход</lang>
+                <lang id="el" status="2">Εξόδου</lang>
+                <lang id="ar" status="2">خروج</lang>
+                <lang id="sv" status="2">Avsluta</lang>
+                <lang id="zh" status="2">退出</lang>
+                <lang id="zh.tra" status="2">退出</lang>
+                <lang id="ja" status="2">終了</lang>
+                <lang id="vi" status="3">Cửa ra</lang>
+                <lang id="th" status="2">ออกจาก</lang>
+                <lang id="pl" status="3">Zakończ</lang>
+              </row>
+            </component>
+          </component>
+          <component class="TVisImageList" name="imageListTreeView" type="System.Windows.Forms.ImageList">
           </component>
           <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer" align="alClient">
             <row id="Location.X">0</row>
@@ -2737,220 +2758,6 @@
               </component>
             </component>
           </component>
-          <component class="TVisPopupMenu" name="contextMenuStrip1" type="System.Windows.Forms.ContextMenuStrip">
-            <row id="Size.Height" state="3">
-              <prev>98</prev>
-              <native>120</native>
-            </row>
-            <row id="Size.Width">162</row>
-            <component class="TVisMenuItem" name="selectAllToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text" state="0">
-                <native>Select All</native>
-                <lang id="en" status="2">Select All</lang>
-                <lang id="fr" status="3">Choisissez tous</lang>
-                <lang id="es" status="2">Seleccionar todo</lang>
-                <lang id="pt" status="2">Selecione todos</lang>
-                <lang id="it" status="2">Seleziona tutto</lang>
-                <lang id="nl" status="3">Selecteer alles</lang>
-                <lang id="de" status="2">Wählen Sie alle</lang>
-                <lang id="ru" status="3">Выбрать все</lang>
-                <lang id="el" status="2">Επιλογή όλων</lang>
-                <lang id="ar" status="2">تحديد الكل</lang>
-                <lang id="sv" status="2">Markera alla</lang>
-                <lang id="zh" status="2">选择所有</lang>
-                <lang id="zh.tra" status="2">選擇所有</lang>
-                <lang id="ja" status="2">すべて選択</lang>
-                <lang id="vi" status="2">Chọn Tất cả</lang>
-                <lang id="th" status="2">เลือกทั้งหมด</lang>
-                <lang id="pl" status="3">Zaznacz wszystko</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="selectNoneToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text" state="0">
-                <native>Select None</native>
-                <lang id="en" status="2">Select None</lang>
-                <lang id="fr" status="2">Sélectionnez Aucun</lang>
-                <lang id="es" status="2">Seleccione Ninguno</lang>
-                <lang id="pt" status="2">Selecione Nenhum</lang>
-                <lang id="it" status="2">Selezionare Nessuno</lang>
-                <lang id="nl" status="3">Selecteer niets</lang>
-                <lang id="de" status="2">Wählen Sie keine</lang>
-                <lang id="ru" status="3">Очистить выбор</lang>
-                <lang id="el" status="2">Επιλέξτε "Κανένα"</lang>
-                <lang id="ar" status="2">حدد بلا</lang>
-                <lang id="sv" status="2">Välj Ingen</lang>
-                <lang id="zh" status="2">选择无</lang>
-                <lang id="zh.tra" status="2">選擇無</lang>
-                <lang id="ja" date="20091030211940" status="3">[なし] を選択します。</lang>
-                <lang id="vi" status="2">Chọn Không</lang>
-                <lang id="th" status="2">ไม่มีเลือก</lang>
-                <lang id="pl" status="3">Odznacz wszystko</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="invertSelectionToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height" state="0">22</row>
-              <row id="Size.Width" state="0">161</row>
-              <row id="Text" state="0">
-                <native>Invert Selection</native>
-                <lang id="en" status="2">Invert Selection</lang>
-                <lang id="fr" status="2">Inverser la sélection</lang>
-                <lang id="es" status="2">Invertir la selección</lang>
-                <lang id="pt" status="2">Inverter selecção</lang>
-                <lang id="it" status="2">Inverti la selezione</lang>
-                <lang id="nl" status="2">Selectie omkeren</lang>
-                <lang id="de" status="2">Auswahl umkehren</lang>
-                <lang id="ru" status="2">Инвертировать выделение</lang>
-                <lang id="el" status="2">Αντιστροφή της επιλογής</lang>
-                <lang id="ar" status="2">عكس الاختيار</lang>
-                <lang id="sv" status="2">Invertera markering</lang>
-                <lang id="zh" status="2">反选</lang>
-                <lang id="zh.tra" status="2">反選</lang>
-                <lang id="ja" status="2">逆選択</lang>
-                <lang id="vi" status="2">Đảo ngược lựa chọn</lang>
-                <lang id="th" status="2">เลือกกลับกัน</lang>
-                <lang id="pl" status="2">Odwróć zaznaczenie</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="toolStripSeparator1" type="System.Windows.Forms.ToolStripSeparator">
-              <row id="Size.Height">6</row>
-              <row id="Size.Width">158</row>
-            </component>
-            <component class="TVisMenuItem" name="excludeSelectedToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text" state="0">
-                <native>Exclude Selected</native>
-                <lang id="en" status="2">Exclude Selected</lang>
-                <lang id="fr" status="2">Exclure Sélection</lang>
-                <lang id="es" status="2">Excluir seleccionado</lang>
-                <lang id="pt" status="2">Excluir selecionado</lang>
-                <lang id="it" status="2">Escludere selezionati</lang>
-                <lang id="nl" status="2">Geselecteerde uitsluiten</lang>
-                <lang id="de" status="2">Ausgewählte ausschließen</lang>
-                <lang id="ru" status="3">Исключить выбранные</lang>
-                <lang id="el" status="2">Εξαίρεση επιλεγμένων</lang>
-                <lang id="ar" status="2">استبعاد المحددة</lang>
-                <lang id="sv" status="2">Exkludera vald</lang>
-                <lang id="zh" status="2">排除选择</lang>
-                <lang id="zh.tra" status="2">排除選擇</lang>
-                <lang id="ja" status="2">除外選択</lang>
-                <lang id="vi" status="2">Loại trừ được chọn</lang>
-                <lang id="th" status="2">ยกเว้นเลือก</lang>
-                <lang id="pl" status="3">Pomiń zaznaczone</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="viewInRegeditToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text" state="0">
-                <native>View in regedit</native>
-                <lang id="en" status="2">View in regedit</lang>
-                <lang id="fr" status="2">Voir dans regedit</lang>
-                <lang id="es" status="2">Ver en regedit</lang>
-                <lang id="pt" status="2">Exibir regedit</lang>
-                <lang id="it" status="2">Visualizzare in regedit</lang>
-                <lang id="nl" status="3">In regedit weergeven</lang>
-                <lang id="de" status="2">In Regedit anzeigen</lang>
-                <lang id="ru" status="3">Просмотр в regedit</lang>
-                <lang id="el" status="2">Προβολή σε regedit</lang>
-                <lang id="ar" status="2">عرض في regedit</lang>
-                <lang id="sv" status="2">Visa i regedit</lang>
-                <lang id="zh" status="2">查看输入regedit</lang>
-                <lang id="zh.tra" status="2">查看輸入regedit</lang>
-                <lang id="ja" status="2">プロフィールファイル名を指定で</lang>
-                <lang id="vi" status="2">Xem trong regedit</lang>
-                <lang id="th" status="2">ดูใน regedit</lang>
-                <lang id="pl" status="3">Otwórz w regedit</lang>
-              </row>
-            </component>
-          </component>
-          <component class="TVisPopupMenu" name="contextMenuStrip2" type="System.Windows.Forms.ContextMenuStrip">
-            <row id="Size.Height">76</row>
-            <row id="Size.Width">137</row>
-            <component class="TVisMenuItem" name="hideShowToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem" parentfont="0">
-              <row id="Font">Segoe UI,9,style=Bold</row>
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">136</row>
-              <row id="Text" state="0">
-                <native>Hide/Show</native>
-                <lang id="en" status="2">Hide/Show</lang>
-                <lang id="fr" date="20091030210846" status="3">Peau / Exposition</lang>
-                <lang id="es" status="2">Ocultar/mostrar</lang>
-                <lang id="pt" status="2">Mostrar/ocultar</lang>
-                <lang id="it" status="2">Mostra/Nascondi</lang>
-                <lang id="nl" status="3">Verbergen/Tonen</lang>
-                <lang id="de" status="2">Ausblenden/einblenden</lang>
-                <lang id="ru" status="2">Скрыть/Показать</lang>
-                <lang id="el" status="2">Απόκρυψη/Εμφάνιση</lang>
-                <lang id="ar" status="2">إظهار/إخفاء</lang>
-                <lang id="sv" status="2">Dölj/visa</lang>
-                <lang id="zh" status="2">隐藏/显示</lang>
-                <lang id="zh.tra" status="2">隱藏/顯示</lang>
-                <lang id="ja" status="2">非表示/表示</lang>
-                <lang id="vi" date="20091106174632" status="3">Che giấu/Chỉ ra</lang>
-                <lang id="th" status="2">ซ่อน / แสดง</lang>
-                <lang id="pl" status="3">Pokaż/Ukryj</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="aboutToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">136</row>
-              <row id="Text" state="0">
-                <native>About...</native>
-                <lang id="en" status="2">About...</lang>
-                <lang id="fr" status="2">À propos de...</lang>
-                <lang id="es" status="2">Acerca de...</lang>
-                <lang id="pt" status="2">Sobre...</lang>
-                <lang id="it" status="2">Sulla...</lang>
-                <lang id="nl" status="2">Over...</lang>
-                <lang id="de" status="2">Über...</lang>
-                <lang id="ru" status="3">О программе...</lang>
-                <lang id="el" status="2">Σχετικά με...</lang>
-                <lang id="ar" status="2">حول...</lang>
-                <lang id="sv" status="2">Om...</lang>
-                <lang id="zh" status="2">大约...</lang>
-                <lang id="zh.tra" status="2">大約...</lang>
-                <lang id="ja" status="2">〜について...</lang>
-                <lang id="vi" status="2">Về...</lang>
-                <lang id="th" status="2">เกี่ยวกับ...</lang>
-                <lang id="pl" status="3">O programie...</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="toolStripSeparator4" type="System.Windows.Forms.ToolStripSeparator">
-              <row id="Size.Height">6</row>
-              <row id="Size.Width">133</row>
-            </component>
-            <component class="TVisMenuItem" name="exitToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">136</row>
-              <row id="Text" state="0">
-                <native>Exit</native>
-                <lang id="en" status="2">Exit</lang>
-                <lang id="fr" status="3">Sortie</lang>
-                <lang id="es" status="2">Salida</lang>
-                <lang id="pt" status="2">Saída</lang>
-                <lang id="it" status="2">Uscita</lang>
-                <lang id="nl" status="3">Einde</lang>
-                <lang id="de" status="2">Ausfahrt</lang>
-                <lang id="ru" status="3">Выход</lang>
-                <lang id="el" status="2">Εξόδου</lang>
-                <lang id="ar" status="2">خروج</lang>
-                <lang id="sv" status="2">Avsluta</lang>
-                <lang id="zh" status="2">退出</lang>
-                <lang id="zh.tra" status="2">退出</lang>
-                <lang id="ja" status="2">終了</lang>
-                <lang id="vi" status="3">Cửa ra</lang>
-                <lang id="th" status="2">ออกจาก</lang>
-                <lang id="pl" status="3">Zakończ</lang>
-              </row>
-            </component>
-          </component>
-          <component class="TVisImageList" name="imageListTreeView" type="System.Windows.Forms.ImageList">
-          </component>
           <component class="TVisHiddenComponent" name="notifyIcon1" type="System.Windows.Forms.NotifyIcon">
             <row id="Text" excluded="1" state="3">
               <prev>Little Register Cleaner</prev>
@@ -3202,7 +3009,7 @@
                       <lang id="es" status="2">Re-Scan después de solucionar problemas de registro</lang>
                       <lang id="pt" status="2">Re-Scan depois de corrigir problemas de registro</lang>
                       <lang id="it" status="2">Re-Scan dopo la correzione di problemi del Registro di sistema</lang>
-                      <lang id="nl" status="3">Scan opnieuw na het repareren van de register problemen.</lang>
+                      <lang id="nl" status="3">Scan opnieuw na het repareren van de register problemen</lang>
                       <lang id="de" status="2">Nach beheben Registrierung Probleme re-Scan</lang>
                       <lang id="ru" status="3">Повторная проверка после устранения ошибок</lang>
                       <lang id="el" status="2">Re-Scan μετά τον καθορισμό των προβλημάτων του μητρώου</lang>
@@ -5309,7 +5116,7 @@
           <lang id="es" invalidated="1" status="2">Esta la primera vez que ejecuta Little limpiador de registro. \r\nWould le gustaría crear un punto de restauración?</lang>
           <lang id="pt" invalidated="1" status="2">Desta vez, a sua primeira execução Little Registry Cleaner.\r\nGostaria de criar um ponto de restauração?</lang>
           <lang id="it" invalidated="1" status="2">La tua prima volta in esecuzione Little Registry Cleaner.\r\nVuoi creare un punto di ripristino?</lang>
-          <lang id="nl" status="3">Dit is de eerste keer dat u Kleine Registerreiniger gebruikt.\r\nWilt u een herstelpunt aanmaken?</lang>
+          <lang id="nl" date="20091212111738" status="3">Dit is de eerste keer dat u Kleine Registerreiniger gebruikt.#nWilt u een herstelpunt aanmaken?</lang>
           <lang id="de" invalidated="1" status="2">Diese Sie das erste Mal Little Registry Cleaner.\r\nMöchten Sie einen Wiederherstellungspunkt erstellen?</lang>
           <lang id="ru" status="3">Это ваш первый запуск Little Registry Cleaner.\R\nВы хотите создать точку восстановления?</lang>
           <lang id="el" invalidated="1" status="2">Αυτή η πρώτη φορά που σας τρέχει Little Registry Cleaner.\r\nΘέλετε να δημιουργήσετε ένα σημείο επαναφοράς?</lang>

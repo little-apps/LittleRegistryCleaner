@@ -125,6 +125,9 @@
   <data name="buttonSend.Text" xml:space="preserve">
     <value>ส่งรายงานข้อผิดพลาด</value>
   </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>ยกเว้นเกิดขึ้นในส่วนของ Little Registry Cleaner. เราได้สร้างรายงานข้อผิดพลาดที่คุณสามารถส่ง. เราจะเก็บรายงานนี้เป็นความลับและไม่ระบุชื่อ.</value>
   </data>

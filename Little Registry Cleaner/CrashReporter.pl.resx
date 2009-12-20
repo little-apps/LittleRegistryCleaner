@@ -125,6 +125,9 @@
   <data name="buttonSend.Text" xml:space="preserve">
     <value>Wyślij raport</value>
   </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>W jednym ze składników aplikacji Little Registry Cleaner wystąpił błąd. Sporządzony został raport, który możesz przesłać autorom programu. Dane zawarte w raporcie będą traktowane poufnie i anonimowo.</value>
   </data>

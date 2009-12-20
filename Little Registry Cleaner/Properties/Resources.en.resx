@@ -117,7 +117,133 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="crashReporterFail" xml:space="preserve">
+    <value>The bug report could not be sent</value>
+  </data>
+  <data name="crashReporterSuccess" xml:space="preserve">
+    <value>Sent bug report successfully</value>
+  </data>
+  <data name="mainAddExcludeEntry" xml:space="preserve">
+    <value>Added selected registry keys to the exclude list</value>
+  </data>
+  <data name="mainAskExit" xml:space="preserve">
+    <value>Are you sure you want to exit?</value>
+  </data>
   <data name="mainFirstTimeRestorePoint" xml:space="preserve">
     <value>This your first time running Little Registry Cleaner. \r\nWould you like to create a restore point?</value>
+  </data>
+  <data name="mainInvalidHelpFile" xml:space="preserve">
+    <value>Unable to find Little Registry Cleaner.chm</value>
+  </data>
+  <data name="mainProblemsFix" xml:space="preserve">
+    <value>Would you like to fix all selected problems?</value>
+  </data>
+  <data name="mainProblemsRemoved" xml:space="preserve">
+    <value>Removed problems from registry</value>
+  </data>
+  <data name="mainScanningAborted" xml:space="preserve">
+    <value>Aborted scanning the registry</value>
+  </data>
+  <data name="mainScanningFinished" xml:space="preserve">
+    <value>Finished scanning the registry</value>
+  </data>
+  <data name="mainSelectSections" xml:space="preserve">
+    <value>Please select a section to scan</value>
+  </data>
+  <data name="mainUpdateAsk" xml:space="preserve">
+    <value>A newer version is available. Would you like to download it?</value>
+  </data>
+  <data name="optionsExcludeDir" xml:space="preserve">
+    <value>Select the folder to exclude from the registry scan</value>
+  </data>
+  <data name="optionsExcludeEmptyRegPath" xml:space="preserve">
+    <value>Registry path cannot be empty</value>
+  </data>
+  <data name="optionsExcludeFile" xml:space="preserve">
+    <value>Select a file to exclude from the registry scan</value>
+  </data>
+  <data name="optionsExcludeInvalidRegPath" xml:space="preserve">
+    <value>Specified registry key doesn't exist</value>
+  </data>
+  <data name="optionsExcludeRemove" xml:space="preserve">
+    <value>Are you sure?</value>
+  </data>
+  <data name="optionsSelectBackupDir" xml:space="preserve">
+    <value>Select the folder where the backup files will be placed</value>
+  </data>
+  <data name="optionsSelectLogDir" xml:space="preserve">
+    <value>Select the folder where the log files will be placed</value>
+  </data>
+  <data name="piErrorRegKey" xml:space="preserve">
+    <value>Error removing registry key:</value>
+  </data>
+  <data name="piErrorUninstalling" xml:space="preserve">
+    <value>Error uninstalling program:</value>
+  </data>
+  <data name="piInvalidUninstallString" xml:space="preserve">
+    <value>Unable to find uninstall string. Would you like to manually remove it from the registry?</value>
+  </data>
+  <data name="piSuccessRegKey" xml:space="preserve">
+    <value>Sucessfully removed registry key</value>
+  </data>
+  <data name="piSuccessUninstall" xml:space="preserve">
+    <value>Sucessfully uninstalled program</value>
+  </data>
+  <data name="programAlreadyRunning" xml:space="preserve">
+    <value>Another program seems to be running already...</value>
+  </data>
+  <data name="programNeedAdmin" xml:space="preserve">
+    <value>You must be an administrator to run this program</value>
+  </data>
+  <data name="restoreAsk" xml:space="preserve">
+    <value>Are you sure?</value>
+  </data>
+  <data name="restoreError" xml:space="preserve">
+    <value>Error restoring registry</value>
+  </data>
+  <data name="restoreRestored" xml:space="preserve">
+    <value>Successfully restored registry</value>
+  </data>
+  <data name="scanDlgExit" xml:space="preserve">
+    <value>Are you sure?</value>
+  </data>
+  <data name="scanDlgProgressBarScanning" xml:space="preserve">
+    <value>Scanning: </value>
+  </data>
+  <data name="smCannotFindFile" xml:space="preserve">
+    <value>The file could not be found</value>
+  </data>
+  <data name="smEmptyName" xml:space="preserve">
+    <value>Shortcut/Value name cannot be empty</value>
+  </data>
+  <data name="smEmptyPath" xml:space="preserve">
+    <value>File path cannot be empty</value>
+  </data>
+  <data name="smRan" xml:space="preserve">
+    <value>Attempted to run:</value>
+  </data>
+  <data name="smRemove" xml:space="preserve">
+    <value>Are you sure you want to remove this startup program?</value>
+  </data>
+  <data name="smRemoved" xml:space="preserve">
+    <value>Removed selected startup program</value>
+  </data>
+  <data name="smRun" xml:space="preserve">
+    <value>Are you sure you want to run this program?</value>
+  </data>
+  <data name="umForceUninstall" xml:space="preserve">
+    <value>Are you sure you want to remove this program from the registry?</value>
+  </data>
+  <data name="umSearchText" xml:space="preserve">
+    <value>Search by name</value>
+  </data>
+  <data name="umUninstall" xml:space="preserve">
+    <value>Are you sure you want to uninstall this program?</value>
+  </data>
+  <data name="updateLatest" xml:space="preserve">
+    <value>You have the latest version</value>
+  </data>
+  <data name="updateNewer" xml:space="preserve">
+    <value>Newer version available</value>
   </data>
 </root>

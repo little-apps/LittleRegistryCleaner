@@ -125,6 +125,9 @@
   <data name="buttonSend.Text" xml:space="preserve">
     <value>Inviare la segnalazione errori</value>
   </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Si è verificato un eccezione in un componente del registro Little Cleaner. Abbiamo creato una segnalazione di errore che potete inviarci. Trattiamo questa relazione come riservate e anonime.</value>
   </data>

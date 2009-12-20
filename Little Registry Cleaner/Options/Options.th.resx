@@ -149,11 +149,20 @@
   <data name="groupBox1.Text" xml:space="preserve">
     <value>ตัวเลือก</value>
   </data>
+  <data name="buttonOK.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>ยกเลิก</value>
   </data>
+  <data name="buttonBrowse1.Text" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
   <data name="groupBox2.Text" xml:space="preserve">
     <value>เลือกโฟลเดอร์เพื่อสำรองลบรายการรีจิสตรี </value>
+  </data>
+  <data name="buttonBrowse2.Text" xml:space="preserve">
+    <value>Browse...</value>
   </data>
   <data name="groupBox3.Text" xml:space="preserve">
     <value>เลือกโฟลเดอร์ที่จะบันทึกล็อกไฟล์ไปยัง</value>
