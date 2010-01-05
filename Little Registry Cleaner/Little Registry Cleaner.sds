@@ -54,9 +54,9 @@
     <item>All</item>
     <item>Common Tools\Common Tools.csproj</item>
   </path>
-  <exchange method="exmImportFile" options="[eoSetup,eoSpellChecker,eoLanguages]" author="Nick H." description="Little registry cleaner" packagename="Little registry cleanerRu" showpackage="0">
+  <exchange method="exmExportFile" options="[eoSetup,eoSpellChecker,eoLanguages]" author="Nick H." description="Little registry cleaner" packagename="Little registry cleanerRu" showpackage="0">
   </exchange>
-  <export format="efXliff">
+  <export format="efExcel">
     <filter locked="bfBoth">
     </filter>
   </export>

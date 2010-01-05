@@ -118,37 +118,37 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="crashReporterFail" xml:space="preserve">
-    <value>O relatório de erro não pode ser enviado</value>
+    <value>O relatório de erros não pode ser enviado</value>
   </data>
   <data name="crashReporterSuccess" xml:space="preserve">
-    <value>Relatório de erro enviada com sucesso</value>
+    <value>Relatório de erros enviado com sucesso</value>
   </data>
   <data name="mainAddExcludeEntry" xml:space="preserve">
-    <value>Adicionado selecionados chaves de registo para a lista de exclusão</value>
+    <value>Adicionar chaves do registro selecionadas para lista de desconsiderados</value>
   </data>
   <data name="mainAskExit" xml:space="preserve">
     <value>Tem certeza de que deseja sair?</value>
   </data>
   <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>Desta vez, a sua primeira execução Little Registry Cleaner.\r\nGostaria de criar um ponto de restauração?</value>
+    <value>Esta é a primeira vez que você executa o Little Registry Cleaner.\r\nGostaria de criar um ponto de restauração?</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
-    <value>Incapaz de encontrar Little Secretaria Cleaner.chm</value>
+    <value>Não foi possível encontrar Little Registry Cleaner.chm</value>
   </data>
   <data name="mainProblemsFix" xml:space="preserve">
     <value>Gostaria de corrigir todos os problemas selecionados?</value>
   </data>
   <data name="mainProblemsRemoved" xml:space="preserve">
-    <value>Problemas removido do Registro</value>
+    <value>Problemas removidos do Registro</value>
   </data>
   <data name="mainScanningAborted" xml:space="preserve">
     <value>Abortada a varredura do registro</value>
   </data>
   <data name="mainScanningFinished" xml:space="preserve">
-    <value>Acabados de varredura do registro</value>
+    <value>Varredura do registro terminada</value>
   </data>
   <data name="mainSelectSections" xml:space="preserve">
-    <value>Por favor, selecione uma seção para digitalizar</value>
+    <value>Por favor, selecione uma seção para efetuar a varredura</value>
   </data>
   <data name="mainUpdateAsk" xml:space="preserve">
     <value>Uma nova versão está disponível. Gostaria de fazer o download?</value>
@@ -157,10 +157,10 @@
     <value>Selecione a pasta para excluir da varredura do registro</value>
   </data>
   <data name="optionsExcludeEmptyRegPath" xml:space="preserve">
-    <value>Caminho de registo não pode ser vazio</value>
+    <value>Caminho de registo não pode estar vazio</value>
   </data>
   <data name="optionsExcludeFile" xml:space="preserve">
-    <value>Selecione um arquivo para excluir o registro de digitalização</value>
+    <value>Selecione um arquivo a desconsiderar da varredura do registro</value>
   </data>
   <data name="optionsExcludeInvalidRegPath" xml:space="preserve">
     <value>Chave de registro especificada não existe</value>
@@ -172,25 +172,25 @@
     <value>Selecione a pasta onde os arquivos de backup serão colocados</value>
   </data>
   <data name="optionsSelectLogDir" xml:space="preserve">
-    <value>Selecione a pasta onde os arquivos de log será colocado</value>
+    <value>Selecione a pasta onde os arquivos de log serão colocados</value>
   </data>
   <data name="piErrorRegKey" xml:space="preserve">
-    <value>Chave de registro de remoção de erro:</value>
+    <value>Erro ao remover chave do registro:</value>
   </data>
   <data name="piErrorUninstalling" xml:space="preserve">
-    <value>Programa de desinstalação do erro:</value>
+    <value>Erro ao desinstalar o programa:</value>
   </data>
   <data name="piInvalidUninstallString" xml:space="preserve">
-    <value>Não é possível encontrar a cadeia de caracteres de desinstalação. Você gostaria de removê-lo manualmente no registro?</value>
+    <value>Não é possível encontrar o caminho de desinstalação. Você gostaria de removê-lo manualmente no registro?</value>
   </data>
   <data name="piSuccessRegKey" xml:space="preserve">
-    <value>Chave de registo com êxito removido</value>
+    <value>Chave de registo removida com sucesso</value>
   </data>
   <data name="piSuccessUninstall" xml:space="preserve">
-    <value>Programa com êxito desinstalado</value>
+    <value>Programa desinstalado com sucesso</value>
   </data>
   <data name="programAlreadyRunning" xml:space="preserve">
-    <value>Outro programa parece estar a correr já...</value>
+    <value>Outro programa parece já estar sendo executado...</value>
   </data>
   <data name="programNeedAdmin" xml:space="preserve">
     <value>Você deve ser um administrador para executar este programa</value>
@@ -199,22 +199,22 @@
     <value>Tem certeza?</value>
   </data>
   <data name="restoreError" xml:space="preserve">
-    <value>Erro Registro restauração</value>
+    <value>Erro ao restaurar o registro</value>
   </data>
   <data name="restoreRestored" xml:space="preserve">
-    <value>Restaurado com êxito do registo</value>
+    <value>Registro restaurado com sucesso</value>
   </data>
   <data name="scanDlgExit" xml:space="preserve">
     <value>Tem certeza?</value>
   </data>
   <data name="scanDlgProgressBarScanning" xml:space="preserve">
-    <value>Digitalização: </value>
+    <value>Efetuando varredura...</value>
   </data>
   <data name="smCannotFindFile" xml:space="preserve">
     <value>O arquivo não pôde ser encontrado</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
-    <value>Atalho / nome do valor não pode ser vazio</value>
+    <value>Nome do Atalho/Valor não pode estar vazio</value>
   </data>
   <data name="smEmptyPath" xml:space="preserve">
     <value>Caminho do arquivo não pode estar vazio</value>

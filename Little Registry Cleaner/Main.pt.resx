@@ -123,7 +123,7 @@
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="toolStripStatusLabel1.Text" xml:space="preserve">
-    <value>Bem-vindo a Little Registry Cleaner!</value>
+    <value>Bem-vindo ao Little Registry Cleaner!</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="treeColumn1.Header" xml:space="preserve">
@@ -136,25 +136,25 @@
     <value>Nome do valor</value>
   </data>
   <data name="selectAllToolStripMenuItem.Text" xml:space="preserve">
-    <value>Selecione todos</value>
+    <value>Selecionar Todos</value>
   </data>
   <data name="selectNoneToolStripMenuItem.Text" xml:space="preserve">
-    <value>Selecione Nenhum</value>
+    <value>Selecionar Nenhum</value>
   </data>
   <data name="invertSelectionToolStripMenuItem.Text" xml:space="preserve">
-    <value>Inverter selecção</value>
+    <value>Inverter Seleção</value>
   </data>
   <data name="excludeSelectedToolStripMenuItem.Text" xml:space="preserve">
-    <value>Excluir selecionado</value>
+    <value>Excluir Selecionados</value>
   </data>
   <data name="viewInRegeditToolStripMenuItem.Text" xml:space="preserve">
-    <value>Exibir regedit</value>
+    <value>Mostrar no regedit</value>
   </data>
   <data name="treeViewAdvResults.Text" xml:space="preserve">
     <value>treeViewAdv1</value>
   </data>
   <data name="treeView1.Nodes" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZRMAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQJY2hpbGRyZW4wCWNoaWxkcmVuMQljaGlsZHJlbjIJY2hpbGRyZW4zCWNoaWxkcmVuNAljaGlsZHJlbjUJY2hpbGRyZW42CWNoaWxkcmVuNwljaGlsZHJlbjgJY2hpbGRyZW45CmNoaWxkcmVuMTABAQAAAQABAAQEBAQEBAQEBAQEAQgICB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlAgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlAgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlAgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAAgAAAAYDAAAAH1Nlw6fDtWVzIHBhcmEgZmF6ZXIgYSB2YXJyZWR1cmEGBAAAAAVOb2RlMAH/////BgUAAAAObXljb21wdXRlci5pY2//////BgYAAAAObXljb21wdXRlci5pY28LAAAACQcAAAAJCAAAAAkJAAAACQoAAAAJCwAAAAkMAAAACQ0AAAAJDgAAAAkPAAAACRAAAAAJEQAAAAUHAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGEgAAAAtBY3RpdmVYL0NPTQYTAAAAC05vZGVBY3RpdmVYAf////8GFAAAAA5hY3RpdmV4Y29tLmljb/////8GFQAAAA5hY3RpdmV4Y29tLmljbwAAAAAFCAAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABhYAAAAcSW5mb3JtYcOnw7VlcyBkZSBhcGxpY2HDp8OjbwYXAAAAC05vZGVBcHBJbmZvAf////8GGAAAAAthcHBpbmZvLmljb/////8GGQAAAAthcHBpbmZvLmljbwAAAAAFCQAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABhoAAAASTG9jYWlzIGRlIHByb2dyYW1hBhsAAAAMTm9kZUFwcFBhdGhzAf////8GHAAAABRwcm9ncmFtbG9jYXRpb25zLmljb/////8GHQAAABRwcm9ncmFtbG9jYXRpb25zLmljbwAAAAAFCgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABh4AAAAbQ29uZmlndXJhw6fDtWVzIGRlIHNvZnR3YXJlBh8AAAAPTm9kZUFwcFNldHRpbmdzAf////8GIAAAABRzb2Z0d2FyZXNldHRpbmdzLmljb/////8JIAAAAAAAAAAFCwAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABiEAAAAPSW5pY2lhbGl6YcOnw6NvBiIAAAALTm9kZVN0YXJ0dXAB/////wYjAAAAC3N0YXJ0dXAuaWNv/////wYkAAAAC3N0YXJ0dXAuaWNvAAAAAAUMAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGJQAAABJEcml2ZXJzIGRlIHNpc3RlbWEGJgAAAAtOb2RlRHJpdmVycwH/////BicAAAALZHJpdmVycy5pY2//////BigAAAALZHJpdmVycy5pY28AAAAABQ0AAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYpAAAAE0RMTHMgY29tcGFydGlsaGFkYXMGKgAAAA5Ob2RlU2hhcmVkRGxscwH/////BisAAAAOc2hhcmVkZGxscy5pY2//////BiwAAAAOc2hhcmVkZGxscy5pY28AAAAABQ4AAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYtAAAAEUFycXVpdm9zIGRlIGFqdWRhBi4AAAAITm9kZUhlbHAB/////wYvAAAADWhlbHBmaWxlcy5pY2//////BjAAAAANaGVscGZpbGVzLmljbwAAAAAFDwAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABjEAAAAORXZlbnRvcyBkZSBzb20GMgAAAApOb2RlU291bmRzAf////8GMwAAAA9zb3VuZGV2ZW50cy5pY2//////BjQAAAAPc291bmRldmVudHMuaWNvAAAAAAUQAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGNQAAABNMaXN0YSBkZSBoaXN0w7NyaWNvBjYAAAAPTm9kZUhpc3RvcnlMaXN0Af////8GNwAAAA9oaXN0b3J5bGlzdC5pY2//////BjgAAAAPaGlzdG9yeWxpc3QuaWNvAAAAAAURAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGOQAAABFGb250ZXMgZG8gV2luZG93cwY6AAAACU5vZGVGb250cwH/////BjsAAAAJZm9udHMuaWNv/////wY8AAAACWZvbnRzLmljbwAAAAAL</value>
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZRMAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQJY2hpbGRyZW4wCWNoaWxkcmVuMQljaGlsZHJlbjIJY2hpbGRyZW4zCWNoaWxkcmVuNAljaGlsZHJlbjUJY2hpbGRyZW42CWNoaWxkcmVuNwljaGlsZHJlbjgJY2hpbGRyZW45CmNoaWxkcmVuMTABAQAAAQABAAQEBAQEBAQEBAQEAQgICB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlAgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlAgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlAgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAAgAAAAYDAAAAHVNlw6fDtWVzIHBhcmEgZmF6ZXIgdmFycmVkdXJhBgQAAAAFTm9kZTAB/////wYFAAAADm15Y29tcHV0ZXIuaWNv/////wYGAAAADm15Y29tcHV0ZXIuaWNvCwAAAAkHAAAACQgAAAAJCQAAAAkKAAAACQsAAAAJDAAAAAkNAAAACQ4AAAAJDwAAAAkQAAAACREAAAAFBwAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABhIAAAALQWN0aXZlWC9DT00GEwAAAAtOb2RlQWN0aXZlWAH/////BhQAAAAOYWN0aXZleGNvbS5pY2//////BhUAAAAOYWN0aXZleGNvbS5pY28AAAAABQgAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYWAAAAHEluZm9ybWHDp8O1ZXMgZGEgQXBsaWNhw6fDo28GFwAAAAtOb2RlQXBwSW5mbwH/////BhgAAAALYXBwaW5mby5pY2//////BhkAAAALYXBwaW5mby5pY28AAAAABQkAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYaAAAAEkxvY2FpcyBkZSBwcm9ncmFtYQYbAAAADE5vZGVBcHBQYXRocwH/////BhwAAAAUcHJvZ3JhbWxvY2F0aW9ucy5pY2//////Bh0AAAAUcHJvZ3JhbWxvY2F0aW9ucy5pY28AAAAABQoAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYeAAAAG0NvbmZpZ3VyYcOnw7VlcyBkZSBzb2Z0d2FyZQYfAAAAD05vZGVBcHBTZXR0aW5ncwH/////BiAAAAAUc29mdHdhcmVzZXR0aW5ncy5pY2//////CSAAAAAAAAAABQsAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYhAAAAD0luaWNpYWxpemHDp8OjbwYiAAAAC05vZGVTdGFydHVwAf////8GIwAAAAtzdGFydHVwLmljb/////8GJAAAAAtzdGFydHVwLmljbwAAAAAFDAAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABiUAAAASRHJpdmVycyBkZSBzaXN0ZW1hBiYAAAALTm9kZURyaXZlcnMB/////wYnAAAAC2RyaXZlcnMuaWNv/////wYoAAAAC2RyaXZlcnMuaWNvAAAAAAUNAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGKQAAABNETExzIGNvbXBhcnRpbGhhZGFzBioAAAAOTm9kZVNoYXJlZERsbHMB/////wYrAAAADnNoYXJlZGRsbHMuaWNv/////wYsAAAADnNoYXJlZGRsbHMuaWNvAAAAAAUOAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGLQAAABFBcnF1aXZvcyBkZSBhanVkYQYuAAAACE5vZGVIZWxwAf////8GLwAAAA1oZWxwZmlsZXMuaWNv/////wYwAAAADWhlbHBmaWxlcy5pY28AAAAABQ8AAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYxAAAADkV2ZW50b3MgZGUgc29tBjIAAAAKTm9kZVNvdW5kcwH/////BjMAAAAPc291bmRldmVudHMuaWNv/////wY0AAAAD3NvdW5kZXZlbnRzLmljbwAAAAAFEAAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABjUAAAATTGlzdGEgZGUgaGlzdMOzcmljbwY2AAAAD05vZGVIaXN0b3J5TGlzdAH/////BjcAAAAPaGlzdG9yeWxpc3QuaWNv/////wY4AAAAD2hpc3RvcnlsaXN0LmljbwAAAAAFEQAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABjkAAAARRm9udGVzIGRvIFdpbmRvd3MGOgAAAAlOb2RlRm9udHMB/////wY7AAAACWZvbnRzLmljb/////8GPAAAAAlmb250cy5pY28AAAAACw==</value>
   </data>
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="UTF-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="treeView1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0" /&gt;&lt;Rows Styles="Percent,100.1" /&gt;&lt;/TableLayoutSettings&gt;</value>
@@ -193,28 +193,40 @@
     <value>Restaurar o registro</value>
   </data>
   <data name="exitToolStripMenuItem.Text" xml:space="preserve">
-    <value>Saída</value>
+    <value>Sair</value>
   </data>
   <data name="fileToolStripMenuItem.Text" xml:space="preserve">
     <value>Arquivo</value>
   </data>
   <data name="selectAllToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Selecione todos</value>
+    <value>Selecionar Todos</value>
   </data>
   <data name="selectNoneToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Selecione Nenhum</value>
+    <value>Selecionar Nenhum</value>
   </data>
   <data name="invertSelectionToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Inverter selecção</value>
+    <value>Inverter Seleção</value>
   </data>
   <data name="excludeSelectedToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Excluir selecionado</value>
+    <value>Excluir Selecionados</value>
   </data>
   <data name="viewInRegeditToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Exibir regedit</value>
+    <value>Mostrar no regedit</value>
   </data>
   <data name="editToolStripMenuItem.Text" xml:space="preserve">
     <value>Editar</value>
+  </data>
+  <data name="arabicToolStripMenuItem.Text" xml:space="preserve">
+    <value>Árabe</value>
+  </data>
+  <data name="chineseSimplifiedToolStripMenuItem.Text" xml:space="preserve">
+    <value>Chinês (Simplificado)</value>
+  </data>
+  <data name="chineseTraditionalToolStripMenuItem.Text" xml:space="preserve">
+    <value>Chinês (Tradicional)</value>
+  </data>
+  <data name="dutchToolStripMenuItem.Text" xml:space="preserve">
+    <value>Holandês</value>
   </data>
   <data name="englishToolStripMenuItem.Text" xml:space="preserve">
     <value>Inglês</value>
@@ -222,56 +234,44 @@
   <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
     <value>Francês</value>
   </data>
-  <data name="spanishToolStripMenuItem.Text" xml:space="preserve">
-    <value>Espanhol</value>
-  </data>
-  <data name="italianToolStripMenuItem.Text" xml:space="preserve">
-    <value>Italiano</value>
-  </data>
-  <data name="dutchToolStripMenuItem.Text" xml:space="preserve">
-    <value>Holandês</value>
-  </data>
   <data name="germanToolStripMenuItem.Text" xml:space="preserve">
     <value>Alemão</value>
-  </data>
-  <data name="russianToolStripMenuItem.Text" xml:space="preserve">
-    <value>Russo</value>
   </data>
   <data name="greekToolStripMenuItem.Text" xml:space="preserve">
     <value>Grego</value>
   </data>
-  <data name="arabicToolStripMenuItem.Text" xml:space="preserve">
-    <value>Árabe</value>
-  </data>
-  <data name="polishToolStripMenuItem.Text" xml:space="preserve">
-    <value>Polônia</value>
-  </data>
-  <data name="swedishToolStripMenuItem.Text" xml:space="preserve">
-    <value>Sueco</value>
+  <data name="italianToolStripMenuItem.Text" xml:space="preserve">
+    <value>Italiano</value>
   </data>
   <data name="japaneseToolStripMenuItem.Text" xml:space="preserve">
     <value>Japonês</value>
   </data>
-  <data name="chineseSimplifiedToolStripMenuItem.Text" xml:space="preserve">
-    <value>Chinês (simplificado)</value>
+  <data name="polishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Polonês</value>
   </data>
-  <data name="chineseTraditionalToolStripMenuItem.Text" xml:space="preserve">
-    <value>Chinês (Tradicional)</value>
+  <data name="russianToolStripMenuItem.Text" xml:space="preserve">
+    <value>Russo</value>
   </data>
-  <data name="vietnameseToolStripMenuItem.Text" xml:space="preserve">
-    <value>Vietnamita</value>
+  <data name="spanishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Espanhol</value>
+  </data>
+  <data name="swedishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Sueco</value>
   </data>
   <data name="thaiToolStripMenuItem.Text" xml:space="preserve">
     <value>Tailandês</value>
   </data>
+  <data name="vietnameseToolStripMenuItem.Text" xml:space="preserve">
+    <value>Vietnamita</value>
+  </data>
   <data name="languageToolStripMenuItem.Text" xml:space="preserve">
-    <value>Taal</value>
+    <value>Linguagem</value>
   </data>
   <data name="startupManagerToolStripMenuItem.Text" xml:space="preserve">
-    <value>Gerenciador de inicialização</value>
+    <value>Gerenciador de Inicialização</value>
   </data>
   <data name="uninstallManagerToolStripMenuItem.Text" xml:space="preserve">
-    <value>Desinstalar o Manager</value>
+    <value>Gerenciador para Desinstalação</value>
   </data>
   <data name="toolStripMenuItemOptions.Text" xml:space="preserve">
     <value>Opções</value>
@@ -283,7 +283,7 @@
     <value>Ajuda</value>
   </data>
   <data name="visitWebsiteToolStripMenuItem.Text" xml:space="preserve">
-    <value>Website de visita</value>
+    <value>Visite o Website</value>
   </data>
   <data name="checkForUpdatesToolStripMenuItem.Text" xml:space="preserve">
     <value>Verificar se há atualizações</value>
@@ -307,7 +307,7 @@
     <value>Sobre...</value>
   </data>
   <data name="exitToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Saída</value>
+    <value>Sair</value>
   </data>
   <data name="notifyIcon1.Text" xml:space="preserve">
     <value>Little Registry Cleaner</value>

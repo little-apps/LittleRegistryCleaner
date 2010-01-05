@@ -121,16 +121,16 @@
     <value>ActiveX / COM Objects</value>
   </data>
   <data name="ApplicationInfo" xml:space="preserve">
-    <value>Informações de aplicação</value>
+    <value>Informações da Aplicação</value>
   </data>
   <data name="ApplicationPaths" xml:space="preserve">
-    <value>Planos de aplicação</value>
+    <value>Caminhos de aplicação</value>
   </data>
   <data name="ApplicationSettings" xml:space="preserve">
-    <value>Configurações do aplicativo</value>
+    <value>Configurações de aplicação</value>
   </data>
   <data name="InvalidFile" xml:space="preserve">
-    <value>Arquivo ou pasta inválido</value>
+    <value>Arquivo ou pasta invalido</value>
   </data>
   <data name="InvalidFileExt" xml:space="preserve">
     <value>Extensão de arquivo não utilizados</value>
@@ -142,28 +142,28 @@
     <value>Não é possível encontrar InprocServer32</value>
   </data>
   <data name="InvalidProgIDFileExt" xml:space="preserve">
-    <value>ProgID Livre / Extensão de Arquivo</value>
+    <value>ProgID/Extensão de Arquivo não utilizado</value>
   </data>
   <data name="InvalidRegKey" xml:space="preserve">
-    <value>Inválido chave de registro</value>
+    <value>Chave de registro inválida</value>
   </data>
   <data name="InvalidToolbar" xml:space="preserve">
-    <value>Barra de ferramentas não é válido</value>
+    <value>Barra de ferramentas inválida</value>
   </data>
   <data name="MissingAppID" xml:space="preserve">
-    <value>Missing referência AppID</value>
+    <value>Faltando referência ao AppID</value>
   </data>
   <data name="MissingCLSID" xml:space="preserve">
-    <value>Missing referência CLSID</value>
+    <value>Faltando referência ao CLSID</value>
   </data>
   <data name="MissingProgID" xml:space="preserve">
-    <value>Missing referência ProgID</value>
+    <value>Faltando referência ao ProgID</value>
   </data>
   <data name="NoRegKey" xml:space="preserve">
-    <value>A chave de registo não contém quaisquer dados</value>
+    <value>A chave de registo não contém nenhum dado</value>
   </data>
   <data name="ObsoleteRegKey" xml:space="preserve">
-    <value>Chave de registro obsoletos</value>
+    <value>Chave de registro obsoleta</value>
   </data>
   <data name="RecentDocs" xml:space="preserve">
     <value>Documentos Recentes</value>

@@ -138,7 +138,7 @@
     <value>Selecione a seção:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Adicionar à lista de ignorar</value>
+    <value>Adicionar à lista de ignorados</value>
   </data>
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>Cancelar</value>
@@ -147,6 +147,6 @@
     <value>Adicionar entrada</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Adicionar à lista de ignorar</value>
+    <value>Adicionar à lista de ignorados</value>
   </data>
 </root>

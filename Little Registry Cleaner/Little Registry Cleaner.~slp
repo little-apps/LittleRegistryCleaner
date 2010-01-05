@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.0.292" date="20091212131343" scan="37" scanned="20091207224950">
+<document version="2.0.292" date="20100104205323" scan="37" scanned="20091207224950">
   <lang id="en"/>
   <lang id="fr"/>
   <lang id="es"/>
@@ -70,6 +70,7 @@
             <lang id="vi" status="2">Little Registry Cleaner - Chi tiết...</lang>
             <lang id="th" status="2">Little Registry Cleaner - รายละเอียด...</lang>
             <lang id="pl" status="2">Little Registry Cleaner - Szczegóły...</lang>
+            <lang id="hu" status="2">Little Registry Cleaner - Részletek...</lang>
           </row>
           <component class="TVisGridPanel" name="tableLayoutPanel1" state="0" type="System.Windows.Forms.TableLayoutPanel" align="alClient" gapbottom="0" gapleft="0" gapright="0" gaptop="0">
             <columns>
@@ -132,6 +133,7 @@
                   <lang id="vi" status="2">Giá trị Tên:</lang>
                   <lang id="th" status="2">ชื่อ Value:</lang>
                   <lang id="pl" status="2">Nazwa wartości:</lang>
+                  <lang id="hu" status="2">Érték:</lang>
                 </row>
               </component>
             </component>
@@ -172,6 +174,7 @@
                   <lang id="vi" status="2">Vị trí:</lang>
                   <lang id="th" status="2">ตำแหน่ง:</lang>
                   <lang id="pl" status="2">Lokalizacja:</lang>
+                  <lang id="hu" status="2">Hely:</lang>
                 </row>
               </component>
             </component>
@@ -212,6 +215,7 @@
                   <lang id="vi" status="2">Vấn đề:</lang>
                   <lang id="th" status="2">ปัญหา:</lang>
                   <lang id="pl" status="2">Rodzaj błędu:</lang>
+                  <lang id="hu" status="2">Probléma:</lang>
                 </row>
               </component>
             </component>
@@ -303,7 +307,7 @@
             <lang id="en" status="2">Little Registry Cleaner - About...</lang>
             <lang id="fr" status="2">Little Registry Cleaner - A propos...</lang>
             <lang id="es" status="2">Registro poco Cleaner - acerca de...</lang>
-            <lang id="pt" status="2">Registro pouca limpeza - about...</lang>
+            <lang id="pt" status="2">Little Registry Cleaner - Sobre...</lang>
             <lang id="it" status="2">Registro poco Cleaner - informazioni...</lang>
             <lang id="nl" status="3">Kleine Registerreiniger - info...</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - über...</lang>
@@ -317,6 +321,7 @@
             <lang id="vi" date="20091105213407" status="3">Người lau chùi Nơi đăng ký Nhỏ - Giới thiệu về...</lang>
             <lang id="th" status="2">Little Registry Cleaner - เกี่ยวกับ...</lang>
             <lang id="pl" status="2">O programie Little Registry Cleaner</lang>
+            <lang id="hu" status="2">Little Registry Cleaner - A LRC-ről...</lang>
           </row>
           <component class="TVisGroupBox" name="groupBox2" type="System.Windows.Forms.GroupBox">
             <row id="Location.X" state="3">
@@ -377,6 +382,7 @@
                 <lang id="vi" date="20091105213417" status="3">Người lau chùi Nơi đăng ký Nhỏ</lang>
                 <lang id="th" status="3">รีจิสทรีน้อยตัวล้าง</lang>
                 <lang id="pl" status="3">Mały Registratura Sprzątacz</lang>
+                <lang id="hu" status="2">Little Registry Cleaner</lang>
               </row>
             </component>
             <component class="TVisEdit" name="richTextBox1" type="System.Windows.Forms.RichTextBox">
@@ -402,7 +408,7 @@
                 <lang id="en" date="20091105201208" invalidated="1" status="3">This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.#n#nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.#n#nYou should have received a copy of the GNU General Public License along with this program.  If not, see &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="fr" date="20091105200750" invalidated="1" status="3">Ce logiciel est gratuit: vous pouvez le redistribuer et / ou le modifier selon les termes de la GNU General Public License telle que publiée par la Free Software Foundation, soit la version 3 de la Licence, ou (à votre choix) toute version ultérieure.#n#nCe programme est distribué dans l'espoir qu'il sera utile, mais SANS AUCUNE GARANTIE, sans même la garantie implicite de COMMERCIALISATION ou D'ADAPTATION A UN USAGE PARTICULIER. Voir la GNU General Public License pour plus de détails.#n#nVous devriez avoir reçu un exemplaire de la Licence Publique Générale GNU avec ce programme. Sinon, consultez &lt;http://www.gnu.org/licenses/>。</lang>
                 <lang id="es" invalidated="1" status="2">Este programa es software libre: usted puede redistribuirlo y/o modificarlo bajo los términos de la GNU General Public License publicada por la Free Software Foundation, ya sea la versión 3 de la licencia, o (a su opción) cualquier versión posterior.#n#nEste programa se distribuye con la esperanza de que será útil, pero sin ninguna garantía, ni siquiera la garantía implícita de comerciabilidad o idoneidad para un propósito PARTICULAR.  Consulte la GNU General Public License para obtener más detalles.#n#nDebe haber recibido una copia de la licencia pública GNU General junto con este programa.  Si no, véase &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="pt" invalidated="1" status="2">Este programa é software livre: você pode redistribuí-lo e/ou modificá-lo nos termos da GNU General Public License conforme publicada pela Free Software Foundation, tanto a versão 3 da licença, ou (sua opção) qualquer versão posterior.#n#nEste programa é distribuído na esperança de que será útil, mas sem qualquer garantia; sem sequer a garantia implícita de COMERCIABILIDADE ou adequação a um fim específico.  Consulte a GNU GPL para obter mais detalhes.#n#nVocê deve ter recebido uma cópia da GNU General Public License juntamente com este programa.  Se não for, consulte &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="pt" status="2">Este programa é software livre; você pode redistribuí-lo e/ou modificá-lo sob os termos da Licença Pública Geral GNU, conforme publicada pela Free Software Foundation; tanto a versão 3 da Licença como (a seu critério) qualquer versão mais nova.#n#nEste programa é distribuído na expectativa de ser útil, mas SEM QUALQUER GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou de ADEQUAÇÃO A QUALQUER PROPÓSITO EM PARTICULAR. Consulte a Licença Pública Geral GNU para obter mais detalhes.#n#nVocê deve ter recebido uma cópia da Licença Pública Geral GNU junto com este programa; caso contrário, acesse &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="it" invalidated="1" status="2">Questo programma è software libero: ridistribuirla e/o modificarla secondo i termini della GNU General Public License come pubblicato dalla Free Software Foundation, versione 3 della licenza o (a propria discrezione) qualsiasi versione successiva.#n#nQuesto programma è distribuito nella speranza che possa essere utile, ma senza alcuna garanzia; senza neppure la garanzia implicita di commerciabilità o idoneità per uno scopo particolare.  Vedere la GNU General Public License per maggiori dettagli.#n#nSi dovrebbe avere ricevuto una copia della licenza pubblica generica GNU insieme a questo programma.  Se non, vedere &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="nl" status="3">Dit programma is gratis software: u kunt het verspreiden en/of wijzigen in het kader van de GNU General Public License zoals gepubliceerd door de Free Software Foundation, in versie 3 van de licentie of (naar keuze) een latere versie.#n#nDit programma wordt verspreid in de hoop dat het nuttig zal zijn, maar ZONDER ENIGE GARANTIE; zonder zelfs de impliciete garantie van VERKOOPBAARHEID of GESCHIKTHEID VOOR EEN BEPAALD DOEL.  Zie de GNU General Public License voor meer informatie.#n#nU hebt een kopie ontvangen van de GNU General Public License samen met dit programma.  Als dit niet het geval is, Zie &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="de" invalidated="1" status="2">Dieses Programm ist freie Software: Sie weitergeben und/oder unter den Bedingungen der GNU General Public License veröffentlicht von der Free Software Foundation, Version 3 der Lizenz oder (nach Ihrer Wahl) any later Version ändern können.#n#nDieses Programm wird in der Hoffnung verteilt, dass es Nützlichkeit, jedoch ohne Garantie geliefert; selbst stillschweigende Garantien von MERCHANTABILITY oder Eignung für einen bestimmten Zweck sein wird.  Finden Sie unter der GNU General Public License für weitere Details.#n#nSie sollten eine Kopie der GNU General Public License zusammen mit diesem Programm erhalten haben.  Wenn nicht, finden Sie unter &lt;http://www.gnu.org/licenses/>.</lang>
@@ -416,6 +422,7 @@
                 <lang id="vi" date="20091105201639" status="3">Chương trình này là phần mềm: bạn có thể phát hành lại nó và / hoặc sửa đổi nó với điều kiện của Giấy phép Công cộng GNU như được xuất bản bởi các Phần mềm Tự do, hoặc là phiên bản 3 của Giấy phép này, hoặc (tùy chọn) bất kỳ phiên bản sau.#n#nChương trình này được phân phối với hy vọng rằng nó sẽ hữu ích, nhưng KHÔNG CÓ BẢO ĐẢM; mà không cần bảo hành ngay cả ngụ ý của BÁN hoặc PHÙ HỢP CHO MỘT MỤC ĐÍCH CỤ THỂ. Xem GNU General Public License để biết thêm chi tiết.#n#nBạn nên đã nhận được một bản sao của Giấy phép Công cộng GNU cùng với chương trình này. Nếu không, xem &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="th" date="20091105201427" status="3">ซอฟต์แวร์ โปรแกรมนี้ฟรี: คุณสามารถแจกจ่ายได้และ / หรือแก้ไขภายใต้เงื่อนไขของ GNU General Public License เผยแพร่ตามที่ Free Software Foundation, รุ่นทั้ง 3 ใบอนุญาตหรือ (ในตัวเลือกของคุณ) รุ่นหลังๆ.#n#nโปรแกรมนี้จะกระจายในหวังว่ามันจะเป็นประโยชน์แต่ไม่รับประกันใดๆ; ไม่มีแม้การรับประกันโดยนัยของสินค้าหรือความเหมาะสมสำหรับวัตถุประสงค์ เฉพาะ. ดู GNU General Public License รายละเอียดเพิ่มเติม.#n#nคุณควรได้รับสำเนาของ GNU General Public License พร้อมกับโปรแกรมนี้. ถ้าไม่เห็น &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="pl" invalidated="1" status="2">Niniejsze oprogramowanie jest darmowe. Możesz je rozpowszechniać lub modyfikować zgodnie z warunkami licencji GNU General Public License w wersji 3 lub późniejszej wydanej przez Free Software Foundation.#n#nNiniejsze oprogramowanie jest rozpowszechniane z nadzieją, że okaże się przydatne, nie jest natomiast objęte JAKĄKOLWIEK GWARANCJĄ, w tym domyślną gwarancją UŻYTECZNOŚCI HANDLOWEJ lub PRZYDATNOŚCI DO KONKRETNEGO CELU. Przeczytaj licencję GNU General Public License, aby zapoznać się ze szczegółami.#n#nKopia licencji GNU General Public License powinna zostać dostarczona wraz z niniejszym oprogramowaniem. W przeciwnym wypadku odwiedź stronę &lt;http://www.gnu.org/licenses/></lang>
+                <lang id="hu" status="2">Ez a program szabad szoftver; terjeszthető illetve módosítható a Free Software Foundation által kiadott GNU General Public License dokumentumában leírtak; akár a licenc 3-as, akár (tetszőleges) későbbi változata szerint.#n#nEz a porgram abban a reményben kerül közreadásra, hogy hasznos lesz, de minden egyéb GARANCIA NÉLKÜL, az ELADHATÓSÁGRA vagy VALAMELY CÉLRA VALÓ ALKALMAZHATÓSÁGRA való származtatott garanciát is beleértve. További részleteket a GNU General Public License tartalmaz.#n#nA felhasználónak a programmal együtt meg kell kapnia a GNU General Public License egy pélányát; ha mégsem kapta meg, akkor tekintse meg a &lt;http://www.gnu.org/licenses/> oldalon.</lang>
               </row>
             </component>
             <component class="TVisLabel" name="label2" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
@@ -446,6 +453,7 @@
                 <lang id="vi" status="2">Tác giả:</lang>
                 <lang id="th" status="2">ผู้เขียน:</lang>
                 <lang id="pl" status="2">Autor:</lang>
+                <lang id="hu" status="2">Szerző:</lang>
               </row>
             </component>
             <component class="TVisLabel" name="linkLabelAuthor" type="System.Windows.Forms.LinkLabel" autosize="1" wordwrap="0">
@@ -474,6 +482,7 @@
                 <lang id="ja">ニック高.</lang>
                 <lang id="vi">Nick H.</lang>
                 <lang id="th">Nick H.</lang>
+                <lang id="hu">Nick.H</lang>
               </row>
             </component>
           </component>
@@ -508,6 +517,7 @@
               <lang id="vi" status="2">Đóng</lang>
               <lang id="th" status="2">ปิด</lang>
               <lang id="pl" status="2">Zamknij</lang>
+              <lang id="hu" status="2">Bezárás</lang>
             </row>
           </component>
           <component class="TVisPictureButton" name="buttonWebsite" type="System.Windows.Forms.Button">
@@ -541,6 +551,7 @@
               <lang id="vi" status="2">Dự án Website</lang>
               <lang id="th" date="20091105202244" status="3">บ้าน</lang>
               <lang id="pl" status="2">Strona Projektu</lang>
+              <lang id="hu" status="2">A projekt honlapja</lang>
             </row>
           </component>
         </form>
@@ -554,7 +565,7 @@
             <lang id="en" status="2">Little Registry Cleaner - Crash Reporter</lang>
             <lang id="fr" date="20091105213514" status="3">Peu Registry Cleaner - Crash Reporter</lang>
             <lang id="es" status="2">Registro poco limpiador - Crash Reporter</lang>
-            <lang id="pt" status="2">Pouco Registry Cleaner - Crash Reporter</lang>
+            <lang id="pt" status="2">Little Registry Cleaner - Relatório de Falhas</lang>
             <lang id="it" status="2">Registro poco Cleaner - Crash Reporter</lang>
             <lang id="nl" status="3">Kleine Registerreiniger - Crash Reporter</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Crash Reporter</lang>
@@ -568,6 +579,7 @@
             <lang id="vi" date="20091106173253" status="3">Phóng viên Sự cố Người lau chùi Nơi đăng ký Nhỏ</lang>
             <lang id="th" date="20091105223822" status="3">รีจิสทรีน้อยตัวล้าง - ผิดพลาด Reporter</lang>
             <lang id="pl" status="2">Little Registry Cleaner - Powiadomienie o błędzie</lang>
+            <lang id="hu" status="2">Little Registry Cleaner - Hibajelentő</lang>
           </row>
           <component class="TVisPanel" name="panel1" type="System.Windows.Forms.Panel" align="alTop">
             <row id="BackColor" hidden="1">clWhite</row>
@@ -599,6 +611,7 @@
                 <lang id="vi" status="2">Đừng gửi</lang>
                 <lang id="th" status="2">ไม่ส่ง</lang>
                 <lang id="pl" status="2">Nie wysyłaj</lang>
+                <lang id="hu" status="2">Ne küldje el</lang>
               </row>
             </component>
             <component class="TVisLabel" name="label1" type="System.Windows.Forms.Label" layout="tlCenter" parentfont="0">
@@ -612,7 +625,7 @@
                 <lang id="en" status="2">An exception occured in a component of Little Registry Cleaner. We have created an error report that you can send us. We will treat this report as confidential and anonymous.</lang>
                 <lang id="fr" status="2">Une exception s'est produite dans un composant de Little Registry Cleaner. Nous avons créé un rapport d'erreur que vous pouvez nous envoyer. Nous traiterons ce rapport comme confidentiel et anonyme。</lang>
                 <lang id="es" status="2">Se produjo una excepción en un componente de Little limpiador de registro. Hemos creado un informe de errores que usted puede enviarnos. Consideraremos este informe como confidencial y anónimo.</lang>
-                <lang id="pt" status="2">Uma exceção ocorreu em um componente de Little Limpador de registro. Criamos um relatório de erro que você pode enviar-nos. Este relatório será tratado como confidencial e anônimo.</lang>
+                <lang id="pt" status="2">Uma exceção ocorreu em um componente de Little Registry Cleaner. Criamos um relatório de erro que você pode enviar-nos. Este relatório será tratado como confidencial e anônimo.</lang>
                 <lang id="it" status="2">Si è verificato un eccezione in un componente del registro Little Cleaner. Abbiamo creato una segnalazione di errore che potete inviarci. Trattiamo questa relazione come riservate e anonime.</lang>
                 <lang id="nl" status="3">Er is een uitzondering opgetreden in een onderdeel van de Kleine Registerreiniger. Wij hebben een foutrapport gemaakt dat u ons kunt sturen. Wij zullen dit rapport vertrouwelijk en anoniem behandelen.</lang>
                 <lang id="de" status="2">In einer Komponente der Little Registry Cleaner ist ein Ausnahme aufgetreten. Wir haben einen Fehlerbericht erstellt, den Sie uns senden können. Wir werden diesen Bericht als vertraulich und anonym behandeln.</lang>
@@ -626,6 +639,7 @@
                 <lang id="vi" status="2">Một ngoại lệ xảy ra ở một thành phần của Little Registry Cleaner. Chúng tôi đã tạo ra một báo cáo lỗi mà bạn có thể gửi cho chúng tôi. Chúng tôi sẽ xử lý báo cáo này là bí mật và vô danh.</lang>
                 <lang id="th" status="2">ยกเว้นเกิดขึ้นในส่วนของ Little Registry Cleaner. เราได้สร้างรายงานข้อผิดพลาดที่คุณสามารถส่ง. เราจะเก็บรายงานนี้เป็นความลับและไม่ระบุชื่อ.</lang>
                 <lang id="pl" status="2">W jednym ze składników aplikacji Little Registry Cleaner wystąpił błąd. Sporządzony został raport, który możesz przesłać autorom programu. Dane zawarte w raporcie będą traktowane poufnie i anonimowo.</lang>
+                <lang id="hu" status="2">Egy hiba történt a Little Registry Cleaner egyik komponensében. Készítettünk egy hibajelentést amit elküldhet nekünk. A jelentés bizalmasan, név nélkül lesz kezelve.</lang>
               </row>
             </component>
             <component class="TVisPictureButton" name="buttonSend" type="System.Windows.Forms.Button">
@@ -652,6 +666,7 @@
                 <lang id="vi" status="2">Gửi Báo cáo Lỗi</lang>
                 <lang id="th" status="2">ส่งรายงานข้อผิดพลาด</lang>
                 <lang id="pl" status="2">Wyślij raport</lang>
+                <lang id="hu" status="2">Hibajelentés küldése</lang>
               </row>
             </component>
             <component class="TVisImage" name="pictureBoxErr" type="System.Windows.Forms.PictureBox">
@@ -670,7 +685,7 @@
                 <lang id="en" status="2">Restart Program</lang>
                 <lang id="fr" status="2">Programme de redémarrage</lang>
                 <lang id="es" status="2">Reiniciar el programa</lang>
-                <lang id="pt" status="2">Reinicie o programa</lang>
+                <lang id="pt" status="2">Reiniciar o programa</lang>
                 <lang id="it" status="2">Riavviare il programma</lang>
                 <lang id="nl" status="2">Programma opnieuw starten</lang>
                 <lang id="de" status="2">Starten Sie neu Programm</lang>
@@ -684,6 +699,7 @@
                 <lang id="vi" status="2">Chương trình khởi động lại</lang>
                 <lang id="th" status="2">โปรแกรมเริ่มต้น</lang>
                 <lang id="pl" status="2">Uruchom program ponownie</lang>
+                <lang id="hu" status="2">Program újraíndítása</lang>
               </row>
             </component>
           </component>
@@ -710,7 +726,7 @@
             <lang id="en" status="2">Add to ignore list</lang>
             <lang id="fr" status="2">Ajouter à la liste des ignorés</lang>
             <lang id="es" status="2">Agregar a lista de ignorar</lang>
-            <lang id="pt" status="2">Adicionar à lista de ignorar</lang>
+            <lang id="pt" status="2">Adicionar à lista de ignorados</lang>
             <lang id="it" status="2">Aggiungere a ignorare elenco</lang>
             <lang id="nl" status="3">Toevoegen aan Negeren-lijst</lang>
             <lang id="de" status="2">Fügen zur Liste ignorieren hinzu</lang>
@@ -724,6 +740,7 @@
             <lang id="vi" status="2">Thêm vào danh sách bỏ qua</lang>
             <lang id="th" status="2">เพิ่มรายชื่อ</lang>
             <lang id="pl" status="2">Wpisy pomijane</lang>
+            <lang id="hu" status="2">Felvétel a mellőzőlistára</lang>
           </row>
           <component class="TVisGroupBox" name="groupBox1" type="System.Windows.Forms.GroupBox">
             <row id="Location.X">12</row>
@@ -735,7 +752,7 @@
               <lang id="en" status="2">Add to ignore list</lang>
               <lang id="fr" status="2">Ajouter à la liste des ignorés</lang>
               <lang id="es" status="2">Agregar a lista de ignorar</lang>
-              <lang id="pt" status="2">Adicionar à lista de ignorar</lang>
+              <lang id="pt" status="2">Adicionar à lista de ignorados</lang>
               <lang id="it" status="2">Aggiungere a ignorare elenco</lang>
               <lang id="nl" status="3">Toevoegen aan Negeren-lijst</lang>
               <lang id="de" status="2">Fügen zur Liste ignorieren hinzu</lang>
@@ -749,6 +766,7 @@
               <lang id="vi" status="2">Thêm vào danh sách bỏ qua</lang>
               <lang id="th" status="2">เพิ่มรายชื่อ</lang>
               <lang id="pl" status="3">Wpisy pomijane</lang>
+              <lang id="hu" status="2">Felvétel a mellőzőlistára</lang>
             </row>
             <component class="TVisLabel" name="label1" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
               <row id="Location.X">6</row>
@@ -774,6 +792,7 @@
                 <lang id="vi" status="2">Chọn mục:</lang>
                 <lang id="th" status="2">ส่วนที่เลือก:</lang>
                 <lang id="pl" status="2">Wybierz sekcję:</lang>
+                <lang id="hu" status="2">Válasszon szekciót:</lang>
               </row>
             </component>
             <component class="TVisComboBox" name="comboBox1" type="System.Windows.Forms.ComboBox">
@@ -878,6 +897,7 @@
                 <lang id="vi" date="20091106173743" status="3">Chìa khóa Nơi đăng ký:</lang>
                 <lang id="th" status="2">เส้นทาง Registry:</lang>
                 <lang id="pl" status="2">Ścieżka:</lang>
+                <lang id="hu" status="2">Útvonal a bejegyzéshez:</lang>
               </row>
             </component>
             <component class="TVisEdit" name="textBox1" type="System.Windows.Forms.TextBox">
@@ -911,6 +931,7 @@
               <lang id="vi" status="2">Hủy</lang>
               <lang id="th" status="2">ยกเลิก</lang>
               <lang id="pl" status="2">Anuluj</lang>
+              <lang id="hu" status="2">Mégse</lang>
             </row>
           </component>
           <component class="TVisPictureButton" name="buttonOk" type="System.Windows.Forms.Button">
@@ -937,6 +958,7 @@
               <lang id="vi" date="20091106173340" status="3">Thêm Mục vào</lang>
               <lang id="th" status="2">เพิ่มรายการ</lang>
               <lang id="pl" status="2">Dodaj wpis</lang>
+              <lang id="hu" status="2">Feljegyzés hozzáadása</lang>
             </row>
           </component>
         </form>
@@ -964,6 +986,7 @@
             <lang id="vi" status="3">Người lau chùi Nơi đăng ký Nhỏ</lang>
             <lang id="th" date="20091030213620" status="3">รีจิสทรีน้อยตัวล้าง</lang>
             <lang id="pl" date="20091105225459" status="3">Mały Registratura Sprzątacz</lang>
+            <lang id="hu" status="2">Little Registry Cleaner</lang>
           </row>
           <component class="TVisCheckBox" name="nodeCheckBox" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeCheckBox">
           </component>
@@ -974,220 +997,6 @@
           <component class="TVisEdit" name="nodeLocation" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox">
           </component>
           <component class="TVisEdit" name="nodeValueName" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox">
-          </component>
-          <component class="TVisPopupMenu" name="contextMenuStrip1" type="System.Windows.Forms.ContextMenuStrip">
-            <row id="Size.Height" state="3">
-              <prev>98</prev>
-              <native>120</native>
-            </row>
-            <row id="Size.Width">162</row>
-            <component class="TVisMenuItem" name="selectAllToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text" state="0">
-                <native>Select All</native>
-                <lang id="en" status="2">Select All</lang>
-                <lang id="fr" status="3">Choisissez tous</lang>
-                <lang id="es" status="2">Seleccionar todo</lang>
-                <lang id="pt" status="2">Selecione todos</lang>
-                <lang id="it" status="2">Seleziona tutto</lang>
-                <lang id="nl" status="3">Selecteer alles</lang>
-                <lang id="de" status="2">Wählen Sie alle</lang>
-                <lang id="ru" status="3">Выбрать все</lang>
-                <lang id="el" status="2">Επιλογή όλων</lang>
-                <lang id="ar" status="2">تحديد الكل</lang>
-                <lang id="sv" status="2">Markera alla</lang>
-                <lang id="zh" status="2">选择所有</lang>
-                <lang id="zh.tra" status="2">選擇所有</lang>
-                <lang id="ja" status="2">すべて選択</lang>
-                <lang id="vi" status="2">Chọn Tất cả</lang>
-                <lang id="th" status="2">เลือกทั้งหมด</lang>
-                <lang id="pl" status="3">Zaznacz wszystko</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="selectNoneToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text" state="0">
-                <native>Select None</native>
-                <lang id="en" status="2">Select None</lang>
-                <lang id="fr" status="2">Sélectionnez Aucun</lang>
-                <lang id="es" status="2">Seleccione Ninguno</lang>
-                <lang id="pt" status="2">Selecione Nenhum</lang>
-                <lang id="it" status="2">Selezionare Nessuno</lang>
-                <lang id="nl" status="3">Selecteer niets</lang>
-                <lang id="de" status="2">Wählen Sie keine</lang>
-                <lang id="ru" status="3">Очистить выбор</lang>
-                <lang id="el" status="2">Επιλέξτε "Κανένα"</lang>
-                <lang id="ar" status="2">حدد بلا</lang>
-                <lang id="sv" status="2">Välj Ingen</lang>
-                <lang id="zh" status="2">选择无</lang>
-                <lang id="zh.tra" status="2">選擇無</lang>
-                <lang id="ja" date="20091030211940" status="3">[なし] を選択します。</lang>
-                <lang id="vi" status="2">Chọn Không</lang>
-                <lang id="th" status="2">ไม่มีเลือก</lang>
-                <lang id="pl" status="3">Odznacz wszystko</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="invertSelectionToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height" state="0">22</row>
-              <row id="Size.Width" state="0">161</row>
-              <row id="Text" state="0">
-                <native>Invert Selection</native>
-                <lang id="en" status="2">Invert Selection</lang>
-                <lang id="fr" status="2">Inverser la sélection</lang>
-                <lang id="es" status="2">Invertir la selección</lang>
-                <lang id="pt" status="2">Inverter selecção</lang>
-                <lang id="it" status="2">Inverti la selezione</lang>
-                <lang id="nl" status="2">Selectie omkeren</lang>
-                <lang id="de" status="2">Auswahl umkehren</lang>
-                <lang id="ru" status="2">Инвертировать выделение</lang>
-                <lang id="el" status="2">Αντιστροφή της επιλογής</lang>
-                <lang id="ar" status="2">عكس الاختيار</lang>
-                <lang id="sv" status="2">Invertera markering</lang>
-                <lang id="zh" status="2">反选</lang>
-                <lang id="zh.tra" status="2">反選</lang>
-                <lang id="ja" status="2">逆選択</lang>
-                <lang id="vi" status="2">Đảo ngược lựa chọn</lang>
-                <lang id="th" status="2">เลือกกลับกัน</lang>
-                <lang id="pl" status="2">Odwróć zaznaczenie</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="toolStripSeparator1" type="System.Windows.Forms.ToolStripSeparator">
-              <row id="Size.Height">6</row>
-              <row id="Size.Width">158</row>
-            </component>
-            <component class="TVisMenuItem" name="excludeSelectedToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text" state="0">
-                <native>Exclude Selected</native>
-                <lang id="en" status="2">Exclude Selected</lang>
-                <lang id="fr" status="2">Exclure Sélection</lang>
-                <lang id="es" status="2">Excluir seleccionado</lang>
-                <lang id="pt" status="2">Excluir selecionado</lang>
-                <lang id="it" status="2">Escludere selezionati</lang>
-                <lang id="nl" status="2">Geselecteerde uitsluiten</lang>
-                <lang id="de" status="2">Ausgewählte ausschließen</lang>
-                <lang id="ru" status="3">Исключить выбранные</lang>
-                <lang id="el" status="2">Εξαίρεση επιλεγμένων</lang>
-                <lang id="ar" status="2">استبعاد المحددة</lang>
-                <lang id="sv" status="2">Exkludera vald</lang>
-                <lang id="zh" status="2">排除选择</lang>
-                <lang id="zh.tra" status="2">排除選擇</lang>
-                <lang id="ja" status="2">除外選択</lang>
-                <lang id="vi" status="2">Loại trừ được chọn</lang>
-                <lang id="th" status="2">ยกเว้นเลือก</lang>
-                <lang id="pl" status="3">Pomiń zaznaczone</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="viewInRegeditToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text" state="0">
-                <native>View in regedit</native>
-                <lang id="en" status="2">View in regedit</lang>
-                <lang id="fr" status="2">Voir dans regedit</lang>
-                <lang id="es" status="2">Ver en regedit</lang>
-                <lang id="pt" status="2">Exibir regedit</lang>
-                <lang id="it" status="2">Visualizzare in regedit</lang>
-                <lang id="nl" status="3">In regedit weergeven</lang>
-                <lang id="de" status="2">In Regedit anzeigen</lang>
-                <lang id="ru" status="3">Просмотр в regedit</lang>
-                <lang id="el" status="2">Προβολή σε regedit</lang>
-                <lang id="ar" status="2">عرض في regedit</lang>
-                <lang id="sv" status="2">Visa i regedit</lang>
-                <lang id="zh" status="2">查看输入regedit</lang>
-                <lang id="zh.tra" status="2">查看輸入regedit</lang>
-                <lang id="ja" status="2">プロフィールファイル名を指定で</lang>
-                <lang id="vi" status="2">Xem trong regedit</lang>
-                <lang id="th" status="2">ดูใน regedit</lang>
-                <lang id="pl" status="3">Otwórz w regedit</lang>
-              </row>
-            </component>
-          </component>
-          <component class="TVisPopupMenu" name="contextMenuStrip2" type="System.Windows.Forms.ContextMenuStrip">
-            <row id="Size.Height">76</row>
-            <row id="Size.Width">137</row>
-            <component class="TVisMenuItem" name="hideShowToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem" parentfont="0">
-              <row id="Font">Segoe UI,9,style=Bold</row>
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">136</row>
-              <row id="Text" state="0">
-                <native>Hide/Show</native>
-                <lang id="en" status="2">Hide/Show</lang>
-                <lang id="fr" date="20091030210846" status="3">Peau / Exposition</lang>
-                <lang id="es" status="2">Ocultar/mostrar</lang>
-                <lang id="pt" status="2">Mostrar/ocultar</lang>
-                <lang id="it" status="2">Mostra/Nascondi</lang>
-                <lang id="nl" status="3">Verbergen/Tonen</lang>
-                <lang id="de" status="2">Ausblenden/einblenden</lang>
-                <lang id="ru" status="2">Скрыть/Показать</lang>
-                <lang id="el" status="2">Απόκρυψη/Εμφάνιση</lang>
-                <lang id="ar" status="2">إظهار/إخفاء</lang>
-                <lang id="sv" status="2">Dölj/visa</lang>
-                <lang id="zh" status="2">隐藏/显示</lang>
-                <lang id="zh.tra" status="2">隱藏/顯示</lang>
-                <lang id="ja" status="2">非表示/表示</lang>
-                <lang id="vi" date="20091106174632" status="3">Che giấu/Chỉ ra</lang>
-                <lang id="th" status="2">ซ่อน / แสดง</lang>
-                <lang id="pl" status="3">Pokaż/Ukryj</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="aboutToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">136</row>
-              <row id="Text" state="0">
-                <native>About...</native>
-                <lang id="en" status="2">About...</lang>
-                <lang id="fr" status="2">À propos de...</lang>
-                <lang id="es" status="2">Acerca de...</lang>
-                <lang id="pt" status="2">Sobre...</lang>
-                <lang id="it" status="2">Sulla...</lang>
-                <lang id="nl" status="2">Over...</lang>
-                <lang id="de" status="2">Über...</lang>
-                <lang id="ru" status="3">О программе...</lang>
-                <lang id="el" status="2">Σχετικά με...</lang>
-                <lang id="ar" status="2">حول...</lang>
-                <lang id="sv" status="2">Om...</lang>
-                <lang id="zh" status="2">大约...</lang>
-                <lang id="zh.tra" status="2">大約...</lang>
-                <lang id="ja" status="2">〜について...</lang>
-                <lang id="vi" status="2">Về...</lang>
-                <lang id="th" status="2">เกี่ยวกับ...</lang>
-                <lang id="pl" status="3">O programie...</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="toolStripSeparator4" type="System.Windows.Forms.ToolStripSeparator">
-              <row id="Size.Height">6</row>
-              <row id="Size.Width">133</row>
-            </component>
-            <component class="TVisMenuItem" name="exitToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">136</row>
-              <row id="Text" state="0">
-                <native>Exit</native>
-                <lang id="en" status="2">Exit</lang>
-                <lang id="fr" status="3">Sortie</lang>
-                <lang id="es" status="2">Salida</lang>
-                <lang id="pt" status="2">Saída</lang>
-                <lang id="it" status="2">Uscita</lang>
-                <lang id="nl" status="3">Einde</lang>
-                <lang id="de" status="2">Ausfahrt</lang>
-                <lang id="ru" status="3">Выход</lang>
-                <lang id="el" status="2">Εξόδου</lang>
-                <lang id="ar" status="2">خروج</lang>
-                <lang id="sv" status="2">Avsluta</lang>
-                <lang id="zh" status="2">退出</lang>
-                <lang id="zh.tra" status="2">退出</lang>
-                <lang id="ja" status="2">終了</lang>
-                <lang id="vi" status="3">Cửa ra</lang>
-                <lang id="th" status="2">ออกจาก</lang>
-                <lang id="pl" status="3">Zakończ</lang>
-              </row>
-            </component>
-          </component>
-          <component class="TVisImageList" name="imageListTreeView" type="System.Windows.Forms.ImageList">
           </component>
           <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer" align="alClient">
             <row id="Location.X">0</row>
@@ -1225,7 +1034,7 @@
                   <lang id="en" status="2">Welcome to Little Registry Cleaner!</lang>
                   <lang id="fr" status="2">Bienvenue à Little Registry Cleaner!</lang>
                   <lang id="es" status="2">Bienvenido a Little Registry Cleaner!</lang>
-                  <lang id="pt" status="2">Bem-vindo a Little Registry Cleaner!</lang>
+                  <lang id="pt" status="2">Bem-vindo ao Little Registry Cleaner!</lang>
                   <lang id="it" status="2">Benvenuti a Little Registry Cleaner!</lang>
                   <lang id="nl" status="3">Welkom bij Kleine Registerreiniger!</lang>
                   <lang id="de" status="2">Willkommen bei Little Registry Cleaner!</lang>
@@ -1239,6 +1048,7 @@
                   <lang id="vi" status="2">Welcome to Little Registry Cleaner!</lang>
                   <lang id="th" status="2">Welcome to Little Registry Cleaner!</lang>
                   <lang id="pl" status="2">Welcome to Little Registry Cleaner!</lang>
+                  <lang id="hu" status="2">Üdvözli a Little Registry Cleaner!</lang>
                 </row>
               </component>
             </component>
@@ -1292,7 +1102,7 @@
                       <lang id="en" status="2">Sections to Scan</lang>
                       <lang id="fr" status="2">Sections à balayage</lang>
                       <lang id="es" status="2">Secciones para el análisis</lang>
-                      <lang id="pt" status="2">Seções para fazer a varredura</lang>
+                      <lang id="pt" status="2">Seções para fazer varredura</lang>
                       <lang id="it" status="2">Sezioni da analizzare</lang>
                       <lang id="nl" status="3">Te scannen secties</lang>
                       <lang id="de" status="2">Abschnitte zu scannende</lang>
@@ -1306,6 +1116,7 @@
                       <lang id="vi" status="2">Phần để Quét</lang>
                       <lang id="th" status="2">ส่วนการสแกน</lang>
                       <lang id="pl" status="3">Skanowane sekcje:</lang>
+                      <lang id="hu" status="2">Szkennelendő szekciók kiválasztása</lang>
                     </row>
                     <item name="Items[0]">
                       <row id="Text" state="0">
@@ -1327,6 +1138,7 @@
                         <lang id="vi" status="2">ActiveX / COM</lang>
                         <lang id="th" status="2">ActiveX / COM</lang>
                         <lang id="pl" status="3">Komponenty ActiveX/COM</lang>
+                        <lang id="hu" status="2">ActiveX/COM</lang>
                       </row>
                     </item>
                     <item name="Items[1]">
@@ -1335,7 +1147,7 @@
                         <lang id="en" status="2">Application Info</lang>
                         <lang id="fr" status="2">Demande d'info</lang>
                         <lang id="es" status="2">Información de aplicación</lang>
-                        <lang id="pt" status="2">Informações de aplicação</lang>
+                        <lang id="pt" status="2">Informações da Aplicação</lang>
                         <lang id="it" status="2">Informazioni di applicazione</lang>
                         <lang id="nl" status="3">Applicatiegegevens</lang>
                         <lang id="de" status="2">Anwendung Info</lang>
@@ -1349,6 +1161,7 @@
                         <lang id="vi" status="2">Thông tin ứng dụng</lang>
                         <lang id="th" status="2">ข้อมูลการสมัคร</lang>
                         <lang id="pl" status="3">Informacje o programach</lang>
+                        <lang id="hu" status="2">Információ az alkalmazásról</lang>
                       </row>
                     </item>
                     <item name="Items[2]">
@@ -1371,6 +1184,7 @@
                         <lang id="vi" status="2">Chương trình Địa điểm</lang>
                         <lang id="th" status="2">สถานที่ตั้งโครงการ</lang>
                         <lang id="pl" status="3">Lokalizacje programów</lang>
+                        <lang id="hu" status="2">Program helyei</lang>
                       </row>
                     </item>
                     <item name="Items[3]">
@@ -1393,6 +1207,7 @@
                         <lang id="vi" status="2">Cài đặt phần mềm</lang>
                         <lang id="th" status="2">การตั้งค่าซอฟต์แวร์</lang>
                         <lang id="pl" status="3">Ustawienia programów</lang>
+                        <lang id="hu" status="2">Szoftver beállítások</lang>
                       </row>
                     </item>
                     <item name="Items[4]">
@@ -1415,6 +1230,7 @@
                         <lang id="vi" date="20091106173927" status="3">Khởi động</lang>
                         <lang id="th" status="2">การเริ่มต้น</lang>
                         <lang id="pl" status="3">Uruchamianie systemu</lang>
+                        <lang id="hu" status="2">Indítás</lang>
                       </row>
                     </item>
                     <item name="Items[5]">
@@ -1437,6 +1253,7 @@
                         <lang id="vi" status="2">Hệ thống điều khiển</lang>
                         <lang id="th" status="2">โปรแกรมควบคุมระบบ</lang>
                         <lang id="pl" status="3">Sterowniki systemowe</lang>
+                        <lang id="hu" status="2">Rendszer meghajtók</lang>
                       </row>
                     </item>
                     <item name="Items[6]">
@@ -1459,6 +1276,7 @@
                         <lang id="vi" status="3">DLLs Dùng chung</lang>
                         <lang id="th" status="2">กำลังร่วมกัน</lang>
                         <lang id="pl" status="3">Współdzielone biblioteki DLL</lang>
+                        <lang id="hu" status="2">Megosztott DLL-ek</lang>
                       </row>
                     </item>
                     <item name="Items[7]">
@@ -1481,6 +1299,7 @@
                         <lang id="vi" status="2">Trợ giúp Files</lang>
                         <lang id="th" date="20091030213713" status="3">ช่วยให้แฟ้ม</lang>
                         <lang id="pl" status="3">Pliki pomocy</lang>
+                        <lang id="hu" status="2">Segítség fájlok</lang>
                       </row>
                     </item>
                     <item name="Items[8]">
@@ -1503,6 +1322,7 @@
                         <lang id="vi" status="2">Sự kiện âm thanh</lang>
                         <lang id="th" status="2">เสียงกิจกรรม</lang>
                         <lang id="pl" status="3">Dźwięki zdarzeń</lang>
+                        <lang id="hu" status="2">Hang események</lang>
                       </row>
                     </item>
                     <item name="Items[9]">
@@ -1525,6 +1345,7 @@
                         <lang id="vi" status="2">Lịch sử Danh sách</lang>
                         <lang id="th" status="2">รายการประวัติ</lang>
                         <lang id="pl" status="3">Historia</lang>
+                        <lang id="hu" status="2">Előzmények</lang>
                       </row>
                     </item>
                     <item name="Items[10]">
@@ -1547,6 +1368,7 @@
                         <lang id="vi" status="3">Phông Windows</lang>
                         <lang id="th" status="2">อักษร Windows</lang>
                         <lang id="pl" status="3">Czcionki systemowe</lang>
+                        <lang id="hu" status="2">Windows betűtípusok</lang>
                       </row>
                     </item>
                   </item>
@@ -1627,6 +1449,7 @@
                     <lang id="vi" status="2">Vị trí</lang>
                     <lang id="th" status="2">ตำแหน่ง</lang>
                     <lang id="pl" status="3">Lokalizacja</lang>
+                    <lang id="hu" status="2">Hely</lang>
                   </row>
                 </component>
                 <component class="TVisHiddenComponent" name="treeColumn3" type="Common_Tools.TreeViewAdv.Tree.TreeColumn">
@@ -1698,6 +1521,7 @@
                   <lang id="vi" status="2">Tệp</lang>
                   <lang id="th" status="2">ไฟล์</lang>
                   <lang id="pl" status="3">Plik</lang>
+                  <lang id="hu" status="2">Fájl</lang>
                 </row>
                 <component class="TVisMenuItem" name="scanToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
                   <row id="Size.Height">22</row>
@@ -1721,6 +1545,7 @@
                     <lang id="vi" status="2">Quét registry</lang>
                     <lang id="th" status="3">สแกนรีจิสทรี</lang>
                     <lang id="pl" status="3">Skanuj rejestr</lang>
+                    <lang id="hu" status="2">Bejegyzés szkennelése</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="fixToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
@@ -1745,6 +1570,7 @@
                     <lang id="vi" status="2">Sửa vấn đề</lang>
                     <lang id="th" status="2">แก้ไขปัญหา</lang>
                     <lang id="pl" status="3">Napraw błędy</lang>
+                    <lang id="hu" status="2">Problémák javítása</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="restoreToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
@@ -1769,6 +1595,7 @@
                     <lang id="vi" status="2">Khôi phục registry</lang>
                     <lang id="th" status="3">การคืนค่ารีจิสทรี</lang>
                     <lang id="pl" status="3">Przywróć rejestr</lang>
+                    <lang id="hu" status="2">Bejegyzés visszaállítása</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="toolStripSeparator3" type="System.Windows.Forms.ToolStripSeparator">
@@ -1783,7 +1610,7 @@
                     <lang id="en" status="2">Exit</lang>
                     <lang id="fr" date="20091030203600" status="3">Sortie</lang>
                     <lang id="es" status="2">Salida</lang>
-                    <lang id="pt" status="2">Saída</lang>
+                    <lang id="pt" status="2">Sair</lang>
                     <lang id="it" status="2">Uscita</lang>
                     <lang id="nl" status="3">Einde</lang>
                     <lang id="de" status="2">Ausfahrt</lang>
@@ -1797,6 +1624,7 @@
                     <lang id="vi" date="20091030213214" status="3">Cửa ra</lang>
                     <lang id="th" status="2">ออกจาก</lang>
                     <lang id="pl" status="3">Zakończ</lang>
+                    <lang id="hu" status="2">Kilépés</lang>
                   </row>
                 </component>
               </component>
@@ -1822,6 +1650,7 @@
                   <lang id="vi" status="2">Chỉnh sửa</lang>
                   <lang id="th" date="20091030213328" status="3">เรียบเรียง</lang>
                   <lang id="pl" status="2">Edycja</lang>
+                  <lang id="hu" status="2">Szerkesztés</lang>
                 </row>
                 <component class="TVisMenuItem" name="selectAllToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
                   <row id="Size.Height">22</row>
@@ -1831,7 +1660,7 @@
                     <lang id="en" status="2">Select All</lang>
                     <lang id="fr" date="20091030203629" status="3">Choisissez tous</lang>
                     <lang id="es" status="2">Seleccionar todo</lang>
-                    <lang id="pt" status="2">Selecione todos</lang>
+                    <lang id="pt" status="2">Selecionar Todos</lang>
                     <lang id="it" status="2">Seleziona tutto</lang>
                     <lang id="nl" status="3">Selecteer alles</lang>
                     <lang id="de" status="2">Wählen Sie alle</lang>
@@ -1845,6 +1674,7 @@
                     <lang id="vi" status="2">Chọn Tất cả</lang>
                     <lang id="th" status="2">เลือกทั้งหมด</lang>
                     <lang id="pl" status="3">Zaznacz wszystko</lang>
+                    <lang id="hu" status="2">Mind kijelölése</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="selectNoneToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
@@ -1855,7 +1685,7 @@
                     <lang id="en" status="2">Select None</lang>
                     <lang id="fr" status="2">Sélectionnez Aucun</lang>
                     <lang id="es" status="2">Seleccione Ninguno</lang>
-                    <lang id="pt" status="2">Selecione Nenhum</lang>
+                    <lang id="pt" status="2">Selecionar Nenhum</lang>
                     <lang id="it" status="2">Selezionare Nessuno</lang>
                     <lang id="nl" status="3">Selecteer niets</lang>
                     <lang id="de" status="2">Wählen Sie keine</lang>
@@ -1869,6 +1699,7 @@
                     <lang id="vi" status="2">Chọn Không</lang>
                     <lang id="th" status="2">ไม่มีเลือก</lang>
                     <lang id="pl" status="3">Odznacz wszystko</lang>
+                    <lang id="hu" status="2">Kijelölés megszüntetése</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="invertSelectionToolStripMenuItem1" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -1879,7 +1710,7 @@
                     <lang id="en" status="2">Invert Selection</lang>
                     <lang id="fr" status="2">Inverser la sélection</lang>
                     <lang id="es" status="2">Invertir la selección</lang>
-                    <lang id="pt" status="2">Inverter selecção</lang>
+                    <lang id="pt" status="2">Inverter Seleção</lang>
                     <lang id="it" status="2">Inverti la selezione</lang>
                     <lang id="nl" status="2">Selectie omkeren</lang>
                     <lang id="de" status="2">Auswahl umkehren</lang>
@@ -1893,6 +1724,7 @@
                     <lang id="vi" status="2">Đảo ngược lựa chọn</lang>
                     <lang id="th" status="2">เลือกกลับกัน</lang>
                     <lang id="pl" status="2">Odwróć zaznaczenie</lang>
+                    <lang id="hu" status="2">Kijelölés megfordítása</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="toolStripSeparator7" type="System.Windows.Forms.ToolStripSeparator">
@@ -1907,7 +1739,7 @@
                     <lang id="en" status="2">Exclude Selected</lang>
                     <lang id="fr" status="2">Exclure Sélection</lang>
                     <lang id="es" status="2">Excluir seleccionado</lang>
-                    <lang id="pt" status="2">Excluir selecionado</lang>
+                    <lang id="pt" status="2">Excluir Selecionados</lang>
                     <lang id="it" status="2">Escludere selezionati</lang>
                     <lang id="nl" status="2">Geselecteerde uitsluiten</lang>
                     <lang id="de" status="2">Ausgewählte ausschließen</lang>
@@ -1921,6 +1753,7 @@
                     <lang id="vi" status="2">Loại trừ được chọn</lang>
                     <lang id="th" status="2">ยกเว้นเลือก</lang>
                     <lang id="pl" status="3">Pomiń zaznaczone</lang>
+                    <lang id="hu" status="2">Kijelöltek kihagyása</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="viewInRegeditToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
@@ -1931,7 +1764,7 @@
                     <lang id="en" status="2">View in regedit</lang>
                     <lang id="fr" status="2">Voir dans regedit</lang>
                     <lang id="es" status="2">Ver en regedit</lang>
-                    <lang id="pt" status="2">Exibir regedit</lang>
+                    <lang id="pt" status="2">Mostrar no regedit</lang>
                     <lang id="it" status="2">Visualizzare in regedit</lang>
                     <lang id="nl" status="3">In regedit weergeven</lang>
                     <lang id="de" status="2">In Regedit anzeigen</lang>
@@ -1945,6 +1778,7 @@
                     <lang id="vi" status="2">Xem trong regedit</lang>
                     <lang id="th" status="2">ดูใน regedit</lang>
                     <lang id="pl" status="3">Otwórz w regedit</lang>
+                    <lang id="hu" status="2">Nézet regedit-ben</lang>
                   </row>
                 </component>
               </component>
@@ -1956,7 +1790,7 @@
                   <lang id="en" status="2">Language</lang>
                   <lang id="fr" status="2">Langue</lang>
                   <lang id="es" status="2">Lingua</lang>
-                  <lang id="pt" status="2">Taal</lang>
+                  <lang id="pt" status="2">Linguagem</lang>
                   <lang id="it" date="20091030214057" status="3">Lingua</lang>
                   <lang id="nl" status="3">Taal</lang>
                   <lang id="de" status="2">Lengua</lang>
@@ -1970,6 +1804,7 @@
                   <lang id="vi" status="2">Ngôn ngữ</lang>
                   <lang id="th" status="2">ภาษา</lang>
                   <lang id="pl" status="3">Język</lang>
+                  <lang id="hu" status="2">Nyelv</lang>
                 </row>
                 <component class="TVisMenuItem" name="englishToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
                   <row id="Size.Height" state="0">22</row>
@@ -1993,6 +1828,7 @@
                     <lang id="vi" status="2">Tiếng Anh</lang>
                     <lang id="th" status="2">อังกฤษ</lang>
                     <lang id="pl" status="3">Angielski</lang>
+                    <lang id="hu" status="2">Angol</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="frenchToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2017,6 +1853,7 @@
                     <lang id="vi" status="2">Tiếng Pháp</lang>
                     <lang id="th" status="2">ฝรั่งเศส</lang>
                     <lang id="pl" status="3">Francuski</lang>
+                    <lang id="hu" status="2">Francia</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="spanishToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2041,6 +1878,7 @@
                     <lang id="vi" status="2">Tiếng Tây Ban Nha</lang>
                     <lang id="th" status="2">สเปน</lang>
                     <lang id="pl" status="3">Hiszpański</lang>
+                    <lang id="hu" status="2">Spanyol</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="portugueseToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2065,6 +1903,7 @@
                     <lang id="vi" status="2">Tiếng Bồ Đào Nha</lang>
                     <lang id="th" status="2">โปรตุเกส</lang>
                     <lang id="pl" status="2">Portugalski</lang>
+                    <lang id="hu" status="2">Portugál</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="italianToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2089,6 +1928,7 @@
                     <lang id="vi" status="2">Tiếng Ý</lang>
                     <lang id="th" status="2">อิตาเลียน</lang>
                     <lang id="pl" status="3">Włoski</lang>
+                    <lang id="hu" status="2">Olasz</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="dutchToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2113,6 +1953,7 @@
                     <lang id="vi" status="2">Tiếng Hà Lan</lang>
                     <lang id="th" status="2">ดัตช์</lang>
                     <lang id="pl" status="3">Holenderski</lang>
+                    <lang id="hu" status="2">Holland</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="germanToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2137,6 +1978,7 @@
                     <lang id="vi" status="2">Tiếng Đức</lang>
                     <lang id="th" status="2">เยอรมัน</lang>
                     <lang id="pl" status="3">Niemiecki</lang>
+                    <lang id="hu" status="2">Német</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="russianToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2161,6 +2003,7 @@
                     <lang id="vi" status="2">Tiếng Nga</lang>
                     <lang id="th" status="2">ภาษารัสเซีย</lang>
                     <lang id="pl" status="3">Rosyjski</lang>
+                    <lang id="hu" status="2">Orosz</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="greekToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2185,6 +2028,7 @@
                     <lang id="vi" status="2">Tiếng Hy Lạp</lang>
                     <lang id="th" status="2">กรีก</lang>
                     <lang id="pl" status="3">Grecki</lang>
+                    <lang id="hu" status="2">Görög</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="arabicToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2209,6 +2053,7 @@
                     <lang id="vi" status="2">Tiếng A-rập</lang>
                     <lang id="th" status="2">ภาษาอาหรับ</lang>
                     <lang id="pl" status="3">Arabski</lang>
+                    <lang id="hu" status="2">Arab</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="polishToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2219,7 +2064,7 @@
                     <lang id="en" status="2">Polish</lang>
                     <lang id="fr" status="2">Polonais</lang>
                     <lang id="es" status="2">Polonia</lang>
-                    <lang id="pt" status="2">Polônia</lang>
+                    <lang id="pt" status="2">Polonês</lang>
                     <lang id="it" status="2">Polacco</lang>
                     <lang id="nl" status="2">Pools</lang>
                     <lang id="de" status="2">Polnische</lang>
@@ -2233,6 +2078,7 @@
                     <lang id="vi" status="2">Tiếng Ba Lan</lang>
                     <lang id="th" status="2">ภาษาโปแลนด์</lang>
                     <lang id="pl" status="2">Polski</lang>
+                    <lang id="hu" status="2">Lengyel</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="swedishToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2257,6 +2103,7 @@
                     <lang id="vi" status="2">Tiếng Thụy Điển</lang>
                     <lang id="th" status="2">สวีเดน</lang>
                     <lang id="pl" status="3">Szwedzki</lang>
+                    <lang id="hu" status="2">Svéd</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="japaneseToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2281,6 +2128,7 @@
                     <lang id="vi" status="2">Tiếng Nhật</lang>
                     <lang id="th" status="2">ญี่ปุ่น</lang>
                     <lang id="pl" status="3">Japoński</lang>
+                    <lang id="hu" status="2">Japán</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="chineseSimplifiedToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2291,7 +2139,7 @@
                     <lang id="en" status="2">Chinese (Simplified)</lang>
                     <lang id="fr" status="2">Chinois (simplifié)</lang>
                     <lang id="es" status="2">Chino (simplificado)</lang>
-                    <lang id="pt" status="2">Chinês (simplificado)</lang>
+                    <lang id="pt" status="2">Chinês (Simplificado)</lang>
                     <lang id="it" status="2">Cinese (semplificato)</lang>
                     <lang id="nl" status="3">Chinese (vereenvoudigd)</lang>
                     <lang id="de" status="2">Chinesisch (Taiwan)</lang>
@@ -2305,6 +2153,7 @@
                     <lang id="vi" status="2">Tiếng Trung Quốc (giản thể)</lang>
                     <lang id="th" status="2">จีน (ประยุกต์)</lang>
                     <lang id="pl" status="3">Chiński (uproszczony)</lang>
+                    <lang id="hu" status="2">Kínai (egyszerűsített)</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="chineseTraditionalToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2329,6 +2178,7 @@
                     <lang id="vi" status="2">Tiếng Trung Quốc (truyền thống)</lang>
                     <lang id="th" status="2">ภาษาจีน (ดั้งเดิม)</lang>
                     <lang id="pl" status="3">Chiński (tradycyjny)</lang>
+                    <lang id="hu" status="2">Kínai (hagyományos)</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="vietnameseToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2353,6 +2203,7 @@
                     <lang id="vi" status="2">Việt</lang>
                     <lang id="th" status="2">เวียตนาม</lang>
                     <lang id="pl" status="3">Wietnamski</lang>
+                    <lang id="hu" status="2">Vietnámi</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="thaiToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2377,6 +2228,7 @@
                     <lang id="vi" status="2">Thái Lan</lang>
                     <lang id="th" status="2">ไทย</lang>
                     <lang id="pl" status="3">Tajski</lang>
+                    <lang id="hu" status="2">Táj</lang>
                   </row>
                 </component>
               </component>
@@ -2402,6 +2254,7 @@
                   <lang id="vi" status="2">Các dụng cụ</lang>
                   <lang id="th" status="2">เครื่องมือ</lang>
                   <lang id="pl" status="3">Narzędzia</lang>
+                  <lang id="hu" status="2">Eszközök</lang>
                 </row>
                 <component class="TVisMenuItem" name="startupManagerToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
                   <row id="Size.Height">22</row>
@@ -2411,7 +2264,7 @@
                     <lang id="en" status="2">Startup Manager</lang>
                     <lang id="fr" status="2">Gestionnaire de démarrage</lang>
                     <lang id="es" status="2">Administrador de inicio</lang>
-                    <lang id="pt" status="2">Gerenciador de inicialização</lang>
+                    <lang id="pt" status="2">Gerenciador de Inicialização</lang>
                     <lang id="it" status="2">Gestione di avvio</lang>
                     <lang id="nl" status="3">Manager starten</lang>
                     <lang id="de" status="2">Start-Manager</lang>
@@ -2425,6 +2278,7 @@
                     <lang id="vi" date="20091106174310" status="3">Khởi động trình quản lý</lang>
                     <lang id="th" date="20091030213545" status="3">ผู้จัดการการเริ่มต้น</lang>
                     <lang id="pl" status="3">Menadżer uruchamiania</lang>
+                    <lang id="hu" status="2">Indítás menedzser</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="uninstallManagerToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2435,7 +2289,7 @@
                     <lang id="en" status="2">Uninstall Manager</lang>
                     <lang id="fr" date="20091030203758" status="3">Désinstallez le directeur</lang>
                     <lang id="es" status="2">Desinstalar Manager</lang>
-                    <lang id="pt" status="2">Desinstalar o Manager</lang>
+                    <lang id="pt" status="2">Gerenciador para Desinstalação</lang>
                     <lang id="it" status="2">Disinstallare Manager</lang>
                     <lang id="nl" status="2">Manager verwijderen</lang>
                     <lang id="de" status="2">Deinstallieren Sie Manager</lang>
@@ -2449,6 +2303,7 @@
                     <lang id="vi" date="20091106174207" status="3">Chương trình quản lý</lang>
                     <lang id="th" date="20091030213439" status="3">การถอนการติดตั้งโปรแกรมจัดการ</lang>
                     <lang id="pl" status="3">Menadżer deinstalacji</lang>
+                    <lang id="hu" status="2">Uninstallálás menedzser</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="toolStripSeparator8" type="System.Windows.Forms.ToolStripSeparator">
@@ -2477,6 +2332,7 @@
                     <lang id="vi" status="2">Tùy chọn</lang>
                     <lang id="th" date="20091030213650" status="3">ตัวเลือก</lang>
                     <lang id="pl" status="2">Ustawienia</lang>
+                    <lang id="hu" status="2">Beállítások</lang>
                   </row>
                 </component>
               </component>
@@ -2502,6 +2358,7 @@
                   <lang id="vi" status="2">Giúp đỡ</lang>
                   <lang id="th" status="2">ช่วยเหลือ</lang>
                   <lang id="pl" status="3">Pomoc</lang>
+                  <lang id="hu" status="2">Segítség</lang>
                 </row>
                 <component class="TVisMenuItem" name="helpToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
                   <row id="Size.Height">22</row>
@@ -2525,6 +2382,7 @@
                     <lang id="vi" status="2">Giúp đỡ</lang>
                     <lang id="th" status="2">ช่วยเหลือ</lang>
                     <lang id="pl" status="3">Pomoc</lang>
+                    <lang id="hu" status="2">Segítség</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="toolStripSeparator6" type="System.Windows.Forms.ToolStripSeparator">
@@ -2539,7 +2397,7 @@
                     <lang id="en" status="2">Visit Website</lang>
                     <lang id="fr" status="2">Visitez le site web</lang>
                     <lang id="es" status="2">Visite el sitio Web</lang>
-                    <lang id="pt" status="2">Website de visita</lang>
+                    <lang id="pt" status="2">Visite o Website</lang>
                     <lang id="it" status="2">Visita sito</lang>
                     <lang id="nl" status="2">Bezoek de website</lang>
                     <lang id="de" status="2">Website besuchen</lang>
@@ -2553,6 +2411,7 @@
                     <lang id="vi" date="20091106174751" status="3">Chuyến thăm Website</lang>
                     <lang id="th" status="2">เว็บไซต์เยี่ยมชม</lang>
                     <lang id="pl" status="3">Strona WWW</lang>
+                    <lang id="hu" status="2">Honlap meglátogatása</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="checkForUpdatesToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2577,6 +2436,7 @@
                     <lang id="vi" status="2">Kiểm tra các bản cập nhật</lang>
                     <lang id="th" status="2">ตรวจสอบข้อมูลปรับปรุง</lang>
                     <lang id="pl" status="3">Uaktualnienia</lang>
+                    <lang id="hu" status="2">Frissítések keresése</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="toolStripSeparator2" type="System.Windows.Forms.ToolStripSeparator">
@@ -2605,6 +2465,7 @@
                     <lang id="vi" status="2">Về...</lang>
                     <lang id="th" status="2">เกี่ยวกับ...</lang>
                     <lang id="pl" status="3">O programie...</lang>
+                    <lang id="hu" status="2">Bővebben...</lang>
                   </row>
                 </component>
               </component>
@@ -2654,6 +2515,7 @@
                   <lang id="vi" status="2">Quét registry</lang>
                   <lang id="th" date="20091030213735" status="3">สแกนรีจิสทรี</lang>
                   <lang id="pl" status="2">Skanuj rejestr</lang>
+                  <lang id="hu" status="2">Bejegyzés szkennelése</lang>
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonFix" type="System.Windows.Forms.ToolStripButton">
@@ -2678,6 +2540,7 @@
                   <lang id="vi" status="2">Sửa vấn đề</lang>
                   <lang id="th" status="2">แก้ไขปัญหา</lang>
                   <lang id="pl" status="2">Napraw błędy</lang>
+                  <lang id="hu" status="2">Problémák javítása</lang>
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonRestore" type="System.Windows.Forms.ToolStripButton">
@@ -2702,6 +2565,7 @@
                   <lang id="vi" status="2">Khôi phục registry</lang>
                   <lang id="th" date="20091030213512" status="3">การคืนค่ารีจิสทรี</lang>
                   <lang id="pl" status="2">Przywróć rejestr</lang>
+                  <lang id="hu" status="2">Bejegyzés visszaállítása</lang>
                 </row>
               </component>
               <component class="TVisToolSeparator" name="toolStripSeparator5" type="System.Windows.Forms.ToolStripSeparator">
@@ -2730,6 +2594,7 @@
                   <lang id="vi" status="2">Tùy chọn</lang>
                   <lang id="th" status="3">ตัวเลือก</lang>
                   <lang id="pl" status="2">Ustawienia</lang>
+                  <lang id="hu" status="2">Beállítások</lang>
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonHelp" type="System.Windows.Forms.ToolStripButton">
@@ -2754,9 +2619,232 @@
                   <lang id="vi" status="2">Giúp đỡ</lang>
                   <lang id="th" status="2">ช่วยเหลือ</lang>
                   <lang id="pl" status="2">Pomoc</lang>
+                  <lang id="hu" status="2">Segítség</lang>
                 </row>
               </component>
             </component>
+          </component>
+          <component class="TVisPopupMenu" name="contextMenuStrip1" type="System.Windows.Forms.ContextMenuStrip">
+            <row id="Size.Height" state="3">
+              <prev>98</prev>
+              <native>120</native>
+            </row>
+            <row id="Size.Width">162</row>
+            <component class="TVisMenuItem" name="selectAllToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text" state="0">
+                <native>Select All</native>
+                <lang id="en" status="2">Select All</lang>
+                <lang id="fr" status="3">Choisissez tous</lang>
+                <lang id="es" status="2">Seleccionar todo</lang>
+                <lang id="pt" status="2">Selecionar Todos</lang>
+                <lang id="it" status="2">Seleziona tutto</lang>
+                <lang id="nl" status="3">Selecteer alles</lang>
+                <lang id="de" status="2">Wählen Sie alle</lang>
+                <lang id="ru" status="3">Выбрать все</lang>
+                <lang id="el" status="2">Επιλογή όλων</lang>
+                <lang id="ar" status="2">تحديد الكل</lang>
+                <lang id="sv" status="2">Markera alla</lang>
+                <lang id="zh" status="2">选择所有</lang>
+                <lang id="zh.tra" status="2">選擇所有</lang>
+                <lang id="ja" status="2">すべて選択</lang>
+                <lang id="vi" status="2">Chọn Tất cả</lang>
+                <lang id="th" status="2">เลือกทั้งหมด</lang>
+                <lang id="pl" status="3">Zaznacz wszystko</lang>
+                <lang id="hu" status="2">Mind kijelölése</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="selectNoneToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text" state="0">
+                <native>Select None</native>
+                <lang id="en" status="2">Select None</lang>
+                <lang id="fr" status="2">Sélectionnez Aucun</lang>
+                <lang id="es" status="2">Seleccione Ninguno</lang>
+                <lang id="pt" status="2">Selecionar Nenhum</lang>
+                <lang id="it" status="2">Selezionare Nessuno</lang>
+                <lang id="nl" status="3">Selecteer niets</lang>
+                <lang id="de" status="2">Wählen Sie keine</lang>
+                <lang id="ru" status="3">Очистить выбор</lang>
+                <lang id="el" status="2">Επιλέξτε "Κανένα"</lang>
+                <lang id="ar" status="2">حدد بلا</lang>
+                <lang id="sv" status="2">Välj Ingen</lang>
+                <lang id="zh" status="2">选择无</lang>
+                <lang id="zh.tra" status="2">選擇無</lang>
+                <lang id="ja" date="20091030211940" status="3">[なし] を選択します。</lang>
+                <lang id="vi" status="2">Chọn Không</lang>
+                <lang id="th" status="2">ไม่มีเลือก</lang>
+                <lang id="pl" status="3">Odznacz wszystko</lang>
+                <lang id="hu" status="2">Kijelölés megszüntetése</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="invertSelectionToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height" state="0">22</row>
+              <row id="Size.Width" state="0">161</row>
+              <row id="Text" state="0">
+                <native>Invert Selection</native>
+                <lang id="en" status="2">Invert Selection</lang>
+                <lang id="fr" status="2">Inverser la sélection</lang>
+                <lang id="es" status="2">Invertir la selección</lang>
+                <lang id="pt" status="2">Inverter Seleção</lang>
+                <lang id="it" status="2">Inverti la selezione</lang>
+                <lang id="nl" status="2">Selectie omkeren</lang>
+                <lang id="de" status="2">Auswahl umkehren</lang>
+                <lang id="ru" status="2">Инвертировать выделение</lang>
+                <lang id="el" status="2">Αντιστροφή της επιλογής</lang>
+                <lang id="ar" status="2">عكس الاختيار</lang>
+                <lang id="sv" status="2">Invertera markering</lang>
+                <lang id="zh" status="2">反选</lang>
+                <lang id="zh.tra" status="2">反選</lang>
+                <lang id="ja" status="2">逆選択</lang>
+                <lang id="vi" status="2">Đảo ngược lựa chọn</lang>
+                <lang id="th" status="2">เลือกกลับกัน</lang>
+                <lang id="pl" status="2">Odwróć zaznaczenie</lang>
+                <lang id="hu" status="2">Kijelölés megfordítása</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="toolStripSeparator1" type="System.Windows.Forms.ToolStripSeparator">
+              <row id="Size.Height">6</row>
+              <row id="Size.Width">158</row>
+            </component>
+            <component class="TVisMenuItem" name="excludeSelectedToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text" state="0">
+                <native>Exclude Selected</native>
+                <lang id="en" status="2">Exclude Selected</lang>
+                <lang id="fr" status="2">Exclure Sélection</lang>
+                <lang id="es" status="2">Excluir seleccionado</lang>
+                <lang id="pt" status="2">Excluir Selecionados</lang>
+                <lang id="it" status="2">Escludere selezionati</lang>
+                <lang id="nl" status="2">Geselecteerde uitsluiten</lang>
+                <lang id="de" status="2">Ausgewählte ausschließen</lang>
+                <lang id="ru" status="3">Исключить выбранные</lang>
+                <lang id="el" status="2">Εξαίρεση επιλεγμένων</lang>
+                <lang id="ar" status="2">استبعاد المحددة</lang>
+                <lang id="sv" status="2">Exkludera vald</lang>
+                <lang id="zh" status="2">排除选择</lang>
+                <lang id="zh.tra" status="2">排除選擇</lang>
+                <lang id="ja" status="2">除外選択</lang>
+                <lang id="vi" status="2">Loại trừ được chọn</lang>
+                <lang id="th" status="2">ยกเว้นเลือก</lang>
+                <lang id="pl" status="3">Pomiń zaznaczone</lang>
+                <lang id="hu" status="2">Kijelöltek kihagyása</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="viewInRegeditToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text" state="0">
+                <native>View in regedit</native>
+                <lang id="en" status="2">View in regedit</lang>
+                <lang id="fr" status="2">Voir dans regedit</lang>
+                <lang id="es" status="2">Ver en regedit</lang>
+                <lang id="pt" status="2">Mostrar no regedit</lang>
+                <lang id="it" status="2">Visualizzare in regedit</lang>
+                <lang id="nl" status="3">In regedit weergeven</lang>
+                <lang id="de" status="2">In Regedit anzeigen</lang>
+                <lang id="ru" status="3">Просмотр в regedit</lang>
+                <lang id="el" status="2">Προβολή σε regedit</lang>
+                <lang id="ar" status="2">عرض في regedit</lang>
+                <lang id="sv" status="2">Visa i regedit</lang>
+                <lang id="zh" status="2">查看输入regedit</lang>
+                <lang id="zh.tra" status="2">查看輸入regedit</lang>
+                <lang id="ja" status="2">プロフィールファイル名を指定で</lang>
+                <lang id="vi" status="2">Xem trong regedit</lang>
+                <lang id="th" status="2">ดูใน regedit</lang>
+                <lang id="pl" status="3">Otwórz w regedit</lang>
+                <lang id="hu" status="2">Nézet regedit-ben</lang>
+              </row>
+            </component>
+          </component>
+          <component class="TVisPopupMenu" name="contextMenuStrip2" type="System.Windows.Forms.ContextMenuStrip">
+            <row id="Size.Height">76</row>
+            <row id="Size.Width">137</row>
+            <component class="TVisMenuItem" name="hideShowToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem" parentfont="0">
+              <row id="Font">Segoe UI,9,style=Bold</row>
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">136</row>
+              <row id="Text" state="0">
+                <native>Hide/Show</native>
+                <lang id="en" status="2">Hide/Show</lang>
+                <lang id="fr" date="20091030210846" status="3">Peau / Exposition</lang>
+                <lang id="es" status="2">Ocultar/mostrar</lang>
+                <lang id="pt" status="2">Mostrar/ocultar</lang>
+                <lang id="it" status="2">Mostra/Nascondi</lang>
+                <lang id="nl" status="3">Verbergen/Tonen</lang>
+                <lang id="de" status="2">Ausblenden/einblenden</lang>
+                <lang id="ru" status="2">Скрыть/Показать</lang>
+                <lang id="el" status="2">Απόκρυψη/Εμφάνιση</lang>
+                <lang id="ar" status="2">إظهار/إخفاء</lang>
+                <lang id="sv" status="2">Dölj/visa</lang>
+                <lang id="zh" status="2">隐藏/显示</lang>
+                <lang id="zh.tra" status="2">隱藏/顯示</lang>
+                <lang id="ja" status="2">非表示/表示</lang>
+                <lang id="vi" date="20091106174632" status="3">Che giấu/Chỉ ra</lang>
+                <lang id="th" status="2">ซ่อน / แสดง</lang>
+                <lang id="pl" status="3">Pokaż/Ukryj</lang>
+                <lang id="hu" status="2">Elrejt/mutat</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="aboutToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">136</row>
+              <row id="Text" state="0">
+                <native>About...</native>
+                <lang id="en" status="2">About...</lang>
+                <lang id="fr" status="2">À propos de...</lang>
+                <lang id="es" status="2">Acerca de...</lang>
+                <lang id="pt" status="2">Sobre...</lang>
+                <lang id="it" status="2">Sulla...</lang>
+                <lang id="nl" status="2">Over...</lang>
+                <lang id="de" status="2">Über...</lang>
+                <lang id="ru" status="3">О программе...</lang>
+                <lang id="el" status="2">Σχετικά με...</lang>
+                <lang id="ar" status="2">حول...</lang>
+                <lang id="sv" status="2">Om...</lang>
+                <lang id="zh" status="2">大约...</lang>
+                <lang id="zh.tra" status="2">大約...</lang>
+                <lang id="ja" status="2">〜について...</lang>
+                <lang id="vi" status="2">Về...</lang>
+                <lang id="th" status="2">เกี่ยวกับ...</lang>
+                <lang id="pl" status="3">O programie...</lang>
+                <lang id="hu" status="2">Bővebben...</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="toolStripSeparator4" type="System.Windows.Forms.ToolStripSeparator">
+              <row id="Size.Height">6</row>
+              <row id="Size.Width">133</row>
+            </component>
+            <component class="TVisMenuItem" name="exitToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">136</row>
+              <row id="Text" state="0">
+                <native>Exit</native>
+                <lang id="en" status="2">Exit</lang>
+                <lang id="fr" status="3">Sortie</lang>
+                <lang id="es" status="2">Salida</lang>
+                <lang id="pt" status="2">Sair</lang>
+                <lang id="it" status="2">Uscita</lang>
+                <lang id="nl" status="3">Einde</lang>
+                <lang id="de" status="2">Ausfahrt</lang>
+                <lang id="ru" status="3">Выход</lang>
+                <lang id="el" status="2">Εξόδου</lang>
+                <lang id="ar" status="2">خروج</lang>
+                <lang id="sv" status="2">Avsluta</lang>
+                <lang id="zh" status="2">退出</lang>
+                <lang id="zh.tra" status="2">退出</lang>
+                <lang id="ja" status="2">終了</lang>
+                <lang id="vi" status="3">Cửa ra</lang>
+                <lang id="th" status="2">ออกจาก</lang>
+                <lang id="pl" status="3">Zakończ</lang>
+                <lang id="hu" status="2">Kilépés</lang>
+              </row>
+            </component>
+          </component>
+          <component class="TVisImageList" name="imageListTreeView" type="System.Windows.Forms.ImageList">
           </component>
           <component class="TVisHiddenComponent" name="notifyIcon1" type="System.Windows.Forms.NotifyIcon">
             <row id="Text" excluded="1" state="3">
@@ -2779,6 +2867,7 @@
               <lang id="vi" status="3">Người lau chùi Nơi đăng ký Nhỏ</lang>
               <lang id="th" status="3">รีจิสทรีน้อยตัวล้าง</lang>
               <lang id="pl" status="3">Mały Registratura Sprzątacz</lang>
+              <lang id="hu" status="2">Little Registry Cleaner</lang>
             </row>
           </component>
           <component class="TVisHiddenComponent" name="nodeIcon" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeIcon">
@@ -2794,7 +2883,7 @@
             <lang id="en" status="2">Little Registry Cleaner - Options</lang>
             <lang id="fr" date="20091106175851" status="3">Peu de décapant d'enregistrement - Configurez</lang>
             <lang id="es" status="2">Registro poco limpiador - opciones</lang>
-            <lang id="pt" status="2">Pouco Registry Cleaner - opções</lang>
+            <lang id="pt" status="2">Little Registry Cleaner - Opções</lang>
             <lang id="it" status="2">Registro poco Cleaner - opzioni</lang>
             <lang id="nl" status="3">Kleine Registerreiniger - Opties</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Optionen</lang>
@@ -2808,6 +2897,7 @@
             <lang id="vi" status="2">Little Registry Cleaner - Tùy chọn</lang>
             <lang id="th" date="20091106175528" status="3">รีจิสทรีน้อยตัวล้าง - Tùy chọn</lang>
             <lang id="pl" status="2">Little Registry Cleaner - Ustawienia</lang>
+            <lang id="hu" status="2">Little Registry Cleaner - Beállítások</lang>
           </row>
           <component class="TVisPictureButton" name="buttonCancel" type="System.Windows.Forms.Button">
             <row id="Location.X">420</row>
@@ -2833,6 +2923,7 @@
               <lang id="vi" status="2">Hủy</lang>
               <lang id="th" status="2">ยกเลิก</lang>
               <lang id="pl" status="2">Anuluj</lang>
+              <lang id="hu" status="2">Mégse</lang>
             </row>
           </component>
           <component class="TVisPictureButton" name="buttonOK" type="System.Windows.Forms.Button">
@@ -2845,7 +2936,7 @@
               <lang id="en" status="2">OK</lang>
               <lang id="fr" status="2">OK</lang>
               <lang id="es" status="2">VALE</lang>
-              <lang id="pt" status="2">RAZOÁVEL</lang>
+              <lang id="pt" status="2">OK</lang>
               <lang id="it" status="2">OK</lang>
               <lang id="nl" status="2">OK</lang>
               <lang id="de" status="2">OKAY</lang>
@@ -2859,6 +2950,7 @@
               <lang id="vi" status="2">OK</lang>
               <lang id="th" status="2">OK</lang>
               <lang id="pl" status="3">OK</lang>
+              <lang id="hu" status="2">OK</lang>
             </row>
           </component>
           <component class="TVisPageControl" name="tabControl1" type="System.Windows.Forms.TabControl">
@@ -2890,6 +2982,7 @@
                 <lang id="vi" status="2">Tổng</lang>
                 <lang id="th" status="2">โดยทั่วไป</lang>
                 <lang id="pl" status="2">Ogólne</lang>
+                <lang id="hu" status="2">Általános</lang>
               </row>
               <component class="TVisGroupBox" name="groupBox2" type="System.Windows.Forms.GroupBox">
                 <row id="Location.X">6</row>
@@ -2901,7 +2994,7 @@
                   <lang id="en" status="2">Select a folder to backup deleted registry entries </lang>
                   <lang id="fr" status="2">Sélectionnez un dossier pour sauvegarder les entrées de registre supprimée </lang>
                   <lang id="es" status="2">Seleccione una carpeta para las entradas del registro eliminados de copia de seguridad </lang>
-                  <lang id="pt" status="2">Selecione uma pasta para entradas do Registro excluído backup </lang>
+                  <lang id="pt" status="2">Selecione uma pasta para fazer backup das entradas do registro excluídas </lang>
                   <lang id="it" status="2">Selezionare una cartella di backup del Registro di sistema eliminata voci </lang>
                   <lang id="nl" status="3">Selecteer een map voor een backup van de verwijderde registervermeldingen </lang>
                   <lang id="de" status="2">Wählen Sie einen Ordner backup gelöschten Einträge </lang>
@@ -2915,6 +3008,7 @@
                   <lang id="vi" status="2">Chọn một thư mục để sao lưu xóa mục đăng ký </lang>
                   <lang id="th" status="2">เลือกโฟลเดอร์เพื่อสำรองลบรายการรีจิสตรี </lang>
                   <lang id="pl" status="2">Wybierz folder zapisywania kopii zapasowych usuniętych wpisów</lang>
+                  <lang id="hu" status="2">Válasszon egy mappát a törölt bejegyzések biztonsági másolatainak</lang>
                 </row>
                 <component class="TVisPictureButton" name="buttonBrowse1" type="System.Windows.Forms.Button">
                   <row id="Location.X">373</row>
@@ -2940,6 +3034,7 @@
                     <lang id="vi" status="2">Trình duyệt...</lang>
                     <lang id="th" status="2">Browse...</lang>
                     <lang id="pl" status="2">Przeglądaj...</lang>
+                    <lang id="hu" status="2">Tallózás...</lang>
                   </row>
                 </component>
                 <component class="TVisEdit" name="textBoxBackupFolder" type="System.Windows.Forms.TextBox">
@@ -2973,6 +3068,7 @@
                   <lang id="vi" status="2">Tùy chọn</lang>
                   <lang id="th" status="3">ตัวเลือก</lang>
                   <lang id="pl" status="2">Ustawienia</lang>
+                  <lang id="hu" status="2">Beállítások</lang>
                 </row>
                 <component class="TVisListView" name="listViewOptions" state="0" type="System.Windows.Forms.ListView" viewstyle="vsList">
                   <row id="Location.X" state="0">6</row>
@@ -2985,7 +3081,7 @@
                       <lang id="en" status="2">Log registry scans and fixes</lang>
                       <lang id="fr" status="2">Connectez-vous scans de registre et des correctifs</lang>
                       <lang id="es" status="2">Análisis de registro de registro y revisiones</lang>
-                      <lang id="pt" status="2">Pesquisas de registro de log e correções</lang>
+                      <lang id="pt" status="2">Log das varreduras e correções do registro</lang>
                       <lang id="it" status="2">Registro del Registro di sistema scansioni e le correzioni</lang>
                       <lang id="nl" status="3">Log de scans en reparaties</lang>
                       <lang id="de" status="2">Registrierung Logscans und fixes</lang>
@@ -2999,6 +3095,7 @@
                       <lang id="vi" status="2">Đăng nhập quét registry và sửa chữa</lang>
                       <lang id="th" status="2">Log สแกนรีจิสทรีและการแก้ไข</lang>
                       <lang id="pl" status="2">Twórz raporty skanowania i napraw</lang>
+                      <lang id="hu" status="2">Bejegyzés szkennelések és helyrehozások naplózása</lang>
                     </row>
                   </item>
                   <item name="Items[1]" state="0">
@@ -3007,7 +3104,7 @@
                       <lang id="en" status="2">Re-Scan after fixing registry issues</lang>
                       <lang id="fr" status="2">Re-Scan après résolution des problèmes de registre</lang>
                       <lang id="es" status="2">Re-Scan después de solucionar problemas de registro</lang>
-                      <lang id="pt" status="2">Re-Scan depois de corrigir problemas de registro</lang>
+                      <lang id="pt" status="2">Efetuar nova varredura após corrigir problemas do registro</lang>
                       <lang id="it" status="2">Re-Scan dopo la correzione di problemi del Registro di sistema</lang>
                       <lang id="nl" status="3">Scan opnieuw na het repareren van de register problemen</lang>
                       <lang id="de" status="2">Nach beheben Registrierung Probleme re-Scan</lang>
@@ -3021,6 +3118,7 @@
                       <lang id="vi" status="2">Re-Quét sau khi sửa chữa các vấn đề đăng ký</lang>
                       <lang id="th" status="2">Re-Scan หลังจากการแก้ไขปัญหาของรีจิสทรี</lang>
                       <lang id="pl" status="2">Re-Scan po Rozwiązywanie problemów z rejestru</lang>
+                      <lang id="hu" status="2">Újraszkennelés bejegyzéshibák javítása után</lang>
                     </row>
                   </item>
                   <item name="Items[2]" state="0">
@@ -3043,6 +3141,7 @@
                       <lang id="vi" status="2">Kiểm tra cho cập nhật tự động</lang>
                       <lang id="th" status="2">ตรวจสอบข้อมูลปรับปรุงอัตโนมัติ</lang>
                       <lang id="pl" status="2">Automatycznie sprawdzaj, czy dostępne są uaktualnienia</lang>
+                      <lang id="hu" status="2">Automatikus frissítés</lang>
                     </row>
                   </item>
                   <item name="Items[3]" state="0">
@@ -3065,6 +3164,7 @@
                       <lang id="vi" status="2">Tạo điểm khôi phục hệ thống tự động</lang>
                       <lang id="th" status="2">สร้างจุดคืนค่าระบบอัตโนมัติ</lang>
                       <lang id="pl" status="2">Automatycznie twórz punkty przywracania systemu</lang>
+                      <lang id="hu" status="2">Rendszervisszaállító pontok automatikus létrehozása</lang>
                     </row>
                   </item>
                   <item name="Items[4]" state="0">
@@ -3073,7 +3173,7 @@
                       <lang id="en" status="2">Show log after finished scanning</lang>
                       <lang id="fr" status="2">Voir le journal après avoir fini de numériser</lang>
                       <lang id="es" status="2">Mostrar registro una vez finalizado el análisis</lang>
-                      <lang id="pt" status="2">Mostrar log após a conclusão da digitalização</lang>
+                      <lang id="pt" status="2">Mostrar log após a conclusão da varredura</lang>
                       <lang id="it" status="2">Mostra registro al termine dell'operazione di scansione</lang>
                       <lang id="nl" status="3">Logboek tonen na scannen</lang>
                       <lang id="de" status="2">Zeigen Sie Protokoll nach Abschluss der Scan an</lang>
@@ -3087,6 +3187,7 @@
                       <lang id="vi" status="2">Hiển thị nhật ký sau khi đã hoàn thành quét</lang>
                       <lang id="th" status="2">Log แสดงหลังจากเสร็จสิ้นการสแกน</lang>
                       <lang id="pl" status="2">Otwórz plik raportu po zakończeniu skanowania</lang>
+                      <lang id="hu" status="2">Napló megmutatása szkennelés után</lang>
                     </row>
                   </item>
                   <item name="Items[5]" state="0">
@@ -3109,6 +3210,7 @@
                       <lang id="vi" status="2">Xóa sau khi khôi phục tập tin sao lưu registry</lang>
                       <lang id="th" status="2">ลบแฟ้มสำรองหลังจากการคืนค่ารีจิสทรี</lang>
                       <lang id="pl" status="2">Usuń plik kopii zapasowej po Przywracanie rejestru</lang>
+                      <lang id="hu" status="2">Biztonsági másolatok törlése a bejegyzés visszaállítása után</lang>
                     </row>
                   </item>
                   <item name="Items[6]" state="0">
@@ -3131,6 +3233,7 @@
                       <lang id="vi" status="2">Bỏ qua các tập tin bị thiếu trên phương tiện di động</lang>
                       <lang id="th" status="2">ไม่สนใจไฟล์ที่ขาดหายไปในสื่อที่ถอดได้</lang>
                       <lang id="pl" status="2">Pomiń brakujące pliki na nośnikach wymiennych</lang>
+                      <lang id="hu" status="2">Eltávolítható eszközön hiányzó fájlok figyelmen kívül hagyása</lang>
                     </row>
                   </item>
                   <item name="Items[7]" state="0">
@@ -3153,6 +3256,7 @@
                       <lang id="vi" status="2">Tự động sửa chữa các registry</lang>
                       <lang id="th" status="2">โดยอัตโนมัติซ่อมแซมรายการรีจิสทรี</lang>
                       <lang id="pl" status="2">Automatycznie napraw elementów rejestru</lang>
+                      <lang id="hu" status="2">Bejegyzések automatikus javítása</lang>
                     </row>
                   </item>
                   <item name="Items[8]" state="0">
@@ -3161,7 +3265,7 @@
                       <lang id="en" status="2">Exit program after repairing registry</lang>
                       <lang id="fr" status="2">Programme de sortie après réparation du registre</lang>
                       <lang id="es" status="2">Programa de salida después de la reparación del registro</lang>
-                      <lang id="pt" status="2">Programa de saída após o reparo do registro</lang>
+                      <lang id="pt" status="2">Sair do programa após corrigir o registro</lang>
                       <lang id="it" status="2">Programma di uscita dopo la riparazione del Registro di sistema</lang>
                       <lang id="nl" status="3">Programma sluiten na reparatie van het register</lang>
                       <lang id="de" status="2">Exit-Programm nach der Reparatur Registrierung</lang>
@@ -3175,6 +3279,7 @@
                       <lang id="vi" status="2">Thoát khỏi chương trình sau khi sửa chữa registry</lang>
                       <lang id="th" status="2">โปรแกรมออกหลังจากซ่อมรีจิสทรี</lang>
                       <lang id="pl" status="2">Zakończ program po naprawie rejestru</lang>
+                      <lang id="hu" status="2">Kilépés bejegyzések javítása után</lang>
                     </row>
                   </item>
                 </component>
@@ -3189,7 +3294,7 @@
                   <lang id="en" status="2">Select a folder to save the log files to</lang>
                   <lang id="fr" status="2">Sélectionnez un dossier pour enregistrer les fichiers journaux pour</lang>
                   <lang id="es" status="2">Seleccione una carpeta para guardar los archivos de registro</lang>
-                  <lang id="pt" status="2">Selecione uma pasta para salvar os arquivos de log para</lang>
+                  <lang id="pt" status="2">Selecione uma pasta para salvar os arquivos de log</lang>
                   <lang id="it" status="2">Selezionare una cartella in cui salvare i file di log per</lang>
                   <lang id="nl" status="3">Selecteer een map om het logboek op te slaan</lang>
                   <lang id="de" status="2">Wählen Sie einen Ordner aus, um die Protokolldateien, um zu speichern</lang>
@@ -3203,6 +3308,7 @@
                   <lang id="vi" status="2">Chọn một thư mục để lưu các tập tin để đăng nhập</lang>
                   <lang id="th" status="2">เลือกโฟลเดอร์ที่จะบันทึกล็อกไฟล์ไปยัง</lang>
                   <lang id="pl" status="2">Wybierz folder zapisywania plików raportów</lang>
+                  <lang id="hu" status="2">Válasszon egy mappát a naplófájloknak</lang>
                 </row>
                 <component class="TVisEdit" name="textBoxLogFolder" type="System.Windows.Forms.TextBox">
                   <row id="Location.X">6</row>
@@ -3234,6 +3340,7 @@
                     <lang id="vi" status="2">Trình duyệt...</lang>
                     <lang id="th" status="2">Browse...</lang>
                     <lang id="pl" status="2">Przeglądaj...</lang>
+                    <lang id="hu" status="2">Tallózás...</lang>
                   </row>
                 </component>
               </component>
@@ -3248,7 +3355,7 @@
                 <lang id="en" status="2">Ignore List</lang>
                 <lang id="fr" status="2">Ignorer la liste</lang>
                 <lang id="es" status="2">Ignorar la lista</lang>
-                <lang id="pt" date="20091106175400" status="3">Ignorar a lista</lang>
+                <lang id="pt" status="2">Lista de Ignorados</lang>
                 <lang id="it" status="2">Ignorare elenco</lang>
                 <lang id="nl" status="2">Lijst negeren</lang>
                 <lang id="de" status="2">Liste ignorieren</lang>
@@ -3262,6 +3369,7 @@
                 <lang id="vi" status="2">Danh sách bỏ qua</lang>
                 <lang id="th" status="2">รายชื่อที่</lang>
                 <lang id="pl" status="2">Lista pomijanych wpisów</lang>
+                <lang id="hu" status="2">Mellőzőlista</lang>
               </row>
               <component class="TVisListView" name="listView1" type="System.Windows.Forms.ListView" viewstyle="vsReport">
                 <row id="Location.X">6</row>
@@ -3274,7 +3382,7 @@
                     <lang id="en" status="2">Files and folders to exclude</lang>
                     <lang id="fr" status="2">Fichiers et dossiers à exclure</lang>
                     <lang id="es" status="2">Archivos y carpetas para excluir</lang>
-                    <lang id="pt" status="2">Arquivos e pastas a excluir</lang>
+                    <lang id="pt" status="2">Arquivos e pastas a serem desconsiderados</lang>
                     <lang id="it" status="2">I file e cartelle da escludere</lang>
                     <lang id="nl" status="3">Bestanden en mappen die uitgesloten moeten worden</lang>
                     <lang id="de" status="2">Dateien und Ordner ausschließen</lang>
@@ -3288,6 +3396,7 @@
                     <lang id="vi" status="2">Tập tin và thư mục để loại trừ</lang>
                     <lang id="th" status="2">ไฟล์และโฟลเดอร์ที่จะไม่รวม</lang>
                     <lang id="pl" status="2">Pomijane pliki i foldery</lang>
+                    <lang id="hu" status="2">Kihagyandó fájlok és mappák</lang>
                   </row>
                   <row id="Width" class="TIntegerRow">437</row>
                 </column>
@@ -3316,6 +3425,7 @@
                   <lang id="vi" status="2">Nhấp chuột phải để thêm / gỡ bỏ các mục</lang>
                   <lang id="th" status="2">คลิกขวาเพื่อเพิ่ม / ลบรายการ</lang>
                   <lang id="pl" status="2">Kliknij prawym przyciskiem na pole poniżej, aby móc dodawać i usuwać wpisy</lang>
+                  <lang id="hu" status="2">Jobb gomb bejegyzések hozzáadásához/eltávolításához</lang>
                 </row>
               </component>
             </component>
@@ -3345,6 +3455,7 @@
                 <lang id="vi" date="20091106174845" status="3">Thêm Hồ sơ</lang>
                 <lang id="th" status="2">เพิ่มไฟล์</lang>
                 <lang id="pl" status="2">Dodaj plik</lang>
+                <lang id="hu" status="2">Fájl hozzáadása</lang>
               </row>
             </component>
             <component class="TVisMenuItem" name="addFolderToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
@@ -3369,6 +3480,7 @@
                 <lang id="vi" status="2">Thêm Folder</lang>
                 <lang id="th" status="2">เพิ่มโฟลเดอร์</lang>
                 <lang id="pl" status="2">Dodaj folder</lang>
+                <lang id="hu" status="2">Mappa hozzáadása</lang>
               </row>
             </component>
             <component class="TVisMenuItem" name="addRegistryPathToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
@@ -3379,7 +3491,7 @@
                 <lang id="en" status="2">Add Registry Path</lang>
                 <lang id="fr" status="2">Ajouter Chemin du Registre</lang>
                 <lang id="es" status="2">Agregar la ruta del registro</lang>
-                <lang id="pt" status="2">Adicione o caminho de registro</lang>
+                <lang id="pt" status="2">Adicionar caminho do registro</lang>
                 <lang id="it" status="2">Aggiungere il percorso del Registro</lang>
                 <lang id="nl" status="3">Register-pad toevoegen</lang>
                 <lang id="de" status="2">Registry-Pfad hinzufügen</lang>
@@ -3393,6 +3505,7 @@
                 <lang id="vi" status="2">Thêm Registry Path</lang>
                 <lang id="th" status="2">เพิ่ม Registry Path</lang>
                 <lang id="pl" status="2">Dodaj ścieżkę rejestru</lang>
+                <lang id="hu" status="2">Bejegyzés útvonal hozzáadása</lang>
               </row>
             </component>
             <component class="TVisMenuItem" name="toolStripSeparator1" type="System.Windows.Forms.ToolStripSeparator">
@@ -3407,7 +3520,7 @@
                 <lang id="en" status="2">Remove Entry</lang>
                 <lang id="fr" status="2">Supprimer l'entrée</lang>
                 <lang id="es" status="2">Quitar entrada</lang>
-                <lang id="pt" status="2">Remova a entrada</lang>
+                <lang id="pt" status="2">Remover entrada</lang>
                 <lang id="it" status="2">Rimuovere la voce</lang>
                 <lang id="nl" status="2">Vermelding verwijderen</lang>
                 <lang id="de" status="2">Entfernen Sie Entry</lang>
@@ -3421,6 +3534,7 @@
                 <lang id="vi" status="2">Hủy bỏ Entry</lang>
                 <lang id="th" status="2">เข้าลบ</lang>
                 <lang id="pl" status="2">Usuń wpis</lang>
+                <lang id="hu" status="2">Feljegyzés eltávolítása</lang>
               </row>
             </component>
           </component>
@@ -3435,7 +3549,7 @@
             <lang id="en" status="2">Little Registry Cleaner - Restore Registry</lang>
             <lang id="fr" status="2">Little Registry Cleaner - Restaurer registre</lang>
             <lang id="es" status="2">Registro poco restaurar limpiador - registro</lang>
-            <lang id="pt" status="2">Pouco Registry Cleaner - restaurar o registro</lang>
+            <lang id="pt" status="2">Little Registry Cleaner - Restaurar Registro</lang>
             <lang id="it" date="20091106172503" status="2">Registro poco Cleaner - ripristino del Registro</lang>
             <lang id="nl" status="3">Kleine Registerreiniger - Register terugzetten</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Registrierung wiederherstellen</lang>
@@ -3449,6 +3563,7 @@
             <lang id="vi" date="20091106180137" status="3">Người lau chùi Nơi đăng ký Nhỏ - Khôi phục Nơi đăng ký</lang>
             <lang id="th" date="20091106172637" status="3">รีจิสทรีน้อยตัวล้าง - การคืนค่ารีจิสทรี</lang>
             <lang id="pl" status="2">Little Registry Cleaner - Przywróć rejestr</lang>
+            <lang id="hu" status="2">Little Registry Cleaner - Bejegyzés visszaállítása</lang>
           </row>
           <component class="TVisGridPanel" name="tableLayoutPanel1" type="System.Windows.Forms.TableLayoutPanel" align="alClient">
             <columns>
@@ -3489,7 +3604,7 @@
                   <lang id="en" status="2">Open Directory...</lang>
                   <lang id="fr" date="20091106171845" status="3">Ouvrez l'annuaire...</lang>
                   <lang id="es" date="20091106171914" status="3">Abra el directorio...</lang>
-                  <lang id="pt" date="20091106171932" status="3">Abra o diretório...</lang>
+                  <lang id="pt" status="2">Abrir diretório...</lang>
                   <lang id="it" date="20091106172355" status="3">Apra l'indice...</lang>
                   <lang id="nl" date="20091106172027" status="3">Open de map...</lang>
                   <lang id="de" date="20091106172044" status="3">Geöffneten Ordner...</lang>
@@ -3503,6 +3618,7 @@
                   <lang id="vi" date="20091106172322" status="3">Thư mục Mở...</lang>
                   <lang id="th" date="20091106172157" status="3">ไดเรกทอรีที่เปิด...</lang>
                   <lang id="pl" status="2">Otwórz folder...</lang>
+                  <lang id="hu" status="2">Mappa megnyitása...</lang>
                 </row>
               </component>
               <component class="TVisPictureButton" name="buttonRestore" type="System.Windows.Forms.Button" align="alClient">
@@ -3518,7 +3634,7 @@
                   <lang id="en" status="2">Restore</lang>
                   <lang id="fr" status="2">Restaurer</lang>
                   <lang id="es" status="2">Restauración</lang>
-                  <lang id="pt" status="2">Restauração</lang>
+                  <lang id="pt" status="2">Restaurar</lang>
                   <lang id="it" status="2">Ripristino</lang>
                   <lang id="nl" status="3">Terugzetten</lang>
                   <lang id="de" status="2">Wiederherstellen</lang>
@@ -3532,6 +3648,7 @@
                   <lang id="vi" status="2">Khôi phục</lang>
                   <lang id="th" status="2">เรียกคืน</lang>
                   <lang id="pl" status="2">Przywróć</lang>
+                  <lang id="hu" status="2">Visszaállítás</lang>
                 </row>
               </component>
             </component>
@@ -3559,6 +3676,7 @@
                 <lang id="vi" status="2">Chọn một tập tin dưới đây để phục hồi của bạn đăng ký vào một tiểu bang trước đây</lang>
                 <lang id="th" status="2">เลือกไฟล์ด้านล่างเพื่อคืนค่ารีจิสทรีของคุณสู่สภาวะเดิม</lang>
                 <lang id="pl" status="2">Wybierz plik z listy poniżej, aby przywrócić rejestr do poprzedniego stanu</lang>
+                <lang id="hu" status="2">Válasszon ki egy fájlt a bejegyzés visszaállításához</lang>
               </row>
             </component>
             <component class="TVisListView" name="listViewFiles" type="System.Windows.Forms.ListView" align="alClient" gridrow="1" viewstyle="vsReport">
@@ -3586,6 +3704,7 @@
                   <lang id="vi" status="2">Tên file</lang>
                   <lang id="th" status="2">ชื่อไฟล์</lang>
                   <lang id="pl" status="2">Nazwa pliku</lang>
+                  <lang id="hu" status="2">Fájlnév</lang>
                 </row>
                 <row id="Width" class="TIntegerRow">164</row>
               </column>
@@ -3609,6 +3728,7 @@
                   <lang id="vi" status="2">Ngày</lang>
                   <lang id="th" status="2">วันที่</lang>
                   <lang id="pl" status="2">Data</lang>
+                  <lang id="hu" status="2">Dátum</lang>
                 </row>
                 <row id="Width" class="TIntegerRow">143</row>
               </column>
@@ -3632,6 +3752,7 @@
                   <lang id="vi" status="2">Cỡ</lang>
                   <lang id="th" status="2">ขนาด</lang>
                   <lang id="pl" status="2">Rozmiar</lang>
+                  <lang id="hu" status="2">Méret</lang>
                 </row>
                 <row id="Width" class="TIntegerRow">88</row>
               </column>
@@ -3648,7 +3769,7 @@
             <lang id="en" status="2">Little Registry Cleaner - Scanning...</lang>
             <lang id="fr" status="2">Little Registry Cleaner - Numérisation...</lang>
             <lang id="es" status="2">Registro poco limpiador - análisis...</lang>
-            <lang id="pt" status="2">Pouco Registry Cleaner - Scanning...</lang>
+            <lang id="pt" status="2">Little Registry Cleaner - Efetuando varredura...</lang>
             <lang id="it" status="2">Registro poco Cleaner - analisi...</lang>
             <lang id="nl" status="3">Kleine Registerreiniger - Scannen...</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Scanning...</lang>
@@ -3662,6 +3783,7 @@
             <lang id="vi" date="20091106180213" status="3">Người lau chùi Nơi đăng ký Nhỏ - Sự Quét...</lang>
             <lang id="th" status="2">Little Registry Cleaner - สแกน...</lang>
             <lang id="pl" status="2">Little Registry Cleaner - Trwa skanowanie...</lang>
+            <lang id="hu" status="2">Little Registry Cleaner - Szkennelés...</lang>
           </row>
           <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
           </component>
@@ -3704,6 +3826,7 @@
                 <lang id="vi" status="2">Dừng</lang>
                 <lang id="th" status="2">หยุด</lang>
                 <lang id="pl" status="2">Zatrzymaj</lang>
+                <lang id="hu" status="2">Stop</lang>
               </row>
             </component>
             <component class="TVisLabel" name="labelProblems" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
@@ -3738,6 +3861,7 @@
                 <lang id="vi" date="20091106180237" status="3">Những vấn đề được tìm thấy: </lang>
                 <lang id="th" status="2">พบปัญหา: </lang>
                 <lang id="pl" status="3">Znalezionych błędów:</lang>
+                <lang id="hu" status="2">Megtalált problémák:</lang>
               </row>
             </component>
             <component class="TVisProgressBar" name="progressBar" type="Common_Tools.XpProgressBar">
@@ -3758,7 +3882,7 @@
             <lang id="en" status="2">Edit Run Item</lang>
             <lang id="fr" status="2">Modifier Run Point</lang>
             <lang id="es" status="2">Editar elemento de ejecutar</lang>
-            <lang id="pt" status="2">Editar item executar</lang>
+            <lang id="pt" status="2">Alterar item executar</lang>
             <lang id="it" status="2">Modifica oggetto di esecuzione</lang>
             <lang id="nl" status="3">Run-object bewerken</lang>
             <lang id="de" status="2">Run-Element bearbeiten</lang>
@@ -3772,6 +3896,7 @@
             <lang id="vi" status="2">Sửa Khởi Mã</lang>
             <lang id="th" status="2">รายการแก้ไข Run</lang>
             <lang id="pl" status="2">Edytuj wpis w sekcji uruchamiania</lang>
+            <lang id="hu" status="2">Futtatható tárgy szerkesztése</lang>
           </row>
           <component class="TVisGroupBox" name="groupBox1" type="System.Windows.Forms.GroupBox">
             <row id="Location.X">12</row>
@@ -3783,7 +3908,7 @@
               <lang id="en" status="2">Edit Startup Entry</lang>
               <lang id="fr" status="2">Modifier Entrée de démarrage</lang>
               <lang id="es" status="2">Editar la entrada de inicio</lang>
-              <lang id="pt" status="2">Editar entrada de inicialização</lang>
+              <lang id="pt" status="2">Alterar entrada de inicialização</lang>
               <lang id="it" status="2">Modifica di voce di avvio</lang>
               <lang id="nl" status="3">Opstart-vermelding bewerken</lang>
               <lang id="de" status="2">AutoStart-Eintrag bearbeiten</lang>
@@ -3797,6 +3922,7 @@
               <lang id="vi" status="2">Hiệu chỉnh Startup Entry</lang>
               <lang id="th" status="2">รายการแก้ไข Startup</lang>
               <lang id="pl" status="2">Edytuj wpis w sekcji uruchamiania systemu</lang>
+              <lang id="hu" status="2">Indítás fejlegyzés szerkesztése</lang>
             </row>
             <component class="TVisEdit" name="textBoxFile" type="System.Windows.Forms.TextBox">
               <row id="Location.X">30</row>
@@ -3814,7 +3940,7 @@
                 <lang id="en" status="2">OK</lang>
                 <lang id="fr" status="2">OK</lang>
                 <lang id="es" status="2">VALE</lang>
-                <lang id="pt" status="2">RAZOÁVEL</lang>
+                <lang id="pt" status="2">OK</lang>
                 <lang id="it" status="2">OK</lang>
                 <lang id="nl" status="2">OK</lang>
                 <lang id="de" status="2">OKAY</lang>
@@ -3828,6 +3954,7 @@
                 <lang id="vi" status="2">OK</lang>
                 <lang id="th" status="2">OK</lang>
                 <lang id="pl" status="2">OK</lang>
+                <lang id="hu" status="2">OK</lang>
               </row>
             </component>
             <component class="TVisPictureButton" name="buttonCancel" type="System.Windows.Forms.Button">
@@ -3854,6 +3981,7 @@
                 <lang id="vi" status="2">Hủy</lang>
                 <lang id="th" status="2">ยกเลิก</lang>
                 <lang id="pl" status="2">Anuluj</lang>
+                <lang id="hu" status="2">Mégse</lang>
               </row>
             </component>
             <component class="TVisLabel" name="label1" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
@@ -3880,6 +4008,7 @@
                 <lang id="vi" percent="99" status="1">Tệp:</lang>
                 <lang id="th" status="2">ไฟล์:</lang>
                 <lang id="pl" status="2">Plik:</lang>
+                <lang id="hu" status="2">Fájl:</lang>
               </row>
             </component>
             <component class="TVisLabel" name="label2" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
@@ -3906,6 +4035,7 @@
                 <lang id="vi" status="2">Đối số:</lang>
                 <lang id="th" status="2">การขัดแย้ง:</lang>
                 <lang id="pl" status="2">Parametry:</lang>
+                <lang id="hu" status="2">Argumentumok:</lang>
               </row>
             </component>
             <component class="TVisEdit" name="textBoxArgs" type="System.Windows.Forms.TextBox">
@@ -3919,7 +4049,10 @@
               <row id="Location.Y">17</row>
               <row id="Size.Height">23</row>
               <row id="Size.Width">25</row>
-              <row id="Text" state="0">...</row>
+              <row id="Text" state="0">
+                <native>...</native>
+                <lang id="pt" status="2">...</lang>
+              </row>
             </component>
           </component>
         </form>
@@ -3933,7 +4066,7 @@
             <lang id="en" status="2">New Run Item</lang>
             <lang id="fr" status="2">New Run Point</lang>
             <lang id="es" status="2">Nuevo punto de ejecución</lang>
-            <lang id="pt" status="2">Novo ponto de executar</lang>
+            <lang id="pt" status="2">Novo Item executar</lang>
             <lang id="it" status="2">Nuovo punto di esecuzione</lang>
             <lang id="nl" status="3">Nieuw Run-object</lang>
             <lang id="de" status="2">Neue ausführen-Nummer</lang>
@@ -3947,6 +4080,7 @@
             <lang id="vi" status="2">Khởi khoản mới</lang>
             <lang id="th" status="2">รายการใหม่ Run</lang>
             <lang id="pl" status="2">Nowy element uruchamiania systemu</lang>
+            <lang id="hu" status="2">Új futtatható tárgy</lang>
           </row>
           <component class="TVisPictureButton" name="buttonCancel" type="System.Windows.Forms.Button">
             <row id="Location.X">236</row>
@@ -3972,6 +4106,7 @@
               <lang id="vi" status="2">Hủy</lang>
               <lang id="th" status="2">ยกเลิก</lang>
               <lang id="pl" status="2">Anuluj</lang>
+              <lang id="hu" status="2">Mégse</lang>
             </row>
           </component>
           <component class="TVisPictureButton" name="buttonOk" type="System.Windows.Forms.Button">
@@ -3984,7 +4119,7 @@
               <lang id="en" status="2">OK</lang>
               <lang id="fr" status="2">OK</lang>
               <lang id="es" status="2">VALE</lang>
-              <lang id="pt" status="2">RAZOÁVEL</lang>
+              <lang id="pt" status="2">OK</lang>
               <lang id="it" status="2">OK</lang>
               <lang id="nl" status="2">OK</lang>
               <lang id="de" status="2">OKAY</lang>
@@ -3998,6 +4133,7 @@
               <lang id="vi" status="2">OK</lang>
               <lang id="th" status="2">OK</lang>
               <lang id="pl" status="2">OK</lang>
+              <lang id="hu" status="2">OK</lang>
             </row>
           </component>
           <component class="TVisGroupBox" name="groupBox1" type="System.Windows.Forms.GroupBox">
@@ -4024,6 +4160,7 @@
               <lang id="vi" status="2">Tên và Path</lang>
               <lang id="th" status="2">ชื่อและเส้นทาง</lang>
               <lang id="pl" status="2">Nazwa i ścieżka</lang>
+              <lang id="hu" status="2">Név és útvonal</lang>
             </row>
             <component class="TVisLabel" name="label1" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
               <row id="Location.X">6</row>
@@ -4049,6 +4186,7 @@
                 <lang id="vi" status="2">Tên:</lang>
                 <lang id="th" status="2">ชื่อ:</lang>
                 <lang id="pl" status="2">Nazwa</lang>
+                <lang id="hu" status="2">Név:</lang>
               </row>
             </component>
             <component class="TVisLabel" name="label2" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
@@ -4075,6 +4213,7 @@
                 <lang id="vi" status="2">File đường dẫn:</lang>
                 <lang id="th" status="2">เส้นทาง File:</lang>
                 <lang id="pl" status="2">Ścieżka:</lang>
+                <lang id="hu" status="2">Útvonal:</lang>
               </row>
             </component>
             <component class="TVisEdit" name="textBoxName" type="System.Windows.Forms.TextBox">
@@ -4088,7 +4227,10 @@
               <row id="Location.Y">37</row>
               <row id="Size.Height">23</row>
               <row id="Size.Width">28</row>
-              <row id="Text" excluded="1" state="0">...</row>
+              <row id="Text" excluded="1" state="0">
+                <native>...</native>
+                <lang id="pt" status="3">...</lang>
+              </row>
             </component>
             <component class="TVisEdit" name="textBoxPath" type="System.Windows.Forms.TextBox">
               <row id="Location.X">55</row>
@@ -4120,6 +4262,7 @@
                 <lang id="vi" status="2">Đối số:</lang>
                 <lang id="th" status="2">การขัดแย้ง:</lang>
                 <lang id="pl" status="2">Parametry:</lang>
+                <lang id="hu" status="2">Argumentumok:</lang>
               </row>
             </component>
             <component class="TVisEdit" name="textBoxArgs" type="System.Windows.Forms.TextBox">
@@ -4153,6 +4296,7 @@
               <lang id="vi" status="2">Phần:</lang>
               <lang id="th" status="2">ส่วนที่:</lang>
               <lang id="pl" status="2">Sekcja:</lang>
+              <lang id="hu" status="2">Szekció:</lang>
             </row>
           </component>
           <component class="TVisComboBox" name="comboBoxSection" type="System.Windows.Forms.ComboBox">
@@ -4372,7 +4516,7 @@
             <lang id="en" status="2">Little Registry Cleaner - Startup Manager</lang>
             <lang id="fr" status="2">Little Registry Cleaner - Gestionnaire de démarrage</lang>
             <lang id="es" status="2">Registro poco Cleaner - Manager de inicio</lang>
-            <lang id="pt" status="2">Registro pouca limpeza - Gerenciador de inicialização</lang>
+            <lang id="pt" status="2">Little Registry Cleaner - Gerenciador de inicialização</lang>
             <lang id="it" status="2">Registro poco Cleaner - avvio Manager</lang>
             <lang id="nl" status="3">Kleine Registerreiniger - Manager starten</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Start-Manager</lang>
@@ -4386,6 +4530,7 @@
             <lang id="vi" date="20091106180752" status="3">Người lau chùi Nơi đăng ký Nhỏ - Giám đốc Khởi động</lang>
             <lang id="th" date="20091106180846" status="3">รีจิสทรีน้อยตัวล้าง - ตัวจัดการการเริ่มต้น</lang>
             <lang id="pl" status="2">Little Registry Cleaner - Menadżer uruchamiania</lang>
+            <lang id="hu" status="2">Little Registry Cleaner - Indítás menedzser</lang>
           </row>
           <component class="TVisEdit" name="nodeTextBoxSection" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox" rendering="trGdiPlus">
           </component>
@@ -4479,6 +4624,7 @@
                     <lang id="vi" status="2">Phần</lang>
                     <lang id="th" status="2">ส่วนที่</lang>
                     <lang id="pl" status="2">Sekcja</lang>
+                    <lang id="hu" status="2">Szekció</lang>
                   </row>
                 </component>
                 <component class="TVisHiddenComponent" name="treeColumn2" type="Common_Tools.TreeViewAdv.Tree.TreeColumn">
@@ -4501,6 +4647,7 @@
                     <lang id="vi" status="2">Con đường</lang>
                     <lang id="th" status="2">ทางเดิน</lang>
                     <lang id="pl" status="2">Ścieżka</lang>
+                    <lang id="hu" status="2">Útvonal</lang>
                   </row>
                 </component>
                 <component class="TVisHiddenComponent" name="treeColumn3" type="Common_Tools.TreeViewAdv.Tree.TreeColumn">
@@ -4523,6 +4670,7 @@
                     <lang id="vi" status="2">Đối số</lang>
                     <lang id="th" status="2">การขัดแย้ง</lang>
                     <lang id="pl" status="2">Parametry</lang>
+                    <lang id="hu" status="2">Argumentumok</lang>
                   </row>
                 </component>
               </component>
@@ -4554,6 +4702,7 @@
                   <lang id="vi" status="2">Thêm</lang>
                   <lang id="th" status="2">เพิ่ม</lang>
                   <lang id="pl" status="2">Dodaj</lang>
+                  <lang id="hu" status="2">Hozzáadás</lang>
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonEdit" type="System.Windows.Forms.ToolStripButton">
@@ -4578,6 +4727,7 @@
                   <lang id="vi" status="2">Chỉnh sửa</lang>
                   <lang id="th" status="3">เรียบเรียง</lang>
                   <lang id="pl" status="2">Edycja</lang>
+                  <lang id="hu" status="2">Szerkesztés</lang>
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonDelete" type="System.Windows.Forms.ToolStripButton">
@@ -4602,6 +4752,7 @@
                   <lang id="vi" status="2">Xoá</lang>
                   <lang id="th" status="2">ลบ</lang>
                   <lang id="pl" status="2">Usuń</lang>
+                  <lang id="hu" status="2">Törlés</lang>
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonView" type="System.Windows.Forms.ToolStripButton">
@@ -4626,6 +4777,7 @@
                   <lang id="vi" status="2">Xem Mã</lang>
                   <lang id="th" status="2">รายการดู</lang>
                   <lang id="pl" status="2">Pokaż wpis</lang>
+                  <lang id="hu" status="2">Tárgy megnézése</lang>
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonRun" type="System.Windows.Forms.ToolStripButton">
@@ -4650,6 +4802,7 @@
                   <lang id="vi" status="2">Chạy</lang>
                   <lang id="th" status="2">วิ่ง</lang>
                   <lang id="pl" status="2">Uruchom</lang>
+                  <lang id="hu" status="2">Futtatás</lang>
                 </row>
               </component>
               <component class="TVisToolSeparator" name="toolStripSeparator1" type="System.Windows.Forms.ToolStripSeparator">
@@ -4678,6 +4831,7 @@
                   <lang id="vi" status="2">Làm mới</lang>
                   <lang id="th" status="2">รีเฟรช</lang>
                   <lang id="pl" status="2">Odśwież</lang>
+                  <lang id="hu" status="2">Frissítés</lang>
                 </row>
               </component>
             </component>
@@ -4693,7 +4847,7 @@
             <lang id="en" status="2">Little Registry Cleaner - Uninstall Manager</lang>
             <lang id="fr" date="20091106181424" status="3">Peu de décapant d'enregistrement - Désinstallez le directeur</lang>
             <lang id="es" status="2">Registro poco Cleaner - desinstalar Manager</lang>
-            <lang id="pt" status="2">Registro pouca limpeza - Uninstall Manager</lang>
+            <lang id="pt" status="2">Little Registry Cleaner - Gerenciador para Desinstalação</lang>
             <lang id="it" status="2">Registro poco Cleaner - disinstallazione Manager</lang>
             <lang id="nl" status="3">Kleine Registerreiniger - Manager verwijderen</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Manager deinstallieren</lang>
@@ -4707,6 +4861,7 @@
             <lang id="vi" date="20091106181648" status="3">Người lau chùi Nơi đăng ký Nhỏ - Chương trình quản lý</lang>
             <lang id="th" date="20091106181713" status="3">รีจิสทรีน้อยตัวล้าง - การถอนการติดตั้งโปรแกรมจัดการ</lang>
             <lang id="pl" status="2">Little Registry Cleaner - Menadżer deinstalacji</lang>
+            <lang id="hu" status="2">Little Registry Cleaner - Uninstallálás menedzser</lang>
           </row>
           <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
           </component>
@@ -4794,6 +4949,7 @@
                       <lang id="vi" status="2">Tìm kiếm theo tên</lang>
                       <lang id="th" status="2">ค้นหาโดยใช้ชื่อ</lang>
                       <lang id="pl" status="2">Szukaj wg nazwy</lang>
+                      <lang id="hu" status="2">Keresés név alapján</lang>
                     </row>
                   </component>
                 </component>
@@ -4827,6 +4983,7 @@
                     <lang id="vi" status="2">Gỡ bỏ</lang>
                     <lang id="th" status="2">ยกเลิกการติดตั้ง</lang>
                     <lang id="pl" status="2">Odinstaluj</lang>
+                    <lang id="hu" status="2">Unsinstallálás</lang>
                   </row>
                 </component>
                 <component class="TVisPictureButton" name="buttonRemove" type="System.Windows.Forms.Button" imageindex="3" images="imageList">
@@ -4839,7 +4996,7 @@
                     <lang id="en" status="2">Remove Entry</lang>
                     <lang id="fr" status="2">Supprimer l'entrée</lang>
                     <lang id="es" status="2">Quitar entrada</lang>
-                    <lang id="pt" status="2">Remova a entrada</lang>
+                    <lang id="pt" status="2">Remover entrada</lang>
                     <lang id="it" status="2">Rimuovere la voce</lang>
                     <lang id="nl" status="2">Vermelding verwijderen</lang>
                     <lang id="de" status="2">Entfernen Sie Entry</lang>
@@ -4853,6 +5010,7 @@
                     <lang id="vi" status="2">Hủy bỏ Entry</lang>
                     <lang id="th" status="2">เข้าลบ</lang>
                     <lang id="pl" status="2">Usuń wpis</lang>
+                    <lang id="hu" status="2">Feljegyzés eltávolítása</lang>
                   </row>
                 </component>
               </component>
@@ -4881,6 +5039,7 @@
                     <lang id="vi" status="2">Chương trình</lang>
                     <lang id="th" status="2">โปรแกรม</lang>
                     <lang id="pl" status="2">Aplikacja</lang>
+                    <lang id="hu" status="2">Program</lang>
                   </row>
                   <row id="Width" class="TIntegerRow">188</row>
                 </column>
@@ -4890,7 +5049,7 @@
                     <lang id="en" status="2">Publisher</lang>
                     <lang id="fr" status="2">Editeur</lang>
                     <lang id="es" status="2">Editorial</lang>
-                    <lang id="pt" date="20091106181737" status="3">Editor</lang>
+                    <lang id="pt" status="2">Editor</lang>
                     <lang id="it" status="2">Editore</lang>
                     <lang id="nl" status="3">Publisher</lang>
                     <lang id="de" status="2">Herausgeber</lang>
@@ -4904,6 +5063,7 @@
                     <lang id="vi" status="2">Nhà xuất bản</lang>
                     <lang id="th" date="20091106181800" status="3">ผู้เผยแพร่</lang>
                     <lang id="pl" status="2">Producent</lang>
+                    <lang id="hu" status="2">Kiadó</lang>
                   </row>
                   <row id="Width" class="TIntegerRow">109</row>
                 </column>
@@ -4927,6 +5087,7 @@
                     <lang id="vi" status="2">Ước tính Kích thước</lang>
                     <lang id="th" status="2">ขนาดโดยประมาณ</lang>
                     <lang id="pl" status="2">Szacowany rozmiar</lang>
+                    <lang id="hu" status="2">Becsült méret</lang>
                   </row>
                   <row id="Width" class="TIntegerRow">87</row>
                 </column>
@@ -4944,7 +5105,7 @@
             <lang id="en" status="2">Check for update</lang>
             <lang id="fr" date="20091106182601" status="3">Vérifiez la mise à jour</lang>
             <lang id="es" status="2">Comprobación de actualización</lang>
-            <lang id="pt" status="2">Verificação para atualização</lang>
+            <lang id="pt" status="2">Verificar atualizações</lang>
             <lang id="it" status="2">Controllo per aggiornamento</lang>
             <lang id="nl" status="3">Controleer voor update</lang>
             <lang id="de" status="2">Kontrollkästchen für die Aktualisierung</lang>
@@ -4958,6 +5119,7 @@
             <lang id="vi" status="2">Kiểm tra các cập nhật</lang>
             <lang id="th" status="2">ตรวจสอบการปรับปรุง</lang>
             <lang id="pl" status="2">Uaktualnienia</lang>
+            <lang id="hu" status="2">Frissítés keresése</lang>
           </row>
           <component class="TVisImage" name="pictureBox1" type="System.Windows.Forms.PictureBox">
             <row id="Location.X">16</row>
@@ -4981,7 +5143,7 @@
               <lang id="en" status="2">Download</lang>
               <lang id="fr" status="2">Télécharger</lang>
               <lang id="es" status="2">Descargar</lang>
-              <lang id="pt" date="20091106182453" status="3">Transferência</lang>
+              <lang id="pt" status="2">Download</lang>
               <lang id="it" status="2">Scaricare</lang>
               <lang id="nl" status="2">Downloaden</lang>
               <lang id="de" status="2">Download</lang>
@@ -4995,6 +5157,7 @@
               <lang id="vi" status="2">Tải xuống</lang>
               <lang id="th" status="2">ดาวน์โหลด</lang>
               <lang id="pl" status="2">Pobierz</lang>
+              <lang id="hu" status="2">Letöltés</lang>
             </row>
           </component>
           <component class="TVisPictureButton" name="buttonChangelog" type="System.Windows.Forms.Button">
@@ -5007,7 +5170,7 @@
               <lang id="en" status="2">Changelog</lang>
               <lang id="fr" date="20091106182105" status="3">Journal modification</lang>
               <lang id="es" status="2">Registro de cambios</lang>
-              <lang id="pt" date="20091106182138" status="3">Log de alterações</lang>
+              <lang id="pt" status="2">Log de alterações</lang>
               <lang id="it" date="20091106182408" status="3">Log delle modifiche</lang>
               <lang id="nl" date="20091106182153" status="3">Wijzigings-log</lang>
               <lang id="de" date="20091106182207" status="3">Änderungsprotokoll</lang>
@@ -5021,6 +5184,7 @@
               <lang id="vi" date="20091106182428" status="3">Thay đổi đăng nhập</lang>
               <lang id="th" date="20091106182332" status="3">บันทึกการเปลี่ยนแปลง</lang>
               <lang id="pl" status="2">Lista zmian</lang>
+              <lang id="hu" status="2">Változások</lang>
             </row>
           </component>
         </form>
@@ -5033,7 +5197,7 @@
           <lang id="en" status="2">The bug report could not be sent</lang>
           <lang id="fr" status="2">Le rapport de bogue n'a pas pu être envoyé.</lang>
           <lang id="es" status="2">No se pudo enviar el informe de fallo</lang>
-          <lang id="pt" status="2">O relatório de erro não pode ser enviado</lang>
+          <lang id="pt" status="2">O relatório de erros não pode ser enviado</lang>
           <lang id="it" status="2">La segnalazione di bug, non ha potuto essere inviato</lang>
           <lang id="nl" status="3">Het bugrapport kon niet worden verzonden</lang>
           <lang id="de" status="2">Der Fehlerbericht konnte nicht gesendet werden</lang>
@@ -5047,13 +5211,14 @@
           <lang id="vi" status="2">Các báo cáo lỗi không thể được gửi</lang>
           <lang id="th" status="2">รายงานบักไม่สามารถส่ง</lang>
           <lang id="pl" status="2">Raport o błędzie Nie można wysłać</lang>
+          <lang id="hu" status="2">A hibajelentést nem lehet elküldeni</lang>
         </row>
         <row id="crashReporterSuccess" state="0">
           <native>Sent bug report successfully</native>
           <lang id="en" status="2">Sent bug report successfully</lang>
           <lang id="fr" status="2">Rapport de bogue envoyé</lang>
           <lang id="es" status="2">Enviado el informe de fallo correctamente</lang>
-          <lang id="pt" status="2">Relatório de erro enviada com sucesso</lang>
+          <lang id="pt" status="2">Relatório de erros enviado com sucesso</lang>
           <lang id="it" status="2">Bug report inviato correttamente</lang>
           <lang id="nl" status="3">Bugreport verzonden</lang>
           <lang id="de" status="2">Sent Fehlerbericht erfolgreich</lang>
@@ -5067,13 +5232,14 @@
           <lang id="vi" status="2">Gửi báo cáo lỗi thành công</lang>
           <lang id="th" status="2">รายงานข้อบกพร่องที่ส่งสำเร็จ</lang>
           <lang id="pl" status="2">Raport o błędach wysłane</lang>
+          <lang id="hu" status="2">A hibajelentés sikeresen elküldve</lang>
         </row>
         <row id="mainAddExcludeEntry" state="0">
           <native>Added selected registry keys to the exclude list</native>
           <lang id="en" status="2">Added selected registry keys to the exclude list</lang>
           <lang id="fr" status="2">Ajouté des clés de registre sélectionnée à la liste d'exclusion</lang>
           <lang id="es" status="2">Agrega claves del registro seleccionado a la lista de exclusión</lang>
-          <lang id="pt" status="2">Adicionado selecionados chaves de registo para a lista de exclusão</lang>
+          <lang id="pt" status="2">Adicionar chaves do registro selecionadas para lista de desconsiderados</lang>
           <lang id="it" status="2">Ha aggiunto selezionati chiavi di registro per l'elenco di esclusione</lang>
           <lang id="nl" status="3">Geselecteerde registersleutels toegevoegd aan de Uitsluiten-lijst</lang>
           <lang id="de" status="2">Added ausgewählten Registrierungsschlüssel, um die Exclude-Liste</lang>
@@ -5087,6 +5253,7 @@
           <lang id="vi" status="2">Added chọn khóa registry vào danh sách loại trừ</lang>
           <lang id="th" status="2">เพิ่มเลือกรีจิสทรีคีย์ที่ไม่รวมรายการ</lang>
           <lang id="pl" status="2">Dodano wybranych kluczy rejestru w celu wyłączenia lista</lang>
+          <lang id="hu" status="2">Kijelölt bejegyzés kulcsok sikeresen hozzáadva a kihagyáslistához</lang>
         </row>
         <row id="mainAskExit" state="0">
           <native>Are you sure you want to exit?</native>
@@ -5107,6 +5274,7 @@
           <lang id="vi" status="2">Bạn có chắc bạn muốn thoát ra?</lang>
           <lang id="th" status="2">คุณแน่ใจหรือว่าต้องการออก?</lang>
           <lang id="pl" status="2">Czy na pewno chcesz zakończyć?</lang>
+          <lang id="hu" status="2">Biztos ki akar lépni?</lang>
         </row>
         <row id="mainFirstTimeRestorePoint" state="3">
           <prev>This your first time running Little Registry Cleaner. Would you like to create a restore point?</prev>
@@ -5114,7 +5282,7 @@
           <lang id="en" invalidated="1" status="2">This your first time running Little Registry Cleaner. \r\nWould you like to create a restore point?</lang>
           <lang id="fr" invalidated="1" status="2">Ce votre première fois en cours d'exécution Little Registry Cleaner. vous souhaitez créer un point de restauration de \r\nWould?</lang>
           <lang id="es" invalidated="1" status="2">Esta la primera vez que ejecuta Little limpiador de registro. \r\nWould le gustaría crear un punto de restauración?</lang>
-          <lang id="pt" invalidated="1" status="2">Desta vez, a sua primeira execução Little Registry Cleaner.\r\nGostaria de criar um ponto de restauração?</lang>
+          <lang id="pt" status="2">Esta é a primeira vez que você executa o Little Registry Cleaner.\r\nGostaria de criar um ponto de restauração?</lang>
           <lang id="it" invalidated="1" status="2">La tua prima volta in esecuzione Little Registry Cleaner.\r\nVuoi creare un punto di ripristino?</lang>
           <lang id="nl" date="20091212111738" status="3">Dit is de eerste keer dat u Kleine Registerreiniger gebruikt.#nWilt u een herstelpunt aanmaken?</lang>
           <lang id="de" invalidated="1" status="2">Diese Sie das erste Mal Little Registry Cleaner.\r\nMöchten Sie einen Wiederherstellungspunkt erstellen?</lang>
@@ -5128,13 +5296,14 @@
           <lang id="vi" invalidated="1" status="2">Điều này của bạn lần đầu tiên chạy Little Registry Cleaner.\r\nBạn có muốn tạo một điểm khôi phục?</lang>
           <lang id="th" invalidated="1" status="2">นี้เป็นครั้งแรกของคุณทำงาน Little Registry Cleaner.\r\n คุณต้องการสร้างจุด restore point?</lang>
           <lang id="pl" invalidated="1" status="2">To twój pierwszy raz kolejny Little Registry Cleaner.\r\nCzy chcesz utworzyć punkt przywracania?</lang>
+          <lang id="hu" status="2">Első alkalommal futtatja a Little Registry Cleaner-t.#nSzeretne visszaállító pontot létrehozni?</lang>
         </row>
         <row id="mainInvalidHelpFile" state="0">
           <native>Unable to find Little Registry Cleaner.chm</native>
           <lang id="en" status="2">Unable to find Little Registry Cleaner.chm</lang>
           <lang id="fr" status="2">Impossible de trouver le petit registre Cleaner.chm</lang>
           <lang id="es" status="2">No se puede encontrar Little Cleaner.chm de registro</lang>
-          <lang id="pt" status="2">Incapaz de encontrar Little Secretaria Cleaner.chm</lang>
+          <lang id="pt" status="2">Não foi possível encontrar Little Registry Cleaner.chm</lang>
           <lang id="it" status="2">In grado di trovare Little Registro Cleaner.chm</lang>
           <lang id="nl" status="3">Kan Little Registry Cleaner.chm niet vinden</lang>
           <lang id="de" status="2">Nicht finden Little Registry Cleaner.chm</lang>
@@ -5148,6 +5317,7 @@
           <lang id="vi" status="2">Không tìm thấy Little Registry Cleaner.chm</lang>
           <lang id="th" status="2">ไม่พบ Little Registry Cleaner.chm</lang>
           <lang id="pl" status="2">Nie można znaleźć Little Registry Cleaner.chm</lang>
+          <lang id="hu" status="2">Nincs meg a Little Registry Cleaner.chm fájl</lang>
         </row>
         <row id="mainProblemsFix" state="0">
           <native>Would you like to fix all selected problems?</native>
@@ -5168,13 +5338,14 @@
           <lang id="vi" status="2">Bạn có muốn sửa chữa tất cả các vấn đề lựa chọn?</lang>
           <lang id="th" status="2">คุณต้องการที่จะแก้ไขปัญหาที่เลือกทั้งหมด?</lang>
           <lang id="pl" status="2">Chcesz naprawić wszystkie wybrane problemy?</lang>
+          <lang id="hu" status="2">Szeretné az összes kijelölt problémát megjavítani?</lang>
         </row>
         <row id="mainProblemsRemoved" state="0">
           <native>Removed problems from registry</native>
           <lang id="en" status="2">Removed problems from registry</lang>
           <lang id="fr" status="2">Problèmes supprimées du registre</lang>
           <lang id="es" status="2">Se ha eliminado los problemas del registro</lang>
-          <lang id="pt" status="2">Problemas removido do Registro</lang>
+          <lang id="pt" status="2">Problemas removidos do Registro</lang>
           <lang id="it" status="2">Rimossi i problemi dal registro</lang>
           <lang id="nl" status="3">Problemen uit het register verwijderd</lang>
           <lang id="de" status="2">Probleme aus der Registry entfernt</lang>
@@ -5188,6 +5359,7 @@
           <lang id="vi" status="2">Loại bỏ các vấn đề từ registry</lang>
           <lang id="th" status="2">ปัญหาออกจากรีจิสทรี</lang>
           <lang id="pl" status="2">Usunięto problemy z rejestru</lang>
+          <lang id="hu" status="2">Hibák eltávolítva a bejegyzésből</lang>
         </row>
         <row id="mainScanningAborted" state="0">
           <native>Aborted scanning the registry</native>
@@ -5208,13 +5380,14 @@
           <lang id="vi" status="2">Hủy bỏ chức năng quét registry</lang>
           <lang id="th" status="2">Aborted สแกนรีจิสทรี</lang>
           <lang id="pl" status="2">Aborted skanowania rejestru</lang>
+          <lang id="hu" status="2">Bejegyzés szkennelése megszakítva</lang>
         </row>
         <row id="mainScanningFinished" state="0">
           <native>Finished scanning the registry</native>
           <lang id="en" status="2">Finished scanning the registry</lang>
           <lang id="fr" status="2">L'analyse est terminée le registre.</lang>
           <lang id="es" status="2">Finalizado el análisis del registro</lang>
-          <lang id="pt" status="2">Acabados de varredura do registro</lang>
+          <lang id="pt" status="2">Varredura do registro terminada</lang>
           <lang id="it" status="2">Termine della scansione del Registro di sistema</lang>
           <lang id="nl" status="3">Registerscan is klaar</lang>
           <lang id="de" status="2">Abgeschlossene Scanning der Registrierung</lang>
@@ -5228,13 +5401,14 @@
           <lang id="vi" status="2">Đã hoàn thành chức năng quét registry</lang>
           <lang id="th" status="2">เสร็จสิ้นการสแกนรีจิสทรี</lang>
           <lang id="pl" status="2">Zakończono skanowanie rejestru</lang>
+          <lang id="hu" status="2">Bejegyzés szkennelése befejezve</lang>
         </row>
         <row id="mainSelectSections" state="0">
           <native>Please select a section to scan</native>
           <lang id="en" status="2">Please select a section to scan</lang>
           <lang id="fr" status="2">Veuillez sélectionner une section à analyser</lang>
           <lang id="es" status="2">Por favor, seleccione una sección para analizar</lang>
-          <lang id="pt" status="2">Por favor, selecione uma seção para digitalizar</lang>
+          <lang id="pt" status="2">Por favor, selecione uma seção para efetuar a varredura</lang>
           <lang id="it" status="2">Si prega di selezionare una sezione per la scansione</lang>
           <lang id="nl" status="3">Selecteer een sectie om te scannen</lang>
           <lang id="de" status="2">Bitte wählen Sie einen Abschnitt zum Scannen</lang>
@@ -5248,6 +5422,7 @@
           <lang id="vi" status="2">Hãy lựa chọn một phần để quét</lang>
           <lang id="th" status="2">โปรดเลือกส่วนที่จะสแกน</lang>
           <lang id="pl" status="2">Wybierz punkt skanowania</lang>
+          <lang id="hu" status="2">Válasszon területet a szkenneléshez</lang>
         </row>
         <row id="mainUpdateAsk" state="0">
           <native>A newer version is available. Would you like to download it?</native>
@@ -5268,6 +5443,7 @@
           <lang id="vi" status="2">Một phiên bản mới hơn có sẵn. Bạn có muốn tải nó?</lang>
           <lang id="th" status="2">เวอร์ชันใหม่มี. คุณต้องการดาวน์โหลด?</lang>
           <lang id="pl" status="2">Jest dostępna nowsza wersja. Chcesz, aby go pobrać?</lang>
+          <lang id="hu" status="2">Frisseb verzió elérhető. Szeretné letölteni?</lang>
         </row>
         <row id="optionsExcludeDir" state="0">
           <native>Select the folder to exclude from the registry scan</native>
@@ -5288,13 +5464,14 @@
           <lang id="vi" status="2">Chọn thư mục để loại trừ từ registry quét</lang>
           <lang id="th" status="2">เลือกโฟลเดอร์ที่จะออกจากรีจิสทรีสแกน</lang>
           <lang id="pl" status="2">Wybierz folder, do wyłączenia z rejestru skanowania</lang>
+          <lang id="hu" status="2">Válassza ki a mappát amit ki akar hagyni a szkennelésből</lang>
         </row>
         <row id="optionsExcludeEmptyRegPath" state="0">
           <native>Registry path cannot be empty</native>
           <lang id="en" status="2">Registry path cannot be empty</lang>
           <lang id="fr" status="2">Chemin d'accès du Registre ne peut pas être vide</lang>
           <lang id="es" status="2">Ruta del registro no puede estar vacío</lang>
-          <lang id="pt" status="2">Caminho de registo não pode ser vazio</lang>
+          <lang id="pt" status="2">Caminho de registo não pode estar vazio</lang>
           <lang id="it" status="2">Percorso del Registro di sistema non può essere vuoto</lang>
           <lang id="nl" status="2">Register pad kan niet leeg zijn</lang>
           <lang id="de" status="2">Registry-Pfad darf nicht leer sein</lang>
@@ -5308,13 +5485,14 @@
           <lang id="vi" status="2">Registry đường dẫn không thể để trống</lang>
           <lang id="th" status="2">เส้นทาง Registry ไม่ว่างเปล่า</lang>
           <lang id="pl" status="2">Ścieżka rejestru nie może być pusta</lang>
+          <lang id="hu" status="2">A bejegyzés útvonal nem lehet üres</lang>
         </row>
         <row id="optionsExcludeFile" state="0">
           <native>Select a file to exclude from the registry scan</native>
           <lang id="en" status="2">Select a file to exclude from the registry scan</lang>
           <lang id="fr" status="2">Sélectionnez un fichier à exclure de l'analyse du registre</lang>
           <lang id="es" status="2">Seleccione un archivo para excluir el análisis del registro</lang>
-          <lang id="pt" status="2">Selecione um arquivo para excluir o registro de digitalização</lang>
+          <lang id="pt" status="2">Selecione um arquivo a desconsiderar da varredura do registro</lang>
           <lang id="it" status="2">Selezionare un file da escludere dal Registro di sistema di scansione</lang>
           <lang id="nl" status="3">Selecteer een bestand dat van de registerscan moet worden uitgesloten</lang>
           <lang id="de" status="2">Wählen Sie eine Datei aus der Registrierung Vorgang ausschließen</lang>
@@ -5328,6 +5506,7 @@
           <lang id="vi" status="2">Chọn một tập tin để loại trừ từ registry quét</lang>
           <lang id="th" status="2">เลือกไฟล์ที่จะไม่รวมรีจิสทรีสแกน</lang>
           <lang id="pl" status="2">Wybierz plik do wyłączenia z rejestru skanowania</lang>
+          <lang id="hu" status="2">Válassza ki a fájlt amit ki akar hagyni a szkennelésből</lang>
         </row>
         <row id="optionsExcludeInvalidRegPath" state="0">
           <native>Specified registry key doesn't exist</native>
@@ -5348,6 +5527,7 @@
           <lang id="vi" status="2">Quy định đăng ký khóa không tồn tại</lang>
           <lang id="th" status="2">รีจิสทรีคีย์ที่ระบุไม่มี</lang>
           <lang id="pl" status="2">Określony klucz rejestru nie istnieje</lang>
+          <lang id="hu" status="2">A megadott bejegyzéskulcs nem létezik</lang>
         </row>
         <row id="optionsExcludeRemove" state="0">
           <native>Are you sure?</native>
@@ -5368,6 +5548,7 @@
           <lang id="vi" status="2">Bạn có chắc chắn?</lang>
           <lang id="th" status="2">คุณแน่ใจหรือไม่?</lang>
           <lang id="pl" status="2">Czy na pewno?</lang>
+          <lang id="hu" status="2">Biztos benne?</lang>
         </row>
         <row id="optionsSelectBackupDir" state="0">
           <native>Select the folder where the backup files will be placed</native>
@@ -5388,13 +5569,14 @@
           <lang id="vi" status="2">Chọn thư mục nơi các tập tin sao lưu sẽ được đặt</lang>
           <lang id="th" status="2">เลือกโฟลเดอร์ที่แฟ้มสำรองจะถูกวางไว้</lang>
           <lang id="pl" status="2">Wybierz folder, do którego kopii zapasowej zostanie umieszczony</lang>
+          <lang id="hu" status="2">Válassza ki a mappát amibe majd a biztonsági másolatok kerülnek</lang>
         </row>
         <row id="optionsSelectLogDir" state="0">
           <native>Select the folder where the log files will be placed</native>
           <lang id="en" status="2">Select the folder where the log files will be placed</lang>
           <lang id="fr" status="2">Sélectionnez le dossier dans lequel seront placés les fichiers journaux</lang>
           <lang id="es" status="2">Seleccione la carpeta donde se colocarán los archivos de registro</lang>
-          <lang id="pt" status="2">Selecione a pasta onde os arquivos de log será colocado</lang>
+          <lang id="pt" status="2">Selecione a pasta onde os arquivos de log serão colocados</lang>
           <lang id="it" status="2">Selezionare la cartella dove il file di registro sarà messo</lang>
           <lang id="nl" status="2">Selecteer de map waar de log-bestanden zullen worden geplaatst</lang>
           <lang id="de" status="2">Wählen Sie den Ordner, in dem die Log-Dateien abgelegt werden</lang>
@@ -5408,13 +5590,14 @@
           <lang id="vi" status="2">Chọn thư mục nơi mà các file bản ghi sẽ được đặt</lang>
           <lang id="th" status="2">เลือกโฟลเดอร์ที่แฟ้มบันทึกจะถูกวางไว้</lang>
           <lang id="pl" status="2">Wybierz folder, w którym pliki dziennika zostaną umieszczone</lang>
+          <lang id="hu" status="2">Válassza ki a mappát amibe majd a naplófájlok kerülnek</lang>
         </row>
         <row id="piErrorRegKey" state="0">
           <native>Error removing registry key:</native>
           <lang id="en" status="2">Error removing registry key:</lang>
           <lang id="fr" status="2">Clé de registre suppression erreur:</lang>
           <lang id="es" status="2">Error eliminar clave de registro:</lang>
-          <lang id="pt" status="2">Chave de registro de remoção de erro:</lang>
+          <lang id="pt" status="2">Erro ao remover chave do registro:</lang>
           <lang id="it" status="2">Rimozione chiave del Registro di sistema di errore:</lang>
           <lang id="nl" status="3">Fout bij het verwijderen van registersleutel:</lang>
           <lang id="de" status="2">Fehler beim Entfernen von Registry-Schlüssel:</lang>
@@ -5428,13 +5611,14 @@
           <lang id="vi" status="2">Lỗi loại bỏ đăng ky:</lang>
           <lang id="th" status="2">ข้อผิดพลาดเอารีจิสทรีคีย์:</lang>
           <lang id="pl" status="2">Błąd podczas usuwania klucza rejestru:</lang>
+          <lang id="hu" status="2">Hiba történt a bejegyzéskulcs törlése közben:</lang>
         </row>
         <row id="piErrorUninstalling" state="0">
           <native>Error uninstalling program:</native>
           <lang id="en" status="2">Error uninstalling program:</lang>
           <lang id="fr" status="2">Programme de désinstallation erreur:</lang>
           <lang id="es" status="2">Programa de desinstalación de error:</lang>
-          <lang id="pt" status="2">Programa de desinstalação do erro:</lang>
+          <lang id="pt" status="2">Erro ao desinstalar o programa:</lang>
           <lang id="it" status="2">Programma di disinstallazione di errore:</lang>
           <lang id="nl" status="2">Fout bij het verwijderen van het programma:</lang>
           <lang id="de" status="2">Fehler beim Deinstallieren von Programm:</lang>
@@ -5448,13 +5632,14 @@
           <lang id="vi" status="2">Lỗi gỡ bỏ cài đặt chương trình:</lang>
           <lang id="th" status="2">ข้อผิดพลาด uninstalling โปรแกรม:</lang>
           <lang id="pl" status="2">Odinstalowywanie programu błąd:</lang>
+          <lang id="hu" status="2">Hiba történt a program uninstallállása közben:</lang>
         </row>
         <row id="piInvalidUninstallString" state="0">
           <native>Unable to find uninstall string. Would you like to manually remove it from the registry?</native>
           <lang id="en" status="2">Unable to find uninstall string. Would you like to manually remove it from the registry?</lang>
           <lang id="fr" status="2">Impossible de trouver la chaîne de désinstallation. Vous souhaitez supprimer manuellement du registre?</lang>
           <lang id="es" status="2">No se puede encontrar la cadena de desinstalación. ¿Le gustaría quitarlo manualmente el registro?</lang>
-          <lang id="pt" status="2">Não é possível encontrar a cadeia de caracteres de desinstalação. Você gostaria de removê-lo manualmente no registro?</lang>
+          <lang id="pt" status="2">Não é possível encontrar o caminho de desinstalação. Você gostaria de removê-lo manualmente no registro?</lang>
           <lang id="it" status="2">Impossibile trovare la stringa di disinstallazione. Vuoi rimuovere manualmente dal Registro di sistema?</lang>
           <lang id="nl" status="3">Kan geen verwijder-tekenreeks vinden. Wilt u deze handmatig uit het register verwijderen?</lang>
           <lang id="de" status="2">Kann nicht Deinstallation String gefunden werden. Möchten Sie Sie aus der Registrierung manuell zu entfernen?</lang>
@@ -5468,13 +5653,14 @@
           <lang id="vi" status="2">Không tìm thấy chuỗi gỡ bỏ cài đặt. Bạn có muốn xoá bỏ nó một cách thủ công từ registry?</lang>
           <lang id="th" status="2">ไม่สามารถค้นหาการถอนการติดตั้งสาย คุณต้องการด้วยตนเองเอาออกจากรีจิสทรี?</lang>
           <lang id="pl" status="2">Nie można odnaleźć ciągu dezinstalacji. Czy chcesz ręcznie usunąć go z rejestru?</lang>
+          <lang id="hu" status="2">Az uninstallálási parancs nem található. Szeretné manuálisan eltávoítani a bejegyzésből?</lang>
         </row>
         <row id="piSuccessRegKey" state="0">
           <native>Sucessfully removed registry key</native>
           <lang id="en" status="2">Sucessfully removed registry key</lang>
           <lang id="fr" status="2">Clé de registre réussi supprimé</lang>
           <lang id="es" status="2">Clave del registro de correctamente eliminado</lang>
-          <lang id="pt" status="2">Chave de registo com êxito removido</lang>
+          <lang id="pt" status="2">Chave de registo removida com sucesso</lang>
           <lang id="it" status="2">Chiave del Registro di sistema Hai rimosso</lang>
           <lang id="nl" status="3">Registersleutel verwijderd</lang>
           <lang id="de" status="2">Registrierungsschlüssel wurde erfolgreich entfernt</lang>
@@ -5488,13 +5674,14 @@
           <lang id="vi" status="2">Xoa khoa đăng ky</lang>
           <lang id="th" status="2">สำเร็จในการลบรีจิสทรีคีย์</lang>
           <lang id="pl" status="2">Pomyślnie usunięto klucza rejestru</lang>
+          <lang id="hu" status="2">A bejegyzés kulcs sikeresen eltávolítva</lang>
         </row>
         <row id="piSuccessUninstall" state="0">
           <native>Sucessfully uninstalled program</native>
           <lang id="en" status="2">Sucessfully uninstalled program</lang>
           <lang id="fr" status="2">Programme réussi désinstallé</lang>
           <lang id="es" status="2">Programa correctamente desinstalado</lang>
-          <lang id="pt" status="2">Programa com êxito desinstalado</lang>
+          <lang id="pt" status="2">Programa desinstalado com sucesso</lang>
           <lang id="it" status="2">Programma hai disinstallato</lang>
           <lang id="nl" status="3">Programma verwijderd</lang>
           <lang id="de" status="2">Wurde erfolgreich deinstalliert Programm</lang>
@@ -5508,13 +5695,14 @@
           <lang id="vi" status="2">Gỡ cài đặt thành công chương trình</lang>
           <lang id="th" status="2">สำเร็จในการถอนการติดตั้งโปรแกรม</lang>
           <lang id="pl" status="2">Program pomyślnie odinstalowany</lang>
+          <lang id="hu" status="2">A program sikeresen uninstallálva</lang>
         </row>
         <row id="programAlreadyRunning" state="0">
           <native>Another program seems to be running already...</native>
           <lang id="en" status="2">Another program seems to be running already...</lang>
           <lang id="fr" status="2">Un autre programme semble être en cours d'exécution déjà...</lang>
           <lang id="es" status="2">Otro programa parece estar ya en ejecución...</lang>
-          <lang id="pt" status="2">Outro programa parece estar a correr já...</lang>
+          <lang id="pt" status="2">Outro programa parece já estar sendo executado...</lang>
           <lang id="it" status="2">Un altro programma sembra essere già in esecuzione...</lang>
           <lang id="nl" status="3">Er lijkt al een ander programma te draaien...</lang>
           <lang id="de" status="2">Ein anderes Programm scheint zu sein, läuft bereits...</lang>
@@ -5528,6 +5716,7 @@
           <lang id="vi" status="2">Một chương trình có vẻ là đã chạy...</lang>
           <lang id="th" status="2">โปรแกรมอื่นน่าจะทำงานแล้ว...</lang>
           <lang id="pl" status="2">Inny program wydaje się być uruchomiony już...</lang>
+          <lang id="hu" status="2">Egy másik program már fut...</lang>
         </row>
         <row id="programNeedAdmin" state="0">
           <native>You must be an administrator to run this program</native>
@@ -5548,6 +5737,7 @@
           <lang id="vi" status="2">Bạn có phải là một quản trị để chạy chương trình này</lang>
           <lang id="th" status="2">คุณต้องเป็นผู้ดูแลระบบเพื่อรันโปรแกรมนี้</lang>
           <lang id="pl" status="2">Musisz być administratorem, żeby uruchomić ten program</lang>
+          <lang id="hu" status="2">Rendszergazdának kell lennie hogy használhassa ezt a programot</lang>
         </row>
         <row id="restoreAsk" state="0">
           <native>Are you sure?</native>
@@ -5568,13 +5758,14 @@
           <lang id="vi" status="2">Bạn có chắc chắn?</lang>
           <lang id="th" status="2">คุณแน่ใจหรือไม่?</lang>
           <lang id="pl" status="2">Czy na pewno?</lang>
+          <lang id="hu" status="2">Biztos benne?</lang>
         </row>
         <row id="restoreError" state="0">
           <native>Error restoring registry</native>
           <lang id="en" status="2">Error restoring registry</lang>
           <lang id="fr" status="2">Erreur lors de restauration du registre</lang>
           <lang id="es" status="2">Registro de restauración de error</lang>
-          <lang id="pt" status="2">Erro Registro restauração</lang>
+          <lang id="pt" status="2">Erro ao restaurar o registro</lang>
           <lang id="it" status="2">Errore di ripristino del Registro di sistema</lang>
           <lang id="nl" status="2">Fout bij het herstellen van het register</lang>
           <lang id="de" status="2">Error restoring Registrierung</lang>
@@ -5588,13 +5779,14 @@
           <lang id="vi" status="2">Lỗi phục hồi registry</lang>
           <lang id="th" status="2">ข้อผิดพลาดของรีจิสทรีคืน</lang>
           <lang id="pl" status="2">Błąd przywracania rejestru</lang>
+          <lang id="hu" status="2">Hiba történt a bejegyzés visszaállítása közben</lang>
         </row>
         <row id="restoreRestored" state="0">
           <native>Successfully restored registry</native>
           <lang id="en" status="2">Successfully restored registry</lang>
           <lang id="fr" status="2">Registre restauré avec succès</lang>
           <lang id="es" status="2">Registro restaurado con éxito</lang>
-          <lang id="pt" status="2">Restaurado com êxito do registo</lang>
+          <lang id="pt" status="2">Registro restaurado com sucesso</lang>
           <lang id="it" status="2">Ripristinato con successo del Registro di sistema</lang>
           <lang id="nl" status="3">Register succesvol hersteld</lang>
           <lang id="de" status="2">Erfolgreich wiederhergestellt Registrierung</lang>
@@ -5608,6 +5800,7 @@
           <lang id="vi" status="2">Thành công phục hồi registry</lang>
           <lang id="th" status="2">บูรณะเรียบร้อยสตรี</lang>
           <lang id="pl" status="2">Pomyślnie przywrócić rejestr</lang>
+          <lang id="hu" status="2">Bejegyzés sikeresen visszaállítva</lang>
         </row>
         <row id="scanDlgExit" state="0">
           <native>Are you sure?</native>
@@ -5628,13 +5821,14 @@
           <lang id="vi" status="2">Bạn có chắc chắn?</lang>
           <lang id="th" status="2">คุณแน่ใจหรือไม่?</lang>
           <lang id="pl" status="2">Czy na pewno?</lang>
+          <lang id="hu" status="2">Biztos benne?</lang>
         </row>
         <row id="scanDlgProgressBarScanning" state="0">
           <native>Scanning: </native>
           <lang id="en" status="2">Scanning: </lang>
           <lang id="fr" status="2">L'analyse: </lang>
           <lang id="es" status="2">Análisis: </lang>
-          <lang id="pt" status="2">Digitalização: </lang>
+          <lang id="pt" status="2">Efetuando varredura...</lang>
           <lang id="it" status="2">Scansione: </lang>
           <lang id="nl" status="3">Scannen: </lang>
           <lang id="de" date="20091106182906" status="3">Scannen: </lang>
@@ -5648,6 +5842,7 @@
           <lang id="vi" date="20091106182937" status="3">Sự Quét: </lang>
           <lang id="th" status="2">สแกน: </lang>
           <lang id="pl" status="2">Skanowanie: </lang>
+          <lang id="hu" status="2">Szkennelés:</lang>
         </row>
         <row id="smCannotFindFile" state="0">
           <native>The file could not be found</native>
@@ -5668,13 +5863,14 @@
           <lang id="vi" status="2">Các tập tin không thể tìm được</lang>
           <lang id="th" status="2">ไฟล์ไม่พบ</lang>
           <lang id="pl" status="2">Plik nie może być uznana za</lang>
+          <lang id="hu" status="2">A fájl nem található</lang>
         </row>
         <row id="smEmptyName" state="0">
           <native>Shortcut/Value name cannot be empty</native>
           <lang id="en" status="2">Shortcut/Value name cannot be empty</lang>
           <lang id="fr" status="2">Le nom du raccourci/valeur ne peut pas être vide</lang>
           <lang id="es" status="2">El nombre de método abreviado/valor no puede estar vacío</lang>
-          <lang id="pt" status="2">Atalho / nome do valor não pode ser vazio</lang>
+          <lang id="pt" status="2">Nome do Atalho/Valor não pode estar vazio</lang>
           <lang id="it" status="2">Di scelta rapida / Nome valore non può essere vuoto</lang>
           <lang id="nl" status="2">Shortcut / Waarde naam mag niet leeg zijn</lang>
           <lang id="de" status="2">Shortcut / Wert-Name kann nicht leer sein</lang>
@@ -5688,6 +5884,7 @@
           <lang id="vi" status="2">Shortcut / Giá trị tên không thể để trống</lang>
           <lang id="th" status="2">ทางลัด / ชื่อ Value ไม่ว่างเปล่า</lang>
           <lang id="pl" status="2">Skrót / nazwa wartości nie może być puste</lang>
+          <lang id="hu" status="2">Az Ikon/Érték mező nem lehet üres</lang>
         </row>
         <row id="smEmptyPath" state="0">
           <native>File path cannot be empty</native>
@@ -5708,6 +5905,7 @@
           <lang id="vi" status="2">File đường dẫn không thể để trống</lang>
           <lang id="th" status="2">เส้นทางของไฟล์ไม่สามารถว่างเปล่า</lang>
           <lang id="pl" status="2">Ścieżka pliku nie może być pusta</lang>
+          <lang id="hu" status="2">Az útvonal nem lehet üres</lang>
         </row>
         <row id="smRan" state="0">
           <native>Attempted to run:</native>
@@ -5728,6 +5926,7 @@
           <lang id="vi" status="2">Cố gắng để chạy:</lang>
           <lang id="th" status="2">พยายามใช้:</lang>
           <lang id="pl" status="2">Próbowano uruchomić:</lang>
+          <lang id="hu" status="2">Megpróbálta futtatni:</lang>
         </row>
         <row id="smRemove" state="0">
           <native>Are you sure you want to remove this startup program?</native>
@@ -5748,6 +5947,7 @@
           <lang id="vi" status="2">Bạn có chắc bạn muốn loại bỏ chương trình này khởi động?</lang>
           <lang id="th" status="2">คุณแน่ใจหรือว่าต้องการลบโปรแกรมเริ่มต้นนี้?</lang>
           <lang id="pl" status="2">Czy na pewno chcesz usunąć ten program startowy?</lang>
+          <lang id="hu" status="2">Biztos el akarja távolítani ezt az indítási programot?</lang>
         </row>
         <row id="smRemoved" state="0">
           <native>Removed selected startup program</native>
@@ -5768,6 +5968,7 @@
           <lang id="vi" status="2">Bỏ chọn khởi động chương trình</lang>
           <lang id="th" status="2">โปรแกรม startup ลบที่เลือก</lang>
           <lang id="pl" status="2">Usunięto wybranego programu startowego</lang>
+          <lang id="hu" status="2">Kijelölt indítási program eltávolítva</lang>
         </row>
         <row id="smRun" state="0">
           <native>Are you sure you want to run this program?</native>
@@ -5788,6 +5989,7 @@
           <lang id="vi" status="2">Bạn có chắc chắn muốn chạy chương trình này?</lang>
           <lang id="th" status="2">คุณแน่ใจหรือว่าต้องการใช้โปรแกรมนี้?</lang>
           <lang id="pl" status="2">Czy na pewno chcesz uruchomić ten program?</lang>
+          <lang id="hu" status="2">Biztos futtatni akarja ezt a programot?</lang>
         </row>
         <row id="umForceUninstall" state="0">
           <native>Are you sure you want to remove this program from the registry?</native>
@@ -5808,6 +6010,7 @@
           <lang id="vi" status="2">Bạn có chắc bạn muốn loại bỏ chương trình này từ registry?</lang>
           <lang id="th" status="2">คุณแน่ใจหรือว่าต้องการลบโปรแกรมนี้ออกจากรีจิสทรี?</lang>
           <lang id="pl" status="2">Czy na pewno chcesz usunąć ten program z rejestru?</lang>
+          <lang id="hu" status="2">Biztos el akarja távolítani ezt a programot a bejegyzésből?</lang>
         </row>
         <row id="umSearchText" state="0">
           <native>Search by name</native>
@@ -5828,6 +6031,7 @@
           <lang id="vi" status="2">Tìm kiếm theo tên</lang>
           <lang id="th" status="2">ค้นหาโดยใช้ชื่อ</lang>
           <lang id="pl" status="2">Szukaj wg nazwy</lang>
+          <lang id="hu" status="2">Keresés név alapján</lang>
         </row>
         <row id="umUninstall" state="0">
           <native>Are you sure you want to uninstall this program?</native>
@@ -5848,6 +6052,7 @@
           <lang id="vi" status="2">Bạn có chắc là bạn muốn bỏ cài đặt chương trình này?</lang>
           <lang id="th" status="2">คุณแน่ใจหรือว่าต้องการยกเลิกการติดตั้งโปรแกรมนี้?</lang>
           <lang id="pl" status="2">Czy na pewno chcesz odinstalować ten program?</lang>
+          <lang id="hu" status="2">Biztos uninstallálni akarja ezt a programot?</lang>
         </row>
         <row id="updateLatest" state="0">
           <native>You have the latest version</native>
@@ -5868,6 +6073,7 @@
           <lang id="vi" status="2">Bạn có phiên bản mới nhất</lang>
           <lang id="th" status="2">คุณมีรุ่นล่าสุด</lang>
           <lang id="pl" status="2">Masz najnowszą wersję</lang>
+          <lang id="hu" status="2">Ez a legfrissebb verzió</lang>
         </row>
         <row id="updateNewer" state="0">
           <native>Newer version available</native>
@@ -5888,6 +6094,7 @@
           <lang id="vi" status="2">Mơi hơn phiên bản sẵn sàng</lang>
           <lang id="th" status="2">รุ่นใหม่มี</lang>
           <lang id="pl" status="2">Wersja dostępna Nowsze</lang>
+          <lang id="hu" status="2">Újabb verzió elérhető</lang>
         </row>
       </node>
       <node class="TNetStringNode" name="Little_Registry_Cleaner.Scanners.Strings" state="0">
@@ -5910,13 +6117,14 @@
           <lang id="vi" status="2">ActiveX / COM Objects</lang>
           <lang id="th" status="2">ActiveX Objects / COM</lang>
           <lang id="pl" status="2">ActiveX / COM Objects</lang>
+          <lang id="hu" status="2">ActiveX/COM Objektumok</lang>
         </row>
         <row id="ApplicationInfo" state="0">
           <native>Application Info</native>
           <lang id="en" status="2">Application Info</lang>
           <lang id="fr" status="2">Demande d'info</lang>
           <lang id="es" status="2">Información de aplicación</lang>
-          <lang id="pt" status="2">Informações de aplicação</lang>
+          <lang id="pt" status="2">Informações da Aplicação</lang>
           <lang id="it" status="2">Informazioni di applicazione</lang>
           <lang id="nl" status="2">Toepassings gegevens</lang>
           <lang id="de" status="2">Anwendung Info</lang>
@@ -5930,13 +6138,14 @@
           <lang id="vi" status="2">Thông tin ứng dụng</lang>
           <lang id="th" status="2">ข้อมูลการสมัคร</lang>
           <lang id="pl" status="2">Informacje o programach</lang>
+          <lang id="hu" status="2">Információ az alkalmazásról</lang>
         </row>
         <row id="ApplicationPaths" state="0">
           <native>Application Paths</native>
           <lang id="en" status="2">Application Paths</lang>
           <lang id="fr" date="20091102204651" status="3">Application tracés</lang>
           <lang id="es" status="2">Rutas de aplicación</lang>
-          <lang id="pt" date="20091102204759" status="3">Planos de aplicação</lang>
+          <lang id="pt" status="2">Caminhos de aplicação</lang>
           <lang id="it" date="20091102204538" status="3">Percorsi di applicazione</lang>
           <lang id="nl" date="20091102204934" status="3">Toepassings paden</lang>
           <lang id="de" date="20091102205009" status="3">Anwendung-Pfade</lang>
@@ -5950,13 +6159,14 @@
           <lang id="vi" status="2">Đơn Path</lang>
           <lang id="th" status="2">เส้นทาง Application</lang>
           <lang id="pl" date="20091102210407" status="3">Ścieżki aplikacji</lang>
+          <lang id="hu" status="2">Alkalmazás útvonalak</lang>
         </row>
         <row id="ApplicationSettings" state="0">
           <native>Application Settings</native>
           <lang id="en" status="2">Application Settings</lang>
           <lang id="fr" status="2">Paramètres de l'application</lang>
           <lang id="es" status="2">Configuración de la aplicación</lang>
-          <lang id="pt" status="2">Configurações do aplicativo</lang>
+          <lang id="pt" status="2">Configurações de aplicação</lang>
           <lang id="it" status="2">Impostazioni applicazione</lang>
           <lang id="nl" date="20091102204918" status="3">Toepassings instellingen</lang>
           <lang id="de" status="2">Anwendungseinstellungen</lang>
@@ -5970,13 +6180,14 @@
           <lang id="vi" status="2">Cài đặt ứng dụng</lang>
           <lang id="th" status="2">การตั้งค่าการสมัคร</lang>
           <lang id="pl" status="2">Ustawienia aplikacji</lang>
+          <lang id="hu" status="2">Alkalmazás beállítások</lang>
         </row>
         <row id="InvalidFile" state="0">
           <native>Invalid file or folder</native>
           <lang id="en" status="2">Invalid file or folder</lang>
           <lang id="fr" status="2">Blancs fichier ou un dossier</lang>
           <lang id="es" status="2">De archivo no válido o una carpeta</lang>
-          <lang id="pt" status="2">Arquivo ou pasta inválido</lang>
+          <lang id="pt" status="2">Arquivo ou pasta invalido</lang>
           <lang id="it" status="2">Non validi di file o una cartella</lang>
           <lang id="nl" status="2">Ongeldig bestand of map</lang>
           <lang id="de" status="2">Ungültige Datei oder einen Ordner</lang>
@@ -5990,6 +6201,7 @@
           <lang id="vi" status="2">Không hợp lệ tập tin hoặc thư mục</lang>
           <lang id="th" status="2">ไฟล์ไม่ถูกต้องหรือโฟลเดอร์</lang>
           <lang id="pl" status="2">Nieprawidłowy plik lub folder</lang>
+          <lang id="hu" status="2">Érvénytelen fájl vagy mappa</lang>
         </row>
         <row id="InvalidFileExt" state="0">
           <native>Unused File Extension</native>
@@ -6010,6 +6222,7 @@
           <lang id="vi" status="2">Không sử dụng File Extension</lang>
           <lang id="th" status="2">ไม่ได้ใช้ Extension File</lang>
           <lang id="pl" status="2">Niewykorzystane Rozszerzenie pliku</lang>
+          <lang id="hu" status="2">Nem használt fájl bővítés</lang>
         </row>
         <row id="InvalidInprocServer" state="0">
           <native>Unable to find InprocServer</native>
@@ -6030,6 +6243,7 @@
           <lang id="vi" status="2">Không tìm thấy InprocServer</lang>
           <lang id="th" status="2">ไม่สามารถค้นหา InprocServer</lang>
           <lang id="pl" status="2">Nie można odnaleźć InprocServer</lang>
+          <lang id="hu" status="2">InprocServer nem található</lang>
         </row>
         <row id="InvalidInprocServer32" state="0">
           <native>Unable to find InprocServer32</native>
@@ -6050,13 +6264,14 @@
           <lang id="vi" status="2">Không tìm thấy InProcServer32</lang>
           <lang id="th" status="2">ไม่สามารถค้นหา inprocserver 32</lang>
           <lang id="pl" status="2">Nie można odnaleźć InprocServer32</lang>
+          <lang id="hu" status="2">InprocServer32 nem található</lang>
         </row>
         <row id="InvalidProgIDFileExt" state="0">
           <native>Unused ProgID/File Extension</native>
           <lang id="en" status="2">Unused ProgID/File Extension</lang>
           <lang id="fr" status="2">ProgID inutilisés / extension de fichier</lang>
           <lang id="es" status="2">ProgID no utilizados / extensión de archivo</lang>
-          <lang id="pt" status="2">ProgID Livre / Extensão de Arquivo</lang>
+          <lang id="pt" status="2">ProgID/Extensão de Arquivo não utilizado</lang>
           <lang id="it" status="2">Inutilizzati ProgID / File Extension</lang>
           <lang id="nl" status="2">Ongebruikte ProgID / File Extension</lang>
           <lang id="de" status="2">Ungenutzte ProgID / File Extension</lang>
@@ -6070,13 +6285,14 @@
           <lang id="vi" status="2">Không sử dụng ProgID / File Extension</lang>
           <lang id="th" status="2">ไม่ได้ใช้ ProgID / File Extension</lang>
           <lang id="pl" status="2">Niewykorzystane ProgID / File Extension</lang>
+          <lang id="hu" status="2">Nem használt ProgID/fájl bővítés</lang>
         </row>
         <row id="InvalidRegKey" state="0">
           <native>Invalid registry key</native>
           <lang id="en" status="2">Invalid registry key</lang>
           <lang id="fr" status="2">Blancs clé de registre</lang>
           <lang id="es" status="2">Clave de registro no válido</lang>
-          <lang id="pt" status="2">Inválido chave de registro</lang>
+          <lang id="pt" status="2">Chave de registro inválida</lang>
           <lang id="it" status="2">Chiave di Registro di sistema non valido</lang>
           <lang id="nl" status="2">Ongeldige registersleutel</lang>
           <lang id="de" status="2">Ungültige Registrierungsschlüssel</lang>
@@ -6090,13 +6306,14 @@
           <lang id="vi" status="2">Không hợp lệ đăng ky</lang>
           <lang id="th" status="2">คีย์รีจิสทรีไม่ถูกต้อง</lang>
           <lang id="pl" status="2">Nieprawidłowy klucz rejestru</lang>
+          <lang id="hu" status="2">Érvénytelen bejegyzés kulcs</lang>
         </row>
         <row id="InvalidToolbar" state="0">
           <native>Toolbar is invalid</native>
           <lang id="en" status="2">Toolbar is invalid</lang>
           <lang id="fr" status="2">Barre d'outils n'est pas valide</lang>
           <lang id="es" status="2">Barra de herramientas no es válido</lang>
-          <lang id="pt" status="2">Barra de ferramentas não é válido</lang>
+          <lang id="pt" status="2">Barra de ferramentas inválida</lang>
           <lang id="it" status="2">Barra degli strumenti non è valido</lang>
           <lang id="nl" status="2">Toolbar is ongeldig</lang>
           <lang id="de" status="2">Toolbar ist ungültig</lang>
@@ -6110,13 +6327,14 @@
           <lang id="vi" status="2">Thanh công cụ không hợp lệ</lang>
           <lang id="th" status="2">แถบเครื่องมือไม่ถูกต้อง</lang>
           <lang id="pl" status="2">Toolbar jest nieprawidłowy</lang>
+          <lang id="hu" status="2">Érvénytelen eszköztár</lang>
         </row>
         <row id="MissingAppID" state="0">
           <native>Missing AppID reference</native>
           <lang id="en" status="2">Missing AppID reference</lang>
           <lang id="fr" status="2">Manquant de référence AppID</lang>
           <lang id="es" status="2">Falta de referencia AppID</lang>
-          <lang id="pt" status="2">Missing referência AppID</lang>
+          <lang id="pt" status="2">Faltando referência ao AppID</lang>
           <lang id="it" status="2">Missing AppID riferimento</lang>
           <lang id="nl" status="2">Ontbrekende AppID verwijzing</lang>
           <lang id="de" status="2">Fehlende AppID Referenz</lang>
@@ -6130,13 +6348,14 @@
           <lang id="vi" status="2">Thiếu AppID tham khảo</lang>
           <lang id="th" status="2">อ้างอิงไม่มี AppID</lang>
           <lang id="pl" status="2">Zaginione AppID odniesienia</lang>
+          <lang id="hu" status="2">Hiányzó AppID hivatkozás</lang>
         </row>
         <row id="MissingCLSID" state="0">
           <native>Missing CLSID reference</native>
           <lang id="en" status="2">Missing CLSID reference</lang>
           <lang id="fr" status="2">Manquant de référence CLSID</lang>
           <lang id="es" status="2">Falta de referencia CLSID</lang>
-          <lang id="pt" status="2">Missing referência CLSID</lang>
+          <lang id="pt" status="2">Faltando referência ao CLSID</lang>
           <lang id="it" status="2">Missing CLSID di riferimento</lang>
           <lang id="nl" status="2">Ontbrekende CLSID verwijzing</lang>
           <lang id="de" status="2">Fehlende CLSID Verweis</lang>
@@ -6150,13 +6369,14 @@
           <lang id="vi" status="2">Thiếu CLSID tham khảo</lang>
           <lang id="th" status="2">อ้างอิงไม่มี CLSID</lang>
           <lang id="pl" status="2">Zaginione CLSID odniesienia</lang>
+          <lang id="hu" status="2">Hiányzó CLSID hivatkozás</lang>
         </row>
         <row id="MissingProgID" state="0">
           <native>Missing ProgID reference</native>
           <lang id="en" status="2">Missing ProgID reference</lang>
           <lang id="fr" status="2">Manquant de référence ProgID</lang>
           <lang id="es" status="2">Falta de referencia ProgID</lang>
-          <lang id="pt" status="2">Missing referência ProgID</lang>
+          <lang id="pt" status="2">Faltando referência ao ProgID</lang>
           <lang id="it" status="2">Missing ProgID di riferimento</lang>
           <lang id="nl" status="2">Ontbrekende ProgID verwijzing</lang>
           <lang id="de" status="2">Fehlende ProgID Referenz</lang>
@@ -6170,13 +6390,14 @@
           <lang id="vi" status="2">Thiếu ProgID tham khảo</lang>
           <lang id="th" status="2">อ้างอิงไม่มี ProgID</lang>
           <lang id="pl" status="2">Zaginione ProgID odniesienia</lang>
+          <lang id="hu" status="2">Hiányzó ProgID hivatkozás</lang>
         </row>
         <row id="NoRegKey" state="0">
           <native>The registry key doesn't contain any data</native>
           <lang id="en" status="2">The registry key doesn't contain any data</lang>
           <lang id="fr" status="2">La clé de Registre ne contient pas de données</lang>
           <lang id="es" status="2">La clave del Registro no contiene ningún dato</lang>
-          <lang id="pt" status="2">A chave de registo não contém quaisquer dados</lang>
+          <lang id="pt" status="2">A chave de registo não contém nenhum dado</lang>
           <lang id="it" status="2">La chiave di registro non contiene tutti i dati</lang>
           <lang id="nl" status="2">De registersleutel bevat geen gegevens</lang>
           <lang id="de" status="2">Der Registrierungsschlüssel enthält keine Daten</lang>
@@ -6190,13 +6411,14 @@
           <lang id="vi" status="2">Chìa khóa registry không chứa bất kỳ dữ liệu</lang>
           <lang id="th" status="2">คีย์รีจิสทรีไม่มีข้อมูลใดๆ</lang>
           <lang id="pl" status="2">Klucz rejestru nie zawiera żadnych danych</lang>
+          <lang id="hu" status="2">A bejegyzés kulcs nem tartalmaz semmilyen adatot</lang>
         </row>
         <row id="ObsoleteRegKey" state="0">
           <native>Obsolete registry key</native>
           <lang id="en" status="2">Obsolete registry key</lang>
           <lang id="fr" status="2">Clé de registre obsolètes</lang>
           <lang id="es" status="2">Clave del registro obsoletas</lang>
-          <lang id="pt" status="2">Chave de registro obsoletos</lang>
+          <lang id="pt" status="2">Chave de registro obsoleta</lang>
           <lang id="it" status="2">Chiave di registro obsolete</lang>
           <lang id="nl" status="3">Ongebruikte registersleutel</lang>
           <lang id="de" status="2">Veraltete Registrierungsschlüssel</lang>
@@ -6210,6 +6432,7 @@
           <lang id="vi" status="2">Lỗi thời đăng ky</lang>
           <lang id="th" status="2">คีย์รีจิสทรีที่ล้าสมัย</lang>
           <lang id="pl" status="2">Klucz rejestru przestarzałe</lang>
+          <lang id="hu" status="2">Elavult bejegyzés kulcs</lang>
         </row>
         <row id="RecentDocs" state="0">
           <native>Recent Documents</native>
@@ -6230,6 +6453,7 @@
           <lang id="vi" date="20091102210028" status="3">Những tài liệu Gần đây</lang>
           <lang id="th" status="2">เอกสารล่าสุด</lang>
           <lang id="pl" status="2">Ostatnie dokumenty</lang>
+          <lang id="hu" status="2">Legutóbbi documentumok</lang>
         </row>
         <row id="SharedDLLs" state="0">
           <native>Shared DLLs</native>
@@ -6250,6 +6474,7 @@
           <lang id="vi" date="20091102210012" status="3">DLLs Dùng chung</lang>
           <lang id="th" status="2">กำลังร่วมกัน</lang>
           <lang id="pl" status="2">Współdzielone biblioteki DLL</lang>
+          <lang id="hu" status="2">Megosztott DLL-ek</lang>
         </row>
         <row id="StartupFiles" state="0">
           <native>Startup Files</native>
@@ -6270,6 +6495,7 @@
           <lang id="vi" date="20091102205954" status="3">Những hồ sơ Khởi động</lang>
           <lang id="th" status="2">เริ่มต้นระบบแฟ้ม</lang>
           <lang id="pl" status="2">Pliki startowe</lang>
+          <lang id="hu" status="2">Indítási fájlok</lang>
         </row>
         <row id="SystemDrivers" state="0">
           <native>System Drivers</native>
@@ -6290,6 +6516,7 @@
           <lang id="vi" status="2">Hệ thống điều khiển</lang>
           <lang id="th" status="2">โปรแกรมควบคุมระบบ</lang>
           <lang id="pl" status="2">Sterowniki systemowe</lang>
+          <lang id="hu" status="2">Rendszer meghajtók</lang>
         </row>
         <row id="WindowsFonts" state="0">
           <native>Windows Fonts</native>
@@ -6310,6 +6537,7 @@
           <lang id="vi" date="20091102205808" status="3">Phông Windows</lang>
           <lang id="th" status="2">อักษร Windows</lang>
           <lang id="pl" status="2">Czcionki systemowe</lang>
+          <lang id="hu" status="2">Windows betűtípusok</lang>
         </row>
         <row id="WindowsHelpFiles" state="0">
           <native>Windows Help Files</native>
@@ -6330,13 +6558,14 @@
           <lang id="vi" status="2">Windows Trợ giúp Files</lang>
           <lang id="th" date="20091102210300" status="3">แฟ้มวิธีใช้ windows</lang>
           <lang id="pl" status="2">Pliki Pomocy systemu Windows</lang>
+          <lang id="hu" status="2">Windows segítség fájlok</lang>
         </row>
         <row id="WindowsSounds" state="0">
           <native>Windows Sounds</native>
           <lang id="en" status="2">Windows Sounds</lang>
           <lang id="fr" status="2">Sons de Windows</lang>
           <lang id="es" status="2">Sonidos de Windows</lang>
-          <lang id="pt" date="20091102204823" status="3">Sons do Windows</lang>
+          <lang id="pt" status="2">Sons do Windows</lang>
           <lang id="it" date="20091102204513" status="3">Suoni di Windows</lang>
           <lang id="nl" date="20091102204856" status="3">Windows geluiden</lang>
           <lang id="de" date="20091102205118" status="3">Windows-Töne</lang>
@@ -6350,6 +6579,7 @@
           <lang id="vi" date="20091102205706" status="3">Những âm thanh Windows</lang>
           <lang id="th" status="2">Windows เสียง</lang>
           <lang id="pl" date="20091102210340" status="3">Dźwięki systemu Windows</lang>
+          <lang id="hu" status="2">Windows hangok</lang>
         </row>
       </node>
     </node>

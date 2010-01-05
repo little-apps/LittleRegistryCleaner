@@ -123,10 +123,13 @@
     <value>Cancelar</value>
   </data>
   <data name="buttonOk.Text" xml:space="preserve">
-    <value>RAZOÁVEL</value>
+    <value>OK</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Argumentos:</value>
+  </data>
+  <data name="buttonFileDlg.Text" xml:space="preserve">
+    <value>...</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Caminho do arquivo:</value>
@@ -171,6 +174,6 @@
     <value>Registry\Current User\Run Services Once</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Novo ponto de executar</value>
+    <value>Novo Item executar</value>
   </data>
 </root>
