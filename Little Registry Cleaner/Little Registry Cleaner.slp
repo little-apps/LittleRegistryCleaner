@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.0.292" date="20100104211056" scan="37" scanned="20091207224950">
+<document version="2.0.292" date="20100109114339" scan="37" scanned="20091207224950">
   <lang id="en"/>
   <lang id="fr"/>
   <lang id="es"/>
@@ -2009,7 +2009,10 @@
                 <component class="TVisMenuItem" name="hungarianToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
                   <row id="Size.Height" state="0">22</row>
                   <row id="Size.Width" state="0">184</row>
-                  <row id="Text" state="0">Hungarian</row>
+                  <row id="Text" state="0">
+                    <native>Hungarian</native>
+                    <lang id="pl" status="2">węgierski</lang>
+                  </row>
                 </component>
                 <component class="TVisMenuItem" name="greekToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
                   <row id="Size.Height" state="0">22</row>

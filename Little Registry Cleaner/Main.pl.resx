@@ -207,41 +207,8 @@
   <data name="editToolStripMenuItem.Text" xml:space="preserve">
     <value>Edycja</value>
   </data>
-  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
-    <value>Angielski</value>
-  </data>
-  <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
-    <value>Francuski</value>
-  </data>
-  <data name="spanishToolStripMenuItem.Text" xml:space="preserve">
-    <value>Hiszpański</value>
-  </data>
-  <data name="italianToolStripMenuItem.Text" xml:space="preserve">
-    <value>Włoski</value>
-  </data>
-  <data name="dutchToolStripMenuItem.Text" xml:space="preserve">
-    <value>Holenderski</value>
-  </data>
-  <data name="germanToolStripMenuItem.Text" xml:space="preserve">
-    <value>Niemiecki</value>
-  </data>
-  <data name="russianToolStripMenuItem.Text" xml:space="preserve">
-    <value>Rosyjski</value>
-  </data>
-  <data name="greekToolStripMenuItem.Text" xml:space="preserve">
-    <value>Grecki</value>
-  </data>
   <data name="arabicToolStripMenuItem.Text" xml:space="preserve">
     <value>Arabski</value>
-  </data>
-  <data name="polishToolStripMenuItem.Text" xml:space="preserve">
-    <value>Polski</value>
-  </data>
-  <data name="swedishToolStripMenuItem.Text" xml:space="preserve">
-    <value>Szwedzki</value>
-  </data>
-  <data name="japaneseToolStripMenuItem.Text" xml:space="preserve">
-    <value>Japoński</value>
   </data>
   <data name="chineseSimplifiedToolStripMenuItem.Text" xml:space="preserve">
     <value>Chiński (uproszczony)</value>
@@ -249,11 +216,47 @@
   <data name="chineseTraditionalToolStripMenuItem.Text" xml:space="preserve">
     <value>Chiński (tradycyjny)</value>
   </data>
-  <data name="vietnameseToolStripMenuItem.Text" xml:space="preserve">
-    <value>Wietnamski</value>
+  <data name="dutchToolStripMenuItem.Text" xml:space="preserve">
+    <value>Holenderski</value>
+  </data>
+  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Angielski</value>
+  </data>
+  <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
+    <value>Francuski</value>
+  </data>
+  <data name="germanToolStripMenuItem.Text" xml:space="preserve">
+    <value>Niemiecki</value>
+  </data>
+  <data name="greekToolStripMenuItem.Text" xml:space="preserve">
+    <value>Grecki</value>
+  </data>
+  <data name="hungarianToolStripMenuItem.Text" xml:space="preserve">
+    <value>węgierski</value>
+  </data>
+  <data name="italianToolStripMenuItem.Text" xml:space="preserve">
+    <value>Włoski</value>
+  </data>
+  <data name="japaneseToolStripMenuItem.Text" xml:space="preserve">
+    <value>Japoński</value>
+  </data>
+  <data name="polishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Polski</value>
+  </data>
+  <data name="russianToolStripMenuItem.Text" xml:space="preserve">
+    <value>Rosyjski</value>
+  </data>
+  <data name="spanishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Hiszpański</value>
+  </data>
+  <data name="swedishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Szwedzki</value>
   </data>
   <data name="thaiToolStripMenuItem.Text" xml:space="preserve">
     <value>Tajski</value>
+  </data>
+  <data name="vietnameseToolStripMenuItem.Text" xml:space="preserve">
+    <value>Wietnamski</value>
   </data>
   <data name="languageToolStripMenuItem.Text" xml:space="preserve">
     <value>Język</value>
