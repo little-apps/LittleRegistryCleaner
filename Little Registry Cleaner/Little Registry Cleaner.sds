@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<desktop scan="37" scanned="20091207224950" built="20100104205341" lang="pt" pane="TLogPane" col="5" row="treeView1.Items[0].Text">
+<desktop scan="37" scanned="20091207224950" built="20100109114346" lang="pl" pane="TLogPane" col="5" row="treeView1.Items[0].Text">
   <language id="en" autoime="0" autokeyboard="0"/>
   <language id="fr" autoime="0" autokeyboard="0"/>
   <language id="es" autoime="0" autokeyboard="0"/>
@@ -19,7 +19,7 @@
   <language id="pl" autoime="0" autokeyboard="0"/>
   <language id="hu" autoime="0" autokeyboard="0"/>
   <triggers>
-    <item class="TValidateTrigger" position="2"/>
+    <item class="TValidateTrigger" position="3"/>
   </triggers>
   <sheet>
     <columns>
@@ -56,7 +56,7 @@
     <item>Forms</item>
     <item>Little_Registry_Cleaner.Main</item>
   </path>
-  <exchange method="exmExportFile" options="[eoSetup,eoSpellChecker,eoLanguages]" author="Nick H." description="Little registry cleaner" packagename="Little registry cleanerRu" showpackage="0">
+  <exchange method="exmImportFile" options="[eoSetup,eoSpellChecker,eoLanguages]" author="Nick H." description="Little registry cleaner" packagename="Little registry cleanerRu" showpackage="0">
   </exchange>
   <export format="efExcel">
     <filter locked="bfBoth">

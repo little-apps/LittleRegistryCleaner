@@ -125,16 +125,19 @@
   <data name="buttonOk.Text" xml:space="preserve">
     <value>OK</value>
   </data>
+  <data name="buttonBrowse.Text" xml:space="preserve">
+    <value>…</value>
+  </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Argomenti:</value>
+    <value>Parametri:</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Schedario:</value>
+    <value>File:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Modifica di voce di avvio</value>
+    <value>Modifica voce di avvio</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Modifica oggetto di esecuzione</value>
+    <value>Modifica voce in esecuzione automatica</value>
   </data>
 </root>

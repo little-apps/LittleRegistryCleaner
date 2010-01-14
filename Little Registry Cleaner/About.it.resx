@@ -133,11 +133,11 @@
     <value>Autore:</value>
   </data>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>Questo programma è software libero: ridistribuirla e/o modificarla secondo i termini della GNU General Public License come pubblicato dalla Free Software Foundation, versione 3 della licenza o (a propria discrezione) qualsiasi versione successiva.
+    <value>Questo programma è software libero: puoi ridistribuirlo e/o modificarlo secondo i termini della GNU General Public License come pubblicato dalla Free Software Foundation, versione 3 della licenza o (a propria discrezione) qualsiasi versione successiva.
 
 Questo programma è distribuito nella speranza che possa essere utile, ma senza alcuna garanzia; senza neppure la garanzia implicita di commerciabilità o idoneità per uno scopo particolare.  Vedere la GNU General Public License per maggiori dettagli.
 
-Si dovrebbe avere ricevuto una copia della licenza pubblica generica GNU insieme a questo programma.  Se non, vedere &lt;http://www.gnu.org/licenses/&gt;.</value>
+Si dovrebbe avere ricevuto una copia della GNU General Public License insieme a questo programma.  In caso contrario, vedere &lt;http://www.gnu.org/licenses/&gt;.</value>
   </data>
   <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
@@ -155,7 +155,7 @@ Si dovrebbe avere ricevuto una copia della licenza pubblica generica GNU insieme
     <value>NoControl</value>
   </data>
   <data name="buttonClose.Text" xml:space="preserve">
-    <value>Chiudere</value>
+    <value>Chiudi</value>
   </data>
   <data name="buttonWebsite.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -164,6 +164,6 @@ Si dovrebbe avere ricevuto una copia della licenza pubblica generica GNU insieme
     <value>Sito del progetto</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Registro poco Cleaner - informazioni...</value>
+    <value>Informazioni su Little Registry Cleaner</value>
   </data>
 </root>

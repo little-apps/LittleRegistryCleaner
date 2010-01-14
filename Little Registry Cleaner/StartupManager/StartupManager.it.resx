@@ -139,24 +139,24 @@
     <value>toolStripContainer1</value>
   </data>
   <data name="toolStripButtonAdd.Text" xml:space="preserve">
-    <value>Aggiungere</value>
+    <value>Aggiungi</value>
   </data>
   <data name="toolStripButtonEdit.Text" xml:space="preserve">
     <value>Modifica</value>
   </data>
   <data name="toolStripButtonDelete.Text" xml:space="preserve">
-    <value>Eliminare</value>
+    <value>Elimina</value>
   </data>
   <data name="toolStripButtonView.Text" xml:space="preserve">
-    <value>Punto di vista</value>
+    <value>Visualizza oggetto</value>
   </data>
   <data name="toolStripButtonRun.Text" xml:space="preserve">
-    <value>Eseguire</value>
+    <value>Esegui</value>
   </data>
   <data name="toolStripButtonRefresh.Text" xml:space="preserve">
-    <value>Aggiornamento</value>
+    <value>Aggiorna</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Registro poco Cleaner - avvio Manager</value>
+    <value>Little Registry Cleaner – Gestione Avvio</value>
   </data>
 </root>

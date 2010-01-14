@@ -126,7 +126,10 @@
     <value>OK</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Argomenti:</value>
+    <value>Parametri:</value>
+  </data>
+  <data name="buttonFileDlg.Text" xml:space="preserve">
+    <value>...</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Percorso del file:</value>
@@ -171,6 +174,6 @@
     <value>Registry\Current User\Run Services Once</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Nuovo punto di esecuzione</value>
+    <value>Nuova voce in esecuzione automatica</value>
   </data>
 </root>

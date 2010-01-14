@@ -135,18 +135,18 @@
     <value>HKEY_USERS</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Selezionare la sezione:</value>
+    <value>Seleziona la sezione:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Aggiungere a ignorare elenco</value>
+    <value>Aggiungere all'elenco ignorati</value>
   </data>
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>Annulla</value>
   </data>
   <data name="buttonOk.Text" xml:space="preserve">
-    <value>Aggiungere la voce</value>
+    <value>Aggiungi voce</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Aggiungere a ignorare elenco</value>
+    <value>Aggiungere all'elenco ignorati</value>
   </data>
 </root>

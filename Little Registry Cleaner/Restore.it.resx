@@ -120,11 +120,11 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="buttonBrowse.Text" xml:space="preserve">
-    <value>Apra l'indice...</value>
+    <value>Apri directory...</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="label1.Text" xml:space="preserve">
-    <value>Selezionare un file riportati di seguito per ripristinare il Registro di sistema a uno stato precedente</value>
+    <value>Selezionare uno dei file di seguito per il ripristino</value>
   </data>
   <data name="columnHeader1.Text" xml:space="preserve">
     <value>Nome del file</value>
@@ -133,15 +133,15 @@
     <value>Data</value>
   </data>
   <data name="columnHeader3.Text" xml:space="preserve">
-    <value>Formato</value>
+    <value>Dimensione</value>
   </data>
   <data name="buttonRestore.Text" xml:space="preserve">
-    <value>Ripristino</value>
+    <value>Ripristina</value>
   </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="UTF-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="listViewFiles" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="flowLayoutPanel1" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100.1" /&gt;&lt;Rows Styles="Percent,7.624633,Percent,92.37537,Absolute,30" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Registro poco Cleaner - ripristino del Registro</value>
+    <value>Little Registry Cleaner – Ripristino del Registro</value>
   </data>
 </root>

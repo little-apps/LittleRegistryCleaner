@@ -118,91 +118,92 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="crashReporterFail" xml:space="preserve">
-    <value>La segnalazione di bug, non ha potuto essere inviato</value>
+    <value>Impossibile inviare la segnalazione errori</value>
   </data>
   <data name="crashReporterSuccess" xml:space="preserve">
-    <value>Bug report inviato correttamente</value>
+    <value>Segnalazione errori inviata correttamente</value>
   </data>
   <data name="mainAddExcludeEntry" xml:space="preserve">
-    <value>Ha aggiunto selezionati chiavi di registro per l'elenco di esclusione</value>
+    <value>Chiavi di registro selezionate aggiunte alla lista esclusi</value>
   </data>
   <data name="mainAskExit" xml:space="preserve">
     <value>Sei sicuro di voler uscire?</value>
   </data>
   <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>La tua prima volta in esecuzione Little Registry Cleaner.\r\nVuoi creare un punto di ripristino?</value>
+    <value>È la prima volta che esegui Little Registry Cleaner.
+Vuoi creare un punto di ripristino?</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
-    <value>In grado di trovare Little Registro Cleaner.chm</value>
+    <value>Impossibile trovare Little Registry Cleaner.chm</value>
   </data>
   <data name="mainProblemsFix" xml:space="preserve">
     <value>Vuoi risolvere tutti i problemi selezionati?</value>
   </data>
   <data name="mainProblemsRemoved" xml:space="preserve">
-    <value>Rimossi i problemi dal registro</value>
+    <value>Problemi del registro corretti</value>
   </data>
   <data name="mainScanningAborted" xml:space="preserve">
-    <value>Interrotta la scansione del Registro di sistema</value>
+    <value>Scansione del Registro interrotta</value>
   </data>
   <data name="mainScanningFinished" xml:space="preserve">
-    <value>Termine della scansione del Registro di sistema</value>
+    <value>Scansione del Registro terminata</value>
   </data>
   <data name="mainSelectSections" xml:space="preserve">
     <value>Si prega di selezionare una sezione per la scansione</value>
   </data>
   <data name="mainUpdateAsk" xml:space="preserve">
-    <value>Una versione più recente è disponibile. Vuoi scaricarlo?</value>
+    <value>Una versione più recente è disponibile. Vuoi scaricarla?</value>
   </data>
   <data name="optionsExcludeDir" xml:space="preserve">
-    <value>Selezionare la cartella da escludere dal Registro di sistema di scansione</value>
+    <value>Selezionare la cartella da escludere dalla scansione</value>
   </data>
   <data name="optionsExcludeEmptyRegPath" xml:space="preserve">
-    <value>Percorso del Registro di sistema non può essere vuoto</value>
+    <value>Il percorso del Registro di sistema non può essere vuoto</value>
   </data>
   <data name="optionsExcludeFile" xml:space="preserve">
-    <value>Selezionare un file da escludere dal Registro di sistema di scansione</value>
+    <value>Selezionare un file da escludere dalla scansione</value>
   </data>
   <data name="optionsExcludeInvalidRegPath" xml:space="preserve">
-    <value>Chiave di registro specificato non esiste</value>
+    <value>La chiave di registro specificata non esiste</value>
   </data>
   <data name="optionsExcludeRemove" xml:space="preserve">
     <value>Sei sicuro?</value>
   </data>
   <data name="optionsSelectBackupDir" xml:space="preserve">
-    <value>Selezionare la cartella in cui i file di backup verrà posizionato</value>
+    <value>Selezionare la cartella per i file di backup</value>
   </data>
   <data name="optionsSelectLogDir" xml:space="preserve">
-    <value>Selezionare la cartella dove il file di registro sarà messo</value>
+    <value>Selezionale la cartella per i file di log</value>
   </data>
   <data name="piErrorRegKey" xml:space="preserve">
-    <value>Rimozione chiave del Registro di sistema di errore:</value>
+    <value>Errore nella rimozione della chiave:</value>
   </data>
   <data name="piErrorUninstalling" xml:space="preserve">
-    <value>Programma di disinstallazione di errore:</value>
+    <value>Errore nel disinstallare il programma:</value>
   </data>
   <data name="piInvalidUninstallString" xml:space="preserve">
     <value>Impossibile trovare la stringa di disinstallazione. Vuoi rimuovere manualmente dal Registro di sistema?</value>
   </data>
   <data name="piSuccessRegKey" xml:space="preserve">
-    <value>Chiave del Registro di sistema Hai rimosso</value>
+    <value>Chiave rimossa con successo</value>
   </data>
   <data name="piSuccessUninstall" xml:space="preserve">
-    <value>Programma hai disinstallato</value>
+    <value>Programma rimosso con successo</value>
   </data>
   <data name="programAlreadyRunning" xml:space="preserve">
     <value>Un altro programma sembra essere già in esecuzione...</value>
   </data>
   <data name="programNeedAdmin" xml:space="preserve">
-    <value>È necessario essere un amministratore per eseguire questo programma</value>
+    <value>Devi avere i privilegi di amministratore per eseguire questo programma</value>
   </data>
   <data name="restoreAsk" xml:space="preserve">
     <value>Sei sicuro?</value>
   </data>
   <data name="restoreError" xml:space="preserve">
-    <value>Errore di ripristino del Registro di sistema</value>
+    <value>Errore durante il ripristino del Registro</value>
   </data>
   <data name="restoreRestored" xml:space="preserve">
-    <value>Ripristinato con successo del Registro di sistema</value>
+    <value>Registri ripristinato con successo</value>
   </data>
   <data name="scanDlgExit" xml:space="preserve">
     <value>Sei sicuro?</value>
@@ -211,22 +212,22 @@
     <value>Scansione: </value>
   </data>
   <data name="smCannotFindFile" xml:space="preserve">
-    <value>Il file non è stato trovato</value>
+    <value>Impossibile trovare il file</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
-    <value>Di scelta rapida / Nome valore non può essere vuoto</value>
+    <value>Il campo scorciatoia/valore non può essere vuoto</value>
   </data>
   <data name="smEmptyPath" xml:space="preserve">
-    <value>Percorso di file non può essere vuoto</value>
+    <value>Il percorso del file non può essere vuoto</value>
   </data>
   <data name="smRan" xml:space="preserve">
-    <value>Tentato di eseguire:</value>
+    <value>Tentativo di esecuzione: </value>
   </data>
   <data name="smRemove" xml:space="preserve">
     <value>Sei sicuro di voler rimuovere questo programma di avvio?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
-    <value>Rimosso programma di avvio selezionato</value>
+    <value>Programma di avvio selezionato rimosso</value>
   </data>
   <data name="smRun" xml:space="preserve">
     <value>Sei sicuro di voler eseguire il programma?</value>
@@ -244,6 +245,6 @@
     <value>Hai l'ultima versione</value>
   </data>
   <data name="updateNewer" xml:space="preserve">
-    <value>Nuova versione disponibile</value>
+    <value>È disponibile una nuova versione</value>
   </data>
 </root>

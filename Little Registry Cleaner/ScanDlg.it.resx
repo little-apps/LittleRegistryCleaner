@@ -127,15 +127,15 @@
     <value>No</value>
   </data>
   <data name="labelProblems.Text" xml:space="preserve">
-    <value>Problemi a trovare: </value>
+    <value>Problemi trovati:</value>
   </data>
   <data name="buttonStop.Text" xml:space="preserve">
-    <value>Arrestare</value>
+    <value>Interrompi</value>
   </data>
   <data name="textBoxSubKey.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Registro poco Cleaner - analisi...</value>
+    <value>Little Registry Cleaner – Scansione in corso...</value>
   </data>
 </root>

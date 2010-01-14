@@ -118,22 +118,22 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ActivexComObjects" xml:space="preserve">
-    <value>ActiveX / COM Objects</value>
+    <value>Oggetti ActiveX / COM</value>
   </data>
   <data name="ApplicationInfo" xml:space="preserve">
-    <value>Informazioni di applicazione</value>
+    <value>Informazioni sull'applicazione</value>
   </data>
   <data name="ApplicationPaths" xml:space="preserve">
-    <value>Percorsi di applicazione</value>
+    <value>Percorsi applicazione</value>
   </data>
   <data name="ApplicationSettings" xml:space="preserve">
     <value>Impostazioni applicazione</value>
   </data>
   <data name="InvalidFile" xml:space="preserve">
-    <value>Non validi di file o una cartella</value>
+    <value>File o cartella non validi</value>
   </data>
   <data name="InvalidFileExt" xml:space="preserve">
-    <value>Estensione file inutilizzati</value>
+    <value>Estensione file inutilizzata</value>
   </data>
   <data name="InvalidInprocServer" xml:space="preserve">
     <value>Impossibile trovare il InprocServer</value>
@@ -142,28 +142,28 @@
     <value>Impossibile trovare InprocServer32</value>
   </data>
   <data name="InvalidProgIDFileExt" xml:space="preserve">
-    <value>Inutilizzati ProgID / File Extension</value>
+    <value>ProgID / Estensioni file inutilizzati</value>
   </data>
   <data name="InvalidRegKey" xml:space="preserve">
-    <value>Chiave di Registro di sistema non valido</value>
+    <value>Chiave di registro non valida</value>
   </data>
   <data name="InvalidToolbar" xml:space="preserve">
-    <value>Barra degli strumenti non è valido</value>
+    <value>Barra degli strumenti non valida</value>
   </data>
   <data name="MissingAppID" xml:space="preserve">
-    <value>Missing AppID riferimento</value>
+    <value>AppID di riferimento mancante</value>
   </data>
   <data name="MissingCLSID" xml:space="preserve">
-    <value>Missing CLSID di riferimento</value>
+    <value>CLSID di riferimento mancante</value>
   </data>
   <data name="MissingProgID" xml:space="preserve">
-    <value>Missing ProgID di riferimento</value>
+    <value>ProgID di riferimento mancante</value>
   </data>
   <data name="NoRegKey" xml:space="preserve">
-    <value>La chiave di registro non contiene tutti i dati</value>
+    <value>La chiave di registro non contiene dati</value>
   </data>
   <data name="ObsoleteRegKey" xml:space="preserve">
-    <value>Chiave di registro obsolete</value>
+    <value>Chiave di registro obsoleta</value>
   </data>
   <data name="RecentDocs" xml:space="preserve">
     <value>Documenti recenti</value>
