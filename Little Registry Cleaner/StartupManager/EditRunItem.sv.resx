@@ -125,6 +125,9 @@
   <data name="buttonOk.Text" xml:space="preserve">
     <value>OKEJ</value>
   </data>
+  <data name="buttonBrowse.Text" xml:space="preserve">
+    <value>…</value>
+  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Argument:</value>
   </data>
@@ -132,9 +135,9 @@
     <value>Filen:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Redigera start post</value>
+    <value>Redigera startpost</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Redigera kör objekt</value>
+    <value>Redigera körobjekt</value>
   </data>
 </root>

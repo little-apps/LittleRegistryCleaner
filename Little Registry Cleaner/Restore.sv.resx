@@ -120,11 +120,11 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="buttonBrowse.Text" xml:space="preserve">
-    <value>Öppna Directory...</value>
+    <value>Öppna mapp...</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="label1.Text" xml:space="preserve">
-    <value>Välj en fil som nedan för att återställa registret till ett tidigare tillstånd</value>
+    <value>Välj en fil nedan för att återställa registret till ett tidigare tillstånd</value>
   </data>
   <data name="columnHeader1.Text" xml:space="preserve">
     <value>Filnamn</value>
@@ -136,12 +136,12 @@
     <value>Storlek</value>
   </data>
   <data name="buttonRestore.Text" xml:space="preserve">
-    <value>Återställa</value>
+    <value>Återställ</value>
   </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="UTF-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="listViewFiles" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="flowLayoutPanel1" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100.1" /&gt;&lt;Rows Styles="Percent,7.624633,Percent,92.37537,Absolute,30" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Liten Registry Cleaner - återställa registret</value>
+    <value>Liten Registry Cleaner – återställ registret</value>
   </data>
 </root>

@@ -121,10 +121,10 @@
     <value>ActiveX / COM-objekt</value>
   </data>
   <data name="ApplicationInfo" xml:space="preserve">
-    <value>Programmet info</value>
+    <value>Programinfo</value>
   </data>
   <data name="ApplicationPaths" xml:space="preserve">
-    <value>Ansökan Paths</value>
+    <value>Programsökvägar</value>
   </data>
   <data name="ApplicationSettings" xml:space="preserve">
     <value>Programinställningar</value>
@@ -133,7 +133,7 @@
     <value>Ogiltig fil eller mapp</value>
   </data>
   <data name="InvalidFileExt" xml:space="preserve">
-    <value>Oanvända File Extension</value>
+    <value>Oanvända filändelser</value>
   </data>
   <data name="InvalidInprocServer" xml:space="preserve">
     <value>Det gick inte att hitta InprocServer</value>
@@ -148,22 +148,22 @@
     <value>Ogiltig registernyckel</value>
   </data>
   <data name="InvalidToolbar" xml:space="preserve">
-    <value>Toolbar är ogiltig</value>
+    <value>Verktygsfältet är ogiltig</value>
   </data>
   <data name="MissingAppID" xml:space="preserve">
-    <value>Missing AppID referens</value>
+    <value>Saknar AppID referens</value>
   </data>
   <data name="MissingCLSID" xml:space="preserve">
-    <value>Missing CLSID referens</value>
+    <value>Saknar CLSID referens</value>
   </data>
   <data name="MissingProgID" xml:space="preserve">
-    <value>Missing ProgID referens</value>
+    <value>Saknar ProgID referens</value>
   </data>
   <data name="NoRegKey" xml:space="preserve">
-    <value>Registernyckeln innehåller inga uppgifter</value>
+    <value>Registernyckeln innehåller ingen data</value>
   </data>
   <data name="ObsoleteRegKey" xml:space="preserve">
-    <value>Föråldrade registernyckel</value>
+    <value>Föråldrad registernyckel</value>
   </data>
   <data name="RecentDocs" xml:space="preserve">
     <value>Senaste dokument</value>
@@ -172,7 +172,7 @@
     <value>Delade DLL-filer</value>
   </data>
   <data name="StartupFiles" xml:space="preserve">
-    <value>Start filer</value>
+    <value>Startfiler</value>
   </data>
   <data name="SystemDrivers" xml:space="preserve">
     <value>Systemdrivrutiner</value>

@@ -124,7 +124,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelProblem.Text" xml:space="preserve">
-    <value>Problemet:</value>
+    <value>Problem:</value>
   </data>
   <data name="labelProblem1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>

@@ -121,31 +121,28 @@
     <value>Felrapporten kunde inte skickas</value>
   </data>
   <data name="crashReporterSuccess" xml:space="preserve">
-    <value>Skickat felrapport framgångsrikt</value>
+    <value>Skickade felrapporten</value>
   </data>
   <data name="mainAddExcludeEntry" xml:space="preserve">
-    <value>La utvalda registernycklar till utesluta listan</value>
+    <value>Markerade registernycklar utesluts</value>
   </data>
   <data name="mainAskExit" xml:space="preserve">
     <value>Är du säker på att du vill avsluta?</value>
   </data>
-  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>Här första gången du kör Little Registry Cleaner.\r\nVill du skapa en återställningspunkt?</value>
-  </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
-    <value>Inte hitta Little kansli Cleaner.chm</value>
+    <value>Inte hitta Little Registry Cleaner.chm</value>
   </data>
   <data name="mainProblemsFix" xml:space="preserve">
-    <value>Vill du fixa alla utvalda problem?</value>
+    <value>Vill du fixa alla markerade problem?</value>
   </data>
   <data name="mainProblemsRemoved" xml:space="preserve">
-    <value>Removed problem från registren</value>
+    <value>Tog bort problemen från registret</value>
   </data>
   <data name="mainScanningAborted" xml:space="preserve">
-    <value>Aborterade scanning registret</value>
+    <value>Avbröt skanningen av registret</value>
   </data>
   <data name="mainScanningFinished" xml:space="preserve">
-    <value>Färdiga scanning registret</value>
+    <value>kinesiska (förenklad)</value>
   </data>
   <data name="mainSelectSections" xml:space="preserve">
     <value>Välj en sektion för att skanna</value>
@@ -154,43 +151,43 @@
     <value>En nyare version finns tillgänglig. Vill du ladda ner den?</value>
   </data>
   <data name="optionsExcludeDir" xml:space="preserve">
-    <value>Välj mapp att utesluta från registret Scan</value>
+    <value>Välj mapp att utesluta från skanningen</value>
   </data>
   <data name="optionsExcludeEmptyRegPath" xml:space="preserve">
     <value>Registersökväg kan inte vara tom</value>
   </data>
   <data name="optionsExcludeFile" xml:space="preserve">
-    <value>Välj en fil att från registret Scan</value>
+    <value>Välj en fil att utesluta från skanningen</value>
   </data>
   <data name="optionsExcludeInvalidRegPath" xml:space="preserve">
-    <value>Fastställt registernyckeln finns inte</value>
+    <value>Specifik registernyckel finns inte</value>
   </data>
   <data name="optionsExcludeRemove" xml:space="preserve">
     <value>Är du säker?</value>
   </data>
   <data name="optionsSelectBackupDir" xml:space="preserve">
-    <value>Välj den mapp där säkerhetskopian kommer att placeras</value>
+    <value>Välj den mapp där säkerhetskopian kommer att lagras</value>
   </data>
   <data name="optionsSelectLogDir" xml:space="preserve">
-    <value>Välj den mapp där alla loggfiler placeras</value>
+    <value>Välj den mapp där alla loggfiler lagras</value>
   </data>
   <data name="piErrorRegKey" xml:space="preserve">
-    <value>Fel ta bort registernyckeln:</value>
+    <value>Problem med att ta bort registernyckeln:</value>
   </data>
   <data name="piErrorUninstalling" xml:space="preserve">
-    <value>Fel avinstallera program:</value>
+    <value>Problem med att avinstallera program:</value>
   </data>
   <data name="piInvalidUninstallString" xml:space="preserve">
-    <value>Det gick inte att hitta avinstallationen sträng. Vill du manuellt ta bort det frÃ ¥ n registret?</value>
+    <value>Det gick inte att hitta avinstallationsnycklen. Vill du manuellt ta bort det från registret?</value>
   </data>
   <data name="piSuccessRegKey" xml:space="preserve">
-    <value>Sucessfully bort registernyckeln</value>
+    <value>Lyckades ta bort registernyckeln</value>
   </data>
   <data name="piSuccessUninstall" xml:space="preserve">
-    <value>Sucessfully avinstalleras programmet</value>
+    <value>Lyckades avinstallera programmet</value>
   </data>
   <data name="programAlreadyRunning" xml:space="preserve">
-    <value>Annat program tycks vara igång redan...</value>
+    <value>Ett annat program tycks vara igång redan...</value>
   </data>
   <data name="programNeedAdmin" xml:space="preserve">
     <value>Du måste vara administratör för att köra programmet</value>
@@ -199,10 +196,10 @@
     <value>Är du säker?</value>
   </data>
   <data name="restoreError" xml:space="preserve">
-    <value>Fel återställa registret</value>
+    <value>Problem med att återställa registret</value>
   </data>
   <data name="restoreRestored" xml:space="preserve">
-    <value>Återställts register</value>
+    <value>Återställt registert</value>
   </data>
   <data name="scanDlgExit" xml:space="preserve">
     <value>Är du säker?</value>
@@ -214,19 +211,19 @@
     <value>Filen kunde inte hittas</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
-    <value>Genväg / Value namn kan inte vara tom</value>
+    <value>Genväg / Värde kan inte vara tom</value>
   </data>
   <data name="smEmptyPath" xml:space="preserve">
     <value>Sökväg kan inte vara tom</value>
   </data>
   <data name="smRan" xml:space="preserve">
-    <value>Försökte köra:</value>
+    <value>Försökte att köra:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
     <value>Är du säker på att du vill ta bort startprogram?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
-    <value>Valt bort startprogram</value>
+    <value>Valt startprogram togs bort</value>
   </data>
   <data name="smRun" xml:space="preserve">
     <value>Är du säker på att du vill köra programmet?</value>
@@ -235,7 +232,7 @@
     <value>Är du säker på att du vill ta bort programmet från registret?</value>
   </data>
   <data name="umSearchText" xml:space="preserve">
-    <value>Söka efter namn</value>
+    <value>Sök efter namn</value>
   </data>
   <data name="umUninstall" xml:space="preserve">
     <value>Är du säker på att du vill avinstallera programmet?</value>

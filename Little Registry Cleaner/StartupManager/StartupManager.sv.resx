@@ -139,7 +139,7 @@
     <value>toolStripContainer1</value>
   </data>
   <data name="toolStripButtonAdd.Text" xml:space="preserve">
-    <value>Lägga till</value>
+    <value>Lägg till</value>
   </data>
   <data name="toolStripButtonEdit.Text" xml:space="preserve">
     <value>Redigera</value>
@@ -157,6 +157,6 @@
     <value>Uppdatera</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Liten Registry Cleaner - start Manager</value>
+    <value>Liten Registry Cleaner – Starthanterare</value>
   </data>
 </root>

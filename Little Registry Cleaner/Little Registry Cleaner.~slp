@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.0.292" date="20100113183814" scan="37" scanned="20091207224950">
+<document version="2.0.295" date="20100118134126" scan="37" scanned="20091207224950">
   <lang id="en"/>
   <lang id="fr"/>
   <lang id="es"/>
@@ -18,6 +18,7 @@
   <lang id="th"/>
   <lang id="pl"/>
   <lang id="hu"/>
+  <lang id="fa"/>
   <source class="TVisualStudioNetProjectSource" name="Common Tools\Common Tools.csproj" original="en" date="20091119063626" defaultoutputdir="Common Tools\bin\Debug" assemblykind="naLibrary" netversion="net35" toolsversion="net35" rootnamespace="Common_Tools" configuration="Debug">
     <outputfile dir="..\bin\Debug"/>
     <excludeddatatypes>
@@ -57,7 +58,7 @@
             <lang id="fr" status="2">Little Registry Cleaner - Détails...</lang>
             <lang id="es" status="2">Little Registry Cleaner - Detalles...</lang>
             <lang id="pt" status="2">Little Registry Cleaner - Detalhes...</lang>
-            <lang id="it" status="2">Little Registry Cleaner - Dettagli...</lang>
+            <lang id="it" status="3">Little Registry Cleaner - Dettagli...</lang>
             <lang id="nl" date="20091118234537" status="3">Kleine Registerreiniger - Details...</lang>
             <lang id="de" date="20091118234619" status="3">Wenig Registry Cleaner - Details...</lang>
             <lang id="ru" status="3">Little Registry Cleaner - Подробности...</lang>
@@ -120,7 +121,7 @@
                   <lang id="fr" status="2">Nom de la valeur:</lang>
                   <lang id="es" status="2">Nombre de valor:</lang>
                   <lang id="pt" status="2">Nome do valor:</lang>
-                  <lang id="it" status="2">Nome valore:</lang>
+                  <lang id="it" status="3">Nome valore:</lang>
                   <lang id="nl" status="3">Waarde Naam:</lang>
                   <lang id="de" status="2">Preis-Name:</lang>
                   <lang id="ru" status="2">Параметр:</lang>
@@ -161,7 +162,7 @@
                   <lang id="fr" status="2">Emplacement:</lang>
                   <lang id="es" status="2">Ubicación:</lang>
                   <lang id="pt" status="2">Local:</lang>
-                  <lang id="it" status="2">Località:</lang>
+                  <lang id="it" status="3">Località:</lang>
                   <lang id="nl" status="2">Locatie:</lang>
                   <lang id="de" status="2">Standort:</lang>
                   <lang id="ru" status="2">Местонахождение:</lang>
@@ -202,7 +203,7 @@
                   <lang id="fr" status="2">Problème:</lang>
                   <lang id="es" status="2">Problema:</lang>
                   <lang id="pt" status="2">Problema:</lang>
-                  <lang id="it" status="2">Problema:</lang>
+                  <lang id="it" status="3">Problema:</lang>
                   <lang id="nl" status="2">Probleem:</lang>
                   <lang id="de" status="2">Problem:</lang>
                   <lang id="ru" status="2">Проблемы:</lang>
@@ -308,7 +309,7 @@
             <lang id="fr" status="2">Little Registry Cleaner - A propos...</lang>
             <lang id="es" status="2">Registro poco Cleaner - acerca de...</lang>
             <lang id="pt" status="2">Little Registry Cleaner - Sobre...</lang>
-            <lang id="it" status="2">Registro poco Cleaner - informazioni...</lang>
+            <lang id="it" status="3">Informazioni su Little Registry Cleaner</lang>
             <lang id="nl" status="3">Kleine Registerreiniger - info...</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - über...</lang>
             <lang id="ru" status="3">Little Registry Cleaner - О программе</lang>
@@ -409,7 +410,7 @@
                 <lang id="fr" date="20091105200750" invalidated="1" status="3">Ce logiciel est gratuit: vous pouvez le redistribuer et / ou le modifier selon les termes de la GNU General Public License telle que publiée par la Free Software Foundation, soit la version 3 de la Licence, ou (à votre choix) toute version ultérieure.#n#nCe programme est distribué dans l'espoir qu'il sera utile, mais SANS AUCUNE GARANTIE, sans même la garantie implicite de COMMERCIALISATION ou D'ADAPTATION A UN USAGE PARTICULIER. Voir la GNU General Public License pour plus de détails.#n#nVous devriez avoir reçu un exemplaire de la Licence Publique Générale GNU avec ce programme. Sinon, consultez &lt;http://www.gnu.org/licenses/>。</lang>
                 <lang id="es" invalidated="1" status="2">Este programa es software libre: usted puede redistribuirlo y/o modificarlo bajo los términos de la GNU General Public License publicada por la Free Software Foundation, ya sea la versión 3 de la licencia, o (a su opción) cualquier versión posterior.#n#nEste programa se distribuye con la esperanza de que será útil, pero sin ninguna garantía, ni siquiera la garantía implícita de comerciabilidad o idoneidad para un propósito PARTICULAR.  Consulte la GNU General Public License para obtener más detalles.#n#nDebe haber recibido una copia de la licencia pública GNU General junto con este programa.  Si no, véase &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="pt" status="2">Este programa é software livre; você pode redistribuí-lo e/ou modificá-lo sob os termos da Licença Pública Geral GNU, conforme publicada pela Free Software Foundation; tanto a versão 3 da Licença como (a seu critério) qualquer versão mais nova.#n#nEste programa é distribuído na expectativa de ser útil, mas SEM QUALQUER GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou de ADEQUAÇÃO A QUALQUER PROPÓSITO EM PARTICULAR. Consulte a Licença Pública Geral GNU para obter mais detalhes.#n#nVocê deve ter recebido uma cópia da Licença Pública Geral GNU junto com este programa; caso contrário, acesse &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="it" invalidated="1" status="2">Questo programma è software libero: ridistribuirla e/o modificarla secondo i termini della GNU General Public License come pubblicato dalla Free Software Foundation, versione 3 della licenza o (a propria discrezione) qualsiasi versione successiva.#n#nQuesto programma è distribuito nella speranza che possa essere utile, ma senza alcuna garanzia; senza neppure la garanzia implicita di commerciabilità o idoneità per uno scopo particolare.  Vedere la GNU General Public License per maggiori dettagli.#n#nSi dovrebbe avere ricevuto una copia della licenza pubblica generica GNU insieme a questo programma.  Se non, vedere &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="it" status="3">Questo programma è software libero: puoi ridistribuirlo e/o modificarlo secondo i termini della GNU General Public License come pubblicato dalla Free Software Foundation, versione 3 della licenza o (a propria discrezione) qualsiasi versione successiva.#n#nQuesto programma è distribuito nella speranza che possa essere utile, ma senza alcuna garanzia; senza neppure la garanzia implicita di commerciabilità o idoneità per uno scopo particolare.  Vedere la GNU General Public License per maggiori dettagli.#n#nSi dovrebbe avere ricevuto una copia della GNU General Public License insieme a questo programma.  In caso contrario, vedere &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="nl" status="3">Dit programma is gratis software: u kunt het verspreiden en/of wijzigen in het kader van de GNU General Public License zoals gepubliceerd door de Free Software Foundation, in versie 3 van de licentie of (naar keuze) een latere versie.#n#nDit programma wordt verspreid in de hoop dat het nuttig zal zijn, maar ZONDER ENIGE GARANTIE; zonder zelfs de impliciete garantie van VERKOOPBAARHEID of GESCHIKTHEID VOOR EEN BEPAALD DOEL.  Zie de GNU General Public License voor meer informatie.#n#nU hebt een kopie ontvangen van de GNU General Public License samen met dit programma.  Als dit niet het geval is, Zie &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="de" invalidated="1" status="2">Dieses Programm ist freie Software: Sie weitergeben und/oder unter den Bedingungen der GNU General Public License veröffentlicht von der Free Software Foundation, Version 3 der Lizenz oder (nach Ihrer Wahl) any later Version ändern können.#n#nDieses Programm wird in der Hoffnung verteilt, dass es Nützlichkeit, jedoch ohne Garantie geliefert; selbst stillschweigende Garantien von MERCHANTABILITY oder Eignung für einen bestimmten Zweck sein wird.  Finden Sie unter der GNU General Public License für weitere Details.#n#nSie sollten eine Kopie der GNU General Public License zusammen mit diesem Programm erhalten haben.  Wenn nicht, finden Sie unter &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="ru" status="3">Эта программа является свободным программным обеспечением: Вы можете распространять или изменять её на условиях лицензии GNU General Public License, опубликованной Фондом свободного программного обеспечения, версии 3, либо (на Ваш выбор) любой более поздней версии.#n#nЭта программа распространяется в надежде на то, что она окажется полезной, но без каких бы то ни было гарантий; даже подразумеваемой гарантии или ТОВАРНОСТИ или пригодности для конкретных целей.  Смотрите GNU General Public License для получения дополнительной информации.#n#nВы должны были получить копию GNU General Public License вместе с этой программой.  Если нет, см. &lt;http://www.gnu.org/licenses/>.</lang>
@@ -440,7 +441,7 @@
                 <lang id="fr" status="2">Auteur:</lang>
                 <lang id="es" status="2">Autor:</lang>
                 <lang id="pt" status="2">Autor:</lang>
-                <lang id="it" status="2">Autore:</lang>
+                <lang id="it" status="3">Autore:</lang>
                 <lang id="nl" status="2">Auteur:</lang>
                 <lang id="de" status="2">Autor:</lang>
                 <lang id="ru" status="2">Автор:</lang>
@@ -504,7 +505,7 @@
               <lang id="fr" status="2">Fermer</lang>
               <lang id="es" status="2">Cerrar</lang>
               <lang id="pt" status="2">Fechar</lang>
-              <lang id="it" status="2">Chiudere</lang>
+              <lang id="it" status="3">Chiudi</lang>
               <lang id="nl" status="2">Sluiten</lang>
               <lang id="de" status="2">Schließen</lang>
               <lang id="ru" status="2">Закрыть</lang>
@@ -538,7 +539,7 @@
               <lang id="fr" date="20091105202110" status="3">Accueil</lang>
               <lang id="es" date="20091105202315" status="3">Inicio</lang>
               <lang id="pt" status="2">Site do projeto</lang>
-              <lang id="it" status="2">Sito del progetto</lang>
+              <lang id="it" status="3">Sito del progetto</lang>
               <lang id="nl" status="2">Project-website</lang>
               <lang id="de" status="2">Projekt-Website</lang>
               <lang id="ru" status="2">Сайт проекта</lang>
@@ -566,7 +567,7 @@
             <lang id="fr" date="20091105213514" status="3">Peu Registry Cleaner - Crash Reporter</lang>
             <lang id="es" status="2">Registro poco limpiador - Crash Reporter</lang>
             <lang id="pt" status="2">Little Registry Cleaner - Relatório de Falhas</lang>
-            <lang id="it" status="2">Registro poco Cleaner - Crash Reporter</lang>
+            <lang id="it" status="3">Little Registry Cleaner – Segnalazione errore</lang>
             <lang id="nl" status="3">Kleine Registerreiniger - Crash Reporter</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Crash Reporter</lang>
             <lang id="ru" status="3">Little Registry Cleaner - Отчет об ошибке</lang>
@@ -598,7 +599,7 @@
                 <lang id="fr" status="2">Ne pas envoyer</lang>
                 <lang id="es" status="2">No enviar</lang>
                 <lang id="pt" status="2">Não enviar</lang>
-                <lang id="it" status="2">Non inviare</lang>
+                <lang id="it" status="3">Non inviare</lang>
                 <lang id="nl" status="2">Niet verzenden</lang>
                 <lang id="de" status="2">Nicht senden</lang>
                 <lang id="ru" status="2">Не отправлять</lang>
@@ -626,7 +627,7 @@
                 <lang id="fr" status="2">Une exception s'est produite dans un composant de Little Registry Cleaner. Nous avons créé un rapport d'erreur que vous pouvez nous envoyer. Nous traiterons ce rapport comme confidentiel et anonyme。</lang>
                 <lang id="es" status="2">Se produjo una excepción en un componente de Little limpiador de registro. Hemos creado un informe de errores que usted puede enviarnos. Consideraremos este informe como confidencial y anónimo.</lang>
                 <lang id="pt" status="2">Uma exceção ocorreu em um componente de Little Registry Cleaner. Criamos um relatório de erro que você pode enviar-nos. Este relatório será tratado como confidencial e anônimo.</lang>
-                <lang id="it" status="2">Si è verificato un eccezione in un componente del registro Little Cleaner. Abbiamo creato una segnalazione di errore che potete inviarci. Trattiamo questa relazione come riservate e anonime.</lang>
+                <lang id="it" status="3">Si è verificato un errore in un componente di Little Registry Cleaner. È stata creata una segnalazione errori che potete inviarci. Tratteremo questa segnalazione come riservata e anonima.</lang>
                 <lang id="nl" status="3">Er is een uitzondering opgetreden in een onderdeel van de Kleine Registerreiniger. Wij hebben een foutrapport gemaakt dat u ons kunt sturen. Wij zullen dit rapport vertrouwelijk en anoniem behandelen.</lang>
                 <lang id="de" status="2">In einer Komponente der Little Registry Cleaner ist ein Ausnahme aufgetreten. Wir haben einen Fehlerbericht erstellt, den Sie uns senden können. Wir werden diesen Bericht als vertraulich und anonym behandeln.</lang>
                 <lang id="ru" status="3">В одном из компонентов Little Registry Cleaner произошла исключительная ситуация. Мы создали отчет об ошибке, который Вы можете отправить нам. Вся отправляемая информация конфиденциальна и анонимна.</lang>
@@ -653,7 +654,7 @@
                 <lang id="fr" status="2">Envoyer le rapport d'erreurs</lang>
                 <lang id="es" status="2">Enviar el informe de errores</lang>
                 <lang id="pt" status="2">Enviar relatório de erros</lang>
-                <lang id="it" status="2">Inviare la segnalazione errori</lang>
+                <lang id="it" status="3">Invia segnalazione</lang>
                 <lang id="nl" status="3">Foutrapport verzenden</lang>
                 <lang id="de" status="2">Problembericht senden</lang>
                 <lang id="ru" status="2">Отправить отчет</lang>
@@ -686,7 +687,7 @@
                 <lang id="fr" status="2">Programme de redémarrage</lang>
                 <lang id="es" status="2">Reiniciar el programa</lang>
                 <lang id="pt" status="2">Reiniciar o programa</lang>
-                <lang id="it" status="2">Riavviare il programma</lang>
+                <lang id="it" status="3">Riavvia il programma</lang>
                 <lang id="nl" status="2">Programma opnieuw starten</lang>
                 <lang id="de" status="2">Starten Sie neu Programm</lang>
                 <lang id="ru" status="3">Перезапустить программу</lang>
@@ -727,7 +728,7 @@
             <lang id="fr" status="2">Ajouter à la liste des ignorés</lang>
             <lang id="es" status="2">Agregar a lista de ignorar</lang>
             <lang id="pt" status="2">Adicionar à lista de ignorados</lang>
-            <lang id="it" status="2">Aggiungere a ignorare elenco</lang>
+            <lang id="it" status="3">Aggiungere all'elenco ignorati</lang>
             <lang id="nl" status="3">Toevoegen aan Negeren-lijst</lang>
             <lang id="de" status="2">Fügen zur Liste ignorieren hinzu</lang>
             <lang id="ru" status="3">Добавить в список исключений</lang>
@@ -753,7 +754,7 @@
               <lang id="fr" status="2">Ajouter à la liste des ignorés</lang>
               <lang id="es" status="2">Agregar a lista de ignorar</lang>
               <lang id="pt" status="2">Adicionar à lista de ignorados</lang>
-              <lang id="it" status="2">Aggiungere a ignorare elenco</lang>
+              <lang id="it" status="3">Aggiungere all'elenco ignorati</lang>
               <lang id="nl" status="3">Toevoegen aan Negeren-lijst</lang>
               <lang id="de" status="2">Fügen zur Liste ignorieren hinzu</lang>
               <lang id="ru" status="3">Добавить в список исключений</lang>
@@ -779,7 +780,7 @@
                 <lang id="fr" status="2">Sélectionnez Section:</lang>
                 <lang id="es" status="2">Seleccione la sección:</lang>
                 <lang id="pt" status="2">Selecione a seção:</lang>
-                <lang id="it" status="2">Selezionare la sezione:</lang>
+                <lang id="it" status="3">Seleziona la sezione:</lang>
                 <lang id="nl" status="3">Selecteer de Sectie:</lang>
                 <lang id="de" status="2">Wählen Sie Abschnitt:</lang>
                 <lang id="ru" status="2">Выберите раздел:</lang>
@@ -884,7 +885,7 @@
                 <lang id="fr" status="2">Chemin du Registre:</lang>
                 <lang id="es" status="2">Ruta del registro:</lang>
                 <lang id="pt" status="2">Caminho do registro:</lang>
-                <lang id="it" status="2">Percorso del Registro di sistema:</lang>
+                <lang id="it" status="3">Percorso del Registro di sistema:</lang>
                 <lang id="nl" status="2">Register pad:</lang>
                 <lang id="de" status="2">Registrierung-Pfad:</lang>
                 <lang id="ru" status="3">Путь в реестре:</lang>
@@ -918,7 +919,7 @@
               <lang id="fr" status="2">Annuler</lang>
               <lang id="es" status="2">Cancelar</lang>
               <lang id="pt" status="2">Cancelar</lang>
-              <lang id="it" status="2">Annulla</lang>
+              <lang id="it" status="3">Annulla</lang>
               <lang id="nl" status="2">Annuleren</lang>
               <lang id="de" status="2">Abbrechen</lang>
               <lang id="ru" status="3">Отмена</lang>
@@ -945,7 +946,7 @@
               <lang id="fr" status="2">Ajouter une entrée</lang>
               <lang id="es" status="2">Añadir entrada</lang>
               <lang id="pt" status="2">Adicionar entrada</lang>
-              <lang id="it" status="2">Aggiungere la voce</lang>
+              <lang id="it" status="3">Aggiungi voce</lang>
               <lang id="nl" status="2">Vermelding toevoegen</lang>
               <lang id="de" status="2">Eintrag hinzufügen</lang>
               <lang id="ru" status="2">Добавить запись</lang>
@@ -998,6 +999,228 @@
           </component>
           <component class="TVisEdit" name="nodeValueName" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox">
           </component>
+          <component class="TVisPopupMenu" name="contextMenuStrip1" type="System.Windows.Forms.ContextMenuStrip">
+            <row id="Size.Height" state="3">
+              <prev>98</prev>
+              <native>120</native>
+            </row>
+            <row id="Size.Width">162</row>
+            <component class="TVisMenuItem" name="selectAllToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text" state="0">
+                <native>Select All</native>
+                <lang id="en" status="2">Select All</lang>
+                <lang id="fr" status="3">Choisissez tous</lang>
+                <lang id="es" status="2">Seleccionar todo</lang>
+                <lang id="pt" status="2">Selecionar Todos</lang>
+                <lang id="it" status="3">Seleziona tutto</lang>
+                <lang id="nl" status="3">Selecteer alles</lang>
+                <lang id="de" status="2">Wählen Sie alle</lang>
+                <lang id="ru" status="3">Выбрать все</lang>
+                <lang id="el" status="2">Επιλογή όλων</lang>
+                <lang id="ar" status="2">تحديد الكل</lang>
+                <lang id="sv" status="2">Markera alla</lang>
+                <lang id="zh" status="2">选择所有</lang>
+                <lang id="zh.tra" status="2">選擇所有</lang>
+                <lang id="ja" status="2">すべて選択</lang>
+                <lang id="vi" status="2">Chọn Tất cả</lang>
+                <lang id="th" status="2">เลือกทั้งหมด</lang>
+                <lang id="pl" status="3">Zaznacz wszystko</lang>
+                <lang id="hu" status="2">Mind kijelölése</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="selectNoneToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text" state="0">
+                <native>Select None</native>
+                <lang id="en" status="2">Select None</lang>
+                <lang id="fr" status="2">Sélectionnez Aucun</lang>
+                <lang id="es" status="2">Seleccione Ninguno</lang>
+                <lang id="pt" status="2">Selecionar Nenhum</lang>
+                <lang id="it" status="3">Seleziona nessuno</lang>
+                <lang id="nl" status="3">Selecteer niets</lang>
+                <lang id="de" status="2">Wählen Sie keine</lang>
+                <lang id="ru" status="3">Очистить выбор</lang>
+                <lang id="el" status="2">Επιλέξτε "Κανένα"</lang>
+                <lang id="ar" status="2">حدد بلا</lang>
+                <lang id="sv" status="2">Välj Ingen</lang>
+                <lang id="zh" status="2">选择无</lang>
+                <lang id="zh.tra" status="2">選擇無</lang>
+                <lang id="ja" date="20091030211940" status="3">[なし] を選択します。</lang>
+                <lang id="vi" status="2">Chọn Không</lang>
+                <lang id="th" status="2">ไม่มีเลือก</lang>
+                <lang id="pl" status="3">Odznacz wszystko</lang>
+                <lang id="hu" status="2">Kijelölés megszüntetése</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="invertSelectionToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height" state="0">22</row>
+              <row id="Size.Width" state="0">161</row>
+              <row id="Text" state="0">
+                <native>Invert Selection</native>
+                <lang id="en" status="2">Invert Selection</lang>
+                <lang id="fr" status="2">Inverser la sélection</lang>
+                <lang id="es" status="2">Invertir la selección</lang>
+                <lang id="pt" status="2">Inverter Seleção</lang>
+                <lang id="it" status="3">Inverti la selezione</lang>
+                <lang id="nl" status="2">Selectie omkeren</lang>
+                <lang id="de" status="2">Auswahl umkehren</lang>
+                <lang id="ru" status="2">Инвертировать выделение</lang>
+                <lang id="el" status="2">Αντιστροφή της επιλογής</lang>
+                <lang id="ar" status="2">عكس الاختيار</lang>
+                <lang id="sv" status="2">Invertera markering</lang>
+                <lang id="zh" status="2">反选</lang>
+                <lang id="zh.tra" status="2">反選</lang>
+                <lang id="ja" status="2">逆選択</lang>
+                <lang id="vi" status="2">Đảo ngược lựa chọn</lang>
+                <lang id="th" status="2">เลือกกลับกัน</lang>
+                <lang id="pl" status="2">Odwróć zaznaczenie</lang>
+                <lang id="hu" status="2">Kijelölés megfordítása</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="toolStripSeparator1" type="System.Windows.Forms.ToolStripSeparator">
+              <row id="Size.Height">6</row>
+              <row id="Size.Width">158</row>
+            </component>
+            <component class="TVisMenuItem" name="excludeSelectedToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text" state="0">
+                <native>Exclude Selected</native>
+                <lang id="en" status="2">Exclude Selected</lang>
+                <lang id="fr" status="2">Exclure Sélection</lang>
+                <lang id="es" status="2">Excluir seleccionado</lang>
+                <lang id="pt" status="2">Excluir Selecionados</lang>
+                <lang id="it" status="3">Escludi selezionati</lang>
+                <lang id="nl" status="2">Geselecteerde uitsluiten</lang>
+                <lang id="de" status="2">Ausgewählte ausschließen</lang>
+                <lang id="ru" status="3">Исключить выбранные</lang>
+                <lang id="el" status="2">Εξαίρεση επιλεγμένων</lang>
+                <lang id="ar" status="2">استبعاد المحددة</lang>
+                <lang id="sv" status="2">Exkludera vald</lang>
+                <lang id="zh" status="2">排除选择</lang>
+                <lang id="zh.tra" status="2">排除選擇</lang>
+                <lang id="ja" status="2">除外選択</lang>
+                <lang id="vi" status="2">Loại trừ được chọn</lang>
+                <lang id="th" status="2">ยกเว้นเลือก</lang>
+                <lang id="pl" status="3">Pomiń zaznaczone</lang>
+                <lang id="hu" status="2">Kijelöltek kihagyása</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="viewInRegeditToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text" state="0">
+                <native>View in regedit</native>
+                <lang id="en" status="2">View in regedit</lang>
+                <lang id="fr" status="2">Voir dans regedit</lang>
+                <lang id="es" status="2">Ver en regedit</lang>
+                <lang id="pt" status="2">Mostrar no regedit</lang>
+                <lang id="it" status="3">Visualizza in Regedit</lang>
+                <lang id="nl" status="3">In regedit weergeven</lang>
+                <lang id="de" status="2">In Regedit anzeigen</lang>
+                <lang id="ru" status="3">Просмотр в regedit</lang>
+                <lang id="el" status="2">Προβολή σε regedit</lang>
+                <lang id="ar" status="2">عرض في regedit</lang>
+                <lang id="sv" status="2">Visa i regedit</lang>
+                <lang id="zh" status="2">查看输入regedit</lang>
+                <lang id="zh.tra" status="2">查看輸入regedit</lang>
+                <lang id="ja" status="2">プロフィールファイル名を指定で</lang>
+                <lang id="vi" status="2">Xem trong regedit</lang>
+                <lang id="th" status="2">ดูใน regedit</lang>
+                <lang id="pl" status="3">Otwórz w regedit</lang>
+                <lang id="hu" status="2">Nézet regedit-ben</lang>
+              </row>
+            </component>
+          </component>
+          <component class="TVisPopupMenu" name="contextMenuStrip2" type="System.Windows.Forms.ContextMenuStrip">
+            <row id="Size.Height">76</row>
+            <row id="Size.Width">137</row>
+            <component class="TVisMenuItem" name="hideShowToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem" parentfont="0">
+              <row id="Font">Segoe UI,9,style=Bold</row>
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">136</row>
+              <row id="Text" state="0">
+                <native>Hide/Show</native>
+                <lang id="en" status="2">Hide/Show</lang>
+                <lang id="fr" date="20091030210846" status="3">Peau / Exposition</lang>
+                <lang id="es" status="2">Ocultar/mostrar</lang>
+                <lang id="pt" status="2">Mostrar/ocultar</lang>
+                <lang id="it" status="3">Mostra/Nascondi</lang>
+                <lang id="nl" status="3">Verbergen/Tonen</lang>
+                <lang id="de" status="2">Ausblenden/einblenden</lang>
+                <lang id="ru" status="2">Скрыть/Показать</lang>
+                <lang id="el" status="2">Απόκρυψη/Εμφάνιση</lang>
+                <lang id="ar" status="2">إظهار/إخفاء</lang>
+                <lang id="sv" status="2">Dölj/visa</lang>
+                <lang id="zh" status="2">隐藏/显示</lang>
+                <lang id="zh.tra" status="2">隱藏/顯示</lang>
+                <lang id="ja" status="2">非表示/表示</lang>
+                <lang id="vi" date="20091106174632" status="3">Che giấu/Chỉ ra</lang>
+                <lang id="th" status="2">ซ่อน / แสดง</lang>
+                <lang id="pl" status="3">Pokaż/Ukryj</lang>
+                <lang id="hu" status="2">Elrejt/mutat</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="aboutToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">136</row>
+              <row id="Text" state="0">
+                <native>About...</native>
+                <lang id="en" status="2">About...</lang>
+                <lang id="fr" status="2">À propos de...</lang>
+                <lang id="es" status="2">Acerca de...</lang>
+                <lang id="pt" status="2">Sobre...</lang>
+                <lang id="it" status="3">Informazioni su...</lang>
+                <lang id="nl" status="2">Over...</lang>
+                <lang id="de" status="2">Über...</lang>
+                <lang id="ru" status="3">О программе...</lang>
+                <lang id="el" status="2">Σχετικά με...</lang>
+                <lang id="ar" status="2">حول...</lang>
+                <lang id="sv" status="2">Om...</lang>
+                <lang id="zh" status="2">大约...</lang>
+                <lang id="zh.tra" status="2">大約...</lang>
+                <lang id="ja" status="2">〜について...</lang>
+                <lang id="vi" status="2">Về...</lang>
+                <lang id="th" status="2">เกี่ยวกับ...</lang>
+                <lang id="pl" status="3">O programie...</lang>
+                <lang id="hu" status="2">Bővebben...</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="toolStripSeparator4" type="System.Windows.Forms.ToolStripSeparator">
+              <row id="Size.Height">6</row>
+              <row id="Size.Width">133</row>
+            </component>
+            <component class="TVisMenuItem" name="exitToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">136</row>
+              <row id="Text" state="0">
+                <native>Exit</native>
+                <lang id="en" status="2">Exit</lang>
+                <lang id="fr" status="3">Sortie</lang>
+                <lang id="es" status="2">Salida</lang>
+                <lang id="pt" status="2">Sair</lang>
+                <lang id="it" status="3">Esci</lang>
+                <lang id="nl" status="3">Einde</lang>
+                <lang id="de" status="2">Ausfahrt</lang>
+                <lang id="ru" status="3">Выход</lang>
+                <lang id="el" status="2">Εξόδου</lang>
+                <lang id="ar" status="2">خروج</lang>
+                <lang id="sv" status="2">Avsluta</lang>
+                <lang id="zh" status="2">退出</lang>
+                <lang id="zh.tra" status="2">退出</lang>
+                <lang id="ja" status="2">終了</lang>
+                <lang id="vi" status="3">Cửa ra</lang>
+                <lang id="th" status="2">ออกจาก</lang>
+                <lang id="pl" status="3">Zakończ</lang>
+                <lang id="hu" status="2">Kilépés</lang>
+              </row>
+            </component>
+          </component>
+          <component class="TVisImageList" name="imageListTreeView" type="System.Windows.Forms.ImageList">
+          </component>
           <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer" align="alClient">
             <row id="Location.X">0</row>
             <row id="Location.Y">0</row>
@@ -1035,7 +1258,7 @@
                   <lang id="fr" status="2">Bienvenue à Little Registry Cleaner!</lang>
                   <lang id="es" status="2">Bienvenido a Little Registry Cleaner!</lang>
                   <lang id="pt" status="2">Bem-vindo ao Little Registry Cleaner!</lang>
-                  <lang id="it" status="2">Benvenuti a Little Registry Cleaner!</lang>
+                  <lang id="it" status="3">Benvenuti in Little Registry Cleaner!</lang>
                   <lang id="nl" status="3">Welkom bij Kleine Registerreiniger!</lang>
                   <lang id="de" status="2">Willkommen bei Little Registry Cleaner!</lang>
                   <lang id="ru" status="3">Добро пожаловать в Little Registry Cleaner!</lang>
@@ -1103,7 +1326,7 @@
                       <lang id="fr" status="2">Sections à balayage</lang>
                       <lang id="es" status="2">Secciones para el análisis</lang>
                       <lang id="pt" status="2">Seções para fazer varredura</lang>
-                      <lang id="it" status="2">Sezioni da analizzare</lang>
+                      <lang id="it" status="3">Sezioni da analizzare</lang>
                       <lang id="nl" status="3">Te scannen secties</lang>
                       <lang id="de" status="2">Abschnitte zu scannende</lang>
                       <lang id="ru" status="2">Разделы для просмотра</lang>
@@ -1125,7 +1348,7 @@
                         <lang id="fr" status="2">ActiveX / COM</lang>
                         <lang id="es" status="2">ActiveX/COM</lang>
                         <lang id="pt" status="2">ActiveX/COM</lang>
-                        <lang id="it" status="2">ActiveX/COM</lang>
+                        <lang id="it" status="3">ActiveX/COM</lang>
                         <lang id="nl" status="2">ActiveX/com-</lang>
                         <lang id="de" status="2">ActiveX/COM</lang>
                         <lang id="ru" status="2">ActiveX/COM</lang>
@@ -1148,7 +1371,7 @@
                         <lang id="fr" status="2">Demande d'info</lang>
                         <lang id="es" status="2">Información de aplicación</lang>
                         <lang id="pt" status="2">Informações da Aplicação</lang>
-                        <lang id="it" status="2">Informazioni di applicazione</lang>
+                        <lang id="it" status="3">Informazioni sull'applicazione</lang>
                         <lang id="nl" status="3">Applicatiegegevens</lang>
                         <lang id="de" status="2">Anwendung Info</lang>
                         <lang id="ru" status="3">Информация о программе</lang>
@@ -1171,7 +1394,7 @@
                         <lang id="fr" status="2">Des emplacements du programme</lang>
                         <lang id="es" status="2">Ubicaciones de programa</lang>
                         <lang id="pt" status="2">Locais de programa</lang>
-                        <lang id="it" status="2">Percorsi di programma</lang>
+                        <lang id="it" status="3">Percorso del programma</lang>
                         <lang id="nl" status="2">Programma-locaties</lang>
                         <lang id="de" status="2">Programm-Standorte</lang>
                         <lang id="ru" status="3">Местоположение программ</lang>
@@ -1194,7 +1417,7 @@
                         <lang id="fr" status="2">Paramètres du logiciel</lang>
                         <lang id="es" status="2">Configuración de software</lang>
                         <lang id="pt" status="2">Configurações de software</lang>
-                        <lang id="it" status="2">Impostazioni del software</lang>
+                        <lang id="it" status="3">Impostazioni del software</lang>
                         <lang id="nl" status="2">Software-instellingen</lang>
                         <lang id="de" status="2">Softwareeinstellungen</lang>
                         <lang id="ru" status="3">Настройки</lang>
@@ -1217,7 +1440,7 @@
                         <lang id="fr" status="2">Démarrage</lang>
                         <lang id="es" status="2">Inicio</lang>
                         <lang id="pt" status="2">Inicialização</lang>
-                        <lang id="it" status="2">Avvio</lang>
+                        <lang id="it" status="3">Avvio</lang>
                         <lang id="nl" status="2">Opstarten</lang>
                         <lang id="de" status="2">Start</lang>
                         <lang id="ru" status="3">Автозагрузка</lang>
@@ -1240,7 +1463,7 @@
                         <lang id="fr" status="2">Pilotes système</lang>
                         <lang id="es" status="2">Controladores de sistema</lang>
                         <lang id="pt" status="2">Drivers de sistema</lang>
-                        <lang id="it" status="2">Driver di sistema</lang>
+                        <lang id="it" status="3">Driver di sistema</lang>
                         <lang id="nl" status="3">Systeem stuurprogramma's</lang>
                         <lang id="de" status="2">Systemtreiber</lang>
                         <lang id="ru" status="2">Системные драйверы</lang>
@@ -1263,7 +1486,7 @@
                         <lang id="fr" status="2">Des DLL partagées</lang>
                         <lang id="es" status="2">Compartido de archivos DLL</lang>
                         <lang id="pt" status="2">DLLs compartilhadas</lang>
-                        <lang id="it" status="2">DLL condivise</lang>
+                        <lang id="it" status="3">DLL condivise</lang>
                         <lang id="nl" status="2">Gedeelde dll-bestanden</lang>
                         <lang id="de" status="2">Freigegebenen DLLs</lang>
                         <lang id="ru" status="3">Общие библиотеки</lang>
@@ -1286,7 +1509,7 @@
                         <lang id="fr" status="2">Fichiers d'aide</lang>
                         <lang id="es" status="2">Archivos de ayuda</lang>
                         <lang id="pt" status="2">Arquivos de ajuda</lang>
-                        <lang id="it" status="2">File della Guida</lang>
+                        <lang id="it" status="3">File della Guida</lang>
                         <lang id="nl" status="2">Help-bestanden</lang>
                         <lang id="de" status="2">Hilfedateien</lang>
                         <lang id="ru" status="3">Файлы помощи</lang>
@@ -1309,7 +1532,7 @@
                         <lang id="fr" date="20091030203141" status="3">Événements sains</lang>
                         <lang id="es" status="2">Eventos de sonido</lang>
                         <lang id="pt" status="2">Eventos de som</lang>
-                        <lang id="it" status="2">Eventi audio</lang>
+                        <lang id="it" status="3">Eventi audio</lang>
                         <lang id="nl" status="3">Geluids-gebeurtenissen</lang>
                         <lang id="de" status="2">Sound Ereignisse</lang>
                         <lang id="ru" status="2">Звуковые события</lang>
@@ -1332,7 +1555,7 @@
                         <lang id="fr" status="2">Histoire Liste</lang>
                         <lang id="es" status="2">Lista de historia</lang>
                         <lang id="pt" status="2">Lista de histórico</lang>
-                        <lang id="it" status="2">Elenco di storia</lang>
+                        <lang id="it" status="3">Cronologia</lang>
                         <lang id="nl" status="2">Geschiedenis lijst</lang>
                         <lang id="de" status="2">Geschichte-Liste</lang>
                         <lang id="ru" status="3">Список изменений</lang>
@@ -1355,7 +1578,7 @@
                         <lang id="fr" date="20091030203103" status="3">Policies de Windows</lang>
                         <lang id="es" status="2">Fuentes de Windows</lang>
                         <lang id="pt" status="2">Fontes do Windows</lang>
-                        <lang id="it" status="2">Caratteri di Windows</lang>
+                        <lang id="it" status="3">Caratteri di Windows</lang>
                         <lang id="nl" status="2">Windows-lettertypen</lang>
                         <lang id="de" status="2">Windows-Schriftarten</lang>
                         <lang id="ru" status="2">Шрифты Windows</lang>
@@ -1414,7 +1637,7 @@
                     <lang id="fr" status="2">Problème</lang>
                     <lang id="es" status="2">Problema</lang>
                     <lang id="pt" status="2">Problema</lang>
-                    <lang id="it" status="2">Problema</lang>
+                    <lang id="it" status="3">Problema</lang>
                     <lang id="nl" status="2">Probleem</lang>
                     <lang id="de" status="2">Problem</lang>
                     <lang id="ru" status="2">Проблема</lang>
@@ -1436,7 +1659,7 @@
                     <lang id="fr" status="2">Emplacement</lang>
                     <lang id="es" status="2">Ubicación</lang>
                     <lang id="pt" status="2">Localização</lang>
-                    <lang id="it" status="2">Percorso</lang>
+                    <lang id="it" status="3">Percorso</lang>
                     <lang id="nl" status="2">Locatie</lang>
                     <lang id="de" status="2">Speicherort</lang>
                     <lang id="ru" status="2">Расположение</lang>
@@ -1459,7 +1682,7 @@
                     <lang id="fr" status="2">Nom de la valeur</lang>
                     <lang id="es" status="2">Nombre del valor</lang>
                     <lang id="pt" status="2">Nome do valor</lang>
-                    <lang id="it" status="2">Nome valore</lang>
+                    <lang id="it" status="3">Nome valore</lang>
                     <lang id="nl" status="3">Waarde-naam</lang>
                     <lang id="de" status="2">Wertname</lang>
                     <lang id="ru" status="3">Название</lang>
@@ -1508,7 +1731,7 @@
                   <lang id="fr" status="2">Fichier</lang>
                   <lang id="es" status="2">Archivo</lang>
                   <lang id="pt" status="2">Arquivo</lang>
-                  <lang id="it" date="20091105195331" status="3">Schedario</lang>
+                  <lang id="it" status="3">Schedario</lang>
                   <lang id="nl" status="2">Bestand</lang>
                   <lang id="de" status="2">Datei</lang>
                   <lang id="ru" status="2">Файл</lang>
@@ -1532,7 +1755,7 @@
                     <lang id="fr" status="3">Enregistrement de balayage</lang>
                     <lang id="es" status="2">Análisis del registro</lang>
                     <lang id="pt" status="2">Varredura do registro</lang>
-                    <lang id="it" status="2">Scansione del Registro di sistema</lang>
+                    <lang id="it" status="3">Scansione del Registro di sistema</lang>
                     <lang id="nl" status="2">Register scannen</lang>
                     <lang id="de" status="2">Registrierung scannen</lang>
                     <lang id="ru" status="2">Сканирование реестра</lang>
@@ -1557,7 +1780,7 @@
                     <lang id="fr" status="2">Corriger les problèmes</lang>
                     <lang id="es" status="2">Solucionar problemas</lang>
                     <lang id="pt" status="2">Corrigir problemas</lang>
-                    <lang id="it" status="2">Risoluzione dei problemi</lang>
+                    <lang id="it" status="3">Correggi problemi</lang>
                     <lang id="nl" status="2">Problemen oplossen</lang>
                     <lang id="de" status="2">Beheben von Problemen</lang>
                     <lang id="ru" status="2">Устранение неполадок</lang>
@@ -1582,7 +1805,7 @@
                     <lang id="fr" status="2">Restaurer registre</lang>
                     <lang id="es" status="2">Restaurar registro</lang>
                     <lang id="pt" status="2">Restaurar o registro</lang>
-                    <lang id="it" status="2">Ripristinare il Registro di sistema</lang>
+                    <lang id="it" status="3">Ripristina il Registro di sistema</lang>
                     <lang id="nl" status="2">Register herstellen</lang>
                     <lang id="de" status="2">Wiederherstellen der Registrierung</lang>
                     <lang id="ru" status="2">Восстановление реестра</lang>
@@ -1611,7 +1834,7 @@
                     <lang id="fr" date="20091030203600" status="3">Sortie</lang>
                     <lang id="es" status="2">Salida</lang>
                     <lang id="pt" status="2">Sair</lang>
-                    <lang id="it" status="2">Uscita</lang>
+                    <lang id="it" status="3">Esci</lang>
                     <lang id="nl" status="3">Einde</lang>
                     <lang id="de" status="2">Ausfahrt</lang>
                     <lang id="ru" status="3">Выход</lang>
@@ -1637,7 +1860,7 @@
                   <lang id="fr" status="2">Modifier</lang>
                   <lang id="es" status="2">Editar</lang>
                   <lang id="pt" status="2">Editar</lang>
-                  <lang id="it" status="2">Modifica</lang>
+                  <lang id="it" status="3">Modifica</lang>
                   <lang id="nl" status="2">Bewerken</lang>
                   <lang id="de" status="2">Bearbeiten</lang>
                   <lang id="ru" status="2">Редактирование</lang>
@@ -1661,7 +1884,7 @@
                     <lang id="fr" date="20091030203629" status="3">Choisissez tous</lang>
                     <lang id="es" status="2">Seleccionar todo</lang>
                     <lang id="pt" status="2">Selecionar Todos</lang>
-                    <lang id="it" status="2">Seleziona tutto</lang>
+                    <lang id="it" status="3">Seleziona tutto</lang>
                     <lang id="nl" status="3">Selecteer alles</lang>
                     <lang id="de" status="2">Wählen Sie alle</lang>
                     <lang id="ru" status="3">Выбрать все</lang>
@@ -1686,7 +1909,7 @@
                     <lang id="fr" status="2">Sélectionnez Aucun</lang>
                     <lang id="es" status="2">Seleccione Ninguno</lang>
                     <lang id="pt" status="2">Selecionar Nenhum</lang>
-                    <lang id="it" status="2">Selezionare Nessuno</lang>
+                    <lang id="it" status="3">Seleziona nessuno</lang>
                     <lang id="nl" status="3">Selecteer niets</lang>
                     <lang id="de" status="2">Wählen Sie keine</lang>
                     <lang id="ru" status="3">Очистить выбор</lang>
@@ -1711,7 +1934,7 @@
                     <lang id="fr" status="2">Inverser la sélection</lang>
                     <lang id="es" status="2">Invertir la selección</lang>
                     <lang id="pt" status="2">Inverter Seleção</lang>
-                    <lang id="it" status="2">Inverti la selezione</lang>
+                    <lang id="it" status="3">Inverti la selezione</lang>
                     <lang id="nl" status="2">Selectie omkeren</lang>
                     <lang id="de" status="2">Auswahl umkehren</lang>
                     <lang id="ru" status="2">Инвертировать выделение</lang>
@@ -1740,7 +1963,7 @@
                     <lang id="fr" status="2">Exclure Sélection</lang>
                     <lang id="es" status="2">Excluir seleccionado</lang>
                     <lang id="pt" status="2">Excluir Selecionados</lang>
-                    <lang id="it" status="2">Escludere selezionati</lang>
+                    <lang id="it" status="3">Escludi selezionati</lang>
                     <lang id="nl" status="2">Geselecteerde uitsluiten</lang>
                     <lang id="de" status="2">Ausgewählte ausschließen</lang>
                     <lang id="ru" status="3">Исключить выбранные</lang>
@@ -1765,7 +1988,7 @@
                     <lang id="fr" status="2">Voir dans regedit</lang>
                     <lang id="es" status="2">Ver en regedit</lang>
                     <lang id="pt" status="2">Mostrar no regedit</lang>
-                    <lang id="it" status="2">Visualizzare in regedit</lang>
+                    <lang id="it" status="3">Visualizza in Regedit</lang>
                     <lang id="nl" status="3">In regedit weergeven</lang>
                     <lang id="de" status="2">In Regedit anzeigen</lang>
                     <lang id="ru" status="3">Просмотр в regedit</lang>
@@ -1791,7 +2014,7 @@
                   <lang id="fr" status="2">Langue</lang>
                   <lang id="es" status="2">Lingua</lang>
                   <lang id="pt" status="2">Linguagem</lang>
-                  <lang id="it" date="20091030214057" status="3">Lingua</lang>
+                  <lang id="it" status="3">Lingua</lang>
                   <lang id="nl" status="3">Taal</lang>
                   <lang id="de" status="2">Lengua</lang>
                   <lang id="ru" status="3">Язык</lang>
@@ -1815,7 +2038,7 @@
                     <lang id="fr" status="2">Anglais</lang>
                     <lang id="es" status="2">Inglés</lang>
                     <lang id="pt" status="2">Inglês</lang>
-                    <lang id="it" status="2">Inglese</lang>
+                    <lang id="it" status="3">Inglese</lang>
                     <lang id="nl" status="2">Engels</lang>
                     <lang id="de" status="2">Englisch</lang>
                     <lang id="ru" status="2">Английский</lang>
@@ -1840,7 +2063,7 @@
                     <lang id="fr" status="2">Français</lang>
                     <lang id="es" status="2">Francés</lang>
                     <lang id="pt" status="2">Francês</lang>
-                    <lang id="it" status="2">Francese</lang>
+                    <lang id="it" status="3">Francese</lang>
                     <lang id="nl" status="2">Frans</lang>
                     <lang id="de" status="2">Französisch</lang>
                     <lang id="ru" status="2">Французский</lang>
@@ -1865,7 +2088,7 @@
                     <lang id="fr" status="2">Espagnol</lang>
                     <lang id="es" status="2">Español</lang>
                     <lang id="pt" status="2">Espanhol</lang>
-                    <lang id="it" status="2">Spagnolo</lang>
+                    <lang id="it" status="3">Spagnolo</lang>
                     <lang id="nl" status="2">Spaans</lang>
                     <lang id="de" status="2">Spanisch</lang>
                     <lang id="ru" status="2">Испанский</lang>
@@ -1890,7 +2113,7 @@
                     <lang id="fr" status="2">Portugais</lang>
                     <lang id="es" status="2">Portugués</lang>
                     <lang id="pt" status="2">Português</lang>
-                    <lang id="it" status="2">Portoghese</lang>
+                    <lang id="it" status="3">Portoghese</lang>
                     <lang id="nl" status="2">Portugees</lang>
                     <lang id="de" status="2">Portugiesisch</lang>
                     <lang id="ru" status="2">Португальский</lang>
@@ -1915,7 +2138,7 @@
                     <lang id="fr" status="2">Italien</lang>
                     <lang id="es" status="2">Italiano</lang>
                     <lang id="pt" status="2">Italiano</lang>
-                    <lang id="it" status="2">Italiano</lang>
+                    <lang id="it" status="3">Italiano</lang>
                     <lang id="nl" status="2">Italiaans</lang>
                     <lang id="de" status="2">Italienisch</lang>
                     <lang id="ru" status="2">Итальянский</lang>
@@ -1940,7 +2163,7 @@
                     <lang id="fr" status="2">Néerlandais</lang>
                     <lang id="es" status="2">Neerlandés</lang>
                     <lang id="pt" status="2">Holandês</lang>
-                    <lang id="it" status="2">Olandese</lang>
+                    <lang id="it" status="3">Olandese</lang>
                     <lang id="nl" status="3">Nederlands</lang>
                     <lang id="de" status="2">Niederländisch</lang>
                     <lang id="ru" status="2">Голландский</lang>
@@ -1965,7 +2188,7 @@
                     <lang id="fr" status="2">Allemand</lang>
                     <lang id="es" status="2">Alemán</lang>
                     <lang id="pt" status="2">Alemão</lang>
-                    <lang id="it" status="2">Tedesco</lang>
+                    <lang id="it" status="3">Tedesco</lang>
                     <lang id="nl" status="2">Duits</lang>
                     <lang id="de" status="2">Deutsch</lang>
                     <lang id="ru" status="2">Немецкий</lang>
@@ -1990,7 +2213,7 @@
                     <lang id="fr" status="2">Russe</lang>
                     <lang id="es" status="2">Rusia</lang>
                     <lang id="pt" status="2">Russo</lang>
-                    <lang id="it" status="2">Russo</lang>
+                    <lang id="it" status="3">Russo</lang>
                     <lang id="nl" status="2">Russisch</lang>
                     <lang id="de" status="2">Russisch</lang>
                     <lang id="ru" status="2">Русский</lang>
@@ -2011,7 +2234,24 @@
                   <row id="Size.Width" state="0">184</row>
                   <row id="Text" state="0">
                     <native>Hungarian</native>
+                    <lang id="en" date="20100113185123" status="3">Hungarian</lang>
+                    <lang id="fr" date="20100113185114" status="2">Hongrois</lang>
+                    <lang id="es" date="20100113184845" status="3">Húngaro</lang>
+                    <lang id="pt" date="20100113184817" status="3">Húngaro</lang>
+                    <lang id="it" date="20100113184651" status="3">Ungherese</lang>
+                    <lang id="nl" date="20100113184804" status="3">Hongaars</lang>
+                    <lang id="de" date="20100113184745" status="3">Ungarisch</lang>
+                    <lang id="ru" date="20100113184858" status="3">Венгерский</lang>
+                    <lang id="el" date="20100113184918" status="3">Ουγγρικά</lang>
+                    <lang id="ar" date="20100113184931" status="3">الهنغارية</lang>
+                    <lang id="sv" date="20100113184956" status="3">Ungerska</lang>
+                    <lang id="zh" date="20100113184714" status="3">匈牙利文</lang>
+                    <lang id="zh.tra" date="20100113184727" status="3">匈牙利文</lang>
+                    <lang id="ja" date="20100113185014" status="3">ハンガリー語</lang>
+                    <lang id="vi" date="20100113185031" status="3">Tiếng Hung-ga-ri</lang>
+                    <lang id="th" date="20100113185047" status="3">ฮังการี</lang>
                     <lang id="pl" status="2">węgierski</lang>
+                    <lang id="hu" date="20100113185104" status="3">Magyar</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="greekToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2023,7 +2263,7 @@
                     <lang id="fr" status="2">Grec</lang>
                     <lang id="es" status="2">Griego</lang>
                     <lang id="pt" status="2">Grego</lang>
-                    <lang id="it" status="2">Greco</lang>
+                    <lang id="it" status="3">Greco</lang>
                     <lang id="nl" status="2">Grieks</lang>
                     <lang id="de" status="2">Griechisch</lang>
                     <lang id="ru" status="3">Греческий</lang>
@@ -2048,7 +2288,7 @@
                     <lang id="fr" status="2">Arabe</lang>
                     <lang id="es" status="2">Árabe</lang>
                     <lang id="pt" status="2">Árabe</lang>
-                    <lang id="it" status="2">Arabo</lang>
+                    <lang id="it" status="3">Arabo</lang>
                     <lang id="nl" status="2">Arabisch</lang>
                     <lang id="de" status="2">Arabisch</lang>
                     <lang id="ru" status="2">Арабский</lang>
@@ -2073,7 +2313,7 @@
                     <lang id="fr" status="2">Polonais</lang>
                     <lang id="es" status="2">Polonia</lang>
                     <lang id="pt" status="2">Polonês</lang>
-                    <lang id="it" status="2">Polacco</lang>
+                    <lang id="it" status="3">Polacco</lang>
                     <lang id="nl" status="2">Pools</lang>
                     <lang id="de" status="2">Polnische</lang>
                     <lang id="ru" status="2">Польский</lang>
@@ -2098,7 +2338,7 @@
                     <lang id="fr" status="2">Suédois</lang>
                     <lang id="es" status="2">Sueco</lang>
                     <lang id="pt" status="2">Sueco</lang>
-                    <lang id="it" status="2">Svedese</lang>
+                    <lang id="it" status="3">Svedese</lang>
                     <lang id="nl" status="2">Zweeds</lang>
                     <lang id="de" status="2">Schwedisch</lang>
                     <lang id="ru" status="2">Шведский</lang>
@@ -2123,7 +2363,7 @@
                     <lang id="fr" status="2">Japonais</lang>
                     <lang id="es" status="2">Japonés</lang>
                     <lang id="pt" status="2">Japonês</lang>
-                    <lang id="it" status="2">Giapponese</lang>
+                    <lang id="it" status="3">Giapponese</lang>
                     <lang id="nl" status="2">Japans</lang>
                     <lang id="de" status="2">Japanisch</lang>
                     <lang id="ru" status="2">Японский</lang>
@@ -2148,7 +2388,7 @@
                     <lang id="fr" status="2">Chinois (simplifié)</lang>
                     <lang id="es" status="2">Chino (simplificado)</lang>
                     <lang id="pt" status="2">Chinês (Simplificado)</lang>
-                    <lang id="it" status="2">Cinese (semplificato)</lang>
+                    <lang id="it" status="3">Cinese (semplificato)</lang>
                     <lang id="nl" status="3">Chinese (vereenvoudigd)</lang>
                     <lang id="de" status="2">Chinesisch (Taiwan)</lang>
                     <lang id="ru" status="2">Китайский (упрощенный)</lang>
@@ -2173,7 +2413,7 @@
                     <lang id="fr" status="2">Chinois (Traditionnel)</lang>
                     <lang id="es" status="2">Chino (tradicional)</lang>
                     <lang id="pt" status="2">Chinês (Tradicional)</lang>
-                    <lang id="it" status="2">Cinese (tradizionale)</lang>
+                    <lang id="it" status="3">Cinese (tradizionale)</lang>
                     <lang id="nl" status="2">Chinees (traditioneel)</lang>
                     <lang id="de" status="2">Chinesisch (traditionell)</lang>
                     <lang id="ru" status="2">Китайский (традиционный)</lang>
@@ -2198,7 +2438,7 @@
                     <lang id="fr" status="2">Vietnamien</lang>
                     <lang id="es" status="2">Vietnamita</lang>
                     <lang id="pt" status="2">Vietnamita</lang>
-                    <lang id="it" status="2">Vietnamita</lang>
+                    <lang id="it" status="3">Vietnamita</lang>
                     <lang id="nl" status="2">Vietnamees</lang>
                     <lang id="de" status="2">Vietnamesisch</lang>
                     <lang id="ru" status="2">Вьетнамский</lang>
@@ -2223,7 +2463,7 @@
                     <lang id="fr" status="2">Thai</lang>
                     <lang id="es" status="2">Tailandia</lang>
                     <lang id="pt" status="2">Tailandês</lang>
-                    <lang id="it" status="2">Thai</lang>
+                    <lang id="it" status="3">Thai</lang>
                     <lang id="nl" status="2">Thais</lang>
                     <lang id="de" status="2">Thai</lang>
                     <lang id="ru" status="2">Тайский</lang>
@@ -2249,7 +2489,7 @@
                   <lang id="fr" status="2">Outils</lang>
                   <lang id="es" status="2">Herramientas</lang>
                   <lang id="pt" status="2">Ferramentas</lang>
-                  <lang id="it" status="2">Strumenti</lang>
+                  <lang id="it" status="3">Strumenti</lang>
                   <lang id="nl" status="3">Gereedschap</lang>
                   <lang id="de" date="20091024224133" status="3">Werkzeuge</lang>
                   <lang id="ru" status="2">Инструменты</lang>
@@ -2273,7 +2513,7 @@
                     <lang id="fr" status="2">Gestionnaire de démarrage</lang>
                     <lang id="es" status="2">Administrador de inicio</lang>
                     <lang id="pt" status="2">Gerenciador de Inicialização</lang>
-                    <lang id="it" status="2">Gestione di avvio</lang>
+                    <lang id="it" status="3">Gestione avvio</lang>
                     <lang id="nl" status="3">Manager starten</lang>
                     <lang id="de" status="2">Start-Manager</lang>
                     <lang id="ru" status="3">Менеджер автозагрузки</lang>
@@ -2298,7 +2538,7 @@
                     <lang id="fr" date="20091030203758" status="3">Désinstallez le directeur</lang>
                     <lang id="es" status="2">Desinstalar Manager</lang>
                     <lang id="pt" status="2">Gerenciador para Desinstalação</lang>
-                    <lang id="it" status="2">Disinstallare Manager</lang>
+                    <lang id="it" status="3">Gestione disinstallazione</lang>
                     <lang id="nl" status="2">Manager verwijderen</lang>
                     <lang id="de" status="2">Deinstallieren Sie Manager</lang>
                     <lang id="ru" status="3">Менеджер деинсталляции</lang>
@@ -2327,7 +2567,7 @@
                     <lang id="fr" status="3">Arrangements</lang>
                     <lang id="es" status="2">Opciones</lang>
                     <lang id="pt" status="2">Opções</lang>
-                    <lang id="it" status="2">Opzioni</lang>
+                    <lang id="it" status="3">Opzioni</lang>
                     <lang id="nl" status="2">Opties</lang>
                     <lang id="de" status="2">Optionen</lang>
                     <lang id="ru" status="2">Параметры</lang>
@@ -2406,7 +2646,7 @@
                     <lang id="fr" status="2">Visitez le site web</lang>
                     <lang id="es" status="2">Visite el sitio Web</lang>
                     <lang id="pt" status="2">Visite o Website</lang>
-                    <lang id="it" status="2">Visita sito</lang>
+                    <lang id="it" status="3">Visita sito</lang>
                     <lang id="nl" status="2">Bezoek de website</lang>
                     <lang id="de" status="2">Website besuchen</lang>
                     <lang id="ru" status="3">Посетить сайт программы</lang>
@@ -2431,7 +2671,7 @@
                     <lang id="fr" status="2">Vérifier les mises à jour</lang>
                     <lang id="es" status="2">Comprobación de actualizaciones</lang>
                     <lang id="pt" status="2">Verificar se há atualizações</lang>
-                    <lang id="it" status="2">Verificare la disponibilità di aggiornamenti</lang>
+                    <lang id="it" status="3">Verificare la disponibilità di aggiornamenti</lang>
                     <lang id="nl" status="2">Controleren op updates</lang>
                     <lang id="de" status="2">Kontrollkästchen für updates</lang>
                     <lang id="ru" status="2">Проверить наличие обновлений</lang>
@@ -2460,7 +2700,7 @@
                     <lang id="fr" status="2">À propos de...</lang>
                     <lang id="es" status="2">Acerca de...</lang>
                     <lang id="pt" status="2">Sobre...</lang>
-                    <lang id="it" status="2">Sulla...</lang>
+                    <lang id="it" status="3">Informazioni su...</lang>
                     <lang id="nl" status="2">Over...</lang>
                     <lang id="de" status="2">Über...</lang>
                     <lang id="ru" status="3">О программе...</lang>
@@ -2510,7 +2750,7 @@
                   <lang id="fr" date="20091024223828" status="3">Enregistrement de balayage</lang>
                   <lang id="es" status="2">Análisis del registro</lang>
                   <lang id="pt" status="2">Varredura do registro</lang>
-                  <lang id="it" status="2">Scansione del Registro di sistema</lang>
+                  <lang id="it" status="3">Scansione del Registro di sistema</lang>
                   <lang id="nl" status="2">Register scannen</lang>
                   <lang id="de" status="2">Registrierung scannen</lang>
                   <lang id="ru" status="2">Сканирование реестра</lang>
@@ -2535,7 +2775,7 @@
                   <lang id="fr" status="2">Corriger les problèmes</lang>
                   <lang id="es" status="2">Solucionar problemas</lang>
                   <lang id="pt" status="2">Corrigir problemas</lang>
-                  <lang id="it" status="2">Risoluzione dei problemi</lang>
+                  <lang id="it" status="3">Correggi problemi</lang>
                   <lang id="nl" status="2">Problemen oplossen</lang>
                   <lang id="de" status="2">Beheben von Problemen</lang>
                   <lang id="ru" status="2">Устранение неполадок</lang>
@@ -2560,7 +2800,7 @@
                   <lang id="fr" status="2">Restaurer registre</lang>
                   <lang id="es" status="2">Restaurar registro</lang>
                   <lang id="pt" status="2">Restaurar o registro</lang>
-                  <lang id="it" status="2">Ripristinare il Registro di sistema</lang>
+                  <lang id="it" status="3">Ripristina il Registro di sistema</lang>
                   <lang id="nl" status="2">Register herstellen</lang>
                   <lang id="de" status="2">Wiederherstellen der Registrierung</lang>
                   <lang id="ru" status="2">Восстановление реестра</lang>
@@ -2589,7 +2829,7 @@
                   <lang id="fr" date="20091106174527" status="3">Arrangements</lang>
                   <lang id="es" status="2">Opciones</lang>
                   <lang id="pt" status="2">Opções</lang>
-                  <lang id="it" status="2">Opzioni</lang>
+                  <lang id="it" status="3">Opzioni</lang>
                   <lang id="nl" status="2">Opties</lang>
                   <lang id="de" status="2">Optionen</lang>
                   <lang id="ru" status="2">Параметры</lang>
@@ -2614,7 +2854,7 @@
                   <lang id="fr" status="2">Aider</lang>
                   <lang id="es" status="2">Ayuda</lang>
                   <lang id="pt" status="2">Ajuda</lang>
-                  <lang id="it" date="20091105195239" status="3">Aiuto</lang>
+                  <lang id="it" status="3">Aiuto</lang>
                   <lang id="nl" status="2">Help</lang>
                   <lang id="de" status="2">Hilfe</lang>
                   <lang id="ru" status="2">Справка</lang>
@@ -2631,228 +2871,6 @@
                 </row>
               </component>
             </component>
-          </component>
-          <component class="TVisPopupMenu" name="contextMenuStrip1" type="System.Windows.Forms.ContextMenuStrip">
-            <row id="Size.Height" state="3">
-              <prev>98</prev>
-              <native>120</native>
-            </row>
-            <row id="Size.Width">162</row>
-            <component class="TVisMenuItem" name="selectAllToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text" state="0">
-                <native>Select All</native>
-                <lang id="en" status="2">Select All</lang>
-                <lang id="fr" status="3">Choisissez tous</lang>
-                <lang id="es" status="2">Seleccionar todo</lang>
-                <lang id="pt" status="2">Selecionar Todos</lang>
-                <lang id="it" status="2">Seleziona tutto</lang>
-                <lang id="nl" status="3">Selecteer alles</lang>
-                <lang id="de" status="2">Wählen Sie alle</lang>
-                <lang id="ru" status="3">Выбрать все</lang>
-                <lang id="el" status="2">Επιλογή όλων</lang>
-                <lang id="ar" status="2">تحديد الكل</lang>
-                <lang id="sv" status="2">Markera alla</lang>
-                <lang id="zh" status="2">选择所有</lang>
-                <lang id="zh.tra" status="2">選擇所有</lang>
-                <lang id="ja" status="2">すべて選択</lang>
-                <lang id="vi" status="2">Chọn Tất cả</lang>
-                <lang id="th" status="2">เลือกทั้งหมด</lang>
-                <lang id="pl" status="3">Zaznacz wszystko</lang>
-                <lang id="hu" status="2">Mind kijelölése</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="selectNoneToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text" state="0">
-                <native>Select None</native>
-                <lang id="en" status="2">Select None</lang>
-                <lang id="fr" status="2">Sélectionnez Aucun</lang>
-                <lang id="es" status="2">Seleccione Ninguno</lang>
-                <lang id="pt" status="2">Selecionar Nenhum</lang>
-                <lang id="it" status="2">Selezionare Nessuno</lang>
-                <lang id="nl" status="3">Selecteer niets</lang>
-                <lang id="de" status="2">Wählen Sie keine</lang>
-                <lang id="ru" status="3">Очистить выбор</lang>
-                <lang id="el" status="2">Επιλέξτε "Κανένα"</lang>
-                <lang id="ar" status="2">حدد بلا</lang>
-                <lang id="sv" status="2">Välj Ingen</lang>
-                <lang id="zh" status="2">选择无</lang>
-                <lang id="zh.tra" status="2">選擇無</lang>
-                <lang id="ja" date="20091030211940" status="3">[なし] を選択します。</lang>
-                <lang id="vi" status="2">Chọn Không</lang>
-                <lang id="th" status="2">ไม่มีเลือก</lang>
-                <lang id="pl" status="3">Odznacz wszystko</lang>
-                <lang id="hu" status="2">Kijelölés megszüntetése</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="invertSelectionToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height" state="0">22</row>
-              <row id="Size.Width" state="0">161</row>
-              <row id="Text" state="0">
-                <native>Invert Selection</native>
-                <lang id="en" status="2">Invert Selection</lang>
-                <lang id="fr" status="2">Inverser la sélection</lang>
-                <lang id="es" status="2">Invertir la selección</lang>
-                <lang id="pt" status="2">Inverter Seleção</lang>
-                <lang id="it" status="2">Inverti la selezione</lang>
-                <lang id="nl" status="2">Selectie omkeren</lang>
-                <lang id="de" status="2">Auswahl umkehren</lang>
-                <lang id="ru" status="2">Инвертировать выделение</lang>
-                <lang id="el" status="2">Αντιστροφή της επιλογής</lang>
-                <lang id="ar" status="2">عكس الاختيار</lang>
-                <lang id="sv" status="2">Invertera markering</lang>
-                <lang id="zh" status="2">反选</lang>
-                <lang id="zh.tra" status="2">反選</lang>
-                <lang id="ja" status="2">逆選択</lang>
-                <lang id="vi" status="2">Đảo ngược lựa chọn</lang>
-                <lang id="th" status="2">เลือกกลับกัน</lang>
-                <lang id="pl" status="2">Odwróć zaznaczenie</lang>
-                <lang id="hu" status="2">Kijelölés megfordítása</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="toolStripSeparator1" type="System.Windows.Forms.ToolStripSeparator">
-              <row id="Size.Height">6</row>
-              <row id="Size.Width">158</row>
-            </component>
-            <component class="TVisMenuItem" name="excludeSelectedToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text" state="0">
-                <native>Exclude Selected</native>
-                <lang id="en" status="2">Exclude Selected</lang>
-                <lang id="fr" status="2">Exclure Sélection</lang>
-                <lang id="es" status="2">Excluir seleccionado</lang>
-                <lang id="pt" status="2">Excluir Selecionados</lang>
-                <lang id="it" status="2">Escludere selezionati</lang>
-                <lang id="nl" status="2">Geselecteerde uitsluiten</lang>
-                <lang id="de" status="2">Ausgewählte ausschließen</lang>
-                <lang id="ru" status="3">Исключить выбранные</lang>
-                <lang id="el" status="2">Εξαίρεση επιλεγμένων</lang>
-                <lang id="ar" status="2">استبعاد المحددة</lang>
-                <lang id="sv" status="2">Exkludera vald</lang>
-                <lang id="zh" status="2">排除选择</lang>
-                <lang id="zh.tra" status="2">排除選擇</lang>
-                <lang id="ja" status="2">除外選択</lang>
-                <lang id="vi" status="2">Loại trừ được chọn</lang>
-                <lang id="th" status="2">ยกเว้นเลือก</lang>
-                <lang id="pl" status="3">Pomiń zaznaczone</lang>
-                <lang id="hu" status="2">Kijelöltek kihagyása</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="viewInRegeditToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text" state="0">
-                <native>View in regedit</native>
-                <lang id="en" status="2">View in regedit</lang>
-                <lang id="fr" status="2">Voir dans regedit</lang>
-                <lang id="es" status="2">Ver en regedit</lang>
-                <lang id="pt" status="2">Mostrar no regedit</lang>
-                <lang id="it" status="2">Visualizzare in regedit</lang>
-                <lang id="nl" status="3">In regedit weergeven</lang>
-                <lang id="de" status="2">In Regedit anzeigen</lang>
-                <lang id="ru" status="3">Просмотр в regedit</lang>
-                <lang id="el" status="2">Προβολή σε regedit</lang>
-                <lang id="ar" status="2">عرض في regedit</lang>
-                <lang id="sv" status="2">Visa i regedit</lang>
-                <lang id="zh" status="2">查看输入regedit</lang>
-                <lang id="zh.tra" status="2">查看輸入regedit</lang>
-                <lang id="ja" status="2">プロフィールファイル名を指定で</lang>
-                <lang id="vi" status="2">Xem trong regedit</lang>
-                <lang id="th" status="2">ดูใน regedit</lang>
-                <lang id="pl" status="3">Otwórz w regedit</lang>
-                <lang id="hu" status="2">Nézet regedit-ben</lang>
-              </row>
-            </component>
-          </component>
-          <component class="TVisPopupMenu" name="contextMenuStrip2" type="System.Windows.Forms.ContextMenuStrip">
-            <row id="Size.Height">76</row>
-            <row id="Size.Width">137</row>
-            <component class="TVisMenuItem" name="hideShowToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem" parentfont="0">
-              <row id="Font">Segoe UI,9,style=Bold</row>
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">136</row>
-              <row id="Text" state="0">
-                <native>Hide/Show</native>
-                <lang id="en" status="2">Hide/Show</lang>
-                <lang id="fr" date="20091030210846" status="3">Peau / Exposition</lang>
-                <lang id="es" status="2">Ocultar/mostrar</lang>
-                <lang id="pt" status="2">Mostrar/ocultar</lang>
-                <lang id="it" status="2">Mostra/Nascondi</lang>
-                <lang id="nl" status="3">Verbergen/Tonen</lang>
-                <lang id="de" status="2">Ausblenden/einblenden</lang>
-                <lang id="ru" status="2">Скрыть/Показать</lang>
-                <lang id="el" status="2">Απόκρυψη/Εμφάνιση</lang>
-                <lang id="ar" status="2">إظهار/إخفاء</lang>
-                <lang id="sv" status="2">Dölj/visa</lang>
-                <lang id="zh" status="2">隐藏/显示</lang>
-                <lang id="zh.tra" status="2">隱藏/顯示</lang>
-                <lang id="ja" status="2">非表示/表示</lang>
-                <lang id="vi" date="20091106174632" status="3">Che giấu/Chỉ ra</lang>
-                <lang id="th" status="2">ซ่อน / แสดง</lang>
-                <lang id="pl" status="3">Pokaż/Ukryj</lang>
-                <lang id="hu" status="2">Elrejt/mutat</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="aboutToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">136</row>
-              <row id="Text" state="0">
-                <native>About...</native>
-                <lang id="en" status="2">About...</lang>
-                <lang id="fr" status="2">À propos de...</lang>
-                <lang id="es" status="2">Acerca de...</lang>
-                <lang id="pt" status="2">Sobre...</lang>
-                <lang id="it" status="2">Sulla...</lang>
-                <lang id="nl" status="2">Over...</lang>
-                <lang id="de" status="2">Über...</lang>
-                <lang id="ru" status="3">О программе...</lang>
-                <lang id="el" status="2">Σχετικά με...</lang>
-                <lang id="ar" status="2">حول...</lang>
-                <lang id="sv" status="2">Om...</lang>
-                <lang id="zh" status="2">大约...</lang>
-                <lang id="zh.tra" status="2">大約...</lang>
-                <lang id="ja" status="2">〜について...</lang>
-                <lang id="vi" status="2">Về...</lang>
-                <lang id="th" status="2">เกี่ยวกับ...</lang>
-                <lang id="pl" status="3">O programie...</lang>
-                <lang id="hu" status="2">Bővebben...</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="toolStripSeparator4" type="System.Windows.Forms.ToolStripSeparator">
-              <row id="Size.Height">6</row>
-              <row id="Size.Width">133</row>
-            </component>
-            <component class="TVisMenuItem" name="exitToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">136</row>
-              <row id="Text" state="0">
-                <native>Exit</native>
-                <lang id="en" status="2">Exit</lang>
-                <lang id="fr" status="3">Sortie</lang>
-                <lang id="es" status="2">Salida</lang>
-                <lang id="pt" status="2">Sair</lang>
-                <lang id="it" status="2">Uscita</lang>
-                <lang id="nl" status="3">Einde</lang>
-                <lang id="de" status="2">Ausfahrt</lang>
-                <lang id="ru" status="3">Выход</lang>
-                <lang id="el" status="2">Εξόδου</lang>
-                <lang id="ar" status="2">خروج</lang>
-                <lang id="sv" status="2">Avsluta</lang>
-                <lang id="zh" status="2">退出</lang>
-                <lang id="zh.tra" status="2">退出</lang>
-                <lang id="ja" status="2">終了</lang>
-                <lang id="vi" status="3">Cửa ra</lang>
-                <lang id="th" status="2">ออกจาก</lang>
-                <lang id="pl" status="3">Zakończ</lang>
-                <lang id="hu" status="2">Kilépés</lang>
-              </row>
-            </component>
-          </component>
-          <component class="TVisImageList" name="imageListTreeView" type="System.Windows.Forms.ImageList">
           </component>
           <component class="TVisHiddenComponent" name="notifyIcon1" type="System.Windows.Forms.NotifyIcon">
             <row id="Text" excluded="1" state="3">
@@ -2892,7 +2910,7 @@
             <lang id="fr" date="20091106175851" status="3">Peu de décapant d'enregistrement - Configurez</lang>
             <lang id="es" status="2">Registro poco limpiador - opciones</lang>
             <lang id="pt" status="2">Little Registry Cleaner - Opções</lang>
-            <lang id="it" status="2">Registro poco Cleaner - opzioni</lang>
+            <lang id="it" status="3">Little Registry Cleaner – Opzioni</lang>
             <lang id="nl" status="3">Kleine Registerreiniger - Opties</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Optionen</lang>
             <lang id="ru" status="3">Little Registry Cleaner - Настройки</lang>
@@ -2918,7 +2936,7 @@
               <lang id="fr" status="2">Annuler</lang>
               <lang id="es" status="2">Cancelar</lang>
               <lang id="pt" status="2">Cancelar</lang>
-              <lang id="it" status="2">Annulla</lang>
+              <lang id="it" status="3">Annulla</lang>
               <lang id="nl" status="2">Annuleren</lang>
               <lang id="de" status="2">Abbrechen</lang>
               <lang id="ru" status="2">Отмена</lang>
@@ -2945,7 +2963,7 @@
               <lang id="fr" status="2">OK</lang>
               <lang id="es" status="2">VALE</lang>
               <lang id="pt" status="2">OK</lang>
-              <lang id="it" status="2">OK</lang>
+              <lang id="it" status="3">OK</lang>
               <lang id="nl" status="2">OK</lang>
               <lang id="de" status="2">OKAY</lang>
               <lang id="ru" status="3">ОК</lang>
@@ -2977,7 +2995,7 @@
                 <lang id="fr" status="2">Général</lang>
                 <lang id="es" date="20091106175231" status="3">Común</lang>
                 <lang id="pt" status="2">Geral</lang>
-                <lang id="it" status="2">Generale</lang>
+                <lang id="it" status="3">Generale</lang>
                 <lang id="nl" status="3">Algemeen</lang>
                 <lang id="de" status="2">Allgemeine</lang>
                 <lang id="ru" status="2">Общие</lang>
@@ -3003,7 +3021,7 @@
                   <lang id="fr" status="2">Sélectionnez un dossier pour sauvegarder les entrées de registre supprimée </lang>
                   <lang id="es" status="2">Seleccione una carpeta para las entradas del registro eliminados de copia de seguridad </lang>
                   <lang id="pt" status="2">Selecione uma pasta para fazer backup das entradas do registro excluídas </lang>
-                  <lang id="it" status="2">Selezionare una cartella di backup del Registro di sistema eliminata voci </lang>
+                  <lang id="it" status="3">Selezionare la cartella per il backup delle modifiche al registro</lang>
                   <lang id="nl" status="3">Selecteer een map voor een backup van de verwijderde registervermeldingen </lang>
                   <lang id="de" status="2">Wählen Sie einen Ordner backup gelöschten Einträge </lang>
                   <lang id="ru" status="3">Выберите папку для резервного копирования удаленных элементов реестра</lang>
@@ -3029,7 +3047,7 @@
                     <lang id="fr" status="2">Parcourir...</lang>
                     <lang id="es" status="2">Busque...</lang>
                     <lang id="pt" status="2">Procurar...</lang>
-                    <lang id="it" status="2">Sfoglia...</lang>
+                    <lang id="it" status="3">Sfoglia...</lang>
                     <lang id="nl" status="2">Bladeren...</lang>
                     <lang id="de" status="2">Durchsuchen...</lang>
                     <lang id="ru" status="2">Обзор...</lang>
@@ -3063,7 +3081,7 @@
                   <lang id="fr" status="3">Arrangements</lang>
                   <lang id="es" status="2">Opciones</lang>
                   <lang id="pt" status="2">Opções</lang>
-                  <lang id="it" status="2">Opzioni</lang>
+                  <lang id="it" status="3">Opzioni</lang>
                   <lang id="nl" status="2">Opties</lang>
                   <lang id="de" status="2">Optionen</lang>
                   <lang id="ru" status="2">Параметры</lang>
@@ -3090,7 +3108,7 @@
                       <lang id="fr" status="2">Connectez-vous scans de registre et des correctifs</lang>
                       <lang id="es" status="2">Análisis de registro de registro y revisiones</lang>
                       <lang id="pt" status="2">Log das varreduras e correções do registro</lang>
-                      <lang id="it" status="2">Registro del Registro di sistema scansioni e le correzioni</lang>
+                      <lang id="it" status="3">Registra scansioni e modifiche</lang>
                       <lang id="nl" status="3">Log de scans en reparaties</lang>
                       <lang id="de" status="2">Registrierung Logscans und fixes</lang>
                       <lang id="ru" status="3">Журналировать операции с реестром</lang>
@@ -3113,7 +3131,7 @@
                       <lang id="fr" status="2">Re-Scan après résolution des problèmes de registre</lang>
                       <lang id="es" status="2">Re-Scan después de solucionar problemas de registro</lang>
                       <lang id="pt" status="2">Efetuar nova varredura após corrigir problemas do registro</lang>
-                      <lang id="it" status="2">Re-Scan dopo la correzione di problemi del Registro di sistema</lang>
+                      <lang id="it" status="3">Riesegui la scansione dopo la correzione</lang>
                       <lang id="nl" status="3">Scan opnieuw na het repareren van de register problemen</lang>
                       <lang id="de" status="2">Nach beheben Registrierung Probleme re-Scan</lang>
                       <lang id="ru" status="3">Повторная проверка после устранения ошибок</lang>
@@ -3136,7 +3154,7 @@
                       <lang id="fr" status="2">Vérifiez les mises à jour automatiquement</lang>
                       <lang id="es" status="2">Comprobar si hay actualizaciones automáticamente</lang>
                       <lang id="pt" status="2">Verificar atualizações automaticamente</lang>
-                      <lang id="it" status="2">Controllare automaticamente gli aggiornamenti</lang>
+                      <lang id="it" status="3">Controlla automaticamente gli aggiornamenti</lang>
                       <lang id="nl" status="2">Automatisch controleren op updates</lang>
                       <lang id="de" status="2">Automatisch nach Aktualisierungen suchen</lang>
                       <lang id="ru" status="2">Автоматическая проверка обновлений</lang>
@@ -3159,7 +3177,7 @@
                       <lang id="fr" status="2">Créer automatiquement des points de restauration système</lang>
                       <lang id="es" status="2">Crear sistema de puntos de restauración automáticamente</lang>
                       <lang id="pt" status="2">Criar pontos de restauração do sistema automaticamente</lang>
-                      <lang id="it" status="2">Creare sistema punti di ripristino automatico</lang>
+                      <lang id="it" status="3">Crea punti di ripristino automaticamente</lang>
                       <lang id="nl" status="3">Automatisch Systeemherstelpunten maken</lang>
                       <lang id="de" status="2">Erstellen Sie System Wiederherstellungspunkte automatisch</lang>
                       <lang id="ru" status="3">Автоматически создавать точку восстановления</lang>
@@ -3182,7 +3200,7 @@
                       <lang id="fr" status="2">Voir le journal après avoir fini de numériser</lang>
                       <lang id="es" status="2">Mostrar registro una vez finalizado el análisis</lang>
                       <lang id="pt" status="2">Mostrar log após a conclusão da varredura</lang>
-                      <lang id="it" status="2">Mostra registro al termine dell'operazione di scansione</lang>
+                      <lang id="it" status="3">Mostra log dopo il termine della scansione</lang>
                       <lang id="nl" status="3">Logboek tonen na scannen</lang>
                       <lang id="de" status="2">Zeigen Sie Protokoll nach Abschluss der Scan an</lang>
                       <lang id="ru" status="2">Показать журнал после окончания сканирования</lang>
@@ -3205,7 +3223,7 @@
                       <lang id="fr" status="2">Supprimer le fichier de sauvegarde après la restauration du registre</lang>
                       <lang id="es" status="2">Eliminar el archivo de copia de seguridad después de restaurar el registro</lang>
                       <lang id="pt" status="2">Excluir o arquivo de backup depois de restaurar o registro</lang>
-                      <lang id="it" status="2">Eliminare i file di backup dopo il ripristino del Registro di sistema</lang>
+                      <lang id="it" status="3">Elimina backup dopo il ripristino</lang>
                       <lang id="nl" status="3">Back-upbestand verwijderen na het terugzetten van het register</lang>
                       <lang id="de" status="2">Löschen Sie backup-Datei nach dem Wiederherstellen der Registrierung</lang>
                       <lang id="ru" status="2">Удалить файл резервной копии после восстановления реестра</lang>
@@ -3228,7 +3246,7 @@
                       <lang id="fr" status="2">Ignorer les fichiers manquants sur un support amovible</lang>
                       <lang id="es" status="2">Omitir archivos que faltan en medios extraíbles</lang>
                       <lang id="pt" status="2">Ignorar arquivos ausentes em mídia removível</lang>
-                      <lang id="it" status="2">Ignorare i file mancanti su supporti rimovibili</lang>
+                      <lang id="it" status="3">Ignorare i file mancanti su supporti rimovibili</lang>
                       <lang id="nl" status="2">Ontbrekende bestanden op verwisselbare media negeren</lang>
                       <lang id="de" status="2">Ignorieren Sie fehlende Dateien auf Wechselmedien</lang>
                       <lang id="ru" status="2">Игнорировать отсутствующие файлы на съемном носителе</lang>
@@ -3251,7 +3269,7 @@
                       <lang id="fr" status="2">Réparer automatiquement les éléments du registre</lang>
                       <lang id="es" status="2">Reparar automáticamente los elementos del registro</lang>
                       <lang id="pt" status="2">Reparar automaticamente os itens do registro</lang>
-                      <lang id="it" status="2">Riparare automaticamente gli elementi del Registro di sistema</lang>
+                      <lang id="it" status="3">Riparare automaticamente gli elementi del Registro di sistema</lang>
                       <lang id="nl" status="3">Registeritems automatisch repereren</lang>
                       <lang id="de" status="2">Automatisch reparieren Registrierungseinträge</lang>
                       <lang id="ru" status="3">Автоматически восстанавливать элементы реестра</lang>
@@ -3274,7 +3292,7 @@
                       <lang id="fr" status="2">Programme de sortie après réparation du registre</lang>
                       <lang id="es" status="2">Programa de salida después de la reparación del registro</lang>
                       <lang id="pt" status="2">Sair do programa após corrigir o registro</lang>
-                      <lang id="it" status="2">Programma di uscita dopo la riparazione del Registro di sistema</lang>
+                      <lang id="it" status="3">Chiudi dopo aver terminato le modifiche</lang>
                       <lang id="nl" status="3">Programma sluiten na reparatie van het register</lang>
                       <lang id="de" status="2">Exit-Programm nach der Reparatur Registrierung</lang>
                       <lang id="ru" status="3">Выйти из программы после ремонта реестра</lang>
@@ -3303,7 +3321,7 @@
                   <lang id="fr" status="2">Sélectionnez un dossier pour enregistrer les fichiers journaux pour</lang>
                   <lang id="es" status="2">Seleccione una carpeta para guardar los archivos de registro</lang>
                   <lang id="pt" status="2">Selecione uma pasta para salvar os arquivos de log</lang>
-                  <lang id="it" status="2">Selezionare una cartella in cui salvare i file di log per</lang>
+                  <lang id="it" status="3">Selezionare una cartella in cui salvare i file di log</lang>
                   <lang id="nl" status="3">Selecteer een map om het logboek op te slaan</lang>
                   <lang id="de" status="2">Wählen Sie einen Ordner aus, um die Protokolldateien, um zu speichern</lang>
                   <lang id="ru" status="3">Выберите папку для сохранения логов</lang>
@@ -3335,7 +3353,7 @@
                     <lang id="fr" status="2">Parcourir...</lang>
                     <lang id="es" status="2">Busque...</lang>
                     <lang id="pt" status="2">Procurar...</lang>
-                    <lang id="it" status="2">Sfoglia...</lang>
+                    <lang id="it" status="3">Sfoglia...</lang>
                     <lang id="nl" status="2">Bladeren...</lang>
                     <lang id="de" status="2">Durchsuchen...</lang>
                     <lang id="ru" status="2">Обзор...</lang>
@@ -3364,7 +3382,7 @@
                 <lang id="fr" status="2">Ignorer la liste</lang>
                 <lang id="es" status="2">Ignorar la lista</lang>
                 <lang id="pt" status="2">Lista de Ignorados</lang>
-                <lang id="it" status="2">Ignorare elenco</lang>
+                <lang id="it" status="3">Lista ignorati</lang>
                 <lang id="nl" status="2">Lijst negeren</lang>
                 <lang id="de" status="2">Liste ignorieren</lang>
                 <lang id="ru" status="3">Список исключений</lang>
@@ -3391,7 +3409,7 @@
                     <lang id="fr" status="2">Fichiers et dossiers à exclure</lang>
                     <lang id="es" status="2">Archivos y carpetas para excluir</lang>
                     <lang id="pt" status="2">Arquivos e pastas a serem desconsiderados</lang>
-                    <lang id="it" status="2">I file e cartelle da escludere</lang>
+                    <lang id="it" status="3">File e cartelle da escludere</lang>
                     <lang id="nl" status="3">Bestanden en mappen die uitgesloten moeten worden</lang>
                     <lang id="de" status="2">Dateien und Ordner ausschließen</lang>
                     <lang id="ru" status="3">Исключаемые файлы и папки</lang>
@@ -3420,7 +3438,7 @@
                   <lang id="fr" status="2">Faites un clic droit pour ajouter ou supprimer des entrées</lang>
                   <lang id="es" status="2">Haga clic con el botón derecho del ratón para agregar o quitar las entradas</lang>
                   <lang id="pt" status="2">Clique com o botão direito do mouse para adicionar/remover entradas</lang>
-                  <lang id="it" status="2">Fare clic con il pulsante destro del mouse per aggiungere o rimuovere voci</lang>
+                  <lang id="it" status="3">Fare clic con il pulsante destro del mouse per aggiungere o rimuovere voci</lang>
                   <lang id="nl" status="3">Klik met de rechter muisknop om vermeldingen toe te voegen of te verwijderen</lang>
                   <lang id="de" status="2">Klicken Sie mit der rechten Maustaste auf Hinzufügen und Entfernen von Einträgen</lang>
                   <lang id="ru" status="3">Щелкните правой кнопкой, чтобы добавить или удалить записи</lang>
@@ -3450,7 +3468,7 @@
                 <lang id="fr" status="2">Ajouter un fichier</lang>
                 <lang id="es" status="2">Agregar archivo</lang>
                 <lang id="pt" status="2">Adicionar arquivo</lang>
-                <lang id="it" status="2">Aggiungi file</lang>
+                <lang id="it" status="3">Aggiungi file</lang>
                 <lang id="nl" status="2">Bestand toevoegen</lang>
                 <lang id="de" status="2">Datei hinzufügen</lang>
                 <lang id="ru" status="2">Добавить файл</lang>
@@ -3475,7 +3493,7 @@
                 <lang id="fr" status="2">Ajouter un dossier</lang>
                 <lang id="es" status="2">Agregar carpeta</lang>
                 <lang id="pt" status="2">Adicionar pasta</lang>
-                <lang id="it" status="2">Aggiungi cartella</lang>
+                <lang id="it" status="3">Aggiungi cartella</lang>
                 <lang id="nl" status="2">Map toevoegen</lang>
                 <lang id="de" status="2">Ordner hinzufügen</lang>
                 <lang id="ru" status="2">Добавить папку</lang>
@@ -3500,7 +3518,7 @@
                 <lang id="fr" status="2">Ajouter Chemin du Registre</lang>
                 <lang id="es" status="2">Agregar la ruta del registro</lang>
                 <lang id="pt" status="2">Adicionar caminho do registro</lang>
-                <lang id="it" status="2">Aggiungere il percorso del Registro</lang>
+                <lang id="it" status="3">Aggiungere percorso del Registro</lang>
                 <lang id="nl" status="3">Register-pad toevoegen</lang>
                 <lang id="de" status="2">Registry-Pfad hinzufügen</lang>
                 <lang id="ru" status="2">Добавление пути реестра</lang>
@@ -3529,7 +3547,7 @@
                 <lang id="fr" status="2">Supprimer l'entrée</lang>
                 <lang id="es" status="2">Quitar entrada</lang>
                 <lang id="pt" status="2">Remover entrada</lang>
-                <lang id="it" status="2">Rimuovere la voce</lang>
+                <lang id="it" status="3">Rimuovi voce</lang>
                 <lang id="nl" status="2">Vermelding verwijderen</lang>
                 <lang id="de" status="2">Entfernen Sie Entry</lang>
                 <lang id="ru" status="2">Удалить запись</lang>
@@ -3558,7 +3576,7 @@
             <lang id="fr" status="2">Little Registry Cleaner - Restaurer registre</lang>
             <lang id="es" status="2">Registro poco restaurar limpiador - registro</lang>
             <lang id="pt" status="2">Little Registry Cleaner - Restaurar Registro</lang>
-            <lang id="it" date="20091106172503" status="2">Registro poco Cleaner - ripristino del Registro</lang>
+            <lang id="it" status="3">Little Registry Cleaner – Ripristino del Registro</lang>
             <lang id="nl" status="3">Kleine Registerreiniger - Register terugzetten</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Registrierung wiederherstellen</lang>
             <lang id="ru" status="3">Little Registry Cleaner - восстановление реестра</lang>
@@ -3613,7 +3631,7 @@
                   <lang id="fr" date="20091106171845" status="3">Ouvrez l'annuaire...</lang>
                   <lang id="es" date="20091106171914" status="3">Abra el directorio...</lang>
                   <lang id="pt" status="2">Abrir diretório...</lang>
-                  <lang id="it" date="20091106172355" status="3">Apra l'indice...</lang>
+                  <lang id="it" status="3">Apri directory...</lang>
                   <lang id="nl" date="20091106172027" status="3">Open de map...</lang>
                   <lang id="de" date="20091106172044" status="3">Geöffneten Ordner...</lang>
                   <lang id="ru" status="3">Открыть папку...</lang>
@@ -3643,7 +3661,7 @@
                   <lang id="fr" status="2">Restaurer</lang>
                   <lang id="es" status="2">Restauración</lang>
                   <lang id="pt" status="2">Restaurar</lang>
-                  <lang id="it" status="2">Ripristino</lang>
+                  <lang id="it" status="3">Ripristina</lang>
                   <lang id="nl" status="3">Terugzetten</lang>
                   <lang id="de" status="2">Wiederherstellen</lang>
                   <lang id="ru" status="2">Восстановление</lang>
@@ -3671,7 +3689,7 @@
                 <lang id="fr" status="2">Sélectionnez un fichier ci-dessous pour restaurer votre base de registre à un état antérieur</lang>
                 <lang id="es" status="2">Seleccione un archivo que aparece a continuación para restaurar su registro a un estado anterior</lang>
                 <lang id="pt" status="2">Selecione um arquivo abaixo para restaurar o registro para um estado anterior</lang>
-                <lang id="it" status="2">Selezionare un file riportati di seguito per ripristinare il Registro di sistema a uno stato precedente</lang>
+                <lang id="it" status="3">Selezionare uno dei file di seguito per il ripristino</lang>
                 <lang id="nl" status="3">Selecteer hieronder een bestand om uw register terug te zetten naar een eerdere versie</lang>
                 <lang id="de" status="2">Wählen Sie eine Datei unten, um Ihre Registrierung zu einem früheren Zustand wiederherstellen</lang>
                 <lang id="ru" status="3">Выберите файл, чтобы восстановить ваш реестр в предыдущее состояние</lang>
@@ -3699,7 +3717,7 @@
                   <lang id="fr" date="20091106172854" status="3">Nom de fichier</lang>
                   <lang id="es" status="2">Nombre del archivo</lang>
                   <lang id="pt" status="2">Nome do arquivo</lang>
-                  <lang id="it" status="2">Nome del file</lang>
+                  <lang id="it" status="3">Nome del file</lang>
                   <lang id="nl" status="3">Bestandsnaam</lang>
                   <lang id="de" status="2">Dateiname</lang>
                   <lang id="ru" status="2">Имя файла</lang>
@@ -3723,7 +3741,7 @@
                   <lang id="fr" status="2">Date</lang>
                   <lang id="es" status="2">Fecha</lang>
                   <lang id="pt" status="2">Data</lang>
-                  <lang id="it" status="2">Data</lang>
+                  <lang id="it" status="3">Data</lang>
                   <lang id="nl" status="2">Datum</lang>
                   <lang id="de" status="2">Datum</lang>
                   <lang id="ru" status="2">Дата</lang>
@@ -3747,7 +3765,7 @@
                   <lang id="fr" status="2">Taille</lang>
                   <lang id="es" status="2">Tamaño</lang>
                   <lang id="pt" status="2">Tamanho</lang>
-                  <lang id="it" date="20091106172426" status="3">Formato</lang>
+                  <lang id="it" status="3">Dimensione</lang>
                   <lang id="nl" status="2">Grootte</lang>
                   <lang id="de" status="2">Größe</lang>
                   <lang id="ru" status="2">Размер</lang>
@@ -3778,7 +3796,7 @@
             <lang id="fr" status="2">Little Registry Cleaner - Numérisation...</lang>
             <lang id="es" status="2">Registro poco limpiador - análisis...</lang>
             <lang id="pt" status="2">Little Registry Cleaner - Efetuando varredura...</lang>
-            <lang id="it" status="2">Registro poco Cleaner - analisi...</lang>
+            <lang id="it" status="3">Little Registry Cleaner – Scansione in corso...</lang>
             <lang id="nl" status="3">Kleine Registerreiniger - Scannen...</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Scanning...</lang>
             <lang id="ru" status="3">Little Registry Cleaner - Сканирование...</lang>
@@ -3821,7 +3839,7 @@
                 <lang id="fr" status="2">Arrêter</lang>
                 <lang id="es" status="2">Parada</lang>
                 <lang id="pt" status="2">Parar</lang>
-                <lang id="it" status="2">Arrestare</lang>
+                <lang id="it" status="3">Interrompi</lang>
                 <lang id="nl" status="2">Stoppen</lang>
                 <lang id="de" status="2">Beenden</lang>
                 <lang id="ru" status="2">Остановить</lang>
@@ -3856,7 +3874,7 @@
                 <lang id="fr" status="2">Les problèmes trouvés: </lang>
                 <lang id="es" status="2">Problemas que se encuentra: </lang>
                 <lang id="pt" status="2">Problemas encontrados: </lang>
-                <lang id="it" status="2">Problemi a trovare: </lang>
+                <lang id="it" status="3">Problemi trovati:</lang>
                 <lang id="nl" status="3">Gevonden problemen: </lang>
                 <lang id="de" status="2">Probleme, die gefunden: </lang>
                 <lang id="ru" status="2">Обнаружены проблемы: </lang>
@@ -3891,7 +3909,7 @@
             <lang id="fr" status="2">Modifier Run Point</lang>
             <lang id="es" status="2">Editar elemento de ejecutar</lang>
             <lang id="pt" status="2">Alterar item executar</lang>
-            <lang id="it" status="2">Modifica oggetto di esecuzione</lang>
+            <lang id="it" status="3">Modifica voce in esecuzione automatica</lang>
             <lang id="nl" status="3">Run-object bewerken</lang>
             <lang id="de" status="2">Run-Element bearbeiten</lang>
             <lang id="ru" status="3">Редактирование элемента автозагрузки </lang>
@@ -3917,7 +3935,7 @@
               <lang id="fr" status="2">Modifier Entrée de démarrage</lang>
               <lang id="es" status="2">Editar la entrada de inicio</lang>
               <lang id="pt" status="2">Alterar entrada de inicialização</lang>
-              <lang id="it" status="2">Modifica di voce di avvio</lang>
+              <lang id="it" status="3">Modifica voce di avvio</lang>
               <lang id="nl" status="3">Opstart-vermelding bewerken</lang>
               <lang id="de" status="2">AutoStart-Eintrag bearbeiten</lang>
               <lang id="ru" status="3">Изменить элемент автозагрузки</lang>
@@ -3949,7 +3967,7 @@
                 <lang id="fr" status="2">OK</lang>
                 <lang id="es" status="2">VALE</lang>
                 <lang id="pt" status="2">OK</lang>
-                <lang id="it" status="2">OK</lang>
+                <lang id="it" status="3">OK</lang>
                 <lang id="nl" status="2">OK</lang>
                 <lang id="de" status="2">OKAY</lang>
                 <lang id="ru" status="3">ОК</lang>
@@ -3976,7 +3994,7 @@
                 <lang id="fr" status="2">Annuler</lang>
                 <lang id="es" status="2">Cancelar</lang>
                 <lang id="pt" status="2">Cancelar</lang>
-                <lang id="it" status="2">Annulla</lang>
+                <lang id="it" status="3">Annulla</lang>
                 <lang id="nl" status="2">Annuleren</lang>
                 <lang id="de" status="2">Abbrechen</lang>
                 <lang id="ru" status="2">Отмена</lang>
@@ -4003,7 +4021,7 @@
                 <lang id="fr" status="2">Fichier:</lang>
                 <lang id="es" status="2">Archivo:</lang>
                 <lang id="pt" status="2">Arquivo:</lang>
-                <lang id="it" date="20091024224916" status="3">Schedario:</lang>
+                <lang id="it" status="3">File:</lang>
                 <lang id="nl" status="2">Bestand:</lang>
                 <lang id="de" status="2">Datei:</lang>
                 <lang id="ru" status="2">Файл:</lang>
@@ -4030,7 +4048,7 @@
                 <lang id="fr" status="2">Arguments:</lang>
                 <lang id="es" status="2">Argumentos:</lang>
                 <lang id="pt" status="2">Argumentos:</lang>
-                <lang id="it" status="2">Argomenti:</lang>
+                <lang id="it" status="3">Parametri:</lang>
                 <lang id="nl" status="2">Argumenten:</lang>
                 <lang id="de" status="2">Argumente:</lang>
                 <lang id="ru" status="3">Параметры:</lang>
@@ -4060,7 +4078,7 @@
               <row id="Text" state="0">
                 <native>...</native>
                 <lang id="pt" status="2">...</lang>
-                <lang id="it" status="2">…</lang>
+                <lang id="it" status="3">…</lang>
               </row>
             </component>
           </component>
@@ -4076,7 +4094,7 @@
             <lang id="fr" status="2">New Run Point</lang>
             <lang id="es" status="2">Nuevo punto de ejecución</lang>
             <lang id="pt" status="2">Novo Item executar</lang>
-            <lang id="it" status="2">Nuovo punto di esecuzione</lang>
+            <lang id="it" status="3">Nuova voce in esecuzione automatica</lang>
             <lang id="nl" status="3">Nieuw Run-object</lang>
             <lang id="de" status="2">Neue ausführen-Nummer</lang>
             <lang id="ru" status="3">Создание элемента автозагрузки</lang>
@@ -4102,7 +4120,7 @@
               <lang id="fr" status="2">Annuler</lang>
               <lang id="es" status="2">Cancelar</lang>
               <lang id="pt" status="2">Cancelar</lang>
-              <lang id="it" status="2">Annulla</lang>
+              <lang id="it" status="3">Annulla</lang>
               <lang id="nl" status="2">Annuleren</lang>
               <lang id="de" status="2">Abbrechen</lang>
               <lang id="ru" status="2">Отмена</lang>
@@ -4129,7 +4147,7 @@
               <lang id="fr" status="2">OK</lang>
               <lang id="es" status="2">VALE</lang>
               <lang id="pt" status="2">OK</lang>
-              <lang id="it" status="2">OK</lang>
+              <lang id="it" status="3">OK</lang>
               <lang id="nl" status="2">OK</lang>
               <lang id="de" status="2">OKAY</lang>
               <lang id="ru" status="3">ОК</lang>
@@ -4156,7 +4174,7 @@
               <lang id="fr" status="2">Nom et chemin</lang>
               <lang id="es" status="2">Nombre y ruta</lang>
               <lang id="pt" status="2">Nome e caminho</lang>
-              <lang id="it" status="2">Nome e percorso</lang>
+              <lang id="it" status="3">Nome e percorso</lang>
               <lang id="nl" status="2">Naam en pad</lang>
               <lang id="de" status="2">Name und Pfad</lang>
               <lang id="ru" status="2">Имя и путь</lang>
@@ -4182,7 +4200,7 @@
                 <lang id="fr" status="2">Nom:</lang>
                 <lang id="es" status="2">Nombre:</lang>
                 <lang id="pt" status="2">Nome:</lang>
-                <lang id="it" status="2">Nome:</lang>
+                <lang id="it" status="3">Nome:</lang>
                 <lang id="nl" status="2">Naam:</lang>
                 <lang id="de" status="2">Name:</lang>
                 <lang id="ru" status="2">Имя:</lang>
@@ -4209,7 +4227,7 @@
                 <lang id="fr" status="2">Chemin du fichier:</lang>
                 <lang id="es" status="2">Ruta del archivo:</lang>
                 <lang id="pt" status="2">Caminho do arquivo:</lang>
-                <lang id="it" status="2">Percorso del file:</lang>
+                <lang id="it" status="3">Percorso del file:</lang>
                 <lang id="nl" status="2">Bestandspad:</lang>
                 <lang id="de" status="2">Dateipfad:</lang>
                 <lang id="ru" status="2">Путь к файлу:</lang>
@@ -4259,7 +4277,7 @@
                 <lang id="fr" status="2">Arguments:</lang>
                 <lang id="es" status="2">Argumentos:</lang>
                 <lang id="pt" status="2">Argumentos:</lang>
-                <lang id="it" status="2">Argomenti:</lang>
+                <lang id="it" status="3">Parametri:</lang>
                 <lang id="nl" status="2">Argumenten:</lang>
                 <lang id="de" status="2">Argumente:</lang>
                 <lang id="ru" status="3">Параметры:</lang>
@@ -4293,7 +4311,7 @@
               <lang id="fr" date="20091106180635" status="3">Quartier:</lang>
               <lang id="es" status="2">Sección:</lang>
               <lang id="pt" status="2">Seção:</lang>
-              <lang id="it" status="2">Sezione:</lang>
+              <lang id="it" status="3">Sezione:</lang>
               <lang id="nl" status="2">Sectie:</lang>
               <lang id="de" status="2">Abschnitt:</lang>
               <lang id="ru" status="3">Раздел:</lang>
@@ -4527,7 +4545,7 @@
             <lang id="fr" status="2">Little Registry Cleaner - Gestionnaire de démarrage</lang>
             <lang id="es" status="2">Registro poco Cleaner - Manager de inicio</lang>
             <lang id="pt" status="2">Little Registry Cleaner - Gerenciador de inicialização</lang>
-            <lang id="it" status="2">Registro poco Cleaner - avvio Manager</lang>
+            <lang id="it" status="3">Little Registry Cleaner – Gestione Avvio</lang>
             <lang id="nl" status="3">Kleine Registerreiniger - Manager starten</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Start-Manager</lang>
             <lang id="ru" status="3">Little Registry Cleaner - Менеджер автозагрузки</lang>
@@ -4621,7 +4639,7 @@
                     <lang id="fr" date="20091106181232" status="3">Secteur</lang>
                     <lang id="es" status="2">Sección</lang>
                     <lang id="pt" status="2">Seção</lang>
-                    <lang id="it" status="2">Sezione</lang>
+                    <lang id="it" status="3">Sezione</lang>
                     <lang id="nl" status="2">Sectie</lang>
                     <lang id="de" status="2">Abschnitt</lang>
                     <lang id="ru" status="3">Раздел</lang>
@@ -4644,7 +4662,7 @@
                     <lang id="fr" status="2">Chemin</lang>
                     <lang id="es" status="2">Ruta de acceso</lang>
                     <lang id="pt" status="2">Caminho</lang>
-                    <lang id="it" status="2">Percorso</lang>
+                    <lang id="it" status="3">Percorso</lang>
                     <lang id="nl" status="2">Pad</lang>
                     <lang id="de" status="2">Pfad</lang>
                     <lang id="ru" status="2">Путь</lang>
@@ -4667,7 +4685,7 @@
                     <lang id="fr" status="2">Arguments</lang>
                     <lang id="es" status="2">Argumentos</lang>
                     <lang id="pt" status="2">Argumentos</lang>
-                    <lang id="it" status="2">Argomenti</lang>
+                    <lang id="it" status="3">Argomenti</lang>
                     <lang id="nl" status="2">Argumenten</lang>
                     <lang id="de" status="2">Argumente</lang>
                     <lang id="ru" status="3">Параметры</lang>
@@ -4699,7 +4717,7 @@
                   <lang id="fr" status="2">Ajouter</lang>
                   <lang id="es" status="2">Agregar</lang>
                   <lang id="pt" status="2">Adicionar</lang>
-                  <lang id="it" status="2">Aggiungere</lang>
+                  <lang id="it" status="3">Aggiungi</lang>
                   <lang id="nl" status="2">Toevoegen</lang>
                   <lang id="de" status="2">Hinzufügen</lang>
                   <lang id="ru" status="3">Создать</lang>
@@ -4724,7 +4742,7 @@
                   <lang id="fr" status="2">Modifier</lang>
                   <lang id="es" status="2">Editar</lang>
                   <lang id="pt" status="2">Editar</lang>
-                  <lang id="it" status="2">Modifica</lang>
+                  <lang id="it" status="3">Modifica</lang>
                   <lang id="nl" status="2">Bewerken</lang>
                   <lang id="de" status="2">Bearbeiten</lang>
                   <lang id="ru" status="3">Редактировать</lang>
@@ -4749,7 +4767,7 @@
                   <lang id="fr" status="2">Supprimer</lang>
                   <lang id="es" status="2">Eliminar</lang>
                   <lang id="pt" status="2">Excluir</lang>
-                  <lang id="it" status="2">Eliminare</lang>
+                  <lang id="it" status="3">Elimina</lang>
                   <lang id="nl" status="2">Verwijderen</lang>
                   <lang id="de" status="2">Löschen</lang>
                   <lang id="ru" status="2">Удалить</lang>
@@ -4774,7 +4792,7 @@
                   <lang id="fr" date="20091106180928" status="3">Point de vue</lang>
                   <lang id="es" status="2">Ver artículo</lang>
                   <lang id="pt" status="2">Exibir item</lang>
-                  <lang id="it" status="2">Punto di vista</lang>
+                  <lang id="it" status="3">Visualizza oggetto</lang>
                   <lang id="nl" status="2">Object bekijken</lang>
                   <lang id="de" status="2">Artikel anzeigen</lang>
                   <lang id="ru" status="3">Просмотр элемента</lang>
@@ -4799,7 +4817,7 @@
                   <lang id="fr" status="2">Courir</lang>
                   <lang id="es" status="2">Ejecutar</lang>
                   <lang id="pt" status="2">Executar</lang>
-                  <lang id="it" status="2">Eseguire</lang>
+                  <lang id="it" status="3">Esegui</lang>
                   <lang id="nl" status="2">Uitvoeren</lang>
                   <lang id="de" status="2">Ausführen</lang>
                   <lang id="ru" status="3">Выполнить</lang>
@@ -4828,7 +4846,7 @@
                   <lang id="fr" date="20091106180944" status="3">Actualisation</lang>
                   <lang id="es" status="2">Actualización</lang>
                   <lang id="pt" status="2">Atualizar</lang>
-                  <lang id="it" status="2">Aggiornamento</lang>
+                  <lang id="it" status="3">Aggiorna</lang>
                   <lang id="nl" status="2">Vernieuwen</lang>
                   <lang id="de" status="2">Aktualisieren</lang>
                   <lang id="ru" status="2">Обновить</lang>
@@ -4858,7 +4876,7 @@
             <lang id="fr" date="20091106181424" status="3">Peu de décapant d'enregistrement - Désinstallez le directeur</lang>
             <lang id="es" status="2">Registro poco Cleaner - desinstalar Manager</lang>
             <lang id="pt" status="2">Little Registry Cleaner - Gerenciador para Desinstalação</lang>
-            <lang id="it" status="2">Registro poco Cleaner - disinstallazione Manager</lang>
+            <lang id="it" status="3">Little Registry Cleaner – Gestione disinstallazione</lang>
             <lang id="nl" status="3">Kleine Registerreiniger - Manager verwijderen</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Manager deinstallieren</lang>
             <lang id="ru" status="3">Little Registry Cleaner - Менеджер деинсталляции</lang>
@@ -4946,7 +4964,7 @@
                       <lang id="fr" status="2">Recherche par nom</lang>
                       <lang id="es" status="2">Buscar por nombre</lang>
                       <lang id="pt" status="2">Pesquisar por nome</lang>
-                      <lang id="it" status="2">Ricerca per nome</lang>
+                      <lang id="it" status="3">Ricerca per nome</lang>
                       <lang id="nl" status="2">Zoeken op naam</lang>
                       <lang id="de" status="2">Suche nach Namen</lang>
                       <lang id="ru" status="2">Поиск по названию</lang>
@@ -4980,7 +4998,7 @@
                     <lang id="fr" status="2">Désinstaller</lang>
                     <lang id="es" status="2">Desinstalar</lang>
                     <lang id="pt" status="2">Desinstalar</lang>
-                    <lang id="it" status="2">Disinstallare</lang>
+                    <lang id="it" status="3">Rimuovi</lang>
                     <lang id="nl" status="2">Installatie ongedaan maken</lang>
                     <lang id="de" status="2">Deinstallieren</lang>
                     <lang id="ru" status="2">Удалить</lang>
@@ -5007,7 +5025,7 @@
                     <lang id="fr" status="2">Supprimer l'entrée</lang>
                     <lang id="es" status="2">Quitar entrada</lang>
                     <lang id="pt" status="2">Remover entrada</lang>
-                    <lang id="it" status="2">Rimuovere la voce</lang>
+                    <lang id="it" status="3">Rimuovi voce</lang>
                     <lang id="nl" status="2">Vermelding verwijderen</lang>
                     <lang id="de" status="2">Entfernen Sie Entry</lang>
                     <lang id="ru" status="2">Удалить запись</lang>
@@ -5036,7 +5054,7 @@
                     <lang id="fr" status="2">Programme</lang>
                     <lang id="es" status="2">Programa</lang>
                     <lang id="pt" status="2">Programa</lang>
-                    <lang id="it" status="2">Programma</lang>
+                    <lang id="it" status="3">Programma</lang>
                     <lang id="nl" status="2">Programma</lang>
                     <lang id="de" status="2">Programm</lang>
                     <lang id="ru" status="2">Программа</lang>
@@ -5060,7 +5078,7 @@
                     <lang id="fr" status="2">Editeur</lang>
                     <lang id="es" status="2">Editorial</lang>
                     <lang id="pt" status="2">Editor</lang>
-                    <lang id="it" status="2">Editore</lang>
+                    <lang id="it" status="3">Produttore</lang>
                     <lang id="nl" status="3">Publisher</lang>
                     <lang id="de" status="2">Herausgeber</lang>
                     <lang id="ru" status="2">Издатель</lang>
@@ -5084,7 +5102,7 @@
                     <lang id="fr" status="2">Estimation de la taille</lang>
                     <lang id="es" status="2">Tamaño estimado</lang>
                     <lang id="pt" status="2">Tamanho estimado</lang>
-                    <lang id="it" status="2">Dimensioni stimate</lang>
+                    <lang id="it" status="3">Dimensioni stimate</lang>
                     <lang id="nl" status="2">De geschatte grootte</lang>
                     <lang id="de" status="2">Geschätzte Größe</lang>
                     <lang id="ru" status="2">Предполагаемый размер</lang>
@@ -5116,7 +5134,7 @@
             <lang id="fr" date="20091106182601" status="3">Vérifiez la mise à jour</lang>
             <lang id="es" status="2">Comprobación de actualización</lang>
             <lang id="pt" status="2">Verificar atualizações</lang>
-            <lang id="it" status="2">Controllo per aggiornamento</lang>
+            <lang id="it" status="3">Controlla aggiornamenti</lang>
             <lang id="nl" status="3">Controleer voor update</lang>
             <lang id="de" status="2">Kontrollkästchen für die Aktualisierung</lang>
             <lang id="ru" status="2">Проверить наличие обновлений</lang>
@@ -5154,7 +5172,7 @@
               <lang id="fr" status="2">Télécharger</lang>
               <lang id="es" status="2">Descargar</lang>
               <lang id="pt" status="2">Download</lang>
-              <lang id="it" status="2">Scaricare</lang>
+              <lang id="it" status="3">Scarica</lang>
               <lang id="nl" status="2">Downloaden</lang>
               <lang id="de" status="2">Download</lang>
               <lang id="ru" status="2">Скачать</lang>
@@ -5181,7 +5199,7 @@
               <lang id="fr" date="20091106182105" status="3">Journal modification</lang>
               <lang id="es" status="2">Registro de cambios</lang>
               <lang id="pt" status="2">Log de alterações</lang>
-              <lang id="it" date="20091106182408" status="3">Log delle modifiche</lang>
+              <lang id="it" status="3">Log delle modifiche</lang>
               <lang id="nl" date="20091106182153" status="3">Wijzigings-log</lang>
               <lang id="de" date="20091106182207" status="3">Änderungsprotokoll</lang>
               <lang id="ru" date="20091106182224" status="3">Журнал изменений</lang>
@@ -5208,7 +5226,7 @@
           <lang id="fr" status="2">Le rapport de bogue n'a pas pu être envoyé.</lang>
           <lang id="es" status="2">No se pudo enviar el informe de fallo</lang>
           <lang id="pt" status="2">O relatório de erros não pode ser enviado</lang>
-          <lang id="it" status="2">La segnalazione di bug, non ha potuto essere inviato</lang>
+          <lang id="it" status="3">Impossibile inviare la segnalazione errori</lang>
           <lang id="nl" status="3">Het bugrapport kon niet worden verzonden</lang>
           <lang id="de" status="2">Der Fehlerbericht konnte nicht gesendet werden</lang>
           <lang id="ru" status="3">Сообщение об ошибке не удалось отправить</lang>
@@ -5229,7 +5247,7 @@
           <lang id="fr" status="2">Rapport de bogue envoyé</lang>
           <lang id="es" status="2">Enviado el informe de fallo correctamente</lang>
           <lang id="pt" status="2">Relatório de erros enviado com sucesso</lang>
-          <lang id="it" status="2">Bug report inviato correttamente</lang>
+          <lang id="it" status="3">Segnalazione errori inviata correttamente</lang>
           <lang id="nl" status="3">Bugreport verzonden</lang>
           <lang id="de" status="2">Sent Fehlerbericht erfolgreich</lang>
           <lang id="ru" status="3">Сообщение об ошибке успешно отправлено</lang>
@@ -5250,7 +5268,7 @@
           <lang id="fr" status="2">Ajouté des clés de registre sélectionnée à la liste d'exclusion</lang>
           <lang id="es" status="2">Agrega claves del registro seleccionado a la lista de exclusión</lang>
           <lang id="pt" status="2">Adicionar chaves do registro selecionadas para lista de desconsiderados</lang>
-          <lang id="it" status="2">Ha aggiunto selezionati chiavi di registro per l'elenco di esclusione</lang>
+          <lang id="it" status="3">Chiavi di registro selezionate aggiunte alla lista esclusi</lang>
           <lang id="nl" status="3">Geselecteerde registersleutels toegevoegd aan de Uitsluiten-lijst</lang>
           <lang id="de" status="2">Added ausgewählten Registrierungsschlüssel, um die Exclude-Liste</lang>
           <lang id="ru" status="3">Выбранные ключи реестра добавлены в список исключений</lang>
@@ -5271,7 +5289,7 @@
           <lang id="fr" status="2">Vous êtes vraiment quitter?</lang>
           <lang id="es" status="2">Está seguro de que desea salir?</lang>
           <lang id="pt" status="2">Tem certeza de que deseja sair?</lang>
-          <lang id="it" status="2">Sei sicuro di voler uscire?</lang>
+          <lang id="it" status="3">Sei sicuro di voler uscire?</lang>
           <lang id="nl" status="2">Weet u zeker dat u wilt afsluiten?</lang>
           <lang id="de" status="2">Sind Sie sicher, dass Sie zum Beenden?</lang>
           <lang id="ru" status="2">Вы уверены, что хотите выйти?</lang>
@@ -5293,7 +5311,7 @@
           <lang id="fr" invalidated="1" status="2">Ce votre première fois en cours d'exécution Little Registry Cleaner. vous souhaitez créer un point de restauration de \r\nWould?</lang>
           <lang id="es" invalidated="1" status="2">Esta la primera vez que ejecuta Little limpiador de registro. \r\nWould le gustaría crear un punto de restauración?</lang>
           <lang id="pt" status="2">Esta é a primeira vez que você executa o Little Registry Cleaner.\r\nGostaria de criar um ponto de restauração?</lang>
-          <lang id="it" invalidated="1" status="2">La tua prima volta in esecuzione Little Registry Cleaner.\r\nVuoi creare un punto di ripristino?</lang>
+          <lang id="it" date="20100113184458" status="3">È la prima volta che esegui Little Registry Cleaner.#nVuoi creare un punto di ripristino?</lang>
           <lang id="nl" date="20091212111738" status="3">Dit is de eerste keer dat u Kleine Registerreiniger gebruikt.#nWilt u een herstelpunt aanmaken?</lang>
           <lang id="de" invalidated="1" status="2">Diese Sie das erste Mal Little Registry Cleaner.\r\nMöchten Sie einen Wiederherstellungspunkt erstellen?</lang>
           <lang id="ru" status="3">Это ваш первый запуск Little Registry Cleaner.\R\nВы хотите создать точку восстановления?</lang>
@@ -5314,7 +5332,7 @@
           <lang id="fr" status="2">Impossible de trouver le petit registre Cleaner.chm</lang>
           <lang id="es" status="2">No se puede encontrar Little Cleaner.chm de registro</lang>
           <lang id="pt" status="2">Não foi possível encontrar Little Registry Cleaner.chm</lang>
-          <lang id="it" status="2">In grado di trovare Little Registro Cleaner.chm</lang>
+          <lang id="it" status="3">Impossibile trovare Little Registry Cleaner.chm</lang>
           <lang id="nl" status="3">Kan Little Registry Cleaner.chm niet vinden</lang>
           <lang id="de" status="2">Nicht finden Little Registry Cleaner.chm</lang>
           <lang id="ru" status="3">Не удается найти Little Registry Cleaner.chm</lang>
@@ -5335,7 +5353,7 @@
           <lang id="fr" status="2">Vous souhaitez corriger tous les problèmes sélectionnés?</lang>
           <lang id="es" status="2">¿Le gustaría corregir todos los problemas seleccionados?</lang>
           <lang id="pt" status="2">Gostaria de corrigir todos os problemas selecionados?</lang>
-          <lang id="it" status="2">Vuoi risolvere tutti i problemi selezionati?</lang>
+          <lang id="it" status="3">Vuoi risolvere tutti i problemi selezionati?</lang>
           <lang id="nl" status="3">Wilt alle geselecteerde problemen repareren?</lang>
           <lang id="de" status="2">Möchten Sie alle ausgewählten Probleme zu beheben?</lang>
           <lang id="ru" status="3">Хотите исправить все выбранные ошибки?</lang>
@@ -5356,7 +5374,7 @@
           <lang id="fr" status="2">Problèmes supprimées du registre</lang>
           <lang id="es" status="2">Se ha eliminado los problemas del registro</lang>
           <lang id="pt" status="2">Problemas removidos do Registro</lang>
-          <lang id="it" status="2">Rimossi i problemi dal registro</lang>
+          <lang id="it" status="3">Problemi del registro corretti</lang>
           <lang id="nl" status="3">Problemen uit het register verwijderd</lang>
           <lang id="de" status="2">Probleme aus der Registry entfernt</lang>
           <lang id="ru" status="3">Ошибки реестра удалены</lang>
@@ -5377,7 +5395,7 @@
           <lang id="fr" status="2">Abandonné l'analyse du registre</lang>
           <lang id="es" status="2">Anulado el análisis del registro</lang>
           <lang id="pt" status="2">Abortada a varredura do registro</lang>
-          <lang id="it" status="2">Interrotta la scansione del Registro di sistema</lang>
+          <lang id="it" status="3">Scansione del Registro interrotta</lang>
           <lang id="nl" status="3">Registerscan afgebroken</lang>
           <lang id="de" status="2">Aborted Scanning der Registrierung</lang>
           <lang id="ru" status="3">Сканирование реестра прервано</lang>
@@ -5398,7 +5416,7 @@
           <lang id="fr" status="2">L'analyse est terminée le registre.</lang>
           <lang id="es" status="2">Finalizado el análisis del registro</lang>
           <lang id="pt" status="2">Varredura do registro terminada</lang>
-          <lang id="it" status="2">Termine della scansione del Registro di sistema</lang>
+          <lang id="it" status="3">Scansione del Registro terminata</lang>
           <lang id="nl" status="3">Registerscan is klaar</lang>
           <lang id="de" status="2">Abgeschlossene Scanning der Registrierung</lang>
           <lang id="ru" status="3">Сканирование реестра завершено</lang>
@@ -5419,7 +5437,7 @@
           <lang id="fr" status="2">Veuillez sélectionner une section à analyser</lang>
           <lang id="es" status="2">Por favor, seleccione una sección para analizar</lang>
           <lang id="pt" status="2">Por favor, selecione uma seção para efetuar a varredura</lang>
-          <lang id="it" status="2">Si prega di selezionare una sezione per la scansione</lang>
+          <lang id="it" status="3">Si prega di selezionare una sezione per la scansione</lang>
           <lang id="nl" status="3">Selecteer een sectie om te scannen</lang>
           <lang id="de" status="2">Bitte wählen Sie einen Abschnitt zum Scannen</lang>
           <lang id="ru" status="2">Пожалуйста, выберите раздел для сканирования</lang>
@@ -5440,7 +5458,7 @@
           <lang id="fr" status="2">Une version plus récente est disponible. Souhaitez-vous télécharger?</lang>
           <lang id="es" status="2">Hay disponible una versión más reciente. ¿Desea descargarlo?</lang>
           <lang id="pt" status="2">Uma nova versão está disponível. Gostaria de fazer o download?</lang>
-          <lang id="it" status="2">Una versione più recente è disponibile. Vuoi scaricarlo?</lang>
+          <lang id="it" status="3">Una versione più recente è disponibile. Vuoi scaricarla?</lang>
           <lang id="nl" status="3">Er is een nieuwere versie beschikbaar. Wilt u het die downloaden?</lang>
           <lang id="de" status="2">Eine neuere Version verfügbar ist. Möchten Sie es herunterladen?</lang>
           <lang id="ru" status="3">Доступна новая версия. Хотите скачать ее?</lang>
@@ -5461,7 +5479,7 @@
           <lang id="fr" status="2">Sélectionnez le dossier à exclure de l'analyse du registre</lang>
           <lang id="es" status="2">Seleccione la carpeta para excluir el análisis del registro</lang>
           <lang id="pt" status="2">Selecione a pasta para excluir da varredura do registro</lang>
-          <lang id="it" status="2">Selezionare la cartella da escludere dal Registro di sistema di scansione</lang>
+          <lang id="it" status="3">Selezionare la cartella da escludere dalla scansione</lang>
           <lang id="nl" status="3">Selecteer een map die van de registerscan moet worden uitgesloten</lang>
           <lang id="de" status="2">Wählen Sie den Ordner aus der Registry-Scan ausschließen</lang>
           <lang id="ru" status="3">Выберите папку для исключения из сканирования</lang>
@@ -5482,7 +5500,7 @@
           <lang id="fr" status="2">Chemin d'accès du Registre ne peut pas être vide</lang>
           <lang id="es" status="2">Ruta del registro no puede estar vacío</lang>
           <lang id="pt" status="2">Caminho de registo não pode estar vazio</lang>
-          <lang id="it" status="2">Percorso del Registro di sistema non può essere vuoto</lang>
+          <lang id="it" status="3">Il percorso del Registro di sistema non può essere vuoto</lang>
           <lang id="nl" status="2">Register pad kan niet leeg zijn</lang>
           <lang id="de" status="2">Registry-Pfad darf nicht leer sein</lang>
           <lang id="ru" status="2">Путь реестра не может быть пустым</lang>
@@ -5503,7 +5521,7 @@
           <lang id="fr" status="2">Sélectionnez un fichier à exclure de l'analyse du registre</lang>
           <lang id="es" status="2">Seleccione un archivo para excluir el análisis del registro</lang>
           <lang id="pt" status="2">Selecione um arquivo a desconsiderar da varredura do registro</lang>
-          <lang id="it" status="2">Selezionare un file da escludere dal Registro di sistema di scansione</lang>
+          <lang id="it" status="3">Selezionare un file da escludere dalla scansione</lang>
           <lang id="nl" status="3">Selecteer een bestand dat van de registerscan moet worden uitgesloten</lang>
           <lang id="de" status="2">Wählen Sie eine Datei aus der Registrierung Vorgang ausschließen</lang>
           <lang id="ru" status="3">Выберите файл для исключения из сканирования</lang>
@@ -5524,7 +5542,7 @@
           <lang id="fr" status="2">Clé de registre spécifiée n'existe pas</lang>
           <lang id="es" status="2">Clave de registro especificada no existe</lang>
           <lang id="pt" status="2">Chave de registro especificada não existe</lang>
-          <lang id="it" status="2">Chiave di registro specificato non esiste</lang>
+          <lang id="it" status="3">La chiave di registro specificata non esiste</lang>
           <lang id="nl" status="3">De aangegeven registersleutel bestaat niet</lang>
           <lang id="de" status="2">Angegebenen Registrierungsschlüssel ist nicht vorhanden</lang>
           <lang id="ru" status="2">Указанный раздел реестра не существует</lang>
@@ -5545,7 +5563,7 @@
           <lang id="fr" status="2">Es-tu sûr?</lang>
           <lang id="es" status="2">Estás seguro?</lang>
           <lang id="pt" status="2">Tem certeza?</lang>
-          <lang id="it" status="2">Sei sicuro?</lang>
+          <lang id="it" status="3">Sei sicuro?</lang>
           <lang id="nl" status="3">Weet u het zeker?</lang>
           <lang id="de" status="2">Sind Sie sicher,?</lang>
           <lang id="ru" status="3">Вы уверены?</lang>
@@ -5566,7 +5584,7 @@
           <lang id="fr" status="2">Sélectionnez le dossier dans lequel seront placés les fichiers de sauvegarde</lang>
           <lang id="es" status="2">Seleccione la carpeta donde se colocarán los archivos de copia de seguridad</lang>
           <lang id="pt" status="2">Selecione a pasta onde os arquivos de backup serão colocados</lang>
-          <lang id="it" status="2">Selezionare la cartella in cui i file di backup verrà posizionato</lang>
+          <lang id="it" status="3">Selezionare la cartella per i file di backup</lang>
           <lang id="nl" status="3">Selecteer de map waarin de back-upbestanden zullen worden geplaatst</lang>
           <lang id="de" status="2">Wählen Sie den Ordner, in dem die Backup-Dateien abgelegt werden</lang>
           <lang id="ru" status="3">Выберите папку, в которой будут храниться резервные копии</lang>
@@ -5587,7 +5605,7 @@
           <lang id="fr" status="2">Sélectionnez le dossier dans lequel seront placés les fichiers journaux</lang>
           <lang id="es" status="2">Seleccione la carpeta donde se colocarán los archivos de registro</lang>
           <lang id="pt" status="2">Selecione a pasta onde os arquivos de log serão colocados</lang>
-          <lang id="it" status="2">Selezionare la cartella dove il file di registro sarà messo</lang>
+          <lang id="it" status="3">Selezionale la cartella per i file di log</lang>
           <lang id="nl" status="2">Selecteer de map waar de log-bestanden zullen worden geplaatst</lang>
           <lang id="de" status="2">Wählen Sie den Ordner, in dem die Log-Dateien abgelegt werden</lang>
           <lang id="ru" status="3">Выберите папку, в которой будут храниться логи</lang>
@@ -5608,7 +5626,7 @@
           <lang id="fr" status="2">Clé de registre suppression erreur:</lang>
           <lang id="es" status="2">Error eliminar clave de registro:</lang>
           <lang id="pt" status="2">Erro ao remover chave do registro:</lang>
-          <lang id="it" status="2">Rimozione chiave del Registro di sistema di errore:</lang>
+          <lang id="it" status="3">Errore nella rimozione della chiave:</lang>
           <lang id="nl" status="3">Fout bij het verwijderen van registersleutel:</lang>
           <lang id="de" status="2">Fehler beim Entfernen von Registry-Schlüssel:</lang>
           <lang id="ru" status="3">Ошибка при удалении элемента реестра:</lang>
@@ -5629,7 +5647,7 @@
           <lang id="fr" status="2">Programme de désinstallation erreur:</lang>
           <lang id="es" status="2">Programa de desinstalación de error:</lang>
           <lang id="pt" status="2">Erro ao desinstalar o programa:</lang>
-          <lang id="it" status="2">Programma di disinstallazione di errore:</lang>
+          <lang id="it" status="3">Errore nel disinstallare il programma:</lang>
           <lang id="nl" status="2">Fout bij het verwijderen van het programma:</lang>
           <lang id="de" status="2">Fehler beim Deinstallieren von Programm:</lang>
           <lang id="ru" status="3">Ошибка при деинсталляции программы:</lang>
@@ -5650,7 +5668,7 @@
           <lang id="fr" status="2">Impossible de trouver la chaîne de désinstallation. Vous souhaitez supprimer manuellement du registre?</lang>
           <lang id="es" status="2">No se puede encontrar la cadena de desinstalación. ¿Le gustaría quitarlo manualmente el registro?</lang>
           <lang id="pt" status="2">Não é possível encontrar o caminho de desinstalação. Você gostaria de removê-lo manualmente no registro?</lang>
-          <lang id="it" status="2">Impossibile trovare la stringa di disinstallazione. Vuoi rimuovere manualmente dal Registro di sistema?</lang>
+          <lang id="it" status="3">Impossibile trovare la stringa di disinstallazione. Vuoi rimuovere manualmente dal Registro di sistema?</lang>
           <lang id="nl" status="3">Kan geen verwijder-tekenreeks vinden. Wilt u deze handmatig uit het register verwijderen?</lang>
           <lang id="de" status="2">Kann nicht Deinstallation String gefunden werden. Möchten Sie Sie aus der Registrierung manuell zu entfernen?</lang>
           <lang id="ru" status="3">Не удается найти строку деинсталляции. Хотите вручную удалить из реестра?</lang>
@@ -5671,7 +5689,7 @@
           <lang id="fr" status="2">Clé de registre réussi supprimé</lang>
           <lang id="es" status="2">Clave del registro de correctamente eliminado</lang>
           <lang id="pt" status="2">Chave de registo removida com sucesso</lang>
-          <lang id="it" status="2">Chiave del Registro di sistema Hai rimosso</lang>
+          <lang id="it" status="3">Chiave rimossa con successo</lang>
           <lang id="nl" status="3">Registersleutel verwijderd</lang>
           <lang id="de" status="2">Registrierungsschlüssel wurde erfolgreich entfernt</lang>
           <lang id="ru" status="3">Ключ реестра успешно удален</lang>
@@ -5692,7 +5710,7 @@
           <lang id="fr" status="2">Programme réussi désinstallé</lang>
           <lang id="es" status="2">Programa correctamente desinstalado</lang>
           <lang id="pt" status="2">Programa desinstalado com sucesso</lang>
-          <lang id="it" status="2">Programma hai disinstallato</lang>
+          <lang id="it" status="3">Programma rimosso con successo</lang>
           <lang id="nl" status="3">Programma verwijderd</lang>
           <lang id="de" status="2">Wurde erfolgreich deinstalliert Programm</lang>
           <lang id="ru" status="2">Программа успешно удалена</lang>
@@ -5713,7 +5731,7 @@
           <lang id="fr" status="2">Un autre programme semble être en cours d'exécution déjà...</lang>
           <lang id="es" status="2">Otro programa parece estar ya en ejecución...</lang>
           <lang id="pt" status="2">Outro programa parece já estar sendo executado...</lang>
-          <lang id="it" status="2">Un altro programma sembra essere già in esecuzione...</lang>
+          <lang id="it" status="3">Un altro programma sembra essere già in esecuzione...</lang>
           <lang id="nl" status="3">Er lijkt al een ander programma te draaien...</lang>
           <lang id="de" status="2">Ein anderes Programm scheint zu sein, läuft bereits...</lang>
           <lang id="ru" status="3">Другая копия программы уже запущена...</lang>
@@ -5734,7 +5752,7 @@
           <lang id="fr" status="2">Vous devez être administrateur pour exécuter ce programme.</lang>
           <lang id="es" status="2">Debe ser un administrador para ejecutar este programa</lang>
           <lang id="pt" status="2">Você deve ser um administrador para executar este programa</lang>
-          <lang id="it" status="2">È necessario essere un amministratore per eseguire questo programma</lang>
+          <lang id="it" status="3">Devi avere i privilegi di amministratore per eseguire questo programma</lang>
           <lang id="nl" status="3">U moet beheerder-rechten hebben om dit programma uit te voeren</lang>
           <lang id="de" status="2">Sie müssen als Administrator angemeldet sein, um dieses Programm ausführen</lang>
           <lang id="ru" status="3">Вы должны иметь права администратора для запуска этой программы</lang>
@@ -5755,7 +5773,7 @@
           <lang id="fr" status="2">Es-tu sûr?</lang>
           <lang id="es" status="2">Estás seguro?</lang>
           <lang id="pt" status="2">Tem certeza?</lang>
-          <lang id="it" status="2">Sei sicuro?</lang>
+          <lang id="it" status="3">Sei sicuro?</lang>
           <lang id="nl" status="3">Weet u het zeker?</lang>
           <lang id="de" status="2">Sind Sie sicher,?</lang>
           <lang id="ru" status="3">Вы уверены?</lang>
@@ -5776,7 +5794,7 @@
           <lang id="fr" status="2">Erreur lors de restauration du registre</lang>
           <lang id="es" status="2">Registro de restauración de error</lang>
           <lang id="pt" status="2">Erro ao restaurar o registro</lang>
-          <lang id="it" status="2">Errore di ripristino del Registro di sistema</lang>
+          <lang id="it" status="3">Errore durante il ripristino del Registro</lang>
           <lang id="nl" status="2">Fout bij het herstellen van het register</lang>
           <lang id="de" status="2">Error restoring Registrierung</lang>
           <lang id="ru" status="3">Ошибка восстановления реестра</lang>
@@ -5797,7 +5815,7 @@
           <lang id="fr" status="2">Registre restauré avec succès</lang>
           <lang id="es" status="2">Registro restaurado con éxito</lang>
           <lang id="pt" status="2">Registro restaurado com sucesso</lang>
-          <lang id="it" status="2">Ripristinato con successo del Registro di sistema</lang>
+          <lang id="it" status="3">Registri ripristinato con successo</lang>
           <lang id="nl" status="3">Register succesvol hersteld</lang>
           <lang id="de" status="2">Erfolgreich wiederhergestellt Registrierung</lang>
           <lang id="ru" status="3">Реестр успешно восстановлен</lang>
@@ -5818,7 +5836,7 @@
           <lang id="fr" status="2">Es-tu sûr?</lang>
           <lang id="es" status="2">Estás seguro?</lang>
           <lang id="pt" status="2">Tem certeza?</lang>
-          <lang id="it" status="2">Sei sicuro?</lang>
+          <lang id="it" status="3">Sei sicuro?</lang>
           <lang id="nl" status="3">Weet u het zeker?</lang>
           <lang id="de" status="2">Sind Sie sicher,?</lang>
           <lang id="ru" status="3">Вы уверены?</lang>
@@ -5839,7 +5857,7 @@
           <lang id="fr" status="2">L'analyse: </lang>
           <lang id="es" status="2">Análisis: </lang>
           <lang id="pt" status="2">Efetuando varredura...</lang>
-          <lang id="it" status="2">Scansione: </lang>
+          <lang id="it" status="3">Scansione: </lang>
           <lang id="nl" status="3">Scannen: </lang>
           <lang id="de" date="20091106182906" status="3">Scannen: </lang>
           <lang id="ru" status="2">Сканирование: </lang>
@@ -5860,7 +5878,7 @@
           <lang id="fr" status="2">Le fichier n'a pas pu être trouvé.</lang>
           <lang id="es" status="2">No se encontró el archivo</lang>
           <lang id="pt" status="2">O arquivo não pôde ser encontrado</lang>
-          <lang id="it" status="2">Il file non è stato trovato</lang>
+          <lang id="it" status="3">Impossibile trovare il file</lang>
           <lang id="nl" status="2">Het bestand kan niet worden gevonden</lang>
           <lang id="de" status="2">Die Datei konnte nicht gefunden werden</lang>
           <lang id="ru" status="3">Файл не найден</lang>
@@ -5881,7 +5899,7 @@
           <lang id="fr" status="2">Le nom du raccourci/valeur ne peut pas être vide</lang>
           <lang id="es" status="2">El nombre de método abreviado/valor no puede estar vacío</lang>
           <lang id="pt" status="2">Nome do Atalho/Valor não pode estar vazio</lang>
-          <lang id="it" status="2">Di scelta rapida / Nome valore non può essere vuoto</lang>
+          <lang id="it" status="3">Il campo scorciatoia/valore non può essere vuoto</lang>
           <lang id="nl" status="2">Shortcut / Waarde naam mag niet leeg zijn</lang>
           <lang id="de" status="2">Shortcut / Wert-Name kann nicht leer sein</lang>
           <lang id="ru" status="3">Название не может быть пустым</lang>
@@ -5902,7 +5920,7 @@
           <lang id="fr" status="2">Chemin d'accès du fichier ne peut pas être vide</lang>
           <lang id="es" status="2">Ruta del archivo no puede estar vacía</lang>
           <lang id="pt" status="2">Caminho do arquivo não pode estar vazio</lang>
-          <lang id="it" status="2">Percorso di file non può essere vuoto</lang>
+          <lang id="it" status="3">Il percorso del file non può essere vuoto</lang>
           <lang id="nl" status="2">Bestand pad kan niet leeg zijn</lang>
           <lang id="de" status="2">Dateipfad darf nicht leer sein</lang>
           <lang id="ru" status="2">Путь к файлу не может быть пустым</lang>
@@ -5923,7 +5941,7 @@
           <lang id="fr" status="2">Tentative d'exécution:</lang>
           <lang id="es" status="2">Ha intentado ejecutar:</lang>
           <lang id="pt" status="2">Tentativa de executar:</lang>
-          <lang id="it" status="2">Tentato di eseguire:</lang>
+          <lang id="it" status="3">Tentativo di esecuzione: </lang>
           <lang id="nl" status="3">Geprobeerd te starten:</lang>
           <lang id="de" status="2">Es wurde versucht, zu laufen:</lang>
           <lang id="ru" status="3">Попытка запуска:</lang>
@@ -5944,7 +5962,7 @@
           <lang id="fr" status="2">Vous êtes certain de que vouloir supprimer ce programme de démarrage?</lang>
           <lang id="es" status="2">Está seguro de que desea quitar este programa de inicio?</lang>
           <lang id="pt" status="2">Tem certeza de que deseja remover este programa de inicialização?</lang>
-          <lang id="it" status="2">Sei sicuro di voler rimuovere questo programma di avvio?</lang>
+          <lang id="it" status="3">Sei sicuro di voler rimuovere questo programma di avvio?</lang>
           <lang id="nl" status="3">Weet u zeker dat u dit programma wilt verwijderen?</lang>
           <lang id="de" status="2">Sind Sie sicher, dass Sie diese Start-Programm zu entfernen?</lang>
           <lang id="ru" status="3">Вы уверены, что хотите удалить эту программу из автозапуска?</lang>
@@ -5965,7 +5983,7 @@
           <lang id="fr" status="2">Supprimé le programme de démarrage sélectionnés</lang>
           <lang id="es" status="2">Programa de inicio seleccionado eliminado</lang>
           <lang id="pt" status="2">Removido programa de inicialização selecionado</lang>
-          <lang id="it" status="2">Rimosso programma di avvio selezionato</lang>
+          <lang id="it" status="3">Programma di avvio selezionato rimosso</lang>
           <lang id="nl" status="3">Geselecteerde opstart-programma verwijderd</lang>
           <lang id="de" status="2">Removed Startup-Programm ausgewählt</lang>
           <lang id="ru" status="3">Выбранные элементы автозагрузки удалены</lang>
@@ -5986,7 +6004,7 @@
           <lang id="fr" status="2">Vous êtes vraiment exécuter ce programme.?</lang>
           <lang id="es" status="2">Está seguro de que desea ejecutar este programa?</lang>
           <lang id="pt" status="2">Tem certeza de que deseja executar este programa?</lang>
-          <lang id="it" status="2">Sei sicuro di voler eseguire il programma?</lang>
+          <lang id="it" status="3">Sei sicuro di voler eseguire il programma?</lang>
           <lang id="nl" status="3">Weet u zeker dat u dit programma wilt starten?</lang>
           <lang id="de" status="2">Sind Sie sicher, dass Sie dieses Programm ausführen?</lang>
           <lang id="ru" status="2">Вы действительно хотите запустить эту программу?</lang>
@@ -6007,7 +6025,7 @@
           <lang id="fr" status="2">Vous êtes certain de que vouloir supprimer ce programme dans le registre?</lang>
           <lang id="es" status="2">Está seguro de que desea quitar este programa desde el registro?</lang>
           <lang id="pt" status="2">Tem certeza que deseja remover este programa a partir do registo?</lang>
-          <lang id="it" status="2">Sei sicuro di voler rimuovere questo programma dal Registro di sistema?</lang>
+          <lang id="it" status="3">Sei sicuro di voler rimuovere questo programma dal Registro di sistema?</lang>
           <lang id="nl" status="3">Weet u zeker dat u dit programma uit het register wilt verwijderen?</lang>
           <lang id="de" status="2">Sind Sie sicher, dass Sie dieses Programm aus der Registrierung entfernen?</lang>
           <lang id="ru" status="2">Вы уверены, что хотите удалить эту программу из реестра?</lang>
@@ -6028,7 +6046,7 @@
           <lang id="fr" status="2">Recherche par nom</lang>
           <lang id="es" status="2">Buscar por nombre</lang>
           <lang id="pt" status="2">Pesquisar por nome</lang>
-          <lang id="it" status="2">Ricerca per nome</lang>
+          <lang id="it" status="3">Ricerca per nome</lang>
           <lang id="nl" status="2">Zoeken op naam</lang>
           <lang id="de" status="2">Suche nach Namen</lang>
           <lang id="ru" status="2">Поиск по названию</lang>
@@ -6049,7 +6067,7 @@
           <lang id="fr" status="2">Vous souhaitez désinstaller ce programme vraiment?</lang>
           <lang id="es" status="2">¿Estás seguro de que desea desinstalar este programa?</lang>
           <lang id="pt" status="2">Tem certeza que pretende desinstalar este programa?</lang>
-          <lang id="it" status="2">Sei sicuro di voler disinstallare questo programma?</lang>
+          <lang id="it" status="3">Sei sicuro di voler disinstallare questo programma?</lang>
           <lang id="nl" status="3">Weet u zeker dat u dit programma wilt verwijderen?</lang>
           <lang id="de" status="2">Sind Sie sicher, dass Sie dieses Programm deinstallieren?</lang>
           <lang id="ru" status="2">Вы уверены, что хотите удалить эту программу?</lang>
@@ -6070,7 +6088,7 @@
           <lang id="fr" status="2">Vous avez la dernière version.</lang>
           <lang id="es" status="2">Usted tiene la última versión</lang>
           <lang id="pt" status="2">Você tem a versão mais recente</lang>
-          <lang id="it" status="2">Hai l'ultima versione</lang>
+          <lang id="it" status="3">Hai l'ultima versione</lang>
           <lang id="nl" status="2">U hebt de laatste versie</lang>
           <lang id="de" status="2">Sie haben die neueste Version</lang>
           <lang id="ru" status="3">У Вас новейшая версия</lang>
@@ -6091,7 +6109,7 @@
           <lang id="fr" status="2">Une version plus récente disponible</lang>
           <lang id="es" status="2">La versión más reciente disponible</lang>
           <lang id="pt" status="2">Versão mais recente disponível</lang>
-          <lang id="it" status="2">Nuova versione disponibile</lang>
+          <lang id="it" status="3">È disponibile una nuova versione</lang>
           <lang id="nl" status="2">Nieuwere versie beschikbaar</lang>
           <lang id="de" status="2">Neuere Version verfügbar</lang>
           <lang id="ru" status="3">Доступна более новая версия</lang>
@@ -6114,7 +6132,7 @@
           <lang id="fr" status="2">ActiveX / COM Objects</lang>
           <lang id="es" status="2">ActiveX / COM de objetos</lang>
           <lang id="pt" status="2">ActiveX / COM Objects</lang>
-          <lang id="it" status="2">ActiveX / COM Objects</lang>
+          <lang id="it" status="3">Oggetti ActiveX / COM</lang>
           <lang id="nl" status="2">ActiveX / COM Objects</lang>
           <lang id="de" status="2">ActiveX / COM-Objekte</lang>
           <lang id="ru" status="3">ActiveX / COM-объекты</lang>
@@ -6135,7 +6153,7 @@
           <lang id="fr" status="2">Demande d'info</lang>
           <lang id="es" status="2">Información de aplicación</lang>
           <lang id="pt" status="2">Informações da Aplicação</lang>
-          <lang id="it" status="2">Informazioni di applicazione</lang>
+          <lang id="it" status="3">Informazioni sull'applicazione</lang>
           <lang id="nl" status="2">Toepassings gegevens</lang>
           <lang id="de" status="2">Anwendung Info</lang>
           <lang id="ru" status="3">Информация о программе</lang>
@@ -6156,7 +6174,7 @@
           <lang id="fr" date="20091102204651" status="3">Application tracés</lang>
           <lang id="es" status="2">Rutas de aplicación</lang>
           <lang id="pt" status="2">Caminhos de aplicação</lang>
-          <lang id="it" date="20091102204538" status="3">Percorsi di applicazione</lang>
+          <lang id="it" status="3">Percorsi applicazione</lang>
           <lang id="nl" date="20091102204934" status="3">Toepassings paden</lang>
           <lang id="de" date="20091102205009" status="3">Anwendung-Pfade</lang>
           <lang id="ru" date="20091102205205" status="3">Пути</lang>
@@ -6177,7 +6195,7 @@
           <lang id="fr" status="2">Paramètres de l'application</lang>
           <lang id="es" status="2">Configuración de la aplicación</lang>
           <lang id="pt" status="2">Configurações de aplicação</lang>
-          <lang id="it" status="2">Impostazioni applicazione</lang>
+          <lang id="it" status="3">Impostazioni applicazione</lang>
           <lang id="nl" date="20091102204918" status="3">Toepassings instellingen</lang>
           <lang id="de" status="2">Anwendungseinstellungen</lang>
           <lang id="ru" status="3">Настройки программы</lang>
@@ -6198,7 +6216,7 @@
           <lang id="fr" status="2">Blancs fichier ou un dossier</lang>
           <lang id="es" status="2">De archivo no válido o una carpeta</lang>
           <lang id="pt" status="2">Arquivo ou pasta invalido</lang>
-          <lang id="it" status="2">Non validi di file o una cartella</lang>
+          <lang id="it" status="3">File o cartella non validi</lang>
           <lang id="nl" status="2">Ongeldig bestand of map</lang>
           <lang id="de" status="2">Ungültige Datei oder einen Ordner</lang>
           <lang id="ru" status="2">Неверный файл или папка</lang>
@@ -6219,7 +6237,7 @@
           <lang id="fr" status="2">Extension de fichier non utilisés</lang>
           <lang id="es" status="2">Extensión de archivo no utilizada</lang>
           <lang id="pt" status="2">Extensão de arquivo não utilizados</lang>
-          <lang id="it" status="2">Estensione file inutilizzati</lang>
+          <lang id="it" status="3">Estensione file inutilizzata</lang>
           <lang id="nl" status="2">Ongebruikte File Extension</lang>
           <lang id="de" status="2">Nicht genutzte File Extension</lang>
           <lang id="ru" status="3">Неиспользуемые расширения файлов</lang>
@@ -6240,7 +6258,7 @@
           <lang id="fr" status="2">Impossible de trouver le InprocServer</lang>
           <lang id="es" status="2">No se puede encontrar InprocServer</lang>
           <lang id="pt" status="2">Não é possível encontrar InprocServer</lang>
-          <lang id="it" status="2">Impossibile trovare il InprocServer</lang>
+          <lang id="it" status="3">Impossibile trovare il InprocServer</lang>
           <lang id="nl" status="3">InprocServer niet gevonden</lang>
           <lang id="de" status="2">Konnte nicht gefunden werden InprocServer</lang>
           <lang id="ru" status="2">Не удалось найти InprocServer</lang>
@@ -6261,7 +6279,7 @@
           <lang id="fr" status="2">Impossible de trouver le InprocServer32</lang>
           <lang id="es" status="2">No se puede encontrar InprocServer32</lang>
           <lang id="pt" status="2">Não é possível encontrar InprocServer32</lang>
-          <lang id="it" status="2">Impossibile trovare InprocServer32</lang>
+          <lang id="it" status="3">Impossibile trovare InprocServer32</lang>
           <lang id="nl" status="3">InprocServer32 niet gevonden</lang>
           <lang id="de" status="2">Konnte nicht gefunden werden InprocServer32</lang>
           <lang id="ru" status="2">Не удалось найти InprocServer32</lang>
@@ -6282,7 +6300,7 @@
           <lang id="fr" status="2">ProgID inutilisés / extension de fichier</lang>
           <lang id="es" status="2">ProgID no utilizados / extensión de archivo</lang>
           <lang id="pt" status="2">ProgID/Extensão de Arquivo não utilizado</lang>
-          <lang id="it" status="2">Inutilizzati ProgID / File Extension</lang>
+          <lang id="it" status="3">ProgID / Estensioni file inutilizzati</lang>
           <lang id="nl" status="2">Ongebruikte ProgID / File Extension</lang>
           <lang id="de" status="2">Ungenutzte ProgID / File Extension</lang>
           <lang id="ru" status="3">Неиспользуемые расширения ProgID / File</lang>
@@ -6303,7 +6321,7 @@
           <lang id="fr" status="2">Blancs clé de registre</lang>
           <lang id="es" status="2">Clave de registro no válido</lang>
           <lang id="pt" status="2">Chave de registro inválida</lang>
-          <lang id="it" status="2">Chiave di Registro di sistema non valido</lang>
+          <lang id="it" status="3">Chiave di registro non valida</lang>
           <lang id="nl" status="2">Ongeldige registersleutel</lang>
           <lang id="de" status="2">Ungültige Registrierungsschlüssel</lang>
           <lang id="ru" status="3">Неверный ключ реестра</lang>
@@ -6324,7 +6342,7 @@
           <lang id="fr" status="2">Barre d'outils n'est pas valide</lang>
           <lang id="es" status="2">Barra de herramientas no es válido</lang>
           <lang id="pt" status="2">Barra de ferramentas inválida</lang>
-          <lang id="it" status="2">Barra degli strumenti non è valido</lang>
+          <lang id="it" status="3">Barra degli strumenti non valida</lang>
           <lang id="nl" status="2">Toolbar is ongeldig</lang>
           <lang id="de" status="2">Toolbar ist ungültig</lang>
           <lang id="ru" status="3">Панель инструментов недействительна</lang>
@@ -6345,7 +6363,7 @@
           <lang id="fr" status="2">Manquant de référence AppID</lang>
           <lang id="es" status="2">Falta de referencia AppID</lang>
           <lang id="pt" status="2">Faltando referência ao AppID</lang>
-          <lang id="it" status="2">Missing AppID riferimento</lang>
+          <lang id="it" status="3">AppID di riferimento mancante</lang>
           <lang id="nl" status="2">Ontbrekende AppID verwijzing</lang>
           <lang id="de" status="2">Fehlende AppID Referenz</lang>
           <lang id="ru" status="2">Отсутствует ссылка AppID</lang>
@@ -6366,7 +6384,7 @@
           <lang id="fr" status="2">Manquant de référence CLSID</lang>
           <lang id="es" status="2">Falta de referencia CLSID</lang>
           <lang id="pt" status="2">Faltando referência ao CLSID</lang>
-          <lang id="it" status="2">Missing CLSID di riferimento</lang>
+          <lang id="it" status="3">CLSID di riferimento mancante</lang>
           <lang id="nl" status="2">Ontbrekende CLSID verwijzing</lang>
           <lang id="de" status="2">Fehlende CLSID Verweis</lang>
           <lang id="ru" status="2">Отсутствует CLSID Ссылка</lang>
@@ -6387,7 +6405,7 @@
           <lang id="fr" status="2">Manquant de référence ProgID</lang>
           <lang id="es" status="2">Falta de referencia ProgID</lang>
           <lang id="pt" status="2">Faltando referência ao ProgID</lang>
-          <lang id="it" status="2">Missing ProgID di riferimento</lang>
+          <lang id="it" status="3">ProgID di riferimento mancante</lang>
           <lang id="nl" status="2">Ontbrekende ProgID verwijzing</lang>
           <lang id="de" status="2">Fehlende ProgID Referenz</lang>
           <lang id="ru" status="2">Отсутствует ссылка ProgID</lang>
@@ -6408,7 +6426,7 @@
           <lang id="fr" status="2">La clé de Registre ne contient pas de données</lang>
           <lang id="es" status="2">La clave del Registro no contiene ningún dato</lang>
           <lang id="pt" status="2">A chave de registo não contém nenhum dado</lang>
-          <lang id="it" status="2">La chiave di registro non contiene tutti i dati</lang>
+          <lang id="it" status="3">La chiave di registro non contiene dati</lang>
           <lang id="nl" status="2">De registersleutel bevat geen gegevens</lang>
           <lang id="de" status="2">Der Registrierungsschlüssel enthält keine Daten</lang>
           <lang id="ru" status="3">Ключ реестра не содержит никаких данных</lang>
@@ -6429,7 +6447,7 @@
           <lang id="fr" status="2">Clé de registre obsolètes</lang>
           <lang id="es" status="2">Clave del registro obsoletas</lang>
           <lang id="pt" status="2">Chave de registro obsoleta</lang>
-          <lang id="it" status="2">Chiave di registro obsolete</lang>
+          <lang id="it" status="3">Chiave di registro obsoleta</lang>
           <lang id="nl" status="3">Ongebruikte registersleutel</lang>
           <lang id="de" status="2">Veraltete Registrierungsschlüssel</lang>
           <lang id="ru" status="3">Устаревшие ключи реестра</lang>
@@ -6450,7 +6468,7 @@
           <lang id="fr" status="2">Documents récents</lang>
           <lang id="es" status="2">Documentos recientes</lang>
           <lang id="pt" status="2">Documentos Recentes</lang>
-          <lang id="it" status="2">Documenti recenti</lang>
+          <lang id="it" status="3">Documenti recenti</lang>
           <lang id="nl" status="2">Recente documenten</lang>
           <lang id="de" status="2">Zuletzt verwendete Dokumente</lang>
           <lang id="ru" status="3">Недавние документы</lang>
@@ -6471,7 +6489,7 @@
           <lang id="fr" status="2">Des DLL partagées</lang>
           <lang id="es" status="2">Compartido de archivos DLL</lang>
           <lang id="pt" status="2">DLLs compartilhadas</lang>
-          <lang id="it" status="2">DLL condivise</lang>
+          <lang id="it" status="3">DLL condivise</lang>
           <lang id="nl" status="2">Gedeelde dll-bestanden</lang>
           <lang id="de" status="2">Freigegebenen DLLs</lang>
           <lang id="ru" status="3">Общие библиотеки</lang>
@@ -6492,7 +6510,7 @@
           <lang id="fr" status="2">Fichiers de démarrage</lang>
           <lang id="es" status="2">Archivos de inicio</lang>
           <lang id="pt" status="2">Arquivos de inicialização</lang>
-          <lang id="it" status="2">File di avvio</lang>
+          <lang id="it" status="3">File di avvio</lang>
           <lang id="nl" status="3">Opstart-bestanden</lang>
           <lang id="de" status="2">Start-Dateien</lang>
           <lang id="ru" status="3">Файлы автозагрузки</lang>
@@ -6513,7 +6531,7 @@
           <lang id="fr" status="2">Pilotes système</lang>
           <lang id="es" status="2">Controladores de sistema</lang>
           <lang id="pt" status="2">Drivers de sistema</lang>
-          <lang id="it" status="2">Driver di sistema</lang>
+          <lang id="it" status="3">Driver di sistema</lang>
           <lang id="nl" status="3">Systeem stuurprogramma's</lang>
           <lang id="de" status="2">Systemtreiber</lang>
           <lang id="ru" status="2">Системные драйверы</lang>
@@ -6534,7 +6552,7 @@
           <lang id="fr" date="20091105230305" status="3">Policies de Windows</lang>
           <lang id="es" status="2">Fuentes de Windows</lang>
           <lang id="pt" status="2">Fontes do Windows</lang>
-          <lang id="it" status="2">Caratteri di Windows</lang>
+          <lang id="it" status="3">Caratteri di Windows</lang>
           <lang id="nl" status="2">Windows-lettertypen</lang>
           <lang id="de" status="2">Windows-Schriftarten</lang>
           <lang id="ru" status="2">Шрифты Windows</lang>
@@ -6555,7 +6573,7 @@
           <lang id="fr" status="2">Fichiers d'aide Windows</lang>
           <lang id="es" status="2">Archivos de Ayuda de Windows</lang>
           <lang id="pt" status="2">Arquivos de ajuda do Windows</lang>
-          <lang id="it" status="2">File di Guida di Windows</lang>
+          <lang id="it" status="3">File di Guida di Windows</lang>
           <lang id="nl" status="2">Windows Help-bestanden</lang>
           <lang id="de" status="2">Windows-Hilfe-Dateien</lang>
           <lang id="ru" status="3">Файлы помощи Windows</lang>
@@ -6576,7 +6594,7 @@
           <lang id="fr" status="2">Sons de Windows</lang>
           <lang id="es" status="2">Sonidos de Windows</lang>
           <lang id="pt" status="2">Sons do Windows</lang>
-          <lang id="it" date="20091102204513" status="3">Suoni di Windows</lang>
+          <lang id="it" status="3">Suoni di Windows</lang>
           <lang id="nl" date="20091102204856" status="3">Windows geluiden</lang>
           <lang id="de" date="20091102205118" status="3">Windows-Töne</lang>
           <lang id="ru" date="20091102205142" status="3">Звуки Windows</lang>
