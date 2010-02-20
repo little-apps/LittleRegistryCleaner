@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<desktop scan="37" scanned="20091207224950" built="20100113185208" lang="sv" pane="TLogPane" col="11" row="Common Tools\Common Tools.csproj.Forms.Common_Tools.DetailsRegKey.Text">
+<desktop scan="37" scanned="20091207224950" built="20100202161128" lang="sv" pane="TLogPane" col="11" row="Little_Registry_Cleaner.StartupManager.EditRunItem.groupBox1.buttonBrowse.Text">
   <language id="en" autoime="0" autokeyboard="0"/>
   <language id="fr" autoime="0" autokeyboard="0"/>
   <language id="es" autoime="0" autokeyboard="0"/>
@@ -20,7 +20,7 @@
   <language id="hu" autoime="0" autokeyboard="0"/>
   <language id="fa" autoime="0" autokeyboard="0"/>
   <triggers>
-    <item class="TValidateTrigger" position="4"/>
+    <item class="TValidateTrigger" position="5"/>
   </triggers>
   <sheet>
     <columns>
@@ -55,8 +55,10 @@
   </sheet>
   <path>
     <item>All</item>
+    <item>Little Registry Cleaner.csproj</item>
+    <item>Forms</item>
   </path>
-  <exchange method="exmExportFile" options="[eoSetup,eoSpellChecker,eoLanguages]" author="Nick H." description="Little registry cleaner" packagename="Little registry cleanerRu" showpackage="0">
+  <exchange method="exmImportFile" options="[eoSetup,eoSpellChecker,eoLanguages]" author="Nick H." description="Little registry cleaner" packagename="Little registry cleanerRu" showpackage="0">
   </exchange>
   <export format="efExcel">
     <filter locked="bfBoth">

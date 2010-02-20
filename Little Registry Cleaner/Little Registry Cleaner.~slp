@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.0.295" date="20100118134126" scan="37" scanned="20091207224950">
+<document version="2.0.295" date="20100202161029" scan="37" scanned="20091207224950">
   <lang id="en"/>
   <lang id="fr"/>
   <lang id="es"/>
@@ -64,7 +64,6 @@
             <lang id="ru" status="3">Little Registry Cleaner - Подробности...</lang>
             <lang id="el" status="2">Μικρή Registry Cleaner - Λεπτομέρειες...</lang>
             <lang id="ar" status="2">يذكر السجل النظيف -- تفاصيل...</lang>
-            <lang id="sv" status="2">Little Registry Cleaner - Detaljer...</lang>
             <lang id="zh" status="2">小注册表清理器-详细...</lang>
             <lang id="zh.tra" status="2">小註冊表清理器-詳細...</lang>
             <lang id="ja" status="2">リトルレジストリクリーナー-詳細...</lang>
@@ -127,7 +126,6 @@
                   <lang id="ru" status="2">Параметр:</lang>
                   <lang id="el" status="2">Όνομα τιμής:</lang>
                   <lang id="ar" status="2">قيمة الاسم:</lang>
-                  <lang id="sv" status="2">Värdenamn:</lang>
                   <lang id="zh" status="2">值名称:</lang>
                   <lang id="zh.tra" status="2">值名稱:</lang>
                   <lang id="ja" status="2">値の名前:</lang>
@@ -168,7 +166,6 @@
                   <lang id="ru" status="2">Местонахождение:</lang>
                   <lang id="el" status="2">Τοποθεσία:</lang>
                   <lang id="ar" status="2">موقع:</lang>
-                  <lang id="sv" status="2">Plats:</lang>
                   <lang id="zh" status="2">位置:</lang>
                   <lang id="zh.tra" status="2">位置:</lang>
                   <lang id="ja" status="2">場所:</lang>
@@ -209,7 +206,6 @@
                   <lang id="ru" status="2">Проблемы:</lang>
                   <lang id="el" status="2">Πρόβλημα:</lang>
                   <lang id="ar" status="2">المشكلة:</lang>
-                  <lang id="sv" status="2">Problemet:</lang>
                   <lang id="zh" status="2">问题:</lang>
                   <lang id="zh.tra" status="2">問題:</lang>
                   <lang id="ja" status="2">問題:</lang>
@@ -315,7 +311,6 @@
             <lang id="ru" status="3">Little Registry Cleaner - О программе</lang>
             <lang id="el" status="2">Μικρή Registry Cleaner - πληροφορίες για...</lang>
             <lang id="ar" status="2">التسجيل ضئيلة الأنظف - حول...</lang>
-            <lang id="sv" status="2">Liten Registry Cleaner - om...</lang>
             <lang id="zh" status="2">小处清洁-关于...</lang>
             <lang id="zh.tra" status="2">小處清潔-關於...</lang>
             <lang id="ja" status="2">リトルRegistry Cleanerは-会社概要...</lang>
@@ -416,7 +411,6 @@
                 <lang id="ru" status="3">Эта программа является свободным программным обеспечением: Вы можете распространять или изменять её на условиях лицензии GNU General Public License, опубликованной Фондом свободного программного обеспечения, версии 3, либо (на Ваш выбор) любой более поздней версии.#n#nЭта программа распространяется в надежде на то, что она окажется полезной, но без каких бы то ни было гарантий; даже подразумеваемой гарантии или ТОВАРНОСТИ или пригодности для конкретных целей.  Смотрите GNU General Public License для получения дополнительной информации.#n#nВы должны были получить копию GNU General Public License вместе с этой программой.  Если нет, см. &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="el" invalidated="1" status="2">Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό: ή/μπορείτε να το επιστρέψει και τροποποιήσετε σύμφωνα με τους όρους της GNU General Public License όπως έχουν δημοσιευθεί από το ίδρυμα ελεύθερου λογισμικού, είτε έκδοση 3 της άδειας χρήσης, ή (κατά την επιλογή) οποιαδήποτε μεταγενέστερη έκδοση.#n#nΑυτό το πρόγραμμα διανέμεται με την ελπίδα ότι θα ήταν χρήσιμο, αλλά ΧΩΡΊΣ ΚΆΘΕ WARRANTY, χωρίς καν την σιωπηρή εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ για Α ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ.  Δείτε το GNU General Public License για περισσότερες λεπτομέρειες.#n#nΘα πρέπει να έχετε λάβει ένα αντίγραφο από το GNU General Public License μαζί με αυτό το πρόγραμμα.  Εάν όχι, ανατρέξτε στην ενότητα &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="ar" invalidated="1" status="2">هذا البرنامج هو البرمجيات الحرة: و/لك يمكن توزيع عليه أو تعديله تحت شروط جنو العمومية كما تنشرها "مؤسسة البرمجيات الحرة" إما الإصدار 3 من الترخيص أو (في الخيار لك) أي إصدار أحدث.#n#nيتم توزيع هذا البرنامج على أمل أن سيكون من المفيد ولكن "بدون أي الضمان"; دون حتى ضمان ضمني من بالتسويق أو وملاءمته FOR A معين الغرض.  انظر إلى جنو العمومية للحصول على مزيد من التفاصيل.#n#nوينبغي أن كنت قد تلقيت نسخة من جنو العمومية مع هذا البرنامج.  إذا لم انظر &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="sv" invalidated="1" status="2">Det här programmet är fri programvara: du kan vidaredistribuera det och/eller ändra den enligt villkoren i GNU General Public License as published by Free Software Foundation, antingen version 3 of the License, or (at your option) any later version.#n#nDet här programmet distribueras i hopp om att det kommer att vara användbara, men utan någon garanti, utan även den underförstådda garantin för säljbarhet eller lämplighet för en särskilt syfte.  Se GNU General Public License om du vill veta mer.#n#nDu bör ha fått en kopia av GNU General Public License tillsammans med det här programmet.  Om du inte se &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="zh" date="20091105201040" invalidated="1" status="3">该程序是自由软件：你可以重新发布它和/或修改在GNU通用公共自由软件基金会，使用许可证版本3，或（您自行选择）任何更新的版本出版许可证条款。#n#n这个程式的目的是希望它有用，但没有任何担保，甚至没有适销性或针对特定用途的隐含的担保。详情请参阅GNU通用公共许可证。#n#n您应已收到附随于本程序的GNU通用公共许可证的副本。如果不是，参阅&lt;http://www.gnu.org/licenses/>。</lang>
                 <lang id="zh.tra" date="20091105201902" status="3">該程序是自由軟件：你可以重新發布它和/或修改的條件下，在GNU通用公共許可證的出版自由軟件基金會，或者第3版的許可證，或者（根據你的選擇）用任何更新的版本。#n#n這個程式的目的是希望它有用，但沒有任何擔保，甚至沒有隱含的保證對適銷性或特定目的。請參閱GNU通用公共許可證的更多細節。#n#n您應該已經收到副本的GNU通用公共許可證隨著這一計劃。如果不是，參閱&lt;http://www.gnu.org/licenses/>。</lang>
                 <lang id="ja" date="20091105201756" status="3">このプログラムはフリーソフトウェアです：あなたはこれを再配布することができます/またはGNU General Public Licenseには、Free Software Foundationが、ライセンスのいずれかのバージョン3またはそれ以降のバージョンのオプション（）で発行の条件の下でそれを変更します。#n#nこのプログラムは、期待して有用であると思われるのが、配布されていかなる保証もない現状;商品性または特定目的に対する適合性にも黙示の保証はありません。詳細については、GNU General Public Licenseを参照してください。#n#nあなたはこのプログラムと共に、GNU General Public Licenseのコピーを受け取っている必要があります。ていない場合は、参照してください&lt;http://www.gnu.org/licenses/>。</lang>
@@ -447,7 +441,6 @@
                 <lang id="ru" status="2">Автор:</lang>
                 <lang id="el" status="2">Συγγραφέας:</lang>
                 <lang id="ar" status="2">الكاتب:</lang>
-                <lang id="sv" status="2">Författare:</lang>
                 <lang id="zh" status="2">作者:</lang>
                 <lang id="zh.tra" status="2">作者:</lang>
                 <lang id="ja" status="2">著者:</lang>
@@ -511,7 +504,6 @@
               <lang id="ru" status="2">Закрыть</lang>
               <lang id="el" status="2">Κλείσιμο</lang>
               <lang id="ar" status="2">إغلاق</lang>
-              <lang id="sv" status="2">Stäng</lang>
               <lang id="zh" status="2">关闭</lang>
               <lang id="zh.tra" status="2">關閉</lang>
               <lang id="ja" status="2">閉じる</lang>
@@ -545,7 +537,6 @@
               <lang id="ru" status="2">Сайт проекта</lang>
               <lang id="el" status="2">Τοποθεσία Web έργου</lang>
               <lang id="ar" status="2">موقع المشروع</lang>
-              <lang id="sv" date="20091105202140" status="3">Hem</lang>
               <lang id="zh" status="2">项目网站</lang>
               <lang id="zh.tra" status="2">項目網站</lang>
               <lang id="ja" date="20091105202207" status="3">家</lang>
@@ -573,7 +564,6 @@
             <lang id="ru" status="3">Little Registry Cleaner - Отчет об ошибке</lang>
             <lang id="el" status="2">Μικρή μητρώου κασέτας καθαρισμού - Crash αναφοράς</lang>
             <lang id="ar" status="2">التسجيل قليلة الأعطال المنظف - الإبلاغ</lang>
-            <lang id="sv" status="2">Liten Registry Cleaner - Crash Reporter</lang>
             <lang id="zh" status="2">小处清洁-崩溃记者</lang>
             <lang id="zh.tra" status="2">小處清潔-崩潰記者</lang>
             <lang id="ja" status="2">リトルレジストリクリーナー-クラッシュレポーター</lang>
@@ -605,7 +595,6 @@
                 <lang id="ru" status="2">Не отправлять</lang>
                 <lang id="el" status="2">Δεν αποστολή</lang>
                 <lang id="ar" status="2">عدم إرسال</lang>
-                <lang id="sv" status="2">Inte skicka</lang>
                 <lang id="zh" status="2">不发送</lang>
                 <lang id="zh.tra" status="2">不發送</lang>
                 <lang id="ja" status="2">送信しない</lang>
@@ -633,7 +622,6 @@
                 <lang id="ru" status="3">В одном из компонентов Little Registry Cleaner произошла исключительная ситуация. Мы создали отчет об ошибке, который Вы можете отправить нам. Вся отправляемая информация конфиденциальна и анонимна.</lang>
                 <lang id="el" status="2">Παρουσιάστηκε εξαίρεση στο στοιχείο του Little καθαρισμού μητρώου. Έχουμε δημιουργήσει μια αναφορά σφάλματος την οποία μπορείτε να μας στείλετε. Θα χειριστούμε αυτήν την έκθεση ως εμπιστευτική και ανώνυμη.</lang>
                 <lang id="ar" status="2">حدث استثناء في مكون من "التسجيل ليتل الأنظف". لقد أنشأنا تقريرًا عن خطأ يمكنك إرساله إلينا. وسوف تعاملنا مع هذا التقرير ومجهول.</lang>
-                <lang id="sv" status="2">Ett undantag uppstod i en komponent i Little Registry Cleaner. Vi har skapat en felrapport som du kan skicka. Vi kommer att behandla detta betänkande behandlas konfidentiellt och anonymt.</lang>
                 <lang id="zh" status="2">在发生了异常的小处清洁组成部分。我们已创建一个错误报告，您可以给我们。我们会将此报告视为保密的和匿名。</lang>
                 <lang id="zh.tra" status="2">發生了異常的一個組成部分，在小處清潔。我們已創建一個錯誤報告，您可以給我們。我們將對此報告機密和匿名.</lang>
                 <lang id="ja" status="2">例外リトルレジストリCleanerのコンポーネントで発生しました。我々は、エラーレポートをお送りすることができますを作成している。私たちは、このレポートは機密情報として扱いますと匿名.</lang>
@@ -660,7 +648,6 @@
                 <lang id="ru" status="2">Отправить отчет</lang>
                 <lang id="el" status="2">Αποστολή αναφοράς σφάλματος</lang>
                 <lang id="ar" status="2">إرسال تقرير عن الخطأ</lang>
-                <lang id="sv" status="2">Skicka felrapport</lang>
                 <lang id="zh" status="2">发送错误报告</lang>
                 <lang id="zh.tra" status="2">發送錯誤報告</lang>
                 <lang id="ja" status="2">を送信するエラー報告</lang>
@@ -693,7 +680,6 @@
                 <lang id="ru" status="3">Перезапустить программу</lang>
                 <lang id="el" status="2">Κάντε επανεκκίνηση του προγράμματος</lang>
                 <lang id="ar" status="2">قم بإعادة تشغيل البرنامج</lang>
-                <lang id="sv" status="2">Starta om program</lang>
                 <lang id="zh" status="2">重新启动程序</lang>
                 <lang id="zh.tra" status="2">重新啟動程序</lang>
                 <lang id="ja" status="2">再起動するプログラム</lang>
@@ -734,7 +720,6 @@
             <lang id="ru" status="3">Добавить в список исключений</lang>
             <lang id="el" status="2">Προσθήκη να αγνοήσει λίστα</lang>
             <lang id="ar" status="2">إضافة إلى تجاهل قائمة</lang>
-            <lang id="sv" status="2">Lägga till att bortse från listan</lang>
             <lang id="zh" status="2">添加到忽略列表</lang>
             <lang id="zh.tra" status="2">添加到忽略列表</lang>
             <lang id="ja" status="2">無視リストに追加する</lang>
@@ -760,7 +745,6 @@
               <lang id="ru" status="3">Добавить в список исключений</lang>
               <lang id="el" status="2">Προσθήκη να αγνοήσει λίστα</lang>
               <lang id="ar" status="2">إضافة إلى تجاهل قائمة</lang>
-              <lang id="sv" status="2">Lägga till att bortse från listan</lang>
               <lang id="zh" status="2">添加到忽略列表</lang>
               <lang id="zh.tra" status="2">添加到忽略列表</lang>
               <lang id="ja" status="2">無視リストに追加する</lang>
@@ -786,7 +770,6 @@
                 <lang id="ru" status="2">Выберите раздел:</lang>
                 <lang id="el" status="2">Επιλέξτε το τμήμα:</lang>
                 <lang id="ar" status="2">حدد القسم:</lang>
-                <lang id="sv" status="2">Markera avsnitt:</lang>
                 <lang id="zh" status="2">专责组:</lang>
                 <lang id="zh.tra" status="2">專責組:</lang>
                 <lang id="ja" status="2">セクションを選択:</lang>
@@ -891,7 +874,6 @@
                 <lang id="ru" status="3">Путь в реестре:</lang>
                 <lang id="el" status="2">Διαδρομή μητρώου:</lang>
                 <lang id="ar" status="2">مسار السجل:</lang>
-                <lang id="sv" status="2">Registersökväg:</lang>
                 <lang id="zh" status="2">注册表路径:</lang>
                 <lang id="zh.tra" status="2">註冊表路徑:</lang>
                 <lang id="ja" status="2">レジストリパス:</lang>
@@ -925,7 +907,6 @@
               <lang id="ru" status="3">Отмена</lang>
               <lang id="el" status="2">Ακύρωση</lang>
               <lang id="ar" status="2">إلغاء الأمر</lang>
-              <lang id="sv" status="2">Avbryt</lang>
               <lang id="zh" status="2">取消</lang>
               <lang id="zh.tra" status="2">取消</lang>
               <lang id="ja" status="2">キャンセル</lang>
@@ -952,7 +933,6 @@
               <lang id="ru" status="2">Добавить запись</lang>
               <lang id="el" status="2">Προσθήκη εγγραφής</lang>
               <lang id="ar" status="2">إضافة إدخال</lang>
-              <lang id="sv" status="2">Lägg till post</lang>
               <lang id="zh" status="2">新增项目</lang>
               <lang id="zh.tra" status="2">新增項目</lang>
               <lang id="ja" status="2">エントリを追加する</lang>
@@ -1020,7 +1000,6 @@
                 <lang id="ru" status="3">Выбрать все</lang>
                 <lang id="el" status="2">Επιλογή όλων</lang>
                 <lang id="ar" status="2">تحديد الكل</lang>
-                <lang id="sv" status="2">Markera alla</lang>
                 <lang id="zh" status="2">选择所有</lang>
                 <lang id="zh.tra" status="2">選擇所有</lang>
                 <lang id="ja" status="2">すべて選択</lang>
@@ -1045,7 +1024,6 @@
                 <lang id="ru" status="3">Очистить выбор</lang>
                 <lang id="el" status="2">Επιλέξτε "Κανένα"</lang>
                 <lang id="ar" status="2">حدد بلا</lang>
-                <lang id="sv" status="2">Välj Ingen</lang>
                 <lang id="zh" status="2">选择无</lang>
                 <lang id="zh.tra" status="2">選擇無</lang>
                 <lang id="ja" date="20091030211940" status="3">[なし] を選択します。</lang>
@@ -1070,7 +1048,6 @@
                 <lang id="ru" status="2">Инвертировать выделение</lang>
                 <lang id="el" status="2">Αντιστροφή της επιλογής</lang>
                 <lang id="ar" status="2">عكس الاختيار</lang>
-                <lang id="sv" status="2">Invertera markering</lang>
                 <lang id="zh" status="2">反选</lang>
                 <lang id="zh.tra" status="2">反選</lang>
                 <lang id="ja" status="2">逆選択</lang>
@@ -1099,7 +1076,6 @@
                 <lang id="ru" status="3">Исключить выбранные</lang>
                 <lang id="el" status="2">Εξαίρεση επιλεγμένων</lang>
                 <lang id="ar" status="2">استبعاد المحددة</lang>
-                <lang id="sv" status="2">Exkludera vald</lang>
                 <lang id="zh" status="2">排除选择</lang>
                 <lang id="zh.tra" status="2">排除選擇</lang>
                 <lang id="ja" status="2">除外選択</lang>
@@ -1124,7 +1100,6 @@
                 <lang id="ru" status="3">Просмотр в regedit</lang>
                 <lang id="el" status="2">Προβολή σε regedit</lang>
                 <lang id="ar" status="2">عرض في regedit</lang>
-                <lang id="sv" status="2">Visa i regedit</lang>
                 <lang id="zh" status="2">查看输入regedit</lang>
                 <lang id="zh.tra" status="2">查看輸入regedit</lang>
                 <lang id="ja" status="2">プロフィールファイル名を指定で</lang>
@@ -1154,7 +1129,6 @@
                 <lang id="ru" status="2">Скрыть/Показать</lang>
                 <lang id="el" status="2">Απόκρυψη/Εμφάνιση</lang>
                 <lang id="ar" status="2">إظهار/إخفاء</lang>
-                <lang id="sv" status="2">Dölj/visa</lang>
                 <lang id="zh" status="2">隐藏/显示</lang>
                 <lang id="zh.tra" status="2">隱藏/顯示</lang>
                 <lang id="ja" status="2">非表示/表示</lang>
@@ -1179,7 +1153,6 @@
                 <lang id="ru" status="3">О программе...</lang>
                 <lang id="el" status="2">Σχετικά με...</lang>
                 <lang id="ar" status="2">حول...</lang>
-                <lang id="sv" status="2">Om...</lang>
                 <lang id="zh" status="2">大约...</lang>
                 <lang id="zh.tra" status="2">大約...</lang>
                 <lang id="ja" status="2">〜について...</lang>
@@ -1208,7 +1181,6 @@
                 <lang id="ru" status="3">Выход</lang>
                 <lang id="el" status="2">Εξόδου</lang>
                 <lang id="ar" status="2">خروج</lang>
-                <lang id="sv" status="2">Avsluta</lang>
                 <lang id="zh" status="2">退出</lang>
                 <lang id="zh.tra" status="2">退出</lang>
                 <lang id="ja" status="2">終了</lang>
@@ -1264,7 +1236,6 @@
                   <lang id="ru" status="3">Добро пожаловать в Little Registry Cleaner!</lang>
                   <lang id="el" status="2">Καλώς ήλθατε στο Little Registry Cleaner!</lang>
                   <lang id="ar" status="2">مرحبا بكم في ليتل السجل النظيف!</lang>
-                  <lang id="sv" status="2">Välkommen till Little Registry Cleaner!</lang>
                   <lang id="zh" status="2">欢迎来到小注册表吸尘器!</lang>
                   <lang id="zh.tra" status="2">歡迎來到小註冊表吸塵器!</lang>
                   <lang id="ja" status="2">ようこそリトルレジストリのクリーナー!</lang>
@@ -1332,7 +1303,6 @@
                       <lang id="ru" status="2">Разделы для просмотра</lang>
                       <lang id="el" status="2">Ενότητες προς σάρωση</lang>
                       <lang id="ar" status="2">مقاطع إلى المسح الضوئي</lang>
-                      <lang id="sv" status="2">Avsnitt för att skanna</lang>
                       <lang id="zh" status="2">要扫描的第</lang>
                       <lang id="zh.tra" status="2">章節掃描</lang>
                       <lang id="ja" status="2">スキャンするセクション</lang>
@@ -1354,7 +1324,6 @@
                         <lang id="ru" status="2">ActiveX/COM</lang>
                         <lang id="el" status="2">ActiveX/COM</lang>
                         <lang id="ar" status="2">ActiveX/COM</lang>
-                        <lang id="sv" status="2">ActiveX/COM</lang>
                         <lang id="zh" status="2">的ActiveX /的COM</lang>
                         <lang id="zh.tra" status="2">的ActiveX /的COM</lang>
                         <lang id="ja" status="2">のActiveX / COMの</lang>
@@ -1377,7 +1346,6 @@
                         <lang id="ru" status="3">Информация о программе</lang>
                         <lang id="el" status="2">Πληροφορίες εφαρμογής</lang>
                         <lang id="ar" status="2">معلومات التطبيق</lang>
-                        <lang id="sv" status="2">Programmet info</lang>
                         <lang id="zh" status="2">应用信息</lang>
                         <lang id="zh.tra" status="2">應用信息</lang>
                         <lang id="ja" status="2">アプリケーション情報</lang>
@@ -1400,7 +1368,6 @@
                         <lang id="ru" status="3">Местоположение программ</lang>
                         <lang id="el" status="2">Πρόγραμμα θέσεις</lang>
                         <lang id="ar" status="2">مواقع البرنامج</lang>
-                        <lang id="sv" status="2">Programmet platser</lang>
                         <lang id="zh" status="2">程序位置</lang>
                         <lang id="zh.tra" status="2">程序位置</lang>
                         <lang id="ja" status="2">プログラムの場所</lang>
@@ -1423,7 +1390,6 @@
                         <lang id="ru" status="3">Настройки</lang>
                         <lang id="el" status="2">Οι ρυθμίσεις λογισμικού</lang>
                         <lang id="ar" status="2">إعدادات البرامج</lang>
-                        <lang id="sv" status="2">Programinställningar</lang>
                         <lang id="zh" status="2">软件设置</lang>
                         <lang id="zh.tra" status="2">軟件設置</lang>
                         <lang id="ja" status="2">ソフトウェアの設定</lang>
@@ -1446,7 +1412,6 @@
                         <lang id="ru" status="3">Автозагрузка</lang>
                         <lang id="el" status="2">Εκκίνηση</lang>
                         <lang id="ar" status="2">بدء التشغيل</lang>
-                        <lang id="sv" status="2">Start</lang>
                         <lang id="zh" status="2">启动</lang>
                         <lang id="zh.tra" status="2">啟動</lang>
                         <lang id="ja" status="2">スタートアップ</lang>
@@ -1469,7 +1434,6 @@
                         <lang id="ru" status="2">Системные драйверы</lang>
                         <lang id="el" status="2">Προγράμματα οδήγησης συστήματος</lang>
                         <lang id="ar" status="2">برامج تشغيل النظام</lang>
-                        <lang id="sv" status="2">Systemdrivrutiner</lang>
                         <lang id="zh" status="2">系统驱动程序</lang>
                         <lang id="zh.tra" status="2">系統驅動程序</lang>
                         <lang id="ja" status="2">システムドライバ</lang>
@@ -1492,7 +1456,6 @@
                         <lang id="ru" status="3">Общие библиотеки</lang>
                         <lang id="el" status="2">Κοινόχρηστο dll</lang>
                         <lang id="ar" status="2">ملفات DLL المشتركة</lang>
-                        <lang id="sv" status="2">Delade DLL-filer</lang>
                         <lang id="zh" status="2">共享DLL</lang>
                         <lang id="zh.tra" status="2">共享DLL</lang>
                         <lang id="ja" status="2">共有DLL</lang>
@@ -1515,7 +1478,6 @@
                         <lang id="ru" status="3">Файлы помощи</lang>
                         <lang id="el" status="2">Αρχεία της βοήθειας</lang>
                         <lang id="ar" status="2">للمساعدة في الملفات</lang>
-                        <lang id="sv" status="2">Hjälpfiler</lang>
                         <lang id="zh" status="2">帮助文件</lang>
                         <lang id="zh.tra" status="2">幫助文件</lang>
                         <lang id="ja" status="2">ヘルプファイル</lang>
@@ -1538,7 +1500,6 @@
                         <lang id="ru" status="2">Звуковые события</lang>
                         <lang id="el" status="2">Συμβάντα ήχου</lang>
                         <lang id="ar" status="2">أحداث الصوت</lang>
-                        <lang id="sv" status="2">Sund Events</lang>
                         <lang id="zh" status="2">声音事件</lang>
                         <lang id="zh.tra" status="2">聲音事件</lang>
                         <lang id="ja" status="2">サウンドイベント</lang>
@@ -1561,7 +1522,6 @@
                         <lang id="ru" status="3">Список изменений</lang>
                         <lang id="el" status="2">Λίστα ιστορικού</lang>
                         <lang id="ar" status="2">قائمة المحفوظات</lang>
-                        <lang id="sv" status="2">Historia lista</lang>
                         <lang id="zh" status="2">历史列表</lang>
                         <lang id="zh.tra" status="2">歷史列表</lang>
                         <lang id="ja" status="2">履歴リスト</lang>
@@ -1584,7 +1544,6 @@
                         <lang id="ru" status="2">Шрифты Windows</lang>
                         <lang id="el" status="2">Γραμματοσειρές των Windows</lang>
                         <lang id="ar" status="2">خطوط Windows</lang>
-                        <lang id="sv" status="2">Windows teckensnitt</lang>
                         <lang id="zh" status="2">Windows字体</lang>
                         <lang id="zh.tra" status="2">Windows字體</lang>
                         <lang id="ja" status="2">Windowsフォント</lang>
@@ -1643,7 +1602,6 @@
                     <lang id="ru" status="2">Проблема</lang>
                     <lang id="el" status="2">Πρόβλημα</lang>
                     <lang id="ar" status="2">المشكلة</lang>
-                    <lang id="sv" status="2">Problemet</lang>
                     <lang id="zh" status="2">问题</lang>
                     <lang id="zh.tra" status="2">問題</lang>
                     <lang id="ja" status="2">問題</lang>
@@ -1665,7 +1623,6 @@
                     <lang id="ru" status="2">Расположение</lang>
                     <lang id="el" status="2">Θέση</lang>
                     <lang id="ar" status="2">موقع</lang>
-                    <lang id="sv" status="2">Plats</lang>
                     <lang id="zh" status="2">位置</lang>
                     <lang id="zh.tra" status="2">位置</lang>
                     <lang id="ja" status="2">場所</lang>
@@ -1688,7 +1645,6 @@
                     <lang id="ru" status="3">Название</lang>
                     <lang id="el" status="2">Όνομα τιμής</lang>
                     <lang id="ar" status="2">اسم القيمة</lang>
-                    <lang id="sv" status="2">Värdenamn</lang>
                     <lang id="zh" status="2">值名称</lang>
                     <lang id="zh.tra" status="2">值名稱</lang>
                     <lang id="ja" date="20091030211755" status="3">値の名前</lang>
@@ -1737,7 +1693,6 @@
                   <lang id="ru" status="2">Файл</lang>
                   <lang id="el" status="2">Αρχείο</lang>
                   <lang id="ar" status="2">ملف</lang>
-                  <lang id="sv" status="2">Filen</lang>
                   <lang id="zh" status="2">文件</lang>
                   <lang id="zh.tra" status="2">文件</lang>
                   <lang id="ja" status="2">ファイル</lang>
@@ -1761,7 +1716,6 @@
                     <lang id="ru" status="2">Сканирование реестра</lang>
                     <lang id="el" status="2">Σάρωση του μητρώου</lang>
                     <lang id="ar" status="2">مسح السجل</lang>
-                    <lang id="sv" status="2">Registret</lang>
                     <lang id="zh" status="2">扫描注册表</lang>
                     <lang id="zh.tra" status="2">掃描註冊表</lang>
                     <lang id="ja" status="2">スキャンレジストリ</lang>
@@ -1786,7 +1740,6 @@
                     <lang id="ru" status="2">Устранение неполадок</lang>
                     <lang id="el" status="2">Διόρθωση προβλημάτων</lang>
                     <lang id="ar" status="2">إصلاح المشاكل</lang>
-                    <lang id="sv" status="2">Åtgärda problem</lang>
                     <lang id="zh" status="2">解决问题</lang>
                     <lang id="zh.tra" status="2">解決問題</lang>
                     <lang id="ja" status="2">問題を修正</lang>
@@ -1811,7 +1764,6 @@
                     <lang id="ru" status="2">Восстановление реестра</lang>
                     <lang id="el" status="2">Επαναφορά του μητρώου</lang>
                     <lang id="ar" status="2">استعادة التسجيل</lang>
-                    <lang id="sv" status="2">Återställa registret</lang>
                     <lang id="zh" status="2">还原注册表</lang>
                     <lang id="zh.tra" status="2">還原註冊表</lang>
                     <lang id="ja" status="2">復元するレジストリ</lang>
@@ -1840,7 +1792,6 @@
                     <lang id="ru" status="3">Выход</lang>
                     <lang id="el" status="2">Εξόδου</lang>
                     <lang id="ar" status="2">خروج</lang>
-                    <lang id="sv" status="2">Avsluta</lang>
                     <lang id="zh" status="2">退出</lang>
                     <lang id="zh.tra" status="2">退出</lang>
                     <lang id="ja" status="2">終了</lang>
@@ -1866,7 +1817,6 @@
                   <lang id="ru" status="2">Редактирование</lang>
                   <lang id="el" status="2">Επεξεργασία</lang>
                   <lang id="ar" status="2">تحرير</lang>
-                  <lang id="sv" status="2">Redigera</lang>
                   <lang id="zh" status="2">编辑</lang>
                   <lang id="zh.tra" status="2">編輯</lang>
                   <lang id="ja" status="2">[編集]</lang>
@@ -1890,7 +1840,6 @@
                     <lang id="ru" status="3">Выбрать все</lang>
                     <lang id="el" status="2">Επιλογή όλων</lang>
                     <lang id="ar" status="2">تحديد الكل</lang>
-                    <lang id="sv" status="2">Markera alla</lang>
                     <lang id="zh" status="2">选择所有</lang>
                     <lang id="zh.tra" status="2">選擇所有</lang>
                     <lang id="ja" status="2">すべて選択</lang>
@@ -1915,7 +1864,6 @@
                     <lang id="ru" status="3">Очистить выбор</lang>
                     <lang id="el" status="2">Επιλέξτε "Κανένα"</lang>
                     <lang id="ar" status="2">حدد بلا</lang>
-                    <lang id="sv" status="2">Välj Ingen</lang>
                     <lang id="zh" status="2">选择无</lang>
                     <lang id="zh.tra" status="2">選擇無</lang>
                     <lang id="ja" status="3">[なし] を選択します。</lang>
@@ -1940,7 +1888,6 @@
                     <lang id="ru" status="2">Инвертировать выделение</lang>
                     <lang id="el" status="2">Αντιστροφή της επιλογής</lang>
                     <lang id="ar" status="2">عكس الاختيار</lang>
-                    <lang id="sv" status="2">Invertera markering</lang>
                     <lang id="zh" status="2">反选</lang>
                     <lang id="zh.tra" status="2">反選</lang>
                     <lang id="ja" status="2">逆選択</lang>
@@ -1969,7 +1916,6 @@
                     <lang id="ru" status="3">Исключить выбранные</lang>
                     <lang id="el" status="2">Εξαίρεση επιλεγμένων</lang>
                     <lang id="ar" status="2">استبعاد المحددة</lang>
-                    <lang id="sv" status="2">Exkludera vald</lang>
                     <lang id="zh" status="2">排除选择</lang>
                     <lang id="zh.tra" status="2">排除選擇</lang>
                     <lang id="ja" status="2">除外選択</lang>
@@ -1994,7 +1940,6 @@
                     <lang id="ru" status="3">Просмотр в regedit</lang>
                     <lang id="el" status="2">Προβολή σε regedit</lang>
                     <lang id="ar" status="2">عرض في regedit</lang>
-                    <lang id="sv" status="2">Visa i regedit</lang>
                     <lang id="zh" status="2">查看输入regedit</lang>
                     <lang id="zh.tra" status="2">查看輸入regedit</lang>
                     <lang id="ja" status="2">プロフィールファイル名を指定で</lang>
@@ -2020,7 +1965,6 @@
                   <lang id="ru" status="3">Язык</lang>
                   <lang id="el" date="20091030213943" status="3">Γλώσσα</lang>
                   <lang id="ar" date="20091030211311" status="3">لغة</lang>
-                  <lang id="sv" status="2">Lengua</lang>
                   <lang id="zh" date="20091030211540" status="3">语言</lang>
                   <lang id="zh.tra" date="20091030211613" status="3">語言</lang>
                   <lang id="ja" date="20091030212305" status="3">言語</lang>
@@ -2044,7 +1988,6 @@
                     <lang id="ru" status="2">Английский</lang>
                     <lang id="el" status="2">Αγγλικά</lang>
                     <lang id="ar" status="2">الانجليزية</lang>
-                    <lang id="sv" status="2">Inglés</lang>
                     <lang id="zh" date="20091030211502" status="3">英语</lang>
                     <lang id="zh.tra" date="20091030211650" status="3">英語</lang>
                     <lang id="ja" date="20091030211813" status="3">英語</lang>
@@ -2069,7 +2012,6 @@
                     <lang id="ru" status="2">Французский</lang>
                     <lang id="el" status="2">Γαλλικά</lang>
                     <lang id="ar" status="2">الفرنسية</lang>
-                    <lang id="sv" status="2">Franska</lang>
                     <lang id="zh" status="2">法语</lang>
                     <lang id="zh.tra" status="2">法語</lang>
                     <lang id="ja" status="2">フランス語</lang>
@@ -2094,7 +2036,6 @@
                     <lang id="ru" status="2">Испанский</lang>
                     <lang id="el" status="2">Ισπανικά</lang>
                     <lang id="ar" status="2">الأسبانية</lang>
-                    <lang id="sv" status="2">Spanska</lang>
                     <lang id="zh" status="2">西班牙语</lang>
                     <lang id="zh.tra" status="2">西班牙語</lang>
                     <lang id="ja" status="2">スペイン語</lang>
@@ -2119,7 +2060,6 @@
                     <lang id="ru" status="2">Португальский</lang>
                     <lang id="el" status="2">Πορτογαλικά</lang>
                     <lang id="ar" status="2">البرتغالية</lang>
-                    <lang id="sv" status="2">Portugisiska</lang>
                     <lang id="zh" status="2">葡萄牙语</lang>
                     <lang id="zh.tra" status="2">葡萄牙語</lang>
                     <lang id="ja" status="2">ポルトガル語</lang>
@@ -2144,7 +2084,6 @@
                     <lang id="ru" status="2">Итальянский</lang>
                     <lang id="el" status="2">Ιταλικά</lang>
                     <lang id="ar" status="2">الايطالية</lang>
-                    <lang id="sv" status="2">Italienska</lang>
                     <lang id="zh" status="2">意大利语</lang>
                     <lang id="zh.tra" status="2">意大利語</lang>
                     <lang id="ja" status="2">イタリア語</lang>
@@ -2169,7 +2108,6 @@
                     <lang id="ru" status="2">Голландский</lang>
                     <lang id="el" status="2">Ολλανδικά</lang>
                     <lang id="ar" status="2">الهولندية</lang>
-                    <lang id="sv" status="2">Nederländska</lang>
                     <lang id="zh" status="2">荷兰文</lang>
                     <lang id="zh.tra" status="2">荷蘭文</lang>
                     <lang id="ja" status="2">オランダ語</lang>
@@ -2194,7 +2132,6 @@
                     <lang id="ru" status="2">Немецкий</lang>
                     <lang id="el" status="2">Γερμανικά</lang>
                     <lang id="ar" status="2">الألمانية</lang>
-                    <lang id="sv" status="2">Tyska</lang>
                     <lang id="zh" status="2">德语</lang>
                     <lang id="zh.tra" status="2">德語</lang>
                     <lang id="ja" status="2">ドイツ語</lang>
@@ -2219,7 +2156,6 @@
                     <lang id="ru" status="2">Русский</lang>
                     <lang id="el" status="2">Ρωσικά</lang>
                     <lang id="ar" status="2">الروسية</lang>
-                    <lang id="sv" status="2">Ryska</lang>
                     <lang id="zh" status="2">俄文</lang>
                     <lang id="zh.tra" status="2">俄文</lang>
                     <lang id="ja" status="2">ロシア語</lang>
@@ -2244,7 +2180,6 @@
                     <lang id="ru" date="20100113184858" status="3">Венгерский</lang>
                     <lang id="el" date="20100113184918" status="3">Ουγγρικά</lang>
                     <lang id="ar" date="20100113184931" status="3">الهنغارية</lang>
-                    <lang id="sv" date="20100113184956" status="3">Ungerska</lang>
                     <lang id="zh" date="20100113184714" status="3">匈牙利文</lang>
                     <lang id="zh.tra" date="20100113184727" status="3">匈牙利文</lang>
                     <lang id="ja" date="20100113185014" status="3">ハンガリー語</lang>
@@ -2269,7 +2204,6 @@
                     <lang id="ru" status="3">Греческий</lang>
                     <lang id="el" status="2">Ελληνικά</lang>
                     <lang id="ar" status="2">اليونانية</lang>
-                    <lang id="sv" status="2">Grekiska</lang>
                     <lang id="zh" status="2">希腊语</lang>
                     <lang id="zh.tra" status="2">希臘語</lang>
                     <lang id="ja" status="2">ギリシャ語</lang>
@@ -2294,7 +2228,6 @@
                     <lang id="ru" status="2">Арабский</lang>
                     <lang id="el" status="2">Αραβικά</lang>
                     <lang id="ar" status="2">العربية</lang>
-                    <lang id="sv" status="2">Arabiska</lang>
                     <lang id="zh" status="2">阿拉伯语</lang>
                     <lang id="zh.tra" status="2">阿拉伯語</lang>
                     <lang id="ja" status="2">アラビア語</lang>
@@ -2319,7 +2252,6 @@
                     <lang id="ru" status="2">Польский</lang>
                     <lang id="el" status="2">Πολωνικά</lang>
                     <lang id="ar" status="2">البولندية</lang>
-                    <lang id="sv" status="2">Polska</lang>
                     <lang id="zh" status="2">波兰</lang>
                     <lang id="zh.tra" status="2">波蘭</lang>
                     <lang id="ja" status="2">ポーランド</lang>
@@ -2344,7 +2276,6 @@
                     <lang id="ru" status="2">Шведский</lang>
                     <lang id="el" status="2">Σουηδικά</lang>
                     <lang id="ar" status="2">السويدية</lang>
-                    <lang id="sv" status="2">Svenska</lang>
                     <lang id="zh" status="2">瑞典文</lang>
                     <lang id="zh.tra" status="2">瑞典文</lang>
                     <lang id="ja" status="2">スウェーデン語</lang>
@@ -2369,7 +2300,6 @@
                     <lang id="ru" status="2">Японский</lang>
                     <lang id="el" status="2">Ιαπωνικά</lang>
                     <lang id="ar" status="2">اليابانية</lang>
-                    <lang id="sv" status="2">Japanska</lang>
                     <lang id="zh" status="2">日语</lang>
                     <lang id="zh.tra" status="2">日語</lang>
                     <lang id="ja" status="2">日本語</lang>
@@ -2394,7 +2324,6 @@
                     <lang id="ru" status="2">Китайский (упрощенный)</lang>
                     <lang id="el" status="2">Κινέζικα (απλοποιημένα)</lang>
                     <lang id="ar" status="2">الصينية (المبسطة)</lang>
-                    <lang id="sv" status="2">Kinesiska (förenklad)</lang>
                     <lang id="zh" status="2">中文（简体）</lang>
                     <lang id="zh.tra" status="2">中文（簡體）</lang>
                     <lang id="ja" status="2">中国語（簡体字）</lang>
@@ -2419,7 +2348,6 @@
                     <lang id="ru" status="2">Китайский (традиционный)</lang>
                     <lang id="el" status="2">Κινέζικα (Παραδοσιακά)</lang>
                     <lang id="ar" status="2">الصينية (التقليدية)</lang>
-                    <lang id="sv" status="2">Kinesiska (traditionell)</lang>
                     <lang id="zh" status="2">中文（繁体）</lang>
                     <lang id="zh.tra" status="2">中文（繁體）</lang>
                     <lang id="ja" status="2">中国語（繁体字）</lang>
@@ -2444,7 +2372,6 @@
                     <lang id="ru" status="2">Вьетнамский</lang>
                     <lang id="el" status="2">Βιετνάμ</lang>
                     <lang id="ar" status="2">الفيتنامية</lang>
-                    <lang id="sv" status="2">Vietnamesiska</lang>
                     <lang id="zh" status="2">越南文</lang>
                     <lang id="zh.tra" status="2">越南文</lang>
                     <lang id="ja" status="2">ベトナム語</lang>
@@ -2469,7 +2396,6 @@
                     <lang id="ru" status="2">Тайский</lang>
                     <lang id="el" status="2">Ταϊλανδικά</lang>
                     <lang id="ar" status="2">التايلاندية</lang>
-                    <lang id="sv" status="2">Thai</lang>
                     <lang id="zh" status="2">泰国</lang>
                     <lang id="zh.tra" status="2">泰國</lang>
                     <lang id="ja" status="2">タイ</lang>
@@ -2495,7 +2421,6 @@
                   <lang id="ru" status="2">Инструменты</lang>
                   <lang id="el" status="2">Εργαλεία</lang>
                   <lang id="ar" status="2">أدوات</lang>
-                  <lang id="sv" status="2">Verktyg</lang>
                   <lang id="zh" status="2">工具</lang>
                   <lang id="zh.tra" status="2">工具</lang>
                   <lang id="ja" status="2">道具</lang>
@@ -2519,7 +2444,6 @@
                     <lang id="ru" status="3">Менеджер автозагрузки</lang>
                     <lang id="el" status="2">Διαχείριση εκκίνησης</lang>
                     <lang id="ar" status="2">إدارة بدء التشغيل</lang>
-                    <lang id="sv" status="2">Start Manager</lang>
                     <lang id="zh" status="2">启动管理器</lang>
                     <lang id="zh.tra" status="2">啟動管理器</lang>
                     <lang id="ja" status="2">スタートアップマネージャ</lang>
@@ -2544,7 +2468,6 @@
                     <lang id="ru" status="3">Менеджер деинсталляции</lang>
                     <lang id="el" status="2">Κατάργηση της εγκατάστασης διαχείρισης</lang>
                     <lang id="ar" status="2">إلغاء تثبيت إدارة</lang>
-                    <lang id="sv" status="2">Avinstallera Manager</lang>
                     <lang id="zh" status="2">卸载管理</lang>
                     <lang id="zh.tra" status="2">卸載管理</lang>
                     <lang id="ja" status="2">をアンインストールするマネージャ</lang>
@@ -2573,7 +2496,6 @@
                     <lang id="ru" status="2">Параметры</lang>
                     <lang id="el" status="2">Επιλογές</lang>
                     <lang id="ar" status="2">خيارات</lang>
-                    <lang id="sv" status="2">Alternativ</lang>
                     <lang id="zh" status="2">选项</lang>
                     <lang id="zh.tra" status="2">選項</lang>
                     <lang id="ja" status="2">オプション</lang>
@@ -2599,7 +2521,6 @@
                   <lang id="ru" status="2">Справка</lang>
                   <lang id="el" status="2">Βοήθεια</lang>
                   <lang id="ar" status="2">تعليمات</lang>
-                  <lang id="sv" status="2">Hjälp</lang>
                   <lang id="zh" status="2">帮助</lang>
                   <lang id="zh.tra" status="2">幫助</lang>
                   <lang id="ja" status="2">ヘルプ</lang>
@@ -2623,7 +2544,6 @@
                     <lang id="ru" status="2">Справка</lang>
                     <lang id="el" status="2">Βοήθεια</lang>
                     <lang id="ar" status="2">تعليمات</lang>
-                    <lang id="sv" status="2">Hjälp</lang>
                     <lang id="zh" status="2">帮助</lang>
                     <lang id="zh.tra" status="2">幫助</lang>
                     <lang id="ja" status="2">ヘルプ</lang>
@@ -2652,7 +2572,6 @@
                     <lang id="ru" status="3">Посетить сайт программы</lang>
                     <lang id="el" status="2">Επίσκεψη τοποθεσίας Web</lang>
                     <lang id="ar" status="2">زيارة الموقع</lang>
-                    <lang id="sv" status="2">Besök webbplatsen</lang>
                     <lang id="zh" status="2">访问网站</lang>
                     <lang id="zh.tra" status="2">訪問網站</lang>
                     <lang id="ja" status="2">ご覧のウェブサイト</lang>
@@ -2677,7 +2596,6 @@
                     <lang id="ru" status="2">Проверить наличие обновлений</lang>
                     <lang id="el" status="2">Έλεγχος για ενημερώσεις</lang>
                     <lang id="ar" status="2">التحقق من وجود تحديثات</lang>
-                    <lang id="sv" status="2">Sök efter uppdateringar</lang>
                     <lang id="zh" status="2">检查更新</lang>
                     <lang id="zh.tra" status="2">檢查更新</lang>
                     <lang id="ja" status="2">更新プログラムの確認</lang>
@@ -2706,7 +2624,6 @@
                     <lang id="ru" status="3">О программе...</lang>
                     <lang id="el" status="2">Σχετικά με...</lang>
                     <lang id="ar" status="2">حول...</lang>
-                    <lang id="sv" status="2">Om...</lang>
                     <lang id="zh" status="2">大约...</lang>
                     <lang id="zh.tra" status="2">大約...</lang>
                     <lang id="ja" status="2">〜について...</lang>
@@ -2756,7 +2673,6 @@
                   <lang id="ru" status="2">Сканирование реестра</lang>
                   <lang id="el" status="2">Σάρωση του μητρώου</lang>
                   <lang id="ar" status="2">مسح السجل</lang>
-                  <lang id="sv" status="2">Registret</lang>
                   <lang id="zh" status="2">扫描注册表</lang>
                   <lang id="zh.tra" status="2">掃描註冊表</lang>
                   <lang id="ja" status="2">スキャンレジストリ</lang>
@@ -2781,7 +2697,6 @@
                   <lang id="ru" status="2">Устранение неполадок</lang>
                   <lang id="el" status="2">Διόρθωση προβλημάτων</lang>
                   <lang id="ar" status="2">إصلاح المشاكل</lang>
-                  <lang id="sv" status="2">Åtgärda problem</lang>
                   <lang id="zh" status="2">解决问题</lang>
                   <lang id="zh.tra" status="2">解決問題</lang>
                   <lang id="ja" status="2">問題を修正</lang>
@@ -2806,7 +2721,6 @@
                   <lang id="ru" status="2">Восстановление реестра</lang>
                   <lang id="el" status="2">Επαναφορά του μητρώου</lang>
                   <lang id="ar" status="2">استعادة التسجيل</lang>
-                  <lang id="sv" status="2">Återställa registret</lang>
                   <lang id="zh" status="2">还原注册表</lang>
                   <lang id="zh.tra" status="2">還原註冊表</lang>
                   <lang id="ja" status="2">復元するレジストリ</lang>
@@ -2835,7 +2749,6 @@
                   <lang id="ru" status="2">Параметры</lang>
                   <lang id="el" status="2">Επιλογές</lang>
                   <lang id="ar" status="2">خيارات</lang>
-                  <lang id="sv" status="2">Alternativ</lang>
                   <lang id="zh" status="2">选项</lang>
                   <lang id="zh.tra" status="2">選項</lang>
                   <lang id="ja" status="2">オプション</lang>
@@ -2860,7 +2773,6 @@
                   <lang id="ru" status="2">Справка</lang>
                   <lang id="el" status="2">Βοήθεια</lang>
                   <lang id="ar" status="2">تعليمات</lang>
-                  <lang id="sv" status="2">Hjälp</lang>
                   <lang id="zh" status="2">帮助</lang>
                   <lang id="zh.tra" status="2">幫助</lang>
                   <lang id="ja" status="2">ヘルプ</lang>
@@ -2916,7 +2828,6 @@
             <lang id="ru" status="3">Little Registry Cleaner - Настройки</lang>
             <lang id="el" status="2">Μικρή μητρώου κασέτας καθαρισμού - επιλογές</lang>
             <lang id="ar" status="2">التسجيل ضئيلة المنظف - خيارات</lang>
-            <lang id="sv" status="2">Liten Registry Cleaner - alternativ</lang>
             <lang id="zh" status="2">小注册表清理器-选项</lang>
             <lang id="zh.tra" status="2">小註冊表清理器-選項</lang>
             <lang id="ja" status="2">リトルRegistry Cleanerは、 - [オプション]</lang>
@@ -2942,7 +2853,6 @@
               <lang id="ru" status="2">Отмена</lang>
               <lang id="el" status="2">Ακύρωση</lang>
               <lang id="ar" status="2">إلغاء الأمر</lang>
-              <lang id="sv" status="2">Avbryt</lang>
               <lang id="zh" status="2">取消</lang>
               <lang id="zh.tra" status="2">取消</lang>
               <lang id="ja" status="2">キャンセル</lang>
@@ -2969,7 +2879,6 @@
               <lang id="ru" status="3">ОК</lang>
               <lang id="el" status="2">OK</lang>
               <lang id="ar" status="2">موافق</lang>
-              <lang id="sv" status="2">OKEJ</lang>
               <lang id="zh" status="2">行</lang>
               <lang id="zh.tra" status="2">還行</lang>
               <lang id="ja" status="2">[OK]を</lang>
@@ -3001,7 +2910,6 @@
                 <lang id="ru" status="2">Общие</lang>
                 <lang id="el" status="2">Γενικά</lang>
                 <lang id="ar" status="2">العامة</lang>
-                <lang id="sv" status="2">Allmänna</lang>
                 <lang id="zh" status="2">一般</lang>
                 <lang id="zh.tra" status="2">一般</lang>
                 <lang id="ja" status="2">一般的な</lang>
@@ -3027,7 +2935,6 @@
                   <lang id="ru" status="3">Выберите папку для резервного копирования удаленных элементов реестра</lang>
                   <lang id="el" status="2">Επιλέξτε ένα φάκελο αντιγράφων ασφαλείας διαγράφηκε μητρώου καταχωρήσεις </lang>
                   <lang id="ar" status="2">حدد مجلد الذي تريد إدخالات التسجيل المحذوفة النسخ الاحتياطي </lang>
-                  <lang id="sv" status="2">Välj en mapp om du vill säkerhetskopiera borttagna registerposterna </lang>
                   <lang id="zh" status="2">选择一个备份文件夹中删除的注册表项 </lang>
                   <lang id="zh.tra" status="2">選擇一個文件夾備份刪除註冊表項 </lang>
                   <lang id="ja" status="2">選択してバックアップのレジストリエントリを削除するためのフォルダ </lang>
@@ -3053,7 +2960,6 @@
                     <lang id="ru" status="2">Обзор...</lang>
                     <lang id="el" status="2">Αναζήτηση...</lang>
                     <lang id="ar" status="2">تصفح...</lang>
-                    <lang id="sv" status="2">Bläddra...</lang>
                     <lang id="zh" status="2">浏览...</lang>
                     <lang id="zh.tra" status="2">瀏覽...</lang>
                     <lang id="ja" status="2">ブラウズ...</lang>
@@ -3087,7 +2993,6 @@
                   <lang id="ru" status="2">Параметры</lang>
                   <lang id="el" status="2">Επιλογές</lang>
                   <lang id="ar" status="2">خيارات</lang>
-                  <lang id="sv" status="2">Alternativ</lang>
                   <lang id="zh" status="2">选项</lang>
                   <lang id="zh.tra" status="2">選項</lang>
                   <lang id="ja" status="2">オプション</lang>
@@ -3114,7 +3019,6 @@
                       <lang id="ru" status="3">Журналировать операции с реестром</lang>
                       <lang id="el" status="2">Αρχείο καταγραφής μητρώου σαρώνει και διορθώνει</lang>
                       <lang id="ar" status="2">التسجيل سجل بتفحص وإصلاحات</lang>
-                      <lang id="sv" status="2">Loggen registret sökningar och korrigeringar</lang>
                       <lang id="zh" status="2">日志注册表扫描和修复</lang>
                       <lang id="zh.tra" status="2">日誌註冊表掃描和修復</lang>
                       <lang id="ja" status="2">レジストリをスキャンし、修正ログ</lang>
@@ -3137,7 +3041,6 @@
                       <lang id="ru" status="3">Повторная проверка после устранения ошибок</lang>
                       <lang id="el" status="2">Re-Scan μετά τον καθορισμό των προβλημάτων του μητρώου</lang>
                       <lang id="ar" status="2">Re-Scan بعد إصلاح التسجيل وإصلاحها</lang>
-                      <lang id="sv" status="2">Re-Scan efter registret frågor</lang>
                       <lang id="zh" status="2">Re-Scan 后注册表问题</lang>
                       <lang id="zh.tra" status="2">Re-Scan 後註冊表問題</lang>
                       <lang id="ja" status="2">レジストリの問題を修正後の re-Scan します。</lang>
@@ -3160,7 +3063,6 @@
                       <lang id="ru" status="2">Автоматическая проверка обновлений</lang>
                       <lang id="el" status="2">Αυτόματος έλεγχος για ενημερωμένες εκδόσεις</lang>
                       <lang id="ar" status="2">البحث عن التحديثات تلقائياً</lang>
-                      <lang id="sv" status="2">SÃ¶k efter uppdateringar automatiskt</lang>
                       <lang id="zh" status="2">自动检查更新</lang>
                       <lang id="zh.tra" status="2">自動檢查更新</lang>
                       <lang id="ja" status="2">更新プログラムを自動的にチェック</lang>
@@ -3183,7 +3085,6 @@
                       <lang id="ru" status="3">Автоматически создавать точку восстановления</lang>
                       <lang id="el" status="2">Δημιουργία συστήματος σημεία επαναφοράς αυτόματα</lang>
                       <lang id="ar" status="2">إنشاء نقاط استعادة النظام تلقائياً</lang>
-                      <lang id="sv" status="2">Skapa återställningspunkter automatiskt</lang>
                       <lang id="zh" status="2">创建系统还原点自动</lang>
                       <lang id="zh.tra" status="2">創建系統還原點自動</lang>
                       <lang id="ja" status="2">システムが自動的に復元ポイントを作成します。</lang>
@@ -3206,7 +3107,6 @@
                       <lang id="ru" status="2">Показать журнал после окончания сканирования</lang>
                       <lang id="el" status="2">Εμφάνιση αρχείου καταγραφής μετά την ολοκλήρωση της σάρωσης</lang>
                       <lang id="ar" status="2">إظهار سجل بعد الانتهاء من المسح الضوئي</lang>
-                      <lang id="sv" status="2">Visa logg när klar med skanningen</lang>
                       <lang id="zh" status="2">显示记录完成扫描后</lang>
                       <lang id="zh.tra" status="2">顯示記錄完成掃描後</lang>
                       <lang id="ja" status="2">ログを表示後、スキャンが終了</lang>
@@ -3229,7 +3129,6 @@
                       <lang id="ru" status="2">Удалить файл резервной копии после восстановления реестра</lang>
                       <lang id="el" status="2">Διαγραφή αρχείου αντιγράφων ασφαλείας μετά την επαναφορά του μητρώου</lang>
                       <lang id="ar" status="2">حذف ملف النسخة الاحتياطية بعد استعادة التسجيل</lang>
-                      <lang id="sv" status="2">Ta bort säkerhetskopian efter återställning av registret</lang>
                       <lang id="zh" status="2">删除之后还原注册表的备份文件</lang>
                       <lang id="zh.tra" status="2">刪除之後還原註冊表的備份檔案</lang>
                       <lang id="ja" status="2">レジストリを復元した後、バックアップ ファイルを削除します。</lang>
@@ -3252,7 +3151,6 @@
                       <lang id="ru" status="2">Игнорировать отсутствующие файлы на съемном носителе</lang>
                       <lang id="el" status="2">Αγνοεί αρχεία που λείπουν σε αφαιρούμενα μέσα αποθήκευσης</lang>
                       <lang id="ar" status="2">تجاهل الملفات المفقودة على وسائط قابلة للإزالة</lang>
-                      <lang id="sv" status="2">Ignorera filer som saknas på flyttbara media</lang>
                       <lang id="zh" status="2">在可移动媒体忽略丢失的文件</lang>
                       <lang id="zh.tra" status="2">忽略丟失的文件在可移動媒體</lang>
                       <lang id="ja" status="2">リムーバブルメディア上に存在しないファイルを無視する</lang>
@@ -3275,7 +3173,6 @@
                       <lang id="ru" status="3">Автоматически восстанавливать элементы реестра</lang>
                       <lang id="el" status="2">Αυτόματη επισκευή στοιχεία μητρώου</lang>
                       <lang id="ar" status="2">تلقائيا إصلاح عناصر السجل</lang>
-                      <lang id="sv" status="2">Automatiskt reparera registerposter</lang>
                       <lang id="zh" status="2">自动修复注册表项</lang>
                       <lang id="zh.tra" status="2">自動修復註冊表項</lang>
                       <lang id="ja" status="2">自動的にレジストリ項目を修復する</lang>
@@ -3298,7 +3195,6 @@
                       <lang id="ru" status="3">Выйти из программы после ремонта реестра</lang>
                       <lang id="el" status="2">Έξοδος από το πρόγραμμα μετά την επισκευή του μητρώου</lang>
                       <lang id="ar" status="2">بعد خروج برنامج اصلاح التسجيل</lang>
-                      <lang id="sv" status="2">Avsluta program efter reparation register</lang>
                       <lang id="zh" status="2">退出程序后修复注册表</lang>
                       <lang id="zh.tra" status="2">退出程序後修復註冊表</lang>
                       <lang id="ja" status="2">レジストリの修復後、出口プログラム</lang>
@@ -3327,7 +3223,6 @@
                   <lang id="ru" status="3">Выберите папку для сохранения логов</lang>
                   <lang id="el" status="2">Επιλέξτε ένα φάκελο για την αποθήκευση των αρχείων καταγραφής</lang>
                   <lang id="ar" status="2">حدد مجلد الذي تريد حفظ ملفات السجل إلى</lang>
-                  <lang id="sv" status="2">Välj en mapp där du vill spara loggfilerna till</lang>
                   <lang id="zh" status="2">选择一个文件夹保存日志文件</lang>
                   <lang id="zh.tra" status="2">選擇一個文件夾保存日誌文件</lang>
                   <lang id="ja" status="2">フォルダを選択し、ログを保存するファイル</lang>
@@ -3359,7 +3254,6 @@
                     <lang id="ru" status="2">Обзор...</lang>
                     <lang id="el" status="2">Αναζήτηση...</lang>
                     <lang id="ar" status="2">تصفح...</lang>
-                    <lang id="sv" status="2">Bläddra...</lang>
                     <lang id="zh" status="2">浏览...</lang>
                     <lang id="zh.tra" status="2">瀏覽...</lang>
                     <lang id="ja" status="2">ブラウズ...</lang>
@@ -3388,7 +3282,6 @@
                 <lang id="ru" status="3">Список исключений</lang>
                 <lang id="el" status="2">Παράβλεψη της λίστας</lang>
                 <lang id="ar" status="2">تجاهل قائمة</lang>
-                <lang id="sv" status="2">Ignorera lista</lang>
                 <lang id="zh" status="2">忽略列表</lang>
                 <lang id="zh.tra" status="2">忽略列表</lang>
                 <lang id="ja" status="2">無視リスト</lang>
@@ -3415,7 +3308,6 @@
                     <lang id="ru" status="3">Исключаемые файлы и папки</lang>
                     <lang id="el" status="2">Αρχεία και φακέλους για να αποκλείσετε</lang>
                     <lang id="ar" status="2">الملفات والمجلدات لاستبعاد</lang>
-                    <lang id="sv" status="2">Filer och mappar som ska uteslutas</lang>
                     <lang id="zh" status="2">文件和文件夹排除</lang>
                     <lang id="zh.tra" status="2">文件和文件夾排除</lang>
                     <lang id="ja" status="2">ファイルやフォルダを除外する</lang>
@@ -3444,7 +3336,6 @@
                   <lang id="ru" status="3">Щелкните правой кнопкой, чтобы добавить или удалить записи</lang>
                   <lang id="el" status="2">Κάντε δεξιό κλικ για να προσθέσετε/καταργήσετε καταχωρήσεις</lang>
                   <lang id="ar" status="2">انقر بزر الماوس الأيمن فوق إضافة/إزالة إدخالات</lang>
-                  <lang id="sv" status="2">Högerklicka på att lägga till/ta bort poster</lang>
                   <lang id="zh" status="2">右键单击添加/删除项目</lang>
                   <lang id="zh.tra" status="2">右鍵單擊添加/刪除項目</lang>
                   <lang id="ja" status="2">右クリックし、追加/エントリを削除する</lang>
@@ -3474,7 +3365,6 @@
                 <lang id="ru" status="2">Добавить файл</lang>
                 <lang id="el" status="2">Προσθήκη αρχείου</lang>
                 <lang id="ar" status="2">إضافة ملف</lang>
-                <lang id="sv" status="2">Lägg till fil</lang>
                 <lang id="zh" status="2">添加文件</lang>
                 <lang id="zh.tra" status="2">添加文件</lang>
                 <lang id="ja" status="2">ファイルを追加する</lang>
@@ -3499,7 +3389,6 @@
                 <lang id="ru" status="2">Добавить папку</lang>
                 <lang id="el" status="2">Προσθήκη φακέλου</lang>
                 <lang id="ar" status="2">إضافة مجلد</lang>
-                <lang id="sv" status="2">Lägg till mapp</lang>
                 <lang id="zh" status="2">添加文件夹</lang>
                 <lang id="zh.tra" status="2">添加文件夾</lang>
                 <lang id="ja" status="2">フォルダを追加する</lang>
@@ -3524,7 +3413,6 @@
                 <lang id="ru" status="2">Добавление пути реестра</lang>
                 <lang id="el" status="2">Προσθήκη διαδρομής μητρώου</lang>
                 <lang id="ar" status="2">إضافة مسار التسجيل</lang>
-                <lang id="sv" status="2">Lägg till registret sökväg</lang>
                 <lang id="zh" status="2">添加注册表路径</lang>
                 <lang id="zh.tra" status="2">添加註冊表路徑</lang>
                 <lang id="ja" status="2">レジストリのパスを追加する</lang>
@@ -3553,7 +3441,6 @@
                 <lang id="ru" status="2">Удалить запись</lang>
                 <lang id="el" status="2">Κατάργηση καταχώρησης</lang>
                 <lang id="ar" status="2">إزالة إدخال</lang>
-                <lang id="sv" status="2">Ta bort post</lang>
                 <lang id="zh" status="2">删除条目</lang>
                 <lang id="zh.tra" status="2">刪除條目</lang>
                 <lang id="ja" status="2">エントリ削除</lang>
@@ -3582,7 +3469,6 @@
             <lang id="ru" status="3">Little Registry Cleaner - восстановление реестра</lang>
             <lang id="el" status="2">Μικρή μητρώου κασέτας καθαρισμού - Επαναφορά μητρώου</lang>
             <lang id="ar" status="2">التسجيل ضئيلة المنظف - استعادة التسجيل</lang>
-            <lang id="sv" status="2">Liten Registry Cleaner - återställa registret</lang>
             <lang id="zh" status="2">小处清洁-还原注册表</lang>
             <lang id="zh.tra" status="2">小處清潔-還原註冊表</lang>
             <lang id="ja" status="2">リトルレジストリクリーナー-復元レジストリ</lang>
@@ -3637,7 +3523,6 @@
                   <lang id="ru" status="3">Открыть папку...</lang>
                   <lang id="el" status="2">Άνοιγμα καταλόγου...</lang>
                   <lang id="ar" status="2">دليل المفتوحة...</lang>
-                  <lang id="sv" status="2">Öppna Directory...</lang>
                   <lang id="zh" status="2">开放目录...</lang>
                   <lang id="zh.tra" status="2">開放目錄...</lang>
                   <lang id="ja" status="2">オープンディレクトリ...</lang>
@@ -3667,7 +3552,6 @@
                   <lang id="ru" status="2">Восстановление</lang>
                   <lang id="el" status="2">Επαναφορά</lang>
                   <lang id="ar" status="2">استعادة</lang>
-                  <lang id="sv" status="2">Återställa</lang>
                   <lang id="zh" status="2">还原</lang>
                   <lang id="zh.tra" status="2">還原</lang>
                   <lang id="ja" status="2">復元</lang>
@@ -3695,7 +3579,6 @@
                 <lang id="ru" status="3">Выберите файл, чтобы восстановить ваш реестр в предыдущее состояние</lang>
                 <lang id="el" status="2">Επιλέξτε ένα αρχείο παρακάτω, για να επαναφέρετε το μητρώο σας σε μια προηγούμενη κατάσταση</lang>
                 <lang id="ar" status="2">حدد ملف أدناه لاستعادة التسجيل إلى حالته السابقة</lang>
-                <lang id="sv" status="2">Välj en fil som nedan för att återställa registret till ett tidigare tillstånd</lang>
                 <lang id="zh" status="2">下面选择一个文件恢复注册表到以前的状态</lang>
                 <lang id="zh.tra" status="2">下面選擇一個文件恢復註冊表到以前的狀態</lang>
                 <lang id="ja" status="2">を選択して以前の状態にレジストリを復元するには下のファイル</lang>
@@ -3723,7 +3606,6 @@
                   <lang id="ru" status="2">Имя файла</lang>
                   <lang id="el" status="2">Όνομα αρχείου</lang>
                   <lang id="ar" status="2">اسم الملف</lang>
-                  <lang id="sv" status="2">Filnamn</lang>
                   <lang id="zh" status="2">文件名</lang>
                   <lang id="zh.tra" status="2">檔案名</lang>
                   <lang id="ja" status="2">ファイル名</lang>
@@ -3747,7 +3629,6 @@
                   <lang id="ru" status="2">Дата</lang>
                   <lang id="el" status="2">Ημερομηνία</lang>
                   <lang id="ar" status="2">التاريخ</lang>
-                  <lang id="sv" status="2">Datum</lang>
                   <lang id="zh" status="2">日期</lang>
                   <lang id="zh.tra" status="2">日期</lang>
                   <lang id="ja" status="2">日付</lang>
@@ -3771,7 +3652,6 @@
                   <lang id="ru" status="2">Размер</lang>
                   <lang id="el" status="2">Μέγεθος</lang>
                   <lang id="ar" status="2">حجم</lang>
-                  <lang id="sv" status="2">Storlek</lang>
                   <lang id="zh" status="2">大小</lang>
                   <lang id="zh.tra" status="2">尺寸</lang>
                   <lang id="ja" status="2">寸法</lang>
@@ -3802,7 +3682,6 @@
             <lang id="ru" status="3">Little Registry Cleaner - Сканирование...</lang>
             <lang id="el" status="2">Μικρή Registry Cleaner - Scanning...</lang>
             <lang id="ar" status="2">التسجيل ضئيلة الأنظف - Scanning...</lang>
-            <lang id="sv" status="2">Liten Registry Cleaner - Scanning...</lang>
             <lang id="zh" status="2">小注册表清理器-扫描...</lang>
             <lang id="zh.tra" status="2">小注冊表清潔-掃描...</lang>
             <lang id="ja" status="2">リトルレジストリクリーナー-スキャン...</lang>
@@ -3845,7 +3724,6 @@
                 <lang id="ru" status="2">Остановить</lang>
                 <lang id="el" status="2">Σταμάτα</lang>
                 <lang id="ar" status="2">إيقاف</lang>
-                <lang id="sv" status="2">Stanna</lang>
                 <lang id="zh" status="2">停止</lang>
                 <lang id="zh.tra" status="2">停止</lang>
                 <lang id="ja" status="2">停止する</lang>
@@ -3880,7 +3758,6 @@
                 <lang id="ru" status="2">Обнаружены проблемы: </lang>
                 <lang id="el" status="2">Προβλήματα που εντοπίστηκαν: </lang>
                 <lang id="ar" status="2">تم العثور على مشاكل: </lang>
-                <lang id="sv" status="2">Problem som hittades: </lang>
                 <lang id="zh" status="2">发现的问题: </lang>
                 <lang id="zh.tra" status="2">找到的問題: </lang>
                 <lang id="ja" status="2">問題が見つかりました: </lang>
@@ -3915,7 +3792,6 @@
             <lang id="ru" status="3">Редактирование элемента автозагрузки </lang>
             <lang id="el" status="2">Επεξεργασία στοιχείου εκτέλεση</lang>
             <lang id="ar" status="2">تحرير عنصر التشغيل</lang>
-            <lang id="sv" status="2">Redigera kör objekt</lang>
             <lang id="zh" status="2">编辑运行项目</lang>
             <lang id="zh.tra" status="2">編輯運行專案</lang>
             <lang id="ja" status="2">[編集]を実行アイテム</lang>
@@ -3941,7 +3817,6 @@
               <lang id="ru" status="3">Изменить элемент автозагрузки</lang>
               <lang id="el" status="2">Επεξεργασία καταχώρησης εκκίνησης</lang>
               <lang id="ar" status="2">تحرير إدخال بدء التشغيل</lang>
-              <lang id="sv" status="2">Redigera start post</lang>
               <lang id="zh" status="2">修改启动项</lang>
               <lang id="zh.tra" status="2">編輯啟動專案</lang>
               <lang id="ja" status="2">[編集]スタートアップのエントリ</lang>
@@ -3973,7 +3848,6 @@
                 <lang id="ru" status="3">ОК</lang>
                 <lang id="el" status="2">OK</lang>
                 <lang id="ar" status="2">موافق</lang>
-                <lang id="sv" status="2">OKEJ</lang>
                 <lang id="zh" status="2">行</lang>
                 <lang id="zh.tra" status="2">還行</lang>
                 <lang id="ja" status="2">[OK]を</lang>
@@ -4000,7 +3874,6 @@
                 <lang id="ru" status="2">Отмена</lang>
                 <lang id="el" status="2">Ακύρωση</lang>
                 <lang id="ar" status="2">إلغاء الأمر</lang>
-                <lang id="sv" status="2">Avbryt</lang>
                 <lang id="zh" status="2">取消</lang>
                 <lang id="zh.tra" status="2">取消</lang>
                 <lang id="ja" status="2">キャンセル</lang>
@@ -4027,7 +3900,6 @@
                 <lang id="ru" status="2">Файл:</lang>
                 <lang id="el" status="2">Αρχείο:</lang>
                 <lang id="ar" status="2">ملف:</lang>
-                <lang id="sv" status="2">Filen:</lang>
                 <lang id="zh" status="2">文件:</lang>
                 <lang id="zh.tra" status="2">檔:</lang>
                 <lang id="ja" status="2">ファイル:</lang>
@@ -4054,7 +3926,6 @@
                 <lang id="ru" status="3">Параметры:</lang>
                 <lang id="el" status="2">Τα ορίσματα:</lang>
                 <lang id="ar" status="2">الوسائط:</lang>
-                <lang id="sv" status="2">Argument:</lang>
                 <lang id="zh" status="2">论据:</lang>
                 <lang id="zh.tra" status="2">參數:</lang>
                 <lang id="ja" status="2">引数:</lang>
@@ -4100,7 +3971,6 @@
             <lang id="ru" status="3">Создание элемента автозагрузки</lang>
             <lang id="el" status="2">Νέα εκτέλεση στοιχείου</lang>
             <lang id="ar" status="2">عنصر تشغيل جديد</lang>
-            <lang id="sv" status="2">Nytt kör Outlook-objekt</lang>
             <lang id="zh" status="2">新的运行项目</lang>
             <lang id="zh.tra" status="2">新的運行的專案</lang>
             <lang id="ja" status="2">新しいRunアイテム</lang>
@@ -4126,7 +3996,6 @@
               <lang id="ru" status="2">Отмена</lang>
               <lang id="el" status="2">Ακύρωση</lang>
               <lang id="ar" status="2">إلغاء الأمر</lang>
-              <lang id="sv" status="2">Avbryt</lang>
               <lang id="zh" status="2">取消</lang>
               <lang id="zh.tra" status="2">取消</lang>
               <lang id="ja" status="2">キャンセル</lang>
@@ -4153,7 +4022,6 @@
               <lang id="ru" status="3">ОК</lang>
               <lang id="el" status="2">OK</lang>
               <lang id="ar" status="2">موافق</lang>
-              <lang id="sv" status="2">OKEJ</lang>
               <lang id="zh" status="2">行</lang>
               <lang id="zh.tra" status="2">還行</lang>
               <lang id="ja" status="2">[OK]を</lang>
@@ -4180,7 +4048,6 @@
               <lang id="ru" status="2">Имя и путь</lang>
               <lang id="el" status="2">Όνομα και διαδρομή</lang>
               <lang id="ar" status="2">اسم ومسار</lang>
-              <lang id="sv" status="2">Namn och sökväg</lang>
               <lang id="zh" status="2">名称和路径</lang>
               <lang id="zh.tra" status="2">名稱和路徑</lang>
               <lang id="ja" status="2">名前とパス</lang>
@@ -4206,7 +4073,6 @@
                 <lang id="ru" status="2">Имя:</lang>
                 <lang id="el" status="2">Όνομα:</lang>
                 <lang id="ar" status="2">الاسم:</lang>
-                <lang id="sv" status="2">Namn:</lang>
                 <lang id="zh" status="2">名字:</lang>
                 <lang id="zh.tra" status="2">名稱:</lang>
                 <lang id="ja" status="2">名前:</lang>
@@ -4233,7 +4099,6 @@
                 <lang id="ru" status="2">Путь к файлу:</lang>
                 <lang id="el" status="2">Διαδρομή αρχείου:</lang>
                 <lang id="ar" status="2">مسار الملف:</lang>
-                <lang id="sv" status="2">Filsökväg:</lang>
                 <lang id="zh" status="2">文件路径:</lang>
                 <lang id="zh.tra" status="2">檔路徑:</lang>
                 <lang id="ja" status="2">ファイルのパス:</lang>
@@ -4258,6 +4123,7 @@
                 <native>...</native>
                 <lang id="pt" status="3">...</lang>
                 <lang id="it" status="2">…</lang>
+                <lang id="sv" status="3">…</lang>
               </row>
             </component>
             <component class="TVisEdit" name="textBoxPath" type="System.Windows.Forms.TextBox">
@@ -4283,7 +4149,6 @@
                 <lang id="ru" status="3">Параметры:</lang>
                 <lang id="el" status="2">Τα ορίσματα:</lang>
                 <lang id="ar" status="2">الوسائط:</lang>
-                <lang id="sv" status="2">Argument:</lang>
                 <lang id="zh" status="2">论据:</lang>
                 <lang id="zh.tra" status="2">參數:</lang>
                 <lang id="ja" status="2">引数:</lang>
@@ -4317,7 +4182,6 @@
               <lang id="ru" status="3">Раздел:</lang>
               <lang id="el" status="2">Ενότητα:</lang>
               <lang id="ar" status="2">المقطع:</lang>
-              <lang id="sv" status="2">Avsnitt:</lang>
               <lang id="zh" status="2">科:</lang>
               <lang id="zh.tra" status="2">部分:</lang>
               <lang id="ja" status="2">項:</lang>
@@ -4551,7 +4415,6 @@
             <lang id="ru" status="3">Little Registry Cleaner - Менеджер автозагрузки</lang>
             <lang id="el" status="2">Μικρή Registry Cleaner - Διαχείριση εκκίνησης</lang>
             <lang id="ar" status="2">التسجيل ضئيلة الأنظف - إدارة بدء التشغيل</lang>
-            <lang id="sv" status="2">Liten Registry Cleaner - start Manager</lang>
             <lang id="zh" status="2">小注册表清理器-启动管理器</lang>
             <lang id="zh.tra" status="2">小注冊表清潔-啟動管理器</lang>
             <lang id="ja" status="2">リトルレジストリクリーナー-スタートアップマネージャ</lang>
@@ -4645,7 +4508,6 @@
                     <lang id="ru" status="3">Раздел</lang>
                     <lang id="el" status="2">Ενότητα</lang>
                     <lang id="ar" status="2">المقطع</lang>
-                    <lang id="sv" status="2">Avsnitt</lang>
                     <lang id="zh" status="2">科</lang>
                     <lang id="zh.tra" status="2">部分</lang>
                     <lang id="ja" status="2">項</lang>
@@ -4668,7 +4530,6 @@
                     <lang id="ru" status="2">Путь</lang>
                     <lang id="el" status="2">Διαδρομή</lang>
                     <lang id="ar" status="2">المسار</lang>
-                    <lang id="sv" status="2">Sökväg</lang>
                     <lang id="zh" status="2">路径</lang>
                     <lang id="zh.tra" status="2">路徑</lang>
                     <lang id="ja" status="2">道</lang>
@@ -4691,7 +4552,6 @@
                     <lang id="ru" status="3">Параметры</lang>
                     <lang id="el" status="2">Τα ορίσματα</lang>
                     <lang id="ar" status="2">الوسائط</lang>
-                    <lang id="sv" status="2">Argument</lang>
                     <lang id="zh" status="2">论据</lang>
                     <lang id="zh.tra" status="2">參數</lang>
                     <lang id="ja" status="2">引数</lang>
@@ -4723,7 +4583,6 @@
                   <lang id="ru" status="3">Создать</lang>
                   <lang id="el" status="2">Προσθήκη</lang>
                   <lang id="ar" status="2">إضافة</lang>
-                  <lang id="sv" status="2">Lägga till</lang>
                   <lang id="zh" status="2">添加</lang>
                   <lang id="zh.tra" status="2">添加</lang>
                   <lang id="ja" status="2">追加する</lang>
@@ -4748,7 +4607,6 @@
                   <lang id="ru" status="3">Редактировать</lang>
                   <lang id="el" status="2">Επεξεργασία</lang>
                   <lang id="ar" status="2">تحرير</lang>
-                  <lang id="sv" status="2">Redigera</lang>
                   <lang id="zh" status="2">编辑</lang>
                   <lang id="zh.tra" status="2">編輯</lang>
                   <lang id="ja" status="2">[編集]</lang>
@@ -4773,7 +4631,6 @@
                   <lang id="ru" status="2">Удалить</lang>
                   <lang id="el" status="2">Διαγραφή</lang>
                   <lang id="ar" status="2">حذف</lang>
-                  <lang id="sv" status="2">Ta bort</lang>
                   <lang id="zh" status="2">删除</lang>
                   <lang id="zh.tra" status="2">刪除</lang>
                   <lang id="ja" status="2">削除する</lang>
@@ -4798,7 +4655,6 @@
                   <lang id="ru" status="3">Просмотр элемента</lang>
                   <lang id="el" status="2">Προβολή είδους</lang>
                   <lang id="ar" status="2">عرض عنصر</lang>
-                  <lang id="sv" status="2">Visa objekt</lang>
                   <lang id="zh" status="2">查看物品</lang>
                   <lang id="zh.tra" status="2">查看專案</lang>
                   <lang id="ja" status="2">プロフィールアイテム</lang>
@@ -4823,7 +4679,6 @@
                   <lang id="ru" status="3">Выполнить</lang>
                   <lang id="el" status="2">Εκτέλεση</lang>
                   <lang id="ar" status="2">تشغيل</lang>
-                  <lang id="sv" status="2">Kör</lang>
                   <lang id="zh" status="2">跑</lang>
                   <lang id="zh.tra" status="2">運行</lang>
                   <lang id="ja" status="2">走る</lang>
@@ -4852,7 +4707,6 @@
                   <lang id="ru" status="2">Обновить</lang>
                   <lang id="el" status="2">Ανανέωση</lang>
                   <lang id="ar" status="2">تحديث</lang>
-                  <lang id="sv" status="2">Uppdatera</lang>
                   <lang id="zh" status="2">刷新</lang>
                   <lang id="zh.tra" status="2">刷新</lang>
                   <lang id="ja" status="2">リフレッシュ</lang>
@@ -4882,7 +4736,6 @@
             <lang id="ru" status="3">Little Registry Cleaner - Менеджер деинсталляции</lang>
             <lang id="el" status="2">Μικρή Registry Cleaner - κατάργηση της εγκατάστασης διαχείρισης</lang>
             <lang id="ar" status="2">التسجيل ضئيلة الأنظف - Uninstall Manager</lang>
-            <lang id="sv" status="2">Liten Registry Cleaner - Uninstall Manager</lang>
             <lang id="zh" status="2">小注册表清理器-卸载经理</lang>
             <lang id="zh.tra" status="2">小注冊表清潔-卸載 Manager</lang>
             <lang id="ja" status="2">リトルレジストリクリーナー-アンインストールマネージャ</lang>
@@ -4970,7 +4823,6 @@
                       <lang id="ru" status="2">Поиск по названию</lang>
                       <lang id="el" status="2">Αναζήτηση με βάση το όνομα</lang>
                       <lang id="ar" status="2">البحث حسب الاسم</lang>
-                      <lang id="sv" status="2">Söka efter namn</lang>
                       <lang id="zh" status="2">按姓名搜索</lang>
                       <lang id="zh.tra" status="2">按名稱搜索</lang>
                       <lang id="ja" status="2">名前で検索</lang>
@@ -5004,7 +4856,6 @@
                     <lang id="ru" status="2">Удалить</lang>
                     <lang id="el" status="2">Κατάργηση εγκατάστασης</lang>
                     <lang id="ar" status="2">إلغاء تثبيت</lang>
-                    <lang id="sv" status="2">Avinstallera</lang>
                     <lang id="zh" status="2">卸载</lang>
                     <lang id="zh.tra" status="2">卸載</lang>
                     <lang id="ja" status="2">をアンインストールする</lang>
@@ -5031,7 +4882,6 @@
                     <lang id="ru" status="2">Удалить запись</lang>
                     <lang id="el" status="2">Κατάργηση καταχώρησης</lang>
                     <lang id="ar" status="2">إزالة إدخال</lang>
-                    <lang id="sv" status="2">Ta bort post</lang>
                     <lang id="zh" status="2">删除条目</lang>
                     <lang id="zh.tra" status="2">刪除條目</lang>
                     <lang id="ja" status="2">エントリ削除</lang>
@@ -5060,7 +4910,6 @@
                     <lang id="ru" status="2">Программа</lang>
                     <lang id="el" status="2">Πρόγραμμα</lang>
                     <lang id="ar" status="2">البرنامج</lang>
-                    <lang id="sv" date="20091106181845" status="3">Ansökan</lang>
                     <lang id="zh" status="2">计划</lang>
                     <lang id="zh.tra" status="2">程式</lang>
                     <lang id="ja" status="2">プログラム</lang>
@@ -5084,7 +4933,6 @@
                     <lang id="ru" status="2">Издатель</lang>
                     <lang id="el" status="2">Ο Publisher</lang>
                     <lang id="ar" status="2">الناشر</lang>
-                    <lang id="sv" status="2">I Publisher</lang>
                     <lang id="zh" status="2">出版商</lang>
                     <lang id="zh.tra" status="2">發佈伺服器</lang>
                     <lang id="ja" status="2">出版社</lang>
@@ -5108,7 +4956,6 @@
                     <lang id="ru" status="2">Предполагаемый размер</lang>
                     <lang id="el" status="2">Εκτιμώμενο μέγεθος</lang>
                     <lang id="ar" status="2">الحجم المقدر</lang>
-                    <lang id="sv" status="2">Uppskattad storlek</lang>
                     <lang id="zh" status="2">估计大小</lang>
                     <lang id="zh.tra" status="2">估計的大小</lang>
                     <lang id="ja" status="2">目安サイズ</lang>
@@ -5140,7 +4987,6 @@
             <lang id="ru" status="2">Проверить наличие обновлений</lang>
             <lang id="el" status="2">Έλεγχος για την ενημερωμένη έκδοση</lang>
             <lang id="ar" status="2">البحث عن التحديث</lang>
-            <lang id="sv" status="2">Kontrollera om uppdateringen</lang>
             <lang id="zh" status="2">检查更新</lang>
             <lang id="zh.tra" status="2">檢查更新</lang>
             <lang id="ja" status="2">チェックインの更新</lang>
@@ -5178,7 +5024,6 @@
               <lang id="ru" status="2">Скачать</lang>
               <lang id="el" status="2">Το στοιχείο λήψης</lang>
               <lang id="ar" status="2">تنزيل</lang>
-              <lang id="sv" status="2">Hämta</lang>
               <lang id="zh" status="2">下载</lang>
               <lang id="zh.tra" status="2">下載</lang>
               <lang id="ja" status="2">ダウンロードする</lang>
@@ -5205,7 +5050,6 @@
               <lang id="ru" date="20091106182224" status="3">Журнал изменений</lang>
               <lang id="el" date="20091106182238" status="3">Αλλαγή καταγραφής</lang>
               <lang id="ar" date="20091106182255" status="3">سجل التغيير</lang>
-              <lang id="sv" status="2">Ändringslogg</lang>
               <lang id="zh" status="2">更新日志</lang>
               <lang id="zh.tra" date="20091106182314" status="3">更改日誌</lang>
               <lang id="ja" status="2">変更履歴</lang>
@@ -5232,7 +5076,6 @@
           <lang id="ru" status="3">Сообщение об ошибке не удалось отправить</lang>
           <lang id="el" status="2">Η αναφορά σφάλματος δεν θα μπορούσαν να αποσταλούν</lang>
           <lang id="ar" status="2">تقرير الشوائب لا يمكن إرسالها</lang>
-          <lang id="sv" status="2">Felrapporten kunde inte skickas</lang>
           <lang id="zh" status="2">错误报告无法发送</lang>
           <lang id="zh.tra" status="2">錯誤報告無法發送</lang>
           <lang id="ja" status="2">バグレポートを送信できませんでした</lang>
@@ -5253,7 +5096,6 @@
           <lang id="ru" status="3">Сообщение об ошибке успешно отправлено</lang>
           <lang id="el" status="2">Απέστειλε αναφορά σφάλματος με επιτυχία</lang>
           <lang id="ar" status="2">أرسلت علة التقرير بنجاح</lang>
-          <lang id="sv" status="2">Skickat felrapport framgångsrikt</lang>
           <lang id="zh" status="2">成功发送错误报告</lang>
           <lang id="zh.tra" status="2">成功發送錯誤報告</lang>
           <lang id="ja" status="2">送信されたバグレポートが正常に</lang>
@@ -5274,7 +5116,6 @@
           <lang id="ru" status="3">Выбранные ключи реестра добавлены в список исключений</lang>
           <lang id="el" status="2">Προστέθηκε επιλέγονται κλειδιά μητρώου για να αποκλείσει την λίστα</lang>
           <lang id="ar" status="2">وأضاف مختارة مفاتيح التسجيل إلى استبعاد قائمة</lang>
-          <lang id="sv" status="2">La utvalda registernycklar till utesluta listan</lang>
           <lang id="zh" status="2">新增选定的注册表项的排除列表</lang>
           <lang id="zh.tra" status="2">新增選定的註冊表項的排除列表</lang>
           <lang id="ja" status="2">追加のリストを除外するために、レジストリキーを選択</lang>
@@ -5295,7 +5136,6 @@
           <lang id="ru" status="2">Вы уверены, что хотите выйти?</lang>
           <lang id="el" status="2">Είστε σίγουροι ότι θέλετε να βγείτε?</lang>
           <lang id="ar" status="2">هل أنت متأكد أنك تريد الخروج?</lang>
-          <lang id="sv" status="2">Är du säker på att du vill avsluta?</lang>
           <lang id="zh" status="2">您确定要退出?</lang>
           <lang id="zh.tra" status="2">您確定要退出?</lang>
           <lang id="ja" status="2">あなたが終了してもよろしいですか?</lang>
@@ -5317,7 +5157,6 @@
           <lang id="ru" status="3">Это ваш первый запуск Little Registry Cleaner.\R\nВы хотите создать точку восстановления?</lang>
           <lang id="el" invalidated="1" status="2">Αυτή η πρώτη φορά που σας τρέχει Little Registry Cleaner.\r\nΘέλετε να δημιουργήσετε ένα σημείο επαναφοράς?</lang>
           <lang id="ar" invalidated="1" status="2">هذه أول مرة يستخدم ليتل السجل النظيف.\ص\nWould كنت ترغب في إنشاء نقطة استعادة?</lang>
-          <lang id="sv" invalidated="1" status="2">Här första gången du kör Little Registry Cleaner.\r\nVill du skapa en återställningspunkt?</lang>
           <lang id="zh" invalidated="1" status="2">这是您第一次运行的小处清洁。\r\n您要创建一个还原点?</lang>
           <lang id="zh.tra" invalidated="1" status="2">這是您第一次運行的小處清潔。\r\n您要創建一個還原點?</lang>
           <lang id="ja" invalidated="1" status="2">これはあなたの最初の時間リトルRegistry Cleanerは、実行している。\Rは\を復元ポイントを作成するようにnWould?</lang>
@@ -5338,7 +5177,6 @@
           <lang id="ru" status="3">Не удается найти Little Registry Cleaner.chm</lang>
           <lang id="el" status="2">Ανίκανος να βρει Little Γραμματεία Cleaner.chm</lang>
           <lang id="ar" status="2">قادر على العثور على قلم ليتل Cleaner.chm</lang>
-          <lang id="sv" status="2">Inte hitta Little kansli Cleaner.chm</lang>
           <lang id="zh" status="2">无法找到小处Cleaner.chm</lang>
           <lang id="zh.tra" status="2">無法找到小處Cleaner.chm</lang>
           <lang id="ja" status="2">リトルレジストリCleaner.chmを見つけることができません</lang>
@@ -5359,7 +5197,6 @@
           <lang id="ru" status="3">Хотите исправить все выбранные ошибки?</lang>
           <lang id="el" status="2">Θα θέλατε να καθορίσει όλα τα επιλεγμένα προβλήματα?</lang>
           <lang id="ar" status="2">هل ترغب في حل جميع المشاكل مختارة?</lang>
-          <lang id="sv" status="2">Vill du fixa alla utvalda problem?</lang>
           <lang id="zh" status="2">你想解决问题的所有选择?</lang>
           <lang id="zh.tra" status="2">你想解決問題的所有選擇?</lang>
           <lang id="ja" status="2">選択したすべての問題を修正するか?</lang>
@@ -5380,7 +5217,6 @@
           <lang id="ru" status="3">Ошибки реестра удалены</lang>
           <lang id="el" status="2">Αφαιρούνται προβλήματα από το μητρώο</lang>
           <lang id="ar" status="2">إزالة المشاكل من التسجيل</lang>
-          <lang id="sv" status="2">Removed problem från registren</lang>
           <lang id="zh" status="2">从注册表中删除的问题</lang>
           <lang id="zh.tra" status="2">從註冊表中刪除的問題</lang>
           <lang id="ja" status="2">レジストリから削除された問題</lang>
@@ -5401,7 +5237,6 @@
           <lang id="ru" status="3">Сканирование реестра прервано</lang>
           <lang id="el" status="2">Aborted σάρωση του μητρώου</lang>
           <lang id="ar" status="2">إحباط مسح السجل</lang>
-          <lang id="sv" status="2">Aborterade scanning registret</lang>
           <lang id="zh" status="2">中止扫描注册表</lang>
           <lang id="zh.tra" status="2">中止掃描註冊表</lang>
           <lang id="ja" status="2">中止には、レジストリをスキャン</lang>
@@ -5422,7 +5257,6 @@
           <lang id="ru" status="3">Сканирование реестра завершено</lang>
           <lang id="el" status="2">Ολοκληρώσετε τη σάρωση του μητρώου</lang>
           <lang id="ar" status="2">الانتهاء من المسح والتسجيل</lang>
-          <lang id="sv" status="2">Färdiga scanning registret</lang>
           <lang id="zh" status="2">完成扫描注册表</lang>
           <lang id="zh.tra" status="2">完成掃描註冊表</lang>
           <lang id="ja" status="2">レジストリをスキャン仕上がり</lang>
@@ -5443,7 +5277,6 @@
           <lang id="ru" status="2">Пожалуйста, выберите раздел для сканирования</lang>
           <lang id="el" status="2">Παρακαλώ επιλέξτε ένα τμήμα για να σαρώσετε</lang>
           <lang id="ar" status="2">الرجاء اختيار القسم لمسح</lang>
-          <lang id="sv" status="2">Välj en sektion för att skanna</lang>
           <lang id="zh" status="2">请选择一节扫描</lang>
           <lang id="zh.tra" status="2">請選擇一節掃描</lang>
           <lang id="ja" status="2">してくださいスキャンするセクションを選択</lang>
@@ -5464,7 +5297,6 @@
           <lang id="ru" status="3">Доступна новая версия. Хотите скачать ее?</lang>
           <lang id="el" status="2">Μια νεώτερη έκδοση είναι διαθέσιμη. Θέλετε να το κατεβάσετε?</lang>
           <lang id="ar" status="2">ويتوفر الإصدار الأحدث. هل ترغب في تحميل البرنامج?</lang>
-          <lang id="sv" status="2">En nyare version finns tillgänglig. Vill du ladda ner den?</lang>
           <lang id="zh" status="2">较新版本可用。您是否要下载?</lang>
           <lang id="zh.tra" status="2">較新版本可用。您是否要下載?</lang>
           <lang id="ja" status="2">新しいバージョンが利用可能です。それをダウンロードなさいますか?</lang>
@@ -5485,7 +5317,6 @@
           <lang id="ru" status="3">Выберите папку для исключения из сканирования</lang>
           <lang id="el" status="2">Επιλέξτε το φάκελο για να αποκλείσει από το μητρώο σάρωσης</lang>
           <lang id="ar" status="2">حدد المجلد لاستبعاد من التسجيل المسح الضوئي</lang>
-          <lang id="sv" status="2">Välj mapp att utesluta från registret Scan</lang>
           <lang id="zh" status="2">选择文件夹，以排除从注册表扫描</lang>
           <lang id="zh.tra" status="2">選擇文件夾，以排除從註冊表掃描</lang>
           <lang id="ja" status="2">選択したフォルダには、レジストリのスキャンを除外する</lang>
@@ -5506,7 +5337,6 @@
           <lang id="ru" status="2">Путь реестра не может быть пустым</lang>
           <lang id="el" status="2">Γραμματεία διαδρομή δεν μπορεί να είναι κενή</lang>
           <lang id="ar" status="2">التسجيل المسار لا يمكن أن تكون فارغة</lang>
-          <lang id="sv" status="2">Registersökväg kan inte vara tom</lang>
           <lang id="zh" status="2">注册表路径不能为空</lang>
           <lang id="zh.tra" status="2">註冊表路徑不能為空</lang>
           <lang id="ja" status="2">レジストリパスを空にすることはできません</lang>
@@ -5527,7 +5357,6 @@
           <lang id="ru" status="3">Выберите файл для исключения из сканирования</lang>
           <lang id="el" status="2">Επιλέξτε ένα αρχείο για να αποκλείσει από το μητρώο σάρωσης</lang>
           <lang id="ar" status="2">حدد ملف لاستبعاد من التسجيل المسح الضوئي</lang>
-          <lang id="sv" status="2">Välj en fil att från registret Scan</lang>
           <lang id="zh" status="2">选择一个文件，从注册表中排除扫描</lang>
           <lang id="zh.tra" status="2">選擇一個文件，以排除從註冊表掃描</lang>
           <lang id="ja" status="2">を選択するには、レジストリのスキャンを除外するファイル</lang>
@@ -5548,7 +5377,6 @@
           <lang id="ru" status="2">Указанный раздел реестра не существует</lang>
           <lang id="el" status="2">Καθορισμένη κλειδί μητρώου δεν υπάρχει</lang>
           <lang id="ar" status="2">مفتاح التسجيل المحدد غير موجود</lang>
-          <lang id="sv" status="2">Fastställt registernyckeln finns inte</lang>
           <lang id="zh" status="2">指定的注册表项不存在</lang>
           <lang id="zh.tra" status="2">指定的註冊表項不存在</lang>
           <lang id="ja" status="2">指定されたレジストリキーが存在しない</lang>
@@ -5569,7 +5397,6 @@
           <lang id="ru" status="3">Вы уверены?</lang>
           <lang id="el" status="2">Είστε σίγουροι?</lang>
           <lang id="ar" status="2">هل أنت متأكد?</lang>
-          <lang id="sv" status="2">Är du säker?</lang>
           <lang id="zh" status="2">你确定?</lang>
           <lang id="zh.tra" status="2">你確定?</lang>
           <lang id="ja" status="2">必ずあなたは?</lang>
@@ -5590,7 +5417,6 @@
           <lang id="ru" status="3">Выберите папку, в которой будут храниться резервные копии</lang>
           <lang id="el" status="2">Επιλέξτε το φάκελλο όπου τα αρχεία αντιγράφων ασφαλείας θα πρέπει να τοποθετηθεί</lang>
           <lang id="ar" status="2">حدد المجلد حيث ملفات النسخة الاحتياطية سوف توضع</lang>
-          <lang id="sv" status="2">Välj den mapp där säkerhetskopian kommer att placeras</lang>
           <lang id="zh" status="2">选择文件夹备份文件将被放置</lang>
           <lang id="zh.tra" status="2">選擇文件夾備份文件將被放置</lang>
           <lang id="ja" status="2">選択したフォルダは、バックアップファイルが置かれる</lang>
@@ -5611,7 +5437,6 @@
           <lang id="ru" status="3">Выберите папку, в которой будут храниться логи</lang>
           <lang id="el" status="2">Επιλέξτε το φάκελλο όπου τα αρχεία καταγραφής θα τοποθετηθεί</lang>
           <lang id="ar" status="2">حدد المجلد حيث ملفات السجل ستوضع</lang>
-          <lang id="sv" status="2">Välj den mapp där alla loggfiler placeras</lang>
           <lang id="zh" status="2">选择文件夹的日志文件将被放置</lang>
           <lang id="zh.tra" status="2">選擇文件夾的日誌文件將被放置</lang>
           <lang id="ja" status="2">フォルダを選択しますここでは、ログファイルが置かれる</lang>
@@ -5632,7 +5457,6 @@
           <lang id="ru" status="3">Ошибка при удалении элемента реестра:</lang>
           <lang id="el" status="2">Σφάλμα κατά την κατάργηση κλειδιού μητρώου:</lang>
           <lang id="ar" status="2">خطأ في إزالة مفتاح التسجيل:</lang>
-          <lang id="sv" status="2">Fel ta bort registernyckeln:</lang>
           <lang id="zh" status="2">错误删除注册表项:</lang>
           <lang id="zh.tra" status="2">錯誤刪除註冊表項:</lang>
           <lang id="ja" status="2">削除するレジストリ キーのエラー:</lang>
@@ -5653,7 +5477,6 @@
           <lang id="ru" status="3">Ошибка при деинсталляции программы:</lang>
           <lang id="el" status="2">Σφάλμα κατάργηση εγκατάστασης προγράμματος:</lang>
           <lang id="ar" status="2">خطأ في تثبيت البرنامج:</lang>
-          <lang id="sv" status="2">Fel avinstallera program:</lang>
           <lang id="zh" status="2">卸载程序时出错:</lang>
           <lang id="zh.tra" status="2">卸載程式時出錯:</lang>
           <lang id="ja" status="2">エラーのアンインストール プログラム:</lang>
@@ -5674,7 +5497,6 @@
           <lang id="ru" status="3">Не удается найти строку деинсталляции. Хотите вручную удалить из реестра?</lang>
           <lang id="el" status="2">Δεν είναι δυνατή η εύρεση της συμβολοσειράς κατάργησης της εγκατάστασης. Θα θέλατε να καταργήσετε με μη αυτόματο τρόπο από το μητρώο?</lang>
           <lang id="ar" status="2">غير قادر على العثور على السلسلة إلغاء التثبيت. هل ترغب في إزالة يدويًا من السجل?</lang>
-          <lang id="sv" status="2">Det gick inte att hitta avinstallationen sträng. Vill du manuellt ta bort det frÃ ¥ n registret?</lang>
           <lang id="zh" status="2">无法卸载字符串。 要从注册表中手动删除?</lang>
           <lang id="zh.tra" status="2">無法卸載字串。 要從註冊表中手動刪除?</lang>
           <lang id="ja" status="2">アンインストールの文字列を見つけることができません。 手動でレジストリから削除したいです。?</lang>
@@ -5695,7 +5517,6 @@
           <lang id="ru" status="3">Ключ реестра успешно удален</lang>
           <lang id="el" status="2">Το κλειδί μητρώου ολοκληρώθηκε με επιτυχία την κατάργηση</lang>
           <lang id="ar" status="2">مفتاح التسجيل بنجاح إزالة</lang>
-          <lang id="sv" status="2">Sucessfully bort registernyckeln</lang>
           <lang id="zh" status="2">无法删除注册表项</lang>
           <lang id="zh.tra" status="2">無法刪除註冊表項</lang>
           <lang id="ja" status="2">レジストリ キーの削除を正常に</lang>
@@ -5716,7 +5537,6 @@
           <lang id="ru" status="2">Программа успешно удалена</lang>
           <lang id="el" status="2">Πρόγραμμα ολοκληρώθηκε με επιτυχία την κατάργηση της εγκατάστασης</lang>
           <lang id="ar" status="2">بنجاح إزالة تثبيت البرنامج</lang>
-          <lang id="sv" status="2">Sucessfully avinstalleras programmet</lang>
           <lang id="zh" status="2">无法卸载程序</lang>
           <lang id="zh.tra" status="2">無法卸載程式</lang>
           <lang id="ja" status="2">アンインストールを正常にプログラム</lang>
@@ -5737,7 +5557,6 @@
           <lang id="ru" status="3">Другая копия программы уже запущена...</lang>
           <lang id="el" status="2">Ένα άλλο πρόγραμμα, φαίνεται να είναι σε λειτουργία ήδη...</lang>
           <lang id="ar" status="2">برنامج آخر ويبدو أن إدارة بالفعل...</lang>
-          <lang id="sv" status="2">Annat program tycks vara igång redan...</lang>
           <lang id="zh" status="2">另一个程序似乎已经运行...</lang>
           <lang id="zh.tra" status="2">另一個程序似乎已經運行...</lang>
           <lang id="ja" status="2">もう1つのプログラムが既に実行されているようだ...</lang>
@@ -5758,7 +5577,6 @@
           <lang id="ru" status="3">Вы должны иметь права администратора для запуска этой программы</lang>
           <lang id="el" status="2">Πρέπει να είστε διαχειριστής, για να τρέξει αυτό το πρόγραμμα</lang>
           <lang id="ar" status="2">يجب عليك أن تكون مسؤولا لتشغيل هذا البرنامج</lang>
-          <lang id="sv" status="2">Du måste vara administratör för att köra programmet</lang>
           <lang id="zh" status="2">您必须是管理员才能运行此程序</lang>
           <lang id="zh.tra" status="2">您必須是管理員才能運行此程序</lang>
           <lang id="ja" status="2">あなたはこのプログラムを実行するための管理者である必要があります</lang>
@@ -5779,7 +5597,6 @@
           <lang id="ru" status="3">Вы уверены?</lang>
           <lang id="el" status="2">Είστε σίγουροι?</lang>
           <lang id="ar" status="2">هل أنت متأكد?</lang>
-          <lang id="sv" status="2">Är du säker?</lang>
           <lang id="zh" status="2">你确定?</lang>
           <lang id="zh.tra" status="2">你確定?</lang>
           <lang id="ja" status="2">必ずあなたは?</lang>
@@ -5800,7 +5617,6 @@
           <lang id="ru" status="3">Ошибка восстановления реестра</lang>
           <lang id="el" status="2">Σφάλμα αποκατάσταση του μητρώου</lang>
           <lang id="ar" status="2">الخطأ استعادة التسجيل</lang>
-          <lang id="sv" status="2">Fel återställa registret</lang>
           <lang id="zh" status="2">错误恢复注册表</lang>
           <lang id="zh.tra" status="2">錯誤恢復註冊表</lang>
           <lang id="ja" status="2">エラーを復元するレジストリ</lang>
@@ -5821,7 +5637,6 @@
           <lang id="ru" status="3">Реестр успешно восстановлен</lang>
           <lang id="el" status="2">Επιτυχώς αποκατασταθεί μητρώου</lang>
           <lang id="ar" status="2">بنجاح استعادة التسجيل</lang>
-          <lang id="sv" status="2">Återställts register</lang>
           <lang id="zh" status="2">成功地恢复注册表</lang>
           <lang id="zh.tra" status="2">成功地恢復註冊表</lang>
           <lang id="ja" status="2">正常に、レジストリの復元</lang>
@@ -5842,7 +5657,6 @@
           <lang id="ru" status="3">Вы уверены?</lang>
           <lang id="el" status="2">Είστε σίγουροι?</lang>
           <lang id="ar" status="2">هل أنت متأكد?</lang>
-          <lang id="sv" status="2">Är du säker?</lang>
           <lang id="zh" status="2">你确定?</lang>
           <lang id="zh.tra" status="2">你確定?</lang>
           <lang id="ja" status="2">必ずあなたは?</lang>
@@ -5863,7 +5677,6 @@
           <lang id="ru" status="2">Сканирование: </lang>
           <lang id="el" status="2">Σάρωση: </lang>
           <lang id="ar" status="2">المسح الضوئي: </lang>
-          <lang id="sv" date="20091106182958" status="3">Skanning: </lang>
           <lang id="zh" status="2">扫描: </lang>
           <lang id="zh.tra" status="2">掃描: </lang>
           <lang id="ja" status="2">スキャン: </lang>
@@ -5884,7 +5697,6 @@
           <lang id="ru" status="3">Файл не найден</lang>
           <lang id="el" status="2">Το αρχείο δεν θα μπορούσε να βρεθεί</lang>
           <lang id="ar" status="2">الملف لا يمكن العثور على</lang>
-          <lang id="sv" status="2">Filen kunde inte hittas</lang>
           <lang id="zh" status="2">该文件找不到</lang>
           <lang id="zh.tra" status="2">該文件找不到</lang>
           <lang id="ja" status="2">ファイルが見つかりませんでした</lang>
@@ -5905,7 +5717,6 @@
           <lang id="ru" status="3">Название не может быть пустым</lang>
           <lang id="el" status="2">Συντόμευση / όνομα αξία δεν μπορεί να είναι κενή</lang>
           <lang id="ar" status="2">الاختصار / اسم القيمة لا يمكن أن تكون فارغة</lang>
-          <lang id="sv" status="2">Genväg / Value namn kan inte vara tom</lang>
           <lang id="zh" status="2">快捷键/值名称不能为空</lang>
           <lang id="zh.tra" status="2">快捷鍵/值名稱不能為空</lang>
           <lang id="ja" status="2">ショートカット/値の名前を空にすることはできません</lang>
@@ -5926,7 +5737,6 @@
           <lang id="ru" status="2">Путь к файлу не может быть пустым</lang>
           <lang id="el" status="2">Φάκελος διαδρομή δεν μπορεί να είναι κενή</lang>
           <lang id="ar" status="2">مسار الملف لا يمكن أن تكون فارغة</lang>
-          <lang id="sv" status="2">Sökväg kan inte vara tom</lang>
           <lang id="zh" status="2">文件路径不能为空</lang>
           <lang id="zh.tra" status="2">文件路徑不能為空</lang>
           <lang id="ja" status="2">ファイルのパスを空にすることはできません</lang>
@@ -5947,7 +5757,6 @@
           <lang id="ru" status="3">Попытка запуска:</lang>
           <lang id="el" status="2">Προσπάθησε να τρέχει:</lang>
           <lang id="ar" status="2">حاول تشغيل:</lang>
-          <lang id="sv" status="2">Försökte köra:</lang>
           <lang id="zh" status="2">试图运行:</lang>
           <lang id="zh.tra" status="2">試圖運行:</lang>
           <lang id="ja" status="2">を実行しようとしました:</lang>
@@ -5968,7 +5777,6 @@
           <lang id="ru" status="3">Вы уверены, что хотите удалить эту программу из автозапуска?</lang>
           <lang id="el" status="2">Είστε σίγουροι ότι θέλετε να καταργήσετε αυτό το πρόγραμμα εκκίνησης?</lang>
           <lang id="ar" status="2">هل أنت متأكد من أنك تريد إزالة هذا البرنامج بدء التشغيل?</lang>
-          <lang id="sv" status="2">Är du säker på att du vill ta bort startprogram?</lang>
           <lang id="zh" status="2">您确定要删除此启动程序?</lang>
           <lang id="zh.tra" status="2">您確定要刪除此啟動程序?</lang>
           <lang id="ja" status="2">あなたがこのスタートアッププログラムを削除してもよろしいですか?</lang>
@@ -5989,7 +5797,6 @@
           <lang id="ru" status="3">Выбранные элементы автозагрузки удалены</lang>
           <lang id="el" status="2">Αφαιρέθηκε επιλεγμένο πρόγραμμα εκκίνησης</lang>
           <lang id="ar" status="2">إزالة مختارة بدء البرنامج</lang>
-          <lang id="sv" status="2">Valt bort startprogram</lang>
           <lang id="zh" status="2">删除选定的启动程序</lang>
           <lang id="zh.tra" status="2">刪除選定的啟動程序</lang>
           <lang id="ja" status="2">削除選択されたスタートアッププログラム</lang>
@@ -6010,7 +5817,6 @@
           <lang id="ru" status="2">Вы действительно хотите запустить эту программу?</lang>
           <lang id="el" status="2">Είστε σίγουροι ότι θέλετε να εκτελέσετε αυτό το πρόγραμμα?</lang>
           <lang id="ar" status="2">هل أنت متأكد من أنك تريد تشغيل هذا البرنامج?</lang>
-          <lang id="sv" status="2">Är du säker på att du vill köra programmet?</lang>
           <lang id="zh" status="2">你确定要运行此程序?</lang>
           <lang id="zh.tra" status="2">你確定要運行此程序?</lang>
           <lang id="ja" status="2">あなたがこのプログラムを実行してもよろしいですか?</lang>
@@ -6031,7 +5837,6 @@
           <lang id="ru" status="2">Вы уверены, что хотите удалить эту программу из реестра?</lang>
           <lang id="el" status="2">Είστε σίγουροι ότι θέλετε να καταργήσετε αυτό το πρόγραμμα από το μητρώο?</lang>
           <lang id="ar" status="2">هل أنت متأكد من أنك تريد إزالة هذا البرنامج من التسجيل?</lang>
-          <lang id="sv" status="2">Är du säker på att du vill ta bort programmet från registret?</lang>
           <lang id="zh" status="2">你确定要从注册表中删除该程序?</lang>
           <lang id="zh.tra" status="2">您確定要刪除該程序從註冊表?</lang>
           <lang id="ja" status="2">あなたは、レジストリからこのプログラムを削除してもよろしいですか?</lang>
@@ -6052,7 +5857,6 @@
           <lang id="ru" status="2">Поиск по названию</lang>
           <lang id="el" status="2">Αναζήτηση με βάση το όνομα</lang>
           <lang id="ar" status="2">البحث حسب الاسم</lang>
-          <lang id="sv" status="2">Söka efter namn</lang>
           <lang id="zh" status="2">按姓名搜索</lang>
           <lang id="zh.tra" status="2">按名稱搜索</lang>
           <lang id="ja" status="2">名前で検索</lang>
@@ -6073,7 +5877,6 @@
           <lang id="ru" status="2">Вы уверены, что хотите удалить эту программу?</lang>
           <lang id="el" status="2">Είστε σίγουροι ότι θέλετε να καταργήσετε την εγκατάσταση αυτού του προγράμματος?</lang>
           <lang id="ar" status="2">هل أنت متأكد من أنك تريد إلغاء تثبيت هذا البرنامج?</lang>
-          <lang id="sv" status="2">Är du säker på att du vill avinstallera programmet?</lang>
           <lang id="zh" status="2">您确定要卸载此程序?</lang>
           <lang id="zh.tra" status="2">您確定要卸載此程序?</lang>
           <lang id="ja" status="2">あなたがこのプログラムをアンインストールしてもよろしいですか?</lang>
@@ -6094,7 +5897,6 @@
           <lang id="ru" status="3">У Вас новейшая версия</lang>
           <lang id="el" status="2">Έχετε την πιο πρόσφατη έκδοση</lang>
           <lang id="ar" status="2">لديك أحدث إصدار</lang>
-          <lang id="sv" status="2">Du har den senaste versionen</lang>
           <lang id="zh" status="2">您有最新版本</lang>
           <lang id="zh.tra" status="2">您有最新版本</lang>
           <lang id="ja" status="2">現在の最新バージョンがある</lang>
@@ -6115,7 +5917,6 @@
           <lang id="ru" status="3">Доступна более новая версия</lang>
           <lang id="el" status="2">Νεότερη έκδοση διαθέσιμη</lang>
           <lang id="ar" status="2">أحدث نسخة متوفرة</lang>
-          <lang id="sv" status="2">Nyare version tillgänglig</lang>
           <lang id="zh" status="2">较新的版本可用</lang>
           <lang id="zh.tra" status="2">較新的版本可用</lang>
           <lang id="ja" status="2">新しいバージョンが利用可能</lang>
@@ -6138,7 +5939,6 @@
           <lang id="ru" status="3">ActiveX / COM-объекты</lang>
           <lang id="el" status="2">ActiveX / COM Objects</lang>
           <lang id="ar" status="2">ActiveX / كائنات كوم</lang>
-          <lang id="sv" status="2">ActiveX / COM-objekt</lang>
           <lang id="zh" status="2">的ActiveX / COM对象</lang>
           <lang id="zh.tra" status="2">的ActiveX / COM對象</lang>
           <lang id="ja" status="2">のActiveX / COMオブジェクト</lang>
@@ -6159,7 +5959,6 @@
           <lang id="ru" status="3">Информация о программе</lang>
           <lang id="el" status="2">Πληροφορίες εφαρμογής</lang>
           <lang id="ar" status="2">معلومات التطبيق</lang>
-          <lang id="sv" status="2">Programmet info</lang>
           <lang id="zh" status="2">应用信息</lang>
           <lang id="zh.tra" status="2">應用信息</lang>
           <lang id="ja" status="2">アプリケーション情報</lang>
@@ -6180,7 +5979,6 @@
           <lang id="ru" date="20091102205205" status="3">Пути</lang>
           <lang id="el" status="2">Εφαρμογή Μονοπάτια</lang>
           <lang id="ar" status="2">تطبيق المسارات</lang>
-          <lang id="sv" status="2">Ansökan Paths</lang>
           <lang id="zh" status="2">应用程序路径</lang>
           <lang id="zh.tra" status="2">應用程序路徑</lang>
           <lang id="ja" status="2">アプリケーションのパス</lang>
@@ -6201,7 +5999,6 @@
           <lang id="ru" status="3">Настройки программы</lang>
           <lang id="el" status="2">Ρυθμίσεις εφαρμογής</lang>
           <lang id="ar" status="2">تطبيق الإعدادات</lang>
-          <lang id="sv" status="2">Programinställningar</lang>
           <lang id="zh" status="2">应用程序设置</lang>
           <lang id="zh.tra" status="2">應用程序設置</lang>
           <lang id="ja" status="2">アプリケーションの設定]</lang>
@@ -6222,7 +6019,6 @@
           <lang id="ru" status="2">Неверный файл или папка</lang>
           <lang id="el" status="2">Άκυρα αρχείο ή το φάκελο</lang>
           <lang id="ar" status="2">الملف غير صالح أو مجلد</lang>
-          <lang id="sv" status="2">Ogiltig fil eller mapp</lang>
           <lang id="zh" status="2">无效的文件或文件夹</lang>
           <lang id="zh.tra" status="2">無效的文件或文件夾</lang>
           <lang id="ja" status="2">無効なファイルまたはフォルダ</lang>
@@ -6243,7 +6039,6 @@
           <lang id="ru" status="3">Неиспользуемые расширения файлов</lang>
           <lang id="el" status="2">Αχρησιμοποίητα αρχείου Επέκταση</lang>
           <lang id="ar" status="2">غير المستخدمة ملحق ملف</lang>
-          <lang id="sv" status="2">Oanvända File Extension</lang>
           <lang id="zh" status="2">未使用的文件扩展名</lang>
           <lang id="zh.tra" status="2">未使用的文件擴展名</lang>
           <lang id="ja" status="2">未使用のファイル拡張子</lang>
@@ -6264,7 +6059,6 @@
           <lang id="ru" status="2">Не удалось найти InprocServer</lang>
           <lang id="el" status="2">Δεν είναι δυνατή η εύρεση του InprocServer</lang>
           <lang id="ar" status="2">غير قادر على العثور على InprocServer</lang>
-          <lang id="sv" status="2">Det gick inte att hitta InprocServer</lang>
           <lang id="zh" status="2">无法找到 InprocServer</lang>
           <lang id="zh.tra" status="2">無法找到 InprocServer</lang>
           <lang id="ja" status="2">InprocServer が見つかりません</lang>
@@ -6285,7 +6079,6 @@
           <lang id="ru" status="2">Не удалось найти InprocServer32</lang>
           <lang id="el" status="2">Δεν είναι δυνατή η εύρεση InprocServer32</lang>
           <lang id="ar" status="2">غير قادر على العثور على InprocServer32</lang>
-          <lang id="sv" status="2">Det gick inte att hitta InprocServer32</lang>
           <lang id="zh" status="2">无法找到 InprocServer32</lang>
           <lang id="zh.tra" status="2">無法找到 InprocServer32</lang>
           <lang id="ja" status="2">InprocServer32 が見つかりません</lang>
@@ -6306,7 +6099,6 @@
           <lang id="ru" status="3">Неиспользуемые расширения ProgID / File</lang>
           <lang id="el" status="2">Αχρησιμοποίητα ProgID / Επέκταση αρχείου</lang>
           <lang id="ar" status="2">معرف البرنامج غير المستخدمة / ملحق ملف</lang>
-          <lang id="sv" status="2">Oanvända ProgID / filändelse</lang>
           <lang id="zh" status="2">未使用的ProgID /文件扩展名</lang>
           <lang id="zh.tra" status="2">未使用的ProgID /文件擴展名</lang>
           <lang id="ja" status="2">未使用のProgID /ファイル拡張子</lang>
@@ -6327,7 +6119,6 @@
           <lang id="ru" status="3">Неверный ключ реестра</lang>
           <lang id="el" status="2">Άκυρο κλειδί μητρώου</lang>
           <lang id="ar" status="2">صالح مفتاح التسجيل</lang>
-          <lang id="sv" status="2">Ogiltig registernyckel</lang>
           <lang id="zh" status="2">无效的注册表项</lang>
           <lang id="zh.tra" status="2">無效的註冊表項</lang>
           <lang id="ja" status="2">無効なレジストリキー</lang>
@@ -6348,7 +6139,6 @@
           <lang id="ru" status="3">Панель инструментов недействительна</lang>
           <lang id="el" status="2">Toolbar είναι άκυρη</lang>
           <lang id="ar" status="2">شريط الأدوات غير صالحة</lang>
-          <lang id="sv" status="2">Toolbar är ogiltig</lang>
           <lang id="zh" status="2">工具栏无效</lang>
           <lang id="zh.tra" status="2">工具欄無效</lang>
           <lang id="ja" status="2">ツールバーが無効です</lang>
@@ -6369,7 +6159,6 @@
           <lang id="ru" status="2">Отсутствует ссылка AppID</lang>
           <lang id="el" status="2">Missing AppID αναφοράς</lang>
           <lang id="ar" status="2">معرف التطبيق مرجع مفقود</lang>
-          <lang id="sv" status="2">Missing AppID referens</lang>
           <lang id="zh" status="2">失踪的AppID参考</lang>
           <lang id="zh.tra" status="2">失踪的AppID參考</lang>
           <lang id="ja" status="2">行方不明AppIDを参照</lang>
@@ -6390,7 +6179,6 @@
           <lang id="ru" status="2">Отсутствует CLSID Ссылка</lang>
           <lang id="el" status="2">Missing CLSID αναφοράς</lang>
           <lang id="ar" status="2">المفقودين CLSID المرجعية</lang>
-          <lang id="sv" status="2">Missing CLSID referens</lang>
           <lang id="zh" status="2">失踪的CLSID参考</lang>
           <lang id="zh.tra" status="2">失踪的CLSID參考</lang>
           <lang id="ja" status="2">行方不明のCLSIDを参照</lang>
@@ -6411,7 +6199,6 @@
           <lang id="ru" status="2">Отсутствует ссылка ProgID</lang>
           <lang id="el" status="2">Missing ProgID αναφοράς</lang>
           <lang id="ar" status="2">معرف البرنامج مرجع مفقود</lang>
-          <lang id="sv" status="2">Missing ProgID referens</lang>
           <lang id="zh" status="2">失踪的ProgID参考</lang>
           <lang id="zh.tra" status="2">失踪的ProgID參考</lang>
           <lang id="ja" status="2">行方不明のProgIDを参照</lang>
@@ -6432,7 +6219,6 @@
           <lang id="ru" status="3">Ключ реестра не содержит никаких данных</lang>
           <lang id="el" status="2">Το κλειδί μητρώου δεν περιέχει δεδομένα</lang>
           <lang id="ar" status="2">مفتاح التسجيل لا يحتوي على أية بيانات</lang>
-          <lang id="sv" status="2">Registernyckeln innehåller inga uppgifter</lang>
           <lang id="zh" status="2">该注册表项不包含任何数据</lang>
           <lang id="zh.tra" status="2">該註冊表項不包含任何數據</lang>
           <lang id="ja" status="2">レジストリキーは任意のデータが含まれていません</lang>
@@ -6453,7 +6239,6 @@
           <lang id="ru" status="3">Устаревшие ключи реестра</lang>
           <lang id="el" status="2">Το κλειδί μητρώου άνευ αντικειμένου</lang>
           <lang id="ar" status="2">مفتاح التسجيل العتيقة</lang>
-          <lang id="sv" status="2">Föråldrade registernyckel</lang>
           <lang id="zh" status="2">已过时的注册表项</lang>
           <lang id="zh.tra" status="2">已過時的註冊表項</lang>
           <lang id="ja" status="2">時代遅れのレジストリ キー</lang>
@@ -6474,7 +6259,6 @@
           <lang id="ru" status="3">Недавние документы</lang>
           <lang id="el" status="2">Πρόσφατα έγγραφα</lang>
           <lang id="ar" status="2">وثائق صدرت حديثا</lang>
-          <lang id="sv" status="2">Senaste dokument</lang>
           <lang id="zh" status="2">最近的文档</lang>
           <lang id="zh.tra" status="2">最近的文檔</lang>
           <lang id="ja" status="2">最近の資料</lang>
@@ -6495,7 +6279,6 @@
           <lang id="ru" status="3">Общие библиотеки</lang>
           <lang id="el" status="2">Κοινόχρηστο dll</lang>
           <lang id="ar" status="2">ملفات DLL المشتركة</lang>
-          <lang id="sv" status="2">Delade DLL-filer</lang>
           <lang id="zh" status="2">共享DLL</lang>
           <lang id="zh.tra" status="2">共享DLL</lang>
           <lang id="ja" status="2">共有DLL</lang>
@@ -6516,7 +6299,6 @@
           <lang id="ru" status="3">Файлы автозагрузки</lang>
           <lang id="el" status="2">Αρχεία εκκίνησης</lang>
           <lang id="ar" status="2">ملفات بدء التشغيل</lang>
-          <lang id="sv" status="2">Start filer</lang>
           <lang id="zh" status="2">启动文件</lang>
           <lang id="zh.tra" status="2">開機檔案</lang>
           <lang id="ja" status="2">起動ファイル</lang>
@@ -6537,7 +6319,6 @@
           <lang id="ru" status="2">Системные драйверы</lang>
           <lang id="el" status="2">Προγράμματα οδήγησης συστήματος</lang>
           <lang id="ar" status="2">برامج تشغيل النظام</lang>
-          <lang id="sv" status="2">Systemdrivrutiner</lang>
           <lang id="zh" status="2">系统驱动程序</lang>
           <lang id="zh.tra" status="2">系統驅動程序</lang>
           <lang id="ja" status="2">システムドライバ</lang>
@@ -6558,7 +6339,6 @@
           <lang id="ru" status="2">Шрифты Windows</lang>
           <lang id="el" status="2">Γραμματοσειρές των Windows</lang>
           <lang id="ar" status="2">خطوط Windows</lang>
-          <lang id="sv" status="2">Windows teckensnitt</lang>
           <lang id="zh" status="2">Windows字体</lang>
           <lang id="zh.tra" status="2">Windows字體</lang>
           <lang id="ja" status="2">Windowsフォント</lang>
@@ -6579,7 +6359,6 @@
           <lang id="ru" status="3">Файлы помощи Windows</lang>
           <lang id="el" status="2">Αρχείων των Windows Βοήθεια</lang>
           <lang id="ar" status="2">نوافذ ملفات التعليمات</lang>
-          <lang id="sv" status="2">Windows Hjälpfiler</lang>
           <lang id="zh" status="2">Windows帮助文件</lang>
           <lang id="zh.tra" status="2">Windows幫助文件</lang>
           <lang id="ja" status="2">Windowsのヘルプファイル</lang>
@@ -6600,7 +6379,6 @@
           <lang id="ru" date="20091102205142" status="3">Звуки Windows</lang>
           <lang id="el" date="20091102205255" status="3">Ήχοι παραθύρων</lang>
           <lang id="ar" status="2">نوافذ الأصوات</lang>
-          <lang id="sv" date="20091102205356" status="3">Windows-ljud</lang>
           <lang id="zh" status="2">视窗声音</lang>
           <lang id="zh.tra" status="2">視窗聲音</lang>
           <lang id="ja" status="2">Windowsのサウンド</lang>

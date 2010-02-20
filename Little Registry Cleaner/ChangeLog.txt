@@ -340,3 +340,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Restore points are saved to correct location (v1.4.0.1 released)
 - Removed unneeded label in scan dialog
 - Updated Russian Translations
+- Updated Dutch Translations
+- Added Hungarian Translations
+- Updated Portuguese Translation
+- Updated Polish Translation
+- Updated Italian Translations
+- Updated Swedish Translations
+- Changes registry key rights when removing values and sub keys 

@@ -1222,12 +1222,22 @@ namespace Little_Registry_Cleaner.Xml
             return true;
         }
 
+        /// <summary>
+        /// Removes problem registry key
+        /// </summary>
+        /// <param name="strBaseKey">Base Key</param>
+        /// <param name="strSubKey">Sub Key</param>
+        /// <param name="strLimitValue">Value Name (Optional)</param>
+        /// <returns>True if it was removed</returns>
         bool deleteRegistryKey(string strBaseKey, string strSubKey, string strLimitValue)
         {
             RegistryKey regKey = Utils.RegOpenKey(strBaseKey, strSubKey);
 
             if (regKey == null)
                 return false;
+
+            // Grant full control over registry key
+            grantRegistryKeyRights(regKey, RegistryRights.FullControl);
 
             if (!string.IsNullOrEmpty(strLimitValue))
                 DeleteAsXml_DeleteValue(getRegistryHandle(regKey), strLimitValue);
@@ -1262,8 +1272,6 @@ namespace Little_Registry_Cleaner.Xml
 
                     if (reg != null)
                     {
-                        grantRegistryKeyRights(regKey, RegistryRights.FullControl);
-
                         reg.DeleteSubKeyTree(strSubKey);
                         reg.Flush();
                         reg.Close();
@@ -1282,6 +1290,11 @@ namespace Little_Registry_Cleaner.Xml
             return true;
         }
 
+        /// <summary>
+        /// Change permission for registry key
+        /// </summary>
+        /// <param name="regKey">Registry Key</param>
+        /// <param name="registryRights">Registry Rights</param>
         private void grantRegistryKeyRights(RegistryKey regKey, RegistryRights registryRights)
         {
             RegistrySecurity regSecurity = new RegistrySecurity();
