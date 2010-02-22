@@ -409,11 +409,21 @@ namespace Little_Registry_Cleaner
                 case "Chinese (Simplified)":
                     ci = new CultureInfo("zh-CHS");
                     break;
+
                 case "Chinese (Traditional)":
                     ci = new CultureInfo("zh-CHT");
                     break;
+
                 case "Hungarian":
                     ci = new CultureInfo("hu");
+                    break;
+
+                case "Persian":
+                    ci = new CultureInfo("fa");
+                    break;
+
+                case "Turkish":
+                    ci = new CultureInfo("tr");
                     break;
             }
 

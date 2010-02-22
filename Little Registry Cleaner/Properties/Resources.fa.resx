@@ -60,45 +60,45 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -118,136 +118,135 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="crashReporterFail" xml:space="preserve">
-    <value>The bug report could not be sent</value>
+    <value>گزارش خطا نمی تواند خبر</value>
   </data>
   <data name="crashReporterSuccess" xml:space="preserve">
-    <value>Sent bug report successfully</value>
+    <value>ارسال گزارش خطا با موفقیت</value>
   </data>
   <data name="mainAddExcludeEntry" xml:space="preserve">
-    <value>Added selected registry keys to the exclude list</value>
+    <value>ارسال انتخاب شده کلید های رجیستری را به محروم کردن لیست</value>
   </data>
   <data name="mainAskExit" xml:space="preserve">
-    <value>Are you sure you want to exit?</value>
+    <value>آیا مطمئن هستید که می خواهید به خروج?</value>
   </data>
   <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>This your first time running Little Registry Cleaner.
-Would you like to create a restore point?</value>
+    <value>این اولین بار است که در حال اجرا کوچولو تمیز کننده رجیستری. آیا می خواهید به ایجاد یک نقطه برگرداندن?</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
-    <value>Unable to find Little Registry Cleaner.chm</value>
+    <value>قادر به پیدا کردن "Little Registry Cleaner.chm"</value>
   </data>
   <data name="mainProblemsFix" xml:space="preserve">
-    <value>Would you like to fix all selected problems?</value>
+    <value>آیا می خواهید تمام مشکلات را حل انتخاب شده?</value>
   </data>
   <data name="mainProblemsRemoved" xml:space="preserve">
-    <value>Removed problems from registry</value>
+    <value>مشکلات حذف از رجیستری</value>
   </data>
   <data name="mainScanningAborted" xml:space="preserve">
-    <value>Aborted scanning the registry</value>
+    <value>ساقطشد اسکن رجیستری</value>
   </data>
   <data name="mainScanningFinished" xml:space="preserve">
-    <value>Finished scanning the registry</value>
+    <value>فرم انتقادات و اسکن رجیستری</value>
   </data>
   <data name="mainSelectSections" xml:space="preserve">
-    <value>Please select a section to scan</value>
+    <value>لطفا یک بخش به بخش اسکن را انتخاب کنید</value>
   </data>
   <data name="mainUpdateAsk" xml:space="preserve">
-    <value>A newer version is available. Would you like to download it?</value>
+    <value>نسخه جدیدتر در دسترس است. آیا می خواهید آن را دانلود کنید?</value>
   </data>
   <data name="optionsExcludeDir" xml:space="preserve">
-    <value>Select the folder to exclude from the registry scan</value>
+    <value>انتخاب پوشه را از رجیستری مستثنی اسکن</value>
   </data>
   <data name="optionsExcludeEmptyRegPath" xml:space="preserve">
-    <value>Registry path cannot be empty</value>
+    <value>مسیر رجیستری نمی تواند خالی باشد</value>
   </data>
   <data name="optionsExcludeFile" xml:space="preserve">
-    <value>Select a file to exclude from the registry scan</value>
+    <value>انتخاب فایل از رجیستری مستثنی اسکن</value>
   </data>
   <data name="optionsExcludeInvalidRegPath" xml:space="preserve">
-    <value>Specified registry key doesn't exist</value>
+    <value>کلید رجیستری مشخص شده وجود ندارد</value>
   </data>
   <data name="optionsExcludeRemove" xml:space="preserve">
-    <value>Are you sure?</value>
+    <value>آیا مطمئن هستید که?</value>
   </data>
   <data name="optionsSelectBackupDir" xml:space="preserve">
-    <value>Select the folder where the backup files will be placed</value>
+    <value>را انتخاب کنید که در آن پوشه فایل های پشتیبان قرار داده خواهد شد</value>
   </data>
   <data name="optionsSelectLogDir" xml:space="preserve">
-    <value>Select the folder where the log files will be placed</value>
+    <value>را انتخاب کنید که در آن پوشه فایل ورود به سیستم قرار داده خواهد شد</value>
   </data>
   <data name="piErrorRegKey" xml:space="preserve">
-    <value>Error removing registry key:</value>
+    <value>خطا در حذف کلید رجیستری:</value>
   </data>
   <data name="piErrorUninstalling" xml:space="preserve">
-    <value>Error uninstalling program:</value>
+    <value>خطا uninstalling برنامه:</value>
   </data>
   <data name="piInvalidUninstallString" xml:space="preserve">
-    <value>Unable to find uninstall string. Would you like to manually remove it from the registry?</value>
+    <value>قادر به پیدا کردن رشته ای پاک. آیا دوست دارید به صورت دستی آن را از رجیستری حذف?</value>
   </data>
   <data name="piSuccessRegKey" xml:space="preserve">
-    <value>Sucessfully removed registry key</value>
+    <value>با موفقیت حذف کلید رجیستری</value>
   </data>
   <data name="piSuccessUninstall" xml:space="preserve">
-    <value>Sucessfully uninstalled program</value>
+    <value>موفقیت uninstalled برنامه</value>
   </data>
   <data name="programAlreadyRunning" xml:space="preserve">
-    <value>Another program seems to be running already...</value>
+    <value>یکی دیگر از برنامه به نظر می رسد در حال حاضر در حال اجرا...</value>
   </data>
   <data name="programNeedAdmin" xml:space="preserve">
-    <value>You must be an administrator to run this program</value>
+    <value>شما باید یک مدیر برای اجرای این برنامه</value>
   </data>
   <data name="programNoCT" xml:space="preserve">
-    <value>Unable to find "Common Tools.dll"</value>
+    <value>قادر به پیدا کردن "Common Tools.dll"</value>
   </data>
   <data name="restoreAsk" xml:space="preserve">
-    <value>Are you sure?</value>
+    <value>آیا مطمئن هستید که?</value>
   </data>
   <data name="restoreError" xml:space="preserve">
-    <value>Error restoring registry</value>
+    <value>خطا در بازگرداندن رجیستری</value>
   </data>
   <data name="restoreRestored" xml:space="preserve">
-    <value>Successfully restored registry</value>
+    <value>ترمیم با موفقیت به رجیستری</value>
   </data>
   <data name="scanDlgExit" xml:space="preserve">
-    <value>Are you sure?</value>
+    <value>آیا مطمئن هستید که?</value>
   </data>
   <data name="scanDlgProgressBarScanning" xml:space="preserve">
-    <value>Scanning: </value>
+    <value>اسکن: </value>
   </data>
   <data name="smCannotFindFile" xml:space="preserve">
-    <value>The file could not be found</value>
+    <value>فایل یافت نشد</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
-    <value>Shortcut/Value name cannot be empty</value>
+    <value>میانبر / نام مقدار می تواند خالی باشد</value>
   </data>
   <data name="smEmptyPath" xml:space="preserve">
-    <value>File path cannot be empty</value>
+    <value>مسیر فایل نمی تواند خالی باشد</value>
   </data>
   <data name="smRan" xml:space="preserve">
-    <value>Attempted to run:</value>
+    <value>تلاش برای اجرای:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>Are you sure you want to remove this startup program?</value>
+    <value>آیا مطمئن هستید که می خواهید حذف کنید این برنامه را راه اندازی?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
-    <value>Removed selected startup program</value>
+    <value>حذف برنامه های راه انداز انتخاب شده</value>
   </data>
   <data name="smRun" xml:space="preserve">
-    <value>Are you sure you want to run this program?</value>
+    <value>آیا مطمئن هستید که می خواهید این برنامه را اجرا کنید?</value>
   </data>
   <data name="umForceUninstall" xml:space="preserve">
-    <value>Are you sure you want to remove this program from the registry?</value>
+    <value>آیا مطمئن هستید که می خواهید حذف کنید این برنامه را از رجیستری?</value>
   </data>
   <data name="umSearchText" xml:space="preserve">
-    <value>Search by name</value>
+    <value>جستجو بر حسب نام</value>
   </data>
   <data name="umUninstall" xml:space="preserve">
-    <value>Are you sure you want to uninstall this program?</value>
+    <value>آیا مطمئن هستید که می خواهید این برنامه را پاک کنید?</value>
   </data>
   <data name="updateLatest" xml:space="preserve">
-    <value>You have the latest version</value>
+    <value>شما باید آخرین نسخه</value>
   </data>
   <data name="updateNewer" xml:space="preserve">
-    <value>Newer version available</value>
+    <value>نسخه جدیدتر در دسترس</value>
   </data>
 </root>

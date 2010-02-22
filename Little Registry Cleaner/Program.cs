@@ -73,6 +73,14 @@ namespace Little_Registry_Cleaner
                 return;
             }
 
+            // Check for Common Tools
+            if (!Utils.SearchPath("Common Tools.dll") && !File.Exists("Common Tools.dll"))
+            {
+                MessageBox.Show(Properties.Resources.programNoCT, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Exit();
+                return;
+            }
+
             // Enable needed privileges
             Permissions.SetPrivileges(true);
 

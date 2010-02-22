@@ -1239,14 +1239,14 @@ namespace Little_Registry_Cleaner.Xml
             // Grant full control over registry key
             grantRegistryKeyRights(regKey, RegistryRights.FullControl);
 
-            if (!string.IsNullOrEmpty(strLimitValue))
-                DeleteAsXml_DeleteValue(getRegistryHandle(regKey), strLimitValue);
-            else
+            try
             {
-                RegistryKey reg = null;
-
-                try
+                if (!string.IsNullOrEmpty(strLimitValue))
+                    DeleteAsXml_DeleteValue(getRegistryHandle(regKey), strLimitValue);
+                else
                 {
+                    RegistryKey reg = null;
+
                     if (strBaseKey.ToUpper().CompareTo("HKEY_CLASSES_ROOT") == 0)
                     {
                         reg = Registry.ClassesRoot;
@@ -1278,11 +1278,11 @@ namespace Little_Registry_Cleaner.Xml
                         //DeleteAsXml_DeleteTree(getRegistryHandle(regKey));
                     }
                 }
-                catch (Exception e)
-                {
-                    ShowErrorMessage(e, "Error opening registry key");
-                    return false;
-                }
+            }
+            catch (Exception e)
+            {
+                ShowErrorMessage(e, "Error opening registry key");
+                return false;
             }
 
             regKey.Close();

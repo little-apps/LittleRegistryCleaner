@@ -296,6 +296,15 @@ namespace Little_Registry_Cleaner.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Unable to find &quot;Common Tools.dll&quot;.
+        /// </summary>
+        internal static string programNoCT {
+            get {
+                return ResourceManager.GetString("programNoCT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Are you sure?.
         /// </summary>
         internal static string restoreAsk {
