@@ -165,24 +165,6 @@
   <data name="toolStripContainer1.Text" xml:space="preserve">
     <value>toolStripContainer1</value>
   </data>
-  <data name="toolStripButtonScan.Text" xml:space="preserve">
-    <value>Scansione del Registro di sistema</value>
-  </data>
-  <data name="toolStripButtonFix.Text" xml:space="preserve">
-    <value>Correggi problemi</value>
-  </data>
-  <data name="toolStripButtonRestore.Text" xml:space="preserve">
-    <value>Ripristina il Registro di sistema</value>
-  </data>
-  <data name="toolStripButtonSettings.Text" xml:space="preserve">
-    <value>Opzioni</value>
-  </data>
-  <data name="toolStripButtonHelp.Text" xml:space="preserve">
-    <value>Aiuto</value>
-  </data>
-  <data name="toolStrip1.Text" xml:space="preserve">
-    <value>toolStrip1</value>
-  </data>
   <data name="scanToolStripMenuItem.Text" xml:space="preserve">
     <value>Scansione del Registro di sistema</value>
   </data>
@@ -249,6 +231,9 @@
   <data name="japaneseToolStripMenuItem.Text" xml:space="preserve">
     <value>Giapponese</value>
   </data>
+  <data name="persianToolStripMenuItem.Text" xml:space="preserve">
+    <value>Persiano</value>
+  </data>
   <data name="polishToolStripMenuItem.Text" xml:space="preserve">
     <value>Polacco</value>
   </data>
@@ -260,6 +245,9 @@
   </data>
   <data name="swedishToolStripMenuItem.Text" xml:space="preserve">
     <value>Svedese</value>
+  </data>
+  <data name="turkishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Turco</value>
   </data>
   <data name="thaiToolStripMenuItem.Text" xml:space="preserve">
     <value>Thai</value>
@@ -300,6 +288,24 @@
   <data name="menuStrip1.Text" xml:space="preserve">
     <value>menuStrip1</value>
   </data>
+  <data name="toolStripButtonScan.Text" xml:space="preserve">
+    <value>Scansione del Registro di sistema</value>
+  </data>
+  <data name="toolStripButtonFix.Text" xml:space="preserve">
+    <value>Correggi problemi</value>
+  </data>
+  <data name="toolStripButtonRestore.Text" xml:space="preserve">
+    <value>Ripristina il Registro di sistema</value>
+  </data>
+  <data name="toolStripButtonSettings.Text" xml:space="preserve">
+    <value>Opzioni</value>
+  </data>
+  <data name="toolStripButtonHelp.Text" xml:space="preserve">
+    <value>Aiuto</value>
+  </data>
+  <data name="toolStrip1.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
   <data name="hideShowToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt, style=Bold</value>
   </data>
@@ -314,6 +320,9 @@
   </data>
   <data name="notifyIcon1.Text" xml:space="preserve">
     <value>Little Registry Cleaner</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Little Registry Cleaner</value>

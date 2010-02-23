@@ -196,6 +196,9 @@ Vuoi creare un punto di ripristino?</value>
   <data name="programNeedAdmin" xml:space="preserve">
     <value>Devi avere i privilegi di amministratore per eseguire questo programma</value>
   </data>
+  <data name="programNoCT" xml:space="preserve">
+    <value>Impossibile trovare "Comune Tools.dll"</value>
+  </data>
   <data name="restoreAsk" xml:space="preserve">
     <value>Sei sicuro?</value>
   </data>

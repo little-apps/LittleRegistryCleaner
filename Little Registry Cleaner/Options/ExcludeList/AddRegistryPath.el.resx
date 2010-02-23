@@ -135,10 +135,10 @@
     <value>HKEY_USERS</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Επιλέξτε το τμήμα:</value>
+    <value>Επιλέξτε τμήμα:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Προσθήκη να αγνοήσει λίστα</value>
+    <value>Προσθήκη στην λίστα παράβλεψης </value>
   </data>
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>Ακύρωση</value>
@@ -147,6 +147,6 @@
     <value>Προσθήκη εγγραφής</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Προσθήκη να αγνοήσει λίστα</value>
+    <value>Προσθήκη στην λίστα παράβλεψης </value>
   </data>
 </root>

@@ -133,11 +133,11 @@
     <value>作者:</value>
   </data>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>该程序是自由软件：你可以重新发布它和/或修改在GNU通用公共自由软件基金会，使用许可证版本3，或（您自行选择）任何更新的版本出版许可证条款。
+    <value>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-这个程式的目的是希望它有用，但没有任何担保，甚至没有适销性或针对特定用途的隐含的担保。详情请参阅GNU通用公共许可证。
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-您应已收到附随于本程序的GNU通用公共许可证的副本。如果不是，参阅&lt;http://www.gnu.org/licenses/&gt;。</value>
+You should have received a copy of the GNU General Public License along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</value>
   </data>
   <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>

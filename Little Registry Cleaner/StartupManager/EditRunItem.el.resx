@@ -126,15 +126,15 @@
     <value>OK</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Τα ορίσματα:</value>
+    <value>Επιχειρήματα:</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Αρχείο:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Επεξεργασία καταχώρησης εκκίνησης</value>
+    <value>Επεξεργασία καταχώρησης εκκίνησης(Startup)</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Επεξεργασία στοιχείου εκτέλεση</value>
+    <value>Επεξεργασία στοιχείου εκκινησης</value>
   </data>
 </root>

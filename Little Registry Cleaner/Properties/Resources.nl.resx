@@ -196,6 +196,9 @@ Wilt u een herstelpunt aanmaken?</value>
   <data name="programNeedAdmin" xml:space="preserve">
     <value>U moet beheerder-rechten hebben om dit programma uit te voeren</value>
   </data>
+  <data name="programNoCT" xml:space="preserve">
+    <value>Kan "Common Tools.dll" niet vinden</value>
+  </data>
   <data name="restoreAsk" xml:space="preserve">
     <value>Weet u het zeker?</value>
   </data>

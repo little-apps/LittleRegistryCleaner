@@ -195,6 +195,9 @@
   <data name="programNeedAdmin" xml:space="preserve">
     <value>您必须是管理员才能运行此程序</value>
   </data>
+  <data name="programNoCT" xml:space="preserve">
+    <value>无法找到"Common Tools.dll"</value>
+  </data>
   <data name="restoreAsk" xml:space="preserve">
     <value>你确定?</value>
   </data>

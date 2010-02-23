@@ -122,7 +122,7 @@
     <value>Πρόγραμμα</value>
   </data>
   <data name="columnHeader2.Text" xml:space="preserve">
-    <value>Ο Publisher</value>
+    <value>Εκδότης</value>
   </data>
   <data name="columnHeader3.Text" xml:space="preserve">
     <value>Εκτιμώμενο μέγεθος</value>
@@ -133,7 +133,7 @@
     <value>Κατάργηση καταχώρησης</value>
   </data>
   <data name="buttonUninstall.Text" xml:space="preserve">
-    <value>Κατάργηση εγκατάστασης</value>
+    <value>Απεγκατάσταση</value>
   </data>
   <data name="textBoxSearch.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.5pt</value>
@@ -148,6 +148,6 @@
     <value>toolStripContainer1</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Μικρή Registry Cleaner - κατάργηση της εγκατάστασης διαχείρισης</value>
+    <value>Little Registry Cleaner - Διαχείριστης απεγκατάστασης</value>
   </data>
 </root>

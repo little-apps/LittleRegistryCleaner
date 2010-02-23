@@ -133,11 +133,11 @@
     <value>Tác giả:</value>
   </data>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>Chương trình này là phần mềm: bạn có thể phát hành lại nó và / hoặc sửa đổi nó với điều kiện của Giấy phép Công cộng GNU như được xuất bản bởi các Phần mềm Tự do, hoặc là phiên bản 3 của Giấy phép này, hoặc (tùy chọn) bất kỳ phiên bản sau.
+    <value>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-Chương trình này được phân phối với hy vọng rằng nó sẽ hữu ích, nhưng KHÔNG CÓ BẢO ĐẢM; mà không cần bảo hành ngay cả ngụ ý của BÁN hoặc PHÙ HỢP CHO MỘT MỤC ĐÍCH CỤ THỂ. Xem GNU General Public License để biết thêm chi tiết.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-Bạn nên đã nhận được một bản sao của Giấy phép Công cộng GNU cùng với chương trình này. Nếu không, xem &lt;http://www.gnu.org/licenses/&gt;.</value>
+You should have received a copy of the GNU General Public License along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</value>
   </data>
   <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>

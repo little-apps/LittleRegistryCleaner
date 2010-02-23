@@ -196,6 +196,9 @@ Szeretne visszaállító pontot létrehozni?</value>
   <data name="programNeedAdmin" xml:space="preserve">
     <value>Rendszergazdának kell lennie hogy használhassa ezt a programot</value>
   </data>
+  <data name="programNoCT" xml:space="preserve">
+    <value>Nincs meg a "Common Tools.dll" fájl</value>
+  </data>
   <data name="restoreAsk" xml:space="preserve">
     <value>Biztos benne?</value>
   </data>

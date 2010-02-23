@@ -129,6 +129,10 @@
   <data name="mainAskExit" xml:space="preserve">
     <value>Är du säker på att du vill avsluta?</value>
   </data>
+  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
+    <value>Esta sua primeira vez que funciona pouco líquido de limpeza do registro.
+Você gosta de criar um ponto do restore?</value>
+  </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>Inte hitta Little Registry Cleaner.chm</value>
   </data>
@@ -191,6 +195,9 @@
   </data>
   <data name="programNeedAdmin" xml:space="preserve">
     <value>Du måste vara administratör för att köra programmet</value>
+  </data>
+  <data name="programNoCT" xml:space="preserve">
+    <value>Inte hitta "Common Tools.dll"</value>
   </data>
   <data name="restoreAsk" xml:space="preserve">
     <value>Är du säker?</value>

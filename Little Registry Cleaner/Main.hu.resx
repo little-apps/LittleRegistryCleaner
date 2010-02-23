@@ -126,8 +126,14 @@
     <value>Üdvözli a Little Registry Cleaner!</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <data name="treeColumn1.Header" xml:space="preserve">
+    <value>Problémára</value>
+  </data>
   <data name="treeColumn2.Header" xml:space="preserve">
     <value>Hely</value>
+  </data>
+  <data name="treeColumn3.Header" xml:space="preserve">
+    <value>Érték neve</value>
   </data>
   <data name="selectAllToolStripMenuItem.Text" xml:space="preserve">
     <value>Mind kijelölése</value>
@@ -152,21 +158,6 @@
   </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="UTF-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="treeViewAdvResults" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="Absolute,405" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="toolStripButtonScan.Text" xml:space="preserve">
-    <value>Bejegyzés szkennelése</value>
-  </data>
-  <data name="toolStripButtonFix.Text" xml:space="preserve">
-    <value>Problémák javítása</value>
-  </data>
-  <data name="toolStripButtonRestore.Text" xml:space="preserve">
-    <value>Bejegyzés visszaállítása</value>
-  </data>
-  <data name="toolStripButtonSettings.Text" xml:space="preserve">
-    <value>Beállítások</value>
-  </data>
-  <data name="toolStripButtonHelp.Text" xml:space="preserve">
-    <value>Segítség</value>
   </data>
   <data name="scanToolStripMenuItem.Text" xml:space="preserve">
     <value>Bejegyzés szkennelése</value>
@@ -201,41 +192,8 @@
   <data name="editToolStripMenuItem.Text" xml:space="preserve">
     <value>Szerkesztés</value>
   </data>
-  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
-    <value>Angol</value>
-  </data>
-  <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
-    <value>Francia</value>
-  </data>
-  <data name="spanishToolStripMenuItem.Text" xml:space="preserve">
-    <value>Spanyol</value>
-  </data>
-  <data name="italianToolStripMenuItem.Text" xml:space="preserve">
-    <value>Olasz</value>
-  </data>
-  <data name="dutchToolStripMenuItem.Text" xml:space="preserve">
-    <value>Holland</value>
-  </data>
-  <data name="germanToolStripMenuItem.Text" xml:space="preserve">
-    <value>Német</value>
-  </data>
-  <data name="russianToolStripMenuItem.Text" xml:space="preserve">
-    <value>Orosz</value>
-  </data>
-  <data name="greekToolStripMenuItem.Text" xml:space="preserve">
-    <value>Görög</value>
-  </data>
   <data name="arabicToolStripMenuItem.Text" xml:space="preserve">
     <value>Arab</value>
-  </data>
-  <data name="polishToolStripMenuItem.Text" xml:space="preserve">
-    <value>Lengyel</value>
-  </data>
-  <data name="swedishToolStripMenuItem.Text" xml:space="preserve">
-    <value>Svéd</value>
-  </data>
-  <data name="japaneseToolStripMenuItem.Text" xml:space="preserve">
-    <value>Japán</value>
   </data>
   <data name="chineseSimplifiedToolStripMenuItem.Text" xml:space="preserve">
     <value>Kínai (egyszerűsített)</value>
@@ -243,11 +201,53 @@
   <data name="chineseTraditionalToolStripMenuItem.Text" xml:space="preserve">
     <value>Kínai (hagyományos)</value>
   </data>
-  <data name="vietnameseToolStripMenuItem.Text" xml:space="preserve">
-    <value>Vietnámi</value>
+  <data name="dutchToolStripMenuItem.Text" xml:space="preserve">
+    <value>Holland</value>
+  </data>
+  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Angol</value>
+  </data>
+  <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
+    <value>Francia</value>
+  </data>
+  <data name="germanToolStripMenuItem.Text" xml:space="preserve">
+    <value>Német</value>
+  </data>
+  <data name="greekToolStripMenuItem.Text" xml:space="preserve">
+    <value>Görög</value>
+  </data>
+  <data name="hungarianToolStripMenuItem.Text" xml:space="preserve">
+    <value>Magyar</value>
+  </data>
+  <data name="italianToolStripMenuItem.Text" xml:space="preserve">
+    <value>Olasz</value>
+  </data>
+  <data name="japaneseToolStripMenuItem.Text" xml:space="preserve">
+    <value>Japán</value>
+  </data>
+  <data name="persianToolStripMenuItem.Text" xml:space="preserve">
+    <value>Perzsa</value>
+  </data>
+  <data name="polishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Lengyel</value>
+  </data>
+  <data name="russianToolStripMenuItem.Text" xml:space="preserve">
+    <value>Orosz</value>
+  </data>
+  <data name="spanishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Spanyol</value>
+  </data>
+  <data name="swedishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Svéd</value>
+  </data>
+  <data name="turkishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Török</value>
   </data>
   <data name="thaiToolStripMenuItem.Text" xml:space="preserve">
     <value>Táj</value>
+  </data>
+  <data name="vietnameseToolStripMenuItem.Text" xml:space="preserve">
+    <value>Vietnámi</value>
   </data>
   <data name="languageToolStripMenuItem.Text" xml:space="preserve">
     <value>Nyelv</value>
@@ -279,6 +279,21 @@
   <data name="helpToolStripMenuItem.Text" xml:space="preserve">
     <value>Segítség</value>
   </data>
+  <data name="toolStripButtonScan.Text" xml:space="preserve">
+    <value>Bejegyzés szkennelése</value>
+  </data>
+  <data name="toolStripButtonFix.Text" xml:space="preserve">
+    <value>Problémák javítása</value>
+  </data>
+  <data name="toolStripButtonRestore.Text" xml:space="preserve">
+    <value>Bejegyzés visszaállítása</value>
+  </data>
+  <data name="toolStripButtonSettings.Text" xml:space="preserve">
+    <value>Beállítások</value>
+  </data>
+  <data name="toolStripButtonHelp.Text" xml:space="preserve">
+    <value>Segítség</value>
+  </data>
   <data name="hideShowToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt, style=Bold</value>
   </data>
@@ -293,6 +308,9 @@
   </data>
   <data name="notifyIcon1.Text" xml:space="preserve">
     <value>Little Registry Cleaner</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Little Registry Cleaner</value>

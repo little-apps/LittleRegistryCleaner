@@ -165,24 +165,6 @@
   <data name="toolStripContainer1.Text" xml:space="preserve">
     <value>toolStripContainer1</value>
   </data>
-  <data name="toolStripButtonScan.Text" xml:space="preserve">
-    <value>สแกนรีจิสทรี</value>
-  </data>
-  <data name="toolStripButtonFix.Text" xml:space="preserve">
-    <value>แก้ไขปัญหา</value>
-  </data>
-  <data name="toolStripButtonRestore.Text" xml:space="preserve">
-    <value>การคืนค่ารีจิสทรี</value>
-  </data>
-  <data name="toolStripButtonSettings.Text" xml:space="preserve">
-    <value>ตัวเลือก</value>
-  </data>
-  <data name="toolStripButtonHelp.Text" xml:space="preserve">
-    <value>ช่วยเหลือ</value>
-  </data>
-  <data name="toolStrip1.Text" xml:space="preserve">
-    <value>toolStrip1</value>
-  </data>
   <data name="scanToolStripMenuItem.Text" xml:space="preserve">
     <value>สแกนรีจิสทรี</value>
   </data>
@@ -216,41 +198,8 @@
   <data name="editToolStripMenuItem.Text" xml:space="preserve">
     <value>เรียบเรียง</value>
   </data>
-  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
-    <value>อังกฤษ</value>
-  </data>
-  <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
-    <value>ฝรั่งเศส</value>
-  </data>
-  <data name="spanishToolStripMenuItem.Text" xml:space="preserve">
-    <value>สเปน</value>
-  </data>
-  <data name="italianToolStripMenuItem.Text" xml:space="preserve">
-    <value>อิตาเลียน</value>
-  </data>
-  <data name="dutchToolStripMenuItem.Text" xml:space="preserve">
-    <value>ดัตช์</value>
-  </data>
-  <data name="germanToolStripMenuItem.Text" xml:space="preserve">
-    <value>เยอรมัน</value>
-  </data>
-  <data name="russianToolStripMenuItem.Text" xml:space="preserve">
-    <value>ภาษารัสเซีย</value>
-  </data>
-  <data name="greekToolStripMenuItem.Text" xml:space="preserve">
-    <value>กรีก</value>
-  </data>
   <data name="arabicToolStripMenuItem.Text" xml:space="preserve">
     <value>ภาษาอาหรับ</value>
-  </data>
-  <data name="polishToolStripMenuItem.Text" xml:space="preserve">
-    <value>ภาษาโปแลนด์</value>
-  </data>
-  <data name="swedishToolStripMenuItem.Text" xml:space="preserve">
-    <value>สวีเดน</value>
-  </data>
-  <data name="japaneseToolStripMenuItem.Text" xml:space="preserve">
-    <value>ญี่ปุ่น</value>
   </data>
   <data name="chineseSimplifiedToolStripMenuItem.Text" xml:space="preserve">
     <value>จีน (ประยุกต์)</value>
@@ -258,11 +207,53 @@
   <data name="chineseTraditionalToolStripMenuItem.Text" xml:space="preserve">
     <value>ภาษาจีน (ดั้งเดิม)</value>
   </data>
-  <data name="vietnameseToolStripMenuItem.Text" xml:space="preserve">
-    <value>เวียตนาม</value>
+  <data name="dutchToolStripMenuItem.Text" xml:space="preserve">
+    <value>ดัตช์</value>
+  </data>
+  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
+    <value>อังกฤษ</value>
+  </data>
+  <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
+    <value>ฝรั่งเศส</value>
+  </data>
+  <data name="germanToolStripMenuItem.Text" xml:space="preserve">
+    <value>เยอรมัน</value>
+  </data>
+  <data name="greekToolStripMenuItem.Text" xml:space="preserve">
+    <value>กรีก</value>
+  </data>
+  <data name="hungarianToolStripMenuItem.Text" xml:space="preserve">
+    <value>ฮังการี</value>
+  </data>
+  <data name="italianToolStripMenuItem.Text" xml:space="preserve">
+    <value>อิตาเลียน</value>
+  </data>
+  <data name="japaneseToolStripMenuItem.Text" xml:space="preserve">
+    <value>ญี่ปุ่น</value>
+  </data>
+  <data name="persianToolStripMenuItem.Text" xml:space="preserve">
+    <value>เปอร์เซีย</value>
+  </data>
+  <data name="polishToolStripMenuItem.Text" xml:space="preserve">
+    <value>ภาษาโปแลนด์</value>
+  </data>
+  <data name="russianToolStripMenuItem.Text" xml:space="preserve">
+    <value>ภาษารัสเซีย</value>
+  </data>
+  <data name="spanishToolStripMenuItem.Text" xml:space="preserve">
+    <value>สเปน</value>
+  </data>
+  <data name="swedishToolStripMenuItem.Text" xml:space="preserve">
+    <value>สวีเดน</value>
+  </data>
+  <data name="turkishToolStripMenuItem.Text" xml:space="preserve">
+    <value>ภาษา ตุรกี</value>
   </data>
   <data name="thaiToolStripMenuItem.Text" xml:space="preserve">
     <value>ไทย</value>
+  </data>
+  <data name="vietnameseToolStripMenuItem.Text" xml:space="preserve">
+    <value>เวียตนาม</value>
   </data>
   <data name="languageToolStripMenuItem.Text" xml:space="preserve">
     <value>ภาษา</value>
@@ -297,6 +288,24 @@
   <data name="menuStrip1.Text" xml:space="preserve">
     <value>menuStrip1</value>
   </data>
+  <data name="toolStripButtonScan.Text" xml:space="preserve">
+    <value>สแกนรีจิสทรี</value>
+  </data>
+  <data name="toolStripButtonFix.Text" xml:space="preserve">
+    <value>แก้ไขปัญหา</value>
+  </data>
+  <data name="toolStripButtonRestore.Text" xml:space="preserve">
+    <value>การคืนค่ารีจิสทรี</value>
+  </data>
+  <data name="toolStripButtonSettings.Text" xml:space="preserve">
+    <value>ตัวเลือก</value>
+  </data>
+  <data name="toolStripButtonHelp.Text" xml:space="preserve">
+    <value>ช่วยเหลือ</value>
+  </data>
+  <data name="toolStrip1.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
   <data name="hideShowToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt, style=Bold</value>
   </data>
@@ -311,6 +320,9 @@
   </data>
   <data name="notifyIcon1.Text" xml:space="preserve">
     <value>Little Registry Cleaner</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Little Registry Cleaner</value>

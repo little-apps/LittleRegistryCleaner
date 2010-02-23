@@ -425,6 +425,10 @@ namespace Little_Registry_Cleaner
                 case "Turkish":
                     ci = new CultureInfo("tr");
                     break;
+
+                case "Lithuanian":
+                    ci = new CultureInfo("lt");
+                    break;
             }
 
             if (ci.Name == "zh-CHS")

@@ -133,7 +133,7 @@
     <value>Ce votre première fois en cours d'exécution Little Registry Cleaner. vous souhaitez créer un point de restauration de \r\nWould?</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
-    <value>Impossible de trouver le petit registre Cleaner.chm</value>
+    <value>Impossible de trouver le "Little Registry Cleaner.chm"</value>
   </data>
   <data name="mainProblemsFix" xml:space="preserve">
     <value>Vous souhaitez corriger tous les problèmes sélectionnés?</value>
@@ -194,6 +194,9 @@
   </data>
   <data name="programNeedAdmin" xml:space="preserve">
     <value>Vous devez être administrateur pour exécuter ce programme.</value>
+  </data>
+  <data name="programNoCT" xml:space="preserve">
+    <value>Impossible de trouver le "Common Tools.dll"</value>
   </data>
   <data name="restoreAsk" xml:space="preserve">
     <value>Es-tu sûr?</value>

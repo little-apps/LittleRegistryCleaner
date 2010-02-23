@@ -133,11 +133,11 @@
     <value>الكاتب:</value>
   </data>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>هذا البرنامج هو البرمجيات الحرة: و/لك يمكن توزيع عليه أو تعديله تحت شروط جنو العمومية كما تنشرها "مؤسسة البرمجيات الحرة" إما الإصدار 3 من الترخيص أو (في الخيار لك) أي إصدار أحدث.
+    <value>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-يتم توزيع هذا البرنامج على أمل أن سيكون من المفيد ولكن "بدون أي الضمان"; دون حتى ضمان ضمني من بالتسويق أو وملاءمته FOR A معين الغرض.  انظر إلى جنو العمومية للحصول على مزيد من التفاصيل.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-وينبغي أن كنت قد تلقيت نسخة من جنو العمومية مع هذا البرنامج.  إذا لم انظر &lt;http://www.gnu.org/licenses/&gt;.</value>
+You should have received a copy of the GNU General Public License along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</value>
   </data>
   <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>

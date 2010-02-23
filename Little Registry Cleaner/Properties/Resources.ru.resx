@@ -195,6 +195,9 @@
   <data name="programNeedAdmin" xml:space="preserve">
     <value>Вы должны иметь права администратора для запуска этой программы</value>
   </data>
+  <data name="programNoCT" xml:space="preserve">
+    <value>Не удается найти «Common Tools.dll»</value>
+  </data>
   <data name="restoreAsk" xml:space="preserve">
     <value>Вы уверены?</value>
   </data>

@@ -347,3 +347,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Updated Italian Translations
 - Updated Swedish Translations
 - Changes registry key rights when removing values and sub keys 
+- Added Persian Translations
+- Added Turkish Translations
+- Checks for Common Tools.dll when program starts
+- Updated Greek Translations
+- Added Lithuanian Translations

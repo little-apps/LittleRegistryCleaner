@@ -130,12 +130,12 @@
     <value>Προβλήματα που εντοπίστηκαν: </value>
   </data>
   <data name="buttonStop.Text" xml:space="preserve">
-    <value>Σταμάτα</value>
+    <value>Στοπ</value>
   </data>
   <data name="textBoxSubKey.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Μικρή Registry Cleaner - Scanning...</value>
+    <value>Little Registry Cleaner - Scanning...</value>
   </data>
 </root>

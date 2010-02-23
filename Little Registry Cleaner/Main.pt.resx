@@ -165,24 +165,6 @@
   <data name="toolStripContainer1.Text" xml:space="preserve">
     <value>toolStripContainer1</value>
   </data>
-  <data name="toolStripButtonScan.Text" xml:space="preserve">
-    <value>Varredura do registro</value>
-  </data>
-  <data name="toolStripButtonFix.Text" xml:space="preserve">
-    <value>Corrigir problemas</value>
-  </data>
-  <data name="toolStripButtonRestore.Text" xml:space="preserve">
-    <value>Restaurar o registro</value>
-  </data>
-  <data name="toolStripButtonSettings.Text" xml:space="preserve">
-    <value>Opções</value>
-  </data>
-  <data name="toolStripButtonHelp.Text" xml:space="preserve">
-    <value>Ajuda</value>
-  </data>
-  <data name="toolStrip1.Text" xml:space="preserve">
-    <value>toolStrip1</value>
-  </data>
   <data name="scanToolStripMenuItem.Text" xml:space="preserve">
     <value>Varredura do registro</value>
   </data>
@@ -240,11 +222,17 @@
   <data name="greekToolStripMenuItem.Text" xml:space="preserve">
     <value>Grego</value>
   </data>
+  <data name="hungarianToolStripMenuItem.Text" xml:space="preserve">
+    <value>Húngaro</value>
+  </data>
   <data name="italianToolStripMenuItem.Text" xml:space="preserve">
     <value>Italiano</value>
   </data>
   <data name="japaneseToolStripMenuItem.Text" xml:space="preserve">
     <value>Japonês</value>
+  </data>
+  <data name="persianToolStripMenuItem.Text" xml:space="preserve">
+    <value>Persa</value>
   </data>
   <data name="polishToolStripMenuItem.Text" xml:space="preserve">
     <value>Polonês</value>
@@ -257,6 +245,9 @@
   </data>
   <data name="swedishToolStripMenuItem.Text" xml:space="preserve">
     <value>Sueco</value>
+  </data>
+  <data name="turkishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Turco</value>
   </data>
   <data name="thaiToolStripMenuItem.Text" xml:space="preserve">
     <value>Tailandês</value>
@@ -297,6 +288,24 @@
   <data name="menuStrip1.Text" xml:space="preserve">
     <value>menuStrip1</value>
   </data>
+  <data name="toolStripButtonScan.Text" xml:space="preserve">
+    <value>Varredura do registro</value>
+  </data>
+  <data name="toolStripButtonFix.Text" xml:space="preserve">
+    <value>Corrigir problemas</value>
+  </data>
+  <data name="toolStripButtonRestore.Text" xml:space="preserve">
+    <value>Restaurar o registro</value>
+  </data>
+  <data name="toolStripButtonSettings.Text" xml:space="preserve">
+    <value>Opções</value>
+  </data>
+  <data name="toolStripButtonHelp.Text" xml:space="preserve">
+    <value>Ajuda</value>
+  </data>
+  <data name="toolStrip1.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
   <data name="hideShowToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt, style=Bold</value>
   </data>
@@ -311,6 +320,9 @@
   </data>
   <data name="notifyIcon1.Text" xml:space="preserve">
     <value>Little Registry Cleaner</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Little Registry Cleaner</value>

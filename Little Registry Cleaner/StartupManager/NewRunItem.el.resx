@@ -126,7 +126,7 @@
     <value>OK</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Τα ορίσματα:</value>
+    <value>Επιχειρήματα:</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Διαδρομή αρχείου:</value>
@@ -171,6 +171,6 @@
     <value>Registry\Current User\Run Services Once</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Νέα εκτέλεση στοιχείου</value>
+    <value>Νέα στοιχείο εκτέλεσης</value>
   </data>
 </root>

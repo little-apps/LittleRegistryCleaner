@@ -122,15 +122,72 @@
     <value>Portekizce</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <data name="toolStripStatusLabel1.Text" xml:space="preserve">
+    <value>Welcome to Little Kayıt Defteri Temizleyici!</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <data name="treeColumn1.Header" xml:space="preserve">
+    <value>Sorun</value>
+  </data>
+  <data name="treeColumn2.Header" xml:space="preserve">
+    <value>Yer</value>
+  </data>
+  <data name="treeColumn3.Header" xml:space="preserve">
+    <value>Değer Adı</value>
+  </data>
+  <data name="selectAllToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tümünü Seç</value>
+  </data>
+  <data name="selectNoneToolStripMenuItem.Text" xml:space="preserve">
+    <value>Yok seçeneğini seçin</value>
+  </data>
+  <data name="invertSelectionToolStripMenuItem.Text" xml:space="preserve">
+    <value>Invert Seçimi</value>
+  </data>
+  <data name="excludeSelectedToolStripMenuItem.Text" xml:space="preserve">
+    <value>Exclude Seçilen</value>
+  </data>
+  <data name="viewInRegeditToolStripMenuItem.Text" xml:space="preserve">
+    <value>Görünümünde kral naibi içinde</value>
+  </data>
+  <data name="treeView1.Nodes" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZRMAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQJY2hpbGRyZW4wCWNoaWxkcmVuMQljaGlsZHJlbjIJY2hpbGRyZW4zCWNoaWxkcmVuNAljaGlsZHJlbjUJY2hpbGRyZW42CWNoaWxkcmVuNwljaGlsZHJlbjgJY2hpbGRyZW45CmNoaWxkcmVuMTABAQAAAQABAAQEBAQEBAQEBAQEAQgICB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlAgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlAgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlAgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAAgAAAAYDAAAAEVRhcmFtYSBCw7Zsw7xtbGVyBgQAAAAFTm9kZTAB/////wYFAAAADm15Y29tcHV0ZXIuaWNv/////wYGAAAADm15Y29tcHV0ZXIuaWNvCwAAAAkHAAAACQgAAAAJCQAAAAkKAAAACQsAAAAJDAAAAAkNAAAACQ4AAAAJDwAAAAkQAAAACREAAAAFBwAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABhIAAAANQWN0aXZlWCAvIENPTQYTAAAAC05vZGVBY3RpdmVYAf////8GFAAAAA5hY3RpdmV4Y29tLmljb/////8GFQAAAA5hY3RpdmV4Y29tLmljbwAAAAAFCAAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABhYAAAASQmHFn3Z1cnUgQmlsZ2lsZXJpBhcAAAALTm9kZUFwcEluZm8B/////wYYAAAAC2FwcGluZm8uaWNv/////wYZAAAAC2FwcGluZm8uaWNvAAAAAAUJAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGGgAAABBQcm9ncmFtIE1la2FubGFyBhsAAAAMTm9kZUFwcFBhdGhzAf////8GHAAAABRwcm9ncmFtbG9jYXRpb25zLmljb/////8GHQAAABRwcm9ncmFtbG9jYXRpb25zLmljbwAAAAAFCgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABh4AAAATWWF6xLFsxLFtIEF5YXJsYXLEsQYfAAAAD05vZGVBcHBTZXR0aW5ncwH/////BiAAAAAUc29mdHdhcmVzZXR0aW5ncy5pY2//////CSAAAAAAAAAABQsAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYhAAAADEJhxZ9sYW5nxLHDpwYiAAAAC05vZGVTdGFydHVwAf////8GIwAAAAtzdGFydHVwLmljb/////8GJAAAAAtzdGFydHVwLmljbwAAAAAFDAAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABiUAAAAUU2lzdGVtIFPDvHLDvGPDvGxlcmkGJgAAAAtOb2RlRHJpdmVycwH/////BicAAAALZHJpdmVycy5pY2//////BigAAAALZHJpdmVycy5pY28AAAAABQ0AAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYpAAAAEFBheWxhxZ/EsWxhbiBETEwGKgAAAA5Ob2RlU2hhcmVkRGxscwH/////BisAAAAOc2hhcmVkZGxscy5pY2//////BiwAAAAOc2hhcmVkZGxscy5pY28AAAAABQ4AAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYtAAAAFVlhcmTEsW0gZG9zeWFsYXLEsW7EsQYuAAAACE5vZGVIZWxwAf////8GLwAAAA1oZWxwZmlsZXMuaWNv/////wYwAAAADWhlbHBmaWxlcy5pY28AAAAABQ8AAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYxAAAADVNlcyBPbGF5bGFyxLEGMgAAAApOb2RlU291bmRzAf////8GMwAAAA9zb3VuZGV2ZW50cy5pY2//////BjQAAAAPc291bmRldmVudHMuaWNvAAAAAAUQAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGNQAAAA1UYXJpaCBMaXN0ZXNpBjYAAAAPTm9kZUhpc3RvcnlMaXN0Af////8GNwAAAA9oaXN0b3J5bGlzdC5pY2//////BjgAAAAPaGlzdG9yeWxpc3QuaWNvAAAAAAURAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGOQAAABFXaW5kb3dzIEZvbnRsYXLEsQY6AAAACU5vZGVGb250cwH/////BjsAAAAJZm9udHMuaWNv/////wY8AAAACWZvbnRzLmljbwAAAAAL</value>
+  </data>
   <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="UTF-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="treeView1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0" /&gt;&lt;Rows Styles="Percent,100.1" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="UTF-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="treeViewAdvResults" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="Absolute,405" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
+  <data name="scanToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tarama kayıt</value>
+  </data>
+  <data name="fixToolStripMenuItem.Text" xml:space="preserve">
+    <value>Fix sorunlar</value>
+  </data>
+  <data name="restoreToolStripMenuItem.Text" xml:space="preserve">
+    <value>Geri kayıt</value>
+  </data>
+  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
   <data name="fileToolStripMenuItem.Text" xml:space="preserve">
     <value>Dosya</value>
+  </data>
+  <data name="selectAllToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Tümünü Seç</value>
+  </data>
+  <data name="selectNoneToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Yok seçeneğini seçin</value>
+  </data>
+  <data name="invertSelectionToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Invert Seçimi</value>
+  </data>
+  <data name="excludeSelectedToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Exclude Seçilen</value>
+  </data>
+  <data name="viewInRegeditToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Görünümünde kral naibi içinde</value>
   </data>
   <data name="editToolStripMenuItem.Text" xml:space="preserve">
     <value>Değiştir</value>
@@ -168,6 +225,9 @@
   <data name="japaneseToolStripMenuItem.Text" xml:space="preserve">
     <value>Japonca</value>
   </data>
+  <data name="persianToolStripMenuItem.Text" xml:space="preserve">
+    <value>Farsça</value>
+  </data>
   <data name="polishToolStripMenuItem.Text" xml:space="preserve">
     <value>Lehçe</value>
   </data>
@@ -180,6 +240,9 @@
   <data name="swedishToolStripMenuItem.Text" xml:space="preserve">
     <value>İsveççe</value>
   </data>
+  <data name="turkishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Türkçe</value>
+  </data>
   <data name="thaiToolStripMenuItem.Text" xml:space="preserve">
     <value>Tay</value>
   </data>
@@ -189,44 +252,32 @@
   <data name="languageToolStripMenuItem.Text" xml:space="preserve">
     <value>Dil</value>
   </data>
+  <data name="startupManagerToolStripMenuItem.Text" xml:space="preserve">
+    <value>Başlangıç Yöneticisi</value>
+  </data>
+  <data name="uninstallManagerToolStripMenuItem.Text" xml:space="preserve">
+    <value>Uninstall Manager</value>
+  </data>
+  <data name="toolStripMenuItemOptions.Text" xml:space="preserve">
+    <value>Seçenekleri</value>
+  </data>
   <data name="toolsToolStripMenuItem.Text" xml:space="preserve">
     <value>Araçlar</value>
   </data>
-  <data name="helpToolStripMenuItem.Text" xml:space="preserve">
+  <data name="helpToolStripMenuItem1.Text" xml:space="preserve">
     <value>Yardım</value>
   </data>
-  <data name="toolStripStatusLabel1.Text" xml:space="preserve">
-    <value>Welcome to Little Kayıt Defteri Temizleyici!</value>
+  <data name="visitWebsiteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Visit Website</value>
   </data>
-  <data name="treeColumn1.Header" xml:space="preserve">
-    <value>Sorun</value>
+  <data name="checkForUpdatesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Güncelleştirmeleri denetleyin</value>
   </data>
-  <data name="treeColumn2.Header" xml:space="preserve">
-    <value>Yer</value>
+  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ile ilgili...</value>
   </data>
-  <data name="treeColumn3.Header" xml:space="preserve">
-    <value>Değer Adı</value>
-  </data>
-  <data name="selectAllToolStripMenuItem.Text" xml:space="preserve">
-    <value>Tümünü Seç</value>
-  </data>
-  <data name="selectNoneToolStripMenuItem.Text" xml:space="preserve">
-    <value>Yok seçeneğini seçin</value>
-  </data>
-  <data name="invertSelectionToolStripMenuItem.Text" xml:space="preserve">
-    <value>Invert Seçimi</value>
-  </data>
-  <data name="excludeSelectedToolStripMenuItem.Text" xml:space="preserve">
-    <value>Exclude Seçilen</value>
-  </data>
-  <data name="viewInRegeditToolStripMenuItem.Text" xml:space="preserve">
-    <value>Görünümünde kral naibi içinde</value>
-  </data>
-  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="UTF-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="treeView1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0" /&gt;&lt;Rows Styles="Percent,100.1" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="treeView1.Nodes" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZRMAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQJY2hpbGRyZW4wCWNoaWxkcmVuMQljaGlsZHJlbjIJY2hpbGRyZW4zCWNoaWxkcmVuNAljaGlsZHJlbjUJY2hpbGRyZW42CWNoaWxkcmVuNwljaGlsZHJlbjgJY2hpbGRyZW45CmNoaWxkcmVuMTABAQAAAQABAAQEBAQEBAQEBAQEAQgICB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlAgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlAgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlAgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQIAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUCAAAAAgAAAAYDAAAAEVRhcmFtYSBCw7Zsw7xtbGVyBgQAAAAFTm9kZTAB/////wYFAAAADm15Y29tcHV0ZXIuaWNv/////wYGAAAADm15Y29tcHV0ZXIuaWNvCwAAAAkHAAAACQgAAAAJCQAAAAkKAAAACQsAAAAJDAAAAAkNAAAACQ4AAAAJDwAAAAkQAAAACREAAAAFBwAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABhIAAAANQWN0aXZlWCAvIENPTQYTAAAAC05vZGVBY3RpdmVYAf////8GFAAAAA5hY3RpdmV4Y29tLmljb/////8GFQAAAA5hY3RpdmV4Y29tLmljbwAAAAAFCAAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABhYAAAASQmHFn3Z1cnUgQmlsZ2lsZXJpBhcAAAALTm9kZUFwcEluZm8B/////wYYAAAAC2FwcGluZm8uaWNv/////wYZAAAAC2FwcGluZm8uaWNvAAAAAAUJAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGGgAAABBQcm9ncmFtIE1la2FubGFyBhsAAAAMTm9kZUFwcFBhdGhzAf////8GHAAAABRwcm9ncmFtbG9jYXRpb25zLmljb/////8GHQAAABRwcm9ncmFtbG9jYXRpb25zLmljbwAAAAAFCgAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABh4AAAATWWF6xLFsxLFtIEF5YXJsYXLEsQYfAAAAD05vZGVBcHBTZXR0aW5ncwH/////BiAAAAAUc29mdHdhcmVzZXR0aW5ncy5pY2//////CSAAAAAAAAAABQsAAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYhAAAADEJhxZ9sYW5nxLHDpwYiAAAAC05vZGVTdGFydHVwAf////8GIwAAAAtzdGFydHVwLmljb/////8GJAAAAAtzdGFydHVwLmljbwAAAAAFDAAAAB1TeXN0ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQgAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQBAQAAAQABAAEICAgCAAAABiUAAAAUU2lzdGVtIFPDvHLDvGPDvGxlcmkGJgAAAAtOb2RlRHJpdmVycwH/////BicAAAALZHJpdmVycy5pY2//////BigAAAALZHJpdmVycy5pY28AAAAABQ0AAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYpAAAAEFBheWxhxZ/EsWxhbiBETEwGKgAAAA5Ob2RlU2hhcmVkRGxscwH/////BisAAAAOc2hhcmVkZGxscy5pY2//////BiwAAAAOc2hhcmVkZGxscy5pY28AAAAABQ4AAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYtAAAAFVlhcmTEsW0gZG9zeWFsYXLEsW7EsQYuAAAACE5vZGVIZWxwAf////8GLwAAAA1oZWxwZmlsZXMuaWNv/////wYwAAAADWhlbHBmaWxlcy5pY28AAAAABQ8AAAAdU3lzdGVtLldpbmRvd3MuRm9ybXMuVHJlZU5vZGUIAAAABFRleHQETmFtZQlJc0NoZWNrZWQKSW1hZ2VJbmRleAhJbWFnZUtleRJTZWxlY3RlZEltYWdlSW5kZXgQU2VsZWN0ZWRJbWFnZUtleQpDaGlsZENvdW50AQEAAAEAAQABCAgIAgAAAAYxAAAADVNlcyBPbGF5bGFyxLEGMgAAAApOb2RlU291bmRzAf////8GMwAAAA9zb3VuZGV2ZW50cy5pY2//////BjQAAAAPc291bmRldmVudHMuaWNvAAAAAAUQAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGNQAAAA1UYXJpaCBMaXN0ZXNpBjYAAAAPTm9kZUhpc3RvcnlMaXN0Af////8GNwAAAA9oaXN0b3J5bGlzdC5pY2//////BjgAAAAPaGlzdG9yeWxpc3QuaWNvAAAAAAURAAAAHVN5c3RlbS5XaW5kb3dzLkZvcm1zLlRyZWVOb2RlCAAAAARUZXh0BE5hbWUJSXNDaGVja2VkCkltYWdlSW5kZXgISW1hZ2VLZXkSU2VsZWN0ZWRJbWFnZUluZGV4EFNlbGVjdGVkSW1hZ2VLZXkKQ2hpbGRDb3VudAEBAAABAAEAAQgICAIAAAAGOQAAABFXaW5kb3dzIEZvbnRsYXLEsQY6AAAACU5vZGVGb250cwH/////BjsAAAAJZm9udHMuaWNv/////wY8AAAACWZvbnRzLmljbwAAAAAL</value>
+  <data name="helpToolStripMenuItem.Text" xml:space="preserve">
+    <value>Yardım</value>
   </data>
   <data name="toolStripButtonScan.Text" xml:space="preserve">
     <value>Tarama kayıt</value>
@@ -243,57 +294,6 @@
   <data name="toolStripButtonHelp.Text" xml:space="preserve">
     <value>Yardım</value>
   </data>
-  <data name="scanToolStripMenuItem.Text" xml:space="preserve">
-    <value>Tarama kayıt</value>
-  </data>
-  <data name="fixToolStripMenuItem.Text" xml:space="preserve">
-    <value>Fix sorunlar</value>
-  </data>
-  <data name="restoreToolStripMenuItem.Text" xml:space="preserve">
-    <value>Geri kayıt</value>
-  </data>
-  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
-    <value>Exit</value>
-  </data>
-  <data name="selectAllToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Tümünü Seç</value>
-  </data>
-  <data name="selectNoneToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Yok seçeneğini seçin</value>
-  </data>
-  <data name="invertSelectionToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Invert Seçimi</value>
-  </data>
-  <data name="excludeSelectedToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Exclude Seçilen</value>
-  </data>
-  <data name="viewInRegeditToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Görünümünde kral naibi içinde</value>
-  </data>
-  <data name="startupManagerToolStripMenuItem.Text" xml:space="preserve">
-    <value>Başlangıç Yöneticisi</value>
-  </data>
-  <data name="uninstallManagerToolStripMenuItem.Text" xml:space="preserve">
-    <value>Uninstall Manager</value>
-  </data>
-  <data name="toolStripMenuItemOptions.Text" xml:space="preserve">
-    <value>Seçenekleri</value>
-  </data>
-  <data name="helpToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Yardım</value>
-  </data>
-  <data name="visitWebsiteToolStripMenuItem.Text" xml:space="preserve">
-    <value>Visit Website</value>
-  </data>
-  <data name="checkForUpdatesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Güncelleştirmeleri denetleyin</value>
-  </data>
-  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
-    <value>Ile ilgili...</value>
-  </data>
-  <data name="notifyIcon1.Text" xml:space="preserve">
-    <value>Little Registry Cleaner</value>
-  </data>
   <data name="hideShowToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt, style=Bold</value>
   </data>
@@ -305,6 +305,12 @@
   </data>
   <data name="exitToolStripMenuItem1.Text" xml:space="preserve">
     <value>Exit</value>
+  </data>
+  <data name="notifyIcon1.Text" xml:space="preserve">
+    <value>Little Registry Cleaner</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Little Registry Cleaner</value>

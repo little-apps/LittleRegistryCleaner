@@ -1,0 +1,353 @@
+Little Registry Cleaner 1.4.0.1
+Website: http://sourceforge.net/projects/littlecleaner
+Microsoft Windows NT 6.1.7600.0
+
+Started scan at 23/02/2010 3:17:35 PM
+
+Starting scanning: Automatiškai paleidžiami failai
+Checking for invalid files in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run
+Checking for invalid files in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+Checking for invalid files in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+Checking for invalid files in HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run
+Checking for invalid files in HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce" Value Name: "FlashPlayerUpdate"
+Checking for invalid files in HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+Checking for invalid files in HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run
+Checking for invalid files in HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\RunOnce
+Checking for invalid files in HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Run
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Run" Value Name: "SunJavaUpdateSched"
+Finished scanning: Automatiškai paleidžiami failai
+
+Starting scanning: Bendri DLL
+Scanning for missing shared DLLs
+Finished scanning: Bendri DLL
+
+Starting scanning: Windows šriftai
+Scanning for invalid fonts
+Finished scanning: Windows šriftai
+
+Starting scanning: Informacija apie programą
+Verifying programs in Add/Remove list
+Verifying registry entries in Add/Remove Cache
+Finished scanning: Informacija apie programą
+
+Starting scanning: Programos keliai
+Checking for invalid installer folders
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "C:\Program Files (x86)\Microsoft Expression\Media 2\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "C:\Program Files (x86)\Microsoft Expression\Web 2\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "C:\Program Files (x86)\Microsoft Expression\Web 2\OFFICE12\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "C:\Program Files (x86)\Microsoft Expression\Web 2\OFFICE12\1033\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "C:\Program Files (x86)\Microsoft Expression\Web 2\Office12\1033\WEBCOMP\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Windows SDK v7.0\Tools\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Windows SDK v7.0\Visual Studio Registration\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "D:\Windows\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "D:\Windows\Microsoft.NET\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "D:\Windows\Microsoft.NET\Framework\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "D:\Windows\Microsoft.NET\Framework\v2.0.50727\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "D:\Windows\Microsoft.NET\Framework\v2.0.50727\en\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "D:\Windows\Microsoft.NET\Framework\v3.5\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "C:\Program Files (x86)\Microsoft Silverlight\3.0.40818.0\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "C:\Program Files (x86)\Microsoft Silverlight\3.0.40818.0\fr\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "C:\Program Files (x86)\Microsoft Silverlight\3.0.40818.0\it\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "C:\Program Files (x86)\Microsoft Silverlight\3.0.40818.0\de\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "C:\Program Files (x86)\Microsoft Silverlight\3.0.40818.0\es\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "C:\Program Files (x86)\Microsoft Silverlight\3.0.40818.0\zh-Hans\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "C:\Program Files (x86)\Microsoft Silverlight\3.0.40818.0\zh-Hant\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "C:\Program Files (x86)\Microsoft Silverlight\3.0.40818.0\ja\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "C:\Program Files (x86)\Microsoft Silverlight\3.0.40818.0\ko\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "C:\Program Files (x86)\JRE\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "F:\NFS Shift\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "F:\NFS Shift\GUI\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "F:\NFS Shift\Pakfiles\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "F:\NFS Shift\Pakfiles\Vehicles\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "F:\NFS Shift\UI\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "F:\NFS Shift\UI\Textures\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "F:\NFS Shift\UI\Textures\CarManufacturers\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "F:\Config.Msi\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "C:\Program Files (x86)\Altova\XMLSpy2010\"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders" Value Name: "C:\Program Files (x86)\Altova\"
+Checking for invalid application paths
+Bad Registry Key Found! Problem: "Neteisingas registro raktas" Path: "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\App Paths\fsquirt.exe"
+Finished scanning: Programos keliai
+
+Starting scanning: ActiveX / COM objektai
+Scanning HKEY_CLASSES_ROOT\CLSID for invalid CLSID's
+Bad Registry Key Found! Problem: "Nepavyko rasti InprocServer32" Path: "HKEY_CLASSES_ROOT\CLSID\{BE4159EC-CACB-4b31-A4FE-3F87B97CFBC7}\InprocServer32"
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID for invalid CLSID's
+Bad Registry Key Found! Problem: "Nepavyko rasti InprocServer32" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID\{BE4159EC-CACB-4b31-A4FE-3F87B97CFBC7}\InprocServer32"
+Scanning HKEY_CURRENT_USER\SOFTWARE\Classes\CLSID for invalid CLSID's
+Scanning HKEY_CLASSES_ROOT\Wow6432Node\CLSID for invalid CLSID's
+Bad Registry Key Found! Problem: "Nepavyko rasti InprocServer32" Path: "HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{039B2CA5-3B41-4D93-AD77-47D3293FC5CB}\InprocServer32"
+Bad Registry Key Found! Problem: "Nepavyko rasti InprocServer32" Path: "HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{42481700-CF3C-4D05-8EC6-F9A1C57E8DC0}\InprocServer32"
+Bad Registry Key Found! Problem: "Nepavyko rasti InprocServer32" Path: "HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{4662DAA2-D393-11D0-9A56-00C04FB68BF7}\InprocServer32"
+Bad Registry Key Found! Problem: "Nepavyko rasti InprocServer32" Path: "HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{4662DAA3-D393-11D0-9A56-00C04FB68BF7}\InprocServer32"
+Bad Registry Key Found! Problem: "Nepavyko rasti InprocServer32" Path: "HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{4662DAA4-D393-11D0-9A56-00C04FB68BF7}\InprocServer32"
+Bad Registry Key Found! Problem: "Nepavyko rasti InprocServer32" Path: "HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{8FA0D5A9-DEDF-11D0-9A61-00C04FB68BF7}\InprocServer32"
+Bad Registry Key Found! Problem: "Nepavyko rasti InprocServer32" Path: "HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{8FA0D5AA-DEDF-11D0-9A61-00C04FB68BF7}\InprocServer32"
+Bad Registry Key Found! Problem: "Nepavyko rasti InprocServer32" Path: "HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{8FA0D5AB-DEDF-11D0-9A61-00C04FB68BF7}\InprocServer32"
+Bad Registry Key Found! Problem: "Nepavyko rasti InprocServer32" Path: "HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{D0D38C6E-BF64-4C42-840D-3E0019D9F7A6}\InprocServer32"
+Bad Registry Key Found! Problem: "Nepavyko rasti InprocServer32" Path: "HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{EC53AF8C-5CBD-4c08-A957-9C211E314C64}\InprocServer32"
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Classes\CLSID for invalid CLSID's
+Bad Registry Key Found! Problem: "Nepavyko rasti InprocServer32" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Classes\CLSID\{4662DAA2-D393-11D0-9A56-00C04FB68BF7}\InprocServer32"
+Bad Registry Key Found! Problem: "Nepavyko rasti InprocServer32" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Classes\CLSID\{4662DAA3-D393-11D0-9A56-00C04FB68BF7}\InprocServer32"
+Bad Registry Key Found! Problem: "Nepavyko rasti InprocServer32" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Classes\CLSID\{4662DAA4-D393-11D0-9A56-00C04FB68BF7}\InprocServer32"
+Bad Registry Key Found! Problem: "Nepavyko rasti InprocServer32" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Classes\CLSID\{8FA0D5A9-DEDF-11D0-9A61-00C04FB68BF7}\InprocServer32"
+Bad Registry Key Found! Problem: "Nepavyko rasti InprocServer32" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Classes\CLSID\{8FA0D5AA-DEDF-11D0-9A61-00C04FB68BF7}\InprocServer32"
+Bad Registry Key Found! Problem: "Nepavyko rasti InprocServer32" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Classes\CLSID\{8FA0D5AB-DEDF-11D0-9A61-00C04FB68BF7}\InprocServer32"
+Bad Registry Key Found! Problem: "Nepavyko rasti InprocServer32" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Classes\CLSID\{EC53AF8C-5CBD-4c08-A957-9C211E314C64}\InprocServer32"
+Scanning HKEY_CLASSES_ROOT for invalid Classes
+Bad Registry Key Found! Problem: "Nepanaudojami ProgID / File išplėtimai" Path: "HKEY_CLASSES_ROOT\.cal"
+Bad Registry Key Found! Problem: "Nepanaudojami ProgID / File išplėtimai" Path: "HKEY_CLASSES_ROOT\.cals"
+Bad Registry Key Found! Problem: "Nepanaudojami ProgID / File išplėtimai" Path: "HKEY_CLASSES_ROOT\.cmp"
+Bad Registry Key Found! Problem: "Nepanaudojami ProgID / File išplėtimai" Path: "HKEY_CLASSES_ROOT\.CT"
+Bad Registry Key Found! Problem: "Trūksta ProgID nuorodos" Path: "HKEY_CLASSES_ROOT\.f4v"
+Bad Registry Key Found! Problem: "Nepanaudojami ProgID / File išplėtimai" Path: "HKEY_CLASSES_ROOT\.ica"
+Bad Registry Key Found! Problem: "Nepanaudojami ProgID / File išplėtimai" Path: "HKEY_CLASSES_ROOT\.ras"
+Bad Registry Key Found! Problem: "Trūksta ProgID nuorodos" Path: "HKEY_CLASSES_ROOT\.sps"
+Bad Registry Key Found! Problem: "Nepanaudojami ProgID / File išplėtimai" Path: "HKEY_CLASSES_ROOT\.wfx"
+Bad Registry Key Found! Problem: "Nepanaudojami ProgID / File išplėtimai" Path: "HKEY_CLASSES_ROOT\.wpg"
+Bad Registry Key Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CLASSES_ROOT\callto\DefaultIcon"
+Bad Registry Key Found! Problem: "Nepanaudojami ProgID / File išplėtimai" Path: "HKEY_CLASSES_ROOT\dacdchfile"
+Bad Registry Key Found! Problem: "Trūksta CLSID nuorodos" Path: "HKEY_CLASSES_ROOT\ezPMUtils.GameController"
+Bad Registry Key Found! Problem: "Nepanaudojami ProgID / File išplėtimai" Path: "HKEY_CLASSES_ROOT\FMObex.HTC.FMObjectProperties="
+Bad Registry Key Found! Problem: "Trūksta CLSID nuorodos" Path: "HKEY_CLASSES_ROOT\JavaPlugin.FamilyVersionSupport"
+Bad Registry Key Found! Problem: "Trūksta CLSID nuorodos" Path: "HKEY_CLASSES_ROOT\NBShell.NBShellHook.4.0"
+Bad Registry Key Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CLASSES_ROOT\ProcMon.Logfile.1\DefaultIcon"
+Bad Registry Key Found! Problem: "Nepanaudojami ProgID / File išplėtimai" Path: "HKEY_CLASSES_ROOT\s"
+Bad Registry Key Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CLASSES_ROOT\SouthlogicPackFile\DefaultIcon"
+Bad Registry Key Found! Problem: "Trūksta CLSID nuorodos" Path: "HKEY_CLASSES_ROOT\spmServices.NamedStrings"
+Bad Registry Key Found! Problem: "Trūksta CLSID nuorodos" Path: "HKEY_CLASSES_ROOT\spmServices.PluginWindow"
+Bad Registry Key Found! Problem: "Nepanaudojami ProgID / File išplėtimai" Path: "HKEY_CLASSES_ROOT\tigans"
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE\Classes for invalid Classes
+Bad Registry Key Found! Problem: "Nepanaudojami ProgID / File išplėtimai" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.cal"
+Bad Registry Key Found! Problem: "Nepanaudojami ProgID / File išplėtimai" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.cals"
+Bad Registry Key Found! Problem: "Nepanaudojami ProgID / File išplėtimai" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.cmp"
+Bad Registry Key Found! Problem: "Nepanaudojami ProgID / File išplėtimai" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.CT"
+Bad Registry Key Found! Problem: "Trūksta ProgID nuorodos" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.f4v"
+Bad Registry Key Found! Problem: "Nepanaudojami ProgID / File išplėtimai" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.ica"
+Bad Registry Key Found! Problem: "Nepanaudojami ProgID / File išplėtimai" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.ras"
+Bad Registry Key Found! Problem: "Nepanaudojami ProgID / File išplėtimai" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.wfx"
+Bad Registry Key Found! Problem: "Nepanaudojami ProgID / File išplėtimai" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.wpg"
+Bad Registry Key Found! Problem: "Trūksta ProgID nuorodos" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.xht"
+Bad Registry Key Found! Problem: "Trūksta ProgID nuorodos" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.xhtml"
+Bad Registry Key Found! Problem: "Nepanaudojami ProgID / File išplėtimai" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\dacdchfile"
+Bad Registry Key Found! Problem: "Nepanaudojami ProgID / File išplėtimai" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\FMObex.HTC.FMObjectProperties="
+Bad Registry Key Found! Problem: "Trūksta CLSID nuorodos" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\JavaPlugin.FamilyVersionSupport"
+Bad Registry Key Found! Problem: "Trūksta CLSID nuorodos" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\NBShell.NBShellHook.4.0"
+Bad Registry Key Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\ProcMon.Logfile.1\DefaultIcon"
+Bad Registry Key Found! Problem: "Nepanaudojami ProgID / File išplėtimai" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\s"
+Bad Registry Key Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\SouthlogicPackFile\DefaultIcon"
+Bad Registry Key Found! Problem: "Nepanaudojami ProgID / File išplėtimai" Path: "HKEY_LOCAL_MACHINE\SOFTWARE\Classes\tigans"
+Scanning HKEY_CURRENT_USER\SOFTWARE\Classes for invalid Classes
+Bad Registry Key Found! Problem: "Trūksta ProgID nuorodos" Path: "HKEY_CURRENT_USER\SOFTWARE\Classes\.sps"
+Bad Registry Key Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\SOFTWARE\Classes\callto\DefaultIcon"
+Bad Registry Key Found! Problem: "Trūksta CLSID nuorodos" Path: "HKEY_CURRENT_USER\SOFTWARE\Classes\ezPMUtils.GameController"
+Bad Registry Key Found! Problem: "Trūksta CLSID nuorodos" Path: "HKEY_CURRENT_USER\SOFTWARE\Classes\spmServices.NamedStrings"
+Bad Registry Key Found! Problem: "Trūksta CLSID nuorodos" Path: "HKEY_CURRENT_USER\SOFTWARE\Classes\spmServices.PluginWindow"
+Scanning HKEY_CLASSES_ROOT\Wow6432Node for invalid Classes
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Classes for invalid Classes
+Scanning HKEY_CLASSES_ROOT\AppID for invalid AppID's
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AppID for invalid AppID's
+Scanning HKEY_CURRENT_USER\SOFTWARE\Classes\AppID for invalid AppID's
+Scanning HKEY_CLASSES_ROOT\Wow6432Node\AppID for invalid AppID's
+Checking for invalid browser helper objects
+Checking for invalid explorer toolbars
+Checking for invalid explorer extensions
+Checking for invalid explorer file extensions
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\."
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.002"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.003"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.004"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.005"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.007"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.008"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.BAK"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.bzrignore"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.com)_Template_Monster_(html__flash)_Website_Templates"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ctp"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.FI"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.fla"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ged"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ide"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.install"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ismv"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.LOG1"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mdx"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.module"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.pub"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.smc"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.sol"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.sql"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.sqlite"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.sqlite-journal"
+Bad Registry Key Found! Problem: "Nepanaudojami failų išplėtimai" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ss0"
+Finished scanning: ActiveX / COM objektai
+
+Starting scanning: Sistemos tvarkyklės
+Scanning for missing drivers
+Finished scanning: Sistemos tvarkyklės
+
+Starting scanning: Windows pagalbos failai
+Checking for missing help files in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\HTML Help
+Finished scanning: Windows pagalbos failai
+
+Starting scanning: Windows garsai
+Scanning for missing sound events
+Finished scanning: Windows garsai
+
+Starting scanning: Programos nustatymai
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE for empty registry keys
+Scanning HKEY_CURRENT_USER\SOFTWARE for empty registry keys
+Bad Registry Key Found! Problem: "Šitas registro raktas neturi jokių duomenų" Path: "HKEY_CURRENT_USER\SOFTWARE\Teleca"
+Scanning HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node for empty registry keys
+Scanning HKEY_CURRENT_USER\SOFTWARE\Wow6432Node for empty registry keys
+Finished scanning: Programos nustatymai
+
+Starting scanning: Naujausi dokumentai
+Cleaning invalid references in HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs" Value Name: "65"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.001" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.002" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.003" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.004" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.005" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.007" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.008" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.7z" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.7z" Value Name: "1"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.aac" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.apk" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.apk" Value Name: "1"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.apk" Value Name: "2"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.asm" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.bin" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.config" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.cs" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.cs" Value Name: "1"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.cs" Value Name: "2"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.cs" Value Name: "3"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.cs" Value Name: "4"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.cs" Value Name: "5"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.cs" Value Name: "6"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.cs" Value Name: "7"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.cs" Value Name: "8"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.css" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.css" Value Name: "1"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.css" Value Name: "2"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.css" Value Name: "3"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.cue" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.dmp" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.docx" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.gbl" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.gif" Value Name: "1"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.gif" Value Name: "3"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.gif" Value Name: "2"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.gif" Value Name: "4"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.gif" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.htm" Value Name: "3"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.htm" Value Name: "5"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.htm" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.htm" Value Name: "1"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.htm" Value Name: "4"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.htm" Value Name: "9"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.htm" Value Name: "6"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.htm" Value Name: "7"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.htm" Value Name: "8"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.htm" Value Name: "2"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.html" Value Name: "3"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.html" Value Name: "5"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.html" Value Name: "6"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.html" Value Name: "4"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.html" Value Name: "7"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.html" Value Name: "8"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.html" Value Name: "9"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.html" Value Name: "1"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.html" Value Name: "2"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.ico" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.ico" Value Name: "1"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.ico" Value Name: "2"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.ico" Value Name: "3"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.ico" Value Name: "4"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.ico" Value Name: "5"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.INF" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.INF" Value Name: "1"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.ini" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.ini" Value Name: "1"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.ini" Value Name: "2"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.ini" Value Name: "3"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.ini" Value Name: "4"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.ini" Value Name: "5"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.iso" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.iso" Value Name: "1"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.iso" Value Name: "3"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.iso" Value Name: "2"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.iso" Value Name: "4"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.jps" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.js" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.LOG" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.LOG" Value Name: "1"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.LOG" Value Name: "2"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.LOG" Value Name: "3"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.mdf" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.mp3" Value Name: "4"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.mp3" Value Name: "3"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.mp3" Value Name: "2"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.mp4" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.nba" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.nfo" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.nfo" Value Name: "1"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.nfo" Value Name: "2"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.nfo" Value Name: "3"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.nfo" Value Name: "4"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.nfo" Value Name: "5"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.nfo" Value Name: "6"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.nsi" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.pic" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.pl" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.png" Value Name: "8"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.png" Value Name: "7"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.png" Value Name: "2"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.png" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.png" Value Name: "4"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.png" Value Name: "3"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.rtf" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.sds" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.sig" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.sig" Value Name: "1"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.sig" Value Name: "2"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.sle" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.sln" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.sln" Value Name: "3"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.sln" Value Name: "4"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.sqlite" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.sqlite" Value Name: "2"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.sqlite" Value Name: "3"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.sqlite" Value Name: "1"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.sqlite-journal" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.swf" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.swf" Value Name: "1"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.torrent" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.uif" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.wcp" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.xhtml" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.xlf" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.xls" Value Name: "1"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.xls" Value Name: "2"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.xls" Value Name: "3"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.xml" Value Name: "1"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.xml" Value Name: "2"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.xml" Value Name: "3"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.xml" Value Name: "4"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.xml" Value Name: "5"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.xml" Value Name: "6"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.xpi" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.xsd" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\.XviD-OMiCRON" Value Name: "0"
+Bad Registry Value Found! Problem: "Netinkamas failas arba aplankas" Path: "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\Folder" Value Name: "12"
+Finished scanning: Naujausi dokumentai
+
+Total time elapsed: 38.941 seconds
+Total problems found: 268
+Total objects scanned: 59654
+
+Finished scan at 23/02/2010 3:18:14 PM

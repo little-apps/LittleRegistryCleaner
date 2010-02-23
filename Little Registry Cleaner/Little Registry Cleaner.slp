@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.0.295" date="20100221231156" scan="39" scanned="20100221221945">
+<document version="2.0.295" date="20100223145932" scan="40" scanned="20100222234936">
   <lang id="en"/>
   <lang id="fr"/>
   <lang id="es"/>
@@ -20,6 +20,7 @@
   <lang id="pl"/>
   <lang id="hu"/>
   <lang id="fa"/>
+  <lang id="lt"/>
   <source class="TVisualStudioNetProjectSource" name="Common Tools\Common Tools.csproj" original="en" date="20091119063626" defaultoutputdir="Common Tools\bin\Debug" assemblykind="naLibrary" netversion="net35" toolsversion="net35" rootnamespace="Common_Tools" configuration="Debug">
     <outputfile dir="..\bin\Debug"/>
     <excludeddatatypes>
@@ -63,7 +64,7 @@
             <lang id="nl" date="20091118234537" status="3">Kleine Registerreiniger - Details...</lang>
             <lang id="de" date="20091118234619" status="3">Wenig Registry Cleaner - Details...</lang>
             <lang id="ru" status="3">Little Registry Cleaner - Подробности...</lang>
-            <lang id="el" status="2">Μικρή Registry Cleaner - Λεπτομέρειες...</lang>
+            <lang id="el" status="3">Little Registry Cleaner - Λεπτομέρειες...</lang>
             <lang id="ar" status="2">يذكر السجل النظيف -- تفاصيل...</lang>
             <lang id="sv" status="2">Little Registry Cleaner - Detaljer...</lang>
             <lang id="zh" status="2">小注册表清理器-详细...</lang>
@@ -75,6 +76,7 @@
             <lang id="pl" status="2">Little Registry Cleaner - Szczegóły...</lang>
             <lang id="hu" status="2">Little Registry Cleaner - Részletek...</lang>
             <lang id="fa" status="2">کمی تمیز کننده رجیستری -- اطلاعات بیشتر...</lang>
+            <lang id="lt" status="2">Little Registry Cleaner - išsami informacija...</lang>
           </row>
           <component class="TVisGridPanel" name="tableLayoutPanel1" state="0" type="System.Windows.Forms.TableLayoutPanel" align="alClient" gapbottom="0" gapleft="0" gapright="0" gaptop="0">
             <columns>
@@ -140,6 +142,7 @@
                   <lang id="pl" status="2">Nazwa wartości:</lang>
                   <lang id="hu" status="2">Érték:</lang>
                   <lang id="fa" status="2">نام مقدار:</lang>
+                  <lang id="lt" status="3">Pavadinimas</lang>
                 </row>
               </component>
             </component>
@@ -183,6 +186,7 @@
                   <lang id="pl" status="2">Lokalizacja:</lang>
                   <lang id="hu" status="2">Hely:</lang>
                   <lang id="fa" status="2">محل سکونت:</lang>
+                  <lang id="lt" status="2">Vieta:</lang>
                 </row>
               </component>
             </component>
@@ -226,6 +230,7 @@
                   <lang id="pl" status="2">Rodzaj błędu:</lang>
                   <lang id="hu" status="2">Probléma:</lang>
                   <lang id="fa" status="2">مشکل:</lang>
+                  <lang id="lt" status="2">Problema:</lang>
                 </row>
               </component>
             </component>
@@ -322,7 +327,7 @@
             <lang id="nl" status="3">Kleine Registerreiniger - info...</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - über...</lang>
             <lang id="ru" status="3">Little Registry Cleaner - О программе</lang>
-            <lang id="el" status="2">Μικρή Registry Cleaner - πληροφορίες για...</lang>
+            <lang id="el" status="3">Little Registry Cleaner – Σχετικά...</lang>
             <lang id="ar" status="2">التسجيل ضئيلة الأنظف - حول...</lang>
             <lang id="sv" status="2">Liten Registry Cleaner - om...</lang>
             <lang id="zh" status="2">小处清洁-关于...</lang>
@@ -334,6 +339,7 @@
             <lang id="pl" status="2">O programie Little Registry Cleaner</lang>
             <lang id="hu" status="2">Little Registry Cleaner - A LRC-ről...</lang>
             <lang id="fa" status="2">کمی تمیز کننده رجیستری -- درباره...</lang>
+            <lang id="lt" status="2">Little Registry Cleaner - Apie mus...</lang>
           </row>
           <component class="TVisGroupBox" name="groupBox2" type="System.Windows.Forms.GroupBox">
             <row id="Location.X" state="3">
@@ -385,7 +391,7 @@
                 <lang id="nl" status="2">Weinig register reinigings</lang>
                 <lang id="de" status="2">Wenig Registry Cleaner</lang>
                 <lang id="ru" status="3">Little Registry Cleaner</lang>
-                <lang id="el" status="2">Μικρή Registry Cleaner</lang>
+                <lang id="el" status="3">Little Registry Cleaner</lang>
                 <lang id="ar" status="2">التسجيل ضئيلة الأنظف</lang>
                 <lang id="sv" status="2">Liten Registry Cleaner</lang>
                 <lang id="zh" status="2">小注册表清理器</lang>
@@ -397,6 +403,7 @@
                 <lang id="pl" status="3">Mały Registratura Sprzątacz</lang>
                 <lang id="hu" status="2">Little Registry Cleaner</lang>
                 <lang id="fa" status="2">کمی تمیز کننده رجیستری</lang>
+                <lang id="lt" status="2">Little Registry Cleaner</lang>
               </row>
             </component>
             <component class="TVisEdit" name="richTextBox1" type="System.Windows.Forms.RichTextBox">
@@ -427,7 +434,7 @@
                 <lang id="nl" status="3">Dit programma is gratis software: u kunt het verspreiden en/of wijzigen in het kader van de GNU General Public License zoals gepubliceerd door de Free Software Foundation, in versie 3 van de licentie of (naar keuze) een latere versie.#n#nDit programma wordt verspreid in de hoop dat het nuttig zal zijn, maar ZONDER ENIGE GARANTIE; zonder zelfs de impliciete garantie van VERKOOPBAARHEID of GESCHIKTHEID VOOR EEN BEPAALD DOEL.  Zie de GNU General Public License voor meer informatie.#n#nU hebt een kopie ontvangen van de GNU General Public License samen met dit programma.  Als dit niet het geval is, Zie &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="de" invalidated="1" status="2">Dieses Programm ist freie Software: Sie weitergeben und/oder unter den Bedingungen der GNU General Public License veröffentlicht von der Free Software Foundation, Version 3 der Lizenz oder (nach Ihrer Wahl) any later Version ändern können.#n#nDieses Programm wird in der Hoffnung verteilt, dass es Nützlichkeit, jedoch ohne Garantie geliefert; selbst stillschweigende Garantien von MERCHANTABILITY oder Eignung für einen bestimmten Zweck sein wird.  Finden Sie unter der GNU General Public License für weitere Details.#n#nSie sollten eine Kopie der GNU General Public License zusammen mit diesem Programm erhalten haben.  Wenn nicht, finden Sie unter &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="ru" status="3">Эта программа является свободным программным обеспечением: Вы можете распространять или изменять её на условиях лицензии GNU General Public License, опубликованной Фондом свободного программного обеспечения, версии 3, либо (на Ваш выбор) любой более поздней версии.#n#nЭта программа распространяется в надежде на то, что она окажется полезной, но без каких бы то ни было гарантий; даже подразумеваемой гарантии или ТОВАРНОСТИ или пригодности для конкретных целей.  Смотрите GNU General Public License для получения дополнительной информации.#n#nВы должны были получить копию GNU General Public License вместе с этой программой.  Если нет, см. &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="el" invalidated="1" status="2">Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό: ή/μπορείτε να το επιστρέψει και τροποποιήσετε σύμφωνα με τους όρους της GNU General Public License όπως έχουν δημοσιευθεί από το ίδρυμα ελεύθερου λογισμικού, είτε έκδοση 3 της άδειας χρήσης, ή (κατά την επιλογή) οποιαδήποτε μεταγενέστερη έκδοση.#n#nΑυτό το πρόγραμμα διανέμεται με την ελπίδα ότι θα ήταν χρήσιμο, αλλά ΧΩΡΊΣ ΚΆΘΕ WARRANTY, χωρίς καν την σιωπηρή εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ για Α ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ.  Δείτε το GNU General Public License για περισσότερες λεπτομέρειες.#n#nΘα πρέπει να έχετε λάβει ένα αντίγραφο από το GNU General Public License μαζί με αυτό το πρόγραμμα.  Εάν όχι, ανατρέξτε στην ενότητα &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="el" status="3">Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό: μπορείτε να το διαδώσετε και/ή τροποποιήσετε σύμφωνα με τους όρους της GNU General Public License όπως έχουν δημοσιευθεί από το Free Software Foundation, είτε έκδοση 3 της άδειας χρήσης, ή (κατά την επιλογή σας) οποιαδήποτε μεταγενέστερη έκδοση.  Αυτό το πρόγραμμα διανέμεται με την ελπίδα ότι θα ειναι χρήσιμο, αλλά ΧΩΡΊΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ χωρίς καν την σιωπηρή εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ  ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ.  Δείτε το GNU General Public License για περισσότερες λεπτομέρειες.  Θα πρέπει να έχετε λάβει ένα αντίγραφο από την GNU General Public License μαζί με αυτό το πρόγραμμα.  Εάν όχι, ανατρέξτε στην ενότητα &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="ar" invalidated="1" status="2">هذا البرنامج هو البرمجيات الحرة: و/لك يمكن توزيع عليه أو تعديله تحت شروط جنو العمومية كما تنشرها "مؤسسة البرمجيات الحرة" إما الإصدار 3 من الترخيص أو (في الخيار لك) أي إصدار أحدث.#n#nيتم توزيع هذا البرنامج على أمل أن سيكون من المفيد ولكن "بدون أي الضمان"; دون حتى ضمان ضمني من بالتسويق أو وملاءمته FOR A معين الغرض.  انظر إلى جنو العمومية للحصول على مزيد من التفاصيل.#n#nوينبغي أن كنت قد تلقيت نسخة من جنو العمومية مع هذا البرنامج.  إذا لم انظر &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="sv" status="2">Det här programmet är fri programvara: du kan vidaredistribuera det och/eller ändra den enligt villkoren i GNU General Public License as published by Free Software Foundation, antingen version 3 eller senare version.#n#nDet här programmet distribueras i hopp om att det kommer att vara användbart, men utan någon garanti, även utan den underförstådda garantin för säljbarhet eller lämplighet för en särskilt syfte.  Se GNU General Public License om du vill veta mer.#n#nDu bör ha fått en kopia av GNU General Public License tillsammans med det här programmet.  Om du inte se &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="zh" date="20091105201040" invalidated="1" status="3">该程序是自由软件：你可以重新发布它和/或修改在GNU通用公共自由软件基金会，使用许可证版本3，或（您自行选择）任何更新的版本出版许可证条款。#n#n这个程式的目的是希望它有用，但没有任何担保，甚至没有适销性或针对特定用途的隐含的担保。详情请参阅GNU通用公共许可证。#n#n您应已收到附随于本程序的GNU通用公共许可证的副本。如果不是，参阅&lt;http://www.gnu.org/licenses/>。</lang>
@@ -439,6 +446,7 @@
                 <lang id="pl" invalidated="1" status="2">Niniejsze oprogramowanie jest darmowe. Możesz je rozpowszechniać lub modyfikować zgodnie z warunkami licencji GNU General Public License w wersji 3 lub późniejszej wydanej przez Free Software Foundation.#n#nNiniejsze oprogramowanie jest rozpowszechniane z nadzieją, że okaże się przydatne, nie jest natomiast objęte JAKĄKOLWIEK GWARANCJĄ, w tym domyślną gwarancją UŻYTECZNOŚCI HANDLOWEJ lub PRZYDATNOŚCI DO KONKRETNEGO CELU. Przeczytaj licencję GNU General Public License, aby zapoznać się ze szczegółami.#n#nKopia licencji GNU General Public License powinna zostać dostarczona wraz z niniejszym oprogramowaniem. W przeciwnym wypadku odwiedź stronę &lt;http://www.gnu.org/licenses/></lang>
                 <lang id="hu" status="2">Ez a program szabad szoftver; terjeszthető illetve módosítható a Free Software Foundation által kiadott GNU General Public License dokumentumában leírtak; akár a licenc 3-as, akár (tetszőleges) későbbi változata szerint.#n#nEz a porgram abban a reményben kerül közreadásra, hogy hasznos lesz, de minden egyéb GARANCIA NÉLKÜL, az ELADHATÓSÁGRA vagy VALAMELY CÉLRA VALÓ ALKALMAZHATÓSÁGRA való származtatott garanciát is beleértve. További részleteket a GNU General Public License tartalmaz.#n#nA felhasználónak a programmal együtt meg kell kapnia a GNU General Public License egy pélányát; ha mégsem kapta meg, akkor tekintse meg a &lt;http://www.gnu.org/licenses/> oldalon.</lang>
                 <lang id="fa" status="2">این برنامه یک نرمافزار آزاد است و شما می توانید از آن و توزیع مجدد یا تغییر آن را تحت شرایط مجوز عمومی همگانی گنو که توسط بنیاد نرمافزار آزاد ، یا از نسخه 3 مجوز ، یا (در انتخاب شما) بعد از هر نسخه منتشر شده است. این برنامه امیدواریم که که در آن توزیع خواهد شد مفید است ، اما بدون هیچ گونه ضمانت ؛ حتی بدون ضمانت ضمنی از MERCHANTABILITY و یا تناسب اندام برای یک هدف خاص. مشاهده گنو لیسانس عمومی برای اطلاعات بیشتر دریافت کرده اند شما باید یک کپی از مجوز عمومی همگانی گنو را همراه با این برنامه. اگر نه ، نگاه کنید به &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="lt" status="3">Ši programa yra laisva programinė įranga: jūs galite ją platinti ir / arba modifikuoti pagal GNU General Public License, paskelbta Free Software Foundation, 3-os versijos  licencijos, arba (Jūsų pasirinkimu) bet kurios vėlesnės versijos sąlygomis. Ši programa platinama su viltimi, kad ji bus naudinga, bet BE JOKIOS GARANTIJOS; net numanomos PERKAMUMO arba TINKAMUMO TAM TIKRAM TIKSLUI. Žr GNU General Public License dėl detalių. Jūs turėjote gauti GNU General Public License kopiją kartu su šia programa. Jei ne, žiūrėkite &lt;http://www.gnu.org/licenses/>.</lang>
               </row>
             </component>
             <component class="TVisLabel" name="label2" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
@@ -460,7 +468,7 @@
                 <lang id="nl" status="2">Auteur:</lang>
                 <lang id="de" status="2">Autor:</lang>
                 <lang id="ru" status="2">Автор:</lang>
-                <lang id="el" status="2">Συγγραφέας:</lang>
+                <lang id="el" status="3">Δημιουργός:</lang>
                 <lang id="ar" status="2">الكاتب:</lang>
                 <lang id="sv" status="2">Författare:</lang>
                 <lang id="zh" status="2">作者:</lang>
@@ -472,6 +480,7 @@
                 <lang id="pl" status="2">Autor:</lang>
                 <lang id="hu" status="2">Szerző:</lang>
                 <lang id="fa" status="2">نویسنده:</lang>
+                <lang id="lt" status="2">Autorius:</lang>
               </row>
             </component>
             <component class="TVisLabel" name="linkLabelAuthor" type="System.Windows.Forms.LinkLabel" autosize="1" wordwrap="0">
@@ -501,6 +510,7 @@
                 <lang id="vi">Nick H.</lang>
                 <lang id="th">Nick H.</lang>
                 <lang id="hu">Nick.H</lang>
+                <lang id="lt">Nick H.</lang>
               </row>
             </component>
           </component>
@@ -538,6 +548,7 @@
               <lang id="pl" status="2">Zamknij</lang>
               <lang id="hu" status="2">Bezárás</lang>
               <lang id="fa" status="2">ببند</lang>
+              <lang id="lt" status="2">Uždaryti</lang>
             </row>
           </component>
           <component class="TVisPictureButton" name="buttonWebsite" type="System.Windows.Forms.Button">
@@ -562,7 +573,7 @@
               <lang id="nl" status="2">Project-website</lang>
               <lang id="de" status="2">Projekt-Website</lang>
               <lang id="ru" status="2">Сайт проекта</lang>
-              <lang id="el" status="2">Τοποθεσία Web έργου</lang>
+              <lang id="el" status="3">Ιστοσελίδα έργου</lang>
               <lang id="ar" status="2">موقع المشروع</lang>
               <lang id="sv" status="2">Projektets hemsida</lang>
               <lang id="zh" status="2">项目网站</lang>
@@ -574,6 +585,7 @@
               <lang id="pl" status="2">Strona Projektu</lang>
               <lang id="hu" status="2">A projekt honlapja</lang>
               <lang id="fa" status="2">پروژه ها</lang>
+              <lang id="lt" status="2">Projekto svetainė</lang>
             </row>
           </component>
         </form>
@@ -592,7 +604,7 @@
             <lang id="nl" status="3">Kleine Registerreiniger - Crash Reporter</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Crash Reporter</lang>
             <lang id="ru" status="3">Little Registry Cleaner - Отчет об ошибке</lang>
-            <lang id="el" status="2">Μικρή μητρώου κασέτας καθαρισμού - Crash αναφοράς</lang>
+            <lang id="el" status="3">Little Registry Cleaner – Αναφορά Αναπάντεχου κλεισίματος </lang>
             <lang id="ar" status="2">التسجيل قليلة الأعطال المنظف - الإبلاغ</lang>
             <lang id="sv" status="2">Liten Registry Cleaner – Krash rapporterare</lang>
             <lang id="zh" status="2">小处清洁-崩溃记者</lang>
@@ -604,6 +616,7 @@
             <lang id="pl" status="2">Little Registry Cleaner - Powiadomienie o błędzie</lang>
             <lang id="hu" status="2">Little Registry Cleaner - Hibajelentő</lang>
             <lang id="fa" status="2">کمی تمیز کننده رجیستری -- حادثه گزارش</lang>
+            <lang id="lt" status="3">Little Registry Cleaner – Klaidų pranešimas</lang>
           </row>
           <component class="TVisPanel" name="panel1" type="System.Windows.Forms.Panel" align="alTop">
             <row id="BackColor" hidden="1">clWhite</row>
@@ -626,7 +639,7 @@
                 <lang id="nl" status="2">Niet verzenden</lang>
                 <lang id="de" status="2">Nicht senden</lang>
                 <lang id="ru" status="2">Не отправлять</lang>
-                <lang id="el" status="2">Δεν αποστολή</lang>
+                <lang id="el" status="3">Μην Στείλεις</lang>
                 <lang id="ar" status="2">عدم إرسال</lang>
                 <lang id="sv" status="2">Skicka inte</lang>
                 <lang id="zh" status="2">不发送</lang>
@@ -638,6 +651,7 @@
                 <lang id="pl" status="2">Nie wysyłaj</lang>
                 <lang id="hu" status="2">Ne küldje el</lang>
                 <lang id="fa" status="2">نکنید</lang>
+                <lang id="lt" status="2">Nesiųsti</lang>
               </row>
             </component>
             <component class="TVisLabel" name="label1" type="System.Windows.Forms.Label" layout="tlCenter" parentfont="0">
@@ -656,7 +670,7 @@
                 <lang id="nl" status="3">Er is een uitzondering opgetreden in een onderdeel van de Kleine Registerreiniger. Wij hebben een foutrapport gemaakt dat u ons kunt sturen. Wij zullen dit rapport vertrouwelijk en anoniem behandelen.</lang>
                 <lang id="de" status="2">In einer Komponente der Little Registry Cleaner ist ein Ausnahme aufgetreten. Wir haben einen Fehlerbericht erstellt, den Sie uns senden können. Wir werden diesen Bericht als vertraulich und anonym behandeln.</lang>
                 <lang id="ru" status="3">В одном из компонентов Little Registry Cleaner произошла исключительная ситуация. Мы создали отчет об ошибке, который Вы можете отправить нам. Вся отправляемая информация конфиденциальна и анонимна.</lang>
-                <lang id="el" status="2">Παρουσιάστηκε εξαίρεση στο στοιχείο του Little καθαρισμού μητρώου. Έχουμε δημιουργήσει μια αναφορά σφάλματος την οποία μπορείτε να μας στείλετε. Θα χειριστούμε αυτήν την έκθεση ως εμπιστευτική και ανώνυμη.</lang>
+                <lang id="el" status="3">Παρουσιάστηκε σφάλμα στο Little Registry Cleaner. Έχουμε δημιουργήσει μια αναφορά σφάλματος την οποία μπορείτε να μας στείλετε. Θα χειριστούμε αυτήν την αναφορά ως εμπιστευτική και ανώνυμη.</lang>
                 <lang id="ar" status="2">حدث استثناء في مكون من "التسجيل ليتل الأنظف". لقد أنشأنا تقريرًا عن خطأ يمكنك إرساله إلينا. وسوف تعاملنا مع هذا التقرير ومجهول.</lang>
                 <lang id="sv" status="2">Ett undantag uppstod i en komponent i Little Registry Cleaner. Vi har skapat en felrapport som du kan skicka. Vi kommer att behandla felrapporten konfidentiellt och anonymt.</lang>
                 <lang id="zh" status="2">在发生了异常的小处清洁组成部分。我们已创建一个错误报告，您可以给我们。我们会将此报告视为保密的和匿名。</lang>
@@ -668,6 +682,7 @@
                 <lang id="pl" status="2">W jednym ze składników aplikacji Little Registry Cleaner wystąpił błąd. Sporządzony został raport, który możesz przesłać autorom programu. Dane zawarte w raporcie będą traktowane poufnie i anonimowo.</lang>
                 <lang id="hu" status="2">Egy hiba történt a Little Registry Cleaner egyik komponensében. Készítettünk egy hibajelentést amit elküldhet nekünk. A jelentés bizalmasan, név nélkül lesz kezelve.</lang>
                 <lang id="fa" status="2">استثناء رخ داده در یک جزء کوچک از رجیستری پاک کن. در حال حاضر ایجاد یک گزارش خطا که شما می توانید با ما ارسال کنید. ما در این گزارش به عنوان درمان محرمانه و ناشناس.</lang>
+                <lang id="lt" status="3">Viename Little Registry Cleaner komponente įvyko klaida. Esame sukūrę klaidos ataskaitą, kurią galite atsiųsti mums. Visa pranešime siusta informacija yra konfidenciali ir anonimiška.</lang>
               </row>
             </component>
             <component class="TVisPictureButton" name="buttonSend" type="System.Windows.Forms.Button">
@@ -697,6 +712,7 @@
                 <lang id="pl" status="2">Wyślij raport</lang>
                 <lang id="hu" status="2">Hibajelentés küldése</lang>
                 <lang id="fa" status="2">ارسال گزارش خطا</lang>
+                <lang id="lt" status="2">Siųsti klaidos ataskaitą</lang>
               </row>
             </component>
             <component class="TVisImage" name="pictureBoxErr" type="System.Windows.Forms.PictureBox">
@@ -732,6 +748,7 @@
                 <lang id="pl" status="2">Uruchom program ponownie</lang>
                 <lang id="hu" status="2">Program újraíndítása</lang>
                 <lang id="fa" status="2">راه اندازی مجدد برنامه</lang>
+                <lang id="lt" status="3">Paleiskite programą iš naujo</lang>
               </row>
             </component>
           </component>
@@ -763,7 +780,7 @@
             <lang id="nl" status="3">Toevoegen aan Negeren-lijst</lang>
             <lang id="de" status="2">Fügen zur Liste ignorieren hinzu</lang>
             <lang id="ru" status="3">Добавить в список исключений</lang>
-            <lang id="el" status="2">Προσθήκη να αγνοήσει λίστα</lang>
+            <lang id="el" status="3">Προσθήκη στην λίστα παράβλεψης </lang>
             <lang id="ar" status="2">إضافة إلى تجاهل قائمة</lang>
             <lang id="sv" status="2">Lägga till undantag</lang>
             <lang id="zh" status="2">添加到忽略列表</lang>
@@ -775,6 +792,7 @@
             <lang id="pl" status="2">Wpisy pomijane</lang>
             <lang id="hu" status="2">Felvétel a mellőzőlistára</lang>
             <lang id="fa" status="2">اضافه کردن به لیست چشم پوشی از</lang>
+            <lang id="lt" status="3">Pridėti į ignoruojamu sąrašą</lang>
           </row>
           <component class="TVisGroupBox" name="groupBox1" type="System.Windows.Forms.GroupBox">
             <row id="Location.X">12</row>
@@ -791,7 +809,7 @@
               <lang id="nl" status="3">Toevoegen aan Negeren-lijst</lang>
               <lang id="de" status="2">Fügen zur Liste ignorieren hinzu</lang>
               <lang id="ru" status="3">Добавить в список исключений</lang>
-              <lang id="el" status="2">Προσθήκη να αγνοήσει λίστα</lang>
+              <lang id="el" status="3">Προσθήκη στην λίστα παράβλεψης </lang>
               <lang id="ar" status="2">إضافة إلى تجاهل قائمة</lang>
               <lang id="sv" status="2">Lägga till undantag</lang>
               <lang id="zh" status="2">添加到忽略列表</lang>
@@ -803,6 +821,7 @@
               <lang id="pl" status="3">Wpisy pomijane</lang>
               <lang id="hu" status="2">Felvétel a mellőzőlistára</lang>
               <lang id="fa" status="2">اضافه کردن به لیست چشم پوشی از</lang>
+              <lang id="lt" status="3">Pridėti į ignoruojamu sąrašą</lang>
             </row>
             <component class="TVisLabel" name="label1" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
               <row id="Location.X">6</row>
@@ -819,7 +838,7 @@
                 <lang id="nl" status="3">Selecteer de Sectie:</lang>
                 <lang id="de" status="2">Wählen Sie Abschnitt:</lang>
                 <lang id="ru" status="2">Выберите раздел:</lang>
-                <lang id="el" status="2">Επιλέξτε το τμήμα:</lang>
+                <lang id="el" status="3">Επιλέξτε τμήμα:</lang>
                 <lang id="ar" status="2">حدد القسم:</lang>
                 <lang id="sv" status="2">Markera avsnitt:</lang>
                 <lang id="zh" status="2">专责组:</lang>
@@ -831,6 +850,7 @@
                 <lang id="pl" status="2">Wybierz sekcję:</lang>
                 <lang id="hu" status="2">Válasszon szekciót:</lang>
                 <lang id="fa" status="2">انتخاب بخش:</lang>
+                <lang id="lt" status="2">Pasirinkite skyrių:</lang>
               </row>
             </component>
             <component class="TVisComboBox" name="comboBox1" type="System.Windows.Forms.ComboBox">
@@ -851,6 +871,7 @@
                 <lang id="ja">HKEY_CLASSES_ROOTの</lang>
                 <lang id="vi">HKEY_CLASSES_ROOT</lang>
                 <lang id="th">HKEY_CLASSES_ROOT</lang>
+                <lang id="lt">HKEY_CLASSES_ROOT</lang>
               </row>
               <row id="Items.HKEY_CURRENT_USER" importid="1" locked="1" excluded="1" state="0">
                 <native>HKEY_CURRENT_USER</native>
@@ -869,6 +890,7 @@
                 <lang id="ja">HKEY_CURRENT_USERの</lang>
                 <lang id="vi">HKEY_CURRENT_USER</lang>
                 <lang id="th">HKEY_CURRENT_USER</lang>
+                <lang id="lt">HKEY_CURRENT_USER</lang>
               </row>
               <row id="Items.HKEY_LOCAL_MACHINE" importid="2" locked="1" excluded="1" state="0">
                 <native>HKEY_LOCAL_MACHINE</native>
@@ -887,6 +909,7 @@
                 <lang id="ja">します。HKEY_LOCAL_MACHINE</lang>
                 <lang id="vi">HKEY_LOCAL_MACHINE</lang>
                 <lang id="th">HKEY_LOCAL_MACHINE</lang>
+                <lang id="lt">HKEY_LOCAL_MACHINE</lang>
               </row>
               <row id="Items.HKEY_USERS" importid="3" locked="1" excluded="1" state="0">
                 <native>HKEY_USERS</native>
@@ -905,6 +928,7 @@
                 <lang id="ja">HKEY_USERSの</lang>
                 <lang id="vi">HKEY_USERS</lang>
                 <lang id="th">HKEY_USERS</lang>
+                <lang id="lt">HKEY_USERS</lang>
               </row>
               <row id="Location.X">9</row>
               <row id="Location.Y">32</row>
@@ -938,6 +962,7 @@
                 <lang id="pl" status="2">Ścieżka:</lang>
                 <lang id="hu" status="2">Útvonal a bejegyzéshez:</lang>
                 <lang id="fa" status="2">مسیر رجیستری:</lang>
+                <lang id="lt" status="3">Kelias registre:</lang>
               </row>
             </component>
             <component class="TVisEdit" name="textBox1" type="System.Windows.Forms.TextBox">
@@ -974,6 +999,7 @@
               <lang id="pl" status="2">Anuluj</lang>
               <lang id="hu" status="2">Mégse</lang>
               <lang id="fa" status="2">انصراف</lang>
+              <lang id="lt" status="2">Atšaukti</lang>
             </row>
           </component>
           <component class="TVisPictureButton" name="buttonOk" type="System.Windows.Forms.Button">
@@ -1003,6 +1029,7 @@
               <lang id="pl" status="2">Dodaj wpis</lang>
               <lang id="hu" status="2">Feljegyzés hozzáadása</lang>
               <lang id="fa" status="2">اضافه کردن ورودی</lang>
+              <lang id="lt" status="3">Pridėti įrašą</lang>
             </row>
           </component>
         </form>
@@ -1011,6 +1038,7 @@
         <form class="TNetForm" name="Little_Registry_Cleaner.Main" type="Little_Registry_Cleaner.Main" autosize="1" menu="menuStrip1">
           <row id="ClientSize.Height">483</row>
           <row id="ClientSize.Width">809</row>
+          <row id="ImeMode" state="0">imNone</row>
           <row id="Text" excluded="1" state="0">
             <native>Little Registry Cleaner</native>
             <lang id="en" status="2">Little Registry Cleaner</lang>
@@ -1021,7 +1049,7 @@
             <lang id="nl" status="2">Weinig register reinigings</lang>
             <lang id="de" status="2">Wenig Registry Cleaner</lang>
             <lang id="ru" status="3">Little Registry Cleaner</lang>
-            <lang id="el" status="2">Μικρή Registry Cleaner</lang>
+            <lang id="el" status="3">Little Registry Cleaner</lang>
             <lang id="ar" status="2">التسجيل ضئيلة الأنظف</lang>
             <lang id="sv" status="2">Liten Registry Cleaner</lang>
             <lang id="zh" status="2">小注册表清理器</lang>
@@ -1033,6 +1061,7 @@
             <lang id="pl" date="20091105225459" status="3">Mały Registratura Sprzątacz</lang>
             <lang id="hu" status="2">Little Registry Cleaner</lang>
             <lang id="fa" status="2">کمی تمیز کننده رجیستری</lang>
+            <lang id="lt" status="2">Little Registry Cleaner</lang>
           </row>
           <component class="TVisCheckBox" name="nodeCheckBox" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeCheckBox">
           </component>
@@ -1075,6 +1104,7 @@
                 <lang id="pl" status="3">Zaznacz wszystko</lang>
                 <lang id="hu" status="2">Mind kijelölése</lang>
                 <lang id="fa" status="2">انتخاب همه</lang>
+                <lang id="lt" status="3">Pažymėti viska</lang>
               </row>
             </component>
             <component class="TVisMenuItem" name="selectNoneToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
@@ -1102,6 +1132,7 @@
                 <lang id="pl" status="3">Odznacz wszystko</lang>
                 <lang id="hu" status="2">Kijelölés megszüntetése</lang>
                 <lang id="fa" status="2">هیچ کدام را انتخاب کنید</lang>
+                <lang id="lt" status="3">Atšaukti pažymėjimą</lang>
               </row>
             </component>
             <component class="TVisMenuItem" name="invertSelectionToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -1129,6 +1160,7 @@
                 <lang id="pl" status="2">Odwróć zaznaczenie</lang>
                 <lang id="hu" status="2">Kijelölés megfordítása</lang>
                 <lang id="fa" status="2">انتخاب برعکس شود</lang>
+                <lang id="lt" status="3">Invertuoti  žymėjimą</lang>
               </row>
             </component>
             <component class="TVisMenuItem" name="toolStripSeparator1" type="System.Windows.Forms.ToolStripSeparator">
@@ -1160,6 +1192,7 @@
                 <lang id="pl" status="3">Pomiń zaznaczone</lang>
                 <lang id="hu" status="2">Kijelöltek kihagyása</lang>
                 <lang id="fa" status="2">محروم برگزیده</lang>
+                <lang id="lt" status="2">Pašalinti pasirinktus</lang>
               </row>
             </component>
             <component class="TVisMenuItem" name="viewInRegeditToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
@@ -1175,7 +1208,7 @@
                 <lang id="nl" status="3">In regedit weergeven</lang>
                 <lang id="de" status="2">In Regedit anzeigen</lang>
                 <lang id="ru" status="3">Просмотр в regedit</lang>
-                <lang id="el" status="2">Προβολή σε regedit</lang>
+                <lang id="el" status="3">Προβολή στο regedit</lang>
                 <lang id="ar" status="2">عرض في regedit</lang>
                 <lang id="sv" status="2">Visa i regedit</lang>
                 <lang id="zh" status="2">查看输入regedit</lang>
@@ -1187,6 +1220,7 @@
                 <lang id="pl" status="3">Otwórz w regedit</lang>
                 <lang id="hu" status="2">Nézet regedit-ben</lang>
                 <lang id="fa" status="2">مشاهده در regedit</lang>
+                <lang id="lt" status="3">Peržiūrėti regedit aplinkoje</lang>
               </row>
             </component>
           </component>
@@ -1219,6 +1253,7 @@
                 <lang id="pl" status="3">Pokaż/Ukryj</lang>
                 <lang id="hu" status="2">Elrejt/mutat</lang>
                 <lang id="fa" status="2">پنهان / نمایش</lang>
+                <lang id="lt" status="2">Slėpti / rodyti</lang>
               </row>
             </component>
             <component class="TVisMenuItem" name="aboutToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
@@ -1246,6 +1281,7 @@
                 <lang id="pl" status="3">O programie...</lang>
                 <lang id="hu" status="2">Bővebben...</lang>
                 <lang id="fa" status="2">درباره...</lang>
+                <lang id="lt" status="2">Apie...</lang>
               </row>
             </component>
             <component class="TVisMenuItem" name="toolStripSeparator4" type="System.Windows.Forms.ToolStripSeparator">
@@ -1265,7 +1301,7 @@
                 <lang id="nl" status="3">Einde</lang>
                 <lang id="de" status="2">Ausfahrt</lang>
                 <lang id="ru" status="3">Выход</lang>
-                <lang id="el" status="2">Εξόδου</lang>
+                <lang id="el" status="3">Εξόδος</lang>
                 <lang id="ar" status="2">خروج</lang>
                 <lang id="sv" status="2">Avsluta</lang>
                 <lang id="zh" status="2">退出</lang>
@@ -1277,6 +1313,7 @@
                 <lang id="pl" status="3">Zakończ</lang>
                 <lang id="hu" status="2">Kilépés</lang>
                 <lang id="fa" status="2">خروج</lang>
+                <lang id="lt" status="2">Atsijungti</lang>
               </row>
             </component>
           </component>
@@ -1304,6 +1341,7 @@
               <lang id="ja">toolStripContainer1</lang>
               <lang id="vi">toolStripContainer1</lang>
               <lang id="th">toolStripContainer1</lang>
+              <lang id="lt">toolStripContainer1</lang>
             </row>
             <component class="TVisStatusBar" name="statusStrip1" state="0" type="System.Windows.Forms.StatusStrip">
               <row id="Location.X" state="0">0</row>
@@ -1335,6 +1373,7 @@
                   <lang id="pl" status="2">Welcome to Little Registry Cleaner!</lang>
                   <lang id="hu" status="2">Üdvözli a Little Registry Cleaner!</lang>
                   <lang id="fa" status="2">خوش آمدید به کوچک تمیز کننده رجیستری!</lang>
+                  <lang id="lt" status="3">Sveiki atvykę į Little Registry Cleaner!</lang>
                 </row>
               </component>
             </component>
@@ -1405,6 +1444,7 @@
                       <lang id="pl" status="3">Skanowane sekcje:</lang>
                       <lang id="hu" status="2">Szkennelendő szekciók kiválasztása</lang>
                       <lang id="fa" status="2">بخشها به اسکن</lang>
+                      <lang id="lt" status="3">Ieškoti skyriuose </lang>
                     </row>
                     <item name="Items[0]">
                       <row id="Text" state="0">
@@ -1429,6 +1469,7 @@
                         <lang id="pl" status="3">Komponenty ActiveX/COM</lang>
                         <lang id="hu" status="2">ActiveX/COM</lang>
                         <lang id="fa" status="2">ActiveX / COM</lang>
+                        <lang id="lt" status="2">ActiveX / COM</lang>
                       </row>
                     </item>
                     <item name="Items[1]">
@@ -1454,6 +1495,7 @@
                         <lang id="pl" status="3">Informacje o programach</lang>
                         <lang id="hu" status="2">Információ az alkalmazásról</lang>
                         <lang id="fa" status="2">درخواست اطلاعات</lang>
+                        <lang id="lt" status="3">Informacija apie programą</lang>
                       </row>
                     </item>
                     <item name="Items[2]">
@@ -1467,7 +1509,7 @@
                         <lang id="nl" status="2">Programma-locaties</lang>
                         <lang id="de" status="2">Programm-Standorte</lang>
                         <lang id="ru" status="3">Местоположение программ</lang>
-                        <lang id="el" status="2">Πρόγραμμα θέσεις</lang>
+                        <lang id="el" status="3">Τοποθεσίες προγραμματος</lang>
                         <lang id="ar" status="2">مواقع البرنامج</lang>
                         <lang id="sv" status="2">Programplats</lang>
                         <lang id="zh" status="2">程序位置</lang>
@@ -1479,6 +1521,7 @@
                         <lang id="pl" status="3">Lokalizacje programów</lang>
                         <lang id="hu" status="2">Program helyei</lang>
                         <lang id="fa" status="2">محلبرنامهها</lang>
+                        <lang id="lt" status="3">Programų keliai</lang>
                       </row>
                     </item>
                     <item name="Items[3]">
@@ -1492,7 +1535,7 @@
                         <lang id="nl" status="2">Software-instellingen</lang>
                         <lang id="de" status="2">Softwareeinstellungen</lang>
                         <lang id="ru" status="3">Настройки</lang>
-                        <lang id="el" status="2">Οι ρυθμίσεις λογισμικού</lang>
+                        <lang id="el" status="3">Ρυθμίσεις λογισμικού</lang>
                         <lang id="ar" status="2">إعدادات البرامج</lang>
                         <lang id="sv" status="2">Programinställningar</lang>
                         <lang id="zh" status="2">软件设置</lang>
@@ -1504,6 +1547,7 @@
                         <lang id="pl" status="3">Ustawienia programów</lang>
                         <lang id="hu" status="2">Szoftver beállítások</lang>
                         <lang id="fa" status="2">نرم افزار تنظیمات</lang>
+                        <lang id="lt" status="3">Nustatymai</lang>
                       </row>
                     </item>
                     <item name="Items[4]">
@@ -1517,7 +1561,7 @@
                         <lang id="nl" status="2">Opstarten</lang>
                         <lang id="de" status="2">Start</lang>
                         <lang id="ru" status="3">Автозагрузка</lang>
-                        <lang id="el" status="2">Εκκίνηση</lang>
+                        <lang id="el" status="3">Εκκίνηση(Startup)</lang>
                         <lang id="ar" status="2">بدء التشغيل</lang>
                         <lang id="sv" status="2">Start</lang>
                         <lang id="zh" status="2">启动</lang>
@@ -1529,6 +1573,7 @@
                         <lang id="pl" status="3">Uruchamianie systemu</lang>
                         <lang id="hu" status="2">Indítás</lang>
                         <lang id="fa" status="2">راه اندازی</lang>
+                        <lang id="lt" status="3">Automatinis paleidimas</lang>
                       </row>
                     </item>
                     <item name="Items[5]">
@@ -1542,7 +1587,7 @@
                         <lang id="nl" status="3">Systeem stuurprogramma's</lang>
                         <lang id="de" status="2">Systemtreiber</lang>
                         <lang id="ru" status="2">Системные драйверы</lang>
-                        <lang id="el" status="2">Προγράμματα οδήγησης συστήματος</lang>
+                        <lang id="el" status="3">Οδηγοί Συστήματος</lang>
                         <lang id="ar" status="2">برامج تشغيل النظام</lang>
                         <lang id="sv" status="2">Systemdrivrutiner</lang>
                         <lang id="zh" status="2">系统驱动程序</lang>
@@ -1554,6 +1599,7 @@
                         <lang id="pl" status="3">Sterowniki systemowe</lang>
                         <lang id="hu" status="2">Rendszer meghajtók</lang>
                         <lang id="fa" status="2">سیستم رانندگان</lang>
+                        <lang id="lt" status="2">Sistemos tvarkyklės</lang>
                       </row>
                     </item>
                     <item name="Items[6]">
@@ -1567,7 +1613,7 @@
                         <lang id="nl" status="2">Gedeelde dll-bestanden</lang>
                         <lang id="de" status="2">Freigegebenen DLLs</lang>
                         <lang id="ru" status="3">Общие библиотеки</lang>
-                        <lang id="el" status="2">Κοινόχρηστο dll</lang>
+                        <lang id="el" status="3">Κοινόχρηστα dll</lang>
                         <lang id="ar" status="2">ملفات DLL المشتركة</lang>
                         <lang id="sv" status="2">Delade DLL-filer</lang>
                         <lang id="zh" status="2">共享DLL</lang>
@@ -1579,6 +1625,7 @@
                         <lang id="pl" status="3">Współdzielone biblioteki DLL</lang>
                         <lang id="hu" status="2">Megosztott DLL-ek</lang>
                         <lang id="fa" status="2">دستی به اشتراک گذاشته شده</lang>
+                        <lang id="lt" status="2">Bendri DLL</lang>
                       </row>
                     </item>
                     <item name="Items[7]">
@@ -1592,7 +1639,7 @@
                         <lang id="nl" status="2">Help-bestanden</lang>
                         <lang id="de" status="2">Hilfedateien</lang>
                         <lang id="ru" status="3">Файлы помощи</lang>
-                        <lang id="el" status="2">Αρχεία της βοήθειας</lang>
+                        <lang id="el" status="3">Αρχεία βοήθειας</lang>
                         <lang id="ar" status="2">للمساعدة في الملفات</lang>
                         <lang id="sv" status="2">Hjälpfiler</lang>
                         <lang id="zh" status="2">帮助文件</lang>
@@ -1604,6 +1651,7 @@
                         <lang id="pl" status="3">Pliki pomocy</lang>
                         <lang id="hu" status="2">Segítség fájlok</lang>
                         <lang id="fa" status="2">راهنما فایلها</lang>
+                        <lang id="lt" status="2">Pagalbos failai</lang>
                       </row>
                     </item>
                     <item name="Items[8]">
@@ -1617,7 +1665,7 @@
                         <lang id="nl" status="3">Geluids-gebeurtenissen</lang>
                         <lang id="de" status="2">Sound Ereignisse</lang>
                         <lang id="ru" status="2">Звуковые события</lang>
-                        <lang id="el" status="2">Συμβάντα ήχου</lang>
+                        <lang id="el" status="3">Ηχητικά Συμβάντα</lang>
                         <lang id="ar" status="2">أحداث الصوت</lang>
                         <lang id="sv" status="2">Sund Events</lang>
                         <lang id="zh" status="2">声音事件</lang>
@@ -1629,6 +1677,7 @@
                         <lang id="pl" status="3">Dźwięki zdarzeń</lang>
                         <lang id="hu" status="2">Hang események</lang>
                         <lang id="fa" status="2">صدا رویدادها</lang>
+                        <lang id="lt" status="3">Garsiniai įvykiai </lang>
                       </row>
                     </item>
                     <item name="Items[9]">
@@ -1654,6 +1703,7 @@
                         <lang id="pl" status="3">Historia</lang>
                         <lang id="hu" status="2">Előzmények</lang>
                         <lang id="fa" status="2">لیست تاریخچه</lang>
+                        <lang id="lt" status="3">Pakeitimų sąrašas </lang>
                       </row>
                     </item>
                     <item name="Items[10]">
@@ -1679,6 +1729,7 @@
                         <lang id="pl" status="3">Czcionki systemowe</lang>
                         <lang id="hu" status="2">Windows betűtípusok</lang>
                         <lang id="fa" status="2">فونتهای ویندوز</lang>
+                        <lang id="lt" status="3">Windows šriftai</lang>
                       </row>
                     </item>
                   </item>
@@ -1740,6 +1791,7 @@
                     <lang id="pl" status="3">Rodzaj błędu</lang>
                     <lang id="hu" status="2">Problémára</lang>
                     <lang id="fa" status="2">مشکل</lang>
+                    <lang id="lt" status="2">Problema</lang>
                   </row>
                 </component>
                 <component class="TVisHiddenComponent" name="treeColumn2" type="Common_Tools.TreeViewAdv.Tree.TreeColumn">
@@ -1753,7 +1805,7 @@
                     <lang id="nl" status="2">Locatie</lang>
                     <lang id="de" status="2">Speicherort</lang>
                     <lang id="ru" status="2">Расположение</lang>
-                    <lang id="el" status="2">Θέση</lang>
+                    <lang id="el" status="3">Τοποθεσία</lang>
                     <lang id="ar" status="2">موقع</lang>
                     <lang id="sv" status="2">Plats</lang>
                     <lang id="zh" status="2">位置</lang>
@@ -1765,6 +1817,7 @@
                     <lang id="pl" status="3">Lokalizacja</lang>
                     <lang id="hu" status="2">Hely</lang>
                     <lang id="fa" status="2">محل سکونت</lang>
+                    <lang id="lt" status="2">Vieta</lang>
                   </row>
                 </component>
                 <component class="TVisHiddenComponent" name="treeColumn3" type="Common_Tools.TreeViewAdv.Tree.TreeColumn">
@@ -1790,6 +1843,7 @@
                     <lang id="pl" status="3">Nazwa</lang>
                     <lang id="hu" status="2">Érték neve</lang>
                     <lang id="fa" status="2">نام مقدار</lang>
+                    <lang id="lt" status="3">Pavadinimas</lang>
                   </row>
                 </component>
               </component>
@@ -1797,8 +1851,8 @@
             <component class="TVisToolBar" name="toolStrip1" type="System.Windows.Forms.ToolStrip">
               <row id="Location.X">0</row>
               <row id="Location.Y" state="3">
-                <prev>24</prev>
-                <native>0</native>
+                <prev>0</prev>
+                <native>24</native>
               </row>
               <row id="Size.Height">54</row>
               <row id="Size.Width">809</row>
@@ -1845,6 +1899,7 @@
                   <lang id="pl" status="2">Skanuj rejestr</lang>
                   <lang id="hu" status="2">Bejegyzés szkennelése</lang>
                   <lang id="fa" status="2">اسکن رجیستری</lang>
+                  <lang id="lt" status="3">Registro skenavimas</lang>
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonFix" type="System.Windows.Forms.ToolStripButton">
@@ -1872,6 +1927,7 @@
                   <lang id="pl" status="2">Napraw błędy</lang>
                   <lang id="hu" status="2">Problémák javítása</lang>
                   <lang id="fa" status="2">رفع مشکلات</lang>
+                  <lang id="lt" status="3">Problemų sprendimas</lang>
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonRestore" type="System.Windows.Forms.ToolStripButton">
@@ -1899,6 +1955,7 @@
                   <lang id="pl" status="2">Przywróć rejestr</lang>
                   <lang id="hu" status="2">Bejegyzés visszaállítása</lang>
                   <lang id="fa" status="2">بازگرداندن رجیستری</lang>
+                  <lang id="lt" status="3">Registro atkūrimas</lang>
                 </row>
               </component>
               <component class="TVisToolSeparator" name="toolStripSeparator5" type="System.Windows.Forms.ToolStripSeparator">
@@ -1930,6 +1987,7 @@
                   <lang id="pl" status="2">Ustawienia</lang>
                   <lang id="hu" status="2">Beállítások</lang>
                   <lang id="fa" status="2">گزینه ها</lang>
+                  <lang id="lt" status="2">Funkcijos</lang>
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonHelp" type="System.Windows.Forms.ToolStripButton">
@@ -1957,14 +2015,15 @@
                   <lang id="pl" status="2">Pomoc</lang>
                   <lang id="hu" status="2">Segítség</lang>
                   <lang id="fa" status="2">راهنما</lang>
+                  <lang id="lt" status="3">Pagalba</lang>
                 </row>
               </component>
             </component>
             <component class="TVisMenuBar" name="menuStrip1" type="System.Windows.Forms.MenuStrip">
               <row id="Location.X">0</row>
               <row id="Location.Y" state="3">
-                <prev>0</prev>
-                <native>54</native>
+                <prev>54</prev>
+                <native>0</native>
               </row>
               <row id="Size.Height">24</row>
               <row id="Size.Width">809</row>
@@ -2011,6 +2070,7 @@
                   <lang id="pl" status="3">Plik</lang>
                   <lang id="hu" status="2">Fájl</lang>
                   <lang id="fa" status="2">پرونده</lang>
+                  <lang id="lt" status="2">Failas</lang>
                 </row>
                 <component class="TVisMenuItem" name="scanToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
                   <row id="Size.Height">22</row>
@@ -2037,6 +2097,7 @@
                     <lang id="pl" status="3">Skanuj rejestr</lang>
                     <lang id="hu" status="2">Bejegyzés szkennelése</lang>
                     <lang id="fa" status="2">اسکن رجیستری</lang>
+                    <lang id="lt" status="3">Registro skenavimas</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="fixToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2064,6 +2125,7 @@
                     <lang id="pl" status="3">Napraw błędy</lang>
                     <lang id="hu" status="2">Problémák javítása</lang>
                     <lang id="fa" status="2">رفع مشکلات</lang>
+                    <lang id="lt" status="3">Problemų sprendimas</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="restoreToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2091,6 +2153,7 @@
                     <lang id="pl" status="3">Przywróć rejestr</lang>
                     <lang id="hu" status="2">Bejegyzés visszaállítása</lang>
                     <lang id="fa" status="2">بازگرداندن رجیستری</lang>
+                    <lang id="lt" status="3">Registro atkūrimas</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="toolStripSeparator3" type="System.Windows.Forms.ToolStripSeparator">
@@ -2110,7 +2173,7 @@
                     <lang id="nl" status="3">Einde</lang>
                     <lang id="de" status="2">Ausfahrt</lang>
                     <lang id="ru" status="3">Выход</lang>
-                    <lang id="el" status="2">Εξόδου</lang>
+                    <lang id="el" status="3">Εξόδος</lang>
                     <lang id="ar" status="2">خروج</lang>
                     <lang id="sv" status="2">Avsluta</lang>
                     <lang id="zh" status="2">退出</lang>
@@ -2122,6 +2185,7 @@
                     <lang id="pl" status="3">Zakończ</lang>
                     <lang id="hu" status="2">Kilépés</lang>
                     <lang id="fa" status="2">خروج</lang>
+                    <lang id="lt" status="2">Atsijungti</lang>
                   </row>
                 </component>
               </component>
@@ -2150,6 +2214,7 @@
                   <lang id="pl" status="2">Edycja</lang>
                   <lang id="hu" status="2">Szerkesztés</lang>
                   <lang id="fa" status="2">ویرایش</lang>
+                  <lang id="lt" status="2">Redaguoti</lang>
                 </row>
                 <component class="TVisMenuItem" name="selectAllToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
                   <row id="Size.Height">22</row>
@@ -2176,6 +2241,7 @@
                     <lang id="pl" status="3">Zaznacz wszystko</lang>
                     <lang id="hu" status="2">Mind kijelölése</lang>
                     <lang id="fa" status="2">انتخاب همه</lang>
+                    <lang id="lt" status="3">Pažymėti viska</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="selectNoneToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2203,6 +2269,7 @@
                     <lang id="pl" status="3">Odznacz wszystko</lang>
                     <lang id="hu" status="2">Kijelölés megszüntetése</lang>
                     <lang id="fa" status="2">هیچ کدام را انتخاب کنید</lang>
+                    <lang id="lt" status="3">Atšaukti pažymėjimą</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="invertSelectionToolStripMenuItem1" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2230,6 +2297,7 @@
                     <lang id="pl" status="2">Odwróć zaznaczenie</lang>
                     <lang id="hu" status="2">Kijelölés megfordítása</lang>
                     <lang id="fa" status="2">انتخاب برعکس شود</lang>
+                    <lang id="lt" status="3">Invertuoti  žymėjimą</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="toolStripSeparator7" type="System.Windows.Forms.ToolStripSeparator">
@@ -2261,6 +2329,7 @@
                     <lang id="pl" status="3">Pomiń zaznaczone</lang>
                     <lang id="hu" status="2">Kijelöltek kihagyása</lang>
                     <lang id="fa" status="2">محروم برگزیده</lang>
+                    <lang id="lt" status="2">Pašalinti pasirinktus</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="viewInRegeditToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2276,7 +2345,7 @@
                     <lang id="nl" status="3">In regedit weergeven</lang>
                     <lang id="de" status="2">In Regedit anzeigen</lang>
                     <lang id="ru" status="3">Просмотр в regedit</lang>
-                    <lang id="el" status="2">Προβολή σε regedit</lang>
+                    <lang id="el" status="3">Προβολή στο regedit</lang>
                     <lang id="ar" status="2">عرض في regedit</lang>
                     <lang id="sv" status="2">Visa i regedit</lang>
                     <lang id="zh" status="2">查看输入regedit</lang>
@@ -2288,6 +2357,7 @@
                     <lang id="pl" status="3">Otwórz w regedit</lang>
                     <lang id="hu" status="2">Nézet regedit-ben</lang>
                     <lang id="fa" status="2">مشاهده در regedit</lang>
+                    <lang id="lt" status="3">Peržiūrėti regedit aplinkoje</lang>
                   </row>
                 </component>
               </component>
@@ -2316,6 +2386,7 @@
                   <lang id="pl" status="3">Język</lang>
                   <lang id="hu" status="2">Nyelv</lang>
                   <lang id="fa" status="2">زبان</lang>
+                  <lang id="lt" status="2">Kalba</lang>
                 </row>
                 <component class="TVisMenuItem" name="englishToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
                   <row id="Size.Height" state="0">22</row>
@@ -2342,6 +2413,7 @@
                     <lang id="pl" status="3">Angielski</lang>
                     <lang id="hu" status="2">Angol</lang>
                     <lang id="fa" status="2">انگلیسی</lang>
+                    <lang id="lt" status="2">Anglų</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="frenchToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2369,6 +2441,7 @@
                     <lang id="pl" status="3">Francuski</lang>
                     <lang id="hu" status="2">Francia</lang>
                     <lang id="fa" status="2">فرانسوی</lang>
+                    <lang id="lt" status="2">Prancūzų</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="spanishToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2396,6 +2469,7 @@
                     <lang id="pl" status="3">Hiszpański</lang>
                     <lang id="hu" status="2">Spanyol</lang>
                     <lang id="fa" status="2">اسپانیایی</lang>
+                    <lang id="lt" status="2">Ispanų</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="portugueseToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2423,6 +2497,7 @@
                     <lang id="pl" status="2">Portugalski</lang>
                     <lang id="hu" status="2">Portugál</lang>
                     <lang id="fa" status="2">پرتغالی</lang>
+                    <lang id="lt" status="2">Portugalų</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="italianToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2450,6 +2525,7 @@
                     <lang id="pl" status="3">Włoski</lang>
                     <lang id="hu" status="2">Olasz</lang>
                     <lang id="fa" status="2">ایتالیایی</lang>
+                    <lang id="lt" status="2">Italų</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="dutchToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2477,6 +2553,7 @@
                     <lang id="pl" status="3">Holenderski</lang>
                     <lang id="hu" status="2">Holland</lang>
                     <lang id="fa" status="2">هلندی</lang>
+                    <lang id="lt" status="2">Olandų</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="germanToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2504,6 +2581,7 @@
                     <lang id="pl" status="3">Niemiecki</lang>
                     <lang id="hu" status="2">Német</lang>
                     <lang id="fa" status="2">آلمانی</lang>
+                    <lang id="lt" status="2">Vokiečių</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="russianToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2531,6 +2609,7 @@
                     <lang id="pl" status="3">Rosyjski</lang>
                     <lang id="hu" status="2">Orosz</lang>
                     <lang id="fa" status="2">روسی</lang>
+                    <lang id="lt" status="2">Rusų</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="hungarianToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2558,6 +2637,7 @@
                     <lang id="pl" status="2">węgierski</lang>
                     <lang id="hu" date="20100113185104" status="3">Magyar</lang>
                     <lang id="fa" status="2">مجاری</lang>
+                    <lang id="lt" status="2">Vengrų</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="greekToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2585,6 +2665,7 @@
                     <lang id="pl" status="3">Grecki</lang>
                     <lang id="hu" status="2">Görög</lang>
                     <lang id="fa" status="2">یونانی</lang>
+                    <lang id="lt" status="2">Graikų</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="arabicToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2612,12 +2693,36 @@
                     <lang id="pl" status="3">Arabski</lang>
                     <lang id="hu" status="2">Arab</lang>
                     <lang id="fa" status="2">عربی</lang>
+                    <lang id="lt" status="2">Arabų</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="persianToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
                   <row id="Size.Height" state="0">22</row>
                   <row id="Size.Width" state="0">184</row>
-                  <row id="Text" state="0">Persian</row>
+                  <row id="Text" state="0">
+                    <native>Persian</native>
+                    <lang id="en" status="2">Persian</lang>
+                    <lang id="fr" status="2">Persan</lang>
+                    <lang id="es" status="2">Persa</lang>
+                    <lang id="pt" status="2">Persa</lang>
+                    <lang id="it" status="2">Persiano</lang>
+                    <lang id="nl" status="2">Perzisch</lang>
+                    <lang id="de" status="2">Persisch</lang>
+                    <lang id="ru" status="2">Персидский</lang>
+                    <lang id="el" status="2">Περσικά</lang>
+                    <lang id="ar" status="2">الفارسية</lang>
+                    <lang id="sv" status="2">Persiska</lang>
+                    <lang id="zh" status="2">波斯文</lang>
+                    <lang id="zh.tra" status="2">波斯文</lang>
+                    <lang id="ja" status="2">ペルシア語</lang>
+                    <lang id="vi" status="2">Tiếng Ba Tư</lang>
+                    <lang id="th" status="2">เปอร์เซีย</lang>
+                    <lang id="tr" status="2">Farsça</lang>
+                    <lang id="pl" status="2">Perski</lang>
+                    <lang id="hu" status="2">Perzsa</lang>
+                    <lang id="fa" status="2">فارسی</lang>
+                    <lang id="lt" status="2">Persų</lang>
+                  </row>
                 </component>
                 <component class="TVisMenuItem" name="polishToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
                   <row id="Size.Height" state="0">22</row>
@@ -2644,6 +2749,7 @@
                     <lang id="pl" status="2">Polski</lang>
                     <lang id="hu" status="2">Lengyel</lang>
                     <lang id="fa" status="2">لهستانی</lang>
+                    <lang id="lt" status="2">Lenkų</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="swedishToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2671,6 +2777,7 @@
                     <lang id="pl" status="3">Szwedzki</lang>
                     <lang id="hu" status="2">Svéd</lang>
                     <lang id="fa" status="2">سوئدی</lang>
+                    <lang id="lt" status="2">Švedų</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="japaneseToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2698,6 +2805,7 @@
                     <lang id="pl" status="3">Japoński</lang>
                     <lang id="hu" status="2">Japán</lang>
                     <lang id="fa" status="2">ژاپنی</lang>
+                    <lang id="lt" status="2">Japonų</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="chineseSimplifiedToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2725,6 +2833,7 @@
                     <lang id="pl" status="3">Chiński (uproszczony)</lang>
                     <lang id="hu" status="2">Kínai (egyszerűsített)</lang>
                     <lang id="fa" status="2">چینی (ساده شده)</lang>
+                    <lang id="lt" status="2">Kinų (supaprastinta)</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="chineseTraditionalToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2752,12 +2861,36 @@
                     <lang id="pl" status="3">Chiński (tradycyjny)</lang>
                     <lang id="hu" status="2">Kínai (hagyományos)</lang>
                     <lang id="fa" status="2">چینی (سنتی)</lang>
+                    <lang id="lt" status="2">Kinų (Tradicinė)</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="turkishToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
                   <row id="Size.Height" state="0">22</row>
                   <row id="Size.Width" state="0">184</row>
-                  <row id="Text" state="0">Turkish</row>
+                  <row id="Text" state="0">
+                    <native>Turkish</native>
+                    <lang id="en" status="2">Turkish</lang>
+                    <lang id="fr" status="2">Turc</lang>
+                    <lang id="es" status="2">Turquía</lang>
+                    <lang id="pt" status="2">Turco</lang>
+                    <lang id="it" status="2">Turco</lang>
+                    <lang id="nl" status="2">Turks</lang>
+                    <lang id="de" status="2">Türkisch</lang>
+                    <lang id="ru" status="2">Турецкий</lang>
+                    <lang id="el" status="2">Τουρκικά</lang>
+                    <lang id="ar" status="2">التركية</lang>
+                    <lang id="sv" status="2">Turkiska</lang>
+                    <lang id="zh" status="2">土耳其文</lang>
+                    <lang id="zh.tra" status="2">土耳其文</lang>
+                    <lang id="ja" status="2">トルコ語</lang>
+                    <lang id="vi" status="2">Tiếng Thổ Nhĩ Kỳ</lang>
+                    <lang id="th" status="2">ภาษา ตุรกี</lang>
+                    <lang id="tr" status="2">Türkçe</lang>
+                    <lang id="pl" status="2">Turecki</lang>
+                    <lang id="hu" status="2">Török</lang>
+                    <lang id="fa" status="2">ترکی استانبولی</lang>
+                    <lang id="lt" status="2">Turkų</lang>
+                  </row>
                 </component>
                 <component class="TVisMenuItem" name="vietnameseToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
                   <row id="Size.Height" state="0">22</row>
@@ -2772,7 +2905,7 @@
                     <lang id="nl" status="2">Vietnamees</lang>
                     <lang id="de" status="2">Vietnamesisch</lang>
                     <lang id="ru" status="2">Вьетнамский</lang>
-                    <lang id="el" status="2">Βιετνάμ</lang>
+                    <lang id="el" status="3">Βιετναμέζικα</lang>
                     <lang id="ar" status="2">الفيتنامية</lang>
                     <lang id="sv" status="2">Vietnamesiska</lang>
                     <lang id="zh" status="2">越南文</lang>
@@ -2784,6 +2917,7 @@
                     <lang id="pl" status="3">Wietnamski</lang>
                     <lang id="hu" status="2">Vietnámi</lang>
                     <lang id="fa" status="2">ویتنامی</lang>
+                    <lang id="lt" status="2">Vietnamiečių</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="thaiToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2811,6 +2945,7 @@
                     <lang id="pl" status="3">Tajski</lang>
                     <lang id="hu" status="2">Táj</lang>
                     <lang id="fa" status="2">تایلندی</lang>
+                    <lang id="lt" status="2">Tajų</lang>
                   </row>
                 </component>
               </component>
@@ -2839,6 +2974,7 @@
                   <lang id="pl" status="3">Narzędzia</lang>
                   <lang id="hu" status="2">Eszközök</lang>
                   <lang id="fa" status="2">ابزار</lang>
+                  <lang id="lt" status="2">Įrankiai</lang>
                 </row>
                 <component class="TVisMenuItem" name="startupManagerToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
                   <row id="Size.Height">22</row>
@@ -2853,7 +2989,7 @@
                     <lang id="nl" status="3">Manager starten</lang>
                     <lang id="de" status="2">Start-Manager</lang>
                     <lang id="ru" status="3">Менеджер автозагрузки</lang>
-                    <lang id="el" status="2">Διαχείριση εκκίνησης</lang>
+                    <lang id="el" status="3">Διαχείριστης εκκίνησης</lang>
                     <lang id="ar" status="2">إدارة بدء التشغيل</lang>
                     <lang id="sv" status="2">Starthanterare</lang>
                     <lang id="zh" status="2">启动管理器</lang>
@@ -2865,6 +3001,7 @@
                     <lang id="pl" status="3">Menadżer uruchamiania</lang>
                     <lang id="hu" status="2">Indítás menedzser</lang>
                     <lang id="fa" status="2">راه اندازی مدیریت</lang>
+                    <lang id="lt" status="3">Automatiškai paleidžiamų failų vedlys</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="uninstallManagerToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2880,7 +3017,7 @@
                     <lang id="nl" status="2">Manager verwijderen</lang>
                     <lang id="de" status="2">Deinstallieren Sie Manager</lang>
                     <lang id="ru" status="3">Менеджер деинсталляции</lang>
-                    <lang id="el" status="2">Κατάργηση της εγκατάστασης διαχείρισης</lang>
+                    <lang id="el" status="3">Διαχείριστης απεγκατάστασης</lang>
                     <lang id="ar" status="2">إلغاء تثبيت إدارة</lang>
                     <lang id="sv" status="2">Avinstallera</lang>
                     <lang id="zh" status="2">卸载管理</lang>
@@ -2892,6 +3029,7 @@
                     <lang id="pl" status="3">Menadżer deinstalacji</lang>
                     <lang id="hu" status="2">Uninstallálás menedzser</lang>
                     <lang id="fa" status="2">عزل مدیر</lang>
+                    <lang id="lt" status="3">Programos šalinimo vedlys</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="toolStripSeparator8" type="System.Windows.Forms.ToolStripSeparator">
@@ -2923,6 +3061,7 @@
                     <lang id="pl" status="2">Ustawienia</lang>
                     <lang id="hu" status="2">Beállítások</lang>
                     <lang id="fa" status="2">گزینه ها</lang>
+                    <lang id="lt" status="2">Funkcijos</lang>
                   </row>
                 </component>
               </component>
@@ -2951,6 +3090,7 @@
                   <lang id="pl" status="3">Pomoc</lang>
                   <lang id="hu" status="2">Segítség</lang>
                   <lang id="fa" status="2">راهنما</lang>
+                  <lang id="lt" status="3">Pagalba</lang>
                 </row>
                 <component class="TVisMenuItem" name="helpToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
                   <row id="Size.Height">22</row>
@@ -2977,6 +3117,7 @@
                     <lang id="pl" status="3">Pomoc</lang>
                     <lang id="hu" status="2">Segítség</lang>
                     <lang id="fa" status="2">راهنما</lang>
+                    <lang id="lt" status="3">Pagalba</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="toolStripSeparator6" type="System.Windows.Forms.ToolStripSeparator">
@@ -2996,7 +3137,7 @@
                     <lang id="nl" status="2">Bezoek de website</lang>
                     <lang id="de" status="2">Website besuchen</lang>
                     <lang id="ru" status="3">Посетить сайт программы</lang>
-                    <lang id="el" status="2">Επίσκεψη τοποθεσίας Web</lang>
+                    <lang id="el" status="3">Επίσκεψη ιστοσελίδας</lang>
                     <lang id="ar" status="2">زيارة الموقع</lang>
                     <lang id="sv" status="2">Besök webbplatsen</lang>
                     <lang id="zh" status="2">访问网站</lang>
@@ -3008,6 +3149,7 @@
                     <lang id="pl" status="3">Strona WWW</lang>
                     <lang id="hu" status="2">Honlap meglátogatása</lang>
                     <lang id="fa" status="2">مشاهده وب سایت</lang>
+                    <lang id="lt" status="2">Tinklalapis</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="checkForUpdatesToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
@@ -3035,6 +3177,7 @@
                     <lang id="pl" status="3">Uaktualnienia</lang>
                     <lang id="hu" status="2">Frissítések keresése</lang>
                     <lang id="fa" status="2">برای اتمام به روز رسانی ها</lang>
+                    <lang id="lt" status="3">Patikrinti ar yra atnaujinimai</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="toolStripSeparator2" type="System.Windows.Forms.ToolStripSeparator">
@@ -3066,6 +3209,7 @@
                     <lang id="pl" status="3">O programie...</lang>
                     <lang id="hu" status="2">Bővebben...</lang>
                     <lang id="fa" status="2">درباره...</lang>
+                    <lang id="lt" status="2">Apie...</lang>
                   </row>
                 </component>
               </component>
@@ -3083,7 +3227,7 @@
               <lang id="nl" invalidated="1" status="2">Weinig register reinigings</lang>
               <lang id="de" invalidated="1" status="2">Wenig Registry Cleaner</lang>
               <lang id="ru" status="3">Little Registry Cleaner</lang>
-              <lang id="el" invalidated="1" status="2">Μικρή Registry Cleaner</lang>
+              <lang id="el" status="3">Little Registry Cleaner</lang>
               <lang id="ar" invalidated="1" status="2">التسجيل ضئيلة الأنظف</lang>
               <lang id="sv" invalidated="1" status="2">Liten Registry Cleaner</lang>
               <lang id="zh" invalidated="1" status="2">小注册表清理器</lang>
@@ -3095,6 +3239,7 @@
               <lang id="pl" status="3">Mały Registratura Sprzątacz</lang>
               <lang id="hu" status="2">Little Registry Cleaner</lang>
               <lang id="fa" status="2">کمی تمیز کننده رجیستری</lang>
+              <lang id="lt" status="2">Little Registry Cleaner</lang>
             </row>
           </component>
           <component class="TVisHiddenComponent" name="nodeIcon" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeIcon">
@@ -3115,7 +3260,7 @@
             <lang id="nl" status="3">Kleine Registerreiniger - Opties</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Optionen</lang>
             <lang id="ru" status="3">Little Registry Cleaner - Настройки</lang>
-            <lang id="el" status="2">Μικρή μητρώου κασέτας καθαρισμού - επιλογές</lang>
+            <lang id="el" status="3">Little Registry Cleaner – Επιλογές</lang>
             <lang id="ar" status="2">التسجيل ضئيلة المنظف - خيارات</lang>
             <lang id="sv" status="2">Liten Registry Cleaner - alternativ</lang>
             <lang id="zh" status="2">小注册表清理器-选项</lang>
@@ -3127,6 +3272,7 @@
             <lang id="pl" status="2">Little Registry Cleaner - Ustawienia</lang>
             <lang id="hu" status="2">Little Registry Cleaner - Beállítások</lang>
             <lang id="fa" status="2">کمی تمیز کننده رجیستری -- گزینه ها</lang>
+            <lang id="lt" status="2">Little Registry Cleaner - Funkcijos</lang>
           </row>
           <component class="TVisPictureButton" name="buttonCancel" type="System.Windows.Forms.Button">
             <row id="Location.X">420</row>
@@ -3155,6 +3301,7 @@
               <lang id="pl" status="2">Anuluj</lang>
               <lang id="hu" status="2">Mégse</lang>
               <lang id="fa" status="2">انصراف</lang>
+              <lang id="lt" status="2">Atšaukti</lang>
             </row>
           </component>
           <component class="TVisPictureButton" name="buttonOK" type="System.Windows.Forms.Button">
@@ -3184,6 +3331,7 @@
               <lang id="pl" status="3">OK</lang>
               <lang id="hu" status="2">OK</lang>
               <lang id="fa" status="2">خوب</lang>
+              <lang id="lt" status="2">GERAI</lang>
             </row>
           </component>
           <component class="TVisPageControl" name="tabControl1" type="System.Windows.Forms.TabControl">
@@ -3218,6 +3366,7 @@
                 <lang id="pl" status="2">Ogólne</lang>
                 <lang id="hu" status="2">Általános</lang>
                 <lang id="fa" status="2">عمومی</lang>
+                <lang id="lt" status="2">Bendra</lang>
               </row>
               <component class="TVisGroupBox" name="groupBox2" type="System.Windows.Forms.GroupBox">
                 <row id="Location.X">6</row>
@@ -3234,7 +3383,7 @@
                   <lang id="nl" status="3">Selecteer een map voor een backup van de verwijderde registervermeldingen </lang>
                   <lang id="de" status="2">Wählen Sie einen Ordner backup gelöschten Einträge </lang>
                   <lang id="ru" status="3">Выберите папку для резервного копирования удаленных элементов реестра</lang>
-                  <lang id="el" status="2">Επιλέξτε ένα φάκελο αντιγράφων ασφαλείας διαγράφηκε μητρώου καταχωρήσεις </lang>
+                  <lang id="el" status="3">Επιλέξτε ένα φάκελο αντιγράφων ασφαλείας διαγράμενων μητρώων καταχώρησης </lang>
                   <lang id="ar" status="2">حدد مجلد الذي تريد إدخالات التسجيل المحذوفة النسخ الاحتياطي </lang>
                   <lang id="sv" status="2">Välj en mapp att säkerhetskopiera borttagna registerposterna till</lang>
                   <lang id="zh" status="2">选择一个备份文件夹中删除的注册表项 </lang>
@@ -3246,6 +3395,7 @@
                   <lang id="pl" status="2">Wybierz folder zapisywania kopii zapasowych usuniętych wpisów</lang>
                   <lang id="hu" status="2">Válasszon egy mappát a törölt bejegyzések biztonsági másolatainak</lang>
                   <lang id="fa" status="2">انتخاب یک پوشه را حذف مدخل پشتیبان رجیستری </lang>
+                  <lang id="lt" status="3">Pasirinkite aplanką rezerviniam pašalintu registro elementu kopijavimui </lang>
                 </row>
                 <component class="TVisPictureButton" name="buttonBrowse1" type="System.Windows.Forms.Button">
                   <row id="Location.X">373</row>
@@ -3262,7 +3412,7 @@
                     <lang id="nl" status="2">Bladeren...</lang>
                     <lang id="de" status="2">Durchsuchen...</lang>
                     <lang id="ru" status="2">Обзор...</lang>
-                    <lang id="el" status="2">Αναζήτηση...</lang>
+                    <lang id="el" status="3">Περιήγηση...</lang>
                     <lang id="ar" status="2">تصفح...</lang>
                     <lang id="sv" status="2">Bläddra...</lang>
                     <lang id="zh" status="2">浏览...</lang>
@@ -3274,6 +3424,7 @@
                     <lang id="pl" status="2">Przeglądaj...</lang>
                     <lang id="hu" status="2">Tallózás...</lang>
                     <lang id="fa" status="2">فهرست اسامی...</lang>
+                    <lang id="lt" status="3">Peržiūra </lang>
                   </row>
                 </component>
                 <component class="TVisEdit" name="textBoxBackupFolder" type="System.Windows.Forms.TextBox">
@@ -3310,6 +3461,7 @@
                   <lang id="pl" status="2">Ustawienia</lang>
                   <lang id="hu" status="2">Beállítások</lang>
                   <lang id="fa" status="2">گزینه ها</lang>
+                  <lang id="lt" status="2">Funkcijos</lang>
                 </row>
                 <component class="TVisListView" name="listViewOptions" state="0" type="System.Windows.Forms.ListView" viewstyle="vsList">
                   <row id="Location.X" state="0">6</row>
@@ -3327,7 +3479,7 @@
                       <lang id="nl" status="3">Log de scans en reparaties</lang>
                       <lang id="de" status="2">Registrierung Logscans und fixes</lang>
                       <lang id="ru" status="3">Журналировать операции с реестром</lang>
-                      <lang id="el" status="2">Αρχείο καταγραφής μητρώου σαρώνει και διορθώνει</lang>
+                      <lang id="el" status="3">Αρχείο καταγραφής μητρώου σαρώσεων και διορθώσεων</lang>
                       <lang id="ar" status="2">التسجيل سجل بتفحص وإصلاحات</lang>
                       <lang id="sv" status="2">Spara registersökningar och -korrigeringar</lang>
                       <lang id="zh" status="2">日志注册表扫描和修复</lang>
@@ -3339,6 +3491,7 @@
                       <lang id="pl" status="2">Twórz raporty skanowania i napraw</lang>
                       <lang id="hu" status="2">Bejegyzés szkennelések és helyrehozások naplózása</lang>
                       <lang id="fa" status="2">ورود به سیستم اسکن رجیستری و اصلاحات</lang>
+                      <lang id="lt" status="3">Įrašinėti visas atliekamas operacijas į pokyčiu žurnalą</lang>
                     </row>
                   </item>
                   <item name="Items[1]" state="0">
@@ -3352,7 +3505,7 @@
                       <lang id="nl" status="3">Scan opnieuw na het repareren van de register problemen</lang>
                       <lang id="de" status="2">Nach beheben Registrierung Probleme re-Scan</lang>
                       <lang id="ru" status="3">Повторная проверка после устранения ошибок</lang>
-                      <lang id="el" status="2">Re-Scan μετά τον καθορισμό των προβλημάτων του μητρώου</lang>
+                      <lang id="el" status="3">Ξανά-Σάρωση μετά τον καθορισμό των προβλημάτων του μητρώου</lang>
                       <lang id="ar" status="2">Re-Scan بعد إصلاح التسجيل وإصلاحها</lang>
                       <lang id="sv" status="2">Scanna igen efter registret blivit åtgärdat</lang>
                       <lang id="zh" status="2">Re-Scan 后注册表问题</lang>
@@ -3364,6 +3517,7 @@
                       <lang id="pl" status="2">Re-Scan po Rozwiązywanie problemów z rejestru</lang>
                       <lang id="hu" status="2">Újraszkennelés bejegyzéshibák javítása után</lang>
                       <lang id="fa" status="2">دوباره پس از رفع مسائل اسکن رجیستری-</lang>
+                      <lang id="lt" status="3">Papildomas patikrinimas po klaidu pašalinimo</lang>
                     </row>
                   </item>
                   <item name="Items[2]" state="0">
@@ -3377,7 +3531,7 @@
                       <lang id="nl" status="2">Automatisch controleren op updates</lang>
                       <lang id="de" status="2">Automatisch nach Aktualisierungen suchen</lang>
                       <lang id="ru" status="2">Автоматическая проверка обновлений</lang>
-                      <lang id="el" status="2">Αυτόματος έλεγχος για ενημερωμένες εκδόσεις</lang>
+                      <lang id="el" status="3">Αυτόματος έλεγχος για ενημερώσεις</lang>
                       <lang id="ar" status="2">البحث عن التحديثات تلقائياً</lang>
                       <lang id="sv" status="2">Sök efter uppdateringar automatiskt</lang>
                       <lang id="zh" status="2">自动检查更新</lang>
@@ -3389,6 +3543,7 @@
                       <lang id="pl" status="2">Automatycznie sprawdzaj, czy dostępne są uaktualnienia</lang>
                       <lang id="hu" status="2">Automatikus frissítés</lang>
                       <lang id="fa" status="2">برای اتمام به روز رسانی ها به طور خودکار</lang>
+                      <lang id="lt" status="3">Tikrinti atnaujinimus automatiškai</lang>
                     </row>
                   </item>
                   <item name="Items[3]" state="0">
@@ -3402,7 +3557,7 @@
                       <lang id="nl" status="3">Automatisch Systeemherstelpunten maken</lang>
                       <lang id="de" status="2">Erstellen Sie System Wiederherstellungspunkte automatisch</lang>
                       <lang id="ru" status="3">Автоматически создавать точку восстановления</lang>
-                      <lang id="el" status="2">Δημιουργία συστήματος σημεία επαναφοράς αυτόματα</lang>
+                      <lang id="el" status="3">Αυτόματη δημιουργία σημείων επαναφοράς συστήματος </lang>
                       <lang id="ar" status="2">إنشاء نقاط استعادة النظام تلقائياً</lang>
                       <lang id="sv" status="2">Skapa återställningspunkter automatiskt</lang>
                       <lang id="zh" status="2">创建系统还原点自动</lang>
@@ -3414,6 +3569,7 @@
                       <lang id="pl" status="2">Automatycznie twórz punkty przywracania systemu</lang>
                       <lang id="hu" status="2">Rendszervisszaállító pontok automatikus létrehozása</lang>
                       <lang id="fa" status="2">ایجاد نقاط بازیابی سیستم به صورت خودکار</lang>
+                      <lang id="lt" status="2">Sukurti sistemos atkūrimo taškus automatiškai</lang>
                     </row>
                   </item>
                   <item name="Items[4]" state="0">
@@ -3439,6 +3595,7 @@
                       <lang id="pl" status="2">Otwórz plik raportu po zakończeniu skanowania</lang>
                       <lang id="hu" status="2">Napló megmutatása szkennelés után</lang>
                       <lang id="fa" status="2">ورود به سیستم پس از پایان یافتن اسکن</lang>
+                      <lang id="lt" status="3">Rodyti pokyčiu žurnalą po skenavimo</lang>
                     </row>
                   </item>
                   <item name="Items[5]" state="0">
@@ -3452,7 +3609,7 @@
                       <lang id="nl" status="3">Back-upbestand verwijderen na het terugzetten van het register</lang>
                       <lang id="de" status="2">Löschen Sie backup-Datei nach dem Wiederherstellen der Registrierung</lang>
                       <lang id="ru" status="2">Удалить файл резервной копии после восстановления реестра</lang>
-                      <lang id="el" status="2">Διαγραφή αρχείου αντιγράφων ασφαλείας μετά την επαναφορά του μητρώου</lang>
+                      <lang id="el" status="3">Διαγραφή αντιγράφου ασφαλείας μετά την επαναφορά του μητρώου</lang>
                       <lang id="ar" status="2">حذف ملف النسخة الاحتياطية بعد استعادة التسجيل</lang>
                       <lang id="sv" status="2">Ta bort säkerhetskopian efter återställning av registret</lang>
                       <lang id="zh" status="2">删除之后还原注册表的备份文件</lang>
@@ -3464,6 +3621,7 @@
                       <lang id="pl" status="2">Usuń plik kopii zapasowej po Przywracanie rejestru</lang>
                       <lang id="hu" status="2">Biztonsági másolatok törlése a bejegyzés visszaállítása után</lang>
                       <lang id="fa" status="2">پاک کردن فایل پشتیبان پس از بازسازی رجیستری</lang>
+                      <lang id="lt" status="3">Ištrinti rezervine kopija po registro atkūrimo</lang>
                     </row>
                   </item>
                   <item name="Items[6]" state="0">
@@ -3477,7 +3635,7 @@
                       <lang id="nl" status="2">Ontbrekende bestanden op verwisselbare media negeren</lang>
                       <lang id="de" status="2">Ignorieren Sie fehlende Dateien auf Wechselmedien</lang>
                       <lang id="ru" status="2">Игнорировать отсутствующие файлы на съемном носителе</lang>
-                      <lang id="el" status="2">Αγνοεί αρχεία που λείπουν σε αφαιρούμενα μέσα αποθήκευσης</lang>
+                      <lang id="el" status="3">Αγνόηση αρχείων που λείπουν σε αφαιρούμενα μέσα αποθήκευσης</lang>
                       <lang id="ar" status="2">تجاهل الملفات المفقودة على وسائط قابلة للإزالة</lang>
                       <lang id="sv" status="2">Ignorera filer som saknas på flyttbara media</lang>
                       <lang id="zh" status="2">在可移动媒体忽略丢失的文件</lang>
@@ -3489,6 +3647,7 @@
                       <lang id="pl" status="2">Pomiń brakujące pliki na nośnikach wymiennych</lang>
                       <lang id="hu" status="2">Eltávolítható eszközön hiányzó fájlok figyelmen kívül hagyása</lang>
                       <lang id="fa" status="2">چشمپوشی از فایل های گم شده در رسانه های برداشتنی</lang>
+                      <lang id="lt" status="3">Ignoruoti trūkstamus failus išorinėse laikmenose</lang>
                     </row>
                   </item>
                   <item name="Items[7]" state="0">
@@ -3502,7 +3661,7 @@
                       <lang id="nl" status="3">Registeritems automatisch repereren</lang>
                       <lang id="de" status="2">Automatisch reparieren Registrierungseinträge</lang>
                       <lang id="ru" status="3">Автоматически восстанавливать элементы реестра</lang>
-                      <lang id="el" status="2">Αυτόματη επισκευή στοιχεία μητρώου</lang>
+                      <lang id="el" status="3">Αυτόματη επισκευή στοιχείων μητρώου</lang>
                       <lang id="ar" status="2">تلقائيا إصلاح عناصر السجل</lang>
                       <lang id="sv" status="2">Reparera registerposter automatiskt</lang>
                       <lang id="zh" status="2">自动修复注册表项</lang>
@@ -3514,6 +3673,7 @@
                       <lang id="pl" status="2">Automatycznie napraw elementów rejestru</lang>
                       <lang id="hu" status="2">Bejegyzések automatikus javítása</lang>
                       <lang id="fa" status="2">عنوانها به طور خودکار تعمیر رجیستری</lang>
+                      <lang id="lt" status="3">Automatiškai remontuoti registro objektus</lang>
                     </row>
                   </item>
                   <item name="Items[8]" state="0">
@@ -3539,6 +3699,7 @@
                       <lang id="pl" status="2">Zakończ program po naprawie rejestru</lang>
                       <lang id="hu" status="2">Kilépés bejegyzések javítása után</lang>
                       <lang id="fa" status="2">خروج از برنامه بعد از تعمیر رجیستری</lang>
+                      <lang id="lt" status="3">Išeiti iš programos po registro remonto</lang>
                     </row>
                   </item>
                 </component>
@@ -3570,6 +3731,7 @@
                   <lang id="pl" status="2">Wybierz folder zapisywania plików raportów</lang>
                   <lang id="hu" status="2">Válasszon egy mappát a naplófájloknak</lang>
                   <lang id="fa" status="2">انتخاب پوشه برای ذخیره فایلها را به ورود به سیستم</lang>
+                  <lang id="lt" status="3">Pasirinkite aplanką kur bus saugomi pokyčiu žurnalai</lang>
                 </row>
                 <component class="TVisEdit" name="textBoxLogFolder" type="System.Windows.Forms.TextBox">
                   <row id="Location.X">6</row>
@@ -3592,7 +3754,7 @@
                     <lang id="nl" status="2">Bladeren...</lang>
                     <lang id="de" status="2">Durchsuchen...</lang>
                     <lang id="ru" status="2">Обзор...</lang>
-                    <lang id="el" status="2">Αναζήτηση...</lang>
+                    <lang id="el" status="3">Περιήγηση...</lang>
                     <lang id="ar" status="2">تصفح...</lang>
                     <lang id="sv" status="2">Bläddra...</lang>
                     <lang id="zh" status="2">浏览...</lang>
@@ -3604,6 +3766,7 @@
                     <lang id="pl" status="2">Przeglądaj...</lang>
                     <lang id="hu" status="2">Tallózás...</lang>
                     <lang id="fa" status="2">فهرست اسامی...</lang>
+                    <lang id="lt" status="3">Peržiūra </lang>
                   </row>
                 </component>
               </component>
@@ -3623,7 +3786,7 @@
                 <lang id="nl" status="2">Lijst negeren</lang>
                 <lang id="de" status="2">Liste ignorieren</lang>
                 <lang id="ru" status="3">Список исключений</lang>
-                <lang id="el" status="2">Παράβλεψη της λίστας</lang>
+                <lang id="el" status="3">Λίστα παράβλεψης</lang>
                 <lang id="ar" status="2">تجاهل قائمة</lang>
                 <lang id="sv" status="2">Undantagslista</lang>
                 <lang id="zh" status="2">忽略列表</lang>
@@ -3635,6 +3798,7 @@
                 <lang id="pl" status="2">Lista pomijanych wpisów</lang>
                 <lang id="hu" status="2">Mellőzőlista</lang>
                 <lang id="fa" status="2">چشمپوشی از فهرست</lang>
+                <lang id="lt" status="3">Ignoruojamu elementų sąrašas</lang>
               </row>
               <component class="TVisListView" name="listView1" type="System.Windows.Forms.ListView" viewstyle="vsReport">
                 <row id="Location.X">6</row>
@@ -3664,6 +3828,7 @@
                     <lang id="pl" status="2">Pomijane pliki i foldery</lang>
                     <lang id="hu" status="2">Kihagyandó fájlok és mappák</lang>
                     <lang id="fa" status="2">فایل ها و پوشه ها را به محروم کردن</lang>
+                    <lang id="lt" status="2">Failai ir aplankai neįtraukti</lang>
                   </row>
                   <row id="Width" class="TIntegerRow">437</row>
                 </column>
@@ -3683,7 +3848,7 @@
                   <lang id="nl" status="3">Klik met de rechter muisknop om vermeldingen toe te voegen of te verwijderen</lang>
                   <lang id="de" status="2">Klicken Sie mit der rechten Maustaste auf Hinzufügen und Entfernen von Einträgen</lang>
                   <lang id="ru" status="3">Щелкните правой кнопкой, чтобы добавить или удалить записи</lang>
-                  <lang id="el" status="2">Κάντε δεξιό κλικ για να προσθέσετε/καταργήσετε καταχωρήσεις</lang>
+                  <lang id="el" status="3">Δεξί κλικ για να προσθέσετε/καταργήσετε καταχωρήσεις</lang>
                   <lang id="ar" status="2">انقر بزر الماوس الأيمن فوق إضافة/إزالة إدخالات</lang>
                   <lang id="sv" status="2">Högerklicka för att lägga till/ta bort poster</lang>
                   <lang id="zh" status="2">右键单击添加/删除项目</lang>
@@ -3695,6 +3860,7 @@
                   <lang id="pl" status="2">Kliknij prawym przyciskiem na pole poniżej, aby móc dodawać i usuwać wpisy</lang>
                   <lang id="hu" status="2">Jobb gomb bejegyzések hozzáadásához/eltávolításához</lang>
                   <lang id="fa" status="2">با کلیک راست برای اضافه کردن / حذف مدخل</lang>
+                  <lang id="lt" status="3">Spustelėkite dešiniuoju pelės mygtuku tam, kad pridėti / pašalinti įrašus</lang>
                 </row>
               </component>
             </component>
@@ -3727,6 +3893,7 @@
                 <lang id="pl" status="2">Dodaj plik</lang>
                 <lang id="hu" status="2">Fájl hozzáadása</lang>
                 <lang id="fa" status="2">اضافه کردن فایل</lang>
+                <lang id="lt" status="2">Pridėti failą</lang>
               </row>
             </component>
             <component class="TVisMenuItem" name="addFolderToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
@@ -3754,6 +3921,7 @@
                 <lang id="pl" status="2">Dodaj folder</lang>
                 <lang id="hu" status="2">Mappa hozzáadása</lang>
                 <lang id="fa" status="2">افزودن پوشه</lang>
+                <lang id="lt" status="2">Pridėti aplanką</lang>
               </row>
             </component>
             <component class="TVisMenuItem" name="addRegistryPathToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
@@ -3781,6 +3949,7 @@
                 <lang id="pl" status="2">Dodaj ścieżkę rejestru</lang>
                 <lang id="hu" status="2">Bejegyzés útvonal hozzáadása</lang>
                 <lang id="fa" status="2">اضافه کردن رجیستری مسیر</lang>
+                <lang id="lt" status="3">Pridėti registro kelią </lang>
               </row>
             </component>
             <component class="TVisMenuItem" name="toolStripSeparator1" type="System.Windows.Forms.ToolStripSeparator">
@@ -3812,6 +3981,7 @@
                 <lang id="pl" status="2">Usuń wpis</lang>
                 <lang id="hu" status="2">Feljegyzés eltávolítása</lang>
                 <lang id="fa" status="2">حذفمدخل</lang>
+                <lang id="lt" status="3">Pašalinti įrašą</lang>
               </row>
             </component>
           </component>
@@ -3831,7 +4001,7 @@
             <lang id="nl" status="3">Kleine Registerreiniger - Register terugzetten</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Registrierung wiederherstellen</lang>
             <lang id="ru" status="3">Little Registry Cleaner - восстановление реестра</lang>
-            <lang id="el" status="2">Μικρή μητρώου κασέτας καθαρισμού - Επαναφορά μητρώου</lang>
+            <lang id="el" status="3">Little Registry Cleaner - Επαναφορά μητρώου</lang>
             <lang id="ar" status="2">التسجيل ضئيلة المنظف - استعادة التسجيل</lang>
             <lang id="sv" status="2">Liten Registry Cleaner – återställ registret</lang>
             <lang id="zh" status="2">小处清洁-还原注册表</lang>
@@ -3843,6 +4013,7 @@
             <lang id="pl" status="2">Little Registry Cleaner - Przywróć rejestr</lang>
             <lang id="hu" status="2">Little Registry Cleaner - Bejegyzés visszaállítása</lang>
             <lang id="fa" status="2">کمی تمیز کننده رجیستری -- بازگرداندن رجیستری</lang>
+            <lang id="lt" status="3">Little Registry Cleaner - atkurti registrą</lang>
           </row>
           <component class="TVisGridPanel" name="tableLayoutPanel1" type="System.Windows.Forms.TableLayoutPanel" align="alClient">
             <columns>
@@ -3900,6 +4071,7 @@
                   <lang id="pl" status="2">Otwórz folder...</lang>
                   <lang id="hu" status="2">Mappa megnyitása...</lang>
                   <lang id="fa" status="2">فهرست آزاد...</lang>
+                  <lang id="lt" status="3">Atidaryti aplanką</lang>
                 </row>
               </component>
               <component class="TVisPictureButton" name="buttonRestore" type="System.Windows.Forms.Button" align="alClient">
@@ -3932,6 +4104,7 @@
                   <lang id="pl" status="2">Przywróć</lang>
                   <lang id="hu" status="2">Visszaállítás</lang>
                   <lang id="fa" status="2">بازگرداندن</lang>
+                  <lang id="lt" status="2">Atkurti</lang>
                 </row>
               </component>
             </component>
@@ -3962,6 +4135,7 @@
                 <lang id="pl" status="2">Wybierz plik z listy poniżej, aby przywrócić rejestr do poprzedniego stanu</lang>
                 <lang id="hu" status="2">Válasszon ki egy fájlt a bejegyzés visszaállításához</lang>
                 <lang id="fa" status="2">انتخاب زیر را برای باز گرداندن رجیستری خود را به حالت قبلی ارسال فایل</lang>
+                <lang id="lt" status="3">Pasirinkite žemiau esanti failą, iš kurio norite atkurti registrą</lang>
               </row>
             </component>
             <component class="TVisListView" name="listViewFiles" type="System.Windows.Forms.ListView" align="alClient" gridrow="1" viewstyle="vsReport">
@@ -3992,6 +4166,7 @@
                   <lang id="pl" status="2">Nazwa pliku</lang>
                   <lang id="hu" status="2">Fájlnév</lang>
                   <lang id="fa" status="2">نام فایل</lang>
+                  <lang id="lt" status="2">Failo vardas</lang>
                 </row>
                 <row id="Width" class="TIntegerRow">164</row>
               </column>
@@ -4018,6 +4193,7 @@
                   <lang id="pl" status="2">Data</lang>
                   <lang id="hu" status="2">Dátum</lang>
                   <lang id="fa" status="2">تاریخ</lang>
+                  <lang id="lt" status="2">Data</lang>
                 </row>
                 <row id="Width" class="TIntegerRow">143</row>
               </column>
@@ -4044,6 +4220,7 @@
                   <lang id="pl" status="2">Rozmiar</lang>
                   <lang id="hu" status="2">Méret</lang>
                   <lang id="fa" status="2">حجم</lang>
+                  <lang id="lt" status="2">Dydis</lang>
                 </row>
                 <row id="Width" class="TIntegerRow">88</row>
               </column>
@@ -4065,7 +4242,7 @@
             <lang id="nl" status="3">Kleine Registerreiniger - Scannen...</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Scanning...</lang>
             <lang id="ru" status="3">Little Registry Cleaner - Сканирование...</lang>
-            <lang id="el" status="2">Μικρή Registry Cleaner - Scanning...</lang>
+            <lang id="el" status="3">Little Registry Cleaner - Scanning...</lang>
             <lang id="ar" status="2">التسجيل ضئيلة الأنظف - Scanning...</lang>
             <lang id="sv" status="2">Liten Registry Cleaner – Scannar...</lang>
             <lang id="zh" status="2">小注册表清理器-扫描...</lang>
@@ -4077,6 +4254,7 @@
             <lang id="pl" status="2">Little Registry Cleaner - Trwa skanowanie...</lang>
             <lang id="hu" status="2">Little Registry Cleaner - Szkennelés...</lang>
             <lang id="fa" status="2">کمی تمیز کننده رجیستری -- اسکن...</lang>
+            <lang id="lt" status="3">Little Registry Cleaner – Skenavimas...</lang>
           </row>
           <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
           </component>
@@ -4110,7 +4288,7 @@
                 <lang id="nl" status="2">Stoppen</lang>
                 <lang id="de" status="2">Beenden</lang>
                 <lang id="ru" status="2">Остановить</lang>
-                <lang id="el" status="2">Σταμάτα</lang>
+                <lang id="el" status="3">Στοπ</lang>
                 <lang id="ar" status="2">إيقاف</lang>
                 <lang id="sv" status="2">Stanna</lang>
                 <lang id="zh" status="2">停止</lang>
@@ -4122,6 +4300,7 @@
                 <lang id="pl" status="2">Zatrzymaj</lang>
                 <lang id="hu" status="2">Stop</lang>
                 <lang id="fa" status="2">توقف</lang>
+                <lang id="lt" status="2">Sustoti</lang>
               </row>
             </component>
             <component class="TVisLabel" name="labelProblems" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
@@ -4159,6 +4338,7 @@
                 <lang id="pl" status="3">Znalezionych błędów:</lang>
                 <lang id="hu" status="2">Megtalált problémák:</lang>
                 <lang id="fa" status="2">مشکلات پیدا نشد: </lang>
+                <lang id="lt" status="3">Aptiktos problemos</lang>
               </row>
             </component>
             <component class="TVisProgressBar" name="progressBar" type="Common_Tools.XpProgressBar">
@@ -4184,7 +4364,7 @@
             <lang id="nl" status="3">Run-object bewerken</lang>
             <lang id="de" status="2">Run-Element bearbeiten</lang>
             <lang id="ru" status="3">Редактирование элемента автозагрузки </lang>
-            <lang id="el" status="2">Επεξεργασία στοιχείου εκτέλεση</lang>
+            <lang id="el" status="3">Επεξεργασία στοιχείου εκκινησης</lang>
             <lang id="ar" status="2">تحرير عنصر التشغيل</lang>
             <lang id="sv" status="2">Redigera körobjekt</lang>
             <lang id="zh" status="2">编辑运行项目</lang>
@@ -4196,6 +4376,7 @@
             <lang id="pl" status="2">Edytuj wpis w sekcji uruchamiania</lang>
             <lang id="hu" status="2">Futtatható tárgy szerkesztése</lang>
             <lang id="fa" status="2">ویرایش اجرای مورد</lang>
+            <lang id="lt" status="3">Redaguoti automatinio paleidimo sąrašą</lang>
           </row>
           <component class="TVisGroupBox" name="groupBox1" type="System.Windows.Forms.GroupBox">
             <row id="Location.X">12</row>
@@ -4212,7 +4393,7 @@
               <lang id="nl" status="3">Opstart-vermelding bewerken</lang>
               <lang id="de" status="2">AutoStart-Eintrag bearbeiten</lang>
               <lang id="ru" status="3">Изменить элемент автозагрузки</lang>
-              <lang id="el" status="2">Επεξεργασία καταχώρησης εκκίνησης</lang>
+              <lang id="el" status="3">Επεξεργασία καταχώρησης εκκίνησης(Startup)</lang>
               <lang id="ar" status="2">تحرير إدخال بدء التشغيل</lang>
               <lang id="sv" status="2">Redigera startpost</lang>
               <lang id="zh" status="2">修改启动项</lang>
@@ -4224,6 +4405,7 @@
               <lang id="pl" status="2">Edytuj wpis w sekcji uruchamiania systemu</lang>
               <lang id="hu" status="2">Indítás fejlegyzés szerkesztése</lang>
               <lang id="fa" status="2">ویرایش راه اندازی ورودی</lang>
+              <lang id="lt" status="3">Redaguoti paleisties įrašus</lang>
             </row>
             <component class="TVisEdit" name="textBoxFile" type="System.Windows.Forms.TextBox">
               <row id="Location.X">30</row>
@@ -4258,6 +4440,7 @@
                 <lang id="pl" status="2">OK</lang>
                 <lang id="hu" status="2">OK</lang>
                 <lang id="fa" status="2">خوب</lang>
+                <lang id="lt" status="2">GERAI</lang>
               </row>
             </component>
             <component class="TVisPictureButton" name="buttonCancel" type="System.Windows.Forms.Button">
@@ -4287,6 +4470,7 @@
                 <lang id="pl" status="2">Anuluj</lang>
                 <lang id="hu" status="2">Mégse</lang>
                 <lang id="fa" status="2">انصراف</lang>
+                <lang id="lt" status="2">Atšaukti</lang>
               </row>
             </component>
             <component class="TVisLabel" name="label1" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
@@ -4310,12 +4494,13 @@
                 <lang id="zh" status="2">文件:</lang>
                 <lang id="zh.tra" status="2">檔:</lang>
                 <lang id="ja" status="2">ファイル:</lang>
-                <lang id="vi" percent="99" status="1">Tệp:</lang>
+                <lang id="vi" status="1">Tệp:</lang>
                 <lang id="th" status="2">ไฟล์:</lang>
                 <lang id="tr" status="2">Dosya:</lang>
                 <lang id="pl" status="2">Plik:</lang>
                 <lang id="hu" status="2">Fájl:</lang>
                 <lang id="fa" status="2">پرونده:</lang>
+                <lang id="lt" status="2">Failas:</lang>
               </row>
             </component>
             <component class="TVisLabel" name="label2" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
@@ -4333,7 +4518,7 @@
                 <lang id="nl" status="2">Argumenten:</lang>
                 <lang id="de" status="2">Argumente:</lang>
                 <lang id="ru" status="3">Параметры:</lang>
-                <lang id="el" status="2">Τα ορίσματα:</lang>
+                <lang id="el" status="3">Επιχειρήματα:</lang>
                 <lang id="ar" status="2">الوسائط:</lang>
                 <lang id="sv" status="2">Argument:</lang>
                 <lang id="zh" status="2">论据:</lang>
@@ -4345,6 +4530,7 @@
                 <lang id="pl" status="2">Parametry:</lang>
                 <lang id="hu" status="2">Argumentumok:</lang>
                 <lang id="fa" status="2">استدلال:</lang>
+                <lang id="lt" status="3">Parametrai:</lang>
               </row>
             </component>
             <component class="TVisEdit" name="textBoxArgs" type="System.Windows.Forms.TextBox">
@@ -4382,7 +4568,7 @@
             <lang id="nl" status="3">Nieuw Run-object</lang>
             <lang id="de" status="2">Neue ausführen-Nummer</lang>
             <lang id="ru" status="3">Создание элемента автозагрузки</lang>
-            <lang id="el" status="2">Νέα εκτέλεση στοιχείου</lang>
+            <lang id="el" status="3">Νέα στοιχείο εκτέλεσης</lang>
             <lang id="ar" status="2">عنصر تشغيل جديد</lang>
             <lang id="sv" status="2">Nytt körobjekt</lang>
             <lang id="zh" status="2">新的运行项目</lang>
@@ -4394,6 +4580,7 @@
             <lang id="pl" status="2">Nowy element uruchamiania systemu</lang>
             <lang id="hu" status="2">Új futtatható tárgy</lang>
             <lang id="fa" status="2">اجرای جدید مورد</lang>
+            <lang id="lt" status="3">Sukurti naujas automatinio paleidimo elementą</lang>
           </row>
           <component class="TVisPictureButton" name="buttonCancel" type="System.Windows.Forms.Button">
             <row id="Location.X">236</row>
@@ -4422,6 +4609,7 @@
               <lang id="pl" status="2">Anuluj</lang>
               <lang id="hu" status="2">Mégse</lang>
               <lang id="fa" status="2">انصراف</lang>
+              <lang id="lt" status="2">Atšaukti</lang>
             </row>
           </component>
           <component class="TVisPictureButton" name="buttonOk" type="System.Windows.Forms.Button">
@@ -4451,6 +4639,7 @@
               <lang id="pl" status="2">OK</lang>
               <lang id="hu" status="2">OK</lang>
               <lang id="fa" status="2">خوب</lang>
+              <lang id="lt" status="2">GERAI</lang>
             </row>
           </component>
           <component class="TVisGroupBox" name="groupBox1" type="System.Windows.Forms.GroupBox">
@@ -4480,6 +4669,7 @@
               <lang id="pl" status="2">Nazwa i ścieżka</lang>
               <lang id="hu" status="2">Név és útvonal</lang>
               <lang id="fa" status="2">نام و نام مسیر</lang>
+              <lang id="lt" status="2">Vardas ir kelias</lang>
             </row>
             <component class="TVisLabel" name="label1" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
               <row id="Location.X">6</row>
@@ -4508,6 +4698,7 @@
                 <lang id="pl" status="2">Nazwa</lang>
                 <lang id="hu" status="2">Név:</lang>
                 <lang id="fa" status="2">نام:</lang>
+                <lang id="lt" status="2">Vardas:</lang>
               </row>
             </component>
             <component class="TVisLabel" name="label2" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
@@ -4537,6 +4728,7 @@
                 <lang id="pl" status="2">Ścieżka:</lang>
                 <lang id="hu" status="2">Útvonal:</lang>
                 <lang id="fa" status="2">مسیر فایل:</lang>
+                <lang id="lt" status="2">Kelias iki failo:</lang>
               </row>
             </component>
             <component class="TVisEdit" name="textBoxName" type="System.Windows.Forms.TextBox">
@@ -4578,7 +4770,7 @@
                 <lang id="nl" status="2">Argumenten:</lang>
                 <lang id="de" status="2">Argumente:</lang>
                 <lang id="ru" status="3">Параметры:</lang>
-                <lang id="el" status="2">Τα ορίσματα:</lang>
+                <lang id="el" status="3">Επιχειρήματα:</lang>
                 <lang id="ar" status="2">الوسائط:</lang>
                 <lang id="sv" status="2">Argument:</lang>
                 <lang id="zh" status="2">论据:</lang>
@@ -4590,6 +4782,7 @@
                 <lang id="pl" status="2">Parametry:</lang>
                 <lang id="hu" status="2">Argumentumok:</lang>
                 <lang id="fa" status="2">استدلال:</lang>
+                <lang id="lt" status="3">Parametrai:</lang>
               </row>
             </component>
             <component class="TVisEdit" name="textBoxArgs" type="System.Windows.Forms.TextBox">
@@ -4626,6 +4819,7 @@
               <lang id="pl" status="2">Sekcja:</lang>
               <lang id="hu" status="2">Szekció:</lang>
               <lang id="fa" status="2">بخش:</lang>
+              <lang id="lt" status="2">Skyrius:</lang>
             </row>
           </component>
           <component class="TVisComboBox" name="comboBoxSection" type="System.Windows.Forms.ComboBox">
@@ -4651,6 +4845,7 @@
               <lang id="pl" status="2">Registry\All Users\Run</lang>
               <lang id="hu" status="2">Rendszerleíró adatbázis\All Users\Run</lang>
               <lang id="fa" status="2">رجیستری\همه اعضا\اجرای</lang>
+              <lang id="lt" status="2">Registry\All Users\Run</lang>
             </row>
             <row id="Items.Registry\All Users\Run Once" importid="3" excluded="1" state="0">
               <native>Registry\All Users\Run Once</native>
@@ -4662,7 +4857,7 @@
               <lang id="nl">Once Registry\All Users\Run</lang>
               <lang id="de">Registry\All Users\Run einmal</lang>
               <lang id="ru">После Registry\All Users\Run</lang>
-              <lang id="el">Registry\All Users\Run μία φορά</lang>
+              <lang id="el" status="3">Registry\All Users\Run Once</lang>
               <lang id="ar">Users\Run Registry\All مرة واحدة</lang>
               <lang id="sv">Registry\All Users\Run en gång</lang>
               <lang id="zh">注册表\所有用户\运行一次</lang>
@@ -4674,6 +4869,7 @@
               <lang id="pl" status="2">Registry\All Users\Run Once</lang>
               <lang id="hu" status="2">Rendszerleíró adatbázis\All Users\Run Egyszer</lang>
               <lang id="fa" status="2">رجیستری\همه کاربران\پس از اجرای</lang>
+              <lang id="lt" status="3">Registry\All Users\Run Once</lang>
             </row>
             <row id="Items.Registry\All Users\Run Services" importid="4" excluded="1" state="0">
               <native>Registry\All Users\Run Services</native>
@@ -4685,7 +4881,7 @@
               <lang id="nl">Registry\All Users\Run Services</lang>
               <lang id="de">Registry\All Users\Run Services</lang>
               <lang id="ru">Registry\All Users\Run Services</lang>
-              <lang id="el">Υπηρεσίες Users\Run Registry\All</lang>
+              <lang id="el" status="3">Registry\All Users\Run Services</lang>
               <lang id="ar">خدمات Users\Run Registry\All</lang>
               <lang id="sv">Registry\All Users\Run Services</lang>
               <lang id="zh">注册表\所有用户\运行服务</lang>
@@ -4697,6 +4893,7 @@
               <lang id="pl" status="2">Registry\All Users\Run Usługi</lang>
               <lang id="hu" status="2">Rendszerleíró adatbázis\All Users\Run Szolgáltatások</lang>
               <lang id="fa" status="2">رجیستری\همه اعضا\اجرای خدمات</lang>
+              <lang id="lt" status="2">Registry\All Users\Run Services</lang>
             </row>
             <row id="Items.Registry\All Users\Run Services Once" importid="5" excluded="1" state="0">
               <native>Registry\All Users\Run Services Once</native>
@@ -4708,7 +4905,7 @@
               <lang id="nl">Once Registry\All Users\Run Services</lang>
               <lang id="de">Registry\All Users\Run Services einmal</lang>
               <lang id="ru">После службы Users\Run Registry\All</lang>
-              <lang id="el">Registry\All Users\Run Services μία φορά</lang>
+              <lang id="el" status="3">Registry\All Users\Run Services Once</lang>
               <lang id="ar">Registry\All Users\Run خدمات مرة واحدة</lang>
               <lang id="sv">Registry\All Users\Run Services Once</lang>
               <lang id="zh">注册表\所有用户\服务一旦运行</lang>
@@ -4720,6 +4917,7 @@
               <lang id="pl" status="2">Registry\All Users\Run Usługi Po</lang>
               <lang id="hu" status="2">Rendszerleíró adatbázis\All Users\Run Services Egyszer</lang>
               <lang id="fa" status="2">رجیستری\همه اعضا\اجرای خدمات پس از</lang>
+              <lang id="lt" status="2">Registry\All Users\Run Paslaugos Kartą</lang>
             </row>
             <row id="Items.Registry\Current User\Run" importid="6" excluded="1" state="0">
               <native>Registry\Current User\Run</native>
@@ -4743,6 +4941,7 @@
               <lang id="pl" status="2">Registry\Current User\Run</lang>
               <lang id="hu" status="2">Rendszerleíró adatbázis\Current User\Run</lang>
               <lang id="fa" status="2">رجیستری\واقعی کاربر\اجرای</lang>
+              <lang id="lt" status="2">Registry\Vartotojas\Run</lang>
             </row>
             <row id="Items.Registry\Current User\Run Once" importid="7" excluded="1" state="0">
               <native>Registry\Current User\Run Once</native>
@@ -4754,7 +4953,7 @@
               <lang id="nl">Once Registry\Current User\Run</lang>
               <lang id="de">Registry\Current User\Run einmal</lang>
               <lang id="ru">После Registry\Current User\Run</lang>
-              <lang id="el">Registry\Current User\Run μία φορά</lang>
+              <lang id="el" status="3">Registry\Current User\Run Once</lang>
               <lang id="ar">User\Run Registry\Current مرة واحدة</lang>
               <lang id="sv">Registry\Current User\Run en gång</lang>
               <lang id="zh">注册表\当前用户\运行一次</lang>
@@ -4766,6 +4965,7 @@
               <lang id="pl" status="2">Registry\Current User\Run Once</lang>
               <lang id="hu" status="2">Rendszerleíró adatbázis\Current User\Run Egyszer</lang>
               <lang id="fa" status="2">رجیستری\کنونی کاربران\پس از اجرای</lang>
+              <lang id="lt" status="2">Registry\Vartotojas\Run Kartą</lang>
             </row>
             <row id="Items.Registry\Current User\Run Services" importid="8" excluded="1" state="0">
               <native>Registry\Current User\Run Services</native>
@@ -4777,7 +4977,7 @@
               <lang id="nl">Registry\Current User\Run Services</lang>
               <lang id="de">Registry\Current User\Run Services</lang>
               <lang id="ru">Registry\Current User\Run Services</lang>
-              <lang id="el">Υπηρεσίες User\Run Registry\Current</lang>
+              <lang id="el" status="3">Registry\Current User\Run Services</lang>
               <lang id="ar">خدمات User\Run Registry\Current</lang>
               <lang id="sv">Registry\Current User\Run Services</lang>
               <lang id="zh">注册表\当前用户\运行服务</lang>
@@ -4789,6 +4989,7 @@
               <lang id="pl" status="2">Registry\Current User\Run Usługi</lang>
               <lang id="hu" status="2">Rendszerleíró adatbázis\Current User\Run Szolgáltatások</lang>
               <lang id="fa" status="2">رجیستری\واقعی کاربر\اجرای خدمات</lang>
+              <lang id="lt" status="2">Registry\Vartotojas\Run Services</lang>
             </row>
             <row id="Items.Registry\Current User\Run Services Once" importid="9" excluded="1" state="0">
               <native>Registry\Current User\Run Services Once</native>
@@ -4800,7 +5001,7 @@
               <lang id="nl">Once Registry\Current User\Run Services</lang>
               <lang id="de">Registry\Current User\Run Services einmal</lang>
               <lang id="ru">После службы User\Run Registry\Current</lang>
-              <lang id="el">Registry\Current User\Run Services μία φορά</lang>
+              <lang id="el" status="3">Registry\Current User\Run Services Once</lang>
               <lang id="ar">Registry\Current User\Run خدمات مرة واحدة</lang>
               <lang id="sv">Registry\Current User\Run Services Once</lang>
               <lang id="zh">注册表\当前用户\服务一旦运行</lang>
@@ -4812,6 +5013,7 @@
               <lang id="pl" status="2">Registry\Current User\Run Usługi Po</lang>
               <lang id="hu" status="2">Rendszerleíró adatbázis\Current User\Run Services Egyszer</lang>
               <lang id="fa" status="2">رجیستری\واقعی کاربر\اجرای خدمات پس از</lang>
+              <lang id="lt" status="2">Registry\Vartotojas\Run Paslaugos Kartą</lang>
             </row>
             <row id="Items.StartUp\All Users" importid="0" excluded="1" state="0">
               <native>StartUp\All Users</native>
@@ -4823,7 +5025,7 @@
               <lang id="nl" status="2">StartUp\All gebruikers</lang>
               <lang id="de" status="2">StartUp\All-Benutzer</lang>
               <lang id="ru" status="2">StartUp\All пользователи</lang>
-              <lang id="el" status="2">StartUp\All χρήστες</lang>
+              <lang id="el" status="3">StartUp\All Users</lang>
               <lang id="ar" status="2">مستخدمين StartUp\All</lang>
               <lang id="sv" status="2">StartUp\All användare</lang>
               <lang id="zh" status="2">启动\所有用户</lang>
@@ -4835,6 +5037,7 @@
               <lang id="pl" status="3">Uruchamianie\Wszyscy użytkownicy</lang>
               <lang id="hu" status="2">StartUp\All Users</lang>
               <lang id="fa" status="2">راه اندازی\همه اعضا</lang>
+              <lang id="lt" status="3">Startup\Visi vartotojai</lang>
             </row>
             <row id="Items.StartUp\Current User" importid="1" excluded="1" state="0">
               <native>StartUp\Current User</native>
@@ -4846,7 +5049,7 @@
               <lang id="nl" status="2">StartUp\Current gebruikers</lang>
               <lang id="de" status="2">StartUp\Current-Benutzer</lang>
               <lang id="ru" status="2">StartUp\Current пользователей</lang>
-              <lang id="el" status="2">StartUp\Current χρήστη</lang>
+              <lang id="el" status="3">StartUp\Current User</lang>
               <lang id="ar" status="2">User StartUp\Current</lang>
               <lang id="sv" status="2">StartUp\Current användare</lang>
               <lang id="zh" status="2">启动\当前用户</lang>
@@ -4858,6 +5061,7 @@
               <lang id="pl" status="3">Uruchamianie\Bieżący użytkownik</lang>
               <lang id="hu" status="2">StartUp\Current User</lang>
               <lang id="fa" status="2">راه اندازی\واقعی کاربر</lang>
+              <lang id="lt" status="2">Startup\Dabartinis vartotojas</lang>
             </row>
             <row id="Location.X">57</row>
             <row id="Location.Y">6</row>
@@ -4880,7 +5084,7 @@
             <lang id="nl" status="3">Kleine Registerreiniger - Manager starten</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Start-Manager</lang>
             <lang id="ru" status="3">Little Registry Cleaner - Менеджер автозагрузки</lang>
-            <lang id="el" status="2">Μικρή Registry Cleaner - Διαχείριση εκκίνησης</lang>
+            <lang id="el" status="3">Little Registry Cleaner - Διαχείριση εκκίνησης</lang>
             <lang id="ar" status="2">التسجيل ضئيلة الأنظف - إدارة بدء التشغيل</lang>
             <lang id="sv" status="2">Liten Registry Cleaner – Starthanterare</lang>
             <lang id="zh" status="2">小注册表清理器-启动管理器</lang>
@@ -4892,6 +5096,7 @@
             <lang id="pl" status="2">Little Registry Cleaner - Menadżer uruchamiania</lang>
             <lang id="hu" status="2">Little Registry Cleaner - Indítás menedzser</lang>
             <lang id="fa" status="2">کمی تمیز کننده رجیستری -- راه اندازی مدیریت</lang>
+            <lang id="lt" status="3">Little Registry Cleaner – Automatinio paleidimo vedlys</lang>
           </row>
           <component class="TVisEdit" name="nodeTextBoxSection" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox" rendering="trGdiPlus">
           </component>
@@ -4926,6 +5131,7 @@
               <lang id="zh.tra">toolStripContainer1</lang>
               <lang id="ja">toolStripContainer1</lang>
               <lang id="vi">toolStripContainer1</lang>
+              <lang id="lt">toolStripContainer1</lang>
             </row>
             <component class="TVisGridPanel" name="tableLayoutPanel1" type="System.Windows.Forms.TableLayoutPanel" align="alClient">
               <columns>
@@ -4988,6 +5194,7 @@
                     <lang id="pl" status="2">Sekcja</lang>
                     <lang id="hu" status="2">Szekció</lang>
                     <lang id="fa" status="2">بخش</lang>
+                    <lang id="lt" status="2">Skyrius</lang>
                   </row>
                 </component>
                 <component class="TVisHiddenComponent" name="treeColumn2" type="Common_Tools.TreeViewAdv.Tree.TreeColumn">
@@ -5013,6 +5220,7 @@
                     <lang id="pl" status="2">Ścieżka</lang>
                     <lang id="hu" status="2">Útvonal</lang>
                     <lang id="fa" status="2">مسیر</lang>
+                    <lang id="lt" status="2">Kelias</lang>
                   </row>
                 </component>
                 <component class="TVisHiddenComponent" name="treeColumn3" type="Common_Tools.TreeViewAdv.Tree.TreeColumn">
@@ -5026,7 +5234,7 @@
                     <lang id="nl" status="2">Argumenten</lang>
                     <lang id="de" status="2">Argumente</lang>
                     <lang id="ru" status="3">Параметры</lang>
-                    <lang id="el" status="2">Τα ορίσματα</lang>
+                    <lang id="el" status="3">Επιχειρήματα:</lang>
                     <lang id="ar" status="2">الوسائط</lang>
                     <lang id="sv" status="2">Argument</lang>
                     <lang id="zh" status="2">论据</lang>
@@ -5038,6 +5246,7 @@
                     <lang id="pl" status="2">Parametry</lang>
                     <lang id="hu" status="2">Argumentumok</lang>
                     <lang id="fa" status="2">استدلال</lang>
+                    <lang id="lt" status="3">Parametrai:</lang>
                   </row>
                 </component>
               </component>
@@ -5072,6 +5281,7 @@
                   <lang id="pl" status="2">Dodaj</lang>
                   <lang id="hu" status="2">Hozzáadás</lang>
                   <lang id="fa" status="2">افزودن</lang>
+                  <lang id="lt" status="3">Sukurti</lang>
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonEdit" type="System.Windows.Forms.ToolStripButton">
@@ -5086,7 +5296,7 @@
                   <lang id="it" status="3">Modifica</lang>
                   <lang id="nl" status="2">Bewerken</lang>
                   <lang id="de" status="2">Bearbeiten</lang>
-                  <lang id="ru" status="3">Редактировать</lang>
+                  <lang id="ru" status="3">Редактирование</lang>
                   <lang id="el" status="2">Επεξεργασία</lang>
                   <lang id="ar" status="2">تحرير</lang>
                   <lang id="sv" status="2">Redigera</lang>
@@ -5099,6 +5309,7 @@
                   <lang id="pl" status="2">Edycja</lang>
                   <lang id="hu" status="2">Szerkesztés</lang>
                   <lang id="fa" status="2">ویرایش</lang>
+                  <lang id="lt" status="2">Redaguoti</lang>
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonDelete" type="System.Windows.Forms.ToolStripButton">
@@ -5126,6 +5337,7 @@
                   <lang id="pl" status="2">Usuń</lang>
                   <lang id="hu" status="2">Törlés</lang>
                   <lang id="fa" status="2">حذف</lang>
+                  <lang id="lt" status="2">Ištrinti</lang>
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonView" type="System.Windows.Forms.ToolStripButton">
@@ -5153,6 +5365,7 @@
                   <lang id="pl" status="2">Pokaż wpis</lang>
                   <lang id="hu" status="2">Tárgy megnézése</lang>
                   <lang id="fa" status="2">نمایش یافت</lang>
+                  <lang id="lt" status="2">Peržiūrėti objektą</lang>
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonRun" type="System.Windows.Forms.ToolStripButton">
@@ -5180,6 +5393,7 @@
                   <lang id="pl" status="2">Uruchom</lang>
                   <lang id="hu" status="2">Futtatás</lang>
                   <lang id="fa" status="2">اجرای</lang>
+                  <lang id="lt" status="3">Įvykdyti</lang>
                 </row>
               </component>
               <component class="TVisToolSeparator" name="toolStripSeparator1" type="System.Windows.Forms.ToolStripSeparator">
@@ -5211,6 +5425,7 @@
                   <lang id="pl" status="2">Odśwież</lang>
                   <lang id="hu" status="2">Frissítés</lang>
                   <lang id="fa" status="2">تازه کردن</lang>
+                  <lang id="lt" status="2">Atnaujinti</lang>
                 </row>
               </component>
             </component>
@@ -5231,7 +5446,7 @@
             <lang id="nl" status="3">Kleine Registerreiniger - Manager verwijderen</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Manager deinstallieren</lang>
             <lang id="ru" status="3">Little Registry Cleaner - Менеджер деинсталляции</lang>
-            <lang id="el" status="2">Μικρή Registry Cleaner - κατάργηση της εγκατάστασης διαχείρισης</lang>
+            <lang id="el" status="3">Little Registry Cleaner - Διαχείριστης απεγκατάστασης</lang>
             <lang id="ar" status="2">التسجيل ضئيلة الأنظف - Uninstall Manager</lang>
             <lang id="sv" status="2">Liten Registry Cleaner – Avinstallera</lang>
             <lang id="zh" status="2">小注册表清理器-卸载经理</lang>
@@ -5243,6 +5458,7 @@
             <lang id="pl" status="2">Little Registry Cleaner - Menadżer deinstalacji</lang>
             <lang id="hu" status="2">Little Registry Cleaner - Uninstallálás menedzser</lang>
             <lang id="fa" status="2">کمی تمیز کننده رجیستری -- عزل مدیر</lang>
+            <lang id="lt" status="3">Little Registry Cleaner – Programos pašalinimo vedlys</lang>
           </row>
           <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
           </component>
@@ -5267,6 +5483,7 @@
               <lang id="zh.tra">toolStripContainer1</lang>
               <lang id="ja">toolStripContainer1</lang>
               <lang id="vi">toolStripContainer1</lang>
+              <lang id="lt">toolStripContainer1</lang>
             </row>
             <component class="TVisGridPanel" name="tableLayoutPanel1" type="System.Windows.Forms.TableLayoutPanel" align="alClient">
               <columns>
@@ -5333,6 +5550,7 @@
                       <lang id="pl" status="2">Szukaj wg nazwy</lang>
                       <lang id="hu" status="2">Keresés név alapján</lang>
                       <lang id="fa" status="2">جستجو بر حسب نام</lang>
+                      <lang id="lt" status="3">Ieškoti pagal pavadinimą</lang>
                     </row>
                   </component>
                 </component>
@@ -5357,7 +5575,7 @@
                     <lang id="nl" status="2">Installatie ongedaan maken</lang>
                     <lang id="de" status="2">Deinstallieren</lang>
                     <lang id="ru" status="2">Удалить</lang>
-                    <lang id="el" status="2">Κατάργηση εγκατάστασης</lang>
+                    <lang id="el" status="3">Απεγκατάσταση</lang>
                     <lang id="ar" status="2">إلغاء تثبيت</lang>
                     <lang id="sv" status="2">Avinstallera</lang>
                     <lang id="zh" status="2">卸载</lang>
@@ -5369,6 +5587,7 @@
                     <lang id="pl" status="2">Odinstaluj</lang>
                     <lang id="hu" status="2">Unsinstallálás</lang>
                     <lang id="fa" status="2">عزل</lang>
+                    <lang id="lt" status="2">Šalinti</lang>
                   </row>
                 </component>
                 <component class="TVisPictureButton" name="buttonRemove" type="System.Windows.Forms.Button" imageindex="3" images="imageList">
@@ -5398,6 +5617,7 @@
                     <lang id="pl" status="2">Usuń wpis</lang>
                     <lang id="hu" status="2">Feljegyzés eltávolítása</lang>
                     <lang id="fa" status="2">حذفمدخل</lang>
+                    <lang id="lt" status="3">Pašalinti įrašą</lang>
                   </row>
                 </component>
               </component>
@@ -5429,6 +5649,7 @@
                     <lang id="pl" status="2">Aplikacja</lang>
                     <lang id="hu" status="2">Program</lang>
                     <lang id="fa" status="2">برنامه ها</lang>
+                    <lang id="lt" status="2">Programos</lang>
                   </row>
                   <row id="Width" class="TIntegerRow">188</row>
                 </column>
@@ -5443,7 +5664,7 @@
                     <lang id="nl" status="3">Publisher</lang>
                     <lang id="de" status="2">Herausgeber</lang>
                     <lang id="ru" status="2">Издатель</lang>
-                    <lang id="el" status="2">Ο Publisher</lang>
+                    <lang id="el" status="3">Εκδότης</lang>
                     <lang id="ar" status="2">الناشر</lang>
                     <lang id="sv" status="2">Publicerare</lang>
                     <lang id="zh" status="2">出版商</lang>
@@ -5455,6 +5676,7 @@
                     <lang id="pl" status="2">Producent</lang>
                     <lang id="hu" status="2">Kiadó</lang>
                     <lang id="fa" status="2">ناشر</lang>
+                    <lang id="lt" status="3">Leidėjas</lang>
                   </row>
                   <row id="Width" class="TIntegerRow">109</row>
                 </column>
@@ -5481,6 +5703,7 @@
                     <lang id="pl" status="2">Szacowany rozmiar</lang>
                     <lang id="hu" status="2">Becsült méret</lang>
                     <lang id="fa" status="2">برآورد حجم</lang>
+                    <lang id="lt" status="3">Apytikslis dydis</lang>
                   </row>
                   <row id="Width" class="TIntegerRow">87</row>
                 </column>
@@ -5503,7 +5726,7 @@
             <lang id="nl" status="3">Controleer voor update</lang>
             <lang id="de" status="2">Kontrollkästchen für die Aktualisierung</lang>
             <lang id="ru" status="2">Проверить наличие обновлений</lang>
-            <lang id="el" status="2">Έλεγχος για την ενημερωμένη έκδοση</lang>
+            <lang id="el" status="3">Έλεγχος για ενημερώσεις</lang>
             <lang id="ar" status="2">البحث عن التحديث</lang>
             <lang id="sv" status="2">Sök uppdateringar</lang>
             <lang id="zh" status="2">检查更新</lang>
@@ -5515,6 +5738,7 @@
             <lang id="pl" status="2">Uaktualnienia</lang>
             <lang id="hu" status="2">Frissítés keresése</lang>
             <lang id="fa" status="2">برای اتمام رسانی</lang>
+            <lang id="lt" status="3">Patikrinti ar yra atnaujinimai</lang>
           </row>
           <component class="TVisImage" name="pictureBox1" type="System.Windows.Forms.PictureBox">
             <row id="Location.X">16</row>
@@ -5543,7 +5767,7 @@
               <lang id="nl" status="2">Downloaden</lang>
               <lang id="de" status="2">Download</lang>
               <lang id="ru" status="2">Скачать</lang>
-              <lang id="el" status="2">Το στοιχείο λήψης</lang>
+              <lang id="el" status="3">Λήψη</lang>
               <lang id="ar" status="2">تنزيل</lang>
               <lang id="sv" status="2">Hämta</lang>
               <lang id="zh" status="2">下载</lang>
@@ -5555,6 +5779,7 @@
               <lang id="pl" status="2">Pobierz</lang>
               <lang id="hu" status="2">Letöltés</lang>
               <lang id="fa" status="2">دانلود</lang>
+              <lang id="lt" status="3">Parsisiųsti</lang>
             </row>
           </component>
           <component class="TVisPictureButton" name="buttonChangelog" type="System.Windows.Forms.Button">
@@ -5572,7 +5797,7 @@
               <lang id="nl" date="20091106182153" status="3">Wijzigings-log</lang>
               <lang id="de" date="20091106182207" status="3">Änderungsprotokoll</lang>
               <lang id="ru" date="20091106182224" status="3">Журнал изменений</lang>
-              <lang id="el" date="20091106182238" status="3">Αλλαγή καταγραφής</lang>
+              <lang id="el" date="20091106182238" status="3">Αρχείο-αλλαγών</lang>
               <lang id="ar" date="20091106182255" status="3">سجل التغيير</lang>
               <lang id="sv" status="2">Ändringslogg</lang>
               <lang id="zh" status="2">更新日志</lang>
@@ -5584,6 +5809,7 @@
               <lang id="pl" status="2">Lista zmian</lang>
               <lang id="hu" status="2">Változások</lang>
               <lang id="fa" status="2">انتخاب های کاربران</lang>
+              <lang id="lt" status="3">Pasikeitimų sąrašas</lang>
             </row>
           </component>
         </form>
@@ -5601,7 +5827,7 @@
           <lang id="nl" status="3">Het bugrapport kon niet worden verzonden</lang>
           <lang id="de" status="2">Der Fehlerbericht konnte nicht gesendet werden</lang>
           <lang id="ru" status="3">Сообщение об ошибке не удалось отправить</lang>
-          <lang id="el" status="2">Η αναφορά σφάλματος δεν θα μπορούσαν να αποσταλούν</lang>
+          <lang id="el" status="3">Η αναφορά σφάλματος δεν μπορούσε να αποσταλεί</lang>
           <lang id="ar" status="2">تقرير الشوائب لا يمكن إرسالها</lang>
           <lang id="sv" status="2">Felrapporten kunde inte skickas</lang>
           <lang id="zh" status="2">错误报告无法发送</lang>
@@ -5613,6 +5839,7 @@
           <lang id="pl" status="2">Raport o błędzie Nie można wysłać</lang>
           <lang id="hu" status="2">A hibajelentést nem lehet elküldeni</lang>
           <lang id="fa" status="2">گزارش خطا نمی تواند خبر</lang>
+          <lang id="lt" status="3">Pranešimas nebuvo išsiųstas</lang>
         </row>
         <row id="crashReporterSuccess" state="0">
           <native>Sent bug report successfully</native>
@@ -5624,7 +5851,7 @@
           <lang id="nl" status="3">Bugreport verzonden</lang>
           <lang id="de" status="2">Sent Fehlerbericht erfolgreich</lang>
           <lang id="ru" status="3">Сообщение об ошибке успешно отправлено</lang>
-          <lang id="el" status="2">Απέστειλε αναφορά σφάλματος με επιτυχία</lang>
+          <lang id="el" status="3">Η αναφορά σφάλματος στάλθηκε με επιτυχια</lang>
           <lang id="ar" status="2">أرسلت علة التقرير بنجاح</lang>
           <lang id="sv" status="2">Skickade felrapporten</lang>
           <lang id="zh" status="2">成功发送错误报告</lang>
@@ -5636,6 +5863,7 @@
           <lang id="pl" status="2">Raport o błędach wysłane</lang>
           <lang id="hu" status="2">A hibajelentés sikeresen elküldve</lang>
           <lang id="fa" status="2">ارسال گزارش خطا با موفقیت</lang>
+          <lang id="lt" status="3">Pranešimą apie klaidą išsiųstas sėkmingai</lang>
         </row>
         <row id="mainAddExcludeEntry" state="0">
           <native>Added selected registry keys to the exclude list</native>
@@ -5647,7 +5875,7 @@
           <lang id="nl" status="3">Geselecteerde registersleutels toegevoegd aan de Uitsluiten-lijst</lang>
           <lang id="de" status="2">Added ausgewählten Registrierungsschlüssel, um die Exclude-Liste</lang>
           <lang id="ru" status="3">Выбранные ключи реестра добавлены в список исключений</lang>
-          <lang id="el" status="2">Προστέθηκε επιλέγονται κλειδιά μητρώου για να αποκλείσει την λίστα</lang>
+          <lang id="el" status="3">Τα επιλεγμένα κλειδιά μητρώου προστέθηκαν στην λίστα παράβλεψης</lang>
           <lang id="ar" status="2">وأضاف مختارة مفاتيح التسجيل إلى استبعاد قائمة</lang>
           <lang id="sv" status="2">Markerade registernycklar utesluts</lang>
           <lang id="zh" status="2">新增选定的注册表项的排除列表</lang>
@@ -5659,6 +5887,7 @@
           <lang id="pl" status="2">Dodano wybranych kluczy rejestru w celu wyłączenia lista</lang>
           <lang id="hu" status="2">Kijelölt bejegyzés kulcsok sikeresen hozzáadva a kihagyáslistához</lang>
           <lang id="fa" status="2">ارسال انتخاب شده کلید های رجیستری را به محروم کردن لیست</lang>
+          <lang id="lt" status="3">Pasirinkti registro raktai įtraukti į ignoruojamųjų sąrašą </lang>
         </row>
         <row id="mainAskExit" state="0">
           <native>Are you sure you want to exit?</native>
@@ -5682,6 +5911,7 @@
           <lang id="pl" status="2">Czy na pewno chcesz zakończyć?</lang>
           <lang id="hu" status="2">Biztos ki akar lépni?</lang>
           <lang id="fa" status="2">آیا مطمئن هستید که می خواهید به خروج?</lang>
+          <lang id="lt" status="2">Ar tikrai norite išeiti?</lang>
         </row>
         <row id="mainFirstTimeRestorePoint" state="3">
           <prev>This your first time running Little Registry Cleaner. Would you like to create a restore point?</prev>
@@ -5706,6 +5936,7 @@
           <lang id="pl" invalidated="1" status="2">To twój pierwszy raz kolejny Little Registry Cleaner.\r\nCzy chcesz utworzyć punkt przywracania?</lang>
           <lang id="hu" status="2">Első alkalommal futtatja a Little Registry Cleaner-t.#nSzeretne visszaállító pontot létrehozni?</lang>
           <lang id="fa" status="2">این اولین بار است که در حال اجرا کوچولو تمیز کننده رجیستری. آیا می خواهید به ایجاد یک نقطه برگرداندن?</lang>
+          <lang id="lt" status="2">Jūs čia pirmą kartą eksploatuoti Little Registry Cleaner. Norėtumėte sukurti atkūrimo tašką?</lang>
         </row>
         <row id="mainInvalidHelpFile" state="0">
           <native>Unable to find Little Registry Cleaner.chm</native>
@@ -5717,7 +5948,7 @@
           <lang id="nl" status="3">Kan Little Registry Cleaner.chm niet vinden</lang>
           <lang id="de" status="2">Nicht finden Little Registry Cleaner.chm</lang>
           <lang id="ru" status="3">Не удается найти Little Registry Cleaner.chm</lang>
-          <lang id="el" status="2">Ανίκανος να βρει Little Γραμματεία Cleaner.chm</lang>
+          <lang id="el" status="3">Δεν είναι δυνατή η εύρεση του Little Registry Cleaner.chm</lang>
           <lang id="ar" status="2">قادر على العثور على قلم ليتل Cleaner.chm</lang>
           <lang id="sv" status="2">Inte hitta Little Registry Cleaner.chm</lang>
           <lang id="zh" status="2">无法找到小处Cleaner.chm</lang>
@@ -5729,6 +5960,7 @@
           <lang id="pl" status="2">Nie można znaleźć Little Registry Cleaner.chm</lang>
           <lang id="hu" status="2">Nincs meg a Little Registry Cleaner.chm fájl</lang>
           <lang id="fa" date="20100221224146" status="3">قادر به پیدا کردن "Little Registry Cleaner.chm"</lang>
+          <lang id="lt" status="3">Nepavyko rasti Little Registry Cleaner.chm</lang>
         </row>
         <row id="mainProblemsFix" state="0">
           <native>Would you like to fix all selected problems?</native>
@@ -5740,7 +5972,7 @@
           <lang id="nl" status="3">Wilt alle geselecteerde problemen repareren?</lang>
           <lang id="de" status="2">Möchten Sie alle ausgewählten Probleme zu beheben?</lang>
           <lang id="ru" status="3">Хотите исправить все выбранные ошибки?</lang>
-          <lang id="el" status="2">Θα θέλατε να καθορίσει όλα τα επιλεγμένα προβλήματα?</lang>
+          <lang id="el" status="3">Θα θέλατε να επιδιορθώσετε όλα τα επιλεγμένα προβλήματα?</lang>
           <lang id="ar" status="2">هل ترغب في حل جميع المشاكل مختارة?</lang>
           <lang id="sv" status="2">Vill du fixa alla markerade problem?</lang>
           <lang id="zh" status="2">你想解决问题的所有选择?</lang>
@@ -5752,6 +5984,7 @@
           <lang id="pl" status="2">Chcesz naprawić wszystkie wybrane problemy?</lang>
           <lang id="hu" status="2">Szeretné az összes kijelölt problémát megjavítani?</lang>
           <lang id="fa" status="2">آیا می خواهید تمام مشکلات را حل انتخاب شده?</lang>
+          <lang id="lt" status="3">Ar norėtumėte ištaisyti visas pažymėtas klaidas?</lang>
         </row>
         <row id="mainProblemsRemoved" state="0">
           <native>Removed problems from registry</native>
@@ -5763,7 +5996,7 @@
           <lang id="nl" status="3">Problemen uit het register verwijderd</lang>
           <lang id="de" status="2">Probleme aus der Registry entfernt</lang>
           <lang id="ru" status="3">Ошибки реестра удалены</lang>
-          <lang id="el" status="2">Αφαιρούνται προβλήματα από το μητρώο</lang>
+          <lang id="el" status="3">Καταργημένα προβλήματα από το μητρώο</lang>
           <lang id="ar" status="2">إزالة المشاكل من التسجيل</lang>
           <lang id="sv" status="2">Tog bort problemen från registret</lang>
           <lang id="zh" status="2">从注册表中删除的问题</lang>
@@ -5775,6 +6008,7 @@
           <lang id="pl" status="2">Usunięto problemy z rejestru</lang>
           <lang id="hu" status="2">Hibák eltávolítva a bejegyzésből</lang>
           <lang id="fa" status="2">مشکلات حذف از رجیستری</lang>
+          <lang id="lt" status="3">Problemos iš registro pašalintos</lang>
         </row>
         <row id="mainScanningAborted" state="0">
           <native>Aborted scanning the registry</native>
@@ -5786,7 +6020,7 @@
           <lang id="nl" status="3">Registerscan afgebroken</lang>
           <lang id="de" status="2">Aborted Scanning der Registrierung</lang>
           <lang id="ru" status="3">Сканирование реестра прервано</lang>
-          <lang id="el" status="2">Aborted σάρωση του μητρώου</lang>
+          <lang id="el" status="3">Εγκαταλείφικε η σάρωση του μητρώου</lang>
           <lang id="ar" status="2">إحباط مسح السجل</lang>
           <lang id="sv" status="2">Avbröt skanningen av registret</lang>
           <lang id="zh" status="2">中止扫描注册表</lang>
@@ -5798,6 +6032,7 @@
           <lang id="pl" status="2">Aborted skanowania rejestru</lang>
           <lang id="hu" status="2">Bejegyzés szkennelése megszakítva</lang>
           <lang id="fa" status="2">ساقطشد اسکن رجیستری</lang>
+          <lang id="lt" status="3">Registro skenavimas nutrauktas</lang>
         </row>
         <row id="mainScanningFinished" state="0">
           <native>Finished scanning the registry</native>
@@ -5809,7 +6044,7 @@
           <lang id="nl" status="3">Registerscan is klaar</lang>
           <lang id="de" status="2">Abgeschlossene Scanning der Registrierung</lang>
           <lang id="ru" status="3">Сканирование реестра завершено</lang>
-          <lang id="el" status="2">Ολοκληρώσετε τη σάρωση του μητρώου</lang>
+          <lang id="el" status="3">Ολοκληρώθηκε η σάρωση του μητρώου</lang>
           <lang id="ar" status="2">الانتهاء من المسح والتسجيل</lang>
           <lang id="sv" status="2">kinesiska (förenklad)</lang>
           <lang id="zh" status="2">完成扫描注册表</lang>
@@ -5821,6 +6056,7 @@
           <lang id="pl" status="2">Zakończono skanowanie rejestru</lang>
           <lang id="hu" status="2">Bejegyzés szkennelése befejezve</lang>
           <lang id="fa" status="2">فرم انتقادات و اسکن رجیستری</lang>
+          <lang id="lt" status="3">Registro skenavimas baigtas</lang>
         </row>
         <row id="mainSelectSections" state="0">
           <native>Please select a section to scan</native>
@@ -5844,6 +6080,7 @@
           <lang id="pl" status="2">Wybierz punkt skanowania</lang>
           <lang id="hu" status="2">Válasszon területet a szkenneléshez</lang>
           <lang id="fa" status="2">لطفا یک بخش به بخش اسکن را انتخاب کنید</lang>
+          <lang id="lt" status="3">Pasirinkite skyrių skenavimui</lang>
         </row>
         <row id="mainUpdateAsk" state="0">
           <native>A newer version is available. Would you like to download it?</native>
@@ -5855,7 +6092,7 @@
           <lang id="nl" status="3">Er is een nieuwere versie beschikbaar. Wilt u het die downloaden?</lang>
           <lang id="de" status="2">Eine neuere Version verfügbar ist. Möchten Sie es herunterladen?</lang>
           <lang id="ru" status="3">Доступна новая версия. Хотите скачать ее?</lang>
-          <lang id="el" status="2">Μια νεώτερη έκδοση είναι διαθέσιμη. Θέλετε να το κατεβάσετε?</lang>
+          <lang id="el" status="3">Μια νεώτερη έκδοση είναι διαθέσιμη. Θέλετε να την κατεβάσετε?</lang>
           <lang id="ar" status="2">ويتوفر الإصدار الأحدث. هل ترغب في تحميل البرنامج?</lang>
           <lang id="sv" status="2">En nyare version finns tillgänglig. Vill du ladda ner den?</lang>
           <lang id="zh" status="2">较新版本可用。您是否要下载?</lang>
@@ -5867,6 +6104,7 @@
           <lang id="pl" status="2">Jest dostępna nowsza wersja. Chcesz, aby go pobrać?</lang>
           <lang id="hu" status="2">Frisseb verzió elérhető. Szeretné letölteni?</lang>
           <lang id="fa" status="2">نسخه جدیدتر در دسترس است. آیا می خواهید آن را دانلود کنید?</lang>
+          <lang id="lt" status="3">Yra prieinama naujesnė versija. Ar norite ją atsisiųsti?</lang>
         </row>
         <row id="optionsExcludeDir" state="0">
           <native>Select the folder to exclude from the registry scan</native>
@@ -5878,7 +6116,7 @@
           <lang id="nl" status="3">Selecteer een map die van de registerscan moet worden uitgesloten</lang>
           <lang id="de" status="2">Wählen Sie den Ordner aus der Registry-Scan ausschließen</lang>
           <lang id="ru" status="3">Выберите папку для исключения из сканирования</lang>
-          <lang id="el" status="2">Επιλέξτε το φάκελο για να αποκλείσει από το μητρώο σάρωσης</lang>
+          <lang id="el" status="3">Επιλέξτε φάκελο για να τον αποκλείσετε από το μητρώο σάρωσης</lang>
           <lang id="ar" status="2">حدد المجلد لاستبعاد من التسجيل المسح الضوئي</lang>
           <lang id="sv" status="2">Välj mapp att utesluta från skanningen</lang>
           <lang id="zh" status="2">选择文件夹，以排除从注册表扫描</lang>
@@ -5890,6 +6128,7 @@
           <lang id="pl" status="2">Wybierz folder, do wyłączenia z rejestru skanowania</lang>
           <lang id="hu" status="2">Válassza ki a mappát amit ki akar hagyni a szkennelésből</lang>
           <lang id="fa" status="2">انتخاب پوشه را از رجیستری مستثنی اسکن</lang>
+          <lang id="lt" status="3">Pasirinkite aplanką kuri ne norite skenuoti</lang>
         </row>
         <row id="optionsExcludeEmptyRegPath" state="0">
           <native>Registry path cannot be empty</native>
@@ -5901,7 +6140,7 @@
           <lang id="nl" status="2">Register pad kan niet leeg zijn</lang>
           <lang id="de" status="2">Registry-Pfad darf nicht leer sein</lang>
           <lang id="ru" status="2">Путь реестра не может быть пустым</lang>
-          <lang id="el" status="2">Γραμματεία διαδρομή δεν μπορεί να είναι κενή</lang>
+          <lang id="el" status="3">Η διαδρομή του μητρώου δεν μπορεί να είναι κενή</lang>
           <lang id="ar" status="2">التسجيل المسار لا يمكن أن تكون فارغة</lang>
           <lang id="sv" status="2">Registersökväg kan inte vara tom</lang>
           <lang id="zh" status="2">注册表路径不能为空</lang>
@@ -5913,6 +6152,7 @@
           <lang id="pl" status="2">Ścieżka rejestru nie może być pusta</lang>
           <lang id="hu" status="2">A bejegyzés útvonal nem lehet üres</lang>
           <lang id="fa" status="2">مسیر رجیستری نمی تواند خالی باشد</lang>
+          <lang id="lt" status="3">Registro kelias negali būti tuščias</lang>
         </row>
         <row id="optionsExcludeFile" state="0">
           <native>Select a file to exclude from the registry scan</native>
@@ -5924,7 +6164,7 @@
           <lang id="nl" status="3">Selecteer een bestand dat van de registerscan moet worden uitgesloten</lang>
           <lang id="de" status="2">Wählen Sie eine Datei aus der Registrierung Vorgang ausschließen</lang>
           <lang id="ru" status="3">Выберите файл для исключения из сканирования</lang>
-          <lang id="el" status="2">Επιλέξτε ένα αρχείο για να αποκλείσει από το μητρώο σάρωσης</lang>
+          <lang id="el" status="3">Επιλέξτε ένα αρχείο για να το αποκλείσετε από την σάρωση</lang>
           <lang id="ar" status="2">حدد ملف لاستبعاد من التسجيل المسح الضوئي</lang>
           <lang id="sv" status="2">Välj en fil att utesluta från skanningen</lang>
           <lang id="zh" status="2">选择一个文件，从注册表中排除扫描</lang>
@@ -5936,6 +6176,7 @@
           <lang id="pl" status="2">Wybierz plik do wyłączenia z rejestru skanowania</lang>
           <lang id="hu" status="2">Válassza ki a fájlt amit ki akar hagyni a szkennelésből</lang>
           <lang id="fa" status="2">انتخاب فایل از رجیستری مستثنی اسکن</lang>
+          <lang id="lt" status="3">Pasirinkite failą kuri ne norite skenuoti</lang>
         </row>
         <row id="optionsExcludeInvalidRegPath" state="0">
           <native>Specified registry key doesn't exist</native>
@@ -5947,7 +6188,7 @@
           <lang id="nl" status="3">De aangegeven registersleutel bestaat niet</lang>
           <lang id="de" status="2">Angegebenen Registrierungsschlüssel ist nicht vorhanden</lang>
           <lang id="ru" status="2">Указанный раздел реестра не существует</lang>
-          <lang id="el" status="2">Καθορισμένη κλειδί μητρώου δεν υπάρχει</lang>
+          <lang id="el" status="3">Το καθορισμένο κλειδί μητρώου δεν υπάρχει</lang>
           <lang id="ar" status="2">مفتاح التسجيل المحدد غير موجود</lang>
           <lang id="sv" status="2">Specifik registernyckel finns inte</lang>
           <lang id="zh" status="2">指定的注册表项不存在</lang>
@@ -5959,6 +6200,7 @@
           <lang id="pl" status="2">Określony klucz rejestru nie istnieje</lang>
           <lang id="hu" status="2">A megadott bejegyzéskulcs nem létezik</lang>
           <lang id="fa" status="2">کلید رجیستری مشخص شده وجود ندارد</lang>
+          <lang id="lt" status="3">Nurodyta registro skyrius neegzistuoja</lang>
         </row>
         <row id="optionsExcludeRemove" state="0">
           <native>Are you sure?</native>
@@ -5982,6 +6224,7 @@
           <lang id="pl" status="2">Czy na pewno?</lang>
           <lang id="hu" status="2">Biztos benne?</lang>
           <lang id="fa" status="2">آیا مطمئن هستید که?</lang>
+          <lang id="lt" status="2">Ar tikrai?</lang>
         </row>
         <row id="optionsSelectBackupDir" state="0">
           <native>Select the folder where the backup files will be placed</native>
@@ -5993,7 +6236,7 @@
           <lang id="nl" status="3">Selecteer de map waarin de back-upbestanden zullen worden geplaatst</lang>
           <lang id="de" status="2">Wählen Sie den Ordner, in dem die Backup-Dateien abgelegt werden</lang>
           <lang id="ru" status="3">Выберите папку, в которой будут храниться резервные копии</lang>
-          <lang id="el" status="2">Επιλέξτε το φάκελλο όπου τα αρχεία αντιγράφων ασφαλείας θα πρέπει να τοποθετηθεί</lang>
+          <lang id="el" status="3">Επιλέξτε το φάκελλο όπου τα αρχεία αντιγράφων ασφαλείας θα τοποθετηθούν</lang>
           <lang id="ar" status="2">حدد المجلد حيث ملفات النسخة الاحتياطية سوف توضع</lang>
           <lang id="sv" status="2">Välj den mapp där säkerhetskopian kommer att lagras</lang>
           <lang id="zh" status="2">选择文件夹备份文件将被放置</lang>
@@ -6005,6 +6248,7 @@
           <lang id="pl" status="2">Wybierz folder, do którego kopii zapasowej zostanie umieszczony</lang>
           <lang id="hu" status="2">Válassza ki a mappát amibe majd a biztonsági másolatok kerülnek</lang>
           <lang id="fa" status="2">را انتخاب کنید که در آن پوشه فایل های پشتیبان قرار داده خواهد شد</lang>
+          <lang id="lt" status="3">Pasirinkite aplanką, kuriame bus saugomos atsarginės kopijos</lang>
         </row>
         <row id="optionsSelectLogDir" state="0">
           <native>Select the folder where the log files will be placed</native>
@@ -6016,7 +6260,7 @@
           <lang id="nl" status="2">Selecteer de map waar de log-bestanden zullen worden geplaatst</lang>
           <lang id="de" status="2">Wählen Sie den Ordner, in dem die Log-Dateien abgelegt werden</lang>
           <lang id="ru" status="3">Выберите папку, в которой будут храниться логи</lang>
-          <lang id="el" status="2">Επιλέξτε το φάκελλο όπου τα αρχεία καταγραφής θα τοποθετηθεί</lang>
+          <lang id="el" status="3">Επιλέξτε το φάκελλο όπου τα αρχεία καταγραφής θα τοποθετηθουν</lang>
           <lang id="ar" status="2">حدد المجلد حيث ملفات السجل ستوضع</lang>
           <lang id="sv" status="2">Välj den mapp där alla loggfiler lagras</lang>
           <lang id="zh" status="2">选择文件夹的日志文件将被放置</lang>
@@ -6028,6 +6272,7 @@
           <lang id="pl" status="2">Wybierz folder, w którym pliki dziennika zostaną umieszczone</lang>
           <lang id="hu" status="2">Válassza ki a mappát amibe majd a naplófájlok kerülnek</lang>
           <lang id="fa" status="2">را انتخاب کنید که در آن پوشه فایل ورود به سیستم قرار داده خواهد شد</lang>
+          <lang id="lt" status="3">Pasirinkite aplanką kur bus saugomi pokyčiu žurnalai</lang>
         </row>
         <row id="piErrorRegKey" state="0">
           <native>Error removing registry key:</native>
@@ -6039,7 +6284,7 @@
           <lang id="nl" status="3">Fout bij het verwijderen van registersleutel:</lang>
           <lang id="de" status="2">Fehler beim Entfernen von Registry-Schlüssel:</lang>
           <lang id="ru" status="3">Ошибка при удалении элемента реестра:</lang>
-          <lang id="el" status="2">Σφάλμα κατά την κατάργηση κλειδιού μητρώου:</lang>
+          <lang id="el" status="3">Σφάλμα κατά την διαγραφή κλειδιού μητρώου:</lang>
           <lang id="ar" status="2">خطأ في إزالة مفتاح التسجيل:</lang>
           <lang id="sv" status="2">Problem med att ta bort registernyckeln:</lang>
           <lang id="zh" status="2">错误删除注册表项:</lang>
@@ -6051,6 +6296,7 @@
           <lang id="pl" status="2">Błąd podczas usuwania klucza rejestru:</lang>
           <lang id="hu" status="2">Hiba történt a bejegyzéskulcs törlése közben:</lang>
           <lang id="fa" status="2">خطا در حذف کلید رجیستری:</lang>
+          <lang id="lt" status="3">Klaida šalinant registro raktą:</lang>
         </row>
         <row id="piErrorUninstalling" state="0">
           <native>Error uninstalling program:</native>
@@ -6062,7 +6308,7 @@
           <lang id="nl" status="2">Fout bij het verwijderen van het programma:</lang>
           <lang id="de" status="2">Fehler beim Deinstallieren von Programm:</lang>
           <lang id="ru" status="3">Ошибка при деинсталляции программы:</lang>
-          <lang id="el" status="2">Σφάλμα κατάργηση εγκατάστασης προγράμματος:</lang>
+          <lang id="el" status="3">Σφάλμα απεγκατάστασης προγράμματος:</lang>
           <lang id="ar" status="2">خطأ في تثبيت البرنامج:</lang>
           <lang id="sv" status="2">Problem med att avinstallera program:</lang>
           <lang id="zh" status="2">卸载程序时出错:</lang>
@@ -6074,6 +6320,7 @@
           <lang id="pl" status="2">Odinstalowywanie programu błąd:</lang>
           <lang id="hu" status="2">Hiba történt a program uninstallállása közben:</lang>
           <lang id="fa" status="2">خطا uninstalling برنامه:</lang>
+          <lang id="lt" status="3">Klaida šalinant programą:</lang>
         </row>
         <row id="piInvalidUninstallString" state="0">
           <native>Unable to find uninstall string. Would you like to manually remove it from the registry?</native>
@@ -6085,7 +6332,7 @@
           <lang id="nl" status="3">Kan geen verwijder-tekenreeks vinden. Wilt u deze handmatig uit het register verwijderen?</lang>
           <lang id="de" status="2">Kann nicht Deinstallation String gefunden werden. Möchten Sie Sie aus der Registrierung manuell zu entfernen?</lang>
           <lang id="ru" status="3">Не удается найти строку деинсталляции. Хотите вручную удалить из реестра?</lang>
-          <lang id="el" status="2">Δεν είναι δυνατή η εύρεση της συμβολοσειράς κατάργησης της εγκατάστασης. Θα θέλατε να καταργήσετε με μη αυτόματο τρόπο από το μητρώο?</lang>
+          <lang id="el" status="3">Δεν είναι δυνατή η εύρεση αρχείου απεγκατάστασης. Θα θέλατε να το καταργήσετε χειροκινητα από το μητρώο?</lang>
           <lang id="ar" status="2">غير قادر على العثور على السلسلة إلغاء التثبيت. هل ترغب في إزالة يدويًا من السجل?</lang>
           <lang id="sv" status="2">Det gick inte att hitta avinstallationsnycklen. Vill du manuellt ta bort det från registret?</lang>
           <lang id="zh" status="2">无法卸载字符串。 要从注册表中手动删除?</lang>
@@ -6097,6 +6344,7 @@
           <lang id="pl" status="2">Nie można odnaleźć ciągu dezinstalacji. Czy chcesz ręcznie usunąć go z rejestru?</lang>
           <lang id="hu" status="2">Az uninstallálási parancs nem található. Szeretné manuálisan eltávoítani a bejegyzésből?</lang>
           <lang id="fa" status="2">قادر به پیدا کردن رشته ای پاک. آیا دوست دارید به صورت دستی آن را از رجیستری حذف?</lang>
+          <lang id="lt" status="3">Nepavyko rasti pašalinimo duomenų. Ar norite pašalinti jį iš registro rankiniu būdu?</lang>
         </row>
         <row id="piSuccessRegKey" state="0">
           <native>Sucessfully removed registry key</native>
@@ -6108,7 +6356,7 @@
           <lang id="nl" status="3">Registersleutel verwijderd</lang>
           <lang id="de" status="2">Registrierungsschlüssel wurde erfolgreich entfernt</lang>
           <lang id="ru" status="3">Ключ реестра успешно удален</lang>
-          <lang id="el" status="2">Το κλειδί μητρώου ολοκληρώθηκε με επιτυχία την κατάργηση</lang>
+          <lang id="el" status="3">Το κλειδί μητρώου κατάργηθηκε με επιτυχία </lang>
           <lang id="ar" status="2">مفتاح التسجيل بنجاح إزالة</lang>
           <lang id="sv" status="2">Lyckades ta bort registernyckeln</lang>
           <lang id="zh" status="2">无法删除注册表项</lang>
@@ -6120,6 +6368,7 @@
           <lang id="pl" status="2">Pomyślnie usunięto klucza rejestru</lang>
           <lang id="hu" status="2">A bejegyzés kulcs sikeresen eltávolítva</lang>
           <lang id="fa" status="2">با موفقیت حذف کلید رجیستری</lang>
+          <lang id="lt" status="3">Registro raktas sėkmingai pašalintas</lang>
         </row>
         <row id="piSuccessUninstall" state="0">
           <native>Sucessfully uninstalled program</native>
@@ -6131,7 +6380,7 @@
           <lang id="nl" status="3">Programma verwijderd</lang>
           <lang id="de" status="2">Wurde erfolgreich deinstalliert Programm</lang>
           <lang id="ru" status="2">Программа успешно удалена</lang>
-          <lang id="el" status="2">Πρόγραμμα ολοκληρώθηκε με επιτυχία την κατάργηση της εγκατάστασης</lang>
+          <lang id="el" status="3">Πρόγραμμα απεγκατάσταθηκε με επιτυχία</lang>
           <lang id="ar" status="2">بنجاح إزالة تثبيت البرنامج</lang>
           <lang id="sv" status="2">Lyckades avinstallera programmet</lang>
           <lang id="zh" status="2">无法卸载程序</lang>
@@ -6143,6 +6392,7 @@
           <lang id="pl" status="2">Program pomyślnie odinstalowany</lang>
           <lang id="hu" status="2">A program sikeresen uninstallálva</lang>
           <lang id="fa" status="2">موفقیت uninstalled برنامه</lang>
+          <lang id="lt" status="3">Programa sėkmingai pašalinta</lang>
         </row>
         <row id="programAlreadyRunning" state="0">
           <native>Another program seems to be running already...</native>
@@ -6154,7 +6404,7 @@
           <lang id="nl" status="3">Er lijkt al een ander programma te draaien...</lang>
           <lang id="de" status="2">Ein anderes Programm scheint zu sein, läuft bereits...</lang>
           <lang id="ru" status="3">Другая копия программы уже запущена...</lang>
-          <lang id="el" status="2">Ένα άλλο πρόγραμμα, φαίνεται να είναι σε λειτουργία ήδη...</lang>
+          <lang id="el" status="3">Ένα άλλο πρόγραμμα, φαίνεται να είναι σε ήδη σε λειτούργια...</lang>
           <lang id="ar" status="2">برنامج آخر ويبدو أن إدارة بالفعل...</lang>
           <lang id="sv" status="2">Ett annat program tycks vara igång redan...</lang>
           <lang id="zh" status="2">另一个程序似乎已经运行...</lang>
@@ -6166,6 +6416,7 @@
           <lang id="pl" status="2">Inny program wydaje się być uruchomiony już...</lang>
           <lang id="hu" status="2">Egy másik program már fut...</lang>
           <lang id="fa" status="2">یکی دیگر از برنامه به نظر می رسد در حال حاضر در حال اجرا...</lang>
+          <lang id="lt" status="3">Kita programos kopija jau veikia</lang>
         </row>
         <row id="programNeedAdmin" state="0">
           <native>You must be an administrator to run this program</native>
@@ -6189,6 +6440,7 @@
           <lang id="pl" status="2">Musisz być administratorem, żeby uruchomić ten program</lang>
           <lang id="hu" status="2">Rendszergazdának kell lennie hogy használhassa ezt a programot</lang>
           <lang id="fa" status="2">شما باید یک مدیر برای اجرای این برنامه</lang>
+          <lang id="lt" status="3">Jūs turite turėti administratoriaus teisės, kad paleisti šią programą</lang>
         </row>
         <row id="programNoCT">
           <native>Unable to find "Common Tools.dll"</native>
@@ -6212,6 +6464,7 @@
           <lang id="pl" date="20100221223015" status="3">Nie można odnaleźć "Common Tools.dll"</lang>
           <lang id="hu" date="20100221222945" status="3">Nincs meg a "Common Tools.dll" fájl</lang>
           <lang id="fa" date="20100221224055" status="3">قادر به پیدا کردن "Common Tools.dll"</lang>
+          <lang id="lt" status="3">Nepavyko rasti "Common Tools.dll"</lang>
         </row>
         <row id="restoreAsk" state="0">
           <native>Are you sure?</native>
@@ -6235,6 +6488,7 @@
           <lang id="pl" status="2">Czy na pewno?</lang>
           <lang id="hu" status="2">Biztos benne?</lang>
           <lang id="fa" status="2">آیا مطمئن هستید که?</lang>
+          <lang id="lt" status="2">Ar tikrai?</lang>
         </row>
         <row id="restoreError" state="0">
           <native>Error restoring registry</native>
@@ -6246,7 +6500,7 @@
           <lang id="nl" status="2">Fout bij het herstellen van het register</lang>
           <lang id="de" status="2">Error restoring Registrierung</lang>
           <lang id="ru" status="3">Ошибка восстановления реестра</lang>
-          <lang id="el" status="2">Σφάλμα αποκατάσταση του μητρώου</lang>
+          <lang id="el" status="3">Σφάλμα αποκατάστασης του μητρώου</lang>
           <lang id="ar" status="2">الخطأ استعادة التسجيل</lang>
           <lang id="sv" status="2">Problem med att återställa registret</lang>
           <lang id="zh" status="2">错误恢复注册表</lang>
@@ -6258,6 +6512,7 @@
           <lang id="pl" status="2">Błąd przywracania rejestru</lang>
           <lang id="hu" status="2">Hiba történt a bejegyzés visszaállítása közben</lang>
           <lang id="fa" status="2">خطا در بازگرداندن رجیستری</lang>
+          <lang id="lt" status="3">Klaida atkuriant registrą</lang>
         </row>
         <row id="restoreRestored" state="0">
           <native>Successfully restored registry</native>
@@ -6269,7 +6524,7 @@
           <lang id="nl" status="3">Register succesvol hersteld</lang>
           <lang id="de" status="2">Erfolgreich wiederhergestellt Registrierung</lang>
           <lang id="ru" status="3">Реестр успешно восстановлен</lang>
-          <lang id="el" status="2">Επιτυχώς αποκατασταθεί μητρώου</lang>
+          <lang id="el" status="3">Το μητρώο αποκαταστάθηκε με επιτυχία</lang>
           <lang id="ar" status="2">بنجاح استعادة التسجيل</lang>
           <lang id="sv" status="2">Återställt registert</lang>
           <lang id="zh" status="2">成功地恢复注册表</lang>
@@ -6281,6 +6536,7 @@
           <lang id="pl" status="2">Pomyślnie przywrócić rejestr</lang>
           <lang id="hu" status="2">Bejegyzés sikeresen visszaállítva</lang>
           <lang id="fa" status="2">ترمیم با موفقیت به رجیستری</lang>
+          <lang id="lt" status="3">Registras sėkmingai atkurtas </lang>
         </row>
         <row id="scanDlgExit" state="0">
           <native>Are you sure?</native>
@@ -6304,6 +6560,7 @@
           <lang id="pl" status="2">Czy na pewno?</lang>
           <lang id="hu" status="2">Biztos benne?</lang>
           <lang id="fa" status="2">آیا مطمئن هستید که?</lang>
+          <lang id="lt" status="2">Ar tikrai?</lang>
         </row>
         <row id="scanDlgProgressBarScanning" state="0">
           <native>Scanning: </native>
@@ -6327,6 +6584,7 @@
           <lang id="pl" status="2">Skanowanie: </lang>
           <lang id="hu" status="2">Szkennelés:</lang>
           <lang id="fa" status="2">اسکن: </lang>
+          <lang id="lt" status="2">Skenavimas: </lang>
         </row>
         <row id="smCannotFindFile" state="0">
           <native>The file could not be found</native>
@@ -6338,7 +6596,7 @@
           <lang id="nl" status="2">Het bestand kan niet worden gevonden</lang>
           <lang id="de" status="2">Die Datei konnte nicht gefunden werden</lang>
           <lang id="ru" status="3">Файл не найден</lang>
-          <lang id="el" status="2">Το αρχείο δεν θα μπορούσε να βρεθεί</lang>
+          <lang id="el" status="3">Το αρχείο δεν μπορούσε να βρεθεί</lang>
           <lang id="ar" status="2">الملف لا يمكن العثور على</lang>
           <lang id="sv" status="2">Filen kunde inte hittas</lang>
           <lang id="zh" status="2">该文件找不到</lang>
@@ -6350,6 +6608,7 @@
           <lang id="pl" status="2">Plik nie może być uznana za</lang>
           <lang id="hu" status="2">A fájl nem található</lang>
           <lang id="fa" status="2">فایل یافت نشد</lang>
+          <lang id="lt" status="2">Failas nerastas</lang>
         </row>
         <row id="smEmptyName" state="0">
           <native>Shortcut/Value name cannot be empty</native>
@@ -6361,7 +6620,7 @@
           <lang id="nl" status="2">Shortcut / Waarde naam mag niet leeg zijn</lang>
           <lang id="de" status="2">Shortcut / Wert-Name kann nicht leer sein</lang>
           <lang id="ru" status="3">Название не может быть пустым</lang>
-          <lang id="el" status="2">Συντόμευση / όνομα αξία δεν μπορεί να είναι κενή</lang>
+          <lang id="el" status="3">Η συντόμευση/τιμή δεν μπορεί να είναι κενή</lang>
           <lang id="ar" status="2">الاختصار / اسم القيمة لا يمكن أن تكون فارغة</lang>
           <lang id="sv" status="2">Genväg / Värde kan inte vara tom</lang>
           <lang id="zh" status="2">快捷键/值名称不能为空</lang>
@@ -6373,6 +6632,7 @@
           <lang id="pl" status="2">Skrót / nazwa wartości nie może być puste</lang>
           <lang id="hu" status="2">Az Ikon/Érték mező nem lehet üres</lang>
           <lang id="fa" status="2">میانبر / نام مقدار می تواند خالی باشد</lang>
+          <lang id="lt" status="3">Nuorodos pavadinimas negali būti tuščias</lang>
         </row>
         <row id="smEmptyPath" state="0">
           <native>File path cannot be empty</native>
@@ -6384,7 +6644,7 @@
           <lang id="nl" status="2">Bestand pad kan niet leeg zijn</lang>
           <lang id="de" status="2">Dateipfad darf nicht leer sein</lang>
           <lang id="ru" status="2">Путь к файлу не может быть пустым</lang>
-          <lang id="el" status="2">Φάκελος διαδρομή δεν μπορεί να είναι κενή</lang>
+          <lang id="el" status="3">Η διαδρομή αρχείου δεν μπορεί να είναι κενή</lang>
           <lang id="ar" status="2">مسار الملف لا يمكن أن تكون فارغة</lang>
           <lang id="sv" status="2">Sökväg kan inte vara tom</lang>
           <lang id="zh" status="2">文件路径不能为空</lang>
@@ -6396,6 +6656,7 @@
           <lang id="pl" status="2">Ścieżka pliku nie może być pusta</lang>
           <lang id="hu" status="2">Az útvonal nem lehet üres</lang>
           <lang id="fa" status="2">مسیر فایل نمی تواند خالی باشد</lang>
+          <lang id="lt" status="2">Kelias iki failo negali būti tuščias</lang>
         </row>
         <row id="smRan" state="0">
           <native>Attempted to run:</native>
@@ -6407,7 +6668,7 @@
           <lang id="nl" status="3">Geprobeerd te starten:</lang>
           <lang id="de" status="2">Es wurde versucht, zu laufen:</lang>
           <lang id="ru" status="3">Попытка запуска:</lang>
-          <lang id="el" status="2">Προσπάθησε να τρέχει:</lang>
+          <lang id="el" status="3">Προσπάθησε να τρέξει:</lang>
           <lang id="ar" status="2">حاول تشغيل:</lang>
           <lang id="sv" status="2">Försökte att köra:</lang>
           <lang id="zh" status="2">试图运行:</lang>
@@ -6419,6 +6680,7 @@
           <lang id="pl" status="2">Próbowano uruchomić:</lang>
           <lang id="hu" status="2">Megpróbálta futtatni:</lang>
           <lang id="fa" status="2">تلاش برای اجرای:</lang>
+          <lang id="lt" status="2">Bandė paleisti:</lang>
         </row>
         <row id="smRemove" state="0">
           <native>Are you sure you want to remove this startup program?</native>
@@ -6442,6 +6704,7 @@
           <lang id="pl" status="2">Czy na pewno chcesz usunąć ten program startowy?</lang>
           <lang id="hu" status="2">Biztos el akarja távolítani ezt az indítási programot?</lang>
           <lang id="fa" status="2">آیا مطمئن هستید که می خواهید حذف کنید این برنامه را راه اندازی?</lang>
+          <lang id="lt" status="3">Ar tikrai norite pašalinti šia programa iš automatiškai paleidžiamu programų sąrašo?</lang>
         </row>
         <row id="smRemoved" state="0">
           <native>Removed selected startup program</native>
@@ -6465,6 +6728,7 @@
           <lang id="pl" status="2">Usunięto wybranego programu startowego</lang>
           <lang id="hu" status="2">Kijelölt indítási program eltávolítva</lang>
           <lang id="fa" status="2">حذف برنامه های راه انداز انتخاب شده</lang>
+          <lang id="lt" status="3">Pasirinkti automatinio paleidimo elementai pašalinti</lang>
         </row>
         <row id="smRun" state="0">
           <native>Are you sure you want to run this program?</native>
@@ -6488,6 +6752,7 @@
           <lang id="pl" status="2">Czy na pewno chcesz uruchomić ten program?</lang>
           <lang id="hu" status="2">Biztos futtatni akarja ezt a programot?</lang>
           <lang id="fa" status="2">آیا مطمئن هستید که می خواهید این برنامه را اجرا کنید?</lang>
+          <lang id="lt" status="2">Ar tikrai norite paleisti šią programą?</lang>
         </row>
         <row id="umForceUninstall" state="0">
           <native>Are you sure you want to remove this program from the registry?</native>
@@ -6511,6 +6776,7 @@
           <lang id="pl" status="2">Czy na pewno chcesz usunąć ten program z rejestru?</lang>
           <lang id="hu" status="2">Biztos el akarja távolítani ezt a programot a bejegyzésből?</lang>
           <lang id="fa" status="2">آیا مطمئن هستید که می خواهید حذف کنید این برنامه را از رجیستری?</lang>
+          <lang id="lt" status="2">Ar tikrai norite ištrinti šią programą iš registro?</lang>
         </row>
         <row id="umSearchText" state="0">
           <native>Search by name</native>
@@ -6534,6 +6800,7 @@
           <lang id="pl" status="2">Szukaj wg nazwy</lang>
           <lang id="hu" status="2">Keresés név alapján</lang>
           <lang id="fa" status="2">جستجو بر حسب نام</lang>
+          <lang id="lt" status="3">Ieškoti pagal pavadinimą</lang>
         </row>
         <row id="umUninstall" state="0">
           <native>Are you sure you want to uninstall this program?</native>
@@ -6545,7 +6812,7 @@
           <lang id="nl" status="3">Weet u zeker dat u dit programma wilt verwijderen?</lang>
           <lang id="de" status="2">Sind Sie sicher, dass Sie dieses Programm deinstallieren?</lang>
           <lang id="ru" status="2">Вы уверены, что хотите удалить эту программу?</lang>
-          <lang id="el" status="2">Είστε σίγουροι ότι θέλετε να καταργήσετε την εγκατάσταση αυτού του προγράμματος?</lang>
+          <lang id="el" status="3">Είστε σίγουροι ότι θέλετε να απεγκατάστησετε αυτό το πρόγραμμα?</lang>
           <lang id="ar" status="2">هل أنت متأكد من أنك تريد إلغاء تثبيت هذا البرنامج?</lang>
           <lang id="sv" status="2">Är du säker på att du vill avinstallera programmet?</lang>
           <lang id="zh" status="2">您确定要卸载此程序?</lang>
@@ -6557,6 +6824,7 @@
           <lang id="pl" status="2">Czy na pewno chcesz odinstalować ten program?</lang>
           <lang id="hu" status="2">Biztos uninstallálni akarja ezt a programot?</lang>
           <lang id="fa" status="2">آیا مطمئن هستید که می خواهید این برنامه را پاک کنید?</lang>
+          <lang id="lt" status="2">Ar tikrai norite ištrinti šią programą?</lang>
         </row>
         <row id="updateLatest" state="0">
           <native>You have the latest version</native>
@@ -6580,6 +6848,7 @@
           <lang id="pl" status="2">Masz najnowszą wersję</lang>
           <lang id="hu" status="2">Ez a legfrissebb verzió</lang>
           <lang id="fa" status="2">شما باید آخرین نسخه</lang>
+          <lang id="lt" status="3">Jūs turite naujausią versiją</lang>
         </row>
         <row id="updateNewer" state="0">
           <native>Newer version available</native>
@@ -6603,6 +6872,7 @@
           <lang id="pl" status="2">Wersja dostępna Nowsze</lang>
           <lang id="hu" status="2">Újabb verzió elérhető</lang>
           <lang id="fa" status="2">نسخه جدیدتر در دسترس</lang>
+          <lang id="lt" status="3">Yra naujesne versija</lang>
         </row>
       </node>
       <node class="TNetStringNode" name="Little_Registry_Cleaner.Scanners.Strings" state="0">
@@ -6616,7 +6886,7 @@
           <lang id="nl" status="2">ActiveX / COM Objects</lang>
           <lang id="de" status="2">ActiveX / COM-Objekte</lang>
           <lang id="ru" status="3">ActiveX / COM-объекты</lang>
-          <lang id="el" status="2">ActiveX / COM Objects</lang>
+          <lang id="el" status="3">ActiveX/COM Objects</lang>
           <lang id="ar" status="2">ActiveX / كائنات كوم</lang>
           <lang id="sv" status="2">ActiveX / COM-objekt</lang>
           <lang id="zh" status="2">的ActiveX / COM对象</lang>
@@ -6628,6 +6898,7 @@
           <lang id="pl" status="2">ActiveX / COM Objects</lang>
           <lang id="hu" status="2">ActiveX/COM Objektumok</lang>
           <lang id="fa" status="2">ActiveX / COM اشیا</lang>
+          <lang id="lt" status="2">ActiveX / COM objektai</lang>
         </row>
         <row id="ApplicationInfo" state="0">
           <native>Application Info</native>
@@ -6651,6 +6922,7 @@
           <lang id="pl" status="2">Informacje o programach</lang>
           <lang id="hu" status="2">Információ az alkalmazásról</lang>
           <lang id="fa" status="2">درخواست اطلاعات</lang>
+          <lang id="lt" status="3">Informacija apie programą</lang>
         </row>
         <row id="ApplicationPaths" state="0">
           <native>Application Paths</native>
@@ -6662,7 +6934,7 @@
           <lang id="nl" date="20091102204934" status="3">Toepassings paden</lang>
           <lang id="de" date="20091102205009" status="3">Anwendung-Pfade</lang>
           <lang id="ru" date="20091102205205" status="3">Пути</lang>
-          <lang id="el" status="2">Εφαρμογή Μονοπάτια</lang>
+          <lang id="el" status="3">Διαδρομές εφαρμογής</lang>
           <lang id="ar" status="2">تطبيق المسارات</lang>
           <lang id="sv" status="2">Programsökvägar</lang>
           <lang id="zh" status="2">应用程序路径</lang>
@@ -6674,6 +6946,7 @@
           <lang id="pl" date="20091102210407" status="3">Ścieżki aplikacji</lang>
           <lang id="hu" status="2">Alkalmazás útvonalak</lang>
           <lang id="fa" status="2">راه های کاربرد</lang>
+          <lang id="lt" status="3">Programos keliai</lang>
         </row>
         <row id="ApplicationSettings" state="0">
           <native>Application Settings</native>
@@ -6697,6 +6970,7 @@
           <lang id="pl" status="2">Ustawienia aplikacji</lang>
           <lang id="hu" status="2">Alkalmazás beállítások</lang>
           <lang id="fa" status="2">تنظیمات برنامه</lang>
+          <lang id="lt" status="3">Programos nustatymai</lang>
         </row>
         <row id="InvalidFile" state="0">
           <native>Invalid file or folder</native>
@@ -6708,7 +6982,7 @@
           <lang id="nl" status="2">Ongeldig bestand of map</lang>
           <lang id="de" status="2">Ungültige Datei oder einen Ordner</lang>
           <lang id="ru" status="2">Неверный файл или папка</lang>
-          <lang id="el" status="2">Άκυρα αρχείο ή το φάκελο</lang>
+          <lang id="el" status="3">Λάθος αρχείο ή φάκελος</lang>
           <lang id="ar" status="2">الملف غير صالح أو مجلد</lang>
           <lang id="sv" status="2">Ogiltig fil eller mapp</lang>
           <lang id="zh" status="2">无效的文件或文件夹</lang>
@@ -6720,6 +6994,7 @@
           <lang id="pl" status="2">Nieprawidłowy plik lub folder</lang>
           <lang id="hu" status="2">Érvénytelen fájl vagy mappa</lang>
           <lang id="fa" status="2">پرونده نامعتبر است و یا پوشه</lang>
+          <lang id="lt" status="3">Netinkamas failas arba aplankas</lang>
         </row>
         <row id="InvalidFileExt" state="0">
           <native>Unused File Extension</native>
@@ -6731,7 +7006,7 @@
           <lang id="nl" status="2">Ongebruikte File Extension</lang>
           <lang id="de" status="2">Nicht genutzte File Extension</lang>
           <lang id="ru" status="3">Неиспользуемые расширения файлов</lang>
-          <lang id="el" status="2">Αχρησιμοποίητα αρχείου Επέκταση</lang>
+          <lang id="el" status="3">Αχρησιμοποίητη επέκταση αρχείου </lang>
           <lang id="ar" status="2">غير المستخدمة ملحق ملف</lang>
           <lang id="sv" status="2">Oanvända filändelser</lang>
           <lang id="zh" status="2">未使用的文件扩展名</lang>
@@ -6743,6 +7018,7 @@
           <lang id="pl" status="2">Niewykorzystane Rozszerzenie pliku</lang>
           <lang id="hu" status="2">Nem használt fájl bővítés</lang>
           <lang id="fa" status="2">فرمت فایل استفاده نشده</lang>
+          <lang id="lt" status="3">Nepanaudojami failų išplėtimai</lang>
         </row>
         <row id="InvalidInprocServer" state="0">
           <native>Unable to find InprocServer</native>
@@ -6766,6 +7042,7 @@
           <lang id="pl" status="2">Nie można odnaleźć InprocServer</lang>
           <lang id="hu" status="2">InprocServer nem található</lang>
           <lang id="fa" status="2">قادر به پیدا کردن InprocServer</lang>
+          <lang id="lt" status="2">Nepavyko rasti InprocServer</lang>
         </row>
         <row id="InvalidInprocServer32" state="0">
           <native>Unable to find InprocServer32</native>
@@ -6789,6 +7066,7 @@
           <lang id="pl" status="2">Nie można odnaleźć InprocServer32</lang>
           <lang id="hu" status="2">InprocServer32 nem található</lang>
           <lang id="fa" status="2">قادر به پیدا کردن InprocServer32</lang>
+          <lang id="lt" status="2">Nepavyko rasti InprocServer32</lang>
         </row>
         <row id="InvalidProgIDFileExt" state="0">
           <native>Unused ProgID/File Extension</native>
@@ -6800,7 +7078,7 @@
           <lang id="nl" status="2">Ongebruikte ProgID / File Extension</lang>
           <lang id="de" status="2">Ungenutzte ProgID / File Extension</lang>
           <lang id="ru" status="3">Неиспользуемые расширения ProgID / File</lang>
-          <lang id="el" status="2">Αχρησιμοποίητα ProgID / Επέκταση αρχείου</lang>
+          <lang id="el" status="3">Αχρησιμοποίητη ProgID/Επέκταση αρχείου</lang>
           <lang id="ar" status="2">معرف البرنامج غير المستخدمة / ملحق ملف</lang>
           <lang id="sv" status="2">Oanvända ProgID / filändelse</lang>
           <lang id="zh" status="2">未使用的ProgID /文件扩展名</lang>
@@ -6812,6 +7090,7 @@
           <lang id="pl" status="2">Niewykorzystane ProgID / File Extension</lang>
           <lang id="hu" status="2">Nem használt ProgID/fájl bővítés</lang>
           <lang id="fa" status="2">بلا استفاده ProgID / فرمت فایل</lang>
+          <lang id="lt" status="3">Nepanaudojami ProgID / File išplėtimai</lang>
         </row>
         <row id="InvalidRegKey" state="0">
           <native>Invalid registry key</native>
@@ -6823,7 +7102,7 @@
           <lang id="nl" status="2">Ongeldige registersleutel</lang>
           <lang id="de" status="2">Ungültige Registrierungsschlüssel</lang>
           <lang id="ru" status="3">Неверный ключ реестра</lang>
-          <lang id="el" status="2">Άκυρο κλειδί μητρώου</lang>
+          <lang id="el" status="3">Λάθος κλειδί μητρώου</lang>
           <lang id="ar" status="2">صالح مفتاح التسجيل</lang>
           <lang id="sv" status="2">Ogiltig registernyckel</lang>
           <lang id="zh" status="2">无效的注册表项</lang>
@@ -6835,6 +7114,7 @@
           <lang id="pl" status="2">Nieprawidłowy klucz rejestru</lang>
           <lang id="hu" status="2">Érvénytelen bejegyzés kulcs</lang>
           <lang id="fa" status="2">کلید رجیستری نامعتبر است</lang>
+          <lang id="lt" status="3">Neteisingas registro raktas</lang>
         </row>
         <row id="InvalidToolbar" state="0">
           <native>Toolbar is invalid</native>
@@ -6846,7 +7126,7 @@
           <lang id="nl" status="2">Toolbar is ongeldig</lang>
           <lang id="de" status="2">Toolbar ist ungültig</lang>
           <lang id="ru" status="3">Панель инструментов недействительна</lang>
-          <lang id="el" status="2">Toolbar είναι άκυρη</lang>
+          <lang id="el" status="3">Η γραμμή εργαλείων είναι λάθος</lang>
           <lang id="ar" status="2">شريط الأدوات غير صالحة</lang>
           <lang id="sv" status="2">Verktygsfältet är ogiltig</lang>
           <lang id="zh" status="2">工具栏无效</lang>
@@ -6858,6 +7138,7 @@
           <lang id="pl" status="2">Toolbar jest nieprawidłowy</lang>
           <lang id="hu" status="2">Érvénytelen eszköztár</lang>
           <lang id="fa" status="2">نوار ابزار نامعتبر است</lang>
+          <lang id="lt" status="3">Įrankių juosta neveikia</lang>
         </row>
         <row id="MissingAppID" state="0">
           <native>Missing AppID reference</native>
@@ -6869,7 +7150,7 @@
           <lang id="nl" status="2">Ontbrekende AppID verwijzing</lang>
           <lang id="de" status="2">Fehlende AppID Referenz</lang>
           <lang id="ru" status="2">Отсутствует ссылка AppID</lang>
-          <lang id="el" status="2">Missing AppID αναφοράς</lang>
+          <lang id="el" status="3">Λείπει η αναφορά AppID</lang>
           <lang id="ar" status="2">معرف التطبيق مرجع مفقود</lang>
           <lang id="sv" status="2">Saknar AppID referens</lang>
           <lang id="zh" status="2">失踪的AppID参考</lang>
@@ -6881,6 +7162,7 @@
           <lang id="pl" status="2">Zaginione AppID odniesienia</lang>
           <lang id="hu" status="2">Hiányzó AppID hivatkozás</lang>
           <lang id="fa" status="2">گمشده مرجع AppID</lang>
+          <lang id="lt" status="3">Trūksta AppID nuorodos</lang>
         </row>
         <row id="MissingCLSID" state="0">
           <native>Missing CLSID reference</native>
@@ -6892,7 +7174,7 @@
           <lang id="nl" status="2">Ontbrekende CLSID verwijzing</lang>
           <lang id="de" status="2">Fehlende CLSID Verweis</lang>
           <lang id="ru" status="2">Отсутствует CLSID Ссылка</lang>
-          <lang id="el" status="2">Missing CLSID αναφοράς</lang>
+          <lang id="el" status="3">Λείπει η αναφορά CLSID </lang>
           <lang id="ar" status="2">المفقودين CLSID المرجعية</lang>
           <lang id="sv" status="2">Saknar CLSID referens</lang>
           <lang id="zh" status="2">失踪的CLSID参考</lang>
@@ -6904,6 +7186,7 @@
           <lang id="pl" status="2">Zaginione CLSID odniesienia</lang>
           <lang id="hu" status="2">Hiányzó CLSID hivatkozás</lang>
           <lang id="fa" status="2">گمشده مرجع CLSID</lang>
+          <lang id="lt" status="3">Trūksta CLSID nuorodos</lang>
         </row>
         <row id="MissingProgID" state="0">
           <native>Missing ProgID reference</native>
@@ -6915,7 +7198,7 @@
           <lang id="nl" status="2">Ontbrekende ProgID verwijzing</lang>
           <lang id="de" status="2">Fehlende ProgID Referenz</lang>
           <lang id="ru" status="2">Отсутствует ссылка ProgID</lang>
-          <lang id="el" status="2">Missing ProgID αναφοράς</lang>
+          <lang id="el" status="3">Λείπει η αναφορά ProgID</lang>
           <lang id="ar" status="2">معرف البرنامج مرجع مفقود</lang>
           <lang id="sv" status="2">Saknar ProgID referens</lang>
           <lang id="zh" status="2">失踪的ProgID参考</lang>
@@ -6927,6 +7210,7 @@
           <lang id="pl" status="2">Zaginione ProgID odniesienia</lang>
           <lang id="hu" status="2">Hiányzó ProgID hivatkozás</lang>
           <lang id="fa" status="2">گمشده مرجع ProgID</lang>
+          <lang id="lt" status="3">Trūksta ProgID nuorodos</lang>
         </row>
         <row id="NoRegKey" state="0">
           <native>The registry key doesn't contain any data</native>
@@ -6950,6 +7234,7 @@
           <lang id="pl" status="2">Klucz rejestru nie zawiera żadnych danych</lang>
           <lang id="hu" status="2">A bejegyzés kulcs nem tartalmaz semmilyen adatot</lang>
           <lang id="fa" status="2">این کلید رجیستری هیچگونه اطلاعاتی نیست</lang>
+          <lang id="lt" status="3">Šitas registro raktas neturi jokių duomenų</lang>
         </row>
         <row id="ObsoleteRegKey" state="0">
           <native>Obsolete registry key</native>
@@ -6973,6 +7258,7 @@
           <lang id="pl" status="2">Klucz rejestru przestarzałe</lang>
           <lang id="hu" status="2">Elavult bejegyzés kulcs</lang>
           <lang id="fa" status="2">کلید رجیستری منسوخشده</lang>
+          <lang id="lt" status="3">Pasenę registro raktai</lang>
         </row>
         <row id="RecentDocs" state="0">
           <native>Recent Documents</native>
@@ -6996,6 +7282,7 @@
           <lang id="pl" status="2">Ostatnie dokumenty</lang>
           <lang id="hu" status="2">Legutóbbi documentumok</lang>
           <lang id="fa" status="2">اسناد اخیر</lang>
+          <lang id="lt" status="2">Naujausi dokumentai</lang>
         </row>
         <row id="SharedDLLs" state="0">
           <native>Shared DLLs</native>
@@ -7007,7 +7294,7 @@
           <lang id="nl" status="2">Gedeelde dll-bestanden</lang>
           <lang id="de" status="2">Freigegebenen DLLs</lang>
           <lang id="ru" status="3">Общие библиотеки</lang>
-          <lang id="el" status="2">Κοινόχρηστο dll</lang>
+          <lang id="el" status="3">Κοινόχρηστα dll</lang>
           <lang id="ar" status="2">ملفات DLL المشتركة</lang>
           <lang id="sv" status="2">Delade DLL-filer</lang>
           <lang id="zh" status="2">共享DLL</lang>
@@ -7019,6 +7306,7 @@
           <lang id="pl" status="2">Współdzielone biblioteki DLL</lang>
           <lang id="hu" status="2">Megosztott DLL-ek</lang>
           <lang id="fa" status="2">دستی به اشتراک گذاشته شده</lang>
+          <lang id="lt" status="2">Bendri DLL</lang>
         </row>
         <row id="StartupFiles" state="0">
           <native>Startup Files</native>
@@ -7042,6 +7330,7 @@
           <lang id="pl" status="2">Pliki startowe</lang>
           <lang id="hu" status="2">Indítási fájlok</lang>
           <lang id="fa" status="2">راه اندازی ها</lang>
+          <lang id="lt" status="3">Automatiškai paleidžiami failai</lang>
         </row>
         <row id="SystemDrivers" state="0">
           <native>System Drivers</native>
@@ -7053,7 +7342,7 @@
           <lang id="nl" status="3">Systeem stuurprogramma's</lang>
           <lang id="de" status="2">Systemtreiber</lang>
           <lang id="ru" status="2">Системные драйверы</lang>
-          <lang id="el" status="2">Προγράμματα οδήγησης συστήματος</lang>
+          <lang id="el" status="3">Οδηγοί Συστήματος</lang>
           <lang id="ar" status="2">برامج تشغيل النظام</lang>
           <lang id="sv" status="2">Systemdrivrutiner</lang>
           <lang id="zh" status="2">系统驱动程序</lang>
@@ -7065,6 +7354,7 @@
           <lang id="pl" status="2">Sterowniki systemowe</lang>
           <lang id="hu" status="2">Rendszer meghajtók</lang>
           <lang id="fa" status="2">سیستم رانندگان</lang>
+          <lang id="lt" status="2">Sistemos tvarkyklės</lang>
         </row>
         <row id="WindowsFonts" state="0">
           <native>Windows Fonts</native>
@@ -7088,6 +7378,7 @@
           <lang id="pl" status="2">Czcionki systemowe</lang>
           <lang id="hu" status="2">Windows betűtípusok</lang>
           <lang id="fa" status="2">فونتهای ویندوز</lang>
+          <lang id="lt" status="3">Windows šriftai</lang>
         </row>
         <row id="WindowsHelpFiles" state="0">
           <native>Windows Help Files</native>
@@ -7099,7 +7390,7 @@
           <lang id="nl" status="2">Windows Help-bestanden</lang>
           <lang id="de" status="2">Windows-Hilfe-Dateien</lang>
           <lang id="ru" status="3">Файлы помощи Windows</lang>
-          <lang id="el" status="2">Αρχείων των Windows Βοήθεια</lang>
+          <lang id="el" status="3">Αρχεία βοήθειας των Windows</lang>
           <lang id="ar" status="2">نوافذ ملفات التعليمات</lang>
           <lang id="sv" status="2">Windows Hjälpfiler</lang>
           <lang id="zh" status="2">Windows帮助文件</lang>
@@ -7111,6 +7402,7 @@
           <lang id="pl" status="2">Pliki Pomocy systemu Windows</lang>
           <lang id="hu" status="2">Windows segítség fájlok</lang>
           <lang id="fa" status="2">ویندوز فایلها راهنما</lang>
+          <lang id="lt" status="3">Windows pagalbos failai</lang>
         </row>
         <row id="WindowsSounds" state="0">
           <native>Windows Sounds</native>
@@ -7122,7 +7414,7 @@
           <lang id="nl" date="20091102204856" status="3">Windows geluiden</lang>
           <lang id="de" date="20091102205118" status="3">Windows-Töne</lang>
           <lang id="ru" date="20091102205142" status="3">Звуки Windows</lang>
-          <lang id="el" date="20091102205255" status="3">Ήχοι παραθύρων</lang>
+          <lang id="el" date="20091102205255" status="3">Ήχοι των Windows</lang>
           <lang id="ar" status="2">نوافذ الأصوات</lang>
           <lang id="sv" status="2">Windows-ljud</lang>
           <lang id="zh" status="2">视窗声音</lang>
@@ -7134,6 +7426,7 @@
           <lang id="pl" date="20091102210340" status="3">Dźwięki systemu Windows</lang>
           <lang id="hu" status="2">Windows hangok</lang>
           <lang id="fa" status="2">صداهای ویندوز</lang>
+          <lang id="lt" status="3">Windows garsai</lang>
         </row>
       </node>
     </node>

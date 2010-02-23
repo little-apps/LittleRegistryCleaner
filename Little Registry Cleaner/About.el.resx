@@ -130,14 +130,14 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Συγγραφέας:</value>
+    <value>Δημιουργός:</value>
   </data>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό: ή/μπορείτε να το επιστρέψει και τροποποιήσετε σύμφωνα με τους όρους της GNU General Public License όπως έχουν δημοσιευθεί από το ίδρυμα ελεύθερου λογισμικού, είτε έκδοση 3 της άδειας χρήσης, ή (κατά την επιλογή) οποιαδήποτε μεταγενέστερη έκδοση.
+    <value>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-Αυτό το πρόγραμμα διανέμεται με την ελπίδα ότι θα ήταν χρήσιμο, αλλά ΧΩΡΊΣ ΚΆΘΕ WARRANTY, χωρίς καν την σιωπηρή εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ για Α ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ.  Δείτε το GNU General Public License για περισσότερες λεπτομέρειες.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-Θα πρέπει να έχετε λάβει ένα αντίγραφο από το GNU General Public License μαζί με αυτό το πρόγραμμα.  Εάν όχι, ανατρέξτε στην ενότητα &lt;http://www.gnu.org/licenses/&gt;.</value>
+You should have received a copy of the GNU General Public License along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</value>
   </data>
   <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
@@ -161,9 +161,9 @@
     <value>NoControl</value>
   </data>
   <data name="buttonWebsite.Text" xml:space="preserve">
-    <value>Τοποθεσία Web έργου</value>
+    <value>Ιστοσελίδα έργου</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Μικρή Registry Cleaner - πληροφορίες για...</value>
+    <value>Little Registry Cleaner – Σχετικά...</value>
   </data>
 </root>

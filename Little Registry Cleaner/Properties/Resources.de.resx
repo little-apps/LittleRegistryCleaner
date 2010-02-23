@@ -195,6 +195,9 @@
   <data name="programNeedAdmin" xml:space="preserve">
     <value>Sie müssen als Administrator angemeldet sein, um dieses Programm ausführen</value>
   </data>
+  <data name="programNoCT" xml:space="preserve">
+    <value>Konnte nicht gefunden werden "Common Tools.dll"</value>
+  </data>
   <data name="restoreAsk" xml:space="preserve">
     <value>Sind Sie sicher,?</value>
   </data>
