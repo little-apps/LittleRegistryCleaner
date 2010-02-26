@@ -122,7 +122,7 @@
     <value>程式</value>
   </data>
   <data name="columnHeader2.Text" xml:space="preserve">
-    <value>發佈伺服器</value>
+    <value>出版商</value>
   </data>
   <data name="columnHeader3.Text" xml:space="preserve">
     <value>估計的大小</value>
@@ -130,7 +130,7 @@
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
   <data name="buttonRemove.Text" xml:space="preserve">
-    <value>刪除條目</value>
+    <value>刪除項目</value>
   </data>
   <data name="buttonUninstall.Text" xml:space="preserve">
     <value>卸載</value>
@@ -148,6 +148,6 @@
     <value>toolStripContainer1</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>小注冊表清潔-卸載 Manager</value>
+    <value>迷你注册表清理器-卸載管理</value>
   </data>
 </root>

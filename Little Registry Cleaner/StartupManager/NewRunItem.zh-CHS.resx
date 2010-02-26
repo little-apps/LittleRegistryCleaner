@@ -123,22 +123,25 @@
     <value>取消</value>
   </data>
   <data name="buttonOk.Text" xml:space="preserve">
-    <value>行</value>
+    <value>确定</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>论据:</value>
+    <value>参数:</value>
+  </data>
+  <data name="buttonFileDlg.Text" xml:space="preserve">
+    <value>...</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>文件路径:</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>名字:</value>
+    <value>名称:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>名称和路径</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>科:</value>
+    <value>节:</value>
   </data>
   <data name="comboBoxSection.Items" xml:space="preserve">
     <value>StartUp\All Users</value>
@@ -171,6 +174,6 @@
     <value>Registry\Current User\Run Services Once</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>新的运行项目</value>
+    <value>新的执行项目</value>
   </data>
 </root>

@@ -352,3 +352,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Checks for Common Tools.dll when program starts
 - Updated Greek Translations
 - Added Lithuanian Translations
+- Updated Chinese (Simplified & Traditional) Translations

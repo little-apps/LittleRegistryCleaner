@@ -123,19 +123,19 @@
     <value>重新啟動程序</value>
   </data>
   <data name="buttonSend.Text" xml:space="preserve">
-    <value>發送錯誤報告</value>
+    <value>發送故障報告</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>發生了異常的一個組成部分，在小處清潔。我們已創建一個錯誤報告，您可以給我們。我們將對此報告機密和匿名.</value>
+    <value>在迷你註冊表清 理器成部分發生了編程異常。已為您創建一個可以傳送給我們的錯誤報告，我們會將此報告視為保密的和匿名。</value>
   </data>
   <data name="buttonDontSend.Text" xml:space="preserve">
     <value>不發送</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="$this.Text" xml:space="preserve">
-    <value>小處清潔-崩潰記者</value>
+    <value>迷你注册表清理器-故障报告記者</value>
   </data>
 </root>

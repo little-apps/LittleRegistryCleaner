@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="columnHeader1.Text" xml:space="preserve">
-    <value>计划</value>
+    <value>程序</value>
   </data>
   <data name="columnHeader2.Text" xml:space="preserve">
     <value>出版商</value>
@@ -130,7 +130,7 @@
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
   <data name="buttonRemove.Text" xml:space="preserve">
-    <value>删除条目</value>
+    <value>删除项目</value>
   </data>
   <data name="buttonUninstall.Text" xml:space="preserve">
     <value>卸载</value>
@@ -148,6 +148,6 @@
     <value>toolStripContainer1</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>小注册表清理器-卸载经理</value>
+    <value>迷你注册表清理器-卸载管理</value>
   </data>
 </root>

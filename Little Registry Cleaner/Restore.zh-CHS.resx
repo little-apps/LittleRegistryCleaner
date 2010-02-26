@@ -120,11 +120,11 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="buttonBrowse.Text" xml:space="preserve">
-    <value>开放目录...</value>
+    <value>打开目录...</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="label1.Text" xml:space="preserve">
-    <value>下面选择一个文件恢复注册表到以前的状态</value>
+    <value>选择下面一个文件用来恢复注册表到之前的状态</value>
   </data>
   <data name="columnHeader1.Text" xml:space="preserve">
     <value>文件名</value>
@@ -142,6 +142,6 @@
     <value>&lt;?xml version="1.0" encoding="UTF-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="listViewFiles" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="flowLayoutPanel1" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100.1" /&gt;&lt;Rows Styles="Percent,7.624633,Percent,92.37537,Absolute,30" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>小处清洁-还原注册表</value>
+    <value>迷你注册表清理器-还原注册表</value>
   </data>
 </root>

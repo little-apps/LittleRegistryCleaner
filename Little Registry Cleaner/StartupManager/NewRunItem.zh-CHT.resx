@@ -123,13 +123,16 @@
     <value>取消</value>
   </data>
   <data name="buttonOk.Text" xml:space="preserve">
-    <value>還行</value>
+    <value>确定</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>參數:</value>
   </data>
+  <data name="buttonFileDlg.Text" xml:space="preserve">
+    <value>...</value>
+  </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>檔路徑:</value>
+    <value>文件路徑:</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>名稱:</value>
@@ -138,7 +141,7 @@
     <value>名稱和路徑</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>部分:</value>
+    <value>節:</value>
   </data>
   <data name="comboBoxSection.Items" xml:space="preserve">
     <value>StartUp\All Users</value>
@@ -171,6 +174,6 @@
     <value>Registry\Current User\Run Services Once</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>新的運行的專案</value>
+    <value>新的執行項目</value>
   </data>
 </root>

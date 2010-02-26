@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="treeColumn1.Header" xml:space="preserve">
-    <value>部分</value>
+    <value>節</value>
   </data>
   <data name="treeColumn2.Header" xml:space="preserve">
     <value>路徑</value>
@@ -139,7 +139,7 @@
     <value>toolStripContainer1</value>
   </data>
   <data name="toolStripButtonAdd.Text" xml:space="preserve">
-    <value>添加</value>
+    <value>新增</value>
   </data>
   <data name="toolStripButtonEdit.Text" xml:space="preserve">
     <value>編輯</value>
@@ -148,15 +148,15 @@
     <value>刪除</value>
   </data>
   <data name="toolStripButtonView.Text" xml:space="preserve">
-    <value>查看專案</value>
+    <value>查看表項</value>
   </data>
   <data name="toolStripButtonRun.Text" xml:space="preserve">
-    <value>運行</value>
+    <value>執行</value>
   </data>
   <data name="toolStripButtonRefresh.Text" xml:space="preserve">
     <value>刷新</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>小注冊表清潔-啟動管理器</value>
+    <value>迷你注册表清理器-啟動管理</value>
   </data>
 </root>

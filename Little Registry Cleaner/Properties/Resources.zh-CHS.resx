@@ -124,22 +124,19 @@
     <value>成功发送错误报告</value>
   </data>
   <data name="mainAddExcludeEntry" xml:space="preserve">
-    <value>新增选定的注册表项的排除列表</value>
+    <value>已在排除列表加入选定的注册表项</value>
   </data>
   <data name="mainAskExit" xml:space="preserve">
     <value>您确定要退出?</value>
   </data>
-  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>这是您第一次运行的小处清洁。\r\n您要创建一个还原点?</value>
-  </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
-    <value>无法找到小处Cleaner.chm</value>
+    <value>无法找到Little Registry Cleaner.chm</value>
   </data>
   <data name="mainProblemsFix" xml:space="preserve">
-    <value>你想解决问题的所有选择?</value>
+    <value>你想解决所有选择的问题吗?</value>
   </data>
   <data name="mainProblemsRemoved" xml:space="preserve">
-    <value>从注册表中删除的问题</value>
+    <value>删除从注册表中的问题</value>
   </data>
   <data name="mainScanningAborted" xml:space="preserve">
     <value>中止扫描注册表</value>
@@ -154,13 +151,13 @@
     <value>较新版本可用。您是否要下载?</value>
   </data>
   <data name="optionsExcludeDir" xml:space="preserve">
-    <value>选择文件夹，以排除从注册表扫描</value>
+    <value>选择文件夹，以排除注册表扫描</value>
   </data>
   <data name="optionsExcludeEmptyRegPath" xml:space="preserve">
     <value>注册表路径不能为空</value>
   </data>
   <data name="optionsExcludeFile" xml:space="preserve">
-    <value>选择一个文件，从注册表中排除扫描</value>
+    <value>选择一个从注册表中排除扫描的文件</value>
   </data>
   <data name="optionsExcludeInvalidRegPath" xml:space="preserve">
     <value>指定的注册表项不存在</value>
@@ -169,31 +166,31 @@
     <value>你确定?</value>
   </data>
   <data name="optionsSelectBackupDir" xml:space="preserve">
-    <value>选择文件夹备份文件将被放置</value>
+    <value>选择备份文件将被放置的文件夹</value>
   </data>
   <data name="optionsSelectLogDir" xml:space="preserve">
-    <value>选择文件夹的日志文件将被放置</value>
+    <value>选择日志文件将被放置的文件夹</value>
   </data>
   <data name="piErrorRegKey" xml:space="preserve">
-    <value>错误删除注册表项:</value>
+    <value>删除注册表项错误:</value>
   </data>
   <data name="piErrorUninstalling" xml:space="preserve">
-    <value>卸载程序时出错:</value>
+    <value>卸载程序错误:</value>
   </data>
   <data name="piInvalidUninstallString" xml:space="preserve">
-    <value>无法卸载字符串。 要从注册表中手动删除?</value>
+    <value>无法找到卸载字符串。 要从注册表中手动删除吗?</value>
   </data>
   <data name="piSuccessRegKey" xml:space="preserve">
-    <value>无法删除注册表项</value>
+    <value>成功删除注册表项</value>
   </data>
   <data name="piSuccessUninstall" xml:space="preserve">
-    <value>无法卸载程序</value>
+    <value>成功卸载程序</value>
   </data>
   <data name="programAlreadyRunning" xml:space="preserve">
-    <value>另一个程序似乎已经运行...</value>
+    <value>另一个程序似乎已经在运行...</value>
   </data>
   <data name="programNeedAdmin" xml:space="preserve">
-    <value>您必须是管理员才能运行此程序</value>
+    <value>您必须是管理员才能执行此程序</value>
   </data>
   <data name="programNoCT" xml:space="preserve">
     <value>无法找到"Common Tools.dll"</value>
@@ -202,7 +199,7 @@
     <value>你确定?</value>
   </data>
   <data name="restoreError" xml:space="preserve">
-    <value>错误恢复注册表</value>
+    <value>还原注册表错误</value>
   </data>
   <data name="restoreRestored" xml:space="preserve">
     <value>成功地恢复注册表</value>
@@ -214,7 +211,7 @@
     <value>扫描: </value>
   </data>
   <data name="smCannotFindFile" xml:space="preserve">
-    <value>该文件找不到</value>
+    <value>找不到该文件</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
     <value>快捷键/值名称不能为空</value>
@@ -223,7 +220,7 @@
     <value>文件路径不能为空</value>
   </data>
   <data name="smRan" xml:space="preserve">
-    <value>试图运行:</value>
+    <value>试图执行:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
     <value>您确定要删除此启动程序?</value>
@@ -232,7 +229,7 @@
     <value>删除选定的启动程序</value>
   </data>
   <data name="smRun" xml:space="preserve">
-    <value>你确定要运行此程序?</value>
+    <value>你确定要執行此程序?</value>
   </data>
   <data name="umForceUninstall" xml:space="preserve">
     <value>你确定要从注册表中删除该程序?</value>
