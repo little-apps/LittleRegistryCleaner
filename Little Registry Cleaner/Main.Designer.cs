@@ -55,6 +55,13 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.imageListTreeView = new System.Windows.Forms.ImageList(this.components);
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButtonScan = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonFix = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonRestore = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButtonSettings = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonHelp = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.scanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -81,7 +88,7 @@
             this.hungarianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.italianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.japaneseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.persianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lithuaniaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.polishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.russianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.spanishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -101,20 +108,12 @@
             this.checkForUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButtonScan = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonFix = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonRestore = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButtonSettings = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonHelp = new System.Windows.Forms.ToolStripButton();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.hideShowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.lithuaniaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             portugueseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripContainer1.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
@@ -124,8 +123,8 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -151,8 +150,8 @@
             // 
             // toolStripContainer1.TopToolStripPanel
             // 
-            this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.toolStrip1);
             this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.menuStrip1);
+            this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.toolStrip1);
             // 
             // statusStrip1
             // 
@@ -349,6 +348,56 @@
             this.imageListTreeView.Images.SetKeyName(10, "appinfo.ico");
             this.imageListTreeView.Images.SetKeyName(11, "programlocations.ico");
             // 
+            // toolStrip1
+            // 
+            resources.ApplyResources(this.toolStrip1, "toolStrip1");
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButtonScan,
+            this.toolStripButtonFix,
+            this.toolStripButtonRestore,
+            this.toolStripSeparator5,
+            this.toolStripButtonSettings,
+            this.toolStripButtonHelp});
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Stretch = true;
+            // 
+            // toolStripButtonScan
+            // 
+            resources.ApplyResources(this.toolStripButtonScan, "toolStripButtonScan");
+            this.toolStripButtonScan.Name = "toolStripButtonScan";
+            this.toolStripButtonScan.Click += new System.EventHandler(this.ScanRegistry);
+            // 
+            // toolStripButtonFix
+            // 
+            resources.ApplyResources(this.toolStripButtonFix, "toolStripButtonFix");
+            this.toolStripButtonFix.Name = "toolStripButtonFix";
+            this.toolStripButtonFix.Click += new System.EventHandler(this.FixRegistry);
+            // 
+            // toolStripButtonRestore
+            // 
+            resources.ApplyResources(this.toolStripButtonRestore, "toolStripButtonRestore");
+            this.toolStripButtonRestore.Name = "toolStripButtonRestore";
+            this.toolStripButtonRestore.Click += new System.EventHandler(this.RestoreRegistry);
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            resources.ApplyResources(this.toolStripSeparator5, "toolStripSeparator5");
+            // 
+            // toolStripButtonSettings
+            // 
+            resources.ApplyResources(this.toolStripButtonSettings, "toolStripButtonSettings");
+            this.toolStripButtonSettings.Name = "toolStripButtonSettings";
+            this.toolStripButtonSettings.Click += new System.EventHandler(this.OpenOptions);
+            // 
+            // toolStripButtonHelp
+            // 
+            resources.ApplyResources(this.toolStripButtonHelp, "toolStripButtonHelp");
+            this.toolStripButtonHelp.Name = "toolStripButtonHelp";
+            this.toolStripButtonHelp.Click += new System.EventHandler(this.LaunchHelpFile);
+            // 
             // menuStrip1
             // 
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
@@ -461,7 +510,6 @@
             this.italianToolStripMenuItem,
             this.japaneseToolStripMenuItem,
             this.lithuaniaToolStripMenuItem,
-            this.persianToolStripMenuItem,
             this.polishToolStripMenuItem,
             portugueseToolStripMenuItem,
             this.russianToolStripMenuItem,
@@ -541,11 +589,11 @@
             this.japaneseToolStripMenuItem.Name = "japaneseToolStripMenuItem";
             this.japaneseToolStripMenuItem.Click += new System.EventHandler(this.ChangeLanguage);
             // 
-            // persianToolStripMenuItem
+            // lithuaniaToolStripMenuItem
             // 
-            resources.ApplyResources(this.persianToolStripMenuItem, "persianToolStripMenuItem");
-            this.persianToolStripMenuItem.Name = "persianToolStripMenuItem";
-            this.persianToolStripMenuItem.Click += new System.EventHandler(this.ChangeLanguage);
+            resources.ApplyResources(this.lithuaniaToolStripMenuItem, "lithuaniaToolStripMenuItem");
+            this.lithuaniaToolStripMenuItem.Name = "lithuaniaToolStripMenuItem";
+            this.lithuaniaToolStripMenuItem.Click += new System.EventHandler(this.ChangeLanguage);
             // 
             // polishToolStripMenuItem
             // 
@@ -668,56 +716,6 @@
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // toolStrip1
-            // 
-            resources.ApplyResources(this.toolStrip1, "toolStrip1");
-            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButtonScan,
-            this.toolStripButtonFix,
-            this.toolStripButtonRestore,
-            this.toolStripSeparator5,
-            this.toolStripButtonSettings,
-            this.toolStripButtonHelp});
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Stretch = true;
-            // 
-            // toolStripButtonScan
-            // 
-            resources.ApplyResources(this.toolStripButtonScan, "toolStripButtonScan");
-            this.toolStripButtonScan.Name = "toolStripButtonScan";
-            this.toolStripButtonScan.Click += new System.EventHandler(this.ScanRegistry);
-            // 
-            // toolStripButtonFix
-            // 
-            resources.ApplyResources(this.toolStripButtonFix, "toolStripButtonFix");
-            this.toolStripButtonFix.Name = "toolStripButtonFix";
-            this.toolStripButtonFix.Click += new System.EventHandler(this.FixRegistry);
-            // 
-            // toolStripButtonRestore
-            // 
-            resources.ApplyResources(this.toolStripButtonRestore, "toolStripButtonRestore");
-            this.toolStripButtonRestore.Name = "toolStripButtonRestore";
-            this.toolStripButtonRestore.Click += new System.EventHandler(this.RestoreRegistry);
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            resources.ApplyResources(this.toolStripSeparator5, "toolStripSeparator5");
-            // 
-            // toolStripButtonSettings
-            // 
-            resources.ApplyResources(this.toolStripButtonSettings, "toolStripButtonSettings");
-            this.toolStripButtonSettings.Name = "toolStripButtonSettings";
-            this.toolStripButtonSettings.Click += new System.EventHandler(this.OpenOptions);
-            // 
-            // toolStripButtonHelp
-            // 
-            resources.ApplyResources(this.toolStripButtonHelp, "toolStripButtonHelp");
-            this.toolStripButtonHelp.Name = "toolStripButtonHelp";
-            this.toolStripButtonHelp.Click += new System.EventHandler(this.LaunchHelpFile);
-            // 
             // notifyIcon1
             // 
             this.notifyIcon1.ContextMenuStrip = this.contextMenuStrip2;
@@ -757,12 +755,6 @@
             resources.ApplyResources(this.exitToolStripMenuItem1, "exitToolStripMenuItem1");
             this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
-            // lithuaniaToolStripMenuItem
-            // 
-            resources.ApplyResources(this.lithuaniaToolStripMenuItem, "lithuaniaToolStripMenuItem");
-            this.lithuaniaToolStripMenuItem.Name = "lithuaniaToolStripMenuItem";
-            this.lithuaniaToolStripMenuItem.Click += new System.EventHandler(this.ChangeLanguage);
-            // 
             // Main
             // 
             resources.ApplyResources(this, "$this");
@@ -785,10 +777,10 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.contextMenuStrip1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.contextMenuStrip2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -877,7 +869,6 @@
         private System.Windows.Forms.ToolStripMenuItem invertSelectionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem invertSelectionToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem hungarianToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem persianToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem turkishToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lithuaniaToolStripMenuItem;
     }

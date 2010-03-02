@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<desktop scan="40" scanned="20100222234936" built="20100223150242" lang="lt" pane="TLogPane" viewmode="1" col="24" row="Text">
+<desktop scan="40" scanned="20100222234936" built="20100225200024" lang="ar" pane="TLogPane" viewmode="1" col="10" row="Little Registry Cleaner.csproj.Forms.Little_Registry_Cleaner.Main.treeView1.Items[0].Items[0].Text">
   <language id="en" autoime="0" autokeyboard="0"/>
   <language id="fr" autoime="0" autokeyboard="0"/>
   <language id="es" autoime="0" autokeyboard="0"/>
@@ -22,7 +22,7 @@
   <language id="fa" autoime="0" autokeyboard="0"/>
   <language id="lt" autoime="0" autokeyboard="0"/>
   <triggers>
-    <item class="TValidateTrigger" position="2"/>
+    <item class="TValidateTrigger" position="5"/>
   </triggers>
   <sheet>
     <columns>
@@ -59,9 +59,6 @@
   </sheet>
   <path>
     <item>All</item>
-    <item>Common Tools\Common Tools.csproj</item>
-    <item>Forms</item>
-    <item>Common_Tools.DetailsRegKey</item>
   </path>
   <exchange method="exmImportFile" options="[eoSetup,eoSpellChecker,eoLanguages]" author="Nick H." description="Little registry cleaner" packagename="Little registry cleanerRu" showpackage="0">
   </exchange>

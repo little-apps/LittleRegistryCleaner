@@ -418,10 +418,6 @@ namespace Little_Registry_Cleaner
                     ci = new CultureInfo("hu");
                     break;
 
-                case "Persian":
-                    ci = new CultureInfo("fa");
-                    break;
-
                 case "Turkish":
                     ci = new CultureInfo("tr");
                     break;

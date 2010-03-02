@@ -165,24 +165,6 @@
   <data name="toolStripContainer1.Text" xml:space="preserve">
     <value>toolStripContainer1</value>
   </data>
-  <data name="toolStripButtonScan.Text" xml:space="preserve">
-    <value>掃描註冊表</value>
-  </data>
-  <data name="toolStripButtonFix.Text" xml:space="preserve">
-    <value>解決問題</value>
-  </data>
-  <data name="toolStripButtonRestore.Text" xml:space="preserve">
-    <value>還原註冊表</value>
-  </data>
-  <data name="toolStripButtonSettings.Text" xml:space="preserve">
-    <value>選項</value>
-  </data>
-  <data name="toolStripButtonHelp.Text" xml:space="preserve">
-    <value>幫助</value>
-  </data>
-  <data name="toolStrip1.Text" xml:space="preserve">
-    <value>toolStrip1</value>
-  </data>
   <data name="scanToolStripMenuItem.Text" xml:space="preserve">
     <value>掃描註冊表</value>
   </data>
@@ -249,9 +231,6 @@
   <data name="japaneseToolStripMenuItem.Text" xml:space="preserve">
     <value>日語</value>
   </data>
-  <data name="persianToolStripMenuItem.Text" xml:space="preserve">
-    <value>波斯文</value>
-  </data>
   <data name="polishToolStripMenuItem.Text" xml:space="preserve">
     <value>波蘭文</value>
   </data>
@@ -305,6 +284,24 @@
   </data>
   <data name="menuStrip1.Text" xml:space="preserve">
     <value>menuStrip1</value>
+  </data>
+  <data name="toolStripButtonScan.Text" xml:space="preserve">
+    <value>掃描註冊表</value>
+  </data>
+  <data name="toolStripButtonFix.Text" xml:space="preserve">
+    <value>解決問題</value>
+  </data>
+  <data name="toolStripButtonRestore.Text" xml:space="preserve">
+    <value>還原註冊表</value>
+  </data>
+  <data name="toolStripButtonSettings.Text" xml:space="preserve">
+    <value>選項</value>
+  </data>
+  <data name="toolStripButtonHelp.Text" xml:space="preserve">
+    <value>幫助</value>
+  </data>
+  <data name="toolStrip1.Text" xml:space="preserve">
+    <value>toolStrip1</value>
   </data>
   <data name="hideShowToolStripMenuItem.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt, style=Bold</value>

@@ -225,9 +225,6 @@
   <data name="japaneseToolStripMenuItem.Text" xml:space="preserve">
     <value>Japonca</value>
   </data>
-  <data name="persianToolStripMenuItem.Text" xml:space="preserve">
-    <value>Farsça</value>
-  </data>
   <data name="polishToolStripMenuItem.Text" xml:space="preserve">
     <value>Lehçe</value>
   </data>
@@ -308,9 +305,6 @@
   </data>
   <data name="notifyIcon1.Text" xml:space="preserve">
     <value>Little Registry Cleaner</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Little Registry Cleaner</value>
