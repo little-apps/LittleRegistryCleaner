@@ -18,7 +18,7 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="strBugReportAddr" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">http://lilapps.f-snet.com/bugreport.php</Value>
+      <Value Profile="(Default)">http://littleapps.co.cc/bugreport.php</Value>
     </Setting>
     <Setting Name="bOptionsAutoUpdate" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>

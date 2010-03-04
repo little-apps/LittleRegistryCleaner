@@ -352,3 +352,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Updated Greek Translations
 - Added Lithuanian Translations
 - Updated Chinese (Simplified & Traditional) Translations
+- Updated Turkish Translations

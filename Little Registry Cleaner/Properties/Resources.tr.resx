@@ -124,28 +124,28 @@
     <value>Hata raporu başarıyla gönderildi</value>
   </data>
   <data name="mainAddExcludeEntry" xml:space="preserve">
-    <value>Ekledi dışlama listesi için kayıt defteri anahtarları seçilen</value>
+    <value>Seçilen kayıt defter anahtarları dışlama listesine eklendi</value>
   </data>
   <data name="mainAskExit" xml:space="preserve">
-    <value>Size çıkmak istediğinizden emin misiniz?</value>
+    <value>Çıkmak istediğinizden emin misiniz?</value>
   </data>
   <data name="mainFirstTimeRestorePoint" xml:space="preserve">
     <value>Bu ilk defa Little Registry Cleaner çalışıyor. Bir geri yükleme noktası oluşturmak ister misiniz?</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
-    <value>Küçük Cleaner.chm Kayıt bulunamadı</value>
+    <value>Little Registry Cleaner.chm kayıdı bulunamadı</value>
   </data>
   <data name="mainProblemsFix" xml:space="preserve">
-    <value>Tüm seçili sorunları gidermek ister misiniz?</value>
+    <value>Seçilen tüm sorunları gidermek ister misiniz?</value>
   </data>
   <data name="mainProblemsRemoved" xml:space="preserve">
-    <value>Kayıt kaldırıldı sorunlar</value>
+    <value>Sorunlar kayıttan kaldırıldı </value>
   </data>
   <data name="mainScanningAborted" xml:space="preserve">
-    <value>Aborted kayıt tarama</value>
+    <value>Kayıt tarama iptal edildi</value>
   </data>
   <data name="mainScanningFinished" xml:space="preserve">
-    <value>Kayıt defteri tarama Biten</value>
+    <value>Kayıt defteri taraması bitti</value>
   </data>
   <data name="mainSelectSections" xml:space="preserve">
     <value>Lütfen taramak için bir bölüm seçin</value>
@@ -154,16 +154,16 @@
     <value>Daha yeni bir sürümü mevcut. Bunu yüklemek ister misiniz?</value>
   </data>
   <data name="optionsExcludeDir" xml:space="preserve">
-    <value>Seçin klasör kayıt tarama dışlamak için</value>
+    <value>Kayıt taramada dışlamak için klasör seçin</value>
   </data>
   <data name="optionsExcludeEmptyRegPath" xml:space="preserve">
-    <value>Kayıt defteri yol boş olamaz</value>
+    <value>Kayıt defter yolu boş olamaz</value>
   </data>
   <data name="optionsExcludeFile" xml:space="preserve">
-    <value>Seçin kayıt tarama dışlamak için dosya</value>
+    <value>Kayıt taramada dışlamak için dosya seçiniz</value>
   </data>
   <data name="optionsExcludeInvalidRegPath" xml:space="preserve">
-    <value>Belirtilen kayıt defteri anahtarı yoksa</value>
+    <value>Belirtilen kayıt defter anahtarı yok</value>
   </data>
   <data name="optionsExcludeRemove" xml:space="preserve">
     <value>Emin misin?</value>
@@ -181,7 +181,7 @@
     <value>Hata kaldırma programı:</value>
   </data>
   <data name="piInvalidUninstallString" xml:space="preserve">
-    <value>Kaldırmak dize bulunamadı. Elle kayıt kaldırmak istiyor?</value>
+    <value>Kaldırmak dize bulunamadı. Elle kayıt kaldırmak istiyormusunuz?</value>
   </data>
   <data name="piSuccessRegKey" xml:space="preserve">
     <value>Başarılı bir kayıt defteri anahtarı kaldırılır</value>
@@ -190,7 +190,7 @@
     <value>Programı başarıyla kaldırıldı</value>
   </data>
   <data name="programAlreadyRunning" xml:space="preserve">
-    <value>Başka bir program zaten çalışıyor gibi görünüyor...</value>
+    <value>Zaten başka bir program çalışıyor...</value>
   </data>
   <data name="programNeedAdmin" xml:space="preserve">
     <value>Bu programı çalıştırmak için bir yönetici olması gerekir</value>
@@ -202,51 +202,51 @@
     <value>Emin misin?</value>
   </data>
   <data name="restoreError" xml:space="preserve">
-    <value>Hata geri kayıt</value>
+    <value>Hata restore eden kayıt</value>
   </data>
   <data name="restoreRestored" xml:space="preserve">
-    <value>Başarıyla kayıt geri</value>
+    <value>Başarıyla kayıt geri alında</value>
   </data>
   <data name="scanDlgExit" xml:space="preserve">
     <value>Emin misin?</value>
   </data>
   <data name="scanDlgProgressBarScanning" xml:space="preserve">
-    <value>Tarama: </value>
+    <value>Tarıyor: </value>
   </data>
   <data name="smCannotFindFile" xml:space="preserve">
     <value>Dosya bulunamadı</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
-    <value>Kısayol / Değer adı boş olamaz</value>
+    <value>Kısayol/Değer adı boş olamaz</value>
   </data>
   <data name="smEmptyPath" xml:space="preserve">
     <value>Dosya yolu boş olamaz</value>
   </data>
   <data name="smRan" xml:space="preserve">
-    <value>Çalıştırmak için Girişiminde:</value>
+    <value>Çalışmak için kalkışan:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>Bunu başlangıç programı kaldırmak istediğinizden emin misiniz?</value>
+    <value>Bu başlangıç programı kaldırmak istediğinizden emin misiniz?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
-    <value>Kaldırılan seçilen başlangıç programı</value>
+    <value>Seçilen başlangıç programı kaldırıldı</value>
   </data>
   <data name="smRun" xml:space="preserve">
-    <value>Size bu programı çalıştırmak istediğiniz emin misiniz?</value>
+    <value>Bu programı çalıştırmak istediğinizden emin misiniz?</value>
   </data>
   <data name="umForceUninstall" xml:space="preserve">
-    <value>Size kayıt Bu programı kaldırmak istediğinizden emin misiniz?</value>
+    <value>Bu programı kaldırmak istediğinizden emin misiniz?</value>
   </data>
   <data name="umSearchText" xml:space="preserve">
-    <value>İsme göre ara</value>
+    <value>İsime göre ara</value>
   </data>
   <data name="umUninstall" xml:space="preserve">
     <value>Bunu kaldırmak istediğinizden emin misiniz?</value>
   </data>
   <data name="updateLatest" xml:space="preserve">
-    <value>Sen en son sürümüne sahip</value>
+    <value>En son sürümüne sahipsiniz</value>
   </data>
   <data name="updateNewer" xml:space="preserve">
-    <value>Yeni sürümü</value>
+    <value>Yeni sürümü mevcuttur</value>
   </data>
 </root>

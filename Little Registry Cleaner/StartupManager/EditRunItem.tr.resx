@@ -120,10 +120,10 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="buttonCancel.Text" xml:space="preserve">
-    <value>Iptal</value>
+    <value>İptal</value>
   </data>
   <data name="buttonOk.Text" xml:space="preserve">
-    <value>TAMAM</value>
+    <value>Tamam</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Argümanlar:</value>
@@ -132,9 +132,9 @@
     <value>Dosya:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Değiştir Başlangıç Giriş</value>
+    <value>Başlangıç Girişini Değiştir</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Değiştir Run Öğe</value>
+    <value>Çalışan Öğe Değiştir</value>
   </data>
 </root>

@@ -120,12 +120,12 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="buttonDownload.Text" xml:space="preserve">
-    <value>Indirmek</value>
+    <value>İndir</value>
   </data>
   <data name="buttonChangelog.Text" xml:space="preserve">
     <value>Changelog</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Kontrol güncelleme için</value>
+    <value>Güncelleme için kontrol et</value>
   </data>
 </root>

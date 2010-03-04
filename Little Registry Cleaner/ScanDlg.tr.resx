@@ -127,15 +127,15 @@
     <value>No</value>
   </data>
   <data name="labelProblems.Text" xml:space="preserve">
-    <value>Sorunlar Found: </value>
+    <value>Bulunan Sorunlar: </value>
   </data>
   <data name="buttonStop.Text" xml:space="preserve">
-    <value>Durdurmak</value>
+    <value>Durdur</value>
   </data>
   <data name="textBoxSubKey.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Küçük Registry Cleaner - Tarama...</value>
+    <value>Little Registry Cleaner - Tarıyor...</value>
   </data>
 </root>

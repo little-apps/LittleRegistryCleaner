@@ -121,7 +121,7 @@
     <value>ActiveX / COM Nesneleri</value>
   </data>
   <data name="ApplicationInfo" xml:space="preserve">
-    <value>Başvuru Bilgileri</value>
+    <value>Uygulama Bilgileri</value>
   </data>
   <data name="ApplicationPaths" xml:space="preserve">
     <value>Uygulama Yolları</value>
@@ -130,7 +130,7 @@
     <value>Uygulama Ayarlar</value>
   </data>
   <data name="InvalidFile" xml:space="preserve">
-    <value>Geçersiz dosya veya klasörü</value>
+    <value>Geçersiz dosya veya klasör</value>
   </data>
   <data name="InvalidFileExt" xml:space="preserve">
     <value>Kullanılmayan Dosya Uzantısı</value>
@@ -166,7 +166,7 @@
     <value>Eski kayıt defteri anahtarı</value>
   </data>
   <data name="RecentDocs" xml:space="preserve">
-    <value>Son Belgeler</value>
+    <value>En son Belgeler</value>
   </data>
   <data name="SharedDLLs" xml:space="preserve">
     <value>Paylaşılan DLL</value>

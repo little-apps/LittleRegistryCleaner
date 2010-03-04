@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<desktop scan="40" scanned="20100222234936" built="20100225200024" lang="ar" pane="TLogPane" viewmode="1" col="10" row="Little Registry Cleaner.csproj.Forms.Little_Registry_Cleaner.Main.treeView1.Items[0].Items[0].Text">
+<desktop scan="40" scanned="20100222234936" built="20100301213841" lang="ar" pane="TLogPane" viewmode="1" col="10" row="mainFirstTimeRestorePoint">
   <language id="en" autoime="0" autokeyboard="0"/>
   <language id="fr" autoime="0" autokeyboard="0"/>
   <language id="es" autoime="0" autokeyboard="0"/>
@@ -19,38 +19,37 @@
   <language id="tr" autoime="0" autokeyboard="0"/>
   <language id="pl" autoime="0" autokeyboard="0"/>
   <language id="hu" autoime="0" autokeyboard="0"/>
-  <language id="fa" autoime="0" autokeyboard="0"/>
   <language id="lt" autoime="0" autokeyboard="0"/>
   <triggers>
-    <item class="TValidateTrigger" position="5"/>
+    <item class="TRemoveUnusedItemsTrigger" position="2"/>
+    <item class="TValidateTrigger" position="1"/>
   </triggers>
   <sheet>
     <columns>
       <item class="TFlagsColumn" width="38"/>
-      <item class="TPathColumn" width="24"/>
+      <item class="TPathColumn" width="25"/>
       <item class="TTranslationStatusColumn" width="93"/>
-      <item class="TOriginalColumn" width="48"/>
-      <item class="TTranslationColumn" lang="es" width="48"/>
-      <item class="TTranslationColumn" lang="pt" width="48"/>
-      <item class="TTranslationColumn" lang="nl" width="48"/>
-      <item class="TTranslationColumn" lang="de" width="48"/>
-      <item class="TTranslationColumn" lang="ru" width="48"/>
-      <item class="TTranslationColumn" lang="el" width="48"/>
-      <item class="TTranslationColumn" lang="ar" width="48"/>
-      <item class="TTranslationColumn" lang="sv" width="48"/>
-      <item class="TTranslationColumn" lang="zh" width="48"/>
-      <item class="TTranslationColumn" lang="zh.tra" width="48"/>
-      <item class="TTranslationColumn" lang="ja" width="48"/>
-      <item class="TTranslationColumn" lang="vi" width="48"/>
-      <item class="TTranslationColumn" lang="th" width="48"/>
-      <item class="TTranslationColumn" lang="pl" width="48"/>
-      <item class="TTranslationColumn" lang="it" width="48"/>
-      <item class="TTranslationColumn" lang="en" width="48"/>
-      <item class="TTranslationColumn" lang="hu" width="48"/>
-      <item class="TTranslationColumn" lang="fr" width="48"/>
-      <item class="TTranslationColumn" lang="fa" width="48"/>
-      <item class="TTranslationColumn" lang="tr" width="48"/>
-      <item class="TTranslationColumn" lang="lt" width="41"/>
+      <item class="TOriginalColumn" width="50"/>
+      <item class="TTranslationColumn" lang="es" width="50"/>
+      <item class="TTranslationColumn" lang="pt" width="50"/>
+      <item class="TTranslationColumn" lang="nl" width="50"/>
+      <item class="TTranslationColumn" lang="de" width="50"/>
+      <item class="TTranslationColumn" lang="ru" width="50"/>
+      <item class="TTranslationColumn" lang="el" width="50"/>
+      <item class="TTranslationColumn" lang="ar" width="50"/>
+      <item class="TTranslationColumn" lang="sv" width="50"/>
+      <item class="TTranslationColumn" lang="zh" width="50"/>
+      <item class="TTranslationColumn" lang="zh.tra" width="50"/>
+      <item class="TTranslationColumn" lang="ja" width="50"/>
+      <item class="TTranslationColumn" lang="vi" width="50"/>
+      <item class="TTranslationColumn" lang="th" width="50"/>
+      <item class="TTranslationColumn" lang="pl" width="50"/>
+      <item class="TTranslationColumn" lang="it" width="50"/>
+      <item class="TTranslationColumn" lang="en" width="50"/>
+      <item class="TTranslationColumn" lang="hu" width="50"/>
+      <item class="TTranslationColumn" lang="fr" width="50"/>
+      <item class="TTranslationColumn" lang="tr" width="50"/>
+      <item class="TTranslationColumn" lang="lt" width="48"/>
     </columns>
     <params origin="soEntireScope">
       <findtext>Little Registry Cleaner</findtext>
@@ -59,8 +58,11 @@
   </sheet>
   <path>
     <item>All</item>
+    <item>Little Registry Cleaner.csproj</item>
+    <item>Strings</item>
+    <item>Little_Registry_Cleaner.Properties.Resources</item>
   </path>
-  <exchange method="exmImportFile" options="[eoSetup,eoSpellChecker,eoLanguages]" author="Nick H." description="Little registry cleaner" packagename="Little registry cleanerRu" showpackage="0">
+  <exchange method="exmExportFile" options="[eoSetup,eoSpellChecker,eoLanguages]" author="Nick H." description="Little registry cleaner" packagename="Little registry cleanerRu" showpackage="0">
   </exchange>
   <export format="efExcel">
     <filter locked="bfBoth">

@@ -133,24 +133,24 @@
     <value>&lt;?xml version="1.0" encoding="UTF-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="treeViewAdv1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,717" /&gt;&lt;Rows Styles="Percent,100.1" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="toolStripButtonAdd.Text" xml:space="preserve">
-    <value>Eklemek</value>
+    <value>Ekle</value>
   </data>
   <data name="toolStripButtonEdit.Text" xml:space="preserve">
     <value>Değiştir</value>
   </data>
   <data name="toolStripButtonDelete.Text" xml:space="preserve">
-    <value>Silmek</value>
+    <value>Sil</value>
   </data>
   <data name="toolStripButtonView.Text" xml:space="preserve">
-    <value>Ürün Profili</value>
+    <value>Ürünü Göster</value>
   </data>
   <data name="toolStripButtonRun.Text" xml:space="preserve">
-    <value>Çalıştırmak</value>
+    <value>Çalıştır</value>
   </data>
   <data name="toolStripButtonRefresh.Text" xml:space="preserve">
-    <value>Refresh</value>
+    <value>Tazele</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Küçük Registry Cleaner - Startup Manager</value>
+    <value>Little Registry Cleaner - Başlangıç Yöneticisi</value>
   </data>
 </root>

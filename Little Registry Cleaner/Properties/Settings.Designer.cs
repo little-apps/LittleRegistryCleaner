@@ -85,7 +85,7 @@ namespace Little_Registry_Cleaner.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://lilapps.f-snet.com/bugreport.php")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://littleapps.co.cc/bugreport.php")]
         public string strBugReportAddr {
             get {
                 return ((string)(this["strBugReportAddr"]));
