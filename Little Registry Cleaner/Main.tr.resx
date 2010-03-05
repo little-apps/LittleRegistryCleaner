@@ -142,7 +142,7 @@
     <value>Tümünü Seçme</value>
   </data>
   <data name="invertSelectionToolStripMenuItem.Text" xml:space="preserve">
-    <value>Tersyüzünü Seç</value>
+    <value>Tersini Seç</value>
   </data>
   <data name="excludeSelectedToolStripMenuItem.Text" xml:space="preserve">
     <value>Seçileni Mahrum Et</value>
@@ -181,7 +181,7 @@
     <value>Tümünü Seçme</value>
   </data>
   <data name="invertSelectionToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Tersyüzünü Seç</value>
+    <value>Tersini Seç</value>
   </data>
   <data name="excludeSelectedToolStripMenuItem1.Text" xml:space="preserve">
     <value>Seçileni Mahrum Et</value>

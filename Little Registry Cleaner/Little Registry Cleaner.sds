@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<desktop scan="40" scanned="20100222234936" built="20100301213841" lang="ar" pane="TLogPane" viewmode="1" col="10" row="mainFirstTimeRestorePoint">
+<desktop scan="40" scanned="20100222234936" built="20100303220938" lang="tr" pane="TLogPane" viewmode="1" col="10" row="mainFirstTimeRestorePoint">
   <language id="en" autoime="0" autokeyboard="0"/>
   <language id="fr" autoime="0" autokeyboard="0"/>
   <language id="es" autoime="0" autokeyboard="0"/>
@@ -21,8 +21,8 @@
   <language id="hu" autoime="0" autokeyboard="0"/>
   <language id="lt" autoime="0" autokeyboard="0"/>
   <triggers>
-    <item class="TRemoveUnusedItemsTrigger" position="2"/>
-    <item class="TValidateTrigger" position="1"/>
+    <item class="TRemoveUnusedItemsTrigger" position="3"/>
+    <item class="TValidateTrigger" position="2"/>
   </triggers>
   <sheet>
     <columns>

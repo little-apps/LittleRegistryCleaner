@@ -211,7 +211,7 @@
     <value>Emin misin?</value>
   </data>
   <data name="scanDlgProgressBarScanning" xml:space="preserve">
-    <value>Tarıyor: </value>
+    <value>Taranan: </value>
   </data>
   <data name="smCannotFindFile" xml:space="preserve">
     <value>Dosya bulunamadı</value>
