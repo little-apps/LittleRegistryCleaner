@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registry>
+<k name="HKEY_CURRENT_USER" problem="Unused File Extension" path="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.bak">
+<k name="Software">
+<k name="Microsoft">
+<k name="Windows">
+<k name="CurrentVersion">
+<k name="Explorer">
+<k name="FileExts">
+<k name=".bak">
+</k>
+</k>
+</k>
+</k>
+</k>
+</k>
+</k>
+</k>
+<k name="HKEY_CURRENT_USER" problem="Unused File Extension" path="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.bzrignore">
+<k name="Software">
+<k name="Microsoft">
+<k name="Windows">
+<k name="CurrentVersion">
+<k name="Explorer">
+<k name="FileExts">
+<k name=".bzrignore">
+</k>
+</k>
+</k>
+</k>
+</k>
+</k>
+</k>
+</k>
+<k name="HKEY_CURRENT_USER" problem="Unused File Extension" path="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.nfp">
+<k name="Software">
+<k name="Microsoft">
+<k name="Windows">
+<k name="CurrentVersion">
+<k name="Explorer">
+<k name="FileExts">
+<k name=".nfp">
+</k>
+</k>
+</k>
+</k>
+</k>
+</k>
+</k>
+</k>
+<k name="HKEY_CURRENT_USER" problem="Unused File Extension" path="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.part">
+<k name="Software">
+<k name="Microsoft">
+<k name="Windows">
+<k name="CurrentVersion">
+<k name="Explorer">
+<k name="FileExts">
+<k name=".part">
+</k>
+</k>
+</k>
+</k>
+</k>
+</k>
+</k>
+</k>
+<k name="HKEY_CURRENT_USER" problem="Unused File Extension" path="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.pas">
+<k name="Software">
+<k name="Microsoft">
+<k name="Windows">
+<k name="CurrentVersion">
+<k name="Explorer">
+<k name="FileExts">
+<k name=".pas">
+</k>
+</k>
+</k>
+</k>
+</k>
+</k>
+</k>
+</k>
+<k name="HKEY_CURRENT_USER" problem="Unused File Extension" path="HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.vdi">
+<k name="Software">
+<k name="Microsoft">
+<k name="Windows">
+<k name="CurrentVersion">
+<k name="Explorer">
+<k name="FileExts">
+<k name=".vdi">
+</k>
+</k>
+</k>
+</k>
+</k>
+</k>
+</k>
+</k>
+</registry>

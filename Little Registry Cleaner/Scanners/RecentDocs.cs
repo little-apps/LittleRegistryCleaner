@@ -35,25 +35,31 @@ namespace Little_Registry_Cleaner.Scanners
 
         public static void Scan()
         {
+            ScanMUICache();
+            ScanExplorerDocs();
+        }
+
+        /// <summary>
+        /// Checks MUI Cache for invalid file references (XP Only)
+        /// </summary>
+        private static void ScanMUICache()
+        {
             try
             {
-                using (RegistryKey regKey = Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RecentDocs"))
+                using (RegistryKey regKey = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\ShellNoRoam\MUICache"))
                 {
                     if (regKey == null)
                         return;
 
-                    Main.Logger.WriteLine("Cleaning invalid references in " + regKey.Name);
-
-                    FindInvalidLinks(regKey);
-
-                    foreach (string strSubKey in regKey.GetSubKeyNames())
+                    foreach (string valueName in regKey.GetValueNames())
                     {
-                        RegistryKey regKey2 = regKey.OpenSubKey(strSubKey);
-
-                        if (regKey2 == null)
+                        if (valueName.StartsWith("@") || valueName == "LangID")
                             continue;
 
-                        FindInvalidLinks(regKey2);
+                        ScanDlg.UpdateScanningObject(valueName);
+
+                        if (!Utils.FileExists(valueName))
+                            ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.Name, valueName);
                     }
                 }
             }
@@ -61,35 +67,59 @@ namespace Little_Registry_Cleaner.Scanners
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
             }
-
         }
 
-        private static void FindInvalidLinks(RegistryKey regKey)
+        /// <summary>
+        /// Recurses through the recent documents registry keys for invalid files
+        /// </summary>
+        private static void ScanExplorerDocs()
         {
-            if (regKey == null)
-                return;
-            
-            string strRecentDocs = Environment.GetFolderPath(Environment.SpecialFolder.Recent);
-
-            foreach (string strValueName in regKey.GetValueNames())
+            try 
             {
-                // Ignore MRUListEx and others
-                if (!Regex.IsMatch(strValueName, "[0-9]"))
-                    continue;
+                string strRecentDocs = Environment.GetFolderPath(Environment.SpecialFolder.Recent);
 
-                string strFileName = ExtractUnicodeStringFromBinary(regKey.GetValue(strValueName));
+                using (RegistryKey regKey = Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RecentDocs"))
+                {
+                    if (regKey == null)
+                        return;
 
-                ScanDlg.UpdateScanningObject(strFileName);
+                    Main.Logger.WriteLine("Cleaning invalid references in " + regKey.Name);
 
-                // See if file exists in Recent Docs folder
-                if (!string.IsNullOrEmpty(strFileName))
-                    if (!Utils.FileExists(string.Format("{0}\\{1}.lnk", strRecentDocs, strFileName)))
-                        ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.ToString(), strValueName);
+                    foreach (string strSubKey in regKey.GetSubKeyNames())
+                    {
+                        RegistryKey subKey = regKey.OpenSubKey(strSubKey);
+
+                        if (subKey == null)
+                            continue;
+
+                        foreach (string strValueName in subKey.GetValueNames())
+                        {
+                            // Ignore MRUListEx and others
+                            if (!Regex.IsMatch(strValueName, "[0-9]"))
+                                continue;
+
+                            string strFileName = ExtractUnicodeStringFromBinary(subKey.GetValue(strValueName));
+
+                            ScanDlg.UpdateScanningObject(strFileName);
+
+                            // See if file exists in Recent Docs folder
+                            if (!string.IsNullOrEmpty(strFileName))
+                                if (!Utils.FileExists(string.Format("{0}\\{1}.lnk", strRecentDocs, strFileName)))
+                                    ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.ToString(), strValueName);
+                        }
+                    }
+                }
             }
-
-            return;
+            catch (System.Security.SecurityException ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
         }
 
+        /// <summary>
+        /// Converts registry value to filename
+        /// </summary>
+        /// <param name="keyObj">Value from registry key</param>
         private static string ExtractUnicodeStringFromBinary(object keyObj)
         {
             string Value = keyObj.ToString();    //get object value 

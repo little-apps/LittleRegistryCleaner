@@ -354,3 +354,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Updated Chinese (Simplified & Traditional) Translations
 - Updated Turkish Translations
 - Changed bug report URL
+- Scans HKCU\Software\Microsoft\Windows\ShellNoRoam\MUICache for invalid file references
