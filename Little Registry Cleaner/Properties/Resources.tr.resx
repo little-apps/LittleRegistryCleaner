@@ -130,7 +130,8 @@
     <value>Çıkmak istediğinizden emin misiniz?</value>
   </data>
   <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>Bu ilk defa Little Registry Cleaner çalışıyor. Bir geri yükleme noktası oluşturmak ister misiniz?</value>
+    <value>Bu küçük Registry Cleaner çalışan ilk zaman.
+Bir geri yükleme noktası oluşturmak istiyorum?</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>Little Registry Cleaner.chm kayıdı bulunamadı</value>

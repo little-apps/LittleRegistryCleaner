@@ -355,3 +355,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Updated Turkish Translations
 - Changed bug report URL
 - Scans HKCU\Software\Microsoft\Windows\ShellNoRoam\MUICache for invalid file references
+- Programs using the Windows Installer can be uninstalled using the uninstall manager
+- Uninstall manager is compatible with 64-bit systems

@@ -85,6 +85,20 @@ namespace Little_Registry_Cleaner.UninstallManager
                 }
             }
 
+            // (x64 registry keys)
+            using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall"))
+            {
+                foreach (string strSubKeyName in regKey.GetSubKeyNames())
+                {
+                    using (RegistryKey subKey = regKey.OpenSubKey(strSubKeyName))
+                    {
+                        if (subKey != null)
+                            listProgInfo.Add(new ProgramInfo(subKey));
+                    }
+                }
+            }
+            
+
             // Populate list view
             foreach (ProgramInfo progInfo in listProgInfo)
             {

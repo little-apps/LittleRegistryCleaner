@@ -130,7 +130,8 @@
     <value>Sind Sie sicher, dass Sie zum Beenden?</value>
   </data>
   <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>Diese Sie das erste Mal Little Registry Cleaner.\r\nMöchten Sie einen Wiederherstellungspunkt erstellen?</value>
+    <value>Diese Sie das erste Mal Little Registry Cleaner.
+Möchten Sie einen Wiederherstellungspunkt erstellen?</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>Nicht finden Little Registry Cleaner.chm</value>

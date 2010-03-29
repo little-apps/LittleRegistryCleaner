@@ -130,7 +130,8 @@
     <value>あなたが終了してもよろしいですか?</value>
   </data>
   <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>これはあなたの最初の時間リトルRegistry Cleanerは、実行している。\Rは\を復元ポイントを作成するようにnWould?</value>
+    <value>この初めてのリトル レジストリ クリーナーを実行しています。
+復元ポイントを作成したいと思います?</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>リトルレジストリCleaner.chmを見つけることができません</value>

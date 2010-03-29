@@ -130,7 +130,8 @@
     <value>Vous êtes vraiment quitter?</value>
   </data>
   <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>Ce votre première fois en cours d'exécution Little Registry Cleaner. vous souhaitez créer un point de restauration de \r\nWould?</value>
+    <value>Ce votre première exécution Little Registry Cleaner.
+Vous souhaitez créer un point de restauration?</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>Impossible de trouver le "Little Registry Cleaner.chm"</value>

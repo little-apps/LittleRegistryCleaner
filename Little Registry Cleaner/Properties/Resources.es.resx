@@ -130,7 +130,8 @@
     <value>Está seguro de que desea salir?</value>
   </data>
   <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>Esta la primera vez que ejecuta Little limpiador de registro. \r\nWould le gustaría crear un punto de restauración?</value>
+    <value>Esta la primera vez que ejecuta Little limpiador de registro.
+Would le gustaría crear un punto de restauración?</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>No se puede encontrar Little Cleaner.chm de registro</value>

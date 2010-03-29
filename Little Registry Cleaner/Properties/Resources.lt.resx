@@ -130,7 +130,8 @@
     <value>Ar tikrai norite išeiti?</value>
   </data>
   <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>Jūs čia pirmą kartą eksploatuoti Little Registry Cleaner. Norėtumėte sukurti atkūrimo tašką?</value>
+    <value>Šis pirmą kartą paleista Little registro πvaresnis.
+Ar norite sukurti atkūrimo tašką?</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>Nepavyko rasti Little Registry Cleaner.chm</value>

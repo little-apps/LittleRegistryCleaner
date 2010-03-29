@@ -129,6 +129,9 @@
   <data name="mainAskExit" xml:space="preserve">
     <value>您确定要退出?</value>
   </data>
+  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
+    <value>此运行小注册表清洁你第一次。 中必须对是否要创建一个还原点?</value>
+  </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>无法找到Little Registry Cleaner.chm</value>
   </data>

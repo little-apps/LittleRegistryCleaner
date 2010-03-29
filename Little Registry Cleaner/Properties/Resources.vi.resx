@@ -130,7 +130,7 @@
     <value>Bạn có chắc bạn muốn thoát ra?</value>
   </data>
   <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>Điều này của bạn lần đầu tiên chạy Little Registry Cleaner.\r\nBạn có muốn tạo một điểm khôi phục?</value>
+    <value>Lần đầu tiên bạn chạy Little Registry Cleaner. Bạn có muốn tạo một điểm khôi phục?</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>Không tìm thấy Little Registry Cleaner.chm</value>

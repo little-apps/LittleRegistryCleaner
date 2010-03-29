@@ -130,7 +130,8 @@
     <value>คุณแน่ใจหรือว่าต้องการออก?</value>
   </data>
   <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>นี้เป็นครั้งแรกของคุณทำงาน Little Registry Cleaner.\r\n คุณต้องการสร้างจุด restore point?</value>
+    <value>นี้ครั้งแรกของคุณเรียกใช้ตัวล้าง Registry Little
+คุณต้องการสร้างจุดคืนค่า?</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>ไม่พบ Little Registry Cleaner.chm</value>

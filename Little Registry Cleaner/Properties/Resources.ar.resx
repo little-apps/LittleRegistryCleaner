@@ -130,8 +130,7 @@
     <value>هل أنت متأكد أنك تريد الخروج?</value>
   </data>
   <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>هذه أول مرة يستخدم ليتل السجل النظيف.\ص
-Would كنت ترغب في إنشاء نقطة استعادة?</value>
+    <value>هذه أول مرة يستخدم ليتل السجل النظيف. هل تريد إنشاء نقطة استعادة?</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>قادر على العثور على قلم ليتل Cleaner.chm</value>

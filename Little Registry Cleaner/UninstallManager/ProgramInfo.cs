@@ -207,8 +207,20 @@ namespace Little_Registry_Cleaner.UninstallManager
 
             try
             {
-                Process proc = Process.Start(cmdLine);
-                proc.WaitForExit();
+                if (WindowsInstaller)
+                {
+                    // Remove 'msiexec' from uninstall string
+                    string cmdArgs = cmdLine.Substring(cmdLine.IndexOf(' ') + 1);
+
+                    Process proc = Process.Start("msiexec.exe", cmdArgs);
+                    proc.WaitForExit();
+                }
+                else
+                {
+                    // Execute uninstall string
+                    Process proc = Process.Start(cmdLine);
+                    proc.WaitForExit();
+                }
             }
             catch (Exception ex)
             {

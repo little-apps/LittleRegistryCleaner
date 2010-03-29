@@ -130,7 +130,8 @@
     <value>Вы уверены, что хотите выйти?</value>
   </data>
   <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>Это ваш первый запуск Little Registry Cleaner.\R\nВы хотите создать точку восстановления?</value>
+    <value>Это ваш первый запуск Little Registry Cleaner.
+Вы хотите создать точку восстановления?</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>Не удается найти Little Registry Cleaner.chm</value>
