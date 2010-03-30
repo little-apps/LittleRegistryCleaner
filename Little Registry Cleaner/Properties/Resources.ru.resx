@@ -129,9 +129,8 @@
   <data name="mainAskExit" xml:space="preserve">
     <value>Вы уверены, что хотите выйти?</value>
   </data>
-  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>Это ваш первый запуск Little Registry Cleaner.
-Вы хотите создать точку восстановления?</value>
+  <data name="mainFreeWareProgram" xml:space="preserve">
+    <value>Данная программа является бесплатной. Если вы заплатили за копию этой программы, получите возмещение!</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>Не удается найти Little Registry Cleaner.chm</value>

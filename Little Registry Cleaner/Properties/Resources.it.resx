@@ -129,9 +129,8 @@
   <data name="mainAskExit" xml:space="preserve">
     <value>Sei sicuro di voler uscire?</value>
   </data>
-  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>È la prima volta che esegui Little Registry Cleaner.
-Vuoi creare un punto di ripristino?</value>
+  <data name="mainFreeWareProgram" xml:space="preserve">
+    <value>Questo programma è freeware. Se hai pagato per ottenere una copia di questo programma, ottenere un rimborso!</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>Impossibile trovare Little Registry Cleaner.chm</value>
@@ -224,7 +223,7 @@ Vuoi creare un punto di ripristino?</value>
     <value>Il percorso del file non può essere vuoto</value>
   </data>
   <data name="smRan" xml:space="preserve">
-    <value>Tentativo di esecuzione: </value>
+    <value>Tentativo di esecuzione:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
     <value>Sei sicuro di voler rimuovere questo programma di avvio?</value>

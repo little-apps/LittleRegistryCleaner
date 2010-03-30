@@ -159,7 +159,7 @@
     <value>Sfoglia...</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
-    <value>Selezionare la cartella per il backup delle modifiche al registro</value>
+    <value>Selezionare la cartella per il backup delle modifiche al registro </value>
   </data>
   <data name="buttonBrowse2.Text" xml:space="preserve">
     <value>Sfoglia...</value>

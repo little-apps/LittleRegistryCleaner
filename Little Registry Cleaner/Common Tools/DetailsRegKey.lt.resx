@@ -142,7 +142,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelValueName.Text" xml:space="preserve">
-    <value>Pavadinimas</value>
+    <value>Pavadinimas:</value>
   </data>
   <data name="labelValueName1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>

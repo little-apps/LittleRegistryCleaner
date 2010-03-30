@@ -159,7 +159,7 @@
     <value>瀏覽...</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
-    <value>選擇一個備份文件夾來備份刪除的註冊表項</value>
+    <value>選擇一個備份文件夾來備份刪除的註冊表項 </value>
   </data>
   <data name="buttonBrowse2.Text" xml:space="preserve">
     <value>瀏覽...</value>

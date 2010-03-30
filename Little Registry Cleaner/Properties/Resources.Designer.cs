@@ -97,12 +97,11 @@ namespace Little_Registry_Cleaner.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to This your first time running Little Registry Cleaner.
-        ///Would you like to create a restore point?.
+        ///   Looks up a localized string similar to This program is freeware. If you paid for a copy of this program, get a refund!.
         /// </summary>
-        internal static string mainFirstTimeRestorePoint {
+        internal static string mainFreeWareProgram {
             get {
-                return ResourceManager.GetString("mainFirstTimeRestorePoint", resourceCulture);
+                return ResourceManager.GetString("mainFreeWareProgram", resourceCulture);
             }
         }
         

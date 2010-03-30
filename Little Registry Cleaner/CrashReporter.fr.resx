@@ -129,7 +129,7 @@
     <value>Tahoma, 8.25pt, style=Bold</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Une exception s'est produite dans un composant de Little Registry Cleaner. Nous avons créé un rapport d'erreur que vous pouvez nous envoyer. Nous traiterons ce rapport comme confidentiel et anonyme。</value>
+    <value>Une exception s'est produite dans un composant de Little Registry Cleaner. Nous avons créé un rapport d'erreur que vous pouvez nous envoyer. Nous traiterons ce rapport comme confidentiel et anonyme。.</value>
   </data>
   <data name="buttonDontSend.Text" xml:space="preserve">
     <value>Ne pas envoyer</value>

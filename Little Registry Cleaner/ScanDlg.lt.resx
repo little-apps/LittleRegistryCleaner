@@ -127,7 +127,7 @@
     <value>No</value>
   </data>
   <data name="labelProblems.Text" xml:space="preserve">
-    <value>Aptiktos problemos</value>
+    <value>Aptiktos problemos: </value>
   </data>
   <data name="buttonStop.Text" xml:space="preserve">
     <value>Sustoti</value>

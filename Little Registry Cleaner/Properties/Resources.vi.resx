@@ -129,8 +129,8 @@
   <data name="mainAskExit" xml:space="preserve">
     <value>Bạn có chắc bạn muốn thoát ra?</value>
   </data>
-  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>Lần đầu tiên bạn chạy Little Registry Cleaner. Bạn có muốn tạo một điểm khôi phục?</value>
+  <data name="mainFreeWareProgram" xml:space="preserve">
+    <value>Chương trình này là phần mềm miễn phí. Nếu bạn trả tiền cho một bản sao của chương trình này, được hoàn phí!</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>Không tìm thấy Little Registry Cleaner.chm</value>

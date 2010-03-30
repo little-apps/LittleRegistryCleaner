@@ -225,6 +225,9 @@
   <data name="japaneseToolStripMenuItem.Text" xml:space="preserve">
     <value>Japán</value>
   </data>
+  <data name="lithuaniaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Litván</value>
+  </data>
   <data name="polishToolStripMenuItem.Text" xml:space="preserve">
     <value>Lengyel</value>
   </data>

@@ -159,7 +159,7 @@
     <value>Bläddra...</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
-    <value>Välj en mapp att säkerhetskopiera borttagna registerposterna till</value>
+    <value>Välj en mapp att säkerhetskopiera borttagna registerposterna till </value>
   </data>
   <data name="buttonBrowse2.Text" xml:space="preserve">
     <value>Bläddra...</value>

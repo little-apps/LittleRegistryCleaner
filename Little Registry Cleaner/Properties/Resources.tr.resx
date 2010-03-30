@@ -129,9 +129,8 @@
   <data name="mainAskExit" xml:space="preserve">
     <value>Çıkmak istediğinizden emin misiniz?</value>
   </data>
-  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>Bu küçük Registry Cleaner çalışan ilk zaman.
-Bir geri yükleme noktası oluşturmak istiyorum?</value>
+  <data name="mainFreeWareProgram" xml:space="preserve">
+    <value>Ücretsiz olan bu programdır. Bu programın bir kopyası için ödenen para iadesi elde!</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>Little Registry Cleaner.chm kayıdı bulunamadı</value>
@@ -140,7 +139,7 @@ Bir geri yükleme noktası oluşturmak istiyorum?</value>
     <value>Seçilen tüm sorunları gidermek ister misiniz?</value>
   </data>
   <data name="mainProblemsRemoved" xml:space="preserve">
-    <value>Sorunlar kayıttan kaldırıldı </value>
+    <value>Sorunlar kayıttan kaldırıldı</value>
   </data>
   <data name="mainScanningAborted" xml:space="preserve">
     <value>Kayıt tarama iptal edildi</value>

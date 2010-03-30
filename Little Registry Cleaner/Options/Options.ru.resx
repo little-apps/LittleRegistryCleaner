@@ -159,7 +159,7 @@
     <value>Обзор...</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
-    <value>Выберите папку для резервного копирования удаленных элементов реестра</value>
+    <value>Выберите папку для резервного копирования удаленных элементов реестра </value>
   </data>
   <data name="buttonBrowse2.Text" xml:space="preserve">
     <value>Обзор...</value>

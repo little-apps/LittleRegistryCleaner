@@ -129,9 +129,8 @@
   <data name="mainAskExit" xml:space="preserve">
     <value>Tem certeza de que deseja sair?</value>
   </data>
-  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>Esta é a primeira vez que você executa o Little Registry Cleaner.
-Gostaria de criar um ponto de restauração?</value>
+  <data name="mainFreeWareProgram" xml:space="preserve">
+    <value>Este programa é freeware. Se você paga para obter uma cópia deste programa, obter um reembolso!</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>Não foi possível encontrar Little Registry Cleaner.chm</value>
@@ -212,7 +211,7 @@ Gostaria de criar um ponto de restauração?</value>
     <value>Tem certeza?</value>
   </data>
   <data name="scanDlgProgressBarScanning" xml:space="preserve">
-    <value>Efetuando varredura...</value>
+    <value>Digitalização: </value>
   </data>
   <data name="smCannotFindFile" xml:space="preserve">
     <value>O arquivo não pôde ser encontrado</value>

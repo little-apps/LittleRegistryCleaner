@@ -139,7 +139,7 @@
     <value>すべて選択</value>
   </data>
   <data name="selectNoneToolStripMenuItem.Text" xml:space="preserve">
-    <value>[なし] を選択します。</value>
+    <value>[なし] を選択します</value>
   </data>
   <data name="invertSelectionToolStripMenuItem.Text" xml:space="preserve">
     <value>逆選択</value>
@@ -184,7 +184,7 @@
     <value>すべて選択</value>
   </data>
   <data name="selectNoneToolStripMenuItem1.Text" xml:space="preserve">
-    <value>[なし] を選択します。</value>
+    <value>[なし] を選択します</value>
   </data>
   <data name="invertSelectionToolStripMenuItem1.Text" xml:space="preserve">
     <value>逆選択</value>
@@ -230,6 +230,9 @@
   </data>
   <data name="japaneseToolStripMenuItem.Text" xml:space="preserve">
     <value>日本語</value>
+  </data>
+  <data name="lithuaniaToolStripMenuItem.Text" xml:space="preserve">
+    <value>リトアニア語</value>
   </data>
   <data name="polishToolStripMenuItem.Text" xml:space="preserve">
     <value>ポーランド</value>

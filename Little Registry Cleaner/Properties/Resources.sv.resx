@@ -129,9 +129,8 @@
   <data name="mainAskExit" xml:space="preserve">
     <value>Är du säker på att du vill avsluta?</value>
   </data>
-  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>Esta sua primeira vez que funciona pouco líquido de limpeza do registro.
-Você gosta de criar um ponto do restore?</value>
+  <data name="mainFreeWareProgram" xml:space="preserve">
+    <value>Det här programmet är freeware. Om du har betalat för en kopia av det här programmet kan få en återbetalning!</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>Inte hitta Little Registry Cleaner.chm</value>

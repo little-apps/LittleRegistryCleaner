@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="crashReporterFail" xml:space="preserve">
-    <value>Le rapport de bogue n'a pas pu être envoyé.</value>
+    <value>Le rapport de bogue n'a pas pu être envoyé</value>
   </data>
   <data name="crashReporterSuccess" xml:space="preserve">
     <value>Rapport de bogue envoyé</value>
@@ -129,9 +129,8 @@
   <data name="mainAskExit" xml:space="preserve">
     <value>Vous êtes vraiment quitter?</value>
   </data>
-  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>Ce votre première exécution Little Registry Cleaner.
-Vous souhaitez créer un point de restauration?</value>
+  <data name="mainFreeWareProgram" xml:space="preserve">
+    <value>Ce programme est gratuit. Si vous avez payé pour obtenir une copie de ce programme, obtenir un remboursement.!</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>Impossible de trouver le "Little Registry Cleaner.chm"</value>
@@ -146,7 +145,7 @@ Vous souhaitez créer un point de restauration?</value>
     <value>Abandonné l'analyse du registre</value>
   </data>
   <data name="mainScanningFinished" xml:space="preserve">
-    <value>L'analyse est terminée le registre.</value>
+    <value>L'analyse est terminée le registre</value>
   </data>
   <data name="mainSelectSections" xml:space="preserve">
     <value>Veuillez sélectionner une section à analyser</value>
@@ -194,7 +193,7 @@ Vous souhaitez créer un point de restauration?</value>
     <value>Un autre programme semble être en cours d'exécution déjà...</value>
   </data>
   <data name="programNeedAdmin" xml:space="preserve">
-    <value>Vous devez être administrateur pour exécuter ce programme.</value>
+    <value>Vous devez être administrateur pour exécuter ce programme</value>
   </data>
   <data name="programNoCT" xml:space="preserve">
     <value>Impossible de trouver le "Common Tools.dll"</value>
@@ -215,7 +214,7 @@ Vous souhaitez créer un point de restauration?</value>
     <value>L'analyse: </value>
   </data>
   <data name="smCannotFindFile" xml:space="preserve">
-    <value>Le fichier n'a pas pu être trouvé.</value>
+    <value>Le fichier n'a pas pu être trouvé</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
     <value>Le nom du raccourci/valeur ne peut pas être vide</value>
@@ -245,7 +244,7 @@ Vous souhaitez créer un point de restauration?</value>
     <value>Vous souhaitez désinstaller ce programme vraiment?</value>
   </data>
   <data name="updateLatest" xml:space="preserve">
-    <value>Vous avez la dernière version.</value>
+    <value>Vous avez la dernière version</value>
   </data>
   <data name="updateNewer" xml:space="preserve">
     <value>Une version plus récente disponible</value>

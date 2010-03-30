@@ -246,14 +246,15 @@ namespace Little_Registry_Cleaner
             // Increase number to program starts
             Properties.Settings.Default.nProgramStarts += 1;
 
-            // Check if we need to create restore point
+            /***********************************************************************************/
+            /* CHANGING OR REMOVING THE CODE BELOW WILL VIOLATE THE GNU GENERAL PUBLIC LICENSE */
             if (Properties.Settings.Default.nProgramStarts == 1)
             {
-                if (MessageBox.Show(this, Properties.Resources.mainFirstTimeRestorePoint, Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                {
-                    SysRestore.FirstRunRestore("First time running Little Registry Cleaner");
-                }
+                MessageBox.Show(this, Properties.Resources.mainFreeWareProgram, "Little Registry Cleaner", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            /* CHANGING OR REMOVING THE CODE ABOVE WILL VIOLATE THE GNU GENERAL PUBLIC LICENSE */
+            /***********************************************************************************/
+
         }
 
         private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)

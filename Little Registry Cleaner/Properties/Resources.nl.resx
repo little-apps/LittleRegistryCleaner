@@ -129,9 +129,8 @@
   <data name="mainAskExit" xml:space="preserve">
     <value>Weet u zeker dat u wilt afsluiten?</value>
   </data>
-  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>Dit is de eerste keer dat u Kleine Registerreiniger gebruikt.
-Wilt u een herstelpunt aanmaken?</value>
+  <data name="mainFreeWareProgram" xml:space="preserve">
+    <value>Dit programma is freeware. Als u een kopie van dit programma betaald, krijgen een restitutie!</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>Kan Little Registry Cleaner.chm niet vinden</value>

@@ -129,8 +129,8 @@
   <data name="mainAskExit" xml:space="preserve">
     <value>هل أنت متأكد أنك تريد الخروج?</value>
   </data>
-  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>هذه أول مرة يستخدم ليتل السجل النظيف. هل تريد إنشاء نقطة استعادة?</value>
+  <data name="mainFreeWareProgram" xml:space="preserve">
+    <value>ويعد هذا البرنامج مجانية. إذا كنت تدفع لنسخة من هذا البرنامج، الحصول على رد!</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>قادر على العثور على قلم ليتل Cleaner.chm</value>

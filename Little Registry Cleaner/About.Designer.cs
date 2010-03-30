@@ -37,12 +37,15 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonClose = new System.Windows.Forms.Button();
             this.buttonWebsite = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.pictureBox2);
             this.groupBox2.Controls.Add(this.linkLabelAuthor);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.richTextBox1);
@@ -96,6 +99,14 @@
             this.buttonWebsite.UseVisualStyleBackColor = true;
             this.buttonWebsite.Click += new System.EventHandler(this.buttonWebsite_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // About
             // 
             this.AcceptButton = this.buttonClose;
@@ -114,6 +125,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -128,5 +140,6 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.LinkLabel linkLabelAuthor;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

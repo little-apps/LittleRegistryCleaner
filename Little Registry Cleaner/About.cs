@@ -62,5 +62,10 @@ namespace Little_Registry_Cleaner
         {
             Utils.LaunchURI(e.LinkText);
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Utils.LaunchURI("http://sourceforge.net/donate/index.php?group_id=223978");
+        }
     }
 }

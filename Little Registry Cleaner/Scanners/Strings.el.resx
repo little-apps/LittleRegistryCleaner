@@ -133,7 +133,7 @@
     <value>Λάθος αρχείο ή φάκελος</value>
   </data>
   <data name="InvalidFileExt" xml:space="preserve">
-    <value>Αχρησιμοποίητη επέκταση αρχείου </value>
+    <value>Αχρησιμοποίητη επέκταση αρχείου</value>
   </data>
   <data name="InvalidInprocServer" xml:space="preserve">
     <value>Δεν είναι δυνατή η εύρεση του InprocServer</value>
@@ -154,7 +154,7 @@
     <value>Λείπει η αναφορά AppID</value>
   </data>
   <data name="MissingCLSID" xml:space="preserve">
-    <value>Λείπει η αναφορά CLSID </value>
+    <value>Λείπει η αναφορά CLSID</value>
   </data>
   <data name="MissingProgID" xml:space="preserve">
     <value>Λείπει η αναφορά ProgID</value>

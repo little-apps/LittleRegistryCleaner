@@ -124,14 +124,13 @@
     <value>Pranešimą apie klaidą išsiųstas sėkmingai</value>
   </data>
   <data name="mainAddExcludeEntry" xml:space="preserve">
-    <value>Pasirinkti registro raktai įtraukti į ignoruojamųjų sąrašą </value>
+    <value>Pasirinkti registro raktai įtraukti į ignoruojamųjų sąrašą</value>
   </data>
   <data name="mainAskExit" xml:space="preserve">
     <value>Ar tikrai norite išeiti?</value>
   </data>
-  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>Šis pirmą kartą paleista Little registro πvaresnis.
-Ar norite sukurti atkūrimo tašką?</value>
+  <data name="mainFreeWareProgram" xml:space="preserve">
+    <value>Ši programa yra nemokama. Jeigu jums mokama už šios programos kopiją, gauti grąžinamąją išmoką!</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>Nepavyko rasti Little Registry Cleaner.chm</value>
@@ -191,7 +190,7 @@ Ar norite sukurti atkūrimo tašką?</value>
     <value>Programa sėkmingai pašalinta</value>
   </data>
   <data name="programAlreadyRunning" xml:space="preserve">
-    <value>Kita programos kopija jau veikia</value>
+    <value>Kita programos kopija jau veikia...</value>
   </data>
   <data name="programNeedAdmin" xml:space="preserve">
     <value>Jūs turite turėti administratoriaus teisės, kad paleisti šią programą</value>
@@ -206,7 +205,7 @@ Ar norite sukurti atkūrimo tašką?</value>
     <value>Klaida atkuriant registrą</value>
   </data>
   <data name="restoreRestored" xml:space="preserve">
-    <value>Registras sėkmingai atkurtas </value>
+    <value>Registras sėkmingai atkurtas</value>
   </data>
   <data name="scanDlgExit" xml:space="preserve">
     <value>Ar tikrai?</value>

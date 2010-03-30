@@ -159,7 +159,7 @@
     <value>Tallózás...</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
-    <value>Válasszon egy mappát a törölt bejegyzések biztonsági másolatainak</value>
+    <value>Válasszon egy mappát a törölt bejegyzések biztonsági másolatainak </value>
   </data>
   <data name="buttonBrowse2.Text" xml:space="preserve">
     <value>Tallózás...</value>

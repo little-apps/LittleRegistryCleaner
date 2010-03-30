@@ -159,13 +159,13 @@
     <value>Göz at...</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
-    <value>Silinmiş kayıt defter girdilerini yedeklemek için bir klasör seçin</value>
+    <value>Silinmiş kayıt defter girdilerini yedeklemek için bir klasör seçin </value>
   </data>
   <data name="buttonBrowse2.Text" xml:space="preserve">
     <value>Göz at...</value>
   </data>
   <data name="groupBox3.Text" xml:space="preserve">
-    <value>Kayıtları kaydetmek için bir klasör seçin </value>
+    <value>Kayıtları kaydetmek için bir klasör seçin</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="tabPage1.Text" xml:space="preserve">

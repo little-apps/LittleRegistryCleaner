@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.0.295" date="20100305143447" scan="41" scanned="20100305122951">
+<document version="2.0.300" date="20100328225709" scan="43" scanned="20100328215005">
   <lang id="en"/>
   <lang id="fr"/>
   <lang id="es"/>
@@ -20,7 +20,7 @@
   <lang id="pl"/>
   <lang id="hu"/>
   <lang id="lt"/>
-  <source class="TVisualStudioNetProjectSource" name="Common Tools\Common Tools.csproj" original="en" date="20091119063626" defaultoutputdir="Common Tools\bin\Debug" assemblykind="naLibrary" netversion="net35" toolsversion="net35" rootnamespace="Common_Tools" configuration="Debug">
+  <source class="TVisualStudioNetProjectSource" name="Common Tools\Common Tools.csproj" original="en" date="20091119063626" defaultoutputdir="Common Tools\bin\Debug" assemblykind="naLibrary" netversion="net35" toolsversion="net35" rootnamespace="Common_Tools" configuration="Debug|AnyCPU">
     <outputfile dir="..\bin\Debug"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -77,12 +77,12 @@
             <lang id="lt" status="2">Little Registry Cleaner - išsami informacija...</lang>
           </row>
           <component class="TVisGridPanel" name="tableLayoutPanel1" state="0" type="System.Windows.Forms.TableLayoutPanel" align="alClient" gapbottom="0" gapleft="0" gapright="0" gaptop="0">
-            <columns>
+            <columns countset="1">
               <item class="TVisGridItem" name="Column0" state="0" type="stPercent">
                 <row id="Width" class="TPercentRow" state="0">100.1</row>
               </item>
             </columns>
-            <rows>
+            <rows countset="1">
               <item class="TVisGridItem" name="Row0" state="0" type="stPercent">
                 <row id="Height" class="TPercentRow" state="0">16.66667</row>
               </item>
@@ -249,7 +249,7 @@
       </node>
     </node>
   </source>
-  <source class="TVisualStudioNetProjectSource" name="Little Registry Cleaner.csproj" original="en" date="20091103024848" defaultoutputdir="bin\Debug" netversion="net35" toolsversion="net35" rootnamespace="Little_Registry_Cleaner" configuration="Debug">
+  <source class="TVisualStudioNetProjectSource" name="Little Registry Cleaner.csproj" original="en" date="20091103024848" defaultoutputdir="bin\Debug" netversion="net35" toolsversion="net35" rootnamespace="Little_Registry_Cleaner" configuration="Debug|AnyCPU">
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TColorData</class>
@@ -1049,6 +1049,244 @@
           </component>
           <component class="TVisEdit" name="nodeValueName" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox">
           </component>
+          <component class="TVisPopupMenu" name="contextMenuStrip1" type="System.Windows.Forms.ContextMenuStrip">
+            <row id="Size.Height" state="3">
+              <prev>98</prev>
+              <native>120</native>
+            </row>
+            <row id="Size.Width">162</row>
+            <component class="TVisMenuItem" name="selectAllToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text" state="0">
+                <native>Select All</native>
+                <lang id="en" status="2">Select All</lang>
+                <lang id="fr" status="3">Choisissez tous</lang>
+                <lang id="es" status="2">Seleccionar todo</lang>
+                <lang id="pt" status="2">Selecionar Todos</lang>
+                <lang id="it" status="3">Seleziona tutto</lang>
+                <lang id="nl" status="3">Selecteer alles</lang>
+                <lang id="de" status="2">Wählen Sie alle</lang>
+                <lang id="ru" status="3">Выбрать все</lang>
+                <lang id="el" status="2">Επιλογή όλων</lang>
+                <lang id="ar" status="2">تحديد الكل</lang>
+                <lang id="sv" status="2">Markera alla</lang>
+                <lang id="zh" status="3">选择所有</lang>
+                <lang id="zh.tra" status="3">選擇所有</lang>
+                <lang id="ja" status="2">すべて選択</lang>
+                <lang id="vi" status="2">Chọn Tất cả</lang>
+                <lang id="th" status="2">เลือกทั้งหมด</lang>
+                <lang id="tr" status="2">Tümünü Seç</lang>
+                <lang id="pl" status="3">Zaznacz wszystko</lang>
+                <lang id="hu" status="2">Mind kijelölése</lang>
+                <lang id="lt" status="3">Pažymėti viska</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="selectNoneToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text" state="0">
+                <native>Select None</native>
+                <lang id="en" status="2">Select None</lang>
+                <lang id="fr" status="2">Sélectionnez Aucun</lang>
+                <lang id="es" status="2">Seleccione Ninguno</lang>
+                <lang id="pt" status="2">Selecionar Nenhum</lang>
+                <lang id="it" status="3">Seleziona nessuno</lang>
+                <lang id="nl" status="3">Selecteer niets</lang>
+                <lang id="de" status="2">Wählen Sie keine</lang>
+                <lang id="ru" status="3">Очистить выбор</lang>
+                <lang id="el" status="2">Επιλέξτε "Κανένα"</lang>
+                <lang id="ar" status="2">حدد بلا</lang>
+                <lang id="sv" status="2">Välj Ingen</lang>
+                <lang id="zh" status="3">选择无</lang>
+                <lang id="zh.tra" status="3">選擇無</lang>
+                <lang id="ja" date="20091030211940" status="3">[なし] を選択します。</lang>
+                <lang id="vi" status="2">Chọn Không</lang>
+                <lang id="th" status="2">ไม่มีเลือก</lang>
+                <lang id="tr" status="3">Tümünü Seçme</lang>
+                <lang id="pl" status="3">Odznacz wszystko</lang>
+                <lang id="hu" status="2">Kijelölés megszüntetése</lang>
+                <lang id="lt" status="3">Atšaukti pažymėjimą</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="invertSelectionToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height" state="0">22</row>
+              <row id="Size.Width" state="0">161</row>
+              <row id="Text" state="0">
+                <native>Invert Selection</native>
+                <lang id="en" status="2">Invert Selection</lang>
+                <lang id="fr" status="2">Inverser la sélection</lang>
+                <lang id="es" status="2">Invertir la selección</lang>
+                <lang id="pt" status="2">Inverter Seleção</lang>
+                <lang id="it" status="3">Inverti la selezione</lang>
+                <lang id="nl" status="2">Selectie omkeren</lang>
+                <lang id="de" status="2">Auswahl umkehren</lang>
+                <lang id="ru" status="2">Инвертировать выделение</lang>
+                <lang id="el" status="2">Αντιστροφή της επιλογής</lang>
+                <lang id="ar" status="2">عكس الاختيار</lang>
+                <lang id="sv" status="2">Invertera markering</lang>
+                <lang id="zh" status="3">反选</lang>
+                <lang id="zh.tra" status="3">反選</lang>
+                <lang id="ja" status="2">逆選択</lang>
+                <lang id="vi" status="2">Đảo ngược lựa chọn</lang>
+                <lang id="th" status="2">เลือกกลับกัน</lang>
+                <lang id="tr" date="20100305122922" status="3">Tersini Seç</lang>
+                <lang id="pl" status="2">Odwróć zaznaczenie</lang>
+                <lang id="hu" status="2">Kijelölés megfordítása</lang>
+                <lang id="lt" status="3">Invertuoti  žymėjimą</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="toolStripSeparator1" type="System.Windows.Forms.ToolStripSeparator">
+              <row id="Size.Height">6</row>
+              <row id="Size.Width">158</row>
+            </component>
+            <component class="TVisMenuItem" name="excludeSelectedToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text" state="0">
+                <native>Exclude Selected</native>
+                <lang id="en" status="2">Exclude Selected</lang>
+                <lang id="fr" status="2">Exclure Sélection</lang>
+                <lang id="es" status="2">Excluir seleccionado</lang>
+                <lang id="pt" status="2">Excluir Selecionados</lang>
+                <lang id="it" status="3">Escludi selezionati</lang>
+                <lang id="nl" status="2">Geselecteerde uitsluiten</lang>
+                <lang id="de" status="2">Ausgewählte ausschließen</lang>
+                <lang id="ru" status="3">Исключить выбранные</lang>
+                <lang id="el" status="2">Εξαίρεση επιλεγμένων</lang>
+                <lang id="ar" status="2">استبعاد المحددة</lang>
+                <lang id="sv" status="2">Exkludera vald</lang>
+                <lang id="zh" status="3">排除选择</lang>
+                <lang id="zh.tra" status="3">排除選擇</lang>
+                <lang id="ja" status="2">除外選択</lang>
+                <lang id="vi" status="2">Loại trừ được chọn</lang>
+                <lang id="th" status="2">ยกเว้นเลือก</lang>
+                <lang id="tr" status="3">Seçileni Mahrum Et</lang>
+                <lang id="pl" status="3">Pomiń zaznaczone</lang>
+                <lang id="hu" status="2">Kijelöltek kihagyása</lang>
+                <lang id="lt" status="2">Pašalinti pasirinktus</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="viewInRegeditToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text" state="0">
+                <native>View in regedit</native>
+                <lang id="en" status="2">View in regedit</lang>
+                <lang id="fr" status="2">Voir dans regedit</lang>
+                <lang id="es" status="2">Ver en regedit</lang>
+                <lang id="pt" status="2">Mostrar no regedit</lang>
+                <lang id="it" status="3">Visualizza in Regedit</lang>
+                <lang id="nl" status="3">In regedit weergeven</lang>
+                <lang id="de" status="2">In Regedit anzeigen</lang>
+                <lang id="ru" status="3">Просмотр в regedit</lang>
+                <lang id="el" status="3">Προβολή στο regedit</lang>
+                <lang id="ar" status="2">عرض في regedit</lang>
+                <lang id="sv" status="2">Visa i regedit</lang>
+                <lang id="zh" status="3">输入注册表编辑器查看</lang>
+                <lang id="zh.tra" status="3">輸入註冊表編輯器查看</lang>
+                <lang id="ja" status="2">プロフィールファイル名を指定で</lang>
+                <lang id="vi" status="2">Xem trong regedit</lang>
+                <lang id="th" status="2">ดูใน regedit</lang>
+                <lang id="tr" status="3">Regedit içinde göster</lang>
+                <lang id="pl" status="3">Otwórz w regedit</lang>
+                <lang id="hu" status="2">Nézet regedit-ben</lang>
+                <lang id="lt" status="3">Peržiūrėti regedit aplinkoje</lang>
+              </row>
+            </component>
+          </component>
+          <component class="TVisPopupMenu" name="contextMenuStrip2" type="System.Windows.Forms.ContextMenuStrip">
+            <row id="Size.Height">76</row>
+            <row id="Size.Width">137</row>
+            <component class="TVisMenuItem" name="hideShowToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem" parentfont="0">
+              <row id="Font">Segoe UI,9,style=Bold</row>
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">136</row>
+              <row id="Text" state="0">
+                <native>Hide/Show</native>
+                <lang id="en" status="2">Hide/Show</lang>
+                <lang id="fr" date="20091030210846" status="3">Peau / Exposition</lang>
+                <lang id="es" status="2">Ocultar/mostrar</lang>
+                <lang id="pt" status="2">Mostrar/ocultar</lang>
+                <lang id="it" status="3">Mostra/Nascondi</lang>
+                <lang id="nl" status="3">Verbergen/Tonen</lang>
+                <lang id="de" status="2">Ausblenden/einblenden</lang>
+                <lang id="ru" status="2">Скрыть/Показать</lang>
+                <lang id="el" status="2">Απόκρυψη/Εμφάνιση</lang>
+                <lang id="ar" status="2">إظهار/إخفاء</lang>
+                <lang id="sv" status="2">Dölj/visa</lang>
+                <lang id="zh" status="3">隐藏/显示</lang>
+                <lang id="zh.tra" status="3">隱藏/顯示</lang>
+                <lang id="ja" status="2">非表示/表示</lang>
+                <lang id="vi" date="20091106174632" status="3">Che giấu/Chỉ ra</lang>
+                <lang id="th" status="2">ซ่อน / แสดง</lang>
+                <lang id="tr" status="3">Gizle/göster</lang>
+                <lang id="pl" status="3">Pokaż/Ukryj</lang>
+                <lang id="hu" status="2">Elrejt/mutat</lang>
+                <lang id="lt" status="2">Slėpti / rodyti</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="aboutToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">136</row>
+              <row id="Text" state="0">
+                <native>About...</native>
+                <lang id="en" status="2">About...</lang>
+                <lang id="fr" status="2">À propos de...</lang>
+                <lang id="es" status="2">Acerca de...</lang>
+                <lang id="pt" status="2">Sobre...</lang>
+                <lang id="it" status="3">Informazioni su...</lang>
+                <lang id="nl" status="2">Over...</lang>
+                <lang id="de" status="2">Über...</lang>
+                <lang id="ru" status="3">О программе...</lang>
+                <lang id="el" status="2">Σχετικά με...</lang>
+                <lang id="ar" status="2">حول...</lang>
+                <lang id="sv" status="2">Om...</lang>
+                <lang id="zh" status="3">关于...</lang>
+                <lang id="zh.tra" status="3">關於...</lang>
+                <lang id="ja" status="2">〜について...</lang>
+                <lang id="vi" status="2">Về...</lang>
+                <lang id="th" status="2">เกี่ยวกับ...</lang>
+                <lang id="tr" status="3">İle ilgili…</lang>
+                <lang id="pl" status="3">O programie...</lang>
+                <lang id="hu" status="2">Bővebben...</lang>
+                <lang id="lt" status="2">Apie...</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="toolStripSeparator4" type="System.Windows.Forms.ToolStripSeparator">
+              <row id="Size.Height">6</row>
+              <row id="Size.Width">133</row>
+            </component>
+            <component class="TVisMenuItem" name="exitToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">136</row>
+              <row id="Text" state="0">
+                <native>Exit</native>
+                <lang id="en" status="2">Exit</lang>
+                <lang id="fr" status="3">Sortie</lang>
+                <lang id="es" status="2">Salida</lang>
+                <lang id="pt" status="2">Sair</lang>
+                <lang id="it" status="3">Esci</lang>
+                <lang id="nl" status="3">Einde</lang>
+                <lang id="de" status="2">Ausfahrt</lang>
+                <lang id="ru" status="3">Выход</lang>
+                <lang id="el" status="3">Εξόδος</lang>
+                <lang id="ar" status="2">خروج</lang>
+                <lang id="sv" status="2">Avsluta</lang>
+                <lang id="zh" status="3">退出</lang>
+                <lang id="zh.tra" status="3">退出</lang>
+                <lang id="ja" status="2">終了</lang>
+                <lang id="vi" status="3">Cửa ra</lang>
+                <lang id="th" status="2">ออกจาก</lang>
+                <lang id="tr" status="3">Çık</lang>
+                <lang id="pl" status="3">Zakończ</lang>
+                <lang id="hu" status="2">Kilépés</lang>
+                <lang id="lt" status="2">Atsijungti</lang>
+              </row>
+            </component>
+          </component>
+          <component class="TVisImageList" name="imageListTreeView" type="System.Windows.Forms.ImageList">
+          </component>
           <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer" align="alClient">
             <row id="Location.X">0</row>
             <row id="Location.Y">0</row>
@@ -1107,11 +1345,11 @@
               </component>
             </component>
             <component class="TVisGridPanel" name="tableLayoutPanel1" type="System.Windows.Forms.TableLayoutPanel" align="alClient" gapbottom="0" gapleft="0" gapright="0" gaptop="0">
-              <columns>
+              <columns countset="1">
                 <item class="TVisGridItem" name="Column0"/>
                 <item class="TVisGridItem" name="Column1"/>
               </columns>
-              <rows>
+              <rows countset="1">
                 <item class="TVisGridItem" name="Row0" type="stAbsolute">
                   <row id="Height">405</row>
                 </item>
@@ -1124,10 +1362,10 @@
               </row>
               <row id="Size.Width">809</row>
               <component class="TVisGridPanel" name="tableLayoutPanel2" type="System.Windows.Forms.TableLayoutPanel" align="alClient" gapbottom="0" gapleft="0" gapright="0" gaptop="0">
-                <columns>
+                <columns countset="1">
                   <item class="TVisGridItem" name="Column0"/>
                 </columns>
-                <rows>
+                <rows countset="1">
                   <item class="TVisGridItem" name="Row0" type="stPercent">
                     <row id="Height" class="TPercentRow">100.1</row>
                   </item>
@@ -2864,244 +3102,6 @@
               </component>
             </component>
           </component>
-          <component class="TVisPopupMenu" name="contextMenuStrip1" type="System.Windows.Forms.ContextMenuStrip">
-            <row id="Size.Height" state="3">
-              <prev>98</prev>
-              <native>120</native>
-            </row>
-            <row id="Size.Width">162</row>
-            <component class="TVisMenuItem" name="selectAllToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text" state="0">
-                <native>Select All</native>
-                <lang id="en" status="2">Select All</lang>
-                <lang id="fr" status="3">Choisissez tous</lang>
-                <lang id="es" status="2">Seleccionar todo</lang>
-                <lang id="pt" status="2">Selecionar Todos</lang>
-                <lang id="it" status="3">Seleziona tutto</lang>
-                <lang id="nl" status="3">Selecteer alles</lang>
-                <lang id="de" status="2">Wählen Sie alle</lang>
-                <lang id="ru" status="3">Выбрать все</lang>
-                <lang id="el" status="2">Επιλογή όλων</lang>
-                <lang id="ar" status="2">تحديد الكل</lang>
-                <lang id="sv" status="2">Markera alla</lang>
-                <lang id="zh" status="3">选择所有</lang>
-                <lang id="zh.tra" status="3">選擇所有</lang>
-                <lang id="ja" status="2">すべて選択</lang>
-                <lang id="vi" status="2">Chọn Tất cả</lang>
-                <lang id="th" status="2">เลือกทั้งหมด</lang>
-                <lang id="tr" status="2">Tümünü Seç</lang>
-                <lang id="pl" status="3">Zaznacz wszystko</lang>
-                <lang id="hu" status="2">Mind kijelölése</lang>
-                <lang id="lt" status="3">Pažymėti viska</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="selectNoneToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text" state="0">
-                <native>Select None</native>
-                <lang id="en" status="2">Select None</lang>
-                <lang id="fr" status="2">Sélectionnez Aucun</lang>
-                <lang id="es" status="2">Seleccione Ninguno</lang>
-                <lang id="pt" status="2">Selecionar Nenhum</lang>
-                <lang id="it" status="3">Seleziona nessuno</lang>
-                <lang id="nl" status="3">Selecteer niets</lang>
-                <lang id="de" status="2">Wählen Sie keine</lang>
-                <lang id="ru" status="3">Очистить выбор</lang>
-                <lang id="el" status="2">Επιλέξτε "Κανένα"</lang>
-                <lang id="ar" status="2">حدد بلا</lang>
-                <lang id="sv" status="2">Välj Ingen</lang>
-                <lang id="zh" status="3">选择无</lang>
-                <lang id="zh.tra" status="3">選擇無</lang>
-                <lang id="ja" date="20091030211940" status="3">[なし] を選択します。</lang>
-                <lang id="vi" status="2">Chọn Không</lang>
-                <lang id="th" status="2">ไม่มีเลือก</lang>
-                <lang id="tr" status="3">Tümünü Seçme</lang>
-                <lang id="pl" status="3">Odznacz wszystko</lang>
-                <lang id="hu" status="2">Kijelölés megszüntetése</lang>
-                <lang id="lt" status="3">Atšaukti pažymėjimą</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="invertSelectionToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height" state="0">22</row>
-              <row id="Size.Width" state="0">161</row>
-              <row id="Text" state="0">
-                <native>Invert Selection</native>
-                <lang id="en" status="2">Invert Selection</lang>
-                <lang id="fr" status="2">Inverser la sélection</lang>
-                <lang id="es" status="2">Invertir la selección</lang>
-                <lang id="pt" status="2">Inverter Seleção</lang>
-                <lang id="it" status="3">Inverti la selezione</lang>
-                <lang id="nl" status="2">Selectie omkeren</lang>
-                <lang id="de" status="2">Auswahl umkehren</lang>
-                <lang id="ru" status="2">Инвертировать выделение</lang>
-                <lang id="el" status="2">Αντιστροφή της επιλογής</lang>
-                <lang id="ar" status="2">عكس الاختيار</lang>
-                <lang id="sv" status="2">Invertera markering</lang>
-                <lang id="zh" status="3">反选</lang>
-                <lang id="zh.tra" status="3">反選</lang>
-                <lang id="ja" status="2">逆選択</lang>
-                <lang id="vi" status="2">Đảo ngược lựa chọn</lang>
-                <lang id="th" status="2">เลือกกลับกัน</lang>
-                <lang id="tr" date="20100305122922" status="3">Tersini Seç</lang>
-                <lang id="pl" status="2">Odwróć zaznaczenie</lang>
-                <lang id="hu" status="2">Kijelölés megfordítása</lang>
-                <lang id="lt" status="3">Invertuoti  žymėjimą</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="toolStripSeparator1" type="System.Windows.Forms.ToolStripSeparator">
-              <row id="Size.Height">6</row>
-              <row id="Size.Width">158</row>
-            </component>
-            <component class="TVisMenuItem" name="excludeSelectedToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text" state="0">
-                <native>Exclude Selected</native>
-                <lang id="en" status="2">Exclude Selected</lang>
-                <lang id="fr" status="2">Exclure Sélection</lang>
-                <lang id="es" status="2">Excluir seleccionado</lang>
-                <lang id="pt" status="2">Excluir Selecionados</lang>
-                <lang id="it" status="3">Escludi selezionati</lang>
-                <lang id="nl" status="2">Geselecteerde uitsluiten</lang>
-                <lang id="de" status="2">Ausgewählte ausschließen</lang>
-                <lang id="ru" status="3">Исключить выбранные</lang>
-                <lang id="el" status="2">Εξαίρεση επιλεγμένων</lang>
-                <lang id="ar" status="2">استبعاد المحددة</lang>
-                <lang id="sv" status="2">Exkludera vald</lang>
-                <lang id="zh" status="3">排除选择</lang>
-                <lang id="zh.tra" status="3">排除選擇</lang>
-                <lang id="ja" status="2">除外選択</lang>
-                <lang id="vi" status="2">Loại trừ được chọn</lang>
-                <lang id="th" status="2">ยกเว้นเลือก</lang>
-                <lang id="tr" status="3">Seçileni Mahrum Et</lang>
-                <lang id="pl" status="3">Pomiń zaznaczone</lang>
-                <lang id="hu" status="2">Kijelöltek kihagyása</lang>
-                <lang id="lt" status="2">Pašalinti pasirinktus</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="viewInRegeditToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text" state="0">
-                <native>View in regedit</native>
-                <lang id="en" status="2">View in regedit</lang>
-                <lang id="fr" status="2">Voir dans regedit</lang>
-                <lang id="es" status="2">Ver en regedit</lang>
-                <lang id="pt" status="2">Mostrar no regedit</lang>
-                <lang id="it" status="3">Visualizza in Regedit</lang>
-                <lang id="nl" status="3">In regedit weergeven</lang>
-                <lang id="de" status="2">In Regedit anzeigen</lang>
-                <lang id="ru" status="3">Просмотр в regedit</lang>
-                <lang id="el" status="3">Προβολή στο regedit</lang>
-                <lang id="ar" status="2">عرض في regedit</lang>
-                <lang id="sv" status="2">Visa i regedit</lang>
-                <lang id="zh" status="3">输入注册表编辑器查看</lang>
-                <lang id="zh.tra" status="3">輸入註冊表編輯器查看</lang>
-                <lang id="ja" status="2">プロフィールファイル名を指定で</lang>
-                <lang id="vi" status="2">Xem trong regedit</lang>
-                <lang id="th" status="2">ดูใน regedit</lang>
-                <lang id="tr" status="3">Regedit içinde göster</lang>
-                <lang id="pl" status="3">Otwórz w regedit</lang>
-                <lang id="hu" status="2">Nézet regedit-ben</lang>
-                <lang id="lt" status="3">Peržiūrėti regedit aplinkoje</lang>
-              </row>
-            </component>
-          </component>
-          <component class="TVisPopupMenu" name="contextMenuStrip2" type="System.Windows.Forms.ContextMenuStrip">
-            <row id="Size.Height">76</row>
-            <row id="Size.Width">137</row>
-            <component class="TVisMenuItem" name="hideShowToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem" parentfont="0">
-              <row id="Font">Segoe UI,9,style=Bold</row>
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">136</row>
-              <row id="Text" state="0">
-                <native>Hide/Show</native>
-                <lang id="en" status="2">Hide/Show</lang>
-                <lang id="fr" date="20091030210846" status="3">Peau / Exposition</lang>
-                <lang id="es" status="2">Ocultar/mostrar</lang>
-                <lang id="pt" status="2">Mostrar/ocultar</lang>
-                <lang id="it" status="3">Mostra/Nascondi</lang>
-                <lang id="nl" status="3">Verbergen/Tonen</lang>
-                <lang id="de" status="2">Ausblenden/einblenden</lang>
-                <lang id="ru" status="2">Скрыть/Показать</lang>
-                <lang id="el" status="2">Απόκρυψη/Εμφάνιση</lang>
-                <lang id="ar" status="2">إظهار/إخفاء</lang>
-                <lang id="sv" status="2">Dölj/visa</lang>
-                <lang id="zh" status="3">隐藏/显示</lang>
-                <lang id="zh.tra" status="3">隱藏/顯示</lang>
-                <lang id="ja" status="2">非表示/表示</lang>
-                <lang id="vi" date="20091106174632" status="3">Che giấu/Chỉ ra</lang>
-                <lang id="th" status="2">ซ่อน / แสดง</lang>
-                <lang id="tr" status="3">Gizle/göster</lang>
-                <lang id="pl" status="3">Pokaż/Ukryj</lang>
-                <lang id="hu" status="2">Elrejt/mutat</lang>
-                <lang id="lt" status="2">Slėpti / rodyti</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="aboutToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">136</row>
-              <row id="Text" state="0">
-                <native>About...</native>
-                <lang id="en" status="2">About...</lang>
-                <lang id="fr" status="2">À propos de...</lang>
-                <lang id="es" status="2">Acerca de...</lang>
-                <lang id="pt" status="2">Sobre...</lang>
-                <lang id="it" status="3">Informazioni su...</lang>
-                <lang id="nl" status="2">Over...</lang>
-                <lang id="de" status="2">Über...</lang>
-                <lang id="ru" status="3">О программе...</lang>
-                <lang id="el" status="2">Σχετικά με...</lang>
-                <lang id="ar" status="2">حول...</lang>
-                <lang id="sv" status="2">Om...</lang>
-                <lang id="zh" status="3">关于...</lang>
-                <lang id="zh.tra" status="3">關於...</lang>
-                <lang id="ja" status="2">〜について...</lang>
-                <lang id="vi" status="2">Về...</lang>
-                <lang id="th" status="2">เกี่ยวกับ...</lang>
-                <lang id="tr" status="3">İle ilgili…</lang>
-                <lang id="pl" status="3">O programie...</lang>
-                <lang id="hu" status="2">Bővebben...</lang>
-                <lang id="lt" status="2">Apie...</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="toolStripSeparator4" type="System.Windows.Forms.ToolStripSeparator">
-              <row id="Size.Height">6</row>
-              <row id="Size.Width">133</row>
-            </component>
-            <component class="TVisMenuItem" name="exitToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">136</row>
-              <row id="Text" state="0">
-                <native>Exit</native>
-                <lang id="en" status="2">Exit</lang>
-                <lang id="fr" status="3">Sortie</lang>
-                <lang id="es" status="2">Salida</lang>
-                <lang id="pt" status="2">Sair</lang>
-                <lang id="it" status="3">Esci</lang>
-                <lang id="nl" status="3">Einde</lang>
-                <lang id="de" status="2">Ausfahrt</lang>
-                <lang id="ru" status="3">Выход</lang>
-                <lang id="el" status="3">Εξόδος</lang>
-                <lang id="ar" status="2">خروج</lang>
-                <lang id="sv" status="2">Avsluta</lang>
-                <lang id="zh" status="3">退出</lang>
-                <lang id="zh.tra" status="3">退出</lang>
-                <lang id="ja" status="2">終了</lang>
-                <lang id="vi" status="3">Cửa ra</lang>
-                <lang id="th" status="2">ออกจาก</lang>
-                <lang id="tr" status="3">Çık</lang>
-                <lang id="pl" status="3">Zakończ</lang>
-                <lang id="hu" status="2">Kilépés</lang>
-                <lang id="lt" status="2">Atsijungti</lang>
-              </row>
-            </component>
-          </component>
-          <component class="TVisImageList" name="imageListTreeView" type="System.Windows.Forms.ImageList">
-          </component>
           <component class="TVisHiddenComponent" name="notifyIcon1" type="System.Windows.Forms.NotifyIcon">
             <row id="Text" excluded="1" state="3">
               <prev>Little Register Cleaner</prev>
@@ -3876,12 +3876,12 @@
             <lang id="lt" status="3">Little Registry Cleaner - atkurti registrą</lang>
           </row>
           <component class="TVisGridPanel" name="tableLayoutPanel1" type="System.Windows.Forms.TableLayoutPanel" align="alClient">
-            <columns>
+            <columns countset="1">
               <item class="TVisGridItem" name="Column0" type="stPercent">
                 <row id="Width" class="TPercentRow">100.1</row>
               </item>
             </columns>
-            <rows>
+            <rows countset="1">
               <item class="TVisGridItem" name="Row0" type="stPercent">
                 <row id="Height" class="TPercentRow">7.624633</row>
               </item>
@@ -4964,12 +4964,12 @@
               <lang id="lt">toolStripContainer1</lang>
             </row>
             <component class="TVisGridPanel" name="tableLayoutPanel1" type="System.Windows.Forms.TableLayoutPanel" align="alClient">
-              <columns>
+              <columns countset="1">
                 <item class="TVisGridItem" name="Column0" type="stAbsolute">
                   <row id="Width">717</row>
                 </item>
               </columns>
-              <rows>
+              <rows countset="1">
                 <item class="TVisGridItem" name="Row0" type="stPercent">
                   <row id="Height" class="TPercentRow">100.1</row>
                 </item>
@@ -5306,12 +5306,12 @@
               <lang id="lt">toolStripContainer1</lang>
             </row>
             <component class="TVisGridPanel" name="tableLayoutPanel1" type="System.Windows.Forms.TableLayoutPanel" align="alClient">
-              <columns>
+              <columns countset="1">
                 <item class="TVisGridItem" name="Column0" type="stPercent">
                   <row id="Width" class="TPercentRow">100.1</row>
                 </item>
               </columns>
-              <rows>
+              <rows countset="1">
                 <item class="TVisGridItem" name="Row0" type="stAbsolute">
                   <row id="Height">30</row>
                 </item>
@@ -5721,26 +5721,28 @@
           <lang id="lt" status="2">Ar tikrai norite išeiti?</lang>
         </row>
         <row id="mainFirstTimeRestorePoint" state="3">
-          <prev>This your first time running Little Registry Cleaner. Would you like to create a restore point?</prev>
+          <prev>This your first time running Little Registry Cleaner. \r\n Would you like to create a restore point?</prev>
           <native>This your first time running Little Registry Cleaner.#c#lWould you like to create a restore point?</native>
-          <lang id="en" invalidated="1" status="2">This your first time running Little Registry Cleaner. \r\nWould you like to create a restore point?</lang>
-          <lang id="fr" invalidated="1" status="2">Ce votre première fois en cours d'exécution Little Registry Cleaner. vous souhaitez créer un point de restauration de \r\nWould?</lang>
-          <lang id="es" invalidated="1" status="2">Esta la primera vez que ejecuta Little limpiador de registro. \r\nWould le gustaría crear un punto de restauración?</lang>
-          <lang id="pt" status="2">Esta é a primeira vez que você executa o Little Registry Cleaner.\r\nGostaria de criar um ponto de restauração?</lang>
-          <lang id="it" date="20100113184458" status="3">È la prima volta che esegui Little Registry Cleaner.#nVuoi creare un punto di ripristino?</lang>
-          <lang id="nl" date="20091212111738" status="3">Dit is de eerste keer dat u Kleine Registerreiniger gebruikt.#nWilt u een herstelpunt aanmaken?</lang>
-          <lang id="de" invalidated="1" status="2">Diese Sie das erste Mal Little Registry Cleaner.\r\nMöchten Sie einen Wiederherstellungspunkt erstellen?</lang>
-          <lang id="ru" status="3">Это ваш первый запуск Little Registry Cleaner.\R\nВы хотите создать точку восстановления?</lang>
-          <lang id="el" invalidated="1" status="2">Αυτή η πρώτη φορά που σας τρέχει Little Registry Cleaner.\r\nΘέλετε να δημιουργήσετε ένα σημείο επαναφοράς?</lang>
-          <lang id="ar" date="20100301213831" status="3">هذه أول مرة يستخدم ليتل السجل النظيف.\ص#nWould كنت ترغب في إنشاء نقطة استعادة?</lang>
-          <lang id="sv" status="2">Esta sua primeira vez que funciona pouco líquido de limpeza do registro.#nVocê gosta de criar um ponto do restore?</lang>
-          <lang id="ja" invalidated="1" status="2">これはあなたの最初の時間リトルRegistry Cleanerは、実行している。\Rは\を復元ポイントを作成するようにnWould?</lang>
-          <lang id="vi" invalidated="1" status="2">Điều này của bạn lần đầu tiên chạy Little Registry Cleaner.\r\nBạn có muốn tạo một điểm khôi phục?</lang>
-          <lang id="th" invalidated="1" status="2">นี้เป็นครั้งแรกของคุณทำงาน Little Registry Cleaner.\r\n คุณต้องการสร้างจุด restore point?</lang>
-          <lang id="tr" status="2">Bu ilk defa Little Registry Cleaner çalışıyor. Bir geri yükleme noktası oluşturmak ister misiniz?</lang>
-          <lang id="pl" invalidated="1" status="2">To twój pierwszy raz kolejny Little Registry Cleaner.\r\nCzy chcesz utworzyć punkt przywracania?</lang>
-          <lang id="hu" status="2">Első alkalommal futtatja a Little Registry Cleaner-t.#nSzeretne visszaállító pontot létrehozni?</lang>
-          <lang id="lt" status="2">Jūs čia pirmą kartą eksploatuoti Little Registry Cleaner. Norėtumėte sukurti atkūrimo tašką?</lang>
+          <lang id="en" date="20100328204448" invalidated="1" status="3">This your first time running Little Registry Cleaner.#nWould you like to create a restore point?</lang>
+          <lang id="fr" status="2">Ce votre première exécution Little Registry Cleaner.#nVous souhaitez créer un point de restauration?</lang>
+          <lang id="es" date="20100328212655" invalidated="1" status="3">Esta la primera vez que ejecuta Little limpiador de registro.#nWould le gustaría crear un punto de restauración?</lang>
+          <lang id="pt" date="20100328212707" invalidated="1" status="3">Esta é a primeira vez que você executa o Little Registry Cleaner.#nGostaria de criar um ponto de restauração?</lang>
+          <lang id="it" date="20100113184458" invalidated="1" status="3">È la prima volta che esegui Little Registry Cleaner.#nVuoi creare un punto di ripristino?</lang>
+          <lang id="nl" date="20091212111738" invalidated="1" status="3">Dit is de eerste keer dat u Kleine Registerreiniger gebruikt.#nWilt u een herstelpunt aanmaken?</lang>
+          <lang id="de" date="20100328212721" invalidated="1" status="3">Diese Sie das erste Mal Little Registry Cleaner.#nMöchten Sie einen Wiederherstellungspunkt erstellen?</lang>
+          <lang id="ru" date="20100328212733" invalidated="1" status="3">Это ваш первый запуск Little Registry Cleaner.#nВы хотите создать точку восстановления?</lang>
+          <lang id="el" date="20100328212745" invalidated="1" status="3">Αυτή η πρώτη φορά που σας τρέχει Little Registry Cleaner.#nΘέλετε να δημιουργήσετε ένα σημείο επαναφοράς?</lang>
+          <lang id="ar" status="2">هذه أول مرة يستخدم ليتل السجل النظيف. هل تريد إنشاء نقطة استعادة?</lang>
+          <lang id="sv" invalidated="1" status="2">Esta sua primeira vez que funciona pouco líquido de limpeza do registro.#nVocê gosta de criar um ponto do restore?</lang>
+          <lang id="zh" invalidated="1" status="2">此运行小注册表清洁你第一次。 中必须对是否要创建一个还原点?</lang>
+          <lang id="zh.tra" date="20100328212158" invalidated="1" status="3">這是您第一次運行的小處清潔。 您要創建一個還原點?</lang>
+          <lang id="ja" status="2">この初めてのリトル レジストリ クリーナーを実行しています。#n復元ポイントを作成したいと思います?</lang>
+          <lang id="vi" status="2">Lần đầu tiên bạn chạy Little Registry Cleaner. Bạn có muốn tạo một điểm khôi phục?</lang>
+          <lang id="th" status="2">นี้ครั้งแรกของคุณเรียกใช้ตัวล้าง Registry Little#nคุณต้องการสร้างจุดคืนค่า?</lang>
+          <lang id="tr" status="2">Bu küçük Registry Cleaner çalışan ilk zaman.#nBir geri yükleme noktası oluşturmak istiyorum?</lang>
+          <lang id="pl" date="20100328204416" invalidated="1" status="3">To twój pierwszy raz kolejny Little Registry Cleaner.#nCzy chcesz utworzyć punkt przywracania?</lang>
+          <lang id="hu" invalidated="1" status="2">Első alkalommal futtatja a Little Registry Cleaner-t.#nSzeretne visszaállító pontot létrehozni?</lang>
+          <lang id="lt" status="2">Šis pirmą kartą paleista Little registro πvaresnis.#nAr norite sukurti atkūrimo tašką?</lang>
         </row>
         <row id="mainInvalidHelpFile" state="0">
           <native>Unable to find Little Registry Cleaner.chm</native>

@@ -125,9 +125,6 @@
   <data name="buttonOk.Text" xml:space="preserve">
     <value>OK</value>
   </data>
-  <data name="buttonBrowse.Text" xml:space="preserve">
-    <value>…</value>
-  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Parametri:</value>
   </data>

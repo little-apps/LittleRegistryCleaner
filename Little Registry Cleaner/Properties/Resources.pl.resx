@@ -129,9 +129,8 @@
   <data name="mainAskExit" xml:space="preserve">
     <value>Czy na pewno chcesz zakończyć?</value>
   </data>
-  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>To twój pierwszy raz kolejny Little Registry Cleaner.
-Czy chcesz utworzyć punkt przywracania?</value>
+  <data name="mainFreeWareProgram" xml:space="preserve">
+    <value>Ten program jest freeware. Jeśli zostanie wypłacona dla kopii tego programu, skorzystaj z refundacji wywozowej!</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>Nie można znaleźć Little Registry Cleaner.chm</value>

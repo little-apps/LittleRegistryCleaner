@@ -132,7 +132,7 @@
     <value>Ścieżka:</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Nazwa</value>
+    <value>Nazwa:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Nazwa i ścieżka</value>

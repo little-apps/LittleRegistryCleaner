@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.0.295" date="20100328204717" scan="42" scanned="20100317222914">
+<document version="2.0.300" date="20100329221344" scan="45" scanned="20100329221324">
   <lang id="en"/>
   <lang id="fr"/>
   <lang id="es"/>
@@ -20,7 +20,7 @@
   <lang id="pl"/>
   <lang id="hu"/>
   <lang id="lt"/>
-  <source class="TVisualStudioNetProjectSource" name="Common Tools\Common Tools.csproj" original="en" date="20091119063626" defaultoutputdir="Common Tools\bin\Debug" assemblykind="naLibrary" netversion="net35" toolsversion="net35" rootnamespace="Common_Tools" configuration="Debug">
+  <source class="TVisualStudioNetProjectSource" name="Common Tools\Common Tools.csproj" original="en" date="20091119063626" defaultoutputdir="Common Tools\bin\Debug" assemblykind="naLibrary" netversion="net35" toolsversion="net35" rootnamespace="Common_Tools" configuration="Debug|AnyCPU">
     <outputfile dir="..\bin\Debug"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -77,12 +77,12 @@
             <lang id="lt" status="2">Little Registry Cleaner - išsami informacija...</lang>
           </row>
           <component class="TVisGridPanel" name="tableLayoutPanel1" state="0" type="System.Windows.Forms.TableLayoutPanel" align="alClient" gapbottom="0" gapleft="0" gapright="0" gaptop="0">
-            <columns>
+            <columns countset="1">
               <item class="TVisGridItem" name="Column0" state="0" type="stPercent">
                 <row id="Width" class="TPercentRow" state="0">100.1</row>
               </item>
             </columns>
-            <rows>
+            <rows countset="1">
               <item class="TVisGridItem" name="Row0" state="0" type="stPercent">
                 <row id="Height" class="TPercentRow" state="0">16.66667</row>
               </item>
@@ -139,7 +139,7 @@
                   <lang id="tr" status="2">Değer Adı:</lang>
                   <lang id="pl" status="2">Nazwa wartości:</lang>
                   <lang id="hu" status="2">Érték:</lang>
-                  <lang id="lt" status="3">Pavadinimas</lang>
+                  <lang id="lt" date="20100329220852" status="3">Pavadinimas:</lang>
                 </row>
               </component>
             </component>
@@ -249,7 +249,7 @@
       </node>
     </node>
   </source>
-  <source class="TVisualStudioNetProjectSource" name="Little Registry Cleaner.csproj" original="en" date="20091103024848" defaultoutputdir="bin\Debug" netversion="net35" toolsversion="net35" rootnamespace="Little_Registry_Cleaner" configuration="Debug">
+  <source class="TVisualStudioNetProjectSource" name="Little Registry Cleaner.csproj" original="en" date="20091103024848" defaultoutputdir="bin\Debug" netversion="net35" toolsversion="net35" rootnamespace="Little_Registry_Cleaner" configuration="Debug|AnyCPU">
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TColorData</class>
@@ -503,6 +503,12 @@
                 <lang id="hu">Nick.H</lang>
                 <lang id="lt">Nick H.</lang>
               </row>
+            </component>
+            <component class="TVisImage" name="pictureBox2" state="0" type="System.Windows.Forms.PictureBox">
+              <row id="Location.X" state="0">295</row>
+              <row id="Location.Y" state="0">12</row>
+              <row id="Size.Height" state="0">32</row>
+              <row id="Size.Width" state="0">88</row>
             </component>
           </component>
           <component class="TVisPictureButton" name="buttonClose" type="System.Windows.Forms.Button">
@@ -1345,11 +1351,11 @@
               </component>
             </component>
             <component class="TVisGridPanel" name="tableLayoutPanel1" type="System.Windows.Forms.TableLayoutPanel" align="alClient" gapbottom="0" gapleft="0" gapright="0" gaptop="0">
-              <columns>
+              <columns countset="1">
                 <item class="TVisGridItem" name="Column0"/>
                 <item class="TVisGridItem" name="Column1"/>
               </columns>
-              <rows>
+              <rows countset="1">
                 <item class="TVisGridItem" name="Row0" type="stAbsolute">
                   <row id="Height">405</row>
                 </item>
@@ -1362,10 +1368,10 @@
               </row>
               <row id="Size.Width">809</row>
               <component class="TVisGridPanel" name="tableLayoutPanel2" type="System.Windows.Forms.TableLayoutPanel" align="alClient" gapbottom="0" gapleft="0" gapright="0" gaptop="0">
-                <columns>
+                <columns countset="1">
                   <item class="TVisGridItem" name="Column0"/>
                 </columns>
-                <rows>
+                <rows countset="1">
                   <item class="TVisGridItem" name="Row0" type="stPercent">
                     <row id="Height" class="TPercentRow">100.1</row>
                   </item>
@@ -1410,7 +1416,7 @@
                       <lang id="tr" status="2">Tarama Bölümler</lang>
                       <lang id="pl" status="3">Skanowane sekcje:</lang>
                       <lang id="hu" status="2">Szkennelendő szekciók kiválasztása</lang>
-                      <lang id="lt" status="3">Ieškoti skyriuose </lang>
+                      <lang id="lt" date="20100329220923" status="3">Ieškoti skyriuose</lang>
                     </row>
                     <item name="Items[0]">
                       <row id="Text" state="0">
@@ -1634,7 +1640,7 @@
                         <lang id="tr" status="2">Ses Olayları</lang>
                         <lang id="pl" status="3">Dźwięki zdarzeń</lang>
                         <lang id="hu" status="2">Hang események</lang>
-                        <lang id="lt" status="3">Garsiniai įvykiai </lang>
+                        <lang id="lt" status="3">Garsiniai įvykiai</lang>
                       </row>
                     </item>
                     <item name="Items[9]">
@@ -1659,7 +1665,7 @@
                         <lang id="tr" status="2">Tarih Listesi</lang>
                         <lang id="pl" status="3">Historia</lang>
                         <lang id="hu" status="2">Előzmények</lang>
-                        <lang id="lt" status="3">Pakeitimų sąrašas </lang>
+                        <lang id="lt" status="3">Pakeitimų sąrašas</lang>
                       </row>
                     </item>
                     <item name="Items[10]">
@@ -2625,7 +2631,26 @@
                   <row id="Size.Width" state="0">184</row>
                   <row id="Text" state="0">
                     <native>Lithuanian</native>
+                    <lang id="en" status="2">Lithuanian</lang>
+                    <lang id="fr" status="2">Lituanien</lang>
+                    <lang id="es" status="2">Lituano</lang>
+                    <lang id="pt" status="2">Lituano</lang>
+                    <lang id="it" status="2">Lituano</lang>
+                    <lang id="nl" status="2">Litouws</lang>
+                    <lang id="de" status="2">Litauisch</lang>
+                    <lang id="ru" status="2">литовский</lang>
+                    <lang id="el" status="2">Λιθουανικά</lang>
+                    <lang id="ar" status="2">الليتوانية</lang>
+                    <lang id="sv" status="2">Litauiska</lang>
+                    <lang id="zh" status="2">立陶宛语</lang>
+                    <lang id="zh.tra" status="2">立陶宛語</lang>
+                    <lang id="ja" status="2">リトアニア語</lang>
+                    <lang id="vi" status="2">Tiếng Lít-va</lang>
+                    <lang id="th" status="2">ลิธัวเนีย</lang>
                     <lang id="tr" status="3">Litvanya Dili</lang>
+                    <lang id="pl" status="2">Litewski</lang>
+                    <lang id="hu" status="2">Litván</lang>
+                    <lang id="lt" status="2">Lietuvos</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="polishToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -3304,7 +3329,7 @@
                     <lang id="tr" status="3">Göz at...</lang>
                     <lang id="pl" status="2">Przeglądaj...</lang>
                     <lang id="hu" status="2">Tallózás...</lang>
-                    <lang id="lt" status="3">Peržiūra </lang>
+                    <lang id="lt" date="20100329221004" status="3">Peržiūra...</lang>
                   </row>
                 </component>
                 <component class="TVisEdit" name="textBoxBackupFolder" type="System.Windows.Forms.TextBox">
@@ -3634,7 +3659,7 @@
                     <lang id="tr" status="3">Göz at...</lang>
                     <lang id="pl" status="2">Przeglądaj...</lang>
                     <lang id="hu" status="2">Tallózás...</lang>
-                    <lang id="lt" status="3">Peržiūra </lang>
+                    <lang id="lt" date="20100329221043" status="3">Peržiūra...</lang>
                   </row>
                 </component>
               </component>
@@ -3811,7 +3836,7 @@
                 <lang id="tr" status="3">Kayıt Defter Yolu Ekle</lang>
                 <lang id="pl" status="2">Dodaj ścieżkę rejestru</lang>
                 <lang id="hu" status="2">Bejegyzés útvonal hozzáadása</lang>
-                <lang id="lt" status="3">Pridėti registro kelią </lang>
+                <lang id="lt" status="3">Pridėti registro kelią</lang>
               </row>
             </component>
             <component class="TVisMenuItem" name="toolStripSeparator1" type="System.Windows.Forms.ToolStripSeparator">
@@ -3876,12 +3901,12 @@
             <lang id="lt" status="3">Little Registry Cleaner - atkurti registrą</lang>
           </row>
           <component class="TVisGridPanel" name="tableLayoutPanel1" type="System.Windows.Forms.TableLayoutPanel" align="alClient">
-            <columns>
+            <columns countset="1">
               <item class="TVisGridItem" name="Column0" type="stPercent">
                 <row id="Width" class="TPercentRow">100.1</row>
               </item>
             </columns>
-            <rows>
+            <rows countset="1">
               <item class="TVisGridItem" name="Row0" type="stPercent">
                 <row id="Height" class="TPercentRow">7.624633</row>
               </item>
@@ -3930,7 +3955,7 @@
                   <lang id="tr" status="3">Dizin Aç...</lang>
                   <lang id="pl" status="2">Otwórz folder...</lang>
                   <lang id="hu" status="2">Mappa megnyitása...</lang>
-                  <lang id="lt" status="3">Atidaryti aplanką</lang>
+                  <lang id="lt" status="3">Atidaryti aplanką...</lang>
                 </row>
               </component>
               <component class="TVisPictureButton" name="buttonRestore" type="System.Windows.Forms.Button" align="alClient">
@@ -4189,7 +4214,7 @@
                 <lang id="tr" status="3">Bulunan Sorunlar: </lang>
                 <lang id="pl" status="3">Znalezionych błędów:</lang>
                 <lang id="hu" status="2">Megtalált problémák:</lang>
-                <lang id="lt" status="3">Aptiktos problemos</lang>
+                <lang id="lt" date="20100329221127" status="3">Aptiktos problemos: </lang>
               </row>
             </component>
             <component class="TVisProgressBar" name="progressBar" type="Common_Tools.XpProgressBar">
@@ -4964,12 +4989,12 @@
               <lang id="lt">toolStripContainer1</lang>
             </row>
             <component class="TVisGridPanel" name="tableLayoutPanel1" type="System.Windows.Forms.TableLayoutPanel" align="alClient">
-              <columns>
+              <columns countset="1">
                 <item class="TVisGridItem" name="Column0" type="stAbsolute">
                   <row id="Width">717</row>
                 </item>
               </columns>
-              <rows>
+              <rows countset="1">
                 <item class="TVisGridItem" name="Row0" type="stPercent">
                   <row id="Height" class="TPercentRow">100.1</row>
                 </item>
@@ -5073,7 +5098,7 @@
                     <lang id="tr" status="2">Argümanlar</lang>
                     <lang id="pl" status="2">Parametry</lang>
                     <lang id="hu" status="2">Argumentumok</lang>
-                    <lang id="lt" status="3">Parametrai:</lang>
+                    <lang id="lt" status="3">Parametrai</lang>
                   </row>
                 </component>
               </component>
@@ -5306,12 +5331,12 @@
               <lang id="lt">toolStripContainer1</lang>
             </row>
             <component class="TVisGridPanel" name="tableLayoutPanel1" type="System.Windows.Forms.TableLayoutPanel" align="alClient">
-              <columns>
+              <columns countset="1">
                 <item class="TVisGridItem" name="Column0" type="stPercent">
                   <row id="Width" class="TPercentRow">100.1</row>
                 </item>
               </columns>
-              <rows>
+              <rows countset="1">
                 <item class="TVisGridItem" name="Row0" type="stAbsolute">
                   <row id="Height">30</row>
                 </item>
@@ -5695,7 +5720,7 @@
           <lang id="tr" status="3">Seçilen kayıt defter anahtarları dışlama listesine eklendi</lang>
           <lang id="pl" status="2">Dodano wybranych kluczy rejestru w celu wyłączenia lista</lang>
           <lang id="hu" status="2">Kijelölt bejegyzés kulcsok sikeresen hozzáadva a kihagyáslistához</lang>
-          <lang id="lt" status="3">Pasirinkti registro raktai įtraukti į ignoruojamųjų sąrašą </lang>
+          <lang id="lt" status="3">Pasirinkti registro raktai įtraukti į ignoruojamųjų sąrašą</lang>
         </row>
         <row id="mainAskExit" state="0">
           <native>Are you sure you want to exit?</native>
@@ -5720,27 +5745,32 @@
           <lang id="hu" status="2">Biztos ki akar lépni?</lang>
           <lang id="lt" status="2">Ar tikrai norite išeiti?</lang>
         </row>
-        <row id="mainFirstTimeRestorePoint" state="3">
-          <prev>This your first time running Little Registry Cleaner.#nWould you like to create a restore point?</prev>
-          <native>This your first time running Little Registry Cleaner. \r\n Would you like to create a restore point?</native>
-          <lang id="en" date="20100328204448" invalidated="1" status="3">This your first time running Little Registry Cleaner.#nWould you like to create a restore point?</lang>
-          <lang id="fr" invalidated="1" status="2">Ce votre première fois en cours d'exécution Little Registry Cleaner. vous souhaitez créer un point de restauration de \r\nWould?</lang>
-          <lang id="es" invalidated="1" status="2">Esta la primera vez que ejecuta Little limpiador de registro. \r\nWould le gustaría crear un punto de restauración?</lang>
-          <lang id="pt" invalidated="1" status="2">Esta é a primeira vez que você executa o Little Registry Cleaner.\r\nGostaria de criar um ponto de restauração?</lang>
-          <lang id="it" date="20100113184458" invalidated="1" status="3">È la prima volta che esegui Little Registry Cleaner.#nVuoi creare un punto di ripristino?</lang>
-          <lang id="nl" date="20091212111738" invalidated="1" status="3">Dit is de eerste keer dat u Kleine Registerreiniger gebruikt.#nWilt u een herstelpunt aanmaken?</lang>
-          <lang id="de" invalidated="1" status="2">Diese Sie das erste Mal Little Registry Cleaner.\r\nMöchten Sie einen Wiederherstellungspunkt erstellen?</lang>
-          <lang id="ru" invalidated="1" status="3">Это ваш первый запуск Little Registry Cleaner.\R\nВы хотите создать точку восстановления?</lang>
-          <lang id="el" invalidated="1" status="2">Αυτή η πρώτη φορά που σας τρέχει Little Registry Cleaner.\r\nΘέλετε να δημιουργήσετε ένα σημείο επαναφοράς?</lang>
-          <lang id="ar" date="20100301213831" invalidated="1" status="3">هذه أول مرة يستخدم ليتل السجل النظيف.\ص#nWould كنت ترغب في إنشاء نقطة استعادة?</lang>
-          <lang id="sv" invalidated="1" status="2">Esta sua primeira vez que funciona pouco líquido de limpeza do registro.#nVocê gosta de criar um ponto do restore?</lang>
-          <lang id="ja" invalidated="1" status="2">これはあなたの最初の時間リトルRegistry Cleanerは、実行している。\Rは\を復元ポイントを作成するようにnWould?</lang>
-          <lang id="vi" invalidated="1" status="2">Điều này của bạn lần đầu tiên chạy Little Registry Cleaner.\r\nBạn có muốn tạo một điểm khôi phục?</lang>
-          <lang id="th" invalidated="1" status="2">นี้เป็นครั้งแรกของคุณทำงาน Little Registry Cleaner.\r\n คุณต้องการสร้างจุด restore point?</lang>
-          <lang id="tr" invalidated="1" status="2">Bu ilk defa Little Registry Cleaner çalışıyor. Bir geri yükleme noktası oluşturmak ister misiniz?</lang>
-          <lang id="pl" date="20100328204416" invalidated="1" status="3">To twój pierwszy raz kolejny Little Registry Cleaner.#nCzy chcesz utworzyć punkt przywracania?</lang>
-          <lang id="hu" invalidated="1" status="2">Első alkalommal futtatja a Little Registry Cleaner-t.#nSzeretne visszaállító pontot létrehozni?</lang>
-          <lang id="lt" invalidated="1" status="2">Jūs čia pirmą kartą eksploatuoti Little Registry Cleaner. Norėtumėte sukurti atkūrimo tašką?</lang>
+        <row id="mainFirstTimeRestorePoint" state="1">
+          <prev>This your first time running Little Registry Cleaner. \r\n Would you like to create a restore point?</prev>
+          <native>This your first time running Little Registry Cleaner.#c#lWould you like to create a restore point?</native>
+        </row>
+        <row id="mainFreeWareProgram" state="0">
+          <native>This program is freeware. If you paid for a copy of this program, get a refund!</native>
+          <lang id="en" status="2">This program is freeware. If you paid for a copy of this program, get a refund!</lang>
+          <lang id="fr" status="2">Ce programme est gratuit. Si vous avez payé pour obtenir une copie de ce programme, obtenir un remboursement.!</lang>
+          <lang id="es" status="2">Este programa es freeware. Si has pagado una copia de este programa, obtener un reembolso!</lang>
+          <lang id="pt" status="2">Este programa é freeware. Se você paga para obter uma cópia deste programa, obter um reembolso!</lang>
+          <lang id="it" status="2">Questo programma è freeware. Se hai pagato per ottenere una copia di questo programma, ottenere un rimborso!</lang>
+          <lang id="nl" status="2">Dit programma is freeware. Als u een kopie van dit programma betaald, krijgen een restitutie!</lang>
+          <lang id="de" status="2">Dieses Programm ist Freeware. Wenn Sie eine Kopie dieses Programms bezahlt, erhalten Sie eine Erstattung!</lang>
+          <lang id="ru" status="2">Данная программа является бесплатной. Если вы заплатили за копию этой программы, получите возмещение!</lang>
+          <lang id="el" status="2">Αυτό το πρόγραμμα είναι δωρεάν. Εάν σας που καταβάλλεται για ένα αντίγραφο αυτού του προγράμματος, λήψη επιστροφής!</lang>
+          <lang id="ar" status="2">ويعد هذا البرنامج مجانية. إذا كنت تدفع لنسخة من هذا البرنامج، الحصول على رد!</lang>
+          <lang id="sv" status="2">Det här programmet är freeware. Om du har betalat för en kopia av det här programmet kan få en återbetalning!</lang>
+          <lang id="zh" status="2">此程序是免费软件。 如果您为此程序的一个副本付款，退款!</lang>
+          <lang id="zh.tra" status="2">此程式是免費軟體。 如果您為此程式的一個副本付款，退款!</lang>
+          <lang id="ja" status="2">このプログラムはフリーウェアです。 このプログラムのコピーを支払った場合は、払い戻しを得る!</lang>
+          <lang id="vi" status="2">Chương trình này là phần mềm miễn phí. Nếu bạn trả tiền cho một bản sao của chương trình này, được hoàn phí!</lang>
+          <lang id="th" status="2">โปรแกรมนี้เป็น freeware ถ้าคุณจ่ายสำหรับสำเนาของโปรแกรมนี้ ขอคืนเงิน!</lang>
+          <lang id="tr" status="2">Ücretsiz olan bu programdır. Bu programın bir kopyası için ödenen para iadesi elde!</lang>
+          <lang id="pl" status="2">Ten program jest freeware. Jeśli zostanie wypłacona dla kopii tego programu, skorzystaj z refundacji wywozowej!</lang>
+          <lang id="hu" status="2">Ez műsor autópálya. Ha ez a program egy példányát a fizetett, kap egy visszatérítési!</lang>
+          <lang id="lt" status="2">Ši programa yra nemokama. Jeigu jums mokama už šios programos kopiją, gauti grąžinamąją išmoką!</lang>
         </row>
         <row id="mainInvalidHelpFile" state="0">
           <native>Unable to find Little Registry Cleaner.chm</native>
@@ -6200,7 +6230,7 @@
           <lang id="tr" status="3">Zaten başka bir program çalışıyor...</lang>
           <lang id="pl" status="2">Inny program wydaje się być uruchomiony już...</lang>
           <lang id="hu" status="2">Egy másik program már fut...</lang>
-          <lang id="lt" status="3">Kita programos kopija jau veikia</lang>
+          <lang id="lt" status="3">Kita programos kopija jau veikia...</lang>
         </row>
         <row id="programNeedAdmin" state="0">
           <native>You must be an administrator to run this program</native>
@@ -6315,7 +6345,7 @@
           <lang id="tr" status="3">Başarıyla kayıt geri alında</lang>
           <lang id="pl" status="2">Pomyślnie przywrócić rejestr</lang>
           <lang id="hu" status="2">Bejegyzés sikeresen visszaállítva</lang>
-          <lang id="lt" status="3">Registras sėkmingai atkurtas </lang>
+          <lang id="lt" status="3">Registras sėkmingai atkurtas</lang>
         </row>
         <row id="scanDlgExit" state="0">
           <native>Are you sure?</native>

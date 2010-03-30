@@ -129,9 +129,8 @@
   <data name="mainAskExit" xml:space="preserve">
     <value>Είστε σίγουροι ότι θέλετε να βγείτε?</value>
   </data>
-  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>Αυτή η πρώτη φορά που σας τρέχει Little Registry Cleaner.
-Θέλετε να δημιουργήσετε ένα σημείο επαναφοράς?</value>
+  <data name="mainFreeWareProgram" xml:space="preserve">
+    <value>Αυτό το πρόγραμμα είναι δωρεάν. Εάν σας που καταβάλλεται για ένα αντίγραφο αυτού του προγράμματος, λήψη επιστροφής!</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>Δεν είναι δυνατή η εύρεση του Little Registry Cleaner.chm</value>
@@ -185,7 +184,7 @@
     <value>Δεν είναι δυνατή η εύρεση αρχείου απεγκατάστασης. Θα θέλατε να το καταργήσετε χειροκινητα από το μητρώο?</value>
   </data>
   <data name="piSuccessRegKey" xml:space="preserve">
-    <value>Το κλειδί μητρώου κατάργηθηκε με επιτυχία </value>
+    <value>Το κλειδί μητρώου κατάργηθηκε με επιτυχία</value>
   </data>
   <data name="piSuccessUninstall" xml:space="preserve">
     <value>Πρόγραμμα απεγκατάσταθηκε με επιτυχία</value>

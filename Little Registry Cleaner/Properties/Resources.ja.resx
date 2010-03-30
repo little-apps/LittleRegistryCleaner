@@ -129,9 +129,8 @@
   <data name="mainAskExit" xml:space="preserve">
     <value>あなたが終了してもよろしいですか?</value>
   </data>
-  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>この初めてのリトル レジストリ クリーナーを実行しています。
-復元ポイントを作成したいと思います?</value>
+  <data name="mainFreeWareProgram" xml:space="preserve">
+    <value>このプログラムはフリーウェアです。 このプログラムのコピーを支払った場合は、払い戻しを得る!</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>リトルレジストリCleaner.chmを見つけることができません</value>

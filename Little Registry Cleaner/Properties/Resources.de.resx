@@ -129,9 +129,8 @@
   <data name="mainAskExit" xml:space="preserve">
     <value>Sind Sie sicher, dass Sie zum Beenden?</value>
   </data>
-  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>Diese Sie das erste Mal Little Registry Cleaner.
-Möchten Sie einen Wiederherstellungspunkt erstellen?</value>
+  <data name="mainFreeWareProgram" xml:space="preserve">
+    <value>Dieses Programm ist Freeware. Wenn Sie eine Kopie dieses Programms bezahlt, erhalten Sie eine Erstattung!</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>Nicht finden Little Registry Cleaner.chm</value>

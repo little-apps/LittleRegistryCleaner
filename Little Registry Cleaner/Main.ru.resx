@@ -231,6 +231,9 @@
   <data name="japaneseToolStripMenuItem.Text" xml:space="preserve">
     <value>Японский</value>
   </data>
+  <data name="lithuaniaToolStripMenuItem.Text" xml:space="preserve">
+    <value>литовский</value>
+  </data>
   <data name="polishToolStripMenuItem.Text" xml:space="preserve">
     <value>Польский</value>
   </data>

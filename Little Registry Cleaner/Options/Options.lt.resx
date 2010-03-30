@@ -156,13 +156,13 @@
     <value>Atšaukti</value>
   </data>
   <data name="buttonBrowse1.Text" xml:space="preserve">
-    <value>Peržiūra </value>
+    <value>Peržiūra...</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
     <value>Pasirinkite aplanką rezerviniam pašalintu registro elementu kopijavimui </value>
   </data>
   <data name="buttonBrowse2.Text" xml:space="preserve">
-    <value>Peržiūra </value>
+    <value>Peržiūra...</value>
   </data>
   <data name="groupBox3.Text" xml:space="preserve">
     <value>Pasirinkite aplanką kur bus saugomi pokyčiu žurnalai</value>
@@ -184,7 +184,7 @@
     <value>Pridėti aplanką</value>
   </data>
   <data name="addRegistryPathToolStripMenuItem.Text" xml:space="preserve">
-    <value>Pridėti registro kelią </value>
+    <value>Pridėti registro kelią</value>
   </data>
   <data name="removeEntryToolStripMenuItem.Text" xml:space="preserve">
     <value>Pašalinti įrašą</value>

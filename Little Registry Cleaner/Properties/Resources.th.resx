@@ -129,9 +129,8 @@
   <data name="mainAskExit" xml:space="preserve">
     <value>คุณแน่ใจหรือว่าต้องการออก?</value>
   </data>
-  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>นี้ครั้งแรกของคุณเรียกใช้ตัวล้าง Registry Little
-คุณต้องการสร้างจุดคืนค่า?</value>
+  <data name="mainFreeWareProgram" xml:space="preserve">
+    <value>โปรแกรมนี้เป็น freeware ถ้าคุณจ่ายสำหรับสำเนาของโปรแกรมนี้ ขอคืนเงิน!</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>ไม่พบ Little Registry Cleaner.chm</value>

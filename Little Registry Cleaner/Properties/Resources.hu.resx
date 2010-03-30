@@ -129,9 +129,8 @@
   <data name="mainAskExit" xml:space="preserve">
     <value>Biztos ki akar lépni?</value>
   </data>
-  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>Első alkalommal futtatja a Little Registry Cleaner-t.
-Szeretne visszaállító pontot létrehozni?</value>
+  <data name="mainFreeWareProgram" xml:space="preserve">
+    <value>Ez műsor autópálya. Ha ez a program egy példányát a fizetett, kap egy visszatérítési!</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
     <value>Nincs meg a Little Registry Cleaner.chm fájl</value>
@@ -212,7 +211,7 @@ Szeretne visszaállító pontot létrehozni?</value>
     <value>Biztos benne?</value>
   </data>
   <data name="scanDlgProgressBarScanning" xml:space="preserve">
-    <value>Szkennelés:</value>
+    <value>Szkennelés: </value>
   </data>
   <data name="smCannotFindFile" xml:space="preserve">
     <value>A fájl nem található</value>
