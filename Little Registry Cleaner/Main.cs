@@ -246,15 +246,14 @@ namespace Little_Registry_Cleaner
             // Increase number to program starts
             Properties.Settings.Default.nProgramStarts += 1;
 
-            /***********************************************************************************/
-            /* CHANGING OR REMOVING THE CODE BELOW WILL VIOLATE THE GNU GENERAL PUBLIC LICENSE */
+            /***********************************************************************************************************/
+            /* THE CODE BELOW IS LICENSED UNDER THE CREATIVE COMMONS ATTRIBUTION NON-COMMERCIAL NO DERIVATIVES LICENSE */
             if (Properties.Settings.Default.nProgramStarts == 1)
             {
                 MessageBox.Show(this, Properties.Resources.mainFreeWareProgram, "Little Registry Cleaner", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            /* CHANGING OR REMOVING THE CODE ABOVE WILL VIOLATE THE GNU GENERAL PUBLIC LICENSE */
-            /***********************************************************************************/
-
+            /* THE CODE ABOVE IS LICENSED UNDER THE CREATIVE COMMONS ATTRIBUTION NON-COMMERCIAL NO DERIVATIVES LICENSE */
+            /***********************************************************************************************************/
         }
 
         private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
@@ -487,9 +486,6 @@ namespace Little_Registry_Cleaner
                 RegEditGo.GoTo(strSubKey, strValueName);
             }
         }
-
-       
-
         
         #endregion
 
@@ -723,6 +719,18 @@ namespace Little_Registry_Cleaner
 
                 case "vi":
                     lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["vietnameseToolStripMenuItem"];
+                    break;
+
+                case "hu":
+                    lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["hungarianToolStripMenuItem"];
+                    break;
+
+                case "tr":
+                    lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["turkishToolStripMenuItem"];
+                    break;
+
+                case "lt":
+                    lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["lithuaniaToolStripMenuItem"];
                     break;
 
                 case "zh":

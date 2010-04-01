@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<desktop scan="43" scanned="20100328215005" built="20100328215329" lang="lt" pane="TLogPane" viewmode="1" col="23" row="mainFirstTimeRestorePoint">
+<desktop scan="46" scanned="20100329221359" built="20100330211221" lang="el" pane="TLogPane" workspace="2" viewmode="1" col="9" row="programNoCT">
   <language id="en" autoime="0" autokeyboard="0"/>
   <language id="fr" autoime="0" autokeyboard="0"/>
   <language id="es" autoime="0" autokeyboard="0"/>
@@ -21,7 +21,7 @@
   <language id="hu" autoime="0" autokeyboard="0"/>
   <language id="lt" autoime="0" autokeyboard="0"/>
   <triggers>
-    <item class="TValidateTrigger" position="5"/>
+    <item class="TValidateTrigger" position="2"/>
   </triggers>
   <sheet>
     <columns>

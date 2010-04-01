@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.0.300" date="20100329221344" scan="45" scanned="20100329221324">
+<document version="2.0.300" date="20100329223631" scan="46" scanned="20100329221359">
   <lang id="en"/>
   <lang id="fr"/>
   <lang id="es"/>
@@ -318,10 +318,10 @@
             <lang id="fr" status="2">Little Registry Cleaner - A propos...</lang>
             <lang id="es" status="2">Registro poco Cleaner - acerca de...</lang>
             <lang id="pt" status="2">Little Registry Cleaner - Sobre...</lang>
-            <lang id="it" status="3">Informazioni su Little Registry Cleaner</lang>
+            <lang id="it" date="20100329222126" status="3">Informazioni su Little Registry Cleaner</lang>
             <lang id="nl" status="3">Kleine Registerreiniger - info...</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - über...</lang>
-            <lang id="ru" status="3">Little Registry Cleaner - О программе</lang>
+            <lang id="ru" status="3">Little Registry Cleaner - О программе...</lang>
             <lang id="el" status="3">Little Registry Cleaner – Σχετικά...</lang>
             <lang id="ar" status="2">التسجيل ضئيلة الأنظف - حول...</lang>
             <lang id="sv" status="2">Liten Registry Cleaner - om...</lang>
@@ -331,7 +331,7 @@
             <lang id="vi" date="20091105213407" status="3">Người lau chùi Nơi đăng ký Nhỏ - Giới thiệu về...</lang>
             <lang id="th" status="2">Little Registry Cleaner - เกี่ยวกับ...</lang>
             <lang id="tr" status="3">Little Registry Cleaner - Hakkımızda...</lang>
-            <lang id="pl" status="2">O programie Little Registry Cleaner</lang>
+            <lang id="pl" date="20100329223003" status="3">O programie Little Registry Cleaner</lang>
             <lang id="hu" status="2">Little Registry Cleaner - A LRC-ről...</lang>
             <lang id="lt" status="2">Little Registry Cleaner - Apie mus...</lang>
           </row>
@@ -599,7 +599,7 @@
             <lang id="nl" status="3">Kleine Registerreiniger - Crash Reporter</lang>
             <lang id="de" status="2">Wenig Registry Cleaner - Crash Reporter</lang>
             <lang id="ru" status="3">Little Registry Cleaner - Отчет об ошибке</lang>
-            <lang id="el" status="3">Little Registry Cleaner – Αναφορά Αναπάντεχου κλεισίματος </lang>
+            <lang id="el" status="3">Little Registry Cleaner – Αναφορά Αναπάντεχου κλεισίματος</lang>
             <lang id="ar" status="2">التسجيل قليلة الأعطال المنظف - الإبلاغ</lang>
             <lang id="sv" status="2">Liten Registry Cleaner – Krash rapporterare</lang>
             <lang id="zh" status="3">迷你注册表清理器-故障报告者</lang>
@@ -656,7 +656,7 @@
               <row id="Text" state="0">
                 <native>An exception occured in a component of Little Registry Cleaner. We have created an error report that you can send us. We will treat this report as confidential and anonymous.</native>
                 <lang id="en" status="2">An exception occured in a component of Little Registry Cleaner. We have created an error report that you can send us. We will treat this report as confidential and anonymous.</lang>
-                <lang id="fr" status="2">Une exception s'est produite dans un composant de Little Registry Cleaner. Nous avons créé un rapport d'erreur que vous pouvez nous envoyer. Nous traiterons ce rapport comme confidentiel et anonyme。</lang>
+                <lang id="fr" date="20100329221833" status="3">Une exception s'est produite dans un composant de Little Registry Cleaner. Nous avons créé un rapport d'erreur que vous pouvez nous envoyer. Nous traiterons ce rapport comme confidentiel et anonyme。.</lang>
                 <lang id="es" status="2">Se produjo una excepción en un componente de Little limpiador de registro. Hemos creado un informe de errores que usted puede enviarnos. Consideraremos este informe como confidencial y anónimo.</lang>
                 <lang id="pt" status="2">Uma exceção ocorreu em um componente de Little Registry Cleaner. Criamos um relatório de erro que você pode enviar-nos. Este relatório será tratado como confidencial e anônimo.</lang>
                 <lang id="it" status="3">Si è verificato un errore in un componente di Little Registry Cleaner. È stata creata una segnalazione errori che potete inviarci. Tratteremo questa segnalazione come riservata e anonima.</lang>
@@ -770,7 +770,7 @@
             <lang id="nl" status="3">Toevoegen aan Negeren-lijst</lang>
             <lang id="de" status="2">Fügen zur Liste ignorieren hinzu</lang>
             <lang id="ru" status="3">Добавить в список исключений</lang>
-            <lang id="el" status="3">Προσθήκη στην λίστα παράβλεψης </lang>
+            <lang id="el" status="3">Προσθήκη στην λίστα παράβλεψης</lang>
             <lang id="ar" status="2">إضافة إلى تجاهل قائمة</lang>
             <lang id="sv" status="2">Lägga till undantag</lang>
             <lang id="zh" status="3">新增到忽略列表</lang>
@@ -798,7 +798,7 @@
               <lang id="nl" status="3">Toevoegen aan Negeren-lijst</lang>
               <lang id="de" status="2">Fügen zur Liste ignorieren hinzu</lang>
               <lang id="ru" status="3">Добавить в список исключений</lang>
-              <lang id="el" status="3">Προσθήκη στην λίστα παράβλεψης </lang>
+              <lang id="el" status="3">Προσθήκη στην λίστα παράβλεψης</lang>
               <lang id="ar" status="2">إضافة إلى تجاهل قائمة</lang>
               <lang id="sv" status="2">Lägga till undantag</lang>
               <lang id="zh" status="3">新增到忽略列表</lang>
@@ -1106,7 +1106,7 @@
                 <lang id="sv" status="2">Välj Ingen</lang>
                 <lang id="zh" status="3">选择无</lang>
                 <lang id="zh.tra" status="3">選擇無</lang>
-                <lang id="ja" date="20091030211940" status="3">[なし] を選択します。</lang>
+                <lang id="ja" date="20091030211940" status="3">[なし] を選択します</lang>
                 <lang id="vi" status="2">Chọn Không</lang>
                 <lang id="th" status="2">ไม่มีเลือก</lang>
                 <lang id="tr" status="3">Tümünü Seçme</lang>
@@ -1253,7 +1253,7 @@
                 <lang id="ja" status="2">〜について...</lang>
                 <lang id="vi" status="2">Về...</lang>
                 <lang id="th" status="2">เกี่ยวกับ...</lang>
-                <lang id="tr" status="3">İle ilgili…</lang>
+                <lang id="tr" date="20100329222909" status="3">İle ilgili…</lang>
                 <lang id="pl" status="3">O programie...</lang>
                 <lang id="hu" status="2">Bővebben...</lang>
                 <lang id="lt" status="2">Apie...</lang>
@@ -1414,7 +1414,7 @@
                       <lang id="vi" status="2">Phần để Quét</lang>
                       <lang id="th" status="2">ส่วนการสแกน</lang>
                       <lang id="tr" status="2">Tarama Bölümler</lang>
-                      <lang id="pl" status="3">Skanowane sekcje:</lang>
+                      <lang id="pl" status="3">Skanowane sekcje</lang>
                       <lang id="hu" status="2">Szkennelendő szekciók kiválasztása</lang>
                       <lang id="lt" date="20100329220923" status="3">Ieškoti skyriuose</lang>
                     </row>
@@ -2208,7 +2208,7 @@
                     <lang id="sv" status="2">Välj Ingen</lang>
                     <lang id="zh" status="3">选择无</lang>
                     <lang id="zh.tra" status="3">選擇無</lang>
-                    <lang id="ja" status="3">[なし] を選択します。</lang>
+                    <lang id="ja" status="3">[なし] を選択します</lang>
                     <lang id="vi" status="2">Chọn Không</lang>
                     <lang id="th" status="2">ไม่มีเลือก</lang>
                     <lang id="tr" status="3">Tümünü Seçme</lang>
@@ -3286,21 +3286,21 @@
                   <lang id="fr" status="2">Sélectionnez un dossier pour sauvegarder les entrées de registre supprimée </lang>
                   <lang id="es" status="2">Seleccione una carpeta para las entradas del registro eliminados de copia de seguridad </lang>
                   <lang id="pt" status="2">Selecione uma pasta para fazer backup das entradas do registro excluídas </lang>
-                  <lang id="it" status="3">Selezionare la cartella per il backup delle modifiche al registro</lang>
+                  <lang id="it" date="20100329222150" status="3">Selezionare la cartella per il backup delle modifiche al registro </lang>
                   <lang id="nl" status="3">Selecteer een map voor een backup van de verwijderde registervermeldingen </lang>
                   <lang id="de" status="2">Wählen Sie einen Ordner backup gelöschten Einträge </lang>
-                  <lang id="ru" status="3">Выберите папку для резервного копирования удаленных элементов реестра</lang>
+                  <lang id="ru" status="3">Выберите папку для резервного копирования удаленных элементов реестра </lang>
                   <lang id="el" status="3">Επιλέξτε ένα φάκελο αντιγράφων ασφαλείας διαγράμενων μητρώων καταχώρησης </lang>
                   <lang id="ar" status="2">حدد مجلد الذي تريد إدخالات التسجيل المحذوفة النسخ الاحتياطي </lang>
-                  <lang id="sv" status="2">Välj en mapp att säkerhetskopiera borttagna registerposterna till</lang>
+                  <lang id="sv" status="2">Välj en mapp att säkerhetskopiera borttagna registerposterna till </lang>
                   <lang id="zh" status="3">选择一个备份文件夹来备份删除的注册表项 </lang>
-                  <lang id="zh.tra" status="3">選擇一個備份文件夾來備份刪除的註冊表項</lang>
+                  <lang id="zh.tra" status="3">選擇一個備份文件夾來備份刪除的註冊表項 </lang>
                   <lang id="ja" status="2">選択してバックアップのレジストリエントリを削除するためのフォルダ </lang>
                   <lang id="vi" status="2">Chọn một thư mục để sao lưu xóa mục đăng ký </lang>
                   <lang id="th" status="2">เลือกโฟลเดอร์เพื่อสำรองลบรายการรีจิสตรี </lang>
-                  <lang id="tr" status="3">Silinmiş kayıt defter girdilerini yedeklemek için bir klasör seçin</lang>
-                  <lang id="pl" status="2">Wybierz folder zapisywania kopii zapasowych usuniętych wpisów</lang>
-                  <lang id="hu" status="2">Válasszon egy mappát a törölt bejegyzések biztonsági másolatainak</lang>
+                  <lang id="tr" status="3">Silinmiş kayıt defter girdilerini yedeklemek için bir klasör seçin </lang>
+                  <lang id="pl" status="2">Wybierz folder zapisywania kopii zapasowych usuniętych wpisów </lang>
+                  <lang id="hu" status="2">Válasszon egy mappát a törölt bejegyzések biztonsági másolatainak </lang>
                   <lang id="lt" status="3">Pasirinkite aplanką rezerviniam pašalintu registro elementu kopijavimui </lang>
                 </row>
                 <component class="TVisPictureButton" name="buttonBrowse1" type="System.Windows.Forms.Button">
@@ -3413,7 +3413,7 @@
                       <lang id="sv" status="2">Scanna igen efter registret blivit åtgärdat</lang>
                       <lang id="zh" status="3">解决注册表问题后重新扫描</lang>
                       <lang id="zh.tra" status="3">解決註冊表問題後重新掃描</lang>
-                      <lang id="ja" status="2">レジストリの問題を修正後の re-Scan します。</lang>
+                      <lang id="ja" status="2">レジストリの問題を修正後の re-Scan します</lang>
                       <lang id="vi" status="2">Re-Quét sau khi sửa chữa các vấn đề đăng ký</lang>
                       <lang id="th" status="2">Re-Scan หลังจากการแก้ไขปัญหาของรีจิสทรี</lang>
                       <lang id="tr" status="3">Kayıt sorunları düzeltikten sonra yeniden tara</lang>
@@ -3458,12 +3458,12 @@
                       <lang id="nl" status="3">Automatisch Systeemherstelpunten maken</lang>
                       <lang id="de" status="2">Erstellen Sie System Wiederherstellungspunkte automatisch</lang>
                       <lang id="ru" status="3">Автоматически создавать точку восстановления</lang>
-                      <lang id="el" status="3">Αυτόματη δημιουργία σημείων επαναφοράς συστήματος </lang>
+                      <lang id="el" status="3">Αυτόματη δημιουργία σημείων επαναφοράς συστήματος</lang>
                       <lang id="ar" status="2">إنشاء نقاط استعادة النظام تلقائياً</lang>
                       <lang id="sv" status="2">Skapa återställningspunkter automatiskt</lang>
                       <lang id="zh" status="3">自动创建系统还原点</lang>
                       <lang id="zh.tra" status="3">自動創建系統還原點</lang>
-                      <lang id="ja" status="2">システムが自動的に復元ポイントを作成します。</lang>
+                      <lang id="ja" status="2">システムが自動的に復元ポイントを作成します</lang>
                       <lang id="vi" status="2">Tạo điểm khôi phục hệ thống tự động</lang>
                       <lang id="th" status="2">สร้างจุดคืนค่าระบบอัตโนมัติ</lang>
                       <lang id="tr" status="3">Otomatikmen geri yükleme noktaları oluştur</lang>
@@ -3513,7 +3513,7 @@
                       <lang id="sv" status="2">Ta bort säkerhetskopian efter återställning av registret</lang>
                       <lang id="zh" status="3">还原注册表之后删除备份文件</lang>
                       <lang id="zh.tra" status="3">還原註冊表之後刪除備份檔案</lang>
-                      <lang id="ja" status="2">レジストリを復元した後、バックアップ ファイルを削除します。</lang>
+                      <lang id="ja" status="2">レジストリを復元した後、バックアップ ファイルを削除します</lang>
                       <lang id="vi" status="2">Xóa sau khi khôi phục tập tin sao lưu registry</lang>
                       <lang id="th" status="2">ลบแฟ้มสำรองหลังจากการคืนค่ารีจิสทรี</lang>
                       <lang id="tr" status="3">Kayıtlar restore edildikten sonra yedek dosyasını sil</lang>
@@ -3622,7 +3622,7 @@
                   <lang id="ja" status="2">フォルダを選択し、ログを保存するファイル</lang>
                   <lang id="vi" status="2">Chọn một thư mục để lưu các tập tin để đăng nhập</lang>
                   <lang id="th" status="2">เลือกโฟลเดอร์ที่จะบันทึกล็อกไฟล์ไปยัง</lang>
-                  <lang id="tr" status="3">Kayıtları kaydetmek için bir klasör seçin </lang>
+                  <lang id="tr" status="3">Kayıtları kaydetmek için bir klasör seçin</lang>
                   <lang id="pl" status="2">Wybierz folder zapisywania plików raportów</lang>
                   <lang id="hu" status="2">Válasszon egy mappát a naplófájloknak</lang>
                   <lang id="lt" status="3">Pasirinkite aplanką kur bus saugomi pokyčiu žurnalai</lang>
@@ -4199,7 +4199,7 @@
                 <lang id="fr" status="2">Les problèmes trouvés: </lang>
                 <lang id="es" status="2">Problemas que se encuentra: </lang>
                 <lang id="pt" status="2">Problemas encontrados: </lang>
-                <lang id="it" status="3">Problemi trovati:</lang>
+                <lang id="it" date="20100329222216" status="3">Problemi trovati: </lang>
                 <lang id="nl" status="3">Gevonden problemen: </lang>
                 <lang id="de" status="2">Probleme, die gefunden: </lang>
                 <lang id="ru" status="2">Обнаружены проблемы: </lang>
@@ -4212,8 +4212,8 @@
                 <lang id="vi" date="20091106180237" status="3">Những vấn đề được tìm thấy: </lang>
                 <lang id="th" status="2">พบปัญหา: </lang>
                 <lang id="tr" status="3">Bulunan Sorunlar: </lang>
-                <lang id="pl" status="3">Znalezionych błędów:</lang>
-                <lang id="hu" status="2">Megtalált problémák:</lang>
+                <lang id="pl" date="20100329223100" status="3">Znalezionych błędów: </lang>
+                <lang id="hu" status="2">Megtalált problémák: </lang>
                 <lang id="lt" date="20100329221127" status="3">Aptiktos problemos: </lang>
               </row>
             </component>
@@ -4239,7 +4239,7 @@
             <lang id="it" status="3">Modifica voce in esecuzione automatica</lang>
             <lang id="nl" status="3">Run-object bewerken</lang>
             <lang id="de" status="2">Run-Element bearbeiten</lang>
-            <lang id="ru" status="3">Редактирование элемента автозагрузки </lang>
+            <lang id="ru" status="3">Редактирование элемента автозагрузки</lang>
             <lang id="el" status="3">Επεξεργασία στοιχείου εκκινησης</lang>
             <lang id="ar" status="2">تحرير عنصر التشغيل</lang>
             <lang id="sv" status="2">Redigera körobjekt</lang>
@@ -4414,13 +4414,12 @@
               <row id="Location.Y">17</row>
               <row id="Size.Height">23</row>
               <row id="Size.Width">25</row>
-              <row id="Text" state="0">
+              <row id="Text" locked="1" state="0">
                 <native>...</native>
-                <lang id="pt" status="2">...</lang>
-                <lang id="it" status="3">…</lang>
-                <lang id="sv" status="2">…</lang>
-                <lang id="zh" status="3">...</lang>
-                <lang id="zh.tra" status="3">...</lang>
+                <lang id="pt">...</lang>
+                <lang id="sv">…</lang>
+                <lang id="zh">...</lang>
+                <lang id="zh.tra">...</lang>
               </row>
             </component>
           </component>
@@ -4563,7 +4562,7 @@
                 <lang id="vi" status="2">Tên:</lang>
                 <lang id="th" status="2">ชื่อ:</lang>
                 <lang id="tr" status="2">Ad:</lang>
-                <lang id="pl" status="2">Nazwa</lang>
+                <lang id="pl" status="2">Nazwa:</lang>
                 <lang id="hu" status="2">Név:</lang>
                 <lang id="lt" status="2">Vardas:</lang>
               </row>
@@ -5087,7 +5086,7 @@
                     <lang id="nl" status="2">Argumenten</lang>
                     <lang id="de" status="2">Argumente</lang>
                     <lang id="ru" status="3">Параметры</lang>
-                    <lang id="el" status="3">Επιχειρήματα:</lang>
+                    <lang id="el" status="3">Επιχειρήματα</lang>
                     <lang id="ar" status="2">الوسائط</lang>
                     <lang id="sv" status="2">Argument</lang>
                     <lang id="zh" status="3">参数</lang>
@@ -5656,7 +5655,7 @@
         <row id="crashReporterFail" state="0">
           <native>The bug report could not be sent</native>
           <lang id="en" status="2">The bug report could not be sent</lang>
-          <lang id="fr" status="2">Le rapport de bogue n'a pas pu être envoyé.</lang>
+          <lang id="fr" date="20100329221855" status="3">Le rapport de bogue n'a pas pu être envoyé</lang>
           <lang id="es" status="2">No se pudo enviar el informe de fallo</lang>
           <lang id="pt" status="2">O relatório de erros não pode ser enviado</lang>
           <lang id="it" status="3">Impossibile inviare la segnalazione errori</lang>
@@ -5745,10 +5744,6 @@
           <lang id="hu" status="2">Biztos ki akar lépni?</lang>
           <lang id="lt" status="2">Ar tikrai norite išeiti?</lang>
         </row>
-        <row id="mainFirstTimeRestorePoint" state="1">
-          <prev>This your first time running Little Registry Cleaner. \r\n Would you like to create a restore point?</prev>
-          <native>This your first time running Little Registry Cleaner.#c#lWould you like to create a restore point?</native>
-        </row>
         <row id="mainFreeWareProgram" state="0">
           <native>This program is freeware. If you paid for a copy of this program, get a refund!</native>
           <lang id="en" status="2">This program is freeware. If you paid for a copy of this program, get a refund!</lang>
@@ -5836,7 +5831,7 @@
           <lang id="ja" status="2">レジストリから削除された問題</lang>
           <lang id="vi" status="2">Loại bỏ các vấn đề từ registry</lang>
           <lang id="th" status="2">ปัญหาออกจากรีจิสทรี</lang>
-          <lang id="tr" status="3">Sorunlar kayıttan kaldırıldı </lang>
+          <lang id="tr" status="3">Sorunlar kayıttan kaldırıldı</lang>
           <lang id="pl" status="2">Usunięto problemy z rejestru</lang>
           <lang id="hu" status="2">Hibák eltávolítva a bejegyzésből</lang>
           <lang id="lt" status="3">Problemos iš registro pašalintos</lang>
@@ -5867,7 +5862,7 @@
         <row id="mainScanningFinished" state="0">
           <native>Finished scanning the registry</native>
           <lang id="en" status="2">Finished scanning the registry</lang>
-          <lang id="fr" status="2">L'analyse est terminée le registre.</lang>
+          <lang id="fr" status="2">L'analyse est terminée le registre</lang>
           <lang id="es" status="2">Finalizado el análisis del registro</lang>
           <lang id="pt" status="2">Varredura do registro terminada</lang>
           <lang id="it" status="3">Scansione del Registro terminata</lang>
@@ -6173,7 +6168,7 @@
           <lang id="nl" status="3">Registersleutel verwijderd</lang>
           <lang id="de" status="2">Registrierungsschlüssel wurde erfolgreich entfernt</lang>
           <lang id="ru" status="3">Ключ реестра успешно удален</lang>
-          <lang id="el" status="3">Το κλειδί μητρώου κατάργηθηκε με επιτυχία </lang>
+          <lang id="el" status="3">Το κλειδί μητρώου κατάργηθηκε με επιτυχία</lang>
           <lang id="ar" status="2">مفتاح التسجيل بنجاح إزالة</lang>
           <lang id="sv" status="2">Lyckades ta bort registernyckeln</lang>
           <lang id="zh" status="3">成功删除注册表项</lang>
@@ -6235,7 +6230,7 @@
         <row id="programNeedAdmin" state="0">
           <native>You must be an administrator to run this program</native>
           <lang id="en" status="2">You must be an administrator to run this program</lang>
-          <lang id="fr" status="2">Vous devez être administrateur pour exécuter ce programme.</lang>
+          <lang id="fr" status="2">Vous devez être administrateur pour exécuter ce programme</lang>
           <lang id="es" status="2">Debe ser un administrador para ejecutar este programa</lang>
           <lang id="pt" status="2">Você deve ser um administrador para executar este programa</lang>
           <lang id="it" status="3">Devi avere i privilegi di amministratore per eseguire questo programma</lang>
@@ -6375,7 +6370,7 @@
           <lang id="en" status="2">Scanning: </lang>
           <lang id="fr" status="2">L'analyse: </lang>
           <lang id="es" status="2">Análisis: </lang>
-          <lang id="pt" status="2">Efetuando varredura...</lang>
+          <lang id="pt" date="20100329221702" status="3">Digitalização: </lang>
           <lang id="it" status="3">Scansione: </lang>
           <lang id="nl" status="3">Scannen: </lang>
           <lang id="de" date="20091106182906" status="3">Scannen: </lang>
@@ -6390,13 +6385,13 @@
           <lang id="th" status="2">สแกน: </lang>
           <lang id="tr" date="20100305122728" status="3">Taranan: </lang>
           <lang id="pl" status="2">Skanowanie: </lang>
-          <lang id="hu" status="2">Szkennelés:</lang>
+          <lang id="hu" status="2">Szkennelés: </lang>
           <lang id="lt" status="2">Skenavimas: </lang>
         </row>
         <row id="smCannotFindFile" state="0">
           <native>The file could not be found</native>
           <lang id="en" status="2">The file could not be found</lang>
-          <lang id="fr" status="2">Le fichier n'a pas pu être trouvé.</lang>
+          <lang id="fr" status="2">Le fichier n'a pas pu être trouvé</lang>
           <lang id="es" status="2">No se encontró el archivo</lang>
           <lang id="pt" status="2">O arquivo não pôde ser encontrado</lang>
           <lang id="it" status="3">Impossibile trovare il file</lang>
@@ -6468,7 +6463,7 @@
           <lang id="fr" status="2">Tentative d'exécution:</lang>
           <lang id="es" status="2">Ha intentado ejecutar:</lang>
           <lang id="pt" status="2">Tentativa de executar:</lang>
-          <lang id="it" status="3">Tentativo di esecuzione: </lang>
+          <lang id="it" status="3">Tentativo di esecuzione:</lang>
           <lang id="nl" status="3">Geprobeerd te starten:</lang>
           <lang id="de" status="2">Es wurde versucht, zu laufen:</lang>
           <lang id="ru" status="3">Попытка запуска:</lang>
@@ -6626,7 +6621,7 @@
         <row id="updateLatest" state="0">
           <native>You have the latest version</native>
           <lang id="en" status="2">You have the latest version</lang>
-          <lang id="fr" status="2">Vous avez la dernière version.</lang>
+          <lang id="fr" status="2">Vous avez la dernière version</lang>
           <lang id="es" status="2">Usted tiene la última versión</lang>
           <lang id="pt" status="2">Você tem a versão mais recente</lang>
           <lang id="it" status="3">Hai l'ultima versione</lang>
@@ -6796,7 +6791,7 @@
           <lang id="nl" status="2">Ongebruikte File Extension</lang>
           <lang id="de" status="2">Nicht genutzte File Extension</lang>
           <lang id="ru" status="3">Неиспользуемые расширения файлов</lang>
-          <lang id="el" status="3">Αχρησιμοποίητη επέκταση αρχείου </lang>
+          <lang id="el" status="3">Αχρησιμοποίητη επέκταση αρχείου</lang>
           <lang id="ar" status="2">غير المستخدمة ملحق ملف</lang>
           <lang id="sv" status="2">Oanvända filändelser</lang>
           <lang id="zh" status="3">未使用的文件扩展名</lang>
@@ -6957,7 +6952,7 @@
           <lang id="nl" status="2">Ontbrekende CLSID verwijzing</lang>
           <lang id="de" status="2">Fehlende CLSID Verweis</lang>
           <lang id="ru" status="2">Отсутствует CLSID Ссылка</lang>
-          <lang id="el" status="3">Λείπει η αναφορά CLSID </lang>
+          <lang id="el" status="3">Λείπει η αναφορά CLSID</lang>
           <lang id="ar" status="2">المفقودين CLSID المرجعية</lang>
           <lang id="sv" status="2">Saknar CLSID referens</lang>
           <lang id="zh" status="3">CLSID引用缺失</lang>

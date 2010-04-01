@@ -7,11 +7,11 @@ using System.Resources;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Little Registry Cleaner")]
-[assembly: AssemblyDescription("Open source registry cleaner")]
+[assembly: AssemblyDescription("Free and open source that is designed to cleanup Microsoft Windows Registry")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Little Apps (http://www.littleapps.co.cc)")]
 [assembly: AssemblyProduct("Little Registry Cleaner")]
-[assembly: AssemblyCopyright("Copyright © Little Apps 2008-2009")]
+[assembly: AssemblyCopyright("Copyright © Little Apps 2008-2010")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
