@@ -361,3 +361,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Updated assembly information
 
 + Version 1.4.1 Released
+
+- Fixed uninstall manager bug with x86 systems

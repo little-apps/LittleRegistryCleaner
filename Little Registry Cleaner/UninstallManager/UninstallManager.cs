@@ -75,25 +75,34 @@ namespace Little_Registry_Cleaner.UninstallManager
             // Get the program info list
             using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall"))
             {
-                foreach (string strSubKeyName in regKey.GetSubKeyNames())
+                if (regKey != null)
                 {
-                    using (RegistryKey subKey = regKey.OpenSubKey(strSubKeyName))
+                    foreach (string strSubKeyName in regKey.GetSubKeyNames())
                     {
-                        if (subKey != null)
-                            listProgInfo.Add(new ProgramInfo(subKey));
+                        using (RegistryKey subKey = regKey.OpenSubKey(strSubKeyName))
+                        {
+                            if (subKey != null)
+                                listProgInfo.Add(new ProgramInfo(subKey));
+                        }
                     }
                 }
             }
 
             // (x64 registry keys)
-            using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall"))
+            if (Utils.Is64BitOS)
             {
-                foreach (string strSubKeyName in regKey.GetSubKeyNames())
+                using (RegistryKey regKey = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall"))
                 {
-                    using (RegistryKey subKey = regKey.OpenSubKey(strSubKeyName))
+                    if (regKey != null)
                     {
-                        if (subKey != null)
-                            listProgInfo.Add(new ProgramInfo(subKey));
+                        foreach (string strSubKeyName in regKey.GetSubKeyNames())
+                        {
+                            using (RegistryKey subKey = regKey.OpenSubKey(strSubKeyName))
+                            {
+                                if (subKey != null)
+                                    listProgInfo.Add(new ProgramInfo(subKey));
+                            }
+                        }
                     }
                 }
             }
