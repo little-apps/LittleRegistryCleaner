@@ -1,0 +1,7 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="Resources">
+    <GenerateResource Sources="TreeViewAdv.pl.resx" OutputResources="@(Resx->'$(IntermediateOutputPath)%(Identity).resources')">
+      <Output TaskParameter="OutputResources" ItemName="Resources"/>
+    </GenerateResource>
+  </Target>
+</Project>

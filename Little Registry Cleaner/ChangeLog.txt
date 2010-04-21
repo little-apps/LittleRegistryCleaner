@@ -362,4 +362,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 + Version 1.4.1 Released
 
-- Fixed uninstall manager bug with x86 systems
+- Fixed uninstall manager bug with x86 systems (v1.4.1.1 released)
+- Startup manager is compatible with 64-bit systems
+- Replaced blank icons with default application icon in startup manager

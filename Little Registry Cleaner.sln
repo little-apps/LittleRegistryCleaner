@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Little Registry Cleaner", "Little Registry Cleaner\Little Registry Cleaner.csproj", "{D93FA78E-C044-4D81-ABEC-B64EE75F684C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common Tools", "Little Registry Cleaner\Common Tools\Common Tools.csproj", "{9D2C42E6-8851-4B8E-9200-113E6CC2D4CD}"

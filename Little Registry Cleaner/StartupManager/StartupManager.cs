@@ -66,6 +66,18 @@ namespace Little_Registry_Cleaner.StartupManager
                 LoadRegistryAutoRun(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunEx"));
                 LoadRegistryAutoRun(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"));
 
+                if (Utils.Is64BitOS)
+                {
+                    LoadRegistryAutoRun(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run"));
+                    LoadRegistryAutoRun(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\RunServicesOnce"));
+                    LoadRegistryAutoRun(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\RunServices"));
+                    LoadRegistryAutoRun(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\RunOnceEx"));
+                    LoadRegistryAutoRun(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\RunOnce\\Setup"));
+                    LoadRegistryAutoRun(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\RunOnce"));
+                    LoadRegistryAutoRun(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\RunEx"));
+                    LoadRegistryAutoRun(Registry.LocalMachine.OpenSubKey("SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Run"));
+                }
+
                 // current user keys
                 LoadRegistryAutoRun(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run"));
                 LoadRegistryAutoRun(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunServicesOnce"));
@@ -75,6 +87,18 @@ namespace Little_Registry_Cleaner.StartupManager
                 LoadRegistryAutoRun(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce"));
                 LoadRegistryAutoRun(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunEx"));
                 LoadRegistryAutoRun(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"));
+
+                if (Utils.Is64BitOS)
+                {
+                    LoadRegistryAutoRun(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\Run"));
+                    LoadRegistryAutoRun(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\RunServicesOnce"));
+                    LoadRegistryAutoRun(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\RunServices"));
+                    LoadRegistryAutoRun(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\RunOnceEx"));
+                    LoadRegistryAutoRun(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\RunOnce\\Setup"));
+                    LoadRegistryAutoRun(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\RunOnce"));
+                    LoadRegistryAutoRun(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\RunEx"));
+                    LoadRegistryAutoRun(Registry.CurrentUser.OpenSubKey("SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Run"));
+                }
             }
             catch (System.Security.SecurityException ex)
             {
@@ -95,6 +119,8 @@ namespace Little_Registry_Cleaner.StartupManager
         /// </summary>
         private void LoadRegistryAutoRun(RegistryKey regKey)
         {
+            ComponentResourceManager res = new ComponentResourceManager(typeof(StartupManager));
+
             if (regKey == null)
                 return;
 
@@ -136,6 +162,8 @@ namespace Little_Registry_Cleaner.StartupManager
                     Icon ico = Utils.ExtractIcon(strFile);
                     if (ico != null)
                         node.Image = (Image)ico.ToBitmap().Clone();
+                    else
+                        node.Image = (Image)res.GetObject("treeViewAdvApp");
 
                     nodeRoot.Nodes.Add(node);
                 }
@@ -151,6 +179,8 @@ namespace Little_Registry_Cleaner.StartupManager
         {
             try
             {
+                ComponentResourceManager res = new ComponentResourceManager(typeof(StartupManager));
+
                 if (string.IsNullOrEmpty(strFolder) || !Directory.Exists(strFolder))
                     return;
 
@@ -179,6 +209,8 @@ namespace Little_Registry_Cleaner.StartupManager
                         Icon ico = Utils.ExtractIcon(strFilePath);
                         if (ico != null)
                             node.Image = (Image)ico.ToBitmap().Clone();
+                        else
+                            node.Image = (Image)res.GetObject("treeViewAdvApp");
 
                         nodeRoot.Nodes.Add(node);
                     }

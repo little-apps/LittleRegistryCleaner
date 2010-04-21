@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D93FA78E-C044-4D81-ABEC-B64EE75F684C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Little_Registry_Cleaner</RootNamespace>
+    <AssemblyName>Little Registry Cleaner</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ManifestCertificateThumbprint>9860FA840C041BCD894790CC2D1D6651EF86DB82</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Little Registry Cleaner_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>false</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>little register cleaner.ico</ApplicationIcon>
+    <TargetFrameworkSubset>Full</TargetFrameworkSubset>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>Little Registry Cleaner.snk</AssemblyOriginatorKeyFile>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\Nick\AppData\Roaming\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <PublishUrl>C:\Users\Welcome\Documents\Little Registry Cleaner\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>0.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Misc\BadRegKeyArray.cs" />
+    <Compile Include="Misc\Logger.cs" />
+    <Compile Include="Misc\Permissions.cs" />
+    <Compile Include="Misc\RegEditGo.cs" />
+    <Compile Include="Options\ExcludeList\ExcludeItem.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Scanners\Strings.Designer.cs">
+      <DependentUpon>Strings.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Scanners\ScannerBase.cs" />
+    <Compile Include="StartupManager\EditRunItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartupManager\EditRunItem.Designer.cs">
+      <DependentUpon>EditRunItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartupManager\NewRunItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartupManager\NewRunItem.Designer.cs">
+      <DependentUpon>NewRunItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartupManager\StartupManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartupManager\StartupManager.Designer.cs">
+      <DependentUpon>StartupManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Misc\SysRestore.cs" />
+    <Compile Include="Scanners\RecentDocs.cs">
+    </Compile>
+    <Compile Include="UninstallManager\ProgramInfo.cs" />
+    <Compile Include="UninstallManager\UninstallManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UninstallManager\UninstallManager.Designer.cs">
+      <DependentUpon>UninstallManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateDlg.Designer.cs">
+      <DependentUpon>UpdateDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrashReporter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrashReporter.Designer.cs">
+      <DependentUpon>CrashReporter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Misc\Utils.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\ExcludeList\AddRegistryPath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options\ExcludeList\AddRegistryPath.Designer.cs">
+      <DependentUpon>AddRegistryPath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options\Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scanners\Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartupManager\EditRunItem.resx">
+      <DependentUpon>EditRunItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartupManager\NewRunItem.resx">
+      <DependentUpon>NewRunItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartupManager\StartupManager.resx">
+      <DependentUpon>StartupManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UninstallManager\UninstallManager.resx">
+      <DependentUpon>UninstallManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateDlg.resx">
+      <DependentUpon>UpdateDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrashReporter.resx">
+      <DependentUpon>CrashReporter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\ExcludeList\AddRegistryPath.resx">
+      <DependentUpon>AddRegistryPath.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Options.resx">
+      <DependentUpon>Options.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restore.resx">
+      <DependentUpon>Restore.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScanDlg.resx">
+      <DependentUpon>ScanDlg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Little Registry Cleaner.snk" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Restore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restore.Designer.cs">
+      <DependentUpon>Restore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScanDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScanDlg.Designer.cs">
+      <DependentUpon>ScanDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Scanners\ApplicationPaths.cs" />
+    <Compile Include="Scanners\ApplicationSettings.cs" />
+    <Compile Include="Scanners\ActivexComObjects.cs" />
+    <Compile Include="Scanners\SharedDLLs.cs" />
+    <Compile Include="Scanners\SystemDrivers.cs" />
+    <Compile Include="Scanners\WindowsFonts.cs" />
+    <Compile Include="Scanners\WindowsHelpFiles.cs" />
+    <Compile Include="Scanners\ApplicationInfo.cs" />
+    <Compile Include="Scanners\WindowsSounds.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Scanners\StartupFiles.cs" />
+    <Compile Include="XML Registry\keyValue.cs" />
+    <Compile Include="XML Registry\xmlElement.cs" />
+    <Compile Include="XML Registry\xmlReader.cs" />
+    <Compile Include="XML Registry\xmlRegistry.cs" />
+    <Compile Include="XML Registry\xmlWriter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gpl.txt" />
+    <Content Include="ChangeLog.txt" />
+    <Content Include="little register cleaner.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Common Tools\Common Tools.csproj">
+      <Project>{9D2C42E6-8851-4B8E-9200-113E6CC2D4CD}</Project>
+      <Name>Common Tools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

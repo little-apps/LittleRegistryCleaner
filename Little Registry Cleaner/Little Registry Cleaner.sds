@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<desktop scan="46" scanned="20100329221359" built="20100330211221" lang="el" pane="TLogPane" workspace="2" viewmode="1" col="9" row="programNoCT">
+<desktop scan="46" scanned="20100329221359" built="20100330211221" lang="el" pane="TLogPane" workspace="2" viewmode="1" col="9" row="Forms.Little_Registry_Cleaner.About.Text">
   <language id="en" autoime="0" autokeyboard="0"/>
   <language id="fr" autoime="0" autokeyboard="0"/>
   <language id="es" autoime="0" autokeyboard="0"/>
@@ -60,8 +60,6 @@
   <path>
     <item>All</item>
     <item>Little Registry Cleaner.csproj</item>
-    <item>Strings</item>
-    <item>Little_Registry_Cleaner.Properties.Resources</item>
   </path>
   <exchange method="exmExportFile" options="[eoSetup,eoSpellChecker,eoLanguages]" author="Nick H." description="Little registry cleaner" packagename="Little registry cleanerRu" showpackage="0">
   </exchange>
