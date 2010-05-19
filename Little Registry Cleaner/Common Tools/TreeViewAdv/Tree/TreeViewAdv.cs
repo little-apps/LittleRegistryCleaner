@@ -847,8 +847,11 @@ namespace Common_Tools.TreeViewAdv.Tree
 			for (int i = 0; i < root.Nodes.Count; i++)
 			{
 				TreeNodeAdv node = root.Nodes[i];
-				node.IsExpanded = value;
-				SetIsExpandedRecursive(node, value);
+                if (node.Nodes.Count > 0)
+                {
+                    node.IsExpanded = value;
+                    SetIsExpandedRecursive(node, value);
+                }
 			}
 		}
 

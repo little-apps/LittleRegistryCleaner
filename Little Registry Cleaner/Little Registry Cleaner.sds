@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<desktop scan="46" scanned="20100329221359" built="20100330211221" lang="el" pane="TLogPane" workspace="2" viewmode="1" col="9" row="Forms.Little_Registry_Cleaner.About.Text">
+<desktop scan="47" scanned="20100422211202" built="20100330211221" lang="ro" pane="TLogPane" workspace="2" viewmode="1" col="24" row="Strings.Little_Registry_Cleaner.Scanners.Strings.InvalidProgIDFileExt">
   <language id="en" autoime="0" autokeyboard="0"/>
   <language id="fr" autoime="0" autokeyboard="0"/>
   <language id="es" autoime="0" autokeyboard="0"/>
@@ -20,35 +20,37 @@
   <language id="pl" autoime="0" autokeyboard="0"/>
   <language id="hu" autoime="0" autokeyboard="0"/>
   <language id="lt" autoime="0" autokeyboard="0"/>
+  <language id="ro" autoime="0" autokeyboard="0"/>
   <triggers>
     <item class="TValidateTrigger" position="2"/>
   </triggers>
   <sheet>
     <columns>
       <item class="TFlagsColumn" width="38"/>
-      <item class="TPathColumn" width="25"/>
+      <item class="TPathColumn" width="24"/>
       <item class="TTranslationStatusColumn" width="93"/>
-      <item class="TOriginalColumn" width="51"/>
-      <item class="TTranslationColumn" lang="es" width="51"/>
-      <item class="TTranslationColumn" lang="pt" width="51"/>
-      <item class="TTranslationColumn" lang="nl" width="51"/>
-      <item class="TTranslationColumn" lang="de" width="51"/>
-      <item class="TTranslationColumn" lang="ru" width="51"/>
-      <item class="TTranslationColumn" lang="el" width="51"/>
-      <item class="TTranslationColumn" lang="ar" width="51"/>
-      <item class="TTranslationColumn" lang="sv" width="51"/>
-      <item class="TTranslationColumn" lang="zh" width="51"/>
-      <item class="TTranslationColumn" lang="zh.tra" width="51"/>
-      <item class="TTranslationColumn" lang="ja" width="51"/>
-      <item class="TTranslationColumn" lang="vi" width="51"/>
-      <item class="TTranslationColumn" lang="th" width="51"/>
-      <item class="TTranslationColumn" lang="pl" width="51"/>
-      <item class="TTranslationColumn" lang="it" width="51"/>
-      <item class="TTranslationColumn" lang="en" width="51"/>
-      <item class="TTranslationColumn" lang="hu" width="51"/>
-      <item class="TTranslationColumn" lang="fr" width="51"/>
-      <item class="TTranslationColumn" lang="tr" width="51"/>
-      <item class="TTranslationColumn" lang="lt" width="28"/>
+      <item class="TOriginalColumn" width="48"/>
+      <item class="TTranslationColumn" lang="es" width="48"/>
+      <item class="TTranslationColumn" lang="pt" width="48"/>
+      <item class="TTranslationColumn" lang="nl" width="48"/>
+      <item class="TTranslationColumn" lang="de" width="48"/>
+      <item class="TTranslationColumn" lang="ru" width="48"/>
+      <item class="TTranslationColumn" lang="el" width="48"/>
+      <item class="TTranslationColumn" lang="ar" width="48"/>
+      <item class="TTranslationColumn" lang="sv" width="48"/>
+      <item class="TTranslationColumn" lang="zh" width="48"/>
+      <item class="TTranslationColumn" lang="zh.tra" width="48"/>
+      <item class="TTranslationColumn" lang="ja" width="48"/>
+      <item class="TTranslationColumn" lang="vi" width="48"/>
+      <item class="TTranslationColumn" lang="th" width="48"/>
+      <item class="TTranslationColumn" lang="pl" width="48"/>
+      <item class="TTranslationColumn" lang="it" width="48"/>
+      <item class="TTranslationColumn" lang="en" width="48"/>
+      <item class="TTranslationColumn" lang="hu" width="48"/>
+      <item class="TTranslationColumn" lang="fr" width="48"/>
+      <item class="TTranslationColumn" lang="tr" width="48"/>
+      <item class="TTranslationColumn" lang="lt" width="48"/>
+      <item class="TTranslationColumn" lang="ro" width="41"/>
     </columns>
     <params origin="soEntireScope">
       <findtext>Little Registry Cleaner</findtext>

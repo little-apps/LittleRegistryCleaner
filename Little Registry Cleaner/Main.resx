@@ -195,17 +195,26 @@
   <data name="treeColumn1.Header" xml:space="preserve">
     <value>Problem</value>
   </data>
+  <data name="treeColumn1.TooltipText" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="treeColumn1.Width" type="System.Int32, mscorlib">
     <value>75</value>
   </data>
   <data name="treeColumn2.Header" xml:space="preserve">
     <value>Location</value>
   </data>
+  <data name="treeColumn2.TooltipText" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
   <data name="treeColumn2.Width" type="System.Int32, mscorlib">
     <value>175</value>
   </data>
   <data name="treeColumn3.Header" xml:space="preserve">
     <value>Value Name</value>
+  </data>
+  <data name="treeColumn3.TooltipText" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
   </data>
   <data name="treeColumn3.Width" type="System.Int32, mscorlib">
     <value>100</value>
@@ -274,7 +283,7 @@
     <value>treeViewAdvResults</value>
   </data>
   <data name="&gt;&gt;treeViewAdvResults.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.TreeViewAdv, Common Tools, Version=1.0.3704.41708, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common_Tools.TreeViewAdv.Tree.TreeViewAdv, Common Tools, Version=1.0.3763.37097, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;treeViewAdvResults.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -296,10 +305,10 @@
   </metadata>
   <data name="imageListTreeView.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAD8
-        FgAAAk1TRnQBSQFMAgEBDAEAAbwBAQG8AQEBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        FgAAAk1TRnQBSQFMAgEBDAEAAewBAQHsAQEBEAEAARABAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABQAMAAUADAAEBAQABCAYAARAYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
         AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
         AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
@@ -405,7 +414,7 @@
   </data>
   <data name="treeView1.Nodes" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4w
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB1TeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZRMAAAAEVGV4dAROYW1lCUlzQ2hlY2tlZApJbWFnZUluZGV4
         CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNoaWxkQ291bnQJY2hp
@@ -1613,7 +1622,7 @@
   <data name="japaneseToolStripMenuItem.Text" xml:space="preserve">
     <value>Japanese</value>
   </data>
-  <data name="lithuaniaToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="lithuanianToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29m
         dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAIISURBVChTRZHdS1oBGId/98E2qBu7yCAbpOERp1Ke
@@ -1628,10 +1637,10 @@
         W8AGwLyYsZn5F4LT+0aGczkfAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="lithuaniaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lithuanianToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>184, 22</value>
   </data>
-  <data name="lithuaniaToolStripMenuItem.Text" xml:space="preserve">
+  <data name="lithuanianToolStripMenuItem.Text" xml:space="preserve">
     <value>Lithuanian</value>
   </data>
   <data name="polishToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -9263,19 +9272,19 @@
     <value>treeColumn1</value>
   </data>
   <data name="&gt;&gt;treeColumn1.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.TreeColumn, Common Tools, Version=1.0.3704.41708, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common_Tools.TreeViewAdv.Tree.TreeColumn, Common Tools, Version=1.0.3763.37097, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;treeColumn2.Name" xml:space="preserve">
     <value>treeColumn2</value>
   </data>
   <data name="&gt;&gt;treeColumn2.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.TreeColumn, Common Tools, Version=1.0.3704.41708, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common_Tools.TreeViewAdv.Tree.TreeColumn, Common Tools, Version=1.0.3763.37097, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;treeColumn3.Name" xml:space="preserve">
     <value>treeColumn3</value>
   </data>
   <data name="&gt;&gt;treeColumn3.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.TreeColumn, Common Tools, Version=1.0.3704.41708, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common_Tools.TreeViewAdv.Tree.TreeColumn, Common Tools, Version=1.0.3763.37097, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;selectAllToolStripMenuItem.Name" xml:space="preserve">
     <value>selectAllToolStripMenuItem</value>
@@ -9317,79 +9326,43 @@
     <value>nodeCheckBox</value>
   </data>
   <data name="&gt;&gt;nodeCheckBox.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeCheckBox, Common Tools, Version=1.0.3704.41708, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeCheckBox, Common Tools, Version=1.0.3763.37097, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;nodeIcon.Name" xml:space="preserve">
     <value>nodeIcon</value>
   </data>
   <data name="&gt;&gt;nodeIcon.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeIcon, Common Tools, Version=1.0.3704.41708, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeIcon, Common Tools, Version=1.0.3763.37097, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;nodeSection.Name" xml:space="preserve">
     <value>nodeSection</value>
   </data>
   <data name="&gt;&gt;nodeSection.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox, Common Tools, Version=1.0.3704.41708, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox, Common Tools, Version=1.0.3763.37097, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;nodeProblem.Name" xml:space="preserve">
     <value>nodeProblem</value>
   </data>
   <data name="&gt;&gt;nodeProblem.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox, Common Tools, Version=1.0.3704.41708, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox, Common Tools, Version=1.0.3763.37097, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;nodeLocation.Name" xml:space="preserve">
     <value>nodeLocation</value>
   </data>
   <data name="&gt;&gt;nodeLocation.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox, Common Tools, Version=1.0.3704.41708, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox, Common Tools, Version=1.0.3763.37097, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;nodeValueName.Name" xml:space="preserve">
     <value>nodeValueName</value>
   </data>
   <data name="&gt;&gt;nodeValueName.Type" xml:space="preserve">
-    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox, Common Tools, Version=1.0.3704.41708, Culture=neutral, PublicKeyToken=null</value>
+    <value>Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox, Common Tools, Version=1.0.3763.37097, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;imageListTreeView.Name" xml:space="preserve">
     <value>imageListTreeView</value>
   </data>
   <data name="&gt;&gt;imageListTreeView.Type" xml:space="preserve">
     <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripButtonScan.Name" xml:space="preserve">
-    <value>toolStripButtonScan</value>
-  </data>
-  <data name="&gt;&gt;toolStripButtonScan.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripButtonFix.Name" xml:space="preserve">
-    <value>toolStripButtonFix</value>
-  </data>
-  <data name="&gt;&gt;toolStripButtonFix.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripButtonRestore.Name" xml:space="preserve">
-    <value>toolStripButtonRestore</value>
-  </data>
-  <data name="&gt;&gt;toolStripButtonRestore.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator5.Name" xml:space="preserve">
-    <value>toolStripSeparator5</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparator5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripButtonSettings.Name" xml:space="preserve">
-    <value>toolStripButtonSettings</value>
-  </data>
-  <data name="&gt;&gt;toolStripButtonSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripButtonHelp.Name" xml:space="preserve">
-    <value>toolStripButtonHelp</value>
-  </data>
-  <data name="&gt;&gt;toolStripButtonHelp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;fileToolStripMenuItem.Name" xml:space="preserve">
     <value>fileToolStripMenuItem</value>
@@ -9541,10 +9514,10 @@
   <data name="&gt;&gt;japaneseToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lithuaniaToolStripMenuItem.Name" xml:space="preserve">
-    <value>lithuaniaToolStripMenuItem</value>
+  <data name="&gt;&gt;lithuanianToolStripMenuItem.Name" xml:space="preserve">
+    <value>lithuanianToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;lithuaniaToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;lithuanianToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;polishToolStripMenuItem.Name" xml:space="preserve">
@@ -9660,6 +9633,42 @@
   </data>
   <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripButtonScan.Name" xml:space="preserve">
+    <value>toolStripButtonScan</value>
+  </data>
+  <data name="&gt;&gt;toolStripButtonScan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripButtonFix.Name" xml:space="preserve">
+    <value>toolStripButtonFix</value>
+  </data>
+  <data name="&gt;&gt;toolStripButtonFix.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripButtonRestore.Name" xml:space="preserve">
+    <value>toolStripButtonRestore</value>
+  </data>
+  <data name="&gt;&gt;toolStripButtonRestore.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator5.Name" xml:space="preserve">
+    <value>toolStripSeparator5</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripButtonSettings.Name" xml:space="preserve">
+    <value>toolStripButtonSettings</value>
+  </data>
+  <data name="&gt;&gt;toolStripButtonSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripButtonHelp.Name" xml:space="preserve">
+    <value>toolStripButtonHelp</value>
+  </data>
+  <data name="&gt;&gt;toolStripButtonHelp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;notifyIcon1.Name" xml:space="preserve">
     <value>notifyIcon1</value>

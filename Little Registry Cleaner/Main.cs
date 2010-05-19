@@ -344,85 +344,85 @@ namespace Little_Registry_Cleaner
 
             ResourceManager rm = new ResourceManager("Main", this.GetType().Assembly);
 
-            switch (lang.Text)
+            switch (lang.Name)
             {
-                case "English":
+                case "englishToolStripMenuItem":
                     ci = new CultureInfo("en");
                     break;
 
-                case "Spanish":
+                case "spanishToolStripMenuItem":
                     ci = new CultureInfo("es");
                     break;
 
-                case "Arabic":
+                case "arabicToolStripMenuItem":
                     ci = new CultureInfo("ar");
                     break;
 
-                case "German":
+                case "germanToolStripMenuItem":
                     ci = new CultureInfo("de");
                     break;
 
-                case "Greek":
+                case "greekToolStripMenuItem":
                     ci = new CultureInfo("el");
                     break;
 
-                case "French":
+                case "frenchToolStripMenuItem":
                     ci = new CultureInfo("fr");
                     break;
 
-                case "Italian":
+                case "italianToolStripMenuItem":
                     ci = new CultureInfo("it");
                     break;
 
-                case "Japanese":
+                case "japaneseToolStripMenuItem":
                     ci = new CultureInfo("ja");
                     break;
 
-                case "Dutch":
+                case "dutchToolStripMenuItem":
                     ci = new CultureInfo("nl");
                     break;
 
-                case "Portuguese":
+                case "portugueseToolStripMenuItem":
                     ci = new CultureInfo("pt");
                     break;
 
-                case "Russian":
+                case "russianToolStripMenuItem":
                     ci = new CultureInfo("ru");
                     break;
 
-                case "Polish":
+                case "polishToolStripMenuItem":
                     ci = new CultureInfo("pl");
                     break;
 
-                case "Swedish":
+                case "swedishToolStripMenuItem":
                     ci = new CultureInfo("sv");
                     break;
 
-                case "Thai":
+                case "thaiToolStripMenuItem":
                     ci = new CultureInfo("th");
                     break;
 
-                case "Vietnamese":
+                case "vietnameseToolStripMenuItem":
                     ci = new CultureInfo("vi");
                     break;
 
-                case "Chinese (Simplified)":
+                case "chineseSimplifiedToolStripMenuItem":
                     ci = new CultureInfo("zh-CHS");
                     break;
 
-                case "Chinese (Traditional)":
+                case "chineseTraditionalToolStripMenuItem":
                     ci = new CultureInfo("zh-CHT");
                     break;
 
-                case "Hungarian":
+                case "hungarianToolStripMenuItem":
                     ci = new CultureInfo("hu");
                     break;
 
-                case "Turkish":
+                case "turkishToolStripMenuItem":
                     ci = new CultureInfo("tr");
                     break;
 
-                case "Lithuanian":
+                case "lithuanianToolStripMenuItem":
                     ci = new CultureInfo("lt");
                     break;
             }
@@ -806,11 +806,5 @@ namespace Little_Registry_Cleaner
             this.treeView1.Nodes.Add(resources.GetObject("treeView1.Nodes") as TreeNode);
             this.treeView1.ExpandAll();
         }
-
-        
-
-        
-
-        
     }
 }
