@@ -425,6 +425,9 @@ namespace Little_Registry_Cleaner
                 case "lithuanianToolStripMenuItem":
                     ci = new CultureInfo("lt");
                     break;
+                case "persianToolStripMenuItem":
+                    ci = new CultureInfo("fa");
+                    break;
             }
 
             if (ci.Name == "zh-CHS")
@@ -731,6 +734,10 @@ namespace Little_Registry_Cleaner
 
                 case "lt":
                     lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["lithuaniaToolStripMenuItem"];
+                    break;
+
+                case "fa":
+                    lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["persianToolStripMenuItem"];
                     break;
 
                 case "zh":

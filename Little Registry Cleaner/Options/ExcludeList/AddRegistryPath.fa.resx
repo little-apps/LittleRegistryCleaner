@@ -123,10 +123,10 @@
     <value>مسیر رجیستری:</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>انتخاب بخش:</value>
+    <value>انتخاب بخش :</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>اضافه کردن به لیست چشم پوشی از</value>
+    <value>افزودن به لیست چشم پوشی</value>
   </data>
   <data name="buttonCancel.Text" xml:space="preserve">
     <value>انصراف</value>
@@ -135,7 +135,7 @@
     <value>اضافه کردن ورودی</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>اضافه کردن به لیست چشم پوشی از</value>
+    <value>افزودن به لیست چشم پوشی</value>
   </data>
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>Yes</value>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<desktop scan="47" scanned="20100422211202" built="20100330211221" lang="ro" pane="TLogPane" workspace="2" viewmode="1" col="24" row="Strings.Little_Registry_Cleaner.Scanners.Strings.InvalidProgIDFileExt">
+<desktop scan="49" scanned="20100621144148" built="20100330211221" lang="fa" pane="TLogPane" workspace="2" viewmode="1" col="25" row="Strings.Little_Registry_Cleaner.Scanners.Strings.InvalidInprocServer32">
   <language id="en" autoime="0" autokeyboard="0"/>
   <language id="fr" autoime="0" autokeyboard="0"/>
   <language id="es" autoime="0" autokeyboard="0"/>
@@ -21,36 +21,39 @@
   <language id="hu" autoime="0" autokeyboard="0"/>
   <language id="lt" autoime="0" autokeyboard="0"/>
   <language id="ro" autoime="0" autokeyboard="0"/>
+  <language id="fa" autoime="0" autokeyboard="0"/>
   <triggers>
+    <item class="TRemoveUnusedItemsTrigger" position="2"/>
     <item class="TValidateTrigger" position="2"/>
   </triggers>
   <sheet>
     <columns>
       <item class="TFlagsColumn" width="38"/>
-      <item class="TPathColumn" width="24"/>
+      <item class="TPathColumn" width="23"/>
       <item class="TTranslationStatusColumn" width="93"/>
-      <item class="TOriginalColumn" width="48"/>
-      <item class="TTranslationColumn" lang="es" width="48"/>
-      <item class="TTranslationColumn" lang="pt" width="48"/>
-      <item class="TTranslationColumn" lang="nl" width="48"/>
-      <item class="TTranslationColumn" lang="de" width="48"/>
-      <item class="TTranslationColumn" lang="ru" width="48"/>
-      <item class="TTranslationColumn" lang="el" width="48"/>
-      <item class="TTranslationColumn" lang="ar" width="48"/>
-      <item class="TTranslationColumn" lang="sv" width="48"/>
-      <item class="TTranslationColumn" lang="zh" width="48"/>
-      <item class="TTranslationColumn" lang="zh.tra" width="48"/>
-      <item class="TTranslationColumn" lang="ja" width="48"/>
-      <item class="TTranslationColumn" lang="vi" width="48"/>
-      <item class="TTranslationColumn" lang="th" width="48"/>
-      <item class="TTranslationColumn" lang="pl" width="48"/>
-      <item class="TTranslationColumn" lang="it" width="48"/>
-      <item class="TTranslationColumn" lang="en" width="48"/>
-      <item class="TTranslationColumn" lang="hu" width="48"/>
-      <item class="TTranslationColumn" lang="fr" width="48"/>
-      <item class="TTranslationColumn" lang="tr" width="48"/>
-      <item class="TTranslationColumn" lang="lt" width="48"/>
-      <item class="TTranslationColumn" lang="ro" width="41"/>
+      <item class="TOriginalColumn" width="46"/>
+      <item class="TTranslationColumn" lang="es" width="46"/>
+      <item class="TTranslationColumn" lang="pt" width="46"/>
+      <item class="TTranslationColumn" lang="nl" width="46"/>
+      <item class="TTranslationColumn" lang="de" width="46"/>
+      <item class="TTranslationColumn" lang="ru" width="46"/>
+      <item class="TTranslationColumn" lang="el" width="46"/>
+      <item class="TTranslationColumn" lang="ar" width="46"/>
+      <item class="TTranslationColumn" lang="sv" width="46"/>
+      <item class="TTranslationColumn" lang="zh" width="46"/>
+      <item class="TTranslationColumn" lang="zh.tra" width="46"/>
+      <item class="TTranslationColumn" lang="ja" width="46"/>
+      <item class="TTranslationColumn" lang="vi" width="46"/>
+      <item class="TTranslationColumn" lang="th" width="46"/>
+      <item class="TTranslationColumn" lang="pl" width="46"/>
+      <item class="TTranslationColumn" lang="it" width="46"/>
+      <item class="TTranslationColumn" lang="en" width="46"/>
+      <item class="TTranslationColumn" lang="hu" width="46"/>
+      <item class="TTranslationColumn" lang="fr" width="46"/>
+      <item class="TTranslationColumn" lang="tr" width="46"/>
+      <item class="TTranslationColumn" lang="lt" width="46"/>
+      <item class="TTranslationColumn" lang="ro" width="46"/>
+      <item class="TTranslationColumn" lang="fa" width="38"/>
     </columns>
     <params origin="soEntireScope">
       <findtext>Little Registry Cleaner</findtext>

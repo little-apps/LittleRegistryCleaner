@@ -120,11 +120,11 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="buttonBrowse.Text" xml:space="preserve">
-    <value>فهرست آزاد...</value>
+    <value>باز کردن دایرکتوری...</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="label1.Text" xml:space="preserve">
-    <value>انتخاب زیر را برای باز گرداندن رجیستری خود را به حالت قبلی ارسال فایل</value>
+    <value>انتخاب یک فایل برای بازگرداندن رجیستری به حالت قبلی</value>
   </data>
   <data name="columnHeader1.Text" xml:space="preserve">
     <value>نام فایل</value>
@@ -133,7 +133,7 @@
     <value>تاریخ</value>
   </data>
   <data name="columnHeader3.Text" xml:space="preserve">
-    <value>حجم</value>
+    <value>اندازه</value>
   </data>
   <data name="buttonRestore.Text" xml:space="preserve">
     <value>بازگرداندن</value>
@@ -142,7 +142,7 @@
     <value>&lt;?xml version="1.0" encoding="UTF-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="listViewFiles" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="flowLayoutPanel1" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100.1" /&gt;&lt;Rows Styles="Percent,7.624633,Percent,92.37537,Absolute,30" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>کمی تمیز کننده رجیستری -- بازگرداندن رجیستری</value>
+    <value>تمیز کننده رجیستری کوچولو -  بازیابی رجیستری</value>
   </data>
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>Yes</value>

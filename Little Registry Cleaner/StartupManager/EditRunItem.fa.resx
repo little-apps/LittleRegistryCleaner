@@ -123,19 +123,22 @@
     <value>انصراف</value>
   </data>
   <data name="buttonOk.Text" xml:space="preserve">
-    <value>خوب</value>
+    <value>قبول</value>
+  </data>
+  <data name="buttonBrowse.Text" xml:space="preserve">
+    <value>...</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>استدلال:</value>
+    <value>استدلال ها:</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>پرونده:</value>
+    <value>فایل:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>ویرایش راه اندازی ورودی</value>
+    <value>ویرایش ورودی های راه اندازی</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>ویرایش اجرای مورد</value>
+    <value>ویرایش آیتم های اجرایی</value>
   </data>
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>Yes</value>

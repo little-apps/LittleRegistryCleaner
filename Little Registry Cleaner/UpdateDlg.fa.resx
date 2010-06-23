@@ -123,10 +123,10 @@
     <value>دانلود</value>
   </data>
   <data name="buttonChangelog.Text" xml:space="preserve">
-    <value>انتخاب های کاربران</value>
+    <value>تغییرات</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>برای اتمام رسانی</value>
+    <value>چک کردن برای بروز رسانی</value>
   </data>
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>Yes</value>

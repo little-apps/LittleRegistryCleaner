@@ -123,10 +123,13 @@
     <value>انصراف</value>
   </data>
   <data name="buttonOk.Text" xml:space="preserve">
-    <value>خوب</value>
+    <value>قبول</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>استدلال:</value>
+    <value>استدلال ها:</value>
+  </data>
+  <data name="buttonFileDlg.Text" xml:space="preserve">
+    <value>...</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>مسیر فایل:</value>
@@ -135,7 +138,7 @@
     <value>نام:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>نام و نام مسیر</value>
+    <value>نام و مسیر</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>بخش:</value>
@@ -171,7 +174,7 @@
     <value>Registry\Current User\Run Services Once</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>اجرای جدید مورد</value>
+    <value>آیتم های اجرایی جدید</value>
   </data>
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>Yes</value>

@@ -118,135 +118,135 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="crashReporterFail" xml:space="preserve">
-    <value>گزارش خطا نمی تواند خبر</value>
+    <value>نمی تواند گزارش مشکلات را بفرستد</value>
   </data>
   <data name="crashReporterSuccess" xml:space="preserve">
-    <value>ارسال گزارش خطا با موفقیت</value>
+    <value>ارسال گزارش مشکلات با موفقیت انجام شد</value>
   </data>
   <data name="mainAddExcludeEntry" xml:space="preserve">
-    <value>ارسال انتخاب شده کلید های رجیستری را به محروم کردن لیست</value>
+    <value>اضافه شده کلید های انتخاب شده در رجیستری به لیست استثنا</value>
   </data>
   <data name="mainAskExit" xml:space="preserve">
-    <value>آیا مطمئن هستید که می خواهید به خروج?</value>
+    <value>آیا مطمئن هستید که می خواهید خارج شوید؟</value>
   </data>
-  <data name="mainFirstTimeRestorePoint" xml:space="preserve">
-    <value>این اولین بار است که در حال اجرا کوچولو تمیز کننده رجیستری. آیا می خواهید به ایجاد یک نقطه برگرداندن?</value>
+  <data name="mainFreeWareProgram" xml:space="preserve">
+    <value>این نرم افزار رایگان می باشد. اگر شما پولی برای این نرم افزار پرداخت کردید,آن را پس بگیرید</value>
   </data>
   <data name="mainInvalidHelpFile" xml:space="preserve">
-    <value>قادر به پیدا کردن "Little Registry Cleaner.chm"</value>
+    <value>قادر به یافتن Little Registry Cleaner.chm نیست</value>
   </data>
   <data name="mainProblemsFix" xml:space="preserve">
-    <value>آیا می خواهید تمام مشکلات را حل انتخاب شده?</value>
+    <value>آیا می خواهید تمام مشکلات حل شود؟</value>
   </data>
   <data name="mainProblemsRemoved" xml:space="preserve">
-    <value>مشکلات حذف از رجیستری</value>
+    <value>مشکلات حذف شده از رجیستری</value>
   </data>
   <data name="mainScanningAborted" xml:space="preserve">
-    <value>ساقطشد اسکن رجیستری</value>
+    <value>بی نتیجه ماندن جستجو در رجیستری</value>
   </data>
   <data name="mainScanningFinished" xml:space="preserve">
-    <value>فرم انتقادات و اسکن رجیستری</value>
+    <value>پایان جستجو در رجیستری</value>
   </data>
   <data name="mainSelectSections" xml:space="preserve">
-    <value>لطفا یک بخش به بخش اسکن را انتخاب کنید</value>
+    <value>لطفا یک بخش را برای جستجو انتخاب کنید</value>
   </data>
   <data name="mainUpdateAsk" xml:space="preserve">
-    <value>نسخه جدیدتر در دسترس است. آیا می خواهید آن را دانلود کنید?</value>
+    <value>یک نسخه جدید آمده است.میخاهید دانلود کنید؟</value>
   </data>
   <data name="optionsExcludeDir" xml:space="preserve">
-    <value>انتخاب پوشه را از رجیستری مستثنی اسکن</value>
+    <value>انتخاب یک فولدر به استثنا ها از جستجوی رجیستری</value>
   </data>
   <data name="optionsExcludeEmptyRegPath" xml:space="preserve">
-    <value>مسیر رجیستری نمی تواند خالی باشد</value>
+    <value>راه رجیستری نمی تواند خالی باشد</value>
   </data>
   <data name="optionsExcludeFile" xml:space="preserve">
-    <value>انتخاب فایل از رجیستری مستثنی اسکن</value>
+    <value>انتخاب یک فایل به استثنا ها از جستجوی رجیستری</value>
   </data>
   <data name="optionsExcludeInvalidRegPath" xml:space="preserve">
     <value>کلید رجیستری مشخص شده وجود ندارد</value>
   </data>
   <data name="optionsExcludeRemove" xml:space="preserve">
-    <value>آیا مطمئن هستید که?</value>
+    <value>آیا مطمئن هستید ؟</value>
   </data>
   <data name="optionsSelectBackupDir" xml:space="preserve">
-    <value>را انتخاب کنید که در آن پوشه فایل های پشتیبان قرار داده خواهد شد</value>
+    <value>انتخاب پوشه ای که فایلهای پشتیبان قرار داده خواهد شد</value>
   </data>
   <data name="optionsSelectLogDir" xml:space="preserve">
-    <value>را انتخاب کنید که در آن پوشه فایل ورود به سیستم قرار داده خواهد شد</value>
+    <value>انتخاب پوشه ای که فایل های قرار داده شده وارد خواهد شد</value>
   </data>
   <data name="piErrorRegKey" xml:space="preserve">
     <value>خطا در حذف کلید رجیستری:</value>
   </data>
   <data name="piErrorUninstalling" xml:space="preserve">
-    <value>خطا uninstalling برنامه:</value>
+    <value>خطا در پاک کردن برنامه:</value>
   </data>
   <data name="piInvalidUninstallString" xml:space="preserve">
-    <value>قادر به پیدا کردن رشته ای پاک. آیا دوست دارید به صورت دستی آن را از رجیستری حذف?</value>
+    <value>قادر به یافتن رشته ای که باید پاک شود نیست. آیا دوست دارید به صورت دستی آن را از رجیستری حذف کنید؟</value>
   </data>
   <data name="piSuccessRegKey" xml:space="preserve">
-    <value>با موفقیت حذف کلید رجیستری</value>
+    <value>حذف کلید رجیستری با موفقیت بود</value>
   </data>
   <data name="piSuccessUninstall" xml:space="preserve">
-    <value>موفقیت uninstalled برنامه</value>
+    <value>پاک کردن برنامه با موفقیت بود</value>
   </data>
   <data name="programAlreadyRunning" xml:space="preserve">
-    <value>یکی دیگر از برنامه به نظر می رسد در حال حاضر در حال اجرا...</value>
+    <value>برنامه دیگری به نظر می رسد که در حال حاضر در حال اجراست...</value>
   </data>
   <data name="programNeedAdmin" xml:space="preserve">
-    <value>شما باید یک مدیر برای اجرای این برنامه</value>
+    <value>شما باید یکی از مدیران باشید برای اجرای این برنامه</value>
   </data>
   <data name="programNoCT" xml:space="preserve">
-    <value>قادر به پیدا کردن "Common Tools.dll"</value>
+    <value>قادر به یافتن "Common Tools.dll"نیست</value>
   </data>
   <data name="restoreAsk" xml:space="preserve">
-    <value>آیا مطمئن هستید که?</value>
+    <value>آیا مطمئن هستید ؟</value>
   </data>
   <data name="restoreError" xml:space="preserve">
-    <value>خطا در بازگرداندن رجیستری</value>
+    <value>خطا در بازسازی رجیستری</value>
   </data>
   <data name="restoreRestored" xml:space="preserve">
-    <value>ترمیم با موفقیت به رجیستری</value>
+    <value>بازیابی رجیستری با موفقیت انجام شد</value>
   </data>
   <data name="scanDlgExit" xml:space="preserve">
-    <value>آیا مطمئن هستید که?</value>
+    <value>آیا مطمئن هستید ؟</value>
   </data>
   <data name="scanDlgProgressBarScanning" xml:space="preserve">
-    <value>اسکن: </value>
+    <value>در حال جستجو</value>
   </data>
   <data name="smCannotFindFile" xml:space="preserve">
-    <value>فایل یافت نشد</value>
+    <value>فایل مورد نظر پیدا نشد</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
-    <value>میانبر / نام مقدار می تواند خالی باشد</value>
+    <value>میانبر یا نام مقدار نمی تواند خالی باشد</value>
   </data>
   <data name="smEmptyPath" xml:space="preserve">
     <value>مسیر فایل نمی تواند خالی باشد</value>
   </data>
   <data name="smRan" xml:space="preserve">
-    <value>تلاش برای اجرای:</value>
+    <value>اقدام به اجرا:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>آیا مطمئن هستید که می خواهید حذف کنید این برنامه را راه اندازی?</value>
+    <value>آیا مطمئن هستید که می خواهید این برنامه راه اندازی را حذف کنید؟</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
-    <value>حذف برنامه های راه انداز انتخاب شده</value>
+    <value>حذف برنامه ی راه اندازی انتخاب شده</value>
   </data>
   <data name="smRun" xml:space="preserve">
-    <value>آیا مطمئن هستید که می خواهید این برنامه را اجرا کنید?</value>
+    <value>آیا مطمئن هستید که می خواهید این برنامه را اجرا کنید؟</value>
   </data>
   <data name="umForceUninstall" xml:space="preserve">
-    <value>آیا مطمئن هستید که می خواهید حذف کنید این برنامه را از رجیستری?</value>
+    <value>آیا مطمئن هستید که می خواهیداین برنامه را از رجیستری حذف کنید؟</value>
   </data>
   <data name="umSearchText" xml:space="preserve">
     <value>جستجو بر حسب نام</value>
   </data>
   <data name="umUninstall" xml:space="preserve">
-    <value>آیا مطمئن هستید که می خواهید این برنامه را پاک کنید?</value>
+    <value>آیا مطمئن هستید که می خواهید این برنامه را پاک کنید؟</value>
   </data>
   <data name="updateLatest" xml:space="preserve">
-    <value>شما باید آخرین نسخه</value>
+    <value>شما داری آخرین نسخه از برنامه هستید</value>
   </data>
   <data name="updateNewer" xml:space="preserve">
-    <value>نسخه جدیدتر در دسترس</value>
+    <value>نسخه جدیدتر در دسترس است</value>
   </data>
 </root>

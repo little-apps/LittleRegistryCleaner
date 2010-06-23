@@ -82,6 +82,7 @@
             this.italianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.japaneseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lithuanianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.persianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.polishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.russianToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.spanishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -459,6 +460,7 @@
             this.italianToolStripMenuItem,
             this.japaneseToolStripMenuItem,
             this.lithuanianToolStripMenuItem,
+            this.persianToolStripMenuItem,
             this.polishToolStripMenuItem,
             portugueseToolStripMenuItem,
             this.russianToolStripMenuItem,
@@ -543,6 +545,12 @@
             resources.ApplyResources(this.lithuanianToolStripMenuItem, "lithuanianToolStripMenuItem");
             this.lithuanianToolStripMenuItem.Name = "lithuanianToolStripMenuItem";
             this.lithuanianToolStripMenuItem.Click += new System.EventHandler(this.ChangeLanguage);
+            // 
+            // persianToolStripMenuItem
+            // 
+            resources.ApplyResources(this.persianToolStripMenuItem, "persianToolStripMenuItem");
+            this.persianToolStripMenuItem.Name = "persianToolStripMenuItem";
+            this.persianToolStripMenuItem.Click += new System.EventHandler(this.ChangeLanguage);
             // 
             // polishToolStripMenuItem
             // 
@@ -870,6 +878,7 @@
         private System.Windows.Forms.ToolStripMenuItem hungarianToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem turkishToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lithuanianToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem persianToolStripMenuItem;
     }
 }
 
