@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.1.306" date="20100621144753" scan="49" scanned="20100621144148">
+<document version="2.1.306" date="20100622235304" scan="49" scanned="20100621144148">
   <lang id="en"/>
   <lang id="fr"/>
   <lang id="es"/>
@@ -22,7 +22,7 @@
   <lang id="lt"/>
   <lang id="ro"/>
   <lang id="fa"/>
-  <source class="TVisualStudioNetProjectSource" name="Common Tools\Common Tools.csproj" original="en" date="20100420234906" defaultoutputdir="Common Tools\bin\Release" assemblykind="naLibrary" netversion="net35" toolsversion="net40" rootnamespace="Common_Tools" configuration="Release|AnyCPU">
+  <source class="TVisualStudioNetProjectSource" name="Common Tools\Common Tools.csproj" original="en" date="20100420234906" defaultoutputdir="Common Tools\bin\Debug" assemblykind="naLibrary" netversion="net35" toolsversion="net40" rootnamespace="Common_Tools" configuration="Release|AnyCPU">
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TColorData</class>
@@ -258,7 +258,7 @@
       </node>
     </node>
   </source>
-  <source class="TVisualStudioNetProjectSource" name="Little Registry Cleaner.csproj" original="en" date="20100613042200" defaultoutputdir="bin\Release" netversion="net35" toolsversion="net40" rootnamespace="Little_Registry_Cleaner" configuration="Release|AnyCPU">
+  <source class="TVisualStudioNetProjectSource" name="Little Registry Cleaner.csproj" original="en" date="20100613042200" defaultoutputdir="bin\Debug" netversion="net35" toolsversion="net40" rootnamespace="Little_Registry_Cleaner" configuration="Release|AnyCPU">
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TColorData</class>

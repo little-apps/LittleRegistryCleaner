@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.1.306" date="20100622235304" scan="49" scanned="20100621144148">
+<document version="2.1.306" date="20100623002314" scan="50" scanned="20100623000706">
   <lang id="en"/>
   <lang id="fr"/>
   <lang id="es"/>
@@ -22,7 +22,7 @@
   <lang id="lt"/>
   <lang id="ro"/>
   <lang id="fa"/>
-  <source class="TVisualStudioNetProjectSource" name="Common Tools\Common Tools.csproj" original="en" date="20100420234906" defaultoutputdir="Common Tools\bin\Debug" assemblykind="naLibrary" netversion="net35" toolsversion="net40" rootnamespace="Common_Tools" configuration="Release|AnyCPU">
+  <source class="TVisualStudioNetProjectSource" name="Common Tools\Common Tools.csproj" original="en" date="20100420234906" defaultoutputdir="Common Tools\bin\Debug" assemblykind="naLibrary" netversion="net35" toolsversion="net40" rootnamespace="Common_Tools" configuration="Debug|AnyCPU">
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TColorData</class>
@@ -77,7 +77,7 @@
             <lang id="hu" status="2">Little Registry Cleaner - Részletek...</lang>
             <lang id="lt" status="2">Little Registry Cleaner - išsami informacija...</lang>
             <lang id="ro" status="2">Little Registry Cleaner - Detalii...</lang>
-            <lang id="fa" status="2">کوچک تمیز کننده رجیستری -- اطلاعات بیشتر...</lang>
+            <lang id="fa" status="3">تمیز کننده رجیستری کوچولو - جزییات...</lang>
           </row>
           <component class="TVisGridPanel" name="tableLayoutPanel1" state="0" type="System.Windows.Forms.TableLayoutPanel" align="alClient" gapbottom="0" gapleft="0" gapright="0" gaptop="0">
             <columns countset="1">
@@ -144,7 +144,7 @@
                   <lang id="hu" status="2">Érték:</lang>
                   <lang id="lt" date="20100329220852" status="3">Pavadinimas:</lang>
                   <lang id="ro" status="2">Valoare Nume:</lang>
-                  <lang id="fa" status="2">نام و نام خانوادگی ارزش:</lang>
+                  <lang id="fa" status="3">نام مقدار:</lang>
                 </row>
               </component>
             </component>
@@ -258,7 +258,7 @@
       </node>
     </node>
   </source>
-  <source class="TVisualStudioNetProjectSource" name="Little Registry Cleaner.csproj" original="en" date="20100613042200" defaultoutputdir="bin\Debug" netversion="net35" toolsversion="net40" rootnamespace="Little_Registry_Cleaner" configuration="Release|AnyCPU">
+  <source class="TVisualStudioNetProjectSource" name="Little Registry Cleaner.csproj" original="en" date="20100613042200" defaultoutputdir="bin\Debug" netversion="net35" toolsversion="net40" rootnamespace="Little_Registry_Cleaner" configuration="Debug|AnyCPU">
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TColorData</class>
@@ -344,7 +344,7 @@
             <lang id="hu" status="2">Little Registry Cleaner - A LRC-ről...</lang>
             <lang id="lt" status="2">Little Registry Cleaner - Apie mus...</lang>
             <lang id="ro" status="2">Little Registry Cleaner - Despre...</lang>
-            <lang id="fa" status="2">تمیز کننده رجیستری کوچولو -- درباره...</lang>
+            <lang id="fa" status="3">تمیز کننده رجیستری کوچولو -  درباره...</lang>
           </row>
           <component class="TVisGroupBox" name="groupBox2" type="System.Windows.Forms.GroupBox">
             <row id="Location.X" state="3">
@@ -412,48 +412,34 @@
                 <lang id="fa" status="2">تمیز کننده رجیستری کوچولو</lang>
               </row>
             </component>
-            <component class="TVisEdit" name="richTextBox1" type="System.Windows.Forms.RichTextBox">
-              <row id="Location.X" state="3">
-                <prev>7</prev>
-                <native>9</native>
-              </row>
-              <row id="Location.Y" state="3">
-                <prev>57</prev>
-                <native>50</native>
-              </row>
-              <row id="Size.Height" state="3">
-                <prev>146</prev>
-                <native>171</native>
-              </row>
-              <row id="Size.Width" state="3">
-                <prev>372</prev>
-                <native>376</native>
-              </row>
-              <row id="Text" excluded="1" state="3">
-                <prev>This program is free software: you can redistribute it and/or modify#nit under the terms of the GNU General Public License as published by#nthe Free Software Foundation, either version 3 of the License, or#n(at your option) any later version.#n#nThis program is distributed in the hope that it will be useful,#nbut WITHOUT ANY WARRANTY; without even the implied warranty of#nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the#nGNU General Public License for more details.#n#nYou should have received a copy of the GNU General Public License#nalong with this program.  If not, see &lt;http://www.gnu.org/licenses/>.</prev>
+            <component class="TVisEdit" name="richTextBox1" locked="1" type="System.Windows.Forms.RichTextBox">
+              <row id="Location.X" state="0">9</row>
+              <row id="Location.Y" state="0">50</row>
+              <row id="Size.Height" state="0">171</row>
+              <row id="Size.Width" state="0">376</row>
+              <row id="Text" excluded="1" state="0">
                 <native>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.#l#lThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.#l#lYou should have received a copy of the GNU General Public License along with this program.  If not, see &lt;http://www.gnu.org/licenses/>.</native>
-                <lang id="en" date="20091105201208" invalidated="1" status="3">This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.#n#nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.#n#nYou should have received a copy of the GNU General Public License along with this program.  If not, see &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="fr" date="20091105200750" invalidated="1" status="3">Ce logiciel est gratuit: vous pouvez le redistribuer et / ou le modifier selon les termes de la GNU General Public License telle que publiée par la Free Software Foundation, soit la version 3 de la Licence, ou (à votre choix) toute version ultérieure.#n#nCe programme est distribué dans l'espoir qu'il sera utile, mais SANS AUCUNE GARANTIE, sans même la garantie implicite de COMMERCIALISATION ou D'ADAPTATION A UN USAGE PARTICULIER. Voir la GNU General Public License pour plus de détails.#n#nVous devriez avoir reçu un exemplaire de la Licence Publique Générale GNU avec ce programme. Sinon, consultez &lt;http://www.gnu.org/licenses/>。</lang>
-                <lang id="es" invalidated="1" status="2">Este programa es software libre: usted puede redistribuirlo y/o modificarlo bajo los términos de la GNU General Public License publicada por la Free Software Foundation, ya sea la versión 3 de la licencia, o (a su opción) cualquier versión posterior.#n#nEste programa se distribuye con la esperanza de que será útil, pero sin ninguna garantía, ni siquiera la garantía implícita de comerciabilidad o idoneidad para un propósito PARTICULAR.  Consulte la GNU General Public License para obtener más detalles.#n#nDebe haber recibido una copia de la licencia pública GNU General junto con este programa.  Si no, véase &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="pt" status="2">Este programa é software livre; você pode redistribuí-lo e/ou modificá-lo sob os termos da Licença Pública Geral GNU, conforme publicada pela Free Software Foundation; tanto a versão 3 da Licença como (a seu critério) qualquer versão mais nova.#n#nEste programa é distribuído na expectativa de ser útil, mas SEM QUALQUER GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou de ADEQUAÇÃO A QUALQUER PROPÓSITO EM PARTICULAR. Consulte a Licença Pública Geral GNU para obter mais detalhes.#n#nVocê deve ter recebido uma cópia da Licença Pública Geral GNU junto com este programa; caso contrário, acesse &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="it" status="3">Questo programma è software libero: puoi ridistribuirlo e/o modificarlo secondo i termini della GNU General Public License come pubblicato dalla Free Software Foundation, versione 3 della licenza o (a propria discrezione) qualsiasi versione successiva.#n#nQuesto programma è distribuito nella speranza che possa essere utile, ma senza alcuna garanzia; senza neppure la garanzia implicita di commerciabilità o idoneità per uno scopo particolare.  Vedere la GNU General Public License per maggiori dettagli.#n#nSi dovrebbe avere ricevuto una copia della GNU General Public License insieme a questo programma.  In caso contrario, vedere &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="nl" status="3">Dit programma is gratis software: u kunt het verspreiden en/of wijzigen in het kader van de GNU General Public License zoals gepubliceerd door de Free Software Foundation, in versie 3 van de licentie of (naar keuze) een latere versie.#n#nDit programma wordt verspreid in de hoop dat het nuttig zal zijn, maar ZONDER ENIGE GARANTIE; zonder zelfs de impliciete garantie van VERKOOPBAARHEID of GESCHIKTHEID VOOR EEN BEPAALD DOEL.  Zie de GNU General Public License voor meer informatie.#n#nU hebt een kopie ontvangen van de GNU General Public License samen met dit programma.  Als dit niet het geval is, Zie &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="de" invalidated="1" status="2">Dieses Programm ist freie Software: Sie weitergeben und/oder unter den Bedingungen der GNU General Public License veröffentlicht von der Free Software Foundation, Version 3 der Lizenz oder (nach Ihrer Wahl) any later Version ändern können.#n#nDieses Programm wird in der Hoffnung verteilt, dass es Nützlichkeit, jedoch ohne Garantie geliefert; selbst stillschweigende Garantien von MERCHANTABILITY oder Eignung für einen bestimmten Zweck sein wird.  Finden Sie unter der GNU General Public License für weitere Details.#n#nSie sollten eine Kopie der GNU General Public License zusammen mit diesem Programm erhalten haben.  Wenn nicht, finden Sie unter &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="ru" status="3">Эта программа является свободным программным обеспечением: Вы можете распространять или изменять её на условиях лицензии GNU General Public License, опубликованной Фондом свободного программного обеспечения, версии 3, либо (на Ваш выбор) любой более поздней версии.#n#nЭта программа распространяется в надежде на то, что она окажется полезной, но без каких бы то ни было гарантий; даже подразумеваемой гарантии или ТОВАРНОСТИ или пригодности для конкретных целей.  Смотрите GNU General Public License для получения дополнительной информации.#n#nВы должны были получить копию GNU General Public License вместе с этой программой.  Если нет, см. &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="el" status="3">Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό: μπορείτε να το διαδώσετε και/ή τροποποιήσετε σύμφωνα με τους όρους της GNU General Public License όπως έχουν δημοσιευθεί από το Free Software Foundation, είτε έκδοση 3 της άδειας χρήσης, ή (κατά την επιλογή σας) οποιαδήποτε μεταγενέστερη έκδοση.  Αυτό το πρόγραμμα διανέμεται με την ελπίδα ότι θα ειναι χρήσιμο, αλλά ΧΩΡΊΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ χωρίς καν την σιωπηρή εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ  ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ.  Δείτε το GNU General Public License για περισσότερες λεπτομέρειες.  Θα πρέπει να έχετε λάβει ένα αντίγραφο από την GNU General Public License μαζί με αυτό το πρόγραμμα.  Εάν όχι, ανατρέξτε στην ενότητα &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="ar" invalidated="1" status="2">هذا البرنامج هو البرمجيات الحرة: و/لك يمكن توزيع عليه أو تعديله تحت شروط جنو العمومية كما تنشرها "مؤسسة البرمجيات الحرة" إما الإصدار 3 من الترخيص أو (في الخيار لك) أي إصدار أحدث.#n#nيتم توزيع هذا البرنامج على أمل أن سيكون من المفيد ولكن "بدون أي الضمان"; دون حتى ضمان ضمني من بالتسويق أو وملاءمته FOR A معين الغرض.  انظر إلى جنو العمومية للحصول على مزيد من التفاصيل.#n#nوينبغي أن كنت قد تلقيت نسخة من جنو العمومية مع هذا البرنامج.  إذا لم انظر &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="sv" status="2">Det här programmet är fri programvara: du kan vidaredistribuera det och/eller ändra den enligt villkoren i GNU General Public License as published by Free Software Foundation, antingen version 3 eller senare version.#n#nDet här programmet distribueras i hopp om att det kommer att vara användbart, men utan någon garanti, även utan den underförstådda garantin för säljbarhet eller lämplighet för en särskilt syfte.  Se GNU General Public License om du vill veta mer.#n#nDu bör ha fått en kopia av GNU General Public License tillsammans med det här programmet.  Om du inte se &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="zh" date="20091105201040" invalidated="1" status="3">该程序是免费软件：你可以在慈善通用公共授权下重新发布它和/或修改，使用许可证版本3，或（您自行选择）任何更新的版 本出版许可证条款。这个程式的目的是希望它有用，但没有任何担保，甚至没有适销性或针对特定用途的隐含的担保。详情请参阅慈善 通用公共授权。您应已收到附随于本程序的慈善通用公共授权的副本。如果不是，请参阅&lt;http://www.gnu.org /licenses/>。</lang>
-                <lang id="zh.tra" date="20091105201902" status="3">該程序是免費軟件：你可以在慈善通用公共授權下重新發布它和/或修改，使用許可證版本3，或（您自行選擇）任何更新的版 本出版許可證條款。這個程式的目的是希望它有用，但沒有任何擔保，甚至沒有適銷性或針對特定用途的隱含的擔保。詳情請參閱慈善 通用公共授權。您應已收到附隨於本程序的慈善通用公共授權的副本。如果不是，請參閱 &lt;http://www.gnu.org/licenses/>。</lang>
-                <lang id="ja" date="20091105201756" status="3">このプログラムはフリーソフトウェアです：あなたはこれを再配布することができます/またはGNU General Public Licenseには、Free Software Foundationが、ライセンスのいずれかのバージョン3またはそれ以降のバージョンのオプション（）で発行の条件の下でそれを変更します。#n#nこのプログラムは、期待して有用であると思われるのが、配布されていかなる保証もない現状;商品性または特定目的に対する適合性にも黙示の保証はありません。詳細については、GNU General Public Licenseを参照してください。#n#nあなたはこのプログラムと共に、GNU General Public Licenseのコピーを受け取っている必要があります。ていない場合は、参照してください&lt;http://www.gnu.org/licenses/>。</lang>
-                <lang id="vi" date="20091105201639" status="3">Chương trình này là phần mềm: bạn có thể phát hành lại nó và / hoặc sửa đổi nó với điều kiện của Giấy phép Công cộng GNU như được xuất bản bởi các Phần mềm Tự do, hoặc là phiên bản 3 của Giấy phép này, hoặc (tùy chọn) bất kỳ phiên bản sau.#n#nChương trình này được phân phối với hy vọng rằng nó sẽ hữu ích, nhưng KHÔNG CÓ BẢO ĐẢM; mà không cần bảo hành ngay cả ngụ ý của BÁN hoặc PHÙ HỢP CHO MỘT MỤC ĐÍCH CỤ THỂ. Xem GNU General Public License để biết thêm chi tiết.#n#nBạn nên đã nhận được một bản sao của Giấy phép Công cộng GNU cùng với chương trình này. Nếu không, xem &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="th" date="20091105201427" status="3">ซอฟต์แวร์ โปรแกรมนี้ฟรี: คุณสามารถแจกจ่ายได้และ / หรือแก้ไขภายใต้เงื่อนไขของ GNU General Public License เผยแพร่ตามที่ Free Software Foundation, รุ่นทั้ง 3 ใบอนุญาตหรือ (ในตัวเลือกของคุณ) รุ่นหลังๆ.#n#nโปรแกรมนี้จะกระจายในหวังว่ามันจะเป็นประโยชน์แต่ไม่รับประกันใดๆ; ไม่มีแม้การรับประกันโดยนัยของสินค้าหรือความเหมาะสมสำหรับวัตถุประสงค์ เฉพาะ. ดู GNU General Public License รายละเอียดเพิ่มเติม.#n#nคุณควรได้รับสำเนาของ GNU General Public License พร้อมกับโปรแกรมนี้. ถ้าไม่เห็น &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="tr" status="3">Bu bir bedava yazılımdır: Free Software Foundation tarafından yayınlanmıstır. Lisansın 3. versiyonu yada (karar size bağlı olaraktan) daha sonraki versiyonların GNU Genel Kamu Lisansı altında dağıtabilinir ve/veya değiştirebilinir.#n#nBu program faydalı olamak için dağıtılmıştır, ama HERHANGİ bir GARANTİ OLMADAN; TİCARİ ya da BİR AMACA UYGUNLUĞU olmadan dahi zımni garanti yapılmıstır. Daha fazla bilgi için GNU Genel Kamu Lisansına bakınız.#n#nBu programla birlikte GNU Genel Kamu Lisansının bir kopyasını almış olmalısınız. Eğer yoksa, &lt;http://www.gnu.org/licenses/> gidiniz.</lang>
-                <lang id="pl" invalidated="1" status="2">Niniejsze oprogramowanie jest darmowe. Możesz je rozpowszechniać lub modyfikować zgodnie z warunkami licencji GNU General Public License w wersji 3 lub późniejszej wydanej przez Free Software Foundation.#n#nNiniejsze oprogramowanie jest rozpowszechniane z nadzieją, że okaże się przydatne, nie jest natomiast objęte JAKĄKOLWIEK GWARANCJĄ, w tym domyślną gwarancją UŻYTECZNOŚCI HANDLOWEJ lub PRZYDATNOŚCI DO KONKRETNEGO CELU. Przeczytaj licencję GNU General Public License, aby zapoznać się ze szczegółami.#n#nKopia licencji GNU General Public License powinna zostać dostarczona wraz z niniejszym oprogramowaniem. W przeciwnym wypadku odwiedź stronę &lt;http://www.gnu.org/licenses/></lang>
-                <lang id="hu" status="2">Ez a program szabad szoftver; terjeszthető illetve módosítható a Free Software Foundation által kiadott GNU General Public License dokumentumában leírtak; akár a licenc 3-as, akár (tetszőleges) későbbi változata szerint.#n#nEz a porgram abban a reményben kerül közreadásra, hogy hasznos lesz, de minden egyéb GARANCIA NÉLKÜL, az ELADHATÓSÁGRA vagy VALAMELY CÉLRA VALÓ ALKALMAZHATÓSÁGRA való származtatott garanciát is beleértve. További részleteket a GNU General Public License tartalmaz.#n#nA felhasználónak a programmal együtt meg kell kapnia a GNU General Public License egy pélányát; ha mégsem kapta meg, akkor tekintse meg a &lt;http://www.gnu.org/licenses/> oldalon.</lang>
-                <lang id="lt" status="3">Ši programa yra laisva programinė įranga: jūs galite ją platinti ir / arba modifikuoti pagal GNU General Public License, paskelbta Free Software Foundation, 3-os versijos  licencijos, arba (Jūsų pasirinkimu) bet kurios vėlesnės versijos sąlygomis. Ši programa platinama su viltimi, kad ji bus naudinga, bet BE JOKIOS GARANTIJOS; net numanomos PERKAMUMO arba TINKAMUMO TAM TIKRAM TIKSLUI. Žr GNU General Public License dėl detalių. Jūs turėjote gauti GNU General Public License kopiją kartu su šia programa. Jei ne, žiūrėkite &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="ro" status="2">Acest program este software liber: îl puteţi redistribui şi / sau modifica sub termenii GNU General Public License publicate de Free Software Foundation, fie versiunea 3 a Licenţei, sau (la opţiunea dumneavoastră) orice versiune ulterioară. Acest program este distribuit în speranţa că va fi folositor, dar FĂRĂ NICI O GARANŢIE, nici chiar garanţia implicită de VANDABILITATE sau POTRIVIRE PENTRU UN SCOP ANUME. Vezi GNU General Public License pentru mai multe detalii. Trebuie să fi primit o copie a GNU General Public License împreună cu acest program. Dacă nu, a se vedea &lt;http://www.gnu.org/licenses/>.</lang>
-                <lang id="fa" status="2">این برنامه نرم افزار رایگان است : شما می توانید و توزیع مجدد آن یا تغییر آن را تحت شرایط مجوز عمومی همگانی گنو به عنوان منتشر شده توسط بنیاد نرمافزار آزاد ، یا از نسخه 3 مجوز و یا تغییر دهید) بعد از هر نسخه این برنامه امیدواریم که که در آن مفید باشد منتشر شده ، ولی بدون هرگونه ؛ حتی بدون ضمانت تجاری یا تناسب آن برای منظور خاصی. مشاهده گنو مجوز عمومی همگانی برای اطلاعات بیشتر و شما باید با دریافت یک نسخه از مجوز عمومی همگانی گنو به همراه این برنامه است. اگر نه ، نگاه کنید به &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="en" date="20091105201208" invalidated="1">This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.#n#nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.#n#nYou should have received a copy of the GNU General Public License along with this program.  If not, see &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="fr" date="20091105200750" invalidated="1">Ce logiciel est gratuit: vous pouvez le redistribuer et / ou le modifier selon les termes de la GNU General Public License telle que publiée par la Free Software Foundation, soit la version 3 de la Licence, ou (à votre choix) toute version ultérieure.#n#nCe programme est distribué dans l'espoir qu'il sera utile, mais SANS AUCUNE GARANTIE, sans même la garantie implicite de COMMERCIALISATION ou D'ADAPTATION A UN USAGE PARTICULIER. Voir la GNU General Public License pour plus de détails.#n#nVous devriez avoir reçu un exemplaire de la Licence Publique Générale GNU avec ce programme. Sinon, consultez &lt;http://www.gnu.org/licenses/>。</lang>
+                <lang id="es" invalidated="1">Este programa es software libre: usted puede redistribuirlo y/o modificarlo bajo los términos de la GNU General Public License publicada por la Free Software Foundation, ya sea la versión 3 de la licencia, o (a su opción) cualquier versión posterior.#n#nEste programa se distribuye con la esperanza de que será útil, pero sin ninguna garantía, ni siquiera la garantía implícita de comerciabilidad o idoneidad para un propósito PARTICULAR.  Consulte la GNU General Public License para obtener más detalles.#n#nDebe haber recibido una copia de la licencia pública GNU General junto con este programa.  Si no, véase &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="pt">Este programa é software livre; você pode redistribuí-lo e/ou modificá-lo sob os termos da Licença Pública Geral GNU, conforme publicada pela Free Software Foundation; tanto a versão 3 da Licença como (a seu critério) qualquer versão mais nova.#n#nEste programa é distribuído na expectativa de ser útil, mas SEM QUALQUER GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou de ADEQUAÇÃO A QUALQUER PROPÓSITO EM PARTICULAR. Consulte a Licença Pública Geral GNU para obter mais detalhes.#n#nVocê deve ter recebido uma cópia da Licença Pública Geral GNU junto com este programa; caso contrário, acesse &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="it">Questo programma è software libero: puoi ridistribuirlo e/o modificarlo secondo i termini della GNU General Public License come pubblicato dalla Free Software Foundation, versione 3 della licenza o (a propria discrezione) qualsiasi versione successiva.#n#nQuesto programma è distribuito nella speranza che possa essere utile, ma senza alcuna garanzia; senza neppure la garanzia implicita di commerciabilità o idoneità per uno scopo particolare.  Vedere la GNU General Public License per maggiori dettagli.#n#nSi dovrebbe avere ricevuto una copia della GNU General Public License insieme a questo programma.  In caso contrario, vedere &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="nl">Dit programma is gratis software: u kunt het verspreiden en/of wijzigen in het kader van de GNU General Public License zoals gepubliceerd door de Free Software Foundation, in versie 3 van de licentie of (naar keuze) een latere versie.#n#nDit programma wordt verspreid in de hoop dat het nuttig zal zijn, maar ZONDER ENIGE GARANTIE; zonder zelfs de impliciete garantie van VERKOOPBAARHEID of GESCHIKTHEID VOOR EEN BEPAALD DOEL.  Zie de GNU General Public License voor meer informatie.#n#nU hebt een kopie ontvangen van de GNU General Public License samen met dit programma.  Als dit niet het geval is, Zie &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="de" invalidated="1">Dieses Programm ist freie Software: Sie weitergeben und/oder unter den Bedingungen der GNU General Public License veröffentlicht von der Free Software Foundation, Version 3 der Lizenz oder (nach Ihrer Wahl) any later Version ändern können.#n#nDieses Programm wird in der Hoffnung verteilt, dass es Nützlichkeit, jedoch ohne Garantie geliefert; selbst stillschweigende Garantien von MERCHANTABILITY oder Eignung für einen bestimmten Zweck sein wird.  Finden Sie unter der GNU General Public License für weitere Details.#n#nSie sollten eine Kopie der GNU General Public License zusammen mit diesem Programm erhalten haben.  Wenn nicht, finden Sie unter &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="ru">Эта программа является свободным программным обеспечением: Вы можете распространять или изменять её на условиях лицензии GNU General Public License, опубликованной Фондом свободного программного обеспечения, версии 3, либо (на Ваш выбор) любой более поздней версии.#n#nЭта программа распространяется в надежде на то, что она окажется полезной, но без каких бы то ни было гарантий; даже подразумеваемой гарантии или ТОВАРНОСТИ или пригодности для конкретных целей.  Смотрите GNU General Public License для получения дополнительной информации.#n#nВы должны были получить копию GNU General Public License вместе с этой программой.  Если нет, см. &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="el">Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό: μπορείτε να το διαδώσετε και/ή τροποποιήσετε σύμφωνα με τους όρους της GNU General Public License όπως έχουν δημοσιευθεί από το Free Software Foundation, είτε έκδοση 3 της άδειας χρήσης, ή (κατά την επιλογή σας) οποιαδήποτε μεταγενέστερη έκδοση.  Αυτό το πρόγραμμα διανέμεται με την ελπίδα ότι θα ειναι χρήσιμο, αλλά ΧΩΡΊΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ χωρίς καν την σιωπηρή εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ  ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ.  Δείτε το GNU General Public License για περισσότερες λεπτομέρειες.  Θα πρέπει να έχετε λάβει ένα αντίγραφο από την GNU General Public License μαζί με αυτό το πρόγραμμα.  Εάν όχι, ανατρέξτε στην ενότητα &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="ar" invalidated="1">هذا البرنامج هو البرمجيات الحرة: و/لك يمكن توزيع عليه أو تعديله تحت شروط جنو العمومية كما تنشرها "مؤسسة البرمجيات الحرة" إما الإصدار 3 من الترخيص أو (في الخيار لك) أي إصدار أحدث.#n#nيتم توزيع هذا البرنامج على أمل أن سيكون من المفيد ولكن "بدون أي الضمان"; دون حتى ضمان ضمني من بالتسويق أو وملاءمته FOR A معين الغرض.  انظر إلى جنو العمومية للحصول على مزيد من التفاصيل.#n#nوينبغي أن كنت قد تلقيت نسخة من جنو العمومية مع هذا البرنامج.  إذا لم انظر &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="sv">Det här programmet är fri programvara: du kan vidaredistribuera det och/eller ändra den enligt villkoren i GNU General Public License as published by Free Software Foundation, antingen version 3 eller senare version.#n#nDet här programmet distribueras i hopp om att det kommer att vara användbart, men utan någon garanti, även utan den underförstådda garantin för säljbarhet eller lämplighet för en särskilt syfte.  Se GNU General Public License om du vill veta mer.#n#nDu bör ha fått en kopia av GNU General Public License tillsammans med det här programmet.  Om du inte se &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="zh" date="20091105201040" invalidated="1">该程序是免费软件：你可以在慈善通用公共授权下重新发布它和/或修改，使用许可证版本3，或（您自行选择）任何更新的版 本出版许可证条款。这个程式的目的是希望它有用，但没有任何担保，甚至没有适销性或针对特定用途的隐含的担保。详情请参阅慈善 通用公共授权。您应已收到附随于本程序的慈善通用公共授权的副本。如果不是，请参阅&lt;http://www.gnu.org /licenses/>。</lang>
+                <lang id="zh.tra" date="20091105201902">該程序是免費軟件：你可以在慈善通用公共授權下重新發布它和/或修改，使用許可證版本3，或（您自行選擇）任何更新的版 本出版許可證條款。這個程式的目的是希望它有用，但沒有任何擔保，甚至沒有適銷性或針對特定用途的隱含的擔保。詳情請參閱慈善 通用公共授權。您應已收到附隨於本程序的慈善通用公共授權的副本。如果不是，請參閱 &lt;http://www.gnu.org/licenses/>。</lang>
+                <lang id="ja" date="20091105201756">このプログラムはフリーソフトウェアです：あなたはこれを再配布することができます/またはGNU General Public Licenseには、Free Software Foundationが、ライセンスのいずれかのバージョン3またはそれ以降のバージョンのオプション（）で発行の条件の下でそれを変更します。#n#nこのプログラムは、期待して有用であると思われるのが、配布されていかなる保証もない現状;商品性または特定目的に対する適合性にも黙示の保証はありません。詳細については、GNU General Public Licenseを参照してください。#n#nあなたはこのプログラムと共に、GNU General Public Licenseのコピーを受け取っている必要があります。ていない場合は、参照してください&lt;http://www.gnu.org/licenses/>。</lang>
+                <lang id="vi" date="20091105201639">Chương trình này là phần mềm: bạn có thể phát hành lại nó và / hoặc sửa đổi nó với điều kiện của Giấy phép Công cộng GNU như được xuất bản bởi các Phần mềm Tự do, hoặc là phiên bản 3 của Giấy phép này, hoặc (tùy chọn) bất kỳ phiên bản sau.#n#nChương trình này được phân phối với hy vọng rằng nó sẽ hữu ích, nhưng KHÔNG CÓ BẢO ĐẢM; mà không cần bảo hành ngay cả ngụ ý của BÁN hoặc PHÙ HỢP CHO MỘT MỤC ĐÍCH CỤ THỂ. Xem GNU General Public License để biết thêm chi tiết.#n#nBạn nên đã nhận được một bản sao của Giấy phép Công cộng GNU cùng với chương trình này. Nếu không, xem &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="th" date="20091105201427">ซอฟต์แวร์ โปรแกรมนี้ฟรี: คุณสามารถแจกจ่ายได้และ / หรือแก้ไขภายใต้เงื่อนไขของ GNU General Public License เผยแพร่ตามที่ Free Software Foundation, รุ่นทั้ง 3 ใบอนุญาตหรือ (ในตัวเลือกของคุณ) รุ่นหลังๆ.#n#nโปรแกรมนี้จะกระจายในหวังว่ามันจะเป็นประโยชน์แต่ไม่รับประกันใดๆ; ไม่มีแม้การรับประกันโดยนัยของสินค้าหรือความเหมาะสมสำหรับวัตถุประสงค์ เฉพาะ. ดู GNU General Public License รายละเอียดเพิ่มเติม.#n#nคุณควรได้รับสำเนาของ GNU General Public License พร้อมกับโปรแกรมนี้. ถ้าไม่เห็น &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="tr">Bu bir bedava yazılımdır: Free Software Foundation tarafından yayınlanmıstır. Lisansın 3. versiyonu yada (karar size bağlı olaraktan) daha sonraki versiyonların GNU Genel Kamu Lisansı altında dağıtabilinir ve/veya değiştirebilinir.#n#nBu program faydalı olamak için dağıtılmıştır, ama HERHANGİ bir GARANTİ OLMADAN; TİCARİ ya da BİR AMACA UYGUNLUĞU olmadan dahi zımni garanti yapılmıstır. Daha fazla bilgi için GNU Genel Kamu Lisansına bakınız.#n#nBu programla birlikte GNU Genel Kamu Lisansının bir kopyasını almış olmalısınız. Eğer yoksa, &lt;http://www.gnu.org/licenses/> gidiniz.</lang>
+                <lang id="pl" invalidated="1">Niniejsze oprogramowanie jest darmowe. Możesz je rozpowszechniać lub modyfikować zgodnie z warunkami licencji GNU General Public License w wersji 3 lub późniejszej wydanej przez Free Software Foundation.#n#nNiniejsze oprogramowanie jest rozpowszechniane z nadzieją, że okaże się przydatne, nie jest natomiast objęte JAKĄKOLWIEK GWARANCJĄ, w tym domyślną gwarancją UŻYTECZNOŚCI HANDLOWEJ lub PRZYDATNOŚCI DO KONKRETNEGO CELU. Przeczytaj licencję GNU General Public License, aby zapoznać się ze szczegółami.#n#nKopia licencji GNU General Public License powinna zostać dostarczona wraz z niniejszym oprogramowaniem. W przeciwnym wypadku odwiedź stronę &lt;http://www.gnu.org/licenses/></lang>
+                <lang id="hu">Ez a program szabad szoftver; terjeszthető illetve módosítható a Free Software Foundation által kiadott GNU General Public License dokumentumában leírtak; akár a licenc 3-as, akár (tetszőleges) későbbi változata szerint.#n#nEz a porgram abban a reményben kerül közreadásra, hogy hasznos lesz, de minden egyéb GARANCIA NÉLKÜL, az ELADHATÓSÁGRA vagy VALAMELY CÉLRA VALÓ ALKALMAZHATÓSÁGRA való származtatott garanciát is beleértve. További részleteket a GNU General Public License tartalmaz.#n#nA felhasználónak a programmal együtt meg kell kapnia a GNU General Public License egy pélányát; ha mégsem kapta meg, akkor tekintse meg a &lt;http://www.gnu.org/licenses/> oldalon.</lang>
+                <lang id="lt">Ši programa yra laisva programinė įranga: jūs galite ją platinti ir / arba modifikuoti pagal GNU General Public License, paskelbta Free Software Foundation, 3-os versijos  licencijos, arba (Jūsų pasirinkimu) bet kurios vėlesnės versijos sąlygomis. Ši programa platinama su viltimi, kad ji bus naudinga, bet BE JOKIOS GARANTIJOS; net numanomos PERKAMUMO arba TINKAMUMO TAM TIKRAM TIKSLUI. Žr GNU General Public License dėl detalių. Jūs turėjote gauti GNU General Public License kopiją kartu su šia programa. Jei ne, žiūrėkite &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="ro">Acest program este software liber: îl puteţi redistribui şi / sau modifica sub termenii GNU General Public License publicate de Free Software Foundation, fie versiunea 3 a Licenţei, sau (la opţiunea dumneavoastră) orice versiune ulterioară. Acest program este distribuit în speranţa că va fi folositor, dar FĂRĂ NICI O GARANŢIE, nici chiar garanţia implicită de VANDABILITATE sau POTRIVIRE PENTRU UN SCOP ANUME. Vezi GNU General Public License pentru mai multe detalii. Trebuie să fi primit o copie a GNU General Public License împreună cu acest program. Dacă nu, a se vedea &lt;http://www.gnu.org/licenses/>.</lang>
               </row>
             </component>
             <component class="TVisLabel" name="label2" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
@@ -633,7 +619,7 @@
             <lang id="hu" status="2">Little Registry Cleaner - Hibajelentő</lang>
             <lang id="lt" status="3">Little Registry Cleaner – Klaidų pranešimas</lang>
             <lang id="ro" status="2">Little Registry Cleaner - Crash Reporter</lang>
-            <lang id="fa" status="2">کوچک تمیز کننده رجیستری -- خبرنگاران سقوط</lang>
+            <lang id="fa" status="3">تمیز کننده رجیستری کوچولو - گزارش دهنده ی خرابی</lang>
           </row>
           <component class="TVisPanel" name="panel1" type="System.Windows.Forms.Panel" align="alTop">
             <row id="BackColor" hidden="1">clWhite</row>
@@ -669,7 +655,7 @@
                 <lang id="hu" status="2">Ne küldje el</lang>
                 <lang id="lt" status="2">Nesiųsti</lang>
                 <lang id="ro" status="2">Nu Trimite</lang>
-                <lang id="fa" status="2">آیا ارسال نشده</lang>
+                <lang id="fa" status="3">نفرست</lang>
               </row>
             </component>
             <component class="TVisLabel" name="label1" type="System.Windows.Forms.Label" layout="tlCenter" parentfont="0">
@@ -701,7 +687,7 @@
                 <lang id="hu" status="2">Egy hiba történt a Little Registry Cleaner egyik komponensében. Készítettünk egy hibajelentést amit elküldhet nekünk. A jelentés bizalmasan, név nélkül lesz kezelve.</lang>
                 <lang id="lt" status="3">Viename Little Registry Cleaner komponente įvyko klaida. Esame sukūrę klaidos ataskaitą, kurią galite atsiųsti mums. Visa pranešime siusta informacija yra konfidenciali ir anonimiška.</lang>
                 <lang id="ro" status="2">O excepţie a avut loc într-o componentă a Little Registry Cleaner. Am creat un raport de eroare care ne puteti trimite. Vom trata acest raport ca anonim şi confidenţial.</lang>
-                <lang id="fa" status="2">استثناء رخ داده در بخشی از کوچک تمیز کننده رجیستری. ما بوجود آورده اند گزارش خطا که شما می توانید برای ما بفرستید. ما این گزارش به عنوان درمان محرمانه و ناشناس.</lang>
+                <lang id="fa" status="3">یک استثنا رخ داده در یک جزء تمیز کننده رجیستری کوچولو.ما درست کردیم یک گزارگشر خطاها که با اون میتونید خطا هارو به ما بفرستید.ما میتونیم تلقی کنیم این گزارشهارو محرمانه یا ناشناس</lang>
               </row>
             </component>
             <component class="TVisPictureButton" name="buttonSend" type="System.Windows.Forms.Button">
@@ -1161,7 +1147,7 @@
                 <lang id="hu" status="2">Kijelölés megszüntetése</lang>
                 <lang id="lt" status="3">Atšaukti pažymėjimą</lang>
                 <lang id="ro" status="2">Selectaţi Nici unul</lang>
-                <lang id="fa" status="2">هیچ کدام را انتخاب کنید</lang>
+                <lang id="fa" status="3">انتخاب هیچکدام</lang>
               </row>
             </component>
             <component class="TVisMenuItem" name="invertSelectionToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -1223,7 +1209,7 @@
                 <lang id="hu" status="2">Kijelöltek kihagyása</lang>
                 <lang id="lt" status="2">Pašalinti pasirinktus</lang>
                 <lang id="ro" status="2">Exclude selectate</lang>
-                <lang id="fa" status="2">محروم کردن انتخاب شده</lang>
+                <lang id="fa" status="3">استثنا قرار دادن انتخاب شده ها</lang>
               </row>
             </component>
             <component class="TVisMenuItem" name="viewInRegeditToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
@@ -1252,7 +1238,7 @@
                 <lang id="hu" status="2">Nézet regedit-ben</lang>
                 <lang id="lt" status="3">Peržiūrėti regedit aplinkoje</lang>
                 <lang id="ro" status="2">Vezi în regedit</lang>
-                <lang id="fa" status="2">مشاهده در regedit</lang>
+                <lang id="fa" status="3">مشاهده در برنامه رجیستری</lang>
               </row>
             </component>
           </component>
@@ -1315,7 +1301,7 @@
                 <lang id="hu" status="2">Bővebben...</lang>
                 <lang id="lt" status="2">Apie...</lang>
                 <lang id="ro" status="2">Despre...</lang>
-                <lang id="fa" status="2">در باره...</lang>
+                <lang id="fa" status="3">درباره...</lang>
               </row>
             </component>
             <component class="TVisMenuItem" name="toolStripSeparator4" type="System.Windows.Forms.ToolStripSeparator">
@@ -1409,7 +1395,7 @@
                   <lang id="hu" status="2">Üdvözli a Little Registry Cleaner!</lang>
                   <lang id="lt" status="3">Sveiki atvykę į Little Registry Cleaner!</lang>
                   <lang id="ro" status="2">Bine aţi venit la Registrul Little Cleaner!</lang>
-                  <lang id="fa" status="2">خوش آمدید به کوچک تمیز کننده رجیستری!</lang>
+                  <lang id="fa" status="3">به برنامه ی تمیز کننده رجیستری کوچولو خوش آمدید!</lang>
                 </row>
               </component>
             </component>
@@ -1534,7 +1520,7 @@
                         <lang id="hu" status="2">Információ az alkalmazásról</lang>
                         <lang id="lt" status="3">Informacija apie programą</lang>
                         <lang id="ro" status="2">Cerere Info</lang>
-                        <lang id="fa" status="2">درخواست اطلاعات</lang>
+                        <lang id="fa" status="3">اطلاعات برنامه</lang>
                       </row>
                     </item>
                     <item name="Items[2]">
@@ -1588,7 +1574,7 @@
                         <lang id="hu" status="2">Szoftver beállítások</lang>
                         <lang id="lt" status="3">Nustatymai</lang>
                         <lang id="ro" status="2">Software-ul Setări</lang>
-                        <lang id="fa" status="2">نرم افزار تنظیمات</lang>
+                        <lang id="fa" status="3">تنظیمات نرم افزار</lang>
                       </row>
                     </item>
                     <item name="Items[4]">
@@ -1669,7 +1655,7 @@
                         <lang id="hu" status="2">Megosztott DLL-ek</lang>
                         <lang id="lt" status="2">Bendri DLL</lang>
                         <lang id="ro" status="2">Comun de DLL-uri</lang>
-                        <lang id="fa" status="2">به اشتراک گذاشته شده DLLs</lang>
+                        <lang id="fa" status="3">دی ال ال های به اشتراک گزاشته شده</lang>
                       </row>
                     </item>
                     <item name="Items[7]">
@@ -1696,7 +1682,7 @@
                         <lang id="hu" status="2">Segítség fájlok</lang>
                         <lang id="lt" status="2">Pagalbos failai</lang>
                         <lang id="ro" status="2">Ajutor Fişiere</lang>
-                        <lang id="fa" status="2">راهنما</lang>
+                        <lang id="fa" status="3">راهنما ی فایل ها</lang>
                       </row>
                     </item>
                     <item name="Items[8]">
@@ -1723,7 +1709,7 @@
                         <lang id="hu" status="2">Hang események</lang>
                         <lang id="lt" status="3">Garsiniai įvykiai</lang>
                         <lang id="ro" status="2">Evenimente de sunet</lang>
-                        <lang id="fa" status="2">صدا و رویدادها</lang>
+                        <lang id="fa" status="3">صدای رخداد ها</lang>
                       </row>
                     </item>
                     <item name="Items[9]">
@@ -1894,7 +1880,7 @@
                     <lang id="hu" status="2">Érték neve</lang>
                     <lang id="lt" status="3">Pavadinimas</lang>
                     <lang id="ro" status="2">Valoare Nume</lang>
-                    <lang id="fa" status="2">نام و نام خانوادگی ارزش</lang>
+                    <lang id="fa" status="3">نام مقدار</lang>
                   </row>
                 </component>
               </component>
@@ -1951,7 +1937,7 @@
                   <lang id="hu" status="2">Bejegyzés szkennelése</lang>
                   <lang id="lt" status="3">Registro skenavimas</lang>
                   <lang id="ro" status="2">Scanare de registru</lang>
-                  <lang id="fa" status="2">اسکن رجیستری</lang>
+                  <lang id="fa" status="3">جستجو در رجیستری</lang>
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonFix" type="System.Windows.Forms.ToolStripButton">
@@ -2155,7 +2141,7 @@
                     <lang id="hu" status="2">Bejegyzés szkennelése</lang>
                     <lang id="lt" status="3">Registro skenavimas</lang>
                     <lang id="ro" status="2">Scanare de registru</lang>
-                    <lang id="fa" status="2">اسکن رجیستری</lang>
+                    <lang id="fa" status="3">جستجو در رجیستری</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="fixToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2333,7 +2319,7 @@
                     <lang id="hu" status="2">Kijelölés megszüntetése</lang>
                     <lang id="lt" status="3">Atšaukti pažymėjimą</lang>
                     <lang id="ro" status="2">Selectaţi Nici unul</lang>
-                    <lang id="fa" status="2">هیچ کدام را انتخاب کنید</lang>
+                    <lang id="fa" status="3">انتخاب هیچکدام</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="invertSelectionToolStripMenuItem1" state="0" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2395,7 +2381,7 @@
                     <lang id="hu" status="2">Kijelöltek kihagyása</lang>
                     <lang id="lt" status="2">Pašalinti pasirinktus</lang>
                     <lang id="ro" status="2">Exclude selectate</lang>
-                    <lang id="fa" status="2">محروم کردن انتخاب شده</lang>
+                    <lang id="fa" status="3">استثنا قرار دادن انتخاب شده ها</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="viewInRegeditToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
@@ -2424,7 +2410,7 @@
                     <lang id="hu" status="2">Nézet regedit-ben</lang>
                     <lang id="lt" status="3">Peržiūrėti regedit aplinkoje</lang>
                     <lang id="ro" status="2">Vezi în regedit</lang>
-                    <lang id="fa" status="2">مشاهده در regedit</lang>
+                    <lang id="fa" status="3">مشاهده در برنامه رجیستری</lang>
                   </row>
                 </component>
               </component>
@@ -2804,6 +2790,11 @@
                     <lang id="fa" status="2">لیتوانیایی</lang>
                   </row>
                 </component>
+                <component class="TVisMenuItem" name="persianToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">
+                  <row id="Size.Height" state="0">22</row>
+                  <row id="Size.Width" state="0">184</row>
+                  <row id="Text" state="0">Persian</row>
+                </component>
                 <component class="TVisMenuItem" name="lithuaniaToolStripMenuItem" state="1" type="System.Windows.Forms.ToolStripMenuItem">
                   <row id="Text" state="1">
                     <native>Lithuanian</native>
@@ -3090,7 +3081,7 @@
                   <lang id="hu" status="2">Eszközök</lang>
                   <lang id="lt" status="2">Įrankiai</lang>
                   <lang id="ro" status="2">Instrumente</lang>
-                  <lang id="fa" status="2">ابزار</lang>
+                  <lang id="fa" status="3">ابزارها</lang>
                 </row>
                 <component class="TVisMenuItem" name="startupManagerToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
                   <row id="Size.Height">22</row>
@@ -3118,7 +3109,7 @@
                     <lang id="hu" status="2">Indítás menedzser</lang>
                     <lang id="lt" status="3">Automatiškai paleidžiamų failų vedlys</lang>
                     <lang id="ro" status="2">Scrobeală Conducător</lang>
-                    <lang id="fa" status="2">راه اندازی مدیریت</lang>
+                    <lang id="fa" status="3">مدیریت راه اندازی</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="uninstallManagerToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
@@ -3147,7 +3138,7 @@
                     <lang id="hu" status="2">Uninstallálás menedzser</lang>
                     <lang id="lt" status="3">Programos šalinimo vedlys</lang>
                     <lang id="ro" status="2">Uninstall Manager</lang>
-                    <lang id="fa" status="2">عزل مدیر</lang>
+                    <lang id="fa" status="3">از کار انداختن مدیر</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="toolStripSeparator8" type="System.Windows.Forms.ToolStripSeparator">
@@ -3271,7 +3262,7 @@
                     <lang id="hu" status="2">Honlap meglátogatása</lang>
                     <lang id="lt" status="2">Tinklalapis</lang>
                     <lang id="ro" status="2">Vizitaţi site-ul</lang>
-                    <lang id="fa" status="2">دفعات مشاهده وب سایت</lang>
+                    <lang id="fa" status="3">مشاهده وب سایت</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="checkForUpdatesToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
@@ -3333,7 +3324,7 @@
                     <lang id="hu" status="2">Bővebben...</lang>
                     <lang id="lt" status="2">Apie...</lang>
                     <lang id="ro" status="2">Despre...</lang>
-                    <lang id="fa" status="2">در باره...</lang>
+                    <lang id="fa" status="3">درباره...</lang>
                   </row>
                 </component>
               </component>
@@ -3398,7 +3389,7 @@
             <lang id="hu" status="2">Little Registry Cleaner - Beállítások</lang>
             <lang id="lt" status="2">Little Registry Cleaner - Funkcijos</lang>
             <lang id="ro" status="2">Little Registry Cleaner - Opţiuni</lang>
-            <lang id="fa" status="2">کوچک تمیز کننده رجیستری -- تنظیمات</lang>
+            <lang id="fa" status="3">تمیز کننده رجیستری کوچولو - تنظیمات</lang>
           </row>
           <component class="TVisPictureButton" name="buttonCancel" type="System.Windows.Forms.Button">
             <row id="Location.X">420</row>
@@ -3459,7 +3450,7 @@
               <lang id="hu" status="2">OK</lang>
               <lang id="lt" status="2">GERAI</lang>
               <lang id="ro" status="2">BINE</lang>
-              <lang id="fa" status="2">خوب</lang>
+              <lang id="fa" status="3">قبول</lang>
             </row>
           </component>
           <component class="TVisPageControl" name="tabControl1" type="System.Windows.Forms.TabControl">
@@ -3525,7 +3516,7 @@
                   <lang id="hu" status="2">Válasszon egy mappát a törölt bejegyzések biztonsági másolatainak </lang>
                   <lang id="lt" status="3">Pasirinkite aplanką rezerviniam pašalintu registro elementu kopijavimui </lang>
                   <lang id="ro" status="2">Selectaţi un folder la intrările de rezervă de registry elimină </lang>
-                  <lang id="fa" status="2">انتخاب پوشه پشتیبان رجیستری حذف </lang>
+                  <lang id="fa" status="3">انتخاب یک فولدر برای فایل بک آپ</lang>
                 </row>
                 <component class="TVisPictureButton" name="buttonBrowse1" type="System.Windows.Forms.Button">
                   <row id="Location.X">373</row>
@@ -3555,7 +3546,7 @@
                     <lang id="hu" status="2">Tallózás...</lang>
                     <lang id="lt" date="20100329221004" status="3">Peržiūra...</lang>
                     <lang id="ro" status="2">Răsfoiţi...</lang>
-                    <lang id="fa" status="2">مرور...</lang>
+                    <lang id="fa" status="3">انتخاب...</lang>
                   </row>
                 </component>
                 <component class="TVisEdit" name="textBoxBackupFolder" type="System.Windows.Forms.TextBox">
@@ -3624,7 +3615,7 @@
                       <lang id="hu" status="2">Bejegyzés szkennelések és helyrehozások naplózása</lang>
                       <lang id="lt" status="3">Įrašinėti visas atliekamas operacijas į pokyčiu žurnalą</lang>
                       <lang id="ro" status="2">Jurnal scanează registru şi stabileşte</lang>
-                      <lang id="fa" status="2">ورود به سیستم اسکن رجیستری و رفع</lang>
+                      <lang id="fa" status="3">ثبت وقایع جستجو در رجیستری و رفع مشکلات</lang>
                     </row>
                   </item>
                   <item name="Items[1]" state="0">
@@ -3651,7 +3642,7 @@
                       <lang id="hu" status="2">Újraszkennelés bejegyzéshibák javítása után</lang>
                       <lang id="lt" status="3">Papildomas patikrinimas po klaidu pašalinimo</lang>
                       <lang id="ro" status="2">Re-Scanare după problemele de fixare registru</lang>
-                      <lang id="fa" status="2">دوباره بعد از اسکن رجیستری مسائل ثابت</lang>
+                      <lang id="fa" status="3">جستجوی دوباره بعد از رفع مشکلات</lang>
                     </row>
                   </item>
                   <item name="Items[2]" state="0">
@@ -3678,7 +3669,7 @@
                       <lang id="hu" status="2">Automatikus frissítés</lang>
                       <lang id="lt" status="3">Tikrinti atnaujinimus automatiškai</lang>
                       <lang id="ro" status="2">A verifica pentru updates automat</lang>
-                      <lang id="fa" status="2">اتمام به طور خودکار برای به روز رسانی</lang>
+                      <lang id="fa" status="3">چک کردن اتوماتیک برای بروزرسانی</lang>
                     </row>
                   </item>
                   <item name="Items[3]" state="0">
@@ -3705,7 +3696,7 @@
                       <lang id="hu" status="2">Rendszervisszaállító pontok automatikus létrehozása</lang>
                       <lang id="lt" status="2">Sukurti sistemos atkūrimo taškus automatiškai</lang>
                       <lang id="ro" status="2">Creare sistem automat puncte de restaurare</lang>
-                      <lang id="fa" status="2">سیستم ایجاد نقاط بازیابی به صورت خودکار</lang>
+                      <lang id="fa" status="3">ایجاد نقطه ریستور در ویندوز به صورت اتوماتیک</lang>
                     </row>
                   </item>
                   <item name="Items[4]" state="0">
@@ -3732,7 +3723,7 @@
                       <lang id="hu" status="2">Napló megmutatása szkennelés után</lang>
                       <lang id="lt" status="3">Rodyti pokyčiu žurnalą po skenavimo</lang>
                       <lang id="ro" status="2">Afişare jurnal după terminarea scanare</lang>
-                      <lang id="fa" status="2">ورود به سیستم نمایش پس از اتمام اسکن</lang>
+                      <lang id="fa" status="3">نمایش ثبت وقایع بعد از اتمام جستجو</lang>
                     </row>
                   </item>
                   <item name="Items[5]" state="0">
@@ -3786,7 +3777,7 @@
                       <lang id="hu" status="2">Eltávolítható eszközön hiányzó fájlok figyelmen kívül hagyása</lang>
                       <lang id="lt" status="3">Ignoruoti trūkstamus failus išorinėse laikmenose</lang>
                       <lang id="ro" status="2">Ignoră fişierele lipsesc de pe suport amovibil</lang>
-                      <lang id="fa" status="2">چشمپوشی از فایل های گم شده در رسانه های جداشدنی</lang>
+                      <lang id="fa" status="3">چشمپوشی از فایل های گم شده در وسایل جداشدنی</lang>
                     </row>
                   </item>
                   <item name="Items[7]" state="0">
@@ -3813,7 +3804,7 @@
                       <lang id="hu" status="2">Bejegyzések automatikus javítása</lang>
                       <lang id="lt" status="3">Automatiškai remontuoti registro objektus</lang>
                       <lang id="ro" status="2">Reparare automat elementele de registry</lang>
-                      <lang id="fa" status="2">عنوانها به طور خودکار تعمیر رجیستری</lang>
+                      <lang id="fa" status="3">تعمیر اتوماتیک بخش های رجیستری</lang>
                     </row>
                   </item>
                   <item name="Items[8]" state="0">
@@ -3840,7 +3831,7 @@
                       <lang id="hu" status="2">Kilépés bejegyzések javítása után</lang>
                       <lang id="lt" status="3">Išeiti iš programos po registro remonto</lang>
                       <lang id="ro" status="2">Programul de ieşire după repararea registrului</lang>
-                      <lang id="fa" status="2">خروجی برنامه بعد از تعمیر رجیستری</lang>
+                      <lang id="fa" status="3">خروج از برنامه بعد از تعمیر رجیستری</lang>
                     </row>
                   </item>
                 </component>
@@ -3873,7 +3864,7 @@
                   <lang id="hu" status="2">Válasszon egy mappát a naplófájloknak</lang>
                   <lang id="lt" status="3">Pasirinkite aplanką kur bus saugomi pokyčiu žurnalai</lang>
                   <lang id="ro" status="2">Selectaţi un folder pentru a salva fişierele jurnal pentru a</lang>
-                  <lang id="fa" status="2">انتخاب پوشه برای ذخیره فایلها را به وارد شوید</lang>
+                  <lang id="fa" status="3">انتخاب یک فولدر برای ذخیره ی فایل های ثبت وقایع</lang>
                 </row>
                 <component class="TVisEdit" name="textBoxLogFolder" type="System.Windows.Forms.TextBox">
                   <row id="Location.X">6</row>
@@ -3909,7 +3900,7 @@
                     <lang id="hu" status="2">Tallózás...</lang>
                     <lang id="lt" date="20100329221043" status="3">Peržiūra...</lang>
                     <lang id="ro" status="2">Răsfoiţi...</lang>
-                    <lang id="fa" status="2">مرور...</lang>
+                    <lang id="fa" status="3">انتخاب...</lang>
                   </row>
                 </component>
               </component>
@@ -3973,7 +3964,7 @@
                     <lang id="hu" status="2">Kihagyandó fájlok és mappák</lang>
                     <lang id="lt" status="2">Failai ir aplankai neįtraukti</lang>
                     <lang id="ro" status="2">Fişiere şi foldere pentru a exclude</lang>
-                    <lang id="fa" status="2">فایل ها و پوشه های حذف</lang>
+                    <lang id="fa" status="3">فایل ها و فولدرهای چشمپوشی شده</lang>
                   </row>
                   <row id="Width" class="TIntegerRow">437</row>
                 </column>
@@ -4006,7 +3997,7 @@
                   <lang id="hu" status="2">Jobb gomb bejegyzések hozzáadásához/eltávolításához</lang>
                   <lang id="lt" status="3">Spustelėkite dešiniuoju pelės mygtuku tam, kad pridėti / pašalinti įrašus</lang>
                   <lang id="ro" status="2">Click dreapta pentru a adăuga / elimina intrările</lang>
-                  <lang id="fa" status="2">راست کلیک کنید برای اضافه کردن / حذف مدخل</lang>
+                  <lang id="fa" status="3">راست کلیک کنید برای اضافه کردن یا حذف کردن</lang>
                 </row>
               </component>
             </component>
@@ -4069,7 +4060,7 @@
                 <lang id="hu" status="2">Mappa hozzáadása</lang>
                 <lang id="lt" status="2">Pridėti aplanką</lang>
                 <lang id="ro" status="2">Adauga Pliant</lang>
-                <lang id="fa" status="2">اضافه کردن پوشه</lang>
+                <lang id="fa" status="3">اضافه کردن فولدر</lang>
               </row>
             </component>
             <component class="TVisMenuItem" name="addRegistryPathToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
@@ -4098,7 +4089,7 @@
                 <lang id="hu" status="2">Bejegyzés útvonal hozzáadása</lang>
                 <lang id="lt" status="3">Pridėti registro kelią</lang>
                 <lang id="ro" status="2">Adauga Registrul Cale</lang>
-                <lang id="fa" status="2">افزودنیهای مسیر رجیستری</lang>
+                <lang id="fa" status="3">اضافه کردن مسیر رجیستری</lang>
               </row>
             </component>
             <component class="TVisMenuItem" name="toolStripSeparator1" type="System.Windows.Forms.ToolStripSeparator">
@@ -4131,7 +4122,7 @@
                 <lang id="hu" status="2">Feljegyzés eltávolítása</lang>
                 <lang id="lt" status="3">Pašalinti įrašą</lang>
                 <lang id="ro" status="2">Eliminaţi de intrare</lang>
-                <lang id="fa" status="2">حذفمدخل</lang>
+                <lang id="fa" status="3">حذف</lang>
               </row>
             </component>
           </component>
@@ -4164,7 +4155,7 @@
             <lang id="hu" status="2">Little Registry Cleaner - Bejegyzés visszaállítása</lang>
             <lang id="lt" status="3">Little Registry Cleaner - atkurti registrą</lang>
             <lang id="ro" status="2">Little Registry Cleaner - Revenirea la Registrul</lang>
-            <lang id="fa" status="2">کوچک تمیز کننده رجیستری -- بازیابی رجیستری</lang>
+            <lang id="fa" status="3">تمیز کننده رجیستری کوچولو -  بازیابی رجیستری</lang>
           </row>
           <component class="TVisGridPanel" name="tableLayoutPanel1" type="System.Windows.Forms.TableLayoutPanel" align="alClient">
             <columns countset="1">
@@ -4289,7 +4280,7 @@
                 <lang id="hu" status="2">Válasszon ki egy fájlt a bejegyzés visszaállításához</lang>
                 <lang id="lt" status="3">Pasirinkite žemiau esanti failą, iš kurio norite atkurti registrą</lang>
                 <lang id="ro" status="2">Selectaţi un fişier de mai jos pentru a restaura tău registru la o stare anterioară</lang>
-                <lang id="fa" status="2">انتخاب فایل زیر را برای بازگرداندن رجیستری به حالت قبلی</lang>
+                <lang id="fa" status="3">انتخاب یک فایل برای بازگرداندن رجیستری به حالت قبلی</lang>
               </row>
             </component>
             <component class="TVisListView" name="listViewFiles" type="System.Windows.Forms.ListView" align="alClient" gridrow="1" viewstyle="vsReport">
@@ -4412,7 +4403,7 @@
             <lang id="hu" status="2">Little Registry Cleaner - Szkennelés...</lang>
             <lang id="lt" status="3">Little Registry Cleaner – Skenavimas...</lang>
             <lang id="ro" status="2">Little Registry Cleaner - Scanarea...</lang>
-            <lang id="fa" status="2">کوچک تمیز کننده رجیستری -- پویش...</lang>
+            <lang id="fa" status="3">تمیز کننده رجیستری کوچولو -  در حال جستجو...</lang>
           </row>
           <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
           </component>
@@ -4537,7 +4528,7 @@
             <lang id="hu" status="2">Futtatható tárgy szerkesztése</lang>
             <lang id="lt" status="3">Redaguoti automatinio paleidimo sąrašą</lang>
             <lang id="ro" status="2">Editare alerga Postul</lang>
-            <lang id="fa" status="2">ویرایش آیتم های اجرای</lang>
+            <lang id="fa" status="3">ویرایش آیتم های اجرایی</lang>
           </row>
           <component class="TVisGroupBox" name="groupBox1" type="System.Windows.Forms.GroupBox">
             <row id="Location.X">12</row>
@@ -4567,7 +4558,7 @@
               <lang id="hu" status="2">Indítás fejlegyzés szerkesztése</lang>
               <lang id="lt" status="3">Redaguoti paleisties įrašus</lang>
               <lang id="ro" status="2">Editare de pornire de intrare</lang>
-              <lang id="fa" status="2">ورودی ویرایش راه اندازی</lang>
+              <lang id="fa" status="3">ویرایش ورودی های راه اندازی</lang>
             </row>
             <component class="TVisEdit" name="textBoxFile" type="System.Windows.Forms.TextBox">
               <row id="Location.X">30</row>
@@ -4603,7 +4594,7 @@
                 <lang id="hu" status="2">OK</lang>
                 <lang id="lt" status="2">GERAI</lang>
                 <lang id="ro" status="2">BINE</lang>
-                <lang id="fa" status="2">خوب</lang>
+                <lang id="fa" status="3">قبول</lang>
               </row>
             </component>
             <component class="TVisPictureButton" name="buttonCancel" type="System.Windows.Forms.Button">
@@ -4665,7 +4656,7 @@
                 <lang id="hu" status="2">Fájl:</lang>
                 <lang id="lt" status="2">Failas:</lang>
                 <lang id="ro" status="2">Fişier:</lang>
-                <lang id="fa" status="2">پرونده:</lang>
+                <lang id="fa" status="3">فایل:</lang>
               </row>
             </component>
             <component class="TVisLabel" name="label2" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
@@ -4696,7 +4687,7 @@
                 <lang id="hu" status="2">Argumentumok:</lang>
                 <lang id="lt" status="3">Parametrai:</lang>
                 <lang id="ro" status="2">Argumentele:</lang>
-                <lang id="fa" status="2">نشانوندها:</lang>
+                <lang id="fa" status="3">استدلال ها:</lang>
               </row>
             </component>
             <component class="TVisEdit" name="textBoxArgs" type="System.Windows.Forms.TextBox">
@@ -4716,6 +4707,7 @@
                 <lang id="sv">…</lang>
                 <lang id="zh">...</lang>
                 <lang id="zh.tra">...</lang>
+                <lang id="fa">...</lang>
               </row>
             </component>
           </component>
@@ -4748,7 +4740,7 @@
             <lang id="hu" status="2">Új futtatható tárgy</lang>
             <lang id="lt" status="3">Sukurti naujas automatinio paleidimo elementą</lang>
             <lang id="ro" status="2">Postul nou Run</lang>
-            <lang id="fa" status="2">جدید اجرای موردی</lang>
+            <lang id="fa" status="3">آیتم های اجرایی جدید</lang>
           </row>
           <component class="TVisPictureButton" name="buttonCancel" type="System.Windows.Forms.Button">
             <row id="Location.X">236</row>
@@ -4809,7 +4801,7 @@
               <lang id="hu" status="2">OK</lang>
               <lang id="lt" status="2">GERAI</lang>
               <lang id="ro" status="2">BINE</lang>
-              <lang id="fa" status="2">خوب</lang>
+              <lang id="fa" status="3">قبول</lang>
             </row>
           </component>
           <component class="TVisGroupBox" name="groupBox1" type="System.Windows.Forms.GroupBox">
@@ -4901,7 +4893,7 @@
                 <lang id="hu" status="2">Útvonal:</lang>
                 <lang id="lt" status="2">Kelias iki failo:</lang>
                 <lang id="ro" status="2">Calea fisierului:</lang>
-                <lang id="fa" status="2">مسیر پرونده:</lang>
+                <lang id="fa" status="3">مسیر فایل:</lang>
               </row>
             </component>
             <component class="TVisEdit" name="textBoxName" type="System.Windows.Forms.TextBox">
@@ -4922,6 +4914,7 @@
                 <lang id="sv" status="3">…</lang>
                 <lang id="zh" status="3">...</lang>
                 <lang id="zh.tra" status="3">...</lang>
+                <lang id="fa" status="3">...</lang>
               </row>
             </component>
             <component class="TVisEdit" name="textBoxPath" type="System.Windows.Forms.TextBox">
@@ -4958,7 +4951,7 @@
                 <lang id="hu" status="2">Argumentumok:</lang>
                 <lang id="lt" status="3">Parametrai:</lang>
                 <lang id="ro" status="2">Argumentele:</lang>
-                <lang id="fa" status="2">نشانوندها:</lang>
+                <lang id="fa" status="3">استدلال ها:</lang>
               </row>
             </component>
             <component class="TVisEdit" name="textBoxArgs" type="System.Windows.Forms.TextBox">
@@ -5023,7 +5016,7 @@
               <lang id="hu" status="2">Rendszerleíró adatbázis\All Users\Run</lang>
               <lang id="lt" status="2">Registry\All Users\Run</lang>
               <lang id="ro" status="2">Registrul\All Users\Run</lang>
-              <lang id="fa" status="2">رجیستری\همه اعضا\اجرای</lang>
+              <lang id="fa" status="3">رجیستری\همه اعضا\اجرا</lang>
             </row>
             <row id="Items.Registry\All Users\Run Once" importid="3" excluded="1" state="0">
               <native>Registry\All Users\Run Once</native>
@@ -5048,7 +5041,7 @@
               <lang id="hu" status="2">Rendszerleíró adatbázis\All Users\Run Egyszer</lang>
               <lang id="lt" status="3">Registry\All Users\Run Once</lang>
               <lang id="ro" status="2">Registrul\All Users\rula o singură dată</lang>
-              <lang id="fa" status="2">رجیستری\همه اعضا\پس از اجرای</lang>
+              <lang id="fa" status="3">رجیستری\همه اعضا\پس از اجرا</lang>
             </row>
             <row id="Items.Registry\All Users\Run Services" importid="4" excluded="1" state="0">
               <native>Registry\All Users\Run Services</native>
@@ -5123,7 +5116,7 @@
               <lang id="hu" status="2">Rendszerleíró adatbázis\Current User\Run</lang>
               <lang id="lt" status="2">Registry\Vartotojas\Run</lang>
               <lang id="ro" status="2">Registrul\\Utilizatorul curent Run</lang>
-              <lang id="fa" status="2">رجیستری\\کاربر جاری اجرای</lang>
+              <lang id="fa" status="3">رجیستری\کاربر جاری \اجرا</lang>
             </row>
             <row id="Items.Registry\Current User\Run Once" importid="7" excluded="1" state="0">
               <native>Registry\Current User\Run Once</native>
@@ -5148,7 +5141,7 @@
               <lang id="hu" status="2">Rendszerleíró adatbázis\Current User\Run Egyszer</lang>
               <lang id="lt" status="2">Registry\Vartotojas\Run Kartą</lang>
               <lang id="ro" status="2">Registrul\\Utilizatorul curent rula o singură dată</lang>
-              <lang id="fa" status="2">رجیستری\\کاربر جاری پس از اجرای</lang>
+              <lang id="fa" status="3">رجیستری\کاربر جاری\ پس از اجرا</lang>
             </row>
             <row id="Items.Registry\Current User\Run Services" importid="8" excluded="1" state="0">
               <native>Registry\Current User\Run Services</native>
@@ -5173,7 +5166,7 @@
               <lang id="hu" status="2">Rendszerleíró adatbázis\Current User\Run Szolgáltatások</lang>
               <lang id="lt" status="2">Registry\Vartotojas\Run Services</lang>
               <lang id="ro" status="2">Registrul\\Utilizatorul curent Run Servicii</lang>
-              <lang id="fa" status="2">رجیستری\\کاربر جاری اجرای خدمات</lang>
+              <lang id="fa" status="3">رجیستری\کاربر جاری \اجرای خدمات</lang>
             </row>
             <row id="Items.Registry\Current User\Run Services Once" importid="9" excluded="1" state="0">
               <native>Registry\Current User\Run Services Once</native>
@@ -5198,7 +5191,7 @@
               <lang id="hu" status="2">Rendszerleíró adatbázis\Current User\Run Services Egyszer</lang>
               <lang id="lt" status="2">Registry\Vartotojas\Run Paslaugos Kartą</lang>
               <lang id="ro" status="2">Registrul\\Utilizatorul curent Run Servicii Odată</lang>
-              <lang id="fa" status="2">رجیستری\\کاربر جاری اجرای خدمات پس از</lang>
+              <lang id="fa" status="3">رجیستری\کاربر جاری \اجرای خدمات پس از</lang>
             </row>
             <row id="Items.StartUp\All Users" importid="0" excluded="1" state="0">
               <native>StartUp\All Users</native>
@@ -5248,7 +5241,7 @@
               <lang id="hu" status="2">StartUp\Current User</lang>
               <lang id="lt" status="2">Startup\Dabartinis vartotojas</lang>
               <lang id="ro" status="2">Startup\Utilizatorul curent</lang>
-              <lang id="fa" status="2">راه اندازی کاربر\کنونی</lang>
+              <lang id="fa" status="3">راه اندازی\کاربر جاری</lang>
             </row>
             <row id="Location.X">57</row>
             <row id="Location.Y">6</row>
@@ -5284,7 +5277,7 @@
             <lang id="hu" status="2">Little Registry Cleaner - Indítás menedzser</lang>
             <lang id="lt" status="3">Little Registry Cleaner – Automatinio paleidimo vedlys</lang>
             <lang id="ro" status="2">Little Registry Cleaner - Director de pornire</lang>
-            <lang id="fa" status="2">تمیز کننده رجیستری کوچولو -- مدیر راه اندازی</lang>
+            <lang id="fa" status="3">تمیز کننده رجیستری کوچولو - مدیر راه اندازی</lang>
           </row>
           <component class="TVisEdit" name="nodeTextBoxSection" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox" rendering="trGdiPlus">
           </component>
@@ -5437,7 +5430,7 @@
                     <lang id="hu" status="2">Argumentumok</lang>
                     <lang id="lt" status="3">Parametrai</lang>
                     <lang id="ro" status="2">Argumentele</lang>
-                    <lang id="fa" status="2">نشانوندها</lang>
+                    <lang id="fa" status="3">استدلال ها</lang>
                   </row>
                 </component>
               </component>
@@ -5589,7 +5582,7 @@
                   <lang id="hu" status="2">Futtatás</lang>
                   <lang id="lt" status="3">Įvykdyti</lang>
                   <lang id="ro" status="2">Alerga</lang>
-                  <lang id="fa" status="2">اجرای</lang>
+                  <lang id="fa" status="3">اجرا</lang>
                 </row>
               </component>
               <component class="TVisToolSeparator" name="toolStripSeparator1" type="System.Windows.Forms.ToolStripSeparator">
@@ -5656,7 +5649,7 @@
             <lang id="hu" status="2">Little Registry Cleaner - Uninstallálás menedzser</lang>
             <lang id="lt" status="3">Little Registry Cleaner – Programos pašalinimo vedlys</lang>
             <lang id="ro" status="2">Little Registry Cleaner - Director Uninstall</lang>
-            <lang id="fa" status="2">کوچک تمیز کننده رجیستری -- مدیریت عزل</lang>
+            <lang id="fa" status="3">تمیز کننده رجیستری کوچولو -  ازکارانداختن مدیر</lang>
           </row>
           <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
           </component>
@@ -5787,7 +5780,7 @@
                     <lang id="hu" status="2">Unsinstallálás</lang>
                     <lang id="lt" status="2">Šalinti</lang>
                     <lang id="ro" status="2">Uninstall</lang>
-                    <lang id="fa" status="2">عزل</lang>
+                    <lang id="fa" status="3">از کار انداختن</lang>
                   </row>
                 </component>
                 <component class="TVisPictureButton" name="buttonRemove" type="System.Windows.Forms.Button" imageindex="3" images="imageList">
@@ -5818,7 +5811,7 @@
                     <lang id="hu" status="2">Feljegyzés eltávolítása</lang>
                     <lang id="lt" status="3">Pašalinti įrašą</lang>
                     <lang id="ro" status="2">Eliminaţi de intrare</lang>
-                    <lang id="fa" status="2">حذفمدخل</lang>
+                    <lang id="fa" status="3">حذف</lang>
                   </row>
                 </component>
               </component>
@@ -5943,7 +5936,7 @@
             <lang id="hu" status="2">Frissítés keresése</lang>
             <lang id="lt" status="3">Patikrinti ar yra atnaujinimai</lang>
             <lang id="ro" status="2">Verificaţi pentru actualizare</lang>
-            <lang id="fa" status="2">برای چک کردن بروز رسانی</lang>
+            <lang id="fa" status="3">چک کردن برای بروز رسانی</lang>
           </row>
           <component class="TVisImage" name="pictureBox1" type="System.Windows.Forms.PictureBox">
             <row id="Location.X">16</row>
@@ -6047,7 +6040,7 @@
           <lang id="hu" status="2">A hibajelentést nem lehet elküldeni</lang>
           <lang id="lt" status="3">Pranešimas nebuvo išsiųstas</lang>
           <lang id="ro" status="2">Raportul bug-ul nu a putut fi trimis</lang>
-          <lang id="fa" status="2">گزارش اشکال نمی تواند خبر</lang>
+          <lang id="fa" status="3">نمی تواند گزارش مشکلات را بفرستد</lang>
         </row>
         <row id="crashReporterSuccess" state="0">
           <native>Sent bug report successfully</native>
@@ -6072,7 +6065,7 @@
           <lang id="hu" status="2">A hibajelentés sikeresen elküldve</lang>
           <lang id="lt" status="3">Pranešimą apie klaidą išsiųstas sėkmingai</lang>
           <lang id="ro" status="2">Trimis raport cu succes</lang>
-          <lang id="fa" status="2">ارسال گزارش مشکلات را با موفقیت</lang>
+          <lang id="fa" status="3">ارسال گزارش مشکلات با موفقیت انجام شد</lang>
         </row>
         <row id="mainAddExcludeEntry" state="0">
           <native>Added selected registry keys to the exclude list</native>
@@ -6097,7 +6090,7 @@
           <lang id="hu" status="2">Kijelölt bejegyzés kulcsok sikeresen hozzáadva a kihagyáslistához</lang>
           <lang id="lt" status="3">Pasirinkti registro raktai įtraukti į ignoruojamųjų sąrašą</lang>
           <lang id="ro" status="2">Postat chei selectat registry pentru a exclude lista</lang>
-          <lang id="fa" status="2">اضافه شده کلید های انتخاب شده در رجیستری را به لیست حذف</lang>
+          <lang id="fa" status="3">اضافه شده کلید های انتخاب شده در رجیستری به لیست استثنا</lang>
         </row>
         <row id="mainAskExit" state="0">
           <native>Are you sure you want to exit?</native>
@@ -6122,7 +6115,7 @@
           <lang id="hu" status="2">Biztos ki akar lépni?</lang>
           <lang id="lt" status="2">Ar tikrai norite išeiti?</lang>
           <lang id="ro" status="2">Sunteţi sigur că doriţi să ieşiţi?</lang>
-          <lang id="fa" status="2">آیا مطمئن هستید که می خواهید به خروج?</lang>
+          <lang id="fa" status="3">آیا مطمئن هستید که می خواهید خارج شوید؟</lang>
         </row>
         <row id="mainFreeWareProgram" state="0">
           <native>This program is freeware. If you paid for a copy of this program, get a refund!</native>
@@ -6147,7 +6140,7 @@
           <lang id="hu" status="2">Ez műsor autópálya. Ha ez a program egy példányát a fizetett, kap egy visszatérítési!</lang>
           <lang id="lt" status="2">Ši programa yra nemokama. Jeigu jums mokama už šios programos kopiją, gauti grąžinamąją išmoką!</lang>
           <lang id="ro" status="2">Acest program este freeware. Dacă aţi plătit pentru o copie a acestui program, pentru a primi o rambursare!</lang>
-          <lang id="fa" status="2">این برنامه نرم افزار رایگان می باشد. اگر شما یک نسخه از این برنامه پرداخت می شود ، دریافت بازپرداخت!</lang>
+          <lang id="fa" status="3">این نرم افزار رایگان می باشد. اگر شما پولی برای این نرم افزار پرداخت کردید,آن را پس بگیرید</lang>
         </row>
         <row id="mainInvalidHelpFile" state="0">
           <native>Unable to find Little Registry Cleaner.chm</native>
@@ -6172,7 +6165,7 @@
           <lang id="hu" status="2">Nincs meg a Little Registry Cleaner.chm fájl</lang>
           <lang id="lt" status="3">Nepavyko rasti Little Registry Cleaner.chm</lang>
           <lang id="ro" status="2">Nereuşind să găsească Little Registrul Cleaner.chm</lang>
-          <lang id="fa" status="2">قادر به یافتن کوچولو رجیستری Cleaner.chm</lang>
+          <lang id="fa" status="3">قادر به یافتن Little Registry Cleaner.chm نیست</lang>
         </row>
         <row id="mainProblemsFix" state="0">
           <native>Would you like to fix all selected problems?</native>
@@ -6197,7 +6190,7 @@
           <lang id="hu" status="2">Szeretné az összes kijelölt problémát megjavítani?</lang>
           <lang id="lt" status="3">Ar norėtumėte ištaisyti visas pažymėtas klaidas?</lang>
           <lang id="ro" status="2">Doriţi să remedia toate problemele selectat?</lang>
-          <lang id="fa" status="2">آیا می خواهید به حل تمام مشکلات انتخاب?</lang>
+          <lang id="fa" status="3">آیا می خواهید تمام مشکلات حل شود؟</lang>
         </row>
         <row id="mainProblemsRemoved" state="0">
           <native>Removed problems from registry</native>
@@ -6247,7 +6240,7 @@
           <lang id="hu" status="2">Bejegyzés szkennelése megszakítva</lang>
           <lang id="lt" status="3">Registro skenavimas nutrauktas</lang>
           <lang id="ro" status="2">Avortat de scanare de registru</lang>
-          <lang id="fa" status="2">ساقطشد اسکن رجیستری</lang>
+          <lang id="fa" status="3">بی نتیجه ماندن جستجو در رجیستری</lang>
         </row>
         <row id="mainScanningFinished" state="0">
           <native>Finished scanning the registry</native>
@@ -6272,7 +6265,7 @@
           <lang id="hu" status="2">Bejegyzés szkennelése befejezve</lang>
           <lang id="lt" status="3">Registro skenavimas baigtas</lang>
           <lang id="ro" status="2">Terminat de scanare de registru</lang>
-          <lang id="fa" status="2">پایان اسکن رجیستری</lang>
+          <lang id="fa" status="3">پایان جستجو در رجیستری</lang>
         </row>
         <row id="mainSelectSections" state="0">
           <native>Please select a section to scan</native>
@@ -6297,7 +6290,7 @@
           <lang id="hu" status="2">Válasszon területet a szkenneléshez</lang>
           <lang id="lt" status="3">Pasirinkite skyrių skenavimui</lang>
           <lang id="ro" status="2">Vă rugăm să selectaţi o secţiune pentru a scana</lang>
-          <lang id="fa" status="2">لطفا انتخاب کنید بخش را اسکن</lang>
+          <lang id="fa" status="3">لطفا یک بخش را برای جستجو انتخاب کنید</lang>
         </row>
         <row id="mainUpdateAsk" state="0">
           <native>A newer version is available. Would you like to download it?</native>
@@ -6322,7 +6315,7 @@
           <lang id="hu" status="2">Frisseb verzió elérhető. Szeretné letölteni?</lang>
           <lang id="lt" status="3">Yra prieinama naujesnė versija. Ar norite ją atsisiųsti?</lang>
           <lang id="ro" status="2">O versiune mai nouă este disponibilă. Doriţi să-l descărcaţi?</lang>
-          <lang id="fa" status="2">نسخه جدیدتری است که در دسترس نیست. آیا می خواهید به آن را دانلود?</lang>
+          <lang id="fa" status="3">یک نسخه جدید آمده است.میخاهید دانلود کنید؟</lang>
         </row>
         <row id="optionsExcludeDir" state="0">
           <native>Select the folder to exclude from the registry scan</native>
@@ -6347,7 +6340,7 @@
           <lang id="hu" status="2">Válassza ki a mappát amit ki akar hagyni a szkennelésből</lang>
           <lang id="lt" status="3">Pasirinkite aplanką kuri ne norite skenuoti</lang>
           <lang id="ro" status="2">Selectaţi folderul de a exclude din registru scanare</lang>
-          <lang id="fa" status="2">انتخاب پوشه حذف از رجیستری را اسکن</lang>
+          <lang id="fa" status="3">انتخاب یک فولدر به استثنا ها از جستجوی رجیستری</lang>
         </row>
         <row id="optionsExcludeEmptyRegPath" state="0">
           <native>Registry path cannot be empty</native>
@@ -6397,7 +6390,7 @@
           <lang id="hu" status="2">Válassza ki a fájlt amit ki akar hagyni a szkennelésből</lang>
           <lang id="lt" status="3">Pasirinkite failą kuri ne norite skenuoti</lang>
           <lang id="ro" status="2">Selectaţi un fişier de a exclude din registru scanare</lang>
-          <lang id="fa" status="2">انتخاب فایل را به محروم کردن از اسکن رجیستری</lang>
+          <lang id="fa" status="3">انتخاب یک فایل به استثنا ها از جستجوی رجیستری</lang>
         </row>
         <row id="optionsExcludeInvalidRegPath" state="0">
           <native>Specified registry key doesn't exist</native>
@@ -6447,7 +6440,7 @@
           <lang id="hu" status="2">Biztos benne?</lang>
           <lang id="lt" status="2">Ar tikrai?</lang>
           <lang id="ro" status="2">Esti sigur?</lang>
-          <lang id="fa" status="2">آیا مطمئن هستید که?</lang>
+          <lang id="fa" status="3">آیا مطمئن هستید ؟</lang>
         </row>
         <row id="optionsSelectBackupDir" state="0">
           <native>Select the folder where the backup files will be placed</native>
@@ -6472,7 +6465,7 @@
           <lang id="hu" status="2">Válassza ki a mappát amibe majd a biztonsági másolatok kerülnek</lang>
           <lang id="lt" status="3">Pasirinkite aplanką, kuriame bus saugomos atsarginės kopijos</lang>
           <lang id="ro" status="2">Selectaţi folderul în care fişierele de rezervă va fi plasat</lang>
-          <lang id="fa" status="2">انتخاب پوشه که فایلهای پشتیبان قرار داده خواهد شد</lang>
+          <lang id="fa" status="3">انتخاب پوشه ای که فایلهای پشتیبان قرار داده خواهد شد</lang>
         </row>
         <row id="optionsSelectLogDir" state="0">
           <native>Select the folder where the log files will be placed</native>
@@ -6497,7 +6490,7 @@
           <lang id="hu" status="2">Válassza ki a mappát amibe majd a naplófájlok kerülnek</lang>
           <lang id="lt" status="3">Pasirinkite aplanką kur bus saugomi pokyčiu žurnalai</lang>
           <lang id="ro" status="2">Selectaţi folderul în care fişierele jurnal vor fi plasate</lang>
-          <lang id="fa" status="2">انتخاب پوشه که فایل های قرار داده شده وارد خواهد شد</lang>
+          <lang id="fa" status="3">انتخاب پوشه ای که فایل های قرار داده شده وارد خواهد شد</lang>
         </row>
         <row id="piErrorRegKey" state="0">
           <native>Error removing registry key:</native>
@@ -6547,7 +6540,7 @@
           <lang id="hu" status="2">Hiba történt a program uninstallállása közben:</lang>
           <lang id="lt" status="3">Klaida šalinant programą:</lang>
           <lang id="ro" status="2">Eroare la dezinstalarea programului:</lang>
-          <lang id="fa" status="2">اشکال برنامه پاک:</lang>
+          <lang id="fa" status="3">خطا در پاک کردن برنامه:</lang>
         </row>
         <row id="piInvalidUninstallString" state="0">
           <native>Unable to find uninstall string. Would you like to manually remove it from the registry?</native>
@@ -6572,7 +6565,7 @@
           <lang id="hu" status="2">Az uninstallálási parancs nem található. Szeretné manuálisan eltávoítani a bejegyzésből?</lang>
           <lang id="lt" status="3">Nepavyko rasti pašalinimo duomenų. Ar norite pašalinti jį iš registro rankiniu būdu?</lang>
           <lang id="ro" status="2">Nereuşind să găsească şir de dezinstalarea. Doriţi să eliminaţi manual din registry?</lang>
-          <lang id="fa" status="2">قادر به یافتن رشته بردارید. آیا دوست دارید به صورت دستی آن را از رجیستری حذف?</lang>
+          <lang id="fa" status="3">قادر به یافتن رشته ای که باید پاک شود نیست. آیا دوست دارید به صورت دستی آن را از رجیستری حذف کنید؟</lang>
         </row>
         <row id="piSuccessRegKey" state="0">
           <native>Sucessfully removed registry key</native>
@@ -6597,7 +6590,7 @@
           <lang id="hu" status="2">A bejegyzés kulcs sikeresen eltávolítva</lang>
           <lang id="lt" status="3">Registro raktas sėkmingai pašalintas</lang>
           <lang id="ro" status="2">Eliminate cu succes registru cheie</lang>
-          <lang id="fa" status="2">با موفقیت حذف کلید رجیستری</lang>
+          <lang id="fa" status="3">حذف کلید رجیستری با موفقیت بود</lang>
         </row>
         <row id="piSuccessUninstall" state="0">
           <native>Sucessfully uninstalled program</native>
@@ -6622,7 +6615,7 @@
           <lang id="hu" status="2">A program sikeresen uninstallálva</lang>
           <lang id="lt" status="3">Programa sėkmingai pašalinta</lang>
           <lang id="ro" status="2">Dezinstalat cu succes programul</lang>
-          <lang id="fa" status="2">موفقیت uninstalled برنامه</lang>
+          <lang id="fa" status="3">پاک کردن برنامه با موفقیت بود</lang>
         </row>
         <row id="programAlreadyRunning" state="0">
           <native>Another program seems to be running already...</native>
@@ -6647,7 +6640,7 @@
           <lang id="hu" status="2">Egy másik program már fut...</lang>
           <lang id="lt" status="3">Kita programos kopija jau veikia...</lang>
           <lang id="ro" status="2">Un alt program pare să fie difuzate deja...</lang>
-          <lang id="fa" status="2">یکی دیگر از برنامه به نظر می رسد در حال حاضر در حال اجرا...</lang>
+          <lang id="fa" status="3">برنامه دیگری به نظر می رسد که در حال حاضر در حال اجراست...</lang>
         </row>
         <row id="programNeedAdmin" state="0">
           <native>You must be an administrator to run this program</native>
@@ -6672,7 +6665,7 @@
           <lang id="hu" status="2">Rendszergazdának kell lennie hogy használhassa ezt a programot</lang>
           <lang id="lt" status="3">Jūs turite turėti administratoriaus teisės, kad paleisti šią programą</lang>
           <lang id="ro" status="2">Trebuie să fie un administrator pentru a rula acest program</lang>
-          <lang id="fa" status="2">شما باید مدیر برای اجرای این برنامه</lang>
+          <lang id="fa" status="3">شما باید یکی از مدیران باشید برای اجرای این برنامه</lang>
         </row>
         <row id="programNoCT">
           <native>Unable to find "Common Tools.dll"</native>
@@ -6697,7 +6690,7 @@
           <lang id="hu" date="20100221222945" status="3">Nincs meg a "Common Tools.dll" fájl</lang>
           <lang id="lt" status="3">Nepavyko rasti "Common Tools.dll"</lang>
           <lang id="ro" status="2">Imposibil de găsit "comună Tools.dll"</lang>
-          <lang id="fa" status="2">قادر به یافتن "مشترک Tools.dll"</lang>
+          <lang id="fa" status="3">قادر به یافتن "Common Tools.dll"نیست</lang>
         </row>
         <row id="restoreAsk" state="0">
           <native>Are you sure?</native>
@@ -6722,7 +6715,7 @@
           <lang id="hu" status="2">Biztos benne?</lang>
           <lang id="lt" status="2">Ar tikrai?</lang>
           <lang id="ro" status="2">Esti sigur?</lang>
-          <lang id="fa" status="2">آیا مطمئن هستید که?</lang>
+          <lang id="fa" status="3">آیا مطمئن هستید ؟</lang>
         </row>
         <row id="restoreError" state="0">
           <native>Error restoring registry</native>
@@ -6747,7 +6740,7 @@
           <lang id="hu" status="2">Hiba történt a bejegyzés visszaállítása közben</lang>
           <lang id="lt" status="3">Klaida atkuriant registrą</lang>
           <lang id="ro" status="2">Eroare restaurarea registru</lang>
-          <lang id="fa" status="2">خطا در رجیستری بازسازی</lang>
+          <lang id="fa" status="3">خطا در بازسازی رجیستری</lang>
         </row>
         <row id="restoreRestored" state="0">
           <native>Successfully restored registry</native>
@@ -6772,7 +6765,7 @@
           <lang id="hu" status="2">Bejegyzés sikeresen visszaállítva</lang>
           <lang id="lt" status="3">Registras sėkmingai atkurtas</lang>
           <lang id="ro" status="2">Restaurat cu succes registru</lang>
-          <lang id="fa" status="2">موفقیت ترمیم رجیستری</lang>
+          <lang id="fa" status="3">بازیابی رجیستری با موفقیت انجام شد</lang>
         </row>
         <row id="scanDlgExit" state="0">
           <native>Are you sure?</native>
@@ -6797,7 +6790,7 @@
           <lang id="hu" status="2">Biztos benne?</lang>
           <lang id="lt" status="2">Ar tikrai?</lang>
           <lang id="ro" status="2">Esti sigur?</lang>
-          <lang id="fa" status="2">آیا مطمئن هستید که?</lang>
+          <lang id="fa" status="3">آیا مطمئن هستید ؟</lang>
         </row>
         <row id="scanDlgProgressBarScanning" state="0">
           <native>Scanning: </native>
@@ -6822,7 +6815,7 @@
           <lang id="hu" status="2">Szkennelés: </lang>
           <lang id="lt" status="2">Skenavimas: </lang>
           <lang id="ro" status="2">Scanarea: </lang>
-          <lang id="fa" status="2">پویش </lang>
+          <lang id="fa" status="3">در حال جستجو</lang>
         </row>
         <row id="smCannotFindFile" state="0">
           <native>The file could not be found</native>
@@ -6847,7 +6840,7 @@
           <lang id="hu" status="2">A fájl nem található</lang>
           <lang id="lt" status="2">Failas nerastas</lang>
           <lang id="ro" status="2">Fişierul nu a putut fi găsit</lang>
-          <lang id="fa" status="2">پرونده پیدا نشد</lang>
+          <lang id="fa" status="3">فایل مورد نظر پیدا نشد</lang>
         </row>
         <row id="smEmptyName" state="0">
           <native>Shortcut/Value name cannot be empty</native>
@@ -6872,7 +6865,7 @@
           <lang id="hu" status="2">Az Ikon/Érték mező nem lehet üres</lang>
           <lang id="lt" status="3">Nuorodos pavadinimas negali būti tuščias</lang>
           <lang id="ro" status="2">Scurtătură / nume de valoare nu poate fi gol</lang>
-          <lang id="fa" status="2">میانبر / نام ارزش نمی تواند خالی باشد</lang>
+          <lang id="fa" status="3">میانبر یا نام مقدار نمی تواند خالی باشد</lang>
         </row>
         <row id="smEmptyPath" state="0">
           <native>File path cannot be empty</native>
@@ -6947,7 +6940,7 @@
           <lang id="hu" status="2">Biztos el akarja távolítani ezt az indítási programot?</lang>
           <lang id="lt" status="3">Ar tikrai norite pašalinti šia programa iš automatiškai paleidžiamu programų sąrašo?</lang>
           <lang id="ro" status="2">Sunteţi sigur că doriţi să eliminaţi acest program de pornire?</lang>
-          <lang id="fa" status="2">آیا مطمئن هستید که می خواهید حذف کنید این برنامه را راه اندازی?</lang>
+          <lang id="fa" status="3">آیا مطمئن هستید که می خواهید این برنامه راه اندازی را حذف کنید؟</lang>
         </row>
         <row id="smRemoved" state="0">
           <native>Removed selected startup program</native>
@@ -6972,7 +6965,7 @@
           <lang id="hu" status="2">Kijelölt indítási program eltávolítva</lang>
           <lang id="lt" status="3">Pasirinkti automatinio paleidimo elementai pašalinti</lang>
           <lang id="ro" status="2">Eliminat selectat pornire program</lang>
-          <lang id="fa" status="2">حذف انتخاب شده برنامه ی راه اندازی</lang>
+          <lang id="fa" status="3">حذف برنامه ی راه اندازی انتخاب شده</lang>
         </row>
         <row id="smRun" state="0">
           <native>Are you sure you want to run this program?</native>
@@ -6997,7 +6990,7 @@
           <lang id="hu" status="2">Biztos futtatni akarja ezt a programot?</lang>
           <lang id="lt" status="2">Ar tikrai norite paleisti šią programą?</lang>
           <lang id="ro" status="2">Sunteţi sigur că vreţi să rulaţi acest program?</lang>
-          <lang id="fa" status="2">آیا مطمئن هستید که می خواهید برای اجرای این برنامه?</lang>
+          <lang id="fa" status="3">آیا مطمئن هستید که می خواهید این برنامه را اجرا کنید؟</lang>
         </row>
         <row id="umForceUninstall" state="0">
           <native>Are you sure you want to remove this program from the registry?</native>
@@ -7022,7 +7015,7 @@
           <lang id="hu" status="2">Biztos el akarja távolítani ezt a programot a bejegyzésből?</lang>
           <lang id="lt" status="2">Ar tikrai norite ištrinti šią programą iš registro?</lang>
           <lang id="ro" status="2">Sunteţi sigur că doriţi să eliminaţi acest program de la registru?</lang>
-          <lang id="fa" status="2">آیا مطمئن هستید که می خواهید حذف کنید این برنامه را از رجیستری?</lang>
+          <lang id="fa" status="3">آیا مطمئن هستید که می خواهیداین برنامه را از رجیستری حذف کنید؟</lang>
         </row>
         <row id="umSearchText" state="0">
           <native>Search by name</native>
@@ -7072,7 +7065,7 @@
           <lang id="hu" status="2">Biztos uninstallálni akarja ezt a programot?</lang>
           <lang id="lt" status="2">Ar tikrai norite ištrinti šią programą?</lang>
           <lang id="ro" status="2">Sunteţi sigur că doriţi să dezinstalaţi acest program?</lang>
-          <lang id="fa" status="2">آیا مطمئن هستید که می خواهید به حذف این برنامه?</lang>
+          <lang id="fa" status="3">آیا مطمئن هستید که می خواهید این برنامه را پاک کنید؟</lang>
         </row>
         <row id="updateLatest" state="0">
           <native>You have the latest version</native>
@@ -7097,7 +7090,7 @@
           <lang id="hu" status="2">Ez a legfrissebb verzió</lang>
           <lang id="lt" status="3">Jūs turite naujausią versiją</lang>
           <lang id="ro" status="2">Ai cea mai recentă versiune</lang>
-          <lang id="fa" status="2">شما باید آخرین نسخه</lang>
+          <lang id="fa" status="3">شما داری آخرین نسخه از برنامه هستید</lang>
         </row>
         <row id="updateNewer" state="0">
           <native>Newer version available</native>
@@ -7122,7 +7115,7 @@
           <lang id="hu" status="2">Újabb verzió elérhető</lang>
           <lang id="lt" status="3">Yra naujesne versija</lang>
           <lang id="ro" status="2">Mai nou disponibile versiunea</lang>
-          <lang id="fa" status="2">نسخه جدیدتر در دسترس</lang>
+          <lang id="fa" status="3">نسخه جدیدتر در دسترس است</lang>
         </row>
       </node>
       <node class="TNetStringNode" name="Little_Registry_Cleaner.Scanners.Strings" state="0">
@@ -7174,7 +7167,7 @@
           <lang id="hu" status="2">Információ az alkalmazásról</lang>
           <lang id="lt" status="3">Informacija apie programą</lang>
           <lang id="ro" status="2">Cerere Info</lang>
-          <lang id="fa" status="2">درخواست اطلاعات</lang>
+          <lang id="fa" status="3">اطلاعات برنامه</lang>
         </row>
         <row id="ApplicationPaths" state="0">
           <native>Application Paths</native>
@@ -7199,7 +7192,7 @@
           <lang id="hu" status="2">Alkalmazás útvonalak</lang>
           <lang id="lt" status="3">Programos keliai</lang>
           <lang id="ro" status="2">Cerere Patetic</lang>
-          <lang id="fa" status="2">برنامه راه</lang>
+          <lang id="fa" status="3">مسیرهای برنامه</lang>
         </row>
         <row id="ApplicationSettings" state="0">
           <native>Application Settings</native>
@@ -7249,7 +7242,7 @@
           <lang id="hu" status="2">Érvénytelen fájl vagy mappa</lang>
           <lang id="lt" status="3">Netinkamas failas arba aplankas</lang>
           <lang id="ro" status="2">Invalid fişier sau un folder</lang>
-          <lang id="fa" status="2">پرونده نامعتبر است و یا پوشه</lang>
+          <lang id="fa" status="3">فایل یا فولدر نامعتبر است</lang>
         </row>
         <row id="InvalidFileExt" state="0">
           <native>Unused File Extension</native>
@@ -7274,7 +7267,7 @@
           <lang id="hu" status="2">Nem használt fájl bővítés</lang>
           <lang id="lt" status="3">Nepanaudojami failų išplėtimai</lang>
           <lang id="ro" status="2">Neutilizate dosar prelungire</lang>
-          <lang id="fa" status="2">فرمت فایل های بلا استفاده</lang>
+          <lang id="fa" status="3">پسوند های بی استفاده</lang>
         </row>
         <row id="InvalidInprocServer" state="0">
           <native>Unable to find InprocServer</native>
@@ -7299,7 +7292,7 @@
           <lang id="hu" status="2">InprocServer nem található</lang>
           <lang id="lt" status="2">Nepavyko rasti InprocServer</lang>
           <lang id="ro" status="2">Nereuşind să găsească InprocServer</lang>
-          <lang id="fa" status="2">قادر به یافتن InprocServer</lang>
+          <lang id="fa" status="3">قادر به یافتن InprocServer نیست</lang>
         </row>
         <row id="InvalidInprocServer32" state="0">
           <native>Unable to find InprocServer32</native>
@@ -7324,7 +7317,7 @@
           <lang id="hu" status="2">InprocServer32 nem található</lang>
           <lang id="lt" status="2">Nepavyko rasti InprocServer32</lang>
           <lang id="ro" status="2">Nereuşind să găsească InprocServer32</lang>
-          <lang id="fa" status="2">قادر به یافتن InprocServer32</lang>
+          <lang id="fa" status="3">قادر به یافتن InprocServer32 نیست</lang>
         </row>
         <row id="InvalidProgIDFileExt" state="0">
           <native>Unused ProgID/File Extension</native>
@@ -7349,7 +7342,7 @@
           <lang id="hu" status="2">Nem használt ProgID/fájl bővítés</lang>
           <lang id="lt" status="3">Nepanaudojami ProgID / File išplėtimai</lang>
           <lang id="ro" status="2">ProgID neutilizate / dosar prelungire</lang>
-          <lang id="fa" status="2">ProgID استفاده نشده / فرمت فایل</lang>
+          <lang id="fa" status="3">آی دی برنامه یا پسوندهای بی استفاده</lang>
         </row>
         <row id="InvalidRegKey" state="0">
           <native>Invalid registry key</native>
@@ -7374,7 +7367,7 @@
           <lang id="hu" status="2">Érvénytelen bejegyzés kulcs</lang>
           <lang id="lt" status="3">Neteisingas registro raktas</lang>
           <lang id="ro" status="2">Invalid registru cheie</lang>
-          <lang id="fa" status="2">کلید رجیستری نامعتبر</lang>
+          <lang id="fa" status="3">کلید رجیستری نامعتبر است</lang>
         </row>
         <row id="InvalidToolbar" state="0">
           <native>Toolbar is invalid</native>
@@ -7399,7 +7392,7 @@
           <lang id="hu" status="2">Érvénytelen eszköztár</lang>
           <lang id="lt" status="3">Įrankių juosta neveikia</lang>
           <lang id="ro" status="2">Bara de instrumente este invalid</lang>
-          <lang id="fa" status="2">نوارابزار نامعتبر</lang>
+          <lang id="fa" status="3">نوارابزار نامعتبر است</lang>
         </row>
         <row id="MissingAppID" state="0">
           <native>Missing AppID reference</native>
@@ -7424,7 +7417,7 @@
           <lang id="hu" status="2">Hiányzó AppID hivatkozás</lang>
           <lang id="lt" status="3">Trūksta AppID nuorodos</lang>
           <lang id="ro" status="2">Lipseşte AppID de referinţă</lang>
-          <lang id="fa" status="2">گمشده مرجع AppID</lang>
+          <lang id="fa" status="3">مرجع AppID های گمشده</lang>
         </row>
         <row id="MissingCLSID" state="0">
           <native>Missing CLSID reference</native>
@@ -7449,7 +7442,7 @@
           <lang id="hu" status="2">Hiányzó CLSID hivatkozás</lang>
           <lang id="lt" status="3">Trūksta CLSID nuorodos</lang>
           <lang id="ro" status="2">Lipseşte CLSID de referinţă</lang>
-          <lang id="fa" status="2">گمشده مرجع CLSID</lang>
+          <lang id="fa" status="3">مرجع CLSID های گمشده</lang>
         </row>
         <row id="MissingProgID" state="0">
           <native>Missing ProgID reference</native>
@@ -7474,7 +7467,7 @@
           <lang id="hu" status="2">Hiányzó ProgID hivatkozás</lang>
           <lang id="lt" status="3">Trūksta ProgID nuorodos</lang>
           <lang id="ro" status="2">Lipseşte ProgID de referinţă</lang>
-          <lang id="fa" status="2">گمشده مرجع ProgID</lang>
+          <lang id="fa" status="3">مرجع ProgID های گمشده</lang>
         </row>
         <row id="NoRegKey" state="0">
           <native>The registry key doesn't contain any data</native>
@@ -7524,7 +7517,7 @@
           <lang id="hu" status="2">Elavult bejegyzés kulcs</lang>
           <lang id="lt" status="3">Pasenę registro raktai</lang>
           <lang id="ro" status="2">Învechite registru cheie</lang>
-          <lang id="fa" status="2">کلید رجیستری منسوخ</lang>
+          <lang id="fa" status="3">کلید رجیستری منسوخ شده است</lang>
         </row>
         <row id="RecentDocs" state="0">
           <native>Recent Documents</native>
@@ -7549,7 +7542,7 @@
           <lang id="hu" status="2">Legutóbbi documentumok</lang>
           <lang id="lt" status="2">Naujausi dokumentai</lang>
           <lang id="ro" status="2">Documente recente</lang>
-          <lang id="fa" status="2">اسناد اخیر</lang>
+          <lang id="fa" status="3">اسناد های اخیر</lang>
         </row>
         <row id="SharedDLLs" state="0">
           <native>Shared DLLs</native>
@@ -7574,7 +7567,7 @@
           <lang id="hu" status="2">Megosztott DLL-ek</lang>
           <lang id="lt" status="2">Bendri DLL</lang>
           <lang id="ro" status="2">Comun de DLL-uri</lang>
-          <lang id="fa" status="2">به اشتراک گذاشته شده DLLs</lang>
+          <lang id="fa" status="3">دی ال ال های به اشتراک گزاشته شده</lang>
         </row>
         <row id="StartupFiles" state="0">
           <native>Startup Files</native>
@@ -7599,7 +7592,7 @@
           <lang id="hu" status="2">Indítási fájlok</lang>
           <lang id="lt" status="3">Automatiškai paleidžiami failai</lang>
           <lang id="ro" status="2">Fişiere de pornire</lang>
-          <lang id="fa" status="2">راه اندازی فایلها</lang>
+          <lang id="fa" status="3">فایل های راه انداز</lang>
         </row>
         <row id="SystemDrivers" state="0">
           <native>System Drivers</native>
@@ -7674,7 +7667,7 @@
           <lang id="hu" status="2">Windows segítség fájlok</lang>
           <lang id="lt" status="3">Windows pagalbos failai</lang>
           <lang id="ro" status="2">Ajutor Windows Fişiere</lang>
-          <lang id="fa" status="2">راهنما ویندوز فایلها</lang>
+          <lang id="fa" status="3">فایل های کمک ویندوز</lang>
         </row>
         <row id="WindowsSounds" state="0">
           <native>Windows Sounds</native>
@@ -7699,7 +7692,7 @@
           <lang id="hu" status="2">Windows hangok</lang>
           <lang id="lt" status="3">Windows garsai</lang>
           <lang id="ro" status="2">Windows Sunete</lang>
-          <lang id="fa" status="2">ویندوز صداها</lang>
+          <lang id="fa" status="3">صداهای ویندوز</lang>
         </row>
       </node>
     </node>
