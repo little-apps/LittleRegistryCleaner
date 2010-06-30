@@ -369,3 +369,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Fixed bug that prevented LRC from switching languages on non-english systems (Thanks to Dmitriy P.)
 - Reassociated invert selection control with event (Thanks to Dmitriy P.)
 - Added localized Properties/Resources.resx files to project (Thanks to Dmitriy P.)
+- Added Persian Translations
+- Uses a timer instead of invoke to update scanning status

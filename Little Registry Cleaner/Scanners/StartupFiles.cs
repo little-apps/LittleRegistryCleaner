@@ -105,7 +105,7 @@ namespace Little_Registry_Cleaner.Scanners
 
                 if (!string.IsNullOrEmpty(strRunPath))
                 {
-                    ScanDlg.UpdateScanningObject(strRunPath);
+                    ScanDlg.CurrentScannedObject = strRunPath;
 
                     // Check run path by itself
                     if (Utils.FileExists(strRunPath))

@@ -50,7 +50,7 @@ namespace Little_Registry_Cleaner.Scanners
                     {
                         string strValue = regKey.GetValue(strDriverName) as string;
 
-                        ScanDlg.UpdateScanningObject(strValue);
+                        ScanDlg.CurrentScannedObject = strValue;
 
                         if (!string.IsNullOrEmpty(strValue))
                             if (!Utils.FileExists(strValue))

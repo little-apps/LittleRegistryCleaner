@@ -53,7 +53,7 @@ namespace Little_Registry_Cleaner.Scanners
                         {
                             if (regKey2 != null)
                             {
-                                ScanDlg.UpdateScanningObject(regKey2.ToString());
+                                ScanDlg.CurrentScannedObject = regKey2.ToString();
 
                                 UninstallManager.ProgramInfo progInfo = new Little_Registry_Cleaner.UninstallManager.ProgramInfo(regKey2);
 

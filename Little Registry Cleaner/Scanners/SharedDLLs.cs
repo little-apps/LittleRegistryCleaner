@@ -50,7 +50,7 @@ namespace Little_Registry_Cleaner.Scanners
                 foreach (string strFilePath in regKey.GetValueNames())
                 {
                     // Update scan dialog
-                    ScanDlg.UpdateScanningObject(strFilePath);
+                    ScanDlg.CurrentScannedObject = strFilePath;
 
                     if (!string.IsNullOrEmpty(strFilePath))
                         if (!Utils.FileExists(strFilePath))

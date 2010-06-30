@@ -61,7 +61,7 @@ namespace Little_Registry_Cleaner.Scanners
 
             foreach (string strFolder in regKey.GetValueNames())
             {
-                ScanDlg.UpdateScanningObject(strFolder);
+                ScanDlg.CurrentScannedObject = strFolder;
 
                 if (!Utils.DirExists(strFolder))
                     ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.Name, strFolder);
@@ -81,7 +81,7 @@ namespace Little_Registry_Cleaner.Scanners
 
                 if (regKey2 != null)
                 {
-                    ScanDlg.UpdateScanningObject(regKey2.ToString());
+                    ScanDlg.CurrentScannedObject = regKey2.ToString();
 
                     if (Convert.ToInt32(regKey2.GetValue("BlockOnTSNonInstallMode")) == 1)
                         continue;

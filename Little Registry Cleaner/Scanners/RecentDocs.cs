@@ -56,7 +56,7 @@ namespace Little_Registry_Cleaner.Scanners
                         if (valueName.StartsWith("@") || valueName == "LangID")
                             continue;
 
-                        ScanDlg.UpdateScanningObject(valueName);
+                        ScanDlg.CurrentScannedObject = valueName;
 
                         if (!Utils.FileExists(valueName))
                             ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.Name, valueName);
@@ -100,7 +100,7 @@ namespace Little_Registry_Cleaner.Scanners
 
                             string strFileName = ExtractUnicodeStringFromBinary(subKey.GetValue(strValueName));
 
-                            ScanDlg.UpdateScanningObject(strFileName);
+                            ScanDlg.CurrentScannedObject = strFileName;
 
                             // See if file exists in Recent Docs folder
                             if (!string.IsNullOrEmpty(strFileName))

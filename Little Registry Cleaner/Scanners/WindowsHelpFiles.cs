@@ -59,7 +59,7 @@ namespace Little_Registry_Cleaner.Scanners
             {
                 string strHelpPath = regKey.GetValue(strHelpFile) as string;
 
-                ScanDlg.UpdateScanningObject(strHelpPath);
+                ScanDlg.CurrentScannedObject = strHelpPath;
 
                 if (!HelpFileExists(strHelpFile, strHelpPath))
                     ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.ToString(), strHelpFile);

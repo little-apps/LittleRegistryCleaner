@@ -35,32 +35,38 @@ namespace Little_Registry_Cleaner
     public partial class ScanDlg : Form
     {
         public delegate void ScanDelegate();
-        public delegate void UpdateScanningObjectDelgate(string Object);
-        public delegate void UpdateSectionDelegate(string strSection);
 
         Thread threadMain, threadScan;
 
-        private static ScanDlg self;
+        private static string _currentObject = string.Empty;
+        private static int _objectsScanned = 0;
+
+        public static string CurrentScannedObject
+        {
+            get 
+            { 
+                return _currentObject;
+            }
+            set 
+            {
+                ScanDlg._currentObject = Utils.PrefixRegPath(value);
+                ScanDlg._objectsScanned++;
+            }
+        }
+
+        public static string CurrentSection
+        {
+            get;
+            set;
+        }
+
         private static ScannerBase currentScanner;
 
         public static BadRegKeyArray arrBadRegistryKeys = new BadRegKeyArray();
 
-        private string strCurrentSection = "";
-
-        /// <summary>
-        /// Returns current section name
-        /// </summary>
-        public static string CurrentSection
-        {
-            get { return self.strCurrentSection; }
-        }
-
         public ScanDlg(int nSectionCount)
         {
             InitializeComponent();
-
-            // Set pointer to scandlg variable
-            ScanDlg.self = this;
 
             // Set the section count so it can be accessed later
             ScanDlg.arrBadRegistryKeys.Clear(nSectionCount);
@@ -179,7 +185,7 @@ namespace Little_Registry_Cleaner
             // Update section name
             scannerName.RootNode.SectionName = scannerName.ScannerName;
             scannerName.RootNode.Img = this.imageList.Images[scannerName.GetType().Name];
-            this.UpdateSection(scannerName.ScannerName);
+            ScanDlg.CurrentSection = scannerName.ScannerName;
 
             // Start scanning
             this.threadScan = new Thread(new ThreadStart(objScan));
@@ -245,7 +251,7 @@ namespace Little_Registry_Cleaner
 
             ScanDlg.currentScanner.RootNode.Nodes.Add(new BadRegistryKey(problem, baseKey, subKey, valueName));
 
-            self.IncrementProblems();
+            ScanDlg.arrBadRegistryKeys.Problems++;
 
             if (!string.IsNullOrEmpty(valueName))
                 Main.Logger.WriteLine(string.Format("Bad Registry Value Found! Problem: \"{0}\" Path: \"{1}\" Value Name: \"{2}\"", problem, regPath, valueName));
@@ -271,70 +277,6 @@ namespace Little_Registry_Cleaner
             return false;
         }
 
-        /// <summary>
-        /// Updates the textbox with the current object being scanned
-        /// </summary>
-        public static void UpdateScanningObject(string Object)
-        {
-            try
-            {
-                if (self.InvokeRequired)
-                {
-                    self.BeginInvoke(new UpdateScanningObjectDelgate(UpdateScanningObject), Object);
-                    return;
-                }
-
-                if (string.IsNullOrEmpty(Object))
-                    return;
-
-                Object = Utils.PrefixRegPath(Object);
-
-                self.textBoxSubKey.Text = Object;
-                ScanDlg.arrBadRegistryKeys.ItemsScanned++;
-            }
-            catch (Exception)
-            {
-
-            }
-        }
-
-        /// <summary>
-        /// Updates the dialog with the current section being scanned
-        /// <param name="SectionName">Section Name thats being scanned</param>
-        /// </summary>
-        private void UpdateSection(string SectionName)
-        {
-            if (this.InvokeRequired)
-            {
-                this.BeginInvoke(new UpdateSectionDelegate(UpdateSection), SectionName);
-                return;
-            }
-
-            this.strCurrentSection = SectionName;
-            string strText = Properties.Resources.scanDlgProgressBarScanning + SectionName;
-
-            this.progressBar.Text = strText;
-        }
-
-        /// <summary>
-        /// Updates the number of problems
-        /// </summary>
-        private void IncrementProblems()
-        {
-            if (this.InvokeRequired)
-            {
-                this.BeginInvoke(new MethodInvoker(IncrementProblems));
-                return;
-            }
-
-            ScanDlg.arrBadRegistryKeys.Problems++;
-            
-            // Get resourced string for problems
-            System.Resources.ResourceManager rm = new System.Resources.ResourceManager(typeof(ScanDlg));
-            
-            this.labelProblems.Text = string.Format("{0} {1}", rm.GetString("labelProblems.Text"), ScanDlg.arrBadRegistryKeys.Problems);
-        }
-
         private void ScanDlg_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (this.DialogResult != DialogResult.OK)
@@ -353,6 +295,15 @@ namespace Little_Registry_Cleaner
         {
             this.DialogResult = DialogResult.Abort;
             this.Close();
+        }
+
+        private void timerUpdate_Tick(object sender, EventArgs e)
+        {
+            System.Resources.ResourceManager rm = new System.Resources.ResourceManager(typeof(ScanDlg));
+
+            this.progressBar.Text = Properties.Resources.scanDlgProgressBarScanning + ScanDlg.CurrentSection;
+            this.labelProblems.Text = string.Format("{0} {1}", rm.GetString("labelProblems.Text"), ScanDlg.arrBadRegistryKeys.Problems);
+            this.textBoxSubKey.Text = ScanDlg.CurrentScannedObject;
         }
     }
 }

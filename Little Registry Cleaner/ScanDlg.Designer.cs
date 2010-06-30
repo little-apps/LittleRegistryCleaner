@@ -36,6 +36,7 @@
             this.buttonStop = new System.Windows.Forms.Button();
             this.textBoxSubKey = new System.Windows.Forms.TextBox();
             this.imageList = new System.Windows.Forms.ImageList(this.components);
+            this.timerUpdate = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,6 +97,12 @@
             this.imageList.Images.SetKeyName(9, "WindowsSounds");
             this.imageList.Images.SetKeyName(10, "StartupFiles");
             // 
+            // timerUpdate
+            // 
+            this.timerUpdate.Enabled = true;
+            this.timerUpdate.Interval = 10;
+            this.timerUpdate.Tick += new System.EventHandler(this.timerUpdate_Tick);
+            // 
             // ScanDlg
             // 
             resources.ApplyResources(this, "$this");
@@ -108,8 +115,8 @@
             this.Name = "ScanDlg";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Shown += new System.EventHandler(this.ScanDlg_Shown);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ScanDlg_FormClosing);
+            this.Shown += new System.EventHandler(this.ScanDlg_Shown);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -124,5 +131,6 @@
         private System.Windows.Forms.Label labelProblems;
         private Common_Tools.XpProgressBar progressBar;
         private System.Windows.Forms.ImageList imageList;
+        private System.Windows.Forms.Timer timerUpdate;
     }
 }
