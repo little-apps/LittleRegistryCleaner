@@ -234,6 +234,9 @@
   <data name="lithuanianToolStripMenuItem.Text" xml:space="preserve">
     <value>立陶宛语</value>
   </data>
+  <data name="persianToolStripMenuItem.Text" xml:space="preserve">
+    <value>波斯文</value>
+  </data>
   <data name="polishToolStripMenuItem.Text" xml:space="preserve">
     <value>波兰文</value>
   </data>
@@ -319,9 +322,9 @@
     <value>退出</value>
   </data>
   <data name="notifyIcon1.Text" xml:space="preserve">
-    <value>Little Registry Cleaner</value>
+    <value>迷你注册表清理器</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Little Registry Cleaner</value>
+    <value>迷你注册表清理器</value>
   </data>
 </root>

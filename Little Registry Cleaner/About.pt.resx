@@ -127,17 +127,17 @@
     <value>Autor:</value>
   </data>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+    <value>Este programa é software livre; você pode redistribuí-lo e/ou modificá-lo sob os termos da Licença Pública Geral GNU, conforme publicada pela Free Software Foundation; tanto a versão 3 da Licença como (a seu critério) qualquer versão mais nova.
 
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+Este programa é distribuído na expectativa de ser útil, mas SEM QUALQUER GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou de ADEQUAÇÃO A QUALQUER PROPÓSITO EM PARTICULAR. Consulte a Licença Pública Geral GNU para obter mais detalhes.
 
-You should have received a copy of the GNU General Public License along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</value>
+Você deve ter recebido uma cópia da Licença Pública Geral GNU junto com este programa; caso contrário, acesse &lt;http://www.gnu.org/licenses/&gt;.</value>
   </data>
   <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="labelTitle.Text" xml:space="preserve">
-    <value>Little Registry Cleaner</value>
+    <value>Pouco Registry Cleaner</value>
   </data>
   <data name="buttonClose.Text" xml:space="preserve">
     <value>Fechar</value>

@@ -38,6 +38,10 @@ namespace Little_Registry_Cleaner
             // Set version
             this.labelTitle.Text = this.labelTitle.Text + " v" + Application.ProductVersion;
 
+            System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(About));
+
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+
             // Get build time
             //this.labelBuildTime.Text = Properties.Settings.Default.strBuildTime;
         }

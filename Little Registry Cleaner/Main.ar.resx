@@ -319,10 +319,10 @@
     <value>خروج</value>
   </data>
   <data name="notifyIcon1.Text" xml:space="preserve">
-    <value>Little Registry Cleaner</value>
+    <value>التسجيل ضئيلة الأنظف</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Little Registry Cleaner</value>
+    <value>التسجيل ضئيلة الأنظف</value>
   </data>
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>Yes</value>

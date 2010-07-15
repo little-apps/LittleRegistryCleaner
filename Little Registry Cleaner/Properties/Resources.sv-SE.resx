@@ -117,35 +117,136 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
-  <data name="linkLabelAuthor.Text" xml:space="preserve">
-    <value>Nick H.</value>
+  <data name="crashReporterFail" xml:space="preserve">
+    <value>Felrapporten kunde inte skickas</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Tác giả:</value>
+  <data name="crashReporterSuccess" xml:space="preserve">
+    <value>Skickade felrapporten</value>
   </data>
-  <data name="richTextBox1.Text" xml:space="preserve">
-    <value>Chương trình này là phần mềm: bạn có thể phát hành lại nó và / hoặc sửa đổi nó với điều kiện của Giấy phép Công cộng GNU như được xuất bản bởi các Phần mềm Tự do, hoặc là phiên bản 3 của Giấy phép này, hoặc (tùy chọn) bất kỳ phiên bản sau.
-
-Chương trình này được phân phối với hy vọng rằng nó sẽ hữu ích, nhưng KHÔNG CÓ BẢO ĐẢM; mà không cần bảo hành ngay cả ngụ ý của BÁN hoặc PHÙ HỢP CHO MỘT MỤC ĐÍCH CỤ THỂ. Xem GNU General Public License để biết thêm chi tiết.
-
-Bạn nên đã nhận được một bản sao của Giấy phép Công cộng GNU cùng với chương trình này. Nếu không, xem &lt;http://www.gnu.org/licenses/&gt;.</value>
+  <data name="mainAddExcludeEntry" xml:space="preserve">
+    <value>Förde valda registernycklar till undantagslistan</value>
   </data>
-  <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+  <data name="mainAskExit" xml:space="preserve">
+    <value>Är du säker på att du vill avsluta?</value>
   </data>
-  <data name="labelTitle.Text" xml:space="preserve">
-    <value>Người lau chùi Nơi đăng ký Nhỏ</value>
+  <data name="mainFreeWareProgram" xml:space="preserve">
+    <value>Det här programmet är freeware. Om du har betalat för en kopia av det här programmet så kräv återbetalning!</value>
   </data>
-  <data name="buttonClose.Text" xml:space="preserve">
-    <value>Đóng</value>
+  <data name="mainInvalidHelpFile" xml:space="preserve">
+    <value>Kan inte hitta Little Registry Cleaner.chm</value>
   </data>
-  <data name="buttonWebsite.Text" xml:space="preserve">
-    <value>Dự án Website</value>
+  <data name="mainProblemsFix" xml:space="preserve">
+    <value>Vill du fixa alla markerade problem?</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Người lau chùi Nơi đăng ký Nhỏ - Giới thiệu về...</value>
+  <data name="mainProblemsRemoved" xml:space="preserve">
+    <value>Tog bort problemen från registret</value>
+  </data>
+  <data name="mainScanningAborted" xml:space="preserve">
+    <value>Avbröt skanningen av registret</value>
+  </data>
+  <data name="mainScanningFinished" xml:space="preserve">
+    <value>Slutade skanna registret</value>
+  </data>
+  <data name="mainSelectSections" xml:space="preserve">
+    <value>Välj en sektion att skanna</value>
+  </data>
+  <data name="mainUpdateAsk" xml:space="preserve">
+    <value>En nyare version finns. Vill du ladda ner den?</value>
+  </data>
+  <data name="optionsExcludeDir" xml:space="preserve">
+    <value>Välj mapp att utesluta från registerskanningen</value>
+  </data>
+  <data name="optionsExcludeEmptyRegPath" xml:space="preserve">
+    <value>Registersökvägen kan inte vara tom</value>
+  </data>
+  <data name="optionsExcludeFile" xml:space="preserve">
+    <value>Välj en fil att utesluta från skanning</value>
+  </data>
+  <data name="optionsExcludeInvalidRegPath" xml:space="preserve">
+    <value>Vald registernyckel finns inte</value>
+  </data>
+  <data name="optionsExcludeRemove" xml:space="preserve">
+    <value>Är du säker?</value>
+  </data>
+  <data name="optionsSelectBackupDir" xml:space="preserve">
+    <value>Välj mapp där säkerhetskopiorna kommer att lagras</value>
+  </data>
+  <data name="optionsSelectLogDir" xml:space="preserve">
+    <value>Välj mapp där loggfilerna lagras</value>
+  </data>
+  <data name="piErrorRegKey" xml:space="preserve">
+    <value>Problem med att ta bort registernyckel:</value>
+  </data>
+  <data name="piErrorUninstalling" xml:space="preserve">
+    <value>Problem med att avinstallera program:</value>
+  </data>
+  <data name="piInvalidUninstallString" xml:space="preserve">
+    <value>Avinstallationsinformationen kan inte hittas. Vill du manuellt ta bort det från registret?</value>
+  </data>
+  <data name="piSuccessRegKey" xml:space="preserve">
+    <value>Lyckades ta bort registernyckeln</value>
+  </data>
+  <data name="piSuccessUninstall" xml:space="preserve">
+    <value>Lyckades avinstallera programmet</value>
+  </data>
+  <data name="programAlreadyRunning" xml:space="preserve">
+    <value>Ett annat program köras redan...</value>
+  </data>
+  <data name="programNeedAdmin" xml:space="preserve">
+    <value>Du måste vara administratör för att köra programmet</value>
+  </data>
+  <data name="programNoCT" xml:space="preserve">
+    <value>Kan inte hitta "Common Tools.dll"</value>
+  </data>
+  <data name="restoreAsk" xml:space="preserve">
+    <value>Är du säker?</value>
+  </data>
+  <data name="restoreError" xml:space="preserve">
+    <value>Fel vid återställning av registret</value>
+  </data>
+  <data name="restoreRestored" xml:space="preserve">
+    <value>Lyckades återställa registret</value>
+  </data>
+  <data name="scanDlgExit" xml:space="preserve">
+    <value>Är du säker?</value>
+  </data>
+  <data name="scanDlgProgressBarScanning" xml:space="preserve">
+    <value>Skanning: </value>
+  </data>
+  <data name="smCannotFindFile" xml:space="preserve">
+    <value>Filen kunde inte hittas</value>
+  </data>
+  <data name="smEmptyName" xml:space="preserve">
+    <value>Genvägen/värdenamnet kan inte vara tomt</value>
+  </data>
+  <data name="smEmptyPath" xml:space="preserve">
+    <value>Sökvägen kan inte vara tom</value>
+  </data>
+  <data name="smRan" xml:space="preserve">
+    <value>Försökte köra:</value>
+  </data>
+  <data name="smRemove" xml:space="preserve">
+    <value>Är du säker på att du vill ta bort detta startprogram?</value>
+  </data>
+  <data name="smRemoved" xml:space="preserve">
+    <value>Valt startprogram togs bort</value>
+  </data>
+  <data name="smRun" xml:space="preserve">
+    <value>Är du säker på att du vill köra programmet?</value>
+  </data>
+  <data name="umForceUninstall" xml:space="preserve">
+    <value>Är du säker på att du vill ta bort detta program från registret?</value>
+  </data>
+  <data name="umSearchText" xml:space="preserve">
+    <value>Söka på namn</value>
+  </data>
+  <data name="umUninstall" xml:space="preserve">
+    <value>Är du säker på att du vill avinstallera programmet?</value>
+  </data>
+  <data name="updateLatest" xml:space="preserve">
+    <value>Du har den senaste versionen</value>
+  </data>
+  <data name="updateNewer" xml:space="preserve">
+    <value>En nyare version finns</value>
   </data>
 </root>

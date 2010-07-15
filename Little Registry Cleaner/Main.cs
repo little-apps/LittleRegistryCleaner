@@ -395,7 +395,7 @@ namespace Little_Registry_Cleaner
                     break;
 
                 case "swedishToolStripMenuItem":
-                    ci = new CultureInfo("sv");
+                    ci = new CultureInfo("sv-SE");
                     break;
 
                 case "thaiToolStripMenuItem":
@@ -713,7 +713,14 @@ namespace Little_Registry_Cleaner
                     break;
 
                 case "sv":
-                    lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["swedishToolStripMenuItem"];
+                    {
+                        CultureInfo cultureInfo = new CultureInfo("sv-SE");
+                        Thread.CurrentThread.CurrentUICulture = cultureInfo;
+                        Scanners.Strings.Culture = cultureInfo;
+                        Properties.Resources.Culture = cultureInfo;
+
+                        lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["swedishToolStripMenuItem"];
+                    }
                     break;
 
                 case "th":

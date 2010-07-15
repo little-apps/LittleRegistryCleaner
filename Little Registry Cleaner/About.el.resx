@@ -127,11 +127,7 @@
     <value>Δημιουργός:</value>
   </data>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</value>
+    <value>Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό: μπορείτε να το διαδώσετε και/ή τροποποιήσετε σύμφωνα με τους όρους της GNU General Public License όπως έχουν δημοσιευθεί από το Free Software Foundation, είτε έκδοση 3 της άδειας χρήσης, ή (κατά την επιλογή σας) οποιαδήποτε μεταγενέστερη έκδοση.  Αυτό το πρόγραμμα διανέμεται με την ελπίδα ότι θα ειναι χρήσιμο, αλλά ΧΩΡΊΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ χωρίς καν την σιωπηρή εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ  ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ.  Δείτε το GNU General Public License για περισσότερες λεπτομέρειες.  Θα πρέπει να έχετε λάβει ένα αντίγραφο από την GNU General Public License μαζί με αυτό το πρόγραμμα.  Εάν όχι, ανατρέξτε στην ενότητα &lt;http://www.gnu.org/licenses/&gt;.</value>
   </data>
   <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>

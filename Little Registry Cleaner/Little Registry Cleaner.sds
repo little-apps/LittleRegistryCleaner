@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<desktop scan="50" scanned="20100623000706" built="20100623001746" lang="fa" pane="TLogPane" viewmode="1" col="1" row="buttonWebsite.Text">
+<desktop scan="50" scanned="20100623000706" built="20100623001746" lang="sv" pane="TLogPane" viewmode="1" col="11" row="Common Tools\Common Tools.csproj.Forms.Common_Tools.DetailsRegKey.Text">
   <language id="en" autoime="0" autokeyboard="0"/>
   <language id="fr" autoime="0" autokeyboard="0"/>
   <language id="es" autoime="0" autokeyboard="0"/>
@@ -64,9 +64,6 @@
   </sheet>
   <path>
     <item>All</item>
-    <item>Little Registry Cleaner.csproj</item>
-    <item>Forms</item>
-    <item>Little_Registry_Cleaner.About</item>
   </path>
   <exchange method="exmExportFile" options="[eoSetup,eoSpellChecker,eoLanguages]" author="Nick H." description="Little registry cleaner" packagename="Little registry cleanerRu" showpackage="0">
   </exchange>

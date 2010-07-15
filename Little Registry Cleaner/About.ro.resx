@@ -124,11 +124,7 @@
     <value>Autor:</value>
   </data>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</value>
+    <value>Acest program este software liber: îl puteţi redistribui şi / sau modifica sub termenii GNU General Public License publicate de Free Software Foundation, fie versiunea 3 a Licenţei, sau (la opţiunea dumneavoastră) orice versiune ulterioară. Acest program este distribuit în speranţa că va fi folositor, dar FĂRĂ NICI O GARANŢIE, nici chiar garanţia implicită de VANDABILITATE sau POTRIVIRE PENTRU UN SCOP ANUME. Vezi GNU General Public License pentru mai multe detalii. Trebuie să fi primit o copie a GNU General Public License împreună cu acest program. Dacă nu, a se vedea &lt;http://www.gnu.org/licenses/&gt;.</value>
   </data>
   <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>

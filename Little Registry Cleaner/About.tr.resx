@@ -124,11 +124,11 @@
     <value>Yazar:</value>
   </data>
   <data name="richTextBox1.Text" xml:space="preserve">
-    <value>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+    <value>Bu bir bedava yazılımdır: Free Software Foundation tarafından yayınlanmıstır. Lisansın 3. versiyonu yada (karar size bağlı olaraktan) daha sonraki versiyonların GNU Genel Kamu Lisansı altında dağıtabilinir ve/veya değiştirebilinir.
 
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+Bu program faydalı olamak için dağıtılmıştır, ama HERHANGİ bir GARANTİ OLMADAN; TİCARİ ya da BİR AMACA UYGUNLUĞU olmadan dahi zımni garanti yapılmıstır. Daha fazla bilgi için GNU Genel Kamu Lisansına bakınız.
 
-You should have received a copy of the GNU General Public License along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</value>
+Bu programla birlikte GNU Genel Kamu Lisansının bir kopyasını almış olmalısınız. Eğer yoksa, &lt;http://www.gnu.org/licenses/&gt; gidiniz.</value>
   </data>
   <data name="labelTitle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
