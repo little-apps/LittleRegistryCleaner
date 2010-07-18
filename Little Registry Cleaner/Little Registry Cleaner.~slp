@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.1.306" date="20100714224042" scan="52" scanned="20100714223234">
+<document version="2.1.306" date="20100714224426" scan="52" scanned="20100714223234">
   <lang id="en"/>
   <lang id="fr"/>
   <lang id="es"/>
@@ -2796,6 +2796,8 @@
                   <row id="Text" state="0">
                     <native>Persian</native>
                     <lang id="sv-SE" status="3">Persiska</lang>
+                    <lang id="zh" status="3">波斯文</lang>
+                    <lang id="zh.tra" status="3">波斯文</lang>
                   </row>
                 </component>
                 <component class="TVisMenuItem" name="polishToolStripMenuItem" state="0" type="System.Windows.Forms.ToolStripMenuItem">

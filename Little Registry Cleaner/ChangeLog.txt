@@ -372,3 +372,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Added Persian Translations
 - Uses a timer instead of invoke to update scanning status
 - Updated Swedish Translations
+- Ignores registry keys that don't have full access
+
++ Version 1.4.2 Released

@@ -25,7 +25,7 @@ using System.Diagnostics;
 using System.Text;
 using System.Collections;
 using System.Windows.Forms;
-using System.Security.AccessControl;
+using System.Security.Permissions;
 using System.IO;
 using System.ComponentModel;
 
@@ -1236,11 +1236,12 @@ namespace Little_Registry_Cleaner.Xml
             if (regKey == null)
                 return false;
 
-            // Grant full control over registry key
-            grantRegistryKeyRights(regKey, RegistryRights.FullControl);
-
             try
             {
+                // Throws exception if user doesnt have permission
+                RegistryPermission regPermission = new RegistryPermission(RegistryPermissionAccess.AllAccess, regKey.Name);
+                regPermission.Demand();
+
                 if (!string.IsNullOrEmpty(strLimitValue))
                     DeleteAsXml_DeleteValue(getRegistryHandle(regKey), strLimitValue);
                 else
@@ -1288,23 +1289,6 @@ namespace Little_Registry_Cleaner.Xml
             regKey.Close();
 
             return true;
-        }
-
-        /// <summary>
-        /// Change permission for registry key
-        /// </summary>
-        /// <param name="regKey">Registry Key</param>
-        /// <param name="registryRights">Registry Rights</param>
-        private void grantRegistryKeyRights(RegistryKey regKey, RegistryRights registryRights)
-        {
-            RegistrySecurity regSecurity = new RegistrySecurity();
-            System.Security.Principal.NTAccount user = new System.Security.Principal.NTAccount(Environment.UserDomainName, Environment.UserName);
-
-            RegistryAccessRule rule = new RegistryAccessRule(user, registryRights, InheritanceFlags.ContainerInherit | InheritanceFlags.ObjectInherit, PropagationFlags.InheritOnly, AccessControlType.Allow);
-
-            regSecurity.AddAccessRule(rule);
-            regSecurity.SetOwner(user);
-            regKey.SetAccessControl(regSecurity);
         }
 
         /// <summary>

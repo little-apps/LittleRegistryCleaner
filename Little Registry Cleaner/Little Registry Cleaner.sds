@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<desktop scan="50" scanned="20100623000706" built="20100623001746" lang="sv" pane="TLogPane" viewmode="1" col="11" row="Common Tools\Common Tools.csproj.Forms.Common_Tools.DetailsRegKey.Text">
+<desktop scan="52" scanned="20100714223234" built="20100714224508" lang="sv-SE" pane="TLogPane" col="11" row="groupBox2.label2.Text">
   <language id="en" autoime="0" autokeyboard="0"/>
   <language id="fr" autoime="0" autokeyboard="0"/>
   <language id="es" autoime="0" autokeyboard="0"/>
@@ -10,7 +10,7 @@
   <language id="ru" autoime="0" autokeyboard="0"/>
   <language id="el" autoime="0" autokeyboard="0"/>
   <language id="ar" autoime="0" autokeyboard="0"/>
-  <language id="sv" autoime="0" autokeyboard="0"/>
+  <language id="sv-SE" autoime="0" autokeyboard="0"/>
   <language id="zh" autoime="0" autokeyboard="0"/>
   <language id="zh.tra" autoime="0" autokeyboard="0"/>
   <language id="ja" autoime="0" autokeyboard="0"/>
@@ -23,8 +23,7 @@
   <language id="ro" autoime="0" autokeyboard="0"/>
   <language id="fa" autoime="0" autokeyboard="0"/>
   <triggers>
-    <item class="TRemoveUnusedItemsTrigger" position="6"/>
-    <item class="TValidateTrigger" position="5"/>
+    <item class="TValidateTrigger" position="2"/>
   </triggers>
   <sheet>
     <columns>
@@ -39,7 +38,7 @@
       <item class="TTranslationColumn" lang="ru" width="41"/>
       <item class="TTranslationColumn" lang="el" width="41"/>
       <item class="TTranslationColumn" lang="ar" width="41"/>
-      <item class="TTranslationColumn" lang="sv" width="41"/>
+      <item class="TTranslationColumn" lang="sv-SE" width="41"/>
       <item class="TTranslationColumn" lang="zh" width="41"/>
       <item class="TTranslationColumn" lang="zh.tra" width="41"/>
       <item class="TTranslationColumn" lang="ja" width="41"/>
@@ -56,6 +55,8 @@
       <item class="TTranslationColumn" lang="fa" width="26"/>
     </columns>
     <params origin="soEntireScope">
+      <findtext>License</findtext>
+      <findtext>General Public</findtext>
       <findtext>Little Registry Cleaner</findtext>
       <findtext>Tarıyor</findtext>
       <findtext>Scanning</findtext>
@@ -64,6 +65,9 @@
   </sheet>
   <path>
     <item>All</item>
+    <item>Little Registry Cleaner.csproj</item>
+    <item>Forms</item>
+    <item>Little_Registry_Cleaner.About</item>
   </path>
   <exchange method="exmExportFile" options="[eoSetup,eoSpellChecker,eoLanguages]" author="Nick H." description="Little registry cleaner" packagename="Little registry cleanerRu" showpackage="0">
   </exchange>
