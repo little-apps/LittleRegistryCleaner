@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.1.306" date="20100714224426" scan="52" scanned="20100714223234">
+<document version="2.1.306" date="20100718140628" scan="53" scanned="20100718005949">
   <lang id="en"/>
   <lang id="fr"/>
   <lang id="es"/>
@@ -22,7 +22,8 @@
   <lang id="lt"/>
   <lang id="ro"/>
   <lang id="fa"/>
-  <source class="TVisualStudioNetProjectSource" name="Common Tools\Common Tools.csproj" original="en" date="20100420234906" defaultoutputdir="Common Tools\bin\Debug" assemblykind="naLibrary" netversion="net35" toolsversion="net40" rootnamespace="Common_Tools" configuration="Debug|AnyCPU">
+  <source class="TVisualStudioNetProjectSource" name="Common Tools\Common Tools.csproj" original="en" date="20100717025056" defaultoutputdir="Common Tools\bin\Debug" assemblykind="naLibrary" netversion="net35" toolsversion="net40" rootnamespace="Common_Tools" options="[noSetRightToLeft,noSortItems,noCompileResource,noCreateAssembly,noDeleteCompiledResource,noDeleteSourceResource]" configuration="Debug|AnyCPU">
+    <outputfile dir="..\bin\Debug"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TColorData</class>
@@ -258,7 +259,7 @@
       </node>
     </node>
   </source>
-  <source class="TVisualStudioNetProjectSource" name="Little Registry Cleaner.csproj" original="en" date="20100613042200" defaultoutputdir="bin\Debug" netversion="net35" toolsversion="net40" rootnamespace="Little_Registry_Cleaner" configuration="Debug|AnyCPU">
+  <source class="TVisualStudioNetProjectSource" name="Little Registry Cleaner.csproj" original="en" date="20100613042200" defaultoutputdir="bin\Debug" netversion="net35" toolsversion="net40" rootnamespace="Little_Registry_Cleaner" options="[noSetRightToLeft,noSortItems,noCompileResource,noCreateAssembly,noDeleteCompiledResource,noDeleteSourceResource]" configuration="Debug|AnyCPU">
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TColorData</class>
@@ -334,7 +335,7 @@
             <lang id="ru" status="3">Little Registry Cleaner - О программе...</lang>
             <lang id="el" status="3">Little Registry Cleaner – Σχετικά...</lang>
             <lang id="ar" status="2">التسجيل ضئيلة الأنظف - حول...</lang>
-            <lang id="sv-SE" status="3">Little Registry Cleaner - om...</lang>
+            <lang id="sv-SE" status="3">Little Registry Cleaner - Om...</lang>
             <lang id="zh" status="3">迷你注册表清理器-关于...</lang>
             <lang id="zh.tra" status="3">迷你注册表清理器-關於...</lang>
             <lang id="ja" status="2">リトルRegistry Cleanerは-会社概要...</lang>
@@ -399,7 +400,7 @@
                 <lang id="ru" status="3">Little Registry Cleaner</lang>
                 <lang id="el" status="3">Little Registry Cleaner</lang>
                 <lang id="ar" status="2">التسجيل ضئيلة الأنظف</lang>
-                <lang id="sv-SE" status="2">Liten Registry Cleaner</lang>
+                <lang id="sv-SE" status="3">Little Registry Cleaner</lang>
                 <lang id="zh" status="3">迷你注册表清理器</lang>
                 <lang id="zh.tra" status="3">迷你注册表清理器</lang>
                 <lang id="ja" status="3">小さな Registry Cleaner</lang>
@@ -430,6 +431,7 @@
                 <lang id="ru">Эта программа является свободным программным обеспечением: Вы можете распространять или изменять её на условиях лицензии GNU General Public License, опубликованной Фондом свободного программного обеспечения, версии 3, либо (на Ваш выбор) любой более поздней версии.#n#nЭта программа распространяется в надежде на то, что она окажется полезной, но без каких бы то ни было гарантий; даже подразумеваемой гарантии или ТОВАРНОСТИ или пригодности для конкретных целей.  Смотрите GNU General Public License для получения дополнительной информации.#n#nВы должны были получить копию GNU General Public License вместе с этой программой.  Если нет, см. &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="el">Αυτό το πρόγραμμα είναι ελεύθερο λογισμικό: μπορείτε να το διαδώσετε και/ή τροποποιήσετε σύμφωνα με τους όρους της GNU General Public License όπως έχουν δημοσιευθεί από το Free Software Foundation, είτε έκδοση 3 της άδειας χρήσης, ή (κατά την επιλογή σας) οποιαδήποτε μεταγενέστερη έκδοση.  Αυτό το πρόγραμμα διανέμεται με την ελπίδα ότι θα ειναι χρήσιμο, αλλά ΧΩΡΊΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ χωρίς καν την σιωπηρή εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ  ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ.  Δείτε το GNU General Public License για περισσότερες λεπτομέρειες.  Θα πρέπει να έχετε λάβει ένα αντίγραφο από την GNU General Public License μαζί με αυτό το πρόγραμμα.  Εάν όχι, ανατρέξτε στην ενότητα &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="ar" invalidated="1">هذا البرنامج هو البرمجيات الحرة: و/لك يمكن توزيع عليه أو تعديله تحت شروط جنو العمومية كما تنشرها "مؤسسة البرمجيات الحرة" إما الإصدار 3 من الترخيص أو (في الخيار لك) أي إصدار أحدث.#n#nيتم توزيع هذا البرنامج على أمل أن سيكون من المفيد ولكن "بدون أي الضمان"; دون حتى ضمان ضمني من بالتسويق أو وملاءمته FOR A معين الغرض.  انظر إلى جنو العمومية للحصول على مزيد من التفاصيل.#n#nوينبغي أن كنت قد تلقيت نسخة من جنو العمومية مع هذا البرنامج.  إذا لم انظر &lt;http://www.gnu.org/licenses/>.</lang>
+                <lang id="sv-SE" status="3">This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.#n#nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.#n#nDu bör ha fått en kopia av GNU General Public License tillsammans med det här programmet.  Om inte, se &lt;http://www.gnu.org/licenses/>.</lang>
                 <lang id="zh" date="20091105201040" invalidated="1">该程序是免费软件：你可以在慈善通用公共授权下重新发布它和/或修改，使用许可证版本3，或（您自行选择）任何更新的版 本出版许可证条款。这个程式的目的是希望它有用，但没有任何担保，甚至没有适销性或针对特定用途的隐含的担保。详情请参阅慈善 通用公共授权。您应已收到附随于本程序的慈善通用公共授权的副本。如果不是，请参阅&lt;http://www.gnu.org /licenses/>。</lang>
                 <lang id="zh.tra" date="20091105201902">該程序是免費軟件：你可以在慈善通用公共授權下重新發布它和/或修改，使用許可證版本3，或（您自行選擇）任何更新的版 本出版許可證條款。這個程式的目的是希望它有用，但沒有任何擔保，甚至沒有適銷性或針對特定用途的隱含的擔保。詳情請參閱慈善 通用公共授權。您應已收到附隨於本程序的慈善通用公共授權的副本。如果不是，請參閱 &lt;http://www.gnu.org/licenses/>。</lang>
                 <lang id="ja" date="20091105201756">このプログラムはフリーソフトウェアです：あなたはこれを再配布することができます/またはGNU General Public Licenseには、Free Software Foundationが、ライセンスのいずれかのバージョン3またはそれ以降のバージョンのオプション（）で発行の条件の下でそれを変更します。#n#nこのプログラムは、期待して有用であると思われるのが、配布されていかなる保証もない現状;商品性または特定目的に対する適合性にも黙示の保証はありません。詳細については、GNU General Public Licenseを参照してください。#n#nあなたはこのプログラムと共に、GNU General Public Licenseのコピーを受け取っている必要があります。ていない場合は、参照してください&lt;http://www.gnu.org/licenses/>。</lang>
@@ -1063,7 +1065,7 @@
             <lang id="ru" status="3">Little Registry Cleaner</lang>
             <lang id="el" status="3">Little Registry Cleaner</lang>
             <lang id="ar" status="2">التسجيل ضئيلة الأنظف</lang>
-            <lang id="sv-SE" status="2">Liten Registry Cleaner</lang>
+            <lang id="sv-SE" status="3">Little Registry Cleaner</lang>
             <lang id="zh" status="3">迷你注册表清理器</lang>
             <lang id="zh.tra" status="3">迷你注册表清理器</lang>
             <lang id="ja" date="20091030211909" status="3">小さな Registry Cleaner</lang>
@@ -3322,7 +3324,7 @@
               <lang id="ru" status="3">Little Registry Cleaner</lang>
               <lang id="el" status="3">Little Registry Cleaner</lang>
               <lang id="ar" invalidated="1" status="2">التسجيل ضئيلة الأنظف</lang>
-              <lang id="sv-SE" invalidated="1" status="2">Liten Registry Cleaner</lang>
+              <lang id="sv-SE" status="3">Little Registry Cleaner</lang>
               <lang id="zh" status="3">迷你注册表清理器</lang>
               <lang id="zh.tra" status="3">迷你注册表清理器</lang>
               <lang id="ja" status="3">小さな Registry Cleaner</lang>
@@ -3417,7 +3419,7 @@
               <lang id="ru" status="3">ОК</lang>
               <lang id="el" status="2">OK</lang>
               <lang id="ar" status="2">موافق</lang>
-              <lang id="sv-SE" status="2">OKEJ</lang>
+              <lang id="sv-SE" status="3">OK</lang>
               <lang id="zh" status="3">确定</lang>
               <lang id="zh.tra" status="3">确定</lang>
               <lang id="ja" status="2">[OK]を</lang>
@@ -4383,10 +4385,6 @@
             <lang id="ro" status="2">Little Registry Cleaner - Scanarea...</lang>
             <lang id="fa" status="3">تمیز کننده رجیستری کوچولو -  در حال جستجو...</lang>
           </row>
-          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
-          </component>
-          <component class="TVisHiddenComponent" name="timerUpdate" state="0" type="System.Windows.Forms.Timer">
-          </component>
           <component class="TVisGroupBox" name="groupBox1" type="System.Windows.Forms.GroupBox">
             <row id="Location.X">12</row>
             <row id="Location.Y">9</row>
@@ -4479,6 +4477,10 @@
               <row id="Size.Width">300</row>
             </component>
           </component>
+          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
+          </component>
+          <component class="TVisHiddenComponent" name="timerUpdate" state="0" type="System.Windows.Forms.Timer">
+          </component>
         </form>
       </node>
       <node class="TNetFormNode" name="Little_Registry_Cleaner.StartupManager.EditRunItem">
@@ -4563,7 +4565,7 @@
                 <lang id="ru" status="3">ОК</lang>
                 <lang id="el" status="2">OK</lang>
                 <lang id="ar" status="2">موافق</lang>
-                <lang id="sv-SE" status="2">OKEJ</lang>
+                <lang id="sv-SE" status="3">OK</lang>
                 <lang id="zh" status="3">确定</lang>
                 <lang id="zh.tra" status="3">确定</lang>
                 <lang id="ja" status="2">[OK]を</lang>
@@ -4770,7 +4772,7 @@
               <lang id="ru" status="3">ОК</lang>
               <lang id="el" status="2">OK</lang>
               <lang id="ar" status="2">موافق</lang>
-              <lang id="sv-SE" status="2">OKEJ</lang>
+              <lang id="sv-SE" status="3">OK</lang>
               <lang id="zh" status="3">确定</lang>
               <lang id="zh.tra" status="3">确定</lang>
               <lang id="ja" status="2">[OK]を</lang>
@@ -5010,7 +5012,7 @@
               <lang id="ru">После Registry\All Users\Run</lang>
               <lang id="el" status="3">Registry\All Users\Run Once</lang>
               <lang id="ar">Users\Run Registry\All مرة واحدة</lang>
-              <lang id="sv-SE">Registry\All Users\Run en gång</lang>
+              <lang id="sv-SE" status="3">Registry\All Users\Run Once</lang>
               <lang id="zh" status="3">Registry\All Users\Run Once</lang>
               <lang id="zh.tra" status="3">Registry\All Users\Run Once</lang>
               <lang id="ja">レジストリ\All Usersの\一度だけ実行</lang>
@@ -5110,7 +5112,7 @@
               <lang id="ru">После Registry\Current User\Run</lang>
               <lang id="el" status="3">Registry\Current User\Run Once</lang>
               <lang id="ar">User\Run Registry\Current مرة واحدة</lang>
-              <lang id="sv-SE">Registry\Current User\Run en gång</lang>
+              <lang id="sv-SE" status="3">Registry\Current User\Run Once</lang>
               <lang id="zh" status="3">Registry\Current User\Run Once</lang>
               <lang id="zh.tra" status="3">Registry\Current User\Run Once</lang>
               <lang id="ja">レジストリ\現在のユーザーの構成\一度だけ実行</lang>
@@ -5185,7 +5187,7 @@
               <lang id="ru" status="2">StartUp\All пользователи</lang>
               <lang id="el" status="3">StartUp\All Users</lang>
               <lang id="ar" status="2">مستخدمين StartUp\All</lang>
-              <lang id="sv-SE" status="2">StartUp\All användare</lang>
+              <lang id="sv-SE" status="3">StartUp\All Users</lang>
               <lang id="zh" status="3">StartUp\All Users</lang>
               <lang id="zh.tra" status="3">StartUp\All Users</lang>
               <lang id="ja" status="2">スタート\すべてのユーザー</lang>
@@ -5210,7 +5212,7 @@
               <lang id="ru" status="2">StartUp\Current пользователей</lang>
               <lang id="el" status="3">StartUp\Current User</lang>
               <lang id="ar" status="2">User StartUp\Current</lang>
-              <lang id="sv-SE" status="2">StartUp\Current användare</lang>
+              <lang id="sv-SE" status="3">StartUp\Current User</lang>
               <lang id="zh" status="3">StartUp\Current User</lang>
               <lang id="zh.tra" status="3">StartUp\Current User</lang>
               <lang id="ja" status="2">スタートアップ\現在のユーザー</lang>
