@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Diagnostics;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
+using System.Threading;
 using Common_Tools.TreeViewAdv.Tree.NodeControls;
 
 namespace Common_Tools.TreeViewAdv.Tree
@@ -15,7 +16,36 @@ namespace Common_Tools.TreeViewAdv.Tree
                 throw new Exception("Treeviewadv doesn't contain any columns");
 
             foreach (TreeColumn tc in this.Columns)
-                this.AutoSizeColumn(tc, headerAutoSize);
+                this.AutoSizeColumn(tc);
+        }
+
+        public void AutoSizeColumn(TreeColumn column)
+        {
+            if (!Columns.Contains(column))
+                throw new ArgumentException("column");
+
+            DrawContext context = new DrawContext();
+            context.Graphics = Graphics.FromImage(new Bitmap(1, 1));
+            context.Font = this.Font;
+            int res = 0;
+            for (int row = 0; row < RowCount; row++)
+            {
+                if (row < RowMap.Count)
+                {
+                    int w = 0;
+                    TreeNodeAdv node = RowMap[row];
+                    foreach (NodeControl nc in NodeControls)
+                    {
+                        if (nc.ParentColumn == column)
+                            //w += nc.GetActualSize(node, _measureContext).Width;
+                            w += nc.GetActualSize(node, context).Width;
+                    }
+                    res = Math.Max(res, w);
+                }
+            }
+
+            if (res > 0)
+                column.Width = res;
         }
 
         public void AutoSizeColumn(TreeColumn col, ColumnHeaderAutoResizeStyle headerAutoSize)
@@ -25,6 +55,8 @@ namespace Common_Tools.TreeViewAdv.Tree
 
             if (headerAutoSize == ColumnHeaderAutoResizeStyle.None)
                 return;
+
+            Thread.BeginCriticalRegion();
 
             foreach (TreeNodeAdv tna in this.VisibleNodes)
             {
@@ -44,14 +76,18 @@ namespace Common_Tools.TreeViewAdv.Tree
 
                         if (headerAutoSize == ColumnHeaderAutoResizeStyle.HeaderSize)
                         {
-                            Size sizeText = TextRenderer.MeasureText(col.Header, this._measureContext.Font);
+                            //Size sizeText = TextRenderer.MeasureText(col.Header, this._measureContext.Font);
+
+                            SizeF sizeText = this._measureContext.Graphics.MeasureString(col.Header, this._measureContext.Font);
 
                             if (!sizeText.IsEmpty)
-                                col.Width = Math.Max(col.Width, sizeText.Width);
+                                col.Width = Math.Max(col.Width, (int)sizeText.Width);
                         }
                     }
                 }
             }
+
+            Thread.EndCriticalRegion();
         } 
 
 		private void CreatePens()

@@ -106,7 +106,8 @@ namespace Little_Registry_Cleaner.Xml
             Type type = registryKey.GetType();
             FieldInfo fieldInfo = type.GetField("hkey", BindingFlags.Instance | BindingFlags.NonPublic);
             System.Runtime.InteropServices.SafeHandle i = (System.Runtime.InteropServices.SafeHandle)fieldInfo.GetValue(registryKey);
-            return ((IntPtr)i.DangerousGetHandle()).ToInt32();
+
+            return i.DangerousGetHandle().ToInt32();
         }
 
         ArrayList addRegistryValues(int hKey)

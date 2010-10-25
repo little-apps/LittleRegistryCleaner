@@ -375,3 +375,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Ignores registry keys that don't have full access
 
 + Version 1.4.2 Released
+
+- The DangerousGetHandle() in getRegistryHandle() is no longer casted to IntPtr (Thanks to VSeven)

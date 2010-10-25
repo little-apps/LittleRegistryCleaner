@@ -30,6 +30,7 @@ using Little_Registry_Cleaner.Scanners;
 using Microsoft.Win32;
 using Little_Registry_Cleaner.Xml;
 using System.Security.Permissions;
+using Microsoft.WindowsAPICodePack.Taskbar;
 
 namespace Little_Registry_Cleaner
 {
@@ -80,6 +81,8 @@ namespace Little_Registry_Cleaner
             this.progressBar.Position = 0;
             this.progressBar.PositionMin = 0;
             this.progressBar.PositionMax = ScanDlg.arrBadRegistryKeys.SectionCount;
+
+            TaskbarManager.Instance.SetProgressValue(0, ScanDlg.arrBadRegistryKeys.SectionCount);
 
             // Append 0 to problem label
             this.labelProblems.Text = string.Format("{0} 0", this.labelProblems.Text);
@@ -148,6 +151,9 @@ namespace Little_Registry_Cleaner
                 if (this.threadScan.IsAlive)
                     this.threadScan.Abort();
 
+                // Clear taskbar progress bar
+                TaskbarManager.Instance.SetProgressState(TaskbarProgressBarState.NoProgress);
+
                 this.DialogResult = DialogResult.Abort;
                 Main.Logger.WriteLine("Exiting.\r\n");
             }
@@ -203,6 +209,7 @@ namespace Little_Registry_Cleaner
             Main.Logger.WriteLine();
 
             this.progressBar.Position++;
+            TaskbarManager.Instance.SetProgressValue(this.progressBar.Position, ScanDlg.arrBadRegistryKeys.SectionCount);
         }
 
         /// <summary>

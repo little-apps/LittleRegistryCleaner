@@ -464,6 +464,23 @@ namespace Little_Registry_Cleaner
 
         private void ScanRegistry(object sender, EventArgs e)
         {
+            //BadRegistryKey rootNode = new BadRegistryKey();
+
+            //StringBuilder randText = new StringBuilder(300);
+
+            //for (int i = 300; i > 0; i--)
+            //    randText.Append('a');
+
+            //for (int i = 1000; i > 0; i--)
+            //    rootNode.Nodes.Add(new BadRegistryKey(randText.ToString(), "test", "test", "test"));
+
+            //this.treeModel.Nodes.Add(rootNode);
+
+            //this.treeViewAdvResults.ExpandAll();
+            ////this.treeViewAdvResults.AutoSizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+
+            //return;
+
             ScanRegistry();
         }
 
@@ -575,11 +592,6 @@ namespace Little_Registry_Cleaner
 
             Common_Tools.DetailsRegKey details = new Common_Tools.DetailsRegKey(brk.Problem, brk.RegKeyPath, brk.ValueName, brk.Data);
             details.ShowDialog(this);
-        }
-
-        private void treeViewAdvResults_Expanded(object sender, TreeViewAdvEventArgs e)
-        {
-            this.treeViewAdvResults.AutoSizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }
 
         private void treeViewAdvResults_ColumnClicked(object sender, TreeColumnEventArgs e)

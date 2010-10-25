@@ -199,7 +199,6 @@
             this.treeViewAdvResults.SelectionMode = Common_Tools.TreeViewAdv.Tree.TreeSelectionMode.Multi;
             this.treeViewAdvResults.UseColumns = true;
             this.treeViewAdvResults.NodeMouseDoubleClick += new System.EventHandler<Common_Tools.TreeViewAdv.Tree.TreeNodeAdvMouseEventArgs>(this.treeViewAdvResults_NodeMouseDoubleClick);
-            this.treeViewAdvResults.Expanded += new System.EventHandler<Common_Tools.TreeViewAdv.Tree.TreeViewAdvEventArgs>(this.treeViewAdvResults_Expanded);
             // 
             // treeColumn1
             // 
