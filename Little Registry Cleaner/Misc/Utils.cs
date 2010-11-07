@@ -34,7 +34,7 @@ namespace Little_Registry_Cleaner
     static class Utils
     {
         #region Signatures imported from http://pinvoke.net
-
+        [DllImport("kernel32.dll", CharSet=CharSet.Auto)] public static extern uint RegisterApplicationRestart(string pszCommandline, int dwFlags);
         [DllImport("kernel32.dll")] public static extern int SearchPath(string strPath, string strFileName, string strExtension, uint nBufferLength, StringBuilder strBuffer, string strFilePart);
         [DllImport("kernel32.dll")] public static extern DriveType GetDriveType([MarshalAs(UnmanagedType.LPStr)] string lpRootPathName);
 

@@ -81,6 +81,10 @@ namespace Little_Registry_Cleaner
                 return;
             }
 
+            // If vista or later, register for restart manager
+            if (Environment.OSVersion.Version.Major > 5)
+                Utils.RegisterApplicationRestart("", 0);
+
             // Enable needed privileges
             Permissions.SetPrivileges(true);
 

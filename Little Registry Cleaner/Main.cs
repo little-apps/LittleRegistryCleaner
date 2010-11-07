@@ -54,6 +54,10 @@ namespace Little_Registry_Cleaner
         public static bool bScanHistoryList = true;
         #endregion
 
+        private const int WM_QUERYENDSESSION = 17;
+        private const int ENDSESSION_CLOSEAPP = 1;
+        private const int WM_ENDSESSION = 22;
+
         private bool bDisplayExitMsgBox = true;
 
         private TreeModel treeModel = new TreeModel();
@@ -321,11 +325,22 @@ namespace Little_Registry_Cleaner
                 this.WindowState = FormWindowState.Normal;
             }
 
-            if (bDisplayExitMsgBox)
+            if (bDisplayExitMsgBox && e.CloseReason != CloseReason.WindowsShutDown)
             {
                 if (MessageBox.Show(this, Properties.Resources.mainAskExit, Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
                     e.Cancel = true;
             }
+        }
+
+        protected override void WndProc(ref Message m)
+        {
+            base.WndProc(ref m);
+
+            if (m.Msg == WM_QUERYENDSESSION || m.Msg == WM_ENDSESSION)
+                if (m.LParam.ToInt32() == ENDSESSION_CLOSEAPP)
+                {
+                    //TODO: Save application State when its going to shutdown or restart 
+                }
         }
 
         #region "Menu Events"

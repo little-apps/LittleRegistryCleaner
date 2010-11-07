@@ -35,6 +35,9 @@ namespace Little_Registry_Cleaner
         [DllImport("advapi32.dll", SetLastError = true)]
         internal static extern bool LookupPrivilegeValue(string host, string name, ref long pluid);
 
+        [DllImport("kernel32.dll", SetLastError = true)]
+        internal static extern bool CloseHandle(IntPtr handle);
+
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
         internal struct TokPriv1Luid
         {
@@ -73,11 +76,12 @@ namespace Little_Registry_Cleaner
                 tp.Luid = 0;
                 tp.Attr = ((enabled) ? (SE_PRIVILEGE_ENABLED) : (0));
 
-                AdjustTokenPrivileges(htok, false, ref tp, 0, IntPtr.Zero, IntPtr.Zero);
-                if (Marshal.GetLastWin32Error() != 0)
-                    return false;
+                bool bRet = (AdjustTokenPrivileges(htok, false, ref tp, 0, IntPtr.Zero, IntPtr.Zero));
 
-                return true;
+                // Cleanup
+                CloseHandle(htok);
+
+                return bRet;
             }
             catch
             {

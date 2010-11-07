@@ -377,3 +377,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 + Version 1.4.2 Released
 
 - The DangerousGetHandle() in getRegistryHandle() is no longer casted to IntPtr (Thanks to VSeven)
+- Now compatible with Microsoft Windows Restart Manager
