@@ -94,18 +94,26 @@ namespace Little_Registry_Cleaner.Scanners
 
                         foreach (string strValueName in subKey.GetValueNames())
                         {
+                            string filePath, fileArgs;
+
                             // Ignore MRUListEx and others
                             if (!Regex.IsMatch(strValueName, "[0-9]"))
                                 continue;
 
-                            string strFileName = ExtractUnicodeStringFromBinary(subKey.GetValue(strValueName));
+                            string fileName = ExtractUnicodeStringFromBinary(subKey.GetValue(strValueName));
+                            string shortcutPath = string.Format("{0}\\{1}.lnk", strRecentDocs, fileName);
 
-                            ScanDlg.CurrentScannedObject = strFileName;
+                            ScanDlg.CurrentScannedObject = shortcutPath;
 
                             // See if file exists in Recent Docs folder
-                            if (!string.IsNullOrEmpty(strFileName))
-                                if (!Utils.FileExists(string.Format("{0}\\{1}.lnk", strRecentDocs, strFileName)))
-                                    ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.ToString(), strValueName);
+                            if (!string.IsNullOrEmpty(fileName))
+                                ScanDlg.StoreInvalidKey(Strings.InvalidRegKey, regKey.ToString(), strValueName);
+
+                            if (!Utils.FileExists(shortcutPath))
+                                ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.ToString(), strValueName);
+
+                            if (!Utils.ResolveShortcut(shortcutPath, out filePath, out fileArgs))
+                                ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.ToString(), strValueName);
                         }
                     }
                 }

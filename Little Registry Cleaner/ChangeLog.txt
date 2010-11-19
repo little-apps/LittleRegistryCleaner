@@ -378,3 +378,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 - The DangerousGetHandle() in getRegistryHandle() is no longer casted to IntPtr (Thanks to VSeven)
 - Now compatible with Microsoft Windows Restart Manager
+- Updated Spanish Translations (Thanks to Fitoschido)
+- Updated German Translations (Thanks to Chris G)
