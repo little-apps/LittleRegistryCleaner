@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.1.309" date="20101119163711" scan="53" scanned="20100718005949">
+<document version="2.1.314" date="20110517222230" scan="54" scanned="20101119164607">
   <lang id="ar"/>
   <lang id="zh"/>
   <lang id="zh.tra" ime="imOn"/>
@@ -326,7 +326,7 @@
             <lang id="nl" status="3">Kleine Registerreiniger - info...</lang>
             <lang id="en" status="2">Little Registry Cleaner - About...</lang>
             <lang id="fr" status="2">Little Registry Cleaner - A propos...</lang>
-            <lang id="de" status="2">Wenig Registry Cleaner - über...</lang>
+            <lang id="de" status="3">Little Registry Cleaner - über...</lang>
             <lang id="el" status="3">Little Registry Cleaner – Σχετικά...</lang>
             <lang id="hu" status="2">Little Registry Cleaner - A LRC-ről...</lang>
             <lang id="it" date="20100329222126" status="3">Informazioni su Little Registry Cleaner</lang>
@@ -727,7 +727,7 @@
                 <lang id="nl" status="2">Programma opnieuw starten</lang>
                 <lang id="en" status="2">Restart Program</lang>
                 <lang id="fr" status="2">Programme de redémarrage</lang>
-                <lang id="de" status="3">Programm neustarten</lang>
+                <lang id="de" status="3">Programm neu starten</lang>
                 <lang id="el" status="2">Κάντε επανεκκίνηση του προγράμματος</lang>
                 <lang id="hu" status="2">Program újraíndítása</lang>
                 <lang id="it" status="3">Riavvia il programma</lang>
@@ -2475,7 +2475,7 @@
                     <lang id="nl" status="2">Portugees</lang>
                     <lang id="en" date="20091119200823" status="3">Portuguese</lang>
                     <lang id="fr" status="2">Portugais</lang>
-                    <lang id="de" status="3">Protugiesisch</lang>
+                    <lang id="de" status="3">Portugiesisch</lang>
                     <lang id="el" status="2">Πορτογαλικά</lang>
                     <lang id="hu" status="2">Portugál</lang>
                     <lang id="it" status="3">Portoghese</lang>
@@ -3481,7 +3481,7 @@
                       <lang id="nl" status="3">Log de scans en reparaties</lang>
                       <lang id="en" status="2">Log registry scans and fixes</lang>
                       <lang id="fr" status="2">Connectez-vous scans de registre et des correctifs</lang>
-                      <lang id="de" status="3">Registryuntersuchungen und -reperaturen protokollieren</lang>
+                      <lang id="de" status="3">Registryuntersuchungen und -reparaturen protokollieren</lang>
                       <lang id="el" status="3">Αρχείο καταγραφής μητρώου σαρώσεων και διορθώσεων</lang>
                       <lang id="hu" status="2">Bejegyzés szkennelések és helyrehozások naplózása</lang>
                       <lang id="it" status="3">Registra scansioni e modifiche</lang>
@@ -4125,7 +4125,7 @@
                 <lang id="nl" status="3">Selecteer hieronder een bestand om uw register terug te zetten naar een eerdere versie</lang>
                 <lang id="en" status="2">Select a file below to restore your registry to a previous state</lang>
                 <lang id="fr" status="2">Sélectionnez un fichier ci-dessous pour restaurer votre base de registre à un état antérieur</lang>
-                <lang id="de" status="3">Wählen Sie eine Date um die Registry auf einen früheren Zeitpunkt zurückzusetzen</lang>
+                <lang id="de" status="3">Wählen Sie eine Datei um die Registry auf einen früheren Zeitpunkt zurückzusetzen</lang>
                 <lang id="el" status="2">Επιλέξτε ένα αρχείο παρακάτω, για να επαναφέρετε το μητρώο σας σε μια προηγούμενη κατάσταση</lang>
                 <lang id="hu" status="2">Válasszon ki egy fájlt a bejegyzés visszaállításához</lang>
                 <lang id="it" status="3">Selezionare uno dei file di seguito per il ripristino</lang>
@@ -5704,7 +5704,7 @@
                     <lang id="nl" status="2">De geschatte grootte</lang>
                     <lang id="en" status="2">Estimated Size</lang>
                     <lang id="fr" status="2">Estimation de la taille</lang>
-                    <lang id="de" status="3">Geschätze Größe</lang>
+                    <lang id="de" status="3">Geschätzte Größe</lang>
                     <lang id="el" status="2">Εκτιμώμενο μέγεθος</lang>
                     <lang id="hu" status="2">Becsült méret</lang>
                     <lang id="it" status="3">Dimensioni stimate</lang>
@@ -5888,7 +5888,7 @@
           <lang id="nl" status="3">Geselecteerde registersleutels toegevoegd aan de Uitsluiten-lijst</lang>
           <lang id="en" status="2">Added selected registry keys to the exclude list</lang>
           <lang id="fr" status="2">Ajouté des clés de registre sélectionnée à la liste d'exclusion</lang>
-          <lang id="de" status="3">Gewählte Registry-Schlüssel zur Ausnahmeliste hinzufeügt</lang>
+          <lang id="de" status="3">Gewählte Registry-Schlüssel zur Ausnahmeliste hinzugefügt</lang>
           <lang id="el" status="3">Τα επιλεγμένα κλειδιά μητρώου προστέθηκαν στην λίστα παράβλεψης</lang>
           <lang id="hu" status="2">Kijelölt bejegyzés kulcsok sikeresen hozzáadva a kihagyáslistához</lang>
           <lang id="it" status="3">Chiavi di registro selezionate aggiunte alla lista esclusi</lang>
@@ -6008,7 +6008,7 @@
           <lang id="nl" status="3">Problemen uit het register verwijderd</lang>
           <lang id="en" status="2">Removed problems from registry</lang>
           <lang id="fr" status="2">Problèmes supprimées du registre</lang>
-          <lang id="de" status="3">Probleme aus der Registry entfern</lang>
+          <lang id="de" status="3">Probleme aus der Registry entfernen</lang>
           <lang id="el" status="3">Καταργημένα προβλήματα από το μητρώο</lang>
           <lang id="hu" status="2">Hibák eltávolítva a bejegyzésből</lang>
           <lang id="it" status="3">Problemi del registro corretti</lang>
@@ -6272,7 +6272,7 @@
           <lang id="nl" status="2">Selecteer de map waar de log-bestanden zullen worden geplaatst</lang>
           <lang id="en" status="2">Select the folder where the log files will be placed</lang>
           <lang id="fr" status="2">Sélectionnez le dossier dans lequel seront placés les fichiers journaux</lang>
-          <lang id="de" status="3">Wählen Sie ein Verzeichnis um die Berichte zu speicher</lang>
+          <lang id="de" status="3">Wählen Sie ein Verzeichnis um die Berichte zu speichern</lang>
           <lang id="el" status="3">Επιλέξτε το φάκελλο όπου τα αρχεία καταγραφής θα τοποθετηθουν</lang>
           <lang id="hu" status="2">Válassza ki a mappát amibe majd a naplófájlok kerülnek</lang>
           <lang id="it" status="3">Selezionale la cartella per i file di log</lang>
@@ -6368,7 +6368,7 @@
           <lang id="nl" status="3">Registersleutel verwijderd</lang>
           <lang id="en" status="2">Sucessfully removed registry key</lang>
           <lang id="fr" status="2">Clé de registre réussi supprimé</lang>
-          <lang id="de" status="3">Registry-Schlüssel erfolgreich entfern</lang>
+          <lang id="de" status="3">Registry-Schlüssel erfolgreich entfernt</lang>
           <lang id="el" status="3">Το κλειδί μητρώου κατάργηθηκε με επιτυχία</lang>
           <lang id="hu" status="2">A bejegyzés kulcs sikeresen eltávolítva</lang>
           <lang id="it" status="3">Chiave rimossa con successo</lang>
