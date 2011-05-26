@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.1.314" date="20110517222230" scan="54" scanned="20101119164607">
+<document version="2.1.314" date="20110517223833" scan="54" scanned="20101119164607">
   <lang id="ar"/>
   <lang id="zh"/>
   <lang id="zh.tra" ime="imOn"/>
@@ -253,8 +253,28 @@
       <node class="TNetStringNode" name="Common_Tools.Properties.Resources" excluded="1">
       </node>
     </node>
+    <node class="TWindowsVersionFolder" name="Versions" state="0" resid="16">
+      <node class="TWindowsVersionNode" name="1" state="0" resid="1">
+        <row id="Assembly Version" state="0">1.0.3879.41940</row>
+        <row id="FileDescription" state="0">Common Tools</row>
+        <row id="FileVersion" state="0">1.0.0.0</row>
+        <row id="FileVersion[1]" class="TIntegerRow" state="0">1</row>
+        <row id="FileVersion[2]" class="TIntegerRow" state="0">0</row>
+        <row id="FileVersion[3]" class="TIntegerRow" state="0">0</row>
+        <row id="FileVersion[4]" class="TIntegerRow" state="0">0</row>
+        <row id="InternalName" state="0">Common Tools.dll</row>
+        <row id="LegalCopyright" state="0">Copyright ©  2008-2010</row>
+        <row id="OriginalFilename" state="0">Common Tools.dll</row>
+        <row id="ProductName" state="0">Common Tools</row>
+        <row id="ProductVersion" state="0">1.0.0.0</row>
+        <row id="ProductVersion[1]" class="TIntegerRow" state="0">1</row>
+        <row id="ProductVersion[2]" class="TIntegerRow" state="0">0</row>
+        <row id="ProductVersion[3]" class="TIntegerRow" state="0">0</row>
+        <row id="ProductVersion[4]" class="TIntegerRow" state="0">0</row>
+      </node>
+    </node>
   </source>
-  <source class="TVisualStudioNetProjectSource" name="Little Registry Cleaner.csproj" original="en" date="20100912062256" defaultoutputdir="bin\Debug" configuration="Debug|AnyCPU" netversion="net35" toolsversion="net40" rootnamespace="Little_Registry_Cleaner" options="[noSetRightToLeft,noSortItems,noCompileResource,noCreateAssembly,noDeleteCompiledResource,noDeleteSourceResource]">
+  <source class="TVisualStudioNetProjectSource" name="Little Registry Cleaner.csproj" original="en" date="20101206050742" defaultoutputdir="bin\Debug" configuration="Debug|AnyCPU" netversion="net35" toolsversion="net40" rootnamespace="Little_Registry_Cleaner" options="[noSetRightToLeft,noSortItems,noCompileResource,noCreateAssembly,noDeleteCompiledResource,noDeleteSourceResource]">
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TColorData</class>
@@ -7442,6 +7462,28 @@
           <lang id="tr" status="2">Windows Sesler</lang>
           <lang id="vi" date="20091102205706" status="3">Những âm thanh Windows</lang>
         </row>
+      </node>
+    </node>
+    <node class="TWindowsVersionFolder" name="Versions" state="0" resid="16">
+      <node class="TWindowsVersionNode" name="1" state="0" resid="1">
+        <row id="Assembly Version" state="0">1.4.3991.39679</row>
+        <row id="Comments" state="0">Free and open source program that is designed to cleanup Microsoft Windows Registry</row>
+        <row id="CompanyName" state="0">Little Apps (http://www.littleapps.co.cc)</row>
+        <row id="FileDescription" state="0">Little Registry Cleaner</row>
+        <row id="FileVersion" state="0">1.4.2</row>
+        <row id="FileVersion[1]" class="TIntegerRow" state="0">1</row>
+        <row id="FileVersion[2]" class="TIntegerRow" state="0">4</row>
+        <row id="FileVersion[3]" class="TIntegerRow" state="0">2</row>
+        <row id="FileVersion[4]" class="TIntegerRow" state="0">0</row>
+        <row id="InternalName" state="0">Little Registry Cleaner.exe</row>
+        <row id="LegalCopyright" state="0">Copyright © Little Apps 2008-2010</row>
+        <row id="OriginalFilename" state="0">Little Registry Cleaner.exe</row>
+        <row id="ProductName" state="0">Little Registry Cleaner</row>
+        <row id="ProductVersion" state="0">1.4.2</row>
+        <row id="ProductVersion[1]" class="TIntegerRow" state="0">1</row>
+        <row id="ProductVersion[2]" class="TIntegerRow" state="0">4</row>
+        <row id="ProductVersion[3]" class="TIntegerRow" state="0">2</row>
+        <row id="ProductVersion[4]" class="TIntegerRow" state="0">0</row>
       </node>
     </node>
   </source>

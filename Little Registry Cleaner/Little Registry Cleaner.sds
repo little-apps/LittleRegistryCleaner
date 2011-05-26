@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<desktop scan="54" scanned="20101119164607" built="20101119164643" lang="fa" pane="TLogPane" col="24" row="Little Registry Cleaner.csproj.Strings.Little_Registry_Cleaner.Properties.Resources.smRemoved">
+<desktop scan="54" scanned="20101119164607" built="20110517222239" lang="fa" pane="TLogPane" col="24" row="Little Registry Cleaner.csproj.Strings.Little_Registry_Cleaner.Properties.Resources.restoreRestored">
   <language id="ar" autoime="0" autokeyboard="0"/>
   <language id="zh" autoime="0" autokeyboard="0"/>
   <language id="zh.tra" autoime="0" autokeyboard="0"/>
@@ -22,7 +22,7 @@
   <language id="tr" autoime="0" autokeyboard="0"/>
   <language id="vi" autoime="0" autokeyboard="0"/>
   <triggers>
-    <item class="TValidateTrigger" position="3"/>
+    <item class="TValidateTrigger" position="4"/>
   </triggers>
   <sheet>
     <columns>
