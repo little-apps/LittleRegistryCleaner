@@ -241,8 +241,16 @@ namespace Little_Registry_Cleaner
                 return false;
 
             // Make sure registry key exists
-            if (!Utils.RegKeyExists(regPath))
-                return false;
+            if (string.IsNullOrEmpty(valueName))
+            {
+                if (!Utils.RegKeyExists(regPath))
+                    return false;
+            }
+            else
+            {
+                if (!Utils.ValueNameExists(regPath, valueName))
+                    return false;
+            }
 
             // Parse registry key to base and subkey
             if (!Utils.ParseRegKeyPath(regPath, out baseKey, out subKey))

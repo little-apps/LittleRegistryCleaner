@@ -80,9 +80,12 @@
     <BaseAddress>4194304</BaseAddress>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.VisualBasic" />
-    <Reference Include="Microsoft.WindowsAPICodePack.Shell">
-      <HintPath>..\..\..\..\..\Source Code\Windows API Code Pack 1.1\Windows API Code Pack 1.1\binaries\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    <Reference Include="Microsoft.WindowsAPICodePack">
+      <HintPath>WindowsAPICodePack\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>WindowsAPICodePack\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration.Install" />

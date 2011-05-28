@@ -767,7 +767,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.toolStripContainer1);
             this.Name = "Main";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
             this.Shown += new System.EventHandler(this.Main_Shown);
             this.Resize += new System.EventHandler(this.Main_Resize);

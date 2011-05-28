@@ -266,12 +266,12 @@ namespace Little_Registry_Cleaner
         /// <returns>True if it exists</returns>
         public static bool RegKeyExists(string inPath)
         {
-            string strBaseKey, strSubKey;
+            string baseKey, subKey;
 
-            if (!ParseRegKeyPath(inPath, out strBaseKey, out strSubKey))
+            if (!ParseRegKeyPath(inPath, out baseKey, out subKey))
                 return false;
 
-            return RegKeyExists(strBaseKey, strSubKey);
+            return RegKeyExists(baseKey, subKey);
         }
 
         public static bool RegKeyExists(string mainKey, string subKey)
@@ -286,6 +286,23 @@ namespace Little_Registry_Cleaner
             }
 
             return bKeyExists;
+        }
+
+
+        /// <summary>
+        /// Checks if registry key + value name exist
+        /// </summary>
+        /// <param name="inPath">Registry Key</param>
+        /// <param name="valueName">Value name</param>
+        /// <returns>True if it exists</returns>
+        public static bool ValueNameExists(string inPath, string valueName)
+        {
+            string baseKey, subKey;
+
+            if (!ParseRegKeyPath(inPath, out baseKey, out subKey))
+                return false;
+
+            return ValueNameExists(baseKey, subKey, valueName);
         }
 
         public static bool ValueNameExists(string mainKey, string subKey, string valueName)

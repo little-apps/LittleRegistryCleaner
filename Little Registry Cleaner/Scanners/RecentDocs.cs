@@ -76,14 +76,14 @@ namespace Little_Registry_Cleaner.Scanners
         {
             try 
             {
-                string strRecentDocs = Environment.GetFolderPath(Environment.SpecialFolder.Recent);
-
                 using (RegistryKey regKey = Registry.CurrentUser.OpenSubKey("Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RecentDocs"))
                 {
                     if (regKey == null)
                         return;
 
                     Main.Logger.WriteLine("Cleaning invalid references in " + regKey.Name);
+
+                    EnumMRUList(regKey);
 
                     foreach (string strSubKey in regKey.GetSubKeyNames())
                     {
@@ -92,35 +92,43 @@ namespace Little_Registry_Cleaner.Scanners
                         if (subKey == null)
                             continue;
 
-                        foreach (string strValueName in subKey.GetValueNames())
-                        {
-                            string filePath, fileArgs;
-
-                            // Ignore MRUListEx and others
-                            if (!Regex.IsMatch(strValueName, "[0-9]"))
-                                continue;
-
-                            string fileName = ExtractUnicodeStringFromBinary(subKey.GetValue(strValueName));
-                            string shortcutPath = string.Format("{0}\\{1}.lnk", strRecentDocs, fileName);
-
-                            ScanDlg.CurrentScannedObject = shortcutPath;
-
-                            // See if file exists in Recent Docs folder
-                            if (!string.IsNullOrEmpty(fileName))
-                                ScanDlg.StoreInvalidKey(Strings.InvalidRegKey, regKey.ToString(), strValueName);
-
-                            if (!Utils.FileExists(shortcutPath))
-                                ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.ToString(), strValueName);
-
-                            if (!Utils.ResolveShortcut(shortcutPath, out filePath, out fileArgs))
-                                ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.ToString(), strValueName);
-                        }
+                        EnumMRUList(subKey);
                     }
                 }
             }
             catch (System.Security.SecurityException ex)
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
+        }
+
+        private static void EnumMRUList(RegistryKey regKey)
+        {
+            foreach (string strValueName in regKey.GetValueNames())
+            {
+                string filePath, fileArgs;
+
+                // Ignore MRUListEx and others
+                if (!Regex.IsMatch(strValueName, "[0-9]"))
+                    continue;
+
+                string fileName = ExtractUnicodeStringFromBinary(regKey.GetValue(strValueName));
+                string shortcutPath = string.Format("{0}\\{1}.lnk", Environment.GetFolderPath(Environment.SpecialFolder.Recent), fileName);
+
+                ScanDlg.CurrentScannedObject = shortcutPath;
+
+                // See if file exists in Recent Docs folder
+                if (!string.IsNullOrEmpty(fileName))
+                {
+                    ScanDlg.StoreInvalidKey(Strings.InvalidRegKey, regKey.ToString(), strValueName);
+                    continue;
+                }
+
+                if (!Utils.FileExists(shortcutPath) || !Utils.ResolveShortcut(shortcutPath, out filePath, out fileArgs))
+                {
+                    ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.ToString(), strValueName);
+                    continue;
+                }
             }
         }
 

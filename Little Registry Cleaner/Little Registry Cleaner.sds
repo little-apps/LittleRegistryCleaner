@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<desktop scan="54" scanned="20101119164607" built="20110517222239" lang="fa" pane="TLogPane" col="24" row="Little Registry Cleaner.csproj.Strings.Little_Registry_Cleaner.Properties.Resources.restoreRestored">
+<desktop scan="55" scanned="20110525232518" built="20110528002752" lang="fr" pane="TLogPane" col="21" row="treeView1.Items[0].Items[10].Text">
   <language id="ar" autoime="0" autokeyboard="0"/>
   <language id="zh" autoime="0" autokeyboard="0"/>
   <language id="zh.tra" autoime="0" autokeyboard="0"/>
@@ -22,7 +22,7 @@
   <language id="tr" autoime="0" autokeyboard="0"/>
   <language id="vi" autoime="0" autokeyboard="0"/>
   <triggers>
-    <item class="TValidateTrigger" position="4"/>
+    <item class="TValidateTrigger" position="2"/>
   </triggers>
   <sheet>
     <columns>
@@ -52,7 +52,9 @@
       <item class="TTranslationColumn" lang="lt" width="43"/>
       <item class="TTranslationColumn" lang="fa" width="19"/>
     </columns>
-    <params origin="soEntireScope">
+    <params processall="1" origin="soEntireScope">
+      <findtext>polices</findtext>
+      <findtext>policies</findtext>
       <findtext>License</findtext>
       <findtext>General Public</findtext>
       <findtext>Little Registry Cleaner</findtext>
@@ -63,6 +65,9 @@
   </sheet>
   <path>
     <item>All</item>
+    <item>Little Registry Cleaner.csproj</item>
+    <item>Forms</item>
+    <item>Little_Registry_Cleaner.Main</item>
   </path>
   <exchange method="exmExportFile" options="[eoSetup,eoSpellChecker,eoLanguages]" author="Nick H." description="Little registry cleaner" packagename="Little registry cleanerRu" showpackage="0">
   </exchange>

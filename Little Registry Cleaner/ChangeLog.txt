@@ -380,3 +380,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Now compatible with Microsoft Windows Restart Manager
 - Updated Spanish Translations (Thanks to Fitoschido)
 - Updated German Translations (Thanks to Chris G)
+- Updated French Translations (Thanks to Tulip V)
+- Compatible with Windows 7 task bar
+- Program no longer starts up maximized
+- Fixed recent docs scanner so it doesnt display duplicates and displays the correct registry key path
