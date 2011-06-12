@@ -47,8 +47,8 @@ namespace Little_Registry_Cleaner
         [DllImport("shell32.dll")] public static extern bool SHGetSpecialFolderPath(IntPtr hwndOwner, [Out] StringBuilder lpszPath, int nFolder, bool fCreate);
         [DllImport("shell32.dll", EntryPoint = "FindExecutable")] public static extern long FindExecutableA(string lpFile, string lpDirectory, StringBuilder lpResult);
         [DllImport("shell32.dll", EntryPoint = "ExtractIconEx")] public static extern int ExtractIconExA(string lpszFile, int nIconIndex, ref IntPtr phiconLarge, ref IntPtr phiconSmall, int nIcons);
-         
-        [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern string PathGetArgs(string path);
+
+        [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern IntPtr PathGetArgs([In] string path);
         [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern void PathRemoveArgs([In, Out] StringBuilder path);
         [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern int PathParseIconLocation([In, Out] StringBuilder path);
         [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern void PathUnquoteSpaces([In, Out] StringBuilder path);
@@ -448,7 +448,8 @@ namespace Little_Registry_Cleaner
             if (strCmdLine.Length <= 0)
                 throw new ArgumentNullException("cmdLine");
 
-            fileArgs = string.Copy(PathGetArgs(strCmdLine.ToString()));
+            fileArgs = Marshal.PtrToStringAuto(PathGetArgs(strCmdLine.ToString()));
+            //fileArgs = string.Copy(PathGetArgs(strCmdLine.ToString()));
 
             PathRemoveArgs(strCmdLine);
 

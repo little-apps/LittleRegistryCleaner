@@ -82,7 +82,7 @@ namespace Little_Registry_Cleaner
             this.progressBar.PositionMin = 0;
             this.progressBar.PositionMax = ScanDlg.arrBadRegistryKeys.SectionCount;
 
-            TaskbarManager.Instance.SetProgressValue(0, ScanDlg.arrBadRegistryKeys.SectionCount);
+            SetProgressValue(0, ScanDlg.arrBadRegistryKeys.SectionCount);
 
             // Append 0 to problem label
             this.labelProblems.Text = string.Format("{0} 0", this.labelProblems.Text);
@@ -151,14 +151,15 @@ namespace Little_Registry_Cleaner
                 if (this.threadScan.IsAlive)
                     this.threadScan.Abort();
 
-                // Clear taskbar progress bar
-                TaskbarManager.Instance.SetProgressState(TaskbarProgressBarState.NoProgress);
-
                 this.DialogResult = DialogResult.Abort;
                 Main.Logger.WriteLine("Exiting.\r\n");
             }
             finally
             {
+                // Clear taskbar progress bar
+                if (Environment.OSVersion.Version.Major == 6 && Environment.OSVersion.Version.Minor > 0)
+                    TaskbarManager.Instance.SetProgressState(TaskbarProgressBarState.NoProgress);
+
                 // Compute time between start and end of scan
                 TimeSpan ts = DateTime.Now.Subtract(dateTimeStart);
 
@@ -209,7 +210,16 @@ namespace Little_Registry_Cleaner
             Main.Logger.WriteLine();
 
             this.progressBar.Position++;
-            TaskbarManager.Instance.SetProgressValue(this.progressBar.Position, ScanDlg.arrBadRegistryKeys.SectionCount);
+            SetProgressValue(this.progressBar.Position, ScanDlg.arrBadRegistryKeys.SectionCount);
+        }
+
+        private void SetProgressValue(int currentValue, int maxValue)
+        {
+            // Make sure OS is Windows 7 or greater
+            if (Environment.OSVersion.Version.Major == 6 && Environment.OSVersion.Version.Minor > 0)
+            {
+                TaskbarManager.Instance.SetProgressValue(currentValue, maxValue);
+            }
         }
 
         /// <summary>

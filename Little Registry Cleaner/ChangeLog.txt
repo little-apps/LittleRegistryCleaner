@@ -384,3 +384,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Compatible with Windows 7 task bar
 - Program no longer starts up maximized
 - Fixed recent docs scanner so it doesnt display duplicates and displays the correct registry key path
+- Upgraded to Microsoft .NET Framework v4

@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Little_Registry_Cleaner</RootNamespace>
     <AssemblyName>Little Registry Cleaner</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ManifestCertificateThumbprint>9860FA840C041BCD894790CC2D1D6651EF86DB82</ManifestCertificateThumbprint>
     <ManifestKeyFile>Little Registry Cleaner_TemporaryKey.pfx</ManifestKeyFile>
