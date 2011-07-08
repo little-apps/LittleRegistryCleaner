@@ -127,33 +127,8 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Scanners\ScannerBase.cs" />
-    <Compile Include="StartupManager\EditRunItem.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StartupManager\EditRunItem.Designer.cs">
-      <DependentUpon>EditRunItem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="StartupManager\NewRunItem.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StartupManager\NewRunItem.Designer.cs">
-      <DependentUpon>NewRunItem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="StartupManager\StartupManager.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StartupManager\StartupManager.Designer.cs">
-      <DependentUpon>StartupManager.cs</DependentUpon>
-    </Compile>
     <Compile Include="Misc\SysRestore.cs" />
     <Compile Include="Scanners\RecentDocs.cs">
-    </Compile>
-    <Compile Include="UninstallManager\ProgramInfo.cs" />
-    <Compile Include="UninstallManager\UninstallManager.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UninstallManager\UninstallManager.Designer.cs">
-      <DependentUpon>UninstallManager.cs</DependentUpon>
     </Compile>
     <Compile Include="UpdateDlg.cs">
       <SubType>Form</SubType>
@@ -195,22 +170,6 @@
     <EmbeddedResource Include="Scanners\Strings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Strings.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StartupManager\EditRunItem.resx">
-      <DependentUpon>EditRunItem.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StartupManager\NewRunItem.resx">
-      <DependentUpon>NewRunItem.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StartupManager\StartupManager.resx">
-      <DependentUpon>StartupManager.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UninstallManager\UninstallManager.resx">
-      <DependentUpon>UninstallManager.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateDlg.resx">
@@ -332,6 +291,7 @@
       <Name>Common Tools</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

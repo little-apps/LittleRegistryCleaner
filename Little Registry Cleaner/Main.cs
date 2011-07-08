@@ -1,6 +1,6 @@
 ﻿/*
     Little Registry Cleaner
-    Copyright (C) 2008-2010 Little Apps (http://www.littleapps.co.cc/)
+    Copyright (C) 2008-2011 Little Apps (http://www.little-apps.org/)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -31,6 +31,7 @@ using System.Resources;
 using System.Globalization;
 using System.Threading;
 using Little_Registry_Cleaner.Xml;
+using Common_Tools;
 using Common_Tools.TreeViewAdv.Tree;
 using Microsoft.Win32;
 
@@ -451,6 +452,7 @@ namespace Little_Registry_Cleaner
                 Application.CurrentCulture = new CultureInfo(0x0404); // zh-TW Chinese (Taiwan)
             else
                 Application.CurrentCulture = CultureInfo.CreateSpecificCulture(ci.Name);
+
             Thread.CurrentThread.CurrentUICulture = ci;
             Scanners.Strings.Culture = ci;
             Properties.Resources.Culture = ci;
@@ -556,14 +558,12 @@ namespace Little_Registry_Cleaner
 
         private void StartupManager(object sender, EventArgs e)
         {
-            StartupManager.StartupManager dlgStartupManager = new StartupManager.StartupManager();
-            dlgStartupManager.ShowDialog(this);
+            Process.Start("Little Startup Manager.exe", @"/culture:" + Thread.CurrentThread.CurrentUICulture.LCID.ToString()).WaitForExit();
         }
 
         private void UninstallManager(object sender, EventArgs e)
         {
-            UninstallManager.UninstallManager dlgUninstallManager = new Little_Registry_Cleaner.UninstallManager.UninstallManager();
-            dlgUninstallManager.ShowDialog(this);
+            Process.Start("Little Uninstall Manager.exe", @"/culture:" + Thread.CurrentThread.CurrentUICulture.LCID.ToString()).WaitForExit();
         }
         #endregion
 
@@ -605,8 +605,11 @@ namespace Little_Registry_Cleaner
         {
             BadRegistryKey brk = e.Node.Tag as BadRegistryKey;
 
-            Common_Tools.DetailsRegKey details = new Common_Tools.DetailsRegKey(brk.Problem, brk.RegKeyPath, brk.ValueName, brk.Data);
-            details.ShowDialog(this);
+            if (!string.IsNullOrEmpty(brk.Problem) && !string.IsNullOrEmpty(brk.RegKeyPath))
+            {
+                Common_Tools.DetailsRegKey details = new Common_Tools.DetailsRegKey(brk.Problem, brk.RegKeyPath, brk.ValueName, brk.Data);
+                details.ShowDialog(this);
+            }
         }
 
         private void treeViewAdvResults_ColumnClicked(object sender, TreeColumnEventArgs e)

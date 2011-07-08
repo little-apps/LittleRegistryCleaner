@@ -1,6 +1,6 @@
 ﻿/*
     Little Registry Cleaner
-    Copyright (C) 2008-2010 Little Apps (http://www.littleapps.co.cc/)
+    Copyright (C) 2008-2011 Little Apps (http://www.little-apps.org/)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -31,7 +31,7 @@ using Microsoft.Win32;
 
 namespace Little_Registry_Cleaner
 {
-    static class Utils
+    public static class Utils
     {
         #region Signatures imported from http://pinvoke.net
         [DllImport("kernel32.dll", CharSet=CharSet.Auto)] public static extern uint RegisterApplicationRestart(string pszCommandline, int dwFlags);

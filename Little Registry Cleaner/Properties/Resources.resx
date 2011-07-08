@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="crashReporterFail" xml:space="preserve">
     <value>The bug report could not be sent</value>
@@ -174,21 +174,6 @@
   <data name="optionsSelectLogDir" xml:space="preserve">
     <value>Select the folder where the log files will be placed</value>
   </data>
-  <data name="piErrorRegKey" xml:space="preserve">
-    <value>Error removing registry key:</value>
-  </data>
-  <data name="piErrorUninstalling" xml:space="preserve">
-    <value>Error uninstalling program:</value>
-  </data>
-  <data name="piInvalidUninstallString" xml:space="preserve">
-    <value>Unable to find uninstall string. Would you like to manually remove it from the registry?</value>
-  </data>
-  <data name="piSuccessRegKey" xml:space="preserve">
-    <value>Sucessfully removed registry key</value>
-  </data>
-  <data name="piSuccessUninstall" xml:space="preserve">
-    <value>Sucessfully uninstalled program</value>
-  </data>
   <data name="programAlreadyRunning" xml:space="preserve">
     <value>Another program seems to be running already...</value>
   </data>
@@ -212,36 +197,6 @@
   </data>
   <data name="scanDlgProgressBarScanning" xml:space="preserve">
     <value>Scanning: </value>
-  </data>
-  <data name="smCannotFindFile" xml:space="preserve">
-    <value>The file could not be found</value>
-  </data>
-  <data name="smEmptyName" xml:space="preserve">
-    <value>Shortcut/Value name cannot be empty</value>
-  </data>
-  <data name="smEmptyPath" xml:space="preserve">
-    <value>File path cannot be empty</value>
-  </data>
-  <data name="smRan" xml:space="preserve">
-    <value>Attempted to run:</value>
-  </data>
-  <data name="smRemove" xml:space="preserve">
-    <value>Are you sure you want to remove this startup program?</value>
-  </data>
-  <data name="smRemoved" xml:space="preserve">
-    <value>Removed selected startup program</value>
-  </data>
-  <data name="smRun" xml:space="preserve">
-    <value>Are you sure you want to run this program?</value>
-  </data>
-  <data name="umForceUninstall" xml:space="preserve">
-    <value>Are you sure you want to remove this program from the registry?</value>
-  </data>
-  <data name="umSearchText" xml:space="preserve">
-    <value>Search by name</value>
-  </data>
-  <data name="umUninstall" xml:space="preserve">
-    <value>Are you sure you want to uninstall this program?</value>
   </data>
   <data name="updateLatest" xml:space="preserve">
     <value>You have the latest version</value>

@@ -1,5 +1,5 @@
 ﻿Little Registry Cleaner
-Copyright (C) 2008-2010 Little Apps (http://www.littleapps.co.cc/)
+Copyright (C) 2008-2011 Little Apps (http://www.little-apps.org/)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -383,5 +383,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Updated French Translations (Thanks to Tulip V)
 - Compatible with Windows 7 task bar
 - Program no longer starts up maximized
-- Fixed recent docs scanner so it doesnt display duplicates and displays the correct registry key path
+- Fixed recent docs scanner so it displays the correct registry key path
+- No longer displays duplicate problems
 - Upgraded to Microsoft .NET Framework v4
+- Uninstall & Startup Manager are now seperate executables
+- Details window is no longer displayed when a parent node is double clicked

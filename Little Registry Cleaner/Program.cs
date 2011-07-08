@@ -1,6 +1,6 @@
 ﻿/*
     Little Registry Cleaner
-    Copyright (C) 2008-2010 Little Apps (http://www.littleapps.co.cc/)
+    Copyright (C) 2008-2011 Little Apps (http://www.little-apps.org/)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

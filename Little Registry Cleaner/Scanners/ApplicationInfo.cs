@@ -1,6 +1,6 @@
 ﻿/*
     Little Registry Cleaner
-    Copyright (C) 2008-2010 Little Apps (http://www.littleapps.co.cc/)
+    Copyright (C) 2008-2011 Little Apps (http://www.little-apps.org/)
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -55,7 +55,7 @@ namespace Little_Registry_Cleaner.Scanners
                             {
                                 ScanDlg.CurrentScannedObject = regKey2.ToString();
 
-                                UninstallManager.ProgramInfo progInfo = new Little_Registry_Cleaner.UninstallManager.ProgramInfo(regKey2);
+                                Common_Tools.ProgramInfo progInfo = new Common_Tools.ProgramInfo(regKey2);
 
                                 if (regKey2.ValueCount <= 0)
                                 {

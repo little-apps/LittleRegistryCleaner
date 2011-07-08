@@ -1,0 +1,65 @@
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\obj\x86\Debug\Little_Uninstall_Manager.Properties.Resources.resources
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\obj\x86\Debug\Little_Uninstall_Manager.UninstallManager.resources
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\Little Uninstall Manager.exe.config
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\Little Uninstall Manager.exe
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\Little Uninstall Manager.pdb
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\Common Tools.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\Little Registry Cleaner.exe
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\Common Tools.pdb
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\Little Registry Cleaner.pdb
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\ar\Common Tools.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\de\Common Tools.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\el\Common Tools.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\en\Common Tools.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\es\Common Tools.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\fa\Common Tools.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\fr\Common Tools.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\hu\Common Tools.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\it\Common Tools.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\ja\Common Tools.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\lt\Common Tools.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\nl\Common Tools.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\pl\Common Tools.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\pt\Common Tools.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\ro\Common Tools.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\ru\Common Tools.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\sv-SE\Common Tools.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\th\Common Tools.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\tr\Common Tools.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\vi\Common Tools.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\zh-CHS\Common Tools.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\zh-CHT\Common Tools.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\ar\Little Registry Cleaner.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\de\Little Registry Cleaner.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\el\Little Registry Cleaner.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\en\Little Registry Cleaner.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\es\Little Registry Cleaner.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\fa\Little Registry Cleaner.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\fr\Little Registry Cleaner.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\hu\Little Registry Cleaner.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\it\Little Registry Cleaner.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\ja\Little Registry Cleaner.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\lt\Little Registry Cleaner.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\nl\Little Registry Cleaner.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\pl\Little Registry Cleaner.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\pt\Little Registry Cleaner.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\ro\Little Registry Cleaner.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\ru\Little Registry Cleaner.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\sv-SE\Little Registry Cleaner.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\th\Little Registry Cleaner.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\tr\Little Registry Cleaner.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\vi\Little Registry Cleaner.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\zh-CHS\Little Registry Cleaner.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\zh-CHT\Little Registry Cleaner.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\zh-Hans\Little Registry Cleaner.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\bin\Debug\zh-Hant\Little Registry Cleaner.resources.dll
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\obj\x86\Debug\Little Uninstall Manager.exe
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\obj\x86\Debug\Little Uninstall Manager.pdb
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Registry Cleaner\bin\Debug\Little Uninstall Manager.exe.config
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Registry Cleaner\bin\Debug\Little Uninstall Manager.exe
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Registry Cleaner\bin\Debug\Little Uninstall Manager.pdb

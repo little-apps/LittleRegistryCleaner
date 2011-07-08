@@ -9,9 +9,9 @@ using System.Resources;
 [assembly: AssemblyTitle("Little Registry Cleaner")]
 [assembly: AssemblyDescription("Free and open source program that is designed to cleanup Microsoft Windows Registry")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Little Apps (http://www.littleapps.co.cc)")]
+[assembly: AssemblyCompany("Little Apps (http://www.little-apps.org)")]
 [assembly: AssemblyProduct("Little Registry Cleaner")]
-[assembly: AssemblyCopyright("Copyright © Little Apps 2008-2010")]
+[assembly: AssemblyCopyright("Copyright © Little Apps 2008-2011")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -33,6 +33,6 @@ using System.Resources;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.4.*")]
-[assembly: AssemblyFileVersion("1.4.2")]
+[assembly: AssemblyVersion("1.5.*")]
+[assembly: AssemblyFileVersion("1.5")]
 [assembly: NeutralResourcesLanguageAttribute("en-GB")]
