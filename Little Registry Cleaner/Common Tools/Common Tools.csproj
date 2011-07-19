@@ -90,6 +90,24 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="TaskScheduler\Action.cs" />
+    <Compile Include="TaskScheduler\ActionCollection.cs" />
+    <Compile Include="TaskScheduler\Impersonation.cs" />
+    <Compile Include="TaskScheduler\NamedValueCollection.cs" />
+    <Compile Include="TaskScheduler\NotV1SupportedException.cs" />
+    <Compile Include="TaskScheduler\Task.cs" />
+    <Compile Include="TaskScheduler\TaskCollection.cs" />
+    <Compile Include="TaskScheduler\TaskFolder.cs" />
+    <Compile Include="TaskScheduler\TaskFolderCollection.cs" />
+    <Compile Include="TaskScheduler\TaskHandlerInterfaces.cs" />
+    <Compile Include="TaskScheduler\TaskService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TaskScheduler\Trigger.cs" />
+    <Compile Include="TaskScheduler\TriggerCollection.cs" />
+    <Compile Include="TaskScheduler\V1\TaskSchedulerV1Interop.cs" />
+    <Compile Include="TaskScheduler\V2\TaskSchedulerV2Interop.cs" />
+    <Compile Include="TaskScheduler\Wildcard.cs" />
     <Compile Include="TreeViewAdv\BitmapHelper.cs" />
     <Compile Include="TreeViewAdv\GifDecoder.cs" />
     <Compile Include="TreeViewAdv\NumericTextBox.cs">

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<desktop scan="63" scanned="20110707232720" built="20110707232744" lang="fr" pane="TLogPane" col="1" row="programAlreadyRunning">
+<desktop scan="64" scanned="20110719001843" built="20110707232744" lang="fr" pane="TLogPane" col="1" row="optionsSchedDescD">
   <language id="ar" autoime="0" autokeyboard="0"/>
   <language id="zh" autoime="0" autokeyboard="0"/>
   <language id="zh.tra" autoime="0" autokeyboard="0"/>
@@ -22,7 +22,7 @@
   <language id="tr" autoime="0" autokeyboard="0"/>
   <language id="vi" autoime="0" autokeyboard="0"/>
   <triggers>
-    <item class="TRemoveUnusedItemsTrigger" position="3"/>
+    <item class="TRemoveUnusedItemsTrigger" position="4"/>
     <item class="TValidateTrigger" position="3"/>
   </triggers>
   <sheet>
@@ -66,9 +66,9 @@
   </sheet>
   <path>
     <item>All</item>
-    <item>..\Little Uninstall Manager\Little Uninstall Manager.csproj</item>
+    <item>Little Registry Cleaner.csproj</item>
     <item>Strings</item>
-    <item>Little_Uninstall_Manager.Properties.Resources</item>
+    <item>Little_Registry_Cleaner.Properties.Resources</item>
   </path>
   <exchange method="exmExportFile" options="[eoSetup,eoSpellChecker,eoLanguages]" author="Nick H." description="Little registry cleaner" packagename="Little registry cleanerRu" showpackage="0">
   </exchange>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.1.317" date="20110707235613" scan="63" scanned="20110707232720">
+<document version="2.1.317" date="20110719004427" scan="64" scanned="20110719001843">
   <lang id="ar"/>
   <lang id="zh"/>
   <lang id="zh.tra" ime="imOn"/>
@@ -807,11 +807,11 @@
           <component class="TVisImageList" name="imageList" state="0" type="System.Windows.Forms.ImageList">
           </component>
           <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer" align="alClient">
-            <row id="Location.X">0</row>
-            <row id="Location.Y">0</row>
-            <row id="Size.Height">436</row>
-            <row id="Size.Width">717</row>
-            <row id="Text" excluded="1">
+            <row id="Location.X" state="0">0</row>
+            <row id="Location.Y" state="0">0</row>
+            <row id="Size.Height" state="0">436</row>
+            <row id="Size.Width" state="0">717</row>
+            <row id="Text">
               <native>toolStripContainer1</native>
               <lang id="ar" status="2">toolStripContainer1</lang>
               <lang id="zh" status="2">toolStripContainer1</lang>
@@ -836,259 +836,8 @@
               <lang id="vi" status="2">toolStripContainer1</lang>
             </row>
           </component>
-          <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer">
-            <row id="Text" state="1">
-              <native>toolStripContainer1</native>
-              <lang id="ar" status="2">toolStripContainer1</lang>
-              <lang id="zh" status="2">toolStripContainer1</lang>
-              <lang id="zh.tra" status="2">toolStripContainer1</lang>
-              <lang id="nl" status="2">toolStripContainer1</lang>
-              <lang id="en" status="2">toolStripContainer1</lang>
-              <lang id="fr" status="2">toolStripContainer1</lang>
-              <lang id="de" status="2">toolStripContainer1</lang>
-              <lang id="el" status="2">toolStripContainer1</lang>
-              <lang id="hu" status="2">toolStripContainer1</lang>
-              <lang id="it" status="2">toolStripContainer1</lang>
-              <lang id="ja" status="2">toolStripContainer1</lang>
-              <lang id="lt" status="2">toolStripContainer1</lang>
-              <lang id="pl" status="2">toolStripContainer1</lang>
-              <lang id="fa" status="2">toolStripContainer1</lang>
-              <lang id="pt" status="2">toolStripContainer1</lang>
-              <lang id="ru" status="2">toolStripContainer1</lang>
-              <lang id="es" status="2">toolStripContainer1</lang>
-              <lang id="sv-SE" status="2">toolStripContainer1</lang>
-              <lang id="th" status="2">toolStripContainer1</lang>
-              <lang id="tr" status="2">toolStripContainer1</lang>
-              <lang id="vi" status="2">toolStripContainer1</lang>
-            </row>
-            <component class="TVisGridPanel" name="tableLayoutPanel1" type="System.Windows.Forms.TableLayoutPanel" align="alClient">
-              <columns countset="1">
-                <item class="TVisGridItem" name="Column0" type="stAbsolute">
-                  <row id="Width">717</row>
-                </item>
-              </columns>
-              <rows countset="1">
-                <item class="TVisGridItem" name="Row0" type="stPercent">
-                  <row id="Height" class="TPercentRow">100.1</row>
-                </item>
-              </rows>
-              <row id="Location.X">0</row>
-              <row id="Location.Y">0</row>
-              <row id="Size.Height">382</row>
-              <row id="Size.Width">717</row>
-              <component class="TVisDefaultControl" name="treeViewAdv1" type="Common_Tools.TreeViewAdv.Tree.TreeViewAdv" align="alClient">
-                <row id="BackColor" hidden="1">clWindow</row>
-                <row id="Location.X">3</row>
-                <row id="Location.Y">3</row>
-                <row id="Size.Height">376</row>
-                <row id="Size.Width">711</row>
-                <row id="Text" excluded="1">
-                  <native>treeViewAdv1</native>
-                  <lang id="ar" status="2">treeViewAdv1</lang>
-                  <lang id="zh" status="2">treeViewAdv1</lang>
-                  <lang id="zh.tra" status="2">treeViewAdv1</lang>
-                  <lang id="nl" status="2">treeViewAdv1</lang>
-                  <lang id="en" status="2">treeViewAdv1</lang>
-                  <lang id="fr" status="2">treeViewAdv1</lang>
-                  <lang id="de" status="2">treeViewAdv1</lang>
-                  <lang id="el" status="2">treeViewAdv1</lang>
-                  <lang id="hu" status="2">treeViewAdv1</lang>
-                  <lang id="it" status="2">treeViewAdv1</lang>
-                  <lang id="ja" status="2">treeViewAdv1</lang>
-                  <lang id="lt" status="2">treeViewAdv1</lang>
-                  <lang id="pl" status="2">treeViewAdv1</lang>
-                  <lang id="fa" status="2">treeViewAdv1</lang>
-                  <lang id="pt" status="2">treeViewAdv1</lang>
-                  <lang id="ru" status="2">treeViewAdv1</lang>
-                  <lang id="es" status="2">treeViewAdv1</lang>
-                  <lang id="sv-SE" status="2">treeViewAdv1</lang>
-                  <lang id="th" status="2">treeViewAdv1</lang>
-                  <lang id="tr" status="2">treeViewAdv1</lang>
-                  <lang id="vi" status="2">treeViewAdv1</lang>
-                </row>
-              </component>
-            </component>
-            <component class="TVisToolBar" name="toolStrip1" type="System.Windows.Forms.ToolStrip">
-              <row id="Location.X">0</row>
-              <row id="Location.Y">0</row>
-              <row id="Size.Height">54</row>
-              <row id="Size.Width">717</row>
-              <component class="TVisToolButton" name="toolStripButtonAdd" type="System.Windows.Forms.ToolStripButton">
-                <row id="Size.Height">51</row>
-                <row id="Size.Width">36</row>
-                <row id="Text">
-                  <native>Add</native>
-                  <lang id="ar" status="2">إضافة</lang>
-                  <lang id="zh" status="2">新增</lang>
-                  <lang id="zh.tra" status="2">新增</lang>
-                  <lang id="nl" status="2">Toevoegen</lang>
-                  <lang id="en" status="2">Add</lang>
-                  <lang id="fr" status="2">Ajouter</lang>
-                  <lang id="de" status="2">Hinzufügen</lang>
-                  <lang id="el" status="2">Προσθήκη</lang>
-                  <lang id="hu" status="2">Hozzáadás</lang>
-                  <lang id="it" status="2">Aggiungi</lang>
-                  <lang id="ja" status="2">追加する</lang>
-                  <lang id="lt" status="2">Sukurti</lang>
-                  <lang id="pl" status="2">Dodaj</lang>
-                  <lang id="fa" status="2">اضافه کردن</lang>
-                  <lang id="pt" status="2">Adicionar</lang>
-                  <lang id="ru" status="2">Создать</lang>
-                  <lang id="es" status="2">Agregar</lang>
-                  <lang id="sv-SE" status="2">Lägg till</lang>
-                  <lang id="th" status="2">เพิ่ม</lang>
-                  <lang id="tr" status="2">Ekle</lang>
-                  <lang id="vi" status="2">Thêm</lang>
-                </row>
-              </component>
-              <component class="TVisToolButton" name="toolStripButtonEdit" type="System.Windows.Forms.ToolStripButton">
-                <row id="Size.Height">51</row>
-                <row id="Size.Width">36</row>
-                <row id="Text">
-                  <native>Edit</native>
-                  <lang id="ar" status="2">تحرير</lang>
-                  <lang id="zh" status="2">编辑</lang>
-                  <lang id="zh.tra" status="2">編輯</lang>
-                  <lang id="nl" status="2">Bewerken</lang>
-                  <lang id="en" status="2">Edit</lang>
-                  <lang id="fr" status="2">Édition</lang>
-                  <lang id="de" status="2">Bearbeiten</lang>
-                  <lang id="el" status="2">Επεξεργασία</lang>
-                  <lang id="hu" status="2">Szerkesztés</lang>
-                  <lang id="it" status="2">Modifica</lang>
-                  <lang id="ja" status="2">[編集]</lang>
-                  <lang id="lt" status="2">Redaguoti</lang>
-                  <lang id="pl" status="2">Edycja</lang>
-                  <lang id="fa" status="2">ویرایش</lang>
-                  <lang id="pt" status="2">Editar</lang>
-                  <lang id="ru" status="2">Редактирование</lang>
-                  <lang id="es" status="2">Editar</lang>
-                  <lang id="sv-SE" status="2">Redigera</lang>
-                  <lang id="th" status="2">เรียบเรียง</lang>
-                  <lang id="tr" status="2">Değiştir</lang>
-                  <lang id="vi" status="2">Chỉnh sửa</lang>
-                </row>
-              </component>
-              <component class="TVisToolButton" name="toolStripButtonDelete" type="System.Windows.Forms.ToolStripButton">
-                <row id="Size.Height">51</row>
-                <row id="Size.Width">44</row>
-                <row id="Text">
-                  <native>Delete</native>
-                  <lang id="ar" status="2">حذف</lang>
-                  <lang id="zh" status="2">删除</lang>
-                  <lang id="zh.tra" status="2">刪除</lang>
-                  <lang id="nl" status="2">Verwijderen</lang>
-                  <lang id="en" status="2">Delete</lang>
-                  <lang id="fr" status="2">Supprimer</lang>
-                  <lang id="de" status="2">Löschen</lang>
-                  <lang id="el" status="2">Διαγραφή</lang>
-                  <lang id="hu" status="2">Törlés</lang>
-                  <lang id="it" status="2">Elimina</lang>
-                  <lang id="ja" status="2">削除する</lang>
-                  <lang id="lt" status="2">Ištrinti</lang>
-                  <lang id="pl" status="2">Usuń</lang>
-                  <lang id="fa" status="2">حذف</lang>
-                  <lang id="pt" status="2">Excluir</lang>
-                  <lang id="ru" status="2">Удалить</lang>
-                  <lang id="es" status="2">Eliminar</lang>
-                  <lang id="sv-SE" status="2">Ta bort</lang>
-                  <lang id="th" status="2">ลบ</lang>
-                  <lang id="tr" status="2">Sil</lang>
-                  <lang id="vi" status="2">Xoá</lang>
-                </row>
-              </component>
-              <component class="TVisToolButton" name="toolStripButtonView" type="System.Windows.Forms.ToolStripButton">
-                <row id="Size.Height">51</row>
-                <row id="Size.Width">63</row>
-                <row id="Text">
-                  <native>View Item</native>
-                  <lang id="ar" status="2">عرض عنصر</lang>
-                  <lang id="zh" status="2">查看表项</lang>
-                  <lang id="zh.tra" status="2">查看表項</lang>
-                  <lang id="nl" status="2">Object bekijken</lang>
-                  <lang id="en" status="2">View Item</lang>
-                  <lang id="fr" status="2">Voir élément</lang>
-                  <lang id="de" status="2">Eintrag anzeigen</lang>
-                  <lang id="el" status="2">Προβολή είδους</lang>
-                  <lang id="hu" status="2">Tárgy megnézése</lang>
-                  <lang id="it" status="2">Visualizza oggetto</lang>
-                  <lang id="ja" status="2">プロフィールアイテム</lang>
-                  <lang id="lt" status="2">Peržiūrėti objektą</lang>
-                  <lang id="pl" status="2">Pokaż wpis</lang>
-                  <lang id="fa" status="2">نمایش مورد</lang>
-                  <lang id="pt" status="2">Exibir item</lang>
-                  <lang id="ru" status="2">Просмотр элемента</lang>
-                  <lang id="es" status="2">Ver elemento</lang>
-                  <lang id="sv-SE" status="2">Visa objekt</lang>
-                  <lang id="th" status="2">รายการดู</lang>
-                  <lang id="tr" status="2">Ürünü Göster</lang>
-                  <lang id="vi" status="2">Xem Mã</lang>
-                </row>
-              </component>
-              <component class="TVisToolButton" name="toolStripButtonRun" type="System.Windows.Forms.ToolStripButton">
-                <row id="Size.Height">51</row>
-                <row id="Size.Width">36</row>
-                <row id="Text">
-                  <native>Run</native>
-                  <lang id="ar" status="2">تشغيل</lang>
-                  <lang id="zh" status="2">执行</lang>
-                  <lang id="zh.tra" status="2">執行</lang>
-                  <lang id="nl" status="2">Uitvoeren</lang>
-                  <lang id="en" status="2">Run</lang>
-                  <lang id="fr" status="2">Exécuter</lang>
-                  <lang id="de" status="2">Starten</lang>
-                  <lang id="el" status="2">Εκτέλεση</lang>
-                  <lang id="hu" status="2">Futtatás</lang>
-                  <lang id="it" status="2">Esegui</lang>
-                  <lang id="ja" status="2">走る</lang>
-                  <lang id="lt" status="2">Įvykdyti</lang>
-                  <lang id="pl" status="2">Uruchom</lang>
-                  <lang id="fa" status="2">اجرا</lang>
-                  <lang id="pt" status="2">Executar</lang>
-                  <lang id="ru" status="2">Выполнить</lang>
-                  <lang id="es" status="2">Ejecutar</lang>
-                  <lang id="sv-SE" status="2">Kör</lang>
-                  <lang id="th" status="2">วิ่ง</lang>
-                  <lang id="tr" status="2">Çalıştır</lang>
-                  <lang id="vi" status="2">Chạy</lang>
-                </row>
-              </component>
-              <component class="TVisToolButton" name="toolStripButtonRefresh" type="System.Windows.Forms.ToolStripButton">
-                <row id="Size.Height">51</row>
-                <row id="Size.Width">50</row>
-                <row id="Text">
-                  <native>Refresh</native>
-                  <lang id="ar" status="2">تحديث</lang>
-                  <lang id="zh" status="2">刷新</lang>
-                  <lang id="zh.tra" status="2">刷新</lang>
-                  <lang id="nl" status="2">Vernieuwen</lang>
-                  <lang id="en" status="2">Refresh</lang>
-                  <lang id="fr" status="2">Actualiser</lang>
-                  <lang id="de" status="2">Aktualisieren</lang>
-                  <lang id="el" status="2">Ανανέωση</lang>
-                  <lang id="hu" status="2">Frissítés</lang>
-                  <lang id="it" status="2">Aggiorna</lang>
-                  <lang id="ja" status="2">リフレッシュ</lang>
-                  <lang id="lt" status="2">Atnaujinti</lang>
-                  <lang id="pl" status="2">Odśwież</lang>
-                  <lang id="fa" status="2">تازه کردن</lang>
-                  <lang id="pt" status="2">Atualizar</lang>
-                  <lang id="ru" status="2">Обновить</lang>
-                  <lang id="es" status="2">Actualizar</lang>
-                  <lang id="sv-SE" status="2">Uppdatera</lang>
-                  <lang id="th" status="2">รีเฟรช</lang>
-                  <lang id="tr" status="2">Tazele</lang>
-                  <lang id="vi" status="2">Làm mới</lang>
-                </row>
-              </component>
-            </component>
-          </component>
-          <component class="TVisPanel" name="toolStripContainer1" state="0" type="System.Windows.Forms.ToolStripContainer" align="alClient">
-            <row id="Location.X">0</row>
-            <row id="Location.Y">0</row>
-            <row id="Size.Height">436</row>
-            <row id="Size.Width">717</row>
-            <row id="Text" excluded="1">
+          <component class="TVisPanel" name="toolStripContainer1" state="1" type="System.Windows.Forms.ToolStripContainer">
+            <row id="Text" excluded="1" state="1">
               <native>toolStripContainer1</native>
               <lang id="ar" status="2">toolStripContainer1</lang>
               <lang id="zh" status="2">toolStripContainer1</lang>
@@ -1157,84 +906,6 @@
                   <lang id="tr" status="2">treeViewAdv1</lang>
                   <lang id="vi" status="2">treeViewAdv1</lang>
                 </row>
-                <component class="TVisDefaultControl" name="treeColumn1" type="Common_Tools.TreeViewAdv.Tree.TreeColumn">
-                  <row id="Header">
-                    <native>Section</native>
-                    <lang id="ar" status="2">المقطع</lang>
-                    <lang id="zh" status="2">节</lang>
-                    <lang id="zh.tra" status="2">節</lang>
-                    <lang id="nl" status="2">Sectie</lang>
-                    <lang id="en" status="2">Section</lang>
-                    <lang id="fr" status="2">Section</lang>
-                    <lang id="de" status="2">Sektion</lang>
-                    <lang id="el" status="2">Ενότητα</lang>
-                    <lang id="hu" status="2">Szekció</lang>
-                    <lang id="it" status="2">Sezione</lang>
-                    <lang id="ja" status="2">項</lang>
-                    <lang id="lt" status="2">Skyrius</lang>
-                    <lang id="pl" status="2">Sekcja</lang>
-                    <lang id="fa" status="2">بخش</lang>
-                    <lang id="pt" status="2">Seção</lang>
-                    <lang id="ru" status="2">Раздел</lang>
-                    <lang id="es" status="2">Sección</lang>
-                    <lang id="sv-SE" status="2">Avsnitt</lang>
-                    <lang id="th" status="2">ส่วนที่</lang>
-                    <lang id="tr" status="2">Bölüm</lang>
-                    <lang id="vi" status="2">Phần</lang>
-                  </row>
-                </component>
-                <component class="TVisDefaultControl" name="treeColumn2" type="Common_Tools.TreeViewAdv.Tree.TreeColumn">
-                  <row id="Header">
-                    <native>Path</native>
-                    <lang id="ar" status="2">المسار</lang>
-                    <lang id="zh" status="2">路径</lang>
-                    <lang id="zh.tra" status="2">路徑</lang>
-                    <lang id="nl" status="2">Pad</lang>
-                    <lang id="en" status="2">Path</lang>
-                    <lang id="fr" status="2">Chemin</lang>
-                    <lang id="de" status="2">Pfad</lang>
-                    <lang id="el" status="2">Διαδρομή</lang>
-                    <lang id="hu" status="2">Útvonal</lang>
-                    <lang id="it" status="2">Percorso</lang>
-                    <lang id="ja" status="2">道</lang>
-                    <lang id="lt" status="2">Kelias</lang>
-                    <lang id="pl" status="2">Ścieżka</lang>
-                    <lang id="fa" status="2">راه</lang>
-                    <lang id="pt" status="2">Caminho</lang>
-                    <lang id="ru" status="2">Путь</lang>
-                    <lang id="es" status="2">Ruta de acceso</lang>
-                    <lang id="sv-SE" status="2">Sökväg</lang>
-                    <lang id="th" status="2">ทางเดิน</lang>
-                    <lang id="tr" status="2">Yol</lang>
-                    <lang id="vi" status="2">Con đường</lang>
-                  </row>
-                </component>
-                <component class="TVisDefaultControl" name="treeColumn3" type="Common_Tools.TreeViewAdv.Tree.TreeColumn">
-                  <row id="Header">
-                    <native>Arguments</native>
-                    <lang id="ar" status="2">الوسائط</lang>
-                    <lang id="zh" status="2">参数</lang>
-                    <lang id="zh.tra" status="2">參數</lang>
-                    <lang id="nl" status="2">Argumenten</lang>
-                    <lang id="en" status="2">Arguments</lang>
-                    <lang id="fr" status="2">Arguments</lang>
-                    <lang id="de" status="2">Argumente</lang>
-                    <lang id="el" status="2">Επιχειρήματα</lang>
-                    <lang id="hu" status="2">Argumentumok</lang>
-                    <lang id="it" status="2">Argomenti</lang>
-                    <lang id="ja" status="2">引数</lang>
-                    <lang id="lt" status="2">Parametrai</lang>
-                    <lang id="pl" status="2">Parametry</lang>
-                    <lang id="fa" status="2">استدلال ها</lang>
-                    <lang id="pt" status="2">Argumentos</lang>
-                    <lang id="ru" status="2">Параметры</lang>
-                    <lang id="es" status="2">Argumentos</lang>
-                    <lang id="sv-SE" status="2">Argument</lang>
-                    <lang id="th" status="2">การขัดแย้ง</lang>
-                    <lang id="tr" status="2">Argümanlar</lang>
-                    <lang id="vi" status="2">Đối số</lang>
-                  </row>
-                </component>
               </component>
             </component>
             <component class="TVisToolBar" name="toolStrip1" state="0" type="System.Windows.Forms.ToolStrip">
@@ -1386,6 +1057,302 @@
                 <row id="Size.Height" state="0">51</row>
                 <row id="Size.Width" state="0">50</row>
                 <row id="Text">
+                  <native>Refresh</native>
+                  <lang id="ar" status="2">تحديث</lang>
+                  <lang id="zh" status="2">刷新</lang>
+                  <lang id="zh.tra" status="2">刷新</lang>
+                  <lang id="nl" status="2">Vernieuwen</lang>
+                  <lang id="en" status="2">Refresh</lang>
+                  <lang id="fr" status="2">Actualiser</lang>
+                  <lang id="de" status="2">Aktualisieren</lang>
+                  <lang id="el" status="2">Ανανέωση</lang>
+                  <lang id="hu" status="2">Frissítés</lang>
+                  <lang id="it" status="2">Aggiorna</lang>
+                  <lang id="ja" status="2">リフレッシュ</lang>
+                  <lang id="lt" status="2">Atnaujinti</lang>
+                  <lang id="pl" status="2">Odśwież</lang>
+                  <lang id="fa" status="2">تازه کردن</lang>
+                  <lang id="pt" status="2">Atualizar</lang>
+                  <lang id="ru" status="2">Обновить</lang>
+                  <lang id="es" status="2">Actualizar</lang>
+                  <lang id="sv-SE" status="2">Uppdatera</lang>
+                  <lang id="th" status="2">รีเฟรช</lang>
+                  <lang id="tr" status="2">Tazele</lang>
+                  <lang id="vi" status="2">Làm mới</lang>
+                </row>
+              </component>
+            </component>
+          </component>
+          <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer">
+            <row id="Text" excluded="1" state="1">
+              <native>toolStripContainer1</native>
+              <lang id="ar" status="2">toolStripContainer1</lang>
+              <lang id="zh" status="2">toolStripContainer1</lang>
+              <lang id="zh.tra" status="2">toolStripContainer1</lang>
+              <lang id="nl" status="2">toolStripContainer1</lang>
+              <lang id="en" status="2">toolStripContainer1</lang>
+              <lang id="fr" status="2">toolStripContainer1</lang>
+              <lang id="de" status="2">toolStripContainer1</lang>
+              <lang id="el" status="2">toolStripContainer1</lang>
+              <lang id="hu" status="2">toolStripContainer1</lang>
+              <lang id="it" status="2">toolStripContainer1</lang>
+              <lang id="ja" status="2">toolStripContainer1</lang>
+              <lang id="lt" status="2">toolStripContainer1</lang>
+              <lang id="pl" status="2">toolStripContainer1</lang>
+              <lang id="fa" status="2">toolStripContainer1</lang>
+              <lang id="pt" status="2">toolStripContainer1</lang>
+              <lang id="ru" status="2">toolStripContainer1</lang>
+              <lang id="es" status="2">toolStripContainer1</lang>
+              <lang id="sv-SE" status="2">toolStripContainer1</lang>
+              <lang id="th" status="2">toolStripContainer1</lang>
+              <lang id="tr" status="2">toolStripContainer1</lang>
+              <lang id="vi" status="2">toolStripContainer1</lang>
+            </row>
+            <component class="TVisGridPanel" name="tableLayoutPanel1" type="System.Windows.Forms.TableLayoutPanel">
+              <columns countset="1">
+                <item class="TVisGridItem" name="Column0" type="stAbsolute"/>
+              </columns>
+              <rows countset="1">
+                <item class="TVisGridItem" name="Row0" type="stPercent"/>
+              </rows>
+              <component class="TVisDefaultControl" name="treeViewAdv1" type="Common_Tools.TreeViewAdv.Tree.TreeViewAdv">
+                <row id="Text" excluded="1" state="1">
+                  <native>treeViewAdv1</native>
+                  <lang id="ar" status="2">treeViewAdv1</lang>
+                  <lang id="zh" status="2">treeViewAdv1</lang>
+                  <lang id="zh.tra" status="2">treeViewAdv1</lang>
+                  <lang id="nl" status="2">treeViewAdv1</lang>
+                  <lang id="en" status="2">treeViewAdv1</lang>
+                  <lang id="fr" status="2">treeViewAdv1</lang>
+                  <lang id="de" status="2">treeViewAdv1</lang>
+                  <lang id="el" status="2">treeViewAdv1</lang>
+                  <lang id="hu" status="2">treeViewAdv1</lang>
+                  <lang id="it" status="2">treeViewAdv1</lang>
+                  <lang id="ja" status="2">treeViewAdv1</lang>
+                  <lang id="lt" status="2">treeViewAdv1</lang>
+                  <lang id="pl" status="2">treeViewAdv1</lang>
+                  <lang id="fa" status="2">treeViewAdv1</lang>
+                  <lang id="pt" status="2">treeViewAdv1</lang>
+                  <lang id="ru" status="2">treeViewAdv1</lang>
+                  <lang id="es" status="2">treeViewAdv1</lang>
+                  <lang id="sv-SE" status="2">treeViewAdv1</lang>
+                  <lang id="th" status="2">treeViewAdv1</lang>
+                  <lang id="tr" status="2">treeViewAdv1</lang>
+                  <lang id="vi" status="2">treeViewAdv1</lang>
+                </row>
+                <component class="TVisDefaultControl" name="treeColumn1" type="Common_Tools.TreeViewAdv.Tree.TreeColumn">
+                  <row id="Header">
+                    <native>Section</native>
+                    <lang id="ar" status="2">المقطع</lang>
+                    <lang id="zh" status="2">节</lang>
+                    <lang id="zh.tra" status="2">節</lang>
+                    <lang id="nl" status="2">Sectie</lang>
+                    <lang id="en" status="2">Section</lang>
+                    <lang id="fr" status="2">Section</lang>
+                    <lang id="de" status="2">Sektion</lang>
+                    <lang id="el" status="2">Ενότητα</lang>
+                    <lang id="hu" status="2">Szekció</lang>
+                    <lang id="it" status="2">Sezione</lang>
+                    <lang id="ja" status="2">項</lang>
+                    <lang id="lt" status="2">Skyrius</lang>
+                    <lang id="pl" status="2">Sekcja</lang>
+                    <lang id="fa" status="2">بخش</lang>
+                    <lang id="pt" status="2">Seção</lang>
+                    <lang id="ru" status="2">Раздел</lang>
+                    <lang id="es" status="2">Sección</lang>
+                    <lang id="sv-SE" status="2">Avsnitt</lang>
+                    <lang id="th" status="2">ส่วนที่</lang>
+                    <lang id="tr" status="2">Bölüm</lang>
+                    <lang id="vi" status="2">Phần</lang>
+                  </row>
+                </component>
+                <component class="TVisDefaultControl" name="treeColumn2" type="Common_Tools.TreeViewAdv.Tree.TreeColumn">
+                  <row id="Header">
+                    <native>Path</native>
+                    <lang id="ar" status="2">المسار</lang>
+                    <lang id="zh" status="2">路径</lang>
+                    <lang id="zh.tra" status="2">路徑</lang>
+                    <lang id="nl" status="2">Pad</lang>
+                    <lang id="en" status="2">Path</lang>
+                    <lang id="fr" status="2">Chemin</lang>
+                    <lang id="de" status="2">Pfad</lang>
+                    <lang id="el" status="2">Διαδρομή</lang>
+                    <lang id="hu" status="2">Útvonal</lang>
+                    <lang id="it" status="2">Percorso</lang>
+                    <lang id="ja" status="2">道</lang>
+                    <lang id="lt" status="2">Kelias</lang>
+                    <lang id="pl" status="2">Ścieżka</lang>
+                    <lang id="fa" status="2">راه</lang>
+                    <lang id="pt" status="2">Caminho</lang>
+                    <lang id="ru" status="2">Путь</lang>
+                    <lang id="es" status="2">Ruta de acceso</lang>
+                    <lang id="sv-SE" status="2">Sökväg</lang>
+                    <lang id="th" status="2">ทางเดิน</lang>
+                    <lang id="tr" status="2">Yol</lang>
+                    <lang id="vi" status="2">Con đường</lang>
+                  </row>
+                </component>
+                <component class="TVisDefaultControl" name="treeColumn3" type="Common_Tools.TreeViewAdv.Tree.TreeColumn">
+                  <row id="Header">
+                    <native>Arguments</native>
+                    <lang id="ar" status="2">الوسائط</lang>
+                    <lang id="zh" status="2">参数</lang>
+                    <lang id="zh.tra" status="2">參數</lang>
+                    <lang id="nl" status="2">Argumenten</lang>
+                    <lang id="en" status="2">Arguments</lang>
+                    <lang id="fr" status="2">Arguments</lang>
+                    <lang id="de" status="2">Argumente</lang>
+                    <lang id="el" status="2">Επιχειρήματα</lang>
+                    <lang id="hu" status="2">Argumentumok</lang>
+                    <lang id="it" status="2">Argomenti</lang>
+                    <lang id="ja" status="2">引数</lang>
+                    <lang id="lt" status="2">Parametrai</lang>
+                    <lang id="pl" status="2">Parametry</lang>
+                    <lang id="fa" status="2">استدلال ها</lang>
+                    <lang id="pt" status="2">Argumentos</lang>
+                    <lang id="ru" status="2">Параметры</lang>
+                    <lang id="es" status="2">Argumentos</lang>
+                    <lang id="sv-SE" status="2">Argument</lang>
+                    <lang id="th" status="2">การขัดแย้ง</lang>
+                    <lang id="tr" status="2">Argümanlar</lang>
+                    <lang id="vi" status="2">Đối số</lang>
+                  </row>
+                </component>
+              </component>
+            </component>
+            <component class="TVisToolBar" name="toolStrip1" type="System.Windows.Forms.ToolStrip">
+              <component class="TVisToolButton" name="toolStripButtonAdd" type="System.Windows.Forms.ToolStripButton">
+                <row id="Text" state="1">
+                  <native>Add</native>
+                  <lang id="ar" status="2">إضافة</lang>
+                  <lang id="zh" status="2">新增</lang>
+                  <lang id="zh.tra" status="2">新增</lang>
+                  <lang id="nl" status="2">Toevoegen</lang>
+                  <lang id="en" status="2">Add</lang>
+                  <lang id="fr" status="2">Ajouter</lang>
+                  <lang id="de" status="2">Hinzufügen</lang>
+                  <lang id="el" status="2">Προσθήκη</lang>
+                  <lang id="hu" status="2">Hozzáadás</lang>
+                  <lang id="it" status="2">Aggiungi</lang>
+                  <lang id="ja" status="2">追加する</lang>
+                  <lang id="lt" status="2">Sukurti</lang>
+                  <lang id="pl" status="2">Dodaj</lang>
+                  <lang id="fa" status="2">اضافه کردن</lang>
+                  <lang id="pt" status="2">Adicionar</lang>
+                  <lang id="ru" status="2">Создать</lang>
+                  <lang id="es" status="2">Agregar</lang>
+                  <lang id="sv-SE" status="2">Lägg till</lang>
+                  <lang id="th" status="2">เพิ่ม</lang>
+                  <lang id="tr" status="2">Ekle</lang>
+                  <lang id="vi" status="2">Thêm</lang>
+                </row>
+              </component>
+              <component class="TVisToolButton" name="toolStripButtonEdit" type="System.Windows.Forms.ToolStripButton">
+                <row id="Text" state="1">
+                  <native>Edit</native>
+                  <lang id="ar" status="2">تحرير</lang>
+                  <lang id="zh" status="2">编辑</lang>
+                  <lang id="zh.tra" status="2">編輯</lang>
+                  <lang id="nl" status="2">Bewerken</lang>
+                  <lang id="en" status="2">Edit</lang>
+                  <lang id="fr" status="2">Édition</lang>
+                  <lang id="de" status="2">Bearbeiten</lang>
+                  <lang id="el" status="2">Επεξεργασία</lang>
+                  <lang id="hu" status="2">Szerkesztés</lang>
+                  <lang id="it" status="2">Modifica</lang>
+                  <lang id="ja" status="2">[編集]</lang>
+                  <lang id="lt" status="2">Redaguoti</lang>
+                  <lang id="pl" status="2">Edycja</lang>
+                  <lang id="fa" status="2">ویرایش</lang>
+                  <lang id="pt" status="2">Editar</lang>
+                  <lang id="ru" status="2">Редактирование</lang>
+                  <lang id="es" status="2">Editar</lang>
+                  <lang id="sv-SE" status="2">Redigera</lang>
+                  <lang id="th" status="2">เรียบเรียง</lang>
+                  <lang id="tr" status="2">Değiştir</lang>
+                  <lang id="vi" status="2">Chỉnh sửa</lang>
+                </row>
+              </component>
+              <component class="TVisToolButton" name="toolStripButtonDelete" type="System.Windows.Forms.ToolStripButton">
+                <row id="Text" state="1">
+                  <native>Delete</native>
+                  <lang id="ar" status="2">حذف</lang>
+                  <lang id="zh" status="2">删除</lang>
+                  <lang id="zh.tra" status="2">刪除</lang>
+                  <lang id="nl" status="2">Verwijderen</lang>
+                  <lang id="en" status="2">Delete</lang>
+                  <lang id="fr" status="2">Supprimer</lang>
+                  <lang id="de" status="2">Löschen</lang>
+                  <lang id="el" status="2">Διαγραφή</lang>
+                  <lang id="hu" status="2">Törlés</lang>
+                  <lang id="it" status="2">Elimina</lang>
+                  <lang id="ja" status="2">削除する</lang>
+                  <lang id="lt" status="2">Ištrinti</lang>
+                  <lang id="pl" status="2">Usuń</lang>
+                  <lang id="fa" status="2">حذف</lang>
+                  <lang id="pt" status="2">Excluir</lang>
+                  <lang id="ru" status="2">Удалить</lang>
+                  <lang id="es" status="2">Eliminar</lang>
+                  <lang id="sv-SE" status="2">Ta bort</lang>
+                  <lang id="th" status="2">ลบ</lang>
+                  <lang id="tr" status="2">Sil</lang>
+                  <lang id="vi" status="2">Xoá</lang>
+                </row>
+              </component>
+              <component class="TVisToolButton" name="toolStripButtonView" type="System.Windows.Forms.ToolStripButton">
+                <row id="Text" state="1">
+                  <native>View Item</native>
+                  <lang id="ar" status="2">عرض عنصر</lang>
+                  <lang id="zh" status="2">查看表项</lang>
+                  <lang id="zh.tra" status="2">查看表項</lang>
+                  <lang id="nl" status="2">Object bekijken</lang>
+                  <lang id="en" status="2">View Item</lang>
+                  <lang id="fr" status="2">Voir élément</lang>
+                  <lang id="de" status="2">Eintrag anzeigen</lang>
+                  <lang id="el" status="2">Προβολή είδους</lang>
+                  <lang id="hu" status="2">Tárgy megnézése</lang>
+                  <lang id="it" status="2">Visualizza oggetto</lang>
+                  <lang id="ja" status="2">プロフィールアイテム</lang>
+                  <lang id="lt" status="2">Peržiūrėti objektą</lang>
+                  <lang id="pl" status="2">Pokaż wpis</lang>
+                  <lang id="fa" status="2">نمایش مورد</lang>
+                  <lang id="pt" status="2">Exibir item</lang>
+                  <lang id="ru" status="2">Просмотр элемента</lang>
+                  <lang id="es" status="2">Ver elemento</lang>
+                  <lang id="sv-SE" status="2">Visa objekt</lang>
+                  <lang id="th" status="2">รายการดู</lang>
+                  <lang id="tr" status="2">Ürünü Göster</lang>
+                  <lang id="vi" status="2">Xem Mã</lang>
+                </row>
+              </component>
+              <component class="TVisToolButton" name="toolStripButtonRun" type="System.Windows.Forms.ToolStripButton">
+                <row id="Text" state="1">
+                  <native>Run</native>
+                  <lang id="ar" status="2">تشغيل</lang>
+                  <lang id="zh" status="2">执行</lang>
+                  <lang id="zh.tra" status="2">執行</lang>
+                  <lang id="nl" status="2">Uitvoeren</lang>
+                  <lang id="en" status="2">Run</lang>
+                  <lang id="fr" status="2">Exécuter</lang>
+                  <lang id="de" status="2">Starten</lang>
+                  <lang id="el" status="2">Εκτέλεση</lang>
+                  <lang id="hu" status="2">Futtatás</lang>
+                  <lang id="it" status="2">Esegui</lang>
+                  <lang id="ja" status="2">走る</lang>
+                  <lang id="lt" status="2">Įvykdyti</lang>
+                  <lang id="pl" status="2">Uruchom</lang>
+                  <lang id="fa" status="2">اجرا</lang>
+                  <lang id="pt" status="2">Executar</lang>
+                  <lang id="ru" status="2">Выполнить</lang>
+                  <lang id="es" status="2">Ejecutar</lang>
+                  <lang id="sv-SE" status="2">Kör</lang>
+                  <lang id="th" status="2">วิ่ง</lang>
+                  <lang id="tr" status="2">Çalıştır</lang>
+                  <lang id="vi" status="2">Chạy</lang>
+                </row>
+              </component>
+              <component class="TVisToolButton" name="toolStripButtonRefresh" type="System.Windows.Forms.ToolStripButton">
+                <row id="Text" state="1">
                   <native>Refresh</native>
                   <lang id="ar" status="2">تحديث</lang>
                   <lang id="zh" status="2">刷新</lang>
@@ -1909,29 +1876,30 @@
         <form class="TNetForm" name="Little_Uninstall_Manager.UninstallManager" type="Little_Uninstall_Manager.UninstallManager">
           <row id="ClientSize.Height">447</row>
           <row id="ClientSize.Width">625</row>
-          <row id="Text">
-            <native>Little Registry Cleaner - Uninstall Manager</native>
-            <lang id="ar" status="2">التسجيل ضئيلة الأنظف - Uninstall Manager</lang>
-            <lang id="zh" status="2">迷你注册表清理器-卸载管理</lang>
-            <lang id="zh.tra" status="2">迷你注册表清理器-卸載管理</lang>
-            <lang id="nl" status="2">Kleine Registerreiniger - Manager verwijderen</lang>
-            <lang id="en" status="2">Little Registry Cleaner - Uninstall Manager</lang>
-            <lang id="fr" status="2">Little Registry Cleaner - Gestionnaire de programmes installés</lang>
-            <lang id="de" status="2">Little Registry Cleaner – Deinstallationsmanager</lang>
-            <lang id="el" status="2">Little Registry Cleaner - Διαχείριστης απεγκατάστασης</lang>
-            <lang id="hu" status="2">Little Registry Cleaner - Uninstallálás menedzser</lang>
-            <lang id="it" status="2">Little Registry Cleaner – Gestione disinstallazione</lang>
-            <lang id="ja" status="2">リトルレジストリクリーナー-アンインストールマネージャ</lang>
-            <lang id="lt" status="2">Little Registry Cleaner – Programos pašalinimo vedlys</lang>
-            <lang id="pl" status="2">Little Registry Cleaner - Menadżer deinstalacji</lang>
-            <lang id="fa" status="2">تمیز کننده رجیستری کوچولو -  ازکارانداختن مدیر</lang>
-            <lang id="pt" status="2">Little Registry Cleaner - Gerenciador para Desinstalação</lang>
-            <lang id="ru" status="2">Little Registry Cleaner - Менеджер деинсталляции</lang>
-            <lang id="es" status="2">Little Registry Cleaner - Administrador de desinstalación</lang>
-            <lang id="sv-SE" status="2">Little Registry Cleaner – Avinstallerare</lang>
-            <lang id="th" status="2">รีจิสทรีน้อยตัวล้าง - การถอนการติดตั้งโปรแกรมจัดการ</lang>
-            <lang id="tr" status="2">Little Registry Cleaner - Kaldırma Yöneticisi</lang>
-            <lang id="vi" status="2">Người lau chùi Nơi đăng ký Nhỏ - Chương trình quản lý</lang>
+          <row id="Text" state="3">
+            <prev>Little Registry Cleaner - Uninstall Manager</prev>
+            <native>Little Uninstall Manager</native>
+            <lang id="ar" invalidated="1" status="2">التسجيل ضئيلة الأنظف - Uninstall Manager</lang>
+            <lang id="zh" invalidated="1" status="2">迷你注册表清理器-卸载管理</lang>
+            <lang id="zh.tra" invalidated="1" status="2">迷你注册表清理器-卸載管理</lang>
+            <lang id="nl" invalidated="1" status="2">Kleine Registerreiniger - Manager verwijderen</lang>
+            <lang id="en" invalidated="1" status="2">Little Registry Cleaner - Uninstall Manager</lang>
+            <lang id="fr" invalidated="1" status="2">Little Registry Cleaner - Gestionnaire de programmes installés</lang>
+            <lang id="de" invalidated="1" status="2">Little Registry Cleaner – Deinstallationsmanager</lang>
+            <lang id="el" invalidated="1" status="2">Little Registry Cleaner - Διαχείριστης απεγκατάστασης</lang>
+            <lang id="hu" invalidated="1" status="2">Little Registry Cleaner - Uninstallálás menedzser</lang>
+            <lang id="it" invalidated="1" status="2">Little Registry Cleaner – Gestione disinstallazione</lang>
+            <lang id="ja" invalidated="1" status="2">リトルレジストリクリーナー-アンインストールマネージャ</lang>
+            <lang id="lt" invalidated="1" status="2">Little Registry Cleaner – Programos pašalinimo vedlys</lang>
+            <lang id="pl" invalidated="1" status="2">Little Registry Cleaner - Menadżer deinstalacji</lang>
+            <lang id="fa" invalidated="1" status="2">تمیز کننده رجیستری کوچولو -  ازکارانداختن مدیر</lang>
+            <lang id="pt" invalidated="1" status="2">Little Registry Cleaner - Gerenciador para Desinstalação</lang>
+            <lang id="ru" invalidated="1" status="2">Little Registry Cleaner - Менеджер деинсталляции</lang>
+            <lang id="es" invalidated="1" status="2">Little Registry Cleaner - Administrador de desinstalación</lang>
+            <lang id="sv-SE" invalidated="1" status="2">Little Registry Cleaner – Avinstallerare</lang>
+            <lang id="th" invalidated="1" status="2">รีจิสทรีน้อยตัวล้าง - การถอนการติดตั้งโปรแกรมจัดการ</lang>
+            <lang id="tr" invalidated="1" status="2">Little Registry Cleaner - Kaldırma Yöneticisi</lang>
+            <lang id="vi" invalidated="1" status="2">Người lau chùi Nơi đăng ký Nhỏ - Chương trình quản lý</lang>
           </row>
           <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
           </component>
@@ -1947,15 +1915,21 @@
               <lang id="zh.tra" status="2">toolStripContainer1</lang>
               <lang id="nl" status="2">toolStripContainer1</lang>
               <lang id="en" status="2">toolStripContainer1</lang>
+              <lang id="fr" status="2">toolStripContainer1</lang>
               <lang id="de" status="2">toolStripContainer1</lang>
               <lang id="el" status="2">toolStripContainer1</lang>
+              <lang id="hu" status="2">toolStripContainer1</lang>
               <lang id="it" status="2">toolStripContainer1</lang>
               <lang id="ja" status="2">toolStripContainer1</lang>
               <lang id="lt" status="2">toolStripContainer1</lang>
+              <lang id="pl" status="2">toolStripContainer1</lang>
+              <lang id="fa" status="2">toolStripContainer1</lang>
               <lang id="pt" status="2">toolStripContainer1</lang>
               <lang id="ru" status="2">toolStripContainer1</lang>
               <lang id="es" status="2">toolStripContainer1</lang>
               <lang id="sv-SE" status="2">toolStripContainer1</lang>
+              <lang id="th" status="2">toolStripContainer1</lang>
+              <lang id="tr" status="2">toolStripContainer1</lang>
               <lang id="vi" status="2">toolStripContainer1</lang>
             </row>
             <component class="TVisGridPanel" name="tableLayoutPanel1" type="System.Windows.Forms.TableLayoutPanel" align="alClient">
@@ -2288,17 +2262,132 @@
     </node>
     <node class="TWindowsVersionFolder" name="Versions" resid="16">
       <node class="TWindowsVersionNode" name="1" resid="1">
-        <row id="Assembly Version">0.0.0.0</row>
+        <row id="Assembly Version">
+          <native>0.0.0.0</native>
+          <lang id="ar" status="2">0.0.0.0</lang>
+          <lang id="zh" status="2">0.0.0.0</lang>
+          <lang id="zh.tra" status="2">0.0.0.0</lang>
+          <lang id="nl" status="2">0.0.0.0</lang>
+          <lang id="en" status="2">0.0.0.0</lang>
+          <lang id="fr" status="2">0.0.0.0</lang>
+          <lang id="de" status="2">0.0.0.0</lang>
+          <lang id="el" status="2">0.0.0.0</lang>
+          <lang id="hu" status="2">0.0.0.0</lang>
+          <lang id="it" status="2">0.0.0.0</lang>
+          <lang id="ja" status="2">0.0.0.0</lang>
+          <lang id="lt" status="2">0.0.0.0</lang>
+          <lang id="pl" status="2">0.0.0.0</lang>
+          <lang id="fa" status="2">0.0.0.0</lang>
+          <lang id="pt" status="2">0.0.0.0</lang>
+          <lang id="ru" status="2">0.0.0.0</lang>
+          <lang id="es" status="2">0.0.0.0</lang>
+          <lang id="sv-SE" status="2">0.0.0.0</lang>
+          <lang id="th" status="2">0.0.0.0</lang>
+          <lang id="tr" status="2">0.0.0.0</lang>
+          <lang id="vi" status="2">0.0.0.0</lang>
+        </row>
         <row id="FileDescription"> </row>
-        <row id="FileVersion">0.0.0.0</row>
+        <row id="FileVersion">
+          <native>0.0.0.0</native>
+          <lang id="ar" status="2">0.0.0.0</lang>
+          <lang id="zh" status="2">0.0.0.0</lang>
+          <lang id="zh.tra" status="2">0.0.0.0</lang>
+          <lang id="nl" status="2">0.0.0.0</lang>
+          <lang id="en" status="2">0.0.0.0</lang>
+          <lang id="fr" status="2">0.0.0.0</lang>
+          <lang id="de" status="2">0.0.0.0</lang>
+          <lang id="el" status="2">0.0.0.0</lang>
+          <lang id="hu" status="2">0.0.0.0</lang>
+          <lang id="it" status="2">0.0.0.0</lang>
+          <lang id="ja" status="2">0.0.0.0</lang>
+          <lang id="lt" status="2">0.0.0.0</lang>
+          <lang id="pl" status="2">0.0.0.0</lang>
+          <lang id="fa" status="2">0.0.0.0</lang>
+          <lang id="pt" status="2">0.0.0.0</lang>
+          <lang id="ru" status="2">0.0.0.0</lang>
+          <lang id="es" status="2">0.0.0.0</lang>
+          <lang id="sv-SE" status="2">0.0.0.0</lang>
+          <lang id="th" status="2">0.0.0.0</lang>
+          <lang id="tr" status="2">0.0.0.0</lang>
+          <lang id="vi" status="2">0.0.0.0</lang>
+        </row>
         <row id="FileVersion[1]" class="TIntegerRow">0</row>
         <row id="FileVersion[2]" class="TIntegerRow">0</row>
         <row id="FileVersion[3]" class="TIntegerRow">0</row>
         <row id="FileVersion[4]" class="TIntegerRow">0</row>
-        <row id="InternalName">Little Uninstall Manager.exe</row>
+        <row id="InternalName">
+          <native>Little Uninstall Manager.exe</native>
+          <lang id="ar" status="2">يذكر إلغاء Manager.exe</lang>
+          <lang id="zh" status="2">小卸载Manager.exe</lang>
+          <lang id="zh.tra" status="2">小卸載 Manager.exe</lang>
+          <lang id="nl" status="2">Weinig Uninstall Manager.exe</lang>
+          <lang id="en" status="2">Little Uninstall Manager.exe</lang>
+          <lang id="fr" status="2">Petite Désinstaller Manager.exe</lang>
+          <lang id="de" status="2">Kleine Uninstall Manager.exe</lang>
+          <lang id="el" status="2">Μικρή Uninstall Manager.exe</lang>
+          <lang id="hu" status="2">Kis Uninstall Manager.exe</lang>
+          <lang id="it" status="2">Poco Disinstalla Manager.exe</lang>
+          <lang id="ja" status="2">リトルアンインストールMANAGER.EXE</lang>
+          <lang id="lt" status="2">Little Pašalinti Manager.exe</lang>
+          <lang id="pl" status="2">Mała Odinstaluj Manager.exe</lang>
+          <lang id="fa" status="2">کوچولو عزل Manager.exe</lang>
+          <lang id="pt" status="2">Pouco Uninstall Manager.exe</lang>
+          <lang id="ru" status="2">Маленькая Удалить Manager.exe</lang>
+          <lang id="es" status="2">Poco Manager.exe Desinstalar</lang>
+          <lang id="sv-SE" status="2">Little Avinstallera Manager.exe</lang>
+          <lang id="th" status="2">ลิตเติ้ล Manager.exe ถอนการติดตั้ง</lang>
+          <lang id="tr" status="2">Little Kaldır Manager.exe</lang>
+          <lang id="vi" status="2">Little Uninstall Manager.exe</lang>
+        </row>
         <row id="LegalCopyright"> </row>
-        <row id="OriginalFilename">Little Uninstall Manager.exe</row>
-        <row id="ProductVersion">0.0.0.0</row>
+        <row id="OriginalFilename">
+          <native>Little Uninstall Manager.exe</native>
+          <lang id="ar" status="2">يذكر إلغاء Manager.exe</lang>
+          <lang id="zh" status="2">小卸载Manager.exe</lang>
+          <lang id="zh.tra" status="2">小卸載 Manager.exe</lang>
+          <lang id="nl" status="2">Weinig Uninstall Manager.exe</lang>
+          <lang id="en" status="2">Little Uninstall Manager.exe</lang>
+          <lang id="fr" status="2">Petite Désinstaller Manager.exe</lang>
+          <lang id="de" status="2">Kleine Uninstall Manager.exe</lang>
+          <lang id="el" status="2">Μικρή Uninstall Manager.exe</lang>
+          <lang id="hu" status="2">Kis Uninstall Manager.exe</lang>
+          <lang id="it" status="2">Poco Disinstalla Manager.exe</lang>
+          <lang id="ja" status="2">リトルアンインストールMANAGER.EXE</lang>
+          <lang id="lt" status="2">Little Pašalinti Manager.exe</lang>
+          <lang id="pl" status="2">Mała Odinstaluj Manager.exe</lang>
+          <lang id="fa" status="2">کوچولو عزل Manager.exe</lang>
+          <lang id="pt" status="2">Pouco Uninstall Manager.exe</lang>
+          <lang id="ru" status="2">Маленькая Удалить Manager.exe</lang>
+          <lang id="es" status="2">Poco Manager.exe Desinstalar</lang>
+          <lang id="sv-SE" status="2">Little Avinstallera Manager.exe</lang>
+          <lang id="th" status="2">ลิตเติ้ล Manager.exe ถอนการติดตั้ง</lang>
+          <lang id="tr" status="2">Little Kaldır Manager.exe</lang>
+          <lang id="vi" status="2">Little Uninstall Manager.exe</lang>
+        </row>
+        <row id="ProductVersion">
+          <native>0.0.0.0</native>
+          <lang id="ar" status="2">0.0.0.0</lang>
+          <lang id="zh" status="2">0.0.0.0</lang>
+          <lang id="zh.tra" status="2">0.0.0.0</lang>
+          <lang id="nl" status="2">0.0.0.0</lang>
+          <lang id="en" status="2">0.0.0.0</lang>
+          <lang id="fr" status="2">0.0.0.0</lang>
+          <lang id="de" status="2">0.0.0.0</lang>
+          <lang id="el" status="2">0.0.0.0</lang>
+          <lang id="hu" status="2">0.0.0.0</lang>
+          <lang id="it" status="2">0.0.0.0</lang>
+          <lang id="ja" status="2">0.0.0.0</lang>
+          <lang id="lt" status="2">0.0.0.0</lang>
+          <lang id="pl" status="2">0.0.0.0</lang>
+          <lang id="fa" status="2">0.0.0.0</lang>
+          <lang id="pt" status="2">0.0.0.0</lang>
+          <lang id="ru" status="2">0.0.0.0</lang>
+          <lang id="es" status="2">0.0.0.0</lang>
+          <lang id="sv-SE" status="2">0.0.0.0</lang>
+          <lang id="th" status="2">0.0.0.0</lang>
+          <lang id="tr" status="2">0.0.0.0</lang>
+          <lang id="vi" status="2">0.0.0.0</lang>
+        </row>
         <row id="ProductVersion[1]" class="TIntegerRow">0</row>
         <row id="ProductVersion[2]" class="TIntegerRow">0</row>
         <row id="ProductVersion[3]" class="TIntegerRow">0</row>
@@ -2306,7 +2395,7 @@
       </node>
     </node>
   </source>
-  <source class="TVisualStudioNetProjectSource" name="Common Tools\Common Tools.csproj" original="en" date="20110708052210" defaultoutputdir="Common Tools\bin\Debug" configuration="Debug|AnyCPU" assemblykind="naLibrary" netversion="net40" toolsversion="net40" rootnamespace="Common_Tools" options="[noSetRightToLeft,noSortItems,noCompileResource,noCreateAssembly,noDeleteCompiledResource,noDeleteSourceResource]">
+  <source class="TVisualStudioNetProjectSource" name="Common Tools\Common Tools.csproj" original="en" date="20110718045252" defaultoutputdir="Common Tools\bin\Debug" configuration="Debug|AnyCPU" assemblykind="naLibrary" netversion="net40" toolsversion="net40" rootnamespace="Common_Tools" options="[noSetRightToLeft,noSortItems,noCompileResource,noCreateAssembly,noDeleteCompiledResource,noDeleteSourceResource]">
     <outputfile dir="..\bin\Debug"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -2336,7 +2425,7 @@
     </mappings>
     <node class="TNetFormFolder" name="Forms">
       <node class="TNetFormNode" name="Common_Tools.DetailsRegKey" state="0">
-        <form class="TNetForm" name="Common_Tools.DetailsRegKey" state="0" type="Common_Tools.DetailsRegKey" autosize="1">
+        <form class="TNetForm" name="Common_Tools.DetailsRegKey" state="0" type="Common_Tools.DetailsRegKey" autosize="1" borderstyle="bsDialog">
           <row id="ClientSize.Height" state="0">77</row>
           <row id="ClientSize.Width" state="0">419</row>
           <row id="Text" state="0">
@@ -2536,6 +2625,90 @@
     </node>
     <node class="TNetStringFolder" name="Strings">
       <node class="TNetStringNode" name="Common_Tools.Properties.Resources" excluded="1">
+        <row id="ActionTypeComHandler" state="0">Call a COM object</row>
+        <row id="ActionTypeExecute" state="0">Start a program</row>
+        <row id="ActionTypeSendEmail" state="0">Send an e-mail</row>
+        <row id="ActionTypeShowMessage" state="0">Display a message</row>
+        <row id="ComHandlerAction" state="0" note="0 = Class GUID; 1 = Data; 2 = Id" notereadonly="1">{0}</row>
+        <row id="DOWAllDays" state="0">every day</row>
+        <row id="DOWFriday" state="0">Friday</row>
+        <row id="DOWMonday" state="0">Monday</row>
+        <row id="DOWSaturday" state="0">Saturday</row>
+        <row id="DOWSunday" state="0">Sunday</row>
+        <row id="DOWThursday" state="0">Thursday</row>
+        <row id="DOWTuesday" state="0">Tuesday</row>
+        <row id="DOWWednesday" state="0">Wednesday</row>
+        <row id="EmailAction" state="0" note="0 = Subject; 1 = To; 2 = Cc, 3 = Bcc, 4 = From, 5 = ReplyTo, 6 = Body, 7 = Server, 8 = Id" notereadonly="1">{1} {0}</row>
+        <row id="EndSentence" state="0">.</row>
+        <row id="ExecAction" state="0" note="0 = Executable Path; 1 = Arguments; 2 = WorkingDirectory; 3 = Id" notereadonly="1">{0} {1}</row>
+        <row id="ListSeparator" state="0">, </row>
+        <row id="MOYAllMonths" state="0">every month</row>
+        <row id="MOYApril" state="0">April</row>
+        <row id="MOYAugust" state="0">August</row>
+        <row id="MOYDecember" state="0">December</row>
+        <row id="MOYFebruary" state="0">February</row>
+        <row id="MOYJanuary" state="0">January</row>
+        <row id="MOYJuly" state="0">July</row>
+        <row id="MOYJune" state="0">June</row>
+        <row id="MOYMarch" state="0">March</row>
+        <row id="MOYMay" state="0">May</row>
+        <row id="MOYNovember" state="0">November</row>
+        <row id="MOYOctober" state="0">October</row>
+        <row id="MOYSeptember" state="0">September</row>
+        <row id="MultipleActions" state="0">Multiple actions defined</row>
+        <row id="MultipleTriggers" state="0">Multiple triggers defined</row>
+        <row id="ShowMessageAction" state="0" note="0 = Title; 1 = MessageBody; 2 = Id" notereadonly="1">{0}</row>
+        <row id="TaskDefaultPrincipal" state="0">Author</row>
+        <row id="TaskStateDisabled" state="0">Disabled</row>
+        <row id="TaskStateQueued" state="0">Queued</row>
+        <row id="TaskStateReady" state="0">Ready</row>
+        <row id="TaskStateRunning" state="0">Running</row>
+        <row id="TaskStateUnknown" state="0">Unknown</row>
+        <row id="TriggerAnyUser" state="0">any user</row>
+        <row id="TriggerBase1" state="0">After triggered, repeat every</row>
+        <row id="TriggerBase2" state="0">indefinitely</row>
+        <row id="TriggerBase3" state="0">for a duration of</row>
+        <row id="TriggerBase4" state="0">Trigger expires at</row>
+        <row id="TriggerBoot1" state="0">At system startup</row>
+        <row id="TriggerDaily1" state="0">At {0:t} every day</row>
+        <row id="TriggerDaily2" state="0">At {0:t} every {1} days</row>
+        <row id="TriggerEvent1" state="0">Custom event filter</row>
+        <row id="TriggerEventBasic1" state="0" note="0 = Log name" notereadonly="1">On event - Log: {0}</row>
+        <row id="TriggerEventBasic2" state="0" note="0 = Source name (appended after log)" notereadonly="1">, Source: {0}</row>
+        <row id="TriggerEventBasic3" state="0" note="0 = Event ID (appended after log or source)" notereadonly="1">, EventID: {0}</row>
+        <row id="TriggerIdle1" state="0">When computer is idle</row>
+        <row id="TriggerLogon1" state="0">At log on of {0}</row>
+        <row id="TriggerMonthly1" state="0" note="0 = StartBoundary; 1 = list of Days; 2 = list of Months" notereadonly="1">At {0:t} on day {1} of {2}, starting {0:d}</row>
+        <row id="TriggerMonthlyDOW1" state="0" note="0 = StartBoundary; 1 = list of weeks of Month; 2 = list of Week Days; 3 = list of Months" notereadonly="1">At {0:t} on the {1} {2:f} each {3}, starting {0:d}</row>
+        <row id="TriggerRegistration1" state="0">When the task is created or modified</row>
+        <row id="TriggerSessionConsoleConnect" state="0" note="0 = UserId" notereadonly="1">On local connection to {0}.</row>
+        <row id="TriggerSessionConsoleDisconnect" state="0" note="0 = UserId" notereadonly="1">On local disconnect from {0}.</row>
+        <row id="TriggerSessionRemoteConnect" state="0" note="0 = UserId" notereadonly="1">On remote connection to {0}.</row>
+        <row id="TriggerSessionRemoteDisconnect" state="0" note="0 = UserId" notereadonly="1">On remote disconnect from {0}.</row>
+        <row id="TriggerSessionSessionLock" state="0" note="0 = UserId" notereadonly="1">On workstation lock of {0}.</row>
+        <row id="TriggerSessionSessionUnlock" state="0" note="0 = UserId" notereadonly="1">On workstation unlock of {0}.</row>
+        <row id="TriggerSessionUserSession" state="0" note="0 = UserId" notereadonly="1">user session of {0}</row>
+        <row id="TriggerTime1" state="0" note="0 = StartBoundary" notereadonly="1">At {0:t} on {0:d}</row>
+        <row id="TriggerTypeBoot" state="0">At startup</row>
+        <row id="TriggerTypeDaily" state="0">Daily</row>
+        <row id="TriggerTypeEvent" state="0">On an event</row>
+        <row id="TriggerTypeIdle" state="0">On idle</row>
+        <row id="TriggerTypeLogon" state="0">At log on</row>
+        <row id="TriggerTypeMonthly" state="0">Monthly</row>
+        <row id="TriggerTypeMonthlyDOW" state="0">Monthly</row>
+        <row id="TriggerTypeRegistration" state="0">At task creation/modification</row>
+        <row id="TriggerTypeSessionStateChange" state="0">On state change</row>
+        <row id="TriggerTypeTime" state="0">One time</row>
+        <row id="TriggerTypeWeekly" state="0">Weekly</row>
+        <row id="TriggerWeekly1Week" state="0" note="0 = StartBoundary; 1 = list of Week Days" notereadonly="1">At {0:t} every {1} of every week, starting {0:d}</row>
+        <row id="TriggerWeeklyMultWeeks" state="0" note="0 = StartBoundary; 1 = list of Week Days; 2 = WeekInterval" notereadonly="1">At {0:t} every {1} of every {2} weeks, starting {0:d}</row>
+        <row id="WWAllWeeks" state="0">every</row>
+        <row id="WWFifthWeek" state="0">fifth</row>
+        <row id="WWFirstWeek" state="0">first</row>
+        <row id="WWFourthWeek" state="0">fourth</row>
+        <row id="WWLastWeek" state="0">last</row>
+        <row id="WWSecondWeek" state="0">second</row>
+        <row id="WWThirdWeek" state="0">third</row>
         <row id="piErrorRegKey" state="0">Error removing registry key:</row>
         <row id="piErrorUninstalling" state="0">Error uninstalling program:</row>
         <row id="piInvalidUninstallString" state="0">Unable to find uninstall string. Would you like to manually remove it from the registry?</row>
@@ -2546,8 +2719,8 @@
     <node class="TWindowsVersionFolder" name="Versions" state="0" resid="16">
       <node class="TWindowsVersionNode" name="1" state="0" resid="1">
         <row id="Assembly Version" state="3">
-          <prev>1.0.4187.39341</prev>
-          <native>1.0.4205.40335</native>
+          <prev>1.0.4205.40335</prev>
+          <native>1.0.4216.37533</native>
           <lang id="ar" invalidated="1" status="2">1.0.4187.39341</lang>
           <lang id="zh" invalidated="1" status="2">1.0.4187.39341</lang>
           <lang id="zh.tra" invalidated="1" status="2">1.0.4187.39341</lang>
@@ -2770,6 +2943,7 @@
       <component name="System.Windows.Forms.CheckBox" class="TVisCheckBox"/>
       <component name="System.Windows.Forms.ComboBox" class="TVisComboBox"/>
       <component name="System.Windows.Forms.ContextMenuStrip" class="TVisPopupMenu"/>
+      <component name="System.Windows.Forms.DateTimePicker" class="TVisComboBox"/>
       <component name="System.Windows.Forms.FlowLayoutPanel" class="TVisWrapPanel"/>
       <component name="System.Windows.Forms.GroupBox" class="TVisGroupBox"/>
       <component name="System.Windows.Forms.ImageList" class="TVisImageList"/>
@@ -2780,6 +2954,7 @@
       <component name="System.Windows.Forms.NotifyIcon" class="TVisHiddenComponent"/>
       <component name="System.Windows.Forms.Panel" class="TVisPanel"/>
       <component name="System.Windows.Forms.PictureBox" class="TVisImage"/>
+      <component name="System.Windows.Forms.RadioButton" class="TVisRadioButton"/>
       <component name="System.Windows.Forms.RichTextBox" class="TVisEdit"/>
       <component name="System.Windows.Forms.SplitContainer" class="TVisSplittedPanel" inuse="0"/>
       <component name="System.Windows.Forms.StatusStrip" class="TVisStatusBar"/>
@@ -6380,6 +6555,1296 @@
                 </row>
               </component>
             </component>
+            <component class="TVisTabSheet" name="tabPage3" state="0" type="System.Windows.Forms.TabPage" padbottom="3" padleft="3" padright="3" padtop="3">
+              <row id="Location.X" state="0">4</row>
+              <row id="Location.Y" state="0">22</row>
+              <row id="Size.Height" state="0">228</row>
+              <row id="Size.Width" state="0">456</row>
+              <row id="Text" state="0">
+                <native>Scheduler</native>
+                <lang id="ar" status="2">جدولة</lang>
+                <lang id="zh" status="2">调度</lang>
+                <lang id="zh.tra" status="2">調度</lang>
+                <lang id="nl" status="2">Scheduler</lang>
+                <lang id="en" status="2">Scheduler</lang>
+                <lang id="fr" status="2">Planificateur</lang>
+                <lang id="de" status="2">Scheduler</lang>
+                <lang id="el" status="2">Scheduler</lang>
+                <lang id="hu" status="2">Scheduler</lang>
+                <lang id="it" status="2">Scheduler</lang>
+                <lang id="ja" status="2">スケジューラ</lang>
+                <lang id="lt" status="2">Tvarkaraštis</lang>
+                <lang id="pl" status="2">Harmonogram</lang>
+                <lang id="fa" status="2">زمان بند</lang>
+                <lang id="pt" status="2">Scheduler</lang>
+                <lang id="ru" status="2">Планировщик</lang>
+                <lang id="es" status="2">Programador</lang>
+                <lang id="sv-SE" status="2">Schemaläggaren</lang>
+                <lang id="th" status="2">จัดตารางเวลา</lang>
+                <lang id="tr" status="2">Zamanlayıcı</lang>
+                <lang id="vi" status="2">Scheduler</lang>
+              </row>
+              <component class="TVisGroupBox" name="groupBoxSchedule" state="0" type="System.Windows.Forms.GroupBox">
+                <row id="Location.X" state="0">9</row>
+                <row id="Location.Y" state="0">56</row>
+                <row id="Size.Height" state="0">46</row>
+                <row id="Size.Width" state="0">441</row>
+                <row id="Text" state="0">
+                  <native>Schedule Task</native>
+                  <lang id="ar" status="2">جدولة المهام</lang>
+                  <lang id="zh" status="2">计划任务</lang>
+                  <lang id="zh.tra" status="2">計劃任務</lang>
+                  <lang id="nl" status="2">Taak plannen</lang>
+                  <lang id="en" status="2">Schedule Task</lang>
+                  <lang id="fr" status="2">Planifier la tâche</lang>
+                  <lang id="de" status="2">Task planen</lang>
+                  <lang id="el" status="2">Πρόγραμμα εργασιών</lang>
+                  <lang id="hu" status="2">Menetrend feladat</lang>
+                  <lang id="it" status="2">Pianifica attività</lang>
+                  <lang id="ja" status="2">タスクのスケジュール</lang>
+                  <lang id="lt" status="2">Tvarkaraštis darbo</lang>
+                  <lang id="pl" status="2">Zaplanuj zadanie</lang>
+                  <lang id="fa" status="2">وظیفه ها فهرست برنامه ها</lang>
+                  <lang id="pt" status="2">Agendar Tarefa</lang>
+                  <lang id="ru" status="2">Планировщик</lang>
+                  <lang id="es" status="2">Horario de Trabajo</lang>
+                  <lang id="sv-SE" status="2">Planera aktivitet</lang>
+                  <lang id="th" status="2">กำหนดการงาน</lang>
+                  <lang id="tr" status="2">Zamanlanacak Görev</lang>
+                  <lang id="vi" status="2">Task Schedule</lang>
+                </row>
+                <component class="TVisComboBox" name="dateTimePickerSched" state="0" type="System.Windows.Forms.DateTimePicker">
+                  <row id="CustomFormat" state="0">
+                    <native>hh:mm tt</native>
+                    <lang id="ar" status="2">صاحب السمو : مم ترينيداد وتوباغو</lang>
+                    <lang id="zh" status="2">hh：毫米tt</lang>
+                    <lang id="zh.tra" status="2">hh：mm tt</lang>
+                    <lang id="nl" status="2">uu: mm tt</lang>
+                    <lang id="en" status="2">hh:mm tt</lang>
+                    <lang id="fr" status="2">hh: mm tt</lang>
+                    <lang id="de" status="2">hh: mm tt</lang>
+                    <lang id="el" status="2">ωω: λλ tt</lang>
+                    <lang id="hu" status="2">hh: mm tt</lang>
+                    <lang id="it" status="2">hh: mm tt</lang>
+                    <lang id="ja" status="2">hh：mmのtt</lang>
+                    <lang id="lt" status="2">hh: mm tt</lang>
+                    <lang id="pl" status="2">hh: mm tt</lang>
+                    <lang id="fa" status="2">hh : tt ​​میلی متر</lang>
+                    <lang id="pt" status="2">hh: mm tt</lang>
+                    <lang id="ru" status="2">чч: мм tt</lang>
+                    <lang id="es" status="2">hh: mm tt</lang>
+                    <lang id="sv-SE" status="2">hh: mm tt</lang>
+                    <lang id="th" status="2">hh : mm tt</lang>
+                    <lang id="tr" status="2">ss: dd tt</lang>
+                    <lang id="vi" status="2">hh: mm tt</lang>
+                  </row>
+                  <row id="Location.X" state="0">40</row>
+                  <row id="Location.Y" state="0">16</row>
+                  <row id="Size.Height" state="0">20</row>
+                  <row id="Size.Width" state="0">69</row>
+                </component>
+                <component class="TVisLabel" name="labelTime" state="0" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
+                  <row id="Location.X" state="0">6</row>
+                  <row id="Location.Y" state="0">19</row>
+                  <row id="Size.Height" state="0">13</row>
+                  <row id="Size.Width" state="0">33</row>
+                  <row id="Text" state="0">
+                    <native>Time:</native>
+                    <lang id="ar" status="2">مرة:</lang>
+                    <lang id="zh" status="2">时间:</lang>
+                    <lang id="zh.tra" status="2">時間:</lang>
+                    <lang id="nl" status="2">Tijd:</lang>
+                    <lang id="en" status="2">Time:</lang>
+                    <lang id="fr" status="2">Temps:</lang>
+                    <lang id="de" status="2">Zeit:</lang>
+                    <lang id="el" status="2">Φορά:</lang>
+                    <lang id="hu" status="2">Idő:</lang>
+                    <lang id="it" status="2">Tempo:</lang>
+                    <lang id="ja" status="2">タイム:</lang>
+                    <lang id="lt" status="2">Laikas:</lang>
+                    <lang id="pl" status="2">Czas:</lang>
+                    <lang id="fa" status="2">زمان:</lang>
+                    <lang id="pt" status="2">Tempo:</lang>
+                    <lang id="ru" status="2">Время:</lang>
+                    <lang id="es" status="2">Tiempo:</lang>
+                    <lang id="sv-SE" status="2">Tid:</lang>
+                    <lang id="th" status="2">เวลา:</lang>
+                    <lang id="tr" status="2">Zaman:</lang>
+                    <lang id="vi" status="2">Thời gian:</lang>
+                  </row>
+                </component>
+                <component class="TVisLabel" name="labelDay" state="0" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
+                  <row id="Location.X" state="0">281</row>
+                  <row id="Location.Y" state="0">23</row>
+                  <row id="Size.Height" state="0">13</row>
+                  <row id="Size.Width" state="0">29</row>
+                  <row id="Text" state="0">
+                    <native>Day:</native>
+                    <lang id="ar" status="2">يوم:</lang>
+                    <lang id="zh" status="2">日:</lang>
+                    <lang id="zh.tra" status="2">日:</lang>
+                    <lang id="nl" status="2">Dag:</lang>
+                    <lang id="en" status="2">Day:</lang>
+                    <lang id="fr" status="2">Jour:</lang>
+                    <lang id="de" status="2">Tag:</lang>
+                    <lang id="el" status="2">Ημέρα:</lang>
+                    <lang id="hu" status="2">Nap:</lang>
+                    <lang id="it" status="2">Giorno:</lang>
+                    <lang id="ja" status="2">一日:</lang>
+                    <lang id="lt" status="2">Diena:</lang>
+                    <lang id="pl" status="2">Dzień:</lang>
+                    <lang id="fa" status="2">روز:</lang>
+                    <lang id="pt" status="2">Dia:</lang>
+                    <lang id="ru" status="2">День:</lang>
+                    <lang id="es" status="2">Día:</lang>
+                    <lang id="sv-SE" status="2">Dag:</lang>
+                    <lang id="th" status="2">วัน:</lang>
+                    <lang id="tr" status="2">Gün:</lang>
+                    <lang id="vi" status="2">Ngày:</lang>
+                  </row>
+                </component>
+                <component class="TVisComboBox" name="comboBoxDay" state="0" type="System.Windows.Forms.ComboBox">
+                  <row id="Items.Friday" importid="5" state="0">
+                    <native>Friday</native>
+                    <lang id="ar" status="2">الجمعة</lang>
+                    <lang id="zh" status="2">（星期五）</lang>
+                    <lang id="zh.tra" status="2">週五</lang>
+                    <lang id="nl" status="2">Vrijdag</lang>
+                    <lang id="en" status="2">Friday</lang>
+                    <lang id="fr" status="2">Vendredi</lang>
+                    <lang id="de" status="2">Freitag</lang>
+                    <lang id="el" status="2">Παρασκευή</lang>
+                    <lang id="hu" status="2">Péntek</lang>
+                    <lang id="it" status="2">Venerdì</lang>
+                    <lang id="ja" status="2">金曜日</lang>
+                    <lang id="lt" status="2">Penktadienis</lang>
+                    <lang id="pl" status="2">Piątek</lang>
+                    <lang id="fa" status="2">جمعه</lang>
+                    <lang id="pt" status="2">Sexta-feira</lang>
+                    <lang id="ru" status="2">Пятница</lang>
+                    <lang id="es" status="2">Viernes</lang>
+                    <lang id="sv-SE" status="2">Fredag</lang>
+                    <lang id="th" status="2">วันศุกร์</lang>
+                    <lang id="tr" status="2">Cuma</lang>
+                    <lang id="vi" status="2">Thứ Sáu</lang>
+                  </row>
+                  <row id="Items.Monday" importid="1" state="0">
+                    <native>Monday</native>
+                    <lang id="ar" status="2">يوم الاثنين</lang>
+                    <lang id="zh" status="2">星期一</lang>
+                    <lang id="zh.tra" status="2">週一</lang>
+                    <lang id="nl" status="2">Maandag</lang>
+                    <lang id="en" status="2">Monday</lang>
+                    <lang id="fr" status="2">Lundi</lang>
+                    <lang id="de" status="2">Montag</lang>
+                    <lang id="el" status="2">Δευτέρα</lang>
+                    <lang id="hu" status="2">Hétfő</lang>
+                    <lang id="it" status="2">Lunedi</lang>
+                    <lang id="ja" status="2">月</lang>
+                    <lang id="lt" status="2">Pirmadienis</lang>
+                    <lang id="pl" status="2">Poniedziałek</lang>
+                    <lang id="fa" status="2">دوشنبه</lang>
+                    <lang id="pt" status="2">Segunda-feira</lang>
+                    <lang id="ru" status="2">Понедельник</lang>
+                    <lang id="es" status="2">Lunes</lang>
+                    <lang id="sv-SE" status="2">Måndag</lang>
+                    <lang id="th" status="2">วันจันทร์</lang>
+                    <lang id="tr" status="2">Pazartesi</lang>
+                    <lang id="vi" status="2">Thứ Hai</lang>
+                  </row>
+                  <row id="Items.Saturday" importid="6" state="0">
+                    <native>Saturday</native>
+                    <lang id="ar" status="2">السبت</lang>
+                    <lang id="zh" status="2">星期六</lang>
+                    <lang id="zh.tra" status="2">週六</lang>
+                    <lang id="nl" status="2">Zaterdag</lang>
+                    <lang id="en" status="2">Saturday</lang>
+                    <lang id="fr" status="2">Samedi</lang>
+                    <lang id="de" status="2">Samstag</lang>
+                    <lang id="el" status="2">Σάββατο</lang>
+                    <lang id="hu" status="2">Szombat</lang>
+                    <lang id="it" status="2">Sabato</lang>
+                    <lang id="ja" status="2">土曜日</lang>
+                    <lang id="lt" status="2">Šeštadienis</lang>
+                    <lang id="pl" status="2">Sobota</lang>
+                    <lang id="fa" status="2">روز شنبه</lang>
+                    <lang id="pt" status="2">Sábado</lang>
+                    <lang id="ru" status="2">Суббота</lang>
+                    <lang id="es" status="2">Sábado</lang>
+                    <lang id="sv-SE" status="2">Lördag</lang>
+                    <lang id="th" status="2">วันเสาร์</lang>
+                    <lang id="tr" status="2">Cumartesi</lang>
+                    <lang id="vi" status="2">Thứ bảy</lang>
+                  </row>
+                  <row id="Items.Sunday" importid="0" state="0">
+                    <native>Sunday</native>
+                    <lang id="ar" status="2">الأحد</lang>
+                    <lang id="zh" status="2">星期日</lang>
+                    <lang id="zh.tra" status="2">週日</lang>
+                    <lang id="nl" status="2">Zondag</lang>
+                    <lang id="en" status="2">Sunday</lang>
+                    <lang id="fr" status="2">Dimanche</lang>
+                    <lang id="de" status="2">Sonntag</lang>
+                    <lang id="el" status="2">Κυριακή</lang>
+                    <lang id="hu" status="2">Vasárnap</lang>
+                    <lang id="it" status="2">Domenica</lang>
+                    <lang id="ja" status="2">日曜日</lang>
+                    <lang id="lt" status="2">Sekmadienis</lang>
+                    <lang id="pl" status="2">Niedziela</lang>
+                    <lang id="fa" status="2">یکشنبه</lang>
+                    <lang id="pt" status="2">Domingo</lang>
+                    <lang id="ru" status="2">Воскресенье</lang>
+                    <lang id="es" status="2">Domingo</lang>
+                    <lang id="sv-SE" status="2">Söndag</lang>
+                    <lang id="th" status="2">วันอาทิตย์</lang>
+                    <lang id="tr" status="2">Pazar</lang>
+                    <lang id="vi" status="2">Chủ Nhật</lang>
+                  </row>
+                  <row id="Items.Thursday" importid="4" state="0">
+                    <native>Thursday</native>
+                    <lang id="ar" status="2">الخميس</lang>
+                    <lang id="zh" status="2">星期四</lang>
+                    <lang id="zh.tra" status="2">週四</lang>
+                    <lang id="nl" status="2">Donderdag</lang>
+                    <lang id="en" status="2">Thursday</lang>
+                    <lang id="fr" status="2">Jeudi</lang>
+                    <lang id="de" status="2">Donnerstag</lang>
+                    <lang id="el" status="2">Πέμπτη</lang>
+                    <lang id="hu" status="2">Csütörtök</lang>
+                    <lang id="it" status="2">Giovedi</lang>
+                    <lang id="ja" status="2">木曜日</lang>
+                    <lang id="lt" status="2">Ketvirtadienis</lang>
+                    <lang id="pl" status="2">Czwartek</lang>
+                    <lang id="fa" status="2">پنج شنبه</lang>
+                    <lang id="pt" status="2">Quinta-feira</lang>
+                    <lang id="ru" status="2">Четверг</lang>
+                    <lang id="es" status="2">Jueves</lang>
+                    <lang id="sv-SE" status="2">Torsdag</lang>
+                    <lang id="th" status="2">วันพฤหัสบดี</lang>
+                    <lang id="tr" status="2">Perşembe</lang>
+                    <lang id="vi" status="2">Thứ năm</lang>
+                  </row>
+                  <row id="Items.Tuesday" importid="2" state="0">
+                    <native>Tuesday</native>
+                    <lang id="ar" status="2">الثلاثاء</lang>
+                    <lang id="zh" status="2">星期二</lang>
+                    <lang id="zh.tra" status="2">週二</lang>
+                    <lang id="nl" status="2">Dinsdag</lang>
+                    <lang id="en" status="2">Tuesday</lang>
+                    <lang id="fr" status="2">Mardi</lang>
+                    <lang id="de" status="2">Dienstag</lang>
+                    <lang id="el" status="2">Τρίτη</lang>
+                    <lang id="hu" status="2">Kedd</lang>
+                    <lang id="it" status="2">Martedì</lang>
+                    <lang id="ja" status="2">火曜日</lang>
+                    <lang id="lt" status="2">Antradienis</lang>
+                    <lang id="pl" status="2">Wtorek</lang>
+                    <lang id="fa" status="2">سهشنبه</lang>
+                    <lang id="pt" status="2">Terça-feira</lang>
+                    <lang id="ru" status="2">Вторник</lang>
+                    <lang id="es" status="2">Martes</lang>
+                    <lang id="sv-SE" status="2">Tisdag</lang>
+                    <lang id="th" status="2">วันอังคาร</lang>
+                    <lang id="tr" status="2">Salı</lang>
+                    <lang id="vi" status="2">Thứ ba</lang>
+                  </row>
+                  <row id="Items.Wednesday" importid="3" state="0">
+                    <native>Wednesday</native>
+                    <lang id="ar" status="2">الأربعاء</lang>
+                    <lang id="zh" status="2">星期三</lang>
+                    <lang id="zh.tra" status="2">週三</lang>
+                    <lang id="nl" status="2">Woensdag</lang>
+                    <lang id="en" status="2">Wednesday</lang>
+                    <lang id="fr" status="2">Mercredi</lang>
+                    <lang id="de" status="2">Mittwoch</lang>
+                    <lang id="el" status="2">Τετάρτη</lang>
+                    <lang id="hu" status="2">Szerda</lang>
+                    <lang id="it" status="2">Mercoledì</lang>
+                    <lang id="ja" status="2">水曜日</lang>
+                    <lang id="lt" status="2">Trečiadienis</lang>
+                    <lang id="pl" status="2">Środa</lang>
+                    <lang id="fa" status="2">چهارشنبه</lang>
+                    <lang id="pt" status="2">Quarta-feira</lang>
+                    <lang id="ru" status="2">Среда</lang>
+                    <lang id="es" status="2">Miércoles</lang>
+                    <lang id="sv-SE" status="2">Onsdag</lang>
+                    <lang id="th" status="2">วันพุธ</lang>
+                    <lang id="tr" status="2">Çarşamba</lang>
+                    <lang id="vi" status="2">Thứ tư</lang>
+                  </row>
+                  <row id="Location.X" state="0">314</row>
+                  <row id="Location.Y" state="0">16</row>
+                  <row id="Size.Height" state="0">21</row>
+                  <row id="Size.Width" state="0">121</row>
+                </component>
+                <component class="TVisComboBox" name="comboBoxDate" state="0" type="System.Windows.Forms.ComboBox">
+                  <row id="Items.1" importid="0" state="0">
+                    <native>1</native>
+                    <lang id="ar" status="2">1</lang>
+                    <lang id="zh" status="2">1</lang>
+                    <lang id="zh.tra" status="2">1</lang>
+                    <lang id="nl" status="2">1</lang>
+                    <lang id="en" status="2">1</lang>
+                    <lang id="fr" status="2">1</lang>
+                    <lang id="de" status="2">1</lang>
+                    <lang id="el" status="2">1</lang>
+                    <lang id="hu" status="2">1</lang>
+                    <lang id="it" status="2">1</lang>
+                    <lang id="ja" status="2">1</lang>
+                    <lang id="lt" status="2">1</lang>
+                    <lang id="pl" status="2">1</lang>
+                    <lang id="fa" status="2">1</lang>
+                    <lang id="pt" status="2">1</lang>
+                    <lang id="ru" status="2">1</lang>
+                    <lang id="es" status="2">1</lang>
+                    <lang id="sv-SE" status="2">1</lang>
+                    <lang id="th" status="2">1</lang>
+                    <lang id="tr" status="2">1</lang>
+                    <lang id="vi" status="2">1</lang>
+                  </row>
+                  <row id="Items.10" importid="9" state="0">
+                    <native>10</native>
+                    <lang id="ar" status="2">10</lang>
+                    <lang id="zh" status="2">10</lang>
+                    <lang id="zh.tra" status="2">10</lang>
+                    <lang id="nl" status="2">10</lang>
+                    <lang id="en" status="2">10</lang>
+                    <lang id="fr" status="2">10</lang>
+                    <lang id="de" status="2">10</lang>
+                    <lang id="el" status="2">10</lang>
+                    <lang id="hu" status="2">10</lang>
+                    <lang id="it" status="2">10</lang>
+                    <lang id="ja" status="2">10</lang>
+                    <lang id="lt" status="2">10</lang>
+                    <lang id="pl" status="2">10</lang>
+                    <lang id="fa" status="2">10</lang>
+                    <lang id="pt" status="2">10</lang>
+                    <lang id="ru" status="2">10</lang>
+                    <lang id="es" status="2">10</lang>
+                    <lang id="sv-SE" status="2">10</lang>
+                    <lang id="th" status="2">10</lang>
+                    <lang id="tr" status="2">10</lang>
+                    <lang id="vi" status="2">10</lang>
+                  </row>
+                  <row id="Items.11" importid="10" state="0">
+                    <native>11</native>
+                    <lang id="ar" status="2">11</lang>
+                    <lang id="zh" status="2">11</lang>
+                    <lang id="zh.tra" status="2">11</lang>
+                    <lang id="nl" status="2">11</lang>
+                    <lang id="en" status="2">11</lang>
+                    <lang id="fr" status="2">11</lang>
+                    <lang id="de" status="2">11</lang>
+                    <lang id="el" status="2">11</lang>
+                    <lang id="hu" status="2">11</lang>
+                    <lang id="it" status="2">11</lang>
+                    <lang id="ja" status="2">11</lang>
+                    <lang id="lt" status="2">11</lang>
+                    <lang id="pl" status="2">11</lang>
+                    <lang id="fa" status="2">11</lang>
+                    <lang id="pt" status="2">11</lang>
+                    <lang id="ru" status="2">11</lang>
+                    <lang id="es" status="2">11</lang>
+                    <lang id="sv-SE" status="2">11</lang>
+                    <lang id="th" status="2">11</lang>
+                    <lang id="tr" status="2">11</lang>
+                    <lang id="vi" status="2">11</lang>
+                  </row>
+                  <row id="Items.12" importid="11" state="0">
+                    <native>12</native>
+                    <lang id="ar" status="2">12</lang>
+                    <lang id="zh" status="2">12</lang>
+                    <lang id="zh.tra" status="2">12</lang>
+                    <lang id="nl" status="2">12</lang>
+                    <lang id="en" status="2">12</lang>
+                    <lang id="fr" status="2">12</lang>
+                    <lang id="de" status="2">12</lang>
+                    <lang id="el" status="2">12</lang>
+                    <lang id="hu" status="2">12</lang>
+                    <lang id="it" status="2">12</lang>
+                    <lang id="ja" status="2">12</lang>
+                    <lang id="lt" status="2">12</lang>
+                    <lang id="pl" status="2">12</lang>
+                    <lang id="fa" status="2">12</lang>
+                    <lang id="pt" status="2">12</lang>
+                    <lang id="ru" status="2">12</lang>
+                    <lang id="es" status="2">12</lang>
+                    <lang id="sv-SE" status="2">12</lang>
+                    <lang id="th" status="2">12</lang>
+                    <lang id="tr" status="2">12</lang>
+                    <lang id="vi" status="2">12</lang>
+                  </row>
+                  <row id="Items.13" importid="12" state="0">
+                    <native>13</native>
+                    <lang id="ar" status="2">13</lang>
+                    <lang id="zh" status="2">13</lang>
+                    <lang id="zh.tra" status="2">13</lang>
+                    <lang id="nl" status="2">13</lang>
+                    <lang id="en" status="2">13</lang>
+                    <lang id="fr" status="2">13</lang>
+                    <lang id="de" status="2">13</lang>
+                    <lang id="el" status="2">13</lang>
+                    <lang id="hu" status="2">13</lang>
+                    <lang id="it" status="2">13</lang>
+                    <lang id="ja" status="2">13</lang>
+                    <lang id="lt" status="2">13</lang>
+                    <lang id="pl" status="2">13</lang>
+                    <lang id="fa" status="2">13</lang>
+                    <lang id="pt" status="2">13</lang>
+                    <lang id="ru" status="2">13</lang>
+                    <lang id="es" status="2">13</lang>
+                    <lang id="sv-SE" status="2">13</lang>
+                    <lang id="th" status="2">13</lang>
+                    <lang id="tr" status="2">13</lang>
+                    <lang id="vi" status="2">13</lang>
+                  </row>
+                  <row id="Items.14" importid="13" state="0">
+                    <native>14</native>
+                    <lang id="ar" status="2">14</lang>
+                    <lang id="zh" status="2">14</lang>
+                    <lang id="zh.tra" status="2">14</lang>
+                    <lang id="nl" status="2">14</lang>
+                    <lang id="en" status="2">14</lang>
+                    <lang id="fr" status="2">14</lang>
+                    <lang id="de" status="2">14</lang>
+                    <lang id="el" status="2">14</lang>
+                    <lang id="hu" status="2">14</lang>
+                    <lang id="it" status="2">14</lang>
+                    <lang id="ja" status="2">14</lang>
+                    <lang id="lt" status="2">14</lang>
+                    <lang id="pl" status="2">14</lang>
+                    <lang id="fa" status="2">14</lang>
+                    <lang id="pt" status="2">14</lang>
+                    <lang id="ru" status="2">14</lang>
+                    <lang id="es" status="2">14</lang>
+                    <lang id="sv-SE" status="2">14</lang>
+                    <lang id="th" status="2">14</lang>
+                    <lang id="tr" status="2">14</lang>
+                    <lang id="vi" status="2">14</lang>
+                  </row>
+                  <row id="Items.15" importid="14" state="0">
+                    <native>15</native>
+                    <lang id="ar" status="2">15</lang>
+                    <lang id="zh" status="2">15</lang>
+                    <lang id="zh.tra" status="2">15</lang>
+                    <lang id="nl" status="2">15</lang>
+                    <lang id="en" status="2">15</lang>
+                    <lang id="fr" status="2">15</lang>
+                    <lang id="de" status="2">15</lang>
+                    <lang id="el" status="2">15</lang>
+                    <lang id="hu" status="2">15</lang>
+                    <lang id="it" status="2">15</lang>
+                    <lang id="ja" status="2">15</lang>
+                    <lang id="lt" status="2">15</lang>
+                    <lang id="pl" status="2">15</lang>
+                    <lang id="fa" status="2">15</lang>
+                    <lang id="pt" status="2">15</lang>
+                    <lang id="ru" status="2">15</lang>
+                    <lang id="es" status="2">15</lang>
+                    <lang id="sv-SE" status="2">15</lang>
+                    <lang id="th" status="2">15</lang>
+                    <lang id="tr" status="2">15</lang>
+                    <lang id="vi" status="2">15</lang>
+                  </row>
+                  <row id="Items.16" importid="15" state="0">
+                    <native>16</native>
+                    <lang id="ar" status="2">16</lang>
+                    <lang id="zh" status="2">16</lang>
+                    <lang id="zh.tra" status="2">16</lang>
+                    <lang id="nl" status="2">16</lang>
+                    <lang id="en" status="2">16</lang>
+                    <lang id="fr" status="2">16</lang>
+                    <lang id="de" status="2">16</lang>
+                    <lang id="el" status="2">16</lang>
+                    <lang id="hu" status="2">16</lang>
+                    <lang id="it" status="2">16</lang>
+                    <lang id="ja" status="2">16</lang>
+                    <lang id="lt" status="2">16</lang>
+                    <lang id="pl" status="2">16</lang>
+                    <lang id="fa" status="2">16</lang>
+                    <lang id="pt" status="2">16</lang>
+                    <lang id="ru" status="2">16</lang>
+                    <lang id="es" status="2">16</lang>
+                    <lang id="sv-SE" status="2">16</lang>
+                    <lang id="th" status="2">16</lang>
+                    <lang id="tr" status="2">16</lang>
+                    <lang id="vi" status="2">16</lang>
+                  </row>
+                  <row id="Items.17" importid="16" state="0">
+                    <native>17</native>
+                    <lang id="ar" status="2">17</lang>
+                    <lang id="zh" status="2">17</lang>
+                    <lang id="zh.tra" status="2">17</lang>
+                    <lang id="nl" status="2">17</lang>
+                    <lang id="en" status="2">17</lang>
+                    <lang id="fr" status="2">17</lang>
+                    <lang id="de" status="2">17</lang>
+                    <lang id="el" status="2">17</lang>
+                    <lang id="hu" status="2">17</lang>
+                    <lang id="it" status="2">17</lang>
+                    <lang id="ja" status="2">17</lang>
+                    <lang id="lt" status="2">17</lang>
+                    <lang id="pl" status="2">17</lang>
+                    <lang id="fa" status="2">17</lang>
+                    <lang id="pt" status="2">17</lang>
+                    <lang id="ru" status="2">17</lang>
+                    <lang id="es" status="2">17</lang>
+                    <lang id="sv-SE" status="2">17</lang>
+                    <lang id="th" status="2">17</lang>
+                    <lang id="tr" status="2">17</lang>
+                    <lang id="vi" status="2">17</lang>
+                  </row>
+                  <row id="Items.18" importid="17" state="0">
+                    <native>18</native>
+                    <lang id="ar" status="2">18</lang>
+                    <lang id="zh" status="2">18</lang>
+                    <lang id="zh.tra" status="2">18</lang>
+                    <lang id="nl" status="2">18</lang>
+                    <lang id="en" status="2">18</lang>
+                    <lang id="fr" status="2">18</lang>
+                    <lang id="de" status="2">18</lang>
+                    <lang id="el" status="2">18</lang>
+                    <lang id="hu" status="2">18</lang>
+                    <lang id="it" status="2">18</lang>
+                    <lang id="ja" status="2">18</lang>
+                    <lang id="lt" status="2">18</lang>
+                    <lang id="pl" status="2">18</lang>
+                    <lang id="fa" status="2">18</lang>
+                    <lang id="pt" status="2">18</lang>
+                    <lang id="ru" status="2">18</lang>
+                    <lang id="es" status="2">18</lang>
+                    <lang id="sv-SE" status="2">18</lang>
+                    <lang id="th" status="2">18</lang>
+                    <lang id="tr" status="2">18</lang>
+                    <lang id="vi" status="2">18</lang>
+                  </row>
+                  <row id="Items.19" importid="18" state="0">
+                    <native>19</native>
+                    <lang id="ar" status="2">19</lang>
+                    <lang id="zh" status="2">19</lang>
+                    <lang id="zh.tra" status="2">19</lang>
+                    <lang id="nl" status="2">19</lang>
+                    <lang id="en" status="2">19</lang>
+                    <lang id="fr" status="2">19</lang>
+                    <lang id="de" status="2">19</lang>
+                    <lang id="el" status="2">19</lang>
+                    <lang id="hu" status="2">19</lang>
+                    <lang id="it" status="2">19</lang>
+                    <lang id="ja" status="2">19</lang>
+                    <lang id="lt" status="2">19</lang>
+                    <lang id="pl" status="2">19</lang>
+                    <lang id="fa" status="2">19</lang>
+                    <lang id="pt" status="2">19</lang>
+                    <lang id="ru" status="2">19</lang>
+                    <lang id="es" status="2">19</lang>
+                    <lang id="sv-SE" status="2">19</lang>
+                    <lang id="th" status="2">19</lang>
+                    <lang id="tr" status="2">19</lang>
+                    <lang id="vi" status="2">19</lang>
+                  </row>
+                  <row id="Items.2" importid="1" state="0">
+                    <native>2</native>
+                    <lang id="ar" status="2">2</lang>
+                    <lang id="zh" status="2">2</lang>
+                    <lang id="zh.tra" status="2">2</lang>
+                    <lang id="nl" status="2">2</lang>
+                    <lang id="en" status="2">2</lang>
+                    <lang id="fr" status="2">2</lang>
+                    <lang id="de" status="2">2</lang>
+                    <lang id="el" status="2">2</lang>
+                    <lang id="hu" status="2">2</lang>
+                    <lang id="it" status="2">2</lang>
+                    <lang id="ja" status="2">2</lang>
+                    <lang id="lt" status="2">2</lang>
+                    <lang id="pl" status="2">2</lang>
+                    <lang id="fa" status="2">2</lang>
+                    <lang id="pt" status="2">2</lang>
+                    <lang id="ru" status="2">2</lang>
+                    <lang id="es" status="2">2</lang>
+                    <lang id="sv-SE" status="2">2</lang>
+                    <lang id="th" status="2">2</lang>
+                    <lang id="tr" status="2">2</lang>
+                    <lang id="vi" status="2">2</lang>
+                  </row>
+                  <row id="Items.20" importid="19" state="0">
+                    <native>20</native>
+                    <lang id="ar" status="2">20</lang>
+                    <lang id="zh" status="2">20</lang>
+                    <lang id="zh.tra" status="2">20</lang>
+                    <lang id="nl" status="2">20</lang>
+                    <lang id="en" status="2">20</lang>
+                    <lang id="fr" status="2">20</lang>
+                    <lang id="de" status="2">20</lang>
+                    <lang id="el" status="2">20</lang>
+                    <lang id="hu" status="2">20</lang>
+                    <lang id="it" status="2">20</lang>
+                    <lang id="ja" status="2">20</lang>
+                    <lang id="lt" status="2">20</lang>
+                    <lang id="pl" status="2">20</lang>
+                    <lang id="fa" status="2">20</lang>
+                    <lang id="pt" status="2">20</lang>
+                    <lang id="ru" status="2">20</lang>
+                    <lang id="es" status="2">20</lang>
+                    <lang id="sv-SE" status="2">20</lang>
+                    <lang id="th" status="2">20</lang>
+                    <lang id="tr" status="2">20</lang>
+                    <lang id="vi" status="2">20</lang>
+                  </row>
+                  <row id="Items.21" importid="20" state="0">
+                    <native>21</native>
+                    <lang id="ar" status="2">21</lang>
+                    <lang id="zh" status="2">21</lang>
+                    <lang id="zh.tra" status="2">21</lang>
+                    <lang id="nl" status="2">21</lang>
+                    <lang id="en" status="2">21</lang>
+                    <lang id="fr" status="2">21</lang>
+                    <lang id="de" status="2">21</lang>
+                    <lang id="el" status="2">21</lang>
+                    <lang id="hu" status="2">21</lang>
+                    <lang id="it" status="2">21</lang>
+                    <lang id="ja" status="2">21</lang>
+                    <lang id="lt" status="2">21</lang>
+                    <lang id="pl" status="2">21</lang>
+                    <lang id="fa" status="2">21</lang>
+                    <lang id="pt" status="2">21</lang>
+                    <lang id="ru" status="2">21</lang>
+                    <lang id="es" status="2">21</lang>
+                    <lang id="sv-SE" status="2">21</lang>
+                    <lang id="th" status="2">21</lang>
+                    <lang id="tr" status="2">21</lang>
+                    <lang id="vi" status="2">21</lang>
+                  </row>
+                  <row id="Items.22" importid="21" state="0">
+                    <native>22</native>
+                    <lang id="ar" status="2">22</lang>
+                    <lang id="zh" status="2">22</lang>
+                    <lang id="zh.tra" status="2">22</lang>
+                    <lang id="nl" status="2">22</lang>
+                    <lang id="en" status="2">22</lang>
+                    <lang id="fr" status="2">22</lang>
+                    <lang id="de" status="2">22</lang>
+                    <lang id="el" status="2">22</lang>
+                    <lang id="hu" status="2">22</lang>
+                    <lang id="it" status="2">22</lang>
+                    <lang id="ja" status="2">22</lang>
+                    <lang id="lt" status="2">22</lang>
+                    <lang id="pl" status="2">22</lang>
+                    <lang id="fa" status="2">22</lang>
+                    <lang id="pt" status="2">22</lang>
+                    <lang id="ru" status="2">22</lang>
+                    <lang id="es" status="2">22</lang>
+                    <lang id="sv-SE" status="2">22</lang>
+                    <lang id="th" status="2">22</lang>
+                    <lang id="tr" status="2">22</lang>
+                    <lang id="vi" status="2">22</lang>
+                  </row>
+                  <row id="Items.23" importid="22" state="0">
+                    <native>23</native>
+                    <lang id="ar" status="2">23</lang>
+                    <lang id="zh" status="2">23</lang>
+                    <lang id="zh.tra" status="2">23</lang>
+                    <lang id="nl" status="2">23</lang>
+                    <lang id="en" status="2">23</lang>
+                    <lang id="fr" status="2">23</lang>
+                    <lang id="de" status="2">23</lang>
+                    <lang id="el" status="2">23</lang>
+                    <lang id="hu" status="2">23</lang>
+                    <lang id="it" status="2">23</lang>
+                    <lang id="ja" status="2">23</lang>
+                    <lang id="lt" status="2">23</lang>
+                    <lang id="pl" status="2">23</lang>
+                    <lang id="fa" status="2">23</lang>
+                    <lang id="pt" status="2">23</lang>
+                    <lang id="ru" status="2">23</lang>
+                    <lang id="es" status="2">23</lang>
+                    <lang id="sv-SE" status="2">23</lang>
+                    <lang id="th" status="2">23</lang>
+                    <lang id="tr" status="2">23</lang>
+                    <lang id="vi" status="2">23</lang>
+                  </row>
+                  <row id="Items.24" importid="23" state="0">
+                    <native>24</native>
+                    <lang id="ar" status="2">24</lang>
+                    <lang id="zh" status="2">24</lang>
+                    <lang id="zh.tra" status="2">24</lang>
+                    <lang id="nl" status="2">24</lang>
+                    <lang id="en" status="2">24</lang>
+                    <lang id="fr" status="2">24</lang>
+                    <lang id="de" status="2">24</lang>
+                    <lang id="el" status="2">24</lang>
+                    <lang id="hu" status="2">24</lang>
+                    <lang id="it" status="2">24</lang>
+                    <lang id="ja" status="2">24</lang>
+                    <lang id="lt" status="2">24</lang>
+                    <lang id="pl" status="2">24</lang>
+                    <lang id="fa" status="2">24</lang>
+                    <lang id="pt" status="2">24</lang>
+                    <lang id="ru" status="2">24</lang>
+                    <lang id="es" status="2">24</lang>
+                    <lang id="sv-SE" status="2">24</lang>
+                    <lang id="th" status="2">24</lang>
+                    <lang id="tr" status="2">24</lang>
+                    <lang id="vi" status="2">24</lang>
+                  </row>
+                  <row id="Items.25" importid="24" state="0">
+                    <native>25</native>
+                    <lang id="ar" status="2">25</lang>
+                    <lang id="zh" status="2">25</lang>
+                    <lang id="zh.tra" status="2">25</lang>
+                    <lang id="nl" status="2">25</lang>
+                    <lang id="en" status="2">25</lang>
+                    <lang id="fr" status="2">25</lang>
+                    <lang id="de" status="2">25</lang>
+                    <lang id="el" status="2">25</lang>
+                    <lang id="hu" status="2">25</lang>
+                    <lang id="it" status="2">25</lang>
+                    <lang id="ja" status="2">25</lang>
+                    <lang id="lt" status="2">25</lang>
+                    <lang id="pl" status="2">25</lang>
+                    <lang id="fa" status="2">25</lang>
+                    <lang id="pt" status="2">25</lang>
+                    <lang id="ru" status="2">25</lang>
+                    <lang id="es" status="2">25</lang>
+                    <lang id="sv-SE" status="2">25</lang>
+                    <lang id="th" status="2">25</lang>
+                    <lang id="tr" status="2">25</lang>
+                    <lang id="vi" status="2">25</lang>
+                  </row>
+                  <row id="Items.26" importid="25" state="0">
+                    <native>26</native>
+                    <lang id="ar" status="2">26</lang>
+                    <lang id="zh" status="2">26</lang>
+                    <lang id="zh.tra" status="2">26</lang>
+                    <lang id="nl" status="2">26</lang>
+                    <lang id="en" status="2">26</lang>
+                    <lang id="fr" status="2">26</lang>
+                    <lang id="de" status="2">26</lang>
+                    <lang id="el" status="2">26</lang>
+                    <lang id="hu" status="2">26</lang>
+                    <lang id="it" status="2">26</lang>
+                    <lang id="ja" status="2">26</lang>
+                    <lang id="lt" status="2">26</lang>
+                    <lang id="pl" status="2">26</lang>
+                    <lang id="fa" status="2">26</lang>
+                    <lang id="pt" status="2">26</lang>
+                    <lang id="ru" status="2">26</lang>
+                    <lang id="es" status="2">26</lang>
+                    <lang id="sv-SE" status="2">26</lang>
+                    <lang id="th" status="2">26</lang>
+                    <lang id="tr" status="2">26</lang>
+                    <lang id="vi" status="2">26</lang>
+                  </row>
+                  <row id="Items.27" importid="26" state="0">
+                    <native>27</native>
+                    <lang id="ar" status="2">27</lang>
+                    <lang id="zh" status="2">27</lang>
+                    <lang id="zh.tra" status="2">27</lang>
+                    <lang id="nl" status="2">27</lang>
+                    <lang id="en" status="2">27</lang>
+                    <lang id="fr" status="2">27</lang>
+                    <lang id="de" status="2">27</lang>
+                    <lang id="el" status="2">27</lang>
+                    <lang id="hu" status="2">27</lang>
+                    <lang id="it" status="2">27</lang>
+                    <lang id="ja" status="2">27</lang>
+                    <lang id="lt" status="2">27</lang>
+                    <lang id="pl" status="2">27</lang>
+                    <lang id="fa" status="2">27</lang>
+                    <lang id="pt" status="2">27</lang>
+                    <lang id="ru" status="2">27</lang>
+                    <lang id="es" status="2">27</lang>
+                    <lang id="sv-SE" status="2">27</lang>
+                    <lang id="th" status="2">27</lang>
+                    <lang id="tr" status="2">27</lang>
+                    <lang id="vi" status="2">27</lang>
+                  </row>
+                  <row id="Items.28" importid="27" state="0">
+                    <native>28</native>
+                    <lang id="ar" status="2">28</lang>
+                    <lang id="zh" status="2">28</lang>
+                    <lang id="zh.tra" status="2">28</lang>
+                    <lang id="nl" status="2">28</lang>
+                    <lang id="en" status="2">28</lang>
+                    <lang id="fr" status="2">28</lang>
+                    <lang id="de" status="2">28</lang>
+                    <lang id="el" status="2">28</lang>
+                    <lang id="hu" status="2">28</lang>
+                    <lang id="it" status="2">28</lang>
+                    <lang id="ja" status="2">28</lang>
+                    <lang id="lt" status="2">28</lang>
+                    <lang id="pl" status="2">28</lang>
+                    <lang id="fa" status="2">28</lang>
+                    <lang id="pt" status="2">28</lang>
+                    <lang id="ru" status="2">28</lang>
+                    <lang id="es" status="2">28</lang>
+                    <lang id="sv-SE" status="2">28</lang>
+                    <lang id="th" status="2">28</lang>
+                    <lang id="tr" status="2">28</lang>
+                    <lang id="vi" status="2">28</lang>
+                  </row>
+                  <row id="Items.29" importid="28" state="0">
+                    <native>29</native>
+                    <lang id="ar" status="2">29</lang>
+                    <lang id="zh" status="2">29</lang>
+                    <lang id="zh.tra" status="2">29</lang>
+                    <lang id="nl" status="2">29</lang>
+                    <lang id="en" status="2">29</lang>
+                    <lang id="fr" status="2">29</lang>
+                    <lang id="de" status="2">29</lang>
+                    <lang id="el" status="2">29</lang>
+                    <lang id="hu" status="2">29</lang>
+                    <lang id="it" status="2">29</lang>
+                    <lang id="ja" status="2">29</lang>
+                    <lang id="lt" status="2">29</lang>
+                    <lang id="pl" status="2">29</lang>
+                    <lang id="fa" status="2">29</lang>
+                    <lang id="pt" status="2">29</lang>
+                    <lang id="ru" status="2">29</lang>
+                    <lang id="es" status="2">29</lang>
+                    <lang id="sv-SE" status="2">29</lang>
+                    <lang id="th" status="2">29</lang>
+                    <lang id="tr" status="2">29</lang>
+                    <lang id="vi" status="2">29</lang>
+                  </row>
+                  <row id="Items.3" importid="2" state="0">
+                    <native>3</native>
+                    <lang id="ar" status="2">3</lang>
+                    <lang id="zh" status="2">3</lang>
+                    <lang id="zh.tra" status="2">3</lang>
+                    <lang id="nl" status="2">3</lang>
+                    <lang id="en" status="2">3</lang>
+                    <lang id="fr" status="2">3</lang>
+                    <lang id="de" status="2">3</lang>
+                    <lang id="el" status="2">3</lang>
+                    <lang id="hu" status="2">3</lang>
+                    <lang id="it" status="2">3</lang>
+                    <lang id="ja" status="2">3</lang>
+                    <lang id="lt" status="2">3</lang>
+                    <lang id="pl" status="2">3</lang>
+                    <lang id="fa" status="2">3</lang>
+                    <lang id="pt" status="2">3</lang>
+                    <lang id="ru" status="2">3</lang>
+                    <lang id="es" status="2">3</lang>
+                    <lang id="sv-SE" status="2">3</lang>
+                    <lang id="th" status="2">3</lang>
+                    <lang id="tr" status="2">3</lang>
+                    <lang id="vi" status="2">3</lang>
+                  </row>
+                  <row id="Items.30" importid="29" state="0">
+                    <native>30</native>
+                    <lang id="ar" status="2">30</lang>
+                    <lang id="zh" status="2">30</lang>
+                    <lang id="zh.tra" status="2">30</lang>
+                    <lang id="nl" status="2">30</lang>
+                    <lang id="en" status="2">30</lang>
+                    <lang id="fr" status="2">30</lang>
+                    <lang id="de" status="2">30</lang>
+                    <lang id="el" status="2">30</lang>
+                    <lang id="hu" status="2">30</lang>
+                    <lang id="it" status="2">30</lang>
+                    <lang id="ja" status="2">30</lang>
+                    <lang id="lt" status="2">30</lang>
+                    <lang id="pl" status="2">30</lang>
+                    <lang id="fa" status="2">30</lang>
+                    <lang id="pt" status="2">30</lang>
+                    <lang id="ru" status="2">30</lang>
+                    <lang id="es" status="2">30</lang>
+                    <lang id="sv-SE" status="2">30</lang>
+                    <lang id="th" status="2">30</lang>
+                    <lang id="tr" status="2">30</lang>
+                    <lang id="vi" status="2">30</lang>
+                  </row>
+                  <row id="Items.31" importid="30" state="0">
+                    <native>31</native>
+                    <lang id="ar" status="2">31</lang>
+                    <lang id="zh" status="2">31</lang>
+                    <lang id="zh.tra" status="2">31</lang>
+                    <lang id="nl" status="2">31</lang>
+                    <lang id="en" status="2">31</lang>
+                    <lang id="fr" status="2">31</lang>
+                    <lang id="de" status="2">31</lang>
+                    <lang id="el" status="2">31</lang>
+                    <lang id="hu" status="2">31</lang>
+                    <lang id="it" status="2">31</lang>
+                    <lang id="ja" status="2">31</lang>
+                    <lang id="lt" status="2">31</lang>
+                    <lang id="pl" status="2">31</lang>
+                    <lang id="fa" status="2">31</lang>
+                    <lang id="pt" status="2">31</lang>
+                    <lang id="ru" status="2">31</lang>
+                    <lang id="es" status="2">31</lang>
+                    <lang id="sv-SE" status="2">31</lang>
+                    <lang id="th" status="2">31</lang>
+                    <lang id="tr" status="2">31</lang>
+                    <lang id="vi" status="2">31</lang>
+                  </row>
+                  <row id="Items.4" importid="3" state="0">
+                    <native>4</native>
+                    <lang id="ar" status="2">4</lang>
+                    <lang id="zh" status="2">4</lang>
+                    <lang id="zh.tra" status="2">4</lang>
+                    <lang id="nl" status="2">4</lang>
+                    <lang id="en" status="2">4</lang>
+                    <lang id="fr" status="2">4</lang>
+                    <lang id="de" status="2">4</lang>
+                    <lang id="el" status="2">4</lang>
+                    <lang id="hu" status="2">4</lang>
+                    <lang id="it" status="2">4</lang>
+                    <lang id="ja" status="2">4</lang>
+                    <lang id="lt" status="2">4</lang>
+                    <lang id="pl" status="2">4</lang>
+                    <lang id="fa" status="2">4</lang>
+                    <lang id="pt" status="2">4</lang>
+                    <lang id="ru" status="2">4</lang>
+                    <lang id="es" status="2">4</lang>
+                    <lang id="sv-SE" status="2">4</lang>
+                    <lang id="th" status="2">4</lang>
+                    <lang id="tr" status="2">4</lang>
+                    <lang id="vi" status="2">4</lang>
+                  </row>
+                  <row id="Items.5" importid="4" state="0">
+                    <native>5</native>
+                    <lang id="ar" status="2">5</lang>
+                    <lang id="zh" status="2">5</lang>
+                    <lang id="zh.tra" status="2">5</lang>
+                    <lang id="nl" status="2">5</lang>
+                    <lang id="en" status="2">5</lang>
+                    <lang id="fr" status="2">5</lang>
+                    <lang id="de" status="2">5</lang>
+                    <lang id="el" status="2">5</lang>
+                    <lang id="hu" status="2">5</lang>
+                    <lang id="it" status="2">5</lang>
+                    <lang id="ja" status="2">5</lang>
+                    <lang id="lt" status="2">5</lang>
+                    <lang id="pl" status="2">5</lang>
+                    <lang id="fa" status="2">5</lang>
+                    <lang id="pt" status="2">5</lang>
+                    <lang id="ru" status="2">5</lang>
+                    <lang id="es" status="2">5</lang>
+                    <lang id="sv-SE" status="2">5</lang>
+                    <lang id="th" status="2">5</lang>
+                    <lang id="tr" status="2">5</lang>
+                    <lang id="vi" status="2">5</lang>
+                  </row>
+                  <row id="Items.6" importid="5" state="0">
+                    <native>6</native>
+                    <lang id="ar" status="2">6</lang>
+                    <lang id="zh" status="2">6</lang>
+                    <lang id="zh.tra" status="2">6</lang>
+                    <lang id="nl" status="2">6</lang>
+                    <lang id="en" status="2">6</lang>
+                    <lang id="fr" status="2">6</lang>
+                    <lang id="de" status="2">6</lang>
+                    <lang id="el" status="2">6</lang>
+                    <lang id="hu" status="2">6</lang>
+                    <lang id="it" status="2">6</lang>
+                    <lang id="ja" status="2">6</lang>
+                    <lang id="lt" status="2">6</lang>
+                    <lang id="pl" status="2">6</lang>
+                    <lang id="fa" status="2">6</lang>
+                    <lang id="pt" status="2">6</lang>
+                    <lang id="ru" status="2">6</lang>
+                    <lang id="es" status="2">6</lang>
+                    <lang id="sv-SE" status="2">6</lang>
+                    <lang id="th" status="2">6</lang>
+                    <lang id="tr" status="2">6</lang>
+                    <lang id="vi" status="2">6</lang>
+                  </row>
+                  <row id="Items.7" importid="6" state="0">
+                    <native>7</native>
+                    <lang id="ar" status="2">7</lang>
+                    <lang id="zh" status="2">7</lang>
+                    <lang id="zh.tra" status="2">7</lang>
+                    <lang id="nl" status="2">7</lang>
+                    <lang id="en" status="2">7</lang>
+                    <lang id="fr" status="2">7</lang>
+                    <lang id="de" status="2">7</lang>
+                    <lang id="el" status="2">7</lang>
+                    <lang id="hu" status="2">7</lang>
+                    <lang id="it" status="2">7</lang>
+                    <lang id="ja" status="2">7</lang>
+                    <lang id="lt" status="2">7</lang>
+                    <lang id="pl" status="2">7</lang>
+                    <lang id="fa" status="2">7</lang>
+                    <lang id="pt" status="2">7</lang>
+                    <lang id="ru" status="2">7</lang>
+                    <lang id="es" status="2">7</lang>
+                    <lang id="sv-SE" status="2">7</lang>
+                    <lang id="th" status="2">7</lang>
+                    <lang id="tr" status="2">7</lang>
+                    <lang id="vi" status="2">7</lang>
+                  </row>
+                  <row id="Items.8" importid="7" state="0">
+                    <native>8</native>
+                    <lang id="ar" status="2">8</lang>
+                    <lang id="zh" status="2">8</lang>
+                    <lang id="zh.tra" status="2">8</lang>
+                    <lang id="nl" status="2">8</lang>
+                    <lang id="en" status="2">8</lang>
+                    <lang id="fr" status="2">8</lang>
+                    <lang id="de" status="2">8</lang>
+                    <lang id="el" status="2">8</lang>
+                    <lang id="hu" status="2">8</lang>
+                    <lang id="it" status="2">8</lang>
+                    <lang id="ja" status="2">8</lang>
+                    <lang id="lt" status="2">8</lang>
+                    <lang id="pl" status="2">8</lang>
+                    <lang id="fa" status="2">8</lang>
+                    <lang id="pt" status="2">8</lang>
+                    <lang id="ru" status="2">8</lang>
+                    <lang id="es" status="2">8</lang>
+                    <lang id="sv-SE" status="2">8</lang>
+                    <lang id="th" status="2">8</lang>
+                    <lang id="tr" status="2">8</lang>
+                    <lang id="vi" status="2">8</lang>
+                  </row>
+                  <row id="Items.9" importid="8" state="0">
+                    <native>9</native>
+                    <lang id="ar" status="2">9</lang>
+                    <lang id="zh" status="2">9</lang>
+                    <lang id="zh.tra" status="2">9</lang>
+                    <lang id="nl" status="2">9</lang>
+                    <lang id="en" status="2">9</lang>
+                    <lang id="fr" status="2">9</lang>
+                    <lang id="de" status="2">9</lang>
+                    <lang id="el" status="2">9</lang>
+                    <lang id="hu" status="2">9</lang>
+                    <lang id="it" status="2">9</lang>
+                    <lang id="ja" status="2">9</lang>
+                    <lang id="lt" status="2">9</lang>
+                    <lang id="pl" status="2">9</lang>
+                    <lang id="fa" status="2">9</lang>
+                    <lang id="pt" status="2">9</lang>
+                    <lang id="ru" status="2">9</lang>
+                    <lang id="es" status="2">9</lang>
+                    <lang id="sv-SE" status="2">9</lang>
+                    <lang id="th" status="2">9</lang>
+                    <lang id="tr" status="2">9</lang>
+                    <lang id="vi" status="2">9</lang>
+                  </row>
+                  <row id="Location.X" state="0">382</row>
+                  <row id="Location.Y" state="0">16</row>
+                  <row id="Size.Height" state="0">21</row>
+                  <row id="Size.Width" state="0">53</row>
+                </component>
+                <component class="TVisLabel" name="labelDate" state="0" type="System.Windows.Forms.Label" autosize="1" wordwrap="0">
+                  <row id="Location.X" state="0">349</row>
+                  <row id="Location.Y" state="0">19</row>
+                  <row id="Size.Height" state="0">13</row>
+                  <row id="Size.Width" state="0">33</row>
+                  <row id="Text" state="0">
+                    <native>Date:</native>
+                    <lang id="ar" status="2">تاريخ:</lang>
+                    <lang id="zh" status="2">日期:</lang>
+                    <lang id="zh.tra" status="2">日期:</lang>
+                    <lang id="nl" status="2">Datum:</lang>
+                    <lang id="en" status="2">Date:</lang>
+                    <lang id="fr" status="2">Date de:</lang>
+                    <lang id="de" status="2">Datum:</lang>
+                    <lang id="el" status="2">Ημερομηνία:</lang>
+                    <lang id="hu" status="2">Dátum:</lang>
+                    <lang id="it" status="2">Data:</lang>
+                    <lang id="ja" status="2">日:</lang>
+                    <lang id="lt" status="2">Data:</lang>
+                    <lang id="pl" status="2">Data:</lang>
+                    <lang id="fa" status="2">تاریخ:</lang>
+                    <lang id="pt" status="2">Data:</lang>
+                    <lang id="ru" status="2">Дата:</lang>
+                    <lang id="es" status="2">Fecha:</lang>
+                    <lang id="sv-SE" status="2">Datum:</lang>
+                    <lang id="th" status="2">วันที่:</lang>
+                    <lang id="tr" status="2">Tarih:</lang>
+                    <lang id="vi" status="2">Ngày:</lang>
+                  </row>
+                </component>
+              </component>
+              <component class="TVisGroupBox" name="groupBoxPerform" state="0" type="System.Windows.Forms.GroupBox">
+                <row id="Location.X" state="0">9</row>
+                <row id="Location.Y" state="0">7</row>
+                <row id="Size.Height" state="0">43</row>
+                <row id="Size.Width" state="0">441</row>
+                <row id="Text" state="0">
+                  <native>Perform</native>
+                  <lang id="ar" status="2">نفذ</lang>
+                  <lang id="zh" status="2">执行</lang>
+                  <lang id="zh.tra" status="2">執行</lang>
+                  <lang id="nl" status="2">Uitvoeren</lang>
+                  <lang id="en" status="2">Perform</lang>
+                  <lang id="fr" status="2">Effectuer</lang>
+                  <lang id="de" status="2">Ausführen</lang>
+                  <lang id="el" status="2">Εκτελέστε</lang>
+                  <lang id="hu" status="2">Végezze</lang>
+                  <lang id="it" status="2">Eseguire</lang>
+                  <lang id="ja" status="2">実行</lang>
+                  <lang id="lt" status="2">Atlikti</lang>
+                  <lang id="pl" status="2">Wykonać</lang>
+                  <lang id="fa" status="2">انجام</lang>
+                  <lang id="pt" status="2">Realizar</lang>
+                  <lang id="ru" status="2">Выполнять</lang>
+                  <lang id="es" status="2">Realizar</lang>
+                  <lang id="sv-SE" status="2">Utför</lang>
+                  <lang id="th" status="2">ดำเนินการ</lang>
+                  <lang id="tr" status="2">Yapmak</lang>
+                  <lang id="vi" status="2">Thực hiện</lang>
+                </row>
+                <component class="TVisRadioButton" name="radioButtonNever" state="0" type="System.Windows.Forms.RadioButton" autosize="1" wordwrap="0">
+                  <row id="Location.X" state="0">6</row>
+                  <row id="Location.Y" state="0">19</row>
+                  <row id="Size.Height" state="0">17</row>
+                  <row id="Size.Width" state="0">54</row>
+                  <row id="Text" state="0">
+                    <native>Never</native>
+                    <lang id="ar" status="2">أبدا</lang>
+                    <lang id="zh" status="2">从未</lang>
+                    <lang id="zh.tra" status="2">從未</lang>
+                    <lang id="nl" status="2">Nooit</lang>
+                    <lang id="en" status="2">Never</lang>
+                    <lang id="fr" status="2">Jamais</lang>
+                    <lang id="de" status="2">Nie</lang>
+                    <lang id="el" status="2">Ποτέ</lang>
+                    <lang id="hu" status="2">Soha</lang>
+                    <lang id="it" status="2">Mai</lang>
+                    <lang id="ja" status="2">決してない</lang>
+                    <lang id="lt" status="2">Niekada</lang>
+                    <lang id="pl" status="2">Nigdy</lang>
+                    <lang id="fa" status="2">هرگز</lang>
+                    <lang id="pt" status="2">Nunca</lang>
+                    <lang id="ru" status="2">Никогда</lang>
+                    <lang id="es" status="2">Nunca</lang>
+                    <lang id="sv-SE" status="2">Aldrig</lang>
+                    <lang id="th" status="2">ไม่เคย</lang>
+                    <lang id="tr" status="2">Asla</lang>
+                    <lang id="vi" status="2">Không bao giờ</lang>
+                  </row>
+                </component>
+                <component class="TVisRadioButton" name="radioButtonDaily" state="0" type="System.Windows.Forms.RadioButton" autosize="1" wordwrap="0">
+                  <row id="Location.X" state="0">66</row>
+                  <row id="Location.Y" state="0">19</row>
+                  <row id="Size.Height" state="0">17</row>
+                  <row id="Size.Width" state="0">48</row>
+                  <row id="Text" state="0">
+                    <native>Daily</native>
+                    <lang id="ar" status="2">يوميا</lang>
+                    <lang id="zh" status="2">日报</lang>
+                    <lang id="zh.tra" status="2">日報</lang>
+                    <lang id="nl" status="2">Dagelijks</lang>
+                    <lang id="en" status="2">Daily</lang>
+                    <lang id="fr" status="2">Daily</lang>
+                    <lang id="de" status="2">Täglich</lang>
+                    <lang id="el" status="2">Καθημερινά</lang>
+                    <lang id="hu" status="2">Napi</lang>
+                    <lang id="it" status="2">Quotidiano</lang>
+                    <lang id="ja" status="2">毎日</lang>
+                    <lang id="lt" status="2">Kasdien</lang>
+                    <lang id="pl" status="2">Codziennie</lang>
+                    <lang id="fa" status="2">روزانه</lang>
+                    <lang id="pt" status="2">Diariamente</lang>
+                    <lang id="ru" status="2">Ежедневно</lang>
+                    <lang id="es" status="2">Diario</lang>
+                    <lang id="sv-SE" status="2">Daglig</lang>
+                    <lang id="th" status="2">รายวัน</lang>
+                    <lang id="tr" status="2">Günlük</lang>
+                    <lang id="vi" status="2">Hàng ngày</lang>
+                  </row>
+                </component>
+                <component class="TVisRadioButton" name="radioButtonWeekly" state="0" type="System.Windows.Forms.RadioButton" autosize="1" wordwrap="0">
+                  <row id="Location.X" state="0">120</row>
+                  <row id="Location.Y" state="0">19</row>
+                  <row id="Size.Height" state="0">17</row>
+                  <row id="Size.Width" state="0">61</row>
+                  <row id="Text" state="0">
+                    <native>Weekly</native>
+                    <lang id="ar" status="2">الأسبوعية</lang>
+                    <lang id="zh" status="2">每周</lang>
+                    <lang id="zh.tra" status="2">每週</lang>
+                    <lang id="nl" status="2">Wekelijks</lang>
+                    <lang id="en" status="2">Weekly</lang>
+                    <lang id="fr" status="2">Hebdomadaire</lang>
+                    <lang id="de" status="2">Wöchentlich</lang>
+                    <lang id="el" status="2">Εβδομαδιαίος</lang>
+                    <lang id="hu" status="2">Heti</lang>
+                    <lang id="it" status="2">Settimanale</lang>
+                    <lang id="ja" status="2">週</lang>
+                    <lang id="lt" status="2">Kas savaitę</lang>
+                    <lang id="pl" status="2">Tygodniowo</lang>
+                    <lang id="fa" status="2">هفتگی</lang>
+                    <lang id="pt" status="2">Semanal</lang>
+                    <lang id="ru" status="2">Еженедельно</lang>
+                    <lang id="es" status="2">Semanal</lang>
+                    <lang id="sv-SE" status="2">Varje vecka</lang>
+                    <lang id="th" status="2">รายสัปดาห์</lang>
+                    <lang id="tr" status="2">Haftalık</lang>
+                    <lang id="vi" status="2">Hàng tuần</lang>
+                  </row>
+                </component>
+                <component class="TVisRadioButton" name="radioButtonMonthly" state="0" type="System.Windows.Forms.RadioButton" autosize="1" wordwrap="0">
+                  <row id="Location.X" state="0">187</row>
+                  <row id="Location.Y" state="0">19</row>
+                  <row id="Size.Height" state="0">17</row>
+                  <row id="Size.Width" state="0">62</row>
+                  <row id="Text" state="0">
+                    <native>Monthly</native>
+                    <lang id="ar" status="2">شهريا</lang>
+                    <lang id="zh" status="2">每月</lang>
+                    <lang id="zh.tra" status="2">每月</lang>
+                    <lang id="nl" status="2">Maandelijks</lang>
+                    <lang id="en" status="2">Monthly</lang>
+                    <lang id="fr" status="2">Mensuel</lang>
+                    <lang id="de" status="2">Monatlich</lang>
+                    <lang id="el" status="2">Μηνιαίος</lang>
+                    <lang id="hu" status="2">Havi</lang>
+                    <lang id="it" status="2">Mensile</lang>
+                    <lang id="ja" status="2">毎月の</lang>
+                    <lang id="lt" status="2">Kas mėnesį</lang>
+                    <lang id="pl" status="2">Miesięcznie</lang>
+                    <lang id="fa" status="2">ماهیانه</lang>
+                    <lang id="pt" status="2">Mensal</lang>
+                    <lang id="ru" status="2">Ежемесячно</lang>
+                    <lang id="es" status="2">Mensual</lang>
+                    <lang id="sv-SE" status="2">Månatlig</lang>
+                    <lang id="th" status="2">รายเดือน</lang>
+                    <lang id="tr" status="2">Aylık</lang>
+                    <lang id="vi" status="2">Hàng tháng</lang>
+                  </row>
+                </component>
+              </component>
+              <component class="TVisGroupBox" name="groupBoxDesc" state="0" type="System.Windows.Forms.GroupBox">
+                <row id="Location.X" state="0">6</row>
+                <row id="Location.Y" state="0">108</row>
+                <row id="Size.Height" state="0">38</row>
+                <row id="Size.Width" state="0">441</row>
+                <row id="Text" state="0">
+                  <native>Description</native>
+                  <lang id="ar" status="2">وصف</lang>
+                  <lang id="zh" status="2">说明</lang>
+                  <lang id="zh.tra" status="2">說明</lang>
+                  <lang id="nl" status="2">Beschrijving</lang>
+                  <lang id="en" status="2">Description</lang>
+                  <lang id="fr" status="2">Descriptif</lang>
+                  <lang id="de" status="2">Beschreibung</lang>
+                  <lang id="el" status="2">Περιγραφή</lang>
+                  <lang id="hu" status="2">Leírás</lang>
+                  <lang id="it" status="2">Descrizione</lang>
+                  <lang id="ja" status="2">説明</lang>
+                  <lang id="lt" status="2">Aprašymas</lang>
+                  <lang id="pl" status="2">Opis</lang>
+                  <lang id="fa" status="2">شرح</lang>
+                  <lang id="pt" status="2">Descrição</lang>
+                  <lang id="ru" status="2">Описание</lang>
+                  <lang id="es" status="2">Descripción</lang>
+                  <lang id="sv-SE" status="2">Beskrivning</lang>
+                  <lang id="th" status="2">รายละเอียด</lang>
+                  <lang id="tr" status="2">Tanım</lang>
+                  <lang id="vi" status="2">Mô tả</lang>
+                </row>
+                <component class="TVisLabel" name="labelDescription" state="0" type="System.Windows.Forms.Label">
+                  <row id="Location.X" state="0">6</row>
+                  <row id="Location.Y" state="0">18</row>
+                  <row id="Size.Height" state="0">13</row>
+                  <row id="Size.Width" state="0">429</row>
+                </component>
+              </component>
+            </component>
           </component>
           <component class="TVisPopupMenu" name="contextMenuStrip1" type="System.Windows.Forms.ContextMenuStrip">
             <row id="Size.Height">98</row>
@@ -7603,6 +9068,78 @@
           <lang id="tr" status="2">Emin misin?</lang>
           <lang id="vi" status="2">Bạn có chắc chắn?</lang>
         </row>
+        <row id="optionsSchedDescD" state="0">
+          <native>A registry scan will be run every day at {0}</native>
+          <lang id="ar" status="2">وسيتم تشغيل تفحص كل يوم في التسجيل {0}</lang>
+          <lang id="zh" status="2">将运行的注册表扫描每天{0}</lang>
+          <lang id="zh.tra" status="2">註冊表掃描將在每天運行{0}</lang>
+          <lang id="nl" status="2">Een registry scan wordt elke dag om {0}</lang>
+          <lang id="en" status="2">A registry scan will be run every day at {0}</lang>
+          <lang id="fr" status="2">Un scan du registre sera géré tous les jours à {0}</lang>
+          <lang id="de" status="2">Ein Registry-Scan laufen jeden Tag um sein {0}</lang>
+          <lang id="el" status="2">Μια μητρώου σάρωση θα εκτελείται κάθε μέρα στις {0}</lang>
+          <lang id="hu" status="2">A regisztrációs vizsgálat indul minden nap {0}</lang>
+          <lang id="it" status="2">Una scansione del registro verrà eseguito ogni giorno alle {0}</lang>
+          <lang id="ja" status="2">レジストリスキャンは毎日実行されます{0}</lang>
+          <lang id="lt" status="2">Registro skenavimo bus vykdomas kiekvieną dieną {0}</lang>
+          <lang id="pl" status="2">Skanowania rejestru będzie uruchamiany codziennie o {0}</lang>
+          <lang id="fa" status="2">اسکن رجیستری خواهد شد هر روز در اجرا {0}</lang>
+          <lang id="pt" status="2">A varredura do registro será executado todos os dias às {0}</lang>
+          <lang id="ru" status="2">Сканирование реестра будет выполняться каждый день в {0}</lang>
+          <lang id="es" status="2">Una exploración del registro se llevará a cabo todos los días a {0}</lang>
+          <lang id="sv-SE" status="2">Ett register scan kommer att köras varje dag kl {0}</lang>
+          <lang id="th" status="2">สแกนรีจิสทรีจะถูกเรียกใช้ทุกวันที่ {0}</lang>
+          <lang id="tr" status="2">Bir kayıt defteri tarama her gün çalıştırmak olacaktır {0}</lang>
+          <lang id="vi" status="2">Một quét registry sẽ được chạy mỗi ngày {0}</lang>
+        </row>
+        <row id="optionsSchedDescM" state="0">
+          <native>A registry scan will be run every month on the {0} day at {1}</native>
+          <lang id="ar" status="2">وسيتم تشغيل تفحص التسجيل في كل شهر {0} في اليوم {1}</lang>
+          <lang id="zh" status="2">每个月将运行的注册表扫描{0}一天{1}</lang>
+          <lang id="zh.tra" status="2">註冊表掃描將每月運行的{0}一天{1}</lang>
+          <lang id="nl" status="2">Een registry scan zal worden uitgevoerd elke maand op de {0} dagen op {1}</lang>
+          <lang id="en" status="2">A registry scan will be run every month on the {0} day at {1}</lang>
+          <lang id="fr" status="2">Un scan du registre sera géré tous les mois sur le {0} jour à {1}</lang>
+          <lang id="de" status="2">Ein Registry-Scan wird jeden Monat auf der sein {0} Tag {1}</lang>
+          <lang id="el" status="2">Μια μητρώου σάρωση θα τρέχει κάθε μήνα σχετικά με την {0} μέρα {1}</lang>
+          <lang id="hu" status="2">A regisztrációs vizsgálat indul minden hónapban a {0} nap {1}</lang>
+          <lang id="it" status="2">Una scansione del registro verrà eseguita ogni mese sul {0} giornata {1}</lang>
+          <lang id="ja" status="2">レジストリのスキャンがオンに毎月実行されます。 {0}日時{1}</lang>
+          <lang id="lt" status="2">Registro skenavimo bus vykdomas kiekvieną mėnesį {0} dieną {1}</lang>
+          <lang id="pl" status="2">Skanowania rejestru będą uruchamiane co miesiąc na {0} dzień {1}</lang>
+          <lang id="fa" status="2">اسکن رجیستری خواهد شد هر ماه در اجرا {0} روز در {1}</lang>
+          <lang id="pt" status="2">A varredura do registro será executado a cada mês no {0} dia {1}</lang>
+          <lang id="ru" status="2">Сканирование реестра будет запускаться каждый месяц на {0} день {1}</lang>
+          <lang id="es" status="2">Una exploración del registro se llevará a cabo cada mes en el {0} día en {1}</lang>
+          <lang id="sv-SE" status="2">Ett register scan kommer att köras varje månad på {0} dag på {1}</lang>
+          <lang id="th" status="2">สแกนรีจิสทรีจะถูกเรียกใช้ทุกเดือนใน {0} วันที่ {1}</lang>
+          <lang id="tr" status="2">Bir kayıt defteri taraması her ay çalıştırmak olacaktır {0} gün {1}</lang>
+          <lang id="vi" status="2">Một quét registry sẽ được chạy mỗi tháng trên {0} ngày tại {1}</lang>
+        </row>
+        <row id="optionsSchedDescW" state="0">
+          <native>A registry scan will be run every week on {0} at {1}</native>
+          <lang id="ar" status="2">وسيتم تشغيل تفحص كل أسبوع على التسجيل {0} في {1}</lang>
+          <lang id="zh" status="2">将运行的注册表扫描每周{0}在{1}</lang>
+          <lang id="zh.tra" status="2">註冊表掃描將每週上運行{0}為{1}</lang>
+          <lang id="nl" status="2">Een registry scan zal worden uitgevoerd elke week op {0} op {1}</lang>
+          <lang id="en" status="2">A registry scan will be run every week on {0} at {1}</lang>
+          <lang id="fr" status="2">Un scan du registre sera géré chaque semaine sur {0} au {1}</lang>
+          <lang id="de" status="2">Ein Registry-Scan laufen jede Woche werden {0} bei {1}</lang>
+          <lang id="el" status="2">Μια μητρώου σάρωση θα τρέχει κάθε εβδομάδα στην {0} στο {1}</lang>
+          <lang id="hu" status="2">A regisztrációs vizsgálat indul minden héten {0} a {1}</lang>
+          <lang id="it" status="2">Una scansione del registro verrà eseguita ogni settimana {0} a {1}</lang>
+          <lang id="ja" status="2">レジストリのスキャンがオンに毎週実行されます。 {0}で{1}</lang>
+          <lang id="lt" status="2">Registro skenavimo bus vykdomas kiekvieną savaitę {0} prie {1}</lang>
+          <lang id="pl" status="2">Skanowania rejestru będą uruchamiane co tydzień w {0} w {1}</lang>
+          <lang id="fa" status="2">اسکن رجیستری خواهد شد هر هفته در اجرا {0} در {1}</lang>
+          <lang id="pt" status="2">A varredura do registro será executado a cada semana em {0} em {1}</lang>
+          <lang id="ru" status="2">Сканирование реестра будет выполняться каждую неделю по {0} на {1}</lang>
+          <lang id="es" status="2">Una exploración del registro se llevará a cabo cada semana en {0} en {1}</lang>
+          <lang id="sv-SE" status="2">Ett register scan kommer att köras varje vecka på {0} vid {1}</lang>
+          <lang id="th" status="2">สแกนรีจิสทรีจะถูกเรียกใช้ทุกสัปดาห์กับ {0} ที่ {1}</lang>
+          <lang id="tr" status="2">Bir kayıt defteri tarama her hafta çalıştırmak olacaktır {0} az {1}</lang>
+          <lang id="vi" status="2">Một quét registry sẽ được chạy mỗi tuần {0} tại {1}</lang>
+        </row>
         <row id="optionsSelectBackupDir" state="0">
           <native>Select the folder where the backup files will be placed</native>
           <lang id="ar" status="2">حدد المجلد حيث ملفات النسخة الاحتياطية سوف توضع</lang>
@@ -8642,8 +10179,8 @@
     <node class="TWindowsVersionFolder" name="Versions" state="0" resid="16">
       <node class="TWindowsVersionNode" name="1" state="0" resid="1">
         <row id="Assembly Version" state="3">
-          <prev>1.4.4187.39341</prev>
-          <native>1.5.4205.40335</native>
+          <prev>1.5.4205.40335</prev>
+          <native>1.5.4216.41766</native>
           <lang id="ar" invalidated="1" status="2">1.4.4187.39341</lang>
           <lang id="zh" invalidated="1" status="2">1.4.4187.39341</lang>
           <lang id="zh.tra" invalidated="1" status="2">1.4.4187.39341</lang>

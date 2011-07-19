@@ -1041,5 +1041,31 @@ namespace Little_Registry_Cleaner
 
             return true;
         }
+
+        /// <summary>
+        /// Adds a suffix to a given number (1st, 2nd, 3rd, ...)
+        /// </summary>
+        /// <param name="number">Number to add suffix to</param>
+        /// <returns>Number with suffix</returns>
+        public static string GetNumberSuffix(int number)
+        {
+            if (number <= 0)
+                return number.ToString();
+
+            int n = number % 100;
+
+            // Skip the switch for as many numbers as possible.
+            if (n > 3 && n < 21)
+                return n.ToString() + "th";
+
+            // Determine the suffix for numbers ending in 1, 2 or 3, otherwise add a 'th'
+            switch (n % 10)
+            {
+                case 1: return n.ToString() + "st";
+                case 2: return n.ToString() + "nd";
+                case 3: return n.ToString() + "rd";
+                default: return n.ToString() + "th";
+            }
+        }
     }
 }

@@ -259,6 +259,15 @@ namespace Little_Registry_Cleaner
             }
             /* THE CODE ABOVE IS LICENSED UNDER THE CREATIVE COMMONS ATTRIBUTION NON-COMMERCIAL NO DERIVATIVES LICENSE */
             /***********************************************************************************************************/
+
+            // If /scan passed as argument -> Start scanning
+            foreach (string arg in Environment.GetCommandLineArgs())
+            {
+                if (arg == "/scan")
+                {
+                    ScanRegistry();
+                }
+            }
         }
 
         private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)

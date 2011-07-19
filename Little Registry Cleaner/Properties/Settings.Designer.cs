@@ -205,5 +205,17 @@ namespace Little_Registry_Cleaner.Properties {
                 this["bOptionsAutoExit"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int nOptionsTaskPerform {
+            get {
+                return ((int)(this["nOptionsTaskPerform"]));
+            }
+            set {
+                this["nOptionsTaskPerform"] = value;
+            }
+        }
     }
 }

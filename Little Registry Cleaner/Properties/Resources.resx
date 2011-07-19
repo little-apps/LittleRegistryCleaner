@@ -168,6 +168,15 @@
   <data name="optionsExcludeRemove" xml:space="preserve">
     <value>Are you sure?</value>
   </data>
+  <data name="optionsSchedDescD" xml:space="preserve">
+    <value>A registry scan will be run every day at {0}</value>
+  </data>
+  <data name="optionsSchedDescM" xml:space="preserve">
+    <value>A registry scan will be run every month on the {0} day at {1}</value>
+  </data>
+  <data name="optionsSchedDescW" xml:space="preserve">
+    <value>A registry scan will be run every week on {0} at {1}</value>
+  </data>
   <data name="optionsSelectBackupDir" xml:space="preserve">
     <value>Select the folder where the backup files will be placed</value>
   </data>

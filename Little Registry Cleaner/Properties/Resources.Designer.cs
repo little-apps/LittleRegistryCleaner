@@ -214,6 +214,33 @@ namespace Little_Registry_Cleaner.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to A registry scan will be run every day at {0}.
+        /// </summary>
+        internal static string optionsSchedDescD {
+            get {
+                return ResourceManager.GetString("optionsSchedDescD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A registry scan will be run every month on the {0} day at {1}.
+        /// </summary>
+        internal static string optionsSchedDescM {
+            get {
+                return ResourceManager.GetString("optionsSchedDescM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A registry scan will be run every week on {0} at {1}.
+        /// </summary>
+        internal static string optionsSchedDescW {
+            get {
+                return ResourceManager.GetString("optionsSchedDescW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Select the folder where the backup files will be placed.
         /// </summary>
         internal static string optionsSelectBackupDir {

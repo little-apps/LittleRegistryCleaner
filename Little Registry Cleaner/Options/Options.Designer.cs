@@ -45,13 +45,28 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.addFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addRegistryPathToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.removeEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.groupBoxDesc = new System.Windows.Forms.GroupBox();
+            this.labelDescription = new System.Windows.Forms.Label();
+            this.groupBoxPerform = new System.Windows.Forms.GroupBox();
+            this.radioButtonMonthly = new System.Windows.Forms.RadioButton();
+            this.radioButtonWeekly = new System.Windows.Forms.RadioButton();
+            this.radioButtonDaily = new System.Windows.Forms.RadioButton();
+            this.radioButtonNever = new System.Windows.Forms.RadioButton();
+            this.groupBoxSchedule = new System.Windows.Forms.GroupBox();
+            this.labelDate = new System.Windows.Forms.Label();
+            this.comboBoxDate = new System.Windows.Forms.ComboBox();
+            this.comboBoxDay = new System.Windows.Forms.ComboBox();
+            this.labelDay = new System.Windows.Forms.Label();
+            this.labelTime = new System.Windows.Forms.Label();
+            this.dateTimePickerSched = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -59,6 +74,10 @@
             this.groupBox3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.groupBoxDesc.SuspendLayout();
+            this.groupBoxPerform.SuspendLayout();
+            this.groupBoxSchedule.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -125,6 +144,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -226,6 +246,161 @@
             resources.ApplyResources(this.removeEntryToolStripMenuItem, "removeEntryToolStripMenuItem");
             this.removeEntryToolStripMenuItem.Click += new System.EventHandler(this.removeEntryToolStripMenuItem_Click);
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.groupBoxDesc);
+            this.tabPage3.Controls.Add(this.groupBoxPerform);
+            this.tabPage3.Controls.Add(this.groupBoxSchedule);
+            resources.ApplyResources(this.tabPage3, "tabPage3");
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxDesc
+            // 
+            this.groupBoxDesc.Controls.Add(this.labelDescription);
+            resources.ApplyResources(this.groupBoxDesc, "groupBoxDesc");
+            this.groupBoxDesc.Name = "groupBoxDesc";
+            this.groupBoxDesc.TabStop = false;
+            // 
+            // labelDescription
+            // 
+            resources.ApplyResources(this.labelDescription, "labelDescription");
+            this.labelDescription.Name = "labelDescription";
+            // 
+            // groupBoxPerform
+            // 
+            this.groupBoxPerform.Controls.Add(this.radioButtonMonthly);
+            this.groupBoxPerform.Controls.Add(this.radioButtonWeekly);
+            this.groupBoxPerform.Controls.Add(this.radioButtonDaily);
+            this.groupBoxPerform.Controls.Add(this.radioButtonNever);
+            resources.ApplyResources(this.groupBoxPerform, "groupBoxPerform");
+            this.groupBoxPerform.Name = "groupBoxPerform";
+            this.groupBoxPerform.TabStop = false;
+            // 
+            // radioButtonMonthly
+            // 
+            resources.ApplyResources(this.radioButtonMonthly, "radioButtonMonthly");
+            this.radioButtonMonthly.Name = "radioButtonMonthly";
+            this.radioButtonMonthly.TabStop = true;
+            this.radioButtonMonthly.UseVisualStyleBackColor = true;
+            this.radioButtonMonthly.CheckedChanged += new System.EventHandler(this.UpdateScheduler);
+            // 
+            // radioButtonWeekly
+            // 
+            resources.ApplyResources(this.radioButtonWeekly, "radioButtonWeekly");
+            this.radioButtonWeekly.Name = "radioButtonWeekly";
+            this.radioButtonWeekly.TabStop = true;
+            this.radioButtonWeekly.UseVisualStyleBackColor = true;
+            this.radioButtonWeekly.CheckedChanged += new System.EventHandler(this.UpdateScheduler);
+            // 
+            // radioButtonDaily
+            // 
+            resources.ApplyResources(this.radioButtonDaily, "radioButtonDaily");
+            this.radioButtonDaily.Name = "radioButtonDaily";
+            this.radioButtonDaily.TabStop = true;
+            this.radioButtonDaily.UseVisualStyleBackColor = true;
+            this.radioButtonDaily.CheckedChanged += new System.EventHandler(this.UpdateScheduler);
+            // 
+            // radioButtonNever
+            // 
+            resources.ApplyResources(this.radioButtonNever, "radioButtonNever");
+            this.radioButtonNever.Name = "radioButtonNever";
+            this.radioButtonNever.TabStop = true;
+            this.radioButtonNever.UseVisualStyleBackColor = true;
+            this.radioButtonNever.CheckedChanged += new System.EventHandler(this.UpdateScheduler);
+            // 
+            // groupBoxSchedule
+            // 
+            this.groupBoxSchedule.Controls.Add(this.labelDate);
+            this.groupBoxSchedule.Controls.Add(this.comboBoxDate);
+            this.groupBoxSchedule.Controls.Add(this.comboBoxDay);
+            this.groupBoxSchedule.Controls.Add(this.labelDay);
+            this.groupBoxSchedule.Controls.Add(this.labelTime);
+            this.groupBoxSchedule.Controls.Add(this.dateTimePickerSched);
+            resources.ApplyResources(this.groupBoxSchedule, "groupBoxSchedule");
+            this.groupBoxSchedule.Name = "groupBoxSchedule";
+            this.groupBoxSchedule.TabStop = false;
+            // 
+            // labelDate
+            // 
+            resources.ApplyResources(this.labelDate, "labelDate");
+            this.labelDate.Name = "labelDate";
+            // 
+            // comboBoxDate
+            // 
+            this.comboBoxDate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxDate.FormattingEnabled = true;
+            this.comboBoxDate.Items.AddRange(new object[] {
+            resources.GetString("comboBoxDate.Items"),
+            resources.GetString("comboBoxDate.Items1"),
+            resources.GetString("comboBoxDate.Items2"),
+            resources.GetString("comboBoxDate.Items3"),
+            resources.GetString("comboBoxDate.Items4"),
+            resources.GetString("comboBoxDate.Items5"),
+            resources.GetString("comboBoxDate.Items6"),
+            resources.GetString("comboBoxDate.Items7"),
+            resources.GetString("comboBoxDate.Items8"),
+            resources.GetString("comboBoxDate.Items9"),
+            resources.GetString("comboBoxDate.Items10"),
+            resources.GetString("comboBoxDate.Items11"),
+            resources.GetString("comboBoxDate.Items12"),
+            resources.GetString("comboBoxDate.Items13"),
+            resources.GetString("comboBoxDate.Items14"),
+            resources.GetString("comboBoxDate.Items15"),
+            resources.GetString("comboBoxDate.Items16"),
+            resources.GetString("comboBoxDate.Items17"),
+            resources.GetString("comboBoxDate.Items18"),
+            resources.GetString("comboBoxDate.Items19"),
+            resources.GetString("comboBoxDate.Items20"),
+            resources.GetString("comboBoxDate.Items21"),
+            resources.GetString("comboBoxDate.Items22"),
+            resources.GetString("comboBoxDate.Items23"),
+            resources.GetString("comboBoxDate.Items24"),
+            resources.GetString("comboBoxDate.Items25"),
+            resources.GetString("comboBoxDate.Items26"),
+            resources.GetString("comboBoxDate.Items27"),
+            resources.GetString("comboBoxDate.Items28"),
+            resources.GetString("comboBoxDate.Items29"),
+            resources.GetString("comboBoxDate.Items30")});
+            resources.ApplyResources(this.comboBoxDate, "comboBoxDate");
+            this.comboBoxDate.Name = "comboBoxDate";
+            this.comboBoxDate.SelectedIndexChanged += new System.EventHandler(this.UpdateScheduler);
+            // 
+            // comboBoxDay
+            // 
+            this.comboBoxDay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxDay.FormattingEnabled = true;
+            this.comboBoxDay.Items.AddRange(new object[] {
+            resources.GetString("comboBoxDay.Items"),
+            resources.GetString("comboBoxDay.Items1"),
+            resources.GetString("comboBoxDay.Items2"),
+            resources.GetString("comboBoxDay.Items3"),
+            resources.GetString("comboBoxDay.Items4"),
+            resources.GetString("comboBoxDay.Items5"),
+            resources.GetString("comboBoxDay.Items6")});
+            resources.ApplyResources(this.comboBoxDay, "comboBoxDay");
+            this.comboBoxDay.Name = "comboBoxDay";
+            this.comboBoxDay.SelectedIndexChanged += new System.EventHandler(this.UpdateScheduler);
+            // 
+            // labelDay
+            // 
+            resources.ApplyResources(this.labelDay, "labelDay");
+            this.labelDay.Name = "labelDay";
+            // 
+            // labelTime
+            // 
+            resources.ApplyResources(this.labelTime, "labelTime");
+            this.labelTime.Name = "labelTime";
+            // 
+            // dateTimePickerSched
+            // 
+            this.dateTimePickerSched.Checked = false;
+            resources.ApplyResources(this.dateTimePickerSched, "dateTimePickerSched");
+            this.dateTimePickerSched.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerSched.Name = "dateTimePickerSched";
+            this.dateTimePickerSched.ShowUpDown = true;
+            this.dateTimePickerSched.ValueChanged += new System.EventHandler(this.UpdateScheduler);
+            // 
             // Options
             // 
             this.AcceptButton = this.buttonOK;
@@ -253,6 +428,12 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.groupBoxDesc.ResumeLayout(false);
+            this.groupBoxPerform.ResumeLayout(false);
+            this.groupBoxPerform.PerformLayout();
+            this.groupBoxSchedule.ResumeLayout(false);
+            this.groupBoxSchedule.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -281,5 +462,20 @@
         private System.Windows.Forms.ToolStripMenuItem addRegistryPathToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ListView listViewOptions;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.GroupBox groupBoxPerform;
+        private System.Windows.Forms.RadioButton radioButtonMonthly;
+        private System.Windows.Forms.RadioButton radioButtonWeekly;
+        private System.Windows.Forms.RadioButton radioButtonDaily;
+        private System.Windows.Forms.RadioButton radioButtonNever;
+        private System.Windows.Forms.GroupBox groupBoxSchedule;
+        private System.Windows.Forms.ComboBox comboBoxDate;
+        private System.Windows.Forms.ComboBox comboBoxDay;
+        private System.Windows.Forms.Label labelDay;
+        private System.Windows.Forms.Label labelTime;
+        private System.Windows.Forms.DateTimePicker dateTimePickerSched;
+        private System.Windows.Forms.Label labelDate;
+        private System.Windows.Forms.Label labelDescription;
+        private System.Windows.Forms.GroupBox groupBoxDesc;
     }
 }

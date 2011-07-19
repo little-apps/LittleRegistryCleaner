@@ -24,6 +24,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
+using Common_Tools.TaskScheduler;
 
 namespace Little_Registry_Cleaner
 {
@@ -62,7 +64,14 @@ namespace Little_Registry_Cleaner
             if (Properties.Settings.Default.arrayExcludeList != null)
                 this._arrayExclude = new ExcludeList.ExcludeArray(Properties.Settings.Default.arrayExcludeList);
 
+            this.comboBoxDay.DataSource = Enum.GetValues(typeof(DaysOfTheWeek));
+            this.comboBoxDay.SelectedItem = DaysOfTheWeek.Sunday;
+
+            this.comboBoxDate.SelectedIndex = 0;
+
             PopulateExcludeList();
+
+            GetJobInfo();
         }
 
         private void buttonOK_Click(object sender, EventArgs e)
@@ -85,6 +94,8 @@ namespace Little_Registry_Cleaner
                 Properties.Settings.Default.strOptionsLogDir = this.textBoxLogFolder.Text;
 
             Properties.Settings.Default.arrayExcludeList = new ExcludeList.ExcludeArray(this._arrayExclude);
+
+            SaveJobInfo();
 
             this.Close();
         }
@@ -191,5 +202,167 @@ namespace Little_Registry_Cleaner
             this.listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
         }
         #endregion
+
+        #region Scheduler
+        TaskService ts = new TaskService(); 
+
+        /// <summary>
+        /// Get scheduler info thru job ID
+        /// </summary>
+        private void GetJobInfo()
+        {
+            // Reset controls
+            this.labelDay.Visible = false;
+            this.labelDate.Visible = false;
+            this.labelTime.Visible = false;
+            this.dateTimePickerSched.Visible = false;
+            this.comboBoxDate.Visible = false;
+            this.comboBoxDay.Visible = false;
+
+            using (Task t = ts.GetTask("Little Registry Cleaner"))
+            {
+                if (t == null)
+                {
+                    // Task not found
+                    this.radioButtonNever.Checked = true;
+                    return;
+                }
+
+                TaskDefinition td = t.Definition;
+
+                if (td.Triggers.Count == 0)
+                {
+                    // Task is invalid
+                    this.radioButtonNever.Checked = true;
+                    return;
+                }
+
+                Trigger trigger = td.Triggers[0];
+                if (trigger is DailyTrigger)
+                {
+                    this.radioButtonDaily.Checked = true;
+                    UpdateScheduler(null, new EventArgs());
+
+                    int hour = (trigger as DailyTrigger).StartBoundary.Hour;
+                    int min = (trigger as DailyTrigger).StartBoundary.Minute;
+                    this.dateTimePickerSched.Value = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, hour, min, 0);
+                }
+                else if (trigger is WeeklyTrigger)
+                {
+                    this.radioButtonWeekly.Checked = true;
+                    UpdateScheduler(null, new EventArgs());
+
+                    int hour = (trigger as WeeklyTrigger).StartBoundary.Hour;
+                    int min = (trigger as WeeklyTrigger).StartBoundary.Minute;
+                    this.dateTimePickerSched.Value = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, hour, min, 0);
+
+                    DaysOfTheWeek dow = (trigger as WeeklyTrigger).DaysOfWeek;
+                    this.comboBoxDay.SelectedItem = dow;
+                }
+                else if (trigger is MonthlyTrigger)
+                {
+                    this.radioButtonMonthly.Checked = true;
+                    UpdateScheduler(null, new EventArgs());
+
+                    this.comboBoxDate.SelectedItem = (trigger as MonthlyTrigger).DaysOfMonth[0].ToString();
+
+                    int hour = (trigger as MonthlyTrigger).StartBoundary.Hour;
+                    int min = (trigger as MonthlyTrigger).StartBoundary.Minute;
+                    this.dateTimePickerSched.Value = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, hour, min, 0);
+                }
+            }
+        }
+
+        private void SaveJobInfo()
+        {
+            if (ts.GetTask("Little Registry Cleaner") != null)
+                ts.RootFolder.DeleteTask("Little Registry Cleaner");
+
+            TaskDefinition td = ts.NewTask();
+
+            td.RegistrationInfo.Date = DateTime.Now;
+            td.RegistrationInfo.Description = "Runs a scan with Little Registry Cleaner";
+            td.RegistrationInfo.Source = "Little Registry Cleaner";
+            td.Principal.RunLevel = TaskRunLevel.Highest;
+
+            if (this.radioButtonNever.Checked)
+            {
+                return;
+            }
+            else if (this.radioButtonDaily.Checked)
+            {
+                td.Triggers.Add(new DailyTrigger() { StartBoundary = this.dateTimePickerSched.Value });
+            }
+            else if (this.radioButtonWeekly.Checked)
+            {
+                DaysOfTheWeek dow = (DaysOfTheWeek)this.comboBoxDay.SelectedItem;
+
+                td.Triggers.Add(new WeeklyTrigger(dow) { StartBoundary = this.dateTimePickerSched.Value });
+            }
+            else if (this.radioButtonMonthly.Checked)
+            {
+                int dom = Convert.ToInt32(this.comboBoxDate.SelectedItem);
+
+                td.Triggers.Add(new MonthlyTrigger(dom) { StartBoundary = this.dateTimePickerSched.Value });
+            }
+
+            td.Actions.Add(new ExecAction(Application.ExecutablePath, "/scan"));
+
+            ts.RootFolder.RegisterTaskDefinition("Little Registry Cleaner", td);
+        }
+
+        private void UpdateScheduler(object sender, EventArgs e)
+        {
+            // Reset controls
+            this.labelDay.Visible = false;
+            this.labelDate.Visible = false;
+            this.labelTime.Visible = false;
+            this.dateTimePickerSched.Visible = false;
+            this.comboBoxDate.Visible = false;
+            this.comboBoxDay.Visible = false;
+
+            if (this.radioButtonNever.Checked)
+            {
+                this.groupBoxSchedule.Visible = false;
+                this.groupBoxDesc.Visible = false;
+
+                this.labelDescription.Text = "";
+            }
+            else if (this.radioButtonDaily.Checked)
+            {
+                this.groupBoxSchedule.Visible = true;
+                this.groupBoxDesc.Visible = true;
+                this.labelTime.Visible = true;
+                this.dateTimePickerSched.Visible = true;
+
+                this.labelDescription.Text = string.Format(Properties.Resources.optionsSchedDescD, this.dateTimePickerSched.Value.ToShortTimeString());
+            }
+            else if (this.radioButtonWeekly.Checked)
+            {
+                this.groupBoxSchedule.Visible = true;
+                this.labelTime.Visible = true;
+                this.dateTimePickerSched.Visible = true;
+                this.labelDay.Visible = true;
+                this.comboBoxDay.Visible = true;
+                this.groupBoxDesc.Visible = true;
+
+                this.labelDescription.Text = string.Format(Properties.Resources.optionsSchedDescW, this.comboBoxDay.SelectedItem, this.dateTimePickerSched.Value.ToShortTimeString());
+            }
+            else if (this.radioButtonMonthly.Checked)
+            {
+                this.groupBoxSchedule.Visible = true;
+                this.labelTime.Visible = true;
+                this.dateTimePickerSched.Visible = true;
+                this.labelDate.Visible = true;
+                this.comboBoxDate.Visible = true;
+                this.groupBoxDesc.Visible = true;
+
+                string numSuffix = Utils.GetNumberSuffix(Convert.ToInt32(this.comboBoxDate.SelectedItem));
+                this.labelDescription.Text = string.Format(Properties.Resources.optionsSchedDescM, numSuffix, this.dateTimePickerSched.Value.ToShortTimeString());
+            }
+        }
+        #endregion
+
+        
     }
 }
