@@ -18,7 +18,7 @@
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="strBugReportAddr" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">http://littleapps.co.cc/bugreport.php</Value>
+      <Value Profile="(Default)">http://www.little-apps.org/bugreport.php</Value>
     </Setting>
     <Setting Name="bOptionsAutoUpdate" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
@@ -52,6 +52,9 @@
     </Setting>
     <Setting Name="nOptionsTaskPerform" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="bOptionsStats" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
     </Setting>
   </Settings>
 </SettingsFile>

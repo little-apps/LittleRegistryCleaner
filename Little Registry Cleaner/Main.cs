@@ -34,6 +34,7 @@ using Little_Registry_Cleaner.Xml;
 using Common_Tools;
 using Common_Tools.TreeViewAdv.Tree;
 using Microsoft.Win32;
+using Common_Tools.DeskMetrics;
 
 namespace Little_Registry_Cleaner
 {
@@ -63,6 +64,12 @@ namespace Little_Registry_Cleaner
 
         private TreeModel treeModel = new TreeModel();
 
+        private static Watcher _watcher = new Watcher();
+        public static Watcher Watcher
+        {
+            get { return _watcher; }
+        }
+
         private static Logger _logger;
         public static Logger Logger
         {
@@ -79,6 +86,9 @@ namespace Little_Registry_Cleaner
         /// </summary>
         private void ScanRegistry()
         {
+            // Send usage data to DeskMetrics
+            Watcher.TrackEvent("Functions", "Scan Registry");
+
             // Clear old results
             this.treeModel.Nodes.Clear();
 
@@ -159,6 +169,9 @@ namespace Little_Registry_Cleaner
                         return;
                 }
 
+                // Send usage data to DeskMetrics
+                Watcher.TrackEvent("Functions", "Fix Problems");
+
                 // Create Restore Point
                 SysRestore.StartRestore("Before Little Registry Cleaner Registry Fix", out lSeqNum);
 
@@ -230,6 +243,10 @@ namespace Little_Registry_Cleaner
 
         private void Main_Shown(object sender, EventArgs e)
         {
+            // Send usage data to DeskMetrics
+            Watcher.Enabled = Properties.Settings.Default.bOptionsStats;
+            Watcher.Start("4e5485f1a14ad74c01000001", Application.ProductVersion);
+
             // Expand all sections
             this.treeView1.Nodes[0].ExpandAll();
 
@@ -340,6 +357,9 @@ namespace Little_Registry_Cleaner
                 if (MessageBox.Show(this, Properties.Resources.mainAskExit, Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
                     e.Cancel = true;
             }
+
+            if (!e.Cancel)
+                Watcher.Stop();
         }
 
         protected override void WndProc(ref Message m)
@@ -490,23 +510,6 @@ namespace Little_Registry_Cleaner
 
         private void ScanRegistry(object sender, EventArgs e)
         {
-            //BadRegistryKey rootNode = new BadRegistryKey();
-
-            //StringBuilder randText = new StringBuilder(300);
-
-            //for (int i = 300; i > 0; i--)
-            //    randText.Append('a');
-
-            //for (int i = 1000; i > 0; i--)
-            //    rootNode.Nodes.Add(new BadRegistryKey(randText.ToString(), "test", "test", "test"));
-
-            //this.treeModel.Nodes.Add(rootNode);
-
-            //this.treeViewAdvResults.ExpandAll();
-            ////this.treeViewAdvResults.AutoSizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
-
-            //return;
-
             ScanRegistry();
         }
 
@@ -567,11 +570,17 @@ namespace Little_Registry_Cleaner
 
         private void StartupManager(object sender, EventArgs e)
         {
+            // Send event data to DeskMetrics
+            Watcher.TrackEvent("Application", "Startup Manager");
+
             Process.Start("Little Startup Manager.exe", @"/culture:" + Thread.CurrentThread.CurrentUICulture.LCID.ToString()).WaitForExit();
         }
 
         private void UninstallManager(object sender, EventArgs e)
         {
+            // Send event data to DeskMetrics
+            Watcher.TrackEvent("Application", "Uninstall Manager");
+
             Process.Start("Little Uninstall Manager.exe", @"/culture:" + Thread.CurrentThread.CurrentUICulture.LCID.ToString()).WaitForExit();
         }
         #endregion

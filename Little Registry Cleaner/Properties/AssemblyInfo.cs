@@ -9,7 +9,7 @@ using System.Resources;
 [assembly: AssemblyTitle("Little Registry Cleaner")]
 [assembly: AssemblyDescription("Free and open source program that is designed to cleanup Microsoft Windows Registry")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Little Apps (http://www.little-apps.org)")]
+[assembly: AssemblyCompany("Little Apps")]
 [assembly: AssemblyProduct("Little Registry Cleaner")]
 [assembly: AssemblyCopyright("Copyright © Little Apps 2008-2011")]
 [assembly: AssemblyTrademark("")]

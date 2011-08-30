@@ -171,7 +171,6 @@ namespace Little_Uninstall_Manager
                 this.textBoxSearch.ForeColor = SystemColors.GrayText;
                 this.textBoxSearch.Text = Properties.Resources.umSearchText;
             }
-
         }
 
         private void UninstallProgram()

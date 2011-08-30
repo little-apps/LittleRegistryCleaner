@@ -60,155 +60,6 @@ namespace Common_Tools.Properties {
             }
         }
         
-        internal static System.Drawing.Bitmap check {
-            get {
-                object obj = ResourceManager.GetObject("check", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap collsplit {
-            get {
-                object obj = ResourceManager.GetObject("collsplit", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static byte[] DVSplit {
-            get {
-                object obj = ResourceManager.GetObject("DVSplit", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap Folder {
-            get {
-                object obj = ResourceManager.GetObject("Folder", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap FolderClosed {
-            get {
-                object obj = ResourceManager.GetObject("FolderClosed", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap Leaf {
-            get {
-                object obj = ResourceManager.GetObject("Leaf", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap listview {
-            get {
-                object obj = ResourceManager.GetObject("listview", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static byte[] loading_icon {
-            get {
-                object obj = ResourceManager.GetObject("loading_icon", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap minus {
-            get {
-                object obj = ResourceManager.GetObject("minus", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Error removing registry key:.
-        /// </summary>
-        internal static string piErrorRegKey {
-            get {
-                return ResourceManager.GetString("piErrorRegKey", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Error uninstalling program:.
-        /// </summary>
-        internal static string piErrorUninstalling {
-            get {
-                return ResourceManager.GetString("piErrorUninstalling", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Unable to find uninstall string. Would you like to manually remove it from the registry?.
-        /// </summary>
-        internal static string piInvalidUninstallString {
-            get {
-                return ResourceManager.GetString("piInvalidUninstallString", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sucessfully removed registry key.
-        /// </summary>
-        internal static string piSuccessRegKey {
-            get {
-                return ResourceManager.GetString("piSuccessRegKey", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sucessfully uninstalled program.
-        /// </summary>
-        internal static string piSuccessUninstall {
-            get {
-                return ResourceManager.GetString("piSuccessUninstall", resourceCulture);
-            }
-        }
-        
-        internal static System.Drawing.Bitmap plus {
-            get {
-                object obj = ResourceManager.GetObject("plus", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap treeview {
-            get {
-                object obj = ResourceManager.GetObject("treeview", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap tv_minus {
-            get {
-                object obj = ResourceManager.GetObject("tv_minus", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap tv_plus {
-            get {
-                object obj = ResourceManager.GetObject("tv_plus", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap uncheck {
-            get {
-                object obj = ResourceManager.GetObject("uncheck", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        internal static System.Drawing.Bitmap unknown {
-            get {
-                object obj = ResourceManager.GetObject("unknown", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
         /// <summary>
         ///   Looks up a localized string similar to Call a COM object.
         /// </summary>
@@ -242,6 +93,20 @@ namespace Common_Tools.Properties {
         internal static string ActionTypeShowMessage {
             get {
                 return ResourceManager.GetString("ActionTypeShowMessage", resourceCulture);
+            }
+        }
+        
+        internal static System.Drawing.Bitmap check {
+            get {
+                object obj = ResourceManager.GetObject("check", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap collsplit {
+            get {
+                object obj = ResourceManager.GetObject("collsplit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -326,6 +191,13 @@ namespace Common_Tools.Properties {
             }
         }
         
+        internal static byte[] DVSplit {
+            get {
+                object obj = ResourceManager.GetObject("DVSplit", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
         /// <summary>
         ///   Looks up a localized string similar to {1} {0}.
         /// </summary>
@@ -353,12 +225,54 @@ namespace Common_Tools.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap Folder {
+            get {
+                object obj = ResourceManager.GetObject("Folder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap FolderClosed {
+            get {
+                object obj = ResourceManager.GetObject("FolderClosed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap Leaf {
+            get {
+                object obj = ResourceManager.GetObject("Leaf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         /// <summary>
         ///   Looks up a localized string similar to , .
         /// </summary>
         internal static string ListSeparator {
             get {
                 return ResourceManager.GetString("ListSeparator", resourceCulture);
+            }
+        }
+        
+        internal static System.Drawing.Bitmap listview {
+            get {
+                object obj = ResourceManager.GetObject("listview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static byte[] loading_icon {
+            get {
+                object obj = ResourceManager.GetObject("loading_icon", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap minus {
+            get {
+                object obj = ResourceManager.GetObject("minus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -498,6 +412,58 @@ namespace Common_Tools.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Error removing registry key:.
+        /// </summary>
+        internal static string piErrorRegKey {
+            get {
+                return ResourceManager.GetString("piErrorRegKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error uninstalling program:.
+        /// </summary>
+        internal static string piErrorUninstalling {
+            get {
+                return ResourceManager.GetString("piErrorUninstalling", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unable to find uninstall string. Would you like to manually remove it from the registry?.
+        /// </summary>
+        internal static string piInvalidUninstallString {
+            get {
+                return ResourceManager.GetString("piInvalidUninstallString", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sucessfully removed registry key.
+        /// </summary>
+        internal static string piSuccessRegKey {
+            get {
+                return ResourceManager.GetString("piSuccessRegKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sucessfully uninstalled program.
+        /// </summary>
+        internal static string piSuccessUninstall {
+            get {
+                return ResourceManager.GetString("piSuccessUninstall", resourceCulture);
+            }
+        }
+        
+        internal static System.Drawing.Bitmap plus {
+            get {
+                object obj = ResourceManager.GetObject("plus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {0}.
         /// </summary>
         internal static string ShowMessageAction {
@@ -557,6 +523,13 @@ namespace Common_Tools.Properties {
         internal static string TaskStateUnknown {
             get {
                 return ResourceManager.GetString("TaskStateUnknown", resourceCulture);
+            }
+        }
+        
+        internal static System.Drawing.Bitmap treeview {
+            get {
+                object obj = ResourceManager.GetObject("treeview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -899,6 +872,34 @@ namespace Common_Tools.Properties {
         internal static string TriggerWeeklyMultWeeks {
             get {
                 return ResourceManager.GetString("TriggerWeeklyMultWeeks", resourceCulture);
+            }
+        }
+        
+        internal static System.Drawing.Bitmap tv_minus {
+            get {
+                object obj = ResourceManager.GetObject("tv_minus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap tv_plus {
+            get {
+                object obj = ResourceManager.GetObject("tv_plus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap uncheck {
+            get {
+                object obj = ResourceManager.GetObject("uncheck", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap unknown {
+            get {
+                object obj = ResourceManager.GetObject("unknown", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

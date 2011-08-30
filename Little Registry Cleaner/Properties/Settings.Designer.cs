@@ -85,7 +85,7 @@ namespace Little_Registry_Cleaner.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://littleapps.co.cc/bugreport.php")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://www.little-apps.org/bugreport.php")]
         public string strBugReportAddr {
             get {
                 return ((string)(this["strBugReportAddr"]));
@@ -215,6 +215,18 @@ namespace Little_Registry_Cleaner.Properties {
             }
             set {
                 this["nOptionsTaskPerform"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool bOptionsStats {
+            get {
+                return ((bool)(this["bOptionsStats"]));
+            }
+            set {
+                this["bOptionsStats"] = value;
             }
         }
     }

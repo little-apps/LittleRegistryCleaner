@@ -68,10 +68,42 @@
     <Reference Include="System.Design" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DeskMetricsNET\Json\BaseJson.cs" />
+    <Compile Include="DeskMetricsNET\Json\CustomDataJson.cs" />
+    <Compile Include="DeskMetricsNET\Json\CustomDataR.cs" />
+    <Compile Include="DeskMetricsNET\Json\EventJson.cs" />
+    <Compile Include="DeskMetricsNET\Json\EventPeriodJson.cs" />
+    <Compile Include="DeskMetricsNET\Json\EventValueJson.cs" />
+    <Compile Include="DeskMetricsNET\Json\ExceptionJson.cs" />
+    <Compile Include="DeskMetricsNET\Json\InstallJson.cs" />
+    <Compile Include="DeskMetricsNET\Json\Json.cs" />
+    <Compile Include="DeskMetricsNET\Json\JsonBuilder.cs" />
+    <Compile Include="DeskMetricsNET\Json\LogJson.cs" />
+    <Compile Include="DeskMetricsNET\Json\StartAppJson.cs" />
+    <Compile Include="DeskMetricsNET\Json\StopAppJson.cs" />
+    <Compile Include="DeskMetricsNET\Json\UninstallJson.cs" />
+    <Compile Include="DeskMetricsNET\OperatingSystem\Hardware\HardwareFactory.cs" />
+    <Compile Include="DeskMetricsNET\OperatingSystem\Hardware\IHardware.cs" />
+    <Compile Include="DeskMetricsNET\OperatingSystem\Hardware\MacOSXHadware.cs" />
+    <Compile Include="DeskMetricsNET\OperatingSystem\Hardware\UnixHardware.cs" />
+    <Compile Include="DeskMetricsNET\OperatingSystem\Hardware\WindowsHardware.cs" />
+    <Compile Include="DeskMetricsNET\OperatingSystem\IOperatingSystem.cs" />
+    <Compile Include="DeskMetricsNET\OperatingSystem\MacOSXOperatingSystem.cs" />
+    <Compile Include="DeskMetricsNET\OperatingSystem\OperatingSystemFactory.cs" />
+    <Compile Include="DeskMetricsNET\OperatingSystem\UnixOperatingSystem.cs" />
+    <Compile Include="DeskMetricsNET\OperatingSystem\WindowsOperatingSystem.cs" />
+    <Compile Include="DeskMetricsNET\Watcher\Cache.cs" />
+    <Compile Include="DeskMetricsNET\Watcher\CurrentUser.cs" />
+    <Compile Include="DeskMetricsNET\Watcher\EventType.cs" />
+    <Compile Include="DeskMetricsNET\Watcher\Services.cs" />
+    <Compile Include="DeskMetricsNET\Watcher\Settings.cs" />
+    <Compile Include="DeskMetricsNET\Watcher\Util.cs" />
+    <Compile Include="DeskMetricsNET\Watcher\Watcher.cs" />
     <Compile Include="DetailsRegKey.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,11 +116,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="TaskScheduler\Action.cs" />
     <Compile Include="TaskScheduler\ActionCollection.cs" />
@@ -235,11 +262,9 @@
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
+    <Content Include="DeskMetricsNET\LICENSE.txt" />
     <None Include="Little Registry Cleaner.snk" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="DetailsRegKey.resx">
@@ -287,6 +312,7 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>IF EXIST $(TargetPath) DELETE $(TargetPath)</PreBuildEvent>

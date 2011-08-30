@@ -376,7 +376,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 + Version 1.4.2 Released
 
-- The DangerousGetHandle() in getRegistryHandle() is no longer casted to IntPtr (Thanks to VSeven)
 - Now compatible with Microsoft Windows Restart Manager
 - Updated Spanish Translations (Thanks to Fitoschido)
 - Updated German Translations (Thanks to Chris G)
@@ -388,3 +387,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Upgraded to Microsoft .NET Framework v4
 - Uninstall & Startup Manager are now seperate executables
 - Details window is no longer displayed when a parent node is double clicked
+- Implemented task scheduler to schedule registry scans
+- Registry scans can be started by specifying "/scan" argument
+- Integrated DeskMetrics into Little Registry Cleaner

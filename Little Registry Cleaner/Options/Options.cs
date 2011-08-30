@@ -46,15 +46,16 @@ namespace Little_Registry_Cleaner
         private void Options_Load(object sender, EventArgs e)
         {
             // Load settings
-            this.listViewOptions.Items[0].Checked = Properties.Settings.Default.bOptionsLog;
-            this.listViewOptions.Items[1].Checked = Properties.Settings.Default.bOptionsRescan;
-            this.listViewOptions.Items[2].Checked = Properties.Settings.Default.bOptionsAutoUpdate;
-            this.listViewOptions.Items[3].Checked = Properties.Settings.Default.bOptionsRestore;
-            this.listViewOptions.Items[4].Checked = Properties.Settings.Default.bOptionsShowLog;
-            this.listViewOptions.Items[5].Checked = Properties.Settings.Default.bOptionsDelBackup;
-            this.listViewOptions.Items[6].Checked = Properties.Settings.Default.bOptionsRemMedia;
-            this.listViewOptions.Items[7].Checked = Properties.Settings.Default.bOptionsAutoRepair;
-            this.listViewOptions.Items[8].Checked = Properties.Settings.Default.bOptionsAutoExit; 
+            this.listViewOptions.Items[0].Checked = Properties.Settings.Default.bOptionsStats;
+            this.listViewOptions.Items[1].Checked = Properties.Settings.Default.bOptionsLog;
+            this.listViewOptions.Items[2].Checked = Properties.Settings.Default.bOptionsRescan;
+            this.listViewOptions.Items[3].Checked = Properties.Settings.Default.bOptionsAutoUpdate;
+            this.listViewOptions.Items[4].Checked = Properties.Settings.Default.bOptionsRestore;
+            this.listViewOptions.Items[5].Checked = Properties.Settings.Default.bOptionsShowLog;
+            this.listViewOptions.Items[6].Checked = Properties.Settings.Default.bOptionsDelBackup;
+            this.listViewOptions.Items[7].Checked = Properties.Settings.Default.bOptionsRemMedia;
+            this.listViewOptions.Items[8].Checked = Properties.Settings.Default.bOptionsAutoRepair;
+            this.listViewOptions.Items[9].Checked = Properties.Settings.Default.bOptionsAutoExit; 
 
             // Load backup directorys
             this.textBoxBackupFolder.Text = Properties.Settings.Default.strOptionsBackupDir;
@@ -77,15 +78,19 @@ namespace Little_Registry_Cleaner
         private void buttonOK_Click(object sender, EventArgs e)
         {
             // Update settings
-            Properties.Settings.Default.bOptionsLog = this.listViewOptions.Items[0].Checked;
-            Properties.Settings.Default.bOptionsRescan = this.listViewOptions.Items[1].Checked;
-            Properties.Settings.Default.bOptionsAutoUpdate = this.listViewOptions.Items[2].Checked;
-            Properties.Settings.Default.bOptionsRestore = this.listViewOptions.Items[3].Checked;
-            Properties.Settings.Default.bOptionsShowLog = this.listViewOptions.Items[4].Checked;
-            Properties.Settings.Default.bOptionsDelBackup = this.listViewOptions.Items[5].Checked;
-            Properties.Settings.Default.bOptionsRemMedia = this.listViewOptions.Items[6].Checked;
-            Properties.Settings.Default.bOptionsAutoRepair = this.listViewOptions.Items[7].Checked;
-            Properties.Settings.Default.bOptionsAutoExit = this.listViewOptions.Items[8].Checked;
+            Properties.Settings.Default.bOptionsStats = this.listViewOptions.Items[0].Checked;
+            Properties.Settings.Default.bOptionsLog = this.listViewOptions.Items[1].Checked;
+            Properties.Settings.Default.bOptionsRescan = this.listViewOptions.Items[2].Checked;
+            Properties.Settings.Default.bOptionsAutoUpdate = this.listViewOptions.Items[3].Checked;
+            Properties.Settings.Default.bOptionsRestore = this.listViewOptions.Items[4].Checked;
+            Properties.Settings.Default.bOptionsShowLog = this.listViewOptions.Items[5].Checked;
+            Properties.Settings.Default.bOptionsDelBackup = this.listViewOptions.Items[6].Checked;
+            Properties.Settings.Default.bOptionsRemMedia = this.listViewOptions.Items[7].Checked;
+            Properties.Settings.Default.bOptionsAutoRepair = this.listViewOptions.Items[8].Checked;
+            Properties.Settings.Default.bOptionsAutoExit = this.listViewOptions.Items[9].Checked;
+
+            if (Main.Watcher.Enabled != Properties.Settings.Default.bOptionsStats)
+                Main.Watcher.Enabled = Properties.Settings.Default.bOptionsStats;
 
             if (this.textBoxBackupFolder.Text != Properties.Settings.Default.strOptionsBackupDir)
                 Properties.Settings.Default.strOptionsBackupDir = this.textBoxBackupFolder.Text;

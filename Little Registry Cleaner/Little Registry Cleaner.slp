@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.1.317" date="20110719004427" scan="64" scanned="20110719001843">
+<document version="2.1.321" date="20110829212355" scan="67" scanned="20110829211720">
   <lang id="ar"/>
   <lang id="zh"/>
   <lang id="zh.tra" ime="imOn"/>
@@ -21,7 +21,7 @@
   <lang id="th"/>
   <lang id="tr"/>
   <lang id="vi"/>
-  <source class="TVisualStudioNetProjectSource" name="..\Little Startup Manager\Little Startup Manager.csproj" original="en" date="20110619071830" defaultoutputdir="bin\Debug" configuration="Debug|x86" netversion="net40" toolsversion="net40" rootnamespace="Little_Startup_Manager">
+  <source class="TVisualStudioNetProjectSource" name="..\Little Startup Manager\Little Startup Manager.csproj" original="en" date="20110722062150" defaultoutputdir="bin\Debug" configuration="Debug|x86" netversion="net40" toolsversion="net40" rootnamespace="Little_Startup_Manager">
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TColorData</class>
@@ -811,7 +811,7 @@
             <row id="Location.Y" state="0">0</row>
             <row id="Size.Height" state="0">436</row>
             <row id="Size.Width" state="0">717</row>
-            <row id="Text">
+            <row id="Text" excluded="1">
               <native>toolStripContainer1</native>
               <lang id="ar" status="2">toolStripContainer1</lang>
               <lang id="zh" status="2">toolStripContainer1</lang>
@@ -837,7 +837,7 @@
             </row>
           </component>
           <component class="TVisPanel" name="toolStripContainer1" state="1" type="System.Windows.Forms.ToolStripContainer">
-            <row id="Text" excluded="1" state="1">
+            <row id="Text" state="1">
               <native>toolStripContainer1</native>
               <lang id="ar" status="2">toolStripContainer1</lang>
               <lang id="zh" status="2">toolStripContainer1</lang>
@@ -1584,29 +1584,30 @@
     </node>
     <node class="TWindowsVersionFolder" name="Versions" resid="16">
       <node class="TWindowsVersionNode" name="1" resid="1">
-        <row id="Assembly Version">
-          <native>1.0.0.0</native>
-          <lang id="ar" status="2">1.0.0.0</lang>
-          <lang id="zh" status="2">1.0.0.0</lang>
-          <lang id="zh.tra" status="2">1.0.0.0</lang>
-          <lang id="nl" status="2">1.0.0.0</lang>
-          <lang id="en" status="2">1.0.0.0</lang>
-          <lang id="fr" status="2">1.0.0.0</lang>
-          <lang id="de" status="2">1.0.0.0</lang>
-          <lang id="el" status="2">1.0.0.0</lang>
-          <lang id="hu" status="2">1.0.0.0</lang>
-          <lang id="it" status="2">1.0.0.0</lang>
-          <lang id="ja" status="2">1.0.0.0</lang>
-          <lang id="lt" status="2">1.0.0.0</lang>
-          <lang id="pl" status="2">1.0.0.0</lang>
-          <lang id="fa" status="2">1.0.0.0</lang>
-          <lang id="pt" status="2">1.0.0.0</lang>
-          <lang id="ru" status="2">1.0.0.0</lang>
-          <lang id="es" status="2">1.0.0.0</lang>
-          <lang id="sv-SE" status="2">1.0.0.0</lang>
-          <lang id="th" status="2">1.0.0.0</lang>
-          <lang id="tr" status="2">1.0.0.0</lang>
-          <lang id="vi" status="2">1.0.0.0</lang>
+        <row id="Assembly Version" state="3">
+          <prev>1.0.0.0</prev>
+          <native>1.0.4258.36103</native>
+          <lang id="ar" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="zh" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="zh.tra" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="nl" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="en" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="fr" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="de" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="el" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="hu" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="it" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="ja" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="lt" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="pl" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="fa" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="pt" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="ru" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="es" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="sv-SE" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="th" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="tr" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="vi" invalidated="1" status="2">1.0.0.0</lang>
         </row>
         <row id="Comments">
           <native>Manage files that start with your computer</native>
@@ -1643,13 +1644,13 @@
           <lang id="de" status="2">Kleine Apps</lang>
           <lang id="el" status="2">Μικρή Apps</lang>
           <lang id="hu" status="2">Kis Apps</lang>
-          <lang id="it" status="2">Applicazioni poco</lang>
+          <lang id="it" status="3">Applicazioni Little</lang>
           <lang id="ja" status="2">リトルアプリ</lang>
-          <lang id="lt" status="2">Mažasis programos</lang>
+          <lang id="lt" status="3">Mažasis Apps</lang>
           <lang id="pl" status="2">Mała Apps</lang>
-          <lang id="fa" status="2">نرم افزار کوچک</lang>
+          <lang id="fa" status="3">نرم افزار کوچک </lang>
           <lang id="pt" status="2">Apps pouco</lang>
-          <lang id="ru" status="2">Маленькая приложения</lang>
+          <lang id="ru" status="3">Маленькая Apps</lang>
           <lang id="es" status="2">Aplicaciones poco</lang>
           <lang id="sv-SE" status="2">Little Apps</lang>
           <lang id="th" status="2">Apps ลิตเติ้ล</lang>
@@ -1680,29 +1681,30 @@
           <lang id="tr" status="2">Küçük Başlangıç ​​Yöneticisi</lang>
           <lang id="vi" status="2">Ít Startup Manager</lang>
         </row>
-        <row id="FileVersion">
-          <native>1.0.0.0</native>
-          <lang id="ar" status="2">1.0.0.0</lang>
-          <lang id="zh" status="2">1.0.0.0</lang>
-          <lang id="zh.tra" status="2">1.0.0.0</lang>
-          <lang id="nl" status="2">1.0.0.0</lang>
-          <lang id="en" status="2">1.0.0.0</lang>
-          <lang id="fr" status="2">1.0.0.0</lang>
-          <lang id="de" status="2">1.0.0.0</lang>
-          <lang id="el" status="2">1.0.0.0</lang>
-          <lang id="hu" status="2">1.0.0.0</lang>
-          <lang id="it" status="2">1.0.0.0</lang>
-          <lang id="ja" status="2">1.0.0.0</lang>
-          <lang id="lt" status="2">1.0.0.0</lang>
-          <lang id="pl" status="2">1.0.0.0</lang>
-          <lang id="fa" status="2">1.0.0.0</lang>
-          <lang id="pt" status="2">1.0.0.0</lang>
-          <lang id="ru" status="2">1.0.0.0</lang>
-          <lang id="es" status="2">1.0.0.0</lang>
-          <lang id="sv-SE" status="2">1.0.0.0</lang>
-          <lang id="th" status="2">1.0.0.0</lang>
-          <lang id="tr" status="2">1.0.0.0</lang>
-          <lang id="vi" status="2">1.0.0.0</lang>
+        <row id="FileVersion" state="3">
+          <prev>1.0.0.0</prev>
+          <native>1.0</native>
+          <lang id="ar" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="zh" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="zh.tra" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="nl" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="en" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="fr" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="de" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="el" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="hu" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="it" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="ja" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="lt" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="pl" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="fa" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="pt" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="ru" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="es" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="sv-SE" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="th" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="tr" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="vi" invalidated="1" status="2">1.0.0.0</lang>
         </row>
         <row id="FileVersion[1]" class="TIntegerRow">1</row>
         <row id="FileVersion[2]" class="TIntegerRow">0</row>
@@ -1780,53 +1782,55 @@
           <lang id="tr" status="2">Küçük Başlangıç ​​Manager.exe</lang>
           <lang id="vi" status="2">Ít Startup Manager.exe</lang>
         </row>
-        <row id="ProductName">
-          <native>Little Startup Manager</native>
-          <lang id="ar" status="2">يذكر مدير بدء التشغيل</lang>
-          <lang id="zh" status="2">小启动管理器</lang>
-          <lang id="zh.tra" status="2">小啟動管理器</lang>
-          <lang id="nl" status="2">Weinig StartManager</lang>
-          <lang id="en" status="2">Little Startup Manager</lang>
-          <lang id="fr" status="2">Petite Startup Manager</lang>
-          <lang id="de" status="2">Kleine Startup Manager</lang>
-          <lang id="el" status="2">Μικρή Startup Manager</lang>
-          <lang id="hu" status="2">Kis Startup Manager</lang>
-          <lang id="it" status="2">Poco Startup Manager</lang>
-          <lang id="ja" status="2">リトルスタートアップマネージャ</lang>
-          <lang id="lt" status="2">Mažasis paleisties vadovas</lang>
-          <lang id="pl" status="2">Mała Startup Manager</lang>
-          <lang id="fa" status="2">مدیر راه اندازی کوچک</lang>
-          <lang id="pt" status="2">Gerenciador de Inicialização pouco</lang>
-          <lang id="ru" status="2">Маленькая Startup Manager</lang>
-          <lang id="es" status="2">Gestor de arranque poco</lang>
-          <lang id="sv-SE" status="2">Little Startup Manager</lang>
-          <lang id="th" status="2">ผู้จัดการการเริ่มต้นเล็ก ๆ น้อย ๆ</lang>
-          <lang id="tr" status="2">Küçük Başlangıç ​​Yöneticisi</lang>
-          <lang id="vi" status="2">Ít Startup Manager</lang>
+        <row id="ProductName" state="3">
+          <prev>Little Startup Manager</prev>
+          <native>Little Registry Cleaner</native>
+          <lang id="ar" invalidated="1" status="2">يذكر مدير بدء التشغيل</lang>
+          <lang id="zh" invalidated="1" status="2">小启动管理器</lang>
+          <lang id="zh.tra" invalidated="1" status="2">小啟動管理器</lang>
+          <lang id="nl" invalidated="1" status="2">Weinig StartManager</lang>
+          <lang id="en" invalidated="1" status="2">Little Startup Manager</lang>
+          <lang id="fr" invalidated="1" status="2">Petite Startup Manager</lang>
+          <lang id="de" invalidated="1" status="2">Kleine Startup Manager</lang>
+          <lang id="el" invalidated="1" status="2">Μικρή Startup Manager</lang>
+          <lang id="hu" invalidated="1" status="2">Kis Startup Manager</lang>
+          <lang id="it" invalidated="1" status="2">Poco Startup Manager</lang>
+          <lang id="ja" invalidated="1" status="2">リトルスタートアップマネージャ</lang>
+          <lang id="lt" invalidated="1" status="2">Mažasis paleisties vadovas</lang>
+          <lang id="pl" invalidated="1" status="2">Mała Startup Manager</lang>
+          <lang id="fa" invalidated="1" status="2">مدیر راه اندازی کوچک</lang>
+          <lang id="pt" invalidated="1" status="2">Gerenciador de Inicialização pouco</lang>
+          <lang id="ru" invalidated="1" status="2">Маленькая Startup Manager</lang>
+          <lang id="es" invalidated="1" status="2">Gestor de arranque poco</lang>
+          <lang id="sv-SE" invalidated="1" status="2">Little Startup Manager</lang>
+          <lang id="th" invalidated="1" status="2">ผู้จัดการการเริ่มต้นเล็ก ๆ น้อย ๆ</lang>
+          <lang id="tr" invalidated="1" status="2">Küçük Başlangıç ​​Yöneticisi</lang>
+          <lang id="vi" invalidated="1" status="2">Ít Startup Manager</lang>
         </row>
-        <row id="ProductVersion">
-          <native>1.0.0.0</native>
-          <lang id="ar" status="2">1.0.0.0</lang>
-          <lang id="zh" status="2">1.0.0.0</lang>
-          <lang id="zh.tra" status="2">1.0.0.0</lang>
-          <lang id="nl" status="2">1.0.0.0</lang>
-          <lang id="en" status="2">1.0.0.0</lang>
-          <lang id="fr" status="2">1.0.0.0</lang>
-          <lang id="de" status="2">1.0.0.0</lang>
-          <lang id="el" status="2">1.0.0.0</lang>
-          <lang id="hu" status="2">1.0.0.0</lang>
-          <lang id="it" status="2">1.0.0.0</lang>
-          <lang id="ja" status="2">1.0.0.0</lang>
-          <lang id="lt" status="2">1.0.0.0</lang>
-          <lang id="pl" status="2">1.0.0.0</lang>
-          <lang id="fa" status="2">1.0.0.0</lang>
-          <lang id="pt" status="2">1.0.0.0</lang>
-          <lang id="ru" status="2">1.0.0.0</lang>
-          <lang id="es" status="2">1.0.0.0</lang>
-          <lang id="sv-SE" status="2">1.0.0.0</lang>
-          <lang id="th" status="2">1.0.0.0</lang>
-          <lang id="tr" status="2">1.0.0.0</lang>
-          <lang id="vi" status="2">1.0.0.0</lang>
+        <row id="ProductVersion" state="3">
+          <prev>1.0.0.0</prev>
+          <native>1.0</native>
+          <lang id="ar" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="zh" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="zh.tra" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="nl" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="en" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="fr" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="de" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="el" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="hu" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="it" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="ja" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="lt" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="pl" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="fa" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="pt" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="ru" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="es" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="sv-SE" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="th" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="tr" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="vi" invalidated="1" status="2">1.0.0.0</lang>
         </row>
         <row id="ProductVersion[1]" class="TIntegerRow">1</row>
         <row id="ProductVersion[2]" class="TIntegerRow">0</row>
@@ -1835,7 +1839,7 @@
       </node>
     </node>
   </source>
-  <source class="TVisualStudioNetProjectSource" name="..\Little Uninstall Manager\Little Uninstall Manager.csproj" original="en" encoding="" date="20110708052550" defaultoutputdir="bin\Debug" configuration="Debug|x86" netversion="net40" toolsversion="net40" rootnamespace="Little_Uninstall_Manager">
+  <source class="TVisualStudioNetProjectSource" name="..\Little Uninstall Manager\Little Uninstall Manager.csproj" original="en" encoding="" date="20110722062318" defaultoutputdir="bin\Debug" configuration="Debug|x86" netversion="net40" toolsversion="net40" rootnamespace="Little_Uninstall_Manager">
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TColorData</class>
@@ -2262,56 +2266,133 @@
     </node>
     <node class="TWindowsVersionFolder" name="Versions" resid="16">
       <node class="TWindowsVersionNode" name="1" resid="1">
-        <row id="Assembly Version">
-          <native>0.0.0.0</native>
-          <lang id="ar" status="2">0.0.0.0</lang>
-          <lang id="zh" status="2">0.0.0.0</lang>
-          <lang id="zh.tra" status="2">0.0.0.0</lang>
-          <lang id="nl" status="2">0.0.0.0</lang>
-          <lang id="en" status="2">0.0.0.0</lang>
-          <lang id="fr" status="2">0.0.0.0</lang>
-          <lang id="de" status="2">0.0.0.0</lang>
-          <lang id="el" status="2">0.0.0.0</lang>
-          <lang id="hu" status="2">0.0.0.0</lang>
-          <lang id="it" status="2">0.0.0.0</lang>
-          <lang id="ja" status="2">0.0.0.0</lang>
-          <lang id="lt" status="2">0.0.0.0</lang>
-          <lang id="pl" status="2">0.0.0.0</lang>
-          <lang id="fa" status="2">0.0.0.0</lang>
-          <lang id="pt" status="2">0.0.0.0</lang>
-          <lang id="ru" status="2">0.0.0.0</lang>
-          <lang id="es" status="2">0.0.0.0</lang>
-          <lang id="sv-SE" status="2">0.0.0.0</lang>
-          <lang id="th" status="2">0.0.0.0</lang>
-          <lang id="tr" status="2">0.0.0.0</lang>
-          <lang id="vi" status="2">0.0.0.0</lang>
+        <row id="Assembly Version" state="3">
+          <prev>0.0.0.0</prev>
+          <native>1.0.4258.36103</native>
+          <lang id="ar" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="zh" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="zh.tra" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="nl" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="en" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="fr" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="de" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="el" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="hu" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="it" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="ja" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="lt" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="pl" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="fa" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="pt" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="ru" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="es" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="sv-SE" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="th" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="tr" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="vi" invalidated="1" status="2">0.0.0.0</lang>
         </row>
-        <row id="FileDescription"> </row>
-        <row id="FileVersion">
-          <native>0.0.0.0</native>
-          <lang id="ar" status="2">0.0.0.0</lang>
-          <lang id="zh" status="2">0.0.0.0</lang>
-          <lang id="zh.tra" status="2">0.0.0.0</lang>
-          <lang id="nl" status="2">0.0.0.0</lang>
-          <lang id="en" status="2">0.0.0.0</lang>
-          <lang id="fr" status="2">0.0.0.0</lang>
-          <lang id="de" status="2">0.0.0.0</lang>
-          <lang id="el" status="2">0.0.0.0</lang>
-          <lang id="hu" status="2">0.0.0.0</lang>
-          <lang id="it" status="2">0.0.0.0</lang>
-          <lang id="ja" status="2">0.0.0.0</lang>
-          <lang id="lt" status="2">0.0.0.0</lang>
-          <lang id="pl" status="2">0.0.0.0</lang>
-          <lang id="fa" status="2">0.0.0.0</lang>
-          <lang id="pt" status="2">0.0.0.0</lang>
-          <lang id="ru" status="2">0.0.0.0</lang>
-          <lang id="es" status="2">0.0.0.0</lang>
-          <lang id="sv-SE" status="2">0.0.0.0</lang>
-          <lang id="th" status="2">0.0.0.0</lang>
-          <lang id="tr" status="2">0.0.0.0</lang>
-          <lang id="vi" status="2">0.0.0.0</lang>
+        <row id="Comments" state="0">
+          <native>Manage programs installed on your computer</native>
+          <lang id="ar" status="2">إدارة البرامج المثبتة على الكمبيوتر</lang>
+          <lang id="zh" status="2">管理您的计算机上安装的程序</lang>
+          <lang id="zh.tra" status="2">管理程序在計算機上安裝</lang>
+          <lang id="nl" status="2">Het beheer van programma's geïnstalleerd op uw computer</lang>
+          <lang id="en" status="2">Manage programs installed on your computer</lang>
+          <lang id="fr" status="2">Gérer les programmes installés sur votre ordinateur</lang>
+          <lang id="de" status="2">Verwalten Sie Programme auf Ihrem Computer installiert</lang>
+          <lang id="el" status="2">Διαχείριση των προγραμμάτων που είναι εγκατεστημένα στον υπολογιστή σας</lang>
+          <lang id="hu" status="2">Irányítja a programokat a számítógépre telepített</lang>
+          <lang id="it" status="2">Gestire i programmi installati sul computer</lang>
+          <lang id="ja" status="2">お使いのコンピュータにインストールされているプログラムを管理する</lang>
+          <lang id="lt" status="2">Valdymas programas, įdiegtas jūsų kompiuteryje</lang>
+          <lang id="pl" status="2">Zarządzanie programów zainstalowanych na komputerze</lang>
+          <lang id="fa" status="2">مدیریت برنامه های نصب شده بر روی کامپیوتر شما</lang>
+          <lang id="pt" status="2">Gerenciar os programas instalados no seu computador</lang>
+          <lang id="ru" status="2">Управление программ, установленных на вашем компьютере</lang>
+          <lang id="es" status="2">Gestionar los programas instalados en su ordenador</lang>
+          <lang id="sv-SE" status="2">Hantera program installerade på datorn</lang>
+          <lang id="th" status="2">การจัดการโปรแกรมที่ติดตั้งบนคอมพิวเตอร์ของคุณ</lang>
+          <lang id="tr" status="2">Bilgisayarınızda yüklü programlar yönetin</lang>
+          <lang id="vi" status="2">Quản lý các chương trình được cài đặt trên máy tính của bạn</lang>
         </row>
-        <row id="FileVersion[1]" class="TIntegerRow">0</row>
+        <row id="CompanyName" state="0">
+          <native>Little Apps</native>
+          <lang id="ar" status="3">تطبيقات صغيرة</lang>
+          <lang id="zh" status="3">小小的应用程序</lang>
+          <lang id="zh.tra" status="3">小小的應用程式</lang>
+          <lang id="nl" status="3">Weinig Apps</lang>
+          <lang id="en" status="3">Little Apps</lang>
+          <lang id="fr" status="3">Petites applications</lang>
+          <lang id="de" status="3">Kleine Apps</lang>
+          <lang id="el" status="3">Μικρή Apps</lang>
+          <lang id="hu" status="3">Kis Apps</lang>
+          <lang id="it" status="3">Applicazioni Little</lang>
+          <lang id="ja" status="3">リトルアプリ</lang>
+          <lang id="lt" status="3">Mažasis Apps</lang>
+          <lang id="pl" status="3">Mała Apps</lang>
+          <lang id="fa" status="3">نرم افزار کوچک </lang>
+          <lang id="pt" status="3">Apps pouco</lang>
+          <lang id="ru" status="3">Маленькая Apps</lang>
+          <lang id="es" status="3">Aplicaciones poco</lang>
+          <lang id="sv-SE" status="3">Little Apps</lang>
+          <lang id="th" status="3">Apps ลิตเติ้ล</lang>
+          <lang id="tr" status="3">Küçük Apps</lang>
+          <lang id="vi" status="3">Ít Apps</lang>
+        </row>
+        <row id="FileDescription" state="3">
+          <prev> </prev>
+          <native>Little Uninstall Manager</native>
+          <lang id="ar" status="2">يذكر إلغاء إدارة</lang>
+          <lang id="zh" status="2">小卸载管理器</lang>
+          <lang id="zh.tra" status="2">小卸載管理</lang>
+          <lang id="nl" status="2">Weinig Uninstall Manager</lang>
+          <lang id="en" status="2">Little Uninstall Manager</lang>
+          <lang id="fr" status="2">Petite Uninstall Manager</lang>
+          <lang id="de" status="2">Kleine Uninstall Manager</lang>
+          <lang id="el" status="2">Μικρή Uninstall Manager</lang>
+          <lang id="hu" status="2">Kis Uninstall Manager</lang>
+          <lang id="it" status="2">Poco Uninstall Manager</lang>
+          <lang id="ja" status="2">リトルアンインストールマネージャー</lang>
+          <lang id="lt" status="2">Mažai Pašalinti Vadybininkas</lang>
+          <lang id="pl" status="2">Mała Uninstall Manager</lang>
+          <lang id="fa" status="2">کوچولو عزل مدیر</lang>
+          <lang id="pt" status="2">Uninstall Manager pouco</lang>
+          <lang id="ru" status="2">Маленькая Uninstall Manager</lang>
+          <lang id="es" status="2">Poco Uninstall Manager</lang>
+          <lang id="sv-SE" status="2">Little Avinstallera chef</lang>
+          <lang id="th" status="2">ผู้จัดการฝ่ายการถอนการติดตั้งน้อย</lang>
+          <lang id="tr" status="2">Küçük Uninstall Manager</lang>
+          <lang id="vi" status="2">Ít Uninstall Manager</lang>
+        </row>
+        <row id="FileVersion" state="3">
+          <prev>0.0.0.0</prev>
+          <native>1.0</native>
+          <lang id="ar" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="zh" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="zh.tra" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="nl" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="en" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="fr" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="de" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="el" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="hu" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="it" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="ja" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="lt" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="pl" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="fa" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="pt" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="ru" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="es" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="sv-SE" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="th" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="tr" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="vi" invalidated="1" status="2">0.0.0.0</lang>
+        </row>
+        <row id="FileVersion[1]" class="TIntegerRow" state="3">
+          <prev>0</prev>
+          <native>1</native>
+        </row>
         <row id="FileVersion[2]" class="TIntegerRow">0</row>
         <row id="FileVersion[3]" class="TIntegerRow">0</row>
         <row id="FileVersion[4]" class="TIntegerRow">0</row>
@@ -2339,7 +2420,31 @@
           <lang id="tr" status="2">Little Kaldır Manager.exe</lang>
           <lang id="vi" status="2">Little Uninstall Manager.exe</lang>
         </row>
-        <row id="LegalCopyright"> </row>
+        <row id="LegalCopyright" state="3">
+          <prev> </prev>
+          <native>Copyright © Little Apps 2008-2011</native>
+          <lang id="ar" status="2">حقوق الطبع والنشر © 2008-2011 تطبيقات ليتل</lang>
+          <lang id="zh" status="2">版权所有© 2008-2011小应用程序</lang>
+          <lang id="zh.tra" status="2">版權所有 © 2008-2011小應用</lang>
+          <lang id="nl" status="2">Copyright © Little Apps 2008-2011</lang>
+          <lang id="en" status="2">Copyright © Little Apps 2008-2011</lang>
+          <lang id="fr" status="2">Copyright © 2008-2011 Petite Apps</lang>
+          <lang id="de" status="2">Copyright © Kleine Apps 2008-2011</lang>
+          <lang id="el" status="2">Copyright © Μικρή Apps 2008-2011</lang>
+          <lang id="hu" status="2">Copyright © Kis Alkalmazások 2008-2011</lang>
+          <lang id="it" status="2">Copyright © Apps Piccolo 2008-2011</lang>
+          <lang id="ja" status="2">著作権©リトルアプリ2008-2011</lang>
+          <lang id="lt" status="2">Copyright © Mažasis programos 2008-2011</lang>
+          <lang id="pl" status="2">Copyright © Mały Apps 2008-2011</lang>
+          <lang id="fa" status="2">کپی رایت © کوچولو نرم افزار ها 2008-2011</lang>
+          <lang id="pt" status="2">Copyright © Apps Pouco 2008-2011</lang>
+          <lang id="ru" status="2">Copyright © 2008-2011 Маленькие приложения</lang>
+          <lang id="es" status="2">Copyright © Aplicaciones Poco 2008-2011</lang>
+          <lang id="sv-SE" status="2">Copyright © Little Apps 2008-2011</lang>
+          <lang id="th" status="2">สงวนลิขสิทธิ์ © 2008-2011 Apps ลิตเติ้ล</lang>
+          <lang id="tr" status="2">Copyright © Küçük Apps 2008-2011</lang>
+          <lang id="vi" status="2">Bản quyền © nhỏ Apps 2008-2011</lang>
+        </row>
         <row id="OriginalFilename">
           <native>Little Uninstall Manager.exe</native>
           <lang id="ar" status="2">يذكر إلغاء Manager.exe</lang>
@@ -2364,38 +2469,66 @@
           <lang id="tr" status="2">Little Kaldır Manager.exe</lang>
           <lang id="vi" status="2">Little Uninstall Manager.exe</lang>
         </row>
-        <row id="ProductVersion">
-          <native>0.0.0.0</native>
-          <lang id="ar" status="2">0.0.0.0</lang>
-          <lang id="zh" status="2">0.0.0.0</lang>
-          <lang id="zh.tra" status="2">0.0.0.0</lang>
-          <lang id="nl" status="2">0.0.0.0</lang>
-          <lang id="en" status="2">0.0.0.0</lang>
-          <lang id="fr" status="2">0.0.0.0</lang>
-          <lang id="de" status="2">0.0.0.0</lang>
-          <lang id="el" status="2">0.0.0.0</lang>
-          <lang id="hu" status="2">0.0.0.0</lang>
-          <lang id="it" status="2">0.0.0.0</lang>
-          <lang id="ja" status="2">0.0.0.0</lang>
-          <lang id="lt" status="2">0.0.0.0</lang>
-          <lang id="pl" status="2">0.0.0.0</lang>
-          <lang id="fa" status="2">0.0.0.0</lang>
-          <lang id="pt" status="2">0.0.0.0</lang>
-          <lang id="ru" status="2">0.0.0.0</lang>
-          <lang id="es" status="2">0.0.0.0</lang>
-          <lang id="sv-SE" status="2">0.0.0.0</lang>
-          <lang id="th" status="2">0.0.0.0</lang>
-          <lang id="tr" status="2">0.0.0.0</lang>
-          <lang id="vi" status="2">0.0.0.0</lang>
+        <row id="ProductName" state="0">
+          <native>Little Registry Cleaner</native>
+          <lang id="ar" status="2">السجل النظيف قليلا</lang>
+          <lang id="zh" status="2">小注册表清理</lang>
+          <lang id="zh.tra" status="2">小註冊表清理</lang>
+          <lang id="nl" status="2">Weinig Registry Cleaner</lang>
+          <lang id="en" status="2">Little Registry Cleaner</lang>
+          <lang id="fr" status="2">Petite Registry Cleaner</lang>
+          <lang id="de" status="2">Kleine Registry Cleaner</lang>
+          <lang id="el" status="2">Μικρή Registry Cleaner</lang>
+          <lang id="hu" status="2">Kis Registry Cleaner</lang>
+          <lang id="it" status="2">Poco Registry Cleaner</lang>
+          <lang id="ja" status="2">リトルレジストリクリーナー</lang>
+          <lang id="lt" status="2">Little Registry Cleaner</lang>
+          <lang id="pl" status="2">Mała Registry Cleaner</lang>
+          <lang id="fa" status="2">کوچک تمیز کننده رجیستری</lang>
+          <lang id="pt" status="2">Limpador de Registro pouco</lang>
+          <lang id="ru" status="2">Маленькая Registry Cleaner</lang>
+          <lang id="es" status="2">Little Registry Cleaner</lang>
+          <lang id="sv-SE" status="2">Little Registry Cleaner</lang>
+          <lang id="th" status="2">รีจิสทรีทำความสะอาดเพียงเล็กน้อย</lang>
+          <lang id="tr" status="2">Little Registry Cleaner</lang>
+          <lang id="vi" status="2">Little Registry Cleaner</lang>
         </row>
-        <row id="ProductVersion[1]" class="TIntegerRow">0</row>
+        <row id="ProductVersion" state="3">
+          <prev>0.0.0.0</prev>
+          <native>1.0</native>
+          <lang id="ar" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="zh" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="zh.tra" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="nl" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="en" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="fr" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="de" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="el" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="hu" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="it" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="ja" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="lt" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="pl" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="fa" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="pt" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="ru" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="es" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="sv-SE" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="th" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="tr" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="vi" invalidated="1" status="2">0.0.0.0</lang>
+        </row>
+        <row id="ProductVersion[1]" class="TIntegerRow" state="3">
+          <prev>0</prev>
+          <native>1</native>
+        </row>
         <row id="ProductVersion[2]" class="TIntegerRow">0</row>
         <row id="ProductVersion[3]" class="TIntegerRow">0</row>
         <row id="ProductVersion[4]" class="TIntegerRow">0</row>
       </node>
     </node>
   </source>
-  <source class="TVisualStudioNetProjectSource" name="Common Tools\Common Tools.csproj" original="en" date="20110718045252" defaultoutputdir="Common Tools\bin\Debug" configuration="Debug|AnyCPU" assemblykind="naLibrary" netversion="net40" toolsversion="net40" rootnamespace="Common_Tools" options="[noSetRightToLeft,noSortItems,noCompileResource,noCreateAssembly,noDeleteCompiledResource,noDeleteSourceResource]">
+  <source class="TVisualStudioNetProjectSource" name="Common Tools\Common Tools.csproj" original="en" date="20110830025750" defaultoutputdir="Common Tools\bin\Debug" configuration="Debug|AnyCPU" assemblykind="naLibrary" netversion="net40" toolsversion="net40" rootnamespace="Common_Tools" options="[noSetRightToLeft,noSortItems,noCompileResource,noCreateAssembly,noDeleteCompiledResource,noDeleteSourceResource]">
     <outputfile dir="..\bin\Debug"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -2718,30 +2851,30 @@
     </node>
     <node class="TWindowsVersionFolder" name="Versions" state="0" resid="16">
       <node class="TWindowsVersionNode" name="1" state="0" resid="1">
-        <row id="Assembly Version" state="3">
-          <prev>1.0.4205.40335</prev>
-          <native>1.0.4216.37533</native>
-          <lang id="ar" invalidated="1" status="2">1.0.4187.39341</lang>
-          <lang id="zh" invalidated="1" status="2">1.0.4187.39341</lang>
-          <lang id="zh.tra" invalidated="1" status="2">1.0.4187.39341</lang>
-          <lang id="nl" invalidated="1" status="2">1.0.4187.39341</lang>
-          <lang id="en" invalidated="1" status="2">1.0.4187.39341</lang>
-          <lang id="fr" invalidated="1" status="2">1.0.4187.39341</lang>
-          <lang id="de" invalidated="1" status="2">1.0.4187.39341</lang>
-          <lang id="el" invalidated="1" status="2">1.0.4187.39341</lang>
-          <lang id="hu" invalidated="1" status="2">1.0.4187.39341</lang>
-          <lang id="it" invalidated="1" status="2">1.0.4187.39341</lang>
-          <lang id="ja" invalidated="1" status="2">1.0.4187.39341</lang>
-          <lang id="lt" invalidated="1" status="2">1.0.4187.39341</lang>
-          <lang id="pl" invalidated="1" status="2">1.0.4187.39341</lang>
-          <lang id="fa" invalidated="1" status="2">1.0.4187.39341</lang>
-          <lang id="pt" invalidated="1" status="2">1.0.4187.39341</lang>
-          <lang id="ru" invalidated="1" status="2">1.0.4187.39341</lang>
-          <lang id="es" invalidated="1" status="2">1.0.4187.39341</lang>
-          <lang id="sv-SE" invalidated="1" status="2">1.0.4187.39341</lang>
-          <lang id="th" invalidated="1" status="2">1.0.4187.39341</lang>
-          <lang id="tr" invalidated="1" status="2">1.0.4187.39341</lang>
-          <lang id="vi" invalidated="1" status="2">1.0.4187.39341</lang>
+        <row id="Assembly Version" locked="1" state="3">
+          <prev>1.0.4216.37533</prev>
+          <native>1.0.4258.35934</native>
+          <lang id="ar" invalidated="1">1.0.4187.39341</lang>
+          <lang id="zh" invalidated="1">1.0.4187.39341</lang>
+          <lang id="zh.tra" invalidated="1">1.0.4187.39341</lang>
+          <lang id="nl" invalidated="1">1.0.4187.39341</lang>
+          <lang id="en" invalidated="1">1.0.4187.39341</lang>
+          <lang id="fr" invalidated="1">1.0.4187.39341</lang>
+          <lang id="de" invalidated="1">1.0.4187.39341</lang>
+          <lang id="el" invalidated="1">1.0.4187.39341</lang>
+          <lang id="hu" invalidated="1">1.0.4187.39341</lang>
+          <lang id="it" invalidated="1">1.0.4187.39341</lang>
+          <lang id="ja" invalidated="1">1.0.4187.39341</lang>
+          <lang id="lt" invalidated="1">1.0.4187.39341</lang>
+          <lang id="pl" invalidated="1">1.0.4187.39341</lang>
+          <lang id="fa" invalidated="1">1.0.4187.39341</lang>
+          <lang id="pt" invalidated="1">1.0.4187.39341</lang>
+          <lang id="ru" invalidated="1">1.0.4187.39341</lang>
+          <lang id="es" invalidated="1">1.0.4187.39341</lang>
+          <lang id="sv-SE" invalidated="1">1.0.4187.39341</lang>
+          <lang id="th" invalidated="1">1.0.4187.39341</lang>
+          <lang id="tr" invalidated="1">1.0.4187.39341</lang>
+          <lang id="vi" invalidated="1">1.0.4187.39341</lang>
         </row>
         <row id="FileDescription" state="0">
           <native>Common Tools</native>
@@ -2767,57 +2900,57 @@
           <lang id="tr" status="2">Genel Araçlar</lang>
           <lang id="vi" status="2">Công cụ thông thường</lang>
         </row>
-        <row id="FileVersion" state="0">
+        <row id="FileVersion" locked="1" state="0">
           <native>1.0.0.0</native>
-          <lang id="ar" status="2">1.0.0.0</lang>
-          <lang id="zh" status="2">1.0.0.0</lang>
-          <lang id="zh.tra" status="2">1.0.0.0</lang>
-          <lang id="nl" status="2">1.0.0.0</lang>
-          <lang id="en" status="2">1.0.0.0</lang>
-          <lang id="fr" status="2">1.0.0.0</lang>
-          <lang id="de" status="2">1.0.0.0</lang>
-          <lang id="el" status="2">1.0.0.0</lang>
-          <lang id="hu" status="2">1.0.0.0</lang>
-          <lang id="it" status="2">1.0.0.0</lang>
-          <lang id="ja" status="2">1.0.0.0</lang>
-          <lang id="lt" status="2">1.0.0.0</lang>
-          <lang id="pl" status="2">1.0.0.0</lang>
-          <lang id="fa" status="2">1.0.0.0</lang>
-          <lang id="pt" status="2">1.0.0.0</lang>
-          <lang id="ru" status="2">1.0.0.0</lang>
-          <lang id="es" status="2">1.0.0.0</lang>
-          <lang id="sv-SE" status="2">1.0.0.0</lang>
-          <lang id="th" status="2">1.0.0.0</lang>
-          <lang id="tr" status="2">1.0.0.0</lang>
-          <lang id="vi" status="2">1.0.0.0</lang>
+          <lang id="ar">1.0.0.0</lang>
+          <lang id="zh">1.0.0.0</lang>
+          <lang id="zh.tra">1.0.0.0</lang>
+          <lang id="nl">1.0.0.0</lang>
+          <lang id="en">1.0.0.0</lang>
+          <lang id="fr">1.0.0.0</lang>
+          <lang id="de">1.0.0.0</lang>
+          <lang id="el">1.0.0.0</lang>
+          <lang id="hu">1.0.0.0</lang>
+          <lang id="it">1.0.0.0</lang>
+          <lang id="ja">1.0.0.0</lang>
+          <lang id="lt">1.0.0.0</lang>
+          <lang id="pl">1.0.0.0</lang>
+          <lang id="fa">1.0.0.0</lang>
+          <lang id="pt">1.0.0.0</lang>
+          <lang id="ru">1.0.0.0</lang>
+          <lang id="es">1.0.0.0</lang>
+          <lang id="sv-SE">1.0.0.0</lang>
+          <lang id="th">1.0.0.0</lang>
+          <lang id="tr">1.0.0.0</lang>
+          <lang id="vi">1.0.0.0</lang>
         </row>
         <row id="FileVersion[1]" class="TIntegerRow" state="0">1</row>
         <row id="FileVersion[2]" class="TIntegerRow" state="0">0</row>
         <row id="FileVersion[3]" class="TIntegerRow" state="0">0</row>
         <row id="FileVersion[4]" class="TIntegerRow" state="0">0</row>
-        <row id="InternalName" state="0">
+        <row id="InternalName" locked="1" state="0">
           <native>Common Tools.dll</native>
-          <lang id="ar" status="2">Tools.dll المشتركة</lang>
-          <lang id="zh" status="2">常见的 Tools.dll</lang>
-          <lang id="zh.tra" status="2">常見的 Tools.dll</lang>
-          <lang id="nl" status="2">Gemeenschappelijke Tools.dll</lang>
-          <lang id="en" status="2">Common Tools.dll</lang>
-          <lang id="fr" status="2">Commune Tools.dll</lang>
-          <lang id="de" status="2">Gemeinsame Tools.dll</lang>
-          <lang id="el" status="2">Κοινή Tools.dll</lang>
-          <lang id="hu" status="2">Közös Tools.dll</lang>
-          <lang id="it" status="2">Comune Tools.dll</lang>
-          <lang id="ja" status="2">共通Tools.dll</lang>
-          <lang id="lt" status="2">Bendra Tools.dll</lang>
-          <lang id="pl" status="2">Wspólne Tools.dll</lang>
-          <lang id="fa" status="2">مشترک Tools.dll</lang>
-          <lang id="pt" status="2">Tools.dll comum</lang>
-          <lang id="ru" status="2">Общие Tools.dll</lang>
-          <lang id="es" status="2">Común Tools.dll</lang>
-          <lang id="sv-SE" status="2">Vanliga Tools.dll</lang>
-          <lang id="th" status="2">สามัญ Tools.dll</lang>
-          <lang id="tr" status="2">Ortak Tools.dll</lang>
-          <lang id="vi" status="2">Chung Tools.dll</lang>
+          <lang id="ar">Tools.dll المشتركة</lang>
+          <lang id="zh">常见的 Tools.dll</lang>
+          <lang id="zh.tra">常見的 Tools.dll</lang>
+          <lang id="nl">Gemeenschappelijke Tools.dll</lang>
+          <lang id="en">Common Tools.dll</lang>
+          <lang id="fr">Commune Tools.dll</lang>
+          <lang id="de">Gemeinsame Tools.dll</lang>
+          <lang id="el">Κοινή Tools.dll</lang>
+          <lang id="hu">Közös Tools.dll</lang>
+          <lang id="it">Comune Tools.dll</lang>
+          <lang id="ja">共通Tools.dll</lang>
+          <lang id="lt">Bendra Tools.dll</lang>
+          <lang id="pl">Wspólne Tools.dll</lang>
+          <lang id="fa">مشترک Tools.dll</lang>
+          <lang id="pt">Tools.dll comum</lang>
+          <lang id="ru">Общие Tools.dll</lang>
+          <lang id="es">Común Tools.dll</lang>
+          <lang id="sv-SE">Vanliga Tools.dll</lang>
+          <lang id="th">สามัญ Tools.dll</lang>
+          <lang id="tr">Ortak Tools.dll</lang>
+          <lang id="vi">Chung Tools.dll</lang>
         </row>
         <row id="LegalCopyright" state="0">
           <native>Copyright ©  2008-2010</native>
@@ -2843,29 +2976,29 @@
           <lang id="tr" status="2">Copyright © 2008-2010</lang>
           <lang id="vi" status="2">Bản quyền © 2008-2010</lang>
         </row>
-        <row id="OriginalFilename" state="0">
+        <row id="OriginalFilename" locked="1" state="0">
           <native>Common Tools.dll</native>
-          <lang id="ar" status="2">Tools.dll المشتركة</lang>
-          <lang id="zh" status="2">常见的 Tools.dll</lang>
-          <lang id="zh.tra" status="2">常見的 Tools.dll</lang>
-          <lang id="nl" status="2">Gemeenschappelijke Tools.dll</lang>
-          <lang id="en" status="2">Common Tools.dll</lang>
-          <lang id="fr" status="2">Commune Tools.dll</lang>
-          <lang id="de" status="2">Gemeinsame Tools.dll</lang>
-          <lang id="el" status="2">Κοινή Tools.dll</lang>
-          <lang id="hu" status="2">Közös Tools.dll</lang>
-          <lang id="it" status="2">Comune Tools.dll</lang>
-          <lang id="ja" status="2">共通Tools.dll</lang>
-          <lang id="lt" status="2">Bendra Tools.dll</lang>
-          <lang id="pl" status="2">Wspólne Tools.dll</lang>
-          <lang id="fa" status="2">مشترک Tools.dll</lang>
-          <lang id="pt" status="2">Tools.dll comum</lang>
-          <lang id="ru" status="2">Общие Tools.dll</lang>
-          <lang id="es" status="2">Común Tools.dll</lang>
-          <lang id="sv-SE" status="2">Vanliga Tools.dll</lang>
-          <lang id="th" status="2">สามัญ Tools.dll</lang>
-          <lang id="tr" status="2">Ortak Tools.dll</lang>
-          <lang id="vi" status="2">Chung Tools.dll</lang>
+          <lang id="ar">Tools.dll المشتركة</lang>
+          <lang id="zh">常见的 Tools.dll</lang>
+          <lang id="zh.tra">常見的 Tools.dll</lang>
+          <lang id="nl">Gemeenschappelijke Tools.dll</lang>
+          <lang id="en">Common Tools.dll</lang>
+          <lang id="fr">Commune Tools.dll</lang>
+          <lang id="de">Gemeinsame Tools.dll</lang>
+          <lang id="el">Κοινή Tools.dll</lang>
+          <lang id="hu">Közös Tools.dll</lang>
+          <lang id="it">Comune Tools.dll</lang>
+          <lang id="ja">共通Tools.dll</lang>
+          <lang id="lt">Bendra Tools.dll</lang>
+          <lang id="pl">Wspólne Tools.dll</lang>
+          <lang id="fa">مشترک Tools.dll</lang>
+          <lang id="pt">Tools.dll comum</lang>
+          <lang id="ru">Общие Tools.dll</lang>
+          <lang id="es">Común Tools.dll</lang>
+          <lang id="sv-SE">Vanliga Tools.dll</lang>
+          <lang id="th">สามัญ Tools.dll</lang>
+          <lang id="tr">Ortak Tools.dll</lang>
+          <lang id="vi">Chung Tools.dll</lang>
         </row>
         <row id="ProductName" state="0">
           <native>Common Tools</native>
@@ -2922,7 +3055,7 @@
       </node>
     </node>
   </source>
-  <source class="TVisualStudioNetProjectSource" name="Little Registry Cleaner.csproj" original="en" date="20110708051518" defaultoutputdir="bin\Debug" configuration="Debug|AnyCPU" netversion="net40" toolsversion="net40" rootnamespace="Little_Registry_Cleaner" options="[noSetRightToLeft,noSortItems,noCompileResource,noCreateAssembly,noDeleteCompiledResource,noDeleteSourceResource]">
+  <source class="TVisualStudioNetProjectSource" name="Little Registry Cleaner.csproj" original="en" date="20110829043826" defaultoutputdir="bin\Debug" configuration="Debug|AnyCPU" netversion="net40" toolsversion="net40" rootnamespace="Little_Registry_Cleaner" options="[noSetRightToLeft,noSortItems,noCompileResource,noCreateAssembly,noDeleteCompiledResource,noDeleteSourceResource]">
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TColorData</class>
@@ -6082,7 +6215,7 @@
                   <lang id="fa" status="3">انتخاب یک فولدر برای فایل بک آپ</lang>
                   <lang id="pt" status="2">Selecione uma pasta para fazer backup das entradas do registro excluídas </lang>
                   <lang id="ru" status="3">Выберите папку для резервного копирования удаленных элементов реестра </lang>
-                  <lang id="es" status="3">Seleccione una carpeta para guardar los archivos de registro eliminados</lang>
+                  <lang id="es" status="3">Seleccione una carpeta para guardar los archivos de registro eliminados </lang>
                   <lang id="sv-SE" status="3">Välj en mapp att säkerhetskopiera borttagna registerposter till</lang>
                   <lang id="th" status="2">เลือกโฟลเดอร์เพื่อสำรองลบรายการรีจิสตรี </lang>
                   <lang id="tr" status="3">Silinmiş kayıt defter girdilerini yedeklemek için bir klasör seçin </lang>
@@ -6111,7 +6244,7 @@
                     <lang id="fa" status="3">انتخاب...</lang>
                     <lang id="pt" status="2">Procurar...</lang>
                     <lang id="ru" status="2">Обзор...</lang>
-                    <lang id="es" status="3">Examinar…</lang>
+                    <lang id="es" status="3">Examinar…...</lang>
                     <lang id="sv-SE" status="3">Gå till...</lang>
                     <lang id="th" status="2">Browse...</lang>
                     <lang id="tr" status="3">Göz at...</lang>
@@ -6160,236 +6293,82 @@
                   <row id="Size.Height" state="0">85</row>
                   <row id="Size.Width" state="0">432</row>
                   <item name="Items[0]" state="0">
-                    <row id="Text" state="0">
-                      <native>Log registry scans and fixes</native>
-                      <lang id="ar" status="2">التسجيل سجل بتفحص وإصلاحات</lang>
-                      <lang id="zh" status="3">记录注册表扫描和修复</lang>
-                      <lang id="zh.tra" status="3">记录註冊表掃描和修復</lang>
-                      <lang id="nl" status="3">Log de scans en reparaties</lang>
-                      <lang id="en" status="2">Log registry scans and fixes</lang>
-                      <lang id="fr" status="3">Enregistrer les examens du registre et les corrections</lang>
-                      <lang id="de" status="3">Registryuntersuchungen und -reparaturen protokollieren</lang>
-                      <lang id="el" status="3">Αρχείο καταγραφής μητρώου σαρώσεων και διορθώσεων</lang>
-                      <lang id="hu" status="2">Bejegyzés szkennelések és helyrehozások naplózása</lang>
-                      <lang id="it" status="3">Registra scansioni e modifiche</lang>
-                      <lang id="ja" status="2">レジストリをスキャンし、修正ログ</lang>
-                      <lang id="lt" status="3">Įrašinėti visas atliekamas operacijas į pokyčiu žurnalą</lang>
-                      <lang id="pl" status="2">Twórz raporty skanowania i napraw</lang>
-                      <lang id="fa" status="3">ثبت وقایع جستجو در رجیستری و رفع مشکلات</lang>
-                      <lang id="pt" status="2">Log das varreduras e correções do registro</lang>
-                      <lang id="ru" status="3">Журналировать операции с реестром</lang>
-                      <lang id="es" status="3">Registrar historial de análisis y correcciones del Registro</lang>
-                      <lang id="sv-SE" status="3">Spara registersökningar och rättningar</lang>
-                      <lang id="th" status="2">Log สแกนรีจิสทรีและการแก้ไข</lang>
-                      <lang id="tr" status="3">Kayıt defterini tara ve düzeltmeleri yap</lang>
-                      <lang id="vi" status="2">Đăng nhập quét registry và sửa chữa</lang>
+                    <row id="Text" state="3">
+                      <prev>Log registry scans and fixes</prev>
+                      <native>Send anonymous usage statistics</native>
                     </row>
                   </item>
                   <item name="Items[1]" state="0">
-                    <row id="Text" state="0">
-                      <native>Re-Scan after fixing registry issues</native>
-                      <lang id="ar" status="2">Re-Scan بعد إصلاح التسجيل وإصلاحها</lang>
-                      <lang id="zh" status="3">解决注册表问题后重新扫描</lang>
-                      <lang id="zh.tra" status="3">解決註冊表問題後重新掃描</lang>
-                      <lang id="nl" status="3">Scan opnieuw na het repareren van de register problemen</lang>
-                      <lang id="en" status="2">Re-Scan after fixing registry issues</lang>
-                      <lang id="fr" status="3">Réexaminer après avoir appliqué les corrections</lang>
-                      <lang id="de" status="3">Nach der Fehlerbehebung erneut untersuchen</lang>
-                      <lang id="el" status="3">Ξανά-Σάρωση μετά τον καθορισμό των προβλημάτων του μητρώου</lang>
-                      <lang id="hu" status="2">Újraszkennelés bejegyzéshibák javítása után</lang>
-                      <lang id="it" status="3">Riesegui la scansione dopo la correzione</lang>
-                      <lang id="ja" status="2">レジストリの問題を修正後の re-Scan します</lang>
-                      <lang id="lt" status="3">Papildomas patikrinimas po klaidu pašalinimo</lang>
-                      <lang id="pl" status="2">Re-Scan po Rozwiązywanie problemów z rejestru</lang>
-                      <lang id="fa" status="3">جستجوی دوباره بعد از رفع مشکلات</lang>
-                      <lang id="pt" status="2">Efetuar nova varredura após corrigir problemas do registro</lang>
-                      <lang id="ru" status="3">Повторная проверка после устранения ошибок</lang>
-                      <lang id="es" status="3">Volver a analizar después de corregir errores en el Registro</lang>
-                      <lang id="sv-SE" status="3">Skanna igen efter rättningar i registret</lang>
-                      <lang id="th" status="2">Re-Scan หลังจากการแก้ไขปัญหาของรีจิสทรี</lang>
-                      <lang id="tr" status="3">Kayıt sorunları düzeltikten sonra yeniden tara</lang>
-                      <lang id="vi" status="2">Re-Quét sau khi sửa chữa các vấn đề đăng ký</lang>
+                    <row id="Text" state="3">
+                      <prev>Re-Scan after fixing registry issues</prev>
+                      <native>Log registry scans and fixes</native>
                     </row>
                   </item>
                   <item name="Items[2]" state="0">
-                    <row id="Text" state="0">
-                      <native>Check for updates automatically</native>
-                      <lang id="ar" status="2">البحث عن التحديثات تلقائياً</lang>
-                      <lang id="zh" status="3">自动检查更新</lang>
-                      <lang id="zh.tra" status="3">自動檢查更新</lang>
-                      <lang id="nl" status="2">Automatisch controleren op updates</lang>
-                      <lang id="en" status="2">Check for updates automatically</lang>
-                      <lang id="fr" status="3">Vérifier les mises à jour automatiquement</lang>
-                      <lang id="de" status="2">Automatisch nach Aktualisierungen suchen</lang>
-                      <lang id="el" status="3">Αυτόματος έλεγχος για ενημερώσεις</lang>
-                      <lang id="hu" status="2">Automatikus frissítés</lang>
-                      <lang id="it" status="3">Controlla automaticamente gli aggiornamenti</lang>
-                      <lang id="ja" status="2">更新プログラムを自動的にチェック</lang>
-                      <lang id="lt" status="3">Tikrinti atnaujinimus automatiškai</lang>
-                      <lang id="pl" status="2">Automatycznie sprawdzaj, czy dostępne są uaktualnienia</lang>
-                      <lang id="fa" status="3">چک کردن اتوماتیک برای بروزرسانی</lang>
-                      <lang id="pt" status="2">Verificar atualizações automaticamente</lang>
-                      <lang id="ru" status="2">Автоматическая проверка обновлений</lang>
-                      <lang id="es" status="2">Comprobar si hay actualizaciones automáticamente</lang>
-                      <lang id="sv-SE" status="3">Sök automatiskt efter uppdateringar</lang>
-                      <lang id="th" status="2">ตรวจสอบข้อมูลปรับปรุงอัตโนมัติ</lang>
-                      <lang id="tr" status="3">Güncellemeleri otomatik olarak kontrol et</lang>
-                      <lang id="vi" status="2">Kiểm tra cho cập nhật tự động</lang>
+                    <row id="Text" state="3">
+                      <prev>Check for updates automatically</prev>
+                      <native>Re-Scan after fixing registry issues</native>
                     </row>
                   </item>
                   <item name="Items[3]" state="0">
-                    <row id="Text" state="0">
-                      <native>Create system restore points automatically</native>
-                      <lang id="ar" status="2">إنشاء نقاط استعادة النظام تلقائياً</lang>
-                      <lang id="zh" status="3">自动创建系统还原点</lang>
-                      <lang id="zh.tra" status="3">自動創建系統還原點</lang>
-                      <lang id="nl" status="3">Automatisch Systeemherstelpunten maken</lang>
-                      <lang id="en" status="2">Create system restore points automatically</lang>
-                      <lang id="fr" status="3">Créer automatiquement des points de restauration du système</lang>
-                      <lang id="de" status="3">Systemwiederherstellungspunkte automatisch erstellen</lang>
-                      <lang id="el" status="3">Αυτόματη δημιουργία σημείων επαναφοράς συστήματος</lang>
-                      <lang id="hu" status="2">Rendszervisszaállító pontok automatikus létrehozása</lang>
-                      <lang id="it" status="3">Crea punti di ripristino automaticamente</lang>
-                      <lang id="ja" status="2">システムが自動的に復元ポイントを作成します</lang>
-                      <lang id="lt" status="2">Sukurti sistemos atkūrimo taškus automatiškai</lang>
-                      <lang id="pl" status="2">Automatycznie twórz punkty przywracania systemu</lang>
-                      <lang id="fa" status="3">ایجاد نقطه ریستور در ویندوز به صورت اتوماتیک</lang>
-                      <lang id="pt" status="2">Criar pontos de restauração do sistema automaticamente</lang>
-                      <lang id="ru" status="3">Автоматически создавать точку восстановления</lang>
-                      <lang id="es" status="3">Crear automáticamente puntos de restauración del sistema</lang>
-                      <lang id="sv-SE" status="3">Skapa automatisk återställningspunkter</lang>
-                      <lang id="th" status="2">สร้างจุดคืนค่าระบบอัตโนมัติ</lang>
-                      <lang id="tr" status="3">Otomatikmen geri yükleme noktaları oluştur</lang>
-                      <lang id="vi" status="2">Tạo điểm khôi phục hệ thống tự động</lang>
+                    <row id="Text" state="3">
+                      <prev>Create system restore points automatically</prev>
+                      <native>Check for updates automatically</native>
                     </row>
                   </item>
                   <item name="Items[4]" state="0">
-                    <row id="Text" state="0">
-                      <native>Show log after finished scanning</native>
-                      <lang id="ar" status="2">إظهار سجل بعد الانتهاء من المسح الضوئي</lang>
-                      <lang id="zh" status="3">完成扫描后显示记录</lang>
-                      <lang id="zh.tra" status="3">完成掃描後顯示記錄</lang>
-                      <lang id="nl" status="3">Logboek tonen na scannen</lang>
-                      <lang id="en" status="2">Show log after finished scanning</lang>
-                      <lang id="fr" status="3">Montrer le journal à la fin de l'examen</lang>
-                      <lang id="de" status="3">Nach dem Abschluss der Untersuchung Bericht automatisch anzeigen</lang>
-                      <lang id="el" status="2">Εμφάνιση αρχείου καταγραφής μετά την ολοκλήρωση της σάρωσης</lang>
-                      <lang id="hu" status="2">Napló megmutatása szkennelés után</lang>
-                      <lang id="it" status="3">Mostra log dopo il termine della scansione</lang>
-                      <lang id="ja" status="2">ログを表示後、スキャンが終了</lang>
-                      <lang id="lt" status="3">Rodyti pokyčiu žurnalą po skenavimo</lang>
-                      <lang id="pl" status="2">Otwórz plik raportu po zakończeniu skanowania</lang>
-                      <lang id="fa" status="3">نمایش ثبت وقایع بعد از اتمام جستجو</lang>
-                      <lang id="pt" status="2">Mostrar log após a conclusão da varredura</lang>
-                      <lang id="ru" status="2">Показать журнал после окончания сканирования</lang>
-                      <lang id="es" status="2">Mostrar registro una vez finalizado el análisis</lang>
-                      <lang id="sv-SE" status="3">Visa logg efter avslutad skanning</lang>
-                      <lang id="th" status="2">Log แสดงหลังจากเสร็จสิ้นการสแกน</lang>
-                      <lang id="tr" status="3">Kayıt defterini taraması bittikten sonra göster</lang>
-                      <lang id="vi" status="2">Hiển thị nhật ký sau khi đã hoàn thành quét</lang>
+                    <row id="Text" state="3">
+                      <prev>Show log after finished scanning</prev>
+                      <native>Create system restore points automatically</native>
                     </row>
                   </item>
                   <item name="Items[5]" state="0">
-                    <row id="Text" state="0">
-                      <native>Delete backup file after restoring the registry</native>
-                      <lang id="ar" status="2">حذف ملف النسخة الاحتياطية بعد استعادة التسجيل</lang>
-                      <lang id="zh" status="3">还原注册表之后删除备份文件</lang>
-                      <lang id="zh.tra" status="3">還原註冊表之後刪除備份檔案</lang>
-                      <lang id="nl" status="3">Back-upbestand verwijderen na het terugzetten van het register</lang>
-                      <lang id="en" status="2">Delete backup file after restoring the registry</lang>
-                      <lang id="fr" status="2">Supprimer le fichier de sauvegarde après la restauration du registre</lang>
-                      <lang id="de" status="3">Sicherungsdatei automatisch löschen, nachdem die Registry wiederhergestellt wurde</lang>
-                      <lang id="el" status="3">Διαγραφή αντιγράφου ασφαλείας μετά την επαναφορά του μητρώου</lang>
-                      <lang id="hu" status="2">Biztonsági másolatok törlése a bejegyzés visszaállítása után</lang>
-                      <lang id="it" status="3">Elimina backup dopo il ripristino</lang>
-                      <lang id="ja" status="2">レジストリを復元した後、バックアップ ファイルを削除します</lang>
-                      <lang id="lt" status="3">Ištrinti rezervine kopija po registro atkūrimo</lang>
-                      <lang id="pl" status="2">Usuń plik kopii zapasowej po Przywracanie rejestru</lang>
-                      <lang id="fa" status="2">حذف فایل پشتیبان پس از بازسازی رجیستری</lang>
-                      <lang id="pt" status="2">Excluir o arquivo de backup depois de restaurar o registro</lang>
-                      <lang id="ru" status="2">Удалить файл резервной копии после восстановления реестра</lang>
-                      <lang id="es" status="3">Eliminar archivo de copia de seguridad después de restaurar el Registro</lang>
-                      <lang id="sv-SE" status="2">Ta bort säkerhetskopian efter återställning av registret</lang>
-                      <lang id="th" status="2">ลบแฟ้มสำรองหลังจากการคืนค่ารีจิสทรี</lang>
-                      <lang id="tr" status="3">Kayıtlar restore edildikten sonra yedek dosyasını sil</lang>
-                      <lang id="vi" status="2">Xóa sau khi khôi phục tập tin sao lưu registry</lang>
+                    <row id="Text" state="3">
+                      <prev>Delete backup file after restoring the registry</prev>
+                      <native>Show log after finished scanning</native>
                     </row>
                   </item>
                   <item name="Items[6]" state="0">
-                    <row id="Text" state="0">
-                      <native>Ignore missing files on removable media</native>
-                      <lang id="ar" status="2">تجاهل الملفات المفقودة على وسائط قابلة للإزالة</lang>
-                      <lang id="zh" status="3">忽略在可移动媒体不見的文件</lang>
-                      <lang id="zh.tra" status="3">忽略在可移動媒體不見的文件</lang>
-                      <lang id="nl" status="2">Ontbrekende bestanden op verwisselbare media negeren</lang>
-                      <lang id="en" status="2">Ignore missing files on removable media</lang>
-                      <lang id="fr" status="2">Ignorer les fichiers manquants sur un support amovible</lang>
-                      <lang id="de" status="3">Fehlende Dateien auf Wechseldatenträgern ignorieren</lang>
-                      <lang id="el" status="3">Αγνόηση αρχείων που λείπουν σε αφαιρούμενα μέσα αποθήκευσης</lang>
-                      <lang id="hu" status="2">Eltávolítható eszközön hiányzó fájlok figyelmen kívül hagyása</lang>
-                      <lang id="it" status="3">Ignorare i file mancanti su supporti rimovibili</lang>
-                      <lang id="ja" status="2">リムーバブルメディア上に存在しないファイルを無視する</lang>
-                      <lang id="lt" status="3">Ignoruoti trūkstamus failus išorinėse laikmenose</lang>
-                      <lang id="pl" status="2">Pomiń brakujące pliki na nośnikach wymiennych</lang>
-                      <lang id="fa" status="3">چشمپوشی از فایل های گم شده در وسایل جداشدنی</lang>
-                      <lang id="pt" status="2">Ignorar arquivos ausentes em mídia removível</lang>
-                      <lang id="ru" status="2">Игнорировать отсутствующие файлы на съемном носителе</lang>
-                      <lang id="es" status="2">Omitir archivos que faltan en medios extraíbles</lang>
-                      <lang id="sv-SE" status="2">Ignorera filer som saknas på flyttbara media</lang>
-                      <lang id="th" status="2">ไม่สนใจไฟล์ที่ขาดหายไปในสื่อที่ถอดได้</lang>
-                      <lang id="tr" status="3">Çıkarılabilir medyadaki eksik dosyaları yoksay</lang>
-                      <lang id="vi" status="2">Bỏ qua các tập tin bị thiếu trên phương tiện di động</lang>
+                    <row id="Text" state="3">
+                      <prev>Ignore missing files on removable media</prev>
+                      <native>Delete backup file after restoring the registry</native>
                     </row>
                   </item>
                   <item name="Items[7]" state="0">
-                    <row id="Text" state="0">
-                      <native>Automatically repair registry items</native>
-                      <lang id="ar" status="2">تلقائيا إصلاح عناصر السجل</lang>
-                      <lang id="zh" status="3">自动修复注册表项</lang>
-                      <lang id="zh.tra" status="3">自動修復註冊表項</lang>
-                      <lang id="nl" status="3">Registeritems automatisch repereren</lang>
-                      <lang id="en" status="2">Automatically repair registry items</lang>
-                      <lang id="fr" status="2">Réparer automatiquement les éléments du registre</lang>
-                      <lang id="de" status="3">Registryeinträge automatisch reparieren</lang>
-                      <lang id="el" status="3">Αυτόματη επισκευή στοιχείων μητρώου</lang>
-                      <lang id="hu" status="2">Bejegyzések automatikus javítása</lang>
-                      <lang id="it" status="3">Riparare automaticamente gli elementi del Registro di sistema</lang>
-                      <lang id="ja" status="2">自動的にレジストリ項目を修復する</lang>
-                      <lang id="lt" status="3">Automatiškai remontuoti registro objektus</lang>
-                      <lang id="pl" status="2">Automatycznie napraw elementów rejestru</lang>
-                      <lang id="fa" status="3">تعمیر اتوماتیک بخش های رجیستری</lang>
-                      <lang id="pt" status="2">Reparar automaticamente os itens do registro</lang>
-                      <lang id="ru" status="3">Автоматически восстанавливать элементы реестра</lang>
-                      <lang id="es" status="3">Reparar automáticamente los elementos del Registro</lang>
-                      <lang id="sv-SE" status="2">Reparera registerposter automatiskt</lang>
-                      <lang id="th" status="2">โดยอัตโนมัติซ่อมแซมรายการรีจิสทรี</lang>
-                      <lang id="tr" status="3">Otomatik olarak kayıt defterindeki öğeleri onar</lang>
-                      <lang id="vi" status="2">Tự động sửa chữa các registry</lang>
+                    <row id="Text" state="3">
+                      <prev>Automatically repair registry items</prev>
+                      <native>Ignore missing files on removable media</native>
                     </row>
                   </item>
                   <item name="Items[8]" state="0">
+                    <row id="Text" state="3">
+                      <prev>Exit program after repairing registry</prev>
+                      <native>Automatically repair registry items</native>
+                    </row>
+                  </item>
+                  <item name="Items[9]" state="0">
                     <row id="Text" state="0">
                       <native>Exit program after repairing registry</native>
-                      <lang id="ar" status="2">بعد خروج برنامج اصلاح التسجيل</lang>
-                      <lang id="zh" status="3">修复注册表后退出程序</lang>
-                      <lang id="zh.tra" status="3">修復註冊表後退出程序</lang>
-                      <lang id="nl" status="3">Programma sluiten na reparatie van het register</lang>
+                      <lang id="ar" status="2">إنهاء البرنامج بعد إصلاح التسجيل</lang>
+                      <lang id="zh" status="2">修复注册表后退出程序</lang>
+                      <lang id="zh.tra" status="2">退出程序後修復註冊表</lang>
+                      <lang id="nl" status="2">Exit programma na reparatie van het register</lang>
                       <lang id="en" status="2">Exit program after repairing registry</lang>
-                      <lang id="fr" status="3">Quitter le programme après réparation du registre</lang>
-                      <lang id="de" status="3">Programm nach der Reparatur automatisch beenden</lang>
-                      <lang id="el" status="2">Έξοδος από το πρόγραμμα μετά την επισκευή του μητρώου</lang>
-                      <lang id="hu" status="2">Kilépés bejegyzések javítása után</lang>
-                      <lang id="it" status="3">Chiudi dopo aver terminato le modifiche</lang>
-                      <lang id="ja" status="2">レジストリの修復後、出口プログラム</lang>
-                      <lang id="lt" status="3">Išeiti iš programos po registro remonto</lang>
-                      <lang id="pl" status="2">Zakończ program po naprawie rejestru</lang>
-                      <lang id="fa" status="3">خروج از برنامه بعد از تعمیر رجیستری</lang>
-                      <lang id="pt" status="2">Sair do programa após corrigir o registro</lang>
-                      <lang id="ru" status="3">Выйти из программы после ремонта реестра</lang>
-                      <lang id="es" status="3">Salir de la aplicación después de la reparación del Registro</lang>
-                      <lang id="sv-SE" status="3">Avsluta programmet efter reparation av registret</lang>
-                      <lang id="th" status="2">โปรแกรมออกหลังจากซ่อมรีจิสทรี</lang>
-                      <lang id="tr" status="3">Kayıt defteri onardıktan sonra programdan çık</lang>
+                      <lang id="fr" status="2">Quittez le programme après la réparation du registre</lang>
+                      <lang id="de" status="2">Programm beenden, nachdem die Reparatur Registrierung</lang>
+                      <lang id="el" status="2">Κλείστε το πρόγραμμα μετά την επισκευή μητρώου</lang>
+                      <lang id="hu" status="2">Kilépési program után a javítás adatbázis</lang>
+                      <lang id="it" status="2">Uscire dal programma dopo la riparazione del Registro</lang>
+                      <lang id="ja" status="2">レジストリを修復した後、プログラムを終了します</lang>
+                      <lang id="lt" status="2">Išeikite iš programos po remonto registro</lang>
+                      <lang id="pl" status="2">Wyjście z programu po naprawie rejestru</lang>
+                      <lang id="fa" status="2">خروج از برنامه پس از تعمیر رجیستری</lang>
+                      <lang id="pt" status="2">Sair do programa depois de reparar Registro</lang>
+                      <lang id="ru" status="2">Выход программы после ремонта реестра</lang>
+                      <lang id="es" status="2">Salir del programa después de la reparación del registro</lang>
+                      <lang id="sv-SE" status="2">Avsluta programmet efter reparation registret</lang>
+                      <lang id="th" status="2">ออกจากโปรแกรมหลังจากการซ่อมแซมของรีจิสทรี</lang>
+                      <lang id="tr" status="2">Kayıt defteri onarımı sonra programdan çıkın</lang>
                       <lang id="vi" status="2">Thoát khỏi chương trình sau khi sửa chữa registry</lang>
                     </row>
                   </item>
@@ -6453,7 +6432,7 @@
                     <lang id="fa" status="3">انتخاب...</lang>
                     <lang id="pt" status="2">Procurar...</lang>
                     <lang id="ru" status="2">Обзор...</lang>
-                    <lang id="es" status="3">Examinar…</lang>
+                    <lang id="es" status="3">Examinar…...</lang>
                     <lang id="sv-SE" status="3">Gå till...</lang>
                     <lang id="th" status="2">Browse...</lang>
                     <lang id="tr" status="3">Göz at...</lang>
@@ -8333,7 +8312,7 @@
           </component>
         </form>
       </node>
-      <node class="TNetFormNode" name="Little_Registry_Cleaner.UninstallManager.UninstallManager" state="1">
+      <node class="TNetFormNode" name="Little_Registry_Cleaner.UninstallManager.UninstallManager" state="1" excluded="1">
         <form class="TNetForm" name="Little_Registry_Cleaner.UninstallManager.UninstallManager" type="Little_Registry_Cleaner.UninstallManager.UninstallManager">
           <row id="Text" state="1">
             <native>Little Registry Cleaner - Uninstall Manager</native>
@@ -10178,30 +10157,30 @@
     </node>
     <node class="TWindowsVersionFolder" name="Versions" state="0" resid="16">
       <node class="TWindowsVersionNode" name="1" state="0" resid="1">
-        <row id="Assembly Version" state="3">
-          <prev>1.5.4205.40335</prev>
-          <native>1.5.4216.41766</native>
-          <lang id="ar" invalidated="1" status="2">1.4.4187.39341</lang>
-          <lang id="zh" invalidated="1" status="2">1.4.4187.39341</lang>
-          <lang id="zh.tra" invalidated="1" status="2">1.4.4187.39341</lang>
-          <lang id="nl" invalidated="1" status="2">1.4.4187.39341</lang>
-          <lang id="en" invalidated="1" status="2">1.4.4187.39341</lang>
-          <lang id="fr" invalidated="1" status="2">1.4.4187.39341</lang>
-          <lang id="de" invalidated="1" status="2">1.4.4187.39341</lang>
-          <lang id="el" invalidated="1" status="2">1.4.4187.39341</lang>
-          <lang id="hu" invalidated="1" status="2">1.4.4187.39341</lang>
-          <lang id="it" invalidated="1" status="2">1.4.4187.39341</lang>
-          <lang id="ja" invalidated="1" status="2">1.4.4187.39341</lang>
-          <lang id="lt" invalidated="1" status="2">1.4.4187.39341</lang>
-          <lang id="pl" invalidated="1" status="2">1.4.4187.39341</lang>
-          <lang id="fa" invalidated="1" status="2">1.4.4187.39341</lang>
-          <lang id="pt" invalidated="1" status="2">1.4.4187.39341</lang>
-          <lang id="ru" invalidated="1" status="2">1.4.4187.39341</lang>
-          <lang id="es" invalidated="1" status="2">1.4.4187.39341</lang>
-          <lang id="sv-SE" invalidated="1" status="2">1.4.4187.39341</lang>
-          <lang id="th" invalidated="1" status="2">1.4.4187.39341</lang>
-          <lang id="tr" invalidated="1" status="2">1.4.4187.39341</lang>
-          <lang id="vi" invalidated="1" status="2">1.4.4187.39341</lang>
+        <row id="Assembly Version" locked="1" state="3">
+          <prev>1.5.4216.41766</prev>
+          <native>1.5.4258.36102</native>
+          <lang id="ar" invalidated="1">1.4.4187.39341</lang>
+          <lang id="zh" invalidated="1">1.4.4187.39341</lang>
+          <lang id="zh.tra" invalidated="1">1.4.4187.39341</lang>
+          <lang id="nl" invalidated="1">1.4.4187.39341</lang>
+          <lang id="en" invalidated="1">1.4.4187.39341</lang>
+          <lang id="fr" invalidated="1">1.4.4187.39341</lang>
+          <lang id="de" invalidated="1">1.4.4187.39341</lang>
+          <lang id="el" invalidated="1">1.4.4187.39341</lang>
+          <lang id="hu" invalidated="1">1.4.4187.39341</lang>
+          <lang id="it" invalidated="1">1.4.4187.39341</lang>
+          <lang id="ja" invalidated="1">1.4.4187.39341</lang>
+          <lang id="lt" invalidated="1">1.4.4187.39341</lang>
+          <lang id="pl" invalidated="1">1.4.4187.39341</lang>
+          <lang id="fa" invalidated="1">1.4.4187.39341</lang>
+          <lang id="pt" invalidated="1">1.4.4187.39341</lang>
+          <lang id="ru" invalidated="1">1.4.4187.39341</lang>
+          <lang id="es" invalidated="1">1.4.4187.39341</lang>
+          <lang id="sv-SE" invalidated="1">1.4.4187.39341</lang>
+          <lang id="th" invalidated="1">1.4.4187.39341</lang>
+          <lang id="tr" invalidated="1">1.4.4187.39341</lang>
+          <lang id="vi" invalidated="1">1.4.4187.39341</lang>
         </row>
         <row id="Comments" state="0">
           <native>Free and open source program that is designed to cleanup Microsoft Windows Registry</native>
@@ -10227,30 +10206,29 @@
           <lang id="tr" status="2">Temizleme Microsoft, Windows Kayıt Defteri için tasarlanmıştır ücretsiz ve açık kaynak program</lang>
           <lang id="vi" status="2">Miễn phí và mã nguồn mở chương trình được thiết kế để dọn dẹp Microsoft Windows Registry</lang>
         </row>
-        <row id="CompanyName" state="3">
-          <prev>Little Apps (http://www.littleapps.co.cc)</prev>
-          <native>Little Apps (http://www.little-apps.org)</native>
-          <lang id="ar" status="2">تطبيقات صغيرة (http://www.little-apps.org)</lang>
-          <lang id="zh" status="2">小小的应用程序 (http://www.little-apps.org)</lang>
-          <lang id="zh.tra" status="2">小小的應用程式 (http://www.little-apps.org)</lang>
-          <lang id="nl" status="2">Weinig Apps (http://www.little-apps.org)</lang>
-          <lang id="en" status="2">Little Apps (http://www.little-apps.org)</lang>
-          <lang id="fr" status="2">Petites applications (http://www.little-apps.org)</lang>
-          <lang id="de" status="2">Kleine Apps (http://www.little-apps.org)</lang>
-          <lang id="el" status="2">Μικρή Apps (http://www.little-apps.org)</lang>
-          <lang id="hu" status="2">Kis Apps (http://www.little-apps.org)</lang>
-          <lang id="it" status="2">Applicazioni Little (http://www.little-apps.org)</lang>
-          <lang id="ja" status="2">リトルアプリ（http://www.little-apps.org）</lang>
-          <lang id="lt" status="2">Mažasis Apps "(http://www.little-apps.org)</lang>
-          <lang id="pl" status="2">Mała Apps (http://www.little-apps.org)</lang>
-          <lang id="fa" status="2">نرم افزار کوچک (http://www.little-apps.org)</lang>
-          <lang id="pt" status="2">Apps pouco (http://www.little-apps.org)</lang>
-          <lang id="ru" status="2">Маленькая Apps (http://www.little-apps.org)</lang>
-          <lang id="es" status="2">Aplicaciones poco (http://www.little-apps.org)</lang>
-          <lang id="sv-SE" status="2">Little Apps (http://www.little-apps.org)</lang>
-          <lang id="th" status="2">Apps ลิตเติ้ล (http://www.little-apps.org)</lang>
-          <lang id="tr" status="2">Küçük Apps (http://www.little-apps.org)</lang>
-          <lang id="vi" status="2">Ít Apps (http://www.little-apps.org)</lang>
+        <row id="CompanyName">
+          <native>Little Apps</native>
+          <lang id="ar" date="20110829210844" status="3">تطبيقات صغيرة</lang>
+          <lang id="zh" date="20110829210854" status="3">小小的应用程序</lang>
+          <lang id="zh.tra" date="20110829210857" status="3">小小的應用程式</lang>
+          <lang id="nl" date="20110829210759" status="3">Weinig Apps</lang>
+          <lang id="en" date="20110829210932" status="3">Little Apps</lang>
+          <lang id="fr" date="20110829210941" status="3">Petites applications</lang>
+          <lang id="de" date="20110829210804" status="3">Kleine Apps</lang>
+          <lang id="el" date="20110829210828" status="3">Μικρή Apps</lang>
+          <lang id="hu" date="20110829210938" status="3">Kis Apps</lang>
+          <lang id="it" date="20110829210921" status="3">Applicazioni Little</lang>
+          <lang id="ja" date="20110829210903" status="3">リトルアプリ</lang>
+          <lang id="lt" date="20110829210955" status="3">Mažasis Apps</lang>
+          <lang id="pl" date="20110829210917" status="3">Mała Apps</lang>
+          <lang id="fa" date="20110829211117" status="3">نرم افزار کوچک </lang>
+          <lang id="pt" date="20110829210754" status="3">Apps pouco</lang>
+          <lang id="ru" date="20110829210810" status="3">Маленькая Apps</lang>
+          <lang id="es" date="20110829210739" status="3">Aplicaciones poco</lang>
+          <lang id="sv-SE" date="20110829210850" status="3">Little Apps</lang>
+          <lang id="th" date="20110829210913" status="3">Apps ลิตเติ้ล</lang>
+          <lang id="tr" date="20110829210947" status="3">Küçük Apps</lang>
+          <lang id="vi" date="20110829210909" status="3">Ít Apps</lang>
         </row>
         <row id="FileDescription" state="0">
           <native>Little Registry Cleaner</native>
@@ -10276,30 +10254,30 @@
           <lang id="tr" status="2">Little Registry Cleaner</lang>
           <lang id="vi" status="2">Người lau chùi Nơi đăng ký Nhỏ</lang>
         </row>
-        <row id="FileVersion" state="3">
+        <row id="FileVersion" locked="1" state="3">
           <prev>1.4.2</prev>
           <native>1.5</native>
-          <lang id="ar" invalidated="1" status="2">1.4.2</lang>
-          <lang id="zh" invalidated="1" status="2">1.4.2</lang>
-          <lang id="zh.tra" invalidated="1" status="2">1.4.2</lang>
-          <lang id="nl" invalidated="1" status="2">1.4.2</lang>
-          <lang id="en" invalidated="1" status="2">1.4.2</lang>
-          <lang id="fr" invalidated="1" status="2">1.4.2</lang>
-          <lang id="de" invalidated="1" status="2">1.4.2</lang>
-          <lang id="el" invalidated="1" status="2">1.4.2</lang>
-          <lang id="hu" invalidated="1" status="2">1.4.2</lang>
-          <lang id="it" invalidated="1" status="2">1.4.2</lang>
-          <lang id="ja" invalidated="1" status="2">1.4.2</lang>
-          <lang id="lt" invalidated="1" status="2">1.4.2</lang>
-          <lang id="pl" invalidated="1" status="2">1.4.2</lang>
-          <lang id="fa" invalidated="1" status="2">1.4.2</lang>
-          <lang id="pt" invalidated="1" status="2">1.4.2</lang>
-          <lang id="ru" invalidated="1" status="2">1.4.2</lang>
-          <lang id="es" invalidated="1" status="2">1.4.2</lang>
-          <lang id="sv-SE" invalidated="1" status="2">1.4.2</lang>
-          <lang id="th" invalidated="1" status="2">1.4.2</lang>
-          <lang id="tr" invalidated="1" status="2">1.4.2</lang>
-          <lang id="vi" invalidated="1" status="2">1.4.2</lang>
+          <lang id="ar" invalidated="1">1.4.2</lang>
+          <lang id="zh" invalidated="1">1.4.2</lang>
+          <lang id="zh.tra" invalidated="1">1.4.2</lang>
+          <lang id="nl" invalidated="1">1.4.2</lang>
+          <lang id="en" invalidated="1">1.4.2</lang>
+          <lang id="fr" invalidated="1">1.4.2</lang>
+          <lang id="de" invalidated="1">1.4.2</lang>
+          <lang id="el" invalidated="1">1.4.2</lang>
+          <lang id="hu" invalidated="1">1.4.2</lang>
+          <lang id="it" invalidated="1">1.4.2</lang>
+          <lang id="ja" invalidated="1">1.4.2</lang>
+          <lang id="lt" invalidated="1">1.4.2</lang>
+          <lang id="pl" invalidated="1">1.4.2</lang>
+          <lang id="fa" invalidated="1">1.4.2</lang>
+          <lang id="pt" invalidated="1">1.4.2</lang>
+          <lang id="ru" invalidated="1">1.4.2</lang>
+          <lang id="es" invalidated="1">1.4.2</lang>
+          <lang id="sv-SE" invalidated="1">1.4.2</lang>
+          <lang id="th" invalidated="1">1.4.2</lang>
+          <lang id="tr" invalidated="1">1.4.2</lang>
+          <lang id="vi" invalidated="1">1.4.2</lang>
         </row>
         <row id="FileVersion[1]" class="TIntegerRow" state="0">1</row>
         <row id="FileVersion[2]" class="TIntegerRow" state="3">
@@ -10311,29 +10289,29 @@
           <native>0</native>
         </row>
         <row id="FileVersion[4]" class="TIntegerRow" state="0">0</row>
-        <row id="InternalName" state="0">
+        <row id="InternalName" locked="1" state="0">
           <native>Little Registry Cleaner.exe</native>
-          <lang id="ar" status="2">يذكر التسجيل Cleaner.exe</lang>
-          <lang id="zh" status="2">小注册表 Cleaner.exe</lang>
-          <lang id="zh.tra" status="2">小注冊表 Cleaner.exe</lang>
-          <lang id="nl" status="2">Weinig register Cleaner.exe</lang>
-          <lang id="en" status="2">Little Registry Cleaner.exe</lang>
-          <lang id="fr" status="2">Petite Cleaner.exe registre</lang>
-          <lang id="de" status="2">Kleine Registry Cleaner.exe</lang>
-          <lang id="el" status="2">Μικρή Μητρώου Cleaner.exe</lang>
-          <lang id="hu" status="2">Kis Registry Cleaner.exe</lang>
-          <lang id="it" status="2">Poco Cleaner.exe Registro</lang>
-          <lang id="ja" status="2">リトルレジストリCleaner.exe</lang>
-          <lang id="lt" status="2">Mažasis registro Cleaner.exe</lang>
-          <lang id="pl" status="2">Mała rejestru Cleaner.exe</lang>
-          <lang id="fa" status="2">کوچک Cleaner.exe رجیستری</lang>
-          <lang id="pt" status="2">Cleaner.exe Registro pouco</lang>
-          <lang id="ru" status="2">Маленькая реестра Cleaner.exe</lang>
-          <lang id="es" status="2">Cleaner.exe Little Registry</lang>
-          <lang id="sv-SE" status="2">Little Registry Cleaner.exe</lang>
-          <lang id="th" status="2">Cleaner.exe รีจิสทรีเพียงเล็กน้อย</lang>
-          <lang id="tr" status="2">Küçük Kayıt Cleaner.exe</lang>
-          <lang id="vi" status="2">Ít Registry Cleaner.exe</lang>
+          <lang id="ar">يذكر التسجيل Cleaner.exe</lang>
+          <lang id="zh">小注册表 Cleaner.exe</lang>
+          <lang id="zh.tra">小注冊表 Cleaner.exe</lang>
+          <lang id="nl">Weinig register Cleaner.exe</lang>
+          <lang id="en">Little Registry Cleaner.exe</lang>
+          <lang id="fr">Petite Cleaner.exe registre</lang>
+          <lang id="de">Kleine Registry Cleaner.exe</lang>
+          <lang id="el">Μικρή Μητρώου Cleaner.exe</lang>
+          <lang id="hu">Kis Registry Cleaner.exe</lang>
+          <lang id="it">Poco Cleaner.exe Registro</lang>
+          <lang id="ja">リトルレジストリCleaner.exe</lang>
+          <lang id="lt">Mažasis registro Cleaner.exe</lang>
+          <lang id="pl">Mała rejestru Cleaner.exe</lang>
+          <lang id="fa">کوچک Cleaner.exe رجیستری</lang>
+          <lang id="pt">Cleaner.exe Registro pouco</lang>
+          <lang id="ru">Маленькая реестра Cleaner.exe</lang>
+          <lang id="es">Cleaner.exe Little Registry</lang>
+          <lang id="sv-SE">Little Registry Cleaner.exe</lang>
+          <lang id="th">Cleaner.exe รีจิสทรีเพียงเล็กน้อย</lang>
+          <lang id="tr">Küçük Kayıt Cleaner.exe</lang>
+          <lang id="vi">Ít Registry Cleaner.exe</lang>
         </row>
         <row id="LegalCopyright" state="3">
           <prev>Copyright © Little Apps 2008-2010</prev>
@@ -10360,29 +10338,29 @@
           <lang id="tr" status="2">Copyright © Küçük Apps 2008-2011</lang>
           <lang id="vi" status="2">Bản quyền © 2008-2011 nhỏ Apps</lang>
         </row>
-        <row id="OriginalFilename" state="0">
+        <row id="OriginalFilename" locked="1" state="0">
           <native>Little Registry Cleaner.exe</native>
-          <lang id="ar" status="2">يذكر التسجيل Cleaner.exe</lang>
-          <lang id="zh" status="2">小注册表 Cleaner.exe</lang>
-          <lang id="zh.tra" status="2">小注冊表 Cleaner.exe</lang>
-          <lang id="nl" status="2">Weinig register Cleaner.exe</lang>
-          <lang id="en" status="2">Little Registry Cleaner.exe</lang>
-          <lang id="fr" status="2">Petite Cleaner.exe registre</lang>
-          <lang id="de" status="2">Kleine Registry Cleaner.exe</lang>
-          <lang id="el" status="2">Μικρή Μητρώου Cleaner.exe</lang>
-          <lang id="hu" status="2">Kis Registry Cleaner.exe</lang>
-          <lang id="it" status="2">Poco Cleaner.exe Registro</lang>
-          <lang id="ja" status="2">リトルレジストリCleaner.exe</lang>
-          <lang id="lt" status="2">Mažasis registro Cleaner.exe</lang>
-          <lang id="pl" status="2">Mała rejestru Cleaner.exe</lang>
-          <lang id="fa" status="2">کوچک Cleaner.exe رجیستری</lang>
-          <lang id="pt" status="2">Cleaner.exe Registro pouco</lang>
-          <lang id="ru" status="2">Маленькая реестра Cleaner.exe</lang>
-          <lang id="es" status="2">Cleaner.exe Little Registry</lang>
-          <lang id="sv-SE" status="2">Little Registry Cleaner.exe</lang>
-          <lang id="th" status="2">Cleaner.exe รีจิสทรีเพียงเล็กน้อย</lang>
-          <lang id="tr" status="2">Küçük Kayıt Cleaner.exe</lang>
-          <lang id="vi" status="2">Ít Registry Cleaner.exe</lang>
+          <lang id="ar">يذكر التسجيل Cleaner.exe</lang>
+          <lang id="zh">小注册表 Cleaner.exe</lang>
+          <lang id="zh.tra">小注冊表 Cleaner.exe</lang>
+          <lang id="nl">Weinig register Cleaner.exe</lang>
+          <lang id="en">Little Registry Cleaner.exe</lang>
+          <lang id="fr">Petite Cleaner.exe registre</lang>
+          <lang id="de">Kleine Registry Cleaner.exe</lang>
+          <lang id="el">Μικρή Μητρώου Cleaner.exe</lang>
+          <lang id="hu">Kis Registry Cleaner.exe</lang>
+          <lang id="it">Poco Cleaner.exe Registro</lang>
+          <lang id="ja">リトルレジストリCleaner.exe</lang>
+          <lang id="lt">Mažasis registro Cleaner.exe</lang>
+          <lang id="pl">Mała rejestru Cleaner.exe</lang>
+          <lang id="fa">کوچک Cleaner.exe رجیستری</lang>
+          <lang id="pt">Cleaner.exe Registro pouco</lang>
+          <lang id="ru">Маленькая реестра Cleaner.exe</lang>
+          <lang id="es">Cleaner.exe Little Registry</lang>
+          <lang id="sv-SE">Little Registry Cleaner.exe</lang>
+          <lang id="th">Cleaner.exe รีจิสทรีเพียงเล็กน้อย</lang>
+          <lang id="tr">Küçük Kayıt Cleaner.exe</lang>
+          <lang id="vi">Ít Registry Cleaner.exe</lang>
         </row>
         <row id="ProductName" state="0">
           <native>Little Registry Cleaner</native>
@@ -10408,30 +10386,30 @@
           <lang id="tr" status="2">Little Registry Cleaner</lang>
           <lang id="vi" status="2">Người lau chùi Nơi đăng ký Nhỏ</lang>
         </row>
-        <row id="ProductVersion" state="3">
+        <row id="ProductVersion" locked="1" state="3">
           <prev>1.4.2</prev>
           <native>1.5</native>
-          <lang id="ar" invalidated="1" status="2">1.4.2</lang>
-          <lang id="zh" invalidated="1" status="2">1.4.2</lang>
-          <lang id="zh.tra" invalidated="1" status="2">1.4.2</lang>
-          <lang id="nl" invalidated="1" status="2">1.4.2</lang>
-          <lang id="en" invalidated="1" status="2">1.4.2</lang>
-          <lang id="fr" invalidated="1" status="2">1.4.2</lang>
-          <lang id="de" invalidated="1" status="2">1.4.2</lang>
-          <lang id="el" invalidated="1" status="2">1.4.2</lang>
-          <lang id="hu" invalidated="1" status="2">1.4.2</lang>
-          <lang id="it" invalidated="1" status="2">1.4.2</lang>
-          <lang id="ja" invalidated="1" status="2">1.4.2</lang>
-          <lang id="lt" invalidated="1" status="2">1.4.2</lang>
-          <lang id="pl" invalidated="1" status="2">1.4.2</lang>
-          <lang id="fa" invalidated="1" status="2">1.4.2</lang>
-          <lang id="pt" invalidated="1" status="2">1.4.2</lang>
-          <lang id="ru" invalidated="1" status="2">1.4.2</lang>
-          <lang id="es" invalidated="1" status="2">1.4.2</lang>
-          <lang id="sv-SE" invalidated="1" status="2">1.4.2</lang>
-          <lang id="th" invalidated="1" status="2">1.4.2</lang>
-          <lang id="tr" invalidated="1" status="2">1.4.2</lang>
-          <lang id="vi" invalidated="1" status="2">1.4.2</lang>
+          <lang id="ar" invalidated="1">1.4.2</lang>
+          <lang id="zh" invalidated="1">1.4.2</lang>
+          <lang id="zh.tra" invalidated="1">1.4.2</lang>
+          <lang id="nl" invalidated="1">1.4.2</lang>
+          <lang id="en" invalidated="1">1.4.2</lang>
+          <lang id="fr" invalidated="1">1.4.2</lang>
+          <lang id="de" invalidated="1">1.4.2</lang>
+          <lang id="el" invalidated="1">1.4.2</lang>
+          <lang id="hu" invalidated="1">1.4.2</lang>
+          <lang id="it" invalidated="1">1.4.2</lang>
+          <lang id="ja" invalidated="1">1.4.2</lang>
+          <lang id="lt" invalidated="1">1.4.2</lang>
+          <lang id="pl" invalidated="1">1.4.2</lang>
+          <lang id="fa" invalidated="1">1.4.2</lang>
+          <lang id="pt" invalidated="1">1.4.2</lang>
+          <lang id="ru" invalidated="1">1.4.2</lang>
+          <lang id="es" invalidated="1">1.4.2</lang>
+          <lang id="sv-SE" invalidated="1">1.4.2</lang>
+          <lang id="th" invalidated="1">1.4.2</lang>
+          <lang id="tr" invalidated="1">1.4.2</lang>
+          <lang id="vi" invalidated="1">1.4.2</lang>
         </row>
         <row id="ProductVersion[1]" class="TIntegerRow" state="0">1</row>
         <row id="ProductVersion[2]" class="TIntegerRow" state="3">
