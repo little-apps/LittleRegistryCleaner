@@ -390,3 +390,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Implemented task scheduler to schedule registry scans
 - Registry scans can be started by specifying "/scan" argument
 - Integrated DeskMetrics into Little Registry Cleaner
+
++ Version 1.5 Released

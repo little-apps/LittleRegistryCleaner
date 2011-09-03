@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.1.321" date="20110829212355" scan="67" scanned="20110829211720">
+<document version="2.1.321" date="20110901005450" scan="67" scanned="20110829211720">
   <lang id="ar"/>
   <lang id="zh"/>
   <lang id="zh.tra" ime="imOn"/>
@@ -807,10 +807,10 @@
           <component class="TVisImageList" name="imageList" state="0" type="System.Windows.Forms.ImageList">
           </component>
           <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer" align="alClient">
-            <row id="Location.X" state="0">0</row>
-            <row id="Location.Y" state="0">0</row>
-            <row id="Size.Height" state="0">436</row>
-            <row id="Size.Width" state="0">717</row>
+            <row id="Location.X">0</row>
+            <row id="Location.Y">0</row>
+            <row id="Size.Height">436</row>
+            <row id="Size.Width">717</row>
             <row id="Text" excluded="1">
               <native>toolStripContainer1</native>
               <lang id="ar" status="2">toolStripContainer1</lang>
@@ -836,7 +836,7 @@
               <lang id="vi" status="2">toolStripContainer1</lang>
             </row>
           </component>
-          <component class="TVisPanel" name="toolStripContainer1" state="1" type="System.Windows.Forms.ToolStripContainer">
+          <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer">
             <row id="Text" state="1">
               <native>toolStripContainer1</native>
               <lang id="ar" status="2">toolStripContainer1</lang>
@@ -1083,8 +1083,12 @@
               </component>
             </component>
           </component>
-          <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer">
-            <row id="Text" excluded="1" state="1">
+          <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer" align="alClient">
+            <row id="Location.X">0</row>
+            <row id="Location.Y">0</row>
+            <row id="Size.Height">436</row>
+            <row id="Size.Width">717</row>
+            <row id="Text" excluded="1">
               <native>toolStripContainer1</native>
               <lang id="ar" status="2">toolStripContainer1</lang>
               <lang id="zh" status="2">toolStripContainer1</lang>
@@ -1108,15 +1112,28 @@
               <lang id="tr" status="2">toolStripContainer1</lang>
               <lang id="vi" status="2">toolStripContainer1</lang>
             </row>
-            <component class="TVisGridPanel" name="tableLayoutPanel1" type="System.Windows.Forms.TableLayoutPanel">
+            <component class="TVisGridPanel" name="tableLayoutPanel1" type="System.Windows.Forms.TableLayoutPanel" align="alClient">
               <columns countset="1">
-                <item class="TVisGridItem" name="Column0" type="stAbsolute"/>
+                <item class="TVisGridItem" name="Column0" type="stAbsolute">
+                  <row id="Width" state="0">717</row>
+                </item>
               </columns>
               <rows countset="1">
-                <item class="TVisGridItem" name="Row0" type="stPercent"/>
+                <item class="TVisGridItem" name="Row0" type="stPercent">
+                  <row id="Height" class="TPercentRow" state="0">100.1</row>
+                </item>
               </rows>
-              <component class="TVisDefaultControl" name="treeViewAdv1" type="Common_Tools.TreeViewAdv.Tree.TreeViewAdv">
-                <row id="Text" excluded="1" state="1">
+              <row id="Location.X" state="0">0</row>
+              <row id="Location.Y" state="0">0</row>
+              <row id="Size.Height" state="0">382</row>
+              <row id="Size.Width" state="0">717</row>
+              <component class="TVisDefaultControl" name="treeViewAdv1" type="Common_Tools.TreeViewAdv.Tree.TreeViewAdv" align="alClient">
+                <row id="BackColor" hidden="1" state="0">clWindow</row>
+                <row id="Location.X" state="0">3</row>
+                <row id="Location.Y" state="0">3</row>
+                <row id="Size.Height" state="0">376</row>
+                <row id="Size.Width" state="0">711</row>
+                <row id="Text" excluded="1">
                   <native>treeViewAdv1</native>
                   <lang id="ar" status="2">treeViewAdv1</lang>
                   <lang id="zh" status="2">treeViewAdv1</lang>
@@ -1221,8 +1238,14 @@
               </component>
             </component>
             <component class="TVisToolBar" name="toolStrip1" type="System.Windows.Forms.ToolStrip">
+              <row id="Location.X" state="0">0</row>
+              <row id="Location.Y" state="0">0</row>
+              <row id="Size.Height" state="0">54</row>
+              <row id="Size.Width" state="0">717</row>
               <component class="TVisToolButton" name="toolStripButtonAdd" type="System.Windows.Forms.ToolStripButton">
-                <row id="Text" state="1">
+                <row id="Size.Height" state="0">51</row>
+                <row id="Size.Width" state="0">36</row>
+                <row id="Text">
                   <native>Add</native>
                   <lang id="ar" status="2">إضافة</lang>
                   <lang id="zh" status="2">新增</lang>
@@ -1248,7 +1271,9 @@
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonEdit" type="System.Windows.Forms.ToolStripButton">
-                <row id="Text" state="1">
+                <row id="Size.Height" state="0">51</row>
+                <row id="Size.Width" state="0">36</row>
+                <row id="Text">
                   <native>Edit</native>
                   <lang id="ar" status="2">تحرير</lang>
                   <lang id="zh" status="2">编辑</lang>
@@ -1274,7 +1299,9 @@
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonDelete" type="System.Windows.Forms.ToolStripButton">
-                <row id="Text" state="1">
+                <row id="Size.Height" state="0">51</row>
+                <row id="Size.Width" state="0">44</row>
+                <row id="Text">
                   <native>Delete</native>
                   <lang id="ar" status="2">حذف</lang>
                   <lang id="zh" status="2">删除</lang>
@@ -1300,7 +1327,9 @@
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonView" type="System.Windows.Forms.ToolStripButton">
-                <row id="Text" state="1">
+                <row id="Size.Height" state="0">51</row>
+                <row id="Size.Width" state="0">63</row>
+                <row id="Text">
                   <native>View Item</native>
                   <lang id="ar" status="2">عرض عنصر</lang>
                   <lang id="zh" status="2">查看表项</lang>
@@ -1326,7 +1355,9 @@
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonRun" type="System.Windows.Forms.ToolStripButton">
-                <row id="Text" state="1">
+                <row id="Size.Height" state="0">51</row>
+                <row id="Size.Width" state="0">36</row>
+                <row id="Text">
                   <native>Run</native>
                   <lang id="ar" status="2">تشغيل</lang>
                   <lang id="zh" status="2">执行</lang>
@@ -1352,7 +1383,9 @@
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonRefresh" type="System.Windows.Forms.ToolStripButton">
-                <row id="Text" state="1">
+                <row id="Size.Height" state="0">51</row>
+                <row id="Size.Width" state="0">50</row>
+                <row id="Text">
                   <native>Refresh</native>
                   <lang id="ar" status="2">تحديث</lang>
                   <lang id="zh" status="2">刷新</lang>
@@ -1585,8 +1618,8 @@
     <node class="TWindowsVersionFolder" name="Versions" resid="16">
       <node class="TWindowsVersionNode" name="1" resid="1">
         <row id="Assembly Version" state="3">
-          <prev>1.0.0.0</prev>
-          <native>1.0.4258.36103</native>
+          <prev>1.0.4258.36103</prev>
+          <native>1.0.4260.41839</native>
           <lang id="ar" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="zh" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="zh.tra" invalidated="1" status="2">1.0.0.0</lang>
@@ -1880,61 +1913,58 @@
         <form class="TNetForm" name="Little_Uninstall_Manager.UninstallManager" type="Little_Uninstall_Manager.UninstallManager">
           <row id="ClientSize.Height">447</row>
           <row id="ClientSize.Width">625</row>
-          <row id="Text" state="3">
-            <prev>Little Registry Cleaner - Uninstall Manager</prev>
+          <row id="Text">
             <native>Little Uninstall Manager</native>
-            <lang id="ar" invalidated="1" status="2">التسجيل ضئيلة الأنظف - Uninstall Manager</lang>
-            <lang id="zh" invalidated="1" status="2">迷你注册表清理器-卸载管理</lang>
-            <lang id="zh.tra" invalidated="1" status="2">迷你注册表清理器-卸載管理</lang>
-            <lang id="nl" invalidated="1" status="2">Kleine Registerreiniger - Manager verwijderen</lang>
-            <lang id="en" invalidated="1" status="2">Little Registry Cleaner - Uninstall Manager</lang>
-            <lang id="fr" invalidated="1" status="2">Little Registry Cleaner - Gestionnaire de programmes installés</lang>
-            <lang id="de" invalidated="1" status="2">Little Registry Cleaner – Deinstallationsmanager</lang>
-            <lang id="el" invalidated="1" status="2">Little Registry Cleaner - Διαχείριστης απεγκατάστασης</lang>
-            <lang id="hu" invalidated="1" status="2">Little Registry Cleaner - Uninstallálás menedzser</lang>
-            <lang id="it" invalidated="1" status="2">Little Registry Cleaner – Gestione disinstallazione</lang>
-            <lang id="ja" invalidated="1" status="2">リトルレジストリクリーナー-アンインストールマネージャ</lang>
-            <lang id="lt" invalidated="1" status="2">Little Registry Cleaner – Programos pašalinimo vedlys</lang>
-            <lang id="pl" invalidated="1" status="2">Little Registry Cleaner - Menadżer deinstalacji</lang>
-            <lang id="fa" invalidated="1" status="2">تمیز کننده رجیستری کوچولو -  ازکارانداختن مدیر</lang>
-            <lang id="pt" invalidated="1" status="2">Little Registry Cleaner - Gerenciador para Desinstalação</lang>
-            <lang id="ru" invalidated="1" status="2">Little Registry Cleaner - Менеджер деинсталляции</lang>
-            <lang id="es" invalidated="1" status="2">Little Registry Cleaner - Administrador de desinstalación</lang>
-            <lang id="sv-SE" invalidated="1" status="2">Little Registry Cleaner – Avinstallerare</lang>
-            <lang id="th" invalidated="1" status="2">รีจิสทรีน้อยตัวล้าง - การถอนการติดตั้งโปรแกรมจัดการ</lang>
-            <lang id="tr" invalidated="1" status="2">Little Registry Cleaner - Kaldırma Yöneticisi</lang>
-            <lang id="vi" invalidated="1" status="2">Người lau chùi Nơi đăng ký Nhỏ - Chương trình quản lý</lang>
+            <lang id="ar" status="2">يذكر إلغاء إدارة</lang>
+            <lang id="zh" status="2">小卸载管理器</lang>
+            <lang id="zh.tra" status="2">小卸載管理</lang>
+            <lang id="nl" status="2">Weinig Uninstall Manager</lang>
+            <lang id="en" status="2">Little Uninstall Manager</lang>
+            <lang id="fr" status="2">Petite Uninstall Manager</lang>
+            <lang id="de" status="2">Kleine Uninstall Manager</lang>
+            <lang id="el" status="2">Μικρή Uninstall Manager</lang>
+            <lang id="hu" status="2">Kis Uninstall Manager</lang>
+            <lang id="it" status="2">Poco Uninstall Manager</lang>
+            <lang id="ja" status="2">リトルアンインストールマネージャー</lang>
+            <lang id="lt" status="2">Mažai Pašalinti Vadybininkas</lang>
+            <lang id="pl" status="2">Mała Uninstall Manager</lang>
+            <lang id="fa" status="2">کوچولو عزل مدیر</lang>
+            <lang id="pt" status="2">Uninstall Manager pouco</lang>
+            <lang id="ru" status="2">Маленькая Uninstall Manager</lang>
+            <lang id="es" status="2">Poco Uninstall Manager</lang>
+            <lang id="sv-SE" status="2">Little Avinstallera chef</lang>
+            <lang id="th" status="2">ผู้จัดการฝ่ายการถอนการติดตั้งน้อย</lang>
+            <lang id="tr" status="2">Küçük Uninstall Manager</lang>
+            <lang id="vi" status="2">Ít Uninstall Manager</lang>
           </row>
-          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
-          </component>
           <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer" align="alClient">
             <row id="Location.X">0</row>
             <row id="Location.Y">0</row>
             <row id="Size.Height">447</row>
             <row id="Size.Width">625</row>
-            <row id="Text">
+            <row id="Text" locked="1">
               <native>toolStripContainer1</native>
-              <lang id="ar" status="2">toolStripContainer1</lang>
-              <lang id="zh" status="2">toolStripContainer1</lang>
-              <lang id="zh.tra" status="2">toolStripContainer1</lang>
-              <lang id="nl" status="2">toolStripContainer1</lang>
-              <lang id="en" status="2">toolStripContainer1</lang>
-              <lang id="fr" status="2">toolStripContainer1</lang>
-              <lang id="de" status="2">toolStripContainer1</lang>
-              <lang id="el" status="2">toolStripContainer1</lang>
-              <lang id="hu" status="2">toolStripContainer1</lang>
-              <lang id="it" status="2">toolStripContainer1</lang>
-              <lang id="ja" status="2">toolStripContainer1</lang>
-              <lang id="lt" status="2">toolStripContainer1</lang>
-              <lang id="pl" status="2">toolStripContainer1</lang>
-              <lang id="fa" status="2">toolStripContainer1</lang>
-              <lang id="pt" status="2">toolStripContainer1</lang>
-              <lang id="ru" status="2">toolStripContainer1</lang>
-              <lang id="es" status="2">toolStripContainer1</lang>
-              <lang id="sv-SE" status="2">toolStripContainer1</lang>
-              <lang id="th" status="2">toolStripContainer1</lang>
-              <lang id="tr" status="2">toolStripContainer1</lang>
-              <lang id="vi" status="2">toolStripContainer1</lang>
+              <lang id="ar">toolStripContainer1</lang>
+              <lang id="zh">toolStripContainer1</lang>
+              <lang id="zh.tra">toolStripContainer1</lang>
+              <lang id="nl">toolStripContainer1</lang>
+              <lang id="en">toolStripContainer1</lang>
+              <lang id="fr">toolStripContainer1</lang>
+              <lang id="de">toolStripContainer1</lang>
+              <lang id="el">toolStripContainer1</lang>
+              <lang id="hu">toolStripContainer1</lang>
+              <lang id="it">toolStripContainer1</lang>
+              <lang id="ja">toolStripContainer1</lang>
+              <lang id="lt">toolStripContainer1</lang>
+              <lang id="pl">toolStripContainer1</lang>
+              <lang id="fa">toolStripContainer1</lang>
+              <lang id="pt">toolStripContainer1</lang>
+              <lang id="ru">toolStripContainer1</lang>
+              <lang id="es">toolStripContainer1</lang>
+              <lang id="sv-SE">toolStripContainer1</lang>
+              <lang id="th">toolStripContainer1</lang>
+              <lang id="tr">toolStripContainer1</lang>
+              <lang id="vi">toolStripContainer1</lang>
             </row>
             <component class="TVisGridPanel" name="tableLayoutPanel1" type="System.Windows.Forms.TableLayoutPanel" align="alClient">
               <columns countset="1">
@@ -2161,6 +2191,8 @@
               </component>
             </component>
           </component>
+          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
+          </component>
         </form>
       </node>
     </node>
@@ -2267,8 +2299,8 @@
     <node class="TWindowsVersionFolder" name="Versions" resid="16">
       <node class="TWindowsVersionNode" name="1" resid="1">
         <row id="Assembly Version" state="3">
-          <prev>0.0.0.0</prev>
-          <native>1.0.4258.36103</native>
+          <prev>1.0.4258.36103</prev>
+          <native>1.0.4260.41840</native>
           <lang id="ar" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="zh" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="zh.tra" invalidated="1" status="2">0.0.0.0</lang>
@@ -2528,7 +2560,7 @@
       </node>
     </node>
   </source>
-  <source class="TVisualStudioNetProjectSource" name="Common Tools\Common Tools.csproj" original="en" date="20110830025750" defaultoutputdir="Common Tools\bin\Debug" configuration="Debug|AnyCPU" assemblykind="naLibrary" netversion="net40" toolsversion="net40" rootnamespace="Common_Tools" options="[noSetRightToLeft,noSortItems,noCompileResource,noCreateAssembly,noDeleteCompiledResource,noDeleteSourceResource]">
+  <source class="TVisualStudioNetProjectSource" name="Common Tools\Common Tools.csproj" original="en" date="20110831060424" defaultoutputdir="Common Tools\bin\Debug" configuration="Debug|AnyCPU" assemblykind="naLibrary" netversion="net40" toolsversion="net40" rootnamespace="Common_Tools" options="[noSetRightToLeft,noSortItems,noCompileResource,noCreateAssembly,noDeleteCompiledResource,noDeleteSourceResource]">
     <outputfile dir="..\bin\Debug"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -2852,8 +2884,8 @@
     <node class="TWindowsVersionFolder" name="Versions" state="0" resid="16">
       <node class="TWindowsVersionNode" name="1" state="0" resid="1">
         <row id="Assembly Version" locked="1" state="3">
-          <prev>1.0.4216.37533</prev>
-          <native>1.0.4258.35934</native>
+          <prev>1.0.4258.35934</prev>
+          <native>1.1.4260.41838</native>
           <lang id="ar" invalidated="1">1.0.4187.39341</lang>
           <lang id="zh" invalidated="1">1.0.4187.39341</lang>
           <lang id="zh.tra" invalidated="1">1.0.4187.39341</lang>
@@ -2900,32 +2932,36 @@
           <lang id="tr" status="2">Genel Araçlar</lang>
           <lang id="vi" status="2">Công cụ thông thường</lang>
         </row>
-        <row id="FileVersion" locked="1" state="0">
-          <native>1.0.0.0</native>
-          <lang id="ar">1.0.0.0</lang>
-          <lang id="zh">1.0.0.0</lang>
-          <lang id="zh.tra">1.0.0.0</lang>
-          <lang id="nl">1.0.0.0</lang>
-          <lang id="en">1.0.0.0</lang>
-          <lang id="fr">1.0.0.0</lang>
-          <lang id="de">1.0.0.0</lang>
-          <lang id="el">1.0.0.0</lang>
-          <lang id="hu">1.0.0.0</lang>
-          <lang id="it">1.0.0.0</lang>
-          <lang id="ja">1.0.0.0</lang>
-          <lang id="lt">1.0.0.0</lang>
-          <lang id="pl">1.0.0.0</lang>
-          <lang id="fa">1.0.0.0</lang>
-          <lang id="pt">1.0.0.0</lang>
-          <lang id="ru">1.0.0.0</lang>
-          <lang id="es">1.0.0.0</lang>
-          <lang id="sv-SE">1.0.0.0</lang>
-          <lang id="th">1.0.0.0</lang>
-          <lang id="tr">1.0.0.0</lang>
-          <lang id="vi">1.0.0.0</lang>
+        <row id="FileVersion" locked="1" state="3">
+          <prev>1.0.0.0</prev>
+          <native>1.1.0.0</native>
+          <lang id="ar" invalidated="1">1.0.0.0</lang>
+          <lang id="zh" invalidated="1">1.0.0.0</lang>
+          <lang id="zh.tra" invalidated="1">1.0.0.0</lang>
+          <lang id="nl" invalidated="1">1.0.0.0</lang>
+          <lang id="en" invalidated="1">1.0.0.0</lang>
+          <lang id="fr" invalidated="1">1.0.0.0</lang>
+          <lang id="de" invalidated="1">1.0.0.0</lang>
+          <lang id="el" invalidated="1">1.0.0.0</lang>
+          <lang id="hu" invalidated="1">1.0.0.0</lang>
+          <lang id="it" invalidated="1">1.0.0.0</lang>
+          <lang id="ja" invalidated="1">1.0.0.0</lang>
+          <lang id="lt" invalidated="1">1.0.0.0</lang>
+          <lang id="pl" invalidated="1">1.0.0.0</lang>
+          <lang id="fa" invalidated="1">1.0.0.0</lang>
+          <lang id="pt" invalidated="1">1.0.0.0</lang>
+          <lang id="ru" invalidated="1">1.0.0.0</lang>
+          <lang id="es" invalidated="1">1.0.0.0</lang>
+          <lang id="sv-SE" invalidated="1">1.0.0.0</lang>
+          <lang id="th" invalidated="1">1.0.0.0</lang>
+          <lang id="tr" invalidated="1">1.0.0.0</lang>
+          <lang id="vi" invalidated="1">1.0.0.0</lang>
         </row>
         <row id="FileVersion[1]" class="TIntegerRow" state="0">1</row>
-        <row id="FileVersion[2]" class="TIntegerRow" state="0">0</row>
+        <row id="FileVersion[2]" class="TIntegerRow" state="3">
+          <prev>0</prev>
+          <native>1</native>
+        </row>
         <row id="FileVersion[3]" class="TIntegerRow" state="0">0</row>
         <row id="FileVersion[4]" class="TIntegerRow" state="0">0</row>
         <row id="InternalName" locked="1" state="0">
@@ -3024,32 +3060,36 @@
           <lang id="tr" status="2">Genel Araçlar</lang>
           <lang id="vi" status="2">Công cụ thông thường</lang>
         </row>
-        <row id="ProductVersion" state="0">
-          <native>1.0.0.0</native>
-          <lang id="ar" status="2">1.0.0.0</lang>
-          <lang id="zh" status="2">1.0.0.0</lang>
-          <lang id="zh.tra" status="2">1.0.0.0</lang>
-          <lang id="nl" status="2">1.0.0.0</lang>
-          <lang id="en" status="2">1.0.0.0</lang>
-          <lang id="fr" status="2">1.0.0.0</lang>
-          <lang id="de" status="2">1.0.0.0</lang>
-          <lang id="el" status="2">1.0.0.0</lang>
-          <lang id="hu" status="2">1.0.0.0</lang>
-          <lang id="it" status="2">1.0.0.0</lang>
-          <lang id="ja" status="2">1.0.0.0</lang>
-          <lang id="lt" status="2">1.0.0.0</lang>
-          <lang id="pl" status="2">1.0.0.0</lang>
-          <lang id="fa" status="2">1.0.0.0</lang>
-          <lang id="pt" status="2">1.0.0.0</lang>
-          <lang id="ru" status="2">1.0.0.0</lang>
-          <lang id="es" status="2">1.0.0.0</lang>
-          <lang id="sv-SE" status="2">1.0.0.0</lang>
-          <lang id="th" status="2">1.0.0.0</lang>
-          <lang id="tr" status="2">1.0.0.0</lang>
-          <lang id="vi" status="2">1.0.0.0</lang>
+        <row id="ProductVersion" state="3">
+          <prev>1.0.0.0</prev>
+          <native>1.1.0.0</native>
+          <lang id="ar" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="zh" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="zh.tra" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="nl" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="en" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="fr" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="de" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="el" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="hu" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="it" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="ja" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="lt" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="pl" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="fa" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="pt" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="ru" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="es" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="sv-SE" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="th" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="tr" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="vi" invalidated="1" status="2">1.0.0.0</lang>
         </row>
         <row id="ProductVersion[1]" class="TIntegerRow" state="0">1</row>
-        <row id="ProductVersion[2]" class="TIntegerRow" state="0">0</row>
+        <row id="ProductVersion[2]" class="TIntegerRow" state="3">
+          <prev>0</prev>
+          <native>1</native>
+        </row>
         <row id="ProductVersion[3]" class="TIntegerRow" state="0">0</row>
         <row id="ProductVersion[4]" class="TIntegerRow" state="0">0</row>
       </node>
@@ -3139,7 +3179,7 @@
             <lang id="fa" status="3">تمیز کننده رجیستری کوچولو -  درباره...</lang>
             <lang id="pt" status="2">Little Registry Cleaner - Sobre...</lang>
             <lang id="ru" status="3">Little Registry Cleaner - О программе...</lang>
-            <lang id="es" status="3">Little Registry Cleaner - Acerca de…</lang>
+            <lang id="es" status="3">Little Registry Cleaner - Acerca de…...</lang>
             <lang id="sv-SE" status="3">Little Registry Cleaner - Om...</lang>
             <lang id="th" status="2">Little Registry Cleaner - เกี่ยวกับ...</lang>
             <lang id="tr" status="3">Little Registry Cleaner - Hakkımızda...</lang>
@@ -6293,57 +6333,237 @@
                   <row id="Size.Height" state="0">85</row>
                   <row id="Size.Width" state="0">432</row>
                   <item name="Items[0]" state="0">
-                    <row id="Text" state="3">
-                      <prev>Log registry scans and fixes</prev>
+                    <row id="Text">
                       <native>Send anonymous usage statistics</native>
+                      <lang id="ar" status="2">إرسال إحصائيات الاستخدام مجهولة الهوية</lang>
+                      <lang id="zh" status="2">发送匿名使用统计</lang>
+                      <lang id="zh.tra" status="2">發送匿名的使用統計</lang>
+                      <lang id="nl" status="2">Stuur anonieme gebruiksstatistieken</lang>
+                      <lang id="en" status="2">Send anonymous usage statistics</lang>
+                      <lang id="fr" status="2">Envoyer les statistiques d'utilisation anonymes</lang>
+                      <lang id="de" status="2">Senden Sie anonyme Nutzungsstatistiken</lang>
+                      <lang id="el" status="2">Στείλτε ανώνυμα στατιστικά στοιχεία χρήσης</lang>
+                      <lang id="hu" status="2">Névtelen használati statisztikák küldése</lang>
+                      <lang id="it" status="2">Invia statistiche di utilizzo anonime</lang>
+                      <lang id="ja" status="2">匿名の使用統計情報を送信</lang>
+                      <lang id="lt" status="2">Siųsti anoniminę naudojimo statistiką</lang>
+                      <lang id="pl" status="2">Wysyłaj anonimowe statystyki użytkowania</lang>
+                      <lang id="fa" status="2">ارسال آمار استفاده از ناشناس</lang>
+                      <lang id="pt" status="2">Enviar estatísticas de uso anônimas</lang>
+                      <lang id="ru" status="2">Отправлять анонимную статистику использования</lang>
+                      <lang id="es" status="2">Enviar estadísticas de uso anónimas</lang>
+                      <lang id="sv-SE" status="2">Skicka anonym användarstatistik</lang>
+                      <lang id="th" status="2">ส่งสถิติการใช้ที่ไม่ระบุชื่อ</lang>
+                      <lang id="tr" status="2">Anonim kullanım istatistikleri gönder</lang>
+                      <lang id="vi" status="2">Gửi thống kê sử dụng ẩn danh</lang>
                     </row>
                   </item>
                   <item name="Items[1]" state="0">
-                    <row id="Text" state="3">
-                      <prev>Re-Scan after fixing registry issues</prev>
+                    <row id="Text">
                       <native>Log registry scans and fixes</native>
+                      <lang id="ar" status="2">سجل بتفحص التسجيل والإصلاحات</lang>
+                      <lang id="zh" status="2">日志的注册表扫描和修复</lang>
+                      <lang id="zh.tra" status="2">日誌註冊表掃描和修復</lang>
+                      <lang id="nl" status="2">Log register scant en fixes</lang>
+                      <lang id="en" status="2">Log registry scans and fixes</lang>
+                      <lang id="fr" status="2">Connexion scans registre et des corrections</lang>
+                      <lang id="de" status="2">Login Registrierung Scans und Updates</lang>
+                      <lang id="el" status="2">Σύνδεση μητρώο σαρώνει και διορθώνει</lang>
+                      <lang id="hu" status="2">Napló adatbázis vizsgálatok és javítások</lang>
+                      <lang id="it" status="2">Log scansioni di registro e correzioni</lang>
+                      <lang id="ja" status="2">レジストリのスキャンと修正をログに記録</lang>
+                      <lang id="lt" status="2">Prisijungti registro skenuoja ir pataisymai</lang>
+                      <lang id="pl" status="2">Zaloguj skanowanie rejestru i poprawki</lang>
+                      <lang id="fa" status="2">ورود به اسکن رجیستری و رفع</lang>
+                      <lang id="pt" status="2">Log scans do registro e correções</lang>
+                      <lang id="ru" status="2">Вход сканирует реестр и исправления</lang>
+                      <lang id="es" status="2">Registro de las exploraciones de registro y correcciones</lang>
+                      <lang id="sv-SE" status="2">Logga registret skannar och fixar</lang>
+                      <lang id="th" status="2">เข้าสู่ระบบสแกนรีจิสทรีและการแก้ไข</lang>
+                      <lang id="tr" status="2">Log kayıt defterini tarar ve düzeltmeler</lang>
+                      <lang id="vi" status="2">Đăng nhập quét registry và sửa chữa</lang>
                     </row>
                   </item>
                   <item name="Items[2]" state="0">
-                    <row id="Text" state="3">
-                      <prev>Check for updates automatically</prev>
+                    <row id="Text">
                       <native>Re-Scan after fixing registry issues</native>
+                      <lang id="ar" status="2">إعادة تفحص بعد تحديد القضايا التسجيل</lang>
+                      <lang id="zh" status="2">重新扫描后，修复注册表问题</lang>
+                      <lang id="zh.tra" status="2">重新掃描後修復註冊表問題</lang>
+                      <lang id="nl" status="2">Re-Scan na de vaststelling register kwesties</lang>
+                      <lang id="en" status="2">Re-Scan after fixing registry issues</lang>
+                      <lang id="fr" status="2">Re-Scan après fixation des problèmes de Registre</lang>
+                      <lang id="de" status="2">Re-Scan nach der Fixierung Registrierung Fragen</lang>
+                      <lang id="el" status="2">Re-Scan μετά τον καθορισμό του μητρώου θέματα</lang>
+                      <lang id="hu" status="2">Re-Scan után a rögzítő adatbázis kérdések</lang>
+                      <lang id="it" status="2">Re-Scan dopo il fissaggio problemi del Registro</lang>
+                      <lang id="ja" status="2">レジストリの問題を修正した後に再スキャン</lang>
+                      <lang id="lt" status="2">Re-Scan "po nustatantis registro problemas</lang>
+                      <lang id="pl" status="2">Re-Scan po ustaleniu problemów z rejestrem</lang>
+                      <lang id="fa" status="2">دوباره اسکن پس از رفع مسائل رجیستری</lang>
+                      <lang id="pt" status="2">Re-Scan após a correção de problemas de registro</lang>
+                      <lang id="ru" status="2">Повторное сканирование после фиксации реестра вопросы</lang>
+                      <lang id="es" status="2">Re-Scan después de arreglar problemas de registro</lang>
+                      <lang id="sv-SE" status="2">Re-Scan efter fastställande registret problem</lang>
+                      <lang id="th" status="2">Re : สแกนหลังจากแก้ไขปัญหาสตรี</lang>
+                      <lang id="tr" status="2">Kayıt defteri sorunları düzeltmeyi sonra Re-Scan</lang>
+                      <lang id="vi" status="2">Re-Scan sau khi sửa chữa vấn đề đăng ký</lang>
                     </row>
                   </item>
                   <item name="Items[3]" state="0">
-                    <row id="Text" state="3">
-                      <prev>Create system restore points automatically</prev>
+                    <row id="Text">
                       <native>Check for updates automatically</native>
+                      <lang id="ar" status="2">التحقق من وجود تحديثات تلقائيا</lang>
+                      <lang id="zh" status="2">自动检查更新</lang>
+                      <lang id="zh.tra" status="2">自動檢查更新</lang>
+                      <lang id="nl" status="2">Automatisch controleren op updates</lang>
+                      <lang id="en" status="2">Check for updates automatically</lang>
+                      <lang id="fr" status="2">Vérifiez les mises à jour automatiquement</lang>
+                      <lang id="de" status="2">Check for updates automatisch</lang>
+                      <lang id="el" status="2">Έλεγχος για ενημερώσεις αυτόματα</lang>
+                      <lang id="hu" status="2">Frissítések automatikus</lang>
+                      <lang id="it" status="2">Controllare gli aggiornamenti automaticamente</lang>
+                      <lang id="ja" status="2">自動的にアップデートをチェックする</lang>
+                      <lang id="lt" status="2">Automatiškai tikrinti dėl atnaujinimų</lang>
+                      <lang id="pl" status="2">Sprawdź aktualizacje automatycznie</lang>
+                      <lang id="fa" status="2">برای چک کردن به روز رسانی به صورت خودکار</lang>
+                      <lang id="pt" status="2">Verificar se há atualizações automaticamente</lang>
+                      <lang id="ru" status="2">Проверить наличие обновлений автоматически</lang>
+                      <lang id="es" status="2">Comprobar si hay actualizaciones de forma automática</lang>
+                      <lang id="sv-SE" status="2">Sök efter uppdateringar automatiskt</lang>
+                      <lang id="th" status="2">ตรวจหาการปรับปรุงโดยอัตโนมัติ</lang>
+                      <lang id="tr" status="2">Güncellemeleri otomatik olarak kontrol edin</lang>
+                      <lang id="vi" status="2">Kiểm tra các bản cập nhật tự động</lang>
                     </row>
                   </item>
                   <item name="Items[4]" state="0">
-                    <row id="Text" state="3">
-                      <prev>Show log after finished scanning</prev>
+                    <row id="Text">
                       <native>Create system restore points automatically</native>
+                      <lang id="ar" status="2">إنشاء نظام نقاط استعادة تلقائيا</lang>
+                      <lang id="zh" status="2">自动创建系统还原点</lang>
+                      <lang id="zh.tra" status="2">自動創建系統還原點</lang>
+                      <lang id="nl" status="2">Maak automatisch systeemherstelpunten</lang>
+                      <lang id="en" status="2">Create system restore points automatically</lang>
+                      <lang id="fr" status="2">Créer un système de points de restauration automatique</lang>
+                      <lang id="de" status="2">Neues System automatisch Wiederherstellungspunkte</lang>
+                      <lang id="el" status="2">Δημιουργία συστήματος σημεία επαναφοράς αυτόματα</lang>
+                      <lang id="hu" status="2">Hozzon létre rendszer-visszaállítási pontok automatikusan</lang>
+                      <lang id="it" status="2">Creare punti di ripristino del sistema automatico</lang>
+                      <lang id="ja" status="2">自動的にシステム復元ポイントを作成します。</lang>
+                      <lang id="lt" status="2">Sukurti sistemos atkūrimo taškus automatiškai</lang>
+                      <lang id="pl" status="2">Tworzenie punktów przywracania systemu automatycznie</lang>
+                      <lang id="fa" status="2">ایجاد نقاط بازیابی سیستم به طور خودکار</lang>
+                      <lang id="pt" status="2">Criar pontos de restauração do sistema automaticamente</lang>
+                      <lang id="ru" status="2">Создание точки восстановления системы автоматически</lang>
+                      <lang id="es" status="2">Crear un sistema de puntos de restauración automáticamente</lang>
+                      <lang id="sv-SE" status="2">Skapa systemåterställningspunkter automatiskt</lang>
+                      <lang id="th" status="2">สร้างจุดคืนค่าระบบโดยอัตโนมัติ</lang>
+                      <lang id="tr" status="2">Otomatik olarak sistem geri yükleme noktaları oluşturun</lang>
+                      <lang id="vi" status="2">Tạo điểm khôi phục hệ thống tự động</lang>
                     </row>
                   </item>
                   <item name="Items[5]" state="0">
-                    <row id="Text" state="3">
-                      <prev>Delete backup file after restoring the registry</prev>
+                    <row id="Text">
                       <native>Show log after finished scanning</native>
+                      <lang id="ar" status="2">عرض السجل بعد الانتهاء من المسح الضوئي</lang>
+                      <lang id="zh" status="2">完成扫描后查看日志</lang>
+                      <lang id="zh.tra" status="2">完成掃描後顯示日誌</lang>
+                      <lang id="nl" status="2">Toon log na het scannen klaar</lang>
+                      <lang id="en" status="2">Show log after finished scanning</lang>
+                      <lang id="fr" status="2">Afficher le journal après avoir terminé la numérisation</lang>
+                      <lang id="de" status="2">Show log nach dem Scannen fertig</lang>
+                      <lang id="el" status="2">Εμφάνιση log μετά ολοκληρώσετε τη σάρωση</lang>
+                      <lang id="hu" status="2">Mutasd be azt követően végzett vizsgálat</lang>
+                      <lang id="it" status="2">Mostra log dopo la scansione finito</lang>
+                      <lang id="ja" status="2">スキャン終了後に表示するにはログインする</lang>
+                      <lang id="lt" status="2">Rodyti žurnalą, po to, kai baigė skenavimas</lang>
+                      <lang id="pl" status="2">Pokaż log po zakończeniu skanowania</lang>
+                      <lang id="fa" status="2">نمایش وارد بخش مدیریت شوید ، پس از به پایان رسید اسکن</lang>
+                      <lang id="pt" status="2">Mostrar log depois de terminar a digitalização</lang>
+                      <lang id="ru" status="2">Показать журнал после завершения сканирования</lang>
+                      <lang id="es" status="2">Mostrar registro después de terminado el análisis,</lang>
+                      <lang id="sv-SE" status="2">Visa loggar efter avslutad skanning</lang>
+                      <lang id="th" status="2">แสดงเข้าสู่ระบบหลังจากเสร็จสิ้นการสแกน</lang>
+                      <lang id="tr" status="2">Tarama bittikten sonra göster giriş</lang>
+                      <lang id="vi" status="2">Hiện đăng nhập sau khi kết thúc quá trình</lang>
                     </row>
                   </item>
                   <item name="Items[6]" state="0">
-                    <row id="Text" state="3">
-                      <prev>Ignore missing files on removable media</prev>
+                    <row id="Text">
                       <native>Delete backup file after restoring the registry</native>
+                      <lang id="ar" status="2">حذف ملف النسخ الاحتياطي بعد استعادة التسجيل</lang>
+                      <lang id="zh" status="2">后删除备份文件恢复注册表</lang>
+                      <lang id="zh.tra" status="2">刪除後的備份文件恢復註冊表</lang>
+                      <lang id="nl" status="2">Verwijder back-up bestand na het herstellen van het register</lang>
+                      <lang id="en" status="2">Delete backup file after restoring the registry</lang>
+                      <lang id="fr" status="2">Supprimer le fichier de sauvegarde après la restauration de la base de registre</lang>
+                      <lang id="de" status="2">Delete Backup-Datei nach der Wiederherstellung der Registrierung</lang>
+                      <lang id="el" status="2">Διαγραφή αρχείου αντιγράφου ασφαλείας μετά την αποκατάσταση του μητρώου</lang>
+                      <lang id="hu" status="2">Törlés biztonsági mentés visszaállítása után a rendszerleíró adatbázisban</lang>
+                      <lang id="it" status="2">Eliminare file di backup dopo il ripristino del Registro di sistema</lang>
+                      <lang id="ja" status="2">レジストリの復元後にバックアップファイルを削除します。</lang>
+                      <lang id="lt" status="2">Atkūrus registro ištrinti failo atsarginę kopiją</lang>
+                      <lang id="pl" status="2">Usuń plik kopii zapasowej po przywróceniu rejestru</lang>
+                      <lang id="fa" status="2">حذف فایل پشتیبان پس از بازگرداندن رجیستری</lang>
+                      <lang id="pt" status="2">Excluir arquivo de backup depois de restaurar o registro</lang>
+                      <lang id="ru" status="2">Удалить файл резервной копии после восстановления реестра</lang>
+                      <lang id="es" status="2">Eliminar el archivo de copia de seguridad después de restaurar el registro</lang>
+                      <lang id="sv-SE" status="2">Radera backupfilen efter återställning av registret</lang>
+                      <lang id="th" status="2">ลบไฟล์สำรองหลังจากการเรียกคืนรีจิสทรี</lang>
+                      <lang id="tr" status="2">Kayıt defterini geri yükledikten sonra yedekleme dosyasını silin</lang>
+                      <lang id="vi" status="2">Xóa tập tin sao lưu sau khi khôi phục lại registry</lang>
                     </row>
                   </item>
                   <item name="Items[7]" state="0">
-                    <row id="Text" state="3">
-                      <prev>Automatically repair registry items</prev>
+                    <row id="Text">
                       <native>Ignore missing files on removable media</native>
+                      <lang id="ar" status="2">تجاهل الملفات المفقودة على الوسائط القابلة للإزالة</lang>
+                      <lang id="zh" status="2">忽略可移动介质上丢失的文件</lang>
+                      <lang id="zh.tra" status="2">忽略丟失的文件在可移動媒體</lang>
+                      <lang id="nl" status="2">Negeer ontbrekende bestanden op verwisselbare media</lang>
+                      <lang id="en" status="2">Ignore missing files on removable media</lang>
+                      <lang id="fr" status="2">Ignorer les fichiers manquants sur un support amovible</lang>
+                      <lang id="de" status="2">Ignorieren fehlenden Dateien auf Wechselmedien</lang>
+                      <lang id="el" status="2">Αγνοήστε λείπουν αρχεία σε αφαιρούμενα μέσα</lang>
+                      <lang id="hu" status="2">Figyelmen kívül hagyása a hiányzó fájlokat cserélhető adathordozón</lang>
+                      <lang id="it" status="2">Ignora file mancanti su supporti rimovibili</lang>
+                      <lang id="ja" status="2">リムーバブルメディアに見つからないファイルを無視する</lang>
+                      <lang id="lt" status="2">Ignoruoti trūkstamų failų laikmenose</lang>
+                      <lang id="pl" status="2">Ignoruj ​​brakujących plików na nośnikach wymiennych</lang>
+                      <lang id="fa" status="2">چشم پوشی از فایل های از دست رفته بر روی رسانه های جداشدنی</lang>
+                      <lang id="pt" status="2">Ignorar arquivos que estão faltando em uma mídia removível</lang>
+                      <lang id="ru" status="2">Игнорировать отсутствующие файлы на сменных носителях</lang>
+                      <lang id="es" status="2">No haga caso de los archivos que faltan en un medio extraíble</lang>
+                      <lang id="sv-SE" status="2">Ignorera saknade filer på flyttbara media</lang>
+                      <lang id="th" status="2">ดูรายละเอียดไฟล์หายไปบนสื่อที่ถอด</lang>
+                      <lang id="tr" status="2">Çıkarılabilir medya eksik dosyaları yoksay</lang>
+                      <lang id="vi" status="2">Bỏ qua các file bị mất trên các phương tiện thông tin di động</lang>
                     </row>
                   </item>
                   <item name="Items[8]" state="0">
-                    <row id="Text" state="3">
-                      <prev>Exit program after repairing registry</prev>
+                    <row id="Text">
                       <native>Automatically repair registry items</native>
+                      <lang id="ar" status="2">إصلاح تلقائيا عناصر السجل</lang>
+                      <lang id="zh" status="2">自动修复注册表项</lang>
+                      <lang id="zh.tra" status="2">自動修復註冊表項</lang>
+                      <lang id="nl" status="2">Automatisch te repareren registry items</lang>
+                      <lang id="en" status="2">Automatically repair registry items</lang>
+                      <lang id="fr" status="2">Réparer automatiquement les éléments de registre</lang>
+                      <lang id="de" status="2">Automatische Reparatur Registry-Einträge</lang>
+                      <lang id="el" status="2">Αυτόματη επισκευή μητρώου στοιχείων</lang>
+                      <lang id="hu" status="2">Automatikus javítás adatbázis elem</lang>
+                      <lang id="it" status="2">Riparare automaticamente voci di registro</lang>
+                      <lang id="ja" status="2">自動的にレジストリ項目を修復</lang>
+                      <lang id="lt" status="2">Automatiškai remontas registro objektų</lang>
+                      <lang id="pl" status="2">Automatycznie naprawia elementy rejestru</lang>
+                      <lang id="fa" status="2">به صورت خودکار آیتم های رجیستری تعمیر</lang>
+                      <lang id="pt" status="2">Reparar automaticamente itens de registro</lang>
+                      <lang id="ru" status="2">Автоматическое восстановление реестра пунктов</lang>
+                      <lang id="es" status="2">Reparar automáticamente los elementos de registro</lang>
+                      <lang id="sv-SE" status="2">Automatiskt reparera registret objekt</lang>
+                      <lang id="th" status="2">โดยอัตโนมัติซ่อมแซมรายการรีจิสทรี</lang>
+                      <lang id="tr" status="2">Otomatik kayıt defteri öğeleri onarım</lang>
+                      <lang id="vi" status="2">Tự động sửa chữa các mục đăng ký</lang>
                     </row>
                   </item>
                   <item name="Items[9]" state="0">
@@ -8027,7 +8247,7 @@
                   <lang id="fa" status="2">باز کردن دایرکتوری...</lang>
                   <lang id="pt" status="2">Abrir diretório...</lang>
                   <lang id="ru" status="3">Открыть папку...</lang>
-                  <lang id="es" date="20091106171914" status="3">Abrir directorio…</lang>
+                  <lang id="es" date="20091106171914" status="3">Abrir directorio…...</lang>
                   <lang id="sv-SE" status="2">Öppna mapp...</lang>
                   <lang id="th" date="20091106172157" status="3">ไดเรกทอรีที่เปิด...</lang>
                   <lang id="tr" status="3">Dizin Aç...</lang>
@@ -8210,7 +8430,7 @@
             <lang id="fa" status="3">تمیز کننده رجیستری کوچولو -  در حال جستجو...</lang>
             <lang id="pt" status="2">Little Registry Cleaner - Efetuando varredura...</lang>
             <lang id="ru" status="3">Little Registry Cleaner - Сканирование...</lang>
-            <lang id="es" status="3">Little Registry Cleaner - Analizando…</lang>
+            <lang id="es" status="3">Little Registry Cleaner - Analizando…...</lang>
             <lang id="sv-SE" status="3">Little Registry Cleaner – Skannar…</lang>
             <lang id="th" status="2">Little Registry Cleaner - สแกน...</lang>
             <lang id="tr" date="20100305122644" status="3">Little Registry Cleaner - Taranan...</lang>
@@ -8296,7 +8516,7 @@
                 <lang id="fa" status="2">مشکلات موجود </lang>
                 <lang id="pt" status="2">Problemas encontrados: </lang>
                 <lang id="ru" status="2">Обнаружены проблемы: </lang>
-                <lang id="es" status="3">Problemas encontrados:</lang>
+                <lang id="es" status="3">Problemas encontrados: </lang>
                 <lang id="sv-SE" status="2">Problem som hittades: </lang>
                 <lang id="th" status="2">พบปัญหา: </lang>
                 <lang id="tr" status="3">Bulunan Sorunlar: </lang>
@@ -8308,228 +8528,6 @@
               <row id="Location.Y">32</row>
               <row id="Size.Height">24</row>
               <row id="Size.Width">300</row>
-            </component>
-          </component>
-        </form>
-      </node>
-      <node class="TNetFormNode" name="Little_Registry_Cleaner.UninstallManager.UninstallManager" state="1" excluded="1">
-        <form class="TNetForm" name="Little_Registry_Cleaner.UninstallManager.UninstallManager" type="Little_Registry_Cleaner.UninstallManager.UninstallManager">
-          <row id="Text" state="1">
-            <native>Little Registry Cleaner - Uninstall Manager</native>
-            <lang id="ar" status="2">التسجيل ضئيلة الأنظف - Uninstall Manager</lang>
-            <lang id="zh" status="3">迷你注册表清理器-卸载管理</lang>
-            <lang id="zh.tra" status="3">迷你注册表清理器-卸載管理</lang>
-            <lang id="nl" status="3">Kleine Registerreiniger - Manager verwijderen</lang>
-            <lang id="en" status="2">Little Registry Cleaner - Uninstall Manager</lang>
-            <lang id="fr" date="20091106181424" status="3">Little Registry Cleaner - Gestionnaire de programmes installés</lang>
-            <lang id="de" status="3">Little Registry Cleaner – Deinstallationsmanager</lang>
-            <lang id="el" status="3">Little Registry Cleaner - Διαχείριστης απεγκατάστασης</lang>
-            <lang id="hu" status="2">Little Registry Cleaner - Uninstallálás menedzser</lang>
-            <lang id="it" status="3">Little Registry Cleaner – Gestione disinstallazione</lang>
-            <lang id="ja" status="2">リトルレジストリクリーナー-アンインストールマネージャ</lang>
-            <lang id="lt" status="3">Little Registry Cleaner – Programos pašalinimo vedlys</lang>
-            <lang id="pl" status="2">Little Registry Cleaner - Menadżer deinstalacji</lang>
-            <lang id="fa" status="3">تمیز کننده رجیستری کوچولو -  ازکارانداختن مدیر</lang>
-            <lang id="pt" status="2">Little Registry Cleaner - Gerenciador para Desinstalação</lang>
-            <lang id="ru" status="3">Little Registry Cleaner - Менеджер деинсталляции</lang>
-            <lang id="es" status="3">Little Registry Cleaner - Administrador de desinstalación</lang>
-            <lang id="sv-SE" status="3">Little Registry Cleaner – Avinstallerare</lang>
-            <lang id="th" date="20091106181713" status="3">รีจิสทรีน้อยตัวล้าง - การถอนการติดตั้งโปรแกรมจัดการ</lang>
-            <lang id="tr" status="3">Little Registry Cleaner - Kaldırma Yöneticisi</lang>
-            <lang id="vi" date="20091106181648" status="3">Người lau chùi Nơi đăng ký Nhỏ - Chương trình quản lý</lang>
-          </row>
-          <component class="TVisPanel" name="toolStripContainer1" state="1" type="System.Windows.Forms.ToolStripContainer">
-            <row id="Text" locked="1" excluded="1" state="1">
-              <native>toolStripContainer1</native>
-              <lang id="ar">toolStripContainer1</lang>
-              <lang id="zh">toolStripContainer1</lang>
-              <lang id="zh.tra">toolStripContainer1</lang>
-              <lang id="nl">toolStripContainer1</lang>
-              <lang id="en">toolStripContainer1</lang>
-              <lang id="de">toolStripContainer1</lang>
-              <lang id="el">toolStripContainer1</lang>
-              <lang id="it">toolStripContainer1</lang>
-              <lang id="ja">toolStripContainer1</lang>
-              <lang id="lt">toolStripContainer1</lang>
-              <lang id="pt">toolStripContainer1</lang>
-              <lang id="ru">toolStripContainer1</lang>
-              <lang id="es">toolStripContainer1</lang>
-              <lang id="sv-SE">toolStripContainer1</lang>
-              <lang id="vi">toolStripContainer1</lang>
-            </row>
-            <component class="TVisGridPanel" name="tableLayoutPanel1" state="1" type="System.Windows.Forms.TableLayoutPanel">
-              <columns countset="1">
-                <item class="TVisGridItem" name="Column0" type="stPercent"/>
-              </columns>
-              <rows countset="1">
-                <item class="TVisGridItem" name="Row0" type="stAbsolute"/>
-                <item class="TVisGridItem" name="Row1" type="stPercent"/>
-                <item class="TVisGridItem" name="Row2" type="stAbsolute"/>
-              </rows>
-              <component class="TVisSplittedPanel" name="splitContainer1" state="1" type="System.Windows.Forms.SplitContainer">
-                <component class="TVisSecondPanel" name="Panel2" state="1">
-                  <component class="TVisEdit" name="textBoxSearch" state="1" type="System.Windows.Forms.TextBox">
-                    <row id="Text" state="1">
-                      <native>Search by name</native>
-                      <lang id="ar" status="2">البحث حسب الاسم</lang>
-                      <lang id="zh" status="3">按姓名搜索</lang>
-                      <lang id="zh.tra" status="3">按名稱搜索</lang>
-                      <lang id="nl" status="2">Zoeken op naam</lang>
-                      <lang id="en" status="2">Search by name</lang>
-                      <lang id="fr" status="2">Recherche par nom</lang>
-                      <lang id="de" status="3">Nach Namen suchen</lang>
-                      <lang id="el" status="2">Αναζήτηση με βάση το όνομα</lang>
-                      <lang id="hu" status="2">Keresés név alapján</lang>
-                      <lang id="it" status="3">Ricerca per nome</lang>
-                      <lang id="ja" status="2">名前で検索</lang>
-                      <lang id="lt" status="3">Ieškoti pagal pavadinimą</lang>
-                      <lang id="pl" status="2">Szukaj wg nazwy</lang>
-                      <lang id="fa" status="2">جستجو بر حسب نام</lang>
-                      <lang id="pt" status="2">Pesquisar por nome</lang>
-                      <lang id="ru" status="2">Поиск по названию</lang>
-                      <lang id="es" status="2">Buscar por nombre</lang>
-                      <lang id="sv-SE" status="3">Söka på namn</lang>
-                      <lang id="th" status="2">ค้นหาโดยใช้ชื่อ</lang>
-                      <lang id="tr" status="3">İsime göre ara</lang>
-                      <lang id="vi" status="2">Tìm kiếm theo tên</lang>
-                    </row>
-                  </component>
-                </component>
-              </component>
-              <component class="TVisWrapPanel" name="flowLayoutPanel1" state="1" type="System.Windows.Forms.FlowLayoutPanel">
-                <component class="TVisPictureButton" name="buttonUninstall" state="1" type="System.Windows.Forms.Button">
-                  <row id="Text" state="1">
-                    <native>Uninstall</native>
-                    <lang id="ar" status="2">إلغاء تثبيت</lang>
-                    <lang id="zh" status="3">卸载</lang>
-                    <lang id="zh.tra" status="3">卸載</lang>
-                    <lang id="nl" status="2">Installatie ongedaan maken</lang>
-                    <lang id="en" status="2">Uninstall</lang>
-                    <lang id="fr" status="2">Désinstaller</lang>
-                    <lang id="de" status="2">Deinstallieren</lang>
-                    <lang id="el" status="3">Απεγκατάσταση</lang>
-                    <lang id="hu" status="2">Unsinstallálás</lang>
-                    <lang id="it" status="3">Rimuovi</lang>
-                    <lang id="ja" status="2">をアンインストールする</lang>
-                    <lang id="lt" status="2">Šalinti</lang>
-                    <lang id="pl" status="2">Odinstaluj</lang>
-                    <lang id="fa" status="3">از کار انداختن</lang>
-                    <lang id="pt" status="2">Desinstalar</lang>
-                    <lang id="ru" status="2">Удалить</lang>
-                    <lang id="es" status="2">Desinstalar</lang>
-                    <lang id="sv-SE" status="2">Avinstallera</lang>
-                    <lang id="th" status="2">ยกเลิกการติดตั้ง</lang>
-                    <lang id="tr" status="3">Kaldırma</lang>
-                    <lang id="vi" status="2">Gỡ bỏ</lang>
-                  </row>
-                </component>
-                <component class="TVisPictureButton" name="buttonRemove" state="1" type="System.Windows.Forms.Button">
-                  <row id="Text" state="1">
-                    <native>Remove Entry</native>
-                    <lang id="ar" status="2">إزالة إدخال</lang>
-                    <lang id="zh" status="3">删除项目</lang>
-                    <lang id="zh.tra" status="3">刪除項目</lang>
-                    <lang id="nl" status="2">Vermelding verwijderen</lang>
-                    <lang id="en" status="2">Remove Entry</lang>
-                    <lang id="fr" status="2">Supprimer l'entrée</lang>
-                    <lang id="de" status="3">Eintrag entfernen</lang>
-                    <lang id="el" status="2">Κατάργηση καταχώρησης</lang>
-                    <lang id="hu" status="2">Feljegyzés eltávolítása</lang>
-                    <lang id="it" status="3">Rimuovi voce</lang>
-                    <lang id="ja" status="2">エントリ削除</lang>
-                    <lang id="lt" status="3">Pašalinti įrašą</lang>
-                    <lang id="pl" status="2">Usuń wpis</lang>
-                    <lang id="fa" status="3">حذف</lang>
-                    <lang id="pt" status="2">Remover entrada</lang>
-                    <lang id="ru" status="2">Удалить запись</lang>
-                    <lang id="es" status="2">Quitar entrada</lang>
-                    <lang id="sv-SE" status="2">Ta bort post</lang>
-                    <lang id="th" status="2">เข้าลบ</lang>
-                    <lang id="tr" status="3">Giriş Kaldır</lang>
-                    <lang id="vi" status="2">Hủy bỏ Entry</lang>
-                  </row>
-                </component>
-              </component>
-              <component class="TVisListView" name="listViewProgs" state="1" type="System.Windows.Forms.ListView">
-                <column name="columnHeader1" state="1">
-                  <row id="Text" state="1">
-                    <native>Program</native>
-                    <lang id="ar" status="2">البرنامج</lang>
-                    <lang id="zh" status="3">程序</lang>
-                    <lang id="zh.tra" status="3">程式</lang>
-                    <lang id="nl" status="2">Programma</lang>
-                    <lang id="en" status="2">Program</lang>
-                    <lang id="fr" status="2">Programme</lang>
-                    <lang id="de" status="2">Programm</lang>
-                    <lang id="el" status="2">Πρόγραμμα</lang>
-                    <lang id="hu" status="2">Program</lang>
-                    <lang id="it" status="3">Programma</lang>
-                    <lang id="ja" status="2">プログラム</lang>
-                    <lang id="lt" status="2">Programos</lang>
-                    <lang id="pl" status="2">Aplikacja</lang>
-                    <lang id="fa" status="2">برنامه</lang>
-                    <lang id="pt" status="2">Programa</lang>
-                    <lang id="ru" status="2">Программа</lang>
-                    <lang id="es" status="2">Programa</lang>
-                    <lang id="sv-SE" status="2">Program</lang>
-                    <lang id="th" status="2">โปรแกรม</lang>
-                    <lang id="tr" status="2">Program</lang>
-                    <lang id="vi" status="2">Chương trình</lang>
-                  </row>
-                </column>
-                <column name="columnHeader2" state="1">
-                  <row id="Text" state="1">
-                    <native>Publisher</native>
-                    <lang id="ar" status="2">الناشر</lang>
-                    <lang id="zh" status="3">出版商</lang>
-                    <lang id="zh.tra" status="3">出版商</lang>
-                    <lang id="nl" status="3">Publisher</lang>
-                    <lang id="en" status="2">Publisher</lang>
-                    <lang id="fr" status="3">Éditeur</lang>
-                    <lang id="de" status="2">Herausgeber</lang>
-                    <lang id="el" status="3">Εκδότης</lang>
-                    <lang id="hu" status="2">Kiadó</lang>
-                    <lang id="it" status="3">Produttore</lang>
-                    <lang id="ja" status="2">出版社</lang>
-                    <lang id="lt" status="3">Leidėjas</lang>
-                    <lang id="pl" status="2">Producent</lang>
-                    <lang id="fa" status="2">ناشر</lang>
-                    <lang id="pt" status="2">Editor</lang>
-                    <lang id="ru" status="2">Издатель</lang>
-                    <lang id="es" status="3">Publicador</lang>
-                    <lang id="sv-SE" status="2">Publicerare</lang>
-                    <lang id="th" date="20091106181800" status="3">ผู้เผยแพร่</lang>
-                    <lang id="tr" status="2">Yayıncı</lang>
-                    <lang id="vi" status="2">Nhà xuất bản</lang>
-                  </row>
-                </column>
-                <column name="columnHeader3" state="1">
-                  <row id="Text" state="1">
-                    <native>Estimated Size</native>
-                    <lang id="ar" status="2">الحجم المقدر</lang>
-                    <lang id="zh" status="3">估计大小</lang>
-                    <lang id="zh.tra" status="3">估計的大小</lang>
-                    <lang id="nl" status="2">De geschatte grootte</lang>
-                    <lang id="en" status="2">Estimated Size</lang>
-                    <lang id="fr" status="3">Taille estimée</lang>
-                    <lang id="de" status="3">Geschätzte Größe</lang>
-                    <lang id="el" status="2">Εκτιμώμενο μέγεθος</lang>
-                    <lang id="hu" status="2">Becsült méret</lang>
-                    <lang id="it" status="3">Dimensioni stimate</lang>
-                    <lang id="ja" status="2">目安サイズ</lang>
-                    <lang id="lt" status="3">Apytikslis dydis</lang>
-                    <lang id="pl" status="2">Szacowany rozmiar</lang>
-                    <lang id="fa" status="2">حجم تخمینی</lang>
-                    <lang id="pt" status="2">Tamanho estimado</lang>
-                    <lang id="ru" status="2">Предполагаемый размер</lang>
-                    <lang id="es" status="2">Tamaño estimado</lang>
-                    <lang id="sv-SE" status="2">Uppskattad storlek</lang>
-                    <lang id="th" status="2">ขนาดโดยประมาณ</lang>
-                    <lang id="tr" status="2">Tahmini Boyut</lang>
-                    <lang id="vi" status="2">Ước tính Kích thước</lang>
-                  </row>
-                </column>
-              </component>
             </component>
           </component>
         </form>
@@ -8753,7 +8751,7 @@
           <lang id="fa" status="3">این نرم افزار رایگان می باشد. اگر شما پولی برای این نرم افزار پرداخت کردید,آن را پس بگیرید</lang>
           <lang id="pt" status="2">Este programa é freeware. Se você paga para obter uma cópia deste programa, obter um reembolso!</lang>
           <lang id="ru" status="2">Данная программа является бесплатной. Если вы заплатили за копию этой программы, получите возмещение!</lang>
-          <lang id="es" status="3">Este programa es freeware. Si ha pagado por el, obtenga un reembolso.</lang>
+          <lang id="es" status="3">¡Este programa es freeware. Si ha pagado por el, obtenga un reembolso.!</lang>
           <lang id="sv-SE" status="3">Det här programmet är freeware. Om du har betalat för en kopia av det här programmet så kräv återbetalning!</lang>
           <lang id="th" status="2">โปรแกรมนี้เป็น freeware ถ้าคุณจ่ายสำหรับสำเนาของโปรแกรมนี้ ขอคืนเงิน!</lang>
           <lang id="tr" status="2">Ücretsiz olan bu programdır. Bu programın bir kopyası için ödenen para iadesi elde!</lang>
@@ -9167,126 +9165,6 @@
           <lang id="tr" status="2">Seçin klasörü günlük dosyaları yer alacak</lang>
           <lang id="vi" status="2">Chọn thư mục nơi mà các file bản ghi sẽ được đặt</lang>
         </row>
-        <row id="piErrorRegKey" state="1">
-          <native>Error removing registry key:</native>
-          <lang id="ar" status="2">خطأ في إزالة مفتاح التسجيل:</lang>
-          <lang id="zh" status="3">删除注册表项错误:</lang>
-          <lang id="zh.tra" status="3">刪除註冊表項錯誤:</lang>
-          <lang id="nl" status="3">Fout bij het verwijderen van registersleutel:</lang>
-          <lang id="en" status="2">Error removing registry key:</lang>
-          <lang id="fr" status="3">Erreur lors du retrait de la clé de registre :</lang>
-          <lang id="de" status="3">Fehler beim Entfernen des Registry-Schlüssels:</lang>
-          <lang id="el" status="3">Σφάλμα κατά την διαγραφή κλειδιού μητρώου:</lang>
-          <lang id="hu" status="2">Hiba történt a bejegyzéskulcs törlése közben:</lang>
-          <lang id="it" status="3">Errore nella rimozione della chiave:</lang>
-          <lang id="ja" status="2">削除するレジストリ キーのエラー:</lang>
-          <lang id="lt" status="3">Klaida šalinant registro raktą:</lang>
-          <lang id="pl" status="2">Błąd podczas usuwania klucza rejestru:</lang>
-          <lang id="fa" status="2">خطا در حذف کلید رجیستری:</lang>
-          <lang id="pt" status="2">Erro ao remover chave do registro:</lang>
-          <lang id="ru" status="3">Ошибка при удалении элемента реестра:</lang>
-          <lang id="es" status="3">Error al eliminar la clave del Registro:</lang>
-          <lang id="sv-SE" status="3">Problem med att ta bort registernyckel:</lang>
-          <lang id="th" status="2">ข้อผิดพลาดเอารีจิสทรีคีย์:</lang>
-          <lang id="tr" status="2">Hata çıkarmadan kayıt defteri anahtarı:</lang>
-          <lang id="vi" status="2">Lỗi loại bỏ đăng ky:</lang>
-        </row>
-        <row id="piErrorUninstalling" state="1">
-          <native>Error uninstalling program:</native>
-          <lang id="ar" status="2">خطأ في تثبيت البرنامج:</lang>
-          <lang id="zh" status="3">卸载程序错误:</lang>
-          <lang id="zh.tra" status="3">卸載程式錯誤:</lang>
-          <lang id="nl" status="2">Fout bij het verwijderen van het programma:</lang>
-          <lang id="en" status="2">Error uninstalling program:</lang>
-          <lang id="fr" status="3">Erreur lors de la désinstallation du programme :</lang>
-          <lang id="de" status="3">Fehler beim Entfernen des Programms:</lang>
-          <lang id="el" status="3">Σφάλμα απεγκατάστασης προγράμματος:</lang>
-          <lang id="hu" status="2">Hiba történt a program uninstallállása közben:</lang>
-          <lang id="it" status="3">Errore nel disinstallare il programma:</lang>
-          <lang id="ja" status="2">エラーのアンインストール プログラム:</lang>
-          <lang id="lt" status="3">Klaida šalinant programą:</lang>
-          <lang id="pl" status="2">Odinstalowywanie programu błąd:</lang>
-          <lang id="fa" status="3">خطا در پاک کردن برنامه:</lang>
-          <lang id="pt" status="2">Erro ao desinstalar o programa:</lang>
-          <lang id="ru" status="3">Ошибка при деинсталляции программы:</lang>
-          <lang id="es" status="3">Error al desinstalar programa:</lang>
-          <lang id="sv-SE" status="2">Problem med att avinstallera program:</lang>
-          <lang id="th" status="2">ข้อผิดพลาด uninstalling โปรแกรม:</lang>
-          <lang id="tr" status="2">Hata kaldırma programı:</lang>
-          <lang id="vi" status="2">Lỗi gỡ bỏ cài đặt chương trình:</lang>
-        </row>
-        <row id="piInvalidUninstallString" state="1">
-          <native>Unable to find uninstall string. Would you like to manually remove it from the registry?</native>
-          <lang id="ar" status="2">غير قادر على العثور على السلسلة إلغاء التثبيت. هل ترغب في إزالة يدويًا من السجل?</lang>
-          <lang id="zh" status="3">无法找到卸载字符串。 要从注册表中手动删除吗?</lang>
-          <lang id="zh.tra" status="3">無法找到卸載字符串。要從註冊表中手動刪 除吗？</lang>
-          <lang id="nl" status="3">Kan geen verwijder-tekenreeks vinden. Wilt u deze handmatig uit het register verwijderen?</lang>
-          <lang id="en" status="2">Unable to find uninstall string. Would you like to manually remove it from the registry?</lang>
-          <lang id="fr" status="3">Impossible de trouver la chaîne de désinstallation. Souhaitez-vous la supprimer manuellement du registre ?</lang>
-          <lang id="de" status="3">Deinstallation des Strings unmöglich. Möchten Sie ihn manuell entfernen?</lang>
-          <lang id="el" status="3">Δεν είναι δυνατή η εύρεση αρχείου απεγκατάστασης. Θα θέλατε να το καταργήσετε χειροκινητα από το μητρώο?</lang>
-          <lang id="hu" status="2">Az uninstallálási parancs nem található. Szeretné manuálisan eltávoítani a bejegyzésből?</lang>
-          <lang id="it" status="3">Impossibile trovare la stringa di disinstallazione. Vuoi rimuovere manualmente dal Registro di sistema?</lang>
-          <lang id="ja" status="2">アンインストールの文字列を見つけることができません。 手動でレジストリから削除したいです。?</lang>
-          <lang id="lt" status="3">Nepavyko rasti pašalinimo duomenų. Ar norite pašalinti jį iš registro rankiniu būdu?</lang>
-          <lang id="pl" status="2">Nie można odnaleźć ciągu dezinstalacji. Czy chcesz ręcznie usunąć go z rejestru?</lang>
-          <lang id="fa" status="3">قادر به یافتن رشته ای که باید پاک شود نیست. آیا دوست دارید به صورت دستی آن را از رجیستری حذف کنید؟</lang>
-          <lang id="pt" status="2">Não é possível encontrar o caminho de desinstalação. Você gostaria de removê-lo manualmente no registro?</lang>
-          <lang id="ru" status="3">Не удается найти строку деинсталляции. Хотите вручную удалить из реестра?</lang>
-          <lang id="es" status="3">No se pudo encontrar la cadena de desinstalación. ¿Le gustaría quitarla manualmente del Registro?</lang>
-          <lang id="sv-SE" status="3">Avinstallationsinformationen kan inte hittas. Vill du manuellt ta bort det från registret?</lang>
-          <lang id="th" status="2">ไม่สามารถค้นหาการถอนการติดตั้งสาย คุณต้องการด้วยตนเองเอาออกจากรีจิสทรี?</lang>
-          <lang id="tr" status="3">Kaldırmak dize bulunamadı. Elle kayıt kaldırmak istiyormusunuz?</lang>
-          <lang id="vi" status="2">Không tìm thấy chuỗi gỡ bỏ cài đặt. Bạn có muốn xoá bỏ nó một cách thủ công từ registry?</lang>
-        </row>
-        <row id="piSuccessRegKey" state="1">
-          <native>Sucessfully removed registry key</native>
-          <lang id="ar" status="2">مفتاح التسجيل بنجاح إزالة</lang>
-          <lang id="zh" status="3">成功删除注册表项</lang>
-          <lang id="zh.tra" status="3">成功刪除註冊表項</lang>
-          <lang id="nl" status="3">Registersleutel verwijderd</lang>
-          <lang id="en" status="2">Sucessfully removed registry key</lang>
-          <lang id="fr" status="3">Clé de registre retirée avec succès</lang>
-          <lang id="de" status="3">Registry-Schlüssel erfolgreich entfernt</lang>
-          <lang id="el" status="3">Το κλειδί μητρώου κατάργηθηκε με επιτυχία</lang>
-          <lang id="hu" status="2">A bejegyzés kulcs sikeresen eltávolítva</lang>
-          <lang id="it" status="3">Chiave rimossa con successo</lang>
-          <lang id="ja" status="2">レジストリ キーの削除を正常に</lang>
-          <lang id="lt" status="3">Registro raktas sėkmingai pašalintas</lang>
-          <lang id="pl" status="2">Pomyślnie usunięto klucza rejestru</lang>
-          <lang id="fa" status="3">حذف کلید رجیستری با موفقیت بود</lang>
-          <lang id="pt" status="2">Chave de registo removida com sucesso</lang>
-          <lang id="ru" status="3">Ключ реестра успешно удален</lang>
-          <lang id="es" status="3">Clave del Registro correctamente eliminada</lang>
-          <lang id="sv-SE" status="2">Lyckades ta bort registernyckeln</lang>
-          <lang id="th" status="2">สำเร็จในการลบรีจิสทรีคีย์</lang>
-          <lang id="tr" status="2">Başarılı bir kayıt defteri anahtarı kaldırılır</lang>
-          <lang id="vi" status="2">Xoa khoa đăng ky</lang>
-        </row>
-        <row id="piSuccessUninstall" state="1">
-          <native>Sucessfully uninstalled program</native>
-          <lang id="ar" status="2">بنجاح إزالة تثبيت البرنامج</lang>
-          <lang id="zh" status="3">成功卸载程序</lang>
-          <lang id="zh.tra" status="3">成功卸載程式</lang>
-          <lang id="nl" status="3">Programma verwijderd</lang>
-          <lang id="en" status="2">Sucessfully uninstalled program</lang>
-          <lang id="fr" status="3">La désinstallation du programme est un succès</lang>
-          <lang id="de" status="3">Prgramm erfolgreich deinstalliert</lang>
-          <lang id="el" status="3">Πρόγραμμα απεγκατάσταθηκε με επιτυχία</lang>
-          <lang id="hu" status="2">A program sikeresen uninstallálva</lang>
-          <lang id="it" status="3">Programma rimosso con successo</lang>
-          <lang id="ja" status="2">アンインストールを正常にプログラム</lang>
-          <lang id="lt" status="3">Programa sėkmingai pašalinta</lang>
-          <lang id="pl" status="2">Program pomyślnie odinstalowany</lang>
-          <lang id="fa" status="3">پاک کردن برنامه با موفقیت بود</lang>
-          <lang id="pt" status="2">Programa desinstalado com sucesso</lang>
-          <lang id="ru" status="2">Программа успешно удалена</lang>
-          <lang id="es" status="2">Programa correctamente desinstalado</lang>
-          <lang id="sv-SE" status="2">Lyckades avinstallera programmet</lang>
-          <lang id="th" status="2">สำเร็จในการถอนการติดตั้งโปรแกรม</lang>
-          <lang id="tr" status="2">Programı başarıyla kaldırıldı</lang>
-          <lang id="vi" status="2">Gỡ cài đặt thành công chương trình</lang>
-        </row>
         <row id="programAlreadyRunning" state="0">
           <native>Another program seems to be running already...</native>
           <lang id="ar" status="2">برنامج آخر ويبدو أن إدارة بالفعل...</lang>
@@ -9473,83 +9351,11 @@
           <lang id="fa" status="3">در حال جستجو</lang>
           <lang id="pt" date="20100329221702" status="3">Digitalização: </lang>
           <lang id="ru" status="2">Сканирование: </lang>
-          <lang id="es" status="3">Analizando:</lang>
+          <lang id="es" status="3">Analizando: </lang>
           <lang id="sv-SE" status="2">Skanning: </lang>
           <lang id="th" status="2">สแกน: </lang>
           <lang id="tr" date="20100305122728" status="3">Taranan: </lang>
           <lang id="vi" date="20091106182937" status="3">Sự Quét: </lang>
-        </row>
-        <row id="umForceUninstall" state="1">
-          <native>Are you sure you want to remove this program from the registry?</native>
-          <lang id="ar" status="2">هل أنت متأكد من أنك تريد إزالة هذا البرنامج من التسجيل?</lang>
-          <lang id="zh" status="3">你确定要从注册表中删除该程序?</lang>
-          <lang id="zh.tra" status="3">您確定要刪除該程序從註冊表?</lang>
-          <lang id="nl" status="3">Weet u zeker dat u dit programma uit het register wilt verwijderen?</lang>
-          <lang id="en" status="2">Are you sure you want to remove this program from the registry?</lang>
-          <lang id="fr" status="3">Êtes-vous sûr de vouloir supprimer ce programme du registre ?</lang>
-          <lang id="de" status="3">Soll das gewählte Programm wirklich aus der Registry entfernt werden?</lang>
-          <lang id="el" status="2">Είστε σίγουροι ότι θέλετε να καταργήσετε αυτό το πρόγραμμα από το μητρώο?</lang>
-          <lang id="hu" status="2">Biztos el akarja távolítani ezt a programot a bejegyzésből?</lang>
-          <lang id="it" status="3">Sei sicuro di voler rimuovere questo programma dal Registro di sistema?</lang>
-          <lang id="ja" status="2">あなたは、レジストリからこのプログラムを削除してもよろしいですか?</lang>
-          <lang id="lt" status="2">Ar tikrai norite ištrinti šią programą iš registro?</lang>
-          <lang id="pl" status="2">Czy na pewno chcesz usunąć ten program z rejestru?</lang>
-          <lang id="fa" status="3">آیا مطمئن هستید که می خواهیداین برنامه را از رجیستری حذف کنید؟</lang>
-          <lang id="pt" status="2">Tem certeza que deseja remover este programa a partir do registo?</lang>
-          <lang id="ru" status="2">Вы уверены, что хотите удалить эту программу из реестра?</lang>
-          <lang id="es" status="3">¿Está seguro de que desea quitar este programa del Registro?</lang>
-          <lang id="sv-SE" status="3">Är du säker på att du vill ta bort detta program från registret?</lang>
-          <lang id="th" status="2">คุณแน่ใจหรือว่าต้องการลบโปรแกรมนี้ออกจากรีจิสทรี?</lang>
-          <lang id="tr" status="3">Bu programı kaldırmak istediğinizden emin misiniz?</lang>
-          <lang id="vi" status="2">Bạn có chắc bạn muốn loại bỏ chương trình này từ registry?</lang>
-        </row>
-        <row id="umSearchText" state="1">
-          <native>Search by name</native>
-          <lang id="ar" status="2">البحث حسب الاسم</lang>
-          <lang id="zh" status="3">按姓名搜索</lang>
-          <lang id="zh.tra" status="3">按名稱搜索</lang>
-          <lang id="nl" status="2">Zoeken op naam</lang>
-          <lang id="en" status="2">Search by name</lang>
-          <lang id="fr" status="2">Recherche par nom</lang>
-          <lang id="de" status="3">Nach Namen suchen</lang>
-          <lang id="el" status="2">Αναζήτηση με βάση το όνομα</lang>
-          <lang id="hu" status="2">Keresés név alapján</lang>
-          <lang id="it" status="3">Ricerca per nome</lang>
-          <lang id="ja" status="2">名前で検索</lang>
-          <lang id="lt" status="3">Ieškoti pagal pavadinimą</lang>
-          <lang id="pl" status="2">Szukaj wg nazwy</lang>
-          <lang id="fa" status="2">جستجو بر حسب نام</lang>
-          <lang id="pt" status="2">Pesquisar por nome</lang>
-          <lang id="ru" status="2">Поиск по названию</lang>
-          <lang id="es" status="2">Buscar por nombre</lang>
-          <lang id="sv-SE" status="3">Söka på namn</lang>
-          <lang id="th" status="2">ค้นหาโดยใช้ชื่อ</lang>
-          <lang id="tr" status="3">İsime göre ara</lang>
-          <lang id="vi" status="2">Tìm kiếm theo tên</lang>
-        </row>
-        <row id="umUninstall" state="1">
-          <native>Are you sure you want to uninstall this program?</native>
-          <lang id="ar" status="2">هل أنت متأكد من أنك تريد إلغاء تثبيت هذا البرنامج?</lang>
-          <lang id="zh" status="3">您确定要卸载此程序?</lang>
-          <lang id="zh.tra" status="3">您確定要卸載此程序?</lang>
-          <lang id="nl" status="3">Weet u zeker dat u dit programma wilt verwijderen?</lang>
-          <lang id="en" status="2">Are you sure you want to uninstall this program?</lang>
-          <lang id="fr" status="3">Êtes-vous sûr de vouloir désinstaller ce programme ?</lang>
-          <lang id="de" status="3">Soll dieses Programm wirklich deinstalliert werden?</lang>
-          <lang id="el" status="3">Είστε σίγουροι ότι θέλετε να απεγκατάστησετε αυτό το πρόγραμμα?</lang>
-          <lang id="hu" status="2">Biztos uninstallálni akarja ezt a programot?</lang>
-          <lang id="it" status="3">Sei sicuro di voler disinstallare questo programma?</lang>
-          <lang id="ja" status="2">あなたがこのプログラムをアンインストールしてもよろしいですか?</lang>
-          <lang id="lt" status="2">Ar tikrai norite ištrinti šią programą?</lang>
-          <lang id="pl" status="2">Czy na pewno chcesz odinstalować ten program?</lang>
-          <lang id="fa" status="3">آیا مطمئن هستید که می خواهید این برنامه را پاک کنید؟</lang>
-          <lang id="pt" status="2">Tem certeza que pretende desinstalar este programa?</lang>
-          <lang id="ru" status="2">Вы уверены, что хотите удалить эту программу?</lang>
-          <lang id="es" status="3">¿Está seguro de que desea desinstalar este programa?</lang>
-          <lang id="sv-SE" status="2">Är du säker på att du vill avinstallera programmet?</lang>
-          <lang id="th" status="2">คุณแน่ใจหรือว่าต้องการยกเลิกการติดตั้งโปรแกรมนี้?</lang>
-          <lang id="tr" status="2">Bunu kaldırmak istediğinizden emin misiniz?</lang>
-          <lang id="vi" status="2">Bạn có chắc là bạn muốn bỏ cài đặt chương trình này?</lang>
         </row>
         <row id="updateLatest" state="0">
           <native>You have the latest version</native>
@@ -10158,8 +9964,8 @@
     <node class="TWindowsVersionFolder" name="Versions" state="0" resid="16">
       <node class="TWindowsVersionNode" name="1" state="0" resid="1">
         <row id="Assembly Version" locked="1" state="3">
-          <prev>1.5.4216.41766</prev>
-          <native>1.5.4258.36102</native>
+          <prev>1.5.4258.36102</prev>
+          <native>1.5.4260.41839</native>
           <lang id="ar" invalidated="1">1.4.4187.39341</lang>
           <lang id="zh" invalidated="1">1.4.4187.39341</lang>
           <lang id="zh.tra" invalidated="1">1.4.4187.39341</lang>

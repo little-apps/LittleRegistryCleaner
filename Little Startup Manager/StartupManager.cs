@@ -363,7 +363,7 @@ namespace Little_Startup_Manager
 
                     System.Diagnostics.Process.Start(strFilepath, strFileArgs);
 
-                    MessageBox.Show(this, string.Format("{0}: {1}", Properties.Resources.smRun, strFilepath), Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(this, string.Format("{0}: {1}", Properties.Resources.smRan, strFilepath), Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }

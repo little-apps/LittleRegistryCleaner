@@ -452,11 +452,11 @@ namespace Little_Registry_Cleaner
                     break;
 
                 case "chineseSimplifiedToolStripMenuItem":
-                    ci = new CultureInfo("zh-CHS");
+                    ci = new CultureInfo("zh-Hans");
                     break;
 
                 case "chineseTraditionalToolStripMenuItem":
-                    ci = new CultureInfo("zh-CHT");
+                    ci = new CultureInfo("zh-Hant");
                     break;
 
                 case "hungarianToolStripMenuItem":
@@ -475,9 +475,9 @@ namespace Little_Registry_Cleaner
                     break;
             }
 
-            if (ci.Name == "zh-CHS")
+            if (ci.Name == "zh-Hans")
                 Application.CurrentCulture = new CultureInfo(0x0804); // zh-CN Chinese (People's Republic of China)
-            else if (ci.Name == "zh-CHT")
+            else if (ci.Name == "zh-Hant")
                 Application.CurrentCulture = new CultureInfo(0x0404); // zh-TW Chinese (Taiwan)
             else
                 Application.CurrentCulture = CultureInfo.CreateSpecificCulture(ci.Name);

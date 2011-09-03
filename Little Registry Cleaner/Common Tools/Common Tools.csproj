@@ -262,8 +262,6 @@
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
-    <Content Include="DeskMetricsNET\LICENSE.txt" />
     <None Include="Little Registry Cleaner.snk" />
   </ItemGroup>
   <ItemGroup>
