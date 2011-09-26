@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.1.321" date="20110901005450" scan="67" scanned="20110829211720">
+<document version="2.1.321" date="20110925225612" scan="67" scanned="20110829211720">
   <lang id="ar"/>
-  <lang id="zh"/>
+  <lang id="zh" ime="imOn"/>
   <lang id="zh.tra" ime="imOn"/>
   <lang id="nl"/>
   <lang id="en"/>
@@ -837,7 +837,7 @@
             </row>
           </component>
           <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer">
-            <row id="Text" state="1">
+            <row id="Text" excluded="1" state="1">
               <native>toolStripContainer1</native>
               <lang id="ar" status="2">toolStripContainer1</lang>
               <lang id="zh" status="2">toolStripContainer1</lang>
@@ -1088,7 +1088,7 @@
             <row id="Location.Y">0</row>
             <row id="Size.Height">436</row>
             <row id="Size.Width">717</row>
-            <row id="Text" excluded="1">
+            <row id="Text">
               <native>toolStripContainer1</native>
               <lang id="ar" status="2">toolStripContainer1</lang>
               <lang id="zh" status="2">toolStripContainer1</lang>
@@ -1618,8 +1618,8 @@
     <node class="TWindowsVersionFolder" name="Versions" resid="16">
       <node class="TWindowsVersionNode" name="1" resid="1">
         <row id="Assembly Version" state="3">
-          <prev>1.0.4258.36103</prev>
-          <native>1.0.4260.41839</native>
+          <prev>1.0.4260.41839</prev>
+          <native>1.0.4262.39054</native>
           <lang id="ar" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="zh" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="zh.tra" invalidated="1" status="2">1.0.0.0</lang>
@@ -1937,6 +1937,8 @@
             <lang id="tr" status="2">Küçük Uninstall Manager</lang>
             <lang id="vi" status="2">Ít Uninstall Manager</lang>
           </row>
+          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
+          </component>
           <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer" align="alClient">
             <row id="Location.X">0</row>
             <row id="Location.Y">0</row>
@@ -2191,8 +2193,6 @@
               </component>
             </component>
           </component>
-          <component class="TVisImageList" name="imageList" type="System.Windows.Forms.ImageList">
-          </component>
         </form>
       </node>
     </node>
@@ -2299,8 +2299,8 @@
     <node class="TWindowsVersionFolder" name="Versions" resid="16">
       <node class="TWindowsVersionNode" name="1" resid="1">
         <row id="Assembly Version" state="3">
-          <prev>1.0.4258.36103</prev>
-          <native>1.0.4260.41840</native>
+          <prev>1.0.4260.41840</prev>
+          <native>1.0.4262.39054</native>
           <lang id="ar" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="zh" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="zh.tra" invalidated="1" status="2">0.0.0.0</lang>
@@ -2560,7 +2560,7 @@
       </node>
     </node>
   </source>
-  <source class="TVisualStudioNetProjectSource" name="Common Tools\Common Tools.csproj" original="en" date="20110831060424" defaultoutputdir="Common Tools\bin\Debug" configuration="Debug|AnyCPU" assemblykind="naLibrary" netversion="net40" toolsversion="net40" rootnamespace="Common_Tools" options="[noSetRightToLeft,noSortItems,noCompileResource,noCreateAssembly,noDeleteCompiledResource,noDeleteSourceResource]">
+  <source class="TVisualStudioNetProjectSource" name="Common Tools\Common Tools.csproj" original="en" date="20110903044526" defaultoutputdir="Common Tools\bin\Debug" configuration="Debug|AnyCPU" assemblykind="naLibrary" netversion="net40" toolsversion="net40" rootnamespace="Common_Tools" options="[noSetRightToLeft,noSortItems,noCompileResource,noCreateAssembly,noDeleteCompiledResource,noDeleteSourceResource]">
     <outputfile dir="..\bin\Debug"/>
     <excludeddatatypes>
       <class>TBinaryData</class>
@@ -9964,8 +9964,8 @@
     <node class="TWindowsVersionFolder" name="Versions" state="0" resid="16">
       <node class="TWindowsVersionNode" name="1" state="0" resid="1">
         <row id="Assembly Version" locked="1" state="3">
-          <prev>1.5.4258.36102</prev>
-          <native>1.5.4260.41839</native>
+          <prev>1.5.4260.41839</prev>
+          <native>1.5.4262.39053</native>
           <lang id="ar" invalidated="1">1.4.4187.39341</lang>
           <lang id="zh" invalidated="1">1.4.4187.39341</lang>
           <lang id="zh.tra" invalidated="1">1.4.4187.39341</lang>
