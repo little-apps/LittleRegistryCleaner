@@ -1134,16 +1134,23 @@ namespace Common_Tools.TaskScheduler
 
 				IPersistFile iFile = (IPersistFile)v1Task;
 				if (string.IsNullOrEmpty(newName) || newName == v1Name)
-					iFile.Save(null, false);
-				else
 				{
-					string path;
-					iFile.GetCurFile(out path);
-					System.IO.File.Delete(path);
-					path = System.IO.Path.GetDirectoryName(path) + System.IO.Path.DirectorySeparatorChar + newName + System.IO.Path.GetExtension(path);
-					System.IO.File.Delete(path);
-					iFile.Save(path, true);
+					try
+					{
+						iFile.Save(null, false);
+						iFile = null;
+						return;
+					}
+					catch { }
+
 				}
+
+				string path;
+				iFile.GetCurFile(out path);
+				System.IO.File.Delete(path);
+				path = System.IO.Path.GetDirectoryName(path) + System.IO.Path.DirectorySeparatorChar + newName + System.IO.Path.GetExtension(path);
+				System.IO.File.Delete(path);
+				iFile.Save(path, true);
 				iFile = null;
 			}
 		}
@@ -1251,9 +1258,11 @@ namespace Common_Tools.TaskScheduler
 			{
 				if (v2Principal != null)
 					return v2Principal.LogonType;
-				if ((v1Task.GetFlags() & V1Interop.TaskFlags.Interactive) == V1Interop.TaskFlags.Interactive)
+				if (this.UserId == localSystemAcct)
+					return TaskLogonType.ServiceAccount;
+				if ((v1Task.GetFlags() & V1Interop.TaskFlags.RunOnlyIfLoggedOn) == V1Interop.TaskFlags.RunOnlyIfLoggedOn)
 					return TaskLogonType.InteractiveToken;
-				return TaskLogonType.ServiceAccount;
+				return TaskLogonType.InteractiveTokenOrPassword;
 			}
 			set
 			{
@@ -1261,13 +1270,13 @@ namespace Common_Tools.TaskScheduler
 					v2Principal.LogonType = value;
 				else
 				{
-					if (value == TaskLogonType.Group || value == TaskLogonType.InteractiveTokenOrPassword || value == TaskLogonType.None || value == TaskLogonType.Password || value == TaskLogonType.S4U)
+					if (value == TaskLogonType.Group || value == TaskLogonType.None || value == TaskLogonType.S4U)
 						throw new NotV1SupportedException();
 					V1Interop.TaskFlags flags = v1Task.GetFlags();
 					if (value == TaskLogonType.InteractiveToken)
-						flags |= V1Interop.TaskFlags.Interactive;
+						flags |= V1Interop.TaskFlags.RunOnlyIfLoggedOn;
 					else
-						flags &= ~(V1Interop.TaskFlags.Interactive | V1Interop.TaskFlags.RunOnlyIfLoggedOn);
+						flags &= ~(V1Interop.TaskFlags.RunOnlyIfLoggedOn);
 					v1Task.SetFlags(flags);
 				}
 			}
@@ -1708,14 +1717,24 @@ namespace Common_Tools.TaskScheduler
 					string d = v2RegInfo.Date;
 					return string.IsNullOrEmpty(d) ? DateTime.MinValue : DateTime.Parse(d);
 				}
-				return System.IO.File.GetLastWriteTime(Task.GetV1Path(v1Task));
+
+				string v1Path = Task.GetV1Path(v1Task);
+				if (!string.IsNullOrEmpty(v1Path) && System.IO.File.Exists(v1Path))
+					return System.IO.File.GetLastWriteTime(v1Path);
+				return DateTime.MinValue;
 			}
 			set
 			{
 				if (v2RegInfo != null)
 					v2RegInfo.Date = value.ToString(Trigger.V2BoundaryDateFormat);
 				else
-					System.IO.File.SetLastWriteTime(Task.GetV1Path(v1Task), value);
+				{
+					string v1Path = Task.GetV1Path(v1Task);
+					if (!string.IsNullOrEmpty(v1Path) && System.IO.File.Exists(v1Path))
+						System.IO.File.SetLastWriteTime(v1Path, value);
+					else
+						throw new NotV1SupportedException("This property cannot be set on an unregistered task.");
+				}
 			}
 		}
 

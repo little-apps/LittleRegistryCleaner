@@ -285,11 +285,16 @@ namespace Little_Registry_Cleaner
 
             TaskDefinition td = ts.NewTask();
 
-            td.RegistrationInfo.Date = DateTime.Now;
-            td.RegistrationInfo.Description = "Runs a scan with Little Registry Cleaner";
-            td.RegistrationInfo.Source = "Little Registry Cleaner";
-            td.Principal.RunLevel = TaskRunLevel.Highest;
+            if (ts.HighestSupportedVersion.CompareTo(new Version(1,1)) > 0)
+            {
+                // Only applies to Task Scheduler 2.0 (Vista or higher)
+                td.RegistrationInfo.Date = DateTime.Now;
+                td.RegistrationInfo.Source = "Little Registry Cleaner";
+                td.Principal.RunLevel = TaskRunLevel.Highest;
+            }
 
+            td.RegistrationInfo.Description = "Runs a scan with Little Registry Cleaner";
+            
             if (this.radioButtonNever.Checked)
             {
                 return;

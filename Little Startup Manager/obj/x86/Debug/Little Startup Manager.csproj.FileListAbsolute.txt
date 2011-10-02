@@ -69,3 +69,15 @@ C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Litt
 \\UPSTAIRS\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Startup Manager\obj\x86\Debug\GenerateResource.write.1.tlog
 \\UPSTAIRS\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Startup Manager\obj\x86\Debug\Little Startup Manager.exe
 \\UPSTAIRS\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Startup Manager\obj\x86\Debug\Little Startup Manager.pdb
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Startup Manager\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Startup Manager\obj\x86\Debug\Little_Startup_Manager.EditRunItem.resources
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Startup Manager\obj\x86\Debug\Little_Startup_Manager.NewRunItem.resources
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Startup Manager\obj\x86\Debug\Little_Startup_Manager.Properties.Resources.resources
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Startup Manager\obj\x86\Debug\Little_Startup_Manager.StartupManager.resources
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Startup Manager\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Startup Manager\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Registry Cleaner\bin\Debug\Little Startup Manager.exe.config
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Registry Cleaner\bin\Debug\Little Startup Manager.exe
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Registry Cleaner\bin\Debug\Little Startup Manager.pdb
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Startup Manager\obj\x86\Debug\Little Startup Manager.exe
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Startup Manager\obj\x86\Debug\Little Startup Manager.pdb
