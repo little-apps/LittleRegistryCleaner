@@ -394,3 +394,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 + Version 1.5 Released
 
 - Fixed bug when trying to create scheduled tasks on Windows Task Scheduler 1.0 (Windows 2000, XP and Server 2003)
+- Fixed bug that prevented LRC from closing if DeskMetrics was disabled
