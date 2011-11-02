@@ -22,9 +22,14 @@ namespace Common_Tools.DeskMetrics
         {
             lock (ObjectLock)
             {
-                RegistryKey reg = GetOrCreateDeskMetricsSubKey();
-                reg.SetValue("ID", UserID);
-                reg.Close();
+                using (RegistryKey reg = GetOrCreateDeskMetricsSubKey())
+                {
+                    if (reg == null)
+                        return;
+
+                    reg.SetValue("ID", UserID);
+                    reg.Close();
+                }
             }
         }
 
@@ -38,7 +43,16 @@ namespace Common_Tools.DeskMetrics
                 }
                 catch
                 {
-                    return "";
+                    // Manually generate ID
+                    string guid = "";
+                    string salt = "ABCDEF0123456789";
+
+                    Random rand = new Random();
+
+                    for (int i = 0; i < 32; i++)
+                        guid += salt[rand.Next(salt.Length)];
+
+                    return guid;
                 }
             }
         }

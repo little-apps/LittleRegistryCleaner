@@ -398,5 +398,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - No longer displays bug report when trying to contact DeskMetrics with no internet connection
 - NsisDeskMetrics plugin no longer requires the Microsoft Visual C++ 2010 Redistributable Package to run
 - Added check for null string in PrefixRegPath()
+- Manually generates GUID for DeskMetrics if an error occured in System.Guid
 
 + Version 1.5.1 Released
