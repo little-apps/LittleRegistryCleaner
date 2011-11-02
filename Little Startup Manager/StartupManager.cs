@@ -361,9 +361,17 @@ namespace Little_Startup_Manager
                     if (string.IsNullOrEmpty(strFilepath))
                         return;
 
-                    System.Diagnostics.Process.Start(strFilepath, strFileArgs);
+                    try
+                    {
+                        System.Diagnostics.Process.Start(strFilepath, strFileArgs);
 
-                    MessageBox.Show(this, string.Format("{0}: {1}", Properties.Resources.smRan, strFilepath), Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show(this, string.Format("{0}: {1}", Properties.Resources.smRan, strFilepath), Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (FileNotFoundException ex)
+                    {
+                        MessageBox.Show(this, ex.Message, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    
                 }
             }
         }

@@ -401,5 +401,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Manually generates GUID for DeskMetrics if an error occured in System.Guid
 - Fixed spelling mistake that prevented LRC to load on Lithuanian computers
 - No longer displays exception if "cmdLine" passed to ExtractArguments() is null
+- Displays error message instead of exception if file is not found when executed with startup manager
 
 + Version 1.5.1 Released
