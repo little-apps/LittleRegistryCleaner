@@ -788,7 +788,7 @@ namespace Little_Registry_Cleaner
                     break;
 
                 case "lt":
-                    lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["lithuaniaToolStripMenuItem"];
+                    lang = (ToolStripMenuItem)this.languageToolStripMenuItem.DropDownItems["lithuanianToolStripMenuItem"];
                     break;
 
                 case "fa":
