@@ -979,6 +979,9 @@ namespace Little_Registry_Cleaner
         /// <returns>Shortened registry path  (EX: HKCU/...) </returns>
         public static string PrefixRegPath(string SubKey)
         {
+            if (string.IsNullOrEmpty(SubKey))
+                return "";
+
             string strSubKey = string.Copy(SubKey);
 
             if (strSubKey.ToUpper().StartsWith("HKEY_CLASSES_ROOT"))
