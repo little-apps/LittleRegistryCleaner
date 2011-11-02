@@ -59,9 +59,14 @@ namespace Common_Tools.DeskMetrics
 
 		public string CreateUserID(RegistryKey reg)
 		{
-			string UserID = reg.GetValue("ID").ToString();
-            if (!string.IsNullOrEmpty(UserID))
-                return UserID;
+            string UserID;
+
+            if (reg != null)
+            {
+                UserID = reg.GetValue("ID").ToString();
+                if (!string.IsNullOrEmpty(UserID))
+                    return UserID;
+            }
 
 			UserID = GetSessionID();
             SetUserID(UserID);
