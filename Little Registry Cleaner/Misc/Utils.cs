@@ -445,8 +445,8 @@ namespace Little_Registry_Cleaner
 
             filePath = fileArgs = "";
 
-            if (strCmdLine.Length <= 0)
-                throw new ArgumentNullException("cmdLine");
+            if (string.IsNullOrEmpty(cmdLine))
+                return false;
 
             fileArgs = Marshal.PtrToStringAuto(PathGetArgs(strCmdLine.ToString()));
             //fileArgs = string.Copy(PathGetArgs(strCmdLine.ToString()));
@@ -478,7 +478,7 @@ namespace Little_Registry_Cleaner
             filePath = fileArgs = "";
 
             if (string.IsNullOrEmpty(strCmdLine))
-                throw new ArgumentNullException(cmdLine);
+                return false;
 
             // Remove Quotes
             strCmdLine = UnqouteSpaces(strCmdLine);
