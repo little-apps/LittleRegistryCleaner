@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.1.321" date="20111102222915" scan="67" scanned="20110829211720">
+<document version="2.1.321" date="20111102224335" scan="67" scanned="20110829211720">
   <lang id="ar"/>
   <lang id="zh" ime="imOn"/>
   <lang id="zh.tra" ime="imOn"/>
@@ -1618,8 +1618,8 @@
     <node class="TWindowsVersionFolder" name="Versions" resid="16">
       <node class="TWindowsVersionNode" name="1" resid="1">
         <row id="Assembly Version" state="3">
-          <prev>1.0.4262.39054</prev>
-          <native>1.0.4320.33596</native>
+          <prev>1.0.4320.33596</prev>
+          <native>1.0.4323.38910</native>
           <lang id="ar" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="zh" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="zh.tra" invalidated="1" status="2">1.0.0.0</lang>
@@ -2299,8 +2299,8 @@
     <node class="TWindowsVersionFolder" name="Versions" resid="16">
       <node class="TWindowsVersionNode" name="1" resid="1">
         <row id="Assembly Version" state="3">
-          <prev>1.0.4262.39054</prev>
-          <native>1.0.4320.33596</native>
+          <prev>1.0.4320.33596</prev>
+          <native>1.0.4323.38910</native>
           <lang id="ar" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="zh" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="zh.tra" invalidated="1" status="2">0.0.0.0</lang>
@@ -2884,8 +2884,8 @@
     <node class="TWindowsVersionFolder" name="Versions" state="0" resid="16">
       <node class="TWindowsVersionNode" name="1" state="0" resid="1">
         <row id="Assembly Version" locked="1" state="3">
-          <prev>1.1.4260.41838</prev>
-          <native>1.1.4320.33595</native>
+          <prev>1.1.4320.33595</prev>
+          <native>1.1.4323.38909</native>
           <lang id="ar" invalidated="1">1.0.4187.39341</lang>
           <lang id="zh" invalidated="1">1.0.4187.39341</lang>
           <lang id="zh.tra" invalidated="1">1.0.4187.39341</lang>
@@ -9967,8 +9967,8 @@
     <node class="TWindowsVersionFolder" name="Versions" state="0" resid="16">
       <node class="TWindowsVersionNode" name="1" state="0" resid="1">
         <row id="Assembly Version" locked="1" state="3">
-          <prev>1.5.4262.39053</prev>
-          <native>1.5.4320.33595</native>
+          <prev>1.5.4320.33595</prev>
+          <native>1.5.4323.38910</native>
           <lang id="ar" invalidated="1">1.4.4187.39341</lang>
           <lang id="zh" invalidated="1">1.4.4187.39341</lang>
           <lang id="zh.tra" invalidated="1">1.4.4187.39341</lang>
@@ -10064,8 +10064,8 @@
           <lang id="vi" status="2">Người lau chùi Nơi đăng ký Nhỏ</lang>
         </row>
         <row id="FileVersion" locked="1" state="3">
-          <prev>1.4.2</prev>
-          <native>1.5</native>
+          <prev>1.5</prev>
+          <native>1.5.1</native>
           <lang id="ar" invalidated="1">1.4.2</lang>
           <lang id="zh" invalidated="1">1.4.2</lang>
           <lang id="zh.tra" invalidated="1">1.4.2</lang>
@@ -10094,8 +10094,8 @@
           <native>5</native>
         </row>
         <row id="FileVersion[3]" class="TIntegerRow" state="3">
-          <prev>2</prev>
-          <native>0</native>
+          <prev>0</prev>
+          <native>1</native>
         </row>
         <row id="FileVersion[4]" class="TIntegerRow" state="0">0</row>
         <row id="InternalName" locked="1" state="0">
@@ -10196,8 +10196,8 @@
           <lang id="vi" status="2">Người lau chùi Nơi đăng ký Nhỏ</lang>
         </row>
         <row id="ProductVersion" locked="1" state="3">
-          <prev>1.4.2</prev>
-          <native>1.5</native>
+          <prev>1.5</prev>
+          <native>1.5.1</native>
           <lang id="ar" invalidated="1">1.4.2</lang>
           <lang id="zh" invalidated="1">1.4.2</lang>
           <lang id="zh.tra" invalidated="1">1.4.2</lang>
@@ -10226,8 +10226,8 @@
           <native>5</native>
         </row>
         <row id="ProductVersion[3]" class="TIntegerRow" state="3">
-          <prev>2</prev>
-          <native>0</native>
+          <prev>0</prev>
+          <native>1</native>
         </row>
         <row id="ProductVersion[4]" class="TIntegerRow" state="0">0</row>
       </node>
