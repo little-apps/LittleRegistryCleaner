@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.1.321" date="20110925225612" scan="67" scanned="20110829211720">
+<document version="2.1.321" date="20111102222915" scan="67" scanned="20110829211720">
   <lang id="ar"/>
   <lang id="zh" ime="imOn"/>
   <lang id="zh.tra" ime="imOn"/>
@@ -1618,8 +1618,8 @@
     <node class="TWindowsVersionFolder" name="Versions" resid="16">
       <node class="TWindowsVersionNode" name="1" resid="1">
         <row id="Assembly Version" state="3">
-          <prev>1.0.4260.41839</prev>
-          <native>1.0.4262.39054</native>
+          <prev>1.0.4262.39054</prev>
+          <native>1.0.4320.33596</native>
           <lang id="ar" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="zh" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="zh.tra" invalidated="1" status="2">1.0.0.0</lang>
@@ -2299,8 +2299,8 @@
     <node class="TWindowsVersionFolder" name="Versions" resid="16">
       <node class="TWindowsVersionNode" name="1" resid="1">
         <row id="Assembly Version" state="3">
-          <prev>1.0.4260.41840</prev>
-          <native>1.0.4262.39054</native>
+          <prev>1.0.4262.39054</prev>
+          <native>1.0.4320.33596</native>
           <lang id="ar" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="zh" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="zh.tra" invalidated="1" status="2">0.0.0.0</lang>
@@ -2884,8 +2884,8 @@
     <node class="TWindowsVersionFolder" name="Versions" state="0" resid="16">
       <node class="TWindowsVersionNode" name="1" state="0" resid="1">
         <row id="Assembly Version" locked="1" state="3">
-          <prev>1.0.4258.35934</prev>
-          <native>1.1.4260.41838</native>
+          <prev>1.1.4260.41838</prev>
+          <native>1.1.4320.33595</native>
           <lang id="ar" invalidated="1">1.0.4187.39341</lang>
           <lang id="zh" invalidated="1">1.0.4187.39341</lang>
           <lang id="zh.tra" invalidated="1">1.0.4187.39341</lang>
@@ -2908,6 +2908,7 @@
           <lang id="tr" invalidated="1">1.0.4187.39341</lang>
           <lang id="vi" invalidated="1">1.0.4187.39341</lang>
         </row>
+        <row id="CompanyName" state="0">Little Apps</row>
         <row id="FileDescription" state="0">
           <native>Common Tools</native>
           <lang id="ar" status="2">أدوات عامة</lang>
@@ -2988,29 +2989,30 @@
           <lang id="tr">Ortak Tools.dll</lang>
           <lang id="vi">Chung Tools.dll</lang>
         </row>
-        <row id="LegalCopyright" state="0">
-          <native>Copyright ©  2008-2010</native>
-          <lang id="ar" status="2">حقوق الطبع والنشر © 2008-2010</lang>
-          <lang id="zh" status="2">版权所有 © 2008年-2010年</lang>
-          <lang id="zh.tra" status="2">版權所有 © 2008年-2010年</lang>
-          <lang id="nl" status="2">Copyright © 2008-2010</lang>
-          <lang id="en" status="2">Copyright ©  2008-2010</lang>
-          <lang id="fr" status="2">Copyright © 2008-2010</lang>
-          <lang id="de" status="2">Copyright © 2008-2010</lang>
-          <lang id="el" status="2">Copyright © 2008-2010</lang>
-          <lang id="hu" status="2">Copyright © 2008-2010</lang>
-          <lang id="it" status="2">Copyright © 2008-2010</lang>
-          <lang id="ja" status="2">著作権© 2008-2010</lang>
-          <lang id="lt" status="2">Copyright © 2008-2010</lang>
-          <lang id="pl" status="2">Copyright © 2008-2010</lang>
-          <lang id="fa" status="2">کپی رایت © 2008-2010</lang>
-          <lang id="pt" status="2">Copyright © 2008-2010</lang>
-          <lang id="ru" status="2">Copyright © 2008-2010</lang>
-          <lang id="es" status="2">Copyright © 2008-2010</lang>
-          <lang id="sv-SE" status="2">Copyright © 2008-2010</lang>
-          <lang id="th" status="2">สงวนลิขสิทธิ์ © 2008-2010</lang>
-          <lang id="tr" status="2">Copyright © 2008-2010</lang>
-          <lang id="vi" status="2">Bản quyền © 2008-2010</lang>
+        <row id="LegalCopyright" state="3">
+          <prev>Copyright ©  2008-2010</prev>
+          <native>Copyright ©  2008-2011</native>
+          <lang id="ar" invalidated="1" status="2">حقوق الطبع والنشر © 2008-2010</lang>
+          <lang id="zh" invalidated="1" status="2">版权所有 © 2008年-2010年</lang>
+          <lang id="zh.tra" invalidated="1" status="2">版權所有 © 2008年-2010年</lang>
+          <lang id="nl" invalidated="1" status="2">Copyright © 2008-2010</lang>
+          <lang id="en" invalidated="1" status="2">Copyright ©  2008-2010</lang>
+          <lang id="fr" invalidated="1" status="2">Copyright © 2008-2010</lang>
+          <lang id="de" invalidated="1" status="2">Copyright © 2008-2010</lang>
+          <lang id="el" invalidated="1" status="2">Copyright © 2008-2010</lang>
+          <lang id="hu" invalidated="1" status="2">Copyright © 2008-2010</lang>
+          <lang id="it" invalidated="1" status="2">Copyright © 2008-2010</lang>
+          <lang id="ja" invalidated="1" status="2">著作権© 2008-2010</lang>
+          <lang id="lt" invalidated="1" status="2">Copyright © 2008-2010</lang>
+          <lang id="pl" invalidated="1" status="2">Copyright © 2008-2010</lang>
+          <lang id="fa" invalidated="1" status="2">کپی رایت © 2008-2010</lang>
+          <lang id="pt" invalidated="1" status="2">Copyright © 2008-2010</lang>
+          <lang id="ru" invalidated="1" status="2">Copyright © 2008-2010</lang>
+          <lang id="es" invalidated="1" status="2">Copyright © 2008-2010</lang>
+          <lang id="sv-SE" invalidated="1" status="2">Copyright © 2008-2010</lang>
+          <lang id="th" invalidated="1" status="2">สงวนลิขสิทธิ์ © 2008-2010</lang>
+          <lang id="tr" invalidated="1" status="2">Copyright © 2008-2010</lang>
+          <lang id="vi" invalidated="1" status="2">Bản quyền © 2008-2010</lang>
         </row>
         <row id="OriginalFilename" locked="1" state="0">
           <native>Common Tools.dll</native>
@@ -3036,29 +3038,30 @@
           <lang id="tr">Ortak Tools.dll</lang>
           <lang id="vi">Chung Tools.dll</lang>
         </row>
-        <row id="ProductName" state="0">
-          <native>Common Tools</native>
-          <lang id="ar" status="2">أدوات عامة</lang>
-          <lang id="zh" status="2">常用工具</lang>
-          <lang id="zh.tra" status="2">常用工具</lang>
-          <lang id="nl" status="2">Gemeenschappelijke instrumenten</lang>
-          <lang id="en" status="2">Common Tools</lang>
-          <lang id="fr" status="2">Outils communs</lang>
-          <lang id="de" status="2">Gemeinsame Werkzeuge</lang>
-          <lang id="el" status="2">Κοινή Εργαλεία</lang>
-          <lang id="hu" status="2">Közös eszközök</lang>
-          <lang id="it" status="2">Strumenti comuni</lang>
-          <lang id="ja" status="2">一般的なツール</lang>
-          <lang id="lt" status="2">Bendra įrankiai</lang>
-          <lang id="pl" status="2">Wspólne narzędzia</lang>
-          <lang id="fa" status="2">ابزارهای رایج</lang>
-          <lang id="pt" status="2">Ferramentas comuns</lang>
-          <lang id="ru" status="2">Общие инструменты</lang>
-          <lang id="es" status="2">Herramientas comunes</lang>
-          <lang id="sv-SE" status="2">Gemensamma verktyg</lang>
-          <lang id="th" status="2">เครื่องมือทั่วไป</lang>
-          <lang id="tr" status="2">Genel Araçlar</lang>
-          <lang id="vi" status="2">Công cụ thông thường</lang>
+        <row id="ProductName" state="3">
+          <prev>Common Tools</prev>
+          <native>Little Registry Cleaner</native>
+          <lang id="ar" invalidated="1" status="2">أدوات عامة</lang>
+          <lang id="zh" invalidated="1" status="2">常用工具</lang>
+          <lang id="zh.tra" invalidated="1" status="2">常用工具</lang>
+          <lang id="nl" invalidated="1" status="2">Gemeenschappelijke instrumenten</lang>
+          <lang id="en" invalidated="1" status="2">Common Tools</lang>
+          <lang id="fr" invalidated="1" status="2">Outils communs</lang>
+          <lang id="de" invalidated="1" status="2">Gemeinsame Werkzeuge</lang>
+          <lang id="el" invalidated="1" status="2">Κοινή Εργαλεία</lang>
+          <lang id="hu" invalidated="1" status="2">Közös eszközök</lang>
+          <lang id="it" invalidated="1" status="2">Strumenti comuni</lang>
+          <lang id="ja" invalidated="1" status="2">一般的なツール</lang>
+          <lang id="lt" invalidated="1" status="2">Bendra įrankiai</lang>
+          <lang id="pl" invalidated="1" status="2">Wspólne narzędzia</lang>
+          <lang id="fa" invalidated="1" status="2">ابزارهای رایج</lang>
+          <lang id="pt" invalidated="1" status="2">Ferramentas comuns</lang>
+          <lang id="ru" invalidated="1" status="2">Общие инструменты</lang>
+          <lang id="es" invalidated="1" status="2">Herramientas comunes</lang>
+          <lang id="sv-SE" invalidated="1" status="2">Gemensamma verktyg</lang>
+          <lang id="th" invalidated="1" status="2">เครื่องมือทั่วไป</lang>
+          <lang id="tr" invalidated="1" status="2">Genel Araçlar</lang>
+          <lang id="vi" invalidated="1" status="2">Công cụ thông thường</lang>
         </row>
         <row id="ProductVersion" state="3">
           <prev>1.0.0.0</prev>
@@ -3095,7 +3098,7 @@
       </node>
     </node>
   </source>
-  <source class="TVisualStudioNetProjectSource" name="Little Registry Cleaner.csproj" original="en" date="20110829043826" defaultoutputdir="bin\Debug" configuration="Debug|AnyCPU" netversion="net40" toolsversion="net40" rootnamespace="Little_Registry_Cleaner" options="[noSetRightToLeft,noSortItems,noCompileResource,noCreateAssembly,noDeleteCompiledResource,noDeleteSourceResource]">
+  <source class="TVisualStudioNetProjectSource" name="Little Registry Cleaner.csproj" original="en" date="20111009180924" defaultoutputdir="bin\Debug" configuration="Debug|AnyCPU" netversion="net40" toolsversion="net40" rootnamespace="Little_Registry_Cleaner" options="[noSetRightToLeft,noSortItems,noCompileResource,noCreateAssembly,noDeleteCompiledResource,noDeleteSourceResource]">
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TColorData</class>
@@ -9964,8 +9967,8 @@
     <node class="TWindowsVersionFolder" name="Versions" state="0" resid="16">
       <node class="TWindowsVersionNode" name="1" state="0" resid="1">
         <row id="Assembly Version" locked="1" state="3">
-          <prev>1.5.4260.41839</prev>
-          <native>1.5.4262.39053</native>
+          <prev>1.5.4262.39053</prev>
+          <native>1.5.4320.33595</native>
           <lang id="ar" invalidated="1">1.4.4187.39341</lang>
           <lang id="zh" invalidated="1">1.4.4187.39341</lang>
           <lang id="zh.tra" invalidated="1">1.4.4187.39341</lang>

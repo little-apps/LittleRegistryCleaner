@@ -84,10 +84,5 @@ namespace Common_Tools.DeskMetrics
             }
          
         }
-
-        public static bool IsOnline()
-        {
-            Ping 
-        }
     }
 }
