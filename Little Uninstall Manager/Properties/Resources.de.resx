@@ -118,13 +118,13 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="programAlreadyRunning" xml:space="preserve">
-    <value>Es scheint als würde bereits ein anderes Programm laufen...</value>
+    <value>Eine andere Instanz des Programmes ist aktiv !</value>
   </data>
   <data name="umForceUninstall" xml:space="preserve">
     <value>Soll das gewählte Programm wirklich aus der Registry entfernt werden?</value>
   </data>
   <data name="umSearchText" xml:space="preserve">
-    <value>Nach Namen suchen</value>
+    <value>Namen suchen</value>
   </data>
   <data name="umUninstall" xml:space="preserve">
     <value>Soll dieses Programm wirklich deinstalliert werden?</value>

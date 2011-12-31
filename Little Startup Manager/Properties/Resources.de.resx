@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="programAlreadyRunning" xml:space="preserve">
-    <value>Es scheint als würde bereits ein anderes Programm laufen...</value>
+    <value>Eine andere Instanz des Programmes ist aktiv !</value>
   </data>
   <data name="smCannotFindFile" xml:space="preserve">
     <value>Die Datei konnte nicht gefunden werden</value>

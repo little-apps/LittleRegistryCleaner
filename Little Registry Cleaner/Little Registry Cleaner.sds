@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<desktop scan="67" scanned="20110829211720" built="20110902224836" lang="zh" pane="TLogPane" col="12" row="Little_Registry_Cleaner.Properties.Resources.crashReporterFail">
+<desktop scan="68" scanned="20111229153457" built="20110902224836" lang="zh" pane="TLogPane" col="12" row="Little_Registry_Cleaner.Properties.Resources.crashReporterFail">
   <language id="ar" autoime="0" autokeyboard="0"/>
   <language id="zh" autoime="0" autokeyboard="0"/>
   <language id="zh.tra" autoime="0" autokeyboard="0"/>
@@ -22,7 +22,7 @@
   <language id="tr" autoime="0" autokeyboard="0"/>
   <language id="vi" autoime="0" autokeyboard="0"/>
   <triggers>
-    <item class="TRemoveUnusedItemsTrigger" position="4"/>
+    <item class="TRemoveUnusedItemsTrigger" position="5"/>
     <item class="TValidateTrigger" position="2"/>
   </triggers>
   <sheet>

@@ -58,7 +58,7 @@ namespace Little_Registry_Cleaner
 
         private void linkLabelAuthor_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Utils.LaunchURI("mailto:nick@littleapps.co.cc");
+            Utils.LaunchURI("http://www.little-apps.org/contact.html");
 
         }
 
