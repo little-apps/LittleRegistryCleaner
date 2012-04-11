@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="2.1.321" date="20111231002819" scan="68" scanned="20111229153457">
+<document version="3.0.328" date="20120410211055" scan="68" scanned="20111229153457">
   <lang id="ar"/>
   <lang id="zh" ime="imOn"/>
   <lang id="zh.tra" ime="imOn"/>
@@ -250,7 +250,10 @@
               <row id="Location.Y">17</row>
               <row id="Size.Height">23</row>
               <row id="Size.Width">25</row>
-              <row id="Text">...</row>
+              <row id="Text">
+                <native>...</native>
+                <lang id="ru" status="3">…</lang>
+              </row>
             </component>
           </component>
         </form>
@@ -443,7 +446,10 @@
               <row id="Location.Y">37</row>
               <row id="Size.Height">23</row>
               <row id="Size.Width">28</row>
-              <row id="Text">...</row>
+              <row id="Text">
+                <native>...</native>
+                <lang id="ru" status="3">…</lang>
+              </row>
             </component>
             <component class="TVisEdit" name="textBoxPath" type="System.Windows.Forms.TextBox">
               <row id="Location.X">55</row>
@@ -560,7 +566,7 @@
               <lang id="pl" status="2">Registry\All Users\Run Once</lang>
               <lang id="fa" status="2">رجیستری\همه اعضا\پس از اجرا</lang>
               <lang id="pt" status="2">Once Users\Run de Registry\All</lang>
-              <lang id="ru" status="2">После Registry\All Users\Run</lang>
+              <lang id="ru" status="3">Registry\All Users\Run Once</lang>
               <lang id="es" status="2">Una vez Users\Run de Registry\All</lang>
               <lang id="sv-SE" status="2">Registry\All Users\Run Once</lang>
               <lang id="th" status="2">Registry\All Users\Run เมื่อ</lang>
@@ -608,7 +614,7 @@
               <lang id="pl" status="2">Registry\All Users\Run Usługi Po</lang>
               <lang id="fa" status="2">رجیستری\همه اعضا\اجرای خدمات پس از</lang>
               <lang id="pt" status="2">Registry\All Users\Run Services Once</lang>
-              <lang id="ru" status="2">После службы Users\Run Registry\All</lang>
+              <lang id="ru" status="3">Registry\All Users\Run Services Once</lang>
               <lang id="es" status="2">Registry\All Users\Run servicios una vez</lang>
               <lang id="sv-SE" status="2">Registry\All Users\Run Services Once</lang>
               <lang id="th" status="2">Registry\All Users\Services Run เมื่อ</lang>
@@ -656,7 +662,7 @@
               <lang id="pl" status="2">Registry\Current User\Run Once</lang>
               <lang id="fa" status="2">رجیستری\کاربر جاری\ پس از اجرا</lang>
               <lang id="pt" status="2">Once User\Run de Registry\Current</lang>
-              <lang id="ru" status="2">После Registry\Current User\Run</lang>
+              <lang id="ru" status="3">Registry\Current User\Run Once</lang>
               <lang id="es" status="2">Una vez User\Run de Registry\Current</lang>
               <lang id="sv-SE" status="2">Registry\Current User\Run Once</lang>
               <lang id="th" status="2">Registry\Current User\Run เมื่อ</lang>
@@ -704,7 +710,7 @@
               <lang id="pl" status="2">Registry\Current User\Run Usługi Po</lang>
               <lang id="fa" status="2">رجیستری\کاربر جاری \اجرای خدمات پس از</lang>
               <lang id="pt" status="2">Registry\Current User\Run Services Once</lang>
-              <lang id="ru" status="2">После службы User\Run Registry\Current</lang>
+              <lang id="ru" status="3">Registry\Current User\Run Services Once</lang>
               <lang id="es" status="2">Registry\Current User\Run servicios una vez</lang>
               <lang id="sv-SE" status="2">Registry\Current User\Run Services Once</lang>
               <lang id="th" status="2">Registry\Current User\Run บริการเมื่อ</lang>
@@ -728,7 +734,7 @@
               <lang id="pl" status="2">Uruchamianie\Wszyscy użytkownicy</lang>
               <lang id="fa" status="2">راه اندازی\همه اعضا</lang>
               <lang id="pt" status="2">Usuários de StartUp\All</lang>
-              <lang id="ru" status="2">StartUp\All пользователи</lang>
+              <lang id="ru" status="3">StartUp\All Users</lang>
               <lang id="es" status="2">Usuarios de StartUp\All</lang>
               <lang id="sv-SE" status="2">StartUp\All Users</lang>
               <lang id="th" status="2">Startup\ผู้ใช้ทั้งหมด</lang>
@@ -752,7 +758,7 @@
               <lang id="pl" status="2">Uruchamianie\Bieżący użytkownik</lang>
               <lang id="fa" status="2">راه اندازی\کاربر جاری</lang>
               <lang id="pt" status="2">Usuário de StartUp\Current</lang>
-              <lang id="ru" status="2">StartUp\Current пользователей</lang>
+              <lang id="ru" status="3">StartUp\Current User</lang>
               <lang id="es" status="2">Usuario StartUp\Current</lang>
               <lang id="sv-SE" status="2">StartUp\Current User</lang>
               <lang id="th" status="2">Startup\ผู้ใช้ปัจจุบัน</lang>
@@ -787,7 +793,7 @@
             <lang id="pl" status="2">Mała Startup Manager</lang>
             <lang id="fa" status="2">مدیر راه اندازی کوچک</lang>
             <lang id="pt" status="2">Gerenciador de Inicialização pouco</lang>
-            <lang id="ru" status="2">Маленькая Startup Manager</lang>
+            <lang id="ru" status="3">Little Startup Manager</lang>
             <lang id="es" status="2">Gestor de arranque poco</lang>
             <lang id="sv-SE" status="2">Little Startup Manager</lang>
             <lang id="th" status="2">ผู้จัดการการเริ่มต้นเล็ก ๆ น้อย ๆ</lang>
@@ -836,8 +842,8 @@
               <lang id="vi" status="2">toolStripContainer1</lang>
             </row>
           </component>
-          <component class="TVisPanel" name="toolStripContainer1" state="1" type="System.Windows.Forms.ToolStripContainer">
-            <row id="Text" state="1">
+          <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer">
+            <row id="Text" excluded="1" state="1">
               <native>toolStripContainer1</native>
               <lang id="ar" status="2">toolStripContainer1</lang>
               <lang id="zh" status="2">toolStripContainer1</lang>
@@ -1083,8 +1089,12 @@
               </component>
             </component>
           </component>
-          <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer">
-            <row id="Text" excluded="1" state="1">
+          <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer" align="alClient">
+            <row id="Location.X" state="0">0</row>
+            <row id="Location.Y" state="0">0</row>
+            <row id="Size.Height" state="0">436</row>
+            <row id="Size.Width" state="0">717</row>
+            <row id="Text">
               <native>toolStripContainer1</native>
               <lang id="ar" status="2">toolStripContainer1</lang>
               <lang id="zh" status="2">toolStripContainer1</lang>
@@ -1108,15 +1118,28 @@
               <lang id="tr" status="2">toolStripContainer1</lang>
               <lang id="vi" status="2">toolStripContainer1</lang>
             </row>
-            <component class="TVisGridPanel" name="tableLayoutPanel1" state="0" type="System.Windows.Forms.TableLayoutPanel">
+            <component class="TVisGridPanel" name="tableLayoutPanel1" state="0" type="System.Windows.Forms.TableLayoutPanel" align="alClient">
               <columns countset="1">
-                <item class="TVisGridItem" name="Column0" state="0" type="stAbsolute"/>
+                <item class="TVisGridItem" name="Column0" state="0" type="stAbsolute">
+                  <row id="Width" state="0">717</row>
+                </item>
               </columns>
               <rows countset="1">
-                <item class="TVisGridItem" name="Row0" state="0" type="stPercent"/>
+                <item class="TVisGridItem" name="Row0" state="0" type="stPercent">
+                  <row id="Height" class="TPercentRow" state="0">100.1</row>
+                </item>
               </rows>
-              <component class="TVisDefaultControl" name="treeViewAdv1" state="0" type="Common_Tools.TreeViewAdv.Tree.TreeViewAdv">
-                <row id="Text" excluded="1" state="1">
+              <row id="Location.X" state="0">0</row>
+              <row id="Location.Y" state="0">0</row>
+              <row id="Size.Height" state="0">382</row>
+              <row id="Size.Width" state="0">717</row>
+              <component class="TVisDefaultControl" name="treeViewAdv1" state="0" type="Common_Tools.TreeViewAdv.Tree.TreeViewAdv" align="alClient">
+                <row id="BackColor" hidden="1" state="0">clWindow</row>
+                <row id="Location.X" state="0">3</row>
+                <row id="Location.Y" state="0">3</row>
+                <row id="Size.Height" state="0">376</row>
+                <row id="Size.Width" state="0">711</row>
+                <row id="Text" excluded="1">
                   <native>treeViewAdv1</native>
                   <lang id="ar" status="2">treeViewAdv1</lang>
                   <lang id="zh" status="2">treeViewAdv1</lang>
@@ -1221,8 +1244,14 @@
               </component>
             </component>
             <component class="TVisToolBar" name="toolStrip1" state="0" type="System.Windows.Forms.ToolStrip">
+              <row id="Location.X" state="0">0</row>
+              <row id="Location.Y" state="0">0</row>
+              <row id="Size.Height" state="0">54</row>
+              <row id="Size.Width" state="0">717</row>
               <component class="TVisToolButton" name="toolStripButtonAdd" state="0" type="System.Windows.Forms.ToolStripButton">
-                <row id="Text" state="1">
+                <row id="Size.Height" state="0">51</row>
+                <row id="Size.Width" state="0">36</row>
+                <row id="Text">
                   <native>Add</native>
                   <lang id="ar" status="2">إضافة</lang>
                   <lang id="zh" status="2">新增</lang>
@@ -1248,7 +1277,9 @@
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonEdit" state="0" type="System.Windows.Forms.ToolStripButton">
-                <row id="Text" state="1">
+                <row id="Size.Height" state="0">51</row>
+                <row id="Size.Width" state="0">36</row>
+                <row id="Text">
                   <native>Edit</native>
                   <lang id="ar" status="2">تحرير</lang>
                   <lang id="zh" status="2">编辑</lang>
@@ -1274,7 +1305,9 @@
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonDelete" state="0" type="System.Windows.Forms.ToolStripButton">
-                <row id="Text" state="1">
+                <row id="Size.Height" state="0">51</row>
+                <row id="Size.Width" state="0">44</row>
+                <row id="Text">
                   <native>Delete</native>
                   <lang id="ar" status="2">حذف</lang>
                   <lang id="zh" status="2">删除</lang>
@@ -1300,7 +1333,9 @@
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonView" state="0" type="System.Windows.Forms.ToolStripButton">
-                <row id="Text" state="1">
+                <row id="Size.Height" state="0">51</row>
+                <row id="Size.Width" state="0">63</row>
+                <row id="Text">
                   <native>View Item</native>
                   <lang id="ar" status="2">عرض عنصر</lang>
                   <lang id="zh" status="2">查看表项</lang>
@@ -1326,7 +1361,9 @@
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonRun" state="0" type="System.Windows.Forms.ToolStripButton">
-                <row id="Text" state="1">
+                <row id="Size.Height" state="0">51</row>
+                <row id="Size.Width" state="0">36</row>
+                <row id="Text">
                   <native>Run</native>
                   <lang id="ar" status="2">تشغيل</lang>
                   <lang id="zh" status="2">执行</lang>
@@ -1352,7 +1389,9 @@
                 </row>
               </component>
               <component class="TVisToolButton" name="toolStripButtonRefresh" state="0" type="System.Windows.Forms.ToolStripButton">
-                <row id="Text" state="1">
+                <row id="Size.Height" state="0">51</row>
+                <row id="Size.Width" state="0">50</row>
+                <row id="Text">
                   <native>Refresh</native>
                   <lang id="ar" status="2">تحديث</lang>
                   <lang id="zh" status="2">刷新</lang>
@@ -1501,7 +1540,7 @@
           <lang id="pl" percent="99" status="1">Próbowano uruchomić:</lang>
           <lang id="fa" percent="99" status="1">اقدام به اجرا:</lang>
           <lang id="pt" percent="99" status="1">Tentativa de executar:</lang>
-          <lang id="ru" percent="99" status="1">Попытка запуска:</lang>
+          <lang id="ru" percent="99" status="3">Попытка выполнить команду:</lang>
           <lang id="es" percent="99" status="1">Ha intentado ejecutar:</lang>
           <lang id="sv-SE" percent="99" status="1">Försökte köra:</lang>
           <lang id="th" percent="99" status="1">พยายามใช้:</lang>
@@ -1584,7 +1623,7 @@
     </node>
     <node class="TWindowsVersionFolder" name="Versions" state="1" resid="16">
       <node class="TWindowsVersionNode" name="1" state="1" resid="1">
-        <row id="Assembly Version" state="1">
+        <row id="Assembly Version" excluded="1" state="1">
           <prev>1.0.4320.33596</prev>
           <native>1.0.4323.38910</native>
           <lang id="ar" invalidated="1" status="2">1.0.0.0</lang>
@@ -1602,7 +1641,7 @@
           <lang id="pl" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="fa" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="pt" invalidated="1" status="2">1.0.0.0</lang>
-          <lang id="ru" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="ru" status="3">1.0.4323.38910</lang>
           <lang id="es" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="sv-SE" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="th" invalidated="1" status="2">1.0.0.0</lang>
@@ -1626,7 +1665,7 @@
           <lang id="pl" status="2">Zarządzanie plikami które zaczynają się od komputera</lang>
           <lang id="fa" status="2">مدیریت فایل های که با کامپیوتر شما شروع به</lang>
           <lang id="pt" status="2">Gerenciar arquivos que iniciam com o seu computador</lang>
-          <lang id="ru" status="2">Управление файлами, которые начинаются с компьютером</lang>
+          <lang id="ru" status="3">Управление файлами, которые запускаются вместе с компьютером</lang>
           <lang id="es" status="2">Gestionar los archivos que comienzan con el ordenador</lang>
           <lang id="sv-SE" status="2">Hantera filer som börjar med datorn</lang>
           <lang id="th" status="2">การจัดการไฟล์ที่เริ่มต้นด้วยเครื่องคอมพิวเตอร์ของคุณ</lang>
@@ -1650,7 +1689,7 @@
           <lang id="pl" status="2">Mała Apps</lang>
           <lang id="fa" status="3">نرم افزار کوچک </lang>
           <lang id="pt" status="2">Apps pouco</lang>
-          <lang id="ru" status="3">Маленькая Apps</lang>
+          <lang id="ru" status="3">Little Apps</lang>
           <lang id="es" status="2">Aplicaciones poco</lang>
           <lang id="sv-SE" status="2">Little Apps</lang>
           <lang id="th" status="2">Apps ลิตเติ้ล</lang>
@@ -1674,14 +1713,14 @@
           <lang id="pl" status="2">Mała Startup Manager</lang>
           <lang id="fa" status="2">مدیر راه اندازی کوچک</lang>
           <lang id="pt" status="2">Gerenciador de Inicialização pouco</lang>
-          <lang id="ru" status="2">Маленькая Startup Manager</lang>
+          <lang id="ru" status="3">Little Startup Manager</lang>
           <lang id="es" status="2">Gestor de arranque poco</lang>
           <lang id="sv-SE" status="2">Little Startup Manager</lang>
           <lang id="th" status="2">ผู้จัดการการเริ่มต้นเล็ก ๆ น้อย ๆ</lang>
           <lang id="tr" status="2">Küçük Başlangıç ​​Yöneticisi</lang>
           <lang id="vi" status="2">Ít Startup Manager</lang>
         </row>
-        <row id="FileVersion" state="1">
+        <row id="FileVersion" excluded="1" state="1">
           <prev>1.0.0.0</prev>
           <native>1.0</native>
           <lang id="ar" invalidated="1" status="2">1.0.0.0</lang>
@@ -1699,7 +1738,7 @@
           <lang id="pl" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="fa" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="pt" invalidated="1" status="2">1.0.0.0</lang>
-          <lang id="ru" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="ru" status="3">1.0</lang>
           <lang id="es" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="sv-SE" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="th" invalidated="1" status="2">1.0.0.0</lang>
@@ -1723,14 +1762,14 @@
           <lang id="pl" status="2">Mała Startup Manager.exe</lang>
           <lang id="fa" status="2">کوچک راه اندازی Manager.exe</lang>
           <lang id="pt" status="2">Manager.exe Startup pouco</lang>
-          <lang id="ru" status="2">Маленький Запуск Manager.exe</lang>
+          <lang id="ru" status="3">Little Startup Manager.exe</lang>
           <lang id="es" status="2">Manager.exe inicio poco</lang>
           <lang id="sv-SE" status="2">Little Startup Manager.exe</lang>
           <lang id="th" status="2">Manager.exe เริ่มต้นเล็ก ๆ น้อย ๆ</lang>
           <lang id="tr" status="2">Küçük Başlangıç ​​Manager.exe</lang>
           <lang id="vi" status="2">Ít Startup Manager.exe</lang>
         </row>
-        <row id="LegalCopyright" state="1">
+        <row id="LegalCopyright" excluded="1" state="1">
           <native>Copyright © Little Apps 2008-2011</native>
           <lang id="ar" status="2">حقوق الطبع والنشر © القليل من تطبيقات 2008-2011</lang>
           <lang id="zh" status="2">版权所有 © 小应用程序 2008年-2011 年</lang>
@@ -1747,7 +1786,7 @@
           <lang id="pl" status="2">Copyright © Mały Apps 2008-2011</lang>
           <lang id="fa" status="2">کپی رایت © 2008-2011 کوچک نرم افزار</lang>
           <lang id="pt" status="2">Copyright © Apps Pouco 2008-2011</lang>
-          <lang id="ru" status="2">Copyright © 2008-2011 Маленькие приложения</lang>
+          <lang id="ru" status="3">Copyright © Little Apps 2008-2011</lang>
           <lang id="es" status="2">Copyright © Aplicaciones Poco 2008-2011</lang>
           <lang id="sv-SE" status="2">Copyright © Little Apps 2008-2011</lang>
           <lang id="th" status="2">สงวนลิขสิทธิ์ © 2008-2011 Apps ลิตเติ้ล</lang>
@@ -1771,7 +1810,7 @@
           <lang id="pl" status="2">Mała Startup Manager.exe</lang>
           <lang id="fa" status="2">کوچک راه اندازی Manager.exe</lang>
           <lang id="pt" status="2">Manager.exe Startup pouco</lang>
-          <lang id="ru" status="2">Маленький Запуск Manager.exe</lang>
+          <lang id="ru" status="3">Little Startup Manager.exe</lang>
           <lang id="es" status="2">Manager.exe inicio poco</lang>
           <lang id="sv-SE" status="2">Little Startup Manager.exe</lang>
           <lang id="th" status="2">Manager.exe เริ่มต้นเล็ก ๆ น้อย ๆ</lang>
@@ -1796,14 +1835,14 @@
           <lang id="pl" invalidated="1" status="2">Mała Startup Manager</lang>
           <lang id="fa" invalidated="1" status="2">مدیر راه اندازی کوچک</lang>
           <lang id="pt" invalidated="1" status="2">Gerenciador de Inicialização pouco</lang>
-          <lang id="ru" invalidated="1" status="2">Маленькая Startup Manager</lang>
+          <lang id="ru" status="3">Little Registry Cleaner</lang>
           <lang id="es" invalidated="1" status="2">Gestor de arranque poco</lang>
           <lang id="sv-SE" invalidated="1" status="2">Little Startup Manager</lang>
           <lang id="th" invalidated="1" status="2">ผู้จัดการการเริ่มต้นเล็ก ๆ น้อย ๆ</lang>
           <lang id="tr" invalidated="1" status="2">Küçük Başlangıç ​​Yöneticisi</lang>
           <lang id="vi" invalidated="1" status="2">Ít Startup Manager</lang>
         </row>
-        <row id="ProductVersion" state="1">
+        <row id="ProductVersion" excluded="1" state="1">
           <prev>1.0.0.0</prev>
           <native>1.0</native>
           <lang id="ar" invalidated="1" status="2">1.0.0.0</lang>
@@ -1821,7 +1860,7 @@
           <lang id="pl" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="fa" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="pt" invalidated="1" status="2">1.0.0.0</lang>
-          <lang id="ru" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="ru" status="3">1.0</lang>
           <lang id="es" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="sv-SE" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="th" invalidated="1" status="2">1.0.0.0</lang>
@@ -1889,7 +1928,7 @@
             <lang id="pl" status="2">Mała Uninstall Manager</lang>
             <lang id="fa" status="2">کوچولو عزل مدیر</lang>
             <lang id="pt" status="2">Uninstall Manager pouco</lang>
-            <lang id="ru" status="2">Маленькая Uninstall Manager</lang>
+            <lang id="ru" status="3">Little Uninstall Manager</lang>
             <lang id="es" status="2">Poco Uninstall Manager</lang>
             <lang id="sv-SE" status="2">Little Avinstallera chef</lang>
             <lang id="th" status="2">ผู้จัดการฝ่ายการถอนการติดตั้งน้อย</lang>
@@ -2174,7 +2213,7 @@
           <lang id="pl" percent="99" status="1">Inny program wydaje się być uruchomiony już...</lang>
           <lang id="fa" percent="99" status="1">برنامه دیگری به نظر می رسد که در حال حاضر در حال اجراست...</lang>
           <lang id="pt" percent="99" status="1">Outro programa parece já estar sendo executado...</lang>
-          <lang id="ru" percent="99" status="1">Другая копия программы уже запущена...</lang>
+          <lang id="ru" percent="99" status="3">Программа уже запущена...</lang>
           <lang id="es" percent="99" status="1">Otro programa parece estar ejecutándose...</lang>
           <lang id="sv-SE" percent="99" status="1">Ett annat program köras redan...</lang>
           <lang id="th" percent="99" status="1">โปรแกรมอื่นน่าจะทำงานแล้ว...</lang>
@@ -2257,7 +2296,7 @@
     </node>
     <node class="TWindowsVersionFolder" name="Versions" state="1" resid="16">
       <node class="TWindowsVersionNode" name="1" state="1" resid="1">
-        <row id="Assembly Version" state="1">
+        <row id="Assembly Version" excluded="1" state="1">
           <prev>1.0.4320.33596</prev>
           <native>1.0.4323.38910</native>
           <lang id="ar" invalidated="1" status="2">0.0.0.0</lang>
@@ -2275,7 +2314,7 @@
           <lang id="pl" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="fa" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="pt" invalidated="1" status="2">0.0.0.0</lang>
-          <lang id="ru" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="ru" status="3">1.0.4323.38910</lang>
           <lang id="es" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="sv-SE" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="th" invalidated="1" status="2">0.0.0.0</lang>
@@ -2299,7 +2338,7 @@
           <lang id="pl" status="2">Zarządzanie programów zainstalowanych na komputerze</lang>
           <lang id="fa" status="2">مدیریت برنامه های نصب شده بر روی کامپیوتر شما</lang>
           <lang id="pt" status="2">Gerenciar os programas instalados no seu computador</lang>
-          <lang id="ru" status="2">Управление программ, установленных на вашем компьютере</lang>
+          <lang id="ru" status="3">Управление программами, установленными на вашем компьютере</lang>
           <lang id="es" status="2">Gestionar los programas instalados en su ordenador</lang>
           <lang id="sv-SE" status="2">Hantera program installerade på datorn</lang>
           <lang id="th" status="2">การจัดการโปรแกรมที่ติดตั้งบนคอมพิวเตอร์ของคุณ</lang>
@@ -2323,7 +2362,7 @@
           <lang id="pl" status="3">Mała Apps</lang>
           <lang id="fa" status="3">نرم افزار کوچک </lang>
           <lang id="pt" status="3">Apps pouco</lang>
-          <lang id="ru" status="3">Маленькая Apps</lang>
+          <lang id="ru" status="3">Little Apps</lang>
           <lang id="es" status="3">Aplicaciones poco</lang>
           <lang id="sv-SE" status="3">Little Apps</lang>
           <lang id="th" status="3">Apps ลิตเติ้ล</lang>
@@ -2348,14 +2387,14 @@
           <lang id="pl" status="2">Mała Uninstall Manager</lang>
           <lang id="fa" status="2">کوچولو عزل مدیر</lang>
           <lang id="pt" status="2">Uninstall Manager pouco</lang>
-          <lang id="ru" status="2">Маленькая Uninstall Manager</lang>
+          <lang id="ru" status="3">Little Uninstall Manager</lang>
           <lang id="es" status="2">Poco Uninstall Manager</lang>
           <lang id="sv-SE" status="2">Little Avinstallera chef</lang>
           <lang id="th" status="2">ผู้จัดการฝ่ายการถอนการติดตั้งน้อย</lang>
           <lang id="tr" status="2">Küçük Uninstall Manager</lang>
           <lang id="vi" status="2">Ít Uninstall Manager</lang>
         </row>
-        <row id="FileVersion" state="1">
+        <row id="FileVersion" excluded="1" state="1">
           <prev>0.0.0.0</prev>
           <native>1.0</native>
           <lang id="ar" invalidated="1" status="2">0.0.0.0</lang>
@@ -2373,7 +2412,7 @@
           <lang id="pl" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="fa" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="pt" invalidated="1" status="2">0.0.0.0</lang>
-          <lang id="ru" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="ru" status="3">1.0.0.0</lang>
           <lang id="es" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="sv-SE" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="th" invalidated="1" status="2">0.0.0.0</lang>
@@ -2397,7 +2436,7 @@
           <lang id="pl" status="2">Mała Odinstaluj Manager.exe</lang>
           <lang id="fa" status="2">کوچولو عزل Manager.exe</lang>
           <lang id="pt" status="2">Pouco Uninstall Manager.exe</lang>
-          <lang id="ru" status="2">Маленькая Удалить Manager.exe</lang>
+          <lang id="ru" status="3">Little Uninstall Manager.exe</lang>
           <lang id="es" status="2">Poco Manager.exe Desinstalar</lang>
           <lang id="sv-SE" status="2">Little Avinstallera Manager.exe</lang>
           <lang id="th" status="2">ลิตเติ้ล Manager.exe ถอนการติดตั้ง</lang>
@@ -2422,7 +2461,7 @@
           <lang id="pl" status="2">Copyright © Mały Apps 2008-2011</lang>
           <lang id="fa" status="2">کپی رایت © کوچولو نرم افزار ها 2008-2011</lang>
           <lang id="pt" status="2">Copyright © Apps Pouco 2008-2011</lang>
-          <lang id="ru" status="2">Copyright © 2008-2011 Маленькие приложения</lang>
+          <lang id="ru" status="3">Copyright © Little Apps 2008-2011</lang>
           <lang id="es" status="2">Copyright © Aplicaciones Poco 2008-2011</lang>
           <lang id="sv-SE" status="2">Copyright © Little Apps 2008-2011</lang>
           <lang id="th" status="2">สงวนลิขสิทธิ์ © 2008-2011 Apps ลิตเติ้ล</lang>
@@ -2446,7 +2485,7 @@
           <lang id="pl" status="2">Mała Odinstaluj Manager.exe</lang>
           <lang id="fa" status="2">کوچولو عزل Manager.exe</lang>
           <lang id="pt" status="2">Pouco Uninstall Manager.exe</lang>
-          <lang id="ru" status="2">Маленькая Удалить Manager.exe</lang>
+          <lang id="ru" status="3">Little Uninstall Manager.exe</lang>
           <lang id="es" status="2">Poco Manager.exe Desinstalar</lang>
           <lang id="sv-SE" status="2">Little Avinstallera Manager.exe</lang>
           <lang id="th" status="2">ลิตเติ้ล Manager.exe ถอนการติดตั้ง</lang>
@@ -2470,14 +2509,14 @@
           <lang id="pl" status="2">Mała Registry Cleaner</lang>
           <lang id="fa" status="2">کوچک تمیز کننده رجیستری</lang>
           <lang id="pt" status="2">Limpador de Registro pouco</lang>
-          <lang id="ru" status="2">Маленькая Registry Cleaner</lang>
+          <lang id="ru" status="3">Little Registry Cleaner</lang>
           <lang id="es" status="2">Little Registry Cleaner</lang>
           <lang id="sv-SE" status="2">Little Registry Cleaner</lang>
           <lang id="th" status="2">รีจิสทรีทำความสะอาดเพียงเล็กน้อย</lang>
           <lang id="tr" status="2">Little Registry Cleaner</lang>
           <lang id="vi" status="2">Little Registry Cleaner</lang>
         </row>
-        <row id="ProductVersion" state="1">
+        <row id="ProductVersion" excluded="1" state="1">
           <prev>0.0.0.0</prev>
           <native>1.0</native>
           <lang id="ar" invalidated="1" status="2">0.0.0.0</lang>
@@ -2495,7 +2534,7 @@
           <lang id="pl" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="fa" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="pt" invalidated="1" status="2">0.0.0.0</lang>
-          <lang id="ru" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="ru" status="3">1.0.0.0</lang>
           <lang id="es" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="sv-SE" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="th" invalidated="1" status="2">0.0.0.0</lang>
@@ -2744,30 +2783,37 @@
         <row id="DOWFriday" state="0">
           <native>Friday</native>
           <lang id="de" status="3">Freitag</lang>
+          <lang id="ru" status="3">Пятница</lang>
         </row>
         <row id="DOWMonday" state="0">
           <native>Monday</native>
           <lang id="de" status="3">Montag</lang>
+          <lang id="ru" status="3">Понедельник</lang>
         </row>
         <row id="DOWSaturday" state="0">
           <native>Saturday</native>
           <lang id="de" status="3">Samstag</lang>
+          <lang id="ru" status="3">Суббота</lang>
         </row>
         <row id="DOWSunday" state="0">
           <native>Sunday</native>
           <lang id="de" status="3">Sonntag</lang>
+          <lang id="ru" status="3">Воскресенье</lang>
         </row>
         <row id="DOWThursday" state="0">
           <native>Thursday</native>
           <lang id="de" status="3">Donnerstag</lang>
+          <lang id="ru" status="3">Четверг</lang>
         </row>
         <row id="DOWTuesday" state="0">
           <native>Tuesday</native>
           <lang id="de" status="3">Dienstag</lang>
+          <lang id="ru" status="3">Вторник</lang>
         </row>
         <row id="DOWWednesday" state="0">
           <native>Wednesday</native>
           <lang id="de" status="3">Mittwoch</lang>
+          <lang id="ru" status="3">Среда</lang>
         </row>
         <row id="EmailAction" state="0" note="0 = Subject; 1 = To; 2 = Cc, 3 = Bcc, 4 = From, 5 = ReplyTo, 6 = Body, 7 = Server, 8 = Id" notereadonly="1">{1} {0}</row>
         <row id="EndSentence" state="0">.</row>
@@ -2824,6 +2870,7 @@
         <row id="TriggerTypeDaily" state="0">
           <native>Daily</native>
           <lang id="de" status="3">Täglich</lang>
+          <lang id="ru" status="3">Ежедневно</lang>
         </row>
         <row id="TriggerTypeEvent" state="0">On an event</row>
         <row id="TriggerTypeIdle" state="0">On idle</row>
@@ -2831,10 +2878,12 @@
         <row id="TriggerTypeMonthly" state="0">
           <native>Monthly</native>
           <lang id="de" status="3">Monatlich</lang>
+          <lang id="ru" status="3">Ежемесячно</lang>
         </row>
         <row id="TriggerTypeMonthlyDOW" state="0">
           <native>Monthly</native>
           <lang id="de" status="3">Monatlich</lang>
+          <lang id="ru" status="3">Ежемесячно</lang>
         </row>
         <row id="TriggerTypeRegistration" state="0">At task creation/modification</row>
         <row id="TriggerTypeSessionStateChange" state="0">On state change</row>
@@ -2842,6 +2891,7 @@
         <row id="TriggerTypeWeekly" state="0">
           <native>Weekly</native>
           <lang id="de" status="3">Wöchentlich</lang>
+          <lang id="ru" status="3">Еженедельно</lang>
         </row>
         <row id="TriggerWeekly1Week" state="0" note="0 = StartBoundary; 1 = list of Week Days" notereadonly="1">At {0:t} every {1} of every week, starting {0:d}</row>
         <row id="TriggerWeeklyMultWeeks" state="0" note="0 = StartBoundary; 1 = list of Week Days; 2 = WeekInterval" notereadonly="1">At {0:t} every {1} of every {2} weeks, starting {0:d}</row>
@@ -2861,7 +2911,7 @@
     </node>
     <node class="TWindowsVersionFolder" name="Versions" state="1" resid="16">
       <node class="TWindowsVersionNode" name="1" state="1" resid="1">
-        <row id="Assembly Version" locked="1" state="1">
+        <row id="Assembly Version" locked="1" excluded="1" state="1">
           <prev>1.1.4320.33595</prev>
           <native>1.1.4323.38909</native>
           <lang id="ar" invalidated="1">1.0.4187.39341</lang>
@@ -2879,7 +2929,7 @@
           <lang id="pl" invalidated="1">1.0.4187.39341</lang>
           <lang id="fa" invalidated="1">1.0.4187.39341</lang>
           <lang id="pt" invalidated="1">1.0.4187.39341</lang>
-          <lang id="ru" invalidated="1">1.0.4187.39341</lang>
+          <lang id="ru">1.1.4323.38909</lang>
           <lang id="es" invalidated="1">1.0.4187.39341</lang>
           <lang id="sv-SE" invalidated="1">1.0.4187.39341</lang>
           <lang id="th" invalidated="1">1.0.4187.39341</lang>
@@ -2910,7 +2960,7 @@
           <lang id="tr" status="2">Genel Araçlar</lang>
           <lang id="vi" status="2">Công cụ thông thường</lang>
         </row>
-        <row id="FileVersion" locked="1" state="1">
+        <row id="FileVersion" locked="1" excluded="1" state="1">
           <prev>1.0.0.0</prev>
           <native>1.1.0.0</native>
           <lang id="ar" invalidated="1">1.0.0.0</lang>
@@ -2928,7 +2978,7 @@
           <lang id="pl" invalidated="1">1.0.0.0</lang>
           <lang id="fa" invalidated="1">1.0.0.0</lang>
           <lang id="pt" invalidated="1">1.0.0.0</lang>
-          <lang id="ru" invalidated="1">1.0.0.0</lang>
+          <lang id="ru">1.1.0.0</lang>
           <lang id="es" invalidated="1">1.0.0.0</lang>
           <lang id="sv-SE" invalidated="1">1.0.0.0</lang>
           <lang id="th" invalidated="1">1.0.0.0</lang>
@@ -2952,14 +3002,14 @@
           <lang id="pl">Wspólne Tools.dll</lang>
           <lang id="fa">مشترک Tools.dll</lang>
           <lang id="pt">Tools.dll comum</lang>
-          <lang id="ru">Общие Tools.dll</lang>
+          <lang id="ru">Common Tools.dll</lang>
           <lang id="es">Común Tools.dll</lang>
           <lang id="sv-SE">Vanliga Tools.dll</lang>
           <lang id="th">สามัญ Tools.dll</lang>
           <lang id="tr">Ortak Tools.dll</lang>
           <lang id="vi">Chung Tools.dll</lang>
         </row>
-        <row id="LegalCopyright" state="1">
+        <row id="LegalCopyright" excluded="1" state="1">
           <prev>Copyright ©  2008-2010</prev>
           <native>Copyright ©  2008-2011</native>
           <lang id="ar" invalidated="1" status="2">حقوق الطبع والنشر © 2008-2010</lang>
@@ -2977,7 +3027,7 @@
           <lang id="pl" invalidated="1" status="2">Copyright © 2008-2010</lang>
           <lang id="fa" invalidated="1" status="2">کپی رایت © 2008-2010</lang>
           <lang id="pt" invalidated="1" status="2">Copyright © 2008-2010</lang>
-          <lang id="ru" invalidated="1" status="2">Copyright © 2008-2010</lang>
+          <lang id="ru" status="3">Copyright ©  2008-2011</lang>
           <lang id="es" invalidated="1" status="2">Copyright © 2008-2010</lang>
           <lang id="sv-SE" invalidated="1" status="2">Copyright © 2008-2010</lang>
           <lang id="th" invalidated="1" status="2">สงวนลิขสิทธิ์ © 2008-2010</lang>
@@ -3001,7 +3051,7 @@
           <lang id="pl">Wspólne Tools.dll</lang>
           <lang id="fa">مشترک Tools.dll</lang>
           <lang id="pt">Tools.dll comum</lang>
-          <lang id="ru">Общие Tools.dll</lang>
+          <lang id="ru">Common Tools.dll</lang>
           <lang id="es">Común Tools.dll</lang>
           <lang id="sv-SE">Vanliga Tools.dll</lang>
           <lang id="th">สามัญ Tools.dll</lang>
@@ -3026,14 +3076,14 @@
           <lang id="pl" invalidated="1" status="2">Wspólne narzędzia</lang>
           <lang id="fa" invalidated="1" status="2">ابزارهای رایج</lang>
           <lang id="pt" invalidated="1" status="2">Ferramentas comuns</lang>
-          <lang id="ru" invalidated="1" status="2">Общие инструменты</lang>
+          <lang id="ru" status="3">Little Registry Cleaner</lang>
           <lang id="es" invalidated="1" status="2">Herramientas comunes</lang>
           <lang id="sv-SE" invalidated="1" status="2">Gemensamma verktyg</lang>
           <lang id="th" invalidated="1" status="2">เครื่องมือทั่วไป</lang>
           <lang id="tr" invalidated="1" status="2">Genel Araçlar</lang>
           <lang id="vi" invalidated="1" status="2">Công cụ thông thường</lang>
         </row>
-        <row id="ProductVersion" state="1">
+        <row id="ProductVersion" excluded="1" state="1">
           <prev>1.0.0.0</prev>
           <native>1.1.0.0</native>
           <lang id="ar" invalidated="1" status="2">1.0.0.0</lang>
@@ -3051,7 +3101,7 @@
           <lang id="pl" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="fa" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="pt" invalidated="1" status="2">1.0.0.0</lang>
-          <lang id="ru" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="ru" status="3">1.1.0.0</lang>
           <lang id="es" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="sv-SE" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="th" invalidated="1" status="2">1.0.0.0</lang>
@@ -3590,7 +3640,7 @@
             <lang id="pl" status="2">Wpisy pomijane</lang>
             <lang id="fa" status="2">افزودن به لیست چشم پوشی</lang>
             <lang id="pt" status="2">Adicionar à lista de ignorados</lang>
-            <lang id="ru" status="3">Добавить в список исключений</lang>
+            <lang id="ru" status="3">Добавить в черный список</lang>
             <lang id="es" status="3">Agregar a lista de ignorados</lang>
             <lang id="sv-SE" status="3">Lägg till i undantagslistan</lang>
             <lang id="th" status="2">เพิ่มรายชื่อ</lang>
@@ -3619,7 +3669,7 @@
               <lang id="pl" status="3">Wpisy pomijane</lang>
               <lang id="fa" status="2">افزودن به لیست چشم پوشی</lang>
               <lang id="pt" status="2">Adicionar à lista de ignorados</lang>
-              <lang id="ru" status="3">Добавить в список исключений</lang>
+              <lang id="ru" status="3">Добавить в черный список</lang>
               <lang id="es" status="3">Agregar a lista de ignorados</lang>
               <lang id="sv-SE" status="3">Lägg till i undantagslistan</lang>
               <lang id="th" status="2">เพิ่มรายชื่อ</lang>
@@ -4017,7 +4067,7 @@
                 <lang id="pl" status="3">Otwórz w regedit</lang>
                 <lang id="fa" status="3">مشاهده در برنامه رجیستری</lang>
                 <lang id="pt" status="2">Mostrar no regedit</lang>
-                <lang id="ru" status="3">Просмотр в regedit</lang>
+                <lang id="ru" status="3">Просмотр в реестре</lang>
                 <lang id="es" status="3">Ver en Regedit</lang>
                 <lang id="sv-SE" status="3">Visa i registereditorn</lang>
                 <lang id="th" status="2">ดูใน regedit</lang>
@@ -4500,7 +4550,7 @@
                         <lang id="pl" status="3">Historia</lang>
                         <lang id="fa" status="2">فهرست تاریخچه</lang>
                         <lang id="pt" status="2">Lista de histórico</lang>
-                        <lang id="ru" status="3">Список изменений</lang>
+                        <lang id="ru" status="3">История</lang>
                         <lang id="es" status="2">Lista de historia</lang>
                         <lang id="sv-SE" status="3">Historik</lang>
                         <lang id="th" status="2">รายการประวัติ</lang>
@@ -5154,7 +5204,7 @@
                     <lang id="pl" status="3">Otwórz w regedit</lang>
                     <lang id="fa" status="3">مشاهده در برنامه رجیستری</lang>
                     <lang id="pt" status="2">Mostrar no regedit</lang>
-                    <lang id="ru" status="3">Просмотр в regedit</lang>
+                    <lang id="ru" status="3">Просмотр в реестре</lang>
                     <lang id="es" status="3">Ver en Regedit</lang>
                     <lang id="sv-SE" status="3">Visa i registereditorn</lang>
                     <lang id="th" status="2">ดูใน regedit</lang>
@@ -5854,7 +5904,7 @@
                     <lang id="pl" status="3">Menadżer deinstalacji</lang>
                     <lang id="fa" status="3">از کار انداختن مدیر</lang>
                     <lang id="pt" status="2">Gerenciador para Desinstalação</lang>
-                    <lang id="ru" status="3">Менеджер деинсталляции</lang>
+                    <lang id="ru" status="3">Менеджер удаления</lang>
                     <lang id="es" status="3">Administrador de desinstalación</lang>
                     <lang id="sv-SE" status="3">Avinstallerare</lang>
                     <lang id="th" date="20091030213439" status="3">การถอนการติดตั้งโปรแกรมจัดการ</lang>
@@ -6342,7 +6392,7 @@
                       <lang id="pl" status="2">Zaloguj skanowanie rejestru i poprawki</lang>
                       <lang id="fa" status="2">ورود به اسکن رجیستری و رفع</lang>
                       <lang id="pt" status="2">Log scans do registro e correções</lang>
-                      <lang id="ru" status="2">Вход сканирует реестр и исправления</lang>
+                      <lang id="ru" status="3">Лог файл сканирования и устранение неполадок в реестре</lang>
                       <lang id="es" status="2">Registro de las exploraciones de registro y correcciones</lang>
                       <lang id="sv-SE" status="2">Logga registret skannar och fixar</lang>
                       <lang id="th" status="2">เข้าสู่ระบบสแกนรีจิสทรีและการแก้ไข</lang>
@@ -6368,7 +6418,7 @@
                       <lang id="pl" status="2">Re-Scan po ustaleniu problemów z rejestrem</lang>
                       <lang id="fa" status="2">دوباره اسکن پس از رفع مسائل رجیستری</lang>
                       <lang id="pt" status="2">Re-Scan após a correção de problemas de registro</lang>
-                      <lang id="ru" status="2">Повторное сканирование после фиксации реестра вопросы</lang>
+                      <lang id="ru" status="3">Повторное сканирование после исправления реестра</lang>
                       <lang id="es" status="2">Re-Scan después de arreglar problemas de registro</lang>
                       <lang id="sv-SE" status="2">Re-Scan efter fastställande registret problem</lang>
                       <lang id="th" status="2">Re : สแกนหลังจากแก้ไขปัญหาสตรี</lang>
@@ -6394,7 +6444,7 @@
                       <lang id="pl" status="2">Sprawdź aktualizacje automatycznie</lang>
                       <lang id="fa" status="2">برای چک کردن به روز رسانی به صورت خودکار</lang>
                       <lang id="pt" status="2">Verificar se há atualizações automaticamente</lang>
-                      <lang id="ru" status="2">Проверить наличие обновлений автоматически</lang>
+                      <lang id="ru" status="3">Проверять наличие обновлений автоматически</lang>
                       <lang id="es" status="2">Comprobar si hay actualizaciones de forma automática</lang>
                       <lang id="sv-SE" status="2">Sök efter uppdateringar automatiskt</lang>
                       <lang id="th" status="2">ตรวจหาการปรับปรุงโดยอัตโนมัติ</lang>
@@ -6524,7 +6574,7 @@
                       <lang id="pl" status="2">Automatycznie naprawia elementy rejestru</lang>
                       <lang id="fa" status="2">به صورت خودکار آیتم های رجیستری تعمیر</lang>
                       <lang id="pt" status="2">Reparar automaticamente itens de registro</lang>
-                      <lang id="ru" status="2">Автоматическое восстановление реестра пунктов</lang>
+                      <lang id="ru" status="3">Автоматическое восстановление пунктов реестра</lang>
                       <lang id="es" status="2">Reparar automáticamente los elementos de registro</lang>
                       <lang id="sv-SE" status="2">Automatiskt reparera registret objekt</lang>
                       <lang id="th" status="2">โดยอัตโนมัติซ่อมแซมรายการรีจิสทรี</lang>
@@ -6550,7 +6600,7 @@
                       <lang id="pl" status="2">Wyjście z programu po naprawie rejestru</lang>
                       <lang id="fa" status="2">خروج از برنامه پس از تعمیر رجیستری</lang>
                       <lang id="pt" status="2">Sair do programa depois de reparar Registro</lang>
-                      <lang id="ru" status="2">Выход программы после ремонта реестра</lang>
+                      <lang id="ru" status="3">Выход программы после восстановления реестра</lang>
                       <lang id="es" status="2">Salir del programa después de la reparación del registro</lang>
                       <lang id="sv-SE" status="2">Avsluta programmet efter reparation registret</lang>
                       <lang id="th" status="2">ออกจากโปรแกรมหลังจากการซ่อมแซมของรีจิสทรี</lang>
@@ -6649,7 +6699,7 @@
                 <lang id="pl" status="2">Lista pomijanych wpisów</lang>
                 <lang id="fa" status="2">چشمپوشی از لیست</lang>
                 <lang id="pt" status="2">Lista de Ignorados</lang>
-                <lang id="ru" status="3">Список исключений</lang>
+                <lang id="ru" status="3">Черный список</lang>
                 <lang id="es" status="3">Lista de ignorados</lang>
                 <lang id="sv-SE" status="2">Undantagslista</lang>
                 <lang id="th" status="2">รายชื่อที่</lang>
@@ -6679,7 +6729,7 @@
                     <lang id="pl" status="2">Pomijane pliki i foldery</lang>
                     <lang id="fa" status="3">فایل ها و فولدرهای چشمپوشی شده</lang>
                     <lang id="pt" status="2">Arquivos e pastas a serem desconsiderados</lang>
-                    <lang id="ru" status="3">Исключаемые файлы и папки</lang>
+                    <lang id="ru" status="3">Файлы и папки</lang>
                     <lang id="es" status="2">Archivos y carpetas para excluir</lang>
                     <lang id="sv-SE" status="2">Filer och mappar som ska uteslutas</lang>
                     <lang id="th" status="2">ไฟล์และโฟลเดอร์ที่จะไม่รวม</lang>
@@ -6771,7 +6821,7 @@
                   <lang id="pl" status="2">Zaplanuj zadanie</lang>
                   <lang id="fa" status="2">وظیفه ها فهرست برنامه ها</lang>
                   <lang id="pt" status="2">Agendar Tarefa</lang>
-                  <lang id="ru" status="2">Планировщик</lang>
+                  <lang id="ru" status="3">Назначить задачу</lang>
                   <lang id="es" status="2">Horario de Trabajo</lang>
                   <lang id="sv-SE" status="2">Planera aktivitet</lang>
                   <lang id="th" status="2">กำหนดการงาน</lang>
@@ -6796,7 +6846,7 @@
                     <lang id="pl" status="2">hh: mm tt</lang>
                     <lang id="fa" status="2">hh : tt ​​میلی متر</lang>
                     <lang id="pt" status="2">hh: mm tt</lang>
-                    <lang id="ru" status="2">чч: мм tt</lang>
+                    <lang id="ru" status="3">Час: Минута</lang>
                     <lang id="es" status="2">hh: mm tt</lang>
                     <lang id="sv-SE" status="2">hh: mm tt</lang>
                     <lang id="th" status="2">hh : mm tt</lang>
@@ -8956,7 +9006,7 @@
           <lang id="pl" status="2">Wybierz plik do wyłączenia z rejestru skanowania</lang>
           <lang id="fa" status="3">انتخاب یک فایل به استثنا ها از جستجوی رجیستری</lang>
           <lang id="pt" status="2">Selecione um arquivo a desconsiderar da varredura do registro</lang>
-          <lang id="ru" status="3">Выберите файл для исключения из сканирования</lang>
+          <lang id="ru" status="3">Выберите файл, чтобы исключить из сканирования реестра</lang>
           <lang id="es" status="2">Seleccione un archivo para excluir el análisis del registro</lang>
           <lang id="sv-SE" status="3">Välj en fil att utesluta från skanning</lang>
           <lang id="th" status="2">เลือกไฟล์ที่จะไม่รวมรีจิสทรีสแกน</lang>
@@ -9148,7 +9198,7 @@
           <lang id="pl" status="2">Inny program wydaje się być uruchomiony już...</lang>
           <lang id="fa" status="3">برنامه دیگری به نظر می رسد که در حال حاضر در حال اجراست...</lang>
           <lang id="pt" status="2">Outro programa parece já estar sendo executado...</lang>
-          <lang id="ru" status="3">Другая копия программы уже запущена...</lang>
+          <lang id="ru" status="3">Программа уже запущена...</lang>
           <lang id="es" status="3">Otro programa parece estar ejecutándose...</lang>
           <lang id="sv-SE" status="3">Ett annat program köras redan...</lang>
           <lang id="th" status="2">โปรแกรมอื่นน่าจะทำงานแล้ว...</lang>
@@ -9929,7 +9979,7 @@
     </node>
     <node class="TWindowsVersionFolder" name="Versions" state="1" resid="16">
       <node class="TWindowsVersionNode" name="1" state="1" resid="1">
-        <row id="Assembly Version" locked="1" state="1">
+        <row id="Assembly Version" locked="1" excluded="1" state="1">
           <prev>1.5.4320.33595</prev>
           <native>1.5.4323.38910</native>
           <lang id="ar" invalidated="1">1.4.4187.39341</lang>
@@ -9947,7 +9997,7 @@
           <lang id="pl" invalidated="1">1.4.4187.39341</lang>
           <lang id="fa" invalidated="1">1.4.4187.39341</lang>
           <lang id="pt" invalidated="1">1.4.4187.39341</lang>
-          <lang id="ru" invalidated="1">1.4.4187.39341</lang>
+          <lang id="ru">1.5.4323.38910</lang>
           <lang id="es" invalidated="1">1.4.4187.39341</lang>
           <lang id="sv-SE" invalidated="1">1.4.4187.39341</lang>
           <lang id="th" invalidated="1">1.4.4187.39341</lang>
@@ -9971,7 +10021,7 @@
           <lang id="pl" status="2">Darmowe i program open source, który jest przeznaczony do czyszczenia rejestru systemu Microsoft Windows</lang>
           <lang id="fa" status="2">آزاد و باز منبع برنامه است که به پاکسازی رجیستری ویندوز مایکروسافت طراحی شده</lang>
           <lang id="pt" status="2">Programa de código livre e aberto que se destina a limpeza Microsoft Windows Registry</lang>
-          <lang id="ru" status="2">Свободное программа, которая предназначена для очистки реестра Microsoft Windows</lang>
+          <lang id="ru" status="3">Свободная программа предназначена для очистки реестра Microsoft Windows</lang>
           <lang id="es" status="2">Libre y de código abierto programa que está diseñado para la limpieza de registro de Microsoft Windows</lang>
           <lang id="sv-SE" status="2">Fri och öppen källkod program som är utformat för att rensa registret i Microsoft Windows</lang>
           <lang id="th" status="2">โปรแกรมฟรีและเปิดแหล่งที่ออกแบบมาเพื่อการล้างข้อมูลบน Microsoft Windows Registry</lang>
@@ -9995,7 +10045,7 @@
           <lang id="pl" date="20110829210917" status="3">Mała Apps</lang>
           <lang id="fa" date="20110829211117" status="3">نرم افزار کوچک </lang>
           <lang id="pt" date="20110829210754" status="3">Apps pouco</lang>
-          <lang id="ru" date="20110829210810" status="3">Маленькая Apps</lang>
+          <lang id="ru" date="20110829210810" status="3">Little Apps</lang>
           <lang id="es" date="20110829210739" status="3">Aplicaciones poco</lang>
           <lang id="sv-SE" date="20110829210850" status="3">Little Apps</lang>
           <lang id="th" date="20110829210913" status="3">Apps ลิตเติ้ล</lang>
@@ -10044,7 +10094,7 @@
           <lang id="pl" invalidated="1">1.4.2</lang>
           <lang id="fa" invalidated="1">1.4.2</lang>
           <lang id="pt" invalidated="1">1.4.2</lang>
-          <lang id="ru" invalidated="1">1.4.2</lang>
+          <lang id="ru">1.5.1</lang>
           <lang id="es" invalidated="1">1.4.2</lang>
           <lang id="sv-SE" invalidated="1">1.4.2</lang>
           <lang id="th" invalidated="1">1.4.2</lang>
@@ -10068,7 +10118,7 @@
           <lang id="pl">Mała rejestru Cleaner.exe</lang>
           <lang id="fa">کوچک Cleaner.exe رجیستری</lang>
           <lang id="pt">Cleaner.exe Registro pouco</lang>
-          <lang id="ru">Маленькая реестра Cleaner.exe</lang>
+          <lang id="ru">Little Registry Cleaner.exe</lang>
           <lang id="es">Cleaner.exe Little Registry</lang>
           <lang id="sv-SE">Little Registry Cleaner.exe</lang>
           <lang id="th">Cleaner.exe รีจิสทรีเพียงเล็กน้อย</lang>
@@ -10093,7 +10143,7 @@
           <lang id="pl" status="2">Copyright © Mały Apps 2008-2011</lang>
           <lang id="fa" status="2">کپی رایت © 2008-2011 کوچک نرم افزار</lang>
           <lang id="pt" status="2">Copyright © Apps Pouco 2008-2011</lang>
-          <lang id="ru" status="2">Copyright © 2008-2011 Маленькие приложения</lang>
+          <lang id="ru" status="3">Copyright © Little Apps 2008-2011</lang>
           <lang id="es" status="2">Copyright © Aplicaciones Poco 2008-2011</lang>
           <lang id="sv-SE" status="2">Copyright © Little Apps 2008-2011</lang>
           <lang id="th" status="2">สงวนลิขสิทธิ์ © 2008-2011 Apps ลิตเติ้ล</lang>
@@ -10117,7 +10167,7 @@
           <lang id="pl">Mała rejestru Cleaner.exe</lang>
           <lang id="fa">کوچک Cleaner.exe رجیستری</lang>
           <lang id="pt">Cleaner.exe Registro pouco</lang>
-          <lang id="ru">Маленькая реестра Cleaner.exe</lang>
+          <lang id="ru">Little Registry Cleaner.exe</lang>
           <lang id="es">Cleaner.exe Little Registry</lang>
           <lang id="sv-SE">Little Registry Cleaner.exe</lang>
           <lang id="th">Cleaner.exe รีจิสทรีเพียงเล็กน้อย</lang>
@@ -10148,7 +10198,7 @@
           <lang id="tr" status="2">Little Registry Cleaner</lang>
           <lang id="vi" status="2">Người lau chùi Nơi đăng ký Nhỏ</lang>
         </row>
-        <row id="ProductVersion" locked="1" state="1">
+        <row id="ProductVersion" locked="1" excluded="1" state="1">
           <prev>1.5</prev>
           <native>1.5.1</native>
           <lang id="ar" invalidated="1">1.4.2</lang>
@@ -10166,7 +10216,7 @@
           <lang id="pl" invalidated="1">1.4.2</lang>
           <lang id="fa" invalidated="1">1.4.2</lang>
           <lang id="pt" invalidated="1">1.4.2</lang>
-          <lang id="ru" invalidated="1">1.4.2</lang>
+          <lang id="ru">1.5.1</lang>
           <lang id="es" invalidated="1">1.4.2</lang>
           <lang id="sv-SE" invalidated="1">1.4.2</lang>
           <lang id="th" invalidated="1">1.4.2</lang>

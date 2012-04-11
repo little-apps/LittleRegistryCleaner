@@ -130,7 +130,7 @@
     <value>Путь к файлу не может быть пустым</value>
   </data>
   <data name="smRan" xml:space="preserve">
-    <value>Попытка запуска:</value>
+    <value>Попытка выполнить команду:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
     <value>Вы уверены, что хотите удалить эту программу из автозапуска?</value>

@@ -207,6 +207,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="Little Registry Cleaner.snk" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">

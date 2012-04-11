@@ -39,7 +39,6 @@ namespace Little_Registry_Cleaner.Scanners
         {
             try
             {
-
                 Main.Logger.WriteLine("Checking for invalid installer folders");
                 ScanInstallFolders();
 
@@ -105,8 +104,6 @@ namespace Little_Registry_Cleaner.Scanners
                     else
                     {
                         if (Utils.FileExists(strAppPath))
-                            continue;
-                        else if (Utils.FileExists(strAppPath))
                             continue;
                     }
 

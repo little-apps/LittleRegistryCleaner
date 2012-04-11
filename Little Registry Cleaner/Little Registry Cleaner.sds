@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<desktop scan="68" scanned="20111229153457" built="20110902224836" lang="zh" pane="TLogPane" col="12" row="Little_Registry_Cleaner.Properties.Resources.crashReporterFail">
+<desktop scan="68" scanned="20111229153457" built="20111231002833" lang="zh" pane="TLogPane" col="12" row="Forms.Little_Startup_Manager.EditRunItem.Text">
   <language id="ar" autoime="0" autokeyboard="0"/>
   <language id="zh" autoime="0" autokeyboard="0"/>
   <language id="zh.tra" autoime="0" autokeyboard="0"/>
@@ -22,8 +22,8 @@
   <language id="tr" autoime="0" autokeyboard="0"/>
   <language id="vi" autoime="0" autokeyboard="0"/>
   <triggers>
-    <item class="TRemoveUnusedItemsTrigger" position="5"/>
-    <item class="TValidateTrigger" position="2"/>
+    <item class="TRemoveUnusedItemsTrigger" position="6"/>
+    <item class="TValidateTrigger" position="3"/>
   </triggers>
   <sheet>
     <columns>
@@ -51,7 +51,7 @@
       <item class="TTranslationColumn" lang="fr" width="43"/>
       <item class="TTranslationColumn" lang="tr" width="43"/>
       <item class="TTranslationColumn" lang="lt" width="43"/>
-      <item class="TTranslationColumn" lang="fa" width="19"/>
+      <item class="TTranslationColumn" lang="fa" width="22"/>
     </columns>
     <params processall="1" origin="soEntireScope">
       <findtext>polices</findtext>
@@ -66,10 +66,9 @@
   </sheet>
   <path>
     <item>All</item>
-    <item>Little Registry Cleaner.csproj</item>
-    <item>Strings</item>
+    <item>..\Little Startup Manager\Little Startup Manager.csproj</item>
   </path>
-  <exchange method="exmExportFile" options="[eoSetup,eoSpellChecker,eoLanguages]" author="Nick H." description="Little registry cleaner" packagename="Little registry cleanerRu" showpackage="0">
+  <exchange method="exmImportFile" options="[eoSetup,eoSpellChecker,eoLanguages]" author="Nick H." description="Little registry cleaner" packagename="Little registry cleanerRu" showpackage="0">
   </exchange>
   <export format="efExcel">
     <filter locked="bfBoth">
