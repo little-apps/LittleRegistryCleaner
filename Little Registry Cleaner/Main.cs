@@ -34,7 +34,6 @@ using Little_Registry_Cleaner.Xml;
 using Common_Tools;
 using Common_Tools.TreeViewAdv.Tree;
 using Microsoft.Win32;
-using Common_Tools.DeskMetrics;
 
 namespace Little_Registry_Cleaner
 {
@@ -64,8 +63,8 @@ namespace Little_Registry_Cleaner
 
         private TreeModel treeModel = new TreeModel();
 
-        private static Watcher _watcher = new Watcher();
-        public static Watcher Watcher
+        private static LittleSoftwareStats.Watcher _watcher;
+        public static LittleSoftwareStats.Watcher Watcher
         {
             get { return _watcher; }
         }
@@ -86,9 +85,6 @@ namespace Little_Registry_Cleaner
         /// </summary>
         private void ScanRegistry()
         {
-            // Send usage data to DeskMetrics
-            Watcher.TrackEvent("Functions", "Scan Registry");
-
             // Clear old results
             this.treeModel.Nodes.Clear();
 
@@ -147,6 +143,9 @@ namespace Little_Registry_Cleaner
                 this.fixToolStripMenuItem.Enabled = true;
                 this.toolStripButtonFix.Enabled = true;
 
+                // Send usage data to Little Software Stats
+                Watcher.EventPeriod("Functions", "Scan Registry", (int)DateTime.Now.Subtract(dtStart).TotalSeconds, (dlgResult == DialogResult.OK));
+
                 // If power user option selected, Automatically fix problems
                 if (Properties.Settings.Default.bOptionsAutoRepair && dlgResult == DialogResult.OK)
                     this.FixProblems();
@@ -169,8 +168,8 @@ namespace Little_Registry_Cleaner
                         return;
                 }
 
-                // Send usage data to DeskMetrics
-                Watcher.TrackEvent("Functions", "Fix Problems");
+                // Send usage data to Little Software Stats
+                Watcher.Event("Functions", "Fix Problems");
 
                 // Create Restore Point
                 SysRestore.StartRestore("Before Little Registry Cleaner Registry Fix", out lSeqNum);
@@ -243,9 +242,10 @@ namespace Little_Registry_Cleaner
 
         private void Main_Shown(object sender, EventArgs e)
         {
-            // Send usage data to DeskMetrics
-            Watcher.Enabled = Properties.Settings.Default.bOptionsStats;
-            Watcher.Start("4e5485f1a14ad74c01000001", Application.ProductVersion);
+            // Send usage data to Little Software Stats
+            _watcher = new LittleSoftwareStats.Watcher();
+            LittleSoftwareStats.Config.Enabled = Properties.Settings.Default.bOptionsStats;
+            Watcher.Start("184bab3a428943b6e3a941866d8618d8", Application.ProductVersion);
 
             // Expand all sections
             this.treeView1.Nodes[0].ExpandAll();
@@ -570,16 +570,16 @@ namespace Little_Registry_Cleaner
 
         private void StartupManager(object sender, EventArgs e)
         {
-            // Send event data to DeskMetrics
-            Watcher.TrackEvent("Application", "Startup Manager");
+            // Send event data to Little Software Stats
+            Watcher.Event("Application", "Startup Manager");
 
             Process.Start("Little Startup Manager.exe", @"/culture:" + Thread.CurrentThread.CurrentUICulture.LCID.ToString()).WaitForExit();
         }
 
         private void UninstallManager(object sender, EventArgs e)
         {
-            // Send event data to DeskMetrics
-            Watcher.TrackEvent("Application", "Uninstall Manager");
+            // Send event data to Little Software Stats
+            Watcher.Event("Application", "Uninstall Manager");
 
             Process.Start("Little Uninstall Manager.exe", @"/culture:" + Thread.CurrentThread.CurrentUICulture.LCID.ToString()).WaitForExit();
         }

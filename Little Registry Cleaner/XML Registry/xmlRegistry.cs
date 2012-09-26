@@ -103,7 +103,11 @@ namespace Little_Registry_Cleaner.Xml
         /// <returns>Desired handle</returns>
         public static int getRegistryHandle(RegistryKey registryKey)
         {
-            return registryKey.Handle.DangerousGetHandle().ToInt32();
+            Type type = registryKey.GetType();
+            FieldInfo fieldInfo = type.GetField("hkey", BindingFlags.Instance | BindingFlags.NonPublic);
+            System.Runtime.InteropServices.SafeHandle i = (System.Runtime.InteropServices.SafeHandle)fieldInfo.GetValue(registryKey);
+
+            return i.DangerousGetHandle().ToInt32();
         }
 
         ArrayList addRegistryValues(int hKey)

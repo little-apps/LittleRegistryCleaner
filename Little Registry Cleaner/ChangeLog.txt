@@ -395,7 +395,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 - Fixed bug when trying to create scheduled tasks on Windows Task Scheduler 1.0 (Windows 2000, XP and Server 2003)
 - Fixed bug that prevented LRC from closing if DeskMetrics was disabled
-- No longer displays bug report when trying to contact DeskMetrics with no internet connection
+- No longer displays bug report when trying to contactDeskMetrics with no internet connection
 - NsisDeskMetrics plugin no longer requires the Microsoft Visual C++ 2010 Redistributable Package to run
 - Added check for null string in PrefixRegPath()
 - Manually generates GUID for DeskMetrics if an error occured in System.Guid
@@ -404,3 +404,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Displays error message instead of exception if file is not found when executed with startup manager
 
 + Version 1.5.1 Released
+
+- Downgraded Microsoft .NET Framework to v3.5
+- Integrated Little Software Stats

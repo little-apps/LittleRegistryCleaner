@@ -73,42 +73,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DeskMetricsNET\Json\BaseJson.cs" />
-    <Compile Include="DeskMetricsNET\Json\CustomDataJson.cs" />
-    <Compile Include="DeskMetricsNET\Json\CustomDataR.cs" />
-    <Compile Include="DeskMetricsNET\Json\EventJson.cs" />
-    <Compile Include="DeskMetricsNET\Json\EventPeriodJson.cs" />
-    <Compile Include="DeskMetricsNET\Json\EventValueJson.cs" />
-    <Compile Include="DeskMetricsNET\Json\ExceptionJson.cs" />
-    <Compile Include="DeskMetricsNET\Json\InstallJson.cs" />
-    <Compile Include="DeskMetricsNET\Json\Json.cs" />
-    <Compile Include="DeskMetricsNET\Json\JsonBuilder.cs" />
-    <Compile Include="DeskMetricsNET\Json\LogJson.cs" />
-    <Compile Include="DeskMetricsNET\Json\StartAppJson.cs" />
-    <Compile Include="DeskMetricsNET\Json\StopAppJson.cs" />
-    <Compile Include="DeskMetricsNET\Json\UninstallJson.cs" />
-    <Compile Include="DeskMetricsNET\OperatingSystem\Hardware\HardwareFactory.cs" />
-    <Compile Include="DeskMetricsNET\OperatingSystem\Hardware\IHardware.cs" />
-    <Compile Include="DeskMetricsNET\OperatingSystem\Hardware\MacOSXHadware.cs" />
-    <Compile Include="DeskMetricsNET\OperatingSystem\Hardware\UnixHardware.cs" />
-    <Compile Include="DeskMetricsNET\OperatingSystem\Hardware\WindowsHardware.cs" />
-    <Compile Include="DeskMetricsNET\OperatingSystem\IOperatingSystem.cs" />
-    <Compile Include="DeskMetricsNET\OperatingSystem\MacOSXOperatingSystem.cs" />
-    <Compile Include="DeskMetricsNET\OperatingSystem\OperatingSystemFactory.cs" />
-    <Compile Include="DeskMetricsNET\OperatingSystem\UnixOperatingSystem.cs" />
-    <Compile Include="DeskMetricsNET\OperatingSystem\WindowsOperatingSystem.cs" />
-    <Compile Include="DeskMetricsNET\Watcher\CurrentUser.cs" />
-    <Compile Include="DeskMetricsNET\Watcher\EventType.cs" />
-    <Compile Include="DeskMetricsNET\Watcher\Services.cs" />
-    <Compile Include="DeskMetricsNET\Watcher\Settings.cs" />
-    <Compile Include="DeskMetricsNET\Watcher\Util.cs" />
-    <Compile Include="DeskMetricsNET\Watcher\Watcher.cs" />
     <Compile Include="DetailsRegKey.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DetailsRegKey.Designer.cs">
       <DependentUpon>DetailsRegKey.cs</DependentUpon>
     </Compile>
+    <Compile Include="LittleSoftwareStats\Cache.cs" />
+    <Compile Include="LittleSoftwareStats\Config.cs" />
+    <Compile Include="LittleSoftwareStats\Events.cs" />
+    <Compile Include="LittleSoftwareStats\Hardware\Hardware.cs" />
+    <Compile Include="LittleSoftwareStats\Hardware\MacOSXHardware.cs" />
+    <Compile Include="LittleSoftwareStats\Hardware\UnixHardware.cs" />
+    <Compile Include="LittleSoftwareStats\Hardware\WindowsHardware.cs" />
+    <Compile Include="LittleSoftwareStats\MachineIdentifiers\IMachineIdentifier.cs" />
+    <Compile Include="LittleSoftwareStats\MachineIdentifiers\IMachineIdentifierProvider.cs" />
+    <Compile Include="LittleSoftwareStats\MachineIdentifiers\MachineIdentifierBase.cs" />
+    <Compile Include="LittleSoftwareStats\MachineIdentifiers\MachineIdentifierProvider.cs" />
+    <Compile Include="LittleSoftwareStats\MachineIdentifiers\MachineNameIdentifier.cs" />
+    <Compile Include="LittleSoftwareStats\MachineIdentifiers\NetworkAdapterIdentifier.cs" />
+    <Compile Include="LittleSoftwareStats\MachineIdentifiers\VolumeInfoIdentifier.cs" />
+    <Compile Include="LittleSoftwareStats\OperatingSystem\MacOSXOperatingSystem.cs" />
+    <Compile Include="LittleSoftwareStats\OperatingSystem\OperatingSystem.cs" />
+    <Compile Include="LittleSoftwareStats\OperatingSystem\UnixOperatingSystem.cs" />
+    <Compile Include="LittleSoftwareStats\OperatingSystem\WindowsOperatingSystem.cs" />
+    <Compile Include="LittleSoftwareStats\Utils.cs" />
+    <Compile Include="LittleSoftwareStats\Watcher.cs" />
     <Compile Include="ProgramInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">

@@ -41,19 +41,22 @@ namespace Little_Registry_Cleaner
     public partial class CrashReporter : Form
     {
         private MemoryStream memoryStream = new MemoryStream();
+        private Exception exception;
 
         public CrashReporter(Exception e)
         {
             InitializeComponent();
 
-            GenerateDialogReport(e);
+            this.exception = e;
+
+            GenerateDialogReport();
         }
 
         /// <summary>
         /// Fills in text box with exception info
         /// </summary>
         /// <param name="e"></param>
-        private void GenerateDialogReport(Exception e)
+        private void GenerateDialogReport()
         {
             StringBuilder sb = new StringBuilder();
 
@@ -87,9 +90,9 @@ namespace Little_Registry_Cleaner
             // versions
             sb.AppendLine(string.Format("Version: {0}", Application.ProductVersion));
             sb.AppendLine(string.Format("CLR Version: {0}", Environment.Version.ToString()));
-            
 
-            Exception ex = e;
+
+            Exception ex = this.exception;
             for (int i = 0; ex != null; ex = ex.InnerException, i++)
             {
                 sb.AppendLine();
@@ -117,7 +120,7 @@ namespace Little_Registry_Cleaner
 
             sb.AppendLine();
             sb.AppendLine("StackTrace:");
-            sb.AppendLine(e.StackTrace);
+            sb.AppendLine(this.exception.StackTrace);
 
             this.richTextBox1.Text = sb.ToString();
 
@@ -127,90 +130,17 @@ namespace Little_Registry_Cleaner
 
         private void buttonSend_Click(object sender, EventArgs e)
         {
-            this.SendBugReport();
-
-            this.Close();
-        }
-
-        /// <summary>
-        /// Uses PHP to upload bug report and email it
-        /// </summary>
-        /// <returns>True if it was sent</returns>
-        private bool SendBugReport() 
-        {
-            string fileFormName = "uploadedfile";
-            string contenttype = "application/octet-stream";
-            string fileName = "bugreport.txt";
-
-            string boundary = "----------" + DateTime.Now.Ticks.ToString("x");
-            HttpWebRequest webrequest = (HttpWebRequest)HttpWebRequest.Create(Properties.Settings.Default.strBugReportAddr);
-            webrequest.CookieContainer = new CookieContainer();
-            webrequest.ContentType = "multipart/form-data; boundary=" + boundary;
-            webrequest.Method = "POST";
-
-            // Build up the post message header
-
-            StringBuilder sb = new StringBuilder();
-            sb.Append("--");
-            sb.Append(boundary);
-            sb.Append("\r\n");
-            sb.Append("Content-Disposition: form-data; name=\"");
-            sb.Append(fileFormName);
-            sb.Append("\"; filename=\"");
-            sb.Append(fileName);
-            sb.Append("\"");
-            sb.Append("\r\n");
-            sb.Append("Content-Type: ");
-            sb.Append(contenttype);
-            sb.Append("\r\n");
-            sb.Append("\r\n");
-
-            string postHeader = sb.ToString();
-            byte[] postHeaderBytes = Encoding.UTF8.GetBytes(postHeader);
-
-            // Build the trailing boundary string as a byte array
-            // ensuring the boundary appears on a line by itself
-
-            byte[] boundaryBytes = Encoding.ASCII.GetBytes("\r\n--" + boundary + "\r\n");
-
-            //FileStream fileStream = new FileStream(uploadfile, FileMode.Open, FileAccess.Read);
-            long length = postHeaderBytes.Length + this.memoryStream.Length + boundaryBytes.Length;
-            webrequest.ContentLength = length;
-
-            try
+            if (Main.Watcher != null)
             {
-                Stream requestStream = webrequest.GetRequestStream();
-
-                // Write out our post header
-                requestStream.Write(postHeaderBytes, 0, postHeaderBytes.Length);
-
-                // Write out the file contents
-                byte[] buffer = this.memoryStream.ToArray();
-                requestStream.Write(buffer, 0, buffer.Length);
-
-                requestStream.Write(boundaryBytes, 0, boundaryBytes.Length);
-            }
-            catch (WebException e)
-            {
-                if (MessageBox.Show(this, e.Message, "Error", MessageBoxButtons.RetryCancel) == DialogResult.Retry)
-                    return SendBugReport();
-                else 
-                    return false;
-            }
-
-            // Write out the trailing boundary
-            HttpWebResponse response = (HttpWebResponse)webrequest.GetResponse();
-
-            if (response.StatusCode == HttpStatusCode.OK)
-            {
+                Main.Watcher.Exception(this.exception);
                 MessageBox.Show(this, Properties.Resources.crashReporterSuccess, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return true;
             }
             else
             {
                 MessageBox.Show(this, Properties.Resources.crashReporterFail, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
             }
+
+            this.Close();
         }
 
         private void ErrorDlg_FormClosed(object sender, FormClosedEventArgs e)

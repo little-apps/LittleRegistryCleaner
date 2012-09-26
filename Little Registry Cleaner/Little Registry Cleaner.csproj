@@ -19,7 +19,7 @@
     <SignManifests>false</SignManifests>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <ApplicationIcon>little register cleaner.ico</ApplicationIcon>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>certfiletosignwith.pfx</AssemblyOriginatorKeyFile>
     <SourceAnalysisOverrideSettingsFile>C:\Users\Nick\AppData\Roaming\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
@@ -291,11 +291,10 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Common Tools\Common Tools.csproj">
-      <Project>{9D2C42E6-8851-4B8E-9200-113E6CC2D4CD}</Project>
+      <Project>{9d2c42e6-8851-4b8e-9200-113e6cc2d4cd}</Project>
       <Name>Common Tools</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

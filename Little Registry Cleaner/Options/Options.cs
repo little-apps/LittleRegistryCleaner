@@ -89,8 +89,8 @@ namespace Little_Registry_Cleaner
             Properties.Settings.Default.bOptionsAutoRepair = this.listViewOptions.Items[8].Checked;
             Properties.Settings.Default.bOptionsAutoExit = this.listViewOptions.Items[9].Checked;
 
-            if (Main.Watcher.Enabled != Properties.Settings.Default.bOptionsStats)
-                Main.Watcher.Enabled = Properties.Settings.Default.bOptionsStats;
+            if (LittleSoftwareStats.Config.Enabled != Properties.Settings.Default.bOptionsStats)
+                LittleSoftwareStats.Config.Enabled = Properties.Settings.Default.bOptionsStats;
 
             if (this.textBoxBackupFolder.Text != Properties.Settings.Default.strOptionsBackupDir)
                 Properties.Settings.Default.strOptionsBackupDir = this.textBoxBackupFolder.Text;
