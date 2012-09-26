@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<desktop scan="68" scanned="20111229153457" built="20111231002833" lang="zh" pane="TLogPane" col="12" row="Forms.Little_Startup_Manager.EditRunItem.Text">
+<desktop scan="68" scanned="20111229153457" built="20120410211102" lang="zh" pane="TLogPane" col="1" row="1.ProductName">
   <language id="ar" autoime="0" autokeyboard="0"/>
   <language id="zh" autoime="0" autokeyboard="0"/>
   <language id="zh.tra" autoime="0" autokeyboard="0"/>
@@ -22,8 +22,8 @@
   <language id="tr" autoime="0" autokeyboard="0"/>
   <language id="vi" autoime="0" autokeyboard="0"/>
   <triggers>
-    <item class="TRemoveUnusedItemsTrigger" position="6"/>
-    <item class="TValidateTrigger" position="3"/>
+    <item class="TRemoveUnusedItemsTrigger" position="7"/>
+    <item class="TValidateTrigger" position="4"/>
   </triggers>
   <sheet>
     <columns>
@@ -67,6 +67,7 @@
   <path>
     <item>All</item>
     <item>..\Little Startup Manager\Little Startup Manager.csproj</item>
+    <item>Versions</item>
   </path>
   <exchange method="exmImportFile" options="[eoSetup,eoSpellChecker,eoLanguages]" author="Nick H." description="Little registry cleaner" packagename="Little registry cleanerRu" showpackage="0">
   </exchange>

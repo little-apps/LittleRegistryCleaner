@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document version="3.0.328" date="20120410211055" scan="68" scanned="20111229153457">
+<document version="3.0.328" date="20120410211823" scan="68" scanned="20111229153457">
   <lang id="ar"/>
   <lang id="zh" ime="imOn"/>
   <lang id="zh.tra" ime="imOn"/>
@@ -813,10 +813,10 @@
           <component class="TVisImageList" name="imageList" state="0" type="System.Windows.Forms.ImageList">
           </component>
           <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer" align="alClient">
-            <row id="Location.X" state="0">0</row>
-            <row id="Location.Y" state="0">0</row>
-            <row id="Size.Height" state="0">436</row>
-            <row id="Size.Width" state="0">717</row>
+            <row id="Location.X">0</row>
+            <row id="Location.Y">0</row>
+            <row id="Size.Height">436</row>
+            <row id="Size.Width">717</row>
             <row id="Text" excluded="1">
               <native>toolStripContainer1</native>
               <lang id="ar" status="2">toolStripContainer1</lang>
@@ -1090,10 +1090,10 @@
             </component>
           </component>
           <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer" align="alClient">
-            <row id="Location.X" state="0">0</row>
-            <row id="Location.Y" state="0">0</row>
-            <row id="Size.Height" state="0">436</row>
-            <row id="Size.Width" state="0">717</row>
+            <row id="Location.X">0</row>
+            <row id="Location.Y">0</row>
+            <row id="Size.Height">436</row>
+            <row id="Size.Width">717</row>
             <row id="Text">
               <native>toolStripContainer1</native>
               <lang id="ar" status="2">toolStripContainer1</lang>
@@ -1621,18 +1621,18 @@
         </row>
       </node>
     </node>
-    <node class="TWindowsVersionFolder" name="Versions" state="1" resid="16">
-      <node class="TWindowsVersionNode" name="1" state="1" resid="1">
-        <row id="Assembly Version" excluded="1" state="1">
-          <prev>1.0.4320.33596</prev>
-          <native>1.0.4323.38910</native>
+    <node class="TWindowsVersionFolder" name="Versions" resid="16">
+      <node class="TWindowsVersionNode" name="1" resid="1">
+        <row id="Assembly Version" excluded="1" state="3">
+          <prev>1.0.4323.38910</prev>
+          <native>1.0.4454.33223</native>
           <lang id="ar" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="zh" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="zh.tra" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="nl" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="en" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="fr" invalidated="1" status="2">1.0.0.0</lang>
-          <lang id="de" status="3">0.0.0.0</lang>
+          <lang id="de" invalidated="1" status="3">0.0.0.0</lang>
           <lang id="el" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="hu" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="it" invalidated="1" status="2">1.0.0.0</lang>
@@ -1641,14 +1641,14 @@
           <lang id="pl" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="fa" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="pt" invalidated="1" status="2">1.0.0.0</lang>
-          <lang id="ru" status="3">1.0.4323.38910</lang>
+          <lang id="ru" invalidated="1" status="3">1.0.4323.38910</lang>
           <lang id="es" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="sv-SE" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="th" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="tr" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="vi" invalidated="1" status="2">1.0.0.0</lang>
         </row>
-        <row id="Comments" state="1">
+        <row id="Comments">
           <native>Manage files that start with your computer</native>
           <lang id="ar" status="2">إدارة الملفات التي تبدأ مع الكمبيوتر الخاص بك</lang>
           <lang id="zh" status="2">管理与您的计算机启动的文件</lang>
@@ -1672,7 +1672,7 @@
           <lang id="tr" status="2">Bilgisayarınız ile başlayan dosyalarını yönetme</lang>
           <lang id="vi" status="2">Quản lý tập tin mà bắt đầu với máy tính của bạn</lang>
         </row>
-        <row id="CompanyName" state="1">
+        <row id="CompanyName">
           <native>Little Apps</native>
           <lang id="ar" status="2">تطبيقات صغيرة</lang>
           <lang id="zh" status="2">小小的应用程序</lang>
@@ -1696,7 +1696,7 @@
           <lang id="tr" status="2">Küçük Apps</lang>
           <lang id="vi" status="2">Ít Apps</lang>
         </row>
-        <row id="FileDescription" state="1">
+        <row id="FileDescription">
           <native>Little Startup Manager</native>
           <lang id="ar" status="2">يذكر مدير بدء التشغيل</lang>
           <lang id="zh" status="2">小启动管理器</lang>
@@ -1720,7 +1720,7 @@
           <lang id="tr" status="2">Küçük Başlangıç ​​Yöneticisi</lang>
           <lang id="vi" status="2">Ít Startup Manager</lang>
         </row>
-        <row id="FileVersion" excluded="1" state="1">
+        <row id="FileVersion" excluded="1">
           <prev>1.0.0.0</prev>
           <native>1.0</native>
           <lang id="ar" invalidated="1" status="2">1.0.0.0</lang>
@@ -1745,7 +1745,11 @@
           <lang id="tr" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="vi" invalidated="1" status="2">1.0.0.0</lang>
         </row>
-        <row id="InternalName" state="1">
+        <row id="FileVersion[1]" class="TIntegerRow" state="0">1</row>
+        <row id="FileVersion[2]" class="TIntegerRow" state="0">0</row>
+        <row id="FileVersion[3]" class="TIntegerRow" state="0">0</row>
+        <row id="FileVersion[4]" class="TIntegerRow" state="0">0</row>
+        <row id="InternalName">
           <native>Little Startup Manager.exe</native>
           <lang id="ar" status="2">Manager.exe بدء التشغيل قليلاً</lang>
           <lang id="zh" status="2">小启动 Manager.exe</lang>
@@ -1769,7 +1773,7 @@
           <lang id="tr" status="2">Küçük Başlangıç ​​Manager.exe</lang>
           <lang id="vi" status="2">Ít Startup Manager.exe</lang>
         </row>
-        <row id="LegalCopyright" excluded="1" state="1">
+        <row id="LegalCopyright" excluded="1">
           <native>Copyright © Little Apps 2008-2011</native>
           <lang id="ar" status="2">حقوق الطبع والنشر © القليل من تطبيقات 2008-2011</lang>
           <lang id="zh" status="2">版权所有 © 小应用程序 2008年-2011 年</lang>
@@ -1793,7 +1797,7 @@
           <lang id="tr" status="2">Copyright © Küçük Apps 2008-2011</lang>
           <lang id="vi" status="2">Bản quyền © 2008-2011 nhỏ Apps</lang>
         </row>
-        <row id="OriginalFilename" state="1">
+        <row id="OriginalFilename">
           <native>Little Startup Manager.exe</native>
           <lang id="ar" status="2">Manager.exe بدء التشغيل قليلاً</lang>
           <lang id="zh" status="2">小启动 Manager.exe</lang>
@@ -1817,7 +1821,7 @@
           <lang id="tr" status="2">Küçük Başlangıç ​​Manager.exe</lang>
           <lang id="vi" status="2">Ít Startup Manager.exe</lang>
         </row>
-        <row id="ProductName" state="1">
+        <row id="ProductName">
           <prev>Little Startup Manager</prev>
           <native>Little Registry Cleaner</native>
           <lang id="ar" invalidated="1" status="2">يذكر مدير بدء التشغيل</lang>
@@ -1842,7 +1846,7 @@
           <lang id="tr" invalidated="1" status="2">Küçük Başlangıç ​​Yöneticisi</lang>
           <lang id="vi" invalidated="1" status="2">Ít Startup Manager</lang>
         </row>
-        <row id="ProductVersion" excluded="1" state="1">
+        <row id="ProductVersion" excluded="1">
           <prev>1.0.0.0</prev>
           <native>1.0</native>
           <lang id="ar" invalidated="1" status="2">1.0.0.0</lang>
@@ -1867,6 +1871,10 @@
           <lang id="tr" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="vi" invalidated="1" status="2">1.0.0.0</lang>
         </row>
+        <row id="ProductVersion[1]" class="TIntegerRow" state="0">1</row>
+        <row id="ProductVersion[2]" class="TIntegerRow" state="0">0</row>
+        <row id="ProductVersion[3]" class="TIntegerRow" state="0">0</row>
+        <row id="ProductVersion[4]" class="TIntegerRow" state="0">0</row>
       </node>
     </node>
   </source>
@@ -2294,11 +2302,11 @@
         </row>
       </node>
     </node>
-    <node class="TWindowsVersionFolder" name="Versions" state="1" resid="16">
-      <node class="TWindowsVersionNode" name="1" state="1" resid="1">
-        <row id="Assembly Version" excluded="1" state="1">
-          <prev>1.0.4320.33596</prev>
-          <native>1.0.4323.38910</native>
+    <node class="TWindowsVersionFolder" name="Versions" resid="16">
+      <node class="TWindowsVersionNode" name="1" resid="1">
+        <row id="Assembly Version" excluded="1" state="3">
+          <prev>1.0.4323.38910</prev>
+          <native>1.0.4454.33224</native>
           <lang id="ar" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="zh" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="zh.tra" invalidated="1" status="2">0.0.0.0</lang>
@@ -2314,14 +2322,14 @@
           <lang id="pl" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="fa" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="pt" invalidated="1" status="2">0.0.0.0</lang>
-          <lang id="ru" status="3">1.0.4323.38910</lang>
+          <lang id="ru" invalidated="1" status="3">1.0.4323.38910</lang>
           <lang id="es" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="sv-SE" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="th" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="tr" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="vi" invalidated="1" status="2">0.0.0.0</lang>
         </row>
-        <row id="Comments" state="1">
+        <row id="Comments">
           <native>Manage programs installed on your computer</native>
           <lang id="ar" status="2">إدارة البرامج المثبتة على الكمبيوتر</lang>
           <lang id="zh" status="2">管理您的计算机上安装的程序</lang>
@@ -2345,7 +2353,7 @@
           <lang id="tr" status="2">Bilgisayarınızda yüklü programlar yönetin</lang>
           <lang id="vi" status="2">Quản lý các chương trình được cài đặt trên máy tính của bạn</lang>
         </row>
-        <row id="CompanyName" state="1">
+        <row id="CompanyName">
           <native>Little Apps</native>
           <lang id="ar" status="3">تطبيقات صغيرة</lang>
           <lang id="zh" status="3">小小的应用程序</lang>
@@ -2369,7 +2377,7 @@
           <lang id="tr" status="3">Küçük Apps</lang>
           <lang id="vi" status="3">Ít Apps</lang>
         </row>
-        <row id="FileDescription" state="1">
+        <row id="FileDescription">
           <prev> </prev>
           <native>Little Uninstall Manager</native>
           <lang id="ar" status="2">يذكر إلغاء إدارة</lang>
@@ -2394,7 +2402,7 @@
           <lang id="tr" status="2">Küçük Uninstall Manager</lang>
           <lang id="vi" status="2">Ít Uninstall Manager</lang>
         </row>
-        <row id="FileVersion" excluded="1" state="1">
+        <row id="FileVersion" excluded="1">
           <prev>0.0.0.0</prev>
           <native>1.0</native>
           <lang id="ar" invalidated="1" status="2">0.0.0.0</lang>
@@ -2419,7 +2427,11 @@
           <lang id="tr" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="vi" invalidated="1" status="2">0.0.0.0</lang>
         </row>
-        <row id="InternalName" state="1">
+        <row id="FileVersion[1]" class="TIntegerRow" state="0">1</row>
+        <row id="FileVersion[2]" class="TIntegerRow" state="0">0</row>
+        <row id="FileVersion[3]" class="TIntegerRow" state="0">0</row>
+        <row id="FileVersion[4]" class="TIntegerRow" state="0">0</row>
+        <row id="InternalName">
           <native>Little Uninstall Manager.exe</native>
           <lang id="ar" status="2">يذكر إلغاء Manager.exe</lang>
           <lang id="zh" status="2">小卸载Manager.exe</lang>
@@ -2443,7 +2455,7 @@
           <lang id="tr" status="2">Little Kaldır Manager.exe</lang>
           <lang id="vi" status="2">Little Uninstall Manager.exe</lang>
         </row>
-        <row id="LegalCopyright" state="1">
+        <row id="LegalCopyright">
           <prev> </prev>
           <native>Copyright © Little Apps 2008-2011</native>
           <lang id="ar" status="2">حقوق الطبع والنشر © 2008-2011 تطبيقات ليتل</lang>
@@ -2468,7 +2480,7 @@
           <lang id="tr" status="2">Copyright © Küçük Apps 2008-2011</lang>
           <lang id="vi" status="2">Bản quyền © nhỏ Apps 2008-2011</lang>
         </row>
-        <row id="OriginalFilename" state="1">
+        <row id="OriginalFilename">
           <native>Little Uninstall Manager.exe</native>
           <lang id="ar" status="2">يذكر إلغاء Manager.exe</lang>
           <lang id="zh" status="2">小卸载Manager.exe</lang>
@@ -2492,7 +2504,7 @@
           <lang id="tr" status="2">Little Kaldır Manager.exe</lang>
           <lang id="vi" status="2">Little Uninstall Manager.exe</lang>
         </row>
-        <row id="ProductName" state="1">
+        <row id="ProductName">
           <native>Little Registry Cleaner</native>
           <lang id="ar" status="2">السجل النظيف قليلا</lang>
           <lang id="zh" status="2">小注册表清理</lang>
@@ -2516,7 +2528,7 @@
           <lang id="tr" status="2">Little Registry Cleaner</lang>
           <lang id="vi" status="2">Little Registry Cleaner</lang>
         </row>
-        <row id="ProductVersion" excluded="1" state="1">
+        <row id="ProductVersion" excluded="1">
           <prev>0.0.0.0</prev>
           <native>1.0</native>
           <lang id="ar" invalidated="1" status="2">0.0.0.0</lang>
@@ -2541,6 +2553,10 @@
           <lang id="tr" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="vi" invalidated="1" status="2">0.0.0.0</lang>
         </row>
+        <row id="ProductVersion[1]" class="TIntegerRow" state="0">1</row>
+        <row id="ProductVersion[2]" class="TIntegerRow" state="0">0</row>
+        <row id="ProductVersion[3]" class="TIntegerRow" state="0">0</row>
+        <row id="ProductVersion[4]" class="TIntegerRow" state="0">0</row>
       </node>
     </node>
   </source>
@@ -2909,11 +2925,11 @@
         <row id="piSuccessUninstall" state="0">Sucessfully uninstalled program</row>
       </node>
     </node>
-    <node class="TWindowsVersionFolder" name="Versions" state="1" resid="16">
-      <node class="TWindowsVersionNode" name="1" state="1" resid="1">
-        <row id="Assembly Version" locked="1" excluded="1" state="1">
-          <prev>1.1.4320.33595</prev>
-          <native>1.1.4323.38909</native>
+    <node class="TWindowsVersionFolder" name="Versions" resid="16">
+      <node class="TWindowsVersionNode" name="1" resid="1">
+        <row id="Assembly Version" locked="1" excluded="1" state="3">
+          <prev>1.1.4323.38909</prev>
+          <native>1.1.4454.33222</native>
           <lang id="ar" invalidated="1">1.0.4187.39341</lang>
           <lang id="zh" invalidated="1">1.0.4187.39341</lang>
           <lang id="zh.tra" invalidated="1">1.0.4187.39341</lang>
@@ -2929,14 +2945,15 @@
           <lang id="pl" invalidated="1">1.0.4187.39341</lang>
           <lang id="fa" invalidated="1">1.0.4187.39341</lang>
           <lang id="pt" invalidated="1">1.0.4187.39341</lang>
-          <lang id="ru">1.1.4323.38909</lang>
+          <lang id="ru" invalidated="1">1.1.4323.38909</lang>
           <lang id="es" invalidated="1">1.0.4187.39341</lang>
           <lang id="sv-SE" invalidated="1">1.0.4187.39341</lang>
           <lang id="th" invalidated="1">1.0.4187.39341</lang>
           <lang id="tr" invalidated="1">1.0.4187.39341</lang>
           <lang id="vi" invalidated="1">1.0.4187.39341</lang>
         </row>
-        <row id="FileDescription" state="1">
+        <row id="CompanyName" state="0">Little Apps</row>
+        <row id="FileDescription">
           <native>Common Tools</native>
           <lang id="ar" status="2">أدوات عامة</lang>
           <lang id="zh" status="2">常用工具</lang>
@@ -2960,7 +2977,7 @@
           <lang id="tr" status="2">Genel Araçlar</lang>
           <lang id="vi" status="2">Công cụ thông thường</lang>
         </row>
-        <row id="FileVersion" locked="1" excluded="1" state="1">
+        <row id="FileVersion" locked="1" excluded="1">
           <prev>1.0.0.0</prev>
           <native>1.1.0.0</native>
           <lang id="ar" invalidated="1">1.0.0.0</lang>
@@ -2985,7 +3002,11 @@
           <lang id="tr" invalidated="1">1.0.0.0</lang>
           <lang id="vi" invalidated="1">1.0.0.0</lang>
         </row>
-        <row id="InternalName" locked="1" state="1">
+        <row id="FileVersion[1]" class="TIntegerRow" state="0">1</row>
+        <row id="FileVersion[2]" class="TIntegerRow" state="0">1</row>
+        <row id="FileVersion[3]" class="TIntegerRow" state="0">0</row>
+        <row id="FileVersion[4]" class="TIntegerRow" state="0">0</row>
+        <row id="InternalName" locked="1">
           <native>Common Tools.dll</native>
           <lang id="ar">Tools.dll المشتركة</lang>
           <lang id="zh">常见的 Tools.dll</lang>
@@ -3009,7 +3030,7 @@
           <lang id="tr">Ortak Tools.dll</lang>
           <lang id="vi">Chung Tools.dll</lang>
         </row>
-        <row id="LegalCopyright" excluded="1" state="1">
+        <row id="LegalCopyright" excluded="1">
           <prev>Copyright ©  2008-2010</prev>
           <native>Copyright ©  2008-2011</native>
           <lang id="ar" invalidated="1" status="2">حقوق الطبع والنشر © 2008-2010</lang>
@@ -3034,7 +3055,7 @@
           <lang id="tr" invalidated="1" status="2">Copyright © 2008-2010</lang>
           <lang id="vi" invalidated="1" status="2">Bản quyền © 2008-2010</lang>
         </row>
-        <row id="OriginalFilename" locked="1" state="1">
+        <row id="OriginalFilename" locked="1">
           <native>Common Tools.dll</native>
           <lang id="ar">Tools.dll المشتركة</lang>
           <lang id="zh">常见的 Tools.dll</lang>
@@ -3058,7 +3079,7 @@
           <lang id="tr">Ortak Tools.dll</lang>
           <lang id="vi">Chung Tools.dll</lang>
         </row>
-        <row id="ProductName" state="1">
+        <row id="ProductName">
           <prev>Common Tools</prev>
           <native>Little Registry Cleaner</native>
           <lang id="ar" invalidated="1" status="2">أدوات عامة</lang>
@@ -3083,7 +3104,7 @@
           <lang id="tr" invalidated="1" status="2">Genel Araçlar</lang>
           <lang id="vi" invalidated="1" status="2">Công cụ thông thường</lang>
         </row>
-        <row id="ProductVersion" excluded="1" state="1">
+        <row id="ProductVersion" excluded="1">
           <prev>1.0.0.0</prev>
           <native>1.1.0.0</native>
           <lang id="ar" invalidated="1" status="2">1.0.0.0</lang>
@@ -3108,10 +3129,14 @@
           <lang id="tr" invalidated="1" status="2">1.0.0.0</lang>
           <lang id="vi" invalidated="1" status="2">1.0.0.0</lang>
         </row>
+        <row id="ProductVersion[1]" class="TIntegerRow" state="0">1</row>
+        <row id="ProductVersion[2]" class="TIntegerRow" state="0">1</row>
+        <row id="ProductVersion[3]" class="TIntegerRow" state="0">0</row>
+        <row id="ProductVersion[4]" class="TIntegerRow" state="0">0</row>
       </node>
     </node>
   </source>
-  <source class="TVisualStudioNetProjectSource" name="Little Registry Cleaner.csproj" original="en" date="20111009180924" defaultoutputdir="bin\Debug" configuration="Debug|AnyCPU" netversion="net40" toolsversion="net40" rootnamespace="Little_Registry_Cleaner" options="[noSetRightToLeft,noSortItems,noCompileResource,noCreateAssembly,noDeleteCompiledResource,noDeleteSourceResource]">
+  <source class="TVisualStudioNetProjectSource" name="Little Registry Cleaner.csproj" original="en" date="20120407201524" defaultoutputdir="bin\Debug" configuration="Debug|AnyCPU" netversion="net40" toolsversion="net40" rootnamespace="Little_Registry_Cleaner" options="[noSetRightToLeft,noSortItems,noCompileResource,noCreateAssembly,noDeleteCompiledResource,noDeleteSourceResource]">
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TColorData</class>
@@ -9977,11 +10002,11 @@
         </row>
       </node>
     </node>
-    <node class="TWindowsVersionFolder" name="Versions" state="1" resid="16">
-      <node class="TWindowsVersionNode" name="1" state="1" resid="1">
-        <row id="Assembly Version" locked="1" excluded="1" state="1">
-          <prev>1.5.4320.33595</prev>
-          <native>1.5.4323.38910</native>
+    <node class="TWindowsVersionFolder" name="Versions" resid="16">
+      <node class="TWindowsVersionNode" name="1" resid="1">
+        <row id="Assembly Version" locked="1" excluded="1" state="3">
+          <prev>1.5.4323.38910</prev>
+          <native>1.5.4454.33223</native>
           <lang id="ar" invalidated="1">1.4.4187.39341</lang>
           <lang id="zh" invalidated="1">1.4.4187.39341</lang>
           <lang id="zh.tra" invalidated="1">1.4.4187.39341</lang>
@@ -9997,14 +10022,14 @@
           <lang id="pl" invalidated="1">1.4.4187.39341</lang>
           <lang id="fa" invalidated="1">1.4.4187.39341</lang>
           <lang id="pt" invalidated="1">1.4.4187.39341</lang>
-          <lang id="ru">1.5.4323.38910</lang>
+          <lang id="ru" invalidated="1">1.5.4323.38910</lang>
           <lang id="es" invalidated="1">1.4.4187.39341</lang>
           <lang id="sv-SE" invalidated="1">1.4.4187.39341</lang>
           <lang id="th" invalidated="1">1.4.4187.39341</lang>
           <lang id="tr" invalidated="1">1.4.4187.39341</lang>
           <lang id="vi" invalidated="1">1.4.4187.39341</lang>
         </row>
-        <row id="Comments" state="1">
+        <row id="Comments">
           <native>Free and open source program that is designed to cleanup Microsoft Windows Registry</native>
           <lang id="ar" status="2">البرامج الحرة والمفتوحة المصدر التي تهدف إلى تنظيف سجل Microsoft Windows</lang>
           <lang id="zh" status="2">为了清理 Microsoft Windows 注册表的自由和开放源码程序</lang>
@@ -10028,7 +10053,7 @@
           <lang id="tr" status="2">Temizleme Microsoft, Windows Kayıt Defteri için tasarlanmıştır ücretsiz ve açık kaynak program</lang>
           <lang id="vi" status="2">Miễn phí và mã nguồn mở chương trình được thiết kế để dọn dẹp Microsoft Windows Registry</lang>
         </row>
-        <row id="CompanyName" state="1">
+        <row id="CompanyName">
           <native>Little Apps</native>
           <lang id="ar" date="20110829210844" status="3">تطبيقات صغيرة</lang>
           <lang id="zh" date="20110829210854" status="3">小小的应用程序</lang>
@@ -10052,7 +10077,7 @@
           <lang id="tr" date="20110829210947" status="3">Küçük Apps</lang>
           <lang id="vi" date="20110829210909" status="3">Ít Apps</lang>
         </row>
-        <row id="FileDescription" state="1">
+        <row id="FileDescription">
           <native>Little Registry Cleaner</native>
           <lang id="ar" status="2">التسجيل ضئيلة الأنظف</lang>
           <lang id="zh" status="2">迷你注册表清理器</lang>
@@ -10076,7 +10101,7 @@
           <lang id="tr" status="2">Little Registry Cleaner</lang>
           <lang id="vi" status="2">Người lau chùi Nơi đăng ký Nhỏ</lang>
         </row>
-        <row id="FileVersion" locked="1" state="1">
+        <row id="FileVersion" locked="1">
           <prev>1.5</prev>
           <native>1.5.1</native>
           <lang id="ar" invalidated="1">1.4.2</lang>
@@ -10101,7 +10126,11 @@
           <lang id="tr" invalidated="1">1.4.2</lang>
           <lang id="vi" invalidated="1">1.4.2</lang>
         </row>
-        <row id="InternalName" locked="1" state="1">
+        <row id="FileVersion[1]" class="TIntegerRow" state="0">1</row>
+        <row id="FileVersion[2]" class="TIntegerRow" state="0">5</row>
+        <row id="FileVersion[3]" class="TIntegerRow" state="0">1</row>
+        <row id="FileVersion[4]" class="TIntegerRow" state="0">0</row>
+        <row id="InternalName" locked="1">
           <native>Little Registry Cleaner.exe</native>
           <lang id="ar">يذكر التسجيل Cleaner.exe</lang>
           <lang id="zh">小注册表 Cleaner.exe</lang>
@@ -10125,7 +10154,7 @@
           <lang id="tr">Küçük Kayıt Cleaner.exe</lang>
           <lang id="vi">Ít Registry Cleaner.exe</lang>
         </row>
-        <row id="LegalCopyright" state="1">
+        <row id="LegalCopyright">
           <prev>Copyright © Little Apps 2008-2010</prev>
           <native>Copyright © Little Apps 2008-2011</native>
           <lang id="ar" status="2">حقوق الطبع والنشر © القليل من تطبيقات 2008-2011</lang>
@@ -10150,7 +10179,7 @@
           <lang id="tr" status="2">Copyright © Küçük Apps 2008-2011</lang>
           <lang id="vi" status="2">Bản quyền © 2008-2011 nhỏ Apps</lang>
         </row>
-        <row id="OriginalFilename" locked="1" state="1">
+        <row id="OriginalFilename" locked="1">
           <native>Little Registry Cleaner.exe</native>
           <lang id="ar">يذكر التسجيل Cleaner.exe</lang>
           <lang id="zh">小注册表 Cleaner.exe</lang>
@@ -10174,7 +10203,7 @@
           <lang id="tr">Küçük Kayıt Cleaner.exe</lang>
           <lang id="vi">Ít Registry Cleaner.exe</lang>
         </row>
-        <row id="ProductName" state="1">
+        <row id="ProductName">
           <native>Little Registry Cleaner</native>
           <lang id="ar" status="2">التسجيل ضئيلة الأنظف</lang>
           <lang id="zh" status="2">迷你注册表清理器</lang>
@@ -10198,7 +10227,7 @@
           <lang id="tr" status="2">Little Registry Cleaner</lang>
           <lang id="vi" status="2">Người lau chùi Nơi đăng ký Nhỏ</lang>
         </row>
-        <row id="ProductVersion" locked="1" excluded="1" state="1">
+        <row id="ProductVersion" locked="1" excluded="1">
           <prev>1.5</prev>
           <native>1.5.1</native>
           <lang id="ar" invalidated="1">1.4.2</lang>
@@ -10223,6 +10252,10 @@
           <lang id="tr" invalidated="1">1.4.2</lang>
           <lang id="vi" invalidated="1">1.4.2</lang>
         </row>
+        <row id="ProductVersion[1]" class="TIntegerRow" state="0">1</row>
+        <row id="ProductVersion[2]" class="TIntegerRow" state="0">5</row>
+        <row id="ProductVersion[3]" class="TIntegerRow" state="0">1</row>
+        <row id="ProductVersion[4]" class="TIntegerRow" state="0">0</row>
       </node>
     </node>
   </source>
