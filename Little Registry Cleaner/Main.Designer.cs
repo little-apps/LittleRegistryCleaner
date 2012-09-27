@@ -53,6 +53,7 @@
             this.nodeLocation = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
             this.nodeValueName = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.treeView1 = new System.Windows.Forms.TreeView();
             this.imageListTreeView = new System.Windows.Forms.ImageList(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -114,7 +115,6 @@
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.treeView1 = new System.Windows.Forms.TreeView();
             portugueseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripContainer1.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
@@ -182,11 +182,11 @@
             this.treeViewAdvResults.Columns.Add(this.treeColumn3);
             this.treeViewAdvResults.ContextMenuStrip = this.contextMenuStrip1;
             this.treeViewAdvResults.DefaultToolTipProvider = null;
+            resources.ApplyResources(this.treeViewAdvResults, "treeViewAdvResults");
             this.treeViewAdvResults.DragDropMarkColor = System.Drawing.Color.Black;
             this.treeViewAdvResults.FullRowSelect = true;
             this.treeViewAdvResults.LineColor = System.Drawing.SystemColors.ControlDark;
             this.treeViewAdvResults.LoadOnDemand = true;
-            resources.ApplyResources(this.treeViewAdvResults, "treeViewAdvResults");
             this.treeViewAdvResults.Model = null;
             this.treeViewAdvResults.Name = "treeViewAdvResults";
             this.treeViewAdvResults.NodeControls.Add(this.nodeCheckBox);
@@ -316,6 +316,16 @@
             resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
             this.tableLayoutPanel2.Controls.Add(this.treeView1, 0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            // 
+            // treeView1
+            // 
+            this.treeView1.CheckBoxes = true;
+            resources.ApplyResources(this.treeView1, "treeView1");
+            this.treeView1.ImageList = this.imageListTreeView;
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            ((System.Windows.Forms.TreeNode)(resources.GetObject("treeView1.Nodes")))});
+            this.treeView1.ShowNodeToolTips = true;
             // 
             // imageListTreeView
             // 
@@ -748,16 +758,6 @@
             this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
             resources.ApplyResources(this.exitToolStripMenuItem1, "exitToolStripMenuItem1");
             this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
-            // 
-            // treeView1
-            // 
-            this.treeView1.CheckBoxes = true;
-            resources.ApplyResources(this.treeView1, "treeView1");
-            this.treeView1.ImageList = this.imageListTreeView;
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            ((System.Windows.Forms.TreeNode)(resources.GetObject("treeView1.Nodes")))});
-            this.treeView1.ShowNodeToolTips = true;
             // 
             // Main
             // 
