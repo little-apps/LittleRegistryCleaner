@@ -11,7 +11,7 @@ using System.Resources;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Little Apps")]
 [assembly: AssemblyProduct("Little Registry Cleaner")]
-[assembly: AssemblyCopyright("Copyright © Little Apps 2008-2011")]
+[assembly: AssemblyCopyright("Copyright © Little Apps 2008-2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -34,5 +34,5 @@ using System.Resources;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.5.*")]
-[assembly: AssemblyFileVersion("1.5.1")]
+[assembly: AssemblyFileVersion("1.5.2")]
 [assembly: NeutralResourcesLanguageAttribute("en-GB")]

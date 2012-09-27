@@ -11,7 +11,7 @@ using System.Resources;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Little Apps")]
 [assembly: AssemblyProduct("Little Registry Cleaner")]
-[assembly: AssemblyCopyright("Copyright © Little Apps 2008-2011")]
+[assembly: AssemblyCopyright("Copyright © Little Apps 2008-2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
