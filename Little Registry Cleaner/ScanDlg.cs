@@ -275,16 +275,9 @@ namespace Little_Registry_Cleaner
                 if (!Utils.ValueNameExists(baseKey, subKey, valueName))
                     return false;
 
-            try
-            {
-                // Throws exception if user doesnt have permission
-                RegistryPermission regPermission = new RegistryPermission(RegistryPermissionAccess.AllAccess, regPath);
-                regPermission.Demand();
-            }
-            catch (System.Security.SecurityException)
-            {
+            // Make sure we have the correct permissions for the registry key
+            if (!Utils.CanDeleteKey(Utils.RegOpenKey(baseKey, subKey)))
                 return false;
-            }
 
             ScanDlg.currentScanner.RootNode.Nodes.Add(new BadRegistryKey(problem, baseKey, subKey, valueName));
 
