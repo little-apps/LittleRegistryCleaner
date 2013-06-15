@@ -112,8 +112,12 @@ namespace Little_Registry_Cleaner
             if (majorVersion == 6 && minorVersion == 0)
                 return true;
 
-            // Windows Se7en
+            // Windows 7
             if (majorVersion == 6 && minorVersion == 1)
+                return true;
+
+            // Windows 8
+            if (majorVersion == 6 && minorVersion == 2)
                 return true;
 
             // All others : Win 95, 98, 2000, Server

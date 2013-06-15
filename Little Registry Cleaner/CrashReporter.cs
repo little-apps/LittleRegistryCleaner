@@ -34,10 +34,6 @@ using System.Collections;
 
 namespace Little_Registry_Cleaner
 {
-    /// <summary>
-    /// Little Crash Reporter v1.1
-    /// Use to handle unhandled exceptions in .NET
-    /// </summary>
     public partial class CrashReporter : Form
     {
         private MemoryStream memoryStream = new MemoryStream();

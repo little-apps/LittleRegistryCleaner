@@ -893,7 +893,7 @@ namespace Little_Registry_Cleaner
             // Remove quotes
             strDirectory = UnqouteSpaces(strDirectory);
 
-            // Expand enviroment variables
+            // Expand environment variables
             strDirectory = Environment.ExpandEnvironmentVariables(strDirectory);
 
             // Check drive type
