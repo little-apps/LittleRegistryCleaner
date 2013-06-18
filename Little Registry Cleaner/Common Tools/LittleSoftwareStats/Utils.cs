@@ -203,7 +203,7 @@ namespace LittleSoftwareStats
             Stream dataStream;
 
 #if DEBUG
-            Console.WriteLine(postData);
+            //Console.WriteLine(postData);
 #endif
 
             // Get POST data and convert it to UTF8
@@ -228,7 +228,7 @@ namespace LittleSoftwareStats
                         StreamReader reader = new StreamReader(dataStream);
 
 #if DEBUG
-                        Console.WriteLine(reader.ReadToEnd());
+                        //Console.WriteLine(reader.ReadToEnd());
 #endif
                     }
                 }

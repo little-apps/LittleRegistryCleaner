@@ -259,10 +259,7 @@ namespace Little_Registry_Cleaner
             // See if we have the current version
             if (Properties.Settings.Default.bOptionsAutoUpdate)
             {
-                string strVersion = "", strChangeLogURL = "", strDownloadURL = "", strReleaseDate = "";
-                if (UpdateDlg.FindUpdate(ref strVersion, ref strReleaseDate, ref strChangeLogURL, ref strDownloadURL, true))
-                    if (MessageBox.Show(this, Properties.Resources.mainUpdateAsk, Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
-                        Utils.LaunchURI(strDownloadURL);
+                AutoUpdaterDotNET.AutoUpdater.Start(Properties.Settings.Default.strUpdateURL);
             }
 
             // Increase number to program starts
@@ -558,8 +555,7 @@ namespace Little_Registry_Cleaner
 
         private void checkForUpdatesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            UpdateDlg frmCheckForUpdate = new UpdateDlg();
-            frmCheckForUpdate.ShowDialog(this);
+            AutoUpdaterDotNET.AutoUpdater.Start(true);
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
