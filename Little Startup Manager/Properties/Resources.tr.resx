@@ -121,24 +121,24 @@
     <value>Zaten başka bir program çalışıyor...</value>
   </data>
   <data name="smCannotFindFile" xml:space="preserve">
-    <value>Dosya bulunamadı</value>
+    <value>Dosya bulunamadı.</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
-    <value>Kısayol/Değer adı boş olamaz</value>
+    <value>Kısayol/değer adı boş olamaz</value>
   </data>
   <data name="smEmptyPath" xml:space="preserve">
     <value>Dosya yolu boş olamaz</value>
   </data>
   <data name="smRan" xml:space="preserve">
-    <value>Çalışmak için kalkışan:</value>
+    <value>Çalıştırmak çalıştı:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>Bu başlangıç programı kaldırmak istediğinizden emin misiniz?</value>
+    <value>¿Bu başlatma programı kaldırmak istediğinizden emin misiniz?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
-    <value>Seçilen başlangıç programı kaldırıldı</value>
+    <value>Seçili başlangıç programı kaldırıldı</value>
   </data>
   <data name="smRun" xml:space="preserve">
-    <value>Bu programı çalıştırmak istediğinizden emin misiniz?</value>
+    <value>¿Bu programı çalıştırmak istediğinizden emin misiniz?</value>
   </data>
 </root>

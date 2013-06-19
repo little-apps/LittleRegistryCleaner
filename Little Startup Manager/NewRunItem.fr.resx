@@ -135,42 +135,42 @@
     <value>Nom:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Nom et chemin</value>
+    <value>Nom et chemin d'accès</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>Section:</value>
   </data>
   <data name="comboBoxSection.Items" xml:space="preserve">
-    <value>Startup\All Users</value>
+    <value>StartUp\All utilisateurs</value>
   </data>
   <data name="comboBoxSection.Items1" xml:space="preserve">
-    <value>Startup\Utilisateur actuel</value>
+    <value>StartUp\Current utilisateur</value>
   </data>
   <data name="comboBoxSection.Items2" xml:space="preserve">
     <value>Registry\All Users\Run</value>
   </data>
   <data name="comboBoxSection.Items3" xml:space="preserve">
-    <value>Une fois les Users\Run Registry\All</value>
+    <value>Registry\All Users\Run une fois</value>
   </data>
   <data name="comboBoxSection.Items4" xml:space="preserve">
-    <value>Services de Users\Run Registry\All</value>
+    <value>Registry\All Users\Run Services</value>
   </data>
   <data name="comboBoxSection.Items5" xml:space="preserve">
-    <value>Une fois les services de Users\Run Registry\All</value>
+    <value>Registry\All Services de Users\Run une fois</value>
   </data>
   <data name="comboBoxSection.Items6" xml:space="preserve">
     <value>Registry\Current User\Run</value>
   </data>
   <data name="comboBoxSection.Items7" xml:space="preserve">
-    <value>Une fois les User\Run Registry\Current</value>
+    <value>Registry\Current User\Run une fois</value>
   </data>
   <data name="comboBoxSection.Items8" xml:space="preserve">
-    <value>Services de User\Run Registry\Current</value>
+    <value>Registry\Current User\Run Services</value>
   </data>
   <data name="comboBoxSection.Items9" xml:space="preserve">
-    <value>Une fois les services de User\Run Registry\Current</value>
+    <value>Registry\Current Services de User\Run une fois</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Nouvel élément d'exécution</value>
+    <value>Exécuter un nouvel élément</value>
   </data>
 </root>

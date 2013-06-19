@@ -118,27 +118,27 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="programAlreadyRunning" xml:space="preserve">
-    <value>Eine andere Instanz des Programmes ist aktiv !</value>
+    <value>Eine andere Instanz des Programmes ist aktiv...</value>
   </data>
   <data name="smCannotFindFile" xml:space="preserve">
     <value>Die Datei konnte nicht gefunden werden</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
-    <value>Verknüpfungs/Wert-Name kann nicht leer sein</value>
+    <value>Kontextmenü/Wert Name darf nicht leer sein.</value>
   </data>
   <data name="smEmptyPath" xml:space="preserve">
-    <value>Dateipfad kann nicht leer sein</value>
+    <value>Dateipfad darf nicht leer sein.</value>
   </data>
   <data name="smRan" xml:space="preserve">
-    <value>Startversuch:</value>
+    <value>Hat versucht, auszuführen:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>Soll dieses Programm wirklich aus dem Systemstart entfernt werden?</value>
+    <value>¿Sind Sie sicher, dass Sie dieses Startprogramm entfernen möchten?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
-    <value>Gewähltes Programm aus dem Systemstart entfernt</value>
+    <value>Entfernt ausgewählte Start-Programm</value>
   </data>
   <data name="smRun" xml:space="preserve">
-    <value>Soll das gewählte Programm wirklich gestartet werden?</value>
+    <value>¿Sind Sie sicher, dass Sie dieses Programm ausführen möchten?</value>
   </data>
 </root>

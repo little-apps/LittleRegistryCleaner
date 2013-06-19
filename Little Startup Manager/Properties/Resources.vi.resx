@@ -121,24 +121,24 @@
     <value>Một chương trình có vẻ là đã chạy...</value>
   </data>
   <data name="smCannotFindFile" xml:space="preserve">
-    <value>Các tập tin không thể tìm được</value>
+    <value>Không tìm thấy tệp</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
-    <value>Shortcut / Giá trị tên không thể để trống</value>
+    <value>Tên lối tắt/giá trị không thể để trống</value>
   </data>
   <data name="smEmptyPath" xml:space="preserve">
-    <value>File đường dẫn không thể để trống</value>
+    <value>Đường dẫn tệp không thể để trống</value>
   </data>
   <data name="smRan" xml:space="preserve">
     <value>Cố gắng để chạy:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>Bạn có chắc bạn muốn loại bỏ chương trình này khởi động?</value>
+    <value>¿Bạn có chắc bạn muốn loại bỏ chương trình khởi động này không?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
-    <value>Bỏ chọn khởi động chương trình</value>
+    <value>Loại bỏ lựa chọn khởi động chương trình</value>
   </data>
   <data name="smRun" xml:space="preserve">
-    <value>Bạn có chắc chắn muốn chạy chương trình này?</value>
+    <value>¿Bạn có chắc bạn muốn chạy chương trình này không?</value>
   </data>
 </root>

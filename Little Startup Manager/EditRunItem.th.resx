@@ -126,15 +126,15 @@
     <value>OK</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>การขัดแย้ง:</value>
+    <value>อาร์กิวเมนต์:</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>ไฟล์:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>รายการแก้ไข Startup</value>
+    <value>แก้ไขรายการเริ่มต้น</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>รายการแก้ไข Run</value>
+    <value>แก้ไขรายการงาน</value>
   </data>
 </root>

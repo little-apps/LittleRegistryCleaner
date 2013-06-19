@@ -126,51 +126,51 @@
     <value>OK</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>การขัดแย้ง:</value>
+    <value>อาร์กิวเมนต์:</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>เส้นทาง File:</value>
+    <value>เส้นทางของแฟ้ม:</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>ชื่อ:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>ชื่อและเส้นทาง</value>
+    <value>ชื่อและพาธ</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>ส่วนที่:</value>
+    <value>ส่วน:</value>
   </data>
   <data name="comboBoxSection.Items" xml:space="preserve">
-    <value>Startup\ผู้ใช้ทั้งหมด</value>
+    <value>ผู้ใช้ StartUp\All</value>
   </data>
   <data name="comboBoxSection.Items1" xml:space="preserve">
-    <value>Startup\ผู้ใช้ปัจจุบัน</value>
+    <value>ผู้ใช้ StartUp\Current</value>
   </data>
   <data name="comboBoxSection.Items2" xml:space="preserve">
     <value>Registry\All Users\Run</value>
   </data>
   <data name="comboBoxSection.Items3" xml:space="preserve">
-    <value>Registry\All Users\Run เมื่อ</value>
+    <value>Registry\All Users\Run ครั้ง</value>
   </data>
   <data name="comboBoxSection.Items4" xml:space="preserve">
-    <value>Registry\All Users\Run Services</value>
+    <value>บริการ Users\Run Registry\All</value>
   </data>
   <data name="comboBoxSection.Items5" xml:space="preserve">
-    <value>Registry\All Users\Services Run เมื่อ</value>
+    <value>Registry\All บริการ Users\Run ครั้ง</value>
   </data>
   <data name="comboBoxSection.Items6" xml:space="preserve">
     <value>Registry\Current User\Run</value>
   </data>
   <data name="comboBoxSection.Items7" xml:space="preserve">
-    <value>Registry\Current User\Run เมื่อ</value>
+    <value>Registry\Current User\Run ครั้ง</value>
   </data>
   <data name="comboBoxSection.Items8" xml:space="preserve">
-    <value>Registry\Current User Services\Run</value>
+    <value>บริการ User\Run Registry\Current</value>
   </data>
   <data name="comboBoxSection.Items9" xml:space="preserve">
-    <value>Registry\Current User\Run บริการเมื่อ</value>
+    <value>Registry\Current บริการ User\Run ครั้ง</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>รายการใหม่ Run</value>
+    <value>ใช้ในการผลิตสินค้าใหม่</value>
   </data>
 </root>

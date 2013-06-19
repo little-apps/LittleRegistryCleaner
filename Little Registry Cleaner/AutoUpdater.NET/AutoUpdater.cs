@@ -40,6 +40,8 @@ namespace AutoUpdaterDotNET
 
         internal static Boolean ForceCheck;
 
+        //internal static CultureInfo CurrentCulture;
+
         /// <summary>
         /// URL of the xml file that contains information about latest version of the application.
         /// </summary>
@@ -89,6 +91,15 @@ namespace AutoUpdaterDotNET
         {
             AppCastURL = appCast;
             ForceCheck = forceUpdate;
+
+            CultureInfo ci = Thread.CurrentThread.CurrentUICulture;
+
+            if (ci.Name == "zh-CHS")
+                CurrentCulture = new CultureInfo(0x0804); // zh-CN Chinese (People's Republic of China)
+            else if (ci.Name == "zh-CHT")
+                CurrentCulture = new CultureInfo(0x0404); // zh-TW Chinese (Taiwan)
+            else
+                CurrentCulture = CultureInfo.CreateSpecificCulture(ci.Name);
             
             var backgroundWorker = new BackgroundWorker();
 
@@ -221,6 +232,7 @@ namespace AutoUpdaterDotNET
         private static void ShowUI()
         {
             var updateForm = new UpdateForm();
+            CultureInfo ci = Thread.CurrentThread.CurrentUICulture;
 
             updateForm.ShowDialog();
         }

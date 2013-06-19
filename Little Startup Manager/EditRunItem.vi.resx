@@ -132,9 +132,9 @@
     <value>Tệp:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Hiệu chỉnh Startup Entry</value>
+    <value>Chỉnh sửa mục nhập khởi động</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Sửa Khởi Mã</value>
+    <value>Chỉnh sửa mục chạy</value>
   </data>
 </root>

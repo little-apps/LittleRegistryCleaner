@@ -124,21 +124,21 @@
     <value>A fájl nem található</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
-    <value>Az Ikon/Érték mező nem lehet üres</value>
+    <value>Parancsikon-érték neve nem lehet üres</value>
   </data>
   <data name="smEmptyPath" xml:space="preserve">
-    <value>Az útvonal nem lehet üres</value>
+    <value>Fájl elérési útja nem lehet üres</value>
   </data>
   <data name="smRan" xml:space="preserve">
-    <value>Megpróbálta futtatni:</value>
+    <value>Kísérlet-hoz fuss:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>Biztos el akarja távolítani ezt az indítási programot?</value>
+    <value>¿Biztosan el szeretné távolítani a elkezd műsor?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
-    <value>Kijelölt indítási program eltávolítva</value>
+    <value>Eltávolítja a kijelölt indítási program</value>
   </data>
   <data name="smRun" xml:space="preserve">
-    <value>Biztos futtatni akarja ezt a programot?</value>
+    <value>¿Biztos vagy benne, hogy a ön akar-hoz fuss ez műsor?</value>
   </data>
 </root>

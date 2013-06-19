@@ -126,15 +126,15 @@
     <value>GERAI</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Parametrai:</value>
+    <value>Argumentai:</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Failas:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Redaguoti paleisties įrašus</value>
+    <value>Redaguoti paleisties įrašas</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Redaguoti automatinio paleidimo sąrašą</value>
+    <value>Redaguoti paleisti elementą</value>
   </data>
 </root>

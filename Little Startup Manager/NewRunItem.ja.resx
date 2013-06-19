@@ -138,39 +138,39 @@
     <value>名前とパス</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>項:</value>
+    <value>セクション:</value>
   </data>
   <data name="comboBoxSection.Items" xml:space="preserve">
-    <value>スタート\すべてのユーザー</value>
+    <value>StartUp\All ユーザー</value>
   </data>
   <data name="comboBoxSection.Items1" xml:space="preserve">
-    <value>スタートアップ\現在のユーザー</value>
+    <value>StartUp\Current ユーザー</value>
   </data>
   <data name="comboBoxSection.Items2" xml:space="preserve">
-    <value>レジストリ\All Usersの\を実行し</value>
+    <value>Registry\All Users\Run</value>
   </data>
   <data name="comboBoxSection.Items3" xml:space="preserve">
-    <value>レジストリ\All Usersの\一度だけ実行</value>
+    <value>Registry\All Users\Run 1 回</value>
   </data>
   <data name="comboBoxSection.Items4" xml:space="preserve">
-    <value>レジストリ\All Usersの\実行サービス</value>
+    <value>Registry\All Users\Run サービス</value>
   </data>
   <data name="comboBoxSection.Items5" xml:space="preserve">
-    <value>レジストリ\All Usersの\を実行しサービスの一</value>
+    <value>Registry\All Users\Run サービス 1 回</value>
   </data>
   <data name="comboBoxSection.Items6" xml:space="preserve">
-    <value>レジストリ\現在のユーザーの構成\実行</value>
+    <value>Registry\Current User\Run</value>
   </data>
   <data name="comboBoxSection.Items7" xml:space="preserve">
-    <value>レジストリ\現在のユーザーの構成\一度だけ実行</value>
+    <value>Registry\Current User\Run 1 回</value>
   </data>
   <data name="comboBoxSection.Items8" xml:space="preserve">
-    <value>レジストリ\現在のユーザーの構成\実行サービス</value>
+    <value>Registry\Current User\Run サービス</value>
   </data>
   <data name="comboBoxSection.Items9" xml:space="preserve">
-    <value>レジストリ\現在のユーザーの構成\実行サービスの一</value>
+    <value>Registry\Current User\Run サービス 1 回</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>新しいRunアイテム</value>
+    <value>新しい項目の実行</value>
   </data>
 </root>

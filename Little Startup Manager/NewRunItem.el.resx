@@ -135,42 +135,42 @@
     <value>Όνομα:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Όνομα και διαδρομή</value>
+    <value>Όνομα και τη διαδρομή</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>Ενότητα:</value>
+    <value>Τμήμα:</value>
   </data>
   <data name="comboBoxSection.Items" xml:space="preserve">
-    <value>StartUp\All Users</value>
+    <value>StartUp\All χρήστες</value>
   </data>
   <data name="comboBoxSection.Items1" xml:space="preserve">
-    <value>StartUp\Current User</value>
+    <value>StartUp\Current χρήστη</value>
   </data>
   <data name="comboBoxSection.Items2" xml:space="preserve">
     <value>Registry\All Users\Run</value>
   </data>
   <data name="comboBoxSection.Items3" xml:space="preserve">
-    <value>Registry\All Users\Run Once</value>
+    <value>Registry\All Users\Run μια φορά</value>
   </data>
   <data name="comboBoxSection.Items4" xml:space="preserve">
-    <value>Registry\All Users\Run Services</value>
+    <value>Registry\All Users\Run υπηρεσίες</value>
   </data>
   <data name="comboBoxSection.Items5" xml:space="preserve">
-    <value>Registry\All Users\Run Services Once</value>
+    <value>Registry\All υπηρεσίες Users\Run μια φορά</value>
   </data>
   <data name="comboBoxSection.Items6" xml:space="preserve">
     <value>Registry\Current User\Run</value>
   </data>
   <data name="comboBoxSection.Items7" xml:space="preserve">
-    <value>Registry\Current User\Run Once</value>
+    <value>Registry\Current User\Run μια φορά</value>
   </data>
   <data name="comboBoxSection.Items8" xml:space="preserve">
-    <value>Registry\Current User\Run Services</value>
+    <value>Registry\Current User\Run υπηρεσίες</value>
   </data>
   <data name="comboBoxSection.Items9" xml:space="preserve">
-    <value>Registry\Current User\Run Services Once</value>
+    <value>Registry\Current υπηρεσίες User\Run μια φορά</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Νέα στοιχείο εκτέλεσης</value>
+    <value>Νέο στοιχείο εκτέλεσης</value>
   </data>
 </root>

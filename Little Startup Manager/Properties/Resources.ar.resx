@@ -121,24 +121,24 @@
     <value>برنامج آخر ويبدو أن إدارة بالفعل...</value>
   </data>
   <data name="smCannotFindFile" xml:space="preserve">
-    <value>الملف لا يمكن العثور على</value>
+    <value>تعذر العثور على الملف</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
-    <value>الاختصار / اسم القيمة لا يمكن أن تكون فارغة</value>
+    <value>يتعذر أن يكون اسم الاختصار/قيمة فارغة</value>
   </data>
   <data name="smEmptyPath" xml:space="preserve">
-    <value>مسار الملف لا يمكن أن تكون فارغة</value>
+    <value>لا يمكن أن يكون مسار الملف فارغ</value>
   </data>
   <data name="smRan" xml:space="preserve">
     <value>حاول تشغيل:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>هل أنت متأكد من أنك تريد إزالة هذا البرنامج بدء التشغيل?</value>
+    <value>¿هل أنت متأكد من أنك تريد إزالة هذا البرنامج بدء التشغيل?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
-    <value>إزالة مختارة بدء البرنامج</value>
+    <value>إزالة برنامج بدء التشغيل المحددة</value>
   </data>
   <data name="smRun" xml:space="preserve">
-    <value>هل أنت متأكد من أنك تريد تشغيل هذا البرنامج?</value>
+    <value>¿هل أنت متأكد من أنك تريد تشغيل هذا البرنامج?</value>
   </data>
 </root>

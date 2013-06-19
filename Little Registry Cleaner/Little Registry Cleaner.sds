@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<desktop scan="68" scanned="20111229153457" built="20120410211102" lang="zh" pane="TLogPane" col="1" row="1.ProductName">
+<desktop scan="74" scanned="20130618223813" built="20130618232505" lang="zh" pane="TLogPane" col="3" row="Forms.AutoUpdaterDotNET.DownloadUpdateDialog.Text">
   <language id="ar" autoime="0" autokeyboard="0"/>
   <language id="zh" autoime="0" autokeyboard="0"/>
   <language id="zh.tra" autoime="0" autokeyboard="0"/>
@@ -22,13 +22,12 @@
   <language id="tr" autoime="0" autokeyboard="0"/>
   <language id="vi" autoime="0" autokeyboard="0"/>
   <triggers>
-    <item class="TRemoveUnusedItemsTrigger" position="7"/>
-    <item class="TValidateTrigger" position="4"/>
+    <item class="TValidateTrigger" position="3"/>
   </triggers>
   <sheet>
     <columns>
       <item class="TFlagsColumn" width="38"/>
-      <item class="TPathColumn" width="151"/>
+      <item class="TPathColumn" width="150"/>
       <item class="TTranslationStatusColumn" width="93"/>
       <item class="TOriginalColumn" width="43"/>
       <item class="TTranslationColumn" lang="es" width="43"/>
@@ -39,19 +38,19 @@
       <item class="TTranslationColumn" lang="el" width="43"/>
       <item class="TTranslationColumn" lang="ar" width="43"/>
       <item class="TTranslationColumn" lang="sv-SE" width="43"/>
-      <item class="TTranslationColumn" lang="zh" width="43"/>
-      <item class="TTranslationColumn" lang="zh.tra" width="43"/>
-      <item class="TTranslationColumn" lang="ja" width="43"/>
-      <item class="TTranslationColumn" lang="vi" width="43"/>
-      <item class="TTranslationColumn" lang="th" width="43"/>
-      <item class="TTranslationColumn" lang="pl" width="43"/>
-      <item class="TTranslationColumn" lang="it" width="43"/>
-      <item class="TTranslationColumn" lang="en" width="43"/>
-      <item class="TTranslationColumn" lang="hu" width="43"/>
-      <item class="TTranslationColumn" lang="fr" width="43"/>
-      <item class="TTranslationColumn" lang="tr" width="43"/>
-      <item class="TTranslationColumn" lang="lt" width="43"/>
-      <item class="TTranslationColumn" lang="fa" width="22"/>
+      <item class="TTranslationColumn" lang="zh" width="98"/>
+      <item class="TTranslationColumn" lang="zh.tra" width="37"/>
+      <item class="TTranslationColumn" lang="ja" width="37"/>
+      <item class="TTranslationColumn" lang="vi" width="37"/>
+      <item class="TTranslationColumn" lang="th" width="37"/>
+      <item class="TTranslationColumn" lang="pl" width="37"/>
+      <item class="TTranslationColumn" lang="it" width="37"/>
+      <item class="TTranslationColumn" lang="en" width="37"/>
+      <item class="TTranslationColumn" lang="hu" width="37"/>
+      <item class="TTranslationColumn" lang="fr" width="37"/>
+      <item class="TTranslationColumn" lang="tr" width="37"/>
+      <item class="TTranslationColumn" lang="lt" width="37"/>
+      <item class="TTranslationColumn" lang="fa" width="29"/>
     </columns>
     <params processall="1" origin="soEntireScope">
       <findtext>polices</findtext>
@@ -64,10 +63,10 @@
       <findtext>lokaliz</findtext>
     </params>
   </sheet>
+  <view node="TNetFormNode" view="TFormEditor"/>
   <path>
     <item>All</item>
-    <item>..\Little Startup Manager\Little Startup Manager.csproj</item>
-    <item>Versions</item>
+    <item>AutoUpdater.NET\AutoUpdater.NET.csproj</item>
   </path>
   <exchange method="exmImportFile" options="[eoSetup,eoSpellChecker,eoLanguages]" author="Nick H." description="Little registry cleaner" packagename="Little registry cleanerRu" showpackage="0">
   </exchange>

@@ -126,51 +126,51 @@
     <value>OK</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Argumentumok:</value>
+    <value>Érvek:</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Útvonal:</value>
+    <value>Fájl elérési útja:</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Név:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Név és útvonal</value>
+    <value>Nevét és elérési útját</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>Szekció:</value>
+    <value>Szakasz:</value>
   </data>
   <data name="comboBoxSection.Items" xml:space="preserve">
-    <value>StartUp\All Users</value>
+    <value>StartUp\All felhasználók</value>
   </data>
   <data name="comboBoxSection.Items1" xml:space="preserve">
-    <value>StartUp\Current User</value>
+    <value>StartUp\Current-felhasználó</value>
   </data>
   <data name="comboBoxSection.Items2" xml:space="preserve">
-    <value>Rendszerleíró adatbázis\All Users\Run</value>
+    <value>Registry\All Users\Run</value>
   </data>
   <data name="comboBoxSection.Items3" xml:space="preserve">
-    <value>Rendszerleíró adatbázis\All Users\Run Egyszer</value>
+    <value>Registry\All Users\Run egyszer</value>
   </data>
   <data name="comboBoxSection.Items4" xml:space="preserve">
-    <value>Rendszerleíró adatbázis\All Users\Run Szolgáltatások</value>
+    <value>Registry\All Users\Run szolgáltatások</value>
   </data>
   <data name="comboBoxSection.Items5" xml:space="preserve">
-    <value>Rendszerleíró adatbázis\All Users\Run Services Egyszer</value>
+    <value>Egyszer a Registry\All Users\Run szolgáltatások</value>
   </data>
   <data name="comboBoxSection.Items6" xml:space="preserve">
-    <value>Rendszerleíró adatbázis\Current User\Run</value>
+    <value>Registry\Current User\Run</value>
   </data>
   <data name="comboBoxSection.Items7" xml:space="preserve">
-    <value>Rendszerleíró adatbázis\Current User\Run Egyszer</value>
+    <value>Registry\Current User\Run egyszer</value>
   </data>
   <data name="comboBoxSection.Items8" xml:space="preserve">
-    <value>Rendszerleíró adatbázis\Current User\Run Szolgáltatások</value>
+    <value>Registry\Current User\Run szolgáltatások</value>
   </data>
   <data name="comboBoxSection.Items9" xml:space="preserve">
-    <value>Rendszerleíró adatbázis\Current User\Run Services Egyszer</value>
+    <value>Egyszer a Registry\Current User\Run szolgáltatások</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Új futtatható tárgy</value>
+    <value>Új fuss cikk</value>
   </data>
 </root>

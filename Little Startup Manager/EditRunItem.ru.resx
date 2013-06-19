@@ -123,21 +123,18 @@
     <value>Отмена</value>
   </data>
   <data name="buttonOk.Text" xml:space="preserve">
-    <value>ОК</value>
-  </data>
-  <data name="buttonBrowse.Text" xml:space="preserve">
-    <value>…</value>
+    <value>OK</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Параметры:</value>
+    <value>Аргументы:</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Файл:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Изменить элемент автозагрузки</value>
+    <value>Редактировать запись запуска</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Редактирование элемента автозагрузки</value>
+    <value>Редактировать запуска элемент</value>
   </data>
 </root>

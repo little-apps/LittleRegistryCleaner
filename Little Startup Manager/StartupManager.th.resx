@@ -112,28 +112,25 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="treeColumn1.Header" xml:space="preserve">
-    <value>ส่วนที่</value>
+    <value>ส่วน</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="treeColumn2.Header" xml:space="preserve">
-    <value>ทางเดิน</value>
+    <value>เส้นทาง</value>
   </data>
   <data name="treeColumn3.Header" xml:space="preserve">
-    <value>การขัดแย้ง</value>
+    <value>อาร์กิวเมนต์</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="UTF-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="treeViewAdv1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,717" /&gt;&lt;Rows Styles="Percent,100.1" /&gt;&lt;/TableLayoutSettings&gt;</value>
-  </data>
-  <data name="toolStripContainer1.Text" xml:space="preserve">
-    <value>toolStripContainer1</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="treeViewAdv1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,717" /&gt;&lt;Rows Styles="Percent,100.1" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="toolStripButtonAdd.Text" xml:space="preserve">
     <value>เพิ่ม</value>
@@ -145,15 +142,15 @@
     <value>ลบ</value>
   </data>
   <data name="toolStripButtonView.Text" xml:space="preserve">
-    <value>รายการดู</value>
+    <value>ดูสินค้า</value>
   </data>
   <data name="toolStripButtonRun.Text" xml:space="preserve">
-    <value>วิ่ง</value>
+    <value>รัน</value>
   </data>
   <data name="toolStripButtonRefresh.Text" xml:space="preserve">
     <value>รีเฟรช</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>ผู้จัดการการเริ่มต้นเล็ก ๆ น้อย ๆ</value>
+    <value>ผู้จัดการเริ่มต้นน้อย</value>
   </data>
 </root>

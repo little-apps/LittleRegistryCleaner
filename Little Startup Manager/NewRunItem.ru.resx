@@ -123,13 +123,10 @@
     <value>Отмена</value>
   </data>
   <data name="buttonOk.Text" xml:space="preserve">
-    <value>ОК</value>
+    <value>OK</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Параметры:</value>
-  </data>
-  <data name="buttonFileDlg.Text" xml:space="preserve">
-    <value>…</value>
+    <value>Аргументы:</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Путь к файлу:</value>
@@ -138,42 +135,42 @@
     <value>Имя:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Имя и путь</value>
+    <value>Путь и имя</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>Раздел:</value>
+    <value>Секция:</value>
   </data>
   <data name="comboBoxSection.Items" xml:space="preserve">
-    <value>StartUp\All Users</value>
+    <value>StartUp\All пользователей</value>
   </data>
   <data name="comboBoxSection.Items1" xml:space="preserve">
-    <value>StartUp\Current User</value>
+    <value>StartUp\Current пользователя</value>
   </data>
   <data name="comboBoxSection.Items2" xml:space="preserve">
     <value>Registry\All Users\Run</value>
   </data>
   <data name="comboBoxSection.Items3" xml:space="preserve">
-    <value>Registry\All Users\Run Once</value>
+    <value>Registry\All Users\Run раз</value>
   </data>
   <data name="comboBoxSection.Items4" xml:space="preserve">
-    <value>Registry\All Users\Run Services</value>
+    <value>Registry\All Users\Run услуги</value>
   </data>
   <data name="comboBoxSection.Items5" xml:space="preserve">
-    <value>Registry\All Users\Run Services Once</value>
+    <value>Registry\All Users\Run услуги раз</value>
   </data>
   <data name="comboBoxSection.Items6" xml:space="preserve">
     <value>Registry\Current User\Run</value>
   </data>
   <data name="comboBoxSection.Items7" xml:space="preserve">
-    <value>Registry\Current User\Run Once</value>
+    <value>Registry\Current User\Run раз</value>
   </data>
   <data name="comboBoxSection.Items8" xml:space="preserve">
-    <value>Registry\Current User\Run Services</value>
+    <value>Registry\Current User\Run услуги</value>
   </data>
   <data name="comboBoxSection.Items9" xml:space="preserve">
-    <value>Registry\Current User\Run Services Once</value>
+    <value>Registry\Current User\Run услуги раз</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Создание элемента автозагрузки</value>
+    <value>Новый запуска элемент</value>
   </data>
 </root>

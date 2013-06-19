@@ -124,21 +124,21 @@
     <value>O arquivo não pôde ser encontrado</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
-    <value>Nome do Atalho/Valor não pode estar vazio</value>
+    <value>Nome do atalho/valor não pode ser vazio</value>
   </data>
   <data name="smEmptyPath" xml:space="preserve">
-    <value>Caminho do arquivo não pode estar vazio</value>
+    <value>Caminho do arquivo não pode ser vazio</value>
   </data>
   <data name="smRan" xml:space="preserve">
-    <value>Tentativa de executar:</value>
+    <value>Tentou executar:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>Tem certeza de que deseja remover este programa de inicialização?</value>
+    <value>¿Tem certeza que deseja remover este programa de inicialização?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
-    <value>Removido programa de inicialização selecionado</value>
+    <value>Removido o programa de inicialização selecionado</value>
   </data>
   <data name="smRun" xml:space="preserve">
-    <value>Tem certeza de que deseja executar este programa?</value>
+    <value>¿Tem certeza que deseja executar esse programa?</value>
   </data>
 </root>

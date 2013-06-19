@@ -112,45 +112,45 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="treeColumn1.Header" xml:space="preserve">
-    <value>項</value>
+    <value>セクション</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="treeColumn2.Header" xml:space="preserve">
-    <value>道</value>
+    <value>パス</value>
   </data>
   <data name="treeColumn3.Header" xml:space="preserve">
     <value>引数</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="UTF-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="treeViewAdv1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,717" /&gt;&lt;Rows Styles="Percent,100.1" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="treeViewAdv1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,717" /&gt;&lt;Rows Styles="Percent,100.1" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="toolStripButtonAdd.Text" xml:space="preserve">
-    <value>追加する</value>
+    <value>追加</value>
   </data>
   <data name="toolStripButtonEdit.Text" xml:space="preserve">
-    <value>[編集]</value>
+    <value>編集</value>
   </data>
   <data name="toolStripButtonDelete.Text" xml:space="preserve">
-    <value>削除する</value>
+    <value>削除</value>
   </data>
   <data name="toolStripButtonView.Text" xml:space="preserve">
-    <value>プロフィールアイテム</value>
+    <value>アイテムの表示</value>
   </data>
   <data name="toolStripButtonRun.Text" xml:space="preserve">
-    <value>走る</value>
+    <value>実行</value>
   </data>
   <data name="toolStripButtonRefresh.Text" xml:space="preserve">
-    <value>リフレッシュ</value>
+    <value>更新</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>リトルスタートアップマネージャ</value>
+    <value>小さなスタート アップ マネージャー</value>
   </data>
 </root>

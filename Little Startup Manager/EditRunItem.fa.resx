@@ -126,16 +126,16 @@
     <value>قبول</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>استدلال ها:</value>
+    <value>استدلال:</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>پرونده:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>ویرایش ورودی های راه اندازی</value>
+    <value>ویرایش ورودی راه اندازی</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>ویرایش آیتم های اجرایی</value>
+    <value>ویرایش مورد اجرا</value>
   </data>
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>Yes</value>

@@ -132,9 +132,9 @@
     <value>ファイル:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>[編集]スタートアップのエントリ</value>
+    <value>スタートアップ エントリを編集します。</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>[編集]を実行アイテム</value>
+    <value>実行アイテムを編集します。</value>
   </data>
 </root>

@@ -126,15 +126,15 @@
     <value>OK</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Argumentumok:</value>
+    <value>Érvek:</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Fájl:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Indítás fejlegyzés szerkesztése</value>
+    <value>Indítási bejegyzés szerkesztése</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Futtatható tárgy szerkesztése</value>
+    <value>Fuss elem szerkesztése</value>
   </data>
 </root>

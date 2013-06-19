@@ -121,24 +121,24 @@
     <value>โปรแกรมอื่นน่าจะทำงานแล้ว...</value>
   </data>
   <data name="smCannotFindFile" xml:space="preserve">
-    <value>ไฟล์ไม่พบ</value>
+    <value>ไม่พบแฟ้ม</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
-    <value>ทางลัด / ชื่อ Value ไม่ว่างเปล่า</value>
+    <value>ชื่อทางลัด/ค่าต้องไม่ว่างเปล่า</value>
   </data>
   <data name="smEmptyPath" xml:space="preserve">
-    <value>เส้นทางของไฟล์ไม่สามารถว่างเปล่า</value>
+    <value>เส้นทางของแฟ้มต้องไม่ว่างเปล่า</value>
   </data>
   <data name="smRan" xml:space="preserve">
-    <value>พยายามใช้:</value>
+    <value>พยายามที่จะรัน:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>คุณแน่ใจหรือว่าต้องการลบโปรแกรมเริ่มต้นนี้?</value>
+    <value>¿คุณต้องการเอาโปรแกรมเริ่มต้นนี้แน่ใจหรือไม่?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
-    <value>โปรแกรม startup ลบที่เลือก</value>
+    <value>เอาโปรแกรมเริ่มต้นที่เลือก</value>
   </data>
   <data name="smRun" xml:space="preserve">
-    <value>คุณแน่ใจหรือว่าต้องการใช้โปรแกรมนี้?</value>
+    <value>¿คุณต้องการเรียกใช้โปรแกรมนี้แน่ใจหรือไม่?</value>
   </data>
 </root>

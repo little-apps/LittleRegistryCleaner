@@ -126,15 +126,15 @@
     <value>TAMAM</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Argümanlar:</value>
+    <value>Bağımsız değişkenler:</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Dosya:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Başlangıç Girişini Değiştir</value>
+    <value>Başlangıç girdisini Düzenle</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Çalışan Öğe Değiştir</value>
+    <value>Çalışma öğesi düzenleme</value>
   </data>
 </root>

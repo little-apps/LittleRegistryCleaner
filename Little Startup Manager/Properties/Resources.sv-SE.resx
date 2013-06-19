@@ -124,21 +124,21 @@
     <value>Filen kunde inte hittas</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
-    <value>Genvägen/värdenamnet kan inte vara tomt</value>
+    <value>Genvägen/värde namn kan inte vara tomt</value>
   </data>
   <data name="smEmptyPath" xml:space="preserve">
-    <value>Sökvägen kan inte vara tom</value>
+    <value>Sökvägen får inte vara tom</value>
   </data>
   <data name="smRan" xml:space="preserve">
-    <value>Försökte köra:</value>
+    <value>Har försökt att köra:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>Är du säker på att du vill ta bort detta startprogram?</value>
+    <value>¿Är du säker du vill ta bort denna Autostart-program?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
-    <value>Valt startprogram togs bort</value>
+    <value>Bort valda startprogram</value>
   </data>
   <data name="smRun" xml:space="preserve">
-    <value>Är du säker på att du vill köra programmet?</value>
+    <value>¿Är du säker du vill köra detta program?</value>
   </data>
 </root>

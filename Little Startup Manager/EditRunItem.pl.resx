@@ -126,15 +126,15 @@
     <value>OK</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Parametry:</value>
+    <value>Argumenty:</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Plik:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Edytuj wpis w sekcji uruchamiania systemu</value>
+    <value>Edytować wpis startowy</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Edytuj wpis w sekcji uruchamiania</value>
+    <value>Edytuj element Uruchom</value>
   </data>
 </root>

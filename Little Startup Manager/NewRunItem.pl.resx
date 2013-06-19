@@ -126,10 +126,10 @@
     <value>OK</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Parametry:</value>
+    <value>Argumenty:</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Ścieżka:</value>
+    <value>Ścieżka do pliku:</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Nazwa:</value>
@@ -141,36 +141,36 @@
     <value>Sekcja:</value>
   </data>
   <data name="comboBoxSection.Items" xml:space="preserve">
-    <value>Uruchamianie\Wszyscy użytkownicy</value>
+    <value>StartUp\All użytkowników</value>
   </data>
   <data name="comboBoxSection.Items1" xml:space="preserve">
-    <value>Uruchamianie\Bieżący użytkownik</value>
+    <value>StartUp\Current użytkownika</value>
   </data>
   <data name="comboBoxSection.Items2" xml:space="preserve">
     <value>Registry\All Users\Run</value>
   </data>
   <data name="comboBoxSection.Items3" xml:space="preserve">
-    <value>Registry\All Users\Run Once</value>
+    <value>Registry\All Users\Run raz</value>
   </data>
   <data name="comboBoxSection.Items4" xml:space="preserve">
-    <value>Registry\All Users\Run Usługi</value>
+    <value>Registry\All Users\Run usługi</value>
   </data>
   <data name="comboBoxSection.Items5" xml:space="preserve">
-    <value>Registry\All Users\Run Usługi Po</value>
+    <value>Registry\All usług Users\Run raz</value>
   </data>
   <data name="comboBoxSection.Items6" xml:space="preserve">
     <value>Registry\Current User\Run</value>
   </data>
   <data name="comboBoxSection.Items7" xml:space="preserve">
-    <value>Registry\Current User\Run Once</value>
+    <value>Registry\Current User\Run raz</value>
   </data>
   <data name="comboBoxSection.Items8" xml:space="preserve">
-    <value>Registry\Current User\Run Usługi</value>
+    <value>Registry\Current User\Run usługi</value>
   </data>
   <data name="comboBoxSection.Items9" xml:space="preserve">
-    <value>Registry\Current User\Run Usługi Po</value>
+    <value>Registry\Current usług User\Run raz</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Nowy element uruchamiania systemu</value>
+    <value>Nowy element Uruchom</value>
   </data>
 </root>

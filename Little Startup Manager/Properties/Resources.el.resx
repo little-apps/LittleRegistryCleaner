@@ -121,24 +121,24 @@
     <value>Ένα άλλο πρόγραμμα, φαίνεται να είναι σε ήδη σε λειτούργια...</value>
   </data>
   <data name="smCannotFindFile" xml:space="preserve">
-    <value>Το αρχείο δεν μπορούσε να βρεθεί</value>
+    <value>Το αρχείο δεν βρέθηκε</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
-    <value>Η συντόμευση/τιμή δεν μπορεί να είναι κενή</value>
+    <value>Συντόμευση/αξία όνομα δεν μπορεί να είναι κενό</value>
   </data>
   <data name="smEmptyPath" xml:space="preserve">
-    <value>Η διαδρομή αρχείου δεν μπορεί να είναι κενή</value>
+    <value>Διαδρομή αρχείου δεν μπορεί να είναι κενό</value>
   </data>
   <data name="smRan" xml:space="preserve">
-    <value>Προσπάθησε να τρέξει:</value>
+    <value>Επιχείρησε να:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>Είστε σίγουροι ότι θέλετε να καταργήσετε αυτό το πρόγραμμα εκκίνησης?</value>
+    <value>¿Είστε βέβαιοι ότι θέλετε να καταργήσετε αυτό το πρόγραμμα εκκίνησης?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
-    <value>Αφαιρέθηκε επιλεγμένο πρόγραμμα εκκίνησης</value>
+    <value>Αφαιρεθεί το πρόγραμμα εκκίνησης επιλεγμένο</value>
   </data>
   <data name="smRun" xml:space="preserve">
-    <value>Είστε σίγουροι ότι θέλετε να εκτελέσετε αυτό το πρόγραμμα?</value>
+    <value>¿Είστε βέβαιοι ότι θέλετε να εκτελέσετε αυτό το πρόγραμμα?</value>
   </data>
 </root>

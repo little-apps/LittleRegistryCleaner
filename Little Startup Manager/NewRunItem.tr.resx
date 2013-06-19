@@ -126,51 +126,51 @@
     <value>TAMAM</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Argümanlar:</value>
+    <value>Bağımsız değişkenler:</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Dosya yolu:</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Ad:</value>
+    <value>Adı:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Adı ve Yol</value>
+    <value>Adı ve yolu</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>Bölüm:</value>
   </data>
   <data name="comboBoxSection.Items" xml:space="preserve">
-    <value>StartUp\All Users</value>
+    <value>StartUp\All kullanıcılar</value>
   </data>
   <data name="comboBoxSection.Items1" xml:space="preserve">
-    <value>StartUp\Current User</value>
+    <value>StartUp\Current kullanıcı</value>
   </data>
   <data name="comboBoxSection.Items2" xml:space="preserve">
     <value>Registry\All Users\Run</value>
   </data>
   <data name="comboBoxSection.Items3" xml:space="preserve">
-    <value>Registry\All Users\Run Once</value>
+    <value>Registry\All Users\Run bir kez</value>
   </data>
   <data name="comboBoxSection.Items4" xml:space="preserve">
-    <value>Registry\All Users\Run Services</value>
+    <value>Registry\All Users\Run Hizmetleri</value>
   </data>
   <data name="comboBoxSection.Items5" xml:space="preserve">
-    <value>Registry\All Users\Run Services Once</value>
+    <value>Registry\All Users\Run Hizmetleri kez</value>
   </data>
   <data name="comboBoxSection.Items6" xml:space="preserve">
     <value>Registry\Current User\Run</value>
   </data>
   <data name="comboBoxSection.Items7" xml:space="preserve">
-    <value>Registry\Current User\Run Once</value>
+    <value>Registry\Current User\Run bir kez</value>
   </data>
   <data name="comboBoxSection.Items8" xml:space="preserve">
-    <value>Registry\Current User\Run Services</value>
+    <value>Registry\Current User\Run Hizmetleri</value>
   </data>
   <data name="comboBoxSection.Items9" xml:space="preserve">
-    <value>Registry\Current User\Run Services Once</value>
+    <value>Registry\Current User\Run Hizmetleri kez</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Yeni Öğe Çalıştır</value>
+    <value>Yeni çalışma öğesi</value>
   </data>
 </root>

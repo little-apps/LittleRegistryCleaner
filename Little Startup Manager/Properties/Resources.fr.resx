@@ -121,24 +121,24 @@
     <value>Un autre programme semble être déjà en cours d'exécution...</value>
   </data>
   <data name="smCannotFindFile" xml:space="preserve">
-    <value>Le fichier n'a pas pu être trouvé</value>
+    <value>Le fichier est introuvable</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
-    <value>Le nom du raccourci/valeur ne peut pas être vide</value>
+    <value>Nom du raccourci/valeur ne peut pas être vide</value>
   </data>
   <data name="smEmptyPath" xml:space="preserve">
-    <value>Chemin d'accès du fichier ne peut pas être vide</value>
+    <value>Chemin d'accès ne peut pas être vide</value>
   </data>
   <data name="smRan" xml:space="preserve">
-    <value>Tentative d'exécution:</value>
+    <value>A tenté d'exécuter:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>Êtes-vous sûr de que vouloir supprimer ce programme du démarrage?</value>
+    <value>¿Êtes-vous sûr de que vouloir supprimer ce programme de démarrage?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
-    <value>Programme sélectionné retiré du démarrage</value>
+    <value>Supprimé le programme de démarrage sélectionné</value>
   </data>
   <data name="smRun" xml:space="preserve">
-    <value>Êtes-vous sûr de vouloir exécuter ce programme?</value>
+    <value>¿Êtes-vous certain de que vouloir exécuter ce programme?</value>
   </data>
 </root>

@@ -124,21 +124,21 @@
     <value>Failas nerastas</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
-    <value>Nuorodos pavadinimas negali būti tuščias</value>
+    <value>Nuoroda/vertės pavadinimas negali būti tuščias</value>
   </data>
   <data name="smEmptyPath" xml:space="preserve">
-    <value>Kelias iki failo negali būti tuščias</value>
+    <value>Failo maršrutas negali būti tuščias</value>
   </data>
   <data name="smRan" xml:space="preserve">
     <value>Bandė paleisti:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>Ar tikrai norite pašalinti šia programa iš automatiškai paleidžiamu programų sąrašo?</value>
+    <value>¿Ar tikrai norite pašalinti šį Paleistis programa?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
-    <value>Pasirinkti automatinio paleidimo elementai pašalinti</value>
+    <value>Pašalinti pasirinktus Paleistis programa</value>
   </data>
   <data name="smRun" xml:space="preserve">
-    <value>Ar tikrai norite paleisti šią programą?</value>
+    <value>¿Ar tikrai norite paleisti šią programą?</value>
   </data>
 </root>

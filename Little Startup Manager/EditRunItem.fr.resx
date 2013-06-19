@@ -132,9 +132,9 @@
     <value>Fichier:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Modifier élément de démarrage</value>
+    <value>Modifier l'entrée de démarrage</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Modifier élément d'exécution</value>
+    <value>Modifier l'article exécution</value>
   </data>
 </root>

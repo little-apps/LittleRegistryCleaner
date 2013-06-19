@@ -121,19 +121,19 @@
     <value>Otro programa parece estar ejecutándose...</value>
   </data>
   <data name="smCannotFindFile" xml:space="preserve">
-    <value>No se encontró el archivo</value>
+    <value>No se pudo encontrar el archivo</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
-    <value>El nombre de método abreviado/valor no puede estar vacío</value>
+    <value>Nombre del acceso directo/valor no puede estar vacío</value>
   </data>
   <data name="smEmptyPath" xml:space="preserve">
-    <value>La ruta del archivo no puede estar vacía</value>
+    <value>Ruta del archivo no puede estar vacía</value>
   </data>
   <data name="smRan" xml:space="preserve">
-    <value>Ha intentado ejecutar:</value>
+    <value>Trató de correr:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>¿Está seguro de que desea quitar este programa de inicio?</value>
+    <value>¿Está seguro que desea eliminar este programa Inicio?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
     <value>Programa de inicio seleccionado eliminado</value>

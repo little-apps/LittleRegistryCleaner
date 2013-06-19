@@ -126,51 +126,51 @@
     <value>GERAI</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Parametrai:</value>
+    <value>Argumentai:</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Kelias iki failo:</value>
+    <value>Failo maršrutas:</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Vardas:</value>
+    <value>Vardas, pavadinimas:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Vardas ir kelias</value>
+    <value>Pavadinimą ir maršrutą</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>Skyrius:</value>
+    <value>Skyriuje:</value>
   </data>
   <data name="comboBoxSection.Items" xml:space="preserve">
-    <value>Startup\Visi vartotojai</value>
+    <value>StartUp\All vartotojai</value>
   </data>
   <data name="comboBoxSection.Items1" xml:space="preserve">
-    <value>Startup\Dabartinis vartotojas</value>
+    <value>StartUp\Current vartotojo</value>
   </data>
   <data name="comboBoxSection.Items2" xml:space="preserve">
     <value>Registry\All Users\Run</value>
   </data>
   <data name="comboBoxSection.Items3" xml:space="preserve">
-    <value>Registry\All Users\Run Once</value>
+    <value>Registry\All Users\Run kai</value>
   </data>
   <data name="comboBoxSection.Items4" xml:space="preserve">
-    <value>Registry\All Users\Run Services</value>
+    <value>Registry\All Users\Run paslaugos</value>
   </data>
   <data name="comboBoxSection.Items5" xml:space="preserve">
-    <value>Registry\All Users\Run Paslaugos Kartą</value>
+    <value>Registry\All Users\Run paslaugų vieną kartą</value>
   </data>
   <data name="comboBoxSection.Items6" xml:space="preserve">
-    <value>Registry\Vartotojas\Run</value>
+    <value>Registry\Current User\Run</value>
   </data>
   <data name="comboBoxSection.Items7" xml:space="preserve">
-    <value>Registry\Vartotojas\Run Kartą</value>
+    <value>Registry\Current User\Run kai</value>
   </data>
   <data name="comboBoxSection.Items8" xml:space="preserve">
-    <value>Registry\Vartotojas\Run Services</value>
+    <value>Registry\Current User\Run paslaugos</value>
   </data>
   <data name="comboBoxSection.Items9" xml:space="preserve">
-    <value>Registry\Vartotojas\Run Paslaugos Kartą</value>
+    <value>Registry\Current User\Run paslaugų vieną kartą</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Sukurti naujas automatinio paleidimo elementą</value>
+    <value>Naujas paleisti poskyris</value>
   </data>
 </root>

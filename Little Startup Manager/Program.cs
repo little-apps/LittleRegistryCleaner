@@ -55,8 +55,15 @@ namespace Little_Startup_Manager
 
                         if (Int32.TryParse(arg.Remove(0, @"/culture:".Length), out lcid))
                         {
-                            Properties.Resources.Culture = Thread.CurrentThread.CurrentUICulture = Application.CurrentCulture = new CultureInfo(lcid);
-                             
+                            CultureInfo ci = new CultureInfo(lcid);
+                            Properties.Resources.Culture = Thread.CurrentThread.CurrentUICulture = ci;
+
+                            if (ci.Name == "zh-CHS")
+                                Application.CurrentCulture = new CultureInfo(0x0804); // zh-CN Chinese (People's Republic of China)
+                            else if (ci.Name == "zh-CHT")
+                                Application.CurrentCulture = new CultureInfo(0x0404); // zh-TW Chinese (Taiwan)
+                            else
+                                Application.CurrentCulture = CultureInfo.CreateSpecificCulture(ci.Name);
                         }
                         
                     }

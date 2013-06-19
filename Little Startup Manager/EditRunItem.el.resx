@@ -132,9 +132,9 @@
     <value>Αρχείο:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Επεξεργασία καταχώρησης εκκίνησης(Startup)</value>
+    <value>Επεξεργαστείτε την καταχώρηση εκκίνησης</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Επεξεργασία στοιχείου εκκινησης</value>
+    <value>Επεξεργασία εκτέλεσης στοιχείου</value>
   </data>
 </root>

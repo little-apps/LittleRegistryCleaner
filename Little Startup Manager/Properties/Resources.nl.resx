@@ -124,21 +124,21 @@
     <value>Het bestand kan niet worden gevonden</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
-    <value>Shortcut / Waarde naam mag niet leeg zijn</value>
+    <value>De naam van snelkoppeling/waarde kan niet leeg</value>
   </data>
   <data name="smEmptyPath" xml:space="preserve">
-    <value>Bestand pad kan niet leeg zijn</value>
+    <value>Bestandspad mag niet leeg zijn</value>
   </data>
   <data name="smRan" xml:space="preserve">
-    <value>Geprobeerd te starten:</value>
+    <value>Probeerde uit te voeren:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>Weet u zeker dat u dit programma wilt verwijderen?</value>
+    <value>¿Weet u zeker dat u wilt verwijderen van dit opstartprogramma?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
-    <value>Geselecteerde opstart-programma verwijderd</value>
+    <value>Geselecteerde opstartprogramma verwijderd</value>
   </data>
   <data name="smRun" xml:space="preserve">
-    <value>Weet u zeker dat u dit programma wilt starten?</value>
+    <value>¿Weet u zeker dat u wilt uitvoeren van dit programma?</value>
   </data>
 </root>

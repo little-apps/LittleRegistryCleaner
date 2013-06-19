@@ -121,24 +121,24 @@
     <value>Un altro programma sembra essere già in esecuzione...</value>
   </data>
   <data name="smCannotFindFile" xml:space="preserve">
-    <value>Impossibile trovare il file</value>
+    <value>Il file potrebbe non essere trovato</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
-    <value>Il campo scorciatoia/valore non può essere vuoto</value>
+    <value>Nome del collegamento/valore non può essere vuoto</value>
   </data>
   <data name="smEmptyPath" xml:space="preserve">
-    <value>Il percorso del file non può essere vuoto</value>
+    <value>Percorso del file non può essere vuoto</value>
   </data>
   <data name="smRan" xml:space="preserve">
-    <value>Tentativo di esecuzione:</value>
+    <value>Ha tentato di eseguire:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>Sei sicuro di voler rimuovere questo programma di avvio?</value>
+    <value>¿Sei sicuro di che voler rimuovere questo programma di avvio?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
-    <value>Programma di avvio selezionato rimosso</value>
+    <value>Rimosso il programma di avvio selezionato</value>
   </data>
   <data name="smRun" xml:space="preserve">
-    <value>Sei sicuro di voler eseguire il programma?</value>
+    <value>¿Sei sicuro che si desidera eseguire questo programma?</value>
   </data>
 </root>

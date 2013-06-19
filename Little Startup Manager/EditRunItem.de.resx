@@ -132,9 +132,9 @@
     <value>Datei:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Systemstart-Eintrag bearbeiten</value>
+    <value>Autostart-Eintrag bearbeiten</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Run-Eintrag bearbeiten</value>
+    <value>Laufen Objekt bearbeiten</value>
   </data>
 </root>

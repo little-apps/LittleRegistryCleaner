@@ -132,9 +132,9 @@
     <value>Bestand:</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Opstart-vermelding bewerken</value>
+    <value>Opstarten vermelding bewerken</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Run-object bewerken</value>
+    <value>Run Item bewerken</value>
   </data>
 </root>

@@ -112,25 +112,25 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="treeColumn1.Header" xml:space="preserve">
     <value>Phần</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="treeColumn2.Header" xml:space="preserve">
-    <value>Con đường</value>
+    <value>Đường dẫn</value>
   </data>
   <data name="treeColumn3.Header" xml:space="preserve">
     <value>Đối số</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="UTF-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="treeViewAdv1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,717" /&gt;&lt;Rows Styles="Percent,100.1" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="treeViewAdv1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,717" /&gt;&lt;Rows Styles="Percent,100.1" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <data name="toolStripButtonAdd.Text" xml:space="preserve">
     <value>Thêm</value>
@@ -139,10 +139,10 @@
     <value>Chỉnh sửa</value>
   </data>
   <data name="toolStripButtonDelete.Text" xml:space="preserve">
-    <value>Xoá</value>
+    <value>Xóa</value>
   </data>
   <data name="toolStripButtonView.Text" xml:space="preserve">
-    <value>Xem Mã</value>
+    <value>Xem mục</value>
   </data>
   <data name="toolStripButtonRun.Text" xml:space="preserve">
     <value>Chạy</value>
@@ -151,6 +151,6 @@
     <value>Làm mới</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Ít Startup Manager</value>
+    <value>Ít khởi động quản lý</value>
   </data>
 </root>

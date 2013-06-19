@@ -32,10 +32,9 @@ C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Litt
 C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Registry Cleaner\bin\Release\Little Uninstall Manager.exe.config
 C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Registry Cleaner\bin\Release\Little Uninstall Manager.exe
 C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Registry Cleaner\bin\Release\Little Uninstall Manager.pdb
-C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\obj\x86\Release\ResolveAssemblyReference.cache
 C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\obj\x86\Release\Little_Uninstall_Manager.Properties.Resources.resources
 C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\obj\x86\Release\Little_Uninstall_Manager.UninstallManager.resources
-C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\obj\x86\Release\GenerateResource.read.1.tlog
-C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\obj\x86\Release\GenerateResource.write.1.tlog
 C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\obj\x86\Release\Little Uninstall Manager.exe
 C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\obj\x86\Release\Little Uninstall Manager.pdb
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\obj\x86\Release\Little Uninstall Manager.csprojResolveAssemblyReference.cache
+C:\Users\Nick\Documents\Visual Studio 2010\Projects\Little Registry Cleaner\Little Registry Cleaner\Little Uninstall Manager\obj\x86\Release\Little Uninstall Manager.csproj.GenerateResource.Cache

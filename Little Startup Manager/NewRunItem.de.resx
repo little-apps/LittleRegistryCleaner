@@ -138,13 +138,13 @@
     <value>Name und Pfad</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>Sektion:</value>
+    <value>Abschnitt:</value>
   </data>
   <data name="comboBoxSection.Items" xml:space="preserve">
-    <value>StartUp\All-Benutzer</value>
+    <value>StartUp\All Benutzer</value>
   </data>
   <data name="comboBoxSection.Items1" xml:space="preserve">
-    <value>StartUp\Current-Benutzer</value>
+    <value>StartUp\Current Benutzer</value>
   </data>
   <data name="comboBoxSection.Items2" xml:space="preserve">
     <value>Registry\All Users\Run</value>
@@ -153,10 +153,10 @@
     <value>Registry\All Users\Run einmal</value>
   </data>
   <data name="comboBoxSection.Items4" xml:space="preserve">
-    <value>Registry\All Users\Run Services</value>
+    <value>Registry\All Users\Run Dienstleistungen</value>
   </data>
   <data name="comboBoxSection.Items5" xml:space="preserve">
-    <value>Registry\All Users\Run Services einmal</value>
+    <value>Registry\All Users\Run Dienstleistungen einmal</value>
   </data>
   <data name="comboBoxSection.Items6" xml:space="preserve">
     <value>Registry\Current User\Run</value>
@@ -165,12 +165,12 @@
     <value>Registry\Current User\Run einmal</value>
   </data>
   <data name="comboBoxSection.Items8" xml:space="preserve">
-    <value>Registry\Current User\Run Services</value>
+    <value>Registry\Current User\Run Dienstleistungen</value>
   </data>
   <data name="comboBoxSection.Items9" xml:space="preserve">
-    <value>Registry\Current User\Run Services einmal</value>
+    <value>Registry\Current User\Run Dienstleistungen einmal</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Neuer Run-Eintrag</value>
+    <value>Laufzeit Neuheit</value>
   </data>
 </root>

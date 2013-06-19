@@ -121,24 +121,24 @@
     <value>برنامه دیگری به نظر می رسد که در حال حاضر در حال اجراست...</value>
   </data>
   <data name="smCannotFindFile" xml:space="preserve">
-    <value>فایل مورد نظر پیدا نشد</value>
+    <value>پرونده یافت نشد</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
-    <value>میانبر یا نام مقدار نمی تواند خالی باشد</value>
+    <value>نام میانبر در مقدار نباید خالی باشد</value>
   </data>
   <data name="smEmptyPath" xml:space="preserve">
-    <value>مسیر فایل نمی تواند خالی باشد</value>
+    <value>مسیر پرونده نمی تواند خالی باشد</value>
   </data>
   <data name="smRan" xml:space="preserve">
     <value>اقدام به اجرا:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>آیا مطمئن هستید که می خواهید این برنامه راه اندازی را حذف کنید؟?</value>
+    <value>¿آیا مایل به حذف این برنامه راه اندازی شود؟?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
-    <value>حذف برنامه ی راه اندازی انتخاب شده</value>
+    <value>حذف برنامه راه اندازی انتخاب شده</value>
   </data>
   <data name="smRun" xml:space="preserve">
-    <value>آیا مطمئن هستید که می خواهید این برنامه را اجرا کنید؟?</value>
+    <value>¿آیا مطمئن هستید می خواهید این برنامه را اجرا کنید؟?</value>
   </data>
 </root>

@@ -126,7 +126,7 @@
     <value>موافق</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>الوسائط:</value>
+    <value>الحجج:</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>مسار الملف:</value>
@@ -138,40 +138,40 @@
     <value>اسم ومسار</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>المقطع:</value>
+    <value>قسم:</value>
   </data>
   <data name="comboBoxSection.Items" xml:space="preserve">
-    <value>مستخدمين StartUp\All</value>
+    <value>المستخدمين StartUp\All</value>
   </data>
   <data name="comboBoxSection.Items1" xml:space="preserve">
-    <value>User StartUp\Current</value>
+    <value>مستخدم StartUp\Current</value>
   </data>
   <data name="comboBoxSection.Items2" xml:space="preserve">
-    <value>Users\Run Registry\All</value>
+    <value>Registry\All Users\Run</value>
   </data>
   <data name="comboBoxSection.Items3" xml:space="preserve">
-    <value>Users\Run Registry\All مرة واحدة</value>
+    <value>Registry\All Users\Run مرة</value>
   </data>
   <data name="comboBoxSection.Items4" xml:space="preserve">
     <value>خدمات Users\Run Registry\All</value>
   </data>
   <data name="comboBoxSection.Items5" xml:space="preserve">
-    <value>Registry\All Users\Run خدمات مرة واحدة</value>
+    <value>خدمات Users\Run Registry\All مرة</value>
   </data>
   <data name="comboBoxSection.Items6" xml:space="preserve">
-    <value>User\Run Registry\Current</value>
+    <value>Registry\Current User\Run</value>
   </data>
   <data name="comboBoxSection.Items7" xml:space="preserve">
-    <value>User\Run Registry\Current مرة واحدة</value>
+    <value>Registry\Current User\Run مرة</value>
   </data>
   <data name="comboBoxSection.Items8" xml:space="preserve">
     <value>خدمات User\Run Registry\Current</value>
   </data>
   <data name="comboBoxSection.Items9" xml:space="preserve">
-    <value>Registry\Current User\Run خدمات مرة واحدة</value>
+    <value>خدمات User\Run Registry\Current مرة</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>عنصر تشغيل جديد</value>
+    <value>بند التشغيل الجديدة</value>
   </data>
   <data name="$this.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>Yes</value>

@@ -121,24 +121,24 @@
     <value>Inny program wydaje się być uruchomiony już...</value>
   </data>
   <data name="smCannotFindFile" xml:space="preserve">
-    <value>Plik nie może być uznana za</value>
+    <value>Nie można odnaleźć pliku</value>
   </data>
   <data name="smEmptyName" xml:space="preserve">
-    <value>Skrót / nazwa wartości nie może być puste</value>
+    <value>Wartości skrótu nazwy nie może być pusta</value>
   </data>
   <data name="smEmptyPath" xml:space="preserve">
-    <value>Ścieżka pliku nie może być pusta</value>
+    <value>Ścieżka nie może być pusta</value>
   </data>
   <data name="smRan" xml:space="preserve">
-    <value>Próbowano uruchomić:</value>
+    <value>Próbował uruchomić:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>Czy na pewno chcesz usunąć ten program startowy?</value>
+    <value>¿Czy na pewno chcesz usunąć ten podskoczyæ program?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
-    <value>Usunięto wybranego programu startowego</value>
+    <value>Usunąć wybrane starcie programu</value>
   </data>
   <data name="smRun" xml:space="preserve">
-    <value>Czy na pewno chcesz uruchomić ten program?</value>
+    <value>¿Czy na pewno chcesz uruchomić tego programu?</value>
   </data>
 </root>
