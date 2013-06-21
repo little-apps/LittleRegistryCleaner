@@ -133,7 +133,7 @@
     <value>Kísérlet-hoz fuss:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>¿Biztosan el szeretné távolítani a elkezd műsor?</value>
+    <value>Biztosan el szeretné távolítani a elkezd műsor?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
     <value>Eltávolítja a kijelölt indítási program</value>

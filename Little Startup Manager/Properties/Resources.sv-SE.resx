@@ -133,7 +133,7 @@
     <value>Har försökt att köra:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>¿Är du säker du vill ta bort denna Autostart-program?</value>
+    <value>Är du säker du vill ta bort denna Autostart-program?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
     <value>Bort valda startprogram</value>

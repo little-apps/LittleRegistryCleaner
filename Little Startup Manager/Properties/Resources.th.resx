@@ -133,7 +133,7 @@
     <value>พยายามที่จะรัน:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>¿คุณต้องการเอาโปรแกรมเริ่มต้นนี้แน่ใจหรือไม่?</value>
+    <value>คุณต้องการเอาโปรแกรมเริ่มต้นนี้แน่ใจหรือไม่?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
     <value>เอาโปรแกรมเริ่มต้นที่เลือก</value>

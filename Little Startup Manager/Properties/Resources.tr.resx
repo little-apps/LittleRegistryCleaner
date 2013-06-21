@@ -133,7 +133,7 @@
     <value>Çalıştırmak çalıştı:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>¿Bu başlatma programı kaldırmak istediğinizden emin misiniz?</value>
+    <value>Bu başlatma programı kaldırmak istediğinizden emin misiniz?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
     <value>Seçili başlangıç programı kaldırıldı</value>

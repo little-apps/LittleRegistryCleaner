@@ -133,7 +133,7 @@
     <value>Hat versucht, auszuführen:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>¿Sind Sie sicher, dass Sie dieses Startprogramm entfernen möchten?</value>
+    <value>Sind Sie sicher, dass Sie dieses Startprogramm entfernen möchten?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
     <value>Entfernt ausgewählte Start-Programm</value>

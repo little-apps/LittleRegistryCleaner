@@ -133,7 +133,7 @@
     <value>Ha tentato di eseguire:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>¿Sei sicuro di che voler rimuovere questo programma di avvio?</value>
+    <value>Sei sicuro di che voler rimuovere questo programma di avvio?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
     <value>Rimosso il programma di avvio selezionato</value>

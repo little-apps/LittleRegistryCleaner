@@ -117,6 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>オプション</value>
+  </data>
   <data name="listViewOptions.Items" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkMAwAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5MaXN0Vmlld0l0ZW0HAAAABFRleHQKSW1hZ2VJbmRleAlCYWNrQ29sb3IHQ2hlY2tlZARGb250CUZvcmVDb2xvchdVc2VJdGVtU3R5bGVGb3JTdWJJdGVtcwEABAAEBAAIFFN5c3RlbS5EcmF3aW5nLkNvbG9yAwAAAAETU3lzdGVtLkRyYXdpbmcuRm9udAMAAAAUU3lzdGVtLkRyYXdpbmcuQ29sb3IDAAAAAQIAAAAGBAAAACTljL/lkI3jga7kvb/nlKjntbHoqIjmg4XloLHjgpLpgIHkv6H/////Bfv///8UU3lzdGVtLkRyYXdpbmcuQ29sb3IEAAAABG5hbWUFdmFsdWUKa25vd25Db2xvcgVzdGF0ZQEAAAAJBwcDAAAACgAAAAAAAAAAGAABAAAJBgAAAAH5////+////woAAAAAAAAAABoAAQABBQYAAAATU3lzdGVtLkRyYXdpbmcuRm9udAQAAAAETmFtZQRTaXplBVN0eWxlBFVuaXQBAAQECxhTeXN0ZW0uRHJhd2luZy5Gb250U3R5bGUDAAAAG1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNzVW5pdAMAAAADAAAABggAAAAUTWljcm9zb2Z0IFNhbnMgU2VyaWYAAARBBff///8YU3lzdGVtLkRyYXdpbmcuRm9udFN0eWxlAQAAAAd2YWx1ZV9fAAgDAAAAAAAAAAX2////G1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNzVW5pdAEAAAAHdmFsdWVfXwAIAwAAAAMAAAAL</value>
   </data>
@@ -147,11 +152,6 @@
   <data name="listViewOptions.Items9" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkMAwAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5MaXN0Vmlld0l0ZW0HAAAABFRleHQKSW1hZ2VJbmRleAlCYWNrQ29sb3IHQ2hlY2tlZARGb250CUZvcmVDb2xvchdVc2VJdGVtU3R5bGVGb3JTdWJJdGVtcwEABAAEBAAIFFN5c3RlbS5EcmF3aW5nLkNvbG9yAwAAAAETU3lzdGVtLkRyYXdpbmcuRm9udAMAAAAUU3lzdGVtLkRyYXdpbmcuQ29sb3IDAAAAAQIAAAAGBAAAAEXjg6zjgrjjgrnjg4jjg6rjgpLkv67lvqnjgZfjgZ/lvozjgIHjg5fjg63jgrDjg6njg6DjgpLntYLkuobjgZfjgb7jgZn/////Bfv///8UU3lzdGVtLkRyYXdpbmcuQ29sb3IEAAAABG5hbWUFdmFsdWUKa25vd25Db2xvcgVzdGF0ZQEAAAAJBwcDAAAACgAAAAAAAAAAGAABAAAJBgAAAAH5////+////woAAAAAAAAAABoAAQABBQYAAAATU3lzdGVtLkRyYXdpbmcuRm9udAQAAAAETmFtZQRTaXplBVN0eWxlBFVuaXQBAAQECxhTeXN0ZW0uRHJhd2luZy5Gb250U3R5bGUDAAAAG1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNzVW5pdAMAAAADAAAABggAAAAUTWljcm9zb2Z0IFNhbnMgU2VyaWYAAARBBff///8YU3lzdGVtLkRyYXdpbmcuRm9udFN0eWxlAQAAAAd2YWx1ZV9fAAgDAAAAAAAAAAX2////G1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNzVW5pdAEAAAAHdmFsdWVfXwAIAwAAAAMAAAAL</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>オプション</value>
-  </data>
   <data name="buttonOK.Text" xml:space="preserve">
     <value>[OK]を</value>
   </data>
@@ -164,51 +164,15 @@
   <data name="groupBox2.Text" xml:space="preserve">
     <value>選択してバックアップのレジストリエントリを削除するためのフォルダ </value>
   </data>
-  <data name="buttonBrowse2.Text" xml:space="preserve">
-    <value>ブラウズ...</value>
-  </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>フォルダを選択し、ログを保存するファイル</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="tabPage1.Text" xml:space="preserve">
     <value>一般的な</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>右クリックし、追加/エントリを削除する</value>
-  </data>
-  <data name="columnHeader1.Text" xml:space="preserve">
-    <value>ファイルやフォルダを除外する</value>
-  </data>
-  <data name="addFileToolStripMenuItem.Text" xml:space="preserve">
-    <value>ファイルを追加する</value>
-  </data>
-  <data name="addFolderToolStripMenuItem.Text" xml:space="preserve">
-    <value>フォルダを追加する</value>
-  </data>
-  <data name="addRegistryPathToolStripMenuItem.Text" xml:space="preserve">
-    <value>レジストリのパスを追加する</value>
-  </data>
-  <data name="removeEntryToolStripMenuItem.Text" xml:space="preserve">
-    <value>エントリ削除</value>
   </data>
   <data name="tabPage2.Text" xml:space="preserve">
     <value>無視リスト</value>
   </data>
   <data name="groupBoxDesc.Text" xml:space="preserve">
     <value>説明</value>
-  </data>
-  <data name="radioButtonMonthly.Text" xml:space="preserve">
-    <value>毎月の</value>
-  </data>
-  <data name="radioButtonWeekly.Text" xml:space="preserve">
-    <value>週</value>
-  </data>
-  <data name="radioButtonDaily.Text" xml:space="preserve">
-    <value>毎日</value>
-  </data>
-  <data name="radioButtonNever.Text" xml:space="preserve">
-    <value>決してない</value>
   </data>
   <data name="groupBoxPerform.Text" xml:space="preserve">
     <value>実行</value>
@@ -344,6 +308,42 @@
   </data>
   <data name="tabPage3.Text" xml:space="preserve">
     <value>スケジューラ</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>フォルダを選択し、ログを保存するファイル</value>
+  </data>
+  <data name="buttonBrowse2.Text" xml:space="preserve">
+    <value>ブラウズ...</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>右クリックし、追加/エントリを削除する</value>
+  </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>ファイルやフォルダを除外する</value>
+  </data>
+  <data name="addFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>ファイルを追加する</value>
+  </data>
+  <data name="addFolderToolStripMenuItem.Text" xml:space="preserve">
+    <value>フォルダを追加する</value>
+  </data>
+  <data name="addRegistryPathToolStripMenuItem.Text" xml:space="preserve">
+    <value>レジストリのパスを追加する</value>
+  </data>
+  <data name="removeEntryToolStripMenuItem.Text" xml:space="preserve">
+    <value>エントリ削除</value>
+  </data>
+  <data name="radioButtonMonthly.Text" xml:space="preserve">
+    <value>毎月の</value>
+  </data>
+  <data name="radioButtonWeekly.Text" xml:space="preserve">
+    <value>週</value>
+  </data>
+  <data name="radioButtonDaily.Text" xml:space="preserve">
+    <value>毎日</value>
+  </data>
+  <data name="radioButtonNever.Text" xml:space="preserve">
+    <value>決してない</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>リトルRegistry Cleanerは、 - [オプション]</value>

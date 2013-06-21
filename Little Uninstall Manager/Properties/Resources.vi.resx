@@ -112,16 +112,16 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="programAlreadyRunning" xml:space="preserve">
-    <value>Một chương trình có vẻ là đã chạy...</value>
-  </data>
   <data name="umForceUninstall" xml:space="preserve">
     <value>Bạn có chắc bạn muốn loại bỏ chương trình này từ registry?</value>
+  </data>
+  <data name="programAlreadyRunning" xml:space="preserve">
+    <value>Một chương trình có vẻ là đã chạy...</value>
   </data>
   <data name="umSearchText" xml:space="preserve">
     <value>Tìm kiếm theo tên</value>

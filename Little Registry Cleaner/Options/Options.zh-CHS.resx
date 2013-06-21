@@ -117,6 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>选项</value>
+  </data>
   <data name="listViewOptions.Items" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkMAwAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5MaXN0Vmlld0l0ZW0HAAAABFRleHQKSW1hZ2VJbmRleAlCYWNrQ29sb3IHQ2hlY2tlZARGb250CUZvcmVDb2xvchdVc2VJdGVtU3R5bGVGb3JTdWJJdGVtcwEABAAEBAAIFFN5c3RlbS5EcmF3aW5nLkNvbG9yAwAAAAETU3lzdGVtLkRyYXdpbmcuRm9udAMAAAAUU3lzdGVtLkRyYXdpbmcuQ29sb3IDAAAAAQIAAAAGBAAAABjlj5HpgIHljL/lkI3kvb/nlKjnu5/orqH/////Bfv///8UU3lzdGVtLkRyYXdpbmcuQ29sb3IEAAAABG5hbWUFdmFsdWUKa25vd25Db2xvcgVzdGF0ZQEAAAAJBwcDAAAACgAAAAAAAAAAGAABAAAJBgAAAAH5////+////woAAAAAAAAAABoAAQABBQYAAAATU3lzdGVtLkRyYXdpbmcuRm9udAQAAAAETmFtZQRTaXplBVN0eWxlBFVuaXQBAAQECxhTeXN0ZW0uRHJhd2luZy5Gb250U3R5bGUDAAAAG1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNzVW5pdAMAAAADAAAABggAAAAUTWljcm9zb2Z0IFNhbnMgU2VyaWYAAARBBff///8YU3lzdGVtLkRyYXdpbmcuRm9udFN0eWxlAQAAAAd2YWx1ZV9fAAgDAAAAAAAAAAX2////G1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNzVW5pdAEAAAAHdmFsdWVfXwAIAwAAAAMAAAALAAADAAAACw==</value>
   </data>
@@ -147,11 +152,6 @@
   <data name="listViewOptions.Items9" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkMAwAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5MaXN0Vmlld0l0ZW0HAAAABFRleHQKSW1hZ2VJbmRleAlCYWNrQ29sb3IHQ2hlY2tlZARGb250CUZvcmVDb2xvchdVc2VJdGVtU3R5bGVGb3JTdWJJdGVtcwEABAAEBAAIFFN5c3RlbS5EcmF3aW5nLkNvbG9yAwAAAAETU3lzdGVtLkRyYXdpbmcuRm9udAMAAAAUU3lzdGVtLkRyYXdpbmcuQ29sb3IDAAAAAQIAAAAGBAAAAB7kv67lpI3ms6jlhozooajlkI7pgIDlh7rnqIvluo//////Bfv///8UU3lzdGVtLkRyYXdpbmcuQ29sb3IEAAAABG5hbWUFdmFsdWUKa25vd25Db2xvcgVzdGF0ZQEAAAAJBwcDAAAACgAAAAAAAAAAGAABAAAJBgAAAAH5////+////woAAAAAAAAAABoAAQABBQYAAAATU3lzdGVtLkRyYXdpbmcuRm9udAQAAAAETmFtZQRTaXplBVN0eWxlBFVuaXQBAAQECxhTeXN0ZW0uRHJhd2luZy5Gb250U3R5bGUDAAAAG1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNzVW5pdAMAAAADAAAABggAAAAUTWljcm9zb2Z0IFNhbnMgU2VyaWYAAARBBff///8YU3lzdGVtLkRyYXdpbmcuRm9udFN0eWxlAQAAAAd2YWx1ZV9fAAgDAAAAAAAAAAX2////G1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNzVW5pdAEAAAAHdmFsdWVfXwAIAwAAAAMAAAALAAADAAAACw==</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>选项</value>
-  </data>
   <data name="buttonOK.Text" xml:space="preserve">
     <value>确定</value>
   </data>
@@ -164,51 +164,15 @@
   <data name="groupBox2.Text" xml:space="preserve">
     <value>选择一个备份文件夹来备份删除的注册表项 </value>
   </data>
-  <data name="buttonBrowse2.Text" xml:space="preserve">
-    <value>浏览...</value>
-  </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>选择一个文件夹保存日志文件</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="tabPage1.Text" xml:space="preserve">
     <value>常规</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>点击右键新增/删除项目</value>
-  </data>
-  <data name="columnHeader1.Text" xml:space="preserve">
-    <value>须要排除的文件和文件夹</value>
-  </data>
-  <data name="addFileToolStripMenuItem.Text" xml:space="preserve">
-    <value>新增文件</value>
-  </data>
-  <data name="addFolderToolStripMenuItem.Text" xml:space="preserve">
-    <value>新增文件夹</value>
-  </data>
-  <data name="addRegistryPathToolStripMenuItem.Text" xml:space="preserve">
-    <value>新增注册表路径</value>
-  </data>
-  <data name="removeEntryToolStripMenuItem.Text" xml:space="preserve">
-    <value>删除项目</value>
   </data>
   <data name="tabPage2.Text" xml:space="preserve">
     <value>忽略列表</value>
   </data>
   <data name="groupBoxDesc.Text" xml:space="preserve">
     <value>说明</value>
-  </data>
-  <data name="radioButtonMonthly.Text" xml:space="preserve">
-    <value>每月</value>
-  </data>
-  <data name="radioButtonWeekly.Text" xml:space="preserve">
-    <value>每周</value>
-  </data>
-  <data name="radioButtonDaily.Text" xml:space="preserve">
-    <value>日报</value>
-  </data>
-  <data name="radioButtonNever.Text" xml:space="preserve">
-    <value>从未</value>
   </data>
   <data name="groupBoxPerform.Text" xml:space="preserve">
     <value>执行</value>
@@ -344,6 +308,42 @@
   </data>
   <data name="tabPage3.Text" xml:space="preserve">
     <value>调度</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>选择一个文件夹保存日志文件</value>
+  </data>
+  <data name="buttonBrowse2.Text" xml:space="preserve">
+    <value>浏览...</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>点击右键新增/删除项目</value>
+  </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>须要排除的文件和文件夹</value>
+  </data>
+  <data name="addFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>新增文件</value>
+  </data>
+  <data name="addFolderToolStripMenuItem.Text" xml:space="preserve">
+    <value>新增文件夹</value>
+  </data>
+  <data name="addRegistryPathToolStripMenuItem.Text" xml:space="preserve">
+    <value>新增注册表路径</value>
+  </data>
+  <data name="removeEntryToolStripMenuItem.Text" xml:space="preserve">
+    <value>删除项目</value>
+  </data>
+  <data name="radioButtonMonthly.Text" xml:space="preserve">
+    <value>每月</value>
+  </data>
+  <data name="radioButtonWeekly.Text" xml:space="preserve">
+    <value>每周</value>
+  </data>
+  <data name="radioButtonDaily.Text" xml:space="preserve">
+    <value>日报</value>
+  </data>
+  <data name="radioButtonNever.Text" xml:space="preserve">
+    <value>从未</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>迷你注册表清理器-选项</value>

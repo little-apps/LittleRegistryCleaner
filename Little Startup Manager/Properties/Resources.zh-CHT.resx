@@ -133,7 +133,7 @@
     <value>試圖運行:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>¿確實要刪除此啟動程式嗎?</value>
+    <value>確實要刪除此啟動程式嗎?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
     <value>刪除所選的啟動程式</value>

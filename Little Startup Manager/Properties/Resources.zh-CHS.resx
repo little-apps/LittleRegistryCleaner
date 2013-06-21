@@ -133,7 +133,7 @@
     <value>试图运行:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>¿确实要删除此启动程序吗?</value>
+    <value>确实要删除此启动程序吗?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
     <value>删除所选的启动程序</value>

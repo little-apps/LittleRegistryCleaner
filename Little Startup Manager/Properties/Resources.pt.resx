@@ -133,7 +133,7 @@
     <value>Tentou executar:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>¿Tem certeza que deseja remover este programa de inicialização?</value>
+    <value>Tem certeza que deseja remover este programa de inicialização?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
     <value>Removido o programa de inicialização selecionado</value>

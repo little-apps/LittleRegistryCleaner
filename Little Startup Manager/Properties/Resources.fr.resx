@@ -133,7 +133,7 @@
     <value>A tenté d'exécuter:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>¿Êtes-vous sûr de que vouloir supprimer ce programme de démarrage?</value>
+    <value>Êtes-vous sûr de que vouloir supprimer ce programme de démarrage?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
     <value>Supprimé le programme de démarrage sélectionné</value>

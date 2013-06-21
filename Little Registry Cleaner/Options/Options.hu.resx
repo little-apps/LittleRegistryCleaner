@@ -117,6 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Beállítások</value>
+  </data>
   <data name="listViewOptions.Items" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkMAwAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5MaXN0Vmlld0l0ZW0HAAAABFRleHQKSW1hZ2VJbmRleAlCYWNrQ29sb3IHQ2hlY2tlZARGb250CUZvcmVDb2xvchdVc2VJdGVtU3R5bGVGb3JTdWJJdGVtcwEABAAEBAAIFFN5c3RlbS5EcmF3aW5nLkNvbG9yAwAAAAETU3lzdGVtLkRyYXdpbmcuRm9udAMAAAAUU3lzdGVtLkRyYXdpbmcuQ29sb3IDAAAAAQIAAAAGBAAAAC1Ow6l2dGVsZW4gaGFzem7DoWxhdGkgc3RhdGlzenRpa8OhayBrw7xsZMOpc2X/////Bfv///8UU3lzdGVtLkRyYXdpbmcuQ29sb3IEAAAABG5hbWUFdmFsdWUKa25vd25Db2xvcgVzdGF0ZQEAAAAJBwcDAAAACgAAAAAAAAAAGAABAAAJBgAAAAH5////+////woAAAAAAAAAABoAAQABBQYAAAATU3lzdGVtLkRyYXdpbmcuRm9udAQAAAAETmFtZQRTaXplBVN0eWxlBFVuaXQBAAQECxhTeXN0ZW0uRHJhd2luZy5Gb250U3R5bGUDAAAAG1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNzVW5pdAMAAAADAAAABggAAAAUTWljcm9zb2Z0IFNhbnMgU2VyaWYAAARBBff///8YU3lzdGVtLkRyYXdpbmcuRm9udFN0eWxlAQAAAAd2YWx1ZV9fAAgDAAAAAAAAAAX2////G1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNzVW5pdAEAAAAHdmFsdWVfXwAIAwAAAAMAAAAL</value>
   </data>
@@ -147,11 +152,6 @@
   <data name="listViewOptions.Items9" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkMAwAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5MaXN0Vmlld0l0ZW0HAAAABFRleHQKSW1hZ2VJbmRleAlCYWNrQ29sb3IHQ2hlY2tlZARGb250CUZvcmVDb2xvchdVc2VJdGVtU3R5bGVGb3JTdWJJdGVtcwEABAAEBAAIFFN5c3RlbS5EcmF3aW5nLkNvbG9yAwAAAAETU3lzdGVtLkRyYXdpbmcuRm9udAMAAAAUU3lzdGVtLkRyYXdpbmcuQ29sb3IDAAAAAQIAAAAGBAAAAC9LaWzDqXDDqXNpIHByb2dyYW0gdXTDoW4gYSBqYXbDrXTDoXMgYWRhdGLDoXppc/////8F+////xRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwMAAAAKAAAAAAAAAAAYAAEAAAkGAAAAAfn////7////CgAAAAAAAAAAGgABAAEFBgAAABNTeXN0ZW0uRHJhd2luZy5Gb250BAAAAAROYW1lBFNpemUFU3R5bGUEVW5pdAEABAQLGFN5c3RlbS5EcmF3aW5nLkZvbnRTdHlsZQMAAAAbU3lzdGVtLkRyYXdpbmcuR3JhcGhpY3NVbml0AwAAAAMAAAAGCAAAABRNaWNyb3NvZnQgU2FucyBTZXJpZgAABEEF9////xhTeXN0ZW0uRHJhd2luZy5Gb250U3R5bGUBAAAAB3ZhbHVlX18ACAMAAAAAAAAABfb///8bU3lzdGVtLkRyYXdpbmcuR3JhcGhpY3NVbml0AQAAAAd2YWx1ZV9fAAgDAAAAAwAAAAs=</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Beállítások</value>
-  </data>
   <data name="buttonOK.Text" xml:space="preserve">
     <value>OK</value>
   </data>
@@ -164,51 +164,15 @@
   <data name="groupBox2.Text" xml:space="preserve">
     <value>Válasszon egy mappát a törölt bejegyzések biztonsági másolatainak </value>
   </data>
-  <data name="buttonBrowse2.Text" xml:space="preserve">
-    <value>Tallózás...</value>
-  </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>Válasszon egy mappát a naplófájloknak</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="tabPage1.Text" xml:space="preserve">
     <value>Általános</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Jobb gomb bejegyzések hozzáadásához/eltávolításához</value>
-  </data>
-  <data name="columnHeader1.Text" xml:space="preserve">
-    <value>Kihagyandó fájlok és mappák</value>
-  </data>
-  <data name="addFileToolStripMenuItem.Text" xml:space="preserve">
-    <value>Fájl hozzáadása</value>
-  </data>
-  <data name="addFolderToolStripMenuItem.Text" xml:space="preserve">
-    <value>Mappa hozzáadása</value>
-  </data>
-  <data name="addRegistryPathToolStripMenuItem.Text" xml:space="preserve">
-    <value>Bejegyzés útvonal hozzáadása</value>
-  </data>
-  <data name="removeEntryToolStripMenuItem.Text" xml:space="preserve">
-    <value>Feljegyzés eltávolítása</value>
   </data>
   <data name="tabPage2.Text" xml:space="preserve">
     <value>Mellőzőlista</value>
   </data>
   <data name="groupBoxDesc.Text" xml:space="preserve">
     <value>Leírás</value>
-  </data>
-  <data name="radioButtonMonthly.Text" xml:space="preserve">
-    <value>Havi</value>
-  </data>
-  <data name="radioButtonWeekly.Text" xml:space="preserve">
-    <value>Heti</value>
-  </data>
-  <data name="radioButtonDaily.Text" xml:space="preserve">
-    <value>Napi</value>
-  </data>
-  <data name="radioButtonNever.Text" xml:space="preserve">
-    <value>Soha</value>
   </data>
   <data name="groupBoxPerform.Text" xml:space="preserve">
     <value>Végezze</value>
@@ -344,6 +308,42 @@
   </data>
   <data name="tabPage3.Text" xml:space="preserve">
     <value>Scheduler</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Válasszon egy mappát a naplófájloknak</value>
+  </data>
+  <data name="buttonBrowse2.Text" xml:space="preserve">
+    <value>Tallózás...</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Jobb gomb bejegyzések hozzáadásához/eltávolításához</value>
+  </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>Kihagyandó fájlok és mappák</value>
+  </data>
+  <data name="addFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Fájl hozzáadása</value>
+  </data>
+  <data name="addFolderToolStripMenuItem.Text" xml:space="preserve">
+    <value>Mappa hozzáadása</value>
+  </data>
+  <data name="addRegistryPathToolStripMenuItem.Text" xml:space="preserve">
+    <value>Bejegyzés útvonal hozzáadása</value>
+  </data>
+  <data name="removeEntryToolStripMenuItem.Text" xml:space="preserve">
+    <value>Feljegyzés eltávolítása</value>
+  </data>
+  <data name="radioButtonMonthly.Text" xml:space="preserve">
+    <value>Havi</value>
+  </data>
+  <data name="radioButtonWeekly.Text" xml:space="preserve">
+    <value>Heti</value>
+  </data>
+  <data name="radioButtonDaily.Text" xml:space="preserve">
+    <value>Napi</value>
+  </data>
+  <data name="radioButtonNever.Text" xml:space="preserve">
+    <value>Soha</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Little Registry Cleaner - Beállítások</value>

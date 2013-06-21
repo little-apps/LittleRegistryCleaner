@@ -133,7 +133,7 @@
     <value>Попытка запуска:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>¿Вы уверены, что хотите удалить эту программу запуска?</value>
+    <value>Вы уверены, что хотите удалить эту программу запуска?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
     <value>Удалить выбранные запуска программы</value>

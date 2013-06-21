@@ -117,6 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
   <data name="listViewOptions.Items" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkMAwAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5MaXN0Vmlld0l0ZW0HAAAABFRleHQKSW1hZ2VJbmRleAlCYWNrQ29sb3IHQ2hlY2tlZARGb250CUZvcmVDb2xvchdVc2VJdGVtU3R5bGVGb3JTdWJJdGVtcwEABAAEBAAIFFN5c3RlbS5EcmF3aW5nLkNvbG9yAwAAAAETU3lzdGVtLkRyYXdpbmcuRm9udAMAAAAUU3lzdGVtLkRyYXdpbmcuQ29sb3IDAAAAAQIAAAAGBAAAAC9FbnZveWVyIGxlcyBzdGF0aXN0aXF1ZXMgZCd1dGlsaXNhdGlvbiBhbm9ueW1lc/////8F+////xRTeXN0ZW0uRHJhd2luZy5Db2xvcgQAAAAEbmFtZQV2YWx1ZQprbm93bkNvbG9yBXN0YXRlAQAAAAkHBwMAAAAKAAAAAAAAAAAYAAEAAAkGAAAAAfn////7////CgAAAAAAAAAAGgABAAEFBgAAABNTeXN0ZW0uRHJhd2luZy5Gb250BAAAAAROYW1lBFNpemUFU3R5bGUEVW5pdAEABAQLGFN5c3RlbS5EcmF3aW5nLkZvbnRTdHlsZQMAAAAbU3lzdGVtLkRyYXdpbmcuR3JhcGhpY3NVbml0AwAAAAMAAAAGCAAAABRNaWNyb3NvZnQgU2FucyBTZXJpZgAABEEF9////xhTeXN0ZW0uRHJhd2luZy5Gb250U3R5bGUBAAAAB3ZhbHVlX18ACAMAAAAAAAAABfb///8bU3lzdGVtLkRyYXdpbmcuR3JhcGhpY3NVbml0AQAAAAd2YWx1ZV9fAAgDAAAAAwAAAAs=</value>
   </data>
@@ -147,11 +152,6 @@
   <data name="listViewOptions.Items9" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkMAwAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5MaXN0Vmlld0l0ZW0HAAAABFRleHQKSW1hZ2VJbmRleAlCYWNrQ29sb3IHQ2hlY2tlZARGb250CUZvcmVDb2xvchdVc2VJdGVtU3R5bGVGb3JTdWJJdGVtcwEABAAEBAAIFFN5c3RlbS5EcmF3aW5nLkNvbG9yAwAAAAETU3lzdGVtLkRyYXdpbmcuRm9udAMAAAAUU3lzdGVtLkRyYXdpbmcuQ29sb3IDAAAAAQIAAAAGBAAAADZRdWl0dGV6IGxlIHByb2dyYW1tZSBhcHLDqHMgbGEgcsOpcGFyYXRpb24gZHUgcmVnaXN0cmX/////Bfv///8UU3lzdGVtLkRyYXdpbmcuQ29sb3IEAAAABG5hbWUFdmFsdWUKa25vd25Db2xvcgVzdGF0ZQEAAAAJBwcDAAAACgAAAAAAAAAAGAABAAAJBgAAAAH5////+////woAAAAAAAAAABoAAQABBQYAAAATU3lzdGVtLkRyYXdpbmcuRm9udAQAAAAETmFtZQRTaXplBVN0eWxlBFVuaXQBAAQECxhTeXN0ZW0uRHJhd2luZy5Gb250U3R5bGUDAAAAG1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNzVW5pdAMAAAADAAAABggAAAAUTWljcm9zb2Z0IFNhbnMgU2VyaWYAAARBBff///8YU3lzdGVtLkRyYXdpbmcuRm9udFN0eWxlAQAAAAd2YWx1ZV9fAAgDAAAAAAAAAAX2////G1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNzVW5pdAEAAAAHdmFsdWVfXwAIAwAAAAMAAAAL</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Paramètres</value>
-  </data>
   <data name="buttonOK.Text" xml:space="preserve">
     <value>OK</value>
   </data>
@@ -164,51 +164,15 @@
   <data name="groupBox2.Text" xml:space="preserve">
     <value>Sélectionnez un dossier pour sauvegarder les entrées de registre supprimées </value>
   </data>
-  <data name="buttonBrowse2.Text" xml:space="preserve">
-    <value>Parcourir...</value>
-  </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>Sélectionnez un dossier pour enregistrer les fichiers journaux</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="tabPage1.Text" xml:space="preserve">
     <value>Général</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Faites un clic droit pour ajouter ou supprimer des entrées</value>
-  </data>
-  <data name="columnHeader1.Text" xml:space="preserve">
-    <value>Fichiers et dossiers à exclure</value>
-  </data>
-  <data name="addFileToolStripMenuItem.Text" xml:space="preserve">
-    <value>Ajouter un fichier</value>
-  </data>
-  <data name="addFolderToolStripMenuItem.Text" xml:space="preserve">
-    <value>Ajouter un dossier</value>
-  </data>
-  <data name="addRegistryPathToolStripMenuItem.Text" xml:space="preserve">
-    <value>Ajouter un chemin du registre</value>
-  </data>
-  <data name="removeEntryToolStripMenuItem.Text" xml:space="preserve">
-    <value>Supprimer l'entrée</value>
   </data>
   <data name="tabPage2.Text" xml:space="preserve">
     <value>Liste des cas ignorés</value>
   </data>
   <data name="groupBoxDesc.Text" xml:space="preserve">
     <value>Descriptif</value>
-  </data>
-  <data name="radioButtonMonthly.Text" xml:space="preserve">
-    <value>Mensuel</value>
-  </data>
-  <data name="radioButtonWeekly.Text" xml:space="preserve">
-    <value>Hebdomadaire</value>
-  </data>
-  <data name="radioButtonDaily.Text" xml:space="preserve">
-    <value>Daily</value>
-  </data>
-  <data name="radioButtonNever.Text" xml:space="preserve">
-    <value>Jamais</value>
   </data>
   <data name="groupBoxPerform.Text" xml:space="preserve">
     <value>Effectuer</value>
@@ -344,6 +308,42 @@
   </data>
   <data name="tabPage3.Text" xml:space="preserve">
     <value>Planificateur</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Sélectionnez un dossier pour enregistrer les fichiers journaux</value>
+  </data>
+  <data name="buttonBrowse2.Text" xml:space="preserve">
+    <value>Parcourir...</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Faites un clic droit pour ajouter ou supprimer des entrées</value>
+  </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>Fichiers et dossiers à exclure</value>
+  </data>
+  <data name="addFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ajouter un fichier</value>
+  </data>
+  <data name="addFolderToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ajouter un dossier</value>
+  </data>
+  <data name="addRegistryPathToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ajouter un chemin du registre</value>
+  </data>
+  <data name="removeEntryToolStripMenuItem.Text" xml:space="preserve">
+    <value>Supprimer l'entrée</value>
+  </data>
+  <data name="radioButtonMonthly.Text" xml:space="preserve">
+    <value>Mensuel</value>
+  </data>
+  <data name="radioButtonWeekly.Text" xml:space="preserve">
+    <value>Hebdomadaire</value>
+  </data>
+  <data name="radioButtonDaily.Text" xml:space="preserve">
+    <value>Daily</value>
+  </data>
+  <data name="radioButtonNever.Text" xml:space="preserve">
+    <value>Jamais</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Little Registry Cleaner – Paramètres</value>

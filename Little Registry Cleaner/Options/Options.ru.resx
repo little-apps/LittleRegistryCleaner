@@ -117,6 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Параметры</value>
+  </data>
   <data name="listViewOptions.Items" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkMAwAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5MaXN0Vmlld0l0ZW0HAAAABFRleHQKSW1hZ2VJbmRleAlCYWNrQ29sb3IHQ2hlY2tlZARGb250CUZvcmVDb2xvchdVc2VJdGVtU3R5bGVGb3JTdWJJdGVtcwEABAAEBAAIFFN5c3RlbS5EcmF3aW5nLkNvbG9yAwAAAAETU3lzdGVtLkRyYXdpbmcuRm9udAMAAAAUU3lzdGVtLkRyYXdpbmcuQ29sb3IDAAAAAQIAAAAGBAAAAFfQntGC0L/RgNCw0LLQu9GP0YLRjCDQsNC90L7QvdC40LzQvdGD0Y4g0YHRgtCw0YLQuNGB0YLQuNC60YMg0LjRgdC/0L7Qu9GM0LfQvtCy0LDQvdC40Y//////Bfv///8UU3lzdGVtLkRyYXdpbmcuQ29sb3IEAAAABG5hbWUFdmFsdWUKa25vd25Db2xvcgVzdGF0ZQEAAAAJBwcDAAAACgAAAAAAAAAAGAABAAAJBgAAAAH5////+////woAAAAAAAAAABoAAQABBQYAAAATU3lzdGVtLkRyYXdpbmcuRm9udAQAAAAETmFtZQRTaXplBVN0eWxlBFVuaXQBAAQECxhTeXN0ZW0uRHJhd2luZy5Gb250U3R5bGUDAAAAG1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNzVW5pdAMAAAADAAAABggAAAAUTWljcm9zb2Z0IFNhbnMgU2VyaWYAAARBBff///8YU3lzdGVtLkRyYXdpbmcuRm9udFN0eWxlAQAAAAd2YWx1ZV9fAAgDAAAAAAAAAAX2////G1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNzVW5pdAEAAAAHdmFsdWVfXwAIAwAAAAMAAAAL</value>
   </data>
@@ -147,11 +152,6 @@
   <data name="listViewOptions.Items9" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkMAwAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAACFTeXN0ZW0uV2luZG93cy5Gb3Jtcy5MaXN0Vmlld0l0ZW0HAAAABFRleHQKSW1hZ2VJbmRleAlCYWNrQ29sb3IHQ2hlY2tlZARGb250CUZvcmVDb2xvchdVc2VJdGVtU3R5bGVGb3JTdWJJdGVtcwEABAAEBAAIFFN5c3RlbS5EcmF3aW5nLkNvbG9yAwAAAAETU3lzdGVtLkRyYXdpbmcuRm9udAMAAAAUU3lzdGVtLkRyYXdpbmcuQ29sb3IDAAAAAQIAAAAGBAAAAFTQktGL0YXQvtC0INC/0YDQvtCz0YDQsNC80LzRiyDQv9C+0YHQu9C1INCy0L7RgdGB0YLQsNC90L7QstC70LXQvdC40Y8g0YDQtdC10YHRgtGA0LD/////Bfv///8UU3lzdGVtLkRyYXdpbmcuQ29sb3IEAAAABG5hbWUFdmFsdWUKa25vd25Db2xvcgVzdGF0ZQEAAAAJBwcDAAAACgAAAAAAAAAAGAABAAAJBgAAAAH5////+////woAAAAAAAAAABoAAQABBQYAAAATU3lzdGVtLkRyYXdpbmcuRm9udAQAAAAETmFtZQRTaXplBVN0eWxlBFVuaXQBAAQECxhTeXN0ZW0uRHJhd2luZy5Gb250U3R5bGUDAAAAG1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNzVW5pdAMAAAADAAAABggAAAAUTWljcm9zb2Z0IFNhbnMgU2VyaWYAAARBBff///8YU3lzdGVtLkRyYXdpbmcuRm9udFN0eWxlAQAAAAd2YWx1ZV9fAAgDAAAAAAAAAAX2////G1N5c3RlbS5EcmF3aW5nLkdyYXBoaWNzVW5pdAEAAAAHdmFsdWVfXwAIAwAAAAMAAAAL</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Параметры</value>
-  </data>
   <data name="buttonOK.Text" xml:space="preserve">
     <value>ОК</value>
   </data>
@@ -164,51 +164,15 @@
   <data name="groupBox2.Text" xml:space="preserve">
     <value>Выберите папку для резервного копирования удаленных элементов реестра </value>
   </data>
-  <data name="buttonBrowse2.Text" xml:space="preserve">
-    <value>Обзор...</value>
-  </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>Выберите папку для сохранения логов</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>
   <data name="tabPage1.Text" xml:space="preserve">
     <value>Общие</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Щелкните правой кнопкой, чтобы добавить или удалить записи</value>
-  </data>
-  <data name="columnHeader1.Text" xml:space="preserve">
-    <value>Файлы и папки</value>
-  </data>
-  <data name="addFileToolStripMenuItem.Text" xml:space="preserve">
-    <value>Добавить файл</value>
-  </data>
-  <data name="addFolderToolStripMenuItem.Text" xml:space="preserve">
-    <value>Добавить папку</value>
-  </data>
-  <data name="addRegistryPathToolStripMenuItem.Text" xml:space="preserve">
-    <value>Добавление пути реестра</value>
-  </data>
-  <data name="removeEntryToolStripMenuItem.Text" xml:space="preserve">
-    <value>Удалить запись</value>
   </data>
   <data name="tabPage2.Text" xml:space="preserve">
     <value>Черный список</value>
   </data>
   <data name="groupBoxDesc.Text" xml:space="preserve">
     <value>Описание</value>
-  </data>
-  <data name="radioButtonMonthly.Text" xml:space="preserve">
-    <value>Ежемесячно</value>
-  </data>
-  <data name="radioButtonWeekly.Text" xml:space="preserve">
-    <value>Еженедельно</value>
-  </data>
-  <data name="radioButtonDaily.Text" xml:space="preserve">
-    <value>Ежедневно</value>
-  </data>
-  <data name="radioButtonNever.Text" xml:space="preserve">
-    <value>Никогда</value>
   </data>
   <data name="groupBoxPerform.Text" xml:space="preserve">
     <value>Выполнять</value>
@@ -344,6 +308,42 @@
   </data>
   <data name="tabPage3.Text" xml:space="preserve">
     <value>Планировщик</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Выберите папку для сохранения логов</value>
+  </data>
+  <data name="buttonBrowse2.Text" xml:space="preserve">
+    <value>Обзор...</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Щелкните правой кнопкой, чтобы добавить или удалить записи</value>
+  </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>Файлы и папки</value>
+  </data>
+  <data name="addFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Добавить файл</value>
+  </data>
+  <data name="addFolderToolStripMenuItem.Text" xml:space="preserve">
+    <value>Добавить папку</value>
+  </data>
+  <data name="addRegistryPathToolStripMenuItem.Text" xml:space="preserve">
+    <value>Добавление пути реестра</value>
+  </data>
+  <data name="removeEntryToolStripMenuItem.Text" xml:space="preserve">
+    <value>Удалить запись</value>
+  </data>
+  <data name="radioButtonMonthly.Text" xml:space="preserve">
+    <value>Ежемесячно</value>
+  </data>
+  <data name="radioButtonWeekly.Text" xml:space="preserve">
+    <value>Еженедельно</value>
+  </data>
+  <data name="radioButtonDaily.Text" xml:space="preserve">
+    <value>Ежедневно</value>
+  </data>
+  <data name="radioButtonNever.Text" xml:space="preserve">
+    <value>Никогда</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Little Registry Cleaner - Настройки</value>

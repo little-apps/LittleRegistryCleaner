@@ -133,7 +133,7 @@
     <value>اقدام به اجرا:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>¿آیا مایل به حذف این برنامه راه اندازی شود؟?</value>
+    <value>آیا مایل به حذف این برنامه راه اندازی شود؟?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
     <value>حذف برنامه راه اندازی انتخاب شده</value>

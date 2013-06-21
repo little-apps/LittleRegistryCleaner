@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document created="20130617224625" version="3.0.335" date="20130618233844" scan="74" scanned="20130618223813">
+<document created="20130617224625" version="3.0.335" date="20130621163823" scan="74" scanned="20130618223813">
   <lang id="ar"/>
   <lang id="zh" ime="imOn"/>
   <lang id="zh.tra" ime="imOn"/>
@@ -1268,30 +1268,7 @@
           <lang id="tr" status="2">Çalıştırmak çalıştı:</lang>
           <lang id="vi" status="2">Cố gắng để chạy:</lang>
         </row>
-        <row id="smRemove">
-          <native>Are you sure you want to remove this startup program?</native>
-          <lang id="ar" status="2">¿هل أنت متأكد من أنك تريد إزالة هذا البرنامج بدء التشغيل?</lang>
-          <lang id="zh" status="2">¿确实要删除此启动程序吗?</lang>
-          <lang id="zh.tra" status="2">¿確實要刪除此啟動程式嗎?</lang>
-          <lang id="nl" status="2">¿Weet u zeker dat u wilt verwijderen van dit opstartprogramma?</lang>
-          <lang id="en" status="2">¿Are you sure you want to remove this startup program?</lang>
-          <lang id="fr" status="2">¿Êtes-vous sûr de que vouloir supprimer ce programme de démarrage?</lang>
-          <lang id="de" status="2">¿Sind Sie sicher, dass Sie dieses Startprogramm entfernen möchten?</lang>
-          <lang id="el" status="2">¿Είστε βέβαιοι ότι θέλετε να καταργήσετε αυτό το πρόγραμμα εκκίνησης?</lang>
-          <lang id="hu" status="2">¿Biztosan el szeretné távolítani a elkezd műsor?</lang>
-          <lang id="it" status="2">¿Sei sicuro di che voler rimuovere questo programma di avvio?</lang>
-          <lang id="ja" status="2">¿この起動プログラムを削除するもよろしいですか?</lang>
-          <lang id="lt" status="2">¿Ar tikrai norite pašalinti šį Paleistis programa?</lang>
-          <lang id="pl" status="2">¿Czy na pewno chcesz usunąć ten podskoczyæ program?</lang>
-          <lang id="fa" status="2">¿آیا مایل به حذف این برنامه راه اندازی شود؟?</lang>
-          <lang id="pt" status="2">¿Tem certeza que deseja remover este programa de inicialização?</lang>
-          <lang id="ru" status="2">¿Вы уверены, что хотите удалить эту программу запуска?</lang>
-          <lang id="es" status="2">¿Está seguro que desea eliminar este programa Inicio?</lang>
-          <lang id="sv-SE" status="2">¿Är du säker du vill ta bort denna Autostart-program?</lang>
-          <lang id="th" status="2">¿คุณต้องการเอาโปรแกรมเริ่มต้นนี้แน่ใจหรือไม่?</lang>
-          <lang id="tr" status="2">¿Bu başlatma programı kaldırmak istediğinizden emin misiniz?</lang>
-          <lang id="vi" status="2">¿Bạn có chắc bạn muốn loại bỏ chương trình khởi động này không?</lang>
-        </row>
+        <row id="smRemove">Are you sure you want to remove this startup program?</row>
         <row id="smRemoved">
           <native>Removed selected startup program</native>
           <lang id="ar" status="2">إزالة برنامج بدء التشغيل المحددة</lang>

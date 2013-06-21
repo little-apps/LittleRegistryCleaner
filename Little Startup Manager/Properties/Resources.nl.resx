@@ -133,7 +133,7 @@
     <value>Probeerde uit te voeren:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>¿Weet u zeker dat u wilt verwijderen van dit opstartprogramma?</value>
+    <value>Weet u zeker dat u wilt verwijderen van dit opstartprogramma?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
     <value>Geselecteerde opstartprogramma verwijderd</value>

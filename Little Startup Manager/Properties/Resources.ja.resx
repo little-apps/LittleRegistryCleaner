@@ -133,7 +133,7 @@
     <value>実行しようとしました。:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>¿この起動プログラムを削除するもよろしいですか?</value>
+    <value>この起動プログラムを削除するもよろしいですか?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
     <value>選択したスタートアップ プログラムを削除</value>

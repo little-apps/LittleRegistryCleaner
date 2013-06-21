@@ -133,7 +133,7 @@
     <value>Próbował uruchomić:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>¿Czy na pewno chcesz usunąć ten podskoczyæ program?</value>
+    <value>Czy na pewno chcesz usunąć ten podskoczyæ program?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
     <value>Usunąć wybrane starcie programu</value>

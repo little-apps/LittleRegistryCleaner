@@ -133,7 +133,7 @@
     <value>Επιχείρησε να:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>¿Είστε βέβαιοι ότι θέλετε να καταργήσετε αυτό το πρόγραμμα εκκίνησης?</value>
+    <value>Είστε βέβαιοι ότι θέλετε να καταργήσετε αυτό το πρόγραμμα εκκίνησης?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
     <value>Αφαιρεθεί το πρόγραμμα εκκίνησης επιλεγμένο</value>

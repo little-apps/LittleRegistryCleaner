@@ -133,7 +133,7 @@
     <value>Attempted to run:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>¿Are you sure you want to remove this startup program?</value>
+    <value>Are you sure you want to remove this startup program?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
     <value>Removed selected startup program</value>

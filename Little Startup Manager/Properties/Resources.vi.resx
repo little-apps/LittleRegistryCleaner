@@ -133,7 +133,7 @@
     <value>Cố gắng để chạy:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>¿Bạn có chắc bạn muốn loại bỏ chương trình khởi động này không?</value>
+    <value>Bạn có chắc bạn muốn loại bỏ chương trình khởi động này không?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
     <value>Loại bỏ lựa chọn khởi động chương trình</value>

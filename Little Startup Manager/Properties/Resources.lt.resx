@@ -133,7 +133,7 @@
     <value>Bandė paleisti:</value>
   </data>
   <data name="smRemove" xml:space="preserve">
-    <value>¿Ar tikrai norite pašalinti šį Paleistis programa?</value>
+    <value>Ar tikrai norite pašalinti šį Paleistis programa?</value>
   </data>
   <data name="smRemoved" xml:space="preserve">
     <value>Pašalinti pasirinktus Paleistis programa</value>
