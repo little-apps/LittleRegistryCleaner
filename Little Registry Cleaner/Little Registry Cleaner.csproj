@@ -20,7 +20,8 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <ApplicationIcon>little registry cleaner.ico</ApplicationIcon>
     <SignAssembly>false</SignAssembly>
-    <AssemblyOriginatorKeyFile>certfiletosignwith.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
     <SourceAnalysisOverrideSettingsFile>C:\Users\Nick\AppData\Roaming\ICSharpCode/SharpDevelop3.0\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
     <NoStdLib>False</NoStdLib>
@@ -200,7 +201,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="app.config" />
-    <None Include="certfiletosignwith.pfx" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -275,7 +275,6 @@
   <ItemGroup>
     <Content Include="gpl.txt" />
     <Content Include="ChangeLog.txt" />
-    <Content Include="little register cleaner.ico" />
     <Content Include="little registry cleaner.ico" />
     <None Include="Resources\app.png" />
     <None Include="Resources\Application.bmp" />

@@ -39,10 +39,10 @@
             this.imageList = new System.Windows.Forms.ImageList(this.components);
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.buttonRemove = new System.Windows.Forms.Button();
-            this.buttonUninstall = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBoxSearch = new System.Windows.Forms.TextBox();
+            this.buttonUninstall = new System.Windows.Forms.Button();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -110,9 +110,9 @@
             this.imageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList.ImageStream")));
             this.imageList.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList.Images.SetKeyName(0, "OK");
-            this.imageList.Images.SetKeyName(1, "ERROR");
-            this.imageList.Images.SetKeyName(2, "UNINSTALL");
-            this.imageList.Images.SetKeyName(3, "REMOVE");
+            this.imageList.Images.SetKeyName(1, "UNINSTALL");
+            this.imageList.Images.SetKeyName(2, "ERROR");
+            this.imageList.Images.SetKeyName(3, "DELETE");
             // 
             // flowLayoutPanel1
             // 
@@ -124,18 +124,9 @@
             // buttonRemove
             // 
             resources.ApplyResources(this.buttonRemove, "buttonRemove");
-            this.buttonRemove.ImageList = this.imageList;
             this.buttonRemove.Name = "buttonRemove";
             this.buttonRemove.UseVisualStyleBackColor = true;
             this.buttonRemove.Click += new System.EventHandler(this.buttonRemove_Click);
-            // 
-            // buttonUninstall
-            // 
-            resources.ApplyResources(this.buttonUninstall, "buttonUninstall");
-            this.buttonUninstall.ImageList = this.imageList;
-            this.buttonUninstall.Name = "buttonUninstall";
-            this.buttonUninstall.UseVisualStyleBackColor = true;
-            this.buttonUninstall.Click += new System.EventHandler(this.buttonUninstall_Click);
             // 
             // splitContainer1
             // 
@@ -166,6 +157,13 @@
             this.textBoxSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
             this.textBoxSearch.Enter += new System.EventHandler(this.textBoxSearch_Enter);
             this.textBoxSearch.Leave += new System.EventHandler(this.textBoxSearch_Leave);
+            // 
+            // buttonUninstall
+            // 
+            resources.ApplyResources(this.buttonUninstall, "buttonUninstall");
+            this.buttonUninstall.Name = "buttonUninstall";
+            this.buttonUninstall.UseVisualStyleBackColor = true;
+            this.buttonUninstall.Click += new System.EventHandler(this.buttonUninstall_Click);
             // 
             // UninstallManager
             // 
@@ -199,9 +197,9 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button buttonRemove;
-        private System.Windows.Forms.Button buttonUninstall;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBoxSearch;
+        private System.Windows.Forms.Button buttonUninstall;
     }
 }
