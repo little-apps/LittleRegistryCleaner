@@ -407,3 +407,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 - Downgraded Microsoft .NET Framework to v3.5
 - Integrated Little Software Stats
+- Added new icons
+- Integrated AutoUpdater.NET
+- Updated Little Registry icon
+- Fixed permission problems with removing bad registry keys
+- Update Russian translations (Thanks to Sersell)
+- Updated German Translations (Thanks to Jurg S.)
+- Fixed problem with scheduler not showing correct time for existing job
+
++ Version 1.6 Released

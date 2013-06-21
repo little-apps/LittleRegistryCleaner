@@ -395,7 +395,6 @@
             // 
             // dateTimePickerSched
             // 
-            this.dateTimePickerSched.Checked = false;
             resources.ApplyResources(this.dateTimePickerSched, "dateTimePickerSched");
             this.dateTimePickerSched.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePickerSched.Name = "dateTimePickerSched";

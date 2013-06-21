@@ -246,7 +246,7 @@ namespace Little_Registry_Cleaner
                 if (trigger is DailyTrigger)
                 {
                     this.radioButtonDaily.Checked = true;
-                    UpdateScheduler(null, new EventArgs());
+                    //UpdateScheduler(null, new EventArgs());
 
                     int hour = (trigger as DailyTrigger).StartBoundary.Hour;
                     int min = (trigger as DailyTrigger).StartBoundary.Minute;
@@ -255,7 +255,7 @@ namespace Little_Registry_Cleaner
                 else if (trigger is WeeklyTrigger)
                 {
                     this.radioButtonWeekly.Checked = true;
-                    UpdateScheduler(null, new EventArgs());
+                    //UpdateScheduler(null, new EventArgs());
 
                     int hour = (trigger as WeeklyTrigger).StartBoundary.Hour;
                     int min = (trigger as WeeklyTrigger).StartBoundary.Minute;
@@ -267,7 +267,7 @@ namespace Little_Registry_Cleaner
                 else if (trigger is MonthlyTrigger)
                 {
                     this.radioButtonMonthly.Checked = true;
-                    UpdateScheduler(null, new EventArgs());
+                    //UpdateScheduler(null, new EventArgs());
 
                     this.comboBoxDate.SelectedItem = (trigger as MonthlyTrigger).DaysOfMonth[0].ToString();
 
@@ -275,6 +275,8 @@ namespace Little_Registry_Cleaner
                     int min = (trigger as MonthlyTrigger).StartBoundary.Minute;
                     this.dateTimePickerSched.Value = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, hour, min, 0);
                 }
+
+                UpdateScheduler(null, new EventArgs());
             }
         }
 
@@ -370,6 +372,8 @@ namespace Little_Registry_Cleaner
                 string numSuffix = Utils.GetNumberSuffix(Convert.ToInt32(this.comboBoxDate.SelectedItem));
                 this.labelDescription.Text = string.Format(Properties.Resources.optionsSchedDescM, numSuffix, this.dateTimePickerSched.Value.ToShortTimeString());
             }
+
+            this.Refresh();
         }
         #endregion
 
