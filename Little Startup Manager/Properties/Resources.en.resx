@@ -139,6 +139,6 @@
     <value>Removed selected startup program</value>
   </data>
   <data name="smRun" xml:space="preserve">
-    <value>¿Are you sure you want to run this program?</value>
+    <value>Are you sure you want to run this program?</value>
   </data>
 </root>

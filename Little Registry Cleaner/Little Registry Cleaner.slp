@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document created="20130617224625" version="3.0.335" date="20130621163823" scan="74" scanned="20130618223813">
+<document created="20130617224625" version="3.0.335" date="20130621165447" scan="74" scanned="20130618223813">
   <lang id="ar"/>
   <lang id="zh" ime="imOn"/>
   <lang id="zh.tra" ime="imOn"/>
@@ -21,7 +21,7 @@
   <lang id="th"/>
   <lang id="tr"/>
   <lang id="vi"/>
-  <source class="TVisualStudioNetProjectSource" name="..\Little Startup Manager\Little Startup Manager.csproj" original="en" encoding="" date="20120926002414" defaultoutputdir="bin\Debug" configuration="Debug|x86" netversion="net35" toolsversion="net40" rootnamespace="Little_Startup_Manager">
+  <source class="TVisualStudioNetProjectSource" name="..\Little Startup Manager\Little Startup Manager.csproj" original="en" encoding="" date="20130621045442" defaultoutputdir="bin\Debug" configuration="Debug|x86" netversion="net35" toolsversion="net40" rootnamespace="Little_Startup_Manager">
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TColorData</class>
@@ -1268,7 +1268,30 @@
           <lang id="tr" status="2">Çalıştırmak çalıştı:</lang>
           <lang id="vi" status="2">Cố gắng để chạy:</lang>
         </row>
-        <row id="smRemove">Are you sure you want to remove this startup program?</row>
+        <row id="smRemove">
+          <native>Are you sure you want to remove this startup program?</native>
+          <lang id="ar" status="2">هل أنت متأكد من أنك تريد إزالة هذا البرنامج بدء التشغيل?</lang>
+          <lang id="zh" status="2">确实要删除此启动程序吗?</lang>
+          <lang id="zh.tra" status="2">確實要刪除此啟動程式嗎?</lang>
+          <lang id="nl" status="2">Weet u zeker dat u wilt verwijderen van dit opstartprogramma?</lang>
+          <lang id="en" status="2">Are you sure you want to remove this startup program?</lang>
+          <lang id="fr" status="2">Êtes-vous sûr de que vouloir supprimer ce programme de démarrage?</lang>
+          <lang id="de" status="2">Sind Sie sicher, dass Sie dieses Startprogramm entfernen möchten?</lang>
+          <lang id="el" status="2">Είστε βέβαιοι ότι θέλετε να καταργήσετε αυτό το πρόγραμμα εκκίνησης?</lang>
+          <lang id="hu" status="2">Biztosan el szeretné távolítani a elkezd műsor?</lang>
+          <lang id="it" status="2">Sei sicuro di che voler rimuovere questo programma di avvio?</lang>
+          <lang id="ja" status="2">この起動プログラムを削除するもよろしいですか?</lang>
+          <lang id="lt" status="2">Ar tikrai norite pašalinti šį Paleistis programa?</lang>
+          <lang id="pl" status="2">Czy na pewno chcesz usunąć ten podskoczyæ program?</lang>
+          <lang id="fa" status="2">آیا مایل به حذف این برنامه راه اندازی شود؟?</lang>
+          <lang id="pt" status="2">Tem certeza que deseja remover este programa de inicialização?</lang>
+          <lang id="ru" status="2">Вы уверены, что хотите удалить эту программу запуска?</lang>
+          <lang id="es" status="2">¿Está seguro que desea eliminar este programa Inicio?</lang>
+          <lang id="sv-SE" status="2">Är du säker du vill ta bort denna Autostart-program?</lang>
+          <lang id="th" status="2">คุณต้องการเอาโปรแกรมเริ่มต้นนี้แน่ใจหรือไม่?</lang>
+          <lang id="tr" status="2">Bu başlatma programı kaldırmak istediğinizden emin misiniz?</lang>
+          <lang id="vi" status="2">Bạn có chắc bạn muốn loại bỏ chương trình khởi động này không?</lang>
+        </row>
         <row id="smRemoved">
           <native>Removed selected startup program</native>
           <lang id="ar" status="2">إزالة برنامج بدء التشغيل المحددة</lang>
@@ -1299,7 +1322,7 @@
           <lang id="zh" status="2">¿你确定你要运行此程序？?</lang>
           <lang id="zh.tra" status="2">¿你確定你要運行此程式？?</lang>
           <lang id="nl" status="2">¿Weet u zeker dat u wilt uitvoeren van dit programma?</lang>
-          <lang id="en" status="2">¿Are you sure you want to run this program?</lang>
+          <lang id="en" date="20130621165445" status="3">Are you sure you want to run this program?</lang>
           <lang id="fr" status="2">¿Êtes-vous certain de que vouloir exécuter ce programme?</lang>
           <lang id="de" status="2">¿Sind Sie sicher, dass Sie dieses Programm ausführen möchten?</lang>
           <lang id="el" status="2">¿Είστε βέβαιοι ότι θέλετε να εκτελέσετε αυτό το πρόγραμμα?</lang>
@@ -1321,9 +1344,9 @@
     </node>
     <node class="TWindowsVersionFolder" name="Versions" created="20130618222356" resid="16">
       <node class="TWindowsVersionNode" name="1" resid="1">
-        <row id="Assembly Version" excluded="1" state="3" changed="20130618232505">
-          <prev>1.0.4917.40246</prev>
-          <native>1.0.4917.40342</native>
+        <row id="Assembly Version" excluded="1" state="3" changed="20130621164135">
+          <prev>1.0.4917.40342</prev>
+          <native>1.1.4920.27459</native>
           <lang id="ar" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="zh" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="zh.tra" invalidated="1" status="2">0.0.0.0</lang>
@@ -1418,32 +1441,36 @@
           <lang id="tr" status="2">Başlangıç Yöneticisi</lang>
           <lang id="vi" status="2">Ít khởi động quản lý</lang>
         </row>
-        <row id="FileVersion" excluded="1">
-          <native>1.0</native>
-          <lang id="ar" status="2">0.0.0.0</lang>
-          <lang id="zh" status="2">0.0.0.0</lang>
-          <lang id="zh.tra" status="2">0.0.0.0</lang>
-          <lang id="nl" status="2">0.0.0.0</lang>
-          <lang id="en" status="2">0.0.0.0</lang>
-          <lang id="fr" status="2">0.0.0.0</lang>
-          <lang id="de" status="2">0.0.0.0</lang>
-          <lang id="el" status="2">0.0.0.0</lang>
-          <lang id="hu" status="2">0.0.0.0</lang>
-          <lang id="it" status="2">0.0.0.0</lang>
-          <lang id="ja" status="2">0.0.0.0</lang>
-          <lang id="lt" status="2">0.0.0.0</lang>
-          <lang id="pl" status="2">0.0.0.0</lang>
-          <lang id="fa" status="2">0.0.0.0</lang>
-          <lang id="pt" status="2">0.0.0.0</lang>
-          <lang id="ru" status="2">1.0.0.0</lang>
-          <lang id="es" status="2">0.0.0.0</lang>
-          <lang id="sv-SE" status="2">0.0.0.0</lang>
-          <lang id="th" status="2">0.0.0.0</lang>
-          <lang id="tr" status="2">0.0.0.0</lang>
-          <lang id="vi" status="2">0.0.0.0</lang>
+        <row id="FileVersion" excluded="1" state="3" changed="20130621164135">
+          <prev>1.0</prev>
+          <native>1.1</native>
+          <lang id="ar" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="zh" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="zh.tra" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="nl" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="en" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="fr" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="de" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="el" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="hu" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="it" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="ja" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="lt" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="pl" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="fa" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="pt" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="ru" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="es" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="sv-SE" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="th" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="tr" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="vi" invalidated="1" status="2">0.0.0.0</lang>
         </row>
         <row id="FileVersion[1]" class="TIntegerRow">1</row>
-        <row id="FileVersion[2]" class="TIntegerRow">0</row>
+        <row id="FileVersion[2]" class="TIntegerRow" state="3" changed="20130621164135">
+          <prev>0</prev>
+          <native>1</native>
+        </row>
         <row id="FileVersion[3]" class="TIntegerRow">0</row>
         <row id="FileVersion[4]" class="TIntegerRow">0</row>
         <row id="InternalName" excluded="1">
@@ -1470,29 +1497,30 @@
           <lang id="tr" status="2">Küçük başlangıç Manager.exe</lang>
           <lang id="vi" status="2">Ít khởi động Manager.exe</lang>
         </row>
-        <row id="LegalCopyright">
-          <native>Copyright © Little Apps 2008-2012</native>
-          <lang id="ar" status="2">حقوق الطبع والنشر © 2008-2011 تطبيقات ليتل</lang>
-          <lang id="zh" status="2">版权所有© 2008-2011小应用程序</lang>
-          <lang id="zh.tra" status="2">版權所有 © 2008-2011小應用</lang>
-          <lang id="nl" status="2">Copyright © Little Apps 2008-2011</lang>
-          <lang id="en" status="2">Copyright © Little Apps 2008-2011</lang>
-          <lang id="fr" status="2">Copyright © 2008-2011 Petite Apps</lang>
-          <lang id="de" status="2">Copyright © Kleine Apps 2008-2011</lang>
-          <lang id="el" status="2">Copyright © Μικρή Apps 2008-2011</lang>
-          <lang id="hu" status="2">Copyright © Kis Alkalmazások 2008-2011</lang>
-          <lang id="it" status="2">Copyright © Apps Piccolo 2008-2011</lang>
-          <lang id="ja" status="2">著作権©リトルアプリ2008-2011</lang>
-          <lang id="lt" status="2">Copyright © Mažasis programos 2008-2011</lang>
-          <lang id="pl" status="2">Copyright © Mały Apps 2008-2011</lang>
-          <lang id="fa" status="2">کپی رایت © کوچولو نرم افزار ها 2008-2011</lang>
-          <lang id="pt" status="2">Copyright © Apps Pouco 2008-2011</lang>
-          <lang id="ru" status="2">Copyright © Little Apps 2008-2011</lang>
-          <lang id="es" status="2">Copyright © Aplicaciones Poco 2008-2011</lang>
-          <lang id="sv-SE" status="2">Copyright © Little Apps 2008-2011</lang>
-          <lang id="th" status="2">สงวนลิขสิทธิ์ © 2008-2011 Apps ลิตเติ้ล</lang>
-          <lang id="tr" status="2">Copyright © Küçük Apps 2008-2011</lang>
-          <lang id="vi" status="2">Bản quyền © nhỏ Apps 2008-2011</lang>
+        <row id="LegalCopyright" state="3" changed="20130621164135">
+          <prev>Copyright © Little Apps 2008-2012</prev>
+          <native>Copyright © Little Apps 2008</native>
+          <lang id="ar" invalidated="1" status="2">حقوق الطبع والنشر © 2008-2011 تطبيقات ليتل</lang>
+          <lang id="zh" invalidated="1" status="2">版权所有© 2008-2011小应用程序</lang>
+          <lang id="zh.tra" invalidated="1" status="2">版權所有 © 2008-2011小應用</lang>
+          <lang id="nl" invalidated="1" status="2">Copyright © Little Apps 2008-2011</lang>
+          <lang id="en" invalidated="1" status="2">Copyright © Little Apps 2008-2011</lang>
+          <lang id="fr" invalidated="1" status="2">Copyright © 2008-2011 Petite Apps</lang>
+          <lang id="de" invalidated="1" status="2">Copyright © Kleine Apps 2008-2011</lang>
+          <lang id="el" invalidated="1" status="2">Copyright © Μικρή Apps 2008-2011</lang>
+          <lang id="hu" invalidated="1" status="2">Copyright © Kis Alkalmazások 2008-2011</lang>
+          <lang id="it" invalidated="1" status="2">Copyright © Apps Piccolo 2008-2011</lang>
+          <lang id="ja" invalidated="1" status="2">著作権©リトルアプリ2008-2011</lang>
+          <lang id="lt" invalidated="1" status="2">Copyright © Mažasis programos 2008-2011</lang>
+          <lang id="pl" invalidated="1" status="2">Copyright © Mały Apps 2008-2011</lang>
+          <lang id="fa" invalidated="1" status="2">کپی رایت © کوچولو نرم افزار ها 2008-2011</lang>
+          <lang id="pt" invalidated="1" status="2">Copyright © Apps Pouco 2008-2011</lang>
+          <lang id="ru" invalidated="1" status="2">Copyright © Little Apps 2008-2011</lang>
+          <lang id="es" invalidated="1" status="2">Copyright © Aplicaciones Poco 2008-2011</lang>
+          <lang id="sv-SE" invalidated="1" status="2">Copyright © Little Apps 2008-2011</lang>
+          <lang id="th" invalidated="1" status="2">สงวนลิขสิทธิ์ © 2008-2011 Apps ลิตเติ้ล</lang>
+          <lang id="tr" invalidated="1" status="2">Copyright © Küçük Apps 2008-2011</lang>
+          <lang id="vi" invalidated="1" status="2">Bản quyền © nhỏ Apps 2008-2011</lang>
         </row>
         <row id="OriginalFilename" excluded="1">
           <native>Little Startup Manager.exe</native>
@@ -1542,38 +1570,42 @@
           <lang id="tr" date="20130618211739" status="2">Little Registry Cleaner</lang>
           <lang id="vi" date="20130618211739" status="2">Người lau chùi Nơi đăng ký Nhỏ</lang>
         </row>
-        <row id="ProductVersion" excluded="1">
-          <native>1.0</native>
-          <lang id="ar" status="2">0.0.0.0</lang>
-          <lang id="zh" status="2">0.0.0.0</lang>
-          <lang id="zh.tra" status="2">0.0.0.0</lang>
-          <lang id="nl" status="2">0.0.0.0</lang>
-          <lang id="en" status="2">0.0.0.0</lang>
-          <lang id="fr" status="2">0.0.0.0</lang>
-          <lang id="de" status="2">0.0.0.0</lang>
-          <lang id="el" status="2">0.0.0.0</lang>
-          <lang id="hu" status="2">0.0.0.0</lang>
-          <lang id="it" status="2">0.0.0.0</lang>
-          <lang id="ja" status="2">0.0.0.0</lang>
-          <lang id="lt" status="2">0.0.0.0</lang>
-          <lang id="pl" status="2">0.0.0.0</lang>
-          <lang id="fa" status="2">0.0.0.0</lang>
-          <lang id="pt" status="2">0.0.0.0</lang>
-          <lang id="ru" status="2">1.0.0.0</lang>
-          <lang id="es" status="2">0.0.0.0</lang>
-          <lang id="sv-SE" status="2">0.0.0.0</lang>
-          <lang id="th" status="2">0.0.0.0</lang>
-          <lang id="tr" status="2">0.0.0.0</lang>
-          <lang id="vi" status="2">0.0.0.0</lang>
+        <row id="ProductVersion" excluded="1" state="3" changed="20130621164135">
+          <prev>1.0</prev>
+          <native>1.1</native>
+          <lang id="ar" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="zh" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="zh.tra" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="nl" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="en" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="fr" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="de" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="el" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="hu" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="it" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="ja" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="lt" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="pl" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="fa" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="pt" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="ru" invalidated="1" status="2">1.0.0.0</lang>
+          <lang id="es" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="sv-SE" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="th" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="tr" invalidated="1" status="2">0.0.0.0</lang>
+          <lang id="vi" invalidated="1" status="2">0.0.0.0</lang>
         </row>
         <row id="ProductVersion[1]" class="TIntegerRow">1</row>
-        <row id="ProductVersion[2]" class="TIntegerRow">0</row>
+        <row id="ProductVersion[2]" class="TIntegerRow" state="3" changed="20130621164135">
+          <prev>0</prev>
+          <native>1</native>
+        </row>
         <row id="ProductVersion[3]" class="TIntegerRow">0</row>
         <row id="ProductVersion[4]" class="TIntegerRow">0</row>
       </node>
     </node>
   </source>
-  <source class="TVisualStudioNetProjectSource" name="..\Little Uninstall Manager\Little Uninstall Manager.csproj" original="en" date="20120926002212" defaultoutputdir="bin\Debug" configuration="Debug|x86" netversion="net35" toolsversion="net40" rootnamespace="Little_Uninstall_Manager">
+  <source class="TVisualStudioNetProjectSource" name="..\Little Uninstall Manager\Little Uninstall Manager.csproj" original="en" date="20130621045020" defaultoutputdir="bin\Debug" configuration="Debug|x86" netversion="net35" toolsversion="net40" rootnamespace="Little_Uninstall_Manager">
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TColorData</class>
@@ -1609,7 +1641,10 @@
     <node class="TNetFormFolder" name="Forms">
       <node class="TNetFormNode" name="Little_Uninstall_Manager.UninstallManager">
         <form class="TNetForm" name="Little_Uninstall_Manager.UninstallManager" type="Little_Uninstall_Manager.UninstallManager">
-          <row id="ClientSize.Height">447</row>
+          <row id="ClientSize.Height" state="3" changed="20130621164135">
+            <prev>447</prev>
+            <native>523</native>
+          </row>
           <row id="ClientSize.Width">625</row>
           <row id="Text">
             <native>Little Uninstall Manager</native>
@@ -1640,7 +1675,10 @@
           <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer" align="alClient">
             <row id="Location.X">0</row>
             <row id="Location.Y">0</row>
-            <row id="Size.Height">447</row>
+            <row id="Size.Height" state="3" changed="20130621164135">
+              <prev>447</prev>
+              <native>523</native>
+            </row>
             <row id="Size.Width">625</row>
             <row id="Text" locked="1">
               <native>toolStripContainer1</native>
@@ -1674,30 +1712,45 @@
               </columns>
               <rows countset="1">
                 <item class="TVisGridItem" name="Row0" type="stAbsolute">
-                  <row id="Height">30</row>
+                  <row id="Height" state="3" changed="20130621164135">
+                    <prev>30</prev>
+                    <native>32</native>
+                  </row>
                 </item>
                 <item class="TVisGridItem" name="Row1" type="stPercent">
                   <row id="Height" class="TPercentRow">100</row>
                 </item>
                 <item class="TVisGridItem" name="Row2" type="stAbsolute">
-                  <row id="Height">40</row>
+                  <row id="Height" state="3" changed="20130621164135">
+                    <prev>40</prev>
+                    <native>48</native>
+                  </row>
                 </item>
               </rows>
               <row id="Location.X">0</row>
               <row id="Location.Y">0</row>
-              <row id="Size.Height">447</row>
+              <row id="Size.Height" state="3" changed="20130621164135">
+                <prev>447</prev>
+                <native>523</native>
+              </row>
               <row id="Size.Width">625</row>
               <component class="TVisSplittedPanel" name="splitContainer1" type="System.Windows.Forms.SplitContainer" align="alClient">
                 <row id="Location.X">3</row>
                 <row id="Location.Y">3</row>
-                <row id="Size.Height">24</row>
+                <row id="Size.Height" state="3" changed="20130621164135">
+                  <prev>24</prev>
+                  <native>26</native>
+                </row>
                 <row id="Size.Width">619</row>
                 <row id="SplitterDistance" class="TIntegerRow">37</row>
                 <component class="TVisFirstPanel" name="Panel1">
                   <component class="TVisImage" name="pictureBox1" type="System.Windows.Forms.PictureBox" align="alClient" zoom="1">
                     <row id="Location.X">0</row>
                     <row id="Location.Y">0</row>
-                    <row id="Size.Height">24</row>
+                    <row id="Size.Height" state="3" changed="20130621164135">
+                      <prev>24</prev>
+                      <native>26</native>
+                    </row>
                     <row id="Size.Width">37</row>
                   </component>
                 </component>
@@ -1707,7 +1760,10 @@
                     <row id="ForeColor" hidden="1">clGrayText</row>
                     <row id="Location.X">0</row>
                     <row id="Location.Y">0</row>
-                    <row id="Size.Height">24</row>
+                    <row id="Size.Height" state="3" changed="20130621164135">
+                      <prev>24</prev>
+                      <native>26</native>
+                    </row>
                     <row id="Size.Width">578</row>
                     <row id="Text">
                       <native>Search by name</native>
@@ -1736,16 +1792,34 @@
                   </component>
                 </component>
               </component>
-              <component class="TVisWrapPanel" name="flowLayoutPanel1" type="System.Windows.Forms.FlowLayoutPanel" align="alClient" flowdirection="fdRightToLeft" gridrow="2">
+              <component class="TVisWrapPanel" name="flowLayoutPanel1" type="System.Windows.Forms.FlowLayoutPanel" align="alClient" flowdirection="fdRightToLeft" gapbottom="0" gaptop="0" gridrow="2">
                 <row id="Location.X">3</row>
-                <row id="Location.Y">410</row>
-                <row id="Size.Height">34</row>
+                <row id="Location.Y" state="3" changed="20130621164135">
+                  <prev>410</prev>
+                  <native>475</native>
+                </row>
+                <row id="Size.Height" state="3" changed="20130621164135">
+                  <prev>34</prev>
+                  <native>48</native>
+                </row>
                 <row id="Size.Width">619</row>
-                <component class="TVisPictureButton" name="buttonUninstall" type="System.Windows.Forms.Button" imageindex="2" images="imageList">
-                  <row id="Location.X">436</row>
-                  <row id="Location.Y">3</row>
-                  <row id="Size.Height">30</row>
-                  <row id="Size.Width">72</row>
+                <component class="TVisPictureButton" name="buttonUninstall" type="System.Windows.Forms.Button" gapbottom="0" gaptop="0">
+                  <row id="Location.X" state="3" changed="20130621164135">
+                    <prev>436</prev>
+                    <native>404</native>
+                  </row>
+                  <row id="Location.Y" state="3" changed="20130621164135">
+                    <prev>3</prev>
+                    <native>0</native>
+                  </row>
+                  <row id="Size.Height" state="3" changed="20130621164135">
+                    <prev>30</prev>
+                    <native>37</native>
+                  </row>
+                  <row id="Size.Width" state="3" changed="20130621164135">
+                    <prev>72</prev>
+                    <native>92</native>
+                  </row>
                   <row id="Text">
                     <native>Uninstall</native>
                     <lang id="ar" status="2">إلغاء تثبيت</lang>
@@ -1771,11 +1845,23 @@
                     <lang id="vi" status="2">Gỡ bỏ</lang>
                   </row>
                 </component>
-                <component class="TVisPictureButton" name="buttonRemove" type="System.Windows.Forms.Button" imageindex="3" images="imageList">
-                  <row id="Location.X">514</row>
-                  <row id="Location.Y">3</row>
-                  <row id="Size.Height">30</row>
-                  <row id="Size.Width">102</row>
+                <component class="TVisPictureButton" name="buttonRemove" type="System.Windows.Forms.Button" gapbottom="0" gapright="0" gaptop="0">
+                  <row id="Location.X" state="3" changed="20130621164135">
+                    <prev>514</prev>
+                    <native>502</native>
+                  </row>
+                  <row id="Location.Y" state="3" changed="20130621164135">
+                    <prev>3</prev>
+                    <native>0</native>
+                  </row>
+                  <row id="Size.Height" state="3" changed="20130621164135">
+                    <prev>30</prev>
+                    <native>37</native>
+                  </row>
+                  <row id="Size.Width" state="3" changed="20130621164135">
+                    <prev>102</prev>
+                    <native>117</native>
+                  </row>
                   <row id="Text">
                     <native>Remove Entry</native>
                     <lang id="ar" status="2">إزالة إدخال</lang>
@@ -1804,8 +1890,14 @@
               </component>
               <component class="TVisListView" name="listViewProgs" type="System.Windows.Forms.ListView" align="alClient" gridrow="1" viewstyle="vsReport">
                 <row id="Location.X">3</row>
-                <row id="Location.Y">33</row>
-                <row id="Size.Height">371</row>
+                <row id="Location.Y" state="3" changed="20130621164135">
+                  <prev>33</prev>
+                  <native>35</native>
+                </row>
+                <row id="Size.Height" state="3" changed="20130621164135">
+                  <prev>371</prev>
+                  <native>437</native>
+                </row>
                 <row id="Size.Width">619</row>
                 <column name="columnHeader1">
                   <row id="Text">
@@ -1996,9 +2088,9 @@
     </node>
     <node class="TWindowsVersionFolder" name="Versions" resid="16">
       <node class="TWindowsVersionNode" name="1" resid="1">
-        <row id="Assembly Version" excluded="1" state="3" changed="20130618232505">
-          <prev>1.0.4917.40195</prev>
-          <native>1.0.4917.40342</native>
+        <row id="Assembly Version" excluded="1" state="3" changed="20130621164135">
+          <prev>1.0.4917.40342</prev>
+          <native>1.1.4920.27459</native>
           <lang id="ar" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="zh" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="zh.tra" invalidated="1" status="2">0.0.0.0</lang>
@@ -2094,9 +2186,9 @@
           <lang id="tr" status="2">Küçük Uninstall Manager</lang>
           <lang id="vi" status="2">Ít Uninstall Manager</lang>
         </row>
-        <row id="FileVersion" excluded="1">
-          <prev>0.0.0.0</prev>
-          <native>1.0</native>
+        <row id="FileVersion" excluded="1" state="3" changed="20130621164135">
+          <prev>1.0</prev>
+          <native>1.1</native>
           <lang id="ar" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="zh" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="zh.tra" invalidated="1" status="2">0.0.0.0</lang>
@@ -2112,7 +2204,7 @@
           <lang id="pl" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="fa" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="pt" invalidated="1" status="2">0.0.0.0</lang>
-          <lang id="ru" status="3">1.0.0.0</lang>
+          <lang id="ru" invalidated="1" status="3">1.0.0.0</lang>
           <lang id="es" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="sv-SE" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="th" invalidated="1" status="2">0.0.0.0</lang>
@@ -2120,7 +2212,10 @@
           <lang id="vi" invalidated="1" status="2">0.0.0.0</lang>
         </row>
         <row id="FileVersion[1]" class="TIntegerRow" state="0">1</row>
-        <row id="FileVersion[2]" class="TIntegerRow" state="0">0</row>
+        <row id="FileVersion[2]" class="TIntegerRow" state="3" changed="20130621164135">
+          <prev>0</prev>
+          <native>1</native>
+        </row>
         <row id="FileVersion[3]" class="TIntegerRow" state="0">0</row>
         <row id="FileVersion[4]" class="TIntegerRow" state="0">0</row>
         <row id="InternalName">
@@ -2147,9 +2242,9 @@
           <lang id="tr" status="2">Little Kaldır Manager.exe</lang>
           <lang id="vi" status="2">Little Uninstall Manager.exe</lang>
         </row>
-        <row id="LegalCopyright" state="3" changed="20130617224625">
-          <prev>Copyright © Little Apps 2008-2011</prev>
-          <native>Copyright © Little Apps 2008-2012</native>
+        <row id="LegalCopyright" state="3" changed="20130621164135">
+          <prev>Copyright © Little Apps 2008-2012</prev>
+          <native>Copyright © Little Apps 2008</native>
           <lang id="ar" invalidated="1" status="2">حقوق الطبع والنشر © 2008-2011 تطبيقات ليتل</lang>
           <lang id="zh" invalidated="1" status="2">版权所有© 2008-2011小应用程序</lang>
           <lang id="zh.tra" invalidated="1" status="2">版權所有 © 2008-2011小應用</lang>
@@ -2220,9 +2315,9 @@
           <lang id="tr" status="2">Little Registry Cleaner</lang>
           <lang id="vi" status="2">Little Registry Cleaner</lang>
         </row>
-        <row id="ProductVersion" excluded="1">
-          <prev>0.0.0.0</prev>
-          <native>1.0</native>
+        <row id="ProductVersion" excluded="1" state="3" changed="20130621164135">
+          <prev>1.0</prev>
+          <native>1.1</native>
           <lang id="ar" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="zh" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="zh.tra" invalidated="1" status="2">0.0.0.0</lang>
@@ -2238,7 +2333,7 @@
           <lang id="pl" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="fa" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="pt" invalidated="1" status="2">0.0.0.0</lang>
-          <lang id="ru" status="3">1.0.0.0</lang>
+          <lang id="ru" invalidated="1" status="3">1.0.0.0</lang>
           <lang id="es" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="sv-SE" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="th" invalidated="1" status="2">0.0.0.0</lang>
@@ -2246,7 +2341,10 @@
           <lang id="vi" invalidated="1" status="2">0.0.0.0</lang>
         </row>
         <row id="ProductVersion[1]" class="TIntegerRow" state="0">1</row>
-        <row id="ProductVersion[2]" class="TIntegerRow" state="0">0</row>
+        <row id="ProductVersion[2]" class="TIntegerRow" state="3" changed="20130621164135">
+          <prev>0</prev>
+          <native>1</native>
+        </row>
         <row id="ProductVersion[3]" class="TIntegerRow" state="0">0</row>
         <row id="ProductVersion[4]" class="TIntegerRow" state="0">0</row>
       </node>
@@ -3597,9 +3695,9 @@
     </node>
     <node class="TWindowsVersionFolder" name="Versions" resid="16">
       <node class="TWindowsVersionNode" name="1" resid="1">
-        <row id="Assembly Version" locked="1" excluded="1" state="3" changed="20130618232505">
-          <prev>1.1.4917.38981</prev>
-          <native>1.1.4917.40340</native>
+        <row id="Assembly Version" locked="1" excluded="1" state="3" changed="20130621164135">
+          <prev>1.1.4917.40340</prev>
+          <native>1.1.4919.33978</native>
           <lang id="ar" invalidated="1">1.0.4187.39341</lang>
           <lang id="zh" invalidated="1">1.0.4187.39341</lang>
           <lang id="zh.tra" invalidated="1">1.0.4187.39341</lang>
@@ -3829,7 +3927,7 @@
       </node>
     </node>
   </source>
-  <source class="TVisualStudioNetProjectSource" name="Little Registry Cleaner.csproj" original="en" date="20130619041350" defaultoutputdir="bin\Debug" configuration="Debug|AnyCPU" netversion="net35" toolsversion="net40" rootnamespace="Little_Registry_Cleaner">
+  <source class="TVisualStudioNetProjectSource" name="Little Registry Cleaner.csproj" original="en" date="20130621045430" defaultoutputdir="bin\Debug" configuration="Debug|AnyCPU" netversion="net35" toolsversion="net40" rootnamespace="Little_Registry_Cleaner">
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TColorData</class>
@@ -4627,6 +4725,247 @@
           <component class="TVisEdit" name="nodeLocation" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox">
           </component>
           <component class="TVisEdit" name="nodeValueName" type="Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox">
+          </component>
+          <component class="TVisPopupMenu" name="contextMenuStrip1" type="System.Windows.Forms.ContextMenuStrip">
+            <row id="Size.Height">120</row>
+            <row id="Size.Width">162</row>
+            <component class="TVisMenuItem" name="selectAllToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text">
+                <native>Select All</native>
+                <lang id="ar" date="20130618211753" status="2">تحديد الكل</lang>
+                <lang id="zh" date="20130618211804" status="2">选择所有</lang>
+                <lang id="zh.tra" date="20130618211805" status="2">選擇所有</lang>
+                <lang id="nl" date="20130618211800" status="2">Selecteer alles</lang>
+                <lang id="en" date="20130618211755" status="2">Select All</lang>
+                <lang id="fr" date="20130618211757" status="2">Sélectionner tout</lang>
+                <lang id="de" date="20130618211754" status="2">Alles auswählen</lang>
+                <lang id="el" date="20130618211754" status="2">Επιλογή όλων</lang>
+                <lang id="hu" date="20130618211757" status="2">Mind kijelölése</lang>
+                <lang id="it" date="20130618211758" status="2">Seleziona tutto</lang>
+                <lang id="ja" date="20130618211759" status="2">すべて選択</lang>
+                <lang id="lt" date="20130618211759" status="2">Pažymėti viska</lang>
+                <lang id="pl" date="20130618211800" status="2">Zaznacz wszystko</lang>
+                <lang id="fa" date="20130618211756" status="2">انتخاب همه</lang>
+                <lang id="pt" date="20130618211801" status="2">Selecionar Todos</lang>
+                <lang id="ru" date="20130618211801" status="2">Выбрать все</lang>
+                <lang id="es" date="20130618211756" status="2">Seleccionar todo</lang>
+                <lang id="sv-SE" date="20130618211802" status="2">Markera alla</lang>
+                <lang id="th" date="20130618211803" status="2">เลือกทั้งหมด</lang>
+                <lang id="tr" date="20130618211803" status="2">Tümünü Seç</lang>
+                <lang id="vi" date="20130618211804" status="2">Chọn Tất cả</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="selectNoneToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text">
+                <native>Select None</native>
+                <lang id="ar" date="20130618211753" status="2">حدد بلا</lang>
+                <lang id="zh" date="20130618211804" status="2">选择无</lang>
+                <lang id="zh.tra" date="20130618211805" status="2">選擇無</lang>
+                <lang id="nl" date="20130618211800" status="2">Selecteer niets</lang>
+                <lang id="en" date="20130618211755" status="2">Select None</lang>
+                <lang id="fr" date="20130618211757" status="2">Désélectionner tout</lang>
+                <lang id="de" date="20130618211754" status="2">Nichts auswählen</lang>
+                <lang id="el" date="20130618211754" status="2">Επιλέξτε "Κανένα"</lang>
+                <lang id="hu" date="20130618211757" status="2">Kijelölés megszüntetése</lang>
+                <lang id="it" date="20130618211758" status="2">Seleziona nessuno</lang>
+                <lang id="ja" date="20130618211759" status="2">[なし] を選択します</lang>
+                <lang id="lt" date="20130618211759" status="2">Atšaukti pažymėjimą</lang>
+                <lang id="pl" date="20130618211800" status="2">Odznacz wszystko</lang>
+                <lang id="fa" date="20130618211756" status="2">انتخاب هیچکدام</lang>
+                <lang id="pt" date="20130618211801" status="2">Selecionar Nenhum</lang>
+                <lang id="ru" date="20130618211801" status="2">Очистить выбор</lang>
+                <lang id="es" date="20130618211756" status="2">Deseleccionar todo</lang>
+                <lang id="sv-SE" date="20130618211802" status="2">Välj Ingen</lang>
+                <lang id="th" date="20130618211803" status="2">ไม่มีเลือก</lang>
+                <lang id="tr" date="20130618211803" status="2">Tümünü Seçme</lang>
+                <lang id="vi" date="20130618211804" status="2">Chọn Không</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="invertSelectionToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text">
+                <native>Invert Selection</native>
+                <lang id="ar" date="20130618211753" status="2">عكس الاختيار</lang>
+                <lang id="zh" date="20130618211804" status="2">反选</lang>
+                <lang id="zh.tra" date="20130618211805" status="2">反選</lang>
+                <lang id="nl" date="20130618211800" status="2">Selectie omkeren</lang>
+                <lang id="en" date="20130618211755" status="2">Invert Selection</lang>
+                <lang id="fr" date="20130618211757" status="2">Inverser la sélection</lang>
+                <lang id="de" date="20130618211754" status="2">Auswahl umkehren</lang>
+                <lang id="el" date="20130618211754" status="2">Αντιστροφή της επιλογής</lang>
+                <lang id="hu" date="20130618211757" status="2">Kijelölés megfordítása</lang>
+                <lang id="it" date="20130618211758" status="2">Inverti la selezione</lang>
+                <lang id="ja" date="20130618211759" status="2">逆選択</lang>
+                <lang id="lt" date="20130618211759" status="2">Invertuoti  žymėjimą</lang>
+                <lang id="pl" date="20130618211800" status="2">Odwróć zaznaczenie</lang>
+                <lang id="fa" date="20130618211756" status="2">انتخاب برعکس شود</lang>
+                <lang id="pt" date="20130618211801" status="2">Inverter Seleção</lang>
+                <lang id="ru" date="20130618211801" status="2">Инвертировать выделение</lang>
+                <lang id="es" date="20130618211756" status="2">Invertir la selección</lang>
+                <lang id="sv-SE" date="20130618211802" status="2">Invertera markering</lang>
+                <lang id="th" date="20130618211803" status="2">เลือกกลับกัน</lang>
+                <lang id="tr" date="20130618211803" status="2">Tersini Seç</lang>
+                <lang id="vi" date="20130618211804" status="2">Đảo ngược lựa chọn</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="toolStripSeparator1" type="System.Windows.Forms.ToolStripSeparator">
+              <row id="Size.Height">6</row>
+              <row id="Size.Width">158</row>
+            </component>
+            <component class="TVisMenuItem" name="excludeSelectedToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text">
+                <native>Exclude Selected</native>
+                <lang id="ar" date="20130618211753" status="2">استبعاد المحددة</lang>
+                <lang id="zh" date="20130618211804" status="2">排除选择</lang>
+                <lang id="zh.tra" date="20130618211805" status="2">排除選擇</lang>
+                <lang id="nl" date="20130618211800" status="2">Geselecteerde uitsluiten</lang>
+                <lang id="en" date="20130618211755" status="2">Exclude Selected</lang>
+                <lang id="fr" date="20130618211757" status="2">Exclure la sélection</lang>
+                <lang id="de" date="20130618211754" status="2">Gewähltes ausschließen</lang>
+                <lang id="el" date="20130618211754" status="2">Εξαίρεση επιλεγμένων</lang>
+                <lang id="hu" date="20130618211757" status="2">Kijelöltek kihagyása</lang>
+                <lang id="it" date="20130618211758" status="2">Escludi selezionati</lang>
+                <lang id="ja" date="20130618211759" status="2">除外選択</lang>
+                <lang id="lt" date="20130618211759" status="2">Pašalinti pasirinktus</lang>
+                <lang id="pl" date="20130618211800" status="2">Pomiń zaznaczone</lang>
+                <lang id="fa" date="20130618211756" status="2">استثنا قرار دادن انتخاب شده ها</lang>
+                <lang id="pt" date="20130618211801" status="2">Excluir Selecionados</lang>
+                <lang id="ru" date="20130618211801" status="2">Исключить выбранные</lang>
+                <lang id="es" date="20130618211756" status="2">Excluir seleccionados</lang>
+                <lang id="sv-SE" date="20130618211802" status="2">Exkludera vald</lang>
+                <lang id="th" date="20130618211803" status="2">ยกเว้นเลือก</lang>
+                <lang id="tr" date="20130618211803" status="2">Seçileni Mahrum Et</lang>
+                <lang id="vi" date="20130618211804" status="2">Loại trừ được chọn</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="viewInRegeditToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">161</row>
+              <row id="Text">
+                <native>View in regedit</native>
+                <lang id="ar" date="20130618211753" status="2">عرض في regedit</lang>
+                <lang id="zh" date="20130618211804" status="2">输入注册表编辑器查看</lang>
+                <lang id="zh.tra" date="20130618211805" status="2">輸入註冊表編輯器查看</lang>
+                <lang id="nl" date="20130618211800" status="2">In regedit weergeven</lang>
+                <lang id="en" date="20130618211755" status="2">View in regedit</lang>
+                <lang id="fr" date="20130618211757" status="2">Voir dans l'éditeur de registre</lang>
+                <lang id="de" date="20130618211754" status="2">In regedit anzeigen</lang>
+                <lang id="el" date="20130618211754" status="2">Προβολή στο regedit</lang>
+                <lang id="hu" date="20130618211757" status="2">Nézet regedit-ben</lang>
+                <lang id="it" date="20130618211758" status="2">Visualizza in Regedit</lang>
+                <lang id="ja" date="20130618211759" status="2">プロフィールファイル名を指定で</lang>
+                <lang id="lt" date="20130618211759" status="2">Peržiūrėti regedit aplinkoje</lang>
+                <lang id="pl" date="20130618211800" status="2">Otwórz w regedit</lang>
+                <lang id="fa" date="20130618211756" status="2">مشاهده در برنامه رجیستری</lang>
+                <lang id="pt" date="20130618211801" status="2">Mostrar no regedit</lang>
+                <lang id="ru" date="20130618211801" status="2">Просмотр в реестре</lang>
+                <lang id="es" date="20130618211756" status="2">Ver en Regedit</lang>
+                <lang id="sv-SE" date="20130618211802" status="2">Visa i registereditorn</lang>
+                <lang id="th" date="20130618211803" status="2">ดูใน regedit</lang>
+                <lang id="tr" date="20130618211803" status="2">Regedit içinde göster</lang>
+                <lang id="vi" date="20130618211804" status="2">Xem trong regedit</lang>
+              </row>
+            </component>
+          </component>
+          <component class="TVisPopupMenu" name="contextMenuStrip2" type="System.Windows.Forms.ContextMenuStrip">
+            <row id="Size.Height">76</row>
+            <row id="Size.Width">137</row>
+            <component class="TVisMenuItem" name="hideShowToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem" parentfont="0">
+              <row id="Font">Segoe UI,9,style=Bold</row>
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">136</row>
+              <row id="Text">
+                <native>Hide/Show</native>
+                <lang id="ar" date="20130618211753" status="2">إظهار/إخفاء</lang>
+                <lang id="zh" date="20130618211804" status="2">隐藏/显示</lang>
+                <lang id="zh.tra" date="20130618211805" status="2">隱藏/顯示</lang>
+                <lang id="nl" date="20130618211800" status="2">Verbergen/Tonen</lang>
+                <lang id="en" date="20130618211755" status="2">Hide/Show</lang>
+                <lang id="fr" date="20130618211757" status="2">Cacher/Montrer</lang>
+                <lang id="de" date="20130618211754" status="2">Zeige/Verstecke</lang>
+                <lang id="el" date="20130618211754" status="2">Απόκρυψη/Εμφάνιση</lang>
+                <lang id="hu" date="20130618211757" status="2">Elrejt/mutat</lang>
+                <lang id="it" date="20130618211758" status="2">Mostra/Nascondi</lang>
+                <lang id="ja" date="20130618211759" status="2">非表示/表示</lang>
+                <lang id="lt" date="20130618211759" status="2">Slėpti / rodyti</lang>
+                <lang id="pl" date="20130618211800" status="2">Pokaż/Ukryj</lang>
+                <lang id="fa" date="20130618211756" status="2">مخفی / نمایش</lang>
+                <lang id="pt" date="20130618211801" status="2">Mostrar/ocultar</lang>
+                <lang id="ru" date="20130618211801" status="2">Скрыть/Показать</lang>
+                <lang id="es" date="20130618211756" status="2">Ocultar/mostrar</lang>
+                <lang id="sv-SE" date="20130618211802" status="2">Dölj/visa</lang>
+                <lang id="th" date="20130618211803" status="2">ซ่อน / แสดง</lang>
+                <lang id="tr" date="20130618211803" status="2">Gizle/göster</lang>
+                <lang id="vi" date="20130618211804" status="2">Che giấu/Chỉ ra</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="aboutToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">136</row>
+              <row id="Text">
+                <native>About...</native>
+                <lang id="ar" date="20130618211753" status="2">حول...</lang>
+                <lang id="zh" date="20130618211804" status="2">关于...</lang>
+                <lang id="zh.tra" date="20130618211805" status="2">關於...</lang>
+                <lang id="nl" date="20130618211800" status="2">Over...</lang>
+                <lang id="en" date="20130618211755" status="2">About...</lang>
+                <lang id="fr" date="20130618211757" status="2">À propos...</lang>
+                <lang id="de" date="20130618211754" status="2">Über...</lang>
+                <lang id="el" date="20130618211754" status="2">Σχετικά με...</lang>
+                <lang id="hu" date="20130618211757" status="2">Bővebben...</lang>
+                <lang id="it" date="20130618211758" status="2">Informazioni su...</lang>
+                <lang id="ja" date="20130618211759" status="2">〜について...</lang>
+                <lang id="lt" date="20130618211759" status="2">Apie...</lang>
+                <lang id="pl" date="20130618211800" status="2">O programie...</lang>
+                <lang id="fa" date="20130618211756" status="2">درباره...</lang>
+                <lang id="pt" date="20130618211801" status="2">Sobre...</lang>
+                <lang id="ru" date="20130618211801" status="2">О программе...</lang>
+                <lang id="es" date="20130618211756" status="2">Acerca de...</lang>
+                <lang id="sv-SE" date="20130618211802" status="2">Om...</lang>
+                <lang id="th" date="20130618211803" status="2">เกี่ยวกับ...</lang>
+                <lang id="tr" date="20130618211803" status="2">İle ilgili…</lang>
+                <lang id="vi" date="20130618211804" status="2">Về...</lang>
+              </row>
+            </component>
+            <component class="TVisMenuItem" name="toolStripSeparator4" type="System.Windows.Forms.ToolStripSeparator">
+              <row id="Size.Height">6</row>
+              <row id="Size.Width">133</row>
+            </component>
+            <component class="TVisMenuItem" name="exitToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
+              <row id="Size.Height">22</row>
+              <row id="Size.Width">136</row>
+              <row id="Text">
+                <native>Exit</native>
+                <lang id="ar" date="20130618211753" status="2">خروج</lang>
+                <lang id="zh" date="20130618211804" status="2">退出</lang>
+                <lang id="zh.tra" date="20130618211805" status="2">退出</lang>
+                <lang id="nl" date="20130618211800" status="2">Einde</lang>
+                <lang id="en" date="20130618211755" status="2">Exit</lang>
+                <lang id="fr" date="20130618211757" status="2">Quitter</lang>
+                <lang id="de" date="20130618211754" status="2">Beenden</lang>
+                <lang id="el" date="20130618211754" status="2">Εξόδος</lang>
+                <lang id="hu" date="20130618211757" status="2">Kilépés</lang>
+                <lang id="it" date="20130618211758" status="2">Esci</lang>
+                <lang id="ja" date="20130618211759" status="2">終了</lang>
+                <lang id="lt" date="20130618211759" status="2">Atsijungti</lang>
+                <lang id="pl" date="20130618211800" status="2">Zakończ</lang>
+                <lang id="fa" date="20130618211756" status="2">خروج</lang>
+                <lang id="pt" date="20130618211801" status="2">Sair</lang>
+                <lang id="ru" date="20130618211801" status="2">Выход</lang>
+                <lang id="es" date="20130618211756" status="2">Salir</lang>
+                <lang id="sv-SE" date="20130618211802" status="2">Avsluta</lang>
+                <lang id="th" date="20130618211803" status="2">ออกจาก</lang>
+                <lang id="tr" date="20130618211803" status="2">Çık</lang>
+                <lang id="vi" date="20130618211804" status="2">Cửa ra</lang>
+              </row>
+            </component>
           </component>
           <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer" align="alClient">
             <row id="Location.X">0</row>
@@ -6546,247 +6885,6 @@
                   </row>
                 </component>
               </component>
-            </component>
-          </component>
-          <component class="TVisPopupMenu" name="contextMenuStrip1" type="System.Windows.Forms.ContextMenuStrip">
-            <row id="Size.Height">120</row>
-            <row id="Size.Width">162</row>
-            <component class="TVisMenuItem" name="selectAllToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text">
-                <native>Select All</native>
-                <lang id="ar" date="20130618211753" status="2">تحديد الكل</lang>
-                <lang id="zh" date="20130618211804" status="2">选择所有</lang>
-                <lang id="zh.tra" date="20130618211805" status="2">選擇所有</lang>
-                <lang id="nl" date="20130618211800" status="2">Selecteer alles</lang>
-                <lang id="en" date="20130618211755" status="2">Select All</lang>
-                <lang id="fr" date="20130618211757" status="2">Sélectionner tout</lang>
-                <lang id="de" date="20130618211754" status="2">Alles auswählen</lang>
-                <lang id="el" date="20130618211754" status="2">Επιλογή όλων</lang>
-                <lang id="hu" date="20130618211757" status="2">Mind kijelölése</lang>
-                <lang id="it" date="20130618211758" status="2">Seleziona tutto</lang>
-                <lang id="ja" date="20130618211759" status="2">すべて選択</lang>
-                <lang id="lt" date="20130618211759" status="2">Pažymėti viska</lang>
-                <lang id="pl" date="20130618211800" status="2">Zaznacz wszystko</lang>
-                <lang id="fa" date="20130618211756" status="2">انتخاب همه</lang>
-                <lang id="pt" date="20130618211801" status="2">Selecionar Todos</lang>
-                <lang id="ru" date="20130618211801" status="2">Выбрать все</lang>
-                <lang id="es" date="20130618211756" status="2">Seleccionar todo</lang>
-                <lang id="sv-SE" date="20130618211802" status="2">Markera alla</lang>
-                <lang id="th" date="20130618211803" status="2">เลือกทั้งหมด</lang>
-                <lang id="tr" date="20130618211803" status="2">Tümünü Seç</lang>
-                <lang id="vi" date="20130618211804" status="2">Chọn Tất cả</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="selectNoneToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text">
-                <native>Select None</native>
-                <lang id="ar" date="20130618211753" status="2">حدد بلا</lang>
-                <lang id="zh" date="20130618211804" status="2">选择无</lang>
-                <lang id="zh.tra" date="20130618211805" status="2">選擇無</lang>
-                <lang id="nl" date="20130618211800" status="2">Selecteer niets</lang>
-                <lang id="en" date="20130618211755" status="2">Select None</lang>
-                <lang id="fr" date="20130618211757" status="2">Désélectionner tout</lang>
-                <lang id="de" date="20130618211754" status="2">Nichts auswählen</lang>
-                <lang id="el" date="20130618211754" status="2">Επιλέξτε "Κανένα"</lang>
-                <lang id="hu" date="20130618211757" status="2">Kijelölés megszüntetése</lang>
-                <lang id="it" date="20130618211758" status="2">Seleziona nessuno</lang>
-                <lang id="ja" date="20130618211759" status="2">[なし] を選択します</lang>
-                <lang id="lt" date="20130618211759" status="2">Atšaukti pažymėjimą</lang>
-                <lang id="pl" date="20130618211800" status="2">Odznacz wszystko</lang>
-                <lang id="fa" date="20130618211756" status="2">انتخاب هیچکدام</lang>
-                <lang id="pt" date="20130618211801" status="2">Selecionar Nenhum</lang>
-                <lang id="ru" date="20130618211801" status="2">Очистить выбор</lang>
-                <lang id="es" date="20130618211756" status="2">Deseleccionar todo</lang>
-                <lang id="sv-SE" date="20130618211802" status="2">Välj Ingen</lang>
-                <lang id="th" date="20130618211803" status="2">ไม่มีเลือก</lang>
-                <lang id="tr" date="20130618211803" status="2">Tümünü Seçme</lang>
-                <lang id="vi" date="20130618211804" status="2">Chọn Không</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="invertSelectionToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text">
-                <native>Invert Selection</native>
-                <lang id="ar" date="20130618211753" status="2">عكس الاختيار</lang>
-                <lang id="zh" date="20130618211804" status="2">反选</lang>
-                <lang id="zh.tra" date="20130618211805" status="2">反選</lang>
-                <lang id="nl" date="20130618211800" status="2">Selectie omkeren</lang>
-                <lang id="en" date="20130618211755" status="2">Invert Selection</lang>
-                <lang id="fr" date="20130618211757" status="2">Inverser la sélection</lang>
-                <lang id="de" date="20130618211754" status="2">Auswahl umkehren</lang>
-                <lang id="el" date="20130618211754" status="2">Αντιστροφή της επιλογής</lang>
-                <lang id="hu" date="20130618211757" status="2">Kijelölés megfordítása</lang>
-                <lang id="it" date="20130618211758" status="2">Inverti la selezione</lang>
-                <lang id="ja" date="20130618211759" status="2">逆選択</lang>
-                <lang id="lt" date="20130618211759" status="2">Invertuoti  žymėjimą</lang>
-                <lang id="pl" date="20130618211800" status="2">Odwróć zaznaczenie</lang>
-                <lang id="fa" date="20130618211756" status="2">انتخاب برعکس شود</lang>
-                <lang id="pt" date="20130618211801" status="2">Inverter Seleção</lang>
-                <lang id="ru" date="20130618211801" status="2">Инвертировать выделение</lang>
-                <lang id="es" date="20130618211756" status="2">Invertir la selección</lang>
-                <lang id="sv-SE" date="20130618211802" status="2">Invertera markering</lang>
-                <lang id="th" date="20130618211803" status="2">เลือกกลับกัน</lang>
-                <lang id="tr" date="20130618211803" status="2">Tersini Seç</lang>
-                <lang id="vi" date="20130618211804" status="2">Đảo ngược lựa chọn</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="toolStripSeparator1" type="System.Windows.Forms.ToolStripSeparator">
-              <row id="Size.Height">6</row>
-              <row id="Size.Width">158</row>
-            </component>
-            <component class="TVisMenuItem" name="excludeSelectedToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text">
-                <native>Exclude Selected</native>
-                <lang id="ar" date="20130618211753" status="2">استبعاد المحددة</lang>
-                <lang id="zh" date="20130618211804" status="2">排除选择</lang>
-                <lang id="zh.tra" date="20130618211805" status="2">排除選擇</lang>
-                <lang id="nl" date="20130618211800" status="2">Geselecteerde uitsluiten</lang>
-                <lang id="en" date="20130618211755" status="2">Exclude Selected</lang>
-                <lang id="fr" date="20130618211757" status="2">Exclure la sélection</lang>
-                <lang id="de" date="20130618211754" status="2">Gewähltes ausschließen</lang>
-                <lang id="el" date="20130618211754" status="2">Εξαίρεση επιλεγμένων</lang>
-                <lang id="hu" date="20130618211757" status="2">Kijelöltek kihagyása</lang>
-                <lang id="it" date="20130618211758" status="2">Escludi selezionati</lang>
-                <lang id="ja" date="20130618211759" status="2">除外選択</lang>
-                <lang id="lt" date="20130618211759" status="2">Pašalinti pasirinktus</lang>
-                <lang id="pl" date="20130618211800" status="2">Pomiń zaznaczone</lang>
-                <lang id="fa" date="20130618211756" status="2">استثنا قرار دادن انتخاب شده ها</lang>
-                <lang id="pt" date="20130618211801" status="2">Excluir Selecionados</lang>
-                <lang id="ru" date="20130618211801" status="2">Исключить выбранные</lang>
-                <lang id="es" date="20130618211756" status="2">Excluir seleccionados</lang>
-                <lang id="sv-SE" date="20130618211802" status="2">Exkludera vald</lang>
-                <lang id="th" date="20130618211803" status="2">ยกเว้นเลือก</lang>
-                <lang id="tr" date="20130618211803" status="2">Seçileni Mahrum Et</lang>
-                <lang id="vi" date="20130618211804" status="2">Loại trừ được chọn</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="viewInRegeditToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">161</row>
-              <row id="Text">
-                <native>View in regedit</native>
-                <lang id="ar" date="20130618211753" status="2">عرض في regedit</lang>
-                <lang id="zh" date="20130618211804" status="2">输入注册表编辑器查看</lang>
-                <lang id="zh.tra" date="20130618211805" status="2">輸入註冊表編輯器查看</lang>
-                <lang id="nl" date="20130618211800" status="2">In regedit weergeven</lang>
-                <lang id="en" date="20130618211755" status="2">View in regedit</lang>
-                <lang id="fr" date="20130618211757" status="2">Voir dans l'éditeur de registre</lang>
-                <lang id="de" date="20130618211754" status="2">In regedit anzeigen</lang>
-                <lang id="el" date="20130618211754" status="2">Προβολή στο regedit</lang>
-                <lang id="hu" date="20130618211757" status="2">Nézet regedit-ben</lang>
-                <lang id="it" date="20130618211758" status="2">Visualizza in Regedit</lang>
-                <lang id="ja" date="20130618211759" status="2">プロフィールファイル名を指定で</lang>
-                <lang id="lt" date="20130618211759" status="2">Peržiūrėti regedit aplinkoje</lang>
-                <lang id="pl" date="20130618211800" status="2">Otwórz w regedit</lang>
-                <lang id="fa" date="20130618211756" status="2">مشاهده در برنامه رجیستری</lang>
-                <lang id="pt" date="20130618211801" status="2">Mostrar no regedit</lang>
-                <lang id="ru" date="20130618211801" status="2">Просмотр в реестре</lang>
-                <lang id="es" date="20130618211756" status="2">Ver en Regedit</lang>
-                <lang id="sv-SE" date="20130618211802" status="2">Visa i registereditorn</lang>
-                <lang id="th" date="20130618211803" status="2">ดูใน regedit</lang>
-                <lang id="tr" date="20130618211803" status="2">Regedit içinde göster</lang>
-                <lang id="vi" date="20130618211804" status="2">Xem trong regedit</lang>
-              </row>
-            </component>
-          </component>
-          <component class="TVisPopupMenu" name="contextMenuStrip2" type="System.Windows.Forms.ContextMenuStrip">
-            <row id="Size.Height">76</row>
-            <row id="Size.Width">137</row>
-            <component class="TVisMenuItem" name="hideShowToolStripMenuItem" type="System.Windows.Forms.ToolStripMenuItem" parentfont="0">
-              <row id="Font">Segoe UI,9,style=Bold</row>
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">136</row>
-              <row id="Text">
-                <native>Hide/Show</native>
-                <lang id="ar" date="20130618211753" status="2">إظهار/إخفاء</lang>
-                <lang id="zh" date="20130618211804" status="2">隐藏/显示</lang>
-                <lang id="zh.tra" date="20130618211805" status="2">隱藏/顯示</lang>
-                <lang id="nl" date="20130618211800" status="2">Verbergen/Tonen</lang>
-                <lang id="en" date="20130618211755" status="2">Hide/Show</lang>
-                <lang id="fr" date="20130618211757" status="2">Cacher/Montrer</lang>
-                <lang id="de" date="20130618211754" status="2">Zeige/Verstecke</lang>
-                <lang id="el" date="20130618211754" status="2">Απόκρυψη/Εμφάνιση</lang>
-                <lang id="hu" date="20130618211757" status="2">Elrejt/mutat</lang>
-                <lang id="it" date="20130618211758" status="2">Mostra/Nascondi</lang>
-                <lang id="ja" date="20130618211759" status="2">非表示/表示</lang>
-                <lang id="lt" date="20130618211759" status="2">Slėpti / rodyti</lang>
-                <lang id="pl" date="20130618211800" status="2">Pokaż/Ukryj</lang>
-                <lang id="fa" date="20130618211756" status="2">مخفی / نمایش</lang>
-                <lang id="pt" date="20130618211801" status="2">Mostrar/ocultar</lang>
-                <lang id="ru" date="20130618211801" status="2">Скрыть/Показать</lang>
-                <lang id="es" date="20130618211756" status="2">Ocultar/mostrar</lang>
-                <lang id="sv-SE" date="20130618211802" status="2">Dölj/visa</lang>
-                <lang id="th" date="20130618211803" status="2">ซ่อน / แสดง</lang>
-                <lang id="tr" date="20130618211803" status="2">Gizle/göster</lang>
-                <lang id="vi" date="20130618211804" status="2">Che giấu/Chỉ ra</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="aboutToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">136</row>
-              <row id="Text">
-                <native>About...</native>
-                <lang id="ar" date="20130618211753" status="2">حول...</lang>
-                <lang id="zh" date="20130618211804" status="2">关于...</lang>
-                <lang id="zh.tra" date="20130618211805" status="2">關於...</lang>
-                <lang id="nl" date="20130618211800" status="2">Over...</lang>
-                <lang id="en" date="20130618211755" status="2">About...</lang>
-                <lang id="fr" date="20130618211757" status="2">À propos...</lang>
-                <lang id="de" date="20130618211754" status="2">Über...</lang>
-                <lang id="el" date="20130618211754" status="2">Σχετικά με...</lang>
-                <lang id="hu" date="20130618211757" status="2">Bővebben...</lang>
-                <lang id="it" date="20130618211758" status="2">Informazioni su...</lang>
-                <lang id="ja" date="20130618211759" status="2">〜について...</lang>
-                <lang id="lt" date="20130618211759" status="2">Apie...</lang>
-                <lang id="pl" date="20130618211800" status="2">O programie...</lang>
-                <lang id="fa" date="20130618211756" status="2">درباره...</lang>
-                <lang id="pt" date="20130618211801" status="2">Sobre...</lang>
-                <lang id="ru" date="20130618211801" status="2">О программе...</lang>
-                <lang id="es" date="20130618211756" status="2">Acerca de...</lang>
-                <lang id="sv-SE" date="20130618211802" status="2">Om...</lang>
-                <lang id="th" date="20130618211803" status="2">เกี่ยวกับ...</lang>
-                <lang id="tr" date="20130618211803" status="2">İle ilgili…</lang>
-                <lang id="vi" date="20130618211804" status="2">Về...</lang>
-              </row>
-            </component>
-            <component class="TVisMenuItem" name="toolStripSeparator4" type="System.Windows.Forms.ToolStripSeparator">
-              <row id="Size.Height">6</row>
-              <row id="Size.Width">133</row>
-            </component>
-            <component class="TVisMenuItem" name="exitToolStripMenuItem1" type="System.Windows.Forms.ToolStripMenuItem">
-              <row id="Size.Height">22</row>
-              <row id="Size.Width">136</row>
-              <row id="Text">
-                <native>Exit</native>
-                <lang id="ar" date="20130618211753" status="2">خروج</lang>
-                <lang id="zh" date="20130618211804" status="2">退出</lang>
-                <lang id="zh.tra" date="20130618211805" status="2">退出</lang>
-                <lang id="nl" date="20130618211800" status="2">Einde</lang>
-                <lang id="en" date="20130618211755" status="2">Exit</lang>
-                <lang id="fr" date="20130618211757" status="2">Quitter</lang>
-                <lang id="de" date="20130618211754" status="2">Beenden</lang>
-                <lang id="el" date="20130618211754" status="2">Εξόδος</lang>
-                <lang id="hu" date="20130618211757" status="2">Kilépés</lang>
-                <lang id="it" date="20130618211758" status="2">Esci</lang>
-                <lang id="ja" date="20130618211759" status="2">終了</lang>
-                <lang id="lt" date="20130618211759" status="2">Atsijungti</lang>
-                <lang id="pl" date="20130618211800" status="2">Zakończ</lang>
-                <lang id="fa" date="20130618211756" status="2">خروج</lang>
-                <lang id="pt" date="20130618211801" status="2">Sair</lang>
-                <lang id="ru" date="20130618211801" status="2">Выход</lang>
-                <lang id="es" date="20130618211756" status="2">Salir</lang>
-                <lang id="sv-SE" date="20130618211802" status="2">Avsluta</lang>
-                <lang id="th" date="20130618211803" status="2">ออกจาก</lang>
-                <lang id="tr" date="20130618211803" status="2">Çık</lang>
-                <lang id="vi" date="20130618211804" status="2">Cửa ra</lang>
-              </row>
             </component>
           </component>
           <component class="TVisImageList" name="imageListTreeView" type="System.Windows.Forms.ImageList">
@@ -9167,8 +9265,14 @@
             </component>
             <component class="TVisPictureButton" name="buttonStop" type="System.Windows.Forms.Button">
               <row id="Location.X">316</row>
-              <row id="Location.Y">33</row>
-              <row id="Size.Height">23</row>
+              <row id="Location.Y" state="3" changed="20130621164135">
+                <prev>33</prev>
+                <native>32</native>
+              </row>
+              <row id="Size.Height" state="3" changed="20130621164135">
+                <prev>23</prev>
+                <native>24</native>
+              </row>
               <row id="Size.Width">57</row>
               <row id="Text">
                 <native>Stop</native>
@@ -10569,9 +10673,9 @@
     </node>
     <node class="TWindowsVersionFolder" name="Versions" state="0" created="20130618213530" resid="16">
       <node class="TWindowsVersionNode" name="1" state="0" resid="1">
-        <row id="Assembly Version" state="3" changed="20130618232505">
-          <prev>1.5.4917.40194</prev>
-          <native>1.5.4917.40341</native>
+        <row id="Assembly Version" state="3" changed="20130621164135">
+          <prev>1.5.4917.40341</prev>
+          <native>1.6.4920.27458</native>
           <lang id="ar" invalidated="1" status="2">1.5.4917.38258</lang>
           <lang id="zh" invalidated="1" status="2">1.5.4917.38258</lang>
           <lang id="zh.tra" invalidated="1" status="2">1.5.4917.38258</lang>
@@ -10666,33 +10770,40 @@
           <lang id="tr" status="2">Küçük kayıt defteri temizleyici</lang>
           <lang id="vi" status="2">Ít đăng ký sạch hơn</lang>
         </row>
-        <row id="FileVersion" state="0">
-          <native>1.5.2</native>
-          <lang id="ar" status="2">1.5.2</lang>
-          <lang id="zh" status="2">1.5.2</lang>
-          <lang id="zh.tra" status="2">1.5.2</lang>
-          <lang id="nl" status="2">1.5.2</lang>
-          <lang id="en" status="2">1.5.2</lang>
-          <lang id="fr" status="2">1.5.2</lang>
-          <lang id="de" status="2">1.5.2</lang>
-          <lang id="el" status="2">1.5.2</lang>
-          <lang id="hu" status="2">1.5.2</lang>
-          <lang id="it" status="2">1.5.2</lang>
-          <lang id="ja" status="2">1.5.2</lang>
-          <lang id="lt" status="2">1.5.2</lang>
-          <lang id="pl" status="2">1.5.2</lang>
-          <lang id="fa" status="2">1.5.2</lang>
-          <lang id="pt" status="2">1.5.2</lang>
-          <lang id="ru" status="2">1.5.2</lang>
-          <lang id="es" status="2">1.5.2</lang>
-          <lang id="sv-SE" status="2">1.5.2</lang>
-          <lang id="th" status="2">1.5.2</lang>
-          <lang id="tr" status="2">1.5.2</lang>
-          <lang id="vi" status="2">1.5.2</lang>
+        <row id="FileVersion" state="3" changed="20130621164135">
+          <prev>1.5.2</prev>
+          <native>1.6.0</native>
+          <lang id="ar" invalidated="1" status="2">1.5.2</lang>
+          <lang id="zh" invalidated="1" status="2">1.5.2</lang>
+          <lang id="zh.tra" invalidated="1" status="2">1.5.2</lang>
+          <lang id="nl" invalidated="1" status="2">1.5.2</lang>
+          <lang id="en" invalidated="1" status="2">1.5.2</lang>
+          <lang id="fr" invalidated="1" status="2">1.5.2</lang>
+          <lang id="de" invalidated="1" status="2">1.5.2</lang>
+          <lang id="el" invalidated="1" status="2">1.5.2</lang>
+          <lang id="hu" invalidated="1" status="2">1.5.2</lang>
+          <lang id="it" invalidated="1" status="2">1.5.2</lang>
+          <lang id="ja" invalidated="1" status="2">1.5.2</lang>
+          <lang id="lt" invalidated="1" status="2">1.5.2</lang>
+          <lang id="pl" invalidated="1" status="2">1.5.2</lang>
+          <lang id="fa" invalidated="1" status="2">1.5.2</lang>
+          <lang id="pt" invalidated="1" status="2">1.5.2</lang>
+          <lang id="ru" invalidated="1" status="2">1.5.2</lang>
+          <lang id="es" invalidated="1" status="2">1.5.2</lang>
+          <lang id="sv-SE" invalidated="1" status="2">1.5.2</lang>
+          <lang id="th" invalidated="1" status="2">1.5.2</lang>
+          <lang id="tr" invalidated="1" status="2">1.5.2</lang>
+          <lang id="vi" invalidated="1" status="2">1.5.2</lang>
         </row>
         <row id="FileVersion[1]" class="TIntegerRow" state="0">1</row>
-        <row id="FileVersion[2]" class="TIntegerRow" state="0">5</row>
-        <row id="FileVersion[3]" class="TIntegerRow" state="0">2</row>
+        <row id="FileVersion[2]" class="TIntegerRow" state="3" changed="20130621164135">
+          <prev>5</prev>
+          <native>6</native>
+        </row>
+        <row id="FileVersion[3]" class="TIntegerRow" state="3" changed="20130621164135">
+          <prev>2</prev>
+          <native>0</native>
+        </row>
         <row id="FileVersion[4]" class="TIntegerRow" state="0">0</row>
         <row id="InternalName" state="0">
           <native>Little Registry Cleaner.exe</native>
@@ -10718,29 +10829,30 @@
           <lang id="tr" status="2">Biraz sicil dairesi Cleaner.exe</lang>
           <lang id="vi" status="2">Ít đăng ký Cleaner.exe</lang>
         </row>
-        <row id="LegalCopyright" state="0">
-          <native>Copyright © Little Apps 2008-2012</native>
-          <lang id="ar" status="2">حقوق الطبع والنشر © القليل تطبيقات 2008-2012</lang>
-          <lang id="zh" status="2">版权所有 © 小应用程序 2008年-2012 年</lang>
-          <lang id="zh.tra" status="2">版權所有 © 小應用程式 2008年-2012 年</lang>
-          <lang id="nl" status="2">Copyright © weinig Apps 2008-2012</lang>
-          <lang id="en" status="2">Copyright © Little Apps 2008-2012</lang>
-          <lang id="fr" status="2">Copyright © peu apps pour 2008-2012</lang>
-          <lang id="de" status="2">Copyright © wenig Apps 2008-2012</lang>
-          <lang id="el" status="2">Copyright © μικρή Apps 2008-2012</lang>
-          <lang id="hu" status="2">Copyright © kis Apps 2008-2012</lang>
-          <lang id="it" status="2">Copyright © Little Apps 2008-2012</lang>
-          <lang id="ja" status="2">著作権 © 小さなアプリ 2008年-2012年</lang>
-          <lang id="lt" status="2">Copyright © mažai Apps 2008-2012</lang>
-          <lang id="pl" status="2">Copyright © mało aplikacji 2008-2012</lang>
-          <lang id="fa" status="2">کپی رایت © کمی برنامه های 2008-2012</lang>
-          <lang id="pt" status="2">Copyright © pouco Apps 2008-2012</lang>
-          <lang id="ru" status="2">Copyright © мало Apps 2008-2012</lang>
-          <lang id="es" status="2">Copyright © poco aplicaciones 2008-2012</lang>
-          <lang id="sv-SE" status="2">Copyright © lilla program 2008-2012</lang>
-          <lang id="th" status="2">สงวนลิขสิทธิ์ © น้อย Apps 2008-2012</lang>
-          <lang id="tr" status="2">Copyright © biraz Apps 2008-2012</lang>
-          <lang id="vi" status="2">Bản quyền © ít ứng dụng 2008-2012</lang>
+        <row id="LegalCopyright" state="3" changed="20130621164135">
+          <prev>Copyright © Little Apps 2008-2012</prev>
+          <native>Copyright © Little Apps 2008</native>
+          <lang id="ar" invalidated="1" status="2">حقوق الطبع والنشر © القليل تطبيقات 2008-2012</lang>
+          <lang id="zh" invalidated="1" status="2">版权所有 © 小应用程序 2008年-2012 年</lang>
+          <lang id="zh.tra" invalidated="1" status="2">版權所有 © 小應用程式 2008年-2012 年</lang>
+          <lang id="nl" invalidated="1" status="2">Copyright © weinig Apps 2008-2012</lang>
+          <lang id="en" invalidated="1" status="2">Copyright © Little Apps 2008-2012</lang>
+          <lang id="fr" invalidated="1" status="2">Copyright © peu apps pour 2008-2012</lang>
+          <lang id="de" invalidated="1" status="2">Copyright © wenig Apps 2008-2012</lang>
+          <lang id="el" invalidated="1" status="2">Copyright © μικρή Apps 2008-2012</lang>
+          <lang id="hu" invalidated="1" status="2">Copyright © kis Apps 2008-2012</lang>
+          <lang id="it" invalidated="1" status="2">Copyright © Little Apps 2008-2012</lang>
+          <lang id="ja" invalidated="1" status="2">著作権 © 小さなアプリ 2008年-2012年</lang>
+          <lang id="lt" invalidated="1" status="2">Copyright © mažai Apps 2008-2012</lang>
+          <lang id="pl" invalidated="1" status="2">Copyright © mało aplikacji 2008-2012</lang>
+          <lang id="fa" invalidated="1" status="2">کپی رایت © کمی برنامه های 2008-2012</lang>
+          <lang id="pt" invalidated="1" status="2">Copyright © pouco Apps 2008-2012</lang>
+          <lang id="ru" invalidated="1" status="2">Copyright © мало Apps 2008-2012</lang>
+          <lang id="es" invalidated="1" status="2">Copyright © poco aplicaciones 2008-2012</lang>
+          <lang id="sv-SE" invalidated="1" status="2">Copyright © lilla program 2008-2012</lang>
+          <lang id="th" invalidated="1" status="2">สงวนลิขสิทธิ์ © น้อย Apps 2008-2012</lang>
+          <lang id="tr" invalidated="1" status="2">Copyright © biraz Apps 2008-2012</lang>
+          <lang id="vi" invalidated="1" status="2">Bản quyền © ít ứng dụng 2008-2012</lang>
         </row>
         <row id="OriginalFilename" state="0">
           <native>Little Registry Cleaner.exe</native>
@@ -10790,33 +10902,40 @@
           <lang id="tr" status="2">Küçük kayıt defteri temizleyici</lang>
           <lang id="vi" status="2">Ít đăng ký sạch hơn</lang>
         </row>
-        <row id="ProductVersion" state="0">
-          <native>1.5.2</native>
-          <lang id="ar" status="2">1.5.2</lang>
-          <lang id="zh" status="2">1.5.2</lang>
-          <lang id="zh.tra" status="2">1.5.2</lang>
-          <lang id="nl" status="2">1.5.2</lang>
-          <lang id="en" status="2">1.5.2</lang>
-          <lang id="fr" status="2">1.5.2</lang>
-          <lang id="de" status="2">1.5.2</lang>
-          <lang id="el" status="2">1.5.2</lang>
-          <lang id="hu" status="2">1.5.2</lang>
-          <lang id="it" status="2">1.5.2</lang>
-          <lang id="ja" status="2">1.5.2</lang>
-          <lang id="lt" status="2">1.5.2</lang>
-          <lang id="pl" status="2">1.5.2</lang>
-          <lang id="fa" status="2">1.5.2</lang>
-          <lang id="pt" status="2">1.5.2</lang>
-          <lang id="ru" status="2">1.5.2</lang>
-          <lang id="es" status="2">1.5.2</lang>
-          <lang id="sv-SE" status="2">1.5.2</lang>
-          <lang id="th" status="2">1.5.2</lang>
-          <lang id="tr" status="2">1.5.2</lang>
-          <lang id="vi" status="2">1.5.2</lang>
+        <row id="ProductVersion" state="3" changed="20130621164135">
+          <prev>1.5.2</prev>
+          <native>1.6.0</native>
+          <lang id="ar" invalidated="1" status="2">1.5.2</lang>
+          <lang id="zh" invalidated="1" status="2">1.5.2</lang>
+          <lang id="zh.tra" invalidated="1" status="2">1.5.2</lang>
+          <lang id="nl" invalidated="1" status="2">1.5.2</lang>
+          <lang id="en" invalidated="1" status="2">1.5.2</lang>
+          <lang id="fr" invalidated="1" status="2">1.5.2</lang>
+          <lang id="de" invalidated="1" status="2">1.5.2</lang>
+          <lang id="el" invalidated="1" status="2">1.5.2</lang>
+          <lang id="hu" invalidated="1" status="2">1.5.2</lang>
+          <lang id="it" invalidated="1" status="2">1.5.2</lang>
+          <lang id="ja" invalidated="1" status="2">1.5.2</lang>
+          <lang id="lt" invalidated="1" status="2">1.5.2</lang>
+          <lang id="pl" invalidated="1" status="2">1.5.2</lang>
+          <lang id="fa" invalidated="1" status="2">1.5.2</lang>
+          <lang id="pt" invalidated="1" status="2">1.5.2</lang>
+          <lang id="ru" invalidated="1" status="2">1.5.2</lang>
+          <lang id="es" invalidated="1" status="2">1.5.2</lang>
+          <lang id="sv-SE" invalidated="1" status="2">1.5.2</lang>
+          <lang id="th" invalidated="1" status="2">1.5.2</lang>
+          <lang id="tr" invalidated="1" status="2">1.5.2</lang>
+          <lang id="vi" invalidated="1" status="2">1.5.2</lang>
         </row>
         <row id="ProductVersion[1]" class="TIntegerRow" state="0">1</row>
-        <row id="ProductVersion[2]" class="TIntegerRow" state="0">5</row>
-        <row id="ProductVersion[3]" class="TIntegerRow" state="0">2</row>
+        <row id="ProductVersion[2]" class="TIntegerRow" state="3" changed="20130621164135">
+          <prev>5</prev>
+          <native>6</native>
+        </row>
+        <row id="ProductVersion[3]" class="TIntegerRow" state="3" changed="20130621164135">
+          <prev>2</prev>
+          <native>0</native>
+        </row>
         <row id="ProductVersion[4]" class="TIntegerRow" state="0">0</row>
       </node>
     </node>
