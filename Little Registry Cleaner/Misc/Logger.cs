@@ -73,7 +73,7 @@ namespace Little_Registry_Cleaner
                     {
                         // Writes header to log file
                         this.WriteLine("Little Registry Cleaner " + Application.ProductVersion);
-                        this.WriteLine("Website: http://sourceforge.net/projects/littlecleaner");
+                        this.WriteLine("Website: http://www.little-apps.org/little-registry-cleaner/");
                         this.WriteLine(Environment.OSVersion.ToString());
                         this.WriteLine();
                     }
