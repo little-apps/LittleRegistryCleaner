@@ -48,7 +48,7 @@ namespace Little_Registry_Cleaner
 
         private void buttonWebsite_Click(object sender, EventArgs e)
         {
-            Utils.LaunchURI("http://littlecleaner.sourceforge.net/");
+            Utils.LaunchURI("http://www.little-apps.org/little-registry-cleaner/");
         }
 
         private void buttonClose_Click(object sender, EventArgs e)
