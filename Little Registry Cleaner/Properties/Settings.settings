@@ -9,13 +9,13 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="bOptionsRescan" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
+      <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="bOptionsDelBackup" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
+      <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="bOptionsRestore" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
+      <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="bOptionsAutoUpdate" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>

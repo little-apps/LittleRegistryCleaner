@@ -49,7 +49,7 @@ namespace Little_Registry_Cleaner.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool bOptionsRescan {
             get {
                 return ((bool)(this["bOptionsRescan"]));
@@ -61,7 +61,7 @@ namespace Little_Registry_Cleaner.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool bOptionsDelBackup {
             get {
                 return ((bool)(this["bOptionsDelBackup"]));
@@ -73,7 +73,7 @@ namespace Little_Registry_Cleaner.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool bOptionsRestore {
             get {
                 return ((bool)(this["bOptionsRestore"]));

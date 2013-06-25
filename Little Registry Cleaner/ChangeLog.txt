@@ -414,5 +414,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Update Russian translations (Thanks to Sersell)
 - Updated German Translations (Thanks to Jurg S.)
 - Fixed problem with scheduler not showing correct time for existing job
+- Fixed english translations for Little Startup Manager
 
 + Version 1.6 Released
