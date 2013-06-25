@@ -59,6 +59,7 @@ namespace Little_Registry_Cleaner
         [DllImport("Shlwapi.dll", SetLastError = true, CharSet = CharSet.Auto)] public static extern bool PathRemoveFileSpec([In, Out] StringBuilder path);
 
         [DllImport("user32.dll")] public static extern int DestroyIcon(IntPtr hIcon);
+        [DllImport("user32.dll", SetLastError = false)] public static extern IntPtr GetDesktopWindow();
         #endregion
         #region Interop (IShellLink and IPersistFile)
         [Flags()]
@@ -1016,7 +1017,7 @@ namespace Little_Registry_Cleaner
         /// <param name="WebAddress">The address to launch</param>
         public static void LaunchURI(string WebAddress)
         {
-            Help.ShowHelp(Form.ActiveForm, string.Copy(WebAddress));
+            System.Diagnostics.Process.Start(string.Copy(WebAddress));
         }
 
         /// <summary>

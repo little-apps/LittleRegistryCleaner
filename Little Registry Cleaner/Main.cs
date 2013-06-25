@@ -496,7 +496,7 @@ namespace Little_Registry_Cleaner
                 return;
             }
 
-            Help.ShowHelp(this, "Little Registry Cleaner.chm");
+            System.Diagnostics.Process.Start("Little Registry Cleaner.chm");
         }
 
         private void OpenOptions(object sender, EventArgs e)
@@ -544,7 +544,7 @@ namespace Little_Registry_Cleaner
 
         private void visitWebsiteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Utils.LaunchURI("http://sourceforge.net/projects/littlecleaner/");
+            Utils.LaunchURI("http://www.little-apps.org/little-registry-cleaner/");
         }
 
         private void viewChangeLogToolStripMenuItem_Click(object sender, EventArgs e)
