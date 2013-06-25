@@ -70,6 +70,15 @@ namespace Little_Uninstall_Manager.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You cannot uninstall Little Registry Cleaner as it is currently running..
+        /// </summary>
+        internal static string umCannotUninstall {
+            get {
+                return ResourceManager.GetString("umCannotUninstall", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Are you sure you want to remove this program from the registry?.
         /// </summary>
         internal static string umForceUninstall {

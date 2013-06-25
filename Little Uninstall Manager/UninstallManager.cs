@@ -180,6 +180,12 @@ namespace Little_Uninstall_Manager
                 ListViewItem lvi = this.listViewProgs.SelectedItems[0];
                 Common_Tools.ProgramInfo progInfo = lvi.Tag as Common_Tools.ProgramInfo;
 
+                if (progInfo.InstallLocation == System.IO.Directory.GetCurrentDirectory())
+                {
+                    MessageBox.Show(this, Properties.Resources.umCannotUninstall, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
                 if (MessageBox.Show(this, Properties.Resources.umUninstall, Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     progInfo.Uninstall();
 
