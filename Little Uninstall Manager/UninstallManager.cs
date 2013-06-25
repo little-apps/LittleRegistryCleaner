@@ -35,6 +35,7 @@ namespace Little_Uninstall_Manager
     public partial class UninstallManager : Form
     {
         private int nSortColumn = -1;
+        private string searchText = "";
 
         public UninstallManager()
         {
@@ -50,7 +51,12 @@ namespace Little_Uninstall_Manager
 
         private void textBoxSearch_TextChanged(object sender, EventArgs e)
         {
-            PopulateListView();
+            // Don't refresh if search text is different or default text
+            if (this.textBoxSearch.Text != this.searchText && this.textBoxSearch.Text != Properties.Resources.umSearchText)
+            {
+                this.searchText = this.textBoxSearch.Text;
+                PopulateListView();
+            }
         }
 
         private void PopulateListView()
