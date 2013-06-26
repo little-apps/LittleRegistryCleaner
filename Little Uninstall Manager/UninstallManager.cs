@@ -63,6 +63,13 @@ namespace Little_Uninstall_Manager
         {
             List<Common_Tools.ProgramInfo> listProgInfo = new List<Common_Tools.ProgramInfo>();
 
+            // Disables buttons if enabled
+            if (this.buttonRemove.Enabled)
+            {
+                this.buttonRemove.Enabled = false;
+                this.buttonUninstall.Enabled = false;
+            }
+
             // Clear listview
             this.listViewProgs.Items.Clear();
 
@@ -250,6 +257,13 @@ namespace Little_Uninstall_Manager
                 Common_Tools.ProgramInfo progInfo = lvi.Tag as Common_Tools.ProgramInfo;
 
                 this.buttonUninstall.Enabled = progInfo.Uninstallable;
+                this.buttonRemove.Enabled = true;
+            }
+            else
+            {
+                // Disable buttons if nothing selected
+                this.buttonUninstall.Enabled = false;
+                this.buttonRemove.Enabled = false;
             }
         }
     }
