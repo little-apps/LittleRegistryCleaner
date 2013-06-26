@@ -375,6 +375,26 @@ namespace Little_Startup_Manager
                 }
             }
         }
+
+        private void treeViewAdv1_SelectionChanged(object sender, EventArgs e)
+        {
+            if ((this.treeViewAdv1.SelectedNodes.Count > 0) && (this.treeViewAdv1.SelectedNode.Tag as StartupManagerNode).IsLeaf)
+            {
+                // Enable buttons if leaf selected
+                this.toolStripButtonEdit.Enabled = true;
+                this.toolStripButtonDelete.Enabled = true;
+                this.toolStripButtonRun.Enabled = true;
+                this.toolStripButtonView.Enabled = true;
+            }
+            else
+            {
+                // Disable buttons if leaf isnt selected
+                this.toolStripButtonEdit.Enabled = false;
+                this.toolStripButtonDelete.Enabled = false;
+                this.toolStripButtonRun.Enabled = false;
+                this.toolStripButtonView.Enabled = false;
+            }
+        }
     }
 
     #region "Startup Manager Node"
