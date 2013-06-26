@@ -35,10 +35,6 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.treeViewAdvResults = new Common_Tools.TreeViewAdv.Tree.TreeViewAdv();
-            this.treeColumn1 = new Common_Tools.TreeViewAdv.Tree.TreeColumn();
-            this.treeColumn2 = new Common_Tools.TreeViewAdv.Tree.TreeColumn();
-            this.treeColumn3 = new Common_Tools.TreeViewAdv.Tree.TreeColumn();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectNoneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,12 +42,6 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.excludeSelectedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewInRegeditToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nodeCheckBox = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeCheckBox();
-            this.nodeIcon = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeIcon();
-            this.nodeSection = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
-            this.nodeProblem = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
-            this.nodeLocation = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
-            this.nodeValueName = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.imageListTreeView = new System.Windows.Forms.ImageList(this.components);
@@ -115,6 +105,16 @@
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.treeViewAdvResults = new Common_Tools.TreeViewAdv.Tree.TreeViewAdv();
+            this.treeColumn1 = new Common_Tools.TreeViewAdv.Tree.TreeColumn();
+            this.treeColumn2 = new Common_Tools.TreeViewAdv.Tree.TreeColumn();
+            this.treeColumn3 = new Common_Tools.TreeViewAdv.Tree.TreeColumn();
+            this.nodeCheckBox = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeCheckBox();
+            this.nodeIcon = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeIcon();
+            this.nodeSection = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
+            this.nodeProblem = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
+            this.nodeLocation = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
+            this.nodeValueName = new Common_Tools.TreeViewAdv.Tree.NodeControls.NodeTextBox();
             portugueseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripContainer1.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
@@ -174,50 +174,6 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             // 
-            // treeViewAdvResults
-            // 
-            this.treeViewAdvResults.BackColor = System.Drawing.SystemColors.Window;
-            this.treeViewAdvResults.Columns.Add(this.treeColumn1);
-            this.treeViewAdvResults.Columns.Add(this.treeColumn2);
-            this.treeViewAdvResults.Columns.Add(this.treeColumn3);
-            this.treeViewAdvResults.ContextMenuStrip = this.contextMenuStrip1;
-            this.treeViewAdvResults.DefaultToolTipProvider = null;
-            resources.ApplyResources(this.treeViewAdvResults, "treeViewAdvResults");
-            this.treeViewAdvResults.DragDropMarkColor = System.Drawing.Color.Black;
-            this.treeViewAdvResults.FullRowSelect = true;
-            this.treeViewAdvResults.LineColor = System.Drawing.SystemColors.ControlDark;
-            this.treeViewAdvResults.LoadOnDemand = true;
-            this.treeViewAdvResults.Model = null;
-            this.treeViewAdvResults.Name = "treeViewAdvResults";
-            this.treeViewAdvResults.NodeControls.Add(this.nodeCheckBox);
-            this.treeViewAdvResults.NodeControls.Add(this.nodeIcon);
-            this.treeViewAdvResults.NodeControls.Add(this.nodeSection);
-            this.treeViewAdvResults.NodeControls.Add(this.nodeProblem);
-            this.treeViewAdvResults.NodeControls.Add(this.nodeLocation);
-            this.treeViewAdvResults.NodeControls.Add(this.nodeValueName);
-            this.treeViewAdvResults.SelectedNode = null;
-            this.treeViewAdvResults.SelectionMode = Common_Tools.TreeViewAdv.Tree.TreeSelectionMode.Multi;
-            this.treeViewAdvResults.UseColumns = true;
-            this.treeViewAdvResults.NodeMouseDoubleClick += new System.EventHandler<Common_Tools.TreeViewAdv.Tree.TreeNodeAdvMouseEventArgs>(this.treeViewAdvResults_NodeMouseDoubleClick);
-            // 
-            // treeColumn1
-            // 
-            resources.ApplyResources(this.treeColumn1, "treeColumn1");
-            this.treeColumn1.Sortable = true;
-            this.treeColumn1.SortOrder = System.Windows.Forms.SortOrder.None;
-            // 
-            // treeColumn2
-            // 
-            resources.ApplyResources(this.treeColumn2, "treeColumn2");
-            this.treeColumn2.Sortable = true;
-            this.treeColumn2.SortOrder = System.Windows.Forms.SortOrder.None;
-            // 
-            // treeColumn3
-            // 
-            resources.ApplyResources(this.treeColumn3, "treeColumn3");
-            this.treeColumn3.Sortable = true;
-            this.treeColumn3.SortOrder = System.Windows.Forms.SortOrder.None;
-            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -264,52 +220,6 @@
             this.viewInRegeditToolStripMenuItem.Name = "viewInRegeditToolStripMenuItem";
             resources.ApplyResources(this.viewInRegeditToolStripMenuItem, "viewInRegeditToolStripMenuItem");
             this.viewInRegeditToolStripMenuItem.Click += new System.EventHandler(this.ViewInRegEdit);
-            // 
-            // nodeCheckBox
-            // 
-            this.nodeCheckBox.DataPropertyName = "Checked";
-            this.nodeCheckBox.EditEnabled = true;
-            this.nodeCheckBox.LeftMargin = 0;
-            this.nodeCheckBox.ParentColumn = this.treeColumn1;
-            // 
-            // nodeIcon
-            // 
-            this.nodeIcon.DataPropertyName = "Img";
-            this.nodeIcon.LeftMargin = 1;
-            this.nodeIcon.ParentColumn = this.treeColumn1;
-            this.nodeIcon.ScaleMode = Common_Tools.TreeViewAdv.Tree.ImageScaleMode.Clip;
-            // 
-            // nodeSection
-            // 
-            this.nodeSection.DataPropertyName = "SectionName";
-            this.nodeSection.IncrementalSearchEnabled = true;
-            this.nodeSection.LeftMargin = 3;
-            this.nodeSection.ParentColumn = this.treeColumn1;
-            this.nodeSection.Trimming = System.Drawing.StringTrimming.EllipsisCharacter;
-            // 
-            // nodeProblem
-            // 
-            this.nodeProblem.DataPropertyName = "Problem";
-            this.nodeProblem.IncrementalSearchEnabled = true;
-            this.nodeProblem.LeftMargin = 3;
-            this.nodeProblem.ParentColumn = this.treeColumn1;
-            this.nodeProblem.Trimming = System.Drawing.StringTrimming.EllipsisCharacter;
-            // 
-            // nodeLocation
-            // 
-            this.nodeLocation.DataPropertyName = "RegKeyPath";
-            this.nodeLocation.IncrementalSearchEnabled = true;
-            this.nodeLocation.LeftMargin = 3;
-            this.nodeLocation.ParentColumn = this.treeColumn2;
-            this.nodeLocation.Trimming = System.Drawing.StringTrimming.EllipsisCharacter;
-            // 
-            // nodeValueName
-            // 
-            this.nodeValueName.DataPropertyName = "ValueName";
-            this.nodeValueName.IncrementalSearchEnabled = true;
-            this.nodeValueName.LeftMargin = 3;
-            this.nodeValueName.ParentColumn = this.treeColumn3;
-            this.nodeValueName.Trimming = System.Drawing.StringTrimming.EllipsisCharacter;
             // 
             // tableLayoutPanel2
             // 
@@ -759,6 +669,96 @@
             this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
             resources.ApplyResources(this.exitToolStripMenuItem1, "exitToolStripMenuItem1");
             this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
+            // 
+            // treeViewAdvResults
+            // 
+            this.treeViewAdvResults.BackColor = System.Drawing.SystemColors.Window;
+            this.treeViewAdvResults.Columns.Add(this.treeColumn1);
+            this.treeViewAdvResults.Columns.Add(this.treeColumn2);
+            this.treeViewAdvResults.Columns.Add(this.treeColumn3);
+            this.treeViewAdvResults.ContextMenuStrip = this.contextMenuStrip1;
+            this.treeViewAdvResults.DefaultToolTipProvider = null;
+            resources.ApplyResources(this.treeViewAdvResults, "treeViewAdvResults");
+            this.treeViewAdvResults.DragDropMarkColor = System.Drawing.Color.Black;
+            this.treeViewAdvResults.FullRowSelect = true;
+            this.treeViewAdvResults.LineColor = System.Drawing.SystemColors.ControlDark;
+            this.treeViewAdvResults.LoadOnDemand = true;
+            this.treeViewAdvResults.Model = null;
+            this.treeViewAdvResults.Name = "treeViewAdvResults";
+            this.treeViewAdvResults.NodeControls.Add(this.nodeCheckBox);
+            this.treeViewAdvResults.NodeControls.Add(this.nodeIcon);
+            this.treeViewAdvResults.NodeControls.Add(this.nodeSection);
+            this.treeViewAdvResults.NodeControls.Add(this.nodeProblem);
+            this.treeViewAdvResults.NodeControls.Add(this.nodeLocation);
+            this.treeViewAdvResults.NodeControls.Add(this.nodeValueName);
+            this.treeViewAdvResults.SelectedNode = null;
+            this.treeViewAdvResults.SelectionMode = Common_Tools.TreeViewAdv.Tree.TreeSelectionMode.Multi;
+            this.treeViewAdvResults.UseColumns = true;
+            this.treeViewAdvResults.NodeMouseDoubleClick += new System.EventHandler<Common_Tools.TreeViewAdv.Tree.TreeNodeAdvMouseEventArgs>(this.treeViewAdvResults_NodeMouseDoubleClick);
+            // 
+            // treeColumn1
+            // 
+            resources.ApplyResources(this.treeColumn1, "treeColumn1");
+            this.treeColumn1.Sortable = true;
+            this.treeColumn1.SortOrder = System.Windows.Forms.SortOrder.None;
+            // 
+            // treeColumn2
+            // 
+            resources.ApplyResources(this.treeColumn2, "treeColumn2");
+            this.treeColumn2.Sortable = true;
+            this.treeColumn2.SortOrder = System.Windows.Forms.SortOrder.None;
+            // 
+            // treeColumn3
+            // 
+            resources.ApplyResources(this.treeColumn3, "treeColumn3");
+            this.treeColumn3.Sortable = true;
+            this.treeColumn3.SortOrder = System.Windows.Forms.SortOrder.None;
+            // 
+            // nodeCheckBox
+            // 
+            this.nodeCheckBox.DataPropertyName = "Checked";
+            this.nodeCheckBox.EditEnabled = true;
+            this.nodeCheckBox.LeftMargin = 0;
+            this.nodeCheckBox.ParentColumn = this.treeColumn1;
+            // 
+            // nodeIcon
+            // 
+            this.nodeIcon.DataPropertyName = "Img";
+            this.nodeIcon.LeftMargin = 1;
+            this.nodeIcon.ParentColumn = this.treeColumn1;
+            this.nodeIcon.ScaleMode = Common_Tools.TreeViewAdv.Tree.ImageScaleMode.Clip;
+            // 
+            // nodeSection
+            // 
+            this.nodeSection.DataPropertyName = "SectionName";
+            this.nodeSection.IncrementalSearchEnabled = true;
+            this.nodeSection.LeftMargin = 3;
+            this.nodeSection.ParentColumn = this.treeColumn1;
+            this.nodeSection.Trimming = System.Drawing.StringTrimming.EllipsisCharacter;
+            // 
+            // nodeProblem
+            // 
+            this.nodeProblem.DataPropertyName = "Problem";
+            this.nodeProblem.IncrementalSearchEnabled = true;
+            this.nodeProblem.LeftMargin = 3;
+            this.nodeProblem.ParentColumn = this.treeColumn1;
+            this.nodeProblem.Trimming = System.Drawing.StringTrimming.EllipsisCharacter;
+            // 
+            // nodeLocation
+            // 
+            this.nodeLocation.DataPropertyName = "RegKeyPath";
+            this.nodeLocation.IncrementalSearchEnabled = true;
+            this.nodeLocation.LeftMargin = 3;
+            this.nodeLocation.ParentColumn = this.treeColumn2;
+            this.nodeLocation.Trimming = System.Drawing.StringTrimming.EllipsisCharacter;
+            // 
+            // nodeValueName
+            // 
+            this.nodeValueName.DataPropertyName = "ValueName";
+            this.nodeValueName.IncrementalSearchEnabled = true;
+            this.nodeValueName.LeftMargin = 3;
+            this.nodeValueName.ParentColumn = this.treeColumn3;
+            this.nodeValueName.Trimming = System.Drawing.StringTrimming.EllipsisCharacter;
             // 
             // Main
             // 
