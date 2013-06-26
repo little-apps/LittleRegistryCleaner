@@ -304,6 +304,15 @@ namespace Little_Registry_Cleaner.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The selected restore file was not found.
+        /// </summary>
+        internal static string restoreFileNotFound {
+            get {
+                return ResourceManager.GetString("restoreFileNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Successfully restored registry.
         /// </summary>
         internal static string restoreRestored {

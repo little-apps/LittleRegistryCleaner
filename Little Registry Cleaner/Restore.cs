@@ -62,10 +62,25 @@ namespace Little_Registry_Cleaner
 
             if (this.listViewFiles.SelectedIndices.Count > 0 && this.listViewFiles.Items.Count > 0)
             {
+                string strFile = this.listViewFiles.SelectedItems[0].Text;
+                string strFilePath = string.Format("{0}\\{1}", Properties.Settings.Default.strOptionsBackupDir, strFile);
+
+                if (!File.Exists(strFilePath))
+                {
+                    MessageBox.Show(this, Properties.Resources.restoreFileNotFound, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    // Remove from list
+                    this.listViewFiles.Items[this.listViewFiles.SelectedItems[0].Index].Remove();
+
+                    // Clear selection
+                    this.listViewFiles.SelectedItems.Clear();
+
+                    return;
+                }
+
                 if (MessageBox.Show(this, Properties.Resources.restoreAsk, Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    string strFile = this.listViewFiles.SelectedItems[0].Text;
-                    string strFilePath = string.Format("{0}\\{1}", Properties.Settings.Default.strOptionsBackupDir, strFile);
+                    
 
                     SysRestore.StartRestore("Before Little Registry Cleaner Restore", out lSeqNum);
 
