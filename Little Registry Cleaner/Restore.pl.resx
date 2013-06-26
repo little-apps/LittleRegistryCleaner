@@ -135,11 +135,11 @@
   <data name="columnHeader3.Text" xml:space="preserve">
     <value>Rozmiar</value>
   </data>
-  <data name="buttonRestore.Text" xml:space="preserve">
-    <value>Przywróć</value>
-  </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="listViewFiles" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="flowLayoutPanel1" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100.1" /&gt;&lt;Rows Styles="Percent,7.624633,Percent,92.37537,Absolute,30" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="buttonRestore.Text" xml:space="preserve">
+    <value>Przywróć</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Little Registry Cleaner - Przywróć rejestr</value>

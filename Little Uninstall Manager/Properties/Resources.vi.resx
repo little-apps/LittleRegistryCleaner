@@ -129,4 +129,7 @@
   <data name="umUninstall" xml:space="preserve">
     <value>Bạn có chắc là bạn muốn bỏ cài đặt chương trình này?</value>
   </data>
+  <data name="umCannotUninstall" xml:space="preserve">
+    <value>Bạn không thể gỡ bỏ ít Registry Cleaner như nó hiện đang chạy.</value>
+  </data>
 </root>

@@ -129,4 +129,7 @@
   <data name="umUninstall" xml:space="preserve">
     <value>هل أنت متأكد من أنك تريد إلغاء تثبيت هذا البرنامج?</value>
   </data>
+  <data name="umCannotUninstall" xml:space="preserve">
+    <value>لا يمكن إلغاء تثبيت "يذكر السجل النظيف"، كما أنه يشغل حاليا.</value>
+  </data>
 </root>

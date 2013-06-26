@@ -129,4 +129,7 @@
   <data name="umUninstall" xml:space="preserve">
     <value>您確定要卸載此程序?</value>
   </data>
+  <data name="umCannotUninstall" xml:space="preserve">
+    <value>您不能卸載小注冊表清潔，因為它當前正在運行.</value>
+  </data>
 </root>

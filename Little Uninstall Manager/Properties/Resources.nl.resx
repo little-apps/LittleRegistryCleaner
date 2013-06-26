@@ -129,4 +129,7 @@
   <data name="umUninstall" xml:space="preserve">
     <value>Weet u zeker dat u dit programma wilt verwijderen?</value>
   </data>
+  <data name="umCannotUninstall" xml:space="preserve">
+    <value>U kunt niet verwijderen weinig Registry Cleaner zoals het momenteel wordt uitgevoerd.</value>
+  </data>
 </root>

@@ -129,4 +129,7 @@
   <data name="umUninstall" xml:space="preserve">
     <value>Ar tikrai norite ištrinti šią programą?</value>
   </data>
+  <data name="umCannotUninstall" xml:space="preserve">
+    <value>Negalite pašalinti mažai Registry Cleaner kaip jis veikia.</value>
+  </data>
 </root>

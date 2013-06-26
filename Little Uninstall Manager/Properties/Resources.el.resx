@@ -129,4 +129,7 @@
   <data name="umUninstall" xml:space="preserve">
     <value>Είστε σίγουροι ότι θέλετε να απεγκατάστησετε αυτό το πρόγραμμα?</value>
   </data>
+  <data name="umCannotUninstall" xml:space="preserve">
+    <value>Δεν μπορείτε να καταργήσετε μικρό Registry Cleaner όπως λειτουργεί.</value>
+  </data>
 </root>

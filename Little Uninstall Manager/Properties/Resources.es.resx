@@ -129,4 +129,7 @@
   <data name="umUninstall" xml:space="preserve">
     <value>¿Está seguro de que desea desinstalar este programa?</value>
   </data>
+  <data name="umCannotUninstall" xml:space="preserve">
+    <value>No se puede desinstalar Little Registry Cleaner como se está ejecutando actualmente.</value>
+  </data>
 </root>

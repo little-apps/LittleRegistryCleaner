@@ -129,4 +129,7 @@
   <data name="umUninstall" xml:space="preserve">
     <value>Bunu kaldırmak istediğinizden emin misiniz?</value>
   </data>
+  <data name="umCannotUninstall" xml:space="preserve">
+    <value>Şu anda çalışırken size küçük Registry Cleaner kaldırılamıyor.</value>
+  </data>
 </root>

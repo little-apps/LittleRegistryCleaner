@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="crashReporterFail" xml:space="preserve">
     <value>Felrapporten kunde inte skickas</value>
@@ -197,6 +197,9 @@
   </data>
   <data name="restoreError" xml:space="preserve">
     <value>Fel vid återställning av registret</value>
+  </data>
+  <data name="restoreFileNotFound" xml:space="preserve">
+    <value>Den valda återställa filen hittades inte</value>
   </data>
   <data name="restoreRestored" xml:space="preserve">
     <value>Lyckades återställa registret</value>

@@ -129,4 +129,7 @@
   <data name="umUninstall" xml:space="preserve">
     <value>Är du säker på att du vill avinstallera programmet?</value>
   </data>
+  <data name="umCannotUninstall" xml:space="preserve">
+    <value>Du kan inte avinstallera lite Registry Cleaner som det körs för närvarande.</value>
+  </data>
 </root>
