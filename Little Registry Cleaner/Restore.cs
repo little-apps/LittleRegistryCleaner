@@ -96,5 +96,19 @@ namespace Little_Registry_Cleaner
             if (this.listViewFiles.Items.Count > 0)
                 this.listViewFiles.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
         }
+
+        private void listViewFiles_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (this.listViewFiles.SelectedItems.Count > 0)
+            {
+                // Enable restore button if something is selected
+                this.buttonRestore.Enabled = true;
+            }
+            else
+            {
+                // Disable restore button if nothing selected
+                this.buttonRestore.Enabled = false;
+            }
+        }
     }
 }
