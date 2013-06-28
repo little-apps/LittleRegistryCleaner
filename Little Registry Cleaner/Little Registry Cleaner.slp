@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<document created="20130617224625" version="3.0.335" date="20130621165447" scan="74" scanned="20130618223813">
+<document created="20130617224625" version="3.0.335" date="20130625222302" scan="75" scanned="20130625211932">
   <lang id="ar"/>
   <lang id="zh" ime="imOn"/>
   <lang id="zh.tra" ime="imOn"/>
@@ -1344,9 +1344,9 @@
     </node>
     <node class="TWindowsVersionFolder" name="Versions" created="20130618222356" resid="16">
       <node class="TWindowsVersionNode" name="1" resid="1">
-        <row id="Assembly Version" excluded="1" state="3" changed="20130621164135">
-          <prev>1.0.4917.40342</prev>
-          <native>1.1.4920.27459</native>
+        <row id="Assembly Version" excluded="1" state="3" changed="20130625211932">
+          <prev>1.1.4920.27459</prev>
+          <native>1.1.4924.36499</native>
           <lang id="ar" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="zh" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="zh.tra" invalidated="1" status="2">0.0.0.0</lang>
@@ -1605,7 +1605,7 @@
       </node>
     </node>
   </source>
-  <source class="TVisualStudioNetProjectSource" name="..\Little Uninstall Manager\Little Uninstall Manager.csproj" original="en" date="20130621045020" defaultoutputdir="bin\Debug" configuration="Debug|x86" netversion="net35" toolsversion="net40" rootnamespace="Little_Uninstall_Manager">
+  <source class="TVisualStudioNetProjectSource" name="..\Little Uninstall Manager\Little Uninstall Manager.csproj" original="en" date="20130625223800" defaultoutputdir="bin\Debug" configuration="Debug|x86" netversion="net35" toolsversion="net40" rootnamespace="Little_Uninstall_Manager">
     <excludeddatatypes>
       <class>TBinaryData</class>
       <class>TColorData</class>
@@ -2012,6 +2012,30 @@
           <lang id="tr" percent="99" status="1">Zaten başka bir program çalışıyor...</lang>
           <lang id="vi" percent="99" status="1">Một chương trình có vẻ là đã chạy...</lang>
         </row>
+        <row id="umCannotUninstall" state="0" created="20130625211932">
+          <native>You cannot uninstall Little Registry Cleaner as it is currently running.</native>
+          <lang id="ar" status="2">لا يمكن إلغاء تثبيت "يذكر السجل النظيف"، كما أنه يشغل حاليا.</lang>
+          <lang id="zh" status="2">您不能卸载小注册表清洁，因为它当前正在运行.</lang>
+          <lang id="zh.tra" status="2">您不能卸載小注冊表清潔，因為它當前正在運行.</lang>
+          <lang id="nl" status="2">U kunt niet verwijderen weinig Registry Cleaner zoals het momenteel wordt uitgevoerd.</lang>
+          <lang id="en" status="2">You cannot uninstall Little Registry Cleaner as it is currently running.</lang>
+          <lang id="fr" status="2">Vous ne pouvez pas désinstaller peu Registry Cleaner car il est en cours d'exécution.</lang>
+          <lang id="de" status="2">Sie können nicht Little Registry Cleaner deinstalliert, wie es gerade läuft.</lang>
+          <lang id="el" status="2">Δεν μπορείτε να καταργήσετε μικρό Registry Cleaner όπως λειτουργεί.</lang>
+          <lang id="hu" status="2">Nem távolítható el kis Registry Cleaner jelenleg fut.</lang>
+          <lang id="it" status="2">Non è possibile disinstallare Little Registry Cleaner come è attualmente in esecuzione.</lang>
+          <lang id="ja" status="2">現在実行している、少しレジストリ クリーナーをアンインストールすることはできません。</lang>
+          <lang id="lt" status="2">Negalite pašalinti mažai Registry Cleaner kaip jis veikia.</lang>
+          <lang id="pl" status="2">Nie można odinstalować Little Registry Cleaner, jak to obecnie działa.</lang>
+          <lang id="fa" status="2">شما نمی تواند کمی رجیستری حذف به عنوان آن در حال حاضر در حال اجرا است.</lang>
+          <lang id="pt" status="2">Você não pode desinstalar Little Registry Cleaner, como ele está sendo executado.</lang>
+          <lang id="ru" status="2">Вы не можете удалить мало Registry Cleaner, как он в настоящее время работает.</lang>
+          <lang id="es" status="2">No se puede desinstalar Little Registry Cleaner como se está ejecutando actualmente.</lang>
+          <lang id="sv-SE" status="2">Du kan inte avinstallera lite Registry Cleaner som det körs för närvarande.</lang>
+          <lang id="th" status="2">คุณไม่สามารถถอนน้อย Registry Cleaner มันกำลังทำงาน.</lang>
+          <lang id="tr" status="2">Şu anda çalışırken size küçük Registry Cleaner kaldırılamıyor.</lang>
+          <lang id="vi" status="2">Bạn không thể gỡ bỏ ít Registry Cleaner như nó hiện đang chạy.</lang>
+        </row>
         <row id="umForceUninstall">
           <native>Are you sure you want to remove this program from the registry?</native>
           <lang id="ar" percent="99" status="1">هل أنت متأكد من أنك تريد إزالة هذا البرنامج من التسجيل?</lang>
@@ -2088,9 +2112,9 @@
     </node>
     <node class="TWindowsVersionFolder" name="Versions" resid="16">
       <node class="TWindowsVersionNode" name="1" resid="1">
-        <row id="Assembly Version" excluded="1" state="3" changed="20130621164135">
-          <prev>1.0.4917.40342</prev>
-          <native>1.1.4920.27459</native>
+        <row id="Assembly Version" excluded="1" state="3" changed="20130625211932">
+          <prev>1.1.4920.27459</prev>
+          <native>1.1.4924.36500</native>
           <lang id="ar" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="zh" invalidated="1" status="2">0.0.0.0</lang>
           <lang id="zh.tra" invalidated="1" status="2">0.0.0.0</lang>
@@ -3695,9 +3719,9 @@
     </node>
     <node class="TWindowsVersionFolder" name="Versions" resid="16">
       <node class="TWindowsVersionNode" name="1" resid="1">
-        <row id="Assembly Version" locked="1" excluded="1" state="3" changed="20130621164135">
-          <prev>1.1.4917.40340</prev>
-          <native>1.1.4919.33978</native>
+        <row id="Assembly Version" locked="1" excluded="1" state="3" changed="20130625211932">
+          <prev>1.1.4919.33978</prev>
+          <native>1.1.4924.36297</native>
           <lang id="ar" invalidated="1">1.0.4187.39341</lang>
           <lang id="zh" invalidated="1">1.0.4187.39341</lang>
           <lang id="zh.tra" invalidated="1">1.0.4187.39341</lang>
@@ -4688,7 +4712,10 @@
       </node>
       <node class="TNetFormNode" name="Little_Registry_Cleaner.Main">
         <form class="TNetForm" name="Little_Registry_Cleaner.Main" type="Little_Registry_Cleaner.Main" autosize="1" menu="menuStrip1">
-          <row id="ClientSize.Height">483</row>
+          <row id="ClientSize.Height" state="3" changed="20130625211932">
+            <prev>483</prev>
+            <native>507</native>
+          </row>
           <row id="ClientSize.Width">809</row>
           <row id="Text">
             <native>Little Registry Cleaner</native>
@@ -4970,7 +4997,10 @@
           <component class="TVisPanel" name="toolStripContainer1" type="System.Windows.Forms.ToolStripContainer" align="alClient">
             <row id="Location.X">0</row>
             <row id="Location.Y">0</row>
-            <row id="Size.Height">483</row>
+            <row id="Size.Height" state="3" changed="20130625211932">
+              <prev>483</prev>
+              <native>507</native>
+            </row>
             <row id="Size.Width">809</row>
             <row id="Text">
               <native>toolStripContainer1</native>
@@ -5042,7 +5072,10 @@
               </rows>
               <row id="Location.X">0</row>
               <row id="Location.Y">0</row>
-              <row id="Size.Height">383</row>
+              <row id="Size.Height" state="3" changed="20130625211932">
+                <prev>383</prev>
+                <native>407</native>
+              </row>
               <row id="Size.Width">809</row>
               <component class="TVisGridPanel" name="tableLayoutPanel2" type="System.Windows.Forms.TableLayoutPanel" align="alClient" gapbottom="0" gapleft="0" gapright="0" gaptop="0">
                 <columns countset="1">
@@ -5055,12 +5088,18 @@
                 </rows>
                 <row id="Location.X">0</row>
                 <row id="Location.Y">0</row>
-                <row id="Size.Height">405</row>
+                <row id="Size.Height" state="3" changed="20130625211932">
+                  <prev>405</prev>
+                  <native>407</native>
+                </row>
                 <row id="Size.Width">173</row>
                 <component class="TVisTreeView" name="treeView1" type="System.Windows.Forms.TreeView" align="alClient">
                   <row id="Location.X">3</row>
                   <row id="Location.Y">3</row>
-                  <row id="Size.Height">399</row>
+                  <row id="Size.Height" state="3" changed="20130625211932">
+                    <prev>399</prev>
+                    <native>401</native>
+                  </row>
                   <row id="Size.Width">173</row>
                   <item name="Items[0]">
                     <row id="Text">
@@ -5380,7 +5419,10 @@
                 <row id="BackColor" hidden="1">clWindow</row>
                 <row id="Location.X">176</row>
                 <row id="Location.Y">3</row>
-                <row id="Size.Height">399</row>
+                <row id="Size.Height" state="3" changed="20130625211932">
+                  <prev>399</prev>
+                  <native>401</native>
+                </row>
                 <row id="Size.Width">630</row>
                 <row id="Text">
                   <native>treeViewAdv1</native>
@@ -9995,6 +10037,30 @@
           <lang id="tr" date="20130618211825" status="2">Hata restore eden kayıt</lang>
           <lang id="vi" date="20130618211825" status="2">Lỗi phục hồi registry</lang>
         </row>
+        <row id="restoreFileNotFound" state="0" created="20130625211932">
+          <native>The selected restore file was not found</native>
+          <lang id="ar" status="2">لم يتم العثور على ملف الاستعادة المحددة</lang>
+          <lang id="zh" status="2">未找到选定的还原文件</lang>
+          <lang id="zh.tra" status="2">未找到選定的還原檔</lang>
+          <lang id="nl" status="2">De geselecteerde herstellen bestand is niet gevonden</lang>
+          <lang id="en" status="2">The selected restore file was not found</lang>
+          <lang id="fr" status="2">Le fichier de restauration sélectionné n'a pas été trouvé.</lang>
+          <lang id="de" status="2">Die ausgewählten Wiederherstellungsdatei wurde nicht gefunden.</lang>
+          <lang id="el" status="2">Το επιλεγμένο Αποκαταστήστε το αρχείο δεν βρέθηκε</lang>
+          <lang id="hu" status="2">A kijelölt visszaállítási fájl nem található</lang>
+          <lang id="it" status="2">Non è stato trovato il file di ripristino selezionato.</lang>
+          <lang id="ja" status="2">選択した復元ファイルが見つかりませんでした。</lang>
+          <lang id="lt" status="2">Pasirinktas atkūrimo failas nerastas</lang>
+          <lang id="pl" status="2">Przywrócić wybrany plik nie został znaleziony</lang>
+          <lang id="fa" status="2">پرونده بازیابی انتخابی یافت نشد</lang>
+          <lang id="pt" status="2">O arquivo de restauração selecionado não foi encontrado</lang>
+          <lang id="ru" status="2">Выбранный восстановить файл не найден</lang>
+          <lang id="es" status="2">No se encontró el archivo seleccionado restore</lang>
+          <lang id="sv-SE" status="2">Den valda återställa filen hittades inte</lang>
+          <lang id="th" status="2">ไม่พบแฟ้มคืนค่าที่เลือก</lang>
+          <lang id="tr" status="2">Seçilen geri yükleme dosyası bulunamadı</lang>
+          <lang id="vi" status="2">Không tìm thấy tệp khôi phục được chọn</lang>
+        </row>
         <row id="restoreRestored">
           <native>Successfully restored registry</native>
           <lang id="ar" date="20130618211819" status="2">بنجاح استعادة التسجيل</lang>
@@ -10673,9 +10739,9 @@
     </node>
     <node class="TWindowsVersionFolder" name="Versions" state="0" created="20130618213530" resid="16">
       <node class="TWindowsVersionNode" name="1" state="0" resid="1">
-        <row id="Assembly Version" state="3" changed="20130621164135">
-          <prev>1.5.4917.40341</prev>
-          <native>1.6.4920.27458</native>
+        <row id="Assembly Version" state="3" changed="20130625211932">
+          <prev>1.6.4920.27458</prev>
+          <native>1.6.4924.36499</native>
           <lang id="ar" invalidated="1" status="2">1.5.4917.38258</lang>
           <lang id="zh" invalidated="1" status="2">1.5.4917.38258</lang>
           <lang id="zh.tra" invalidated="1" status="2">1.5.4917.38258</lang>

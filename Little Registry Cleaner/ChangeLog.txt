@@ -415,5 +415,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - Updated German Translations (Thanks to Jurg S.)
 - Fixed problem with scheduler not showing correct time for existing job
 - Fixed english translations for Little Startup Manager
+- Buttons are disabled when nothing is selected in Little Uninstall Manager, Little Startup Manager, and Restore
+- Little Registry Cleaner cannot be uninstalled through Little Uninstall Manager if running
+- Fixed problem with horizontal scroll bar not displaying correctly
+- Update website links to active URLs
+- Fixed Little Uninstall Manager from refreshing list when text wasn't changed
+- Uses Process.Start() to launch websites and help file in order to prevent window modal problems
+- Default settings for re-scan automatically, automatically delete backups after, and system restore changed to disabled
 
 + Version 1.6 Released
