@@ -113,21 +113,25 @@ namespace Little_Registry_Cleaner.Scanners
                     continue;
 
                 string fileName = ExtractUnicodeStringFromBinary(regKey.GetValue(strValueName));
-                string shortcutPath = string.Format("{0}\\{1}.lnk", Environment.GetFolderPath(Environment.SpecialFolder.Recent), fileName);
-
-                ScanDlg.CurrentScannedObject = shortcutPath;
-
-                // See if file exists in Recent Docs folder
-                if (!string.IsNullOrEmpty(fileName))
+                
+                // If filename is empty -> remove it
+                if (string.IsNullOrEmpty(fileName.Trim()))
                 {
                     ScanDlg.StoreInvalidKey(Strings.InvalidRegKey, regKey.ToString(), strValueName);
                     continue;
                 }
-
-                if (!Utils.FileExists(shortcutPath) || !Utils.ResolveShortcut(shortcutPath, out filePath, out fileArgs))
+                else
                 {
-                    ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.ToString(), strValueName);
-                    continue;
+                    string shortcutPath = string.Format("{0}\\{1}.lnk", Environment.GetFolderPath(Environment.SpecialFolder.Recent), fileName);
+
+                    ScanDlg.CurrentScannedObject = shortcutPath;
+
+                    // See if file exists in Recent Docs folder
+                    if (!Utils.FileExists(shortcutPath) || !Utils.ResolveShortcut(shortcutPath, out filePath, out fileArgs))
+                    {
+                        ScanDlg.StoreInvalidKey(Strings.InvalidFile, regKey.ToString(), strValueName);
+                        continue;
+                    }
                 }
             }
         }
