@@ -1,0 +1,412 @@
+# Change Log
+
+- Dialogs are opened with main dialog as owner
+- Added Drivers Section
+- Opens seperate dialog for scanning
+- Prompts user to exit
+- Scan dialog should completely load before scanning
+- Now scans for missing ActiveX files
+- Now uses SHGetSpecialFolderPath() API to get path to fonts folder
+- No longer uses AddInvalidSubKey()
+- Fixed the way registry data is stored
+- Added toolbar with scan, fix and settings options
+- Removed data column from listview
+- Uses listview to store invalid registry keys and backs up checked keys with XML Registry
+- Scans again once fix is clicked
+- Added restore dialog and xml parser for treeview
+- Error dialog to catch exceptions thrown by threads
+- Most errors now are shown in error dialog
+- Fixes all registry keys when there is an error
+- Display error dialog only in debug mode
+- Added notify icon to system tray
+- Shows balloon tip when scanning is finished
+- Added logger class to log actions to files
+- Restore dialog now has listview that shows when file was created, also added option to delete file
+- Main dialog can now be resized
+- Changed layout of Options and Main dialog
+- Program can now be started minimized
+- Integrated new options into program
+- The fix toolstrip menu item is now disabled after it is clicked
+- Now uses the treeview to get the number of sections to scan
+- Added restore icon to toolstrip menu
+- Replaced Delete button with Open Directory in Restore dialog
+- Restore dialog can now be resized
+- Restore dialog now shows the size of the files
+- Added ability to scan help files and windows sounds
+- Changed about dialog layout
+- Creates restore point (XP only)
+- Created seperate section for application paths, now scans display icons in add/remove programs
+- Added problem attribute to xml files
+- Main dialog now resizes properly
+- Removed option to autostart LRC when windows starts up
+
+## Version 0.1 Released
+
+- Now checks for null registry keys and sub keys in sound section and also fixed the store function value name
+- Fixed bug in ExtractRunPath() that caused "Index was outside the bounds of the array."
+- No longer removes whole subkey if InprocServer32 is invalid, created function to parse InprocServer32 files
+- Rewrote functions in COM.cs to use RegistryKey class
+- Added author link to about dialog, added event to process links in text box
+- Created context menu for result listview, added ability to add keys to exclude list
+- The result listview now resizes the columns to fit the data
+- Fixed error in appinfo.cs, also recoded VerifyUninstallList()
+- Added shortcut keys to menustrip + added website and changelog buttons to help menustrip
+- Added build time to error dialog + about dialog + log files
+- Changed the backup and log directory to the common program files directory
+- User can now change the log directory
+
+## Version 0.2 Released
+
+- Recoded CheckAutoRun() in StartUp.cs
+- Now scans HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run + other startup keys
+- Now displays the number of items scanned
+- Removed the "stop" button and added the control box to the scan dialog, also added title
+- Scanners now use threads instead of calling them directly
+- Check for update function
+- Application settings function (scans for registry keys with no data)
+- Added event when form closes to ask to continue instead of when action is taken
+- Added context menu to notify icon
+- deleteAsXml() function now deletes sub keys and values
+- No longer deletes whole subkey when an invalid CLSID is found
+- Update function now checks a file to see if it is the latest version
+- Cleaned up ExtractRunPath() and added check for empty strings
+- Added icons to menu strip and text to toolstrip
+- Scanning starts after scan dialog is shown
+
+## Version 0.3 Released
+
+- Added retry button to check for update function when its unable to connect
+- Scanner now uses Invoke when calls are made from other threads 
+- The scanner can now be aborted
+- Uses HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Applets\Regedit\LastKey to view a registry key in regedit
+- Now uses a new exception handler dialog that uses the WebClient to send bug reports
+- Update function uses a dialog and downloads xml file to get the changelog and download url
+- Displays messagebox before removing subkey from ignore list
+- Doesn't scan "SOFTWARE\Classes" subkey in app settings
+- Clears old results before starting a new scan
+- Checks for minor version of OS when creating restore point
+- Scans SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Drivers32 instead of SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Drivers
+- Scans DefaultIcon, AppID, InprocServer, File Extensions, and Browser Helper Objects
+
+## Version 0.4 Released
+
+- Added better handling for inner exceptions, also shows target site function name
+- Checks if DefaultIcon is null before checking the path in Active/COM scanner
+- Exceptions can now be handled on calling threads 
+- Uses Toolstrip container in main dialog
+- Updated website URLs so they go to new one
+- Displays current version in about dialog
+
+## Version 0.5 Released
+
+- Removed Grip Style from toolstrip
+- Checks if registry key exists before adding new exclude entry
+- Removed Eventargs classes
+- No longer uses the WebClient to get the update.xml
+- Removed ADDED and FIXED from Change Log
+- Treeview is registered to Node Mouse Click event
+- Tries to catch SecurityException when opening registry keys
+- Fixed bug when listing exceptions in ErrorDlg.cs
+- Lists Dictionary Entries from Exception Data in ErrorDlg.cs
+- Fixed regular expressions in Startup.cs
+
+## Version 0.6 Released
+
+- Recoded Logger class
+- Writes exception message to debug listeners when SecurityException is caught
+- Fixed up StartUp.cs
+- Checks if registry key exists before scanning key in ScanBHOReferences() 
+- Sees if System Restore service is running before creating restore point (fixed: goes thru service list instead of trying to create a reference)
+- Added finally to try-catch block in StartScanning()
+- Scans HKEY_CLASSES_ROOT + HKEY_CURRENT_USER in COMObjects.cs
+- Deletes subkey tree from base key instead of deleting it from the parent subkey
+- Added help menu items that redirect to launchpad project
+- Added History List scanner to scan "Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RecentDocs"
+- Tries to catch ObjectDisposedException when storing registry keys
+- Stops current thread immediatley when scanning is stopped
+- Checks for update when program starts
+
+## Version 0.7 Released
+
+- Fixed FILETIME compile warnings
+- Corrected bad registry paths in AppInfo.cs
+- Uses array to pass bad registry keys instead of just using the ListView
+- No longer uses Program settings for sections to scan
+- Log file path can be accessed statically
+- FileExists and DirExists are used instead of Directory.Exists() and File.Exists()
+- Moved IconExists() and SearchFilePath() to Misc.cs
+- Cleaned up scanners
+- StartScanning() is now a ThreadPool
+- ScanDlg is now longer passed to Scanners as a parameter, it is a static variable
+- UpdateScanSubKey() is a static function
+- Registry objects are casted properly
+- Created LaunchURI function to check for default web browser (fixed: checks for null strings)
+- Made a minor fix to CreateRestorePoint()
+- Added more checks to ScanBHOReferences(), renamed it to ScanExplorer()
+
+## Version 0.8 Released
+
+- Restore points can be created on Windows ME, XP, and Vista
+- Creates restore points before fixing registry problems instead of before scanning and also creates restore point before restoring
+- Uses function instead of try-catch to find invalid path characters
+- Added Icons to TreeView Sections
+- Added registry optimizer
+- Asks user to exit program no matter what close reason is and shows dialog if it is minimized
+- Displays number of problems found in scan dialog
+- No longer uses ExtractRunPath() to get file arguments thanks to discovery of PathGetArgs() and PathRemoveArgs() :D
+- Added startup manager that lists current programs that are launched at startup
+- Added uninstall managaer that lists installed programs
+- Searches App Paths "Path" value name for file and also deletes whole subkey instead of just default value
+- Uses Windows API's to go to exact value name in regedit instead of just setting LastKey
+- Scans Add Remove Programs Cache for old programs
+- Changed contact email to nick@littleapps.co.cc
+- Updated Crash Reporter, no longer sends name and email, also can restart program
+- Fixed bug when optimizer closes
+- Shows total size difference between registry hives in optimizer, also fixed a minor bug
+- Fixed bug causing restore points to not be created
+
+## Version 1.0 Released
+
+- Scans HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts for unused file extensions
+- Cleaned up COMObjects.cs
+- No longer collects Machine and username in crash reporter
+- Changed the look of update dialog, also added date to xml file
+- Uses CollectionBase class to store bad registry keys in array
+- Uses shlwapi.dll instead to parse drive type and added check for removable media in Utils.DirExists()
+- Cleaned up Utils.cs
+- Checks if file exists before extracting arguments in startup manager
+- Added check for srclient.dll before creating restore points
+- Scan dialog uses Xp Progress Bar
+- Added TreeListView that performs combines the treeview and listview into one and also added project for controls
+- BadRegistryKey class uses ListViewItem as base class
+- Moved xmlRegistry static functions to Utils class
+- Scanner classes are now static to make thread calling faster
+- Optimizer wont compact registry if difference is more than 90%
+- Hive class implements IDisposable interface
+- Implemented TreeViewAdv into Startup Manager and removed vista message when running a program
+- ExtractFileLocation() is private and integrated into ExtractArguments()
+- Added images to startup manager tree view
+- Fixed bug in uninstall manager that causes not to update listview properly
+- Startup and uninstall manager can no longer be minimized and maximized
+- Buttons are bigger in Uninstall manger and it is not started maximized
+- Displays message box instead of notify box when form is activated
+- Moved Logger class back to seperate file
+- Opens log file after scanning finishes
+- Doesnt show crash reporter when debugging is enabled
+- Optimizer will now be in its own project (Little Registry Optimizer)
+- LaunchURI() checks for default browser HKCR\HTTP\shell\open\command
+- Startup Manager will check if item is leaf before executing operation
+
+## Version 1.1 Released
+
+- Removed HKLM from subkey path in RemoveFromRegistry()
+- Removed View Changelog from main menu
+- Checks for updates every 2 weeks
+- Fixed invalid argument when trying to view registry key without value name
+- Crash reporter wont be displayed when debugging
+- Updated assembly info
+- Fixed installer script so it deletes desktop shortcut
+- Checks for missing CLSID references in ProgID's
+- Added sorter for List View in main dialog
+- Scans for missing installer folders (HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders)
+- Makes sure registry key is writable before adding it to array
+- Displays type of exception in crash reporter
+- Log files are copied and displayed only if there were bad registry keys
+- Fixed program crashing when it calls RegEnumValue() in 64 bit
+- Scans needed Wow6432Node subkeys for errors (needs more updating)
+- The logger is more verbose
+- Fixed updater because it wasnt checking the right timespan
+- Added option to disable log being showed after scanning
+- Only checks last time since update when program starts
+
+## Version 1.2 Released
+
+- Scan dialog is thread safe
+- Scanners use base class to save coding and work
+- Added details control to display more information
+- Convert value to string function is now a static function
+- Checks if registry key is not null before continuing in AppInfo.cs
+- Checks for MsiExec in UninstallString instead of evaluating WindowsInstaller in AppInfo.cs
+- Changed the log formatting of bad registry keys
+- Displays files and directorys being scanned in scan dialog
+- Resets details control after scanning is finished
+- Fixed null bug in COMObjects.ScanClasses()
+- Catches DllNotFoundException if srclient.dll cant be found when creating system restore points
+- Catches Exception if unable to convert SystemComponent or EstimatedSize when retrieving ARP info
+- Disabled textbox editing in startup manager
+- Uses TreeViewAdv so UI has more nicer graphical design
+- Fixed "Index was outside the bounds of the array" exception in xmlRegistry.addRegistryValues(Int32 hKey)
+- Startup file paths are checked before being added to manager
+- Startup scanner has been fixed (also added 64bit compatiblity)
+- Cross checks start menu registry keys with folders for obsolete keys
+- Did some minor fixes to the ProgramList class
+- Files and folders can be added to the exclude list
+- Doesnt recursively check for obsolete software keys
+- Added checks for files and folders before there added to the problem list
+- Locks stream writer in logger so it cant be opened or written to at the same time
+- Logger uses streamwriter as a base class
+- Crash Reporter no longer saves reports to the hard disk before sending them
+- RegEditGo uses SetForegroundWindow instead of ShowWindow to bring up regedit
+- ActiveX scanner uses ole32.dll to get CLSID from program id and check icons
+
+## Version 1.3 Released
+
+- Application info scanner uses program info class to collect data
+- Application Info scanner and uninstall manager use program info to get slow info cache
+- Added more checks for null or empty strings before checking for files/directories
+- No longer throws an exception when the path is null/empty in FileExists and DirExists()
+- Checks for value name + others before being added to bad registry key array
+- Did some minor fixes to the ActiveX/COM scanner
+- Changes to wait cursor when scanning
+- Fixed bug causing duplicates in uninstall manager
+
+## Version 1.3.1 Released
+
+- Calls ShowErrorMessage() instead of throwing an exception everytime in xmlRegistry
+- Fixed bug causing the whole startup subkey to be stored and removed
+- Displays if user is administrator and if process is being debugged in crashreporter
+- Added Try-Catch blocks for System.Security.SecurityException in Fonts, HelpFiles and Sounds
+- Cleaned up nested try-catch blocks in scanners
+- Fixed the tab order in the dialogs
+- Build Time uses MM/dd/yyyy format instead of ToShortDateString because of windows 7 new format
+- Checks for update when dialog is shown instead of loaded
+- Changed window settings for restore dialog and startup manager
+- Directory settings are controlled through Settings.cs instead of Program.cs
+- Build time is returned in Settings.cs instead of Program.cs
+
+## Version 1.3.2 Released
+
+- Fixed the updater so that the build dates can be compared
+- No longer sets the last update time in Program.cs
+- Uses Generic Sans Serif font family for advanced tree view instead of Tahoma
+- Removed label above section list in main dialog and replaced "My Computer" with "Sections to Scan"
+- System restore works with Windows Se7en and beyond
+- Creates restore point if running program for first time
+- No longer waits for log file to close before fixing problems
+- Tries to catch exception if an error is thrown when uninstalling a program or removing a registry key
+- Uses ListViewItem.Tag to store programinfo instead of dictionary
+- No longer sets last update date before program exits
+- Sets owner of registry key and uses default values instead of existing ones in grantRegistryKeyRights()
+
+## Version 1.3.3 Released
+
+- Collapses nodes instead of expanding them when finished scanning registry
+- Upgrades settings to newer version if program has been updated
+- Displays icon associated with section in treeview advanced
+- Removed expanding icon control from treeview advanced
+- Changed icon for Program Locations in treeview to correct one
+- No longer imports ole32.dll for ActiveX/COM scanner
+- Checks ProgID's for missing icons
+- Checks for access to regedit.exe and adds correct access if its incorrect
+- Fixed icon for software settings
+- Tries to catch exception when removing startup entry if file or registry value doesnt exist
+- Checks if user is administrator when program starts up
+
+## Version 1.3.4 Released
+
+- LRC has translations for 17 different languages
+- Fixed backup directory, it doesnt point to the common program files once options are changed
+- The backup and logs directory will be in the current directory if the release is portable edition
+- Renamed scanner files to more proper names
+- Uses my own code instead of Type.GetTypeFromProgID()
+- Replaced checkboxes with listview in options so different languages can be displayed properly
+- Added power user option that allows the program to automatically repair problems and close the program
+- Country flags are displayed beside each language
+- Automatically changes to current ui culture once the program is started
+- Translated strings that are not controls and are in the code files
+- Fixed error when switching to chinese (traditional or simplified)
+- Upgraded TreeView Advanced to version 1.7
+- Expands all nodes when finished scanning registry
+- Added a sorter tree model so the results can be sorted
+- Details are shown in a window instead of in the main window
+- Added status strip to display welcome and results messages
+
+## Version 1.4 Released
+
+- Restore points are saved to correct location (v1.4.0.1 released)
+- Removed unneeded label in scan dialog
+- Updated Russian Translations
+- Updated Dutch Translations
+- Added Hungarian Translations
+- Updated Portuguese Translation
+- Updated Polish Translation
+- Updated Italian Translations
+- Updated Swedish Translations
+- Changes registry key rights when removing values and sub keys 
+- Added Turkish Translations
+- Checks for Common Tools.dll when program starts
+- Updated Greek Translations
+- Added Lithuanian Translations
+- Updated Chinese (Simplified & Traditional) Translations
+- Updated Turkish Translations
+- Changed bug report URL
+- Scans HKCU\Software\Microsoft\Windows\ShellNoRoam\MUICache for invalid file references
+- Programs using the Windows Installer can be uninstalled using the uninstall manager
+- Uninstall manager is compatible with 64-bit systems
+- Creates first system restore when LRC is installed instead of when it first starts
+- Updated assembly information
+
+## Version 1.4.1 Released
+
+- Fixed uninstall manager bug with x86 systems (v1.4.1.1 released)
+- Startup manager is compatible with 64-bit systems
+- Replaced blank icons with default application icon in startup manager
+- Skips nodes with no children from expanding (Thanks to Dmitriy P.)
+- Fixed bug that prevented LRC from switching languages on non-english systems (Thanks to Dmitriy P.)
+- Reassociated invert selection control with event (Thanks to Dmitriy P.)
+- Added localized Properties/Resources.resx files to project (Thanks to Dmitriy P.)
+- Added Persian Translations
+- Uses a timer instead of invoke to update scanning status
+- Updated Swedish Translations
+- Ignores registry keys that don't have full access
+
+## Version 1.4.2 Released
+
+- Now compatible with Microsoft Windows Restart Manager
+- Updated Spanish Translations (Thanks to Fitoschido)
+- Updated German Translations (Thanks to Chris G)
+- Updated French Translations (Thanks to Tulip V)
+- Compatible with Windows 7 task bar
+- Program no longer starts up maximized
+- Fixed recent docs scanner so it displays the correct registry key path
+- No longer displays duplicate problems
+- Upgraded to Microsoft .NET Framework v4
+- Uninstall & Startup Manager are now seperate executables
+- Details window is no longer displayed when a parent node is double clicked
+- Implemented task scheduler to schedule registry scans
+- Registry scans can be started by specifying "/scan" argument
+- Integrated DeskMetrics into Little Registry Cleaner
+
+## Version 1.5 Released
+
+- Fixed bug when trying to create scheduled tasks on Windows Task Scheduler 1.0 (Windows 2000, XP and Server 2003)
+- Fixed bug that prevented LRC from closing if DeskMetrics was disabled
+- No longer displays bug report when trying to contactDeskMetrics with no internet connection
+- NsisDeskMetrics plugin no longer requires the Microsoft Visual C++ 2010 Redistributable Package to run
+- Added check for null string in PrefixRegPath()
+- Manually generates GUID for DeskMetrics if an error occured in System.Guid
+- Fixed spelling mistake that prevented LRC to load on Lithuanian computers
+- No longer displays exception if "cmdLine" passed to ExtractArguments() is null
+- Displays error message instead of exception if file is not found when executed with startup manager
+
+## Version 1.5.1 Released
+
+- Downgraded Microsoft .NET Framework to v3.5
+- Integrated Little Software Stats
+- Added new icons
+- Integrated AutoUpdater.NET
+- Updated Little Registry icon
+- Fixed permission problems with removing bad registry keys
+- Update Russian translations (Thanks to Sersell)
+- Updated German Translations (Thanks to Jurg S.)
+- Fixed problem with scheduler not showing correct time for existing job
+- Fixed english translations for Little Startup Manager
+- Buttons are disabled when nothing is selected in Little Uninstall Manager, Little Startup Manager, and Restore
+- Little Registry Cleaner cannot be uninstalled through Little Uninstall Manager if running
+- Fixed problem with horizontal scroll bar not displaying correctly
+- Update website links to active URLs
+- Fixed Little Uninstall Manager from refreshing list when text wasn't changed
+- Uses Process.Start() to launch websites and help file in order to prevent window modal problems
+- Default settings for re-scan automatically, automatically delete backups after, and system restore changed to disabled
+
+## Version 1.6 Released
