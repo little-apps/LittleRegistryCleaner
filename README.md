@@ -11,6 +11,14 @@ Little Registry Cleaner is an open source program that is designed to cleanup Mi
  * Uninstall manager removes traces of deleted software
  * 100% Freeware
  * And much more!
+ 
+## Licensing
+
+Little System Cleaner is licensed under the [GNU General Public License v3](http://www.gnu.org/licenses/gpl.html).
+
+## Show Your Support
+
+Little Apps relies on people like you to keep our software running. If you would like to show your support for Little System Cleaner, then you can [make a donation](https://www.little-apps.com/?donate) using PayPal, Payza or credit card (via Stripe). Please note that any amount helps (even just $1).
 
 ## Credits
  
