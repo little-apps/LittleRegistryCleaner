@@ -16,6 +16,10 @@ Little Registry Cleaner is an open source program that is designed to cleanup Mi
 
 Little System Cleaner is licensed under the [GNU General Public License v3](http://www.gnu.org/licenses/gpl.html).
 
+## Versions
+
+The version control system has been tracking changes since version 0.6. All previous versions can be found on [the downloads for Little Registry Cleaner](https://www.little-apps.com/downloads/little-registry-cleaner/).
+
 ## Show Your Support
 
 Little Apps relies on people like you to keep our software running. If you would like to show your support for Little System Cleaner, then you can [make a donation](https://www.little-apps.com/?donate) using PayPal, Payza or credit card (via Stripe). Please note that any amount helps (even just $1).
